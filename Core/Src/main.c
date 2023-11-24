@@ -28,6 +28,7 @@
 #include "ILI9341.h"
 #include "GFX_Color.h"
 #include "fonts/font_8x5.h"
+#include "distanceSensor.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,6 +50,7 @@
 
 /* USER CODE BEGIN PV */
 servoDriverStruct servoPA6;
+distanceSensorStruct distanceSensorPA2;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -93,6 +95,7 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM16_Init();
   MX_SPI1_Init();
+  MX_TIM17_Init();
 
   /* Initialize interrupts */
   MX_NVIC_Init();
@@ -103,6 +106,8 @@ int main(void)
 
   servoDriverInit(&servoPA6, 0, 180, 700, 2650);
   servoDriverStartTimer(&servoPA6);
+
+  distanceSensorInit(&distanceSensorPA2, 58.0f);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -114,29 +119,38 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
 	  /* SERVO TEST */
-	  servoDriverSetDegrees(&servoPA6, 0);
-	  HAL_Delay(1000);
-	  servoDriverSetDegrees(&servoPA6, 90);
-	  HAL_Delay(1000);
-	  servoDriverSetDegrees(&servoPA6, 180);
-	  HAL_Delay(1000);
+//	  servoDriverSetDegrees(&servoPA6, 0);
+//	  HAL_Delay(1000);
+//	  servoDriverSetDegrees(&servoPA6, 90);
+//	  HAL_Delay(1000);
+//	  servoDriverSetDegrees(&servoPA6, 180);
+//	  HAL_Delay(1000);
 
 	  /* SERVO TEST */
 
 	  /* DISPLAY TEST */
-	  ILI9341_WriteScreen(ILI9341_BLACK);
-	  for (uint16_t var = 0; var < ILI9341_TFTWIDTH; ++var)
-	  {
-		  GFX_DrawLine(ILI9341_TFTWIDTH / 2, 0, var, ILI9341_TFTHEIGHT, ILI9341_WHITE);
-		  HAL_Delay(10);
-	  }
-	  ILI9341_WriteScreen(ILI9341_BLACK);
-	  for (uint16_t var = 0; var < ILI9341_TFTWIDTH; ++var)
-	  {
-		  GFX_DrawLine(ILI9341_TFTWIDTH / 2, 0, ILI9341_TFTWIDTH-var, ILI9341_TFTHEIGHT, ILI9341_GREEN);
-		  HAL_Delay(10);
-	  }
+//	  ILI9341_WriteScreen(ILI9341_BLACK);
+//	  for (uint16_t var = 0; var < ILI9341_TFTWIDTH; ++var)
+//	  {
+//		  GFX_DrawLine(ILI9341_TFTWIDTH / 2, 0, var, ILI9341_TFTHEIGHT, ILI9341_WHITE);
+//		  HAL_Delay(10);
+//	  }
+//	  ILI9341_WriteScreen(ILI9341_BLACK);
+//	  for (uint16_t var = 0; var < ILI9341_TFTWIDTH; ++var)
+//	  {
+//		  GFX_DrawLine(ILI9341_TFTWIDTH / 2, 0, ILI9341_TFTWIDTH-var, ILI9341_TFTHEIGHT, ILI9341_GREEN);
+//		  HAL_Delay(10);
+//	  }
 	  /* DISPLAY TEST */
+
+
+	  /* DISTNACE SENSOR TEST */
+//	  HAL_GPIO_WritePin(SENSOR_TRIG_GPIO_Port, SENSOR_TRIG_Pin, GPIO_PIN_SET);
+//	  HAL_Delay(10);
+//	  HAL_GPIO_WritePin(SENSOR_TRIG_GPIO_Port, SENSOR_TRIG_Pin, GPIO_PIN_RESET);
+	  //distanceSensorSendTrig(&distanceSensorPA2);
+//	  HAL_Delay(1000);
+	  /* DISTNACE SENSOR TEST */
 
   }
   /* USER CODE END 3 */
@@ -200,6 +214,50 @@ static void MX_NVIC_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+/* Distance sensor weak overwritten */
+void distanceSensorTrigOn(distanceSensorStruct *sensor)
+{
+	if(sensor == &distanceSensorPA2)
+	{
+		HAL_GPIO_WritePin(SENSOR_TRIG_GPIO_Port, SENSOR_TRIG_Pin, GPIO_PIN_SET);
+	}
+}
+
+void distanceSensorDelay(distanceSensorStruct *sensor, uint32_t delay)
+{
+	HAL_Delay(delay);
+}
+
+void distanceSensorTrigOff(distanceSensorStruct *sensor)
+{
+	if(sensor == &distanceSensorPA2)
+	{
+		HAL_GPIO_WritePin(SENSOR_TRIG_GPIO_Port, SENSOR_TRIG_Pin, GPIO_PIN_RESET);
+	}
+}
+/* Distance sensor weak overwritten */
+
+void HAL_GPIO_EXTI_Rising_Callback(uint16_t GPIO_Pin)
+{
+	if(GPIO_Pin == SENSOR_ECHO_Pin)
+	{
+		HAL_TIM_Base_Start(&htim17);
+	}
+}
+
+void HAL_GPIO_EXTI_Falling_Callback(uint16_t GPIO_Pin)
+{
+	if(GPIO_Pin == SENSOR_ECHO_Pin)
+	{
+		HAL_TIM_Base_Stop(&htim17);
+		distanceSensorPA2.ticks  = __HAL_TIM_GET_COUNTER(&htim17);
+		distanceSensorPA2.distnace = distanceSensorPA2.ticks / 58.0;
+//		distanceSensorGetEcho(&distanceSensorPA2, __HAL_TIM_GET_COUNTER(&htim17));
+		__HAL_TIM_SET_COUNTER(&htim17, 0);
+	}
+}
+
+/* Servo weak overwritten */
 void servoDriverStartTimer(servoDriverStruct *servoDriver)
 {
 	if(servoDriver == &servoPA6)
