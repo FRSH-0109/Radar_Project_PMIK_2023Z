@@ -18,12 +18,16 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "spi.h"
 #include "tim.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "servo_driver.h"
+#include "ILI9341.h"
+#include "GFX_Color.h"
+#include "fonts/font_8x5.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -88,10 +92,15 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_TIM16_Init();
+  MX_SPI1_Init();
 
   /* Initialize interrupts */
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
+  ILI9341_Init(&hspi1);
+  GFX_SetFont(font_8x5);
+  ILI9341_WriteScreen(ILI9341_BLACK);
+
   servoDriverInit(&servoPA6, 0, 180, 700, 2650);
   servoDriverStartTimer(&servoPA6);
   /* USER CODE END 2 */
@@ -101,15 +110,34 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-		servoDriverSetDegrees(&servoPA6, 0);
-		HAL_Delay(2000);
 
-		servoDriverSetDegrees(&servoPA6, 90);
-		HAL_Delay(2000);
+    /* USER CODE BEGIN 3 */
 
-		servoDriverSetDegrees(&servoPA6, 180);
-		HAL_Delay(2000);
-		/* USER CODE BEGIN 3 */
+	  /* SERVO TEST */
+	  servoDriverDegreesToPulseWidth(&servoPA6, 0);
+	  HAL_Delay(1000);
+	  servoDriverDegreesToPulseWidth(&servoPA6, 90);
+	  HAL_Delay(1000);
+	  servoDriverDegreesToPulseWidth(&servoPA6, 180);
+	  HAL_Delay(1000);
+
+	  /* SERVO TEST */
+
+	  /* DISPLAY TEST */
+	  ILI9341_WriteScreen(ILI9341_BLACK);
+	  for (uint16_t var = 0; var < ILI9341_TFTWIDTH; ++var)
+	  {
+		  GFX_DrawLine(ILI9341_TFTWIDTH / 2, 0, var, ILI9341_TFTHEIGHT, ILI9341_WHITE);
+		  HAL_Delay(10);
+	  }
+	  ILI9341_WriteScreen(ILI9341_BLACK);
+	  for (uint16_t var = 0; var < ILI9341_TFTWIDTH; ++var)
+	  {
+		  GFX_DrawLine(ILI9341_TFTWIDTH / 2, 0, ILI9341_TFTWIDTH-var, ILI9341_TFTHEIGHT, ILI9341_GREEN);
+		  HAL_Delay(10);
+	  }
+	  /* DISPLAY TEST */
+
   }
   /* USER CODE END 3 */
 }
