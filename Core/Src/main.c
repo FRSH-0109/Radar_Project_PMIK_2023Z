@@ -114,11 +114,11 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
 	  /* SERVO TEST */
-	  servoDriverDegreesToPulseWidth(&servoPA6, 0);
+	  servoDriverSetDegrees(&servoPA6, 0);
 	  HAL_Delay(1000);
-	  servoDriverDegreesToPulseWidth(&servoPA6, 90);
+	  servoDriverSetDegrees(&servoPA6, 90);
 	  HAL_Delay(1000);
-	  servoDriverDegreesToPulseWidth(&servoPA6, 180);
+	  servoDriverSetDegrees(&servoPA6, 180);
 	  HAL_Delay(1000);
 
 	  /* SERVO TEST */
