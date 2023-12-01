@@ -48,7 +48,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-servoDriverStruct servoPA6;
+//servoDriverStruct servoPA6;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -93,6 +93,7 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM16_Init();
   MX_SPI1_Init();
+  MX_TIM17_Init();
 
   /* Initialize interrupts */
   MX_NVIC_Init();
@@ -101,8 +102,8 @@ int main(void)
   GFX_SetFont(font_8x5);
   ILI9341_WriteScreen(ILI9341_BLACK);
 
-  servoDriverInit(&servoPA6, 0, 180, 700, 2650);
-  servoDriverStartTimer(&servoPA6);
+//  servoDriverInit(&servoPA6, 0, 180, 700, 2650);
+//  servoDriverStartTimer(&servoPA6);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -114,12 +115,12 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
 	  /* SERVO TEST */
-	  servoDriverDegreesToPulseWidth(&servoPA6, 0);
-	  HAL_Delay(1000);
-	  servoDriverDegreesToPulseWidth(&servoPA6, 90);
-	  HAL_Delay(1000);
-	  servoDriverDegreesToPulseWidth(&servoPA6, 180);
-	  HAL_Delay(1000);
+//	  servoDriverDegreesToPulseWidth(&servoPA6, 0);
+//	  HAL_Delay(1000);
+//	  servoDriverDegreesToPulseWidth(&servoPA6, 90);
+//	  HAL_Delay(1000);
+//	  servoDriverDegreesToPulseWidth(&servoPA6, 180);
+//	  HAL_Delay(1000);
 
 	  /* SERVO TEST */
 
@@ -200,29 +201,29 @@ static void MX_NVIC_Init(void)
 
 /* USER CODE BEGIN 4 */
 
-void servoDriverStartTimer(servoDriverStruct *servoDriver)
-{
-	if(servoDriver == &servoPA6)
-	{
-		HAL_TIM_PWM_Start_IT(&htim16, TIM_CHANNEL_1);
-	}
-}
-
-void servoDriverStopTimer(servoDriverStruct *servoDriver)
-{
-	if(servoDriver == &servoPA6)
-	{
-		HAL_TIM_PWM_Stop_IT(&htim16, TIM_CHANNEL_1);
-	}
-}
-
-void servoDriverSetPulseWidth(servoDriverStruct *servoDriver)
-{
-	if(servoDriver == &servoPA6)
-	{
-		__HAL_TIM_SET_COMPARE(&htim16, TIM_CHANNEL_1, servoDriver->positionInPulseWidth);
-	}
-}
+//void servoDriverStartTimer(servoDriverStruct *servoDriver)
+//{
+//	if(servoDriver == &servoPA6)
+//	{
+//		HAL_TIM_PWM_Start_IT(&htim16, TIM_CHANNEL_1);
+//	}
+//}
+//
+//void servoDriverStopTimer(servoDriverStruct *servoDriver)
+//{
+//	if(servoDriver == &servoPA6)
+//	{
+//		HAL_TIM_PWM_Stop_IT(&htim16, TIM_CHANNEL_1);
+//	}
+//}
+//
+//void servoDriverSetPulseWidth(servoDriverStruct *servoDriver)
+//{
+//	if(servoDriver == &servoPA6)
+//	{
+//		__HAL_TIM_SET_COMPARE(&htim16, TIM_CHANNEL_1, servoDriver->positionInPulseWidth);
+//	}
+//}
 
 /* USER CODE END 4 */
 
