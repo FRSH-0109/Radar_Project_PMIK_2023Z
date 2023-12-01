@@ -118,17 +118,17 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-	  /* SERVO TEST */
+//	  /* SERVO TEST */
 //	  servoDriverSetDegrees(&servoPA6, 0);
 //	  HAL_Delay(1000);
 //	  servoDriverSetDegrees(&servoPA6, 90);
 //	  HAL_Delay(1000);
 //	  servoDriverSetDegrees(&servoPA6, 180);
 //	  HAL_Delay(1000);
-
-	  /* SERVO TEST */
-
-	  /* DISPLAY TEST */
+//
+//	  /* SERVO TEST */
+//
+//	  /* DISPLAY TEST */
 //	  ILI9341_WriteScreen(ILI9341_BLACK);
 //	  for (uint16_t var = 0; var < ILI9341_TFTWIDTH; ++var)
 //	  {
@@ -141,16 +141,34 @@ int main(void)
 //		  GFX_DrawLine(ILI9341_TFTWIDTH / 2, 0, ILI9341_TFTWIDTH-var, ILI9341_TFTHEIGHT, ILI9341_GREEN);
 //		  HAL_Delay(10);
 //	  }
-	  /* DISPLAY TEST */
-
-
-	  /* DISTNACE SENSOR TEST */
-//	  HAL_GPIO_WritePin(SENSOR_TRIG_GPIO_Port, SENSOR_TRIG_Pin, GPIO_PIN_SET);
-//	  HAL_Delay(10);
-//	  HAL_GPIO_WritePin(SENSOR_TRIG_GPIO_Port, SENSOR_TRIG_Pin, GPIO_PIN_RESET);
-	  //distanceSensorSendTrig(&distanceSensorPA2);
+//	  /* DISPLAY TEST */
+//
+//
+//	  /* DISTNACE SENSOR TEST */
+//	  distanceSensorSendTrig(&distanceSensorPA2);
 //	  HAL_Delay(1000);
-	  /* DISTNACE SENSOR TEST */
+//	  /* DISTNACE SENSOR TEST */
+
+	  /* RADAR TEST */
+	  for (uint8_t var = 0; var <= 180; ++var)
+	  {
+		  servoDriverSetDegrees(&servoPA6, var);
+		  distanceSensorSendTrig(&distanceSensorPA2);
+		  while(distanceSensorGetReadyToMeasure(&distanceSensorPA2) == false);
+		  GFX_DrawLine(ILI9341_TFTWIDTH / 2, 0, var, distanceSensorPA2.distnace, ILI9341_GREEN);
+		  HAL_Delay(10);
+	  }
+	  ILI9341_WriteScreen(ILI9341_BLACK);
+	  for (int8_t var = 180; var >= 0; ++var)
+	  {
+		  servoDriverSetDegrees(&servoPA6, var);
+		  distanceSensorSendTrig(&distanceSensorPA2);
+		  while(distanceSensorGetReadyToMeasure(&distanceSensorPA2) == false);
+		  GFX_DrawLine(ILI9341_TFTWIDTH / 2, 0, var, distanceSensorPA2.distnace, ILI9341_GREEN);
+		  HAL_Delay(10);
+	  }
+	  ILI9341_WriteScreen(ILI9341_BLACK);
+	  /* RADAR TEST */
 
   }
   /* USER CODE END 3 */
@@ -225,7 +243,10 @@ void distanceSensorTrigOn(distanceSensorStruct *sensor)
 
 void distanceSensorDelay(distanceSensorStruct *sensor, uint32_t delay)
 {
-	HAL_Delay(delay);
+	if(sensor == &distanceSensorPA2)
+	{
+		HAL_Delay(delay);
+	}
 }
 
 void distanceSensorTrigOff(distanceSensorStruct *sensor)
@@ -250,9 +271,7 @@ void HAL_GPIO_EXTI_Falling_Callback(uint16_t GPIO_Pin)
 	if(GPIO_Pin == SENSOR_ECHO_Pin)
 	{
 		HAL_TIM_Base_Stop(&htim17);
-		distanceSensorPA2.ticks  = __HAL_TIM_GET_COUNTER(&htim17);
-		distanceSensorPA2.distnace = distanceSensorPA2.ticks / 58.0;
-//		distanceSensorGetEcho(&distanceSensorPA2, __HAL_TIM_GET_COUNTER(&htim17));
+		distanceSensorGetEcho(&distanceSensorPA2, __HAL_TIM_GET_COUNTER(&htim17));
 		__HAL_TIM_SET_COUNTER(&htim17, 0);
 	}
 }

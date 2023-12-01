@@ -62,6 +62,8 @@ void Error_Handler(void);
 #define SENSOR_ECHO_Pin GPIO_PIN_2
 #define SENSOR_ECHO_GPIO_Port GPIOA
 #define SENSOR_ECHO_EXTI_IRQn EXTI2_3_IRQn
+#define SERVO_PWM_Pin GPIO_PIN_6
+#define SERVO_PWM_GPIO_Port GPIOA
 #define TFT_CS_Pin GPIO_PIN_1
 #define TFT_CS_GPIO_Port GPIOD
 #define TFT_RESET_Pin GPIO_PIN_2

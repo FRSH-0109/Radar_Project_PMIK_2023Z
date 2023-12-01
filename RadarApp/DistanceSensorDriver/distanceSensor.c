@@ -51,3 +51,14 @@ void distanceSensorGetEcho(distanceSensorStruct* sensor, uint16_t ticks)
 
 	sensor->readyToMeasure = true;
 }
+
+
+bool distanceSensorGetReadyToMeasure(distanceSensorStruct* sensor)
+{
+	return sensor->readyToMeasure;
+}
+
+uint16_t distanceSensorGetDistance(distanceSensorStruct* sensor)
+{
+	return sensor->distnace;
+}

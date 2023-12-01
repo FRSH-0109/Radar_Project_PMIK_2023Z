@@ -8,7 +8,7 @@
 #ifndef INC_ILI9341_H_
 #define INC_ILI9341_H_
 
-#define ILI9341_ROTATION 3	///0-0*, 1-90*, 2-180*, 3-270*
+#define ILI9341_ROTATION 1	///0-0*, 1-90*, 2-180*, 3-270*
 
 #if (ILI9341_ROTATION == 0  ||  ILI9341_ROTATION == 2)
 	#define ILI9341_TFTWIDTH 240  ///< ILI9341 max TFT width
