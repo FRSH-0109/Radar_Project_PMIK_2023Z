@@ -17,7 +17,6 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-#include <distance_sensor.h>
 #include "main.h"
 #include "spi.h"
 #include "tim.h"
@@ -29,6 +28,10 @@
 #include "ILI9341.h"
 #include "GFX_Color.h"
 #include "fonts/font_8x5.h"
+#include "distance_sensor.h"
+#include "radar.h"
+
+#include <math.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -51,6 +54,8 @@
 /* USER CODE BEGIN PV */
 servoDriverStruct servoPA6;
 distanceSensorStruct distanceSensorPA2;
+
+radarStruct radar;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -96,18 +101,21 @@ int main(void)
   MX_TIM16_Init();
   MX_SPI1_Init();
   MX_TIM17_Init();
+  MX_TIM14_Init();
 
   /* Initialize interrupts */
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
   ILI9341_Init(&hspi1);
-  GFX_SetFont(font_8x5);
   ILI9341_WriteScreen(ILI9341_BLACK);
+  //GFX_SetFont(font_8x5);
 
   servoDriverInit(&servoPA6, 0, 180, 700, 2650);
-  servoDriverStartTimer(&servoPA6);
-
   distanceSensorInit(&distanceSensorPA2, 58.0f);
+
+  radarInit(&radar, &servoPA6, &distanceSensorPA2, &htim14);
+  radarMeasureStart(&radar);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -150,24 +158,63 @@ int main(void)
 //	  /* DISTNACE SENSOR TEST */
 
 	  /* RADAR TEST */
-	  for (uint8_t var = 0; var <= 180; ++var)
+	  int xs = ILI9341_TFTWIDTH / 2;
+	  int ys = 0;
+	  int r = 80;
+
+
+
+	  for (int x = (xs+r); x >= xs; x -= 1)
 	  {
-		  servoDriverSetDegrees(&servoPA6, var);
-		  distanceSensorSendTrig(&distanceSensorPA2);
-		  while(distanceSensorGetReadyToMeasure(&distanceSensorPA2) == false);
-		  GFX_DrawLine(ILI9341_TFTWIDTH / 2, 0, var, distanceSensorPA2.distnace, ILI9341_GREEN);
-		  HAL_Delay(10);
+		  double y  = sqrt((r*r) - ((x-xs)*(x-xs)));
+		  double measure = radarGetMeasure(&radar);
+		  ColorType clr = ILI9341_GREEN;
+		  if(measure < 30.0f)
+		  {
+			  clr = ILI9341_RED;
+		  }
+		  GFX_DrawLine(xs, ys, 2*(xs)-x, (int)round(y), clr);
+		  GFX_DrawLine(xs, ys, 2*(xs)-x, (int)round(y), ILI9341_BLACK);
 	  }
-	  ILI9341_WriteScreen(ILI9341_BLACK);
-	  for (int8_t var = 180; var >= 0; ++var)
+
+	  for (int x = xs; x <= (xs+r); x += 1)
 	  {
-		  servoDriverSetDegrees(&servoPA6, var);
-		  distanceSensorSendTrig(&distanceSensorPA2);
-		  while(distanceSensorGetReadyToMeasure(&distanceSensorPA2) == false);
-		  GFX_DrawLine(ILI9341_TFTWIDTH / 2, 0, var, distanceSensorPA2.distnace, ILI9341_GREEN);
-		  HAL_Delay(10);
+		  double y  = sqrt((r*r) - ((x-xs)*(x-xs)));
+		  double measure = radarGetMeasure(&radar);
+		  ColorType clr = ILI9341_GREEN;
+		  if(measure < 30.0f)
+		  {
+			  clr = ILI9341_RED;
+		  }
+		  GFX_DrawLine(xs, ys, x, (int)round(y), clr);
+		  GFX_DrawLine(xs, ys, x, (int)round(y), ILI9341_BLACK);
 	  }
-	  ILI9341_WriteScreen(ILI9341_BLACK);
+
+	  for (int x = (xs+r); x >= xs; x -= 1)
+	  {
+		  double y  = sqrt((r*r) - ((x-xs)*(x-xs)));
+		  double measure = radarGetMeasure(&radar);
+		  ColorType clr = ILI9341_GREEN;
+		  if(measure < 30.0f)
+		  {
+			  clr = ILI9341_RED;
+		  }
+		  GFX_DrawLine(xs, ys, x, (int)round(y), clr);
+		  GFX_DrawLine(xs, ys, x, (int)round(y), ILI9341_BLACK);
+	  }
+
+	  for (int x = xs; x <= (xs+r); x += 1)
+	  {
+		  double y  = sqrt((r*r) - ((x-xs)*(x-xs)));
+		  double measure = radarGetMeasure(&radar);
+		  ColorType clr = ILI9341_GREEN;
+		  if(measure < 30.0f)
+		  {
+			  clr = ILI9341_RED;
+		  }
+		  GFX_DrawLine(xs, ys, 2*(xs)-x, (int)round(y), clr);
+		  GFX_DrawLine(xs, ys, 2*(xs)-x, (int)round(y), ILI9341_BLACK);
+	  }
 	  /* RADAR TEST */
 
   }
@@ -231,6 +278,14 @@ static void MX_NVIC_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	if(htim == radar.sensorTim)
+	{
+		radarTriggerMeasure(&radar);
+	}
+}
 
 /* Distance sensor weak overwritten */
 void distanceSensorTrigOn(distanceSensorStruct *sensor)

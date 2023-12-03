@@ -53,4 +53,6 @@ void distanceSensorSendTrig(distanceSensorStruct* sensor);
 void distanceSensorGetEcho(distanceSensorStruct* sensor, uint16_t ticks);
 bool distanceSensorGetReadyToMeasure(distanceSensorStruct* sensor);
 
+double distanceSensorGetDistance(distanceSensorStruct* sensor);
+
 #endif

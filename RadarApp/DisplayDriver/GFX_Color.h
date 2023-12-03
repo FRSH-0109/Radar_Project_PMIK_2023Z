@@ -100,6 +100,7 @@ void GFX_DrawFillRectangle(int x, int y, uint16_t w, uint16_t h, ColorType color
 #endif
 #if USING_CIRCLE == 1
 void GFX_DrawCircle(int x0, int y0, uint16_t r, ColorType color);
+void GFX_DrawCircleHelper( int x0, int y0, uint16_t r, uint8_t cornername, ColorType color);
 #endif
 #if USING_FILL_CIRCLE == 1
 void GFX_DrawFillCircle(int x0, int y0, uint16_t r, ColorType color);

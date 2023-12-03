@@ -66,7 +66,7 @@ void distanceSensorSendTrig(distanceSensorStruct* sensor)
 	if(sensor->readyToMeasure)
 	{
 		distanceSensorTrigOn(sensor);
-		distanceSensorDelay(sensor, 10);
+		distanceSensorDelay(sensor, 1);
 		distanceSensorTrigOff(sensor);
 
 		sensor->readyToMeasure = false;
@@ -87,7 +87,7 @@ bool distanceSensorGetReadyToMeasure(distanceSensorStruct* sensor)
 	return sensor->readyToMeasure;
 }
 
-uint16_t distanceSensorGetDistance(distanceSensorStruct* sensor)
+double distanceSensorGetDistance(distanceSensorStruct* sensor)
 {
 	return sensor->distnace;
 }
