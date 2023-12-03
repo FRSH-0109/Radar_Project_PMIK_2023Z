@@ -66,6 +66,7 @@ void distanceSensorSendTrig(distanceSensorStruct* sensor)
 	if(sensor->readyToMeasure)
 	{
 		distanceSensorTrigOn(sensor);
+		//TODO: change to assembly NOP's
 		distanceSensorDelay(sensor, 1);
 		distanceSensorTrigOff(sensor);
 

@@ -102,6 +102,7 @@ int main(void)
   MX_SPI1_Init();
   MX_TIM17_Init();
   MX_TIM14_Init();
+  MX_TIM3_Init();
 
   /* Initialize interrupts */
   MX_NVIC_Init();
@@ -113,8 +114,10 @@ int main(void)
   servoDriverInit(&servoPA6, 0, 180, 700, 2650);
   distanceSensorInit(&distanceSensorPA2, 58.0f);
 
-  radarInit(&radar, &servoPA6, &distanceSensorPA2, &htim14);
+  radarInit(&radar, &servoPA6, &htim3, &distanceSensorPA2, &htim14);
   radarMeasureStart(&radar);
+  radarServoStart(&radar);
+  //TODO: volatile structs
 
   /* USER CODE END 2 */
 
@@ -161,8 +164,6 @@ int main(void)
 	  int xs = ILI9341_TFTWIDTH / 2;
 	  int ys = 0;
 	  int r = 80;
-
-
 
 	  for (int x = (xs+r); x >= xs; x -= 1)
 	  {
@@ -284,6 +285,10 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 	if(htim == radar.sensorTim)
 	{
 		radarTriggerMeasure(&radar);
+	}
+	else if(htim == radar.servoTim)
+	{
+		radarServoUpdate(&radar);
 	}
 }
 

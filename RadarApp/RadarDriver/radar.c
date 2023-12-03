@@ -1,10 +1,15 @@
 #include "radar.h"
 
-void radarInit(radarStruct* radar, servoDriverStruct* servo, distanceSensorStruct* sensor, TIM_HandleTypeDef* sensor_tim)
+void radarInit(radarStruct* radar, servoDriverStruct* servo, TIM_HandleTypeDef* servo_tim, distanceSensorStruct* sensor, TIM_HandleTypeDef* sensor_tim)
 {
 	radar->servo = servo;
 	radar->position = 0.0f;
-	servoDriverStartTimer(servo);
+	radar->servoTim = servo_tim;
+	radar->direction = 1;
+	radarSetPositionMin(radar, 0.0f);
+	radarSetPositionMax(radar, 180.0f);
+	radarSetPositionUpdateStep(radar, 0.5f);
+	radarSetPositionUpdatePeriod(radar, 11);
 
 	radar->sensor = sensor;
 	radar->sensorTim = sensor_tim;
@@ -13,6 +18,91 @@ void radarInit(radarStruct* radar, servoDriverStruct* servo, distanceSensorStruc
 
 
 ////////////// SERVO //////////////////////////////////
+void radarServoUpdate(radarStruct* radar)
+{
+	float posNew = 0;
+	posNew = (radar->direction * radar->positionUpdateStep) + radar->position;
+
+	if(posNew < radar->positionMin)
+	{
+		posNew = radar->positionMin;
+		radar->direction *= -1;
+	}
+	else if(posNew > radar->positionMax)
+	{
+		posNew = radar->positionMax;
+		radar->direction *= -1;
+	}
+
+	radarSetPosition(radar, posNew);
+}
+
+bool radarSetPositionMin(radarStruct* radar, float pos)
+{
+	if(pos >= 0.0 && pos <= 180 && pos < radar->positionMax)
+	{
+		radar->positionMin = pos;
+		return true;
+	}
+
+	return false;
+}
+
+float radarGetPositionMin(radarStruct* radar)
+{
+	return radar->positionMin;
+}
+
+bool radarSetPositionMax(radarStruct* radar, float pos)
+{
+	if(pos >= 0.0 && pos <= 180 && pos > radar->positionMin)
+	{
+		radar->positionMax = pos;
+		return true;
+	}
+
+	return false;
+}
+
+float radarGetPositionMax(radarStruct* radar)
+{
+	return radar->positionMax;
+}
+
+void radarServoStart(radarStruct* radar)
+{
+	servoDriverStartTimer(radar->servo);
+	HAL_TIM_Base_Start_IT(radar->servoTim);
+}
+
+void radarServoStop(radarStruct* radar)
+{
+	HAL_TIM_Base_Stop_IT(radar->servoTim);
+}
+
+bool radarSetPositionUpdatePeriod(radarStruct* radar, uint16_t periodMs)
+{
+	if(periodMs > 10 && periodMs < UINT16_MAX)
+	{
+		radar->positionUpdatePeriodMs = periodMs;
+		__HAL_TIM_SET_AUTORELOAD(radar->servoTim, periodMs);
+		return true;
+	}
+
+	return false;
+}
+
+bool radarSetPositionUpdateStep(radarStruct* radar, float step)
+{
+	if(step > 0.001 && step < 90)
+	{
+		radar->positionUpdateStep = step;
+		return true;
+	}
+
+	return false;
+}
+
 bool radarSetPosition(radarStruct* radar, float pos)
 {
 	if(servoDriverSetDegrees(radar->servo, pos))
@@ -44,7 +134,7 @@ void radarMeasureStop(radarStruct* radar)
 
 bool radarSetMeasureFreq(radarStruct* radar, uint16_t periodMs)
 {
-	if(periodMs > 0 && periodMs < 1000)
+	if(periodMs > 10 && periodMs < UINT16_MAX)
 	{
 		radar->measurePeriodMs = periodMs;
 		__HAL_TIM_SET_AUTORELOAD(radar->sensorTim, periodMs);
