@@ -17,6 +17,7 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <distance_sensor.h>
 #include "main.h"
 #include "spi.h"
 #include "tim.h"
@@ -28,7 +29,6 @@
 #include "ILI9341.h"
 #include "GFX_Color.h"
 #include "fonts/font_8x5.h"
-#include "distanceSensor.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

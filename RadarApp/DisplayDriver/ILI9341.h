@@ -1,8 +1,11 @@
 /*
  * ILI9341.h
  *
- *  Created on: Apr 6, 2021
- *      Author: kamil
+ *  The MIT License.
+ *  Created on: 25.05.2017
+ *      Author: Mateusz Salamon
+ *      www.msalamon.pl
+ *      mateusz@msalamon.pl
  */
 
 #ifndef INC_ILI9341_H_

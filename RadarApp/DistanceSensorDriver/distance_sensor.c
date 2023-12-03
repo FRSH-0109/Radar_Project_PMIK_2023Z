@@ -18,48 +18,76 @@
  ****************************************************************************/
 
 /**
- * @file servo_driver.h
+ * @file distnace_sensor.c
  * @author Kami Kośnik, Kacper Radzikowski
- * @date 20 Nov 2023
- * @brief File containing code of servomechanism driver controlled by PWM,
+ * @date 25 Nov 2023
+ * @brief File containing code of distance sensor driver (ex. hc-sr04),
  * which was created for Radar embedded project.
  *
  * @see https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z
  */
 
-#ifndef SERVO_DRIVER_H
-#define SERVO_DRIVER_H
+#include <distance_sensor.h>
 
-#include <stdint.h>
-#include <stdbool.h>
-
-#define SERVO_MIN_DEGREES 0.0f
-#define SERVO_MAX_DEGREES 180.0f
-
-#define SERVO_MIN_PULSE_WIDTH 1000	//1ms = 0 degrees
-#define SERVO_MAX_PULSE_WIDTH 2000	//2ms = 180 degrees
-
-typedef struct
+void distanceSensorInit(distanceSensorStruct* sensor, double ticksToDistanceFactor)
 {
-	float degreesMin;
-	float degreesMax;
+	if(ticksToDistanceFactor > 0)
+	{
+		sensor->factor = ticksToDistanceFactor;
+	}
+	else
+	{
+		sensor->factor = 1;
+	}
 
-	uint16_t pulseWidthMin;
-	uint16_t pulseWidthMax;
+	sensor->ticks = 0;
+	sensor->distnace = 0;
 
-	float positionInDegrees;
-	uint16_t positionInPulseWidth;
-}servoDriverStruct;
+	sensor->readyToMeasure = true;
+}
 
-void servoDriverInit(servoDriverStruct *servoDriver, float dMin, float dMax, uint16_t pMin, uint16_t pMax);
-void servoDriverStart(servoDriverStruct *servoDriver);
-void servoDriverStop(servoDriverStruct *servoDriver);
+__attribute__((weak)) void distanceSensorTrigOn(distanceSensorStruct *sensor)
+{
+	////////////////////////////////////////////////////////////////////////////
+}
 
-void servoDriverStartTimer(servoDriverStruct *servoDriver);
-void servoDriverStopTimer(servoDriverStruct *servoDriver);
+__attribute__((weak)) void distanceSensorDelay(distanceSensorStruct *sensor, uint32_t delay)
+{
+	////////////////////////////////////////////////////////////////////////////
+}
 
-bool servoDriverSetDegrees(servoDriverStruct *servoDriver, float degrees);
-uint16_t servoDriverDegreesToPulseWidth(servoDriverStruct *servoDriver, float degrees);
-void servoDriverSetPulseWidth(servoDriverStruct *servoDriver);
+__attribute__((weak)) void distanceSensorTrigOff(distanceSensorStruct *sensor)
+{
+	////////////////////////////////////////////////////////////////////////////
+}
 
-#endif
+void distanceSensorSendTrig(distanceSensorStruct* sensor)
+{
+	if(sensor->readyToMeasure)
+	{
+		distanceSensorTrigOn(sensor);
+		distanceSensorDelay(sensor, 10);
+		distanceSensorTrigOff(sensor);
+
+		sensor->readyToMeasure = false;
+	}
+}
+
+void distanceSensorGetEcho(distanceSensorStruct* sensor, uint16_t ticks)
+{
+	sensor->ticks = ticks;
+	sensor->distnace = (double)((double)sensor->ticks / (double)sensor->factor);
+
+	sensor->readyToMeasure = true;
+}
+
+
+bool distanceSensorGetReadyToMeasure(distanceSensorStruct* sensor)
+{
+	return sensor->readyToMeasure;
+}
+
+uint16_t distanceSensorGetDistance(distanceSensorStruct* sensor)
+{
+	return sensor->distnace;
+}
