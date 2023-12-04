@@ -21,6 +21,7 @@
 #include "spi.h"
 #include "tim.h"
 #include "gpio.h"
+#include <math.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -30,8 +31,6 @@
 #include "fonts/font_8x5.h"
 #include "distance_sensor.h"
 #include "radar.h"
-
-#include <math.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -161,61 +160,74 @@ int main(void)
 //	  /* DISTNACE SENSOR TEST */
 
 	  /* RADAR TEST */
-	  int xs = ILI9341_TFTWIDTH / 2;
-	  int ys = 0;
-	  int r = 80;
+	  double dist = radarGetMeasure(&radar);
+	  double radians = radarGetPosition(&radar) * 0.01745;
+	  int yk = round(sin(radians) * dist * 1.5);
+	  int xk = round(cos(radians) * dist * 1.5);
+	  int xp = 0, yp = 0;
 
-	  for (int x = (xs+r); x >= xs; x -= 1)
-	  {
-		  double y  = sqrt((r*r) - ((x-xs)*(x-xs)));
-		  double measure = radarGetMeasure(&radar);
-		  ColorType clr = ILI9341_GREEN;
-		  if(measure < 30.0f)
-		  {
-			  clr = ILI9341_RED;
-		  }
-		  GFX_DrawLine(xs, ys, 2*(xs)-x, (int)round(y), clr);
-		  GFX_DrawLine(xs, ys, 2*(xs)-x, (int)round(y), ILI9341_BLACK);
-	  }
+	  GFX_DrawLine(xp+ILI9341_TFTWIDTH / 2, yp + 10, xk + ILI9341_TFTWIDTH / 2, yk + 10, ILI9341_GREEN);
 
-	  for (int x = xs; x <= (xs+r); x += 1)
-	  {
-		  double y  = sqrt((r*r) - ((x-xs)*(x-xs)));
-		  double measure = radarGetMeasure(&radar);
-		  ColorType clr = ILI9341_GREEN;
-		  if(measure < 30.0f)
-		  {
-			  clr = ILI9341_RED;
-		  }
-		  GFX_DrawLine(xs, ys, x, (int)round(y), clr);
-		  GFX_DrawLine(xs, ys, x, (int)round(y), ILI9341_BLACK);
-	  }
 
-	  for (int x = (xs+r); x >= xs; x -= 1)
+	  if(radians  >= 3.13 || radians <= 0.1)
 	  {
-		  double y  = sqrt((r*r) - ((x-xs)*(x-xs)));
-		  double measure = radarGetMeasure(&radar);
-		  ColorType clr = ILI9341_GREEN;
-		  if(measure < 30.0f)
-		  {
-			  clr = ILI9341_RED;
-		  }
-		  GFX_DrawLine(xs, ys, x, (int)round(y), clr);
-		  GFX_DrawLine(xs, ys, x, (int)round(y), ILI9341_BLACK);
+		  ILI9341_WriteScreen(ILI9341_BLACK);
 	  }
-
-	  for (int x = xs; x <= (xs+r); x += 1)
-	  {
-		  double y  = sqrt((r*r) - ((x-xs)*(x-xs)));
-		  double measure = radarGetMeasure(&radar);
-		  ColorType clr = ILI9341_GREEN;
-		  if(measure < 30.0f)
-		  {
-			  clr = ILI9341_RED;
-		  }
-		  GFX_DrawLine(xs, ys, 2*(xs)-x, (int)round(y), clr);
-		  GFX_DrawLine(xs, ys, 2*(xs)-x, (int)round(y), ILI9341_BLACK);
-	  }
+//	  int xs = ILI9341_TFTWIDTH / 2;
+//	  int ys = 0;
+//	  int r = 80;
+//
+//	  for (int x = (xs+r); x >= xs; x -= 1)
+//	  {
+//		  double y  = sqrt((r*r) - ((x-xs)*(x-xs)));
+//		  double measure = radarGetMeasure(&radar);
+//		  ColorType clr = ILI9341_GREEN;
+//		  if(measure < 30.0f)
+//		  {
+//			  clr = ILI9341_RED;
+//		  }
+//		  GFX_DrawLine(xs, ys, 2*(xs)-x, (int)round(y), clr);
+//		  GFX_DrawLine(xs, ys, 2*(xs)-x, (int)round(y), ILI9341_BLACK);
+//	  }
+//
+//	  for (int x = xs; x <= (xs+r); x += 1)
+//	  {
+//		  double y  = sqrt((r*r) - ((x-xs)*(x-xs)));
+//		  double measure = radarGetMeasure(&radar);
+//		  ColorType clr = ILI9341_GREEN;
+//		  if(measure < 30.0f)
+//		  {
+//			  clr = ILI9341_RED;
+//		  }
+//		  GFX_DrawLine(xs, ys, x, (int)round(y), clr);
+//		  GFX_DrawLine(xs, ys, x, (int)round(y), ILI9341_BLACK);
+//	  }
+//
+//	  for (int x = (xs+r); x >= xs; x -= 1)
+//	  {
+//		  double y  = sqrt((r*r) - ((x-xs)*(x-xs)));
+//		  double measure = radarGetMeasure(&radar);
+//		  ColorType clr = ILI9341_GREEN;
+//		  if(measure < 30.0f)
+//		  {
+//			  clr = ILI9341_RED;
+//		  }
+//		  GFX_DrawLine(xs, ys, x, (int)round(y), clr);
+//		  GFX_DrawLine(xs, ys, x, (int)round(y), ILI9341_BLACK);
+//	  }
+//
+//	  for (int x = xs; x <= (xs+r); x += 1)
+//	  {
+//		  double y  = sqrt((r*r) - ((x-xs)*(x-xs)));
+//		  double measure = radarGetMeasure(&radar);
+//		  ColorType clr = ILI9341_GREEN;
+//		  if(measure < 30.0f)
+//		  {
+//			  clr = ILI9341_RED;
+//		  }
+//		  GFX_DrawLine(xs, ys, 2*(xs)-x, (int)round(y), clr);
+//		  GFX_DrawLine(xs, ys, 2*(xs)-x, (int)round(y), ILI9341_BLACK);
+//	  }
 	  /* RADAR TEST */
 
   }
