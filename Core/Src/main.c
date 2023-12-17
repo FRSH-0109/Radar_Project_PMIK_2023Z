@@ -20,8 +20,8 @@
 #include "main.h"
 #include "spi.h"
 #include "tim.h"
+#include "usart.h"
 #include "gpio.h"
-#include <math.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -102,6 +102,7 @@ int main(void)
   MX_TIM17_Init();
   MX_TIM14_Init();
   MX_TIM3_Init();
+  MX_USART1_UART_Init();
 
   /* Initialize interrupts */
   MX_NVIC_Init();
@@ -124,6 +125,21 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+//	  /* UART TEST */
+//	  uint8_t data[] = {'a','b','c','1','2'};
+//	  HAL_StatusTypeDef  ret =  HAL_UART_Receive(&huart1, data, 1, 100);
+//
+//	if(ret == HAL_OK)
+//	{
+//		data[0] = '1';
+//
+//		ret = HAL_UART_Transmit(&huart1, data, 1, 100);
+//		if(ret == HAL_OK)
+//		{
+//			data[0] = '1';
+//		}
+//	}
+//	  /* UART TEST */
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -292,6 +308,13 @@ static void MX_NVIC_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
+{
+	if(huart == &huart1)
+	{
+		huart->ErrorCode = 0;
+	}
+}
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
 	if(htim == radar.sensorTim)

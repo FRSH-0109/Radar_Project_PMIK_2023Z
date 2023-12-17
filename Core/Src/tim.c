@@ -236,7 +236,6 @@ void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* tim_baseHandle)
 
   /* USER CODE END TIM17_MspInit 1 */
   }
-
 }
 void HAL_TIM_MspPostInit(TIM_HandleTypeDef* timHandle)
 {
