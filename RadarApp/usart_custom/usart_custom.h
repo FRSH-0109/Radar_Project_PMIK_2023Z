@@ -21,52 +21,40 @@
 #include <string.h>
 
 #define MAX_UART_RX_DATA_LEN		100
-#define MAX_UART_TX_DATA_LEN		100
+#define MAX_UART_TX_DATA_LEN		30
 
 #define UART_QUEUE_LEN		3
 
 
 #define UART_TX_TRANSMISSION_CMPLT_TIMEOUT 3
 
-typedef enum
-{
-    PacketType_Request = '?', 		// ?
-    PacketType_Response = '$', 		// $
-    PacketType_Event = '#'	, 		// #
-	PacketType_Notification = '&',
-} PacketTypeDef;
+//PARSER
+#define COMMAND_START							"START"
+#define COMMAND_STOP							"STOP"
+#define COMMAND_GET_RADAR_POSITION				"RADARGETPOS"
+#define COMMAND_SET_RADAR_POSITION				"RADARSETPOS"
+#define COMMAND_GET_RADAR_STEP					"RADARGETSTEP"
+#define COMMAND_SET_RADAR_STEP					"RADARSETSTEP"
 
 typedef enum
 {
-	RequestID_RESET = 'R', 				// reset inidicator
-    RequestID_PING = '0', 				// no arg, ESP: ResponseID_ACK
-	RequestID_FEN = 'F',				// no args, ESP request FEN from STM
-	RequestID_SOFTWARE_VERSION = 'V',	// no args, STM Response: ResponseID_SOFTWARE_VERSION
-
-	//frames created for STM<->STM IR communication
-	RequestID_UID_HASH = 'h',			// followed by slave fen uid hash let master check it
-} RequestTypeDef;						// ?
-
-typedef enum
-{
-    ResponseID_ACK = '0', 				// Ack
-	ResponseID_NO_ACK = '1', 			// NoAck
-	ResponseID_ACK_FROM_IR = '9',		// ACK received from other half of board
-	ResponseID_FEN = 'F',				// STM sends FEN from ACTUAL REAL POSITON(not expected)
-	ResponseID_SOFTWARE_VERSION = 'V',	// Used to indicate ESP software version in STM
-} ResponseTypeDef; 						// $
+	COMMAND_TYPE_IDLE,
+	COMMAND_TYPE_START,
+	COMMAND_TYPE_STOP,
+	COMMAND_TYPE_SET_POS,
+	COMMAND_TYPE_GET_POS,
+	COMMAND_TYPE_SET_STEP,
+	COMMAND_TYPE_GET_STEP,
+}CommandType;
 
 typedef enum
 {
-    ResponseErrorCode_NoError = '0', 			// NoError
-	ResponseErrorCode_CRCError = '1', 			// Checksum Error
-	ResponseErrorCode_Busy = '2', 				// STM Busy
-	ResponseUnhandled_Command_char1 = '2',		// Unhandled_Command
-	ResponseUnhandled_Command_char2 = '3',		// Unhandled_Command
-	ResponseToo_Short_Command_char1 = '2',		// Too short command (luck of \r\n chars)
-	ResponseToo_Short_Command_char2 = '1',		// Too short command (luck of \r\n chars)
-} ResponseErrorCodeTypeDef;
+	RESPONSE_OK,
+	RESPONSE_UNKNOW_CMD,
+	RESPONSE_ERROR,
+}ResponseType;
 
+CommandType CommandDecode(uint8_t *data, uint16_t dataLen);
 
 // Struct for handling all operations of custom uart
 typedef struct UART_Custom_HandleTypeDef
@@ -75,7 +63,7 @@ typedef struct UART_Custom_HandleTypeDef
 	uint16_t dataRxMaxLen;
 	uint16_t dataTxMaxLen;
 	volatile uint8_t dataRx[MAX_UART_RX_DATA_LEN];
-	uint8_t dataTx[MAX_UART_RX_DATA_LEN];
+	uint8_t dataTx[MAX_UART_TX_DATA_LEN];
 	volatile bool txTransmissionCmplt;
 	volatile uint32_t txTransmissionCmpltTime;
 } UART_Custom_HandleTypeDef;

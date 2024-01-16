@@ -12,15 +12,18 @@
  * AUTHOR :    Kamil Kośnik        START DATE :    18 July 2022
  *
  *H*/
+#include <stdio.h>
 #include "usart.h"
 #include <stm32g0xx_hal_dma.h>
 #include "usart_custom.h"
+#include "radar.h"
 
 //extern const uint8_t softVersion[3];////////////////////////////////version of software////////////////////////////////////
 extern UART_Custom_HandleTypeDef huartPC;
 extern DMA_HandleTypeDef hdma_usart1_rx;
 extern DMA_HandleTypeDef hdma_usart1_tx;
 extern UART_Queue uartQueuePC;
+extern radarStruct radar;
 
 //Initialization of custom uart struct instance
 //@param  huartCustom - instance of custom uart struct
@@ -57,18 +60,167 @@ inline HAL_StatusTypeDef uartCustomTransmitDMA(UART_Custom_HandleTypeDef *huartC
 	return HAL_BUSY;
 }
 
+//PARSER
+static bool CommandSearchForString(uint8_t *data, uint16_t dataLen, const char* str)
+{
+	if(dataLen >= strlen(str))
+	{
+		if(strnstr((const char*)data, str, strlen(str)) != NULL)
+		{
+			return true;
+		}
+	}
+	return false;
+}
+
+static void removeChar(char *str, char c, uint16_t dataLen)
+{
+    int i, j;
+    for (i = j = 0; i < dataLen; i++)
+    {
+        if(str[i] != c)
+        {
+            str[j++] = str[i];
+        }
+    }
+    str[j] = 0;
+}
+
+CommandType CommandDecode(uint8_t *data, uint16_t dataLen)
+{
+	removeChar((char *)(data), ' ', dataLen);	//remove spaces from message
+	strupr((char *)(data));						//make all chars upper case
+
+	if(CommandSearchForString(data, dataLen, COMMAND_START))
+	{
+		return COMMAND_TYPE_START;
+	}
+	else if(CommandSearchForString(data, dataLen, COMMAND_STOP))
+	{
+		return COMMAND_TYPE_STOP;
+	}
+	else if(CommandSearchForString(data, dataLen, COMMAND_GET_RADAR_POSITION))
+	{
+		return COMMAND_TYPE_GET_POS;
+	}
+	else if(CommandSearchForString(data, dataLen, COMMAND_SET_RADAR_POSITION))
+	{
+		return COMMAND_TYPE_SET_POS;
+	}
+	else if(CommandSearchForString(data, dataLen, COMMAND_GET_RADAR_STEP))
+	{
+		return COMMAND_TYPE_GET_STEP;
+	}
+	else if(CommandSearchForString(data, dataLen, COMMAND_SET_RADAR_STEP))
+	{
+		return COMMAND_TYPE_SET_STEP;
+	}
+
+	return COMMAND_TYPE_IDLE;
+}
+
+static void uartTransmitResponse(volatile UART_Queue *uartQueue, ResponseType respType)
+{
+	uint8_t data[MAX_UART_TX_DATA_LEN] = {0};
+	uint8_t dataLen = 0;
+
+	switch(respType)
+	{
+		case RESPONSE_OK:
+			memcpy(data, "OK\r\n", strlen("OK\r\n"));
+			break;
+		case RESPONSE_UNKNOW_CMD:
+			memcpy(data,"UNKNOW CMD\r\n", strlen("UNKNOW CMD\r\n"));
+			break;
+		case RESPONSE_ERROR:
+			memcpy(data, "ERROR\r\n", strlen("ERROR\r\n"));
+			break;
+		default:
+			return;
+			break;
+	}
+
+	dataLen = strlen((char* )data);
+	uartQueueAdd(uartQueue, data, dataLen);
+}
+
+static void uartTransmitPosition(volatile UART_Queue *uartQueue)
+{
+	uint8_t data[MAX_UART_TX_DATA_LEN] = {0};
+	uint8_t dataLen = 0;
+
+	dataLen = sprintf((char* )data, "Position: %.2f\r\n", radar.position);
+	uartQueueAdd(uartQueue, data, dataLen);
+}
+
+static void uartTransmitStep(volatile UART_Queue *uartQueue)
+{
+	uint8_t data[MAX_UART_TX_DATA_LEN] = {0};
+	uint8_t dataLen = 0;
+
+	dataLen = sprintf((char* )data, "Step: %.2f\r\n", radar.positionUpdateStep);
+	uartQueueAdd(uartQueue, data, dataLen);
+}
+
+static void uartTransmitStepMs(volatile UART_Queue *uartQueue)
+{
+	uint8_t data[MAX_UART_TX_DATA_LEN] = {0};
+	uint8_t dataLen = 0;
+
+	dataLen = sprintf((char* )data, "Step: %.2f\r\n", radar.positionUpdateStep);
+	uartQueueAdd(uartQueue, data, dataLen);
+}
+
 inline void uartQueueReceive(volatile UART_Queue *uartQueue)
 {
 	if(uartQueue->tailIndex != uartQueue->headIxndex && uartQueue->dataRx[uartQueue->tailIndex][0] != 0)
 	{
-		switch(uartQueue->dataRx[uartQueue->tailIndex][0])
+		CommandType commandType = CommandDecode((uint8_t *)uartQueue->dataRx[uartQueue->tailIndex], uartQueue->dataRxLength[uartQueue->tailIndex]);
+		switch(commandType)
 		{
+			case COMMAND_TYPE_IDLE:
+				uartTransmitResponse(uartQueue, RESPONSE_UNKNOW_CMD);
+				break;
+			case COMMAND_TYPE_START:
+				radarMeasureStart(&radar);
+				radarServoStart(&radar);
+				uartTransmitResponse(uartQueue, RESPONSE_OK);
+				break;
+			case COMMAND_TYPE_STOP:
+				radarMeasureStop(&radar);
+				radarServoStop(&radar);
+				uartTransmitResponse(uartQueue, RESPONSE_OK);
+				break;
+			case COMMAND_TYPE_GET_POS:
+				uartTransmitPosition(uartQueue);
+				break;
+			case COMMAND_TYPE_SET_POS:
+				if(radarParseSetPosition(&radar, (uint8_t*)uartQueue->dataRx[uartQueue->tailIndex]))
+				{
+					uartTransmitResponse(uartQueue, RESPONSE_OK);
+				}
+				else
+				{
+					uartTransmitResponse(uartQueue, RESPONSE_ERROR);
+				}
+				break;
 
-		case 0:
-			break;
+			case COMMAND_TYPE_GET_STEP:
+				uartTransmitStep(uartQueue);
+				break;
+			case COMMAND_TYPE_SET_STEP:
+				if(radarParseSetStep(&radar, (uint8_t*)uartQueue->dataRx[uartQueue->tailIndex]))
+				{
+					uartTransmitResponse(uartQueue, RESPONSE_OK);
+				}
+				else
+				{
+					uartTransmitResponse(uartQueue, RESPONSE_ERROR);
+				}
+				break;
 
-		default:
-			break;
+			default:
+				break;
 		}
 
 		uartQueue->dataRx[uartQueue->tailIndex][0] = 0;
@@ -94,7 +246,7 @@ void uartQueueInit(volatile UART_Queue *uartQueue)
 inline void uartQueueAdd(volatile UART_Queue *uartQueue, uint8_t *dataTxSource, uint16_t msgLen)
 {
 	memcpy((uint8_t *)uartQueue->dataTx[uartQueue->dataIndex], dataTxSource, msgLen);
-	uartQueue->dataTxLength[uartQueue->dataIndex] = msgLen + 1;
+	uartQueue->dataTxLength[uartQueue->dataIndex] = msgLen;
 	uartQueue->dataIndex = (++uartQueue->dataIndex) % UART_QUEUE_LEN;
 }
 
@@ -124,6 +276,10 @@ inline void uartQueueTransmit(volatile UART_Queue *uartQueue, UART_Custom_Handle
 				}
 				HAL_UART_StateTypeDef result = HAL_UART_Transmit_DMA(huartCustom->huart,(uint8_t *) uartQueue->dataTx[uartQueue->transmitIndex], uartQueue->dataTxLength[uartQueue->transmitIndex]);
 				__HAL_DMA_DISABLE_IT(&hdma_usart1_tx, DMA_IT_HT);
+
+				uartQueue->dataTx[uartQueue->transmitIndex][0] = 0;
+				uartQueue->dataTxLength[uartQueue->transmitIndex] = 0;
+				uartQueue->transmitIndex = (++uartQueue->transmitIndex) % UART_QUEUE_LEN;
 			}
 		}
 	}

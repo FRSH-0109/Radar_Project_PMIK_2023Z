@@ -40,7 +40,7 @@ void radarServoUpdate(radarStruct* radar)
 
 bool radarSetPositionMin(radarStruct* radar, float pos)
 {
-	if(pos >= 0.0 && pos <= 180 && pos < radar->positionMax)
+	if(pos >= 0.0 && pos <= 180.0 && pos < radar->positionMax)
 	{
 		radar->positionMin = pos;
 		return true;
@@ -56,7 +56,7 @@ float radarGetPositionMin(radarStruct* radar)
 
 bool radarSetPositionMax(radarStruct* radar, float pos)
 {
-	if(pos >= 0.0 && pos <= 180 && pos > radar->positionMin)
+	if(pos >= 0.0 && pos <= 180.0 && pos > radar->positionMin)
 	{
 		radar->positionMax = pos;
 		return true;
@@ -165,3 +165,44 @@ void radarDrawMeasure(radarStruct* radar)
 }
 ////////////// DISPLAY //////////////////////////////////
 
+
+//PARSING//
+bool radarParseSetPosition(radarStruct* radar, uint8_t* data)
+{
+	float newPos = 0;
+	char* dataNew = strnstr((char*) data, COMMAND_SET_RADAR_POSITION, strlen((char*)data));
+
+	if(dataNew == NULL)
+	{
+		return false;
+	}
+
+	dataNew += strlen((char*) COMMAND_SET_RADAR_POSITION);
+
+	if (sscanf(dataNew, "%f", &newPos) != 1)
+	{
+		return false;
+	}
+
+	return radarSetPosition(radar, newPos);
+}
+
+bool radarParseSetStep(radarStruct* radar, uint8_t* data)
+{
+	float newStep = 0;
+	char* dataNew = strnstr((char*) data, COMMAND_SET_RADAR_STEP, strlen((char*)data));
+
+	if(dataNew == NULL)
+	{
+		return false;
+	}
+
+	dataNew += strlen((char*) COMMAND_SET_RADAR_STEP);
+
+	if (sscanf(dataNew, "%f", &newStep) != 1)
+	{
+		return false;
+	}
+
+	return radarSetPositionUpdateStep(radar, newStep);
+}

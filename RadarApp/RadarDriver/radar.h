@@ -4,8 +4,10 @@
 #define SENSOR_MEASURE_PERIOD_DEFAULT_MS 100
 
 #include "main.h"
+#include "stdio.h"
 #include "servo_driver.h"
 #include "distance_sensor.h"
+#include "usart_custom.h"
 
 typedef struct {
 
@@ -51,5 +53,9 @@ bool radarSetMeasureFreq(radarStruct* radar, uint16_t periodMs);
 void radarTriggerMeasure(radarStruct* radar);
 double radarGetMeasure(radarStruct* radar);
 ////////////// SENSOR //////////////////////////////////
+
+//DATA PARSING//
+bool radarParseSetPosition(radarStruct* radar, uint8_t* data);
+bool radarParseSetStep(radarStruct* radar, uint8_t* data);
 
 #endif

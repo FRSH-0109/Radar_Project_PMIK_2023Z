@@ -122,19 +122,20 @@ int main(void)
   servoDriverInit(&servoPA6, 0, 180, 700, 2650);
   distanceSensorInit(&distanceSensorPA2, 58.0f);
 
-  radarInit(&radar, &servoPA6, &htim3, &distanceSensorPA2, &htim14);
-  radarMeasureStart(&radar);
-  radarServoStart(&radar);
-
   uartCustomInit(&huartPC, &huart1, MAX_UART_RX_DATA_LEN, MAX_UART_TX_DATA_LEN);
   uartCustomReceiveDMA(&huartPC);
   __HAL_DMA_DISABLE_IT(&hdma_usart1_rx, DMA_IT_HT);
+
+  radarInit(&radar, &servoPA6, &htim3, &distanceSensorPA2, &htim14);
+  radarMeasureStart(&radar);
+  radarServoStart(&radar);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
   double drawScale = 2;
+  double degreesToRadians = M_PI / 180.0;
 
   while (1)
   {
@@ -146,16 +147,16 @@ int main(void)
 	 uartQueueTransmit(&uartQueuePC, &huartPC);
 
 	 double dist = radarGetMeasure(&radar);
-	 double radians = radarGetPosition(&radar);
+	 double radians = radarGetPosition(&radar) * degreesToRadians;
 	 int16_t yk = round(sin(radians) * dist * drawScale);
 	 int16_t xk = round(cos(radians) * dist * drawScale);
 	 int16_t xp = 0, yp = 0;
 
 	 GFX_DrawLine(xp + ILI9341_TFTWIDTH / 2, yp + 10, xk + ILI9341_TFTWIDTH / 2, yk + 10, ILI9341_GREEN);
 
-	 if(radians > 3.13 || radians <= 0.1)
+	 if(radians >= 3.13 || radians <= 0.1)
 	 {
-		 ILI9341_WriteScreen(ILI9341_WHITE);
+		 ILI9341_WriteScreen(ILI9341_BLACK);
 	 }
   }
   /* USER CODE END 3 */
