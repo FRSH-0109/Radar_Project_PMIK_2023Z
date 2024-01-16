@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma.h"
 #include "spi.h"
 #include "tim.h"
 #include "usart.h"
@@ -25,6 +26,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <math.h>
+#include "usart_custom.h"
 #include "servo_driver.h"
 #include "ILI9341.h"
 #include "GFX_Color.h"
@@ -55,6 +58,11 @@ servoDriverStruct servoPA6;
 distanceSensorStruct distanceSensorPA2;
 
 radarStruct radar;
+
+UART_Custom_HandleTypeDef huartPC;
+UART_Queue uartQueuePC;
+extern DMA_HandleTypeDef hdma_usart1_rx;
+extern DMA_HandleTypeDef hdma_usart1_tx;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -97,6 +105,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_TIM16_Init();
   MX_SPI1_Init();
   MX_TIM17_Init();
@@ -109,7 +118,6 @@ int main(void)
   /* USER CODE BEGIN 2 */
   ILI9341_Init(&hspi1);
   ILI9341_WriteScreen(ILI9341_BLACK);
-  //GFX_SetFont(font_8x5);
 
   servoDriverInit(&servoPA6, 0, 180, 700, 2650);
   distanceSensorInit(&distanceSensorPA2, 58.0f);
@@ -117,135 +125,38 @@ int main(void)
   radarInit(&radar, &servoPA6, &htim3, &distanceSensorPA2, &htim14);
   radarMeasureStart(&radar);
   radarServoStart(&radar);
-  //TODO: volatile structs
 
+  uartCustomInit(&huartPC, &huart1, MAX_UART_RX_DATA_LEN, MAX_UART_TX_DATA_LEN);
+  uartCustomReceiveDMA(&huartPC);
+  __HAL_DMA_DISABLE_IT(&hdma_usart1_rx, DMA_IT_HT);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+  double drawScale = 2;
+
   while (1)
   {
-//	  /* UART TEST */
-//	  uint8_t data[] = {'a','b','c','1','2'};
-//	  HAL_StatusTypeDef  ret =  HAL_UART_Receive(&huart1, data, 1, 100);
-//
-//	if(ret == HAL_OK)
-//	{
-//		data[0] = '1';
-//
-//		ret = HAL_UART_Transmit(&huart1, data, 1, 100);
-//		if(ret == HAL_OK)
-//		{
-//			data[0] = '1';
-//		}
-//	}
-//	  /* UART TEST */
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
 
-//	  /* SERVO TEST */
-//	  servoDriverSetDegrees(&servoPA6, 0);
-//	  HAL_Delay(1000);
-//	  servoDriverSetDegrees(&servoPA6, 90);
-//	  HAL_Delay(1000);
-//	  servoDriverSetDegrees(&servoPA6, 180);
-//	  HAL_Delay(1000);
-//
-//	  /* SERVO TEST */
-//
-//	  /* DISPLAY TEST */
-//	  ILI9341_WriteScreen(ILI9341_BLACK);
-//	  for (uint16_t var = 0; var < ILI9341_TFTWIDTH; ++var)
-//	  {
-//		  GFX_DrawLine(ILI9341_TFTWIDTH / 2, 0, var, ILI9341_TFTHEIGHT, ILI9341_WHITE);
-//		  HAL_Delay(10);
-//	  }
-//	  ILI9341_WriteScreen(ILI9341_BLACK);
-//	  for (uint16_t var = 0; var < ILI9341_TFTWIDTH; ++var)
-//	  {
-//		  GFX_DrawLine(ILI9341_TFTWIDTH / 2, 0, ILI9341_TFTWIDTH-var, ILI9341_TFTHEIGHT, ILI9341_GREEN);
-//		  HAL_Delay(10);
-//	  }
-//	  /* DISPLAY TEST */
-//
-//
-//	  /* DISTNACE SENSOR TEST */
-//	  distanceSensorSendTrig(&distanceSensorPA2);
-//	  HAL_Delay(1000);
-//	  /* DISTNACE SENSOR TEST */
+	 uartQueueReceive(&uartQueuePC);
+	 uartQueueTransmit(&uartQueuePC, &huartPC);
 
-	  /* RADAR TEST */
-	  double dist = radarGetMeasure(&radar);
-	  double radians = radarGetPosition(&radar) * 0.01745;
-	  int yk = round(sin(radians) * dist * 1.5);
-	  int xk = round(cos(radians) * dist * 1.5);
-	  int xp = 0, yp = 0;
+	 double dist = radarGetMeasure(&radar);
+	 double radians = radarGetPosition(&radar);
+	 int16_t yk = round(sin(radians) * dist * drawScale);
+	 int16_t xk = round(cos(radians) * dist * drawScale);
+	 int16_t xp = 0, yp = 0;
 
-	  GFX_DrawLine(xp+ILI9341_TFTWIDTH / 2, yp + 10, xk + ILI9341_TFTWIDTH / 2, yk + 10, ILI9341_GREEN);
+	 GFX_DrawLine(xp + ILI9341_TFTWIDTH / 2, yp + 10, xk + ILI9341_TFTWIDTH / 2, yk + 10, ILI9341_GREEN);
 
-
-	  if(radians  >= 3.13 || radians <= 0.1)
-	  {
-		  ILI9341_WriteScreen(ILI9341_BLACK);
-	  }
-//	  int xs = ILI9341_TFTWIDTH / 2;
-//	  int ys = 0;
-//	  int r = 80;
-//
-//	  for (int x = (xs+r); x >= xs; x -= 1)
-//	  {
-//		  double y  = sqrt((r*r) - ((x-xs)*(x-xs)));
-//		  double measure = radarGetMeasure(&radar);
-//		  ColorType clr = ILI9341_GREEN;
-//		  if(measure < 30.0f)
-//		  {
-//			  clr = ILI9341_RED;
-//		  }
-//		  GFX_DrawLine(xs, ys, 2*(xs)-x, (int)round(y), clr);
-//		  GFX_DrawLine(xs, ys, 2*(xs)-x, (int)round(y), ILI9341_BLACK);
-//	  }
-//
-//	  for (int x = xs; x <= (xs+r); x += 1)
-//	  {
-//		  double y  = sqrt((r*r) - ((x-xs)*(x-xs)));
-//		  double measure = radarGetMeasure(&radar);
-//		  ColorType clr = ILI9341_GREEN;
-//		  if(measure < 30.0f)
-//		  {
-//			  clr = ILI9341_RED;
-//		  }
-//		  GFX_DrawLine(xs, ys, x, (int)round(y), clr);
-//		  GFX_DrawLine(xs, ys, x, (int)round(y), ILI9341_BLACK);
-//	  }
-//
-//	  for (int x = (xs+r); x >= xs; x -= 1)
-//	  {
-//		  double y  = sqrt((r*r) - ((x-xs)*(x-xs)));
-//		  double measure = radarGetMeasure(&radar);
-//		  ColorType clr = ILI9341_GREEN;
-//		  if(measure < 30.0f)
-//		  {
-//			  clr = ILI9341_RED;
-//		  }
-//		  GFX_DrawLine(xs, ys, x, (int)round(y), clr);
-//		  GFX_DrawLine(xs, ys, x, (int)round(y), ILI9341_BLACK);
-//	  }
-//
-//	  for (int x = xs; x <= (xs+r); x += 1)
-//	  {
-//		  double y  = sqrt((r*r) - ((x-xs)*(x-xs)));
-//		  double measure = radarGetMeasure(&radar);
-//		  ColorType clr = ILI9341_GREEN;
-//		  if(measure < 30.0f)
-//		  {
-//			  clr = ILI9341_RED;
-//		  }
-//		  GFX_DrawLine(xs, ys, 2*(xs)-x, (int)round(y), clr);
-//		  GFX_DrawLine(xs, ys, 2*(xs)-x, (int)round(y), ILI9341_BLACK);
-//	  }
-	  /* RADAR TEST */
-
+	 if(radians > 3.13 || radians <= 0.1)
+	 {
+		 ILI9341_WriteScreen(ILI9341_WHITE);
+	 }
   }
   /* USER CODE END 3 */
 }
@@ -308,13 +219,6 @@ static void MX_NVIC_Init(void)
 
 /* USER CODE BEGIN 4 */
 
-void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
-{
-	if(huart == &huart1)
-	{
-		huart->ErrorCode = 0;
-	}
-}
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
 	if(htim == radar.sensorTim)

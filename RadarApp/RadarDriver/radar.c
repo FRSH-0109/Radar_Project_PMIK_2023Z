@@ -2,6 +2,7 @@
 
 void radarInit(radarStruct* radar, servoDriverStruct* servo, TIM_HandleTypeDef* servo_tim, distanceSensorStruct* sensor, TIM_HandleTypeDef* sensor_tim)
 {
+	//TODO: assert arguments
 	radar->servo = servo;
 	radar->position = 0.0f;
 	radar->servoTim = servo_tim;
