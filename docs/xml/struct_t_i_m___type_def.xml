@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_t_i_m___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>TIM_TypeDef</compoundname>
+    <includes refid="stm32g030xx_8h" local="no">stm32g030xx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1ab0ec7102960640751d44e92ddac994f0" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CR1</definition>
+        <argsstring></argsstring>
+        <name>CR1</name>
+        <qualifiedname>TIM_TypeDef::CR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM control register 1, Address offset: 0x00 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="457" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1afdfa307571967afb1d97943e982b6586" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CR2</definition>
+        <argsstring></argsstring>
+        <name>CR2</name>
+        <qualifiedname>TIM_TypeDef::CR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM control register 2, Address offset: 0x04 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="458" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a2870732a4fc2ecd7bbecfbcbbf5528b7" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t SMCR</definition>
+        <argsstring></argsstring>
+        <name>SMCR</name>
+        <qualifiedname>TIM_TypeDef::SMCR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM slave mode control register, Address offset: 0x08 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="459" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a07fccbd85b91e6dca03ce333c1457fcb" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t DIER</definition>
+        <argsstring></argsstring>
+        <name>DIER</name>
+        <qualifiedname>TIM_TypeDef::DIER</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM DMA/interrupt enable register, Address offset: 0x0C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="460" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1af6aca2bbd40c0fb6df7c3aebe224a360" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <qualifiedname>TIM_TypeDef::SR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM status register, Address offset: 0x10 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="461" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a196ebdaac12b21e90320c6175da78ef6" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t EGR</definition>
+        <argsstring></argsstring>
+        <name>EGR</name>
+        <qualifiedname>TIM_TypeDef::EGR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM event generation register, Address offset: 0x14 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="462" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1adb72f64492a75e780dd2294075c70fed" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CCMR1</definition>
+        <argsstring></argsstring>
+        <name>CCMR1</name>
+        <qualifiedname>TIM_TypeDef::CCMR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM capture/compare mode register 1, Address offset: 0x18 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="463" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a091452256c9a16c33d891f4d32b395bf" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CCMR2</definition>
+        <argsstring></argsstring>
+        <name>CCMR2</name>
+        <qualifiedname>TIM_TypeDef::CCMR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM capture/compare mode register 2, Address offset: 0x1C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="464" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a098110becfef10e1fd1b6a4f874da496" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CCER</definition>
+        <argsstring></argsstring>
+        <name>CCER</name>
+        <qualifiedname>TIM_TypeDef::CCER</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM capture/compare enable register, Address offset: 0x20 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="465" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a6095a27d764d06750fc0d642e08f8b2a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CNT</definition>
+        <argsstring></argsstring>
+        <name>CNT</name>
+        <qualifiedname>TIM_TypeDef::CNT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM counter register, Address offset: 0x24 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="466" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a9d4c753f09cbffdbe5c55008f0e8b180" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PSC</definition>
+        <argsstring></argsstring>
+        <name>PSC</name>
+        <qualifiedname>TIM_TypeDef::PSC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM prescaler register, Address offset: 0x28 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="467" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1af17f19bb4aeea3cc14fa73dfa7772cb8" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t ARR</definition>
+        <argsstring></argsstring>
+        <name>ARR</name>
+        <qualifiedname>TIM_TypeDef::ARR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM auto-reload register, Address offset: 0x2C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="468" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1aa1b1b7107fcf35abe39d20f5dfc230ee" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t RCR</definition>
+        <argsstring></argsstring>
+        <name>RCR</name>
+        <qualifiedname>TIM_TypeDef::RCR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM repetition counter register, Address offset: 0x30 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="469" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1adab1e24ef769bbcb3e3769feae192ffb" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CCR1</definition>
+        <argsstring></argsstring>
+        <name>CCR1</name>
+        <qualifiedname>TIM_TypeDef::CCR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM capture/compare register 1, Address offset: 0x34 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="470" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1ab90aa584f07eeeac364a67f5e05faa93" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CCR2</definition>
+        <argsstring></argsstring>
+        <name>CCR2</name>
+        <qualifiedname>TIM_TypeDef::CCR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM capture/compare register 2, Address offset: 0x38 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="471" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a27a478cc47a3dff478555ccb985b06a2" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CCR3</definition>
+        <argsstring></argsstring>
+        <name>CCR3</name>
+        <qualifiedname>TIM_TypeDef::CCR3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM capture/compare register 3, Address offset: 0x3C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="472" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a85fdb75569bd7ea26fa48544786535be" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CCR4</definition>
+        <argsstring></argsstring>
+        <name>CCR4</name>
+        <qualifiedname>TIM_TypeDef::CCR4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM capture/compare register 4, Address offset: 0x40 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="473" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a476bae602205d6a49c7e71e2bda28c0a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t BDTR</definition>
+        <argsstring></argsstring>
+        <name>BDTR</name>
+        <qualifiedname>TIM_TypeDef::BDTR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM break and dead-time register, Address offset: 0x44 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="474" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1af6225cb8f4938f98204d11afaffd41c9" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t DCR</definition>
+        <argsstring></argsstring>
+        <name>DCR</name>
+        <qualifiedname>TIM_TypeDef::DCR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM DMA control register, Address offset: 0x48 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="475" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="475" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1ab9087f2f31dd5edf59de6a59ae4e67ae" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t DMAR</definition>
+        <argsstring></argsstring>
+        <name>DMAR</name>
+        <qualifiedname>TIM_TypeDef::DMAR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM DMA address for full transfer, Address offset: 0x4C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="476" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a9b85c0208edae4594cbdfcf215573182" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t OR1</definition>
+        <argsstring></argsstring>
+        <name>OR1</name>
+        <qualifiedname>TIM_TypeDef::OR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM option register, Address offset: 0x50 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="477" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1aeae3f2752306d96164bb0b895aec60da" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CCMR3</definition>
+        <argsstring></argsstring>
+        <name>CCMR3</name>
+        <qualifiedname>TIM_TypeDef::CCMR3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM capture/compare mode register 3, Address offset: 0x54 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="478" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a34474d97b298c0bf671b72203ae43713" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CCR5</definition>
+        <argsstring></argsstring>
+        <name>CCR5</name>
+        <qualifiedname>TIM_TypeDef::CCR5</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM capture/compare register5, Address offset: 0x58 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="479" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="479" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a522126f56497797646c95acb049bfa9c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CCR6</definition>
+        <argsstring></argsstring>
+        <name>CCR6</name>
+        <qualifiedname>TIM_TypeDef::CCR6</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM capture/compare register6, Address offset: 0x5C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="480" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1aaa8b893e1390434a07a70d17ea058223" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t AF1</definition>
+        <argsstring></argsstring>
+        <name>AF1</name>
+        <qualifiedname>TIM_TypeDef::AF1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM alternate function register 1, Address offset: 0x60 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="481" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a3d712f76141c5f21d16d3c55ec7d89a0" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t AF2</definition>
+        <argsstring></argsstring>
+        <name>AF2</name>
+        <qualifiedname>TIM_TypeDef::AF2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM alternate function register 2, Address offset: 0x64 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="482" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___type_def_1a23d4cf627c278273f0b20f88592ae96a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t TISEL</definition>
+        <argsstring></argsstring>
+        <name>TISEL</name>
+        <qualifiedname>TIM_TypeDef::TISEL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM Input Selection register, Address offset: 0x68 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="483" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="483" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>TIM. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="455" column="1" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="456" bodyend="484"/>
+    <listofallmembers>
+      <member refid="struct_t_i_m___type_def_1aaa8b893e1390434a07a70d17ea058223" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>AF1</name></member>
+      <member refid="struct_t_i_m___type_def_1a3d712f76141c5f21d16d3c55ec7d89a0" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>AF2</name></member>
+      <member refid="struct_t_i_m___type_def_1af17f19bb4aeea3cc14fa73dfa7772cb8" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>ARR</name></member>
+      <member refid="struct_t_i_m___type_def_1a476bae602205d6a49c7e71e2bda28c0a" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>BDTR</name></member>
+      <member refid="struct_t_i_m___type_def_1a098110becfef10e1fd1b6a4f874da496" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCER</name></member>
+      <member refid="struct_t_i_m___type_def_1adb72f64492a75e780dd2294075c70fed" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCMR1</name></member>
+      <member refid="struct_t_i_m___type_def_1a091452256c9a16c33d891f4d32b395bf" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCMR2</name></member>
+      <member refid="struct_t_i_m___type_def_1aeae3f2752306d96164bb0b895aec60da" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCMR3</name></member>
+      <member refid="struct_t_i_m___type_def_1adab1e24ef769bbcb3e3769feae192ffb" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCR1</name></member>
+      <member refid="struct_t_i_m___type_def_1ab90aa584f07eeeac364a67f5e05faa93" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCR2</name></member>
+      <member refid="struct_t_i_m___type_def_1a27a478cc47a3dff478555ccb985b06a2" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCR3</name></member>
+      <member refid="struct_t_i_m___type_def_1a85fdb75569bd7ea26fa48544786535be" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCR4</name></member>
+      <member refid="struct_t_i_m___type_def_1a34474d97b298c0bf671b72203ae43713" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCR5</name></member>
+      <member refid="struct_t_i_m___type_def_1a522126f56497797646c95acb049bfa9c" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CCR6</name></member>
+      <member refid="struct_t_i_m___type_def_1a6095a27d764d06750fc0d642e08f8b2a" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CNT</name></member>
+      <member refid="struct_t_i_m___type_def_1ab0ec7102960640751d44e92ddac994f0" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CR1</name></member>
+      <member refid="struct_t_i_m___type_def_1afdfa307571967afb1d97943e982b6586" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>CR2</name></member>
+      <member refid="struct_t_i_m___type_def_1af6225cb8f4938f98204d11afaffd41c9" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>DCR</name></member>
+      <member refid="struct_t_i_m___type_def_1a07fccbd85b91e6dca03ce333c1457fcb" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>DIER</name></member>
+      <member refid="struct_t_i_m___type_def_1ab9087f2f31dd5edf59de6a59ae4e67ae" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>DMAR</name></member>
+      <member refid="struct_t_i_m___type_def_1a196ebdaac12b21e90320c6175da78ef6" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>EGR</name></member>
+      <member refid="struct_t_i_m___type_def_1a9b85c0208edae4594cbdfcf215573182" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>OR1</name></member>
+      <member refid="struct_t_i_m___type_def_1a9d4c753f09cbffdbe5c55008f0e8b180" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>PSC</name></member>
+      <member refid="struct_t_i_m___type_def_1aa1b1b7107fcf35abe39d20f5dfc230ee" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>RCR</name></member>
+      <member refid="struct_t_i_m___type_def_1a2870732a4fc2ecd7bbecfbcbbf5528b7" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>SMCR</name></member>
+      <member refid="struct_t_i_m___type_def_1af6aca2bbd40c0fb6df7c3aebe224a360" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>SR</name></member>
+      <member refid="struct_t_i_m___type_def_1a23d4cf627c278273f0b20f88592ae96a" prot="public" virt="non-virtual"><scope>TIM_TypeDef</scope><name>TISEL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

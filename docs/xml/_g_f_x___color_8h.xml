@@ -1,0 +1,1045 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_g_f_x___color_8h" kind="file" language="C++">
+    <compoundname>GFX_Color.h</compoundname>
+    <includedby refid="main_8c" local="yes">Core/Src/main.c</includedby>
+    <includedby refid="_g_f_x___color_8c" local="yes">RadarApp/DisplayDriver/GFX_Color.c</includedby>
+    <includedby refid="_i_l_i9341_8c" local="yes">RadarApp/DisplayDriver/ILI9341.c</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="3">
+        <label>RadarApp/DisplayDriver/GFX_Color.c</label>
+        <link refid="_g_f_x___color_8c"/>
+      </node>
+      <node id="1">
+        <label>RadarApp/DisplayDriver/GFX_Color.h</label>
+        <link refid="_g_f_x___color_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>RadarApp/DisplayDriver/ILI9341.c</label>
+        <link refid="_i_l_i9341_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_g_f_x___color_8h_1a0087da8bf630427b2be84146f9aa817a" prot="public" static="no">
+        <name>AVR_USING</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="25" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1a3fe83b7acdb281b9c0f815e8ef47d1fb" prot="public" static="no">
+        <name>STM32_USING</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="26" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" prot="public" static="no">
+        <name>ColorType</name>
+        <initializer>uint16_t</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="31" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1ac101099e7c44cddd11b39d4b5d9b76e8" prot="public" static="no">
+        <name>GFX_DrawPixel</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>color</defname></param>
+        <initializer><ref refid="_i_l_i9341_8c_1aeee3186252cba83694826a2c2c7014c5" kindref="member">ILI9341_WritePixel</ref>(x,y,color)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="33" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1a241aeeb764887ae5e3de58b98f04b16d" prot="public" static="no">
+        <name>WIDTH</name>
+        <initializer>SSD1306_LCDWIDTH</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="34" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1aed89bd71aee8be823e8a20ec4e093c1e" prot="public" static="no">
+        <name>HEIGHT</name>
+        <initializer>SSD1306_LCDHEIGHT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="35" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1aa8829668df37049cbb948e7a2bdaf24c" prot="public" static="no">
+        <name>PIXEL_BLACK</name>
+        <initializer><ref refid="_i_l_i9341_8h_1a50166b9a65012fb2f8fe0a0d5f519fa3" kindref="member">ILI9341_BLACK</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="36" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1a7eea33a429d9f1e57ad4a7da800d7eb9" prot="public" static="no">
+        <name>PIXEL_WHITE</name>
+        <initializer><ref refid="_i_l_i9341_8h_1a604507ef031b95291b2d177088fe03e4" kindref="member">ILI9341_WHITE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="37" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1affb2a25da634c05a8480a9e5ffbb614b" prot="public" static="no">
+        <name>USING_STRINGS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="39" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1ae4e2b54d0e9d9917fee0f4f9471248bd" prot="public" static="no">
+        <name>USING_IMAGE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="41" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1aff1d8c5cab0391bb1e033c49f376b7cd" prot="public" static="no">
+        <name>USING_IMAGE_ROTATE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="43" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1a5d68655e0ed708bb53ce7dfa4aa0b7f5" prot="public" static="no">
+        <name>USING_RECTANGLE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="47" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1a3b159d18c3abe5e03ce58f374aa714a0" prot="public" static="no">
+        <name>USING_CIRCLE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="48" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1ac1321cff02c252062c60fc7937c6897a" prot="public" static="no">
+        <name>USING_FILL_CIRCLE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="49" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1aafd0dfb111b1e0432eec27e304ef9799" prot="public" static="no">
+        <name>USING_ROUND_RECTANGLE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="50" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1a829cb83ba75e238d08489056102fb509" prot="public" static="no">
+        <name>USING_FILL_ROUND_RECTANGLE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="51" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1a2993e64e47a8a63d2753e6a9bb54df61" prot="public" static="no">
+        <name>USING_TRIANGLE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="52" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1a3d63cb7f63e5d7a410283a3e1fdfe9f6" prot="public" static="no">
+        <name>USING_FILL_TRIANGLE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="53" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1a9fc617c090e61e028d49ac8d0ffa195b" prot="public" static="no">
+        <name>USING_FILL_RECTANGLE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="64" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1a5a9ca40b946991d0973122213eed650f" prot="public" static="no">
+        <name>USING_LINES</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="67" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1a996979944387eae41c8646bee1a43347" prot="public" static="no">
+        <name>CIRCLE_HELPER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="70" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_f_x___color_8h_1ae24e42076857448fb99ecccf601aad1a" prot="public" static="no">
+        <name>FILL_CIRCLE_HELPER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="73" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_g_f_x___color_8h_1a596e777e1054a75cc927606847f187ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_SetFont</definition>
+        <argsstring>(const uint8_t *font_t)</argsstring>
+        <name>GFX_SetFont</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>font_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="80" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="28" bodyend="31" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="80" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1a25bf38fe8e0c3d3a242a6ade2b366ddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_SetFontSize</definition>
+        <argsstring>(uint8_t size_t)</argsstring>
+        <name>GFX_SetFontSize</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>size_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="81" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="33" bodyend="37" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="81" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1afc7fa4357b8e39e7921b39f91afed253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t GFX_GetFontHeight</definition>
+        <argsstring>(void)</argsstring>
+        <name>GFX_GetFontHeight</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="82" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="39" bodyend="42" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="82" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1a0baffeeea8d7717541e68161b398d568" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t GFX_GetFontWidth</definition>
+        <argsstring>(void)</argsstring>
+        <name>GFX_GetFontWidth</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="83" column="9" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="44" bodyend="47" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="83" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1ad0d8418c19681d21ede57c9f94002c00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t GFX_GetFontSize</definition>
+        <argsstring>(void)</argsstring>
+        <name>GFX_GetFontSize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="84" column="10" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="49" bodyend="52" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="84" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1ace713583b87d448f79610acb3fd279a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_DrawChar</definition>
+        <argsstring>(int x, int y, char chr, ColorType color)</argsstring>
+        <name>GFX_DrawChar</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>chr</declname>
+        </param>
+        <param>
+          <type><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="85" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="54" bodyend="73" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="85" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1ae4afef6fed31387849b2bddd1f242abb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_DrawString</definition>
+        <argsstring>(int x, int y, char *str, ColorType color)</argsstring>
+        <name>GFX_DrawString</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="86" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="95" bodyend="110" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="86" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1a53ffa293c0fc65aa299dc03c824729b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_DrawString_const_size</definition>
+        <argsstring>(int x, int y, char *str, ColorType color, uint8_t const_size)</argsstring>
+        <name>GFX_DrawString_const_size</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>const_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="87" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="111" bodyend="126" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="87" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1a344587315e8efa17178ab82ab2bb013c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_DrawChar_const_size</definition>
+        <argsstring>(int x, int y, char chr, ColorType color, uint8_t const_size)</argsstring>
+        <name>GFX_DrawChar_const_size</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>chr</declname>
+        </param>
+        <param>
+          <type><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>const_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="88" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="74" bodyend="93" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="88" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1ad3342c4916c09b7e6264afa73c533382" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_DrawLine</definition>
+        <argsstring>(int x_start, int y_start, int x_end, int y_end, ColorType color)</argsstring>
+        <name>GFX_DrawLine</name>
+        <param>
+          <type>int</type>
+          <declname>x_start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y_start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x_end</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y_end</declname>
+        </param>
+        <param>
+          <type><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="92" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="181" bodyend="193" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="92" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1a9c4f1dd628691910617cfc6875f36696" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_DrawRectangle</definition>
+        <argsstring>(int x, int y, uint16_t w, uint16_t h, ColorType color)</argsstring>
+        <name>GFX_DrawRectangle</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="96" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="196" bodyend="204" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="96" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1aa4174018595051ef59fa9b443865bd7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_DrawFillRectangle</definition>
+        <argsstring>(int x, int y, uint16_t w, uint16_t h, ColorType color)</argsstring>
+        <name>GFX_DrawFillRectangle</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="99" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="207" bodyend="213" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="99" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1ac01dbc1da0cefba24b38056b49bdd8c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_DrawCircle</definition>
+        <argsstring>(int x0, int y0, uint16_t r, ColorType color)</argsstring>
+        <name>GFX_DrawCircle</name>
+        <param>
+          <type>int</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y0</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="102" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="216" bodyend="249" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="102" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1a7e0aa6a2910ddecdf56189ec3903d25e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_DrawCircleHelper</definition>
+        <argsstring>(int x0, int y0, uint16_t r, uint8_t cornername, ColorType color)</argsstring>
+        <name>GFX_DrawCircleHelper</name>
+        <param>
+          <type>int</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y0</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>cornername</declname>
+        </param>
+        <param>
+          <type><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="103" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="252" bodyend="286" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="103" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1a1d7cd8472bce76c8dd8bbba7ab53e10b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_DrawFillCircle</definition>
+        <argsstring>(int x0, int y0, uint16_t r, ColorType color)</argsstring>
+        <name>GFX_DrawFillCircle</name>
+        <param>
+          <type>int</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y0</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="106" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="320" bodyend="325" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="106" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1a2e36718ba835609b1aecd4ddf3131302" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_DrawRoundRectangle</definition>
+        <argsstring>(int x, int y, uint16_t w, uint16_t h, uint16_t r, ColorType color)</argsstring>
+        <name>GFX_DrawRoundRectangle</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="109" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="328" bodyend="339" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="109" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1abacc0a541cb47255ef77bdbf64471653" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_DrawFillRoundRectangle</definition>
+        <argsstring>(int x, int y, uint16_t w, uint16_t h, uint16_t r, ColorType color)</argsstring>
+        <name>GFX_DrawFillRoundRectangle</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="112" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="342" bodyend="351" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="112" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1a2d76c57a88461e77257af6ab5df26235" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_DrawTriangle</definition>
+        <argsstring>(int x0, int y0, int x1, int y1, int x2, int y2, ColorType color)</argsstring>
+        <name>GFX_DrawTriangle</name>
+        <param>
+          <type>int</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y2</declname>
+        </param>
+        <param>
+          <type><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="115" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="354" bodyend="359" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="115" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1a2dd7abbfd0a6c989d5a317f238d5ce21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_DrawFillTriangle</definition>
+        <argsstring>(int x0, int y0, int x1, int y1, int x2, int y2, ColorType color)</argsstring>
+        <name>GFX_DrawFillTriangle</name>
+        <param>
+          <type>int</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y2</declname>
+        </param>
+        <param>
+          <type><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="118" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="362" bodyend="437" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="118" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1a9a9fc6c36509ec595d6d36681a270cca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_Image</definition>
+        <argsstring>(int x, int y, const uint8_t *img, uint16_t w, uint16_t h)</argsstring>
+        <name>GFX_Image</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="125" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="456" bodyend="469" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="125" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_f_x___color_8h_1aab6a1316ded700e486a3282035f61c87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GFX_ImageRotate</definition>
+        <argsstring>(int x, int y, const uint8_t *img, uint8_t w, uint8_t h, ColorType color, uint16_t angle)</argsstring>
+        <name>GFX_ImageRotate</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/GFX_Color.h" line="127" column="6" bodyfile="RadarApp/DisplayDriver/GFX_Color.c" bodystart="577" bodyend="605" declfile="RadarApp/DisplayDriver/GFX_Color.h" declline="127" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>GFX_BW.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>MIT<sp/>License.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>25.05.2017</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Mateusz<sp/>Salamon</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>www.msalamon.pl</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>mateusz@msalamon.pl</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GFX_Color_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GFX_Color_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/***************************************************************</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>SETTINGS</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Please<sp/>set<sp/>what<sp/>functionality<sp/>you<sp/>want<sp/>to<sp/>use.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Some<sp/>functions<sp/>need<sp/>other<sp/>functionalities.<sp/>It<sp/>should<sp/>works<sp/>automatically.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>1<sp/>-<sp/>will<sp/>be<sp/>compiled</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>0<sp/>-<sp/>won&apos;t<sp/>be<sp/>compiled</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_g_f_x___color_8h_1a0087da8bf630427b2be84146f9aa817a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVR_USING<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="_g_f_x___color_8h_1a3fe83b7acdb281b9c0f815e8ef47d1fb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32_USING<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Adjust<sp/>color<sp/>type<sp/>to<sp/>your<sp/>TFT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ColorType<sp/>uint16_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_g_f_x___color_8h_1ac101099e7c44cddd11b39d4b5d9b76e8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GFX_DrawPixel(x,y,color)<sp/>ILI9341_WritePixel(x,y,color)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="_g_f_x___color_8h_1a241aeeb764887ae5e3de58b98f04b16d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WIDTH<sp/>SSD1306_LCDWIDTH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="_g_f_x___color_8h_1aed89bd71aee8be823e8a20ec4e093c1e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HEIGHT<sp/>SSD1306_LCDHEIGHT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_g_f_x___color_8h_1aa8829668df37049cbb948e7a2bdaf24c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIXEL_BLACK<sp/>ILI9341_BLACK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="_g_f_x___color_8h_1a7eea33a429d9f1e57ad4a7da800d7eb9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIXEL_WHITE<sp/>ILI9341_WHITE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_g_f_x___color_8h_1affb2a25da634c05a8480a9e5ffbb614b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USING_STRINGS<sp/>1<sp/></highlight><highlight class="comment">//<sp/>0<sp/>-<sp/>do<sp/>not<sp/>compile,<sp/>1<sp/>-<sp/>compile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="_g_f_x___color_8h_1ae4e2b54d0e9d9917fee0f4f9471248bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USING_IMAGE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USING_IMAGE<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="_g_f_x___color_8h_1aff1d8c5cab0391bb1e033c49f376b7cd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USING_IMAGE_ROTATE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Trygonometric<sp/>graphic<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="_g_f_x___color_8h_1a5d68655e0ed708bb53ce7dfa4aa0b7f5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USING_RECTANGLE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_g_f_x___color_8h_1a3b159d18c3abe5e03ce58f374aa714a0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USING_CIRCLE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="_g_f_x___color_8h_1ac1321cff02c252062c60fc7937c6897a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USING_FILL_CIRCLE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="_g_f_x___color_8h_1aafd0dfb111b1e0432eec27e304ef9799" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USING_ROUND_RECTANGLE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="_g_f_x___color_8h_1a829cb83ba75e238d08489056102fb509" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USING_FILL_ROUND_RECTANGLE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="_g_f_x___color_8h_1a2993e64e47a8a63d2753e6a9bb54df61" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USING_TRIANGLE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_g_f_x___color_8h_1a3d63cb7f63e5d7a410283a3e1fdfe9f6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USING_FILL_TRIANGLE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>((USING_FILL_ROUND_RECTANGLE<sp/>==<sp/>0)<sp/>&amp;&amp;<sp/>(USING_STRINGS<sp/>==<sp/>0))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USING_FILL_RECTANGLE<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USING_RECTANGLE<sp/>==<sp/>0)<sp/>&amp;&amp;<sp/>(USING_FILL_RECTANGLE<sp/>==<sp/>0)<sp/>&amp;&amp;<sp/>(USING_FILL_CIRCLE<sp/>==<sp/>0)<sp/>&amp;&amp;<sp/>(USING_ROUND_RECTANGLE<sp/>==<sp/>0)<sp/>&amp;&amp;<sp/>(USING_TRIANGLE<sp/>==<sp/>0)<sp/>&amp;&amp;<sp/>(USING_FILL_TRIANGLE<sp/>==<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USING_LINES<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USING_FILL_ROUND_RECTANGLE<sp/>==<sp/>1<sp/>||<sp/>USING_STRINGS<sp/>==<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="_g_f_x___color_8h_1a9fc617c090e61e028d49ac8d0ffa195b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USING_FILL_RECTANGLE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USING_RECTANGLE<sp/>==<sp/>1)<sp/>||<sp/>(USING_FILL_RECTANGLE<sp/>==<sp/>1)<sp/>||<sp/>(USING_FILL_CIRCLE<sp/>==<sp/>1)<sp/>||<sp/>(USING_ROUND_RECTANGLE<sp/>==<sp/>1)<sp/>||<sp/>(USING_TRIANGLE<sp/>==<sp/>1)<sp/>||<sp/>(USING_FILL_TRIANGLE<sp/>==<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="_g_f_x___color_8h_1a5a9ca40b946991d0973122213eed650f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USING_LINES<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USING_ROUND_RECTANGLE<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="_g_f_x___color_8h_1a996979944387eae41c8646bee1a43347" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CIRCLE_HELPER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USING_FILL_CIRCLE<sp/>==<sp/>1)<sp/>||<sp/>(USING_FILL_ROUND_RECTANGLE<sp/>==<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="_g_f_x___color_8h_1ae24e42076857448fb99ecccf601aad1a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FILL_CIRCLE_HELPER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USING_STRINGS<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1a596e777e1054a75cc927606847f187ce" kindref="member">GFX_SetFont</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>font_t);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1a25bf38fe8e0c3d3a242a6ade2b366ddd" kindref="member">GFX_SetFontSize</ref>(uint8_t<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">uint8_t<sp/><ref refid="_g_f_x___color_8h_1afc7fa4357b8e39e7921b39f91afed253" kindref="member">GFX_GetFontHeight</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">uint8_t<sp/><ref refid="_g_f_x___color_8h_1a0baffeeea8d7717541e68161b398d568" kindref="member">GFX_GetFontWidth</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">uint8_t<sp/><sp/><ref refid="_g_f_x___color_8h_1ad0d8418c19681d21ede57c9f94002c00" kindref="member">GFX_GetFontSize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1ace713583b87d448f79610acb3fd279a5" kindref="member">GFX_DrawChar</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>chr,<sp/><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref><sp/>color);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1ae4afef6fed31387849b2bddd1f242abb" kindref="member">GFX_DrawString</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str,<sp/><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref><sp/>color);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1a53ffa293c0fc65aa299dc03c824729b4" kindref="member">GFX_DrawString_const_size</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str,<sp/><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref><sp/>color,<sp/>uint8_t<sp/>const_size);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1a344587315e8efa17178ab82ab2bb013c" kindref="member">GFX_DrawChar_const_size</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>chr,<sp/><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref><sp/>color,<sp/>uint8_t<sp/>const_size);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USING_LINES<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1ad3342c4916c09b7e6264afa73c533382" kindref="member">GFX_DrawLine</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x_start,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y_start,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x_end,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y_end,<sp/><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref><sp/>color);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USING_RECTANGLE<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1a9c4f1dd628691910617cfc6875f36696" kindref="member">GFX_DrawRectangle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/>uint16_t<sp/>w,<sp/>uint16_t<sp/>h,<sp/><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref><sp/>color);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USING_FILL_RECTANGLE<sp/>==1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1aa4174018595051ef59fa9b443865bd7c" kindref="member">GFX_DrawFillRectangle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/>uint16_t<sp/>w,<sp/>uint16_t<sp/>h,<sp/><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref><sp/>color);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USING_CIRCLE<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1ac01dbc1da0cefba24b38056b49bdd8c4" kindref="member">GFX_DrawCircle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y0,<sp/>uint16_t<sp/>r,<sp/><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref><sp/>color);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1a7e0aa6a2910ddecdf56189ec3903d25e" kindref="member">GFX_DrawCircleHelper</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y0,<sp/>uint16_t<sp/>r,<sp/>uint8_t<sp/>cornername,<sp/><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref><sp/>color);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USING_FILL_CIRCLE<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1a1d7cd8472bce76c8dd8bbba7ab53e10b" kindref="member">GFX_DrawFillCircle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y0,<sp/>uint16_t<sp/>r,<sp/><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref><sp/>color);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USING_ROUND_RECTANGLE<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1a2e36718ba835609b1aecd4ddf3131302" kindref="member">GFX_DrawRoundRectangle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/>uint16_t<sp/>w,<sp/>uint16_t<sp/>h,<sp/>uint16_t<sp/>r,<sp/><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref><sp/>color);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USING_FILL_ROUND_RECTANGLE<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1abacc0a541cb47255ef77bdbf64471653" kindref="member">GFX_DrawFillRoundRectangle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/>uint16_t<sp/>w,<sp/>uint16_t<sp/>h,<sp/>uint16_t<sp/>r,<sp/><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref><sp/>color);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USING_TRIANGLE<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1a2d76c57a88461e77257af6ab5df26235" kindref="member">GFX_DrawTriangle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y2,<sp/><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref><sp/>color);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USING_FILL_TRIANGLE<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1a2dd7abbfd0a6c989d5a317f238d5ce21" kindref="member">GFX_DrawFillTriangle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y2,<sp/><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref><sp/>color);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USING_IMAGE<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>AVR_USING<sp/>==1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GFX_Image_P(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/>uint8_t<sp/>*img,<sp/>uint8_t<sp/>w,<sp/>uint8_t<sp/>h,<sp/><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref><sp/>color);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>STM32_USING<sp/>==1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1a9a9fc6c36509ec595d6d36681a270cca" kindref="member">GFX_Image</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*img,<sp/>uint16_t<sp/>w,<sp/>uint16_t<sp/>h);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USING_IMAGE_ROTATE<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_g_f_x___color_8h_1aab6a1316ded700e486a3282035f61c87" kindref="member">GFX_ImageRotate</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*img,<sp/>uint8_t<sp/>w,<sp/>uint8_t<sp/>h,<sp/><ref refid="_g_f_x___color_8h_1a8203569622d0ce5174c1debb0bce5046" kindref="member">ColorType</ref><sp/>color,<sp/>uint16_t<sp/>angle);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GFX_Color_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="RadarApp/DisplayDriver/GFX_Color.h"/>
+  </compounddef>
+</doxygen>

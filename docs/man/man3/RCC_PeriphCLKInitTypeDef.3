@@ -1,0 +1,54 @@
+.TH "RCC_PeriphCLKInitTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_PeriphCLKInitTypeDef \- RCC extended clocks structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_hal_rcc_ex\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBPeriphClockSelection\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBUsart1ClockSelection\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBI2c1ClockSelection\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBI2s1ClockSelection\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBAdcClockSelection\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRTCClockSelection\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+RCC extended clocks structure definition\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t RCC_PeriphCLKInitTypeDef::AdcClockSelection"
+Specifies ADC interface clock source This parameter can be a value of \fBRCC ADC Clock Source\fP 
+.SS "uint32_t RCC_PeriphCLKInitTypeDef::I2c1ClockSelection"
+Specifies I2C1 clock source This parameter can be a value of \fBRCC I2C1 Clock Source\fP 
+.SS "uint32_t RCC_PeriphCLKInitTypeDef::I2s1ClockSelection"
+Specifies I2S1 clock source This parameter can be a value of \fBRCC I2S1 Clock Source\fP 
+.SS "uint32_t RCC_PeriphCLKInitTypeDef::PeriphClockSelection"
+The Extended Clock to be configured\&. This parameter can be a value of \fBPeriph Clock Selection\fP 
+.SS "uint32_t RCC_PeriphCLKInitTypeDef::RTCClockSelection"
+Specifies RTC clock source\&. This parameter can be a value of \fBRTC Clock Source\fP 
+.SS "uint32_t RCC_PeriphCLKInitTypeDef::Usart1ClockSelection"
+Specifies USART1 clock source\&. This parameter can be a value of \fBRCC USART1 Clock Source\fP 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

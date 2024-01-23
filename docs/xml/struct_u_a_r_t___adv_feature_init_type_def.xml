@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_u_a_r_t___adv_feature_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>UART_AdvFeatureInitTypeDef</compoundname>
+    <includes refid="stm32g0xx__hal__uart_8h" local="no">stm32g0xx_hal_uart.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_a_r_t___adv_feature_init_type_def_1ad3ebc9a49be4aa143250abfbe6c427d1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AdvFeatureInit</definition>
+        <argsstring></argsstring>
+        <name>AdvFeatureInit</name>
+        <qualifiedname>UART_AdvFeatureInitTypeDef::AdvFeatureInit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies which advanced UART features is initialized. Several Advanced Features may be initialized at the same time . This parameter can be a value of <ref refid="group___u_a_r_t___advanced___features___initialization___type" kindref="compound">UART Advanced Feature Initialization Type</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="104" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___adv_feature_init_type_def_1a60e165495975a7d568a8ffad4e8d8d82" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TxPinLevelInvert</definition>
+        <argsstring></argsstring>
+        <name>TxPinLevelInvert</name>
+        <qualifiedname>UART_AdvFeatureInitTypeDef::TxPinLevelInvert</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the TX pin active level is inverted. This parameter can be a value of <ref refid="group___u_a_r_t___tx___inv" kindref="compound">UART Advanced Feature TX Pin Active Level Inversion</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="109" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___adv_feature_init_type_def_1aac4de1a4e7a0036f074a66c3bdc81322" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RxPinLevelInvert</definition>
+        <argsstring></argsstring>
+        <name>RxPinLevelInvert</name>
+        <qualifiedname>UART_AdvFeatureInitTypeDef::RxPinLevelInvert</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the RX pin active level is inverted. This parameter can be a value of <ref refid="group___u_a_r_t___rx___inv" kindref="compound">UART Advanced Feature RX Pin Active Level Inversion</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="112" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___adv_feature_init_type_def_1a1feb1398f541e95a819aea3aed2d7552" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DataInvert</definition>
+        <argsstring></argsstring>
+        <name>DataInvert</name>
+        <qualifiedname>UART_AdvFeatureInitTypeDef::DataInvert</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether data are inverted (positive/direct logic vs negative/inverted logic). This parameter can be a value of <ref refid="group___u_a_r_t___data___inv" kindref="compound">UART Advanced Feature Binary Data Inversion</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="115" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___adv_feature_init_type_def_1ac584fd738a8eca4af2f92cd10d593ab0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Swap</definition>
+        <argsstring></argsstring>
+        <name>Swap</name>
+        <qualifiedname>UART_AdvFeatureInitTypeDef::Swap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether TX and RX pins are swapped. This parameter can be a value of <ref refid="group___u_a_r_t___rx___tx___swap" kindref="compound">UART Advanced Feature RX TX Pins Swap</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="119" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___adv_feature_init_type_def_1a482f50369e2e24a560b9fd8db7b23aae" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OverrunDisable</definition>
+        <argsstring></argsstring>
+        <name>OverrunDisable</name>
+        <qualifiedname>UART_AdvFeatureInitTypeDef::OverrunDisable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the reception overrun detection is disabled. This parameter can be a value of <ref refid="group___u_a_r_t___overrun___disable" kindref="compound">UART Advanced Feature Overrun Disable</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="122" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___adv_feature_init_type_def_1a8ebe515413b9d135fc10d8b6d7a81ac9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMADisableonRxError</definition>
+        <argsstring></argsstring>
+        <name>DMADisableonRxError</name>
+        <qualifiedname>UART_AdvFeatureInitTypeDef::DMADisableonRxError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the DMA is disabled in case of reception error. This parameter can be a value of <ref refid="group___u_a_r_t___d_m_a___disable__on___rx___error" kindref="compound">UART Advanced Feature DMA Disable On Rx Error</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="125" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___adv_feature_init_type_def_1aa0294d5e5601064664be71c10a9601c2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AutoBaudRateEnable</definition>
+        <argsstring></argsstring>
+        <name>AutoBaudRateEnable</name>
+        <qualifiedname>UART_AdvFeatureInitTypeDef::AutoBaudRateEnable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether auto Baud rate detection is enabled. This parameter can be a value of <ref refid="group___u_a_r_t___auto_baud_rate___enable" kindref="compound">UART Advanced Feature Auto BaudRate Enable</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="128" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___adv_feature_init_type_def_1a428166055c9499e0753a75703aeadae5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AutoBaudRateMode</definition>
+        <argsstring></argsstring>
+        <name>AutoBaudRateMode</name>
+        <qualifiedname>UART_AdvFeatureInitTypeDef::AutoBaudRateMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If auto Baud rate detection is enabled, specifies how the rate detection is carried out. This parameter can be a value of <ref refid="group___u_a_r_t___auto_baud___rate___mode" kindref="compound">UART Advanced Feature AutoBaud Rate Mode</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="131" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___adv_feature_init_type_def_1a4533506da01ae4e82bf4dd7211fb1c45" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MSBFirst</definition>
+        <argsstring></argsstring>
+        <name>MSBFirst</name>
+        <qualifiedname>UART_AdvFeatureInitTypeDef::MSBFirst</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether MSB is sent first on UART line. This parameter can be a value of <ref refid="group___u_a_r_t___m_s_b___first" kindref="compound">UART Advanced Feature MSB First</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="135" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>UART Advanced Features initialization structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="102" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="103" bodyend="137"/>
+    <listofallmembers>
+      <member refid="struct_u_a_r_t___adv_feature_init_type_def_1ad3ebc9a49be4aa143250abfbe6c427d1" prot="public" virt="non-virtual"><scope>UART_AdvFeatureInitTypeDef</scope><name>AdvFeatureInit</name></member>
+      <member refid="struct_u_a_r_t___adv_feature_init_type_def_1aa0294d5e5601064664be71c10a9601c2" prot="public" virt="non-virtual"><scope>UART_AdvFeatureInitTypeDef</scope><name>AutoBaudRateEnable</name></member>
+      <member refid="struct_u_a_r_t___adv_feature_init_type_def_1a428166055c9499e0753a75703aeadae5" prot="public" virt="non-virtual"><scope>UART_AdvFeatureInitTypeDef</scope><name>AutoBaudRateMode</name></member>
+      <member refid="struct_u_a_r_t___adv_feature_init_type_def_1a1feb1398f541e95a819aea3aed2d7552" prot="public" virt="non-virtual"><scope>UART_AdvFeatureInitTypeDef</scope><name>DataInvert</name></member>
+      <member refid="struct_u_a_r_t___adv_feature_init_type_def_1a8ebe515413b9d135fc10d8b6d7a81ac9" prot="public" virt="non-virtual"><scope>UART_AdvFeatureInitTypeDef</scope><name>DMADisableonRxError</name></member>
+      <member refid="struct_u_a_r_t___adv_feature_init_type_def_1a4533506da01ae4e82bf4dd7211fb1c45" prot="public" virt="non-virtual"><scope>UART_AdvFeatureInitTypeDef</scope><name>MSBFirst</name></member>
+      <member refid="struct_u_a_r_t___adv_feature_init_type_def_1a482f50369e2e24a560b9fd8db7b23aae" prot="public" virt="non-virtual"><scope>UART_AdvFeatureInitTypeDef</scope><name>OverrunDisable</name></member>
+      <member refid="struct_u_a_r_t___adv_feature_init_type_def_1aac4de1a4e7a0036f074a66c3bdc81322" prot="public" virt="non-virtual"><scope>UART_AdvFeatureInitTypeDef</scope><name>RxPinLevelInvert</name></member>
+      <member refid="struct_u_a_r_t___adv_feature_init_type_def_1ac584fd738a8eca4af2f92cd10d593ab0" prot="public" virt="non-virtual"><scope>UART_AdvFeatureInitTypeDef</scope><name>Swap</name></member>
+      <member refid="struct_u_a_r_t___adv_feature_init_type_def_1a60e165495975a7d568a8ffad4e8d8d82" prot="public" virt="non-virtual"><scope>UART_AdvFeatureInitTypeDef</scope><name>TxPinLevelInvert</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

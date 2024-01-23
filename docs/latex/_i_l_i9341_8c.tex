@@ -1,0 +1,109 @@
+\doxysection{Radar\+App/\+Display\+Driver/\+ILI9341.c File Reference}
+\hypertarget{_i_l_i9341_8c}{}\label{_i_l_i9341_8c}\index{RadarApp/DisplayDriver/ILI9341.c@{RadarApp/DisplayDriver/ILI9341.c}}
+{\ttfamily \#include "{}main.\+h"{}}\newline
+{\ttfamily \#include "{}GFX\+\_\+\+Color.\+h"{}}\newline
+{\ttfamily \#include "{}ILI9341.\+h"{}}\newline
+{\ttfamily \#include "{}stdint.\+h"{}}\newline
+{\ttfamily \#include "{}stdio.\+h"{}}\newline
+{\ttfamily \#include "{}string.\+h"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8c_a0538f2015fef138ace1fd64a3d652cd1}{ILI9341\+\_\+\+Init}} (\mbox{\hyperlink{group___s_p_i___exported___types_gab633e49dd034de2f3a1fe79853d78d18}{SPI\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}hspi)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8c_a6ac0c89f746e798e7430746bf50fe499}{ILI9341\+\_\+\+Set\+Rotation}} (uint8\+\_\+t m)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8c_a7ae207b9f55148240d0dee03167a25f9}{ILI9341\+\_\+\+Send\+To\+TFT}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}Byte, uint32\+\_\+t Length)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8c_a0f241f9cfcb703e2994154ea35251892}{ILI9341\+\_\+\+Send\+Command}} (uint8\+\_\+t Command)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8c_aa1381a729cb6af2b71c6bed0c37cc906}{ILI9341\+\_\+\+Send\+Command\+And\+Data}} (uint8\+\_\+t Command, uint8\+\_\+t \texorpdfstring{$\ast$}{*}Data, uint16\+\_\+t Length)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8c_a89228cd93ba2f68acf969f8f7eccd78b}{ILI9341\+\_\+\+Set\+Addr\+Window}} (uint16\+\_\+t x1, uint16\+\_\+t y1, uint16\+\_\+t w, uint16\+\_\+t h)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8c_a81ddeb47ba6c0c3353ae31e7e15b4910}{ILI9341\+\_\+\+Send\+Data16}} (uint16\+\_\+t Data)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8c_aeee3186252cba83694826a2c2c7014c5}{ILI9341\+\_\+\+Write\+Pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t color)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8c_a0fcdb5427fdab7f7eb09abce73b9ea5b}{ILI9341\+\_\+\+Draw\+Image}} (int x, int y, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}img, uint16\+\_\+t w, uint16\+\_\+t h)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8c_a324ebd8d3bc5309c8c9da80b0c07d10a}{ILI9341\+\_\+\+Write\+Screen}} (uint16\+\_\+t color)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group___s_p_i___exported___types_gab633e49dd034de2f3a1fe79853d78d18}{SPI\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_i_l_i9341_8c_ad9126660b8462f31e24ded49e7452453}{Tft\+\_\+hspi}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_i_l_i9341_8c_a0fcdb5427fdab7f7eb09abce73b9ea5b}\label{_i_l_i9341_8c_a0fcdb5427fdab7f7eb09abce73b9ea5b} 
+\index{ILI9341.c@{ILI9341.c}!ILI9341\_DrawImage@{ILI9341\_DrawImage}}
+\index{ILI9341\_DrawImage@{ILI9341\_DrawImage}!ILI9341.c@{ILI9341.c}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_DrawImage()}{ILI9341\_DrawImage()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Draw\+Image (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{img,  }\item[{uint16\+\_\+t}]{w,  }\item[{uint16\+\_\+t}]{h }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8c_a0538f2015fef138ace1fd64a3d652cd1}\label{_i_l_i9341_8c_a0538f2015fef138ace1fd64a3d652cd1} 
+\index{ILI9341.c@{ILI9341.c}!ILI9341\_Init@{ILI9341\_Init}}
+\index{ILI9341\_Init@{ILI9341\_Init}!ILI9341.c@{ILI9341.c}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_Init()}{ILI9341\_Init()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___s_p_i___exported___types_gab633e49dd034de2f3a1fe79853d78d18}{SPI\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{hspi }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8c_a0f241f9cfcb703e2994154ea35251892}\label{_i_l_i9341_8c_a0f241f9cfcb703e2994154ea35251892} 
+\index{ILI9341.c@{ILI9341.c}!ILI9341\_SendCommand@{ILI9341\_SendCommand}}
+\index{ILI9341\_SendCommand@{ILI9341\_SendCommand}!ILI9341.c@{ILI9341.c}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_SendCommand()}{ILI9341\_SendCommand()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Send\+Command (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{Command }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8c_aa1381a729cb6af2b71c6bed0c37cc906}\label{_i_l_i9341_8c_aa1381a729cb6af2b71c6bed0c37cc906} 
+\index{ILI9341.c@{ILI9341.c}!ILI9341\_SendCommandAndData@{ILI9341\_SendCommandAndData}}
+\index{ILI9341\_SendCommandAndData@{ILI9341\_SendCommandAndData}!ILI9341.c@{ILI9341.c}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_SendCommandAndData()}{ILI9341\_SendCommandAndData()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Send\+Command\+And\+Data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{Command,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{Data,  }\item[{uint16\+\_\+t}]{Length }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8c_a81ddeb47ba6c0c3353ae31e7e15b4910}\label{_i_l_i9341_8c_a81ddeb47ba6c0c3353ae31e7e15b4910} 
+\index{ILI9341.c@{ILI9341.c}!ILI9341\_SendData16@{ILI9341\_SendData16}}
+\index{ILI9341\_SendData16@{ILI9341\_SendData16}!ILI9341.c@{ILI9341.c}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_SendData16()}{ILI9341\_SendData16()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Send\+Data16 (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{Data }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8c_a7ae207b9f55148240d0dee03167a25f9}\label{_i_l_i9341_8c_a7ae207b9f55148240d0dee03167a25f9} 
+\index{ILI9341.c@{ILI9341.c}!ILI9341\_SendToTFT@{ILI9341\_SendToTFT}}
+\index{ILI9341\_SendToTFT@{ILI9341\_SendToTFT}!ILI9341.c@{ILI9341.c}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_SendToTFT()}{ILI9341\_SendToTFT()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Send\+To\+TFT (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{Byte,  }\item[{uint32\+\_\+t}]{Length }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8c_a89228cd93ba2f68acf969f8f7eccd78b}\label{_i_l_i9341_8c_a89228cd93ba2f68acf969f8f7eccd78b} 
+\index{ILI9341.c@{ILI9341.c}!ILI9341\_SetAddrWindow@{ILI9341\_SetAddrWindow}}
+\index{ILI9341\_SetAddrWindow@{ILI9341\_SetAddrWindow}!ILI9341.c@{ILI9341.c}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_SetAddrWindow()}{ILI9341\_SetAddrWindow()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Set\+Addr\+Window (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x1,  }\item[{uint16\+\_\+t}]{y1,  }\item[{uint16\+\_\+t}]{w,  }\item[{uint16\+\_\+t}]{h }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8c_a6ac0c89f746e798e7430746bf50fe499}\label{_i_l_i9341_8c_a6ac0c89f746e798e7430746bf50fe499} 
+\index{ILI9341.c@{ILI9341.c}!ILI9341\_SetRotation@{ILI9341\_SetRotation}}
+\index{ILI9341\_SetRotation@{ILI9341\_SetRotation}!ILI9341.c@{ILI9341.c}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_SetRotation()}{ILI9341\_SetRotation()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Set\+Rotation (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{m }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8c_aeee3186252cba83694826a2c2c7014c5}\label{_i_l_i9341_8c_aeee3186252cba83694826a2c2c7014c5} 
+\index{ILI9341.c@{ILI9341.c}!ILI9341\_WritePixel@{ILI9341\_WritePixel}}
+\index{ILI9341\_WritePixel@{ILI9341\_WritePixel}!ILI9341.c@{ILI9341.c}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_WritePixel()}{ILI9341\_WritePixel()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Write\+Pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8c_a324ebd8d3bc5309c8c9da80b0c07d10a}\label{_i_l_i9341_8c_a324ebd8d3bc5309c8c9da80b0c07d10a} 
+\index{ILI9341.c@{ILI9341.c}!ILI9341\_WriteScreen@{ILI9341\_WriteScreen}}
+\index{ILI9341\_WriteScreen@{ILI9341\_WriteScreen}!ILI9341.c@{ILI9341.c}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_WriteScreen()}{ILI9341\_WriteScreen()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Write\+Screen (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_i_l_i9341_8c_ad9126660b8462f31e24ded49e7452453}\label{_i_l_i9341_8c_ad9126660b8462f31e24ded49e7452453} 
+\index{ILI9341.c@{ILI9341.c}!Tft\_hspi@{Tft\_hspi}}
+\index{Tft\_hspi@{Tft\_hspi}!ILI9341.c@{ILI9341.c}}
+\doxysubsubsection{\texorpdfstring{Tft\_hspi}{Tft\_hspi}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___s_p_i___exported___types_gab633e49dd034de2f3a1fe79853d78d18}{SPI\+\_\+\+Handle\+Type\+Def}}\texorpdfstring{$\ast$}{*} Tft\+\_\+hspi}
+

@@ -1,0 +1,80 @@
+.TH "TIMEx_Exported_Functions_Group5" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIMEx_Exported_Functions_Group5 \- Extended Peripheral Control functions
+.PP
+ \- Peripheral Control functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIMEx_ConfigCommutEvent\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t InputTrigger, uint32_t CommutationSource)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIMEx_ConfigCommutEvent_IT\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t InputTrigger, uint32_t CommutationSource)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIMEx_ConfigCommutEvent_DMA\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t InputTrigger, uint32_t CommutationSource)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIMEx_MasterConfigSynchronization\fP (\fBTIM_HandleTypeDef\fP *htim, const \fBTIM_MasterConfigTypeDef\fP *sMasterConfig)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIMEx_ConfigBreakDeadTime\fP (\fBTIM_HandleTypeDef\fP *htim, const \fBTIM_BreakDeadTimeConfigTypeDef\fP *sBreakDeadTimeConfig)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIMEx_ConfigBreakInput\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t BreakInput, const \fBTIMEx_BreakInputConfigTypeDef\fP *sBreakInputConfig)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIMEx_GroupChannel5\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t Channels)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIMEx_RemapConfig\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t Remap)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIMEx_TISelection\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t TISelection, uint32_t Channel)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIMEx_DisarmBreakInput\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t BreakInput)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIMEx_ReArmBreakInput\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t BreakInput)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Peripheral Control functions\&. 
+
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIMEx_ConfigBreakDeadTime (\fBTIM_HandleTypeDef\fP * htim, const \fBTIM_BreakDeadTimeConfigTypeDef\fP * sBreakDeadTimeConfig)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIMEx_ConfigBreakInput (\fBTIM_HandleTypeDef\fP * htim, uint32_t BreakInput, const \fBTIMEx_BreakInputConfigTypeDef\fP * sBreakInputConfig)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIMEx_ConfigCommutEvent (\fBTIM_HandleTypeDef\fP * htim, uint32_t InputTrigger, uint32_t CommutationSource)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIMEx_ConfigCommutEvent_DMA (\fBTIM_HandleTypeDef\fP * htim, uint32_t InputTrigger, uint32_t CommutationSource)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIMEx_ConfigCommutEvent_IT (\fBTIM_HandleTypeDef\fP * htim, uint32_t InputTrigger, uint32_t CommutationSource)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIMEx_DisarmBreakInput (\fBTIM_HandleTypeDef\fP * htim, uint32_t BreakInput)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIMEx_GroupChannel5 (\fBTIM_HandleTypeDef\fP * htim, uint32_t Channels)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIMEx_MasterConfigSynchronization (\fBTIM_HandleTypeDef\fP * htim, const \fBTIM_MasterConfigTypeDef\fP * sMasterConfig)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIMEx_ReArmBreakInput (\fBTIM_HandleTypeDef\fP * htim, uint32_t BreakInput)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIMEx_RemapConfig (\fBTIM_HandleTypeDef\fP * htim, uint32_t Remap)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIMEx_TISelection (\fBTIM_HandleTypeDef\fP * htim, uint32_t TISelection, uint32_t Channel)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

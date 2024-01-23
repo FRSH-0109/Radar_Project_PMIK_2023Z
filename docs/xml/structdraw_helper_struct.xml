@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structdraw_helper_struct" kind="struct" language="C++" prot="public">
+    <compoundname>drawHelperStruct</compoundname>
+    <includes refid="main_8h" local="no">main.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdraw_helper_struct_1aeb3238cbef436c3e4bac1fa66d733e99" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double drawScale</definition>
+        <argsstring></argsstring>
+        <name>drawScale</name>
+        <qualifiedname>drawHelperStruct::drawScale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="44" column="8" bodyfile="Core/Inc/main.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t measureScalesNumber</definition>
+        <argsstring></argsstring>
+        <name>measureScalesNumber</name>
+        <qualifiedname>drawHelperStruct::measureScalesNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="45" column="9" bodyfile="Core/Inc/main.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* measureScaleY</definition>
+        <argsstring></argsstring>
+        <name>measureScaleY</name>
+        <qualifiedname>drawHelperStruct::measureScaleY</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="46" column="10" bodyfile="Core/Inc/main.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdraw_helper_struct_1a8c9f16a7e18d06854e12f89c5fb5c031" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* measureScaleCm</definition>
+        <argsstring></argsstring>
+        <name>measureScaleCm</name>
+        <qualifiedname>drawHelperStruct::measureScaleCm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="47" column="10" bodyfile="Core/Inc/main.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdraw_helper_struct_1affa6ef93faeb748b815a0edc0390aa14" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t xp</definition>
+        <argsstring></argsstring>
+        <name>xp</name>
+        <qualifiedname>drawHelperStruct::xp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="48" column="9" bodyfile="Core/Inc/main.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdraw_helper_struct_1a5c3d54605970a1ce4360b1ddc1f6e9ec" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t yp</definition>
+        <argsstring></argsstring>
+        <name>yp</name>
+        <qualifiedname>drawHelperStruct::yp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="48" column="12" bodyfile="Core/Inc/main.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Core/Inc/main.h" line="43" column="1" bodyfile="Core/Inc/main.h" bodystart="43" bodyend="49"/>
+    <listofallmembers>
+      <member refid="structdraw_helper_struct_1aeb3238cbef436c3e4bac1fa66d733e99" prot="public" virt="non-virtual"><scope>drawHelperStruct</scope><name>drawScale</name></member>
+      <member refid="structdraw_helper_struct_1a8c9f16a7e18d06854e12f89c5fb5c031" prot="public" virt="non-virtual"><scope>drawHelperStruct</scope><name>measureScaleCm</name></member>
+      <member refid="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" prot="public" virt="non-virtual"><scope>drawHelperStruct</scope><name>measureScalesNumber</name></member>
+      <member refid="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" prot="public" virt="non-virtual"><scope>drawHelperStruct</scope><name>measureScaleY</name></member>
+      <member refid="structdraw_helper_struct_1affa6ef93faeb748b815a0edc0390aa14" prot="public" virt="non-virtual"><scope>drawHelperStruct</scope><name>xp</name></member>
+      <member refid="structdraw_helper_struct_1a5c3d54605970a1ce4360b1ddc1f6e9ec" prot="public" virt="non-virtual"><scope>drawHelperStruct</scope><name>yp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,200 @@
+.TH "EXTI_Line" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EXTI_Line \- EXTI Line
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBEXTI_LINE_0\fP   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x00u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_1\fP   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x01u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_2\fP   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x02u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_3\fP   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x03u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_4\fP   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x04u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_5\fP   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x05u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_6\fP   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x06u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_7\fP   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x07u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_8\fP   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x08u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_9\fP   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x09u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_10\fP   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x0Au)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_11\fP   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x0Bu)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_12\fP   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x0Cu)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_13\fP   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x0Du)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_14\fP   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x0Eu)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_15\fP   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x0Fu)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_16\fP   (\fBEXTI_CONFIG\fP   | \fBEXTI_REG1\fP | 0x10u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_17\fP   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x11u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_18\fP   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x12u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_19\fP   (\fBEXTI_DIRECT\fP   | \fBEXTI_REG1\fP | 0x13u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_20\fP   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x14u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_21\fP   (\fBEXTI_DIRECT\fP   | \fBEXTI_REG1\fP | 0x15u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_22\fP   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x16u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_23\fP   (\fBEXTI_DIRECT\fP   | \fBEXTI_REG1\fP | 0x17u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_24\fP   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x18u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_25\fP   (\fBEXTI_DIRECT\fP   | \fBEXTI_REG1\fP | 0x19u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_26\fP   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x1Au)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_27\fP   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x1Bu)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_28\fP   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x1Cu)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_29\fP   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x1Du)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_30\fP   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x1Eu)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_31\fP   (\fBEXTI_DIRECT\fP   | \fBEXTI_REG1\fP | 0x1Fu)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_32\fP   (\fBEXTI_RESERVED\fP | \fBEXTI_REG2\fP | 0x00u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_33\fP   (\fBEXTI_RESERVED\fP | \fBEXTI_REG2\fP | 0x01u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_34\fP   (\fBEXTI_RESERVED\fP | \fBEXTI_REG2\fP | 0x02u)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_LINE_35\fP   (\fBEXTI_RESERVED\fP | \fBEXTI_REG2\fP | 0x03u)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define EXTI_LINE_0   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x00u)"
+
+.SS "#define EXTI_LINE_1   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x01u)"
+
+.SS "#define EXTI_LINE_10   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x0Au)"
+
+.SS "#define EXTI_LINE_11   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x0Bu)"
+
+.SS "#define EXTI_LINE_12   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x0Cu)"
+
+.SS "#define EXTI_LINE_13   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x0Du)"
+
+.SS "#define EXTI_LINE_14   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x0Eu)"
+
+.SS "#define EXTI_LINE_15   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x0Fu)"
+
+.SS "#define EXTI_LINE_16   (\fBEXTI_CONFIG\fP   | \fBEXTI_REG1\fP | 0x10u)"
+
+.SS "#define EXTI_LINE_17   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x11u)"
+
+.SS "#define EXTI_LINE_18   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x12u)"
+
+.SS "#define EXTI_LINE_19   (\fBEXTI_DIRECT\fP   | \fBEXTI_REG1\fP | 0x13u)"
+
+.SS "#define EXTI_LINE_2   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x02u)"
+
+.SS "#define EXTI_LINE_20   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x14u)"
+
+.SS "#define EXTI_LINE_21   (\fBEXTI_DIRECT\fP   | \fBEXTI_REG1\fP | 0x15u)"
+
+.SS "#define EXTI_LINE_22   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x16u)"
+
+.SS "#define EXTI_LINE_23   (\fBEXTI_DIRECT\fP   | \fBEXTI_REG1\fP | 0x17u)"
+
+.SS "#define EXTI_LINE_24   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x18u)"
+
+.SS "#define EXTI_LINE_25   (\fBEXTI_DIRECT\fP   | \fBEXTI_REG1\fP | 0x19u)"
+
+.SS "#define EXTI_LINE_26   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x1Au)"
+
+.SS "#define EXTI_LINE_27   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x1Bu)"
+
+.SS "#define EXTI_LINE_28   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x1Cu)"
+
+.SS "#define EXTI_LINE_29   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x1Du)"
+
+.SS "#define EXTI_LINE_3   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x03u)"
+
+.SS "#define EXTI_LINE_30   (\fBEXTI_RESERVED\fP | \fBEXTI_REG1\fP | 0x1Eu)"
+
+.SS "#define EXTI_LINE_31   (\fBEXTI_DIRECT\fP   | \fBEXTI_REG1\fP | 0x1Fu)"
+
+.SS "#define EXTI_LINE_32   (\fBEXTI_RESERVED\fP | \fBEXTI_REG2\fP | 0x00u)"
+
+.SS "#define EXTI_LINE_33   (\fBEXTI_RESERVED\fP | \fBEXTI_REG2\fP | 0x01u)"
+
+.SS "#define EXTI_LINE_34   (\fBEXTI_RESERVED\fP | \fBEXTI_REG2\fP | 0x02u)"
+
+.SS "#define EXTI_LINE_35   (\fBEXTI_RESERVED\fP | \fBEXTI_REG2\fP | 0x03u)"
+
+.SS "#define EXTI_LINE_4   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x04u)"
+
+.SS "#define EXTI_LINE_5   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x05u)"
+
+.SS "#define EXTI_LINE_6   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x06u)"
+
+.SS "#define EXTI_LINE_7   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x07u)"
+
+.SS "#define EXTI_LINE_8   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x08u)"
+
+.SS "#define EXTI_LINE_9   (\fBEXTI_GPIO\fP     | \fBEXTI_REG1\fP | 0x09u)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

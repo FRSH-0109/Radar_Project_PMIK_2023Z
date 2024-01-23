@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___u_a_r_t___tx___inv" kind="group">
+    <compoundname>UART_Tx_Inv</compoundname>
+    <title>UART Advanced Feature TX Pin Active Level Inversion</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_a_r_t___tx___inv_1gaf2ef53664b0d4b93758575b9ee1b949b" prot="public" static="no">
+        <name>UART_ADVFEATURE_TXINV_DISABLE</name>
+        <initializer>0x00000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TX pin active level inversion disable </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="570" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="570" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___tx___inv_1ga1e0ddbed5fc5ddce5314f63e96e29c3d" prot="public" static="no">
+        <name>UART_ADVFEATURE_TXINV_ENABLE</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gadc2ad93cdc6d8f138f455a2fb671a211" kindref="member">USART_CR2_TXINV</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TX pin active level inversion enable <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="571" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="571" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

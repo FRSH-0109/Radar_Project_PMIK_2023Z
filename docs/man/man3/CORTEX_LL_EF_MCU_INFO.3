@@ -1,0 +1,95 @@
+.TH "CORTEX_LL_EF_MCU_INFO" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CORTEX_LL_EF_MCU_INFO \- MCU INFO
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_CPUID_GetImplementer\fP (void)"
+.br
+.RI "Get Implementer code @rmtoll SCB_CPUID IMPLEMENTER LL_CPUID_GetImplementer\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_CPUID_GetVariant\fP (void)"
+.br
+.RI "Get Variant number (The r value in the rnpn product revision identifier) @rmtoll SCB_CPUID VARIANT LL_CPUID_GetVariant\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_CPUID_GetArchitecture\fP (void)"
+.br
+.RI "Get Architecture number @rmtoll SCB_CPUID ARCHITECTURE LL_CPUID_GetArchitecture\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_CPUID_GetParNo\fP (void)"
+.br
+.RI "Get Part number @rmtoll SCB_CPUID PARTNO LL_CPUID_GetParNo\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_CPUID_GetRevision\fP (void)"
+.br
+.RI "Get Revision number (The p value in the rnpn product revision identifier, indicates patch release) @rmtoll SCB_CPUID REVISION LL_CPUID_GetRevision\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "\fB__STATIC_INLINE\fP uint32_t LL_CPUID_GetArchitecture (void)"
+
+.PP
+Get Architecture number @rmtoll SCB_CPUID ARCHITECTURE LL_CPUID_GetArchitecture\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIValue\fP should be equal to 0xC for Cortex-M0+ devices 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP uint32_t LL_CPUID_GetImplementer (void)"
+
+.PP
+Get Implementer code @rmtoll SCB_CPUID IMPLEMENTER LL_CPUID_GetImplementer\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIValue\fP should be equal to 0x41 for ARM 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP uint32_t LL_CPUID_GetParNo (void)"
+
+.PP
+Get Part number @rmtoll SCB_CPUID PARTNO LL_CPUID_GetParNo\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIValue\fP should be equal to 0xC60 for Cortex-M0+ 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP uint32_t LL_CPUID_GetRevision (void)"
+
+.PP
+Get Revision number (The p value in the rnpn product revision identifier, indicates patch release) @rmtoll SCB_CPUID REVISION LL_CPUID_GetRevision\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIValue\fP between 0 and 255 (0x1: patch 1) 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP uint32_t LL_CPUID_GetVariant (void)"
+
+.PP
+Get Variant number (The r value in the rnpn product revision identifier) @rmtoll SCB_CPUID VARIANT LL_CPUID_GetVariant\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIValue\fP between 0 and 255 (0x0: revision 0) 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

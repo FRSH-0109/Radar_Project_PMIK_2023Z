@@ -1,0 +1,2358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___c_m_s_i_s___core___sys_tick_functions" kind="group">
+    <compoundname>CMSIS_Core_SysTickFunctions</compoundname>
+    <title>SysTick Functions</title>
+    <innergroup refid="group___c_m_s_i_s__core___debug_functions">ITM Functions</innergroup>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>APSR_Type::_reserved0</qualifiedname>
+        <bitfield>28</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0..27 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="237" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gacd4a2b64faee91e4a9eef300667fa222" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <qualifiedname>APSR_Type::V</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 28 Overflow condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="238" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <qualifiedname>APSR_Type::C</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 29 Carry condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="239" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga5ae954cbd9986cd64625d7fa00943c8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <qualifiedname>APSR_Type::Z</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 30 Zero condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="240" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gabae0610bc2a97bbf7f689e953e0b451f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>APSR_Type::N</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 31 Negative condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="241" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga32a2dd868cf2cbfcf201dc8274e50e80" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_a_p_s_r___type" kindref="compound">APSR_Type</ref></type>
+        <definition>struct APSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>APSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="242" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gad502ba7dbb2aab5f87c782b28f02622d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <qualifiedname>IPSR_Type::ISR</qualifiedname>
+        <bitfield>9</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0.. 8 Exception number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="267" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>IPSR_Type::_reserved0</qualifiedname>
+        <bitfield>23</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 9..31 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="268" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gaaf75ff9f957783d0111846b25efe2977" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_i_p_s_r___type" kindref="compound">IPSR_Type</ref></type>
+        <definition>struct IPSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>IPSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="269" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gad502ba7dbb2aab5f87c782b28f02622d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <qualifiedname>xPSR_Type::ISR</qualifiedname>
+        <bitfield>9</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0.. 8 Exception number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="285" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>xPSR_Type::_reserved0</qualifiedname>
+        <bitfield>15</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 9..23 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="286" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga6e1cf12e53a20224f6f62c001d9be972" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <qualifiedname>xPSR_Type::T</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 24 Thumb bit (read 0) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="287" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga959a73d8faee56599b7e792a7c5a2d16" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved1</definition>
+        <argsstring></argsstring>
+        <name>_reserved1</name>
+        <qualifiedname>xPSR_Type::_reserved1</qualifiedname>
+        <bitfield>3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 25..27 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="288" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gacd4a2b64faee91e4a9eef300667fa222" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <qualifiedname>xPSR_Type::V</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 28 Overflow condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="289" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <qualifiedname>xPSR_Type::C</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 29 Carry condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="290" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga5ae954cbd9986cd64625d7fa00943c8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <qualifiedname>xPSR_Type::Z</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 30 Zero condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="291" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gabae0610bc2a97bbf7f689e953e0b451f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>xPSR_Type::N</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 31 Negative condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="292" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga6dc5f5da83b980196155ebd0e8260b73" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="unionx_p_s_r___type" kindref="compound">xPSR_Type</ref></type>
+        <definition>struct xPSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>xPSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="293" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga2a6e513e8a6bf4e58db169e312172332" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t nPRIV</definition>
+        <argsstring></argsstring>
+        <name>nPRIV</name>
+        <qualifiedname>CONTROL_Type::nPRIV</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0 Execution privilege in Thread mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="324" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gae185aac93686ffc78e998a9daf41415b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPSEL</definition>
+        <argsstring></argsstring>
+        <name>SPSEL</name>
+        <qualifiedname>CONTROL_Type::SPSEL</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 1 Stack-pointer select </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="325" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga959a73d8faee56599b7e792a7c5a2d16" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved1</definition>
+        <argsstring></argsstring>
+        <name>_reserved1</name>
+        <qualifiedname>CONTROL_Type::_reserved1</qualifiedname>
+        <bitfield>30</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 2..31 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="326" column="14" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gabebf7b37aed5cff100d395293cf8a15e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_c_o_n_t_r_o_l___type" kindref="compound">CONTROL_Type</ref></type>
+        <definition>struct CONTROL_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>CONTROL_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="327" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga5a3763fa8e079c90b6a8e09c0587eef4" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t IPR[124U]</definition>
+        <argsstring>[124U]</argsstring>
+        <name>IPR</name>
+        <qualifiedname>NVIC_Type::IPR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x300 (R/W) Interrupt Priority Register </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="365" column="18" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gaf86c61a5d38a4fc9cef942a12744486b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED0</definition>
+        <argsstring></argsstring>
+        <name>RESERVED0</name>
+        <qualifiedname>SCB_Type::RESERVED0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="388" column="18" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac4ac04e673b5b8320d53f7b0947db902" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED1</definition>
+        <argsstring></argsstring>
+        <name>RESERVED1</name>
+        <qualifiedname>SCB_Type::RESERVED1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="393" column="18" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga67fd6058e3196a723d64df2d22ae6daa" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SHPR[2U]</definition>
+        <argsstring>[2U]</argsstring>
+        <name>SHPR</name>
+        <qualifiedname>SCB_Type::SHPR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x01C (R/W) System Handlers Priority Registers. [0] is RESERVED </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="394" column="18" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga67a4fc1b84d0b73e6db59fadf990f3a4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED0</definition>
+        <argsstring>[6U]</argsstring>
+        <name>RESERVED0</name>
+        <qualifiedname>DWT_Type::RESERVED0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="613" column="18" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="613" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga3fbc5c84a2a24bd6195e970ff8898024" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t PSCR</definition>
+        <argsstring></argsstring>
+        <name>PSCR</name>
+        <qualifiedname>TPI_Type::PSCR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x308 (R/W) Periodic Synchronization Control Register </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="736" column="18" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="736" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gacc9e51f871c357a9094105435b150d13" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint32_t</type>
+        <definition>__OM uint32_t LAR</definition>
+        <argsstring></argsstring>
+        <name>LAR</name>
+        <qualifiedname>TPI_Type::LAR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFB0 ( /W) Software Lock Access Register </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="738" column="18" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="738" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga7219432d03f6cd1d220f4fe10aef4880" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t LSR</definition>
+        <argsstring></argsstring>
+        <name>LSR</name>
+        <qualifiedname>TPI_Type::LSR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFB4 (R/ ) Software Lock Status Register </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="739" column="18" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="739" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gaee6e8f4171b9024d763ba87f3ce92e73" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t TYPE</definition>
+        <argsstring></argsstring>
+        <name>TYPE</name>
+        <qualifiedname>TPI_Type::TYPE</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFC8 (R/ ) Device Identifier Register </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_armv8mbl.h" line="741" column="18" bodyfile="Drivers/CMSIS/Include/core_armv8mbl.h" bodystart="741" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>APSR_Type::_reserved0</qualifiedname>
+        <bitfield>28</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0..27 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="203" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gacd4a2b64faee91e4a9eef300667fa222" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <qualifiedname>APSR_Type::V</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 28 Overflow condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="204" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <qualifiedname>APSR_Type::C</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 29 Carry condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="205" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga5ae954cbd9986cd64625d7fa00943c8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <qualifiedname>APSR_Type::Z</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 30 Zero condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="206" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gabae0610bc2a97bbf7f689e953e0b451f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>APSR_Type::N</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 31 Negative condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="207" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gaa7e9925cf616978baefb876257515b43" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_a_p_s_r___type" kindref="compound">APSR_Type</ref></type>
+        <definition>struct APSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>APSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="208" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gad502ba7dbb2aab5f87c782b28f02622d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <qualifiedname>IPSR_Type::ISR</qualifiedname>
+        <bitfield>9</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0.. 8 Exception number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="233" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>IPSR_Type::_reserved0</qualifiedname>
+        <bitfield>23</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 9..31 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="234" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gaa2df12cbeb9a2ee4c4b90e38ecce05c6" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_i_p_s_r___type" kindref="compound">IPSR_Type</ref></type>
+        <definition>struct IPSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>IPSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="235" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gad502ba7dbb2aab5f87c782b28f02622d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <qualifiedname>xPSR_Type::ISR</qualifiedname>
+        <bitfield>9</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0.. 8 Exception number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="251" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>xPSR_Type::_reserved0</qualifiedname>
+        <bitfield>15</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 9..23 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="252" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga6e1cf12e53a20224f6f62c001d9be972" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <qualifiedname>xPSR_Type::T</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 24 Thumb bit (read 0) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="253" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga959a73d8faee56599b7e792a7c5a2d16" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved1</definition>
+        <argsstring></argsstring>
+        <name>_reserved1</name>
+        <qualifiedname>xPSR_Type::_reserved1</qualifiedname>
+        <bitfield>3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 25..27 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="254" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gacd4a2b64faee91e4a9eef300667fa222" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <qualifiedname>xPSR_Type::V</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 28 Overflow condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="255" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <qualifiedname>xPSR_Type::C</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 29 Carry condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="256" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga5ae954cbd9986cd64625d7fa00943c8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <qualifiedname>xPSR_Type::Z</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 30 Zero condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="257" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gabae0610bc2a97bbf7f689e953e0b451f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>xPSR_Type::N</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 31 Negative condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="258" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gaa0d0d6588be64eb47b6d8c56d2b77311" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="unionx_p_s_r___type" kindref="compound">xPSR_Type</ref></type>
+        <definition>struct xPSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>xPSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="259" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>CONTROL_Type::_reserved0</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0 Reserved</para>
+<para>bit: 3..31 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="290" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>CONTROL_Type::_reserved0</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="290" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gae185aac93686ffc78e998a9daf41415b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPSEL</definition>
+        <argsstring></argsstring>
+        <name>SPSEL</name>
+        <qualifiedname>CONTROL_Type::SPSEL</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 1 Stack to be used </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="291" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga959a73d8faee56599b7e792a7c5a2d16" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved1</definition>
+        <argsstring></argsstring>
+        <name>_reserved1</name>
+        <qualifiedname>CONTROL_Type::_reserved1</qualifiedname>
+        <bitfield>30</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 2..31 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="292" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gaeba196dfa61adb4b5ac2e1452ab39818" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_c_o_n_t_r_o_l___type" kindref="compound">CONTROL_Type</ref></type>
+        <definition>struct CONTROL_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>CONTROL_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="293" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gaf9ad019f87b73c544bb2acf1a5623737" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED1</definition>
+        <argsstring>[31U]</argsstring>
+        <name>RESERVED1</name>
+        <qualifiedname>NVIC_Type::RESERVED1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="319" column="18" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga1787506107747d2dedae05295d3532da" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint8_t IP</definition>
+        <argsstring>[8U]</argsstring>
+        <name>IP</name>
+        <qualifiedname>NVIC_Type::IP</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x300 (R/W) Interrupt Priority Register</para>
+<para>Offset: 0x300 (R/W) Interrupt Priority Register (8Bit wide) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="325" column="18" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gaa043193516e3fc0abbf58ce7cf8cfb4e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint8_t SHP</definition>
+        <argsstring>[2U]</argsstring>
+        <name>SHP</name>
+        <qualifiedname>SCB_Type::SHP</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x01C (R/W) System Handlers Priority Registers. [0] is RESERVED</para>
+<para>Offset: 0x018 (R/W) System Handlers Priority Registers (4-7, 8-11, 12-15) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0.h" line="350" column="18" bodyfile="Drivers/CMSIS/Include/core_cm0.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>APSR_Type::_reserved0</qualifiedname>
+        <bitfield>28</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0..27 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="214" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gacd4a2b64faee91e4a9eef300667fa222" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <qualifiedname>APSR_Type::V</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 28 Overflow condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="215" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <qualifiedname>APSR_Type::C</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 29 Carry condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="216" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga5ae954cbd9986cd64625d7fa00943c8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <qualifiedname>APSR_Type::Z</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 30 Zero condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="217" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gabae0610bc2a97bbf7f689e953e0b451f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>APSR_Type::N</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 31 Negative condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="218" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga63f6167038215aff0bb25f1821289dac" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_a_p_s_r___type" kindref="compound">APSR_Type</ref></type>
+        <definition>struct APSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>APSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="219" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gad502ba7dbb2aab5f87c782b28f02622d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <qualifiedname>IPSR_Type::ISR</qualifiedname>
+        <bitfield>9</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0.. 8 Exception number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="244" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>IPSR_Type::_reserved0</qualifiedname>
+        <bitfield>23</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 9..31 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="245" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gaba64684505ba169c103761b5beb8af09" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_i_p_s_r___type" kindref="compound">IPSR_Type</ref></type>
+        <definition>struct IPSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>IPSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="246" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gad502ba7dbb2aab5f87c782b28f02622d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <qualifiedname>xPSR_Type::ISR</qualifiedname>
+        <bitfield>9</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0.. 8 Exception number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="262" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>xPSR_Type::_reserved0</qualifiedname>
+        <bitfield>15</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 9..23 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="263" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga6e1cf12e53a20224f6f62c001d9be972" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <qualifiedname>xPSR_Type::T</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 24 Thumb bit (read 0) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="264" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga959a73d8faee56599b7e792a7c5a2d16" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved1</definition>
+        <argsstring></argsstring>
+        <name>_reserved1</name>
+        <qualifiedname>xPSR_Type::_reserved1</qualifiedname>
+        <bitfield>3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 25..27 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="265" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gacd4a2b64faee91e4a9eef300667fa222" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <qualifiedname>xPSR_Type::V</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 28 Overflow condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="266" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <qualifiedname>xPSR_Type::C</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 29 Carry condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="267" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga5ae954cbd9986cd64625d7fa00943c8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <qualifiedname>xPSR_Type::Z</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 30 Zero condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="268" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gabae0610bc2a97bbf7f689e953e0b451f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>xPSR_Type::N</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 31 Negative condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="269" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga51dbe612a53e3d5580378d850953d823" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="unionx_p_s_r___type" kindref="compound">xPSR_Type</ref></type>
+        <definition>struct xPSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>xPSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="270" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga2a6e513e8a6bf4e58db169e312172332" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t nPRIV</definition>
+        <argsstring></argsstring>
+        <name>nPRIV</name>
+        <qualifiedname>CONTROL_Type::nPRIV</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0 Execution privilege in Thread mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="301" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gae185aac93686ffc78e998a9daf41415b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPSEL</definition>
+        <argsstring></argsstring>
+        <name>SPSEL</name>
+        <qualifiedname>CONTROL_Type::SPSEL</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 1 Stack to be used </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="302" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga959a73d8faee56599b7e792a7c5a2d16" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved1</definition>
+        <argsstring></argsstring>
+        <name>_reserved1</name>
+        <qualifiedname>CONTROL_Type::_reserved1</qualifiedname>
+        <bitfield>30</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 2..31 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="303" column="14" bodyfile="Drivers/CMSIS/Include/core_cm0plus.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gae1adeae3ea4c983d26c49daaddda7121" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_c_o_n_t_r_o_l___type" kindref="compound">CONTROL_Type</ref></type>
+        <definition>struct CONTROL_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>CONTROL_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm0plus.h" line="304" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>APSR_Type::_reserved0</qualifiedname>
+        <bitfield>28</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0..27 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="203" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gacd4a2b64faee91e4a9eef300667fa222" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <qualifiedname>APSR_Type::V</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 28 Overflow condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="204" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <qualifiedname>APSR_Type::C</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 29 Carry condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="205" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga5ae954cbd9986cd64625d7fa00943c8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <qualifiedname>APSR_Type::Z</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 30 Zero condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="206" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gabae0610bc2a97bbf7f689e953e0b451f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>APSR_Type::N</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 31 Negative condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="207" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga5fa099d4d331b74d925a3088f89302e6" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_a_p_s_r___type" kindref="compound">APSR_Type</ref></type>
+        <definition>struct APSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>APSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="208" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gad502ba7dbb2aab5f87c782b28f02622d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <qualifiedname>IPSR_Type::ISR</qualifiedname>
+        <bitfield>9</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0.. 8 Exception number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="233" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>IPSR_Type::_reserved0</qualifiedname>
+        <bitfield>23</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 9..31 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="234" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga5c0d7333c4f438d501143e909697a103" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_i_p_s_r___type" kindref="compound">IPSR_Type</ref></type>
+        <definition>struct IPSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>IPSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="235" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gad502ba7dbb2aab5f87c782b28f02622d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <qualifiedname>xPSR_Type::ISR</qualifiedname>
+        <bitfield>9</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0.. 8 Exception number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="251" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>xPSR_Type::_reserved0</qualifiedname>
+        <bitfield>15</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 9..23 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="252" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga6e1cf12e53a20224f6f62c001d9be972" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <qualifiedname>xPSR_Type::T</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 24 Thumb bit (read 0) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="253" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga959a73d8faee56599b7e792a7c5a2d16" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved1</definition>
+        <argsstring></argsstring>
+        <name>_reserved1</name>
+        <qualifiedname>xPSR_Type::_reserved1</qualifiedname>
+        <bitfield>3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 25..27 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="254" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gacd4a2b64faee91e4a9eef300667fa222" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <qualifiedname>xPSR_Type::V</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 28 Overflow condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="255" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <qualifiedname>xPSR_Type::C</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 29 Carry condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="256" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga5ae954cbd9986cd64625d7fa00943c8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <qualifiedname>xPSR_Type::Z</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 30 Zero condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="257" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gabae0610bc2a97bbf7f689e953e0b451f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>xPSR_Type::N</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 31 Negative condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="258" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gaf40df18a94e09bab658f42f8a2aa6a63" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="unionx_p_s_r___type" kindref="compound">xPSR_Type</ref></type>
+        <definition>struct xPSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>xPSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="259" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>CONTROL_Type::_reserved0</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="290" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gae185aac93686ffc78e998a9daf41415b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPSEL</definition>
+        <argsstring></argsstring>
+        <name>SPSEL</name>
+        <qualifiedname>CONTROL_Type::SPSEL</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 1 Stack to be used </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="291" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga959a73d8faee56599b7e792a7c5a2d16" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved1</definition>
+        <argsstring></argsstring>
+        <name>_reserved1</name>
+        <qualifiedname>CONTROL_Type::_reserved1</qualifiedname>
+        <bitfield>30</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 2..31 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="292" column="14" bodyfile="Drivers/CMSIS/Include/core_cm1.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga15f4b71da60b80ebf365694c08f85bfb" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_c_o_n_t_r_o_l___type" kindref="compound">CONTROL_Type</ref></type>
+        <definition>struct CONTROL_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>CONTROL_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm1.h" line="293" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>APSR_Type::_reserved0</qualifiedname>
+        <bitfield>28</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0..27 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="237" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gacd4a2b64faee91e4a9eef300667fa222" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <qualifiedname>APSR_Type::V</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 28 Overflow condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="238" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <qualifiedname>APSR_Type::C</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 29 Carry condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="239" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga5ae954cbd9986cd64625d7fa00943c8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <qualifiedname>APSR_Type::Z</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 30 Zero condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="240" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gabae0610bc2a97bbf7f689e953e0b451f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>APSR_Type::N</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 31 Negative condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="241" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gaf0fc10994a03d2ec1b5cc5ad2fd6d1dd" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_a_p_s_r___type" kindref="compound">APSR_Type</ref></type>
+        <definition>struct APSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>APSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="242" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gad502ba7dbb2aab5f87c782b28f02622d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <qualifiedname>IPSR_Type::ISR</qualifiedname>
+        <bitfield>9</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0.. 8 Exception number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="267" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>IPSR_Type::_reserved0</qualifiedname>
+        <bitfield>23</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 9..31 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="268" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac2841ce696381df6f887af760133a86b" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_i_p_s_r___type" kindref="compound">IPSR_Type</ref></type>
+        <definition>struct IPSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>IPSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="269" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gad502ba7dbb2aab5f87c782b28f02622d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <qualifiedname>xPSR_Type::ISR</qualifiedname>
+        <bitfield>9</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0.. 8 Exception number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="285" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>xPSR_Type::_reserved0</qualifiedname>
+        <bitfield>15</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 9..23 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="286" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga6e1cf12e53a20224f6f62c001d9be972" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <qualifiedname>xPSR_Type::T</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 24 Thumb bit (read 0) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="287" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga959a73d8faee56599b7e792a7c5a2d16" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved1</definition>
+        <argsstring></argsstring>
+        <name>_reserved1</name>
+        <qualifiedname>xPSR_Type::_reserved1</qualifiedname>
+        <bitfield>3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 25..27 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="288" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gacd4a2b64faee91e4a9eef300667fa222" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <qualifiedname>xPSR_Type::V</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 28 Overflow condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="289" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <qualifiedname>xPSR_Type::C</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 29 Carry condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="290" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga5ae954cbd9986cd64625d7fa00943c8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <qualifiedname>xPSR_Type::Z</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 30 Zero condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="291" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gabae0610bc2a97bbf7f689e953e0b451f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>xPSR_Type::N</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 31 Negative condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="292" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga0bd5ce509e238f569764686f70f91927" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="unionx_p_s_r___type" kindref="compound">xPSR_Type</ref></type>
+        <definition>struct xPSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>xPSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="293" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga2a6e513e8a6bf4e58db169e312172332" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t nPRIV</definition>
+        <argsstring></argsstring>
+        <name>nPRIV</name>
+        <qualifiedname>CONTROL_Type::nPRIV</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0 Execution privilege in Thread mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="324" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gae185aac93686ffc78e998a9daf41415b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPSEL</definition>
+        <argsstring></argsstring>
+        <name>SPSEL</name>
+        <qualifiedname>CONTROL_Type::SPSEL</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 1 Stack-pointer select </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="325" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga959a73d8faee56599b7e792a7c5a2d16" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved1</definition>
+        <argsstring></argsstring>
+        <name>_reserved1</name>
+        <qualifiedname>CONTROL_Type::_reserved1</qualifiedname>
+        <bitfield>30</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 2..31 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="326" column="14" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gad9d971d9d0ea13b665fe8516bef6a5d4" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_c_o_n_t_r_o_l___type" kindref="compound">CONTROL_Type</ref></type>
+        <definition>struct CONTROL_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>CONTROL_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="327" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga986b12d0c4f33d326504fe705228bd7b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t ITFTTD0</definition>
+        <argsstring></argsstring>
+        <name>ITFTTD0</name>
+        <qualifiedname>TPI_Type::ITFTTD0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xEEC (R/ ) Integration Test FIFO Test Data 0 Register </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="739" column="18" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="739" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga49859dd8fc90723f440ee4e750a3d752" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t ITATBCTR2</definition>
+        <argsstring></argsstring>
+        <name>ITATBCTR2</name>
+        <qualifiedname>TPI_Type::ITATBCTR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xEF0 (R/W) Integration Test ATB Control Register 2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="740" column="18" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="740" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga4ab517b49e30734dced6bed9befb1f4a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t ITFTTD1</definition>
+        <argsstring></argsstring>
+        <name>ITFTTD1</name>
+        <qualifiedname>TPI_Type::ITFTTD1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xEFC (R/ ) Integration Test FIFO Test Data 1 Register </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_cm23.h" line="743" column="18" bodyfile="Drivers/CMSIS/Include/core_cm23.h" bodystart="743" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>APSR_Type::_reserved0</qualifiedname>
+        <bitfield>28</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0..27 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="209" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gacd4a2b64faee91e4a9eef300667fa222" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <qualifiedname>APSR_Type::V</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 28 Overflow condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="210" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <qualifiedname>APSR_Type::C</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 29 Carry condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="211" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga5ae954cbd9986cd64625d7fa00943c8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <qualifiedname>APSR_Type::Z</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 30 Zero condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="212" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gabae0610bc2a97bbf7f689e953e0b451f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>APSR_Type::N</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 31 Negative condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="213" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga4867425ccb5663193d5c29f77b55f143" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_a_p_s_r___type" kindref="compound">APSR_Type</ref></type>
+        <definition>struct APSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>APSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="214" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gad502ba7dbb2aab5f87c782b28f02622d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <qualifiedname>IPSR_Type::ISR</qualifiedname>
+        <bitfield>9</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0.. 8 Exception number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="239" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>IPSR_Type::_reserved0</qualifiedname>
+        <bitfield>23</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 9..31 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="240" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga0529a1da6aec817ce9a898b12dfa20ec" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_i_p_s_r___type" kindref="compound">IPSR_Type</ref></type>
+        <definition>struct IPSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>IPSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="241" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gad502ba7dbb2aab5f87c782b28f02622d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <qualifiedname>xPSR_Type::ISR</qualifiedname>
+        <bitfield>9</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0.. 8 Exception number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="257" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>xPSR_Type::_reserved0</qualifiedname>
+        <bitfield>15</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 9..23 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="258" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga6e1cf12e53a20224f6f62c001d9be972" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <qualifiedname>xPSR_Type::T</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 24 Thumb bit (read 0) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="259" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga959a73d8faee56599b7e792a7c5a2d16" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved1</definition>
+        <argsstring></argsstring>
+        <name>_reserved1</name>
+        <qualifiedname>xPSR_Type::_reserved1</qualifiedname>
+        <bitfield>3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 25..27 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="260" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gacd4a2b64faee91e4a9eef300667fa222" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <qualifiedname>xPSR_Type::V</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 28 Overflow condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="261" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <qualifiedname>xPSR_Type::C</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 29 Carry condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="262" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga5ae954cbd9986cd64625d7fa00943c8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <qualifiedname>xPSR_Type::Z</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 30 Zero condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="263" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gabae0610bc2a97bbf7f689e953e0b451f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>xPSR_Type::N</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 31 Negative condition code flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="264" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga64a41335a91d0bcf1dfadd563cf7da73" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="unionx_p_s_r___type" kindref="compound">xPSR_Type</ref></type>
+        <definition>struct xPSR_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>xPSR_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="265" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <qualifiedname>CONTROL_Type::_reserved0</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="296" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gae185aac93686ffc78e998a9daf41415b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPSEL</definition>
+        <argsstring></argsstring>
+        <name>SPSEL</name>
+        <qualifiedname>CONTROL_Type::SPSEL</qualifiedname>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 1 Stack to be used </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="297" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1ga959a73d8faee56599b7e792a7c5a2d16" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved1</definition>
+        <argsstring></argsstring>
+        <name>_reserved1</name>
+        <qualifiedname>CONTROL_Type::_reserved1</qualifiedname>
+        <bitfield>30</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 2..31 Reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="298" column="14" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gad8d97a9f60f9d3886c52febac929b4d3" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="union_c_o_n_t_r_o_l___type" kindref="compound">CONTROL_Type</ref></type>
+        <definition>struct CONTROL_Type b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>CONTROL_Type::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="299" column="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s___core___sys_tick_functions_1gaaddfff3b57de6faf60bfcc938c7229c9" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t SFCR</definition>
+        <argsstring></argsstring>
+        <name>SFCR</name>
+        <qualifiedname>SCB_Type::SFCR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x290 (R/W) Security Features Control Register </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Include/core_sc000.h" line="359" column="18" bodyfile="Drivers/CMSIS/Include/core_sc000.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Functions that configure the System. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

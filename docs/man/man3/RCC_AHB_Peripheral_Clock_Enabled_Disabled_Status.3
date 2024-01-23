@@ -1,0 +1,62 @@
+.TH "RCC_AHB_Peripheral_Clock_Enabled_Disabled_Status" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_AHB_Peripheral_Clock_Enabled_Disabled_Status \- AHB Peripheral Clock Enabled or Disabled Status
+.PP
+ \- Check whether the AHB peripheral clock is enabled or not\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_RCC_DMA1_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBENR, \fBRCC_AHBENR_DMA1EN\fP)  != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_FLASH_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBENR, \fBRCC_AHBENR_FLASHEN\fP) != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_CRC_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBENR, \fBRCC_AHBENR_CRCEN\fP)   != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_DMA1_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBENR, \fBRCC_AHBENR_DMA1EN\fP)  == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_FLASH_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBENR, \fBRCC_AHBENR_FLASHEN\fP) == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_CRC_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBENR, \fBRCC_AHBENR_CRCEN\fP)   == \fBRESET\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Check whether the AHB peripheral clock is enabled or not\&. 
+
+
+.PP
+\fBNote\fP
+.RS 4
+After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it\&. 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_RCC_CRC_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBENR, \fBRCC_AHBENR_CRCEN\fP)   == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_CRC_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBENR, \fBRCC_AHBENR_CRCEN\fP)   != \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_DMA1_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBENR, \fBRCC_AHBENR_DMA1EN\fP)  == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_DMA1_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBENR, \fBRCC_AHBENR_DMA1EN\fP)  != \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_FLASH_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBENR, \fBRCC_AHBENR_FLASHEN\fP) == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_FLASH_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBENR, \fBRCC_AHBENR_FLASHEN\fP) != \fBRESET\fP)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

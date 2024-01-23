@@ -1,0 +1,50 @@
+.TH "UART_Private_Functions" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Private_Functions \- UART Private Functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBUART_SetConfig\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBUART_CheckIdleState\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBUART_WaitOnFlagUntilTimeout\fP (\fBUART_HandleTypeDef\fP *huart, uint32_t Flag, \fBFlagStatus\fP Status, uint32_t Tickstart, uint32_t Timeout)"
+.br
+.ti -1c
+.RI "void \fBUART_AdvFeatureConfig\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBUART_Start_Receive_IT\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBUART_Start_Receive_DMA\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t *pData, uint16_t Size)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void UART_AdvFeatureConfig (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP UART_CheckIdleState (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP UART_SetConfig (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP UART_Start_Receive_DMA (\fBUART_HandleTypeDef\fP * huart, uint8_t * pData, uint16_t Size)"
+
+.SS "\fBHAL_StatusTypeDef\fP UART_Start_Receive_IT (\fBUART_HandleTypeDef\fP * huart, uint8_t * pData, uint16_t Size)"
+
+.SS "\fBHAL_StatusTypeDef\fP UART_WaitOnFlagUntilTimeout (\fBUART_HandleTypeDef\fP * huart, uint32_t Flag, \fBFlagStatus\fP Status, uint32_t Tickstart, uint32_t Timeout)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

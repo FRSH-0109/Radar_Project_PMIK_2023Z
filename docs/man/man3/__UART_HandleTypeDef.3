@@ -1,0 +1,165 @@
+.TH "__UART_HandleTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+__UART_HandleTypeDef \- UART handle Structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_hal_uart\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBUSART_TypeDef\fP * \fBInstance\fP"
+.br
+.ti -1c
+.RI "\fBUART_InitTypeDef\fP \fBInit\fP"
+.br
+.ti -1c
+.RI "\fBUART_AdvFeatureInitTypeDef\fP \fBAdvancedInit\fP"
+.br
+.ti -1c
+.RI "const uint8_t * \fBpTxBuffPtr\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBTxXferSize\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint16_t \fBTxXferCount\fP"
+.br
+.ti -1c
+.RI "uint8_t * \fBpRxBuffPtr\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBRxXferSize\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint16_t \fBRxXferCount\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBMask\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFifoMode\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBNbRxDataToProcess\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBNbTxDataToProcess\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP \fBHAL_UART_RxTypeTypeDef\fP \fBReceptionType\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP \fBHAL_UART_RxEventTypeTypeDef\fP \fBRxEventType\fP"
+.br
+.ti -1c
+.RI "void(* \fBRxISR\fP )(struct \fB__UART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void(* \fBTxISR\fP )(struct \fB__UART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBDMA_HandleTypeDef\fP * \fBhdmatx\fP"
+.br
+.ti -1c
+.RI "\fBDMA_HandleTypeDef\fP * \fBhdmarx\fP"
+.br
+.ti -1c
+.RI "\fBHAL_LockTypeDef\fP \fBLock\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP \fBHAL_UART_StateTypeDef\fP \fBgState\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP \fBHAL_UART_StateTypeDef\fP \fBRxState\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBErrorCode\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+UART handle Structure definition\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBUART_AdvFeatureInitTypeDef\fP __UART_HandleTypeDef::AdvancedInit"
+UART Advanced Features initialization parameters 
+.SS "\fB__IO\fP uint32_t __UART_HandleTypeDef::ErrorCode"
+UART Error code 
+.br
+ 
+.SS "uint32_t __UART_HandleTypeDef::FifoMode"
+Specifies if the FIFO mode is being used\&. This parameter can be a value of \fBUARTEx FIFO mode\fP\&. 
+.SS "\fB__IO\fP \fBHAL_UART_StateTypeDef\fP __UART_HandleTypeDef::gState"
+UART state information related to global Handle management and also related to Tx operations\&. This parameter can be a value of \fBHAL_UART_StateTypeDef\fP 
+.SS "\fBDMA_HandleTypeDef\fP* __UART_HandleTypeDef::hdmarx"
+UART Rx DMA Handle parameters 
+.br
+ 
+.SS "\fBDMA_HandleTypeDef\fP* __UART_HandleTypeDef::hdmatx"
+UART Tx DMA Handle parameters 
+.br
+ 
+.SS "\fBUART_InitTypeDef\fP __UART_HandleTypeDef::Init"
+UART communication parameters 
+.br
+ 
+.SS "\fBUSART_TypeDef\fP* __UART_HandleTypeDef::Instance"
+UART registers base address 
+.br
+ 
+.SS "\fBHAL_LockTypeDef\fP __UART_HandleTypeDef::Lock"
+Locking object 
+.br
+ 
+.SS "uint16_t __UART_HandleTypeDef::Mask"
+UART Rx RDR register mask 
+.br
+ 
+.SS "uint16_t __UART_HandleTypeDef::NbRxDataToProcess"
+Number of data to process during RX ISR execution 
+.SS "uint16_t __UART_HandleTypeDef::NbTxDataToProcess"
+Number of data to process during TX ISR execution 
+.SS "uint8_t* __UART_HandleTypeDef::pRxBuffPtr"
+Pointer to UART Rx transfer Buffer 
+.SS "const uint8_t* __UART_HandleTypeDef::pTxBuffPtr"
+Pointer to UART Tx transfer Buffer 
+.SS "\fB__IO\fP \fBHAL_UART_RxTypeTypeDef\fP __UART_HandleTypeDef::ReceptionType"
+Type of ongoing reception 
+.br
+ 
+.SS "\fB__IO\fP \fBHAL_UART_RxEventTypeTypeDef\fP __UART_HandleTypeDef::RxEventType"
+Type of Rx Event 
+.br
+ 
+.SS "void(* __UART_HandleTypeDef::RxISR) (struct \fB__UART_HandleTypeDef\fP *huart)"
+Function pointer on Rx IRQ handler 
+.SS "\fB__IO\fP \fBHAL_UART_StateTypeDef\fP __UART_HandleTypeDef::RxState"
+UART state information related to Rx operations\&. This parameter can be a value of \fBHAL_UART_StateTypeDef\fP 
+.SS "\fB__IO\fP uint16_t __UART_HandleTypeDef::RxXferCount"
+UART Rx Transfer Counter 
+.br
+ 
+.SS "uint16_t __UART_HandleTypeDef::RxXferSize"
+UART Rx Transfer size 
+.br
+ 
+.SS "void(* __UART_HandleTypeDef::TxISR) (struct \fB__UART_HandleTypeDef\fP *huart)"
+Function pointer on Tx IRQ handler 
+.SS "\fB__IO\fP uint16_t __UART_HandleTypeDef::TxXferCount"
+UART Tx Transfer Counter 
+.br
+ 
+.SS "uint16_t __UART_HandleTypeDef::TxXferSize"
+UART Tx Transfer size 
+.br
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,83 @@
+.TH "FLASH_OB_USER_Type" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FLASH_OB_USER_Type \- FLASH Option Bytes User Type
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBOB_USER_nRST_STOP\fP   \fBFLASH_OPTR_nRST_STOP\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_nRST_STDBY\fP   \fBFLASH_OPTR_nRST_STDBY\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_IWDG_SW\fP   \fBFLASH_OPTR_IWDG_SW\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_IWDG_STOP\fP   \fBFLASH_OPTR_IWDG_STOP\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_IWDG_STDBY\fP   \fBFLASH_OPTR_IWDG_STDBY\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_WWDG_SW\fP   \fBFLASH_OPTR_WWDG_SW\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_RAM_PARITY_CHECK\fP   \fBFLASH_OPTR_RAM_PARITY_CHECK\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_nBOOT_SEL\fP   \fBFLASH_OPTR_nBOOT_SEL\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_nBOOT1\fP   \fBFLASH_OPTR_nBOOT1\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_nBOOT0\fP   \fBFLASH_OPTR_nBOOT0\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_ALL\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define OB_USER_ALL"
+\fBValue:\fP.PP
+.nf
+    (                                                OB_USER_nRST_STOP | \\
+    OB_USER_nRST_STDBY                            | OB_USER_IWDG_SW   | \\
+    OB_USER_IWDG_STOP        | OB_USER_IWDG_STDBY | OB_USER_WWDG_SW   | \\
+    OB_USER_RAM_PARITY_CHECK | OB_USER_nBOOT_SEL  | OB_USER_nBOOT1    | \\
+    OB_USER_nBOOT0)
+.fi
+all option bits 
+.SS "#define OB_USER_IWDG_STDBY   \fBFLASH_OPTR_IWDG_STDBY\fP"
+Independent watchdog counter freeze in standby mode 
+.SS "#define OB_USER_IWDG_STOP   \fBFLASH_OPTR_IWDG_STOP\fP"
+Independent watchdog counter freeze in stop mode 
+.SS "#define OB_USER_IWDG_SW   \fBFLASH_OPTR_IWDG_SW\fP"
+Independent watchdog selection 
+.SS "#define OB_USER_nBOOT0   \fBFLASH_OPTR_nBOOT0\fP"
+nBoot0 configuration 
+.SS "#define OB_USER_nBOOT1   \fBFLASH_OPTR_nBOOT1\fP"
+nBoot1 configuration 
+.SS "#define OB_USER_nBOOT_SEL   \fBFLASH_OPTR_nBOOT_SEL\fP"
+Boot Selection 
+.SS "#define OB_USER_nRST_STDBY   \fBFLASH_OPTR_nRST_STDBY\fP"
+Reset generated when entering the standby mode 
+.SS "#define OB_USER_nRST_STOP   \fBFLASH_OPTR_nRST_STOP\fP"
+Reset generated when entering the stop mode 
+.SS "#define OB_USER_RAM_PARITY_CHECK   \fBFLASH_OPTR_RAM_PARITY_CHECK\fP"
+Sram parity check control 
+.SS "#define OB_USER_WWDG_SW   \fBFLASH_OPTR_WWDG_SW\fP"
+Window watchdog selection 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

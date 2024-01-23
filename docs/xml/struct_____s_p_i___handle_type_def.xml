@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_____s_p_i___handle_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>__SPI_HandleTypeDef</compoundname>
+    <includes refid="stm32g0xx__hal__spi_8h" local="no">stm32g0xx_hal_spi.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_____s_p_i___handle_type_def_1aa5c715deaf693cc2dbfa90f40681ee1d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_s_p_i___type_def" kindref="compound">SPI_TypeDef</ref> *</type>
+        <definition>SPI_TypeDef* Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <qualifiedname>__SPI_HandleTypeDef::Instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI registers base address <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="117" column="30" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_s_p_i___init_type_def" kindref="compound">SPI_InitTypeDef</ref></type>
+        <definition>SPI_InitTypeDef Init</definition>
+        <argsstring></argsstring>
+        <name>Init</name>
+        <qualifiedname>__SPI_HandleTypeDef::Init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI communication parameters <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="119" column="30" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____s_p_i___handle_type_def_1a5cc31f7c52dafd32f27f8f2756dbf343" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* pTxBuffPtr</definition>
+        <argsstring></argsstring>
+        <name>pTxBuffPtr</name>
+        <qualifiedname>__SPI_HandleTypeDef::pTxBuffPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to SPI Tx transfer Buffer <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="121" column="30" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____s_p_i___handle_type_def_1a80907b65d6f9541bc0dee444d16bc45b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TxXferSize</definition>
+        <argsstring></argsstring>
+        <name>TxXferSize</name>
+        <qualifiedname>__SPI_HandleTypeDef::TxXferSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Tx Transfer size <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="123" column="30" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____s_p_i___handle_type_def_1a1823437fbed80bdd1510782ced4e5532" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TxXferCount</definition>
+        <argsstring></argsstring>
+        <name>TxXferCount</name>
+        <qualifiedname>__SPI_HandleTypeDef::TxXferCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Tx Transfer Counter <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="125" column="30" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____s_p_i___handle_type_def_1a7cee540cb21048ac48ba17355440e668" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* pRxBuffPtr</definition>
+        <argsstring></argsstring>
+        <name>pRxBuffPtr</name>
+        <qualifiedname>__SPI_HandleTypeDef::pRxBuffPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to SPI Rx transfer Buffer <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="127" column="30" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____s_p_i___handle_type_def_1ac12f5f1f6295b3c3327d5feabf5a96fb" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t RxXferSize</definition>
+        <argsstring></argsstring>
+        <name>RxXferSize</name>
+        <qualifiedname>__SPI_HandleTypeDef::RxXferSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Rx Transfer size <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="129" column="30" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____s_p_i___handle_type_def_1ad95a26d6b12b7087bba3d1b769175db2" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t RxXferCount</definition>
+        <argsstring></argsstring>
+        <name>RxXferCount</name>
+        <qualifiedname>__SPI_HandleTypeDef::RxXferCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Rx Transfer Counter <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="131" column="30" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____s_p_i___handle_type_def_1a752c564d700e8da6d94c705629d204aa" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CRCSize</definition>
+        <argsstring></argsstring>
+        <name>CRCSize</name>
+        <qualifiedname>__SPI_HandleTypeDef::CRCSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI CRC size used for the transfer <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="133" column="30" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____s_p_i___handle_type_def_1ae69a57c50a44075680eb48ba13e41bf3" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* RxISR) (struct __SPI_HandleTypeDef *hspi)</definition>
+        <argsstring>)(struct __SPI_HandleTypeDef *hspi)</argsstring>
+        <name>RxISR</name>
+        <qualifiedname>__SPI_HandleTypeDef::RxISR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>function pointer on Rx ISR <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="135" column="3" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____s_p_i___handle_type_def_1a445355c8080382b2d33c690e1790585f" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* TxISR) (struct __SPI_HandleTypeDef *hspi)</definition>
+        <argsstring>)(struct __SPI_HandleTypeDef *hspi)</argsstring>
+        <name>TxISR</name>
+        <qualifiedname>__SPI_HandleTypeDef::TxISR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>function pointer on Tx ISR <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="137" column="3" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____s_p_i___handle_type_def_1a33e13c28b1a70e6164417abb026d7a22" prot="public" static="no" mutable="no">
+        <type><ref refid="group___d_m_a___exported___types_1ga41b754a906b86bce54dc79938970138b" kindref="member">DMA_HandleTypeDef</ref> *</type>
+        <definition>DMA_HandleTypeDef* hdmatx</definition>
+        <argsstring></argsstring>
+        <name>hdmatx</name>
+        <qualifiedname>__SPI_HandleTypeDef::hdmatx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Tx DMA Handle parameters <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="139" column="30" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____s_p_i___handle_type_def_1abd0aeec20298a55d89a440320e35634f" prot="public" static="no" mutable="no">
+        <type><ref refid="group___d_m_a___exported___types_1ga41b754a906b86bce54dc79938970138b" kindref="member">DMA_HandleTypeDef</ref> *</type>
+        <definition>DMA_HandleTypeDef* hdmarx</definition>
+        <argsstring></argsstring>
+        <name>hdmarx</name>
+        <qualifiedname>__SPI_HandleTypeDef::hdmarx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Rx DMA Handle parameters <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="141" column="30" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____s_p_i___handle_type_def_1ad4cf225029dbefe8d3fe660c33b8bb6b" prot="public" static="no" mutable="no">
+        <type><ref refid="stm32g0xx__hal__def_8h_1ab367482e943333a1299294eadaad284b" kindref="member">HAL_LockTypeDef</ref></type>
+        <definition>HAL_LockTypeDef Lock</definition>
+        <argsstring></argsstring>
+        <name>Lock</name>
+        <qualifiedname>__SPI_HandleTypeDef::Lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Locking object <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="143" column="30" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____s_p_i___handle_type_def_1ac77adb7330099a917af1e9021cbb3de1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> <ref refid="group___s_p_i___exported___types_1ga8891cb64e76198a860172d94c638c9b4" kindref="member">HAL_SPI_StateTypeDef</ref></type>
+        <definition>__IO HAL_SPI_StateTypeDef State</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <qualifiedname>__SPI_HandleTypeDef::State</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI communication state <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="145" column="30" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____s_p_i___handle_type_def_1a123c5063e6a3b1901b2fbe5f88c53a7e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t ErrorCode</definition>
+        <argsstring></argsstring>
+        <name>ErrorCode</name>
+        <qualifiedname>__SPI_HandleTypeDef::ErrorCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Error code <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="147" column="30" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>SPI handle Structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>DMAMUX_ChannelStatus_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___channel_status___type_def"/>
+      </node>
+      <node id="7">
+        <label>DMAMUX_Channel_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___channel___type_def"/>
+      </node>
+      <node id="10">
+        <label>DMAMUX_RequestGenStatus_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___request_gen_status___type_def"/>
+      </node>
+      <node id="9">
+        <label>DMAMUX_RequestGen_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___request_gen___type_def"/>
+      </node>
+      <node id="5">
+        <label>DMA_Channel_TypeDef</label>
+        <link refid="struct_d_m_a___channel___type_def"/>
+      </node>
+      <node id="6">
+        <label>DMA_InitTypeDef</label>
+        <link refid="struct_d_m_a___init_type_def"/>
+      </node>
+      <node id="3">
+        <label>SPI_InitTypeDef</label>
+        <link refid="struct_s_p_i___init_type_def"/>
+      </node>
+      <node id="2">
+        <label>SPI_TypeDef</label>
+        <link refid="struct_s_p_i___type_def"/>
+      </node>
+      <node id="4">
+        <label>__DMA_HandleTypeDef</label>
+        <link refid="struct_____d_m_a___handle_type_def"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Instance</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Init</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>DMAmuxChannel</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>DMAmuxChannelStatus</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>DMAmuxRequestGen</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>DMAmuxRequestGenStatus</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>__SPI_HandleTypeDef</label>
+        <link refid="struct_____s_p_i___handle_type_def"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Instance</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Init</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>hdmarx</edgelabel>
+          <edgelabel>hdmatx</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="115" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="116" bodyend="162"/>
+    <listofallmembers>
+      <member refid="struct_____s_p_i___handle_type_def_1a752c564d700e8da6d94c705629d204aa" prot="public" virt="non-virtual"><scope>__SPI_HandleTypeDef</scope><name>CRCSize</name></member>
+      <member refid="struct_____s_p_i___handle_type_def_1a123c5063e6a3b1901b2fbe5f88c53a7e" prot="public" virt="non-virtual"><scope>__SPI_HandleTypeDef</scope><name>ErrorCode</name></member>
+      <member refid="struct_____s_p_i___handle_type_def_1abd0aeec20298a55d89a440320e35634f" prot="public" virt="non-virtual"><scope>__SPI_HandleTypeDef</scope><name>hdmarx</name></member>
+      <member refid="struct_____s_p_i___handle_type_def_1a33e13c28b1a70e6164417abb026d7a22" prot="public" virt="non-virtual"><scope>__SPI_HandleTypeDef</scope><name>hdmatx</name></member>
+      <member refid="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" prot="public" virt="non-virtual"><scope>__SPI_HandleTypeDef</scope><name>Init</name></member>
+      <member refid="struct_____s_p_i___handle_type_def_1aa5c715deaf693cc2dbfa90f40681ee1d" prot="public" virt="non-virtual"><scope>__SPI_HandleTypeDef</scope><name>Instance</name></member>
+      <member refid="struct_____s_p_i___handle_type_def_1ad4cf225029dbefe8d3fe660c33b8bb6b" prot="public" virt="non-virtual"><scope>__SPI_HandleTypeDef</scope><name>Lock</name></member>
+      <member refid="struct_____s_p_i___handle_type_def_1a7cee540cb21048ac48ba17355440e668" prot="public" virt="non-virtual"><scope>__SPI_HandleTypeDef</scope><name>pRxBuffPtr</name></member>
+      <member refid="struct_____s_p_i___handle_type_def_1a5cc31f7c52dafd32f27f8f2756dbf343" prot="public" virt="non-virtual"><scope>__SPI_HandleTypeDef</scope><name>pTxBuffPtr</name></member>
+      <member refid="struct_____s_p_i___handle_type_def_1ae69a57c50a44075680eb48ba13e41bf3" prot="public" virt="non-virtual"><scope>__SPI_HandleTypeDef</scope><name>RxISR</name></member>
+      <member refid="struct_____s_p_i___handle_type_def_1ad95a26d6b12b7087bba3d1b769175db2" prot="public" virt="non-virtual"><scope>__SPI_HandleTypeDef</scope><name>RxXferCount</name></member>
+      <member refid="struct_____s_p_i___handle_type_def_1ac12f5f1f6295b3c3327d5feabf5a96fb" prot="public" virt="non-virtual"><scope>__SPI_HandleTypeDef</scope><name>RxXferSize</name></member>
+      <member refid="struct_____s_p_i___handle_type_def_1ac77adb7330099a917af1e9021cbb3de1" prot="public" virt="non-virtual"><scope>__SPI_HandleTypeDef</scope><name>State</name></member>
+      <member refid="struct_____s_p_i___handle_type_def_1a445355c8080382b2d33c690e1790585f" prot="public" virt="non-virtual"><scope>__SPI_HandleTypeDef</scope><name>TxISR</name></member>
+      <member refid="struct_____s_p_i___handle_type_def_1a1823437fbed80bdd1510782ced4e5532" prot="public" virt="non-virtual"><scope>__SPI_HandleTypeDef</scope><name>TxXferCount</name></member>
+      <member refid="struct_____s_p_i___handle_type_def_1a80907b65d6f9541bc0dee444d16bc45b" prot="public" virt="non-virtual"><scope>__SPI_HandleTypeDef</scope><name>TxXferSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

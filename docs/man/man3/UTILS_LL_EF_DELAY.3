@@ -1,0 +1,60 @@
+.TH "UTILS_LL_EF_DELAY" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UTILS_LL_EF_DELAY \- DELAY
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_InitTick\fP (uint32_t HCLKFrequency, uint32_t Ticks)"
+.br
+.RI "This function configures the Cortex-M SysTick source of the time base\&. "
+.ti -1c
+.RI "void \fBLL_Init1msTick\fP (uint32_t HCLKFrequency)"
+.br
+.ti -1c
+.RI "void \fBLL_mDelay\fP (uint32_t Delay)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "void LL_Init1msTick (uint32_t HCLKFrequency)"
+
+.SS "\fB__STATIC_INLINE\fP void LL_InitTick (uint32_t HCLKFrequency, uint32_t Ticks)"
+
+.PP
+This function configures the Cortex-M SysTick source of the time base\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIHCLKFrequency\fP HCLK frequency in Hz (can be calculated thanks to RCC helper macro) 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+When a RTOS is used, it is recommended to avoid changing the SysTick configuration by calling this function, for a delay use rather osDelay RTOS service\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fITicks\fP Number of ticks 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "void LL_mDelay (uint32_t Delay)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

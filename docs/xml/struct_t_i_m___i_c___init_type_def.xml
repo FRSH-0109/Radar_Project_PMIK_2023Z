@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_t_i_m___i_c___init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>TIM_IC_InitTypeDef</compoundname>
+    <includes refid="stm32g0xx__hal__tim_8h" local="no">stm32g0xx_hal_tim.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_t_i_m___i_c___init_type_def_1a6c0364c24e89f17849b0109236112fba" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ICPolarity</definition>
+        <argsstring></argsstring>
+        <name>ICPolarity</name>
+        <qualifiedname>TIM_IC_InitTypeDef::ICPolarity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the active edge of the input signal. This parameter can be a value of <ref refid="group___t_i_m___input___capture___polarity" kindref="compound">TIM Input Capture Polarity</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="149" column="13" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___i_c___init_type_def_1a280cec08ad0ea4608ae57523775cc1c0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ICSelection</definition>
+        <argsstring></argsstring>
+        <name>ICSelection</name>
+        <qualifiedname>TIM_IC_InitTypeDef::ICSelection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the input. This parameter can be a value of <ref refid="group___t_i_m___input___capture___selection" kindref="compound">TIM Input Capture Selection</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="152" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___i_c___init_type_def_1adc795cd98eeaa7725743856652cd2b4a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ICPrescaler</definition>
+        <argsstring></argsstring>
+        <name>ICPrescaler</name>
+        <qualifiedname>TIM_IC_InitTypeDef::ICPrescaler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the Input Capture Prescaler. This parameter can be a value of <ref refid="group___t_i_m___input___capture___prescaler" kindref="compound">TIM Input Capture Prescaler</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="155" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___i_c___init_type_def_1ab621c1517d5345834fcc71eea97156bf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ICFilter</definition>
+        <argsstring></argsstring>
+        <name>ICFilter</name>
+        <qualifiedname>TIM_IC_InitTypeDef::ICFilter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the input capture filter. This parameter can be a number between Min_Data = 0x0 and Max_Data = 0xF </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="158" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>TIM Input Capture Configuration Structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="147" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="148" bodyend="160"/>
+    <listofallmembers>
+      <member refid="struct_t_i_m___i_c___init_type_def_1ab621c1517d5345834fcc71eea97156bf" prot="public" virt="non-virtual"><scope>TIM_IC_InitTypeDef</scope><name>ICFilter</name></member>
+      <member refid="struct_t_i_m___i_c___init_type_def_1a6c0364c24e89f17849b0109236112fba" prot="public" virt="non-virtual"><scope>TIM_IC_InitTypeDef</scope><name>ICPolarity</name></member>
+      <member refid="struct_t_i_m___i_c___init_type_def_1adc795cd98eeaa7725743856652cd2b4a" prot="public" virt="non-virtual"><scope>TIM_IC_InitTypeDef</scope><name>ICPrescaler</name></member>
+      <member refid="struct_t_i_m___i_c___init_type_def_1a280cec08ad0ea4608ae57523775cc1c0" prot="public" virt="non-virtual"><scope>TIM_IC_InitTypeDef</scope><name>ICSelection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_r_c_c___periph_c_l_k_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>RCC_PeriphCLKInitTypeDef</compoundname>
+    <includes refid="stm32g0xx__hal__rcc__ex_8h" local="no">stm32g0xx_hal_rcc_ex.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_c_c___periph_c_l_k_init_type_def_1a82dae3f6a5ae6c184bd1b95a88d41fc2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PeriphClockSelection</definition>
+        <argsstring></argsstring>
+        <name>PeriphClockSelection</name>
+        <qualifiedname>RCC_PeriphCLKInitTypeDef::PeriphClockSelection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Extended Clock to be configured. This parameter can be a value of <ref refid="group___r_c_c_ex___periph___clock___selection" kindref="compound">Periph Clock Selection</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h" line="48" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___periph_c_l_k_init_type_def_1a324fed138e6de514e7ebf932f762c0c3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Usart1ClockSelection</definition>
+        <argsstring></argsstring>
+        <name>Usart1ClockSelection</name>
+        <qualifiedname>RCC_PeriphCLKInitTypeDef::Usart1ClockSelection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies USART1 clock source. This parameter can be a value of <ref refid="group___r_c_c_ex___u_s_a_r_t1___clock___source" kindref="compound">RCC USART1 Clock Source</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h" line="51" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___periph_c_l_k_init_type_def_1a554df8ffb13c305a365c1e0ffc071b0d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t I2c1ClockSelection</definition>
+        <argsstring></argsstring>
+        <name>I2c1ClockSelection</name>
+        <qualifiedname>RCC_PeriphCLKInitTypeDef::I2c1ClockSelection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies I2C1 clock source This parameter can be a value of <ref refid="group___r_c_c_ex___i2_c1___clock___source" kindref="compound">RCC I2C1 Clock Source</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h" line="73" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___periph_c_l_k_init_type_def_1a3465c455a466db12f40c6bfbf0c7b0aa" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t I2s1ClockSelection</definition>
+        <argsstring></argsstring>
+        <name>I2s1ClockSelection</name>
+        <qualifiedname>RCC_PeriphCLKInitTypeDef::I2s1ClockSelection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies I2S1 clock source This parameter can be a value of <ref refid="group___r_c_c_ex___i2_s1___clock___source" kindref="compound">RCC I2S1 Clock Source</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h" line="81" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___periph_c_l_k_init_type_def_1a28e358df2e95d000ccf4984cd14250e8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AdcClockSelection</definition>
+        <argsstring></argsstring>
+        <name>AdcClockSelection</name>
+        <qualifiedname>RCC_PeriphCLKInitTypeDef::AdcClockSelection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies ADC interface clock source This parameter can be a value of <ref refid="group___r_c_c_ex___a_d_c___clock___source" kindref="compound">RCC ADC Clock Source</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h" line="99" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___periph_c_l_k_init_type_def_1a831cc6023077b77683871743290aa720" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RTCClockSelection</definition>
+        <argsstring></argsstring>
+        <name>RTCClockSelection</name>
+        <qualifiedname>RCC_PeriphCLKInitTypeDef::RTCClockSelection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies RTC clock source. This parameter can be a value of <ref refid="group___r_c_c___r_t_c___clock___source" kindref="compound">RTC Clock Source</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h" line="113" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>RCC extended clocks structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h" line="46" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h" bodystart="47" bodyend="123"/>
+    <listofallmembers>
+      <member refid="struct_r_c_c___periph_c_l_k_init_type_def_1a28e358df2e95d000ccf4984cd14250e8" prot="public" virt="non-virtual"><scope>RCC_PeriphCLKInitTypeDef</scope><name>AdcClockSelection</name></member>
+      <member refid="struct_r_c_c___periph_c_l_k_init_type_def_1a554df8ffb13c305a365c1e0ffc071b0d" prot="public" virt="non-virtual"><scope>RCC_PeriphCLKInitTypeDef</scope><name>I2c1ClockSelection</name></member>
+      <member refid="struct_r_c_c___periph_c_l_k_init_type_def_1a3465c455a466db12f40c6bfbf0c7b0aa" prot="public" virt="non-virtual"><scope>RCC_PeriphCLKInitTypeDef</scope><name>I2s1ClockSelection</name></member>
+      <member refid="struct_r_c_c___periph_c_l_k_init_type_def_1a82dae3f6a5ae6c184bd1b95a88d41fc2" prot="public" virt="non-virtual"><scope>RCC_PeriphCLKInitTypeDef</scope><name>PeriphClockSelection</name></member>
+      <member refid="struct_r_c_c___periph_c_l_k_init_type_def_1a831cc6023077b77683871743290aa720" prot="public" virt="non-virtual"><scope>RCC_PeriphCLKInitTypeDef</scope><name>RTCClockSelection</name></member>
+      <member refid="struct_r_c_c___periph_c_l_k_init_type_def_1a324fed138e6de514e7ebf932f762c0c3" prot="public" virt="non-virtual"><scope>RCC_PeriphCLKInitTypeDef</scope><name>Usart1ClockSelection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

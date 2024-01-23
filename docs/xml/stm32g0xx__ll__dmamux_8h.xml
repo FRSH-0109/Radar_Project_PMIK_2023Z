@@ -1,0 +1,1015 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="stm32g0xx__ll__dmamux_8h" kind="file" language="C++">
+    <compoundname>stm32g0xx_ll_dmamux.h</compoundname>
+    <includes refid="stm32g0xx_8h" local="yes">stm32g0xx.h</includes>
+    <includedby refid="stm32g0xx__hal__dma__ex_8h" local="yes">Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h</includedby>
+    <includedby refid="stm32g0xx__ll__dma_8h" local="yes">Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h</label>
+        <link refid="stm32g0xx__ll__dmamux_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7">
+        <label>Core/Inc/dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Core/Inc/gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Core/Inc/main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Core/Inc/spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Core/Inc/stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Core/Inc/tim.h</label>
+        <link refid="tim_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Core/Inc/usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Core/Src/dma.c</label>
+        <link refid="dma_8c"/>
+      </node>
+      <node id="11">
+        <label>Core/Src/gpio.c</label>
+        <link refid="gpio_8c"/>
+      </node>
+      <node id="9">
+        <label>Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="13">
+        <label>Core/Src/spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="19">
+        <label>Core/Src/stm32g0xx_hal_msp.c</label>
+        <link refid="stm32g0xx__hal__msp_8c"/>
+      </node>
+      <node id="20">
+        <label>Core/Src/stm32g0xx_it.c</label>
+        <link refid="stm32g0xx__it_8c"/>
+      </node>
+      <node id="15">
+        <label>Core/Src/tim.c</label>
+        <link refid="tim_8c"/>
+      </node>
+      <node id="17">
+        <label>Core/Src/usart.c</label>
+        <link refid="usart_8c"/>
+      </node>
+      <node id="5">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h</label>
+        <link refid="stm32g0xx__hal__dma_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h</label>
+        <link refid="stm32g0xx__hal__dma__ex_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h</label>
+        <link refid="stm32g0xx__ll__dma_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h</label>
+        <link refid="stm32g0xx__ll__dmamux_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c</label>
+        <link refid="stm32g0xx__hal_8c"/>
+      </node>
+      <node id="26">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c</label>
+        <link refid="stm32g0xx__hal__cortex_8c"/>
+      </node>
+      <node id="27">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c</label>
+        <link refid="stm32g0xx__hal__dma_8c"/>
+      </node>
+      <node id="28">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c</label>
+        <link refid="stm32g0xx__hal__dma__ex_8c"/>
+      </node>
+      <node id="29">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c</label>
+        <link refid="stm32g0xx__hal__exti_8c"/>
+      </node>
+      <node id="30">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c</label>
+        <link refid="stm32g0xx__hal__flash_8c"/>
+      </node>
+      <node id="31">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c</label>
+        <link refid="stm32g0xx__hal__flash__ex_8c"/>
+      </node>
+      <node id="32">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c</label>
+        <link refid="stm32g0xx__hal__gpio_8c"/>
+      </node>
+      <node id="33">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c</label>
+        <link refid="stm32g0xx__hal__pwr_8c"/>
+      </node>
+      <node id="34">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8c"/>
+      </node>
+      <node id="35">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c</label>
+        <link refid="stm32g0xx__hal__rcc_8c"/>
+      </node>
+      <node id="36">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8c"/>
+      </node>
+      <node id="37">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c</label>
+        <link refid="stm32g0xx__hal__spi_8c"/>
+      </node>
+      <node id="38">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c</label>
+        <link refid="stm32g0xx__hal__spi__ex_8c"/>
+      </node>
+      <node id="39">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c</label>
+        <link refid="stm32g0xx__hal__tim_8c"/>
+      </node>
+      <node id="40">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c</label>
+        <link refid="stm32g0xx__hal__tim__ex_8c"/>
+      </node>
+      <node id="41">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c</label>
+        <link refid="stm32g0xx__hal__uart_8c"/>
+      </node>
+      <node id="42">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c</label>
+        <link refid="stm32g0xx__hal__uart__ex_8c"/>
+      </node>
+      <node id="21">
+        <label>RadarApp/DisplayDriver/GFX_Color.c</label>
+        <link refid="_g_f_x___color_8c"/>
+      </node>
+      <node id="22">
+        <label>RadarApp/DisplayDriver/ILI9341.c</label>
+        <link refid="_i_l_i9341_8c"/>
+      </node>
+      <node id="24">
+        <label>RadarApp/RadarDriver/radar.c</label>
+        <link refid="radar_8c"/>
+      </node>
+      <node id="23">
+        <label>RadarApp/RadarDriver/radar.h</label>
+        <link refid="radar_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>RadarApp/usart_custom/usart_custom.c</label>
+        <link refid="usart__custom_8c"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+<para>Header file of DMAMUX LL module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team </para>
+</simplesect>
+<simplesect kind="attention"><para></para>
+</simplesect>
+Copyright (c) 2018 STMicroelectronics. All rights reserved.</para>
+<para>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>STM32G0xx_LL_DMAMUX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32G0xx_LL_DMAMUX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32g0xx_8h" kindref="compound">stm32g0xx.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(DMAMUX1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>types<sp/>-------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>variables<sp/>---------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>constants<sp/>---------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>used<sp/>to<sp/>get<sp/>DMAMUX<sp/>CCR<sp/>register<sp/>size<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMAMUX_CCR_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000004UL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>used<sp/>to<sp/>get<sp/>DMAMUX<sp/>RGCR<sp/>register<sp/>size<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMAMUX_RGCR_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000004UL</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>macros<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>types<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>constants<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CFR_CSOF0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CFR_CSOF0<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CFR_CSOF1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CFR_CSOF1<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CFR_CSOF2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CFR_CSOF2<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CFR_CSOF3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CFR_CSOF3<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CFR_CSOF4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CFR_CSOF4<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CFR_CSOF5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CFR_CSOF5<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel5<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CFR_CSOF6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CFR_CSOF6<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel6<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMA2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CFR_CSOF7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CFR_CSOF7<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CFR_CSOF8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CFR_CSOF8<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CFR_CSOF9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CFR_CSOF9<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CFR_CSOF10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CFR_CSOF10<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CFR_CSOF11<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CFR_CSOF11<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMA2<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_RGCFR_RGCOF0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_RGCFR_COF0<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_RGCFR_RGCOF1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_RGCFR_COF1<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_RGCFR_RGCOF2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_RGCFR_COF2<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_RGCFR_RGCOF3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_RGCFR_COF3<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CSR_SOF0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CSR_SOF0<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CSR_SOF1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CSR_SOF1<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CSR_SOF2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CSR_SOF2<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CSR_SOF3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CSR_SOF3<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CSR_SOF4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CSR_SOF4<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CSR_SOF5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CSR_SOF5<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel5<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CSR_SOF6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CSR_SOF6<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel6<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMA2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CSR_SOF7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CSR_SOF7<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CSR_SOF8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CSR_SOF8<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CSR_SOF9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CSR_SOF9<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CSR_SOF10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CSR_SOF10<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CSR_SOF11<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CSR_SOF11<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMA2<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_RGSR_RGOF0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_RGSR_OF0<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_RGSR_RGOF1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_RGSR_OF1<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_RGSR_RGOF2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_RGSR_OF2<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_RGSR_RGOF3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_RGSR_OF3<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CCR_SOIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CxCR_SOIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_RGCR_RGOIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_RGxCR_OIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_MEM2MEM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GENERATOR0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000001U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GENERATOR1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000002U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GENERATOR2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000003U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GENERATOR3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000004U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_ADC1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000005U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(AES)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_AES_IN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000006U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_AES_OUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000007U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AES<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DAC1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_DAC1_CH1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000008U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_DAC1_CH2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000009U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DAC1<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_I2C1_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000000AU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_I2C1_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000000BU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_I2C2_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000000CU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_I2C2_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000000DU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LPUART1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_LPUART1_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000000EU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_LPUART1_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000000FU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LPUART1<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_SPI1_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000010U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_SPI1_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000011U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_SPI2_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000012U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_SPI2_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000013U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM1_CH1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000014U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM1_CH2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000015U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM1_CH3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000016U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM1_CH4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000017U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM1_TRIG_COM<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000018U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM1_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000019U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(TIM2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM2_CH1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000001AU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM2_CH2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000001BU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM2_CH3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000001CU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM2_CH4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000001DU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM2_TRIG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000001EU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM2_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000001FU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TIM2<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM3_CH1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000020U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM3_CH2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000021U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM3_CH3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000022U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM3_CH4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000023U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM3_TRIG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000024U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM3_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000025U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(TIM6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM6_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000026U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TIM6<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(TIM7)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM7_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000027U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TIM7<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(TIM15)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM15_CH1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000028U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM15_CH2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000029U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM15_TRIG_COM<sp/><sp/><sp/><sp/><sp/><sp/>0x0000002AU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM15_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000002BU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TIM15<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM16_CH1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000002CU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM16_COM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000002DU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM16_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000002EU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM17_CH1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000002FU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM17_COM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000030U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM17_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000031U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_USART1_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000032U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_USART1_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000033U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_USART2_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000034U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_USART2_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000035U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(USART3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_USART3_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000036U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_USART3_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000037U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USART3<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(USART4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_USART4_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000038U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_USART4_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000039U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USART4<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(UCPD1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_UCPD1_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000003AU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_UCPD1_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000003BU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>UCPD1<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(UCPD2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_UCPD2_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000003CU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_UCPD2_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000003DU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>UCPD2<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(I2C3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_I2C3_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000003EU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_I2C3_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000003FU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>I2C3<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LPUART2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_LPUART2_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000040U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_LPUART2_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000041U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LPUART2<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(SPI3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_SPI3_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000042U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_SPI3_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000043U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SPI3<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(TIM4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM4_CH1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000044U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM4_CH2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000045U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM4_CH3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000046U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM4_CH4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000047U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM4_TRIG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000048U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_TIM4_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000049U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TIM4<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(USART5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_USART5_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000004AU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_USART5_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000004BU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USART5<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(USART6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_USART6_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000004CU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_USART6_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000004DU<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USART6<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(STM32G0C1xx)||defined(STM32G0B1xx)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_MAX_REQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_USART6_TX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(STM32G0B0xx)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_MAX_REQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_USART4_TX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(STM32G081xx)||defined(STM32G071xx)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_MAX_REQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_UCPD2_TX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(STM32G070xx)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_MAX_REQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_USART4_TX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_MAX_REQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_USART2_TX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STM32G0C1xx<sp/>||<sp/>STM32G0B1xx<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CHANNEL_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CHANNEL_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000001U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CHANNEL_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000002U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CHANNEL_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000003U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CHANNEL_4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000004U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CHANNEL_5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000005U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel5<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CHANNEL_6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000006U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel6<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMA2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CHANNEL_7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000007U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CHANNEL_8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000008U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CHANNEL_9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000009U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CHANNEL_10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000000AU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_CHANNEL_11<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000000BU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMA2<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_NO_EVENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_POL_RISING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CxCR_SPOL_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_POL_FALLING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CxCR_SPOL_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_POL_RISING_FALLING<sp/><sp/>(DMAMUX_CxCR_SPOL_0<sp/>|<sp/>DMAMUX_CxCR_SPOL_1)<sp/></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_EXTI_LINE0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_EXTI_LINE1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CxCR_SYNC_ID_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_EXTI_LINE2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CxCR_SYNC_ID_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_EXTI_LINE3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_1<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_EXTI_LINE4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CxCR_SYNC_ID_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_EXTI_LINE5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_2<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_EXTI_LINE6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_2<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_EXTI_LINE7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_2<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_1<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_EXTI_LINE8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CxCR_SYNC_ID_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_EXTI_LINE9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_3<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_EXTI_LINE10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_3<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_EXTI_LINE11<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_3<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_1<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_EXTI_LINE12<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_3<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_EXTI_LINE13<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_3<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_2<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_EXTI_LINE14<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_3<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_2<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_EXTI_LINE15<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_3<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_2<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_1<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_DMAMUX_CH0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_CxCR_SYNC_ID_4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_DMAMUX_CH1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_4<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_DMAMUX_CH2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_4<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_DMAMUX_CH3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_4<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_1<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LPTIM1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_LPTIM1_OUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_4<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LPTIM1<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LPTIM2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_LPTIM2_OUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_4<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_2<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LPTIM2<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_SYNC_TIM14_OC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_CxCR_SYNC_ID_4<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_2<sp/>|<sp/>DMAMUX_CxCR_SYNC_ID_1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000001U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000002U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000003U</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_NO_EVENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_POL_RISING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_RGxCR_GPOL_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_POL_FALLING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_RGxCR_GPOL_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_POL_RISING_FALLING<sp/><sp/><sp/>(DMAMUX_RGxCR_GPOL_0<sp/>|<sp/>DMAMUX_RGxCR_GPOL_1)<sp/><sp/></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE0<sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE1<sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_RGxCR_SIG_ID_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE2<sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_RGxCR_SIG_ID_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE3<sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_1<sp/>|DMAMUX_RGxCR_SIG_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE4<sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_RGxCR_SIG_ID_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE5<sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_2<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE6<sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_2<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE7<sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_2<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_1<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE8<sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_RGxCR_SIG_ID_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE9<sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_3<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE10<sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_3<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE11<sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_3<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_1<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE12<sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_3<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE13<sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_3<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_2<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE14<sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_3<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_2<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE15<sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_3<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_2<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_1<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_DMAMUX_CH0<sp/><sp/><sp/><sp/><sp/><sp/>DMAMUX_RGxCR_SIG_ID_4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_DMAMUX_CH1<sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_4<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_DMAMUX_CH2<sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_4<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_DMAMUX_CH3<sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_4<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_1<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LPTIM1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_LPTIM1_OUT<sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_4<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LPTIM1<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LPTIM2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_LPTIM2_OUT<sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_4<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_2<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LPTIM2<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_REQ_GEN_TIM14_OC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGxCR_SIG_ID_4<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_2<sp/>|<sp/>DMAMUX_RGxCR_SIG_ID_1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>macro<sp/>------------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_WriteReg(__INSTANCE__,<sp/>__REG__,<sp/>__VALUE__)<sp/>WRITE_REG(__INSTANCE__-&gt;__REG__,<sp/>(__VALUE__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_DMAMUX_ReadReg(__INSTANCE__,<sp/>__REG__)<sp/>READ_REG(__INSTANCE__-&gt;__REG__)</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>functions<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_SetRequestID(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel,<sp/>uint32_t<sp/>Request)</highlight></codeline>
+<codeline lineno="525"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga6553c99f510c3bab8cc0a91602053247" kindref="member">MODIFY_REG</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga429e04913f0ea2ec973e5e82c0264766" kindref="member">DMAMUX_CxCR_DMAREQ_ID</ref>,<sp/>Request);</highlight></codeline>
+<codeline lineno="528"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"></highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_GetRequestID(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel)</highlight></codeline>
+<codeline lineno="616"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint32_t)(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga429e04913f0ea2ec973e5e82c0264766" kindref="member">DMAMUX_CxCR_DMAREQ_ID</ref>));</highlight></codeline>
+<codeline lineno="619"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"></highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_SetSyncRequestNb(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel,<sp/>uint32_t<sp/>RequestNb)</highlight></codeline>
+<codeline lineno="646"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga6553c99f510c3bab8cc0a91602053247" kindref="member">MODIFY_REG</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gafb24fe594a98ab3c48ab93f1ab8a26ab" kindref="member">DMAMUX_CxCR_NBREQ</ref>,<sp/>((RequestNb<sp/>-<sp/>1U)<sp/>&lt;&lt;<sp/><ref refid="group___peripheral___registers___bits___definition_1ga8cb7f89e2c1a386244906df90ac15e2b" kindref="member">DMAMUX_CxCR_NBREQ_Pos</ref>));</highlight></codeline>
+<codeline lineno="649"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"></highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_GetSyncRequestNb(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel)</highlight></codeline>
+<codeline lineno="675"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint32_t)(((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gafb24fe594a98ab3c48ab93f1ab8a26ab" kindref="member">DMAMUX_CxCR_NBREQ</ref>))<sp/>&gt;&gt;<sp/><ref refid="group___peripheral___registers___bits___definition_1ga8cb7f89e2c1a386244906df90ac15e2b" kindref="member">DMAMUX_CxCR_NBREQ_Pos</ref>)<sp/>+<sp/>1U);</highlight></codeline>
+<codeline lineno="678"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"></highlight></codeline>
+<codeline lineno="708"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_SetSyncPolarity(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel,<sp/>uint32_t<sp/>Polarity)</highlight></codeline>
+<codeline lineno="709"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="710"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="711"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga6553c99f510c3bab8cc0a91602053247" kindref="member">MODIFY_REG</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gaff4d57f6e7b5585e040d495f45b0f9eb" kindref="member">DMAMUX_CxCR_SPOL</ref>,<sp/>Polarity);</highlight></codeline>
+<codeline lineno="712"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="713"><highlight class="normal"></highlight></codeline>
+<codeline lineno="741"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_GetSyncPolarity(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel)</highlight></codeline>
+<codeline lineno="742"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="743"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="744"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint32_t)(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gaff4d57f6e7b5585e040d495f45b0f9eb" kindref="member">DMAMUX_CxCR_SPOL</ref>));</highlight></codeline>
+<codeline lineno="745"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="746"><highlight class="normal"></highlight></codeline>
+<codeline lineno="770"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_EnableEventGeneration(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel)</highlight></codeline>
+<codeline lineno="771"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="772"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="773"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gacc99ef1ca19c4c307bf9b432150a59fc" kindref="member">DMAMUX_CxCR_EGE</ref>);</highlight></codeline>
+<codeline lineno="774"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="775"><highlight class="normal"></highlight></codeline>
+<codeline lineno="799"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_DisableEventGeneration(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel)</highlight></codeline>
+<codeline lineno="800"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="801"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="802"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gacc99ef1ca19c4c307bf9b432150a59fc" kindref="member">DMAMUX_CxCR_EGE</ref>);</highlight></codeline>
+<codeline lineno="803"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="804"><highlight class="normal"></highlight></codeline>
+<codeline lineno="828"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsEnabledEventGeneration(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel)</highlight></codeline>
+<codeline lineno="829"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="830"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="831"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gacc99ef1ca19c4c307bf9b432150a59fc" kindref="member">DMAMUX_CxCR_EGE</ref>)<sp/>==<sp/>(<ref refid="group___peripheral___registers___bits___definition_1gacc99ef1ca19c4c307bf9b432150a59fc" kindref="member">DMAMUX_CxCR_EGE</ref>))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="832"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="833"><highlight class="normal"></highlight></codeline>
+<codeline lineno="857"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_EnableSync(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel)</highlight></codeline>
+<codeline lineno="858"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="859"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="860"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gaeedb99c6edfa679f95441003a4fa184d" kindref="member">DMAMUX_CxCR_SE</ref>);</highlight></codeline>
+<codeline lineno="861"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="862"><highlight class="normal"></highlight></codeline>
+<codeline lineno="886"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_DisableSync(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel)</highlight></codeline>
+<codeline lineno="887"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="888"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="889"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gaeedb99c6edfa679f95441003a4fa184d" kindref="member">DMAMUX_CxCR_SE</ref>);</highlight></codeline>
+<codeline lineno="890"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="891"><highlight class="normal"></highlight></codeline>
+<codeline lineno="915"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsEnabledSync(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel)</highlight></codeline>
+<codeline lineno="916"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="917"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="918"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gaeedb99c6edfa679f95441003a4fa184d" kindref="member">DMAMUX_CxCR_SE</ref>)<sp/>==<sp/>(<ref refid="group___peripheral___registers___bits___definition_1gaeedb99c6edfa679f95441003a4fa184d" kindref="member">DMAMUX_CxCR_SE</ref>))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="919"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="920"><highlight class="normal"></highlight></codeline>
+<codeline lineno="968"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_SetSyncID(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel,<sp/>uint32_t<sp/>SyncID)</highlight></codeline>
+<codeline lineno="969"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="970"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="971"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga6553c99f510c3bab8cc0a91602053247" kindref="member">MODIFY_REG</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga03842cdf2e83bfd10cb18ccb9950294c" kindref="member">DMAMUX_CxCR_SYNC_ID</ref>,<sp/>SyncID);</highlight></codeline>
+<codeline lineno="972"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="973"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1020"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_GetSyncID(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel)</highlight></codeline>
+<codeline lineno="1021"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1022"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1023"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint32_t)(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga03842cdf2e83bfd10cb18ccb9950294c" kindref="member">DMAMUX_CxCR_SYNC_ID</ref>));</highlight></codeline>
+<codeline lineno="1024"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1025"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1037"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_EnableRequestGen(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>RequestGenChannel)</highlight></codeline>
+<codeline lineno="1038"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1039"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1040"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(((<ref refid="struct_d_m_a_m_u_x___request_gen___type_def" kindref="compound">DMAMUX_RequestGen_TypeDef</ref><sp/>*)((uint32_t)((uint32_t)<ref refid="group___peripheral__declaration_1ga7f2de783aee1e5411ae43f2e59dc49d6" kindref="member">DMAMUX1_RequestGenerator0</ref><sp/>+<sp/>(DMAMUX_RGCR_SIZE<sp/>*</highlight></codeline>
+<codeline lineno="1041"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(RequestGenChannel)))))-&gt;RGCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga5ff9c72476bf78b81d0adc19400d23c6" kindref="member">DMAMUX_RGxCR_GE</ref>);</highlight></codeline>
+<codeline lineno="1042"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1043"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1055"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_DisableRequestGen(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>RequestGenChannel)</highlight></codeline>
+<codeline lineno="1056"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1057"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1058"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(((<ref refid="struct_d_m_a_m_u_x___request_gen___type_def" kindref="compound">DMAMUX_RequestGen_TypeDef</ref><sp/>*)((uint32_t)((uint32_t)<ref refid="group___peripheral__declaration_1ga7f2de783aee1e5411ae43f2e59dc49d6" kindref="member">DMAMUX1_RequestGenerator0</ref><sp/>+<sp/>(DMAMUX_RGCR_SIZE<sp/>*</highlight></codeline>
+<codeline lineno="1059"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(RequestGenChannel)))))-&gt;RGCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga5ff9c72476bf78b81d0adc19400d23c6" kindref="member">DMAMUX_RGxCR_GE</ref>);</highlight></codeline>
+<codeline lineno="1060"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1061"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1073"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsEnabledRequestGen(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>RequestGenChannel)</highlight></codeline>
+<codeline lineno="1074"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1075"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1076"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(((<ref refid="struct_d_m_a_m_u_x___request_gen___type_def" kindref="compound">DMAMUX_RequestGen_TypeDef</ref><sp/>*)((uint32_t)((uint32_t)<ref refid="group___peripheral__declaration_1ga7f2de783aee1e5411ae43f2e59dc49d6" kindref="member">DMAMUX1_RequestGenerator0</ref><sp/>+<sp/>(DMAMUX_RGCR_SIZE<sp/>*</highlight></codeline>
+<codeline lineno="1077"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(RequestGenChannel)))))-&gt;RGCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga5ff9c72476bf78b81d0adc19400d23c6" kindref="member">DMAMUX_RGxCR_GE</ref>)<sp/>==<sp/>(<ref refid="group___peripheral___registers___bits___definition_1ga5ff9c72476bf78b81d0adc19400d23c6" kindref="member">DMAMUX_RGxCR_GE</ref>))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1078"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1079"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1096"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_SetRequestGenPolarity(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>RequestGenChannel,</highlight></codeline>
+<codeline lineno="1097"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>Polarity)</highlight></codeline>
+<codeline lineno="1098"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1099"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1100"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga6553c99f510c3bab8cc0a91602053247" kindref="member">MODIFY_REG</ref>(((<ref refid="struct_d_m_a_m_u_x___request_gen___type_def" kindref="compound">DMAMUX_RequestGen_TypeDef</ref><sp/>*)((uint32_t)((uint32_t)<ref refid="group___peripheral__declaration_1ga7f2de783aee1e5411ae43f2e59dc49d6" kindref="member">DMAMUX1_RequestGenerator0</ref><sp/>+<sp/>(DMAMUX_RGCR_SIZE<sp/>*</highlight></codeline>
+<codeline lineno="1101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(RequestGenChannel)))))-&gt;RGCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gad386b0f74797327dd7af2fa02fe9244e" kindref="member">DMAMUX_RGxCR_GPOL</ref>,<sp/>Polarity);</highlight></codeline>
+<codeline lineno="1102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1119"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_GetRequestGenPolarity(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>RequestGenChannel)</highlight></codeline>
+<codeline lineno="1120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1121"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint32_t)(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(((<ref refid="struct_d_m_a_m_u_x___request_gen___type_def" kindref="compound">DMAMUX_RequestGen_TypeDef</ref><sp/>*)((uint32_t)((uint32_t)<ref refid="group___peripheral__declaration_1ga7f2de783aee1e5411ae43f2e59dc49d6" kindref="member">DMAMUX1_RequestGenerator0</ref><sp/>+</highlight></codeline>
+<codeline lineno="1123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGCR_SIZE<sp/>*<sp/>(RequestGenChannel)))))-&gt;RGCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gad386b0f74797327dd7af2fa02fe9244e" kindref="member">DMAMUX_RGxCR_GPOL</ref>));</highlight></codeline>
+<codeline lineno="1124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1139"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_SetGenRequestNb(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>RequestGenChannel,</highlight></codeline>
+<codeline lineno="1140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>RequestNb)</highlight></codeline>
+<codeline lineno="1141"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1142"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1143"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga6553c99f510c3bab8cc0a91602053247" kindref="member">MODIFY_REG</ref>(((<ref refid="struct_d_m_a_m_u_x___request_gen___type_def" kindref="compound">DMAMUX_RequestGen_TypeDef</ref><sp/>*)((uint32_t)((uint32_t)<ref refid="group___peripheral__declaration_1ga7f2de783aee1e5411ae43f2e59dc49d6" kindref="member">DMAMUX1_RequestGenerator0</ref><sp/>+<sp/>(DMAMUX_RGCR_SIZE<sp/>*</highlight></codeline>
+<codeline lineno="1144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(RequestGenChannel)))))-&gt;RGCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gae2d8df4b352776aac7f8f87d7df10d2b" kindref="member">DMAMUX_RGxCR_GNBREQ</ref>,<sp/>(RequestNb<sp/>-<sp/>1U)<sp/>&lt;&lt;<sp/><ref refid="group___peripheral___registers___bits___definition_1ga70f95f62dde3f931d583d743ad65360e" kindref="member">DMAMUX_RGxCR_GNBREQ_Pos</ref>);</highlight></codeline>
+<codeline lineno="1145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1158"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_GetGenRequestNb(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>RequestGenChannel)</highlight></codeline>
+<codeline lineno="1159"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1160"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1161"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint32_t)((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(((<ref refid="struct_d_m_a_m_u_x___request_gen___type_def" kindref="compound">DMAMUX_RequestGen_TypeDef</ref><sp/>*)((uint32_t)((uint32_t)<ref refid="group___peripheral__declaration_1ga7f2de783aee1e5411ae43f2e59dc49d6" kindref="member">DMAMUX1_RequestGenerator0</ref><sp/>+</highlight></codeline>
+<codeline lineno="1162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGCR_SIZE<sp/>*<sp/>(RequestGenChannel)))))-&gt;RGCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gae2d8df4b352776aac7f8f87d7df10d2b" kindref="member">DMAMUX_RGxCR_GNBREQ</ref>)<sp/>&gt;&gt;<sp/><ref refid="group___peripheral___registers___bits___definition_1ga70f95f62dde3f931d583d743ad65360e" kindref="member">DMAMUX_RGxCR_GNBREQ_Pos</ref>)<sp/>+<sp/>1U);</highlight></codeline>
+<codeline lineno="1163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1200"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_SetRequestSignalID(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>RequestGenChannel,</highlight></codeline>
+<codeline lineno="1201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>RequestSignalID)</highlight></codeline>
+<codeline lineno="1202"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1203"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1204"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga6553c99f510c3bab8cc0a91602053247" kindref="member">MODIFY_REG</ref>(((<ref refid="struct_d_m_a_m_u_x___request_gen___type_def" kindref="compound">DMAMUX_RequestGen_TypeDef</ref><sp/>*)((uint32_t)((uint32_t)<ref refid="group___peripheral__declaration_1ga7f2de783aee1e5411ae43f2e59dc49d6" kindref="member">DMAMUX1_RequestGenerator0</ref><sp/>+<sp/>(DMAMUX_RGCR_SIZE<sp/>*</highlight></codeline>
+<codeline lineno="1205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(RequestGenChannel)))))-&gt;RGCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gae252cb4694b6419a79b635fefc75cec7" kindref="member">DMAMUX_RGxCR_SIG_ID</ref>,<sp/>RequestSignalID);</highlight></codeline>
+<codeline lineno="1206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1242"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_GetRequestSignalID(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>RequestGenChannel)</highlight></codeline>
+<codeline lineno="1243"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1244"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1245"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint32_t)(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(((<ref refid="struct_d_m_a_m_u_x___request_gen___type_def" kindref="compound">DMAMUX_RequestGen_TypeDef</ref><sp/>*)((uint32_t)((uint32_t)<ref refid="group___peripheral__declaration_1ga7f2de783aee1e5411ae43f2e59dc49d6" kindref="member">DMAMUX1_RequestGenerator0</ref><sp/>+</highlight></codeline>
+<codeline lineno="1246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DMAMUX_RGCR_SIZE<sp/>*<sp/>(RequestGenChannel)))))-&gt;RGCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gae252cb4694b6419a79b635fefc75cec7" kindref="member">DMAMUX_RGxCR_SIG_ID</ref>));</highlight></codeline>
+<codeline lineno="1247"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1263"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsActiveFlag_SO0(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1264"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1265"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1266"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CSR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga0670ce82c5515dbd0fa7ffb30c5e310f" kindref="member">DMAMUX_CSR_SOF0</ref>)<sp/>==<sp/>(<ref refid="group___peripheral___registers___bits___definition_1ga0670ce82c5515dbd0fa7ffb30c5e310f" kindref="member">DMAMUX_CSR_SOF0</ref>))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1267"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1275"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsActiveFlag_SO1(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1276"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1277"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1278"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CSR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga07f62e6a76515c51c49b69c065493474" kindref="member">DMAMUX_CSR_SOF1</ref>)<sp/>==<sp/>(<ref refid="group___peripheral___registers___bits___definition_1ga07f62e6a76515c51c49b69c065493474" kindref="member">DMAMUX_CSR_SOF1</ref>))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1279"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1287"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsActiveFlag_SO2(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1288"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1289"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1290"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CSR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga897d89e7184b94eb0afbca21cb8750db" kindref="member">DMAMUX_CSR_SOF2</ref>)<sp/>==<sp/>(<ref refid="group___peripheral___registers___bits___definition_1ga897d89e7184b94eb0afbca21cb8750db" kindref="member">DMAMUX_CSR_SOF2</ref>))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1291"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1299"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsActiveFlag_SO3(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1300"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1301"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1302"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CSR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga7b0ed04270f1d02833c7dc9a7b0c312f" kindref="member">DMAMUX_CSR_SOF3</ref>)<sp/>==<sp/>(<ref refid="group___peripheral___registers___bits___definition_1ga7b0ed04270f1d02833c7dc9a7b0c312f" kindref="member">DMAMUX_CSR_SOF3</ref>))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1303"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1311"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsActiveFlag_SO4(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1312"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1313"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1314"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CSR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga66e851a768425793ea5420c35b4829b0" kindref="member">DMAMUX_CSR_SOF4</ref>)<sp/>==<sp/>(<ref refid="group___peripheral___registers___bits___definition_1ga66e851a768425793ea5420c35b4829b0" kindref="member">DMAMUX_CSR_SOF4</ref>))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1315"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1317"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel5)</highlight></codeline>
+<codeline lineno="1324"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsActiveFlag_SO5(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1325"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1326"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1327"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CSR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gafeee06709196b4ba722e7ce237b27ef1" kindref="member">DMAMUX_CSR_SOF5</ref>)<sp/>==<sp/>(<ref refid="group___peripheral___registers___bits___definition_1gafeee06709196b4ba722e7ce237b27ef1" kindref="member">DMAMUX_CSR_SOF5</ref>))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1328"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1330"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel5<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1331"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel6)</highlight></codeline>
+<codeline lineno="1338"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsActiveFlag_SO6(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1339"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1340"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1341"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CSR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gaf916a041d2e0a1d335dd88c59a3164f4" kindref="member">DMAMUX_CSR_SOF6</ref>)<sp/>==<sp/>(<ref refid="group___peripheral___registers___bits___definition_1gaf916a041d2e0a1d335dd88c59a3164f4" kindref="member">DMAMUX_CSR_SOF6</ref>))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1342"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1344"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel6<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1345"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel7)</highlight></codeline>
+<codeline lineno="1352"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsActiveFlag_SO7(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1353"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1354"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1355"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CSR,<sp/>DMAMUX_CSR_SOF7)<sp/>==<sp/>(DMAMUX_CSR_SOF7))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1356"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1358"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel7<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1359"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel8)</highlight></codeline>
+<codeline lineno="1366"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsActiveFlag_SO8(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1367"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1368"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1369"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CSR,<sp/>DMAMUX_CSR_SOF8)<sp/>==<sp/>(DMAMUX_CSR_SOF8))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1370"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1372"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel8<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1373"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel9)</highlight></codeline>
+<codeline lineno="1380"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsActiveFlag_SO9(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1381"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1382"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1383"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CSR,<sp/>DMAMUX_CSR_SOF9)<sp/>==<sp/>(DMAMUX_CSR_SOF9))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1384"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1386"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel9<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1387"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel10)</highlight></codeline>
+<codeline lineno="1394"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsActiveFlag_SO10(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1395"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1396"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1397"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CSR,<sp/>DMAMUX_CSR_SOF10)<sp/>==<sp/>(DMAMUX_CSR_SOF10))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1398"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1400"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel10<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1401"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel11)</highlight></codeline>
+<codeline lineno="1408"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsActiveFlag_SO11(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1409"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1410"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1411"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CSR,<sp/>DMAMUX_CSR_SOF11)<sp/>==<sp/>(DMAMUX_CSR_SOF11))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1412"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1414"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel11<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="1421"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsActiveFlag_RGO0(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1422"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1423"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1424"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga6c9a2e5335db4ae71ef7c2536fcf97b3" kindref="member">DMAMUX1_RequestGenStatus</ref>-&gt;RGSR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gac7b3f4937e86d1fb056c2967506e1111" kindref="member">DMAMUX_RGSR_OF0</ref>)<sp/>==<sp/>(<ref refid="group___peripheral___registers___bits___definition_1gac7b3f4937e86d1fb056c2967506e1111" kindref="member">DMAMUX_RGSR_OF0</ref>))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1425"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1433"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsActiveFlag_RGO1(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1434"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1435"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1436"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga6c9a2e5335db4ae71ef7c2536fcf97b3" kindref="member">DMAMUX1_RequestGenStatus</ref>-&gt;RGSR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gab0542871f3fbe583003090bab8268818" kindref="member">DMAMUX_RGSR_OF1</ref>)<sp/>==<sp/>(<ref refid="group___peripheral___registers___bits___definition_1gab0542871f3fbe583003090bab8268818" kindref="member">DMAMUX_RGSR_OF1</ref>))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1437"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1445"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsActiveFlag_RGO2(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1446"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1447"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1448"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga6c9a2e5335db4ae71ef7c2536fcf97b3" kindref="member">DMAMUX1_RequestGenStatus</ref>-&gt;RGSR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gab8edd203deac52aadb99a89719a574e6" kindref="member">DMAMUX_RGSR_OF2</ref>)<sp/>==<sp/>(<ref refid="group___peripheral___registers___bits___definition_1gab8edd203deac52aadb99a89719a574e6" kindref="member">DMAMUX_RGSR_OF2</ref>))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1449"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1450"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1457"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsActiveFlag_RGO3(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1458"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1459"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1460"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga6c9a2e5335db4ae71ef7c2536fcf97b3" kindref="member">DMAMUX1_RequestGenStatus</ref>-&gt;RGSR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga1a380f3cd5a179e1a66f972bc45d712a" kindref="member">DMAMUX_RGSR_OF3</ref>)<sp/>==<sp/>(<ref refid="group___peripheral___registers___bits___definition_1ga1a380f3cd5a179e1a66f972bc45d712a" kindref="member">DMAMUX_RGSR_OF3</ref>))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1461"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1462"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1469"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_ClearFlag_SO0(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1470"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1471"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1472"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CFR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gaeef7c29bdda17ad3b1bed01644b1ab33" kindref="member">DMAMUX_CFR_CSOF0</ref>);</highlight></codeline>
+<codeline lineno="1473"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1474"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1481"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_ClearFlag_SO1(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1482"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1483"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1484"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CFR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gaef484190cb68042bf4e9e8a50644f754" kindref="member">DMAMUX_CFR_CSOF1</ref>);</highlight></codeline>
+<codeline lineno="1485"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1486"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1493"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_ClearFlag_SO2(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1494"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1495"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1496"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CFR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga83b3e64ad19bc75863f33f52a03fd75a" kindref="member">DMAMUX_CFR_CSOF2</ref>);</highlight></codeline>
+<codeline lineno="1497"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1498"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1505"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_ClearFlag_SO3(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1506"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1507"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1508"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CFR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga68b9cdd5ab4cf0a2fb0887b5db4e0a58" kindref="member">DMAMUX_CFR_CSOF3</ref>);</highlight></codeline>
+<codeline lineno="1509"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1510"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1517"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_ClearFlag_SO4(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1518"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1519"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1520"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CFR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga026bccb90d1300c53d8700e25942d144" kindref="member">DMAMUX_CFR_CSOF4</ref>);</highlight></codeline>
+<codeline lineno="1521"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1522"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1523"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel5)</highlight></codeline>
+<codeline lineno="1530"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_ClearFlag_SO5(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1531"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1532"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1533"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CFR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gae176fa2b8832da594c6a130d5892c779" kindref="member">DMAMUX_CFR_CSOF5</ref>);</highlight></codeline>
+<codeline lineno="1534"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1535"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1536"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel5<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1537"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel6)</highlight></codeline>
+<codeline lineno="1544"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_ClearFlag_SO6(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1545"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1546"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1547"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CFR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga695c26af87b7d7d2d727742d6f726f99" kindref="member">DMAMUX_CFR_CSOF6</ref>);</highlight></codeline>
+<codeline lineno="1548"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1549"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1550"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel6<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1551"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel7)</highlight></codeline>
+<codeline lineno="1558"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_ClearFlag_SO7(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1559"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1560"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1561"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CFR,<sp/>DMAMUX_CFR_CSOF7);</highlight></codeline>
+<codeline lineno="1562"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1563"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1564"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel7<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1565"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel8)</highlight></codeline>
+<codeline lineno="1572"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_ClearFlag_SO8(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1573"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1574"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1575"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CFR,<sp/>DMAMUX_CFR_CSOF8);</highlight></codeline>
+<codeline lineno="1576"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1577"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1578"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel8<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1579"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel9)</highlight></codeline>
+<codeline lineno="1586"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_ClearFlag_SO9(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1587"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1588"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1589"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CFR,<sp/>DMAMUX_CFR_CSOF9);</highlight></codeline>
+<codeline lineno="1590"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1591"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1592"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel9<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1593"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel10)</highlight></codeline>
+<codeline lineno="1600"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_ClearFlag_SO10(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1601"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1602"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1603"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CFR,<sp/>DMAMUX_CFR_CSOF10);</highlight></codeline>
+<codeline lineno="1604"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1605"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1606"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel10<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1607"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DMAMUX1_Channel11)</highlight></codeline>
+<codeline lineno="1614"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_ClearFlag_SO11(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1615"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1616"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1617"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1gaa3bf9725a03595373c83946d3666174a" kindref="member">DMAMUX1_ChannelStatus</ref>-&gt;CFR,<sp/>DMAMUX_CFR_CSOF11);</highlight></codeline>
+<codeline lineno="1618"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1619"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1620"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1_Channel11<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="1627"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_ClearFlag_RGO0(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1628"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1629"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1630"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga6c9a2e5335db4ae71ef7c2536fcf97b3" kindref="member">DMAMUX1_RequestGenStatus</ref>-&gt;RGCFR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gae3d433cf4d3caaaf83e777a62555b15f" kindref="member">DMAMUX_RGCFR_COF0</ref>);</highlight></codeline>
+<codeline lineno="1631"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1632"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1639"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_ClearFlag_RGO1(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1640"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1641"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1642"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga6c9a2e5335db4ae71ef7c2536fcf97b3" kindref="member">DMAMUX1_RequestGenStatus</ref>-&gt;RGCFR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga0848b4198324d163f3fe65c47c37493c" kindref="member">DMAMUX_RGCFR_COF1</ref>);</highlight></codeline>
+<codeline lineno="1643"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1644"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1651"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_ClearFlag_RGO2(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1652"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1653"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1654"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga6c9a2e5335db4ae71ef7c2536fcf97b3" kindref="member">DMAMUX1_RequestGenStatus</ref>-&gt;RGCFR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga21bff5e11e62fb6e2fd401aa645acda0" kindref="member">DMAMUX_RGCFR_COF2</ref>);</highlight></codeline>
+<codeline lineno="1655"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1656"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1663"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_ClearFlag_RGO3(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx)</highlight></codeline>
+<codeline lineno="1664"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1665"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1666"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga6c9a2e5335db4ae71ef7c2536fcf97b3" kindref="member">DMAMUX1_RequestGenStatus</ref>-&gt;RGCFR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gafc921ca625490acde916416c413ac115" kindref="member">DMAMUX_RGCFR_COF3</ref>);</highlight></codeline>
+<codeline lineno="1667"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1668"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1700"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_EnableIT_SO(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel)</highlight></codeline>
+<codeline lineno="1701"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1702"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1703"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga15775843ac0ed584bf9a1cfffd8f38b8" kindref="member">DMAMUX_CxCR_SOIE</ref>);</highlight></codeline>
+<codeline lineno="1704"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1705"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1729"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_DisableIT_SO(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel)</highlight></codeline>
+<codeline lineno="1730"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1731"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1732"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga15775843ac0ed584bf9a1cfffd8f38b8" kindref="member">DMAMUX_CxCR_SOIE</ref>);</highlight></codeline>
+<codeline lineno="1733"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1734"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1758"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsEnabledIT_SO(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>Channel)</highlight></codeline>
+<codeline lineno="1759"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1760"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1761"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>((<ref refid="group___peripheral__declaration_1ga7672f776007b4a365bd34f2432142ab4" kindref="member">DMAMUX1_Channel0</ref><sp/>+<sp/>Channel)-&gt;CCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga15775843ac0ed584bf9a1cfffd8f38b8" kindref="member">DMAMUX_CxCR_SOIE</ref>))<sp/>==<sp/>(<ref refid="group___peripheral___registers___bits___definition_1ga15775843ac0ed584bf9a1cfffd8f38b8" kindref="member">DMAMUX_CxCR_SOIE</ref>))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1762"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1763"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1775"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_EnableIT_RGO(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>RequestGenChannel)</highlight></codeline>
+<codeline lineno="1776"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1777"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1778"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>((<ref refid="group___peripheral__declaration_1ga7f2de783aee1e5411ae43f2e59dc49d6" kindref="member">DMAMUX1_RequestGenerator0</ref><sp/>+<sp/>RequestGenChannel)-&gt;RGCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga6fde828ebf2591bf66b85b962d55f7c1" kindref="member">DMAMUX_RGxCR_OIE</ref>);</highlight></codeline>
+<codeline lineno="1779"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1780"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1792"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LL_DMAMUX_DisableIT_RGO(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>RequestGenChannel)</highlight></codeline>
+<codeline lineno="1793"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1794"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1795"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>((<ref refid="group___peripheral__declaration_1ga7f2de783aee1e5411ae43f2e59dc49d6" kindref="member">DMAMUX1_RequestGenerator0</ref><sp/>+<sp/>RequestGenChannel)-&gt;RGCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga6fde828ebf2591bf66b85b962d55f7c1" kindref="member">DMAMUX_RGxCR_OIE</ref>);</highlight></codeline>
+<codeline lineno="1796"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1797"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1809"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/>uint32_t<sp/>LL_DMAMUX_IsEnabledIT_RGO(<ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref><sp/>*DMAMUXx,<sp/>uint32_t<sp/>RequestGenChannel)</highlight></codeline>
+<codeline lineno="1810"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1811"><highlight class="normal"><sp/><sp/>(void)(DMAMUXx);</highlight></codeline>
+<codeline lineno="1812"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>((<ref refid="group___peripheral__declaration_1ga7f2de783aee1e5411ae43f2e59dc49d6" kindref="member">DMAMUX1_RequestGenerator0</ref><sp/>+<sp/>RequestGenChannel)-&gt;RGCR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga6fde828ebf2591bf66b85b962d55f7c1" kindref="member">DMAMUX_RGxCR_OIE</ref>)<sp/>==<sp/>(<ref refid="group___peripheral___registers___bits___definition_1ga6fde828ebf2591bf66b85b962d55f7c1" kindref="member">DMAMUX_RGxCR_OIE</ref>))<sp/>?<sp/>1UL<sp/>:<sp/>0UL);</highlight></codeline>
+<codeline lineno="1813"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1814"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1827"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DMAMUX1<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1828"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1833"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1834"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1835"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1836"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1837"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STM32G0xx_LL_DMAMUX_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1838"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h"/>
+  </compounddef>
+</doxygen>

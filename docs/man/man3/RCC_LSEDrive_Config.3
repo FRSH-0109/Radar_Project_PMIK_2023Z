@@ -1,0 +1,40 @@
+.TH "RCC_LSEDrive_Config" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_LSEDrive_Config \- LSE Drive Configuration
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_LSEDRIVE_LOW\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_LSEDRIVE_MEDIUMLOW\fP   \fBRCC_BDCR_LSEDRV_0\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_LSEDRIVE_MEDIUMHIGH\fP   \fBRCC_BDCR_LSEDRV_1\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_LSEDRIVE_HIGH\fP   \fBRCC_BDCR_LSEDRV\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RCC_LSEDRIVE_HIGH   \fBRCC_BDCR_LSEDRV\fP"
+LSE high drive capability 
+.SS "#define RCC_LSEDRIVE_LOW   0x00000000U"
+LSE low drive capability 
+.SS "#define RCC_LSEDRIVE_MEDIUMHIGH   \fBRCC_BDCR_LSEDRV_1\fP"
+LSE medium high drive capability 
+.SS "#define RCC_LSEDRIVE_MEDIUMLOW   \fBRCC_BDCR_LSEDRV_0\fP"
+LSE medium low drive capability 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

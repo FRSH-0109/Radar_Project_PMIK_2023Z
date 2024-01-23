@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structradar_struct" kind="struct" language="C++" prot="public">
+    <compoundname>radarStruct</compoundname>
+    <includes refid="radar_8h" local="no">radar.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structradar_struct_1a6c8cdd798ccc2f670ee0e3aa6c5e6134" prot="public" static="no" mutable="no">
+        <type><ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> *</type>
+        <definition>servoDriverStruct* servo</definition>
+        <argsstring></argsstring>
+        <name>servo</name>
+        <qualifiedname>radarStruct::servo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="13" column="19" bodyfile="RadarApp/RadarDriver/radar.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structradar_struct_1a76777b356ab2a080225682528119c4fe" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <qualifiedname>radarStruct::position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="14" column="7" bodyfile="RadarApp/RadarDriver/radar.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structradar_struct_1ab672500a9007146bfda15d235a46beb5" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+        <definition>TIM_HandleTypeDef* servoTim</definition>
+        <argsstring></argsstring>
+        <name>servoTim</name>
+        <qualifiedname>radarStruct::servoTim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="15" column="19" bodyfile="RadarApp/RadarDriver/radar.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structradar_struct_1a24f98188f53563ee9a05cc92cd0352b1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t positionUpdatePeriodMs</definition>
+        <argsstring></argsstring>
+        <name>positionUpdatePeriodMs</name>
+        <qualifiedname>radarStruct::positionUpdatePeriodMs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="16" column="10" bodyfile="RadarApp/RadarDriver/radar.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structradar_struct_1a83f07e02ef2f0c0682cc8dff5de67695" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float positionUpdateStep</definition>
+        <argsstring></argsstring>
+        <name>positionUpdateStep</name>
+        <qualifiedname>radarStruct::positionUpdateStep</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="17" column="7" bodyfile="RadarApp/RadarDriver/radar.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structradar_struct_1acac5383e682fd24496c39ab7d5023a46" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float positionMin</definition>
+        <argsstring></argsstring>
+        <name>positionMin</name>
+        <qualifiedname>radarStruct::positionMin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="18" column="7" bodyfile="RadarApp/RadarDriver/radar.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structradar_struct_1a9dca5220660a30c5b0649234a6c22761" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float positionMax</definition>
+        <argsstring></argsstring>
+        <name>positionMax</name>
+        <qualifiedname>radarStruct::positionMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="19" column="7" bodyfile="RadarApp/RadarDriver/radar.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structradar_struct_1a64137967141ad97b940c16a035615d09" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <qualifiedname>radarStruct::direction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="20" column="8" bodyfile="RadarApp/RadarDriver/radar.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structradar_struct_1ae6f33f315a2b57c10b065315ac58041e" prot="public" static="no" mutable="no">
+        <type><ref refid="structdistance_sensor_struct" kindref="compound">distanceSensorStruct</ref> *</type>
+        <definition>distanceSensorStruct* sensor</definition>
+        <argsstring></argsstring>
+        <name>sensor</name>
+        <qualifiedname>radarStruct::sensor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="22" column="22" bodyfile="RadarApp/RadarDriver/radar.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structradar_struct_1a6f7e33950e97ef1b091da9946f94b7ea" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+        <definition>TIM_HandleTypeDef* sensorTim</definition>
+        <argsstring></argsstring>
+        <name>sensorTim</name>
+        <qualifiedname>radarStruct::sensorTim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="23" column="19" bodyfile="RadarApp/RadarDriver/radar.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structradar_struct_1a1fb6c4ca380736554edf1b5778d03bb6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t measurePeriodMs</definition>
+        <argsstring></argsstring>
+        <name>measurePeriodMs</name>
+        <qualifiedname>radarStruct::measurePeriodMs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="24" column="10" bodyfile="RadarApp/RadarDriver/radar.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>DMAMUX_ChannelStatus_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___channel_status___type_def"/>
+      </node>
+      <node id="9">
+        <label>DMAMUX_Channel_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___channel___type_def"/>
+      </node>
+      <node id="12">
+        <label>DMAMUX_RequestGenStatus_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___request_gen_status___type_def"/>
+      </node>
+      <node id="11">
+        <label>DMAMUX_RequestGen_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___request_gen___type_def"/>
+      </node>
+      <node id="7">
+        <label>DMA_Channel_TypeDef</label>
+        <link refid="struct_d_m_a___channel___type_def"/>
+      </node>
+      <node id="8">
+        <label>DMA_InitTypeDef</label>
+        <link refid="struct_d_m_a___init_type_def"/>
+      </node>
+      <node id="5">
+        <label>TIM_Base_InitTypeDef</label>
+        <link refid="struct_t_i_m___base___init_type_def"/>
+      </node>
+      <node id="3">
+        <label>TIM_HandleTypeDef</label>
+        <link refid="struct_t_i_m___handle_type_def"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Instance</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Init</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>hdma</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>TIM_TypeDef</label>
+        <link refid="struct_t_i_m___type_def"/>
+      </node>
+      <node id="6">
+        <label>__DMA_HandleTypeDef</label>
+        <link refid="struct_____d_m_a___handle_type_def"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Instance</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Init</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>DMAmuxChannel</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>DMAmuxChannelStatus</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>DMAmuxRequestGen</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>DMAmuxRequestGenStatus</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>distanceSensorStruct</label>
+        <link refid="structdistance_sensor_struct"/>
+      </node>
+      <node id="1">
+        <label>radarStruct</label>
+        <link refid="structradar_struct"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>servo</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>sensorTim</edgelabel>
+          <edgelabel>servoTim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>sensor</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>servoDriverStruct</label>
+        <link refid="structservo_driver_struct"/>
+      </node>
+    </collaborationgraph>
+    <location file="RadarApp/RadarDriver/radar.h" line="12" column="1" bodyfile="RadarApp/RadarDriver/radar.h" bodystart="12" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structradar_struct_1a64137967141ad97b940c16a035615d09" prot="public" virt="non-virtual"><scope>radarStruct</scope><name>direction</name></member>
+      <member refid="structradar_struct_1a1fb6c4ca380736554edf1b5778d03bb6" prot="public" virt="non-virtual"><scope>radarStruct</scope><name>measurePeriodMs</name></member>
+      <member refid="structradar_struct_1a76777b356ab2a080225682528119c4fe" prot="public" virt="non-virtual"><scope>radarStruct</scope><name>position</name></member>
+      <member refid="structradar_struct_1a9dca5220660a30c5b0649234a6c22761" prot="public" virt="non-virtual"><scope>radarStruct</scope><name>positionMax</name></member>
+      <member refid="structradar_struct_1acac5383e682fd24496c39ab7d5023a46" prot="public" virt="non-virtual"><scope>radarStruct</scope><name>positionMin</name></member>
+      <member refid="structradar_struct_1a24f98188f53563ee9a05cc92cd0352b1" prot="public" virt="non-virtual"><scope>radarStruct</scope><name>positionUpdatePeriodMs</name></member>
+      <member refid="structradar_struct_1a83f07e02ef2f0c0682cc8dff5de67695" prot="public" virt="non-virtual"><scope>radarStruct</scope><name>positionUpdateStep</name></member>
+      <member refid="structradar_struct_1ae6f33f315a2b57c10b065315ac58041e" prot="public" virt="non-virtual"><scope>radarStruct</scope><name>sensor</name></member>
+      <member refid="structradar_struct_1a6f7e33950e97ef1b091da9946f94b7ea" prot="public" virt="non-virtual"><scope>radarStruct</scope><name>sensorTim</name></member>
+      <member refid="structradar_struct_1a6c8cdd798ccc2f670ee0e3aa6c5e6134" prot="public" virt="non-virtual"><scope>radarStruct</scope><name>servo</name></member>
+      <member refid="structradar_struct_1ab672500a9007146bfda15d235a46beb5" prot="public" virt="non-virtual"><scope>radarStruct</scope><name>servoTim</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

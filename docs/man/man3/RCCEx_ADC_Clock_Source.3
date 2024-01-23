@@ -1,0 +1,35 @@
+.TH "RCCEx_ADC_Clock_Source" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCCEx_ADC_Clock_Source \- RCC ADC Clock Source
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_ADCCLKSOURCE_SYSCLK\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_ADCCLKSOURCE_PLLADC\fP   \fBRCC_CCIPR_ADCSEL_0\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_ADCCLKSOURCE_HSI\fP   \fBRCC_CCIPR_ADCSEL_1\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RCC_ADCCLKSOURCE_HSI   \fBRCC_CCIPR_ADCSEL_1\fP"
+HSI used as ADC clock 
+.SS "#define RCC_ADCCLKSOURCE_PLLADC   \fBRCC_CCIPR_ADCSEL_0\fP"
+PLL 'P' (PLLADC) used as ADC clock 
+.SS "#define RCC_ADCCLKSOURCE_SYSCLK   0x00000000U"
+SYSCLK used as ADC clock 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

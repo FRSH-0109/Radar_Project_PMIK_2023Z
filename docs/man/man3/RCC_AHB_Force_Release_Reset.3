@@ -1,0 +1,65 @@
+.TH "RCC_AHB_Force_Release_Reset" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_AHB_Force_Release_Reset \- AHB Peripheral Force Release Reset
+.PP
+ \- Force or release AHB1 peripheral reset\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_RCC_AHB_FORCE_RESET\fP()   \fBWRITE_REG\fP(\fBRCC\fP\->AHBRSTR, 0xFFFFFFFFU)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_DMA1_FORCE_RESET\fP()   \fBSET_BIT\fP(\fBRCC\fP\->AHBRSTR, \fBRCC_AHBRSTR_DMA1RST\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_FLASH_FORCE_RESET\fP()   \fBSET_BIT\fP(\fBRCC\fP\->AHBRSTR, \fBRCC_AHBRSTR_FLASHRST\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_CRC_FORCE_RESET\fP()   \fBSET_BIT\fP(\fBRCC\fP\->AHBRSTR, \fBRCC_AHBRSTR_CRCRST\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_AHB_RELEASE_RESET\fP()   \fBWRITE_REG\fP(\fBRCC\fP\->AHBRSTR, 0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_DMA1_RELEASE_RESET\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->AHBRSTR, \fBRCC_AHBRSTR_DMA1RST\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_FLASH_RELEASE_RESET\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->AHBRSTR, \fBRCC_AHBRSTR_FLASHRST\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_CRC_RELEASE_RESET\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->AHBRSTR, \fBRCC_AHBRSTR_CRCRST\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Force or release AHB1 peripheral reset\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_RCC_AHB_FORCE_RESET()   \fBWRITE_REG\fP(\fBRCC\fP\->AHBRSTR, 0xFFFFFFFFU)"
+
+.SS "#define __HAL_RCC_AHB_RELEASE_RESET()   \fBWRITE_REG\fP(\fBRCC\fP\->AHBRSTR, 0x00000000U)"
+
+.SS "#define __HAL_RCC_CRC_FORCE_RESET()   \fBSET_BIT\fP(\fBRCC\fP\->AHBRSTR, \fBRCC_AHBRSTR_CRCRST\fP)"
+
+.SS "#define __HAL_RCC_CRC_RELEASE_RESET()   \fBCLEAR_BIT\fP(\fBRCC\fP\->AHBRSTR, \fBRCC_AHBRSTR_CRCRST\fP)"
+
+.SS "#define __HAL_RCC_DMA1_FORCE_RESET()   \fBSET_BIT\fP(\fBRCC\fP\->AHBRSTR, \fBRCC_AHBRSTR_DMA1RST\fP)"
+
+.SS "#define __HAL_RCC_DMA1_RELEASE_RESET()   \fBCLEAR_BIT\fP(\fBRCC\fP\->AHBRSTR, \fBRCC_AHBRSTR_DMA1RST\fP)"
+
+.SS "#define __HAL_RCC_FLASH_FORCE_RESET()   \fBSET_BIT\fP(\fBRCC\fP\->AHBRSTR, \fBRCC_AHBRSTR_FLASHRST\fP)"
+
+.SS "#define __HAL_RCC_FLASH_RELEASE_RESET()   \fBCLEAR_BIT\fP(\fBRCC\fP\->AHBRSTR, \fBRCC_AHBRSTR_FLASHRST\fP)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

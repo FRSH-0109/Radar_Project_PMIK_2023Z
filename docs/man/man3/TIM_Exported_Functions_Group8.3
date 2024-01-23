@@ -1,0 +1,110 @@
+.TH "TIM_Exported_Functions_Group8" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_Exported_Functions_Group8 \- TIM Peripheral Control functions
+.PP
+ \- Peripheral Control functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIM_OC_ConfigChannel\fP (\fBTIM_HandleTypeDef\fP *htim, const \fBTIM_OC_InitTypeDef\fP *sConfig, uint32_t Channel)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIM_PWM_ConfigChannel\fP (\fBTIM_HandleTypeDef\fP *htim, const \fBTIM_OC_InitTypeDef\fP *sConfig, uint32_t Channel)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIM_IC_ConfigChannel\fP (\fBTIM_HandleTypeDef\fP *htim, const \fBTIM_IC_InitTypeDef\fP *sConfig, uint32_t Channel)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIM_OnePulse_ConfigChannel\fP (\fBTIM_HandleTypeDef\fP *htim, \fBTIM_OnePulse_InitTypeDef\fP *sConfig, uint32_t OutputChannel, uint32_t InputChannel)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIM_ConfigOCrefClear\fP (\fBTIM_HandleTypeDef\fP *htim, const \fBTIM_ClearInputConfigTypeDef\fP *sClearInputConfig, uint32_t Channel)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIM_ConfigClockSource\fP (\fBTIM_HandleTypeDef\fP *htim, const \fBTIM_ClockConfigTypeDef\fP *sClockSourceConfig)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIM_ConfigTI1Input\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t TI1_Selection)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIM_SlaveConfigSynchro\fP (\fBTIM_HandleTypeDef\fP *htim, const \fBTIM_SlaveConfigTypeDef\fP *sSlaveConfig)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIM_SlaveConfigSynchro_IT\fP (\fBTIM_HandleTypeDef\fP *htim, const \fBTIM_SlaveConfigTypeDef\fP *sSlaveConfig)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIM_DMABurst_WriteStart\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t BurstBaseAddress, uint32_t BurstRequestSrc, const uint32_t *BurstBuffer, uint32_t BurstLength)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIM_DMABurst_MultiWriteStart\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t BurstBaseAddress, uint32_t BurstRequestSrc, const uint32_t *BurstBuffer, uint32_t BurstLength, uint32_t DataLength)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIM_DMABurst_WriteStop\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t BurstRequestSrc)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIM_DMABurst_ReadStart\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t BurstBaseAddress, uint32_t BurstRequestSrc, uint32_t *BurstBuffer, uint32_t BurstLength)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIM_DMABurst_MultiReadStart\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t BurstBaseAddress, uint32_t BurstRequestSrc, uint32_t *BurstBuffer, uint32_t BurstLength, uint32_t DataLength)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIM_DMABurst_ReadStop\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t BurstRequestSrc)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_TIM_GenerateEvent\fP (\fBTIM_HandleTypeDef\fP *htim, uint32_t EventSource)"
+.br
+.ti -1c
+.RI "uint32_t \fBHAL_TIM_ReadCapturedValue\fP (const \fBTIM_HandleTypeDef\fP *htim, uint32_t Channel)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Peripheral Control functions\&. 
+
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIM_ConfigClockSource (\fBTIM_HandleTypeDef\fP * htim, const \fBTIM_ClockConfigTypeDef\fP * sClockSourceConfig)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIM_ConfigOCrefClear (\fBTIM_HandleTypeDef\fP * htim, const \fBTIM_ClearInputConfigTypeDef\fP * sClearInputConfig, uint32_t Channel)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIM_ConfigTI1Input (\fBTIM_HandleTypeDef\fP * htim, uint32_t TI1_Selection)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIM_DMABurst_MultiReadStart (\fBTIM_HandleTypeDef\fP * htim, uint32_t BurstBaseAddress, uint32_t BurstRequestSrc, uint32_t * BurstBuffer, uint32_t BurstLength, uint32_t DataLength)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIM_DMABurst_MultiWriteStart (\fBTIM_HandleTypeDef\fP * htim, uint32_t BurstBaseAddress, uint32_t BurstRequestSrc, const uint32_t * BurstBuffer, uint32_t BurstLength, uint32_t DataLength)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIM_DMABurst_ReadStart (\fBTIM_HandleTypeDef\fP * htim, uint32_t BurstBaseAddress, uint32_t BurstRequestSrc, uint32_t * BurstBuffer, uint32_t BurstLength)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIM_DMABurst_ReadStop (\fBTIM_HandleTypeDef\fP * htim, uint32_t BurstRequestSrc)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIM_DMABurst_WriteStart (\fBTIM_HandleTypeDef\fP * htim, uint32_t BurstBaseAddress, uint32_t BurstRequestSrc, const uint32_t * BurstBuffer, uint32_t BurstLength)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIM_DMABurst_WriteStop (\fBTIM_HandleTypeDef\fP * htim, uint32_t BurstRequestSrc)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIM_GenerateEvent (\fBTIM_HandleTypeDef\fP * htim, uint32_t EventSource)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIM_IC_ConfigChannel (\fBTIM_HandleTypeDef\fP * htim, const \fBTIM_IC_InitTypeDef\fP * sConfig, uint32_t Channel)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIM_OC_ConfigChannel (\fBTIM_HandleTypeDef\fP * htim, const \fBTIM_OC_InitTypeDef\fP * sConfig, uint32_t Channel)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIM_OnePulse_ConfigChannel (\fBTIM_HandleTypeDef\fP * htim, \fBTIM_OnePulse_InitTypeDef\fP * sConfig, uint32_t OutputChannel, uint32_t InputChannel)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIM_PWM_ConfigChannel (\fBTIM_HandleTypeDef\fP * htim, const \fBTIM_OC_InitTypeDef\fP * sConfig, uint32_t Channel)"
+
+.SS "uint32_t HAL_TIM_ReadCapturedValue (const \fBTIM_HandleTypeDef\fP * htim, uint32_t Channel)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIM_SlaveConfigSynchro (\fBTIM_HandleTypeDef\fP * htim, const \fBTIM_SlaveConfigTypeDef\fP * sSlaveConfig)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_TIM_SlaveConfigSynchro_IT (\fBTIM_HandleTypeDef\fP * htim, const \fBTIM_SlaveConfigTypeDef\fP * sSlaveConfig)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

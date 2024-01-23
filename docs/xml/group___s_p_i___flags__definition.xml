@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_p_i___flags__definition" kind="group">
+    <compoundname>SPI_Flags_definition</compoundname>
+    <title>SPI Flags Definition</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i___flags__definition_1ga7bd627ae57160a2f0aad1736194b5999" prot="public" static="no">
+        <name>SPI_FLAG_RXNE</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga40e14de547aa06864abcd4b0422d8b48" kindref="member">SPI_SR_RXNE</ref>   /* SPI status flag: Rx buffer not empty flag       */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="376" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___flags__definition_1gaf84a1e6af2739a6be58e1b23d9e6b914" prot="public" static="no">
+        <name>SPI_FLAG_TXE</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga5bd5d21816947fcb25ccae7d3bf8eb2c" kindref="member">SPI_SR_TXE</ref>    /* SPI status flag: Tx buffer empty flag           */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="377" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___flags__definition_1gaf19c77ee876a3598d616ac07d136fc46" prot="public" static="no">
+        <name>SPI_FLAG_BSY</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gaa3498df67729ae048dc5f315ef7c16bf" kindref="member">SPI_SR_BSY</ref>    /* SPI status flag: Busy flag                      */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="378" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___flags__definition_1ga30fb6af50e1f3c61cb9de76b0101c889" prot="public" static="no">
+        <name>SPI_FLAG_CRCERR</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga69e543fa9584fd636032a3ee735f750b" kindref="member">SPI_SR_CRCERR</ref> /* SPI Error flag: <ref refid="group___peripheral__declaration_1ga4381bb54c2dbc34500521165aa7b89b1" kindref="member">CRC</ref> error flag                  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="379" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___flags__definition_1gac7d3525ab98cc18f02270a4dba685897" prot="public" static="no">
+        <name>SPI_FLAG_MODF</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gabaa043349833dc7b8138969c64f63adf" kindref="member">SPI_SR_MODF</ref>   /* SPI Error flag: Mode fault flag                 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="380" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___flags__definition_1gab45264da2296c75495a7437a045513ea" prot="public" static="no">
+        <name>SPI_FLAG_OVR</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gaa8d902302c5eb81ce4a57029de281232" kindref="member">SPI_SR_OVR</ref>    /* SPI Error flag: Overrun flag                    */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="381" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___flags__definition_1ga27dd114d8adc70f1439c054289f9313a" prot="public" static="no">
+        <name>SPI_FLAG_FRE</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gace2c7cac9431231663af42e6f5aabce6" kindref="member">SPI_SR_FRE</ref>    /* SPI Error flag: TI mode frame format error flag */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="382" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___flags__definition_1gac8148197385a872c6f996a78928d1c20" prot="public" static="no">
+        <name>SPI_FLAG_FTLVL</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga17880f1e186033ebc6917c008a623371" kindref="member">SPI_SR_FTLVL</ref>  /* SPI fifo transmission level                     */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="383" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___flags__definition_1ga4406c904711e73f41bfbc930bfc92d58" prot="public" static="no">
+        <name>SPI_FLAG_FRLVL</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga60df84101c523802832c4d1a2895d665" kindref="member">SPI_SR_FRLVL</ref>  /* SPI fifo reception level                        */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="384" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___flags__definition_1ga1b2ed6861d967c5bc45a7e7c9101d33c" prot="public" static="no">
+        <name>SPI_FLAG_MASK</name>
+        <initializer>                                         (<ref refid="group___peripheral___registers___bits___definition_1ga40e14de547aa06864abcd4b0422d8b48" kindref="member">SPI_SR_RXNE</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga5bd5d21816947fcb25ccae7d3bf8eb2c" kindref="member">SPI_SR_TXE</ref> | <ref refid="group___peripheral___registers___bits___definition_1gaa3498df67729ae048dc5f315ef7c16bf" kindref="member">SPI_SR_BSY</ref> | SPI_SR_CRCERR\
+                                         | <ref refid="group___peripheral___registers___bits___definition_1gabaa043349833dc7b8138969c64f63adf" kindref="member">SPI_SR_MODF</ref> | <ref refid="group___peripheral___registers___bits___definition_1gaa8d902302c5eb81ce4a57029de281232" kindref="member">SPI_SR_OVR</ref> | <ref refid="group___peripheral___registers___bits___definition_1gace2c7cac9431231663af42e6f5aabce6" kindref="member">SPI_SR_FRE</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga17880f1e186033ebc6917c008a623371" kindref="member">SPI_SR_FTLVL</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga60df84101c523802832c4d1a2895d665" kindref="member">SPI_SR_FRLVL</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="385" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="385" bodyend="386"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

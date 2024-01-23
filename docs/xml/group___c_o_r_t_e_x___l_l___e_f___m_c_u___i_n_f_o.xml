@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___c_o_r_t_e_x___l_l___e_f___m_c_u___i_n_f_o" kind="group">
+    <compoundname>CORTEX_LL_EF_MCU_INFO</compoundname>
+    <title>MCU INFO</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___c_o_r_t_e_x___l_l___e_f___m_c_u___i_n_f_o_1ga648a5236b7fa08786086fcc4ce42b4b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t LL_CPUID_GetImplementer</definition>
+        <argsstring>(void)</argsstring>
+        <name>LL_CPUID_GetImplementer</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Implementer code @rmtoll SCB_CPUID IMPLEMENTER LL_CPUID_GetImplementer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>should be equal to 0x41 for ARM </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" line="373" column="26" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" bodystart="373" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_o_r_t_e_x___l_l___e_f___m_c_u___i_n_f_o_1ga1f843da5f8524bace7fcf8dcce7996cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t LL_CPUID_GetVariant</definition>
+        <argsstring>(void)</argsstring>
+        <name>LL_CPUID_GetVariant</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Variant number (The r value in the rnpn product revision identifier) @rmtoll SCB_CPUID VARIANT LL_CPUID_GetVariant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>between 0 and 255 (0x0: revision 0) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" line="383" column="26" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" bodystart="383" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_o_r_t_e_x___l_l___e_f___m_c_u___i_n_f_o_1gadc6dc3055d2a192ac1218e09a1e8fd19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t LL_CPUID_GetArchitecture</definition>
+        <argsstring>(void)</argsstring>
+        <name>LL_CPUID_GetArchitecture</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Architecture number @rmtoll SCB_CPUID ARCHITECTURE LL_CPUID_GetArchitecture. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>should be equal to 0xC for Cortex-M0+ devices </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" line="393" column="26" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" bodystart="393" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_o_r_t_e_x___l_l___e_f___m_c_u___i_n_f_o_1gac98fd56ad9162c3f372004bd07038bdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t LL_CPUID_GetParNo</definition>
+        <argsstring>(void)</argsstring>
+        <name>LL_CPUID_GetParNo</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Part number @rmtoll SCB_CPUID PARTNO LL_CPUID_GetParNo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>should be equal to 0xC60 for Cortex-M0+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" line="403" column="26" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" bodystart="403" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_o_r_t_e_x___l_l___e_f___m_c_u___i_n_f_o_1ga7372821defd92c49ea4563da407acd01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t LL_CPUID_GetRevision</definition>
+        <argsstring>(void)</argsstring>
+        <name>LL_CPUID_GetRevision</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Revision number (The p value in the rnpn product revision identifier, indicates patch release) @rmtoll SCB_CPUID REVISION LL_CPUID_GetRevision. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>between 0 and 255 (0x1: patch 1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" line="413" column="26" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" bodystart="413" bodyend="416"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

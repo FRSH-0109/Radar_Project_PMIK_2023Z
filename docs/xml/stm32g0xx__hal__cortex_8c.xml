@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="stm32g0xx__hal__cortex_8c" kind="file" language="C++">
+    <compoundname>stm32g0xx_hal_cortex.c</compoundname>
+    <includes refid="stm32g0xx__hal_8h" local="yes">stm32g0xx_hal.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="7">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="2">
+        <label>stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stm32g0xx_hal_cortex.h</label>
+        <link refid="stm32g0xx__hal__cortex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stm32g0xx_hal_dma.h</label>
+        <link refid="stm32g0xx__hal__dma_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stm32g0xx_hal_dma_ex.h</label>
+        <link refid="stm32g0xx__hal__dma__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>stm32g0xx_hal_exti.h</label>
+        <link refid="stm32g0xx__hal__exti_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>stm32g0xx_hal_flash.h</label>
+        <link refid="stm32g0xx__hal__flash_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>stm32g0xx_hal_flash_ex.h</label>
+        <link refid="stm32g0xx__hal__flash__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stm32g0xx_hal_gpio.h</label>
+        <link refid="stm32g0xx__hal__gpio_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stm32g0xx_hal_gpio_ex.h</label>
+        <link refid="stm32g0xx__hal__gpio__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>stm32g0xx_hal_pwr.h</label>
+        <link refid="stm32g0xx__hal__pwr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>stm32g0xx_hal_pwr_ex.h</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stm32g0xx_hal_rcc.h</label>
+        <link refid="stm32g0xx__hal__rcc_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stm32g0xx_hal_rcc_ex.h</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>stm32g0xx_hal_spi.h</label>
+        <link refid="stm32g0xx__hal__spi_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>stm32g0xx_hal_spi_ex.h</label>
+        <link refid="stm32g0xx__hal__spi__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>stm32g0xx_hal_tim.h</label>
+        <link refid="stm32g0xx__hal__tim_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>stm32g0xx_hal_tim_ex.h</label>
+        <link refid="stm32g0xx__hal__tim__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>stm32g0xx_hal_uart.h</label>
+        <link refid="stm32g0xx__hal__uart_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>stm32g0xx_hal_uart_ex.h</label>
+        <link refid="stm32g0xx__hal__uart__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stm32g0xx_ll_dma.h</label>
+        <link refid="stm32g0xx__ll__dma_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stm32g0xx_ll_dmamux.h</label>
+        <link refid="stm32g0xx__ll__dmamux_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stm32g0xx_ll_rcc.h</label>
+        <link refid="stm32g0xx__ll__rcc_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c</label>
+        <link refid="stm32g0xx__hal__cortex_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>CORTEX HAL module driver. This file provides firmware functions to manage the following functionalities of the CORTEX: </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team<itemizedlist>
+<listitem><para>Initialization and Configuration functions</para>
+</listitem><listitem><para>Peripheral Control functions</para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+<verbatim>==============================================================================
+                      ##### How to use this driver #####
+==============================================================================
+  [..]
+  *** How to configure Interrupts using CORTEX HAL driver ***
+  ===========================================================
+  [..]
+  This section provides functions allowing to configure the NVIC interrupts (IRQ).
+  The Cortex M0+ exceptions are managed by CMSIS functions.
+    (#) Enable and Configure the priority of the selected IRQ Channels.
+           The priority can be 0..3.
+
+      -@- Lower priority values gives higher priority.
+      -@- Priority Order:
+          (#@) Lowest priority.
+          (#@) Lowest hardware priority (IRQn position).
+
+    (#)  Configure the priority of the selected IRQ Channels using HAL_NVIC_SetPriority()
+
+    (#)  Enable the selected IRQ Channels using HAL_NVIC_EnableIRQ()
+
+    -@-  Negative value of IRQn_Type are not allowed.
+
+  *** How to configure Systick using CORTEX HAL driver ***
+  ========================================================
+  [..]
+  Setup SysTick Timer for time base.
+
+ (+) The HAL_SYSTICK_Config()function calls the SysTick_Config() function which
+     is a CMSIS function that:
+      (++) Configures the SysTick Reload register with value passed as function parameter.
+      (++) Configures the SysTick IRQ priority to the lowest value (0x03).
+      (++) Resets the SysTick Counter register.
+      (++) Configures the SysTick Counter clock source to be Core Clock Source (HCLK).
+      (++) Enables the SysTick Interrupt.
+      (++) Starts the SysTick Counter.
+
+ (+) You can change the SysTick Clock source to be HCLK_Div8 by calling the macro
+     __HAL_CORTEX_SYSTICKCLK_CONFIG(SYSTICK_CLKSOURCE_HCLK_DIV8) just after the
+     HAL_SYSTICK_Config() function call. The __HAL_CORTEX_SYSTICKCLK_CONFIG() macro is defined
+     inside the stm32g0xx_hal_cortex.h file.
+
+ (+) You can change the SysTick IRQ priority by calling the
+     HAL_NVIC_SetPriority(SysTick_IRQn,...) function just after the HAL_SYSTICK_Config() function
+     call. The HAL_NVIC_SetPriority() call the NVIC_SetPriority() function which is a CMSIS function.
+
+ (+) To adjust the SysTick time base, use the following formula:
+
+     Reload Value = SysTick Counter Clock (Hz) x  Desired Time base (s)
+     (++) Reload Value is the parameter to be passed for HAL_SYSTICK_Config() function
+     (++) Reload Value should not exceed 0xFFFFFF</verbatim></para>
+<para><simplesect kind="attention"><para></para>
+</simplesect>
+Copyright (c) 2018 STMicroelectronics. All rights reserved.</para>
+<para>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32g0xx__hal_8h" kindref="compound">stm32g0xx_hal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAL_CORTEX_MODULE_ENABLED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>types<sp/>-------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>variables<sp/>---------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>constants<sp/>---------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>macros<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>function<sp/>prototypes<sp/>-----------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>functions<sp/>--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1ga8581a82025a4780efd00876a66e3e91b" kindref="member">HAL_NVIC_SetPriority</ref>(<ref refid="group___peripheral__interrupt__number__definition_1ga7e1129cd8a196f4284d41db3e82ad5c8" kindref="member">IRQn_Type</ref><sp/>IRQn,<sp/>uint32_t<sp/>PreemptPriority,<sp/>uint32_t<sp/>SubPriority)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Prevent<sp/>unused<sp/>argument(s)<sp/>compilation<sp/>warning<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(SubPriority);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___c_o_r_t_e_x___private___macros_1gaf30fd8f5960c2e28a772d8f16bb156dd" kindref="member">IS_NVIC_PREEMPTION_PRIORITY</ref>(PreemptPriority));</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___c_o_r_e_1gae0e9d0e2f7b6133828c71b57d4941c35" kindref="member">NVIC_SetPriority</ref>(IRQn,<sp/>PreemptPriority);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1gaaad4492c1b25e006d69948a15790352a" kindref="member">HAL_NVIC_EnableIRQ</ref>(<ref refid="group___peripheral__interrupt__number__definition_1ga7e1129cd8a196f4284d41db3e82ad5c8" kindref="member">IRQn_Type</ref><sp/>IRQn)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___c_o_r_t_e_x___private___macros_1ga9b8dcac4ed8e88c14d9bb04e369dad6a" kindref="member">IS_NVIC_DEVICE_IRQ</ref>(IRQn));</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enable<sp/>interrupt<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___c_o_r_e_1ga57b3064413dbc7459d9646020fdd8bef" kindref="member">NVIC_EnableIRQ</ref>(IRQn);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1ga50ca6290e068821cb84aa168f3e13967" kindref="member">HAL_NVIC_DisableIRQ</ref>(<ref refid="group___peripheral__interrupt__number__definition_1ga7e1129cd8a196f4284d41db3e82ad5c8" kindref="member">IRQn_Type</ref><sp/>IRQn)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___c_o_r_t_e_x___private___macros_1ga9b8dcac4ed8e88c14d9bb04e369dad6a" kindref="member">IS_NVIC_DEVICE_IRQ</ref>(IRQn));</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Disable<sp/>interrupt<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___c_o_r_e_1ga73b4e251f59cab4e9a5e234aac02ae57" kindref="member">NVIC_DisableIRQ</ref>(IRQn);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1gac83d89028fabdf5d4c38ecf4fbfbefdc" kindref="member">HAL_NVIC_SystemReset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>System<sp/>Reset<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___c_o_r_e_1ga6aa0367d3642575610476bf0366f0c48" kindref="member">NVIC_SystemReset</ref>();</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal">uint32_t<sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1gac3a3f0d53c315523a8e6e7bcac1940cf" kindref="member">HAL_SYSTICK_Config</ref>(uint32_t<sp/>TicksNumb)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SysTick_Config(TicksNumb);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">uint32_t<sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group2_1ga37e7e4bf3e1eebe549cb5853c5360a70" kindref="member">HAL_NVIC_GetPriority</ref>(<ref refid="group___peripheral__interrupt__number__definition_1ga7e1129cd8a196f4284d41db3e82ad5c8" kindref="member">IRQn_Type</ref><sp/>IRQn)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>priority<sp/>for<sp/>Cortex-M<sp/>system<sp/>or<sp/>device<sp/>specific<sp/>interrupts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group___c_m_s_i_s___c_o_r_e_1gaf59b9d0a791d2157abb319753953eceb" kindref="member">NVIC_GetPriority</ref>(IRQn);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group2_1gaecf50f6c6d0e1fa5f8bd8c1b45309f18" kindref="member">HAL_NVIC_SetPendingIRQ</ref>(<ref refid="group___peripheral__interrupt__number__definition_1ga7e1129cd8a196f4284d41db3e82ad5c8" kindref="member">IRQn_Type</ref><sp/>IRQn)</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___c_o_r_t_e_x___private___macros_1ga9b8dcac4ed8e88c14d9bb04e369dad6a" kindref="member">IS_NVIC_DEVICE_IRQ</ref>(IRQn));</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>interrupt<sp/>pending<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___c_o_r_e_1ga2b47e2e52cf5c48a5c3348636434b3ac" kindref="member">NVIC_SetPendingIRQ</ref>(IRQn);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal">uint32_t<sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group2_1ga3bd5802a96f0dcbc00ac3b89b134da3b" kindref="member">HAL_NVIC_GetPendingIRQ</ref>(<ref refid="group___peripheral__interrupt__number__definition_1ga7e1129cd8a196f4284d41db3e82ad5c8" kindref="member">IRQn_Type</ref><sp/>IRQn)</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___c_o_r_t_e_x___private___macros_1ga9b8dcac4ed8e88c14d9bb04e369dad6a" kindref="member">IS_NVIC_DEVICE_IRQ</ref>(IRQn));</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Return<sp/>1<sp/>if<sp/>pending<sp/>else<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group___c_m_s_i_s___c_o_r_e_1gac608957a239466e9e0cbc30aa64feb3b" kindref="member">NVIC_GetPendingIRQ</ref>(IRQn);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group2_1ga0c7d007acf1339ca1bb46f3c6e018ff5" kindref="member">HAL_NVIC_ClearPendingIRQ</ref>(<ref refid="group___peripheral__interrupt__number__definition_1ga7e1129cd8a196f4284d41db3e82ad5c8" kindref="member">IRQn_Type</ref><sp/>IRQn)</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___c_o_r_t_e_x___private___macros_1ga9b8dcac4ed8e88c14d9bb04e369dad6a" kindref="member">IS_NVIC_DEVICE_IRQ</ref>(IRQn));</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>pending<sp/>interrupt<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___c_o_r_e_1ga590cf113000a079b1f0ea3dcd5b5316c" kindref="member">NVIC_ClearPendingIRQ</ref>(IRQn);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group2_1ga3284dc8428996f5b6aa6b3b99e643788" kindref="member">HAL_SYSTICK_CLKSourceConfig</ref>(uint32_t<sp/>CLKSource)</highlight></codeline>
+<codeline lineno="286"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___c_o_r_t_e_x___private___macros_1ga22d6291f6aed29442cf4cd9098fa0784" kindref="member">IS_SYSTICK_CLK_SOURCE</ref>(CLKSource));</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(CLKSource<sp/>==<sp/><ref refid="group___c_o_r_t_e_x___sys_tick__clock__source_1ga6f6582df23b6fbc578325e453b9893b7" kindref="member">SYSTICK_CLKSOURCE_HCLK</ref>)</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_m_s_i_s___c_o_r_e_1gacd96c53beeaff8f603fcda425eb295de" kindref="member">SysTick</ref>-&gt;CTRL<sp/>|=<sp/><ref refid="group___c_o_r_t_e_x___sys_tick__clock__source_1ga6f6582df23b6fbc578325e453b9893b7" kindref="member">SYSTICK_CLKSOURCE_HCLK</ref>;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_m_s_i_s___c_o_r_e_1gacd96c53beeaff8f603fcda425eb295de" kindref="member">SysTick</ref>-&gt;CTRL<sp/>&amp;=<sp/>~SYSTICK_CLKSOURCE_HCLK;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group2_1ga5b66b62383261c1e0acef98d344aa4c1" kindref="member">HAL_SYSTICK_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="304"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group2_1ga5033855e81ba2071231b60599a3ce9a1" kindref="member">HAL_SYSTICK_Callback</ref>();</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal">__weak<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group2_1ga5033855e81ba2071231b60599a3ce9a1" kindref="member">HAL_SYSTICK_Callback</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="313"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>NOTE<sp/>:<sp/>This<sp/>function<sp/>should<sp/>not<sp/>be<sp/>modified,<sp/>when<sp/>the<sp/>callback<sp/>is<sp/>needed,</highlight></codeline>
+<codeline lineno="315"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>HAL_SYSTICK_Callback<sp/>could<sp/>be<sp/>implemented<sp/>in<sp/>the<sp/>user<sp/>file</highlight></codeline>
+<codeline lineno="316"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(__MPU_PRESENT<sp/>==<sp/>1U)</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HAL_MPU_Enable(uint32_t<sp/>MPU_Control)</highlight></codeline>
+<codeline lineno="332"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enable<sp/>the<sp/>MPU<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/>MPU-&gt;CTRL<sp/>=<sp/>(MPU_Control<sp/>|<sp/>MPU_CTRL_ENABLE_Msk);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Ensure<sp/>MPU<sp/>setting<sp/>take<sp/>effects<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___core___instruction_interface_1ga067d257a2b34565410acefb5afef2203" kindref="member">__DSB</ref>();</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___core___instruction_interface_1gaad233022e850a009fc6f7602be1182f6" kindref="member">__ISB</ref>();</highlight></codeline>
+<codeline lineno="339"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HAL_MPU_Disable(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="347"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Make<sp/>sure<sp/>outstanding<sp/>transfers<sp/>are<sp/>done<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___core___instruction_interface_1ga671101179b5943990785f36f8c1e2269" kindref="member">__DMB</ref>();</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Disable<sp/>the<sp/>MPU<sp/>and<sp/>clear<sp/>the<sp/>control<sp/>register*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/>MPU-&gt;CTRL<sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HAL_MPU_ConfigRegion(MPU_Region_InitTypeDef<sp/>*MPU_Init)</highlight></codeline>
+<codeline lineno="363"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(IS_MPU_REGION_NUMBER(MPU_Init-&gt;Number));</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(IS_MPU_REGION_ENABLE(MPU_Init-&gt;Enable));</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>the<sp/>Region<sp/>number<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/>MPU-&gt;RNR<sp/>=<sp/>MPU_Init-&gt;Number;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((MPU_Init-&gt;Enable)<sp/>!=<sp/>0U)</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(IS_MPU_INSTRUCTION_ACCESS(MPU_Init-&gt;DisableExec));</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(IS_MPU_REGION_PERMISSION_ATTRIBUTE(MPU_Init-&gt;AccessPermission));</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(IS_MPU_TEX_LEVEL(MPU_Init-&gt;TypeExtField));</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(IS_MPU_ACCESS_SHAREABLE(MPU_Init-&gt;IsShareable));</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(IS_MPU_ACCESS_CACHEABLE(MPU_Init-&gt;IsCacheable));</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(IS_MPU_ACCESS_BUFFERABLE(MPU_Init-&gt;IsBufferable));</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(IS_MPU_SUB_REGION_DISABLE(MPU_Init-&gt;SubRegionDisable));</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(IS_MPU_REGION_SIZE(MPU_Init-&gt;Size));</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/>MPU-&gt;RBAR<sp/>=<sp/>MPU_Init-&gt;BaseAddress;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/>MPU-&gt;RASR<sp/>=<sp/>((uint32_t)MPU_Init-&gt;DisableExec<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>MPU_RASR_XN_Pos)<sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)MPU_Init-&gt;AccessPermission<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>MPU_RASR_AP_Pos)<sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)MPU_Init-&gt;TypeExtField<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>MPU_RASR_TEX_Pos)<sp/><sp/>|</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)MPU_Init-&gt;IsShareable<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>MPU_RASR_S_Pos)<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)MPU_Init-&gt;IsCacheable<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>MPU_RASR_C_Pos)<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)MPU_Init-&gt;IsBufferable<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>MPU_RASR_B_Pos)<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)MPU_Init-&gt;SubRegionDisable<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>MPU_RASR_SRD_Pos)<sp/><sp/>|</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)MPU_Init-&gt;Size<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>MPU_RASR_SIZE_Pos)<sp/>|</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)MPU_Init-&gt;Enable<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>MPU_RASR_ENABLE_Pos);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/>MPU-&gt;RBAR<sp/>=<sp/>0x00U;</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/>MPU-&gt;RASR<sp/>=<sp/>0x00U;</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="399"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__MPU_PRESENT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_CORTEX_MODULE_ENABLED<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c"/>
+  </compounddef>
+</doxygen>

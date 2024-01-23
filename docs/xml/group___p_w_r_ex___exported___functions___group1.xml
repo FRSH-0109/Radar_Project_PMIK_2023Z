@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___p_w_r_ex___exported___functions___group1" kind="group">
+    <compoundname>PWREx_Exported_Functions_Group1</compoundname>
+    <title>Extended Peripheral Control functions</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___p_w_r_ex___exported___functions___group1_1gabc3f2197ca4d8879dabb76d5cc4bc442" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWREx_EnableBatteryCharging</definition>
+        <argsstring>(uint32_t ResistorSelection)</argsstring>
+        <name>HAL_PWREx_EnableBatteryCharging</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ResistorSelection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="563" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" declline="563" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r_ex___exported___functions___group1_1ga808f86f6f56f380c9863dee7ddf5bff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWREx_DisableBatteryCharging</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_PWREx_DisableBatteryCharging</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="564" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" declline="564" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r_ex___exported___functions___group1_1ga3cfe7616c39b0c8524bdad2290e508b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWREx_EnableInternalWakeUpLine</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_PWREx_EnableInternalWakeUpLine</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="569" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" declline="569" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r_ex___exported___functions___group1_1ga32380a9c44681d7a53212adf35cdc16f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWREx_DisableInternalWakeUpLine</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_PWREx_DisableInternalWakeUpLine</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="570" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" declline="570" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r_ex___exported___functions___group1_1ga1c66e7444ac70938c6e7a107212c62f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_PWREx_EnableGPIOPullUp</definition>
+        <argsstring>(uint32_t GPIO, uint32_t GPIONumber)</argsstring>
+        <name>HAL_PWREx_EnableGPIOPullUp</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>GPIO</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>GPIONumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="571" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" declline="571" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r_ex___exported___functions___group1_1gad3e402154b79e7f56c4f526d3c9d12d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_PWREx_DisableGPIOPullUp</definition>
+        <argsstring>(uint32_t GPIO, uint32_t GPIONumber)</argsstring>
+        <name>HAL_PWREx_DisableGPIOPullUp</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>GPIO</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>GPIONumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="572" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" declline="572" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r_ex___exported___functions___group1_1gaacf48e452bfd1b111fcb9dd4be19774e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_PWREx_EnableGPIOPullDown</definition>
+        <argsstring>(uint32_t GPIO, uint32_t GPIONumber)</argsstring>
+        <name>HAL_PWREx_EnableGPIOPullDown</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>GPIO</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>GPIONumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="573" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" declline="573" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r_ex___exported___functions___group1_1ga3313d923ce8e87302a066fc5a31bf3dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_PWREx_DisableGPIOPullDown</definition>
+        <argsstring>(uint32_t GPIO, uint32_t GPIONumber)</argsstring>
+        <name>HAL_PWREx_DisableGPIOPullDown</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>GPIO</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>GPIONumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="574" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" declline="574" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r_ex___exported___functions___group1_1gac3b0e88b0d5af66f04a4fe79295f8a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWREx_EnablePullUpPullDownConfig</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_PWREx_EnablePullUpPullDownConfig</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="575" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" declline="575" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r_ex___exported___functions___group1_1gaac0bbd32fc0ef037024720692f190f64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWREx_DisablePullUpPullDownConfig</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_PWREx_DisablePullUpPullDownConfig</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="576" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" declline="576" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r_ex___exported___functions___group1_1ga3712f4a4b5b492864fbb206763426428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWREx_EnableFlashPowerDown</definition>
+        <argsstring>(uint32_t PowerMode)</argsstring>
+        <name>HAL_PWREx_EnableFlashPowerDown</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>PowerMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="581" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" declline="581" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r_ex___exported___functions___group1_1ga283979e2c9117c27dfacc38161ac100b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWREx_DisableFlashPowerDown</definition>
+        <argsstring>(uint32_t PowerMode)</argsstring>
+        <name>HAL_PWREx_DisableFlashPowerDown</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>PowerMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="582" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" declline="582" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r_ex___exported___functions___group1_1ga2978c7160c8d166f1bf2bf39e4bf33f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t HAL_PWREx_GetVoltageRange</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_PWREx_GetVoltageRange</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="583" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" declline="583" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r_ex___exported___functions___group1_1ga1a1e616641c2dc696681ace585d9afb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_PWREx_ControlVoltageScaling</definition>
+        <argsstring>(uint32_t VoltageScaling)</argsstring>
+        <name>HAL_PWREx_ControlVoltageScaling</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>VoltageScaling</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="584" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" declline="584" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r_ex___exported___functions___group1_1ga03d018969b6940092bb32a3869b8c84e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWREx_EnableLowPowerRunMode</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_PWREx_EnableLowPowerRunMode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="603" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" declline="603" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r_ex___exported___functions___group1_1ga848ac532d5c69ae9357a8ebcd8bb82f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_PWREx_DisableLowPowerRunMode</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_PWREx_DisableLowPowerRunMode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="604" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" declline="604" declcolumn="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

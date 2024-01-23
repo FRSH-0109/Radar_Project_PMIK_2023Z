@@ -1,0 +1,46 @@
+.TH "UART_Hardware_Flow_Control" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Hardware_Flow_Control \- UART Hardware Flow Control
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_HWCONTROL_NONE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_HWCONTROL_RTS\fP   \fBUSART_CR3_RTSE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_HWCONTROL_CTS\fP   \fBUSART_CR3_CTSE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_HWCONTROL_RTS_CTS\fP   (\fBUSART_CR3_RTSE\fP | \fBUSART_CR3_CTSE\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define UART_HWCONTROL_CTS   \fBUSART_CR3_CTSE\fP"
+Clear To Send 
+.br
+ 
+.SS "#define UART_HWCONTROL_NONE   0x00000000U"
+No hardware control 
+.br
+ 
+.SS "#define UART_HWCONTROL_RTS   \fBUSART_CR3_RTSE\fP"
+Request To Send 
+.br
+ 
+.SS "#define UART_HWCONTROL_RTS_CTS   (\fBUSART_CR3_RTSE\fP | \fBUSART_CR3_CTSE\fP)"
+Request and Clear To Send 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

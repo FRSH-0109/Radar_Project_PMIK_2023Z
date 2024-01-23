@@ -1,0 +1,58 @@
+.TH "UART_Custom_HandleTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Custom_HandleTypeDef
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <usart_custom\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBUART_HandleTypeDef\fP * \fBhuart\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBdataRxMaxLen\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBdataTxMaxLen\fP"
+.br
+.ti -1c
+.RI "volatile uint8_t \fBdataRx\fP [\fBMAX_UART_RX_DATA_LEN\fP]"
+.br
+.ti -1c
+.RI "uint8_t \fBdataTx\fP [\fBMAX_UART_TX_DATA_LEN\fP]"
+.br
+.ti -1c
+.RI "volatile bool \fBtxTransmissionCmplt\fP"
+.br
+.ti -1c
+.RI "volatile uint32_t \fBtxTransmissionCmpltTime\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure for custom uart handle 
+.SH "Member Data Documentation"
+.PP 
+.SS "volatile uint8_t UART_Custom_HandleTypeDef::dataRx[\fBMAX_UART_RX_DATA_LEN\fP]"
+Array of rx uart data used store recent received data before passing to queue 
+.SS "uint16_t UART_Custom_HandleTypeDef::dataRxMaxLen"
+Maximum rx uart buffer length 
+.SS "uint8_t UART_Custom_HandleTypeDef::dataTx[\fBMAX_UART_TX_DATA_LEN\fP]"
+Array of tx uart data used to store data before passing to queue 
+.SS "uint16_t UART_Custom_HandleTypeDef::dataTxMaxLen"
+Maximum tx uart buffer length 
+.SS "\fBUART_HandleTypeDef\fP* UART_Custom_HandleTypeDef::huart"
+Pointer to HAL uart handle 
+.SS "volatile bool UART_Custom_HandleTypeDef::txTransmissionCmplt"
+Flag for indicate if data was already send 
+.SS "volatile uint32_t UART_Custom_HandleTypeDef::txTransmissionCmpltTime"
+Value for measuring time out of last send data frame 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,35 @@
+.TH "SYSCFG_Break" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SYSCFG_Break \- Break
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSYSCFG_BREAK_SP\fP   \fBSYSCFG_CFGR2_SPL\fP"
+.br
+.ti -1c
+.RI "#define \fBSYSCFG_BREAK_LOCKUP\fP   \fBSYSCFG_CFGR2_CLL\fP"
+.br
+.ti -1c
+.RI "#define \fBSYSCFG_BREAK_ECC\fP   \fBSYSCFG_CFGR2_ECCL\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define SYSCFG_BREAK_ECC   \fBSYSCFG_CFGR2_ECCL\fP"
+Enables and locks the ECC of CortexM0+ with Break Input of TIM1/15/16/17 
+.SS "#define SYSCFG_BREAK_LOCKUP   \fBSYSCFG_CFGR2_CLL\fP"
+Enables and locks the LOCKUP output of CortexM0+ with Break Input of TIM1/15/16/17 
+.SS "#define SYSCFG_BREAK_SP   \fBSYSCFG_CFGR2_SPL\fP"
+Enables and locks the SRAM Parity error signal with Break Input of TIM1/15/16/17 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

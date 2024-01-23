@@ -1,0 +1,66 @@
+.TH "FLASH_OBProgramInitTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FLASH_OBProgramInitTypeDef \- FLASH Option Bytes Program structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_hal_flash\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBOptionType\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBWRPArea\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBWRPStartOffset\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBWRPEndOffset\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRDPLevel\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBUSERType\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBUSERConfig\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+FLASH Option Bytes Program structure definition\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t FLASH_OBProgramInitTypeDef::OptionType"
+Option byte to be configured\&. This parameter can be a combination of the values of \fBFLASH Option Bytes Type\fP 
+.SS "uint32_t FLASH_OBProgramInitTypeDef::RDPLevel"
+Set the read protection level (used for OPTIONBYTE_RDP)\&. This parameter can be a value of \fBFLASH Option Bytes Read Protection\fP 
+.SS "uint32_t FLASH_OBProgramInitTypeDef::USERConfig"
+Value of the user option byte (used for OPTIONBYTE_USER)\&. This parameter can be a combination of \fBFLASH_OB_USER_BOR_ENABLE(*)\fP, \fBFLASH_OB_USER_BOR_LEVEL(*)\fP, \fBFLASH_OB_USER_RESET_CONFIG(*)\fP, \fBFLASH Option Bytes User Reset On Stop\fP, \fBFLASH Option Bytes User Reset On Standby\fP, \fBFLASH_OB_USER_nRST_SHUTDOWN(*)\fP, \fBFLASH Option Bytes User IWDG Type\fP, \fBFLASH Option Bytes User IWDG Mode On Stop\fP, \fBFLASH Option Bytes User IWDG Mode On Standby\fP, \fBFLASH Option Bytes User WWDG Type\fP, \fBFLASH Option Bytes User SRAM parity\fP, \fBFLASH_OB_USER_BANK_SWAP(*)\fP, \fBFLASH_OB_USER_DUAL_BANK(*)\fP, \fBFLASH Option Bytes User Boot0 Selection\fP, \fBFLASH Option Bytes User BOOT1 Type\fP, \fBFLASH Option Bytes User nBOOT0 option bit\fP, \fBFLASH_OB_USER_INPUT_RESET_HOLDER(*)\fP 
+.PP
+\fBNote\fP
+.RS 4
+(*) availability depends on devices 
+.RE
+.PP
+
+.SS "uint32_t FLASH_OBProgramInitTypeDef::USERType"
+User option byte(s) to be configured (used for OPTIONBYTE_USER)\&. This parameter can be a combination of \fBFLASH Option Bytes User Type\fP 
+.SS "uint32_t FLASH_OBProgramInitTypeDef::WRPArea"
+Write protection area to be programmed (used for OPTIONBYTE_WRP)\&. Only one WRP area could be programmed at the same time\&. This parameter can be value of \fBFLASH WRP Area\fP 
+.SS "uint32_t FLASH_OBProgramInitTypeDef::WRPEndOffset"
+Write protection end offset (used for OPTIONBYTE_WRP)\&. This parameter must be a value between WRPStartOffset and [FLASH_PAGE_NB - 1] 
+.SS "uint32_t FLASH_OBProgramInitTypeDef::WRPStartOffset"
+Write protection start offset (used for OPTIONBYTE_WRP)\&. This parameter must be a value between 0 and [FLASH_PAGE_NB - 1] 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,244 @@
+.TH "Core/Src/main.c" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Core/Src/main.c \- Main source file of ultrasonic radar project\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'main\&.h'\fP
+.br
+\fC#include 'dma\&.h'\fP
+.br
+\fC#include 'spi\&.h'\fP
+.br
+\fC#include 'tim\&.h'\fP
+.br
+\fC#include 'usart\&.h'\fP
+.br
+\fC#include 'gpio\&.h'\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+\fC#include 'usart_custom\&.h'\fP
+.br
+\fC#include 'servo_driver\&.h'\fP
+.br
+\fC#include 'ILI9341\&.h'\fP
+.br
+\fC#include 'GFX_Color\&.h'\fP
+.br
+\fC#include 'fonts/font_8x5\&.h'\fP
+.br
+\fC#include 'distance_sensor\&.h'\fP
+.br
+\fC#include 'radar\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSystemClock_Config\fP (void)"
+.br
+.RI "System Clock Configuration\&. "
+.ti -1c
+.RI "int \fBmain\fP (void)"
+.br
+.RI "The application entry point\&. "
+.ti -1c
+.RI "void \fBdrawClear\fP ()"
+.br
+.ti -1c
+.RI "void \fBdrawSetup\fP ()"
+.br
+.ti -1c
+.RI "bool \fBdrawSetupUpdate\fP (double drawScale, uint8_t measureScalesNumber)"
+.br
+.ti -1c
+.RI "void \fBdrawMeasure\fP ()"
+.br
+.ti -1c
+.RI "void \fBdrawMeasureScale\fP ()"
+.br
+.ti -1c
+.RI "void \fBHAL_TIM_PeriodElapsedCallback\fP (\fBTIM_HandleTypeDef\fP *htim)"
+.br
+.ti -1c
+.RI "void \fBdistanceSensorTrigOn\fP (\fBdistanceSensorStruct\fP *sensor)"
+.br
+.ti -1c
+.RI "void \fBdistanceSensorDelay\fP (\fBdistanceSensorStruct\fP *sensor, uint32_t delay)"
+.br
+.ti -1c
+.RI "void \fBdistanceSensorTrigOff\fP (\fBdistanceSensorStruct\fP *sensor)"
+.br
+.ti -1c
+.RI "void \fBHAL_GPIO_EXTI_Rising_Callback\fP (uint16_t GPIO_Pin)"
+.br
+.ti -1c
+.RI "void \fBHAL_GPIO_EXTI_Falling_Callback\fP (uint16_t GPIO_Pin)"
+.br
+.ti -1c
+.RI "void \fBservoDriverStartTimer\fP (\fBservoDriverStruct\fP *servoDriver)"
+.br
+.ti -1c
+.RI "void \fBservoDriverStopTimer\fP (\fBservoDriverStruct\fP *servoDriver)"
+.br
+.ti -1c
+.RI "void \fBservoDriverSetPulseWidth\fP (\fBservoDriverStruct\fP *servoDriver)"
+.br
+.ti -1c
+.RI "void \fBError_Handler\fP (void)"
+.br
+.RI "This function is executed in case of error occurrence\&. "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBservoDriverStruct\fP \fBservoPA6\fP"
+.br
+.ti -1c
+.RI "\fBdistanceSensorStruct\fP \fBdistanceSensorPA2\fP"
+.br
+.ti -1c
+.RI "\fBradarStruct\fP \fBradar\fP"
+.br
+.ti -1c
+.RI "\fBdrawHelperStruct\fP \fBdrawHelper\fP"
+.br
+.ti -1c
+.RI "\fBUART_Custom_HandleTypeDef\fP \fBhuartPC\fP"
+.br
+.ti -1c
+.RI "\fBUART_Queue\fP \fBuartQueuePC\fP"
+.br
+.ti -1c
+.RI "\fBDMA_HandleTypeDef\fP \fBhdma_usart1_rx\fP"
+.br
+.ti -1c
+.RI "\fBDMA_HandleTypeDef\fP \fBhdma_usart1_tx\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Main source file of ultrasonic radar project\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Kamil Kośnik, Kacper Radzikowski 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z 
+.RE
+.PP
+
+.SH "Function Documentation"
+.PP 
+.SS "void distanceSensorDelay (\fBdistanceSensorStruct\fP * sensor, uint32_t delay)"
+
+.SS "void distanceSensorTrigOff (\fBdistanceSensorStruct\fP * sensor)"
+
+.SS "void distanceSensorTrigOn (\fBdistanceSensorStruct\fP * sensor)"
+
+.SS "void drawClear ()"
+
+.SS "void drawMeasure ()"
+
+.SS "void drawMeasureScale ()"
+
+.SS "void drawSetup ()"
+
+.SS "bool drawSetupUpdate (double drawScale, uint8_t measureScalesNumber)"
+
+.SS "void Error_Handler (void)"
+
+.PP
+This function is executed in case of error occurrence\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "int main (void)"
+
+.PP
+The application entry point\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIint\fP 
+.RE
+.PP
+
+.SS "void servoDriverSetPulseWidth (\fBservoDriverStruct\fP * servoDriver)"
+Function for setting pulse width from struct into timer instance
+.PP
+\fBParameters\fP
+.RS 4
+\fIservoDriver\fP pointer to \fBservoDriverStruct\fP struct 
+.RE
+.PP
+
+.SS "void servoDriverStartTimer (\fBservoDriverStruct\fP * servoDriver)"
+Function for starting timer paired with certain servo struct
+.PP
+\fBParameters\fP
+.RS 4
+\fIservoDriver\fP pointer to \fBservoDriverStruct\fP struct 
+.RE
+.PP
+
+.SS "void servoDriverStopTimer (\fBservoDriverStruct\fP * servoDriver)"
+Function for stopping timer paired with certain servo struct
+.PP
+\fBParameters\fP
+.RS 4
+\fIservoDriver\fP pointer to \fBservoDriverStruct\fP struct 
+.RE
+.PP
+
+.SS "void SystemClock_Config (void)"
+
+.PP
+System Clock Configuration\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+Configure the main internal regulator output voltage
+.PP
+Initializes the RCC Oscillators according to the specified parameters in the \fBRCC_OscInitTypeDef\fP structure\&.
+.PP
+Initializes the CPU, AHB and APB buses clocks
+.SH "Variable Documentation"
+.PP 
+.SS "\fBdistanceSensorStruct\fP distanceSensorPA2"
+
+.SS "\fBdrawHelperStruct\fP drawHelper"
+
+.SS "\fBDMA_HandleTypeDef\fP hdma_usart1_rx\fC [extern]\fP"
+
+.SS "\fBDMA_HandleTypeDef\fP hdma_usart1_tx\fC [extern]\fP"
+
+.SS "\fBUART_Custom_HandleTypeDef\fP huartPC"
+
+.SS "\fBradarStruct\fP radar"
+
+.SS "\fBservoDriverStruct\fP servoPA6"
+
+.SS "\fBUART_Queue\fP uartQueuePC"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

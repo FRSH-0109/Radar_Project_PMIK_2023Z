@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___p_w_r___regulator__state__in___s_l_e_e_p___s_t_o_p__mode" kind="group">
+    <compoundname>PWR_Regulator_state_in_SLEEP_STOP_mode</compoundname>
+    <title>PWR regulator mode</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___p_w_r___regulator__state__in___s_l_e_e_p___s_t_o_p__mode_1ga1d5b4e1482184286e28c16162f530039" prot="public" static="no">
+        <name>PWR_MAINREGULATOR_ON</name>
+        <initializer>(0x00000000u)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Regulator in main mode <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="106" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___regulator__state__in___s_l_e_e_p___s_t_o_p__mode_1gab9922a15f8414818d736d5e7fcace963" prot="public" static="no">
+        <name>PWR_LOWPOWERREGULATOR_ON</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gaa4f44f2d21d09b8200203851c6b7bac5" kindref="member">PWR_CR1_LPR</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Regulator in low-power mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="107" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,119 @@
+.TH "ADC_TypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ADC_TypeDef \- Analog to Digital Converter\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g030xx\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBISR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBIER\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCFGR1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCFGR2\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBSMPR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED1\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED2\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAWD1TR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAWD2TR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCHSELR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAWD3TR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED3\fP [4]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED4\fP [23]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAWD2CR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAWD3CR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED5\fP [3]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCALFACT\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Analog to Digital Converter\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t ADC_TypeDef::AWD1TR"
+ADC analog watchdog 1 threshold register, Address offset: 0x20 
+.SS "\fB__IO\fP uint32_t ADC_TypeDef::AWD2CR"
+ADC analog watchdog 2 configuration register, Address offset: 0xA0 
+.SS "\fB__IO\fP uint32_t ADC_TypeDef::AWD2TR"
+ADC analog watchdog 2 threshold register, Address offset: 0x24 
+.SS "\fB__IO\fP uint32_t ADC_TypeDef::AWD3CR"
+ADC analog watchdog 3 configuration register, Address offset: 0xA4 
+.SS "\fB__IO\fP uint32_t ADC_TypeDef::AWD3TR"
+ADC analog watchdog 3 threshold register, Address offset: 0x2C 
+.SS "\fB__IO\fP uint32_t ADC_TypeDef::CALFACT"
+ADC Calibration factor register, Address offset: 0xB4 
+.SS "\fB__IO\fP uint32_t ADC_TypeDef::CFGR1"
+ADC configuration register 1, Address offset: 0x0C 
+.SS "\fB__IO\fP uint32_t ADC_TypeDef::CFGR2"
+ADC configuration register 2, Address offset: 0x10 
+.SS "\fB__IO\fP uint32_t ADC_TypeDef::CHSELR"
+ADC group regular sequencer register, Address offset: 0x28 
+.SS "\fB__IO\fP uint32_t ADC_TypeDef::CR"
+ADC control register, Address offset: 0x08 
+.SS "\fB__IO\fP uint32_t ADC_TypeDef::DR"
+ADC group regular data register, Address offset: 0x40 
+.SS "\fB__IO\fP uint32_t ADC_TypeDef::IER"
+ADC interrupt enable register, Address offset: 0x04 
+.SS "\fB__IO\fP uint32_t ADC_TypeDef::ISR"
+ADC interrupt and status register, Address offset: 0x00 
+.SS "uint32_t ADC_TypeDef::RESERVED1"
+Reserved, 0x18 
+.SS "uint32_t ADC_TypeDef::RESERVED2"
+Reserved, 0x1C 
+.SS "uint32_t ADC_TypeDef::RESERVED3[4]"
+Reserved, 0x30 - 0x3C 
+.SS "uint32_t ADC_TypeDef::RESERVED4[23]"
+Reserved, 0x44 - 0x9C 
+.SS "uint32_t ADC_TypeDef::RESERVED5[3]"
+Reserved, 0xA8 - 0xB0 
+.SS "\fB__IO\fP uint32_t ADC_TypeDef::SMPR"
+ADC sampling time register, Address offset: 0x14 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

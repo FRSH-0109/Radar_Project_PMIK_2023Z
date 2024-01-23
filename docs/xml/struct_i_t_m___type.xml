@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_i_t_m___type" kind="struct" language="C++" prot="public">
+    <compoundname>ITM_Type</compoundname>
+    <includes refid="core__armv81mml_8h" local="no">core_armv81mml.h</includes>
+    <sectiondef kind="public-attrib">
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga4c0550e859d614c607bd4b575f05425c" kind="variable"><name>u8</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gae93660eefe2482a8564fae9a1ca39739" kind="variable"><name>u16</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gae89dd50f788f12863c681fba1a5b60d1" kind="variable"><name>u32</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga1f5da59fa27aae410806b7dbe9e499c6" kind="variable"><name>PORT</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gabbf2da13b6377b5a759cca640bd0e552" kind="variable"><name>RESERVED0</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gaa6530efad3a727fb3cc8f509403b9948" kind="variable"><name>TER</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga8800cb3dfa65c86b1808c4bd27f99900" kind="variable"><name>RESERVED1</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gafe5e266862734ca1082ceddff7180688" kind="variable"><name>TPR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga801095aba8ccf34540292b96b047981f" kind="variable"><name>RESERVED2</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga4111c001c1e56fd3f51d27c5a63b04e6" kind="variable"><name>TCR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gaaa35c79a89060533b3acce35a0cc63ec" kind="variable"><name>RESERVED3</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga68e56eb5e16d2aa293b0bec5c99e50fe" kind="variable"><name>IWR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gae300b6ee4d883ceec8f3572fc0fc3d69" kind="variable"><name>IRR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gaf0446ee5dcb6082dc8bba9adcc8ec812" kind="variable"><name>IMCR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga36fbed6985e5cd320e8eecfc73eb2846" kind="variable"><name>RESERVED4</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gacc9e51f871c357a9094105435b150d13" kind="variable"><name>LAR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga7219432d03f6cd1d220f4fe10aef4880" kind="variable"><name>LSR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga171526446695fcdbfaf7992e567f881d" kind="variable"><name>RESERVED5</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gae370aa5dc47fe03310e1d847333030e7" kind="variable"><name>DEVARCH</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga8841a7f9533f78764cfcbf4cda67dfc7" kind="variable"><name>RESERVED6</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga4c002e97cda2375d7421ad6415b6a02f" kind="variable"><name>PID4</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gac085b26f43fefeef9a4cf5c2af5e4a38" kind="variable"><name>PID5</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga83ac5d00dee24cc7f805b5c147625593" kind="variable"><name>PID6</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gaf8aa73aeaf37bdf7dfd9f6c437ff2d2f" kind="variable"><name>PID7</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga6e3343cc3c4a8a5a6f14937882e9202a" kind="variable"><name>PID0</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gafa06959344f4991b00e6c545dd2fa30b" kind="variable"><name>PID1</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga63db39f871596d28e69c283288ea2eba" kind="variable"><name>PID2</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gac2d006eed52ba550a309e5f61ed9c401" kind="variable"><name>PID3</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga26bbad5d9e0f1d302611d52373aef839" kind="variable"><name>CID0</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga4e60a608afd6433ecd943d95e417b80b" kind="variable"><name>CID1</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gad98950702e55d1851e91b22de07b11aa" kind="variable"><name>CID2</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gab9af64f413bf6f67e2a8044481292f67" kind="variable"><name>CID3</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gad68d44bd19c550e4c86f3acca3657041" kind="variable"><name>PORT</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga77ccdbfee9303158623184ee2455c9ca" kind="variable"><name>PORT</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga0c37089bfb34c34543d29b98455c2b35" kind="variable"><name>PORT</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga94b4986a36ef1a21a7ae7be8bc46e04a" kind="variable"><name>PORT</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gac15abccce5331a89a1dd52e1c7458084" kind="variable"><name>PORT</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gada1ed6c779e2966a4d46cece8c776e87" kind="variable"><name>PORT</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gaa341fc96047660493a24dec4fde18a6a" kind="variable"><name>PORT</name></member>
+    </sectiondef>
+    <briefdescription>
+<para>Structure type to access the Instrumentation Trace Macrocell Register (ITM). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/CMSIS/Include/core_armv81mml.h" line="1087" column="1" bodyfile="Drivers/CMSIS/Include/core_armv81mml.h" bodystart="1088" bodyend="1123"/>
+    <listofallmembers>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga26bbad5d9e0f1d302611d52373aef839" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>CID0</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga4e60a608afd6433ecd943d95e417b80b" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>CID1</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gad98950702e55d1851e91b22de07b11aa" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>CID2</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gab9af64f413bf6f67e2a8044481292f67" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>CID3</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gae370aa5dc47fe03310e1d847333030e7" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>DEVARCH</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gaf0446ee5dcb6082dc8bba9adcc8ec812" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>IMCR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gae300b6ee4d883ceec8f3572fc0fc3d69" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>IRR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga68e56eb5e16d2aa293b0bec5c99e50fe" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>IWR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gacc9e51f871c357a9094105435b150d13" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>LAR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga7219432d03f6cd1d220f4fe10aef4880" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>LSR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga6e3343cc3c4a8a5a6f14937882e9202a" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PID0</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gafa06959344f4991b00e6c545dd2fa30b" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PID1</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga63db39f871596d28e69c283288ea2eba" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PID2</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gac2d006eed52ba550a309e5f61ed9c401" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PID3</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga4c002e97cda2375d7421ad6415b6a02f" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PID4</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gac085b26f43fefeef9a4cf5c2af5e4a38" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PID5</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga83ac5d00dee24cc7f805b5c147625593" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PID6</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gaf8aa73aeaf37bdf7dfd9f6c437ff2d2f" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PID7</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga1f5da59fa27aae410806b7dbe9e499c6" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PORT</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gad68d44bd19c550e4c86f3acca3657041" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PORT</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga77ccdbfee9303158623184ee2455c9ca" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PORT</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga0c37089bfb34c34543d29b98455c2b35" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PORT</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga94b4986a36ef1a21a7ae7be8bc46e04a" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PORT</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gac15abccce5331a89a1dd52e1c7458084" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PORT</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gada1ed6c779e2966a4d46cece8c776e87" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PORT</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gaa341fc96047660493a24dec4fde18a6a" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PORT</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gabbf2da13b6377b5a759cca640bd0e552" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>RESERVED0</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga8800cb3dfa65c86b1808c4bd27f99900" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>RESERVED1</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga801095aba8ccf34540292b96b047981f" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>RESERVED2</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gaaa35c79a89060533b3acce35a0cc63ec" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>RESERVED3</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga36fbed6985e5cd320e8eecfc73eb2846" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>RESERVED4</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga171526446695fcdbfaf7992e567f881d" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>RESERVED5</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga8841a7f9533f78764cfcbf4cda67dfc7" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>RESERVED6</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga4111c001c1e56fd3f51d27c5a63b04e6" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>TCR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gaa6530efad3a727fb3cc8f509403b9948" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>TER</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gafe5e266862734ca1082ceddff7180688" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>TPR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gae93660eefe2482a8564fae9a1ca39739" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>u16</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gae89dd50f788f12863c681fba1a5b60d1" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>u32</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga4c0550e859d614c607bd4b575f05425c" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>u8</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

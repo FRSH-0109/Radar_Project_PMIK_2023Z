@@ -1,0 +1,93 @@
+.TH "RadarApp/DisplayDriver/ILI9341.c" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RadarApp/DisplayDriver/ILI9341.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'main\&.h'\fP
+.br
+\fC#include 'GFX_Color\&.h'\fP
+.br
+\fC#include 'ILI9341\&.h'\fP
+.br
+\fC#include 'stdint\&.h'\fP
+.br
+\fC#include 'stdio\&.h'\fP
+.br
+\fC#include 'string\&.h'\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBILI9341_Init\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBILI9341_SetRotation\fP (uint8_t m)"
+.br
+.ti -1c
+.RI "void \fBILI9341_SendToTFT\fP (uint8_t *Byte, uint32_t Length)"
+.br
+.ti -1c
+.RI "void \fBILI9341_SendCommand\fP (uint8_t Command)"
+.br
+.ti -1c
+.RI "void \fBILI9341_SendCommandAndData\fP (uint8_t Command, uint8_t *Data, uint16_t Length)"
+.br
+.ti -1c
+.RI "void \fBILI9341_SetAddrWindow\fP (uint16_t x1, uint16_t y1, uint16_t w, uint16_t h)"
+.br
+.ti -1c
+.RI "void \fBILI9341_SendData16\fP (uint16_t Data)"
+.br
+.ti -1c
+.RI "void \fBILI9341_WritePixel\fP (uint16_t x, uint16_t y, uint16_t color)"
+.br
+.ti -1c
+.RI "void \fBILI9341_DrawImage\fP (int x, int y, const uint8_t *img, uint16_t w, uint16_t h)"
+.br
+.ti -1c
+.RI "void \fBILI9341_WriteScreen\fP (uint16_t color)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBSPI_HandleTypeDef\fP * \fBTft_hspi\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void ILI9341_DrawImage (int x, int y, const uint8_t * img, uint16_t w, uint16_t h)"
+
+.SS "void ILI9341_Init (\fBSPI_HandleTypeDef\fP * hspi)"
+
+.SS "void ILI9341_SendCommand (uint8_t Command)"
+
+.SS "void ILI9341_SendCommandAndData (uint8_t Command, uint8_t * Data, uint16_t Length)"
+
+.SS "void ILI9341_SendData16 (uint16_t Data)"
+
+.SS "void ILI9341_SendToTFT (uint8_t * Byte, uint32_t Length)"
+
+.SS "void ILI9341_SetAddrWindow (uint16_t x1, uint16_t y1, uint16_t w, uint16_t h)"
+
+.SS "void ILI9341_SetRotation (uint8_t m)"
+
+.SS "void ILI9341_WritePixel (uint16_t x, uint16_t y, uint16_t color)"
+
+.SS "void ILI9341_WriteScreen (uint16_t color)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "\fBSPI_HandleTypeDef\fP* Tft_hspi"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

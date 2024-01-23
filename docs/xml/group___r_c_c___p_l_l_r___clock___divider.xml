@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___r_c_c___p_l_l_r___clock___divider" kind="group">
+    <compoundname>RCC_PLLR_Clock_Divider</compoundname>
+    <title>PLLR Clock Divider</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_c_c___p_l_l_r___clock___divider_1ga8542180301c08434a774ee3033b89564" prot="public" static="no">
+        <name>RCC_PLLR_DIV2</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga027e178a5cc3e86c8f1994b1a182781e" kindref="member">RCC_PLLCFGR_PLLR_0</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PLLR division factor = 2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="522" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="522" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___p_l_l_r___clock___divider_1gac9e1eda6592c73b3b19c4b602c0e603d" prot="public" static="no">
+        <name>RCC_PLLR_DIV3</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga9e60c52e5aab5a5edbccac0f55283c7f" kindref="member">RCC_PLLCFGR_PLLR_1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PLLR division factor = 3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="523" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___p_l_l_r___clock___divider_1ga4d7feff69617c885b7ad02abdf90a306" prot="public" static="no">
+        <name>RCC_PLLR_DIV4</name>
+        <initializer>(<ref refid="group___peripheral___registers___bits___definition_1ga9e60c52e5aab5a5edbccac0f55283c7f" kindref="member">RCC_PLLCFGR_PLLR_1</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga027e178a5cc3e86c8f1994b1a182781e" kindref="member">RCC_PLLCFGR_PLLR_0</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PLLR division factor = 4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="524" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___p_l_l_r___clock___divider_1ga509420efd3dfdfb792d2f4a7f9532161" prot="public" static="no">
+        <name>RCC_PLLR_DIV5</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga2c459dbcfa99d3854861a87cdcf75a39" kindref="member">RCC_PLLCFGR_PLLR_2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PLLR division factor = 5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="525" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___p_l_l_r___clock___divider_1gaea9c23a036a7dd5c2c14d7df77656cba" prot="public" static="no">
+        <name>RCC_PLLR_DIV6</name>
+        <initializer>(<ref refid="group___peripheral___registers___bits___definition_1ga2c459dbcfa99d3854861a87cdcf75a39" kindref="member">RCC_PLLCFGR_PLLR_2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga027e178a5cc3e86c8f1994b1a182781e" kindref="member">RCC_PLLCFGR_PLLR_0</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PLLR division factor = 6 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="526" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___p_l_l_r___clock___divider_1gaa8b35cccfee385e5ad775eb8cc385508" prot="public" static="no">
+        <name>RCC_PLLR_DIV7</name>
+        <initializer>(<ref refid="group___peripheral___registers___bits___definition_1ga2c459dbcfa99d3854861a87cdcf75a39" kindref="member">RCC_PLLCFGR_PLLR_2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga9e60c52e5aab5a5edbccac0f55283c7f" kindref="member">RCC_PLLCFGR_PLLR_1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PLLR division factor = 7 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="527" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="527" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___p_l_l_r___clock___divider_1ga2032e48945b9bfec98b9f342d34e2472" prot="public" static="no">
+        <name>RCC_PLLR_DIV8</name>
+        <initializer>(<ref refid="group___peripheral___registers___bits___definition_1ga2c459dbcfa99d3854861a87cdcf75a39" kindref="member">RCC_PLLCFGR_PLLR_2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga9e60c52e5aab5a5edbccac0f55283c7f" kindref="member">RCC_PLLCFGR_PLLR_1</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga027e178a5cc3e86c8f1994b1a182781e" kindref="member">RCC_PLLCFGR_PLLR_0</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PLLR division factor = 8 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="528" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="528" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

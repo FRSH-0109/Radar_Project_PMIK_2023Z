@@ -1,0 +1,60 @@
+.TH "GPIO_Exported_Functions_Group2" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GPIO_Exported_Functions_Group2 \- IO operation functions
+.PP
+ \- IO operation functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGPIO_PinState\fP \fBHAL_GPIO_ReadPin\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t GPIO_Pin)"
+.br
+.ti -1c
+.RI "void \fBHAL_GPIO_WritePin\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t GPIO_Pin, \fBGPIO_PinState\fP PinState)"
+.br
+.ti -1c
+.RI "void \fBHAL_GPIO_TogglePin\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t GPIO_Pin)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_GPIO_LockPin\fP (\fBGPIO_TypeDef\fP *GPIOx, uint16_t GPIO_Pin)"
+.br
+.ti -1c
+.RI "void \fBHAL_GPIO_EXTI_IRQHandler\fP (uint16_t GPIO_Pin)"
+.br
+.ti -1c
+.RI "void \fBHAL_GPIO_EXTI_Rising_Callback\fP (uint16_t GPIO_Pin)"
+.br
+.ti -1c
+.RI "void \fBHAL_GPIO_EXTI_Falling_Callback\fP (uint16_t GPIO_Pin)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+IO operation functions\&. 
+
+
+.SH "Function Documentation"
+.PP 
+.SS "void HAL_GPIO_EXTI_Falling_Callback (uint16_t GPIO_Pin)"
+
+.SS "void HAL_GPIO_EXTI_IRQHandler (uint16_t GPIO_Pin)"
+
+.SS "void HAL_GPIO_EXTI_Rising_Callback (uint16_t GPIO_Pin)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_GPIO_LockPin (\fBGPIO_TypeDef\fP * GPIOx, uint16_t GPIO_Pin)"
+
+.SS "\fBGPIO_PinState\fP HAL_GPIO_ReadPin (\fBGPIO_TypeDef\fP * GPIOx, uint16_t GPIO_Pin)"
+
+.SS "void HAL_GPIO_TogglePin (\fBGPIO_TypeDef\fP * GPIOx, uint16_t GPIO_Pin)"
+
+.SS "void HAL_GPIO_WritePin (\fBGPIO_TypeDef\fP * GPIOx, uint16_t GPIO_Pin, \fBGPIO_PinState\fP PinState)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,44 @@
+.TH "FLASH_EraseInitTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FLASH_EraseInitTypeDef \- FLASH Erase structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_hal_flash\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBTypeErase\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBBanks\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBPage\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBNbPages\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+FLASH Erase structure definition\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t FLASH_EraseInitTypeDef::Banks"
+Select bank to erase\&. This parameter must be a value of \fBFLASH Banks\fP (FLASH_BANK_BOTH should be used only for mass erase) 
+.SS "uint32_t FLASH_EraseInitTypeDef::NbPages"
+Number of pages to be erased\&. This parameter must be a value between 1 and (FLASH_PAGE_NB - value of initial page) 
+.SS "uint32_t FLASH_EraseInitTypeDef::Page"
+Initial Flash page to erase when page erase is enabled This parameter must be a value between 0 and (FLASH_PAGE_NB - 1) 
+.SS "uint32_t FLASH_EraseInitTypeDef::TypeErase"
+Mass erase or page erase\&. This parameter can be a value of \fBFLASH Erase Type\fP 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

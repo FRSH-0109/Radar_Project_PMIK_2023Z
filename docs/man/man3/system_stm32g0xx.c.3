@@ -1,0 +1,102 @@
+.TH "Core/Src/system_stm32g0xx.c" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Core/Src/system_stm32g0xx.c \- CMSIS Cortex-M0+ Device Peripheral Access Layer System Source File\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32g0xx\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHSE_VALUE\fP   (8000000UL)"
+.br
+.ti -1c
+.RI "#define \fBHSI_VALUE\fP   (16000000UL)"
+.br
+.ti -1c
+.RI "#define \fBLSI_VALUE\fP   (32000UL)"
+.br
+.ti -1c
+.RI "#define \fBLSE_VALUE\fP   (32768UL)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSystemInit\fP (void)"
+.br
+.RI "Setup the microcontroller system\&. "
+.ti -1c
+.RI "void \fBSystemCoreClockUpdate\fP (void)"
+.br
+.RI "Update SystemCoreClock variable according to Clock Register Values\&. The SystemCoreClock variable contains the core clock (HCLK), it can be used by the user application to setup the SysTick timer or configure other parameters\&. "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBSystemCoreClock\fP = 16000000UL"
+.br
+.ti -1c
+.RI "const uint32_t \fBAHBPrescTable\fP [16UL] = {0UL, 0UL, 0UL, 0UL, 0UL, 0UL, 0UL, 0UL, 1UL, 2UL, 3UL, 4UL, 6UL, 7UL, 8UL, 9UL}"
+.br
+.ti -1c
+.RI "const uint32_t \fBAPBPrescTable\fP [8UL] = {0UL, 0UL, 0UL, 0UL, 1UL, 2UL, 3UL, 4UL}"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+CMSIS Cortex-M0+ Device Peripheral Access Layer System Source File\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+This file provides two functions and one global variable to be called from user application:
+.IP "\(bu" 2
+\fBSystemInit()\fP: This function is called at startup just after reset and before branch to main program\&. This call is made inside the 'startup_stm32g0xx\&.s' file\&.
+.IP "\(bu" 2
+SystemCoreClock variable: Contains the core clock (HCLK), it can be used by the user application to setup the SysTick timer or configure other parameters\&.
+.IP "\(bu" 2
+\fBSystemCoreClockUpdate()\fP: Updates the variable SystemCoreClock and must be called whenever the core clock is changed during program execution\&.
+.PP
+.PP
+After each device reset the HSI (8 MHz then 16 MHz) is used as system clock source\&. Then \fBSystemInit()\fP function is called, in 'startup_stm32g0xx\&.s' file, to configure the system clock before to branch to main program\&.
+.SH "This file configures the system clock as follows:"
+.PP
+.PP
+ 
+.SS "System Clock source                    | HSI"
+.SS "SYSCLK(Hz)                             | 16000000"
+.SS "HCLK(Hz)                               | 16000000"
+.SS "AHB Prescaler                          | 1"
+.SS "APB Prescaler                          | 1"
+.SS "HSI Division factor                    | 1"
+.SS "PLL_M                                  | 1"
+.SS "PLL_N                                  | 8"
+.SS "PLL_P                                  | 7"
+.SS "PLL_Q                                  | 2"
+.SS "PLL_R                                  | 2"
+.SS "Require 48MHz for RNG                  | Disabled"
+=============================================================================
+.PP
+\fBAttention\fP
+.RS 4
+.RE
+.PP
+Copyright (c) 2018-2021 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

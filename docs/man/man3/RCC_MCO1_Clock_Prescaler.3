@@ -1,0 +1,60 @@
+.TH "RCC_MCO1_Clock_Prescaler" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_MCO1_Clock_Prescaler \- MCO1 Clock Prescaler
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_MCODIV_1\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCODIV_2\fP   \fBRCC_CFGR_MCOPRE_0\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCODIV_4\fP   \fBRCC_CFGR_MCOPRE_1\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCODIV_8\fP   (\fBRCC_CFGR_MCOPRE_1\fP | \fBRCC_CFGR_MCOPRE_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCODIV_16\fP   \fBRCC_CFGR_MCOPRE_2\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCODIV_32\fP   (\fBRCC_CFGR_MCOPRE_2\fP | \fBRCC_CFGR_MCOPRE_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCODIV_64\fP   (\fBRCC_CFGR_MCOPRE_2\fP | \fBRCC_CFGR_MCOPRE_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCODIV_128\fP   (\fBRCC_CFGR_MCOPRE_2\fP | \fBRCC_CFGR_MCOPRE_1\fP | \fBRCC_CFGR_MCOPRE_0\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RCC_MCODIV_1   0x00000000U"
+MCO not divided 
+.SS "#define RCC_MCODIV_128   (\fBRCC_CFGR_MCOPRE_2\fP | \fBRCC_CFGR_MCOPRE_1\fP | \fBRCC_CFGR_MCOPRE_0\fP)"
+MCO divided by 128 
+.SS "#define RCC_MCODIV_16   \fBRCC_CFGR_MCOPRE_2\fP"
+MCO divided by 16 
+.SS "#define RCC_MCODIV_2   \fBRCC_CFGR_MCOPRE_0\fP"
+MCO divided by 2 
+.SS "#define RCC_MCODIV_32   (\fBRCC_CFGR_MCOPRE_2\fP | \fBRCC_CFGR_MCOPRE_0\fP)"
+MCO divided by 32 
+.SS "#define RCC_MCODIV_4   \fBRCC_CFGR_MCOPRE_1\fP"
+MCO divided by 4 
+.SS "#define RCC_MCODIV_64   (\fBRCC_CFGR_MCOPRE_2\fP | \fBRCC_CFGR_MCOPRE_1\fP)"
+MCO divided by 64 
+.SS "#define RCC_MCODIV_8   (\fBRCC_CFGR_MCOPRE_1\fP | \fBRCC_CFGR_MCOPRE_0\fP)"
+MCO divided by 8 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

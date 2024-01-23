@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_sys_tick___type" kind="struct" language="C++" prot="public">
+    <compoundname>SysTick_Type</compoundname>
+    <includes refid="core__armv81mml_8h" local="no">core_armv81mml.h</includes>
+    <sectiondef kind="public-attrib">
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gac81efc171e9852a36caeb47122bfec5b" kind="variable"><name>CTRL</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga0c1333686137b7e25a46bd548a5b5bc3" kind="variable"><name>LOAD</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gae7a655a853654127f3dfb7fa32c3f457" kind="variable"><name>VAL</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gaedf0dff29a9cacdaa2fb7eec6b116a13" kind="variable"><name>CALIB</name></member>
+    </sectiondef>
+    <briefdescription>
+<para>Structure type to access the System Timer (SysTick). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/CMSIS/Include/core_armv81mml.h" line="1035" column="1" bodyfile="Drivers/CMSIS/Include/core_armv81mml.h" bodystart="1036" bodyend="1041"/>
+    <listofallmembers>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gaedf0dff29a9cacdaa2fb7eec6b116a13" prot="public" virt="non-virtual"><scope>SysTick_Type</scope><name>CALIB</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gac81efc171e9852a36caeb47122bfec5b" prot="public" virt="non-virtual"><scope>SysTick_Type</scope><name>CTRL</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga0c1333686137b7e25a46bd548a5b5bc3" prot="public" virt="non-virtual"><scope>SysTick_Type</scope><name>LOAD</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gae7a655a853654127f3dfb7fa32c3f457" prot="public" virt="non-virtual"><scope>SysTick_Type</scope><name>VAL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

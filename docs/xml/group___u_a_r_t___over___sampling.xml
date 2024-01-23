@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___u_a_r_t___over___sampling" kind="group">
+    <compoundname>UART_Over_Sampling</compoundname>
+    <title>UART Over Sampling</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_a_r_t___over___sampling_1gaa6a320ec65d248d76f21de818db1a2f0" prot="public" static="no">
+        <name>UART_OVERSAMPLING_16</name>
+        <initializer>0x00000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Oversampling by 16 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="427" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___over___sampling_1gaeb13896e8bdc1bb041e01a86a868ee0b" prot="public" static="no">
+        <name>UART_OVERSAMPLING_8</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gaed6caeb0cb48f1a7b34090f31a92a8e2" kindref="member">USART_CR1_OVER8</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Oversampling by 8 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="428" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

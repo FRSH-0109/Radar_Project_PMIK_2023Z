@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___p_w_r_ex___flash___power_down" kind="group">
+    <compoundname>PWREx_Flash_PowerDown</compoundname>
+    <title>Flash Power Down modes</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___p_w_r_ex___flash___power_down_1ga09d759cd12585c2538a7a5ae6d26381c" prot="public" static="no">
+        <name>PWR_FLASHPD_LPRUN</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga37f681d89364df39c7f6b80798b09ac2" kindref="member">PWR_CR1_FPD_LPRUN</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable Flash power down in low power run mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="232" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r_ex___flash___power_down_1ga6d65383a84498625b0e424dfa43b1100" prot="public" static="no">
+        <name>PWR_FLASHPD_LPSLEEP</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gac3eef2d0c4897b78a73b754d631df0cd" kindref="member">PWR_CR1_FPD_LPSLP</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable Flash power down in low power sleep mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="233" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r_ex___flash___power_down_1ga90a75367aa4291b1507da7c987ac0c28" prot="public" static="no">
+        <name>PWR_FLASHPD_STOP</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga823130f661eb1abb7ebddcacb4e1c778" kindref="member">PWR_CR1_FPD_STOP</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable Flash power down in stop mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="234" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

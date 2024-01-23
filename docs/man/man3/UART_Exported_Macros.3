@@ -1,0 +1,907 @@
+.TH "UART_Exported_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Exported_Macros \- UART Exported Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_UART_RESET_HANDLE_STATE\fP(__HANDLE__)"
+.br
+.RI "Reset UART handle states\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_FLUSH_DRREGISTER\fP(__HANDLE__)"
+.br
+.RI "Flush the UART Data registers\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_CLEAR_FLAG\fP(__HANDLE__,  __FLAG__)   ((__HANDLE__)\->Instance\->ICR = (__FLAG__))"
+.br
+.RI "Clear the specified UART pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_CLEAR_PEFLAG\fP(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_PEF\fP)"
+.br
+.RI "Clear the UART PE pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_CLEAR_FEFLAG\fP(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_FEF\fP)"
+.br
+.RI "Clear the UART FE pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_CLEAR_NEFLAG\fP(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_NEF\fP)"
+.br
+.RI "Clear the UART NE pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_CLEAR_OREFLAG\fP(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_OREF\fP)"
+.br
+.RI "Clear the UART ORE pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_CLEAR_IDLEFLAG\fP(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_IDLEF\fP)"
+.br
+.RI "Clear the UART IDLE pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_CLEAR_TXFECF\fP(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_TXFECF\fP)"
+.br
+.RI "Clear the UART TX FIFO empty clear flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_GET_FLAG\fP(__HANDLE__,  __FLAG__)   (((__HANDLE__)\->Instance\->ISR & (__FLAG__)) == (__FLAG__))"
+.br
+.RI "Check whether the specified UART flag is set or not\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_ENABLE_IT\fP(__HANDLE__,  __INTERRUPT__)"
+.br
+.RI "Enable the specified UART interrupt\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_DISABLE_IT\fP(__HANDLE__,  __INTERRUPT__)"
+.br
+.RI "Disable the specified UART interrupt\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_GET_IT\fP(__HANDLE__,  __INTERRUPT__)"
+.br
+.RI "Check whether the specified UART interrupt has occurred or not\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_GET_IT_SOURCE\fP(__HANDLE__,  __INTERRUPT__)"
+.br
+.RI "Check whether the specified UART interrupt source is enabled or not\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_CLEAR_IT\fP(__HANDLE__,  __IT_CLEAR__)   ((__HANDLE__)\->Instance\->ICR = (uint32_t)(__IT_CLEAR__))"
+.br
+.RI "Clear the specified UART ISR flag, in setting the proper ICR register flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_SEND_REQ\fP(__HANDLE__,  __REQ__)   ((__HANDLE__)\->Instance\->RQR |= (uint16_t)(__REQ__))"
+.br
+.RI "Set a specific UART request flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_ONE_BIT_SAMPLE_ENABLE\fP(__HANDLE__)   ((__HANDLE__)\->Instance\->CR3|= \fBUSART_CR3_ONEBIT\fP)"
+.br
+.RI "Enable the UART one bit sample method\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_ONE_BIT_SAMPLE_DISABLE\fP(__HANDLE__)   ((__HANDLE__)\->Instance\->CR3 &= ~\fBUSART_CR3_ONEBIT\fP)"
+.br
+.RI "Disable the UART one bit sample method\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_ENABLE\fP(__HANDLE__)   ((__HANDLE__)\->Instance\->CR1 |= \fBUSART_CR1_UE\fP)"
+.br
+.RI "Enable UART\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_DISABLE\fP(__HANDLE__)   ((__HANDLE__)\->Instance\->CR1 &= ~\fBUSART_CR1_UE\fP)"
+.br
+.RI "Disable UART\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_HWCONTROL_CTS_ENABLE\fP(__HANDLE__)"
+.br
+.RI "Enable CTS flow control\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_HWCONTROL_CTS_DISABLE\fP(__HANDLE__)"
+.br
+.RI "Disable CTS flow control\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_HWCONTROL_RTS_ENABLE\fP(__HANDLE__)"
+.br
+.RI "Enable RTS flow control\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_HWCONTROL_RTS_DISABLE\fP(__HANDLE__)"
+.br
+.RI "Disable RTS flow control\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_UART_CLEAR_FEFLAG(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_FEF\fP)"
+
+.PP
+Clear the UART FE pending flag\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_CLEAR_FLAG(__HANDLE__, __FLAG__)   ((__HANDLE__)\->Instance\->ICR = (__FLAG__))"
+
+.PP
+Clear the specified UART pending flag\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.br
+\fI__FLAG__\fP specifies the flag to check\&. This parameter can be any combination of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBUART_CLEAR_PEF\fP Parity Error Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_FEF\fP Framing Error Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_NEF\fP Noise detected Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_OREF\fP Overrun Error Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_IDLEF\fP IDLE line detected Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_TXFECF\fP TXFIFO empty clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_TCF\fP Transmission Complete Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_RTOF\fP Receiver Timeout clear flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_LBDF\fP LIN Break Detection Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_CTSF\fP CTS Interrupt Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_CMF\fP Character Match Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_WUF\fP Wake Up from stop mode Clear Flag 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_CLEAR_IDLEFLAG(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_IDLEF\fP)"
+
+.PP
+Clear the UART IDLE pending flag\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_CLEAR_IT(__HANDLE__, __IT_CLEAR__)   ((__HANDLE__)\->Instance\->ICR = (uint32_t)(__IT_CLEAR__))"
+
+.PP
+Clear the specified UART ISR flag, in setting the proper ICR register flag\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.br
+\fI__IT_CLEAR__\fP specifies the interrupt clear register flag that needs to be set to clear the corresponding interrupt This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBUART_CLEAR_PEF\fP Parity Error Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_FEF\fP Framing Error Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_NEF\fP Noise detected Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_OREF\fP Overrun Error Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_IDLEF\fP IDLE line detected Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_RTOF\fP Receiver timeout clear flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_TXFECF\fP TXFIFO empty Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_TCF\fP Transmission Complete Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_LBDF\fP LIN Break Detection Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_CTSF\fP CTS Interrupt Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_CMF\fP Character Match Clear Flag 
+.IP "\(bu" 1
+\fBUART_CLEAR_WUF\fP Wake Up from stop mode Clear Flag 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_CLEAR_NEFLAG(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_NEF\fP)"
+
+.PP
+Clear the UART NE pending flag\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_CLEAR_OREFLAG(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_OREF\fP)"
+
+.PP
+Clear the UART ORE pending flag\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_CLEAR_PEFLAG(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_PEF\fP)"
+
+.PP
+Clear the UART PE pending flag\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_CLEAR_TXFECF(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_TXFECF\fP)"
+
+.PP
+Clear the UART TX FIFO empty clear flag\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_DISABLE(__HANDLE__)   ((__HANDLE__)\->Instance\->CR1 &= ~\fBUSART_CR1_UE\fP)"
+
+.PP
+Disable UART\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_DISABLE_IT(__HANDLE__, __INTERRUPT__)"
+\fBValue:\fP.PP
+.nf
+                                                           (\\
+                                                           ((((uint8_t)(__INTERRUPT__)) >> 5U) == 1U)?\\
+                                                           ((__HANDLE__)\->Instance\->CR1 &= ~ (1U <<\\
+                                                               ((__INTERRUPT__) & UART_IT_MASK))): \\
+                                                           ((((uint8_t)(__INTERRUPT__)) >> 5U) == 2U)?\\
+                                                           ((__HANDLE__)\->Instance\->CR2 &= ~ (1U <<\\
+                                                               ((__INTERRUPT__) & UART_IT_MASK))): \\
+                                                           ((__HANDLE__)\->Instance\->CR3 &= ~ (1U <<\\
+                                                               ((__INTERRUPT__) & UART_IT_MASK))))
+.fi
+
+.PP
+Disable the specified UART interrupt\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.br
+\fI__INTERRUPT__\fP specifies the UART interrupt source to disable\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBUART_IT_RXFF\fP RXFIFO Full interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TXFE\fP TXFIFO Empty interrupt 
+.IP "\(bu" 1
+\fBUART_IT_RXFT\fP RXFIFO threshold interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TXFT\fP TXFIFO threshold interrupt 
+.IP "\(bu" 1
+\fBUART_IT_WUF\fP Wakeup from stop mode interrupt 
+.IP "\(bu" 1
+\fBUART_IT_CM\fP Character match interrupt 
+.IP "\(bu" 1
+\fBUART_IT_CTS\fP CTS change interrupt 
+.IP "\(bu" 1
+\fBUART_IT_LBD\fP LIN Break detection interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TXE\fP Transmit Data Register empty interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TXFNF\fP TX FIFO not full interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TC\fP Transmission complete interrupt 
+.IP "\(bu" 1
+\fBUART_IT_RXNE\fP Receive Data register not empty interrupt 
+.IP "\(bu" 1
+\fBUART_IT_RXFNE\fP RXFIFO not empty interrupt 
+.IP "\(bu" 1
+\fBUART_IT_RTO\fP Receive Timeout interrupt 
+.IP "\(bu" 1
+\fBUART_IT_IDLE\fP Idle line detection interrupt 
+.IP "\(bu" 1
+\fBUART_IT_PE\fP Parity Error interrupt 
+.IP "\(bu" 1
+\fBUART_IT_ERR\fP Error interrupt (Frame error, noise error, overrun error) 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_ENABLE(__HANDLE__)   ((__HANDLE__)\->Instance\->CR1 |= \fBUSART_CR1_UE\fP)"
+
+.PP
+Enable UART\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_ENABLE_IT(__HANDLE__, __INTERRUPT__)"
+\fBValue:\fP.PP
+.nf
+                                                           (\\
+                                                           ((((uint8_t)(__INTERRUPT__)) >> 5U) == 1U)?\\
+                                                           ((__HANDLE__)\->Instance\->CR1 |= (1U <<\\
+                                                               ((__INTERRUPT__) & UART_IT_MASK))): \\
+                                                           ((((uint8_t)(__INTERRUPT__)) >> 5U) == 2U)?\\
+                                                           ((__HANDLE__)\->Instance\->CR2 |= (1U <<\\
+                                                               ((__INTERRUPT__) & UART_IT_MASK))): \\
+                                                           ((__HANDLE__)\->Instance\->CR3 |= (1U <<\\
+                                                               ((__INTERRUPT__) & UART_IT_MASK))))
+.fi
+
+.PP
+Enable the specified UART interrupt\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.br
+\fI__INTERRUPT__\fP specifies the UART interrupt source to enable\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBUART_IT_RXFF\fP RXFIFO Full interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TXFE\fP TXFIFO Empty interrupt 
+.IP "\(bu" 1
+\fBUART_IT_RXFT\fP RXFIFO threshold interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TXFT\fP TXFIFO threshold interrupt 
+.IP "\(bu" 1
+\fBUART_IT_WUF\fP Wakeup from stop mode interrupt 
+.IP "\(bu" 1
+\fBUART_IT_CM\fP Character match interrupt 
+.IP "\(bu" 1
+\fBUART_IT_CTS\fP CTS change interrupt 
+.IP "\(bu" 1
+\fBUART_IT_LBD\fP LIN Break detection interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TXE\fP Transmit Data Register empty interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TXFNF\fP TX FIFO not full interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TC\fP Transmission complete interrupt 
+.IP "\(bu" 1
+\fBUART_IT_RXNE\fP Receive Data register not empty interrupt 
+.IP "\(bu" 1
+\fBUART_IT_RXFNE\fP RXFIFO not empty interrupt 
+.IP "\(bu" 1
+\fBUART_IT_RTO\fP Receive Timeout interrupt 
+.IP "\(bu" 1
+\fBUART_IT_IDLE\fP Idle line detection interrupt 
+.IP "\(bu" 1
+\fBUART_IT_PE\fP Parity Error interrupt 
+.IP "\(bu" 1
+\fBUART_IT_ERR\fP Error interrupt (frame error, noise error, overrun error) 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_FLUSH_DRREGISTER(__HANDLE__)"
+\fBValue:\fP.PP
+.nf
+  do{                \\
+    SET_BIT((__HANDLE__)\->Instance\->RQR, UART_RXDATA_FLUSH_REQUEST); \\
+    SET_BIT((__HANDLE__)\->Instance\->RQR, UART_TXDATA_FLUSH_REQUEST); \\
+  }  while(0U)
+.fi
+
+.PP
+Flush the UART Data registers\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_GET_FLAG(__HANDLE__, __FLAG__)   (((__HANDLE__)\->Instance\->ISR & (__FLAG__)) == (__FLAG__))"
+
+.PP
+Check whether the specified UART flag is set or not\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.br
+\fI__FLAG__\fP specifies the flag to check\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBUART_FLAG_TXFT\fP TXFIFO threshold flag 
+.IP "\(bu" 1
+\fBUART_FLAG_RXFT\fP RXFIFO threshold flag 
+.IP "\(bu" 1
+\fBUART_FLAG_RXFF\fP RXFIFO Full flag 
+.IP "\(bu" 1
+\fBUART_FLAG_TXFE\fP TXFIFO Empty flag 
+.IP "\(bu" 1
+\fBUART_FLAG_REACK\fP Receive enable acknowledge flag 
+.IP "\(bu" 1
+\fBUART_FLAG_TEACK\fP Transmit enable acknowledge flag 
+.IP "\(bu" 1
+\fBUART_FLAG_WUF\fP Wake up from stop mode flag 
+.IP "\(bu" 1
+\fBUART_FLAG_RWU\fP Receiver wake up flag (if the UART in mute mode) 
+.IP "\(bu" 1
+\fBUART_FLAG_SBKF\fP Send Break flag 
+.IP "\(bu" 1
+\fBUART_FLAG_CMF\fP Character match flag 
+.IP "\(bu" 1
+\fBUART_FLAG_BUSY\fP Busy flag 
+.IP "\(bu" 1
+\fBUART_FLAG_ABRF\fP Auto Baud rate detection flag 
+.IP "\(bu" 1
+\fBUART_FLAG_ABRE\fP Auto Baud rate detection error flag 
+.IP "\(bu" 1
+\fBUART_FLAG_CTS\fP CTS Change flag 
+.IP "\(bu" 1
+\fBUART_FLAG_LBDF\fP LIN Break detection flag 
+.IP "\(bu" 1
+\fBUART_FLAG_TXE\fP Transmit data register empty flag 
+.IP "\(bu" 1
+\fBUART_FLAG_TXFNF\fP UART TXFIFO not full flag 
+.IP "\(bu" 1
+\fBUART_FLAG_TC\fP Transmission Complete flag 
+.IP "\(bu" 1
+\fBUART_FLAG_RXNE\fP Receive data register not empty flag 
+.IP "\(bu" 1
+\fBUART_FLAG_RXFNE\fP UART RXFIFO not empty flag 
+.IP "\(bu" 1
+\fBUART_FLAG_RTOF\fP Receiver Timeout flag 
+.IP "\(bu" 1
+\fBUART_FLAG_IDLE\fP Idle Line detection flag 
+.IP "\(bu" 1
+\fBUART_FLAG_ORE\fP Overrun Error flag 
+.IP "\(bu" 1
+\fBUART_FLAG_NE\fP Noise Error flag 
+.IP "\(bu" 1
+\fBUART_FLAG_FE\fP Framing Error flag 
+.IP "\(bu" 1
+\fBUART_FLAG_PE\fP Parity Error flag 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fIThe\fP new state of \fBFLAG\fP (TRUE or FALSE)\&. 
+.RE
+.PP
+
+.SS "#define __HAL_UART_GET_IT(__HANDLE__, __INTERRUPT__)"
+\fBValue:\fP.PP
+.nf
+                                                        ((((__HANDLE__)\->Instance\->ISR\\
+                                                        & (1U << ((__INTERRUPT__)>> 8U))) != RESET) ? SET : RESET)
+.fi
+
+.PP
+Check whether the specified UART interrupt has occurred or not\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.br
+\fI__INTERRUPT__\fP specifies the UART interrupt to check\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBUART_IT_RXFF\fP RXFIFO Full interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TXFE\fP TXFIFO Empty interrupt 
+.IP "\(bu" 1
+\fBUART_IT_RXFT\fP RXFIFO threshold interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TXFT\fP TXFIFO threshold interrupt 
+.IP "\(bu" 1
+\fBUART_IT_WUF\fP Wakeup from stop mode interrupt 
+.IP "\(bu" 1
+\fBUART_IT_CM\fP Character match interrupt 
+.IP "\(bu" 1
+\fBUART_IT_CTS\fP CTS change interrupt 
+.IP "\(bu" 1
+\fBUART_IT_LBD\fP LIN Break detection interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TXE\fP Transmit Data Register empty interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TXFNF\fP TX FIFO not full interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TC\fP Transmission complete interrupt 
+.IP "\(bu" 1
+\fBUART_IT_RXNE\fP Receive Data register not empty interrupt 
+.IP "\(bu" 1
+\fBUART_IT_RXFNE\fP RXFIFO not empty interrupt 
+.IP "\(bu" 1
+\fBUART_IT_RTO\fP Receive Timeout interrupt 
+.IP "\(bu" 1
+\fBUART_IT_IDLE\fP Idle line detection interrupt 
+.IP "\(bu" 1
+\fBUART_IT_PE\fP Parity Error interrupt 
+.IP "\(bu" 1
+\fBUART_IT_ERR\fP Error interrupt (Frame error, noise error, overrun error) 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fIThe\fP new state of \fBINTERRUPT\fP (SET or RESET)\&. 
+.RE
+.PP
+
+.SS "#define __HAL_UART_GET_IT_SOURCE(__HANDLE__, __INTERRUPT__)"
+\fBValue:\fP.PP
+.nf
+                                                                ((((((((uint8_t)(__INTERRUPT__)) >> 5U) == 1U) ?\\
+                                                                (__HANDLE__)\->Instance\->CR1 : \\
+                                                                (((((uint8_t)(__INTERRUPT__)) >> 5U) == 2U) ?\\
+                                                                 (__HANDLE__)\->Instance\->CR2 : \\
+                                                                 (__HANDLE__)\->Instance\->CR3)) & (1U <<\\
+                                                                     (((uint16_t)(__INTERRUPT__)) &\\
+                                                                      UART_IT_MASK)))  != RESET) ? SET : RESET)
+.fi
+
+.PP
+Check whether the specified UART interrupt source is enabled or not\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.br
+\fI__INTERRUPT__\fP specifies the UART interrupt source to check\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBUART_IT_RXFF\fP RXFIFO Full interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TXFE\fP TXFIFO Empty interrupt 
+.IP "\(bu" 1
+\fBUART_IT_RXFT\fP RXFIFO threshold interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TXFT\fP TXFIFO threshold interrupt 
+.IP "\(bu" 1
+\fBUART_IT_WUF\fP Wakeup from stop mode interrupt 
+.IP "\(bu" 1
+\fBUART_IT_CM\fP Character match interrupt 
+.IP "\(bu" 1
+\fBUART_IT_CTS\fP CTS change interrupt 
+.IP "\(bu" 1
+\fBUART_IT_LBD\fP LIN Break detection interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TXE\fP Transmit Data Register empty interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TXFNF\fP TX FIFO not full interrupt 
+.IP "\(bu" 1
+\fBUART_IT_TC\fP Transmission complete interrupt 
+.IP "\(bu" 1
+\fBUART_IT_RXNE\fP Receive Data register not empty interrupt 
+.IP "\(bu" 1
+\fBUART_IT_RXFNE\fP RXFIFO not empty interrupt 
+.IP "\(bu" 1
+\fBUART_IT_RTO\fP Receive Timeout interrupt 
+.IP "\(bu" 1
+\fBUART_IT_IDLE\fP Idle line detection interrupt 
+.IP "\(bu" 1
+\fBUART_IT_PE\fP Parity Error interrupt 
+.IP "\(bu" 1
+\fBUART_IT_ERR\fP Error interrupt (Frame error, noise error, overrun error) 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fIThe\fP new state of \fBINTERRUPT\fP (SET or RESET)\&. 
+.RE
+.PP
+
+.SS "#define __HAL_UART_HWCONTROL_CTS_DISABLE(__HANDLE__)"
+\fBValue:\fP.PP
+.nf
+  do{                                                              \\
+    ATOMIC_CLEAR_BIT((__HANDLE__)\->Instance\->CR3, USART_CR3_CTSE); \\
+    (__HANDLE__)\->Init\&.HwFlowCtl &= ~(USART_CR3_CTSE);             \\
+  } while(0U)
+.fi
+
+.PP
+Disable CTS flow control\&. 
+.PP
+\fBNote\fP
+.RS 4
+This macro allows to disable CTS hardware flow control for a given UART instance, without need to call \fBHAL_UART_Init()\fP function\&. As involving direct access to UART registers, usage of this macro should be fully endorsed by user\&. 
+.PP
+As macro is expected to be used for modifying CTS Hw flow control feature activation, without need for USART instance Deinit/Init, following conditions for macro call should be fulfilled :
+.IP "\(bu" 2
+UART instance should have already been initialised (through call of \fBHAL_UART_Init()\fP )
+.IP "\(bu" 2
+macro could only be called when corresponding UART instance is disabled (i\&.e\&. \fBHAL_UART_DISABLE(__HANDLE\fP)) and should be followed by an Enable macro (i\&.e\&. \fBHAL_UART_ENABLE(__HANDLE\fP))\&. 
+.PP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_HWCONTROL_CTS_ENABLE(__HANDLE__)"
+\fBValue:\fP.PP
+.nf
+  do{                                                             \\
+    ATOMIC_SET_BIT((__HANDLE__)\->Instance\->CR3, USART_CR3_CTSE);  \\
+    (__HANDLE__)\->Init\&.HwFlowCtl |= USART_CR3_CTSE;               \\
+  } while(0U)
+.fi
+
+.PP
+Enable CTS flow control\&. 
+.PP
+\fBNote\fP
+.RS 4
+This macro allows to enable CTS hardware flow control for a given UART instance, without need to call \fBHAL_UART_Init()\fP function\&. As involving direct access to UART registers, usage of this macro should be fully endorsed by user\&. 
+.PP
+As macro is expected to be used for modifying CTS Hw flow control feature activation, without need for USART instance Deinit/Init, following conditions for macro call should be fulfilled :
+.IP "\(bu" 2
+UART instance should have already been initialised (through call of \fBHAL_UART_Init()\fP )
+.IP "\(bu" 2
+macro could only be called when corresponding UART instance is disabled (i\&.e\&. \fBHAL_UART_DISABLE(__HANDLE\fP)) and should be followed by an Enable macro (i\&.e\&. \fBHAL_UART_ENABLE(__HANDLE\fP))\&. 
+.PP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_HWCONTROL_RTS_DISABLE(__HANDLE__)"
+\fBValue:\fP.PP
+.nf
+  do{                                                             \\
+    ATOMIC_CLEAR_BIT((__HANDLE__)\->Instance\->CR3, USART_CR3_RTSE);\\
+    (__HANDLE__)\->Init\&.HwFlowCtl &= ~(USART_CR3_RTSE);            \\
+  } while(0U)
+.fi
+
+.PP
+Disable RTS flow control\&. 
+.PP
+\fBNote\fP
+.RS 4
+This macro allows to disable RTS hardware flow control for a given UART instance, without need to call \fBHAL_UART_Init()\fP function\&. As involving direct access to UART registers, usage of this macro should be fully endorsed by user\&. 
+.PP
+As macro is expected to be used for modifying RTS Hw flow control feature activation, without need for USART instance Deinit/Init, following conditions for macro call should be fulfilled :
+.IP "\(bu" 2
+UART instance should have already been initialised (through call of \fBHAL_UART_Init()\fP )
+.IP "\(bu" 2
+macro could only be called when corresponding UART instance is disabled (i\&.e\&. \fBHAL_UART_DISABLE(__HANDLE\fP)) and should be followed by an Enable macro (i\&.e\&. \fBHAL_UART_ENABLE(__HANDLE\fP))\&. 
+.PP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_HWCONTROL_RTS_ENABLE(__HANDLE__)"
+\fBValue:\fP.PP
+.nf
+  do{                                                            \\
+    ATOMIC_SET_BIT((__HANDLE__)\->Instance\->CR3, USART_CR3_RTSE); \\
+    (__HANDLE__)\->Init\&.HwFlowCtl |= USART_CR3_RTSE;              \\
+  } while(0U)
+.fi
+
+.PP
+Enable RTS flow control\&. 
+.PP
+\fBNote\fP
+.RS 4
+This macro allows to enable RTS hardware flow control for a given UART instance, without need to call \fBHAL_UART_Init()\fP function\&. As involving direct access to UART registers, usage of this macro should be fully endorsed by user\&. 
+.PP
+As macro is expected to be used for modifying RTS Hw flow control feature activation, without need for USART instance Deinit/Init, following conditions for macro call should be fulfilled :
+.IP "\(bu" 2
+UART instance should have already been initialised (through call of \fBHAL_UART_Init()\fP )
+.IP "\(bu" 2
+macro could only be called when corresponding UART instance is disabled (i\&.e\&. \fBHAL_UART_DISABLE(__HANDLE\fP)) and should be followed by an Enable macro (i\&.e\&. \fBHAL_UART_ENABLE(__HANDLE\fP))\&. 
+.PP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_ONE_BIT_SAMPLE_DISABLE(__HANDLE__)   ((__HANDLE__)\->Instance\->CR3 &= ~\fBUSART_CR3_ONEBIT\fP)"
+
+.PP
+Disable the UART one bit sample method\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_ONE_BIT_SAMPLE_ENABLE(__HANDLE__)   ((__HANDLE__)\->Instance\->CR3|= \fBUSART_CR3_ONEBIT\fP)"
+
+.PP
+Enable the UART one bit sample method\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_RESET_HANDLE_STATE(__HANDLE__)"
+\fBValue:\fP.PP
+.nf
+                                                       do{                                                   \\
+                                                       (__HANDLE__)\->gState = HAL_UART_STATE_RESET;      \\
+                                                       (__HANDLE__)\->RxState = HAL_UART_STATE_RESET;     \\
+                                                     } while(0U)
+.fi
+
+.PP
+Reset UART handle states\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP UART handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_UART_SEND_REQ(__HANDLE__, __REQ__)   ((__HANDLE__)\->Instance\->RQR |= (uint16_t)(__REQ__))"
+
+.PP
+Set a specific UART request flag\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.br
+\fI__REQ__\fP specifies the request flag to set This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBUART_AUTOBAUD_REQUEST\fP Auto-Baud Rate Request 
+.IP "\(bu" 1
+\fBUART_SENDBREAK_REQUEST\fP Send Break Request 
+.IP "\(bu" 1
+\fBUART_MUTE_MODE_REQUEST\fP Mute Mode Request 
+.IP "\(bu" 1
+\fBUART_RXDATA_FLUSH_REQUEST\fP Receive Data flush Request 
+.IP "\(bu" 1
+\fBUART_TXDATA_FLUSH_REQUEST\fP Transmit data flush Request 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

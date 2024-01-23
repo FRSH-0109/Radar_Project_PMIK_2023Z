@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___r_c_c___i_o_p_o_r_t___clock___enable___disable" kind="group">
+    <compoundname>RCC_IOPORT_Clock_Enable_Disable</compoundname>
+    <title>IOPORT Clock Enable Disable</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enable___disable_1ga1fde58d775fd2458002df817a68f486e" prot="public" static="no">
+        <name>__HAL_RCC_GPIOA_CLK_ENABLE</name>
+        <param></param>
+        <initializer>                                                    do { \
+                                                    <ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t tmpreg; \
+                                                    <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga43e0e9624e69ff4289621254fa713d73" kindref="member">RCC_IOPENR_GPIOAEN</ref>); \
+   /* Delay after an <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref> peripheral clock enabling */ \
+                                                    tmpreg = <ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga43e0e9624e69ff4289621254fa713d73" kindref="member">RCC_IOPENR_GPIOAEN</ref>); \
+                                                    <ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(tmpreg); \
+                                                  } while(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="905" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="905" bodyend="911"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enable___disable_1ga5ad43f3f4d8163d40f7d402ef75d27c5" prot="public" static="no">
+        <name>__HAL_RCC_GPIOB_CLK_ENABLE</name>
+        <param></param>
+        <initializer>                                                    do { \
+                                                    <ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t tmpreg; \
+                                                    <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga66aefc56894e9e797a96ff9e3a954fad" kindref="member">RCC_IOPENR_GPIOBEN</ref>); \
+   /* Delay after an <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref> peripheral clock enabling */ \
+                                                    tmpreg = <ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga66aefc56894e9e797a96ff9e3a954fad" kindref="member">RCC_IOPENR_GPIOBEN</ref>); \
+                                                    <ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(tmpreg); \
+                                                  } while(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="913" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="913" bodyend="919"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enable___disable_1ga5ebfeb136612f370950f52306d29b6fd" prot="public" static="no">
+        <name>__HAL_RCC_GPIOC_CLK_ENABLE</name>
+        <param></param>
+        <initializer>                                                    do { \
+                                                    <ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t tmpreg; \
+                                                    <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga9299ea4e6a006e55d283100c2e656b1d" kindref="member">RCC_IOPENR_GPIOCEN</ref>); \
+   /* Delay after an <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref> peripheral clock enabling */ \
+                                                    tmpreg = <ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga9299ea4e6a006e55d283100c2e656b1d" kindref="member">RCC_IOPENR_GPIOCEN</ref>); \
+                                                    <ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(tmpreg); \
+                                                  } while(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="921" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="921" bodyend="927"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enable___disable_1ga74340ce0f556e370aafc2b8ecdf2dd31" prot="public" static="no">
+        <name>__HAL_RCC_GPIOD_CLK_ENABLE</name>
+        <param></param>
+        <initializer>                                                    do { \
+                                                    <ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t tmpreg; \
+                                                    <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga789058c061757d96aee97ecea898943b" kindref="member">RCC_IOPENR_GPIODEN</ref>); \
+   /* Delay after an <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref> peripheral clock enabling */ \
+                                                    tmpreg = <ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga789058c061757d96aee97ecea898943b" kindref="member">RCC_IOPENR_GPIODEN</ref>); \
+                                                    <ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(tmpreg); \
+                                                  } while(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="929" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="929" bodyend="935"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enable___disable_1ga84098c3c8735d401024a1fb762e9527f" prot="public" static="no">
+        <name>__HAL_RCC_GPIOF_CLK_ENABLE</name>
+        <param></param>
+        <initializer>                                                    do { \
+                                                    <ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t tmpreg; \
+                                                    <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga71a8b27c62fb23c2118d88b3eaaeb702" kindref="member">RCC_IOPENR_GPIOFEN</ref>); \
+   /* Delay after an <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref> peripheral clock enabling */ \
+                                                    tmpreg = <ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga71a8b27c62fb23c2118d88b3eaaeb702" kindref="member">RCC_IOPENR_GPIOFEN</ref>); \
+                                                    <ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(tmpreg); \
+                                                  } while(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="947" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="947" bodyend="953"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enable___disable_1ga7083e491e6a1e165d064d199304bd2f0" prot="public" static="no">
+        <name>__HAL_RCC_GPIOA_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga43e0e9624e69ff4289621254fa713d73" kindref="member">RCC_IOPENR_GPIOAEN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="955" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="955" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enable___disable_1ga60be1be419b57dafbbb93df67d68a424" prot="public" static="no">
+        <name>__HAL_RCC_GPIOB_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga66aefc56894e9e797a96ff9e3a954fad" kindref="member">RCC_IOPENR_GPIOBEN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="956" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="956" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enable___disable_1ga0fc90c25d35f9b5b5f66961505de1cd4" prot="public" static="no">
+        <name>__HAL_RCC_GPIOC_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga9299ea4e6a006e55d283100c2e656b1d" kindref="member">RCC_IOPENR_GPIOCEN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="957" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="957" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enable___disable_1gaeaefe364dafdc0c22353969595421422" prot="public" static="no">
+        <name>__HAL_RCC_GPIOD_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga789058c061757d96aee97ecea898943b" kindref="member">RCC_IOPENR_GPIODEN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="958" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="958" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enable___disable_1ga84c2248eab0a30bd8f4912233abbf34a" prot="public" static="no">
+        <name>__HAL_RCC_GPIOF_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga71a8b27c62fb23c2118d88b3eaaeb702" kindref="member">RCC_IOPENR_GPIOFEN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="962" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="962" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Enable or disable the IO Ports clock. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>After reset, the IO ports clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

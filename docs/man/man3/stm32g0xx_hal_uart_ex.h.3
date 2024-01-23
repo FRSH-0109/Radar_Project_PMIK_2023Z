@@ -1,0 +1,174 @@
+.TH "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h \- Header file of UART HAL Extended module\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32g0xx_hal_def\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBUART_WakeUpTypeDef\fP"
+.br
+.RI "UART wake up from stop mode parameters\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_WORDLENGTH_7B\fP   \fBUSART_CR1_M1\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_WORDLENGTH_8B\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_WORDLENGTH_9B\fP   \fBUSART_CR1_M0\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_ADDRESS_DETECT_4B\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADDRESS_DETECT_7B\fP   \fBUSART_CR2_ADDM7\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FIFOMODE_DISABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_FIFOMODE_ENABLE\fP   \fBUSART_CR1_FIFOEN\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_TXFIFO_THRESHOLD_1_8\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_TXFIFO_THRESHOLD_1_4\fP   \fBUSART_CR3_TXFTCFG_0\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_TXFIFO_THRESHOLD_1_2\fP   \fBUSART_CR3_TXFTCFG_1\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_TXFIFO_THRESHOLD_3_4\fP   (\fBUSART_CR3_TXFTCFG_0\fP|\fBUSART_CR3_TXFTCFG_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_TXFIFO_THRESHOLD_7_8\fP   \fBUSART_CR3_TXFTCFG_2\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_TXFIFO_THRESHOLD_8_8\fP   (\fBUSART_CR3_TXFTCFG_2\fP|\fBUSART_CR3_TXFTCFG_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_RXFIFO_THRESHOLD_1_8\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_RXFIFO_THRESHOLD_1_4\fP   \fBUSART_CR3_RXFTCFG_0\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_RXFIFO_THRESHOLD_1_2\fP   \fBUSART_CR3_RXFTCFG_1\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_RXFIFO_THRESHOLD_3_4\fP   (\fBUSART_CR3_RXFTCFG_0\fP|\fBUSART_CR3_RXFTCFG_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_RXFIFO_THRESHOLD_7_8\fP   \fBUSART_CR3_RXFTCFG_2\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_RXFIFO_THRESHOLD_8_8\fP   (\fBUSART_CR3_RXFTCFG_2\fP|\fBUSART_CR3_RXFTCFG_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_MASK_COMPUTATION\fP(__HANDLE__)"
+.br
+.RI "Report the UART mask to apply to retrieve the received data according to the word length and to the parity bits activation\&. "
+.ti -1c
+.RI "#define \fBIS_UART_WORD_LENGTH\fP(__LENGTH__)"
+.br
+.RI "Ensure that UART frame length is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADDRESSLENGTH_DETECT\fP(__ADDRESS__)"
+.br
+.RI "Ensure that UART wake-up address length is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_TXFIFO_THRESHOLD\fP(__THRESHOLD__)"
+.br
+.RI "Ensure that UART TXFIFO threshold level is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_RXFIFO_THRESHOLD\fP(__THRESHOLD__)"
+.br
+.RI "Ensure that UART RXFIFO threshold level is valid\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_RS485Ex_Init\fP (\fBUART_HandleTypeDef\fP *huart, uint32_t Polarity, uint32_t AssertionTime, uint32_t DeassertionTime)"
+.br
+.ti -1c
+.RI "void \fBHAL_UARTEx_WakeupCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UARTEx_RxFifoFullCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UARTEx_TxFifoEmptyCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_StopModeWakeUpSourceConfig\fP (\fBUART_HandleTypeDef\fP *huart, \fBUART_WakeUpTypeDef\fP WakeUpSelection)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_EnableStopMode\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_DisableStopMode\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_MultiProcessorEx_AddressLength_Set\fP (\fBUART_HandleTypeDef\fP *huart, uint32_t AddressLength)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_EnableFifoMode\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_DisableFifoMode\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_SetTxFifoThreshold\fP (\fBUART_HandleTypeDef\fP *huart, uint32_t Threshold)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_SetRxFifoThreshold\fP (\fBUART_HandleTypeDef\fP *huart, uint32_t Threshold)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_ReceiveToIdle\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t *pData, uint16_t Size, uint16_t *RxLen, uint32_t Timeout)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_ReceiveToIdle_IT\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_ReceiveToIdle_DMA\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_UART_RxEventTypeTypeDef\fP \fBHAL_UARTEx_GetRxEventType\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file of UART HAL Extended module\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBAttention\fP
+.RS 4
+.RE
+.PP
+Copyright (c) 2018 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

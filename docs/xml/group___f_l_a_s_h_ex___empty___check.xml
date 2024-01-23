@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___f_l_a_s_h_ex___empty___check" kind="group">
+    <compoundname>FLASHEx_Empty_Check</compoundname>
+    <title>FLASHEx Empty Check</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_l_a_s_h_ex___empty___check_1ga4009670d557381dd548e31da68ac8ebf" prot="public" static="no">
+        <name>FLASH_PROG_NOT_EMPTY</name>
+        <initializer>0x00000000u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1st location in Flash is programmed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" line="45" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h_ex___empty___check_1gac8b9cdc4d10feccc7e4ad5c5e3d5fe32" prot="public" static="no">
+        <name>FLASH_PROG_EMPTY</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga0861a1fd81c8dcb1a71559e45aa230ad" kindref="member">FLASH_ACR_PROGEMPTY</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1st location in Flash is empty </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" line="46" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

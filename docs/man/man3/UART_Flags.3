@@ -1,0 +1,211 @@
+.TH "UART_Flags" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Flags \- UART Status Flags
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_FLAG_TXFT\fP   \fBUSART_ISR_TXFT\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_RXFT\fP   \fBUSART_ISR_RXFT\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_RXFF\fP   \fBUSART_ISR_RXFF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_TXFE\fP   \fBUSART_ISR_TXFE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_REACK\fP   \fBUSART_ISR_REACK\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_TEACK\fP   \fBUSART_ISR_TEACK\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_WUF\fP   \fBUSART_ISR_WUF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_RWU\fP   \fBUSART_ISR_RWU\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_SBKF\fP   \fBUSART_ISR_SBKF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_CMF\fP   \fBUSART_ISR_CMF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_BUSY\fP   \fBUSART_ISR_BUSY\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_ABRF\fP   \fBUSART_ISR_ABRF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_ABRE\fP   \fBUSART_ISR_ABRE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_RTOF\fP   \fBUSART_ISR_RTOF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_CTS\fP   \fBUSART_ISR_CTS\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_CTSIF\fP   \fBUSART_ISR_CTSIF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_LBDF\fP   \fBUSART_ISR_LBDF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_TXE\fP   \fBUSART_ISR_TXE_TXFNF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_TXFNF\fP   \fBUSART_ISR_TXE_TXFNF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_TC\fP   \fBUSART_ISR_TC\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_RXNE\fP   \fBUSART_ISR_RXNE_RXFNE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_RXFNE\fP   \fBUSART_ISR_RXNE_RXFNE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_IDLE\fP   \fBUSART_ISR_IDLE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_ORE\fP   \fBUSART_ISR_ORE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_NE\fP   \fBUSART_ISR_NE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_FE\fP   \fBUSART_ISR_FE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_PE\fP   \fBUSART_ISR_PE\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Elements values convention: 0xXXXX
+.IP "\(bu" 2
+0xXXXX : Flag mask in the ISR register 
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define UART_FLAG_ABRE   \fBUSART_ISR_ABRE\fP"
+UART auto Baud rate error 
+.br
+ 
+.SS "#define UART_FLAG_ABRF   \fBUSART_ISR_ABRF\fP"
+UART auto Baud rate flag 
+.br
+ 
+.SS "#define UART_FLAG_BUSY   \fBUSART_ISR_BUSY\fP"
+UART busy flag 
+.br
+ 
+.SS "#define UART_FLAG_CMF   \fBUSART_ISR_CMF\fP"
+UART character match flag 
+.br
+ 
+.SS "#define UART_FLAG_CTS   \fBUSART_ISR_CTS\fP"
+UART clear to send flag 
+.br
+ 
+.SS "#define UART_FLAG_CTSIF   \fBUSART_ISR_CTSIF\fP"
+UART clear to send interrupt flag 
+.br
+ 
+.SS "#define UART_FLAG_FE   \fBUSART_ISR_FE\fP"
+UART frame error 
+.br
+ 
+.SS "#define UART_FLAG_IDLE   \fBUSART_ISR_IDLE\fP"
+UART idle flag 
+.br
+ 
+.SS "#define UART_FLAG_LBDF   \fBUSART_ISR_LBDF\fP"
+UART LIN break detection flag 
+.br
+ 
+.SS "#define UART_FLAG_NE   \fBUSART_ISR_NE\fP"
+UART noise error 
+.br
+ 
+.SS "#define UART_FLAG_ORE   \fBUSART_ISR_ORE\fP"
+UART overrun error 
+.br
+ 
+.SS "#define UART_FLAG_PE   \fBUSART_ISR_PE\fP"
+UART parity error 
+.br
+ 
+.SS "#define UART_FLAG_REACK   \fBUSART_ISR_REACK\fP"
+UART receive enable acknowledge flag 
+.br
+ 
+.SS "#define UART_FLAG_RTOF   \fBUSART_ISR_RTOF\fP"
+UART receiver timeout flag 
+.br
+ 
+.SS "#define UART_FLAG_RWU   \fBUSART_ISR_RWU\fP"
+UART receiver wake-up from mute mode flag 
+.SS "#define UART_FLAG_RXFF   \fBUSART_ISR_RXFF\fP"
+UART RXFIFO Full flag 
+.br
+ 
+.SS "#define UART_FLAG_RXFNE   \fBUSART_ISR_RXNE_RXFNE\fP"
+UART RXFIFO not empty 
+.br
+ 
+.SS "#define UART_FLAG_RXFT   \fBUSART_ISR_RXFT\fP"
+UART RXFIFO threshold flag 
+.br
+ 
+.SS "#define UART_FLAG_RXNE   \fBUSART_ISR_RXNE_RXFNE\fP"
+UART read data register not empty 
+.br
+ 
+.SS "#define UART_FLAG_SBKF   \fBUSART_ISR_SBKF\fP"
+UART send break flag 
+.br
+ 
+.SS "#define UART_FLAG_TC   \fBUSART_ISR_TC\fP"
+UART transmission complete 
+.br
+ 
+.SS "#define UART_FLAG_TEACK   \fBUSART_ISR_TEACK\fP"
+UART transmit enable acknowledge flag 
+.br
+ 
+.SS "#define UART_FLAG_TXE   \fBUSART_ISR_TXE_TXFNF\fP"
+UART transmit data register empty 
+.br
+ 
+.SS "#define UART_FLAG_TXFE   \fBUSART_ISR_TXFE\fP"
+UART TXFIFO Empty flag 
+.br
+ 
+.SS "#define UART_FLAG_TXFNF   \fBUSART_ISR_TXE_TXFNF\fP"
+UART TXFIFO not full 
+.br
+ 
+.SS "#define UART_FLAG_TXFT   \fBUSART_ISR_TXFT\fP"
+UART TXFIFO threshold flag 
+.br
+ 
+.SS "#define UART_FLAG_WUF   \fBUSART_ISR_WUF\fP"
+UART wake-up from stop mode flag 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,96 @@
+.TH "DMAEx_Private_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DMAEx_Private_Macros \- DMAEx Private Macros
+.PP
+ \- DMAEx private macros\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_DMAMUX_SYNC_SIGNAL_ID\fP(SIGNAL_ID)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMAMUX_SYNC_REQUEST_NUMBER\fP(REQUEST_NUMBER)   (((REQUEST_NUMBER) > 0U) && ((REQUEST_NUMBER) <= 32U))"
+.br
+.ti -1c
+.RI "#define \fBIS_DMAMUX_SYNC_POLARITY\fP(POLARITY)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMAMUX_SYNC_STATE\fP(SYNC)   (((SYNC) == \fBDISABLE\fP)   || ((SYNC) == \fBENABLE\fP))"
+.br
+.ti -1c
+.RI "#define \fBIS_DMAMUX_SYNC_EVENT\fP(EVENT)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMAMUX_REQUEST_GEN_SIGNAL_ID\fP(SIGNAL_ID)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMAMUX_REQUEST_GEN_REQUEST_NUMBER\fP(REQUEST_NUMBER)   (((REQUEST_NUMBER) > 0U) && ((REQUEST_NUMBER) <= 32U))"
+.br
+.ti -1c
+.RI "#define \fBIS_DMAMUX_REQUEST_GEN_POLARITY\fP(POLARITY)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+DMAEx private macros\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_DMAMUX_REQUEST_GEN_POLARITY(POLARITY)"
+\fBValue:\fP.PP
+.nf
+                                                         (((POLARITY) == HAL_DMAMUX_REQ_GEN_NO_EVENT)|| \\
+                                                         ((POLARITY) == HAL_DMAMUX_REQ_GEN_RISING)  || \\
+                                                         ((POLARITY) == HAL_DMAMUX_REQ_GEN_FALLING) || \\
+                                                         ((POLARITY) == HAL_DMAMUX_REQ_GEN_RISING_FALLING))
+.fi
+
+.SS "#define IS_DMAMUX_REQUEST_GEN_REQUEST_NUMBER(REQUEST_NUMBER)   (((REQUEST_NUMBER) > 0U) && ((REQUEST_NUMBER) <= 32U))"
+
+.SS "#define IS_DMAMUX_REQUEST_GEN_SIGNAL_ID(SIGNAL_ID)"
+\fBValue:\fP.PP
+.nf
+                                                         (((SIGNAL_ID) == HAL_DMAMUX1_REQ_GEN_EXTI0) || \\
+                                                         (((SIGNAL_ID) >= HAL_DMAMUX1_REQ_GEN_EXTI1) && \\
+                                                          ((SIGNAL_ID) <= HAL_DMAMUX1_MAX_REQ_GEN)))
+.fi
+
+.SS "#define IS_DMAMUX_SYNC_EVENT(EVENT)"
+\fBValue:\fP.PP
+.nf
+                                                         (((EVENT) == DISABLE)   || \\
+                                                         ((EVENT) == ENABLE))
+.fi
+
+.SS "#define IS_DMAMUX_SYNC_POLARITY(POLARITY)"
+\fBValue:\fP.PP
+.nf
+                                                         (((POLARITY) == HAL_DMAMUX_SYNC_NO_EVENT) || \\
+                                                         ((POLARITY) == HAL_DMAMUX_SYNC_RISING)   || \\
+                                                         ((POLARITY) == HAL_DMAMUX_SYNC_FALLING)  || \\
+                                                         ((POLARITY) == HAL_DMAMUX_SYNC_RISING_FALLING))
+.fi
+
+.SS "#define IS_DMAMUX_SYNC_REQUEST_NUMBER(REQUEST_NUMBER)   (((REQUEST_NUMBER) > 0U) && ((REQUEST_NUMBER) <= 32U))"
+
+.SS "#define IS_DMAMUX_SYNC_SIGNAL_ID(SIGNAL_ID)"
+\fBValue:\fP.PP
+.nf
+                                                         (((SIGNAL_ID) == HAL_DMAMUX1_SYNC_EXTI0) || \\
+                                                         (((SIGNAL_ID) >= HAL_DMAMUX1_SYNC_EXTI1) && \\
+                                                          ((SIGNAL_ID) <= HAL_DMAMUX1_MAX_SYNC)))
+.fi
+
+.SS "#define IS_DMAMUX_SYNC_STATE(SYNC)   (((SYNC) == \fBDISABLE\fP)   || ((SYNC) == \fBENABLE\fP))"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

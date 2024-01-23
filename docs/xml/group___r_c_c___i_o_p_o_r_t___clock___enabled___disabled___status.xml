@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___r_c_c___i_o_p_o_r_t___clock___enabled___disabled___status" kind="group">
+    <compoundname>RCC_IOPORT_Clock_Enabled_Disabled_Status</compoundname>
+    <title>IOPORT Clock Enabled or Disabled Status</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enabled___disabled___status_1gad1edbd9407c814110f04c1a609a214e4" prot="public" static="no">
+        <name>__HAL_RCC_GPIOA_IS_CLK_ENABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga43e0e9624e69ff4289621254fa713d73" kindref="member">RCC_IOPENR_GPIOAEN</ref>) != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1465" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1465" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enabled___disabled___status_1ga2fc8f9dc5f5b64c14c325c45ee301b4f" prot="public" static="no">
+        <name>__HAL_RCC_GPIOB_IS_CLK_ENABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga66aefc56894e9e797a96ff9e3a954fad" kindref="member">RCC_IOPENR_GPIOBEN</ref>) != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1466" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enabled___disabled___status_1ga528029c120a0154dfd7cfd6159e8debe" prot="public" static="no">
+        <name>__HAL_RCC_GPIOC_IS_CLK_ENABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga9299ea4e6a006e55d283100c2e656b1d" kindref="member">RCC_IOPENR_GPIOCEN</ref>) != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1467" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enabled___disabled___status_1ga7a8a0e334d69163b25692f0450dc569a" prot="public" static="no">
+        <name>__HAL_RCC_GPIOD_IS_CLK_ENABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga789058c061757d96aee97ecea898943b" kindref="member">RCC_IOPENR_GPIODEN</ref>) != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1468" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enabled___disabled___status_1ga5c997b15dc4bc3fd8e5b43193e4b1a2d" prot="public" static="no">
+        <name>__HAL_RCC_GPIOF_IS_CLK_ENABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga71a8b27c62fb23c2118d88b3eaaeb702" kindref="member">RCC_IOPENR_GPIOFEN</ref>) != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1472" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enabled___disabled___status_1ga2d73b007700fe1576c7965ce677148bd" prot="public" static="no">
+        <name>__HAL_RCC_GPIOA_IS_CLK_DISABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga43e0e9624e69ff4289621254fa713d73" kindref="member">RCC_IOPENR_GPIOAEN</ref>) == <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1475" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1475" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enabled___disabled___status_1ga9b9353035473ac5f144f6e5385c4bebb" prot="public" static="no">
+        <name>__HAL_RCC_GPIOB_IS_CLK_DISABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga66aefc56894e9e797a96ff9e3a954fad" kindref="member">RCC_IOPENR_GPIOBEN</ref>) == <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1476" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enabled___disabled___status_1ga5e939d98ecca025c028bd1d837b84c81" prot="public" static="no">
+        <name>__HAL_RCC_GPIOC_IS_CLK_DISABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga9299ea4e6a006e55d283100c2e656b1d" kindref="member">RCC_IOPENR_GPIOCEN</ref>) == <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1477" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enabled___disabled___status_1ga01c2b4166bbcf59a529cd3c5f8b93d76" prot="public" static="no">
+        <name>__HAL_RCC_GPIOD_IS_CLK_DISABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga789058c061757d96aee97ecea898943b" kindref="member">RCC_IOPENR_GPIODEN</ref>) == <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1478" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___i_o_p_o_r_t___clock___enabled___disabled___status_1ga843a7fcc2441b978cadacbea548dff93" prot="public" static="no">
+        <name>__HAL_RCC_GPIOF_IS_CLK_DISABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;IOPENR, <ref refid="group___peripheral___registers___bits___definition_1ga71a8b27c62fb23c2118d88b3eaaeb702" kindref="member">RCC_IOPENR_GPIOFEN</ref>) == <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1482" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1482" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Check whether the IO Port clock is enabled or not. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

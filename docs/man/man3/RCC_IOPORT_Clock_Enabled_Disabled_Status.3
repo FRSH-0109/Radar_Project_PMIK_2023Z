@@ -1,0 +1,82 @@
+.TH "RCC_IOPORT_Clock_Enabled_Disabled_Status" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_IOPORT_Clock_Enabled_Disabled_Status \- IOPORT Clock Enabled or Disabled Status
+.PP
+ \- Check whether the IO Port clock is enabled or not\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOA_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOAEN\fP) != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOB_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOBEN\fP) != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOC_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOCEN\fP) != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOD_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIODEN\fP) != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOF_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOFEN\fP) != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOA_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOAEN\fP) == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOB_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOBEN\fP) == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOC_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOCEN\fP) == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOD_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIODEN\fP) == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOF_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOFEN\fP) == \fBRESET\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Check whether the IO Port clock is enabled or not\&. 
+
+
+.PP
+\fBNote\fP
+.RS 4
+After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it\&. 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_RCC_GPIOA_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOAEN\fP) == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_GPIOA_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOAEN\fP) != \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_GPIOB_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOBEN\fP) == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_GPIOB_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOBEN\fP) != \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_GPIOC_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOCEN\fP) == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_GPIOC_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOCEN\fP) != \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_GPIOD_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIODEN\fP) == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_GPIOD_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIODEN\fP) != \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_GPIOF_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOFEN\fP) == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_GPIOF_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOFEN\fP) != \fBRESET\fP)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

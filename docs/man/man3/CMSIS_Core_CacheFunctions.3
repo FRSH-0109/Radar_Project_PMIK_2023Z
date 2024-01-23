@@ -1,0 +1,185 @@
+.TH "CMSIS_Core_CacheFunctions" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMSIS_Core_CacheFunctions \- Cache Functions
+.PP
+ \- Functions that configure Instruction and Data cache\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Modules"
+
+.in +1c
+.ti -1c
+.RI "\fBSysTick Functions\fP"
+.br
+.RI "Functions that configure the System\&. "
+.in -1c
+.in +1c
+.ti -1c
+.RI "\fB__STATIC_FORCEINLINE\fP void \fBSCB_EnableICache\fP (void)"
+.br
+.RI "Enable I-Cache\&. "
+.ti -1c
+.RI "\fB__STATIC_FORCEINLINE\fP void \fBSCB_DisableICache\fP (void)"
+.br
+.RI "Disable I-Cache\&. "
+.ti -1c
+.RI "\fB__STATIC_FORCEINLINE\fP void \fBSCB_InvalidateICache\fP (void)"
+.br
+.RI "Invalidate I-Cache\&. "
+.ti -1c
+.RI "\fB__STATIC_FORCEINLINE\fP void \fBSCB_InvalidateICache_by_Addr\fP (void *addr, int32_t isize)"
+.br
+.RI "I-Cache Invalidate by address\&. "
+.ti -1c
+.RI "\fB__STATIC_FORCEINLINE\fP void \fBSCB_EnableDCache\fP (void)"
+.br
+.RI "Enable D-Cache\&. "
+.ti -1c
+.RI "\fB__STATIC_FORCEINLINE\fP void \fBSCB_DisableDCache\fP (void)"
+.br
+.RI "Disable D-Cache\&. "
+.ti -1c
+.RI "\fB__STATIC_FORCEINLINE\fP void \fBSCB_InvalidateDCache\fP (void)"
+.br
+.RI "Invalidate D-Cache\&. "
+.ti -1c
+.RI "\fB__STATIC_FORCEINLINE\fP void \fBSCB_CleanDCache\fP (void)"
+.br
+.RI "Clean D-Cache\&. "
+.ti -1c
+.RI "\fB__STATIC_FORCEINLINE\fP void \fBSCB_CleanInvalidateDCache\fP (void)"
+.br
+.RI "Clean & Invalidate D-Cache\&. "
+.ti -1c
+.RI "\fB__STATIC_FORCEINLINE\fP void \fBSCB_InvalidateDCache_by_Addr\fP (void *addr, int32_t dsize)"
+.br
+.RI "D-Cache Invalidate by address\&. "
+.ti -1c
+.RI "\fB__STATIC_FORCEINLINE\fP void \fBSCB_CleanDCache_by_Addr\fP (uint32_t *addr, int32_t dsize)"
+.br
+.RI "D-Cache Clean by address\&. "
+.ti -1c
+.RI "\fB__STATIC_FORCEINLINE\fP void \fBSCB_CleanInvalidateDCache_by_Addr\fP (uint32_t *addr, int32_t dsize)"
+.br
+.RI "D-Cache Clean and Invalidate by address\&. "
+.ti -1c
+.RI "#define \fBCCSIDR_WAYS\fP(x)   (((x) & \fBSCB_CCSIDR_ASSOCIATIVITY_Msk\fP) >> \fBSCB_CCSIDR_ASSOCIATIVITY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBCCSIDR_SETS\fP(x)   (((x) & \fBSCB_CCSIDR_NUMSETS_Msk\fP      ) >> \fBSCB_CCSIDR_NUMSETS_Pos\fP      )"
+.br
+.ti -1c
+.RI "#define \fB__SCB_DCACHE_LINE_SIZE\fP   32U"
+.br
+.ti -1c
+.RI "#define \fB__SCB_ICACHE_LINE_SIZE\fP   32U"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Functions that configure Instruction and Data cache\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __SCB_DCACHE_LINE_SIZE   32U"
+Cortex-M7 cache line size is fixed to 32 bytes (8 words)\&. See also register SCB_CCSIDR 
+.SS "#define __SCB_ICACHE_LINE_SIZE   32U"
+Cortex-M7 cache line size is fixed to 32 bytes (8 words)\&. See also register SCB_CCSIDR 
+.SS "#define CCSIDR_SETS(x)   (((x) & \fBSCB_CCSIDR_NUMSETS_Msk\fP      ) >> \fBSCB_CCSIDR_NUMSETS_Pos\fP      )"
+
+.SS "#define CCSIDR_WAYS(x)   (((x) & \fBSCB_CCSIDR_ASSOCIATIVITY_Msk\fP) >> \fBSCB_CCSIDR_ASSOCIATIVITY_Pos\fP)"
+
+.SH "Function Documentation"
+.PP 
+.SS "\fB__STATIC_FORCEINLINE\fP void SCB_CleanDCache (void)"
+
+.PP
+Clean D-Cache\&. Cleans D-Cache 
+.SS "\fB__STATIC_FORCEINLINE\fP void SCB_CleanDCache_by_Addr (uint32_t * addr, int32_t dsize)"
+
+.PP
+D-Cache Clean by address\&. Cleans D-Cache for the given address D-Cache is cleaned starting from a 32 byte aligned address in 32 byte granularity\&. D-Cache memory blocks which are part of given address + given size are cleaned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIaddr\fP address 
+.br
+\fIdsize\fP size of memory block (in number of bytes) 
+.RE
+.PP
+
+.SS "\fB__STATIC_FORCEINLINE\fP void SCB_CleanInvalidateDCache (void)"
+
+.PP
+Clean & Invalidate D-Cache\&. Cleans and Invalidates D-Cache 
+.SS "\fB__STATIC_FORCEINLINE\fP void SCB_CleanInvalidateDCache_by_Addr (uint32_t * addr, int32_t dsize)"
+
+.PP
+D-Cache Clean and Invalidate by address\&. Cleans and invalidates D_Cache for the given address D-Cache is cleaned and invalidated starting from a 32 byte aligned address in 32 byte granularity\&. D-Cache memory blocks which are part of given address + given size are cleaned and invalidated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIaddr\fP address (aligned to 32-byte boundary) 
+.br
+\fIdsize\fP size of memory block (in number of bytes) 
+.RE
+.PP
+
+.SS "\fB__STATIC_FORCEINLINE\fP void SCB_DisableDCache (void)"
+
+.PP
+Disable D-Cache\&. Turns off D-Cache 
+.SS "\fB__STATIC_FORCEINLINE\fP void SCB_DisableICache (void)"
+
+.PP
+Disable I-Cache\&. Turns off I-Cache 
+.SS "\fB__STATIC_FORCEINLINE\fP void SCB_EnableDCache (void)"
+
+.PP
+Enable D-Cache\&. Turns on D-Cache 
+.SS "\fB__STATIC_FORCEINLINE\fP void SCB_EnableICache (void)"
+
+.PP
+Enable I-Cache\&. Turns on I-Cache 
+.SS "\fB__STATIC_FORCEINLINE\fP void SCB_InvalidateDCache (void)"
+
+.PP
+Invalidate D-Cache\&. Invalidates D-Cache 
+.SS "\fB__STATIC_FORCEINLINE\fP void SCB_InvalidateDCache_by_Addr (void * addr, int32_t dsize)"
+
+.PP
+D-Cache Invalidate by address\&. Invalidates D-Cache for the given address\&. D-Cache is invalidated starting from a 32 byte aligned address in 32 byte granularity\&. D-Cache memory blocks which are part of given address + given size are invalidated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIaddr\fP address 
+.br
+\fIdsize\fP size of memory block (in number of bytes) 
+.RE
+.PP
+
+.SS "\fB__STATIC_FORCEINLINE\fP void SCB_InvalidateICache (void)"
+
+.PP
+Invalidate I-Cache\&. Invalidates I-Cache 
+.SS "\fB__STATIC_FORCEINLINE\fP void SCB_InvalidateICache_by_Addr (void * addr, int32_t isize)"
+
+.PP
+I-Cache Invalidate by address\&. Invalidates I-Cache for the given address\&. I-Cache is invalidated starting from a 32 byte aligned address in 32 byte granularity\&. I-Cache memory blocks which are part of given address + given size are invalidated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIaddr\fP address 
+.br
+\fIisize\fP size of memory block (in number of bytes) 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

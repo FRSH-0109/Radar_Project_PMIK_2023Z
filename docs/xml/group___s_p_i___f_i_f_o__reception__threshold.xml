@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_p_i___f_i_f_o__reception__threshold" kind="group">
+    <compoundname>SPI_FIFO_reception_threshold</compoundname>
+    <title>SPI FIFO Reception Threshold</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i___f_i_f_o__reception__threshold_1gad59c107b3fee1ca1d6366b4b3c995c88" prot="public" static="no">
+        <name>SPI_RXFIFO_THRESHOLD</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga6e02994914afef4270508bc3219db477" kindref="member">SPI_CR2_FRXTH</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="356" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___f_i_f_o__reception__threshold_1ga89c3d57e576b7855dc34df26fd6b9972" prot="public" static="no">
+        <name>SPI_RXFIFO_THRESHOLD_QF</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga6e02994914afef4270508bc3219db477" kindref="member">SPI_CR2_FRXTH</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="357" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___f_i_f_o__reception__threshold_1ga6e9184eadc370323383fe560209d1084" prot="public" static="no">
+        <name>SPI_RXFIFO_THRESHOLD_HF</name>
+        <initializer>(0x00000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="358" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This parameter can be one of the following values: SPI_RXFIFO_THRESHOLD or SPI_RXFIFO_THRESHOLD_QF : RXNE event is generated if the FIFO level is greater or equal to 1/4(8-bits). SPI_RXFIFO_THRESHOLD_HF: RXNE event is generated if the FIFO level is greater or equal to 1/2(16 bits). </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

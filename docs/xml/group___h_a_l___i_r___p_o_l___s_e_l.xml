@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___h_a_l___i_r___p_o_l___s_e_l" kind="group">
+    <compoundname>HAL_IR_POL_SEL</compoundname>
+    <title>IR output polarity selection</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___h_a_l___i_r___p_o_l___s_e_l_1gaebbd73d48c6c6d48aface6a2ae3e3ab5" prot="public" static="no">
+        <name>HAL_SYSCFG_IRDA_POLARITY_NOT_INVERTED</name>
+        <initializer>0x00000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>00: IR output polarity not inverted </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="133" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___i_r___p_o_l___s_e_l_1ga7d22d4a13fb77a2a4313fe63831ddb39" prot="public" static="no">
+        <name>HAL_SYSCFG_IRDA_POLARITY_INVERTED</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga5a7177e17b6fc0241514b6667d318fe9" kindref="member">SYSCFG_CFGR1_IR_POL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>01: IR output polarity inverted </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="134" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

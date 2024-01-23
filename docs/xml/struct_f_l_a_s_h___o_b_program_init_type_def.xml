@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_f_l_a_s_h___o_b_program_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>FLASH_OBProgramInitTypeDef</compoundname>
+    <includes refid="stm32g0xx__hal__flash_8h" local="no">stm32g0xx_hal_flash.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_l_a_s_h___o_b_program_init_type_def_1ac5941efaeb6bd9e3c0852613f990ebd8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OptionType</definition>
+        <argsstring></argsstring>
+        <name>OptionType</name>
+        <qualifiedname>FLASH_OBProgramInitTypeDef::OptionType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Option byte to be configured. This parameter can be a combination of the values of <ref refid="group___f_l_a_s_h___o_b___type" kindref="compound">FLASH Option Bytes Type</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="63" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___o_b_program_init_type_def_1ae7d8307ee7a0754760d067430448b8df" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t WRPArea</definition>
+        <argsstring></argsstring>
+        <name>WRPArea</name>
+        <qualifiedname>FLASH_OBProgramInitTypeDef::WRPArea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write protection area to be programmed (used for OPTIONBYTE_WRP). Only one WRP area could be programmed at the same time. This parameter can be value of <ref refid="group___f_l_a_s_h___o_b___w_r_p___area" kindref="compound">FLASH WRP Area</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="65" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___o_b_program_init_type_def_1a8dd2e3028f6a42c22d89107ad81b5171" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t WRPStartOffset</definition>
+        <argsstring></argsstring>
+        <name>WRPStartOffset</name>
+        <qualifiedname>FLASH_OBProgramInitTypeDef::WRPStartOffset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write protection start offset (used for OPTIONBYTE_WRP). This parameter must be a value between 0 and [FLASH_PAGE_NB - 1] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="68" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___o_b_program_init_type_def_1af0e01c4c38905cd3ed60c8836d28da20" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t WRPEndOffset</definition>
+        <argsstring></argsstring>
+        <name>WRPEndOffset</name>
+        <qualifiedname>FLASH_OBProgramInitTypeDef::WRPEndOffset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write protection end offset (used for OPTIONBYTE_WRP). This parameter must be a value between WRPStartOffset and [FLASH_PAGE_NB - 1] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="70" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___o_b_program_init_type_def_1a671880a1dafb7b92e0e2b65593407c12" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RDPLevel</definition>
+        <argsstring></argsstring>
+        <name>RDPLevel</name>
+        <qualifiedname>FLASH_OBProgramInitTypeDef::RDPLevel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the read protection level (used for OPTIONBYTE_RDP). This parameter can be a value of <ref refid="group___f_l_a_s_h___o_b___read___protection" kindref="compound">FLASH Option Bytes Read Protection</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="72" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___o_b_program_init_type_def_1a84b990aa673c75ca04bd361e8157953d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t USERType</definition>
+        <argsstring></argsstring>
+        <name>USERType</name>
+        <qualifiedname>FLASH_OBProgramInitTypeDef::USERType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>User option byte(s) to be configured (used for OPTIONBYTE_USER). This parameter can be a combination of <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___type" kindref="compound">FLASH Option Bytes User Type</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="74" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___o_b_program_init_type_def_1aefa4621be119ce8af715a2271b53168c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t USERConfig</definition>
+        <argsstring></argsstring>
+        <name>USERConfig</name>
+        <qualifiedname>FLASH_OBProgramInitTypeDef::USERConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value of the user option byte (used for OPTIONBYTE_USER). This parameter can be a combination of FLASH_OB_USER_BOR_ENABLE(*), FLASH_OB_USER_BOR_LEVEL(*), FLASH_OB_USER_RESET_CONFIG(*), <ref refid="group___f_l_a_s_h___o_b___u_s_e_r__n_r_s_t___s_t_o_p" kindref="compound">FLASH Option Bytes User Reset On Stop</ref>, <ref refid="group___f_l_a_s_h___o_b___u_s_e_r__n_r_s_t___s_t_a_n_d_b_y" kindref="compound">FLASH Option Bytes User Reset On Standby</ref>, FLASH_OB_USER_nRST_SHUTDOWN(*), <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_w" kindref="compound">FLASH Option Bytes User IWDG Type</ref>, <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_t_o_p" kindref="compound">FLASH Option Bytes User IWDG Mode On Stop</ref>, <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_t_a_n_d_b_y" kindref="compound">FLASH Option Bytes User IWDG Mode On Standby</ref>, <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___w_w_d_g___s_w" kindref="compound">FLASH Option Bytes User WWDG Type</ref>, <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___s_r_a_m___p_a_r_i_t_y" kindref="compound">FLASH Option Bytes User SRAM parity</ref>, FLASH_OB_USER_BANK_SWAP(*), FLASH_OB_USER_DUAL_BANK(*), <ref refid="group___f_l_a_s_h___o_b___u_s_e_r__n_b_o_o_t___s_e_l" kindref="compound">FLASH Option Bytes User Boot0 Selection</ref>, <ref refid="group___f_l_a_s_h___o_b___u_s_e_r__n_b_o_o_t1" kindref="compound">FLASH Option Bytes User BOOT1 Type</ref>, <ref refid="group___f_l_a_s_h___o_b___u_s_e_r__n_b_o_o_t0" kindref="compound">FLASH Option Bytes User nBOOT0 option bit</ref>, FLASH_OB_USER_INPUT_RESET_HOLDER(*) <simplesect kind="note"><para>(*) availability depends on devices </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="76" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>FLASH Option Bytes Program structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="61" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="62" bodyend="131"/>
+    <listofallmembers>
+      <member refid="struct_f_l_a_s_h___o_b_program_init_type_def_1ac5941efaeb6bd9e3c0852613f990ebd8" prot="public" virt="non-virtual"><scope>FLASH_OBProgramInitTypeDef</scope><name>OptionType</name></member>
+      <member refid="struct_f_l_a_s_h___o_b_program_init_type_def_1a671880a1dafb7b92e0e2b65593407c12" prot="public" virt="non-virtual"><scope>FLASH_OBProgramInitTypeDef</scope><name>RDPLevel</name></member>
+      <member refid="struct_f_l_a_s_h___o_b_program_init_type_def_1aefa4621be119ce8af715a2271b53168c" prot="public" virt="non-virtual"><scope>FLASH_OBProgramInitTypeDef</scope><name>USERConfig</name></member>
+      <member refid="struct_f_l_a_s_h___o_b_program_init_type_def_1a84b990aa673c75ca04bd361e8157953d" prot="public" virt="non-virtual"><scope>FLASH_OBProgramInitTypeDef</scope><name>USERType</name></member>
+      <member refid="struct_f_l_a_s_h___o_b_program_init_type_def_1ae7d8307ee7a0754760d067430448b8df" prot="public" virt="non-virtual"><scope>FLASH_OBProgramInitTypeDef</scope><name>WRPArea</name></member>
+      <member refid="struct_f_l_a_s_h___o_b_program_init_type_def_1af0e01c4c38905cd3ed60c8836d28da20" prot="public" virt="non-virtual"><scope>FLASH_OBProgramInitTypeDef</scope><name>WRPEndOffset</name></member>
+      <member refid="struct_f_l_a_s_h___o_b_program_init_type_def_1a8dd2e3028f6a42c22d89107ad81b5171" prot="public" virt="non-virtual"><scope>FLASH_OBProgramInitTypeDef</scope><name>WRPStartOffset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

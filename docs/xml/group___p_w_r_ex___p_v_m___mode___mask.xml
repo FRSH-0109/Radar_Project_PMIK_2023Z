@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___p_w_r_ex___p_v_m___mode___mask" kind="group">
+    <compoundname>PWREx_PVM_Mode_Mask</compoundname>
+    <title>PWR PVM Mode Mask</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___p_w_r_ex___p_v_m___mode___mask_1gac5209faf43a32aad1185a39e9cd7e295" prot="public" static="no">
+        <name>PVM_MODE_IT</name>
+        <initializer>((uint32_t)0x00010000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mask for interruption yielded by PVM threshold crossing </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="484" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r_ex___p_v_m___mode___mask_1gae04f0dd9e61c7b3135b9ba5f5f3a6fba" prot="public" static="no">
+        <name>PVM_MODE_EVT</name>
+        <initializer>((uint32_t)0x00020000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mask for event yielded by PVM threshold crossing <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="485" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r_ex___p_v_m___mode___mask_1ga59a5f6af101fe282da71dc2416d9fdc9" prot="public" static="no">
+        <name>PVM_RISING_EDGE</name>
+        <initializer>((uint32_t)0x00000001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mask for rising edge set as PVM trigger <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="486" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r_ex___p_v_m___mode___mask_1gaec6b36d7562889101b7787a2d79e3916" prot="public" static="no">
+        <name>PVM_FALLING_EDGE</name>
+        <initializer>((uint32_t)0x00000002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mask for falling edge set as PVM trigger <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="487" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" bodystart="487" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

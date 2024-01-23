@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="stm32g0xx__hal__spi__ex_8h" kind="file" language="C++">
+    <compoundname>stm32g0xx_hal_spi_ex.h</compoundname>
+    <includes refid="stm32g0xx__hal__def_8h" local="yes">stm32g0xx_hal_def.h</includes>
+    <includedby refid="stm32g0xx__hal__spi_8h" local="yes">Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="4">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="2">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi_ex.h</label>
+        <link refid="stm32g0xx__hal__spi__ex_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>Core/Inc/dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Core/Inc/gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Core/Inc/main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Core/Inc/spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Core/Inc/stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Core/Inc/tim.h</label>
+        <link refid="tim_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Core/Inc/usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Core/Src/dma.c</label>
+        <link refid="dma_8c"/>
+      </node>
+      <node id="10">
+        <label>Core/Src/gpio.c</label>
+        <link refid="gpio_8c"/>
+      </node>
+      <node id="8">
+        <label>Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="12">
+        <label>Core/Src/spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="18">
+        <label>Core/Src/stm32g0xx_hal_msp.c</label>
+        <link refid="stm32g0xx__hal__msp_8c"/>
+      </node>
+      <node id="19">
+        <label>Core/Src/stm32g0xx_it.c</label>
+        <link refid="stm32g0xx__it_8c"/>
+      </node>
+      <node id="14">
+        <label>Core/Src/tim.c</label>
+        <link refid="tim_8c"/>
+      </node>
+      <node id="16">
+        <label>Core/Src/usart.c</label>
+        <link refid="usart_8c"/>
+      </node>
+      <node id="4">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h</label>
+        <link refid="stm32g0xx__hal__spi_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi_ex.h</label>
+        <link refid="stm32g0xx__hal__spi__ex_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c</label>
+        <link refid="stm32g0xx__hal_8c"/>
+      </node>
+      <node id="25">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c</label>
+        <link refid="stm32g0xx__hal__cortex_8c"/>
+      </node>
+      <node id="26">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c</label>
+        <link refid="stm32g0xx__hal__dma_8c"/>
+      </node>
+      <node id="27">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c</label>
+        <link refid="stm32g0xx__hal__dma__ex_8c"/>
+      </node>
+      <node id="28">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c</label>
+        <link refid="stm32g0xx__hal__exti_8c"/>
+      </node>
+      <node id="29">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c</label>
+        <link refid="stm32g0xx__hal__flash_8c"/>
+      </node>
+      <node id="30">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c</label>
+        <link refid="stm32g0xx__hal__flash__ex_8c"/>
+      </node>
+      <node id="31">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c</label>
+        <link refid="stm32g0xx__hal__gpio_8c"/>
+      </node>
+      <node id="32">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c</label>
+        <link refid="stm32g0xx__hal__pwr_8c"/>
+      </node>
+      <node id="33">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8c"/>
+      </node>
+      <node id="34">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c</label>
+        <link refid="stm32g0xx__hal__rcc_8c"/>
+      </node>
+      <node id="35">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8c"/>
+      </node>
+      <node id="36">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c</label>
+        <link refid="stm32g0xx__hal__spi_8c"/>
+      </node>
+      <node id="37">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c</label>
+        <link refid="stm32g0xx__hal__spi__ex_8c"/>
+      </node>
+      <node id="38">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c</label>
+        <link refid="stm32g0xx__hal__tim_8c"/>
+      </node>
+      <node id="39">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c</label>
+        <link refid="stm32g0xx__hal__tim__ex_8c"/>
+      </node>
+      <node id="40">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c</label>
+        <link refid="stm32g0xx__hal__uart_8c"/>
+      </node>
+      <node id="41">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c</label>
+        <link refid="stm32g0xx__hal__uart__ex_8c"/>
+      </node>
+      <node id="20">
+        <label>RadarApp/DisplayDriver/GFX_Color.c</label>
+        <link refid="_g_f_x___color_8c"/>
+      </node>
+      <node id="21">
+        <label>RadarApp/DisplayDriver/ILI9341.c</label>
+        <link refid="_i_l_i9341_8c"/>
+      </node>
+      <node id="23">
+        <label>RadarApp/RadarDriver/radar.c</label>
+        <link refid="radar_8c"/>
+      </node>
+      <node id="22">
+        <label>RadarApp/RadarDriver/radar.h</label>
+        <link refid="radar_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>RadarApp/usart_custom/usart_custom.c</label>
+        <link refid="usart__custom_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="func">
+      <member refid="group___s_p_i_ex___exported___functions___group1_1ga4e633d926515bb05b8f6b6ce16ad1c1c" kind="function"><name>HAL_SPIEx_FlushRxFifo</name></member>
+    </sectiondef>
+    <briefdescription>
+<para>Header file of SPI HAL Extended module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team </para>
+</simplesect>
+<simplesect kind="attention"><para></para>
+</simplesect>
+Copyright (c) 2018 STMicroelectronics. All rights reserved.</para>
+<para>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>STM32G0xx_HAL_SPI_EX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32G0xx_HAL_SPI_EX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32g0xx__hal__def_8h" kindref="compound">stm32g0xx_hal_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>types<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>constants<sp/>--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>macros<sp/>-----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>functions<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialization<sp/>and<sp/>de-initialization<sp/>functions<sp/><sp/>****************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>IO<sp/>operation<sp/>functions<sp/>*****************************************************/</highlight></codeline>
+<codeline lineno="51" refid="group___s_p_i_ex___exported___functions___group1_1ga4e633d926515bb05b8f6b6ce16ad1c1c" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i_ex___exported___functions___group1_1ga4e633d926515bb05b8f6b6ce16ad1c1c" kindref="member">HAL_SPIEx_FlushRxFifo</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STM32G0xx_HAL_SPI_EX_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi_ex.h"/>
+  </compounddef>
+</doxygen>

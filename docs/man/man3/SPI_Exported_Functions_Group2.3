@@ -1,0 +1,135 @@
+.TH "SPI_Exported_Functions_Group2" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_Exported_Functions_Group2 \- SPI_Exported_Functions_Group2
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Transmit\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Receive\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_TransmitReceive\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pTxData, uint8_t *pRxData, uint16_t Size, uint32_t Timeout)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Transmit_IT\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Receive_IT\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_TransmitReceive_IT\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pTxData, uint8_t *pRxData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Transmit_DMA\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Receive_DMA\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_TransmitReceive_DMA\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pTxData, uint8_t *pRxData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_DMAPause\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_DMAResume\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_DMAStop\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Abort\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Abort_IT\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_IRQHandler\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_TxCpltCallback\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_RxCpltCallback\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_TxRxCpltCallback\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_TxHalfCpltCallback\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_RxHalfCpltCallback\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_TxRxHalfCpltCallback\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_ErrorCallback\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_AbortCpltCallback\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBHAL_StatusTypeDef\fP HAL_SPI_Abort (\fBSPI_HandleTypeDef\fP * hspi)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_SPI_Abort_IT (\fBSPI_HandleTypeDef\fP * hspi)"
+
+.SS "void HAL_SPI_AbortCpltCallback (\fBSPI_HandleTypeDef\fP * hspi)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_SPI_DMAPause (\fBSPI_HandleTypeDef\fP * hspi)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_SPI_DMAResume (\fBSPI_HandleTypeDef\fP * hspi)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_SPI_DMAStop (\fBSPI_HandleTypeDef\fP * hspi)"
+
+.SS "void HAL_SPI_ErrorCallback (\fBSPI_HandleTypeDef\fP * hspi)"
+
+.SS "void HAL_SPI_IRQHandler (\fBSPI_HandleTypeDef\fP * hspi)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_SPI_Receive (\fBSPI_HandleTypeDef\fP * hspi, uint8_t * pData, uint16_t Size, uint32_t Timeout)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_SPI_Receive_DMA (\fBSPI_HandleTypeDef\fP * hspi, uint8_t * pData, uint16_t Size)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_SPI_Receive_IT (\fBSPI_HandleTypeDef\fP * hspi, uint8_t * pData, uint16_t Size)"
+
+.SS "void HAL_SPI_RxCpltCallback (\fBSPI_HandleTypeDef\fP * hspi)"
+
+.SS "void HAL_SPI_RxHalfCpltCallback (\fBSPI_HandleTypeDef\fP * hspi)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_SPI_Transmit (\fBSPI_HandleTypeDef\fP * hspi, uint8_t * pData, uint16_t Size, uint32_t Timeout)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_SPI_Transmit_DMA (\fBSPI_HandleTypeDef\fP * hspi, uint8_t * pData, uint16_t Size)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_SPI_Transmit_IT (\fBSPI_HandleTypeDef\fP * hspi, uint8_t * pData, uint16_t Size)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_SPI_TransmitReceive (\fBSPI_HandleTypeDef\fP * hspi, uint8_t * pTxData, uint8_t * pRxData, uint16_t Size, uint32_t Timeout)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_SPI_TransmitReceive_DMA (\fBSPI_HandleTypeDef\fP * hspi, uint8_t * pTxData, uint8_t * pRxData, uint16_t Size)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_SPI_TransmitReceive_IT (\fBSPI_HandleTypeDef\fP * hspi, uint8_t * pTxData, uint8_t * pRxData, uint16_t Size)"
+
+.SS "void HAL_SPI_TxCpltCallback (\fBSPI_HandleTypeDef\fP * hspi)"
+
+.SS "void HAL_SPI_TxHalfCpltCallback (\fBSPI_HandleTypeDef\fP * hspi)"
+
+.SS "void HAL_SPI_TxRxCpltCallback (\fBSPI_HandleTypeDef\fP * hspi)"
+
+.SS "void HAL_SPI_TxRxHalfCpltCallback (\fBSPI_HandleTypeDef\fP * hspi)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

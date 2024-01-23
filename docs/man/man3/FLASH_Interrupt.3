@@ -1,0 +1,257 @@
+.TH "FLASH_Interrupt" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FLASH_Interrupt \- FLASH Interrupts Macros
+.PP
+ \- macros to handle FLASH interrupts  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_FLASH_ENABLE_IT\fP(__INTERRUPT__)"
+.br
+.RI "Enable the specified FLASH interrupt\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_DISABLE_IT\fP(__INTERRUPT__)"
+.br
+.RI "Disable the specified FLASH interrupt\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_GET_FLAG\fP(__FLAG__)"
+.br
+.RI "Check whether the specified FLASH flag is set or not\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_CLEAR_FLAG\fP(__FLAG__)"
+.br
+.RI "Clear the FLASH pending flags\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+macros to handle FLASH interrupts 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_FLASH_CLEAR_FLAG(__FLAG__)"
+\fBValue:\fP.PP
+.nf
+                                                     do { if(((__FLAG__) & (FLASH_FLAG_SR_ID << FLASH_FLAG_REG_POS)) != 0U)         { FLASH\->SR = (1uL << ((__FLAG__) & 0x1Fu)); }    \\
+                                                     else if(((__FLAG__) & (FLASH_FLAG_ECCR1_ID << FLASH_FLAG_REG_POS)) != 0U) { FLASH\->ECCR = (1uL << ((__FLAG__) & 0x1Fu)); }  \\
+                                                   } while(0U)
+.fi
+
+.PP
+Clear the FLASH pending flags\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__FLAG__\fP specifies the FLASH flags to clear\&. This parameter can be one of the following values : 
+.PD 0
+.IP "\(bu" 1
+\fBFLASH_FLAG_EOP\fP FLASH End of Operation flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_OPERR\fP FLASH Operation error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_PROGERR\fP FLASH Programming error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_WRPERR\fP FLASH Write protection error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_PGAERR\fP FLASH Programming alignment error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_SIZERR\fP FLASH Size error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_PGSERR\fP FLASH Programming sequence error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_MISERR\fP FLASH Fast programming data miss error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_FASTERR\fP FLASH Fast programming error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_RDERR\fP FLASH PCROP read error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_OPTVERR\fP FLASH Option validity error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_ECCC1\fP FLASH one ECC error has been detected and corrected 
+.IP "\(bu" 1
+\fBFLASH_FLAG_ECCD1\fP FLASH two ECC errors have been detected on bank 1 
+.IP "\(bu" 1
+\fBFLASH_FLAG_ECCC2\fP FLASH one ECC error has been detected and corrected on bank 2(*) 
+.IP "\(bu" 1
+\fBFLASH_FLAG_ECCD2\fP FLASH two ECC errors have been detected on bank 2(*) 
+.IP "\(bu" 1
+\fBFLASH_FLAG_ECCC\fP FLASH one ECC error has been detected and corrected - legacy name for single bank 
+.IP "\(bu" 1
+\fBFLASH_FLAG_ECCD\fP FLASH two ECC errors have been detected - legacy name for single bank 
+.PP
+.RE
+.PP
+\fBNote\fP
+.RS 4
+(*) availability depends on devices 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_FLASH_DISABLE_IT(__INTERRUPT__)"
+\fBValue:\fP.PP
+.nf
+                                                     do { if(((__INTERRUPT__) & (FLASH_FLAG_CR_ID << FLASH_FLAG_REG_POS)) != 0U) { CLEAR_BIT(FLASH\->CR, (1uL << ((__INTERRUPT__) & 0x1Fu))); }             \\
+                                                     else if(((__INTERRUPT__) & (FLASH_FLAG_ECCR1_ID << FLASH_FLAG_REG_POS)) != 0U) { CLEAR_BIT(FLASH\->ECCR, (1uL << ((__INTERRUPT__) & 0x1Fu))); }   \\
+                                                   } while(0U)
+.fi
+
+.PP
+Disable the specified FLASH interrupt\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__INTERRUPT__\fP FLASH interrupt This parameter can be one of the following values : 
+.PD 0
+.IP "\(bu" 1
+\fBFLASH_IT_EOP\fP End of FLASH Operation Interrupt 
+.IP "\(bu" 1
+\fBFLASH_IT_OPERR\fP Error Interrupt 
+.IP "\(bu" 1
+\fBFLASH_IT_RDERR\fP PCROP Read Error Interrupt(*) 
+.IP "\(bu" 1
+\fBFLASH_IT_ECCC1\fP ECC Correction Interrupt on bank 1 
+.IP "\(bu" 1
+\fBFLASH_IT_ECCC2\fP ECC Correction Interrupt on bank 2(*) 
+.IP "\(bu" 1
+\fBFLASH_IT_ECCC\fP ECC Correction Interrupt - legacy name for single bank 
+.PP
+.RE
+.PP
+\fBNote\fP
+.RS 4
+(*) availability depends on devices 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fInone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_FLASH_ENABLE_IT(__INTERRUPT__)"
+\fBValue:\fP.PP
+.nf
+                                                     do { if(((__INTERRUPT__) & (FLASH_FLAG_CR_ID << FLASH_FLAG_REG_POS)) != 0U) { SET_BIT(FLASH\->CR, (1uL << ((__INTERRUPT__) & 0x1Fu))); }             \\
+                                                     else if(((__INTERRUPT__) & (FLASH_FLAG_ECCR1_ID << FLASH_FLAG_REG_POS)) != 0U) { SET_BIT(FLASH\->ECCR, (1uL << ((__INTERRUPT__) & 0x1Fu))); }   \\
+                                                   } while(0U)
+.fi
+
+.PP
+Enable the specified FLASH interrupt\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__INTERRUPT__\fP FLASH interrupt This parameter can be one of the following values : 
+.PD 0
+.IP "\(bu" 1
+\fBFLASH_IT_EOP\fP End of FLASH Operation Interrupt 
+.IP "\(bu" 1
+\fBFLASH_IT_OPERR\fP Error Interrupt 
+.IP "\(bu" 1
+\fBFLASH_IT_RDERR\fP PCROP Read Error Interrupt(*) 
+.IP "\(bu" 1
+\fBFLASH_IT_ECCC1\fP ECC Correction Interrupt on bank 1 
+.IP "\(bu" 1
+\fBFLASH_IT_ECCC2\fP ECC Correction Interrupt on bank 2(*) 
+.IP "\(bu" 1
+\fBFLASH_IT_ECCC\fP ECC Correction Interrupt - legacy name for single bank 
+.PP
+.RE
+.PP
+\fBNote\fP
+.RS 4
+(*) availability depends on devices 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fInone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_FLASH_GET_FLAG(__FLAG__)"
+\fBValue:\fP.PP
+.nf
+                                                 ((((__FLAG__) & (FLASH_FLAG_SR_ID << FLASH_FLAG_REG_POS)) != 0U) ?   \\
+                                                 (READ_BIT(FLASH\->SR, (1uL << ((__FLAG__) & 0x1Fu))) != 0x00u) : \\
+                                                 (READ_BIT(FLASH\->ECCR, (1uL << ((__FLAG__) & 0x1Fu))) != 0x00u))
+.fi
+
+.PP
+Check whether the specified FLASH flag is set or not\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__FLAG__\fP specifies the FLASH flag to check\&. This parameter can be one of the following values : 
+.PD 0
+.IP "\(bu" 1
+\fBFLASH_FLAG_EOP\fP FLASH End of Operation flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_OPERR\fP FLASH Operation error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_PROGERR\fP FLASH Programming error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_WRPERR\fP FLASH Write protection error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_PGAERR\fP FLASH Programming alignment error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_SIZERR\fP FLASH Size error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_PGSERR\fP FLASH Programming sequence error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_MISERR\fP FLASH Fast programming data miss error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_FASTERR\fP FLASH Fast programming error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_RDERR\fP FLASH PCROP read error flag(*) 
+.IP "\(bu" 1
+\fBFLASH_FLAG_OPTVERR\fP FLASH Option validity error flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_BSY1\fP FLASH bank 1 write/erase operations in progress flag 
+.IP "\(bu" 1
+\fBFLASH_FLAG_BSY2\fP FLASH bank 2 write/erase operations in progress flag(*) 
+.IP "\(bu" 1
+\fBFLASH_FLAG_BSY\fP FLASH write/erase operations in progress flag - legacy name for single bank 
+.IP "\(bu" 1
+\fBFLASH_FLAG_CFGBSY\fP FLASH configuration is busy : program or erase setting are used\&. 
+.IP "\(bu" 1
+\fBFLASH_FLAG_ECCC1\fP FLASH one ECC error has been detected and corrected 
+.IP "\(bu" 1
+\fBFLASH_FLAG_ECCD1\fP FLASH two ECC errors have been detected on bank 1 
+.IP "\(bu" 1
+\fBFLASH_FLAG_ECCC2\fP FLASH one ECC error has been detected and corrected on bank 2(*) 
+.IP "\(bu" 1
+\fBFLASH_FLAG_ECCD2\fP FLASH two ECC errors have been detected on bank 2(*) 
+.IP "\(bu" 1
+\fBFLASH_FLAG_ECCC\fP FLASH one ECC error has been detected and corrected - legacy name for single bank 
+.IP "\(bu" 1
+\fBFLASH_FLAG_ECCD\fP FLASH two ECC errors have been detected - legacy name for single bank 
+.PP
+.RE
+.PP
+\fBNote\fP
+.RS 4
+(*) availability depends on devices 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fIThe\fP state of FLASH_FLAG (SET or RESET)\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

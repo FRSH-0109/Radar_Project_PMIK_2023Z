@@ -1,0 +1,126 @@
+.TH "RCC_APB1_Clock_Sleep_Enabled_Disabled_Status" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_APB1_Clock_Sleep_Enabled_Disabled_Status \- APB1 Peripheral Clock Sleep Enabled or Disabled Status
+.PP
+ \- Check whether the APB1 peripheral clock during Low Power (Sleep) mode is enabled or not\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM3_IS_CLK_SLEEP_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_TIM3SMEN\fP)   != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_RTCAPB_IS_CLK_SLEEP_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_RTCAPBSMEN\fP) != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_WWDG_IS_CLK_SLEEP_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_WWDGSMEN\fP)   != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_SPI2_IS_CLK_SLEEP_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_SPI2SMEN\fP)   != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_USART2_IS_CLK_SLEEP_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_USART2SMEN\fP) != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_I2C1_IS_CLK_SLEEP_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_I2C1SMEN\fP)   != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_I2C2_IS_CLK_SLEEP_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_I2C2SMEN\fP)   != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_DBGMCU_IS_CLK_SLEEP_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_DBGSMEN\fP)    != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_PWR_IS_CLK_SLEEP_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_PWRSMEN\fP)    != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM3_IS_CLK_SLEEP_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_TIM3SMEN\fP)   == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_RTCAPB_IS_CLK_SLEEP_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_RTCAPBSMEN\fP) == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_WWDG_IS_CLK_SLEEP_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_WWDGSMEN\fP)   == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_SPI2_IS_CLK_SLEEP_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_SPI2SMEN\fP)   == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_USART2_IS_CLK_SLEEP_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_USART2SMEN\fP) == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_I2C1_IS_CLK_SLEEP_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_I2C1SMEN\fP)   == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_I2C2_IS_CLK_SLEEP_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_I2C2SMEN\fP)   == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_DBGMCU_IS_CLK_SLEEP_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_DBGSMEN\fP)    == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_PWR_IS_CLK_SLEEP_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_PWRSMEN\fP)    == \fBRESET\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Check whether the APB1 peripheral clock during Low Power (Sleep) mode is enabled or not\&. 
+
+
+.PP
+\fBNote\fP
+.RS 4
+Peripheral clock gating in SLEEP mode can be used to further reduce power consumption\&. 
+.PP
+After wakeup from SLEEP mode, the peripheral clock is enabled again\&. 
+.PP
+By default, all peripheral clocks are enabled during SLEEP mode\&. 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_RCC_DBGMCU_IS_CLK_SLEEP_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_DBGSMEN\fP)    == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_DBGMCU_IS_CLK_SLEEP_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_DBGSMEN\fP)    != \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_I2C1_IS_CLK_SLEEP_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_I2C1SMEN\fP)   == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_I2C1_IS_CLK_SLEEP_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_I2C1SMEN\fP)   != \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_I2C2_IS_CLK_SLEEP_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_I2C2SMEN\fP)   == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_I2C2_IS_CLK_SLEEP_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_I2C2SMEN\fP)   != \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_PWR_IS_CLK_SLEEP_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_PWRSMEN\fP)    == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_PWR_IS_CLK_SLEEP_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_PWRSMEN\fP)    != \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_RTCAPB_IS_CLK_SLEEP_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_RTCAPBSMEN\fP) == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_RTCAPB_IS_CLK_SLEEP_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_RTCAPBSMEN\fP) != \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_SPI2_IS_CLK_SLEEP_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_SPI2SMEN\fP)   == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_SPI2_IS_CLK_SLEEP_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_SPI2SMEN\fP)   != \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_TIM3_IS_CLK_SLEEP_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_TIM3SMEN\fP)   == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_TIM3_IS_CLK_SLEEP_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_TIM3SMEN\fP)   != \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_USART2_IS_CLK_SLEEP_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_USART2SMEN\fP) == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_USART2_IS_CLK_SLEEP_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_USART2SMEN\fP) != \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_WWDG_IS_CLK_SLEEP_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_WWDGSMEN\fP)   == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_WWDG_IS_CLK_SLEEP_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBSMENR1, \fBRCC_APBSMENR1_WWDGSMEN\fP)   != \fBRESET\fP)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

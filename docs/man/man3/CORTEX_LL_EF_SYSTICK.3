@@ -1,0 +1,132 @@
+.TH "CORTEX_LL_EF_SYSTICK" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CORTEX_LL_EF_SYSTICK \- SYSTICK
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_SYSTICK_IsActiveCounterFlag\fP (void)"
+.br
+.RI "This function checks if the Systick counter flag is active or not\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_SYSTICK_SetClkSource\fP (uint32_t Source)"
+.br
+.RI "Configures the SysTick clock source @rmtoll STK_CTRL CLKSOURCE LL_SYSTICK_SetClkSource\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_SYSTICK_GetClkSource\fP (void)"
+.br
+.RI "Get the SysTick clock source @rmtoll STK_CTRL CLKSOURCE LL_SYSTICK_GetClkSource\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_SYSTICK_EnableIT\fP (void)"
+.br
+.RI "Enable SysTick exception request @rmtoll STK_CTRL TICKINT LL_SYSTICK_EnableIT\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_SYSTICK_DisableIT\fP (void)"
+.br
+.RI "Disable SysTick exception request @rmtoll STK_CTRL TICKINT LL_SYSTICK_DisableIT\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_SYSTICK_IsEnabledIT\fP (void)"
+.br
+.RI "Checks if the SYSTICK interrupt is enabled or disabled\&. @rmtoll STK_CTRL TICKINT LL_SYSTICK_IsEnabledIT\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "\fB__STATIC_INLINE\fP void LL_SYSTICK_DisableIT (void)"
+
+.PP
+Disable SysTick exception request @rmtoll STK_CTRL TICKINT LL_SYSTICK_DisableIT\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP void LL_SYSTICK_EnableIT (void)"
+
+.PP
+Enable SysTick exception request @rmtoll STK_CTRL TICKINT LL_SYSTICK_EnableIT\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP uint32_t LL_SYSTICK_GetClkSource (void)"
+
+.PP
+Get the SysTick clock source @rmtoll STK_CTRL CLKSOURCE LL_SYSTICK_GetClkSource\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIReturned\fP value can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBLL_SYSTICK_CLKSOURCE_HCLK_DIV8\fP 
+.IP "\(bu" 1
+\fBLL_SYSTICK_CLKSOURCE_HCLK\fP 
+.PP
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP uint32_t LL_SYSTICK_IsActiveCounterFlag (void)"
+
+.PP
+This function checks if the Systick counter flag is active or not\&. 
+.PP
+\fBNote\fP
+.RS 4
+It can be used in timeout function on application side\&. @rmtoll STK_CTRL COUNTFLAG LL_SYSTICK_IsActiveCounterFlag 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fIState\fP of bit (1 or 0)\&. 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP uint32_t LL_SYSTICK_IsEnabledIT (void)"
+
+.PP
+Checks if the SYSTICK interrupt is enabled or disabled\&. @rmtoll STK_CTRL TICKINT LL_SYSTICK_IsEnabledIT\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIState\fP of bit (1 or 0)\&. 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP void LL_SYSTICK_SetClkSource (uint32_t Source)"
+
+.PP
+Configures the SysTick clock source @rmtoll STK_CTRL CLKSOURCE LL_SYSTICK_SetClkSource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fISource\fP This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBLL_SYSTICK_CLKSOURCE_HCLK_DIV8\fP 
+.IP "\(bu" 1
+\fBLL_SYSTICK_CLKSOURCE_HCLK\fP 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

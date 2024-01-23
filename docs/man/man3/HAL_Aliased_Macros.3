@@ -1,0 +1,115 @@
+.TH "HAL_Aliased_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+HAL_Aliased_Macros \- HAL Generic Aliased Macros maintained for legacy purpose
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_GET_BOOT_MODE\fP   \fB__HAL_SYSCFG_GET_BOOT_MODE\fP"
+.br
+.ti -1c
+.RI "#define \fB__HAL_REMAPMEMORY_FLASH\fP   \fB__HAL_SYSCFG_REMAPMEMORY_FLASH\fP"
+.br
+.ti -1c
+.RI "#define \fB__HAL_REMAPMEMORY_SYSTEMFLASH\fP   \fB__HAL_SYSCFG_REMAPMEMORY_SYSTEMFLASH\fP"
+.br
+.ti -1c
+.RI "#define \fB__HAL_REMAPMEMORY_SRAM\fP   \fB__HAL_SYSCFG_REMAPMEMORY_SRAM\fP"
+.br
+.ti -1c
+.RI "#define \fB__HAL_REMAPMEMORY_FMC\fP   __HAL_SYSCFG_REMAPMEMORY_FMC"
+.br
+.ti -1c
+.RI "#define \fB__HAL_REMAPMEMORY_FMC_SDRAM\fP   __HAL_SYSCFG_REMAPMEMORY_FMC_SDRAM"
+.br
+.ti -1c
+.RI "#define \fB__HAL_REMAPMEMORY_FSMC\fP   __HAL_SYSCFG_REMAPMEMORY_FSMC"
+.br
+.ti -1c
+.RI "#define \fB__HAL_REMAPMEMORY_QUADSPI\fP   __HAL_SYSCFG_REMAPMEMORY_QUADSPI"
+.br
+.ti -1c
+.RI "#define \fB__HAL_FMC_BANK\fP   __HAL_SYSCFG_FMC_BANK"
+.br
+.ti -1c
+.RI "#define \fB__HAL_GET_FLAG\fP   __HAL_SYSCFG_GET_FLAG"
+.br
+.ti -1c
+.RI "#define \fB__HAL_CLEAR_FLAG\fP   \fB__HAL_SYSCFG_CLEAR_FLAG\fP"
+.br
+.ti -1c
+.RI "#define \fB__HAL_VREFINT_OUT_ENABLE\fP   __HAL_SYSCFG_VREFINT_OUT_ENABLE"
+.br
+.ti -1c
+.RI "#define \fB__HAL_VREFINT_OUT_DISABLE\fP   __HAL_SYSCFG_VREFINT_OUT_DISABLE"
+.br
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_SRAM2_WRP_ENABLE\fP   __HAL_SYSCFG_SRAM2_WRP_0_31_ENABLE"
+.br
+.ti -1c
+.RI "#define \fBSYSCFG_FLAG_VREF_READY\fP   SYSCFG_FLAG_VREFINT_READY"
+.br
+.ti -1c
+.RI "#define \fBSYSCFG_FLAG_RC48\fP   RCC_FLAG_HSI48"
+.br
+.ti -1c
+.RI "#define \fBIS_SYSCFG_FASTMODEPLUS_CONFIG\fP   IS_I2C_FASTMODEPLUS"
+.br
+.ti -1c
+.RI "#define \fBUFB_MODE_BitNumber\fP   UFB_MODE_BIT_NUMBER"
+.br
+.ti -1c
+.RI "#define \fBCMP_PD_BitNumber\fP   CMP_PD_BIT_NUMBER"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_CLEAR_FLAG   \fB__HAL_SYSCFG_CLEAR_FLAG\fP"
+
+.SS "#define __HAL_FMC_BANK   __HAL_SYSCFG_FMC_BANK"
+
+.SS "#define __HAL_GET_BOOT_MODE   \fB__HAL_SYSCFG_GET_BOOT_MODE\fP"
+
+.SS "#define __HAL_GET_FLAG   __HAL_SYSCFG_GET_FLAG"
+
+.SS "#define __HAL_REMAPMEMORY_FLASH   \fB__HAL_SYSCFG_REMAPMEMORY_FLASH\fP"
+
+.SS "#define __HAL_REMAPMEMORY_FMC   __HAL_SYSCFG_REMAPMEMORY_FMC"
+
+.SS "#define __HAL_REMAPMEMORY_FMC_SDRAM   __HAL_SYSCFG_REMAPMEMORY_FMC_SDRAM"
+
+.SS "#define __HAL_REMAPMEMORY_FSMC   __HAL_SYSCFG_REMAPMEMORY_FSMC"
+
+.SS "#define __HAL_REMAPMEMORY_QUADSPI   __HAL_SYSCFG_REMAPMEMORY_QUADSPI"
+
+.SS "#define __HAL_REMAPMEMORY_SRAM   \fB__HAL_SYSCFG_REMAPMEMORY_SRAM\fP"
+
+.SS "#define __HAL_REMAPMEMORY_SYSTEMFLASH   \fB__HAL_SYSCFG_REMAPMEMORY_SYSTEMFLASH\fP"
+
+.SS "#define __HAL_SYSCFG_SRAM2_WRP_ENABLE   __HAL_SYSCFG_SRAM2_WRP_0_31_ENABLE"
+
+.SS "#define __HAL_VREFINT_OUT_DISABLE   __HAL_SYSCFG_VREFINT_OUT_DISABLE"
+
+.SS "#define __HAL_VREFINT_OUT_ENABLE   __HAL_SYSCFG_VREFINT_OUT_ENABLE"
+
+.SS "#define CMP_PD_BitNumber   CMP_PD_BIT_NUMBER"
+
+.SS "#define IS_SYSCFG_FASTMODEPLUS_CONFIG   IS_I2C_FASTMODEPLUS"
+
+.SS "#define SYSCFG_FLAG_RC48   RCC_FLAG_HSI48"
+
+.SS "#define SYSCFG_FLAG_VREF_READY   SYSCFG_FLAG_VREFINT_READY"
+
+.SS "#define UFB_MODE_BitNumber   UFB_MODE_BIT_NUMBER"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___r_c_c___a_p_b1___force___release___reset" kind="group">
+    <compoundname>RCC_APB1_Force_Release_Reset</compoundname>
+    <title>APB1 Peripheral Force Release Reset</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga6f6e7048eca1abd1be132027f5b79465" prot="public" static="no">
+        <name>__HAL_RCC_APB1_FORCE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga32f78bffcaf6d13023dcd7f05e0c4d57" kindref="member">WRITE_REG</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, 0xFFFFFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1732" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1732" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga80ff127f3c25bde58ee5c1f224e2dca4" prot="public" static="no">
+        <name>__HAL_RCC_TIM3_FORCE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, <ref refid="group___peripheral___registers___bits___definition_1gac02994806baab1d59ce466d1d68b9298" kindref="member">RCC_APBRSTR1_TIM3RST</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1737" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1737" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga3446c3ea4d5e101b591fcb0222d0fb10" prot="public" static="no">
+        <name>__HAL_RCC_TIM6_FORCE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, RCC_APBRSTR1_TIM6RST)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1741" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1741" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga350e60b0e21e094ff1624e1da9855e65" prot="public" static="no">
+        <name>__HAL_RCC_TIM7_FORCE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, RCC_APBRSTR1_TIM7RST)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1742" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1742" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga869e4f5c1132e3dfce084099cf454c51" prot="public" static="no">
+        <name>__HAL_RCC_SPI2_FORCE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, <ref refid="group___peripheral___registers___bits___definition_1ga3fa6ac70242216cf38b26813eae44391" kindref="member">RCC_APBRSTR1_SPI2RST</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1746" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1746" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1gab4de80173ffa0e599baab0e76d562cc3" prot="public" static="no">
+        <name>__HAL_RCC_USART2_FORCE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, <ref refid="group___peripheral___registers___bits___definition_1ga39b9932ad794e936d02cfb2d06e2bec2" kindref="member">RCC_APBRSTR1_USART2RST</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1750" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1750" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga8902e16d49b4335d213b6a115c19127b" prot="public" static="no">
+        <name>__HAL_RCC_USART3_FORCE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, RCC_APBRSTR1_USART3RST)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1751" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1751" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga003c7bf5cd74329cfd4e05bd0fe86e74" prot="public" static="no">
+        <name>__HAL_RCC_USART4_FORCE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, RCC_APBRSTR1_USART4RST)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1752" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1752" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga551c171f88af86ca985db634ac9e3275" prot="public" static="no">
+        <name>__HAL_RCC_I2C1_FORCE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, <ref refid="group___peripheral___registers___bits___definition_1ga9a437b1b1be12043b06c060097ee0997" kindref="member">RCC_APBRSTR1_I2C1RST</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1765" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1gaed404dfdc9bc032cf718b7ed17f664f0" prot="public" static="no">
+        <name>__HAL_RCC_I2C2_FORCE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, <ref refid="group___peripheral___registers___bits___definition_1ga09e4d16e480df3a94978a0b1f905b924" kindref="member">RCC_APBRSTR1_I2C2RST</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1766" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1766" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1gaf709749ed0e15e1fd1cb0dbe59d65fc5" prot="public" static="no">
+        <name>__HAL_RCC_DBGMCU_FORCE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, <ref refid="group___peripheral___registers___bits___definition_1ga9642bafac5262d7161c39b8dff0c2b67" kindref="member">RCC_APBRSTR1_DBGRST</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1785" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1785" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1gaf454341fae45fdfacfea2f45c07ce3e0" prot="public" static="no">
+        <name>__HAL_RCC_PWR_FORCE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, <ref refid="group___peripheral___registers___bits___definition_1ga074a08bb7cd0ea4490198e41b383b4a5" kindref="member">RCC_APBRSTR1_PWRRST</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1786" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1786" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga9d0742ab271ace3dbe1a4e83de3d017b" prot="public" static="no">
+        <name>__HAL_RCC_APB1_RELEASE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga32f78bffcaf6d13023dcd7f05e0c4d57" kindref="member">WRITE_REG</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, 0x00000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1796" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1796" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga27cf9c39217fff6ae9bce2285d9aff8c" prot="public" static="no">
+        <name>__HAL_RCC_TIM3_RELEASE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, <ref refid="group___peripheral___registers___bits___definition_1gac02994806baab1d59ce466d1d68b9298" kindref="member">RCC_APBRSTR1_TIM3RST</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1800" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1800" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga7eba1763b83169bc7cec3e10bfbccf20" prot="public" static="no">
+        <name>__HAL_RCC_TIM6_RELEASE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, RCC_APBRSTR1_TIM6RST)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1804" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1804" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga4451d9cbc82223d913fae1f6b8187996" prot="public" static="no">
+        <name>__HAL_RCC_TIM7_RELEASE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, RCC_APBRSTR1_TIM7RST)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1805" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1805" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1gacb910fd0c3c5a27d020ef3df20fce4c7" prot="public" static="no">
+        <name>__HAL_RCC_SPI2_RELEASE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, <ref refid="group___peripheral___registers___bits___definition_1ga3fa6ac70242216cf38b26813eae44391" kindref="member">RCC_APBRSTR1_SPI2RST</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1809" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1809" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga8baebf28a2739de5f3c5ef72519b9499" prot="public" static="no">
+        <name>__HAL_RCC_USART2_RELEASE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, <ref refid="group___peripheral___registers___bits___definition_1ga39b9932ad794e936d02cfb2d06e2bec2" kindref="member">RCC_APBRSTR1_USART2RST</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1813" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1813" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga25b71d0f7fb3b9455fb360fcb780c492" prot="public" static="no">
+        <name>__HAL_RCC_USART3_RELEASE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, RCC_APBRSTR1_USART3RST)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1814" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1814" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1gad2488d9a0bf86bf0730108d595b42f07" prot="public" static="no">
+        <name>__HAL_RCC_USART4_RELEASE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, RCC_APBRSTR1_USART4RST)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1815" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1815" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga87cc8c2107c1d0820cc1f7e2aeb1aeb9" prot="public" static="no">
+        <name>__HAL_RCC_I2C1_RELEASE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, <ref refid="group___peripheral___registers___bits___definition_1ga9a437b1b1be12043b06c060097ee0997" kindref="member">RCC_APBRSTR1_I2C1RST</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1828" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1828" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga2fa8cc909b285813af86c253ec110356" prot="public" static="no">
+        <name>__HAL_RCC_I2C2_RELEASE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, <ref refid="group___peripheral___registers___bits___definition_1ga09e4d16e480df3a94978a0b1f905b924" kindref="member">RCC_APBRSTR1_I2C2RST</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1829" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1829" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1ga7877d0686f800a9374499abbddbda159" prot="public" static="no">
+        <name>__HAL_RCC_DBGMCU_RELEASE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, <ref refid="group___peripheral___registers___bits___definition_1ga9642bafac5262d7161c39b8dff0c2b67" kindref="member">RCC_APBRSTR1_DBGRST</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1848" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1848" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___force___release___reset_1gaaa5a340d38d50e508243f48bbb47dd32" prot="public" static="no">
+        <name>__HAL_RCC_PWR_RELEASE_RESET</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBRSTR1, <ref refid="group___peripheral___registers___bits___definition_1ga074a08bb7cd0ea4490198e41b383b4a5" kindref="member">RCC_APBRSTR1_PWRRST</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1849" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1849" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Force or release APB1 peripheral reset. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

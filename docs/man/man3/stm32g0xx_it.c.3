@@ -1,0 +1,169 @@
+.TH "Core/Src/stm32g0xx_it.c" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Core/Src/stm32g0xx_it.c \- Interrupt Service Routines\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'main\&.h'\fP
+.br
+\fC#include 'stm32g0xx_it\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBNMI_Handler\fP (void)"
+.br
+.RI "This function handles Non maskable interrupt\&. "
+.ti -1c
+.RI "void \fBHardFault_Handler\fP (void)"
+.br
+.RI "This function handles Hard fault interrupt\&. "
+.ti -1c
+.RI "void \fBSVC_Handler\fP (void)"
+.br
+.RI "This function handles System service call via SWI instruction\&. "
+.ti -1c
+.RI "void \fBPendSV_Handler\fP (void)"
+.br
+.RI "This function handles Pendable request for system service\&. "
+.ti -1c
+.RI "void \fBSysTick_Handler\fP (void)"
+.br
+.RI "This function handles System tick timer\&. "
+.ti -1c
+.RI "void \fBEXTI2_3_IRQHandler\fP (void)"
+.br
+.RI "This function handles EXTI line 2 and line 3 interrupts\&. "
+.ti -1c
+.RI "void \fBDMA1_Channel1_IRQHandler\fP (void)"
+.br
+.RI "This function handles DMA1 channel 1 interrupt\&. "
+.ti -1c
+.RI "void \fBDMA1_Channel2_3_IRQHandler\fP (void)"
+.br
+.RI "This function handles DMA1 channel 2 and channel 3 interrupts\&. "
+.ti -1c
+.RI "void \fBTIM3_IRQHandler\fP (void)"
+.br
+.RI "This function handles TIM3 global interrupt\&. "
+.ti -1c
+.RI "void \fBTIM14_IRQHandler\fP (void)"
+.br
+.RI "This function handles TIM14 global interrupt\&. "
+.ti -1c
+.RI "void \fBTIM16_IRQHandler\fP (void)"
+.br
+.RI "This function handles TIM16 global interrupt\&. "
+.ti -1c
+.RI "void \fBUSART1_IRQHandler\fP (void)"
+.br
+.RI "This function handles USART1 global interrupt / USART1 wake-up interrupt through EXTI line 25\&. "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBTIM_HandleTypeDef\fP \fBhtim3\fP"
+.br
+.ti -1c
+.RI "\fBTIM_HandleTypeDef\fP \fBhtim14\fP"
+.br
+.ti -1c
+.RI "\fBTIM_HandleTypeDef\fP \fBhtim16\fP"
+.br
+.ti -1c
+.RI "\fBDMA_HandleTypeDef\fP \fBhdma_usart1_rx\fP"
+.br
+.ti -1c
+.RI "\fBDMA_HandleTypeDef\fP \fBhdma_usart1_tx\fP"
+.br
+.ti -1c
+.RI "\fBUART_HandleTypeDef\fP \fBhuart1\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Interrupt Service Routines\&. 
+
+
+.PP
+\fBAttention\fP
+.RS 4
+
+.RE
+.PP
+Copyright (c) 2023 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Function Documentation"
+.PP 
+.SS "void DMA1_Channel1_IRQHandler (void)"
+
+.PP
+This function handles DMA1 channel 1 interrupt\&. 
+.SS "void DMA1_Channel2_3_IRQHandler (void)"
+
+.PP
+This function handles DMA1 channel 2 and channel 3 interrupts\&. 
+.SS "void EXTI2_3_IRQHandler (void)"
+
+.PP
+This function handles EXTI line 2 and line 3 interrupts\&. 
+.SS "void HardFault_Handler (void)"
+
+.PP
+This function handles Hard fault interrupt\&. 
+.SS "void NMI_Handler (void)"
+
+.PP
+This function handles Non maskable interrupt\&. 
+.SS "void PendSV_Handler (void)"
+
+.PP
+This function handles Pendable request for system service\&. 
+.SS "void SVC_Handler (void)"
+
+.PP
+This function handles System service call via SWI instruction\&. 
+.SS "void SysTick_Handler (void)"
+
+.PP
+This function handles System tick timer\&. 
+.SS "void TIM14_IRQHandler (void)"
+
+.PP
+This function handles TIM14 global interrupt\&. 
+.SS "void TIM16_IRQHandler (void)"
+
+.PP
+This function handles TIM16 global interrupt\&. 
+.SS "void TIM3_IRQHandler (void)"
+
+.PP
+This function handles TIM3 global interrupt\&. 
+.SS "void USART1_IRQHandler (void)"
+
+.PP
+This function handles USART1 global interrupt / USART1 wake-up interrupt through EXTI line 25\&. 
+.SH "Variable Documentation"
+.PP 
+.SS "\fBDMA_HandleTypeDef\fP hdma_usart1_rx\fC [extern]\fP"
+
+.SS "\fBDMA_HandleTypeDef\fP hdma_usart1_tx\fC [extern]\fP"
+
+.SS "\fBTIM_HandleTypeDef\fP htim14\fC [extern]\fP"
+
+.SS "\fBTIM_HandleTypeDef\fP htim16\fC [extern]\fP"
+
+.SS "\fBTIM_HandleTypeDef\fP htim3\fC [extern]\fP"
+
+.SS "\fBUART_HandleTypeDef\fP huart1\fC [extern]\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___u_a_r_t___overrun___disable" kind="group">
+    <compoundname>UART_Overrun_Disable</compoundname>
+    <title>UART Advanced Feature Overrun Disable</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_a_r_t___overrun___disable_1gac467cc43fa4c3af4acb0fd161061c219" prot="public" static="no">
+        <name>UART_ADVFEATURE_OVERRUN_ENABLE</name>
+        <initializer>0x00000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RX overrun enable <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="606" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="606" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___overrun___disable_1ga19961cd52b746dac7a6860faad2ab40d" prot="public" static="no">
+        <name>UART_ADVFEATURE_OVERRUN_DISABLE</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga33d63c7953788124179cd18a8890a91a" kindref="member">USART_CR3_OVRDIS</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RX overrun disable </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="607" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="607" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

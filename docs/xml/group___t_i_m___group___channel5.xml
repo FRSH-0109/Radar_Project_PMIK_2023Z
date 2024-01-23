@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___t_i_m___group___channel5" kind="group">
+    <compoundname>TIM_Group_Channel5</compoundname>
+    <title>TIM Group Channel 5 and Channel 1, 2 or 3</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m___group___channel5_1gac092061c7424b2d05e4788399139a45b" prot="public" static="no">
+        <name>TIM_GROUPCH5_NONE</name>
+        <initializer>0x00000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>No effect of OC5REF on OC1REFC, OC2REFC and OC3REFC </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="954" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="954" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___group___channel5_1ga22bfca6a62255c5742471044f4b75815" prot="public" static="no">
+        <name>TIM_GROUPCH5_OC1REFC</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gadce130a8f74c02de0f6e2f8cb0f16b6e" kindref="member">TIM_CCR5_GC5C1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OC1REFC is the logical AND of OC1REFC and OC5REF <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="955" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="955" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___group___channel5_1gad6d87bba35658aa23e11770bf2b6f53b" prot="public" static="no">
+        <name>TIM_GROUPCH5_OC2REFC</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga66b51c31aab6f353303cffb10593a027" kindref="member">TIM_CCR5_GC5C2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OC2REFC is the logical AND of OC2REFC and OC5REF <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="956" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="956" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m___group___channel5_1gaf97b2fdd96918a9f224ce3524c77781b" prot="public" static="no">
+        <name>TIM_GROUPCH5_OC3REFC</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gaaaf84ef0edc60a2bb1d724fd28ae522e" kindref="member">TIM_CCR5_GC5C3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OC3REFC is the logical AND of OC3REFC and OC5REF <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="957" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="957" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

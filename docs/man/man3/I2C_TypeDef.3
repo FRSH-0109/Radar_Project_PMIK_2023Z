@@ -1,0 +1,79 @@
+.TH "I2C_TypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+I2C_TypeDef \- Inter-integrated Circuit Interface\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g030xx\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCR1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCR2\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBOAR1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBOAR2\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTIMINGR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTIMEOUTR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBISR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBICR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPECR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRXDR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTXDR\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Inter-integrated Circuit Interface\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t I2C_TypeDef::CR1"
+I2C Control register 1, Address offset: 0x00 
+.SS "\fB__IO\fP uint32_t I2C_TypeDef::CR2"
+I2C Control register 2, Address offset: 0x04 
+.SS "\fB__IO\fP uint32_t I2C_TypeDef::ICR"
+I2C Interrupt clear register, Address offset: 0x1C 
+.SS "\fB__IO\fP uint32_t I2C_TypeDef::ISR"
+I2C Interrupt and status register, Address offset: 0x18 
+.SS "\fB__IO\fP uint32_t I2C_TypeDef::OAR1"
+I2C Own address 1 register, Address offset: 0x08 
+.SS "\fB__IO\fP uint32_t I2C_TypeDef::OAR2"
+I2C Own address 2 register, Address offset: 0x0C 
+.SS "\fB__IO\fP uint32_t I2C_TypeDef::PECR"
+I2C PEC register, Address offset: 0x20 
+.SS "\fB__IO\fP uint32_t I2C_TypeDef::RXDR"
+I2C Receive data register, Address offset: 0x24 
+.SS "\fB__IO\fP uint32_t I2C_TypeDef::TIMEOUTR"
+I2C Timeout register, Address offset: 0x14 
+.SS "\fB__IO\fP uint32_t I2C_TypeDef::TIMINGR"
+I2C Timing register, Address offset: 0x10 
+.SS "\fB__IO\fP uint32_t I2C_TypeDef::TXDR"
+I2C Transmit data register, Address offset: 0x28 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

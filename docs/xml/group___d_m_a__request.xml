@@ -1,0 +1,487 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___d_m_a__request" kind="group">
+    <compoundname>DMA_request</compoundname>
+    <title>DMA request</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_m_a__request_1ga83ec6137a0f228f2bdf392e0c583fff1" prot="public" static="no">
+        <name>DMA_REQUEST_MEM2MEM</name>
+        <initializer>LL_DMAMUX_REQ_MEM2MEM</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>memory to memory transfer <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="183" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1gac360891b7aab34d72233a3f417d0d7ce" prot="public" static="no">
+        <name>DMA_REQUEST_GENERATOR0</name>
+        <initializer>LL_DMAMUX_REQ_GENERATOR0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX request generator 0 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="184" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga62fbe67101139967326da3599d4b5ad3" prot="public" static="no">
+        <name>DMA_REQUEST_GENERATOR1</name>
+        <initializer>LL_DMAMUX_REQ_GENERATOR1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX request generator 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="185" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga5d85c4cfb13afd83d7e6e75666951fd0" prot="public" static="no">
+        <name>DMA_REQUEST_GENERATOR2</name>
+        <initializer>LL_DMAMUX_REQ_GENERATOR2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX request generator 2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="186" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga4c9ce5bc5fe8b5e64abf48302900819d" prot="public" static="no">
+        <name>DMA_REQUEST_GENERATOR3</name>
+        <initializer>LL_DMAMUX_REQ_GENERATOR3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX request generator 3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="187" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga4a6cd7654870571db4173048250a6b3c" prot="public" static="no">
+        <name>DMA_REQUEST_ADC1</name>
+        <initializer>LL_DMAMUX_REQ_ADC1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX ADC1 request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="188" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga3fc27e5db2750ff0cc4217e7042d17eb" prot="public" static="no">
+        <name>DMA_REQUEST_I2C1_RX</name>
+        <initializer>LL_DMAMUX_REQ_I2C1_RX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX I2C1 RX request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="197" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1gae6a8777a94a0acfc921c7ef8f8c02a50" prot="public" static="no">
+        <name>DMA_REQUEST_I2C1_TX</name>
+        <initializer>LL_DMAMUX_REQ_I2C1_TX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX I2C1 TX request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="198" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga7d601d18f1844896c4ae7ac982133363" prot="public" static="no">
+        <name>DMA_REQUEST_I2C2_RX</name>
+        <initializer>LL_DMAMUX_REQ_I2C2_RX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX I2C2 RX request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="199" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga40b2e3f290a8119e44c3178ec838f522" prot="public" static="no">
+        <name>DMA_REQUEST_I2C2_TX</name>
+        <initializer>LL_DMAMUX_REQ_I2C2_TX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX I2C2 TX request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="200" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga9a001862dfa11acf6f1c6d42d4c9fbc1" prot="public" static="no">
+        <name>DMA_REQUEST_SPI1_RX</name>
+        <initializer>LL_DMAMUX_REQ_SPI1_RX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX SPI1 RX request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="205" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1gad7da109a0ea57ac78d3995681e6ca452" prot="public" static="no">
+        <name>DMA_REQUEST_SPI1_TX</name>
+        <initializer>LL_DMAMUX_REQ_SPI1_TX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX SPI1 TX request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="206" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1gaa22f44ab4385095976ad2b20e298b344" prot="public" static="no">
+        <name>DMA_REQUEST_SPI2_RX</name>
+        <initializer>LL_DMAMUX_REQ_SPI2_RX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX SPI2 RX request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="207" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga950e16a3b720e87a596bc03e040a2e8e" prot="public" static="no">
+        <name>DMA_REQUEST_SPI2_TX</name>
+        <initializer>LL_DMAMUX_REQ_SPI2_TX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX SPI2 TX request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="208" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga756b1484fc1d66c693855e56ee407d03" prot="public" static="no">
+        <name>DMA_REQUEST_TIM1_CH1</name>
+        <initializer>LL_DMAMUX_REQ_TIM1_CH1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM1 CH1 request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="209" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga910fb7ab9f1ba1ac8781f0f34aa2103d" prot="public" static="no">
+        <name>DMA_REQUEST_TIM1_CH2</name>
+        <initializer>LL_DMAMUX_REQ_TIM1_CH2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM1 CH2 request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="210" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1gaaa1df2f6a5ea611f6d3acda54b18dd76" prot="public" static="no">
+        <name>DMA_REQUEST_TIM1_CH3</name>
+        <initializer>LL_DMAMUX_REQ_TIM1_CH3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM1 CH3 request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="211" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1gaa40c2a9f3556ca7a6f1602967885bb3d" prot="public" static="no">
+        <name>DMA_REQUEST_TIM1_CH4</name>
+        <initializer>LL_DMAMUX_REQ_TIM1_CH4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM1 CH4 request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="212" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga44186c1f4d3f2721a83597d3646397c4" prot="public" static="no">
+        <name>DMA_REQUEST_TIM1_TRIG_COM</name>
+        <initializer>LL_DMAMUX_REQ_TIM1_TRIG_COM</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM1 TRIG COM request </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="213" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga7957b8a754a16a82af69b0ab4814d424" prot="public" static="no">
+        <name>DMA_REQUEST_TIM1_UP</name>
+        <initializer>LL_DMAMUX_REQ_TIM1_UP</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM1 UP request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="214" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga0e5fe6b185ba7a0e4ed5f83aa4b10051" prot="public" static="no">
+        <name>DMA_REQUEST_TIM3_CH1</name>
+        <initializer>LL_DMAMUX_REQ_TIM3_CH1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM3 CH1 request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="223" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1gaf4ace678fe72c6ef2d4da3d463c578ee" prot="public" static="no">
+        <name>DMA_REQUEST_TIM3_CH2</name>
+        <initializer>LL_DMAMUX_REQ_TIM3_CH2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM3 CH2 request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="224" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1gaeb3c1120f809122498c94c999c798520" prot="public" static="no">
+        <name>DMA_REQUEST_TIM3_CH3</name>
+        <initializer>LL_DMAMUX_REQ_TIM3_CH3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM3 CH3 request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="225" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga47d84dd5253339f93f6763df565384a0" prot="public" static="no">
+        <name>DMA_REQUEST_TIM3_CH4</name>
+        <initializer>LL_DMAMUX_REQ_TIM3_CH4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM3 CH4 request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="226" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga9e5742296c16a0b4785f3d0ad8d5e896" prot="public" static="no">
+        <name>DMA_REQUEST_TIM3_TRIG</name>
+        <initializer>LL_DMAMUX_REQ_TIM3_TRIG</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM3 TRIG request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="227" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1gafb2ce31d9f2f74794832744c27960835" prot="public" static="no">
+        <name>DMA_REQUEST_TIM3_UP</name>
+        <initializer>LL_DMAMUX_REQ_TIM3_UP</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM3 UP request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="228" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga91d2ede71ca7c1a740aec828770f6c70" prot="public" static="no">
+        <name>DMA_REQUEST_TIM16_CH1</name>
+        <initializer>LL_DMAMUX_REQ_TIM16_CH1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM16 CH1 request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="241" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga447336395f9dd1c195f4726d56eb186d" prot="public" static="no">
+        <name>DMA_REQUEST_TIM16_COM</name>
+        <initializer>LL_DMAMUX_REQ_TIM16_COM</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM16 COM request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="242" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1gaf17e949db32179dbe017497282a5260d" prot="public" static="no">
+        <name>DMA_REQUEST_TIM16_UP</name>
+        <initializer>LL_DMAMUX_REQ_TIM16_UP</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM16 UP request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="243" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga1aa03c25e04d6a91ff1ffaf221774022" prot="public" static="no">
+        <name>DMA_REQUEST_TIM17_CH1</name>
+        <initializer>LL_DMAMUX_REQ_TIM17_CH1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM17 CH1 request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="244" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1gab38728bade1912a4e38fd498ebf720f2" prot="public" static="no">
+        <name>DMA_REQUEST_TIM17_COM</name>
+        <initializer>LL_DMAMUX_REQ_TIM17_COM</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM17 COM request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="245" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1gaf0ff893545dc5eb65e029664746b8175" prot="public" static="no">
+        <name>DMA_REQUEST_TIM17_UP</name>
+        <initializer>LL_DMAMUX_REQ_TIM17_UP</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX TIM17 UP request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="246" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1gaf7741f1f65db03cde614ef623d86b054" prot="public" static="no">
+        <name>DMA_REQUEST_USART1_RX</name>
+        <initializer>LL_DMAMUX_REQ_USART1_RX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX USART1 RX request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="247" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1ga89aead5f618253b1bc265116797b2150" prot="public" static="no">
+        <name>DMA_REQUEST_USART1_TX</name>
+        <initializer>LL_DMAMUX_REQ_USART1_TX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX USART1 TX request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="248" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1gaa5cdcaacbe97a60ff0c59610de3737e4" prot="public" static="no">
+        <name>DMA_REQUEST_USART2_RX</name>
+        <initializer>LL_DMAMUX_REQ_USART2_RX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX USART2 RX request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="249" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1gafbbae78e38bfc3ee7c8e29db0b60fa5a" prot="public" static="no">
+        <name>DMA_REQUEST_USART2_TX</name>
+        <initializer>LL_DMAMUX_REQ_USART2_TX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX USART2 TX request <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="250" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a__request_1gaa55af15e2ce9b8329d3e2db03a9f7c33" prot="public" static="no">
+        <name>DMA_MAX_REQUEST</name>
+        <initializer>LL_DMAMUX_MAX_REQ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="303" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

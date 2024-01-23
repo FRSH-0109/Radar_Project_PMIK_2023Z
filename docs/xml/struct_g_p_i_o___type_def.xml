@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_g_p_i_o___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>GPIO_TypeDef</compoundname>
+    <includes refid="stm32g030xx_8h" local="no">stm32g030xx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1a2b671a94c63a612f81e0e9de8152d01c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t MODER</definition>
+        <argsstring></argsstring>
+        <name>MODER</name>
+        <qualifiedname>GPIO_TypeDef::MODER</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GPIO port mode register, Address offset: 0x00 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="265" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1a9543592bda60cb5261075594bdeedac9" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t OTYPER</definition>
+        <argsstring></argsstring>
+        <name>OTYPER</name>
+        <qualifiedname>GPIO_TypeDef::OTYPER</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GPIO port output type register, Address offset: 0x04 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="266" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1a328d16cc6213783ede54e4059ffd50a3" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t OSPEEDR</definition>
+        <argsstring></argsstring>
+        <name>OSPEEDR</name>
+        <qualifiedname>GPIO_TypeDef::OSPEEDR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GPIO port output speed register, Address offset: 0x08 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="267" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1abeed38529bd7b8de082e490e5d4f1727" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PUPDR</definition>
+        <argsstring></argsstring>
+        <name>PUPDR</name>
+        <qualifiedname>GPIO_TypeDef::PUPDR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GPIO port pull-up/pull-down register, Address offset: 0x0C <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="268" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1a328d2fe9ef1d513c3a97d30f98f0047c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t IDR</definition>
+        <argsstring></argsstring>
+        <name>IDR</name>
+        <qualifiedname>GPIO_TypeDef::IDR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GPIO port input data register, Address offset: 0x10 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="269" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1abff7fffd2b5a718715a130006590c75c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t ODR</definition>
+        <argsstring></argsstring>
+        <name>ODR</name>
+        <qualifiedname>GPIO_TypeDef::ODR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GPIO port output data register, Address offset: 0x14 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="270" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1ac25dd6b9e3d55e17589195b461c5ec80" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t BSRR</definition>
+        <argsstring></argsstring>
+        <name>BSRR</name>
+        <qualifiedname>GPIO_TypeDef::BSRR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GPIO port bit set/reset register, Address offset: 0x18 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="271" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1a2612a0f4b3fbdbb6293f6dc70105e190" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t LCKR</definition>
+        <argsstring></argsstring>
+        <name>LCKR</name>
+        <qualifiedname>GPIO_TypeDef::LCKR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GPIO port configuration lock register, Address offset: 0x1C <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="272" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1ab67c1158c04450d19ad483dcd2192e43" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t AFR[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>AFR</name>
+        <qualifiedname>GPIO_TypeDef::AFR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GPIO alternate function registers, Address offset: 0x20-0x24 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="273" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___type_def_1a092e59d908b2ca112e31047e942340cb" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t BRR</definition>
+        <argsstring></argsstring>
+        <name>BRR</name>
+        <qualifiedname>GPIO_TypeDef::BRR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GPIO Bit Reset register, Address offset: 0x28 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="274" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>General Purpose I/O. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="263" column="1" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="264" bodyend="275"/>
+    <listofallmembers>
+      <member refid="struct_g_p_i_o___type_def_1ab67c1158c04450d19ad483dcd2192e43" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>AFR</name></member>
+      <member refid="struct_g_p_i_o___type_def_1a092e59d908b2ca112e31047e942340cb" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>BRR</name></member>
+      <member refid="struct_g_p_i_o___type_def_1ac25dd6b9e3d55e17589195b461c5ec80" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>BSRR</name></member>
+      <member refid="struct_g_p_i_o___type_def_1a328d2fe9ef1d513c3a97d30f98f0047c" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>IDR</name></member>
+      <member refid="struct_g_p_i_o___type_def_1a2612a0f4b3fbdbb6293f6dc70105e190" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>LCKR</name></member>
+      <member refid="struct_g_p_i_o___type_def_1a2b671a94c63a612f81e0e9de8152d01c" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>MODER</name></member>
+      <member refid="struct_g_p_i_o___type_def_1abff7fffd2b5a718715a130006590c75c" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>ODR</name></member>
+      <member refid="struct_g_p_i_o___type_def_1a328d16cc6213783ede54e4059ffd50a3" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>OSPEEDR</name></member>
+      <member refid="struct_g_p_i_o___type_def_1a9543592bda60cb5261075594bdeedac9" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>OTYPER</name></member>
+      <member refid="struct_g_p_i_o___type_def_1abeed38529bd7b8de082e490e5d4f1727" prot="public" virt="non-virtual"><scope>GPIO_TypeDef</scope><name>PUPDR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

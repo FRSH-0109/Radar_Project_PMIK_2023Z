@@ -1,0 +1,86 @@
+.TH "RCC_IOPORT_Clock_Sleep_Enable_Disable" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_IOPORT_Clock_Sleep_Enable_Disable \- IOPORT Clock Sleep Enable Disable
+.PP
+ \- Enable or disable the IOPORT clock during Low Power (Sleep) mode\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOA_CLK_SLEEP_ENABLE\fP()   \fBSET_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIOASMEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOB_CLK_SLEEP_ENABLE\fP()   \fBSET_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIOBSMEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOC_CLK_SLEEP_ENABLE\fP()   \fBSET_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIOCSMEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOD_CLK_SLEEP_ENABLE\fP()   \fBSET_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIODSMEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOF_CLK_SLEEP_ENABLE\fP()   \fBSET_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIOFSMEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOA_CLK_SLEEP_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIOASMEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOB_CLK_SLEEP_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIOBSMEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOC_CLK_SLEEP_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIOCSMEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOD_CLK_SLEEP_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIODSMEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOF_CLK_SLEEP_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIOFSMEN\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Enable or disable the IOPORT clock during Low Power (Sleep) mode\&. 
+
+
+.PP
+\fBNote\fP
+.RS 4
+IOPORT clock gating in SLEEP mode can be used to further reduce power consumption\&. 
+.PP
+After wakeup from SLEEP mode, the peripheral clock is enabled again\&. 
+.PP
+By default, all peripheral clocks are enabled during SLEEP mode\&. 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_RCC_GPIOA_CLK_SLEEP_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIOASMEN\fP)"
+
+.SS "#define __HAL_RCC_GPIOA_CLK_SLEEP_ENABLE()   \fBSET_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIOASMEN\fP)"
+
+.SS "#define __HAL_RCC_GPIOB_CLK_SLEEP_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIOBSMEN\fP)"
+
+.SS "#define __HAL_RCC_GPIOB_CLK_SLEEP_ENABLE()   \fBSET_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIOBSMEN\fP)"
+
+.SS "#define __HAL_RCC_GPIOC_CLK_SLEEP_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIOCSMEN\fP)"
+
+.SS "#define __HAL_RCC_GPIOC_CLK_SLEEP_ENABLE()   \fBSET_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIOCSMEN\fP)"
+
+.SS "#define __HAL_RCC_GPIOD_CLK_SLEEP_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIODSMEN\fP)"
+
+.SS "#define __HAL_RCC_GPIOD_CLK_SLEEP_ENABLE()   \fBSET_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIODSMEN\fP)"
+
+.SS "#define __HAL_RCC_GPIOF_CLK_SLEEP_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIOFSMEN\fP)"
+
+.SS "#define __HAL_RCC_GPIOF_CLK_SLEEP_ENABLE()   \fBSET_BIT\fP(\fBRCC\fP\->IOPSMENR, \fBRCC_IOPSMENR_GPIOFSMEN\fP)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

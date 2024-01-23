@@ -1,0 +1,75 @@
+.TH "SPI_Flags_definition" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_Flags_definition \- SPI Flags Definition
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSPI_FLAG_RXNE\fP   \fBSPI_SR_RXNE\fP   /* SPI status flag: Rx buffer not empty flag       */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_TXE\fP   \fBSPI_SR_TXE\fP    /* SPI status flag: Tx buffer empty flag           */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_BSY\fP   \fBSPI_SR_BSY\fP    /* SPI status flag: Busy flag                      */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_CRCERR\fP   \fBSPI_SR_CRCERR\fP /* SPI Error flag: \fBCRC\fP error flag                  */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_MODF\fP   \fBSPI_SR_MODF\fP   /* SPI Error flag: Mode fault flag                 */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_OVR\fP   \fBSPI_SR_OVR\fP    /* SPI Error flag: Overrun flag                    */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_FRE\fP   \fBSPI_SR_FRE\fP    /* SPI Error flag: TI mode frame format error flag */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_FTLVL\fP   \fBSPI_SR_FTLVL\fP  /* SPI fifo transmission level                     */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_FRLVL\fP   \fBSPI_SR_FRLVL\fP  /* SPI fifo reception level                        */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_MASK\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define SPI_FLAG_BSY   \fBSPI_SR_BSY\fP    /* SPI status flag: Busy flag                      */"
+
+.SS "#define SPI_FLAG_CRCERR   \fBSPI_SR_CRCERR\fP /* SPI Error flag: \fBCRC\fP error flag                  */"
+
+.SS "#define SPI_FLAG_FRE   \fBSPI_SR_FRE\fP    /* SPI Error flag: TI mode frame format error flag */"
+
+.SS "#define SPI_FLAG_FRLVL   \fBSPI_SR_FRLVL\fP  /* SPI fifo reception level                        */"
+
+.SS "#define SPI_FLAG_FTLVL   \fBSPI_SR_FTLVL\fP  /* SPI fifo transmission level                     */"
+
+.SS "#define SPI_FLAG_MASK"
+\fBValue:\fP.PP
+.nf
+                                         (SPI_SR_RXNE | SPI_SR_TXE | SPI_SR_BSY | SPI_SR_CRCERR\\
+                                         | SPI_SR_MODF | SPI_SR_OVR | SPI_SR_FRE | SPI_SR_FTLVL | SPI_SR_FRLVL)
+.fi
+
+.SS "#define SPI_FLAG_MODF   \fBSPI_SR_MODF\fP   /* SPI Error flag: Mode fault flag                 */"
+
+.SS "#define SPI_FLAG_OVR   \fBSPI_SR_OVR\fP    /* SPI Error flag: Overrun flag                    */"
+
+.SS "#define SPI_FLAG_RXNE   \fBSPI_SR_RXNE\fP   /* SPI status flag: Rx buffer not empty flag       */"
+
+.SS "#define SPI_FLAG_TXE   \fBSPI_SR_TXE\fP    /* SPI status flag: Tx buffer empty flag           */"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

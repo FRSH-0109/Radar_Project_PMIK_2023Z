@@ -1,0 +1,238 @@
+.TH "RadarApp/DisplayDriver/GFX_Color.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RadarApp/DisplayDriver/GFX_Color.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBAVR_USING\fP   0"
+.br
+.ti -1c
+.RI "#define \fBSTM32_USING\fP   1"
+.br
+.ti -1c
+.RI "#define \fBColorType\fP   uint16_t"
+.br
+.ti -1c
+.RI "#define \fBGFX_DrawPixel\fP(x,  y,  color)   \fBILI9341_WritePixel\fP(x,y,color)"
+.br
+.ti -1c
+.RI "#define \fBWIDTH\fP   SSD1306_LCDWIDTH"
+.br
+.ti -1c
+.RI "#define \fBHEIGHT\fP   SSD1306_LCDHEIGHT"
+.br
+.ti -1c
+.RI "#define \fBPIXEL_BLACK\fP   \fBILI9341_BLACK\fP"
+.br
+.ti -1c
+.RI "#define \fBPIXEL_WHITE\fP   \fBILI9341_WHITE\fP"
+.br
+.ti -1c
+.RI "#define \fBUSING_STRINGS\fP   1"
+.br
+.ti -1c
+.RI "#define \fBUSING_IMAGE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBUSING_IMAGE_ROTATE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBUSING_RECTANGLE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBUSING_CIRCLE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBUSING_FILL_CIRCLE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBUSING_ROUND_RECTANGLE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBUSING_FILL_ROUND_RECTANGLE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBUSING_TRIANGLE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBUSING_FILL_TRIANGLE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBUSING_FILL_RECTANGLE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBUSING_LINES\fP   1"
+.br
+.ti -1c
+.RI "#define \fBCIRCLE_HELPER\fP"
+.br
+.ti -1c
+.RI "#define \fBFILL_CIRCLE_HELPER\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBGFX_SetFont\fP (const uint8_t *font_t)"
+.br
+.ti -1c
+.RI "void \fBGFX_SetFontSize\fP (uint8_t size_t)"
+.br
+.ti -1c
+.RI "uint8_t \fBGFX_GetFontHeight\fP (void)"
+.br
+.ti -1c
+.RI "uint8_t \fBGFX_GetFontWidth\fP (void)"
+.br
+.ti -1c
+.RI "uint8_t \fBGFX_GetFontSize\fP (void)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawChar\fP (int x, int y, char chr, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawString\fP (int x, int y, char *str, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawString_const_size\fP (int x, int y, char *str, \fBColorType\fP color, uint8_t const_size)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawChar_const_size\fP (int x, int y, char chr, \fBColorType\fP color, uint8_t const_size)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawLine\fP (int x_start, int y_start, int x_end, int y_end, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawRectangle\fP (int x, int y, uint16_t w, uint16_t h, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawFillRectangle\fP (int x, int y, uint16_t w, uint16_t h, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawCircle\fP (int x0, int y0, uint16_t r, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawCircleHelper\fP (int x0, int y0, uint16_t r, uint8_t cornername, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawFillCircle\fP (int x0, int y0, uint16_t r, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawRoundRectangle\fP (int x, int y, uint16_t w, uint16_t h, uint16_t r, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawFillRoundRectangle\fP (int x, int y, uint16_t w, uint16_t h, uint16_t r, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawTriangle\fP (int x0, int y0, int x1, int y1, int x2, int y2, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawFillTriangle\fP (int x0, int y0, int x1, int y1, int x2, int y2, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_Image\fP (int x, int y, const uint8_t *img, uint16_t w, uint16_t h)"
+.br
+.ti -1c
+.RI "void \fBGFX_ImageRotate\fP (int x, int y, const uint8_t *img, uint8_t w, uint8_t h, \fBColorType\fP color, uint16_t angle)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define AVR_USING   0"
+
+.SS "#define CIRCLE_HELPER"
+
+.SS "#define ColorType   uint16_t"
+
+.SS "#define FILL_CIRCLE_HELPER"
+
+.SS "#define GFX_DrawPixel(x, y, color)   \fBILI9341_WritePixel\fP(x,y,color)"
+
+.SS "#define HEIGHT   SSD1306_LCDHEIGHT"
+
+.SS "#define PIXEL_BLACK   \fBILI9341_BLACK\fP"
+
+.SS "#define PIXEL_WHITE   \fBILI9341_WHITE\fP"
+
+.SS "#define STM32_USING   1"
+
+.SS "#define USING_CIRCLE   1"
+
+.SS "#define USING_FILL_CIRCLE   1"
+
+.SS "#define USING_FILL_RECTANGLE   1"
+
+.SS "#define USING_FILL_ROUND_RECTANGLE   1"
+
+.SS "#define USING_FILL_TRIANGLE   1"
+
+.SS "#define USING_IMAGE   1"
+
+.SS "#define USING_IMAGE_ROTATE   1"
+
+.SS "#define USING_LINES   1"
+
+.SS "#define USING_RECTANGLE   1"
+
+.SS "#define USING_ROUND_RECTANGLE   1"
+
+.SS "#define USING_STRINGS   1"
+
+.SS "#define USING_TRIANGLE   1"
+
+.SS "#define WIDTH   SSD1306_LCDWIDTH"
+
+.SH "Function Documentation"
+.PP 
+.SS "void GFX_DrawChar (int x, int y, char chr, \fBColorType\fP color)"
+
+.SS "void GFX_DrawChar_const_size (int x, int y, char chr, \fBColorType\fP color, uint8_t const_size)"
+
+.SS "void GFX_DrawCircle (int x0, int y0, uint16_t r, \fBColorType\fP color)"
+
+.SS "void GFX_DrawCircleHelper (int x0, int y0, uint16_t r, uint8_t cornername, \fBColorType\fP color)"
+
+.SS "void GFX_DrawFillCircle (int x0, int y0, uint16_t r, \fBColorType\fP color)"
+
+.SS "void GFX_DrawFillRectangle (int x, int y, uint16_t w, uint16_t h, \fBColorType\fP color)"
+
+.SS "void GFX_DrawFillRoundRectangle (int x, int y, uint16_t w, uint16_t h, uint16_t r, \fBColorType\fP color)"
+
+.SS "void GFX_DrawFillTriangle (int x0, int y0, int x1, int y1, int x2, int y2, \fBColorType\fP color)"
+
+.SS "void GFX_DrawLine (int x_start, int y_start, int x_end, int y_end, \fBColorType\fP color)"
+
+.SS "void GFX_DrawRectangle (int x, int y, uint16_t w, uint16_t h, \fBColorType\fP color)"
+
+.SS "void GFX_DrawRoundRectangle (int x, int y, uint16_t w, uint16_t h, uint16_t r, \fBColorType\fP color)"
+
+.SS "void GFX_DrawString (int x, int y, char * str, \fBColorType\fP color)"
+
+.SS "void GFX_DrawString_const_size (int x, int y, char * str, \fBColorType\fP color, uint8_t const_size)"
+
+.SS "void GFX_DrawTriangle (int x0, int y0, int x1, int y1, int x2, int y2, \fBColorType\fP color)"
+
+.SS "uint8_t GFX_GetFontHeight (void)"
+
+.SS "uint8_t GFX_GetFontSize (void)"
+
+.SS "uint8_t GFX_GetFontWidth (void)"
+
+.SS "void GFX_Image (int x, int y, const uint8_t * img, uint16_t w, uint16_t h)"
+
+.SS "void GFX_ImageRotate (int x, int y, const uint8_t * img, uint8_t w, uint8_t h, \fBColorType\fP color, uint16_t angle)"
+
+.SS "void GFX_SetFont (const uint8_t * font_t)"
+
+.SS "void GFX_SetFontSize (uint8_t size_t)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

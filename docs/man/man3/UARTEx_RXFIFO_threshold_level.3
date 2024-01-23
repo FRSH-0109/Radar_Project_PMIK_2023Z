@@ -1,0 +1,57 @@
+.TH "UARTEx_RXFIFO_threshold_level" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UARTEx_RXFIFO_threshold_level \- UARTEx RXFIFO threshold level
+.PP
+ \- UART RXFIFO threshold level\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_RXFIFO_THRESHOLD_1_8\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_RXFIFO_THRESHOLD_1_4\fP   \fBUSART_CR3_RXFTCFG_0\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_RXFIFO_THRESHOLD_1_2\fP   \fBUSART_CR3_RXFTCFG_1\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_RXFIFO_THRESHOLD_3_4\fP   (\fBUSART_CR3_RXFTCFG_0\fP|\fBUSART_CR3_RXFTCFG_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_RXFIFO_THRESHOLD_7_8\fP   \fBUSART_CR3_RXFTCFG_2\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_RXFIFO_THRESHOLD_8_8\fP   (\fBUSART_CR3_RXFTCFG_2\fP|\fBUSART_CR3_RXFTCFG_0\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+UART RXFIFO threshold level\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define UART_RXFIFO_THRESHOLD_1_2   \fBUSART_CR3_RXFTCFG_1\fP"
+RX FIFO reaches 1/2 of its depth 
+.SS "#define UART_RXFIFO_THRESHOLD_1_4   \fBUSART_CR3_RXFTCFG_0\fP"
+RX FIFO reaches 1/4 of its depth 
+.SS "#define UART_RXFIFO_THRESHOLD_1_8   0x00000000U"
+RX FIFO reaches 1/8 of its depth 
+.SS "#define UART_RXFIFO_THRESHOLD_3_4   (\fBUSART_CR3_RXFTCFG_0\fP|\fBUSART_CR3_RXFTCFG_1\fP)"
+RX FIFO reaches 3/4 of its depth 
+.SS "#define UART_RXFIFO_THRESHOLD_7_8   \fBUSART_CR3_RXFTCFG_2\fP"
+RX FIFO reaches 7/8 of its depth 
+.SS "#define UART_RXFIFO_THRESHOLD_8_8   (\fBUSART_CR3_RXFTCFG_2\fP|\fBUSART_CR3_RXFTCFG_0\fP)"
+RX FIFO becomes full 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

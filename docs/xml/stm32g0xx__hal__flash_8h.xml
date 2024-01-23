@@ -1,0 +1,974 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="stm32g0xx__hal__flash_8h" kind="file" language="C++">
+    <compoundname>stm32g0xx_hal_flash.h</compoundname>
+    <includes refid="stm32g0xx__hal__def_8h" local="yes">stm32g0xx_hal_def.h</includes>
+    <includes refid="stm32g0xx__hal__flash__ex_8h" local="yes">stm32g0xx_hal_flash_ex.h</includes>
+    <includedby refid="stm32g0xx__hal__conf_8h" local="yes">Core/Inc/stm32g0xx_hal_conf.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="4">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="2">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h</label>
+        <link refid="stm32g0xx__hal__flash_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32g0xx_hal_flash_ex.h</label>
+        <link refid="stm32g0xx__hal__flash__ex_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>Core/Inc/dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Core/Inc/gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Core/Inc/main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Core/Inc/spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Core/Inc/stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Core/Inc/tim.h</label>
+        <link refid="tim_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Core/Inc/usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Core/Src/dma.c</label>
+        <link refid="dma_8c"/>
+      </node>
+      <node id="9">
+        <label>Core/Src/gpio.c</label>
+        <link refid="gpio_8c"/>
+      </node>
+      <node id="7">
+        <label>Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="11">
+        <label>Core/Src/spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="17">
+        <label>Core/Src/stm32g0xx_hal_msp.c</label>
+        <link refid="stm32g0xx__hal__msp_8c"/>
+      </node>
+      <node id="18">
+        <label>Core/Src/stm32g0xx_it.c</label>
+        <link refid="stm32g0xx__it_8c"/>
+      </node>
+      <node id="13">
+        <label>Core/Src/tim.c</label>
+        <link refid="tim_8c"/>
+      </node>
+      <node id="15">
+        <label>Core/Src/usart.c</label>
+        <link refid="usart_8c"/>
+      </node>
+      <node id="3">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h</label>
+        <link refid="stm32g0xx__hal__flash_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c</label>
+        <link refid="stm32g0xx__hal_8c"/>
+      </node>
+      <node id="24">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c</label>
+        <link refid="stm32g0xx__hal__cortex_8c"/>
+      </node>
+      <node id="25">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c</label>
+        <link refid="stm32g0xx__hal__dma_8c"/>
+      </node>
+      <node id="26">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c</label>
+        <link refid="stm32g0xx__hal__dma__ex_8c"/>
+      </node>
+      <node id="27">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c</label>
+        <link refid="stm32g0xx__hal__exti_8c"/>
+      </node>
+      <node id="28">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c</label>
+        <link refid="stm32g0xx__hal__flash_8c"/>
+      </node>
+      <node id="29">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c</label>
+        <link refid="stm32g0xx__hal__flash__ex_8c"/>
+      </node>
+      <node id="30">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c</label>
+        <link refid="stm32g0xx__hal__gpio_8c"/>
+      </node>
+      <node id="31">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c</label>
+        <link refid="stm32g0xx__hal__pwr_8c"/>
+      </node>
+      <node id="32">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8c"/>
+      </node>
+      <node id="33">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c</label>
+        <link refid="stm32g0xx__hal__rcc_8c"/>
+      </node>
+      <node id="34">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8c"/>
+      </node>
+      <node id="35">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c</label>
+        <link refid="stm32g0xx__hal__spi_8c"/>
+      </node>
+      <node id="36">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c</label>
+        <link refid="stm32g0xx__hal__spi__ex_8c"/>
+      </node>
+      <node id="37">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c</label>
+        <link refid="stm32g0xx__hal__tim_8c"/>
+      </node>
+      <node id="38">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c</label>
+        <link refid="stm32g0xx__hal__tim__ex_8c"/>
+      </node>
+      <node id="39">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c</label>
+        <link refid="stm32g0xx__hal__uart_8c"/>
+      </node>
+      <node id="40">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c</label>
+        <link refid="stm32g0xx__hal__uart__ex_8c"/>
+      </node>
+      <node id="19">
+        <label>RadarApp/DisplayDriver/GFX_Color.c</label>
+        <link refid="_g_f_x___color_8c"/>
+      </node>
+      <node id="20">
+        <label>RadarApp/DisplayDriver/ILI9341.c</label>
+        <link refid="_i_l_i9341_8c"/>
+      </node>
+      <node id="22">
+        <label>RadarApp/RadarDriver/radar.c</label>
+        <link refid="radar_8c"/>
+      </node>
+      <node id="21">
+        <label>RadarApp/RadarDriver/radar.h</label>
+        <link refid="radar_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>RadarApp/usart_custom/usart_custom.c</label>
+        <link refid="usart__custom_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_f_l_a_s_h___erase_init_type_def" prot="public">FLASH_EraseInitTypeDef</innerclass>
+    <innerclass refid="struct_f_l_a_s_h___o_b_program_init_type_def" prot="public">FLASH_OBProgramInitTypeDef</innerclass>
+    <innerclass refid="struct_f_l_a_s_h___process_type_def" prot="public">FLASH_ProcessTypeDef</innerclass>
+    <sectiondef kind="define">
+      <member refid="group___f_l_a_s_h___keys_1gafd77e7bf91765d891ce63e2f0084b019" kind="define"><name>FLASH_KEY1</name></member>
+      <member refid="group___f_l_a_s_h___keys_1gaee83d0f557e158da52f4a205db6b60a7" kind="define"><name>FLASH_KEY2</name></member>
+      <member refid="group___f_l_a_s_h___keys_1ga1630c4f338daf2741daa1273f657164f" kind="define"><name>FLASH_OPTKEY1</name></member>
+      <member refid="group___f_l_a_s_h___keys_1gae0da3085d59cf73089bfb1a2b9d9367d" kind="define"><name>FLASH_OPTKEY2</name></member>
+      <member refid="group___f_l_a_s_h___latency_1ga1276f51e97dc9857ca261fae4eb890f3" kind="define"><name>FLASH_LATENCY_0</name></member>
+      <member refid="group___f_l_a_s_h___latency_1ga28c611f2cb4a3772ab37c538357fd5f6" kind="define"><name>FLASH_LATENCY_1</name></member>
+      <member refid="group___f_l_a_s_h___latency_1ga69d209f9cb4f625010d72555c8dceb03" kind="define"><name>FLASH_LATENCY_2</name></member>
+      <member refid="group___f_l_a_s_h___flags_1gaf043ba4d8f837350bfc7754a99fae5a9" kind="define"><name>FLASH_FLAG_EOP</name></member>
+      <member refid="group___f_l_a_s_h___flags_1gad8a96ceda91fcf0d1299da933b5816f1" kind="define"><name>FLASH_FLAG_OPERR</name></member>
+      <member refid="group___f_l_a_s_h___flags_1ga16feb349d40137ba1d00bc44937fcd33" kind="define"><name>FLASH_FLAG_PROGERR</name></member>
+      <member refid="group___f_l_a_s_h___flags_1ga6abf64f916992585899369166db3f266" kind="define"><name>FLASH_FLAG_WRPERR</name></member>
+      <member refid="group___f_l_a_s_h___flags_1ga2c3f4dbea065f8ea2987eada4dab30bd" kind="define"><name>FLASH_FLAG_PGAERR</name></member>
+      <member refid="group___f_l_a_s_h___flags_1gac20909664e371d2ca0436a055393f9c4" kind="define"><name>FLASH_FLAG_SIZERR</name></member>
+      <member refid="group___f_l_a_s_h___flags_1ga25b80c716320e667162846da8be09b68" kind="define"><name>FLASH_FLAG_PGSERR</name></member>
+      <member refid="group___f_l_a_s_h___flags_1ga706480b4a9e153c0affd52bb239925bc" kind="define"><name>FLASH_FLAG_MISERR</name></member>
+      <member refid="group___f_l_a_s_h___flags_1gad8f375a352a04668679609fe25eb1b03" kind="define"><name>FLASH_FLAG_FASTERR</name></member>
+      <member refid="group___f_l_a_s_h___flags_1gacb2c4c991a260c3f110cd8c72f302864" kind="define"><name>FLASH_FLAG_OPTVERR</name></member>
+      <member refid="group___f_l_a_s_h___flags_1ga02cbd877d8534450a09c259edb599176" kind="define"><name>FLASH_FLAG_BSY1</name></member>
+      <member refid="group___f_l_a_s_h___flags_1gad3bc368f954ad7744deda3315da2fff7" kind="define"><name>FLASH_FLAG_BSY</name></member>
+      <member refid="group___f_l_a_s_h___flags_1gaa31cc1631af91a80ea3416de835a7e12" kind="define"><name>FLASH_FLAG_CFGBSY</name></member>
+      <member refid="group___f_l_a_s_h___flags_1gaeff451eb172193ab40ad206d2c136ff7" kind="define"><name>FLASH_FLAG_ECCC1</name></member>
+      <member refid="group___f_l_a_s_h___flags_1ga1d79a70a87dba5187c4dac48c3d68aa5" kind="define"><name>FLASH_FLAG_ECCD1</name></member>
+      <member refid="group___f_l_a_s_h___flags_1ga1cbecfb0d93e7ae15054d3a561e7b6ef" kind="define"><name>FLASH_FLAG_ECCC</name></member>
+      <member refid="group___f_l_a_s_h___flags_1ga8de3284440e43c3818efe15bd61ef284" kind="define"><name>FLASH_FLAG_ECCD</name></member>
+      <member refid="group___f_l_a_s_h___interrupt__definition_1gaea20e80e1806d58a7544cfe8659e7f11" kind="define"><name>FLASH_IT_EOP</name></member>
+      <member refid="group___f_l_a_s_h___interrupt__definition_1ga501c9645076ef3ec2b0dad64da0a8d7e" kind="define"><name>FLASH_IT_OPERR</name></member>
+      <member refid="group___f_l_a_s_h___interrupt__definition_1gaca7868799bea66927ac2b8b8d8c8be1a" kind="define"><name>FLASH_IT_ECCC1</name></member>
+      <member refid="group___f_l_a_s_h___interrupt__definition_1gaecdc533ad50a649b780f72e8dee48a1b" kind="define"><name>FLASH_IT_ECCC</name></member>
+      <member refid="group___f_l_a_s_h___error_1gae7fb9ee7198d393aba27ade3a9f50a70" kind="define"><name>HAL_FLASH_ERROR_NONE</name></member>
+      <member refid="group___f_l_a_s_h___error_1gaea8e1eca1542855674348d52279fdd0a" kind="define"><name>HAL_FLASH_ERROR_OP</name></member>
+      <member refid="group___f_l_a_s_h___error_1ga516a75e6f98eed9daefa0b442a74c04b" kind="define"><name>HAL_FLASH_ERROR_PROG</name></member>
+      <member refid="group___f_l_a_s_h___error_1ga27e871d85f9311272098315bc3723075" kind="define"><name>HAL_FLASH_ERROR_WRP</name></member>
+      <member refid="group___f_l_a_s_h___error_1gad9f62b6567543610f667bce580550662" kind="define"><name>HAL_FLASH_ERROR_PGA</name></member>
+      <member refid="group___f_l_a_s_h___error_1gad9f0302264e7cb25d16a81d8af268b89" kind="define"><name>HAL_FLASH_ERROR_SIZ</name></member>
+      <member refid="group___f_l_a_s_h___error_1ga7132ff3b7f45c0cfe818d61bdb01dc64" kind="define"><name>HAL_FLASH_ERROR_PGS</name></member>
+      <member refid="group___f_l_a_s_h___error_1ga9f448f3c8b97cf8cc2d0956befccc4ab" kind="define"><name>HAL_FLASH_ERROR_MIS</name></member>
+      <member refid="group___f_l_a_s_h___error_1gada84a0f9e92018ac0fec3b63dd748564" kind="define"><name>HAL_FLASH_ERROR_FAST</name></member>
+      <member refid="group___f_l_a_s_h___error_1ga9fe984a57c2e92c27c4217468d1b2d93" kind="define"><name>HAL_FLASH_ERROR_OPTV</name></member>
+      <member refid="group___f_l_a_s_h___error_1ga39abcc2365256317eda5c1655fcd44f3" kind="define"><name>HAL_FLASH_ERROR_ECCD</name></member>
+      <member refid="group___f_l_a_s_h___type___erase_1ga3664ce55155ec4990873c51737d787ce" kind="define"><name>FLASH_TYPEERASE_PAGES</name></member>
+      <member refid="group___f_l_a_s_h___type___erase_1ga191e5180504a54e509ee9b50f85d9621" kind="define"><name>FLASH_TYPEERASE_MASS</name></member>
+      <member refid="group___f_l_a_s_h___banks_1ga8ac3f24496e5de6a2f6bd3ff77f0ca53" kind="define"><name>FLASH_BANK_1</name></member>
+      <member refid="group___f_l_a_s_h___type___program_1gabdc2b0b4d2e66c2be90fafbfbf1e225f" kind="define"><name>FLASH_TYPEPROGRAM_DOUBLEWORD</name></member>
+      <member refid="group___f_l_a_s_h___type___program_1gae2edb2ca56dde4aba97c77502c580d81" kind="define"><name>FLASH_TYPEPROGRAM_FAST</name></member>
+      <member refid="group___f_l_a_s_h___o_b___type_1ga48712a166ea192ddcda0f2653679f9ec" kind="define"><name>OPTIONBYTE_WRP</name></member>
+      <member refid="group___f_l_a_s_h___o_b___type_1ga8f0bdb21ef13bae39d5d8b6619e2df06" kind="define"><name>OPTIONBYTE_RDP</name></member>
+      <member refid="group___f_l_a_s_h___o_b___type_1gac7d843e666e15c79688a1914e8ffe7a5" kind="define"><name>OPTIONBYTE_USER</name></member>
+      <member refid="group___f_l_a_s_h___o_b___type_1ga242f762f6db284aa457287f8bd74145b" kind="define"><name>OPTIONBYTE_ALL</name></member>
+      <member refid="group___f_l_a_s_h___o_b___w_r_p___area_1ga050a1591840ca8a8c64adbaa19bd315a" kind="define"><name>OB_WRPAREA_ZONE_A</name></member>
+      <member refid="group___f_l_a_s_h___o_b___w_r_p___area_1ga5a092d46555e9eff1512cd5cc92cf76a" kind="define"><name>OB_WRPAREA_ZONE_B</name></member>
+      <member refid="group___f_l_a_s_h___o_b___read___protection_1ga22c7871bda267a2844ab9ca9f7bd38e4" kind="define"><name>OB_RDP_LEVEL_0</name></member>
+      <member refid="group___f_l_a_s_h___o_b___read___protection_1ga778207f0d12d87bbff9d55e985aba5bc" kind="define"><name>OB_RDP_LEVEL_1</name></member>
+      <member refid="group___f_l_a_s_h___o_b___read___protection_1ga2262afca565429ce2808d835c49e5ee6" kind="define"><name>OB_RDP_LEVEL_2</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga9a7ab63ef27620c1cefe24ddf5b98c9d" kind="define"><name>OB_USER_nRST_STOP</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga230f52c0bc901b7e136d94818c63cda2" kind="define"><name>OB_USER_nRST_STDBY</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1gadd91fcb984de1a1208bac3d6b50641db" kind="define"><name>OB_USER_IWDG_SW</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga1a7ae96d361bcb5605777881c47241f8" kind="define"><name>OB_USER_IWDG_STOP</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1gab0b376afa9327bc01686d5f868e78296" kind="define"><name>OB_USER_IWDG_STDBY</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga352689fac3e55f95629dba2dac135756" kind="define"><name>OB_USER_WWDG_SW</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1gaa36132a142d5479a09509fb4baa091a1" kind="define"><name>OB_USER_RAM_PARITY_CHECK</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga670f10402371b7bbc8a41051ea0de4ee" kind="define"><name>OB_USER_nBOOT_SEL</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga69b5cfc52df7f7ce2f6fc6d8d7437260" kind="define"><name>OB_USER_nBOOT1</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga92068731498388a39698a7d2cfc4efdc" kind="define"><name>OB_USER_nBOOT0</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga9232b0910914b321a97762e030c53833" kind="define"><name>OB_USER_ALL</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r__n_r_s_t___s_t_o_p_1gaef92c03b1f279c532bfa13d3bb074b57" kind="define"><name>OB_STOP_RST</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r__n_r_s_t___s_t_o_p_1gac440badc145bc62ab85e1cbca9483584" kind="define"><name>OB_STOP_NORST</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r__n_r_s_t___s_t_a_n_d_b_y_1ga7e5c8a161424cc9ce917e0a97e7bc809" kind="define"><name>OB_STANDBY_RST</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r__n_r_s_t___s_t_a_n_d_b_y_1ga5909d7b439118a4d5ae9fed62ff7b272" kind="define"><name>OB_STANDBY_NORST</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_w_1gadfcbfa963d79c339ec8e2d5a7734e47a" kind="define"><name>OB_IWDG_HW</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_w_1ga5a357e232c955444c3f2ccb9a937ffce" kind="define"><name>OB_IWDG_SW</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_t_o_p_1gae0c882a6f14ebe5d1969b50d5a2dbb17" kind="define"><name>OB_IWDG_STOP_FREEZE</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_t_o_p_1ga987e1a1bee2772467b010a71888b0047" kind="define"><name>OB_IWDG_STOP_RUN</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_t_a_n_d_b_y_1ga2033b993c192a55757fc3fb0d8cfebc9" kind="define"><name>OB_IWDG_STDBY_FREEZE</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_t_a_n_d_b_y_1gaed53e663482a87712d6424ef921167cb" kind="define"><name>OB_IWDG_STDBY_RUN</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___w_w_d_g___s_w_1ga32aa93fb6a71b73966b2bf934927835f" kind="define"><name>OB_WWDG_HW</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___w_w_d_g___s_w_1ga1e5f3b6d137856b1acc34e7dbc81ffd9" kind="define"><name>OB_WWDG_SW</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___s_r_a_m___p_a_r_i_t_y_1gad4e3ce135a13a5cbf94f02b9ba86f060" kind="define"><name>OB_SRAM_PARITY_ENABLE</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r___s_r_a_m___p_a_r_i_t_y_1ga38553cf9e68b6e14aeed95bb0bf30ba5" kind="define"><name>OB_SRAM_PARITY_DISABLE</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r__n_b_o_o_t___s_e_l_1ga5c8cb8a7bdf6c7df601e5f512297ede5" kind="define"><name>OB_BOOT0_FROM_PIN</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r__n_b_o_o_t___s_e_l_1ga62cccb42136f83137d1d19b8496f173b" kind="define"><name>OB_BOOT0_FROM_OB</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r__n_b_o_o_t1_1gab7a107055cc822c0dbd3f89d1aaf5033" kind="define"><name>OB_BOOT1_SRAM</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r__n_b_o_o_t1_1ga700c5e9893e6f29f90dc3fd4ba1c4406" kind="define"><name>OB_BOOT1_SYSTEM</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r__n_b_o_o_t0_1ga850fe9675bde700e178ca8b201801c2b" kind="define"><name>OB_nBOOT0_RESET</name></member>
+      <member refid="group___f_l_a_s_h___o_b___u_s_e_r__n_b_o_o_t0_1ga3a2098ac7ef5854f1a39a5562e3d8248" kind="define"><name>OB_nBOOT0_SET</name></member>
+      <member refid="group___f_l_a_s_h___exported___macros_1gac1c9f459b798cc3700b90a6245df5a1a" kind="define"><name>__HAL_FLASH_SET_LATENCY</name></member>
+      <member refid="group___f_l_a_s_h___exported___macros_1gaa537e44d74ce35ff5bfef80edf03f895" kind="define"><name>__HAL_FLASH_GET_LATENCY</name></member>
+      <member refid="group___f_l_a_s_h___exported___macros_1gad36059641057f824516303ea92734e6f" kind="define"><name>__HAL_FLASH_PREFETCH_BUFFER_ENABLE</name></member>
+      <member refid="group___f_l_a_s_h___exported___macros_1ga646a4cb92e85659334d14a8c78f0ede8" kind="define"><name>__HAL_FLASH_PREFETCH_BUFFER_DISABLE</name></member>
+      <member refid="group___f_l_a_s_h___exported___macros_1gaddb00cd85fe48a524fad33c7fe63e038" kind="define"><name>__HAL_FLASH_INSTRUCTION_CACHE_ENABLE</name></member>
+      <member refid="group___f_l_a_s_h___exported___macros_1ga01bf00ed6e7c0e74ed0931f3b8b033ed" kind="define"><name>__HAL_FLASH_INSTRUCTION_CACHE_DISABLE</name></member>
+      <member refid="group___f_l_a_s_h___exported___macros_1ga69dff538775ee23738d54eef4a259b66" kind="define"><name>__HAL_FLASH_INSTRUCTION_CACHE_RESET</name></member>
+      <member refid="group___f_l_a_s_h___interrupt_1ga13fa137a911f02a2f94fb9fb0762a340" kind="define"><name>__HAL_FLASH_ENABLE_IT</name></member>
+      <member refid="group___f_l_a_s_h___interrupt_1ga1f40f507b5d4b3a4da68e4244a1097ee" kind="define"><name>__HAL_FLASH_DISABLE_IT</name></member>
+      <member refid="group___f_l_a_s_h___interrupt_1ga0d3dd161fecc0e47c9e109c7c28672c1" kind="define"><name>__HAL_FLASH_GET_FLAG</name></member>
+      <member refid="group___f_l_a_s_h___interrupt_1ga68e49c4675761e2ec35153e747de7622" kind="define"><name>__HAL_FLASH_CLEAR_FLAG</name></member>
+      <member refid="group___f_l_a_s_h___private___constants_1ga2329f89a17061e62bf5d160cc0962e5c" kind="define"><name>FLASH_SIZE_DATA_REGISTER</name></member>
+      <member refid="group___f_l_a_s_h___private___constants_1gaa9034a4a03acf9350fa141303b5ab86a" kind="define"><name>FLASH_BANK_SIZE</name></member>
+      <member refid="group___f_l_a_s_h___private___constants_1ga4cc14e2c99ae7f8e5a8e371d03c8532c" kind="define"><name>FLASH_PAGE_SIZE</name></member>
+      <member refid="group___f_l_a_s_h___private___constants_1ga3d98541dcb89735b8d2fd559b75d1ebf" kind="define"><name>FLASH_PAGE_NB</name></member>
+      <member refid="group___f_l_a_s_h___private___constants_1ga76e8ea58ef37913dcdb61efae2d6ab8f" kind="define"><name>FLASH_TIMEOUT_VALUE</name></member>
+      <member refid="group___f_l_a_s_h___private___constants_1ga9f4e94ec0af00dc7fc7632b9d4112720" kind="define"><name>FLASH_TYPENONE</name></member>
+      <member refid="group___f_l_a_s_h___private___constants_1ga58a73aff56bdb7f5b8b85639ff6809cb" kind="define"><name>FLASH_SR_ERRORS</name></member>
+      <member refid="group___f_l_a_s_h___private___constants_1ga300fa40384ef7d2f9c9dca779fb0efd3" kind="define"><name>FLASH_SR_CLEAR</name></member>
+      <member refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kind="define"><name>FLASH_FLAG_REG_POS</name></member>
+      <member refid="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" kind="define"><name>FLASH_FLAG_SR_ID</name></member>
+      <member refid="group___f_l_a_s_h___private___constants_1ga640f48347791c15967d7eeda287f66c9" kind="define"><name>FLASH_FLAG_CR_ID</name></member>
+      <member refid="group___f_l_a_s_h___private___constants_1ga12fc6723eee1c92a9ccbbea964c69e81" kind="define"><name>FLASH_FLAG_ECCR1_ID</name></member>
+      <member refid="group___f_l_a_s_h___private___constants_1gad53ca50925d6869ab0e65cf0f8c96dc8" kind="define"><name>FLASH_FLAG_ECCR2_ID</name></member>
+      <member refid="group___f_l_a_s_h___private___macros_1gad61c3f03e200c830de6065fd5988a699" kind="define"><name>IS_FLASH_MAIN_MEM_ADDRESS</name></member>
+      <member refid="group___f_l_a_s_h___private___macros_1ga9a7dbfac79dc9131c4437bf588892b25" kind="define"><name>IS_FLASH_MAIN_FIRSTHALF_MEM_ADDRESS</name></member>
+      <member refid="group___f_l_a_s_h___private___macros_1gaab0084e7763398c3757f2cbab09c1a4b" kind="define"><name>IS_FLASH_PROGRAM_MAIN_MEM_ADDRESS</name></member>
+      <member refid="group___f_l_a_s_h___private___macros_1ga5118b5e17b62de15351f690cfed8d357" kind="define"><name>IS_FLASH_PROGRAM_OTP_ADDRESS</name></member>
+      <member refid="group___f_l_a_s_h___private___macros_1gac07480adefa0f54a920561a97c2e5b8a" kind="define"><name>IS_FLASH_PROGRAM_ADDRESS</name></member>
+      <member refid="group___f_l_a_s_h___private___macros_1gaa8232c18c001193e0bd845812463f3cd" kind="define"><name>IS_FLASH_FAST_PROGRAM_ADDRESS</name></member>
+      <member refid="group___f_l_a_s_h___private___macros_1gad91fb7bc62a909243b53001188ff7234" kind="define"><name>IS_FLASH_PAGE</name></member>
+      <member refid="group___f_l_a_s_h___private___macros_1ga63d7a9a5d75e71de560a965b5e276ce6" kind="define"><name>IS_FLASH_BANK</name></member>
+      <member refid="group___f_l_a_s_h___private___macros_1ga4d40dfc92b46733adbabaae5f3db59ab" kind="define"><name>IS_FLASH_TYPEERASE</name></member>
+      <member refid="group___f_l_a_s_h___private___macros_1gab96611359d7c156f22f1b37929933e34" kind="define"><name>IS_FLASH_TYPEPROGRAM</name></member>
+      <member refid="group___f_l_a_s_h___private___macros_1gaaced64683b0f15981a06f3d7581387a4" kind="define"><name>IS_OPTIONBYTE</name></member>
+      <member refid="group___f_l_a_s_h___private___macros_1gaa650b86609eea7c5f6e21e482670434e" kind="define"><name>IS_OB_WRPAREA</name></member>
+      <member refid="group___f_l_a_s_h___private___macros_1ga056f83cc3381fed3f2d51de9768ebc4c" kind="define"><name>IS_OB_RDP_LEVEL</name></member>
+      <member refid="group___f_l_a_s_h___private___macros_1ga7e7e9b0cf2412d8a9c09c52019ac3919" kind="define"><name>IS_OB_USER_TYPE</name></member>
+      <member refid="group___f_l_a_s_h___private___macros_1ga2d5322a0c5cfadffa23b543823a1e346" kind="define"><name>IS_OB_USER_CONFIG</name></member>
+      <member refid="group___f_l_a_s_h___private___macros_1gad8585a26722685574b9586a771a9aa8a" kind="define"><name>IS_FLASH_LATENCY</name></member>
+    </sectiondef>
+    <sectiondef kind="var">
+      <member refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kind="variable"><name>pFlash</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group___f_l_a_s_h___exported___functions___group1_1gab94b3dc16c5c6fcc30ba2cb897de8bae" kind="function"><name>HAL_FLASH_Program</name></member>
+      <member refid="group___f_l_a_s_h___exported___functions___group1_1ga85ee0375f81ac12bf0acd013189f68d3" kind="function"><name>HAL_FLASH_Program_IT</name></member>
+      <member refid="group___f_l_a_s_h___exported___functions___group1_1ga083f13f6a000dfcb80c7a27853eba528" kind="function"><name>HAL_FLASH_IRQHandler</name></member>
+      <member refid="group___f_l_a_s_h___exported___functions___group1_1ga71a7e85ede66fae4eadaf8854f81b5c8" kind="function"><name>HAL_FLASH_EndOfOperationCallback</name></member>
+      <member refid="group___f_l_a_s_h___exported___functions___group1_1ga237e17bd9b1d257bd8e2880227b8484e" kind="function"><name>HAL_FLASH_OperationErrorCallback</name></member>
+      <member refid="group___f_l_a_s_h___exported___functions___group2_1ga23d4ff42a8873bac585c92ce4f633747" kind="function"><name>HAL_FLASH_Unlock</name></member>
+      <member refid="group___f_l_a_s_h___exported___functions___group2_1gae07eeca0b0aa9d5047f8df88d82f4bcd" kind="function"><name>HAL_FLASH_Lock</name></member>
+      <member refid="group___f_l_a_s_h___exported___functions___group2_1ga6e8f380b7a938592f0b6f05d0ebf69c3" kind="function"><name>HAL_FLASH_OB_Unlock</name></member>
+      <member refid="group___f_l_a_s_h___exported___functions___group2_1ga3ff599bd7eba88f7a169a537ccbf3e3f" kind="function"><name>HAL_FLASH_OB_Lock</name></member>
+      <member refid="group___f_l_a_s_h___exported___functions___group2_1ga046c539c76aaae3d487d59193f74c9db" kind="function"><name>HAL_FLASH_OB_Launch</name></member>
+      <member refid="group___f_l_a_s_h___exported___functions___group3_1ga20e71ba6b2a09cd5b9f0bd369f842de3" kind="function"><name>HAL_FLASH_GetError</name></member>
+      <member refid="group___f_l_a_s_h___private__types_1gaf89afc110a32ac9dcf0d06b89ffd9224" kind="function"><name>FLASH_WaitForLastOperation</name></member>
+    </sectiondef>
+    <briefdescription>
+<para>Header file of FLASH HAL module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team </para>
+</simplesect>
+<simplesect kind="attention"><para></para>
+</simplesect>
+Copyright (c) 2018 STMicroelectronics. All rights reserved.</para>
+<para>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>STM32G0xx_HAL_FLASH_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32G0xx_HAL_FLASH_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32g0xx__hal__def_8h" kindref="compound">stm32g0xx_hal_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>types<sp/>------------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="45" refid="struct_f_l_a_s_h___erase_init_type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47" refid="struct_f_l_a_s_h___erase_init_type_def_1ae2154c09320f3ef7feb8f4a84e9ac17b" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___erase_init_type_def_1ae2154c09320f3ef7feb8f4a84e9ac17b" kindref="member">TypeErase</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="struct_f_l_a_s_h___erase_init_type_def_1aa07868a5b012861c6111322c3dccdbec" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___erase_init_type_def_1aa07868a5b012861c6111322c3dccdbec" kindref="member">Banks</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="struct_f_l_a_s_h___erase_init_type_def_1ad5ac387429b4b85d2ee00e34559b4a28" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___erase_init_type_def_1ad5ac387429b4b85d2ee00e34559b4a28" kindref="member">Page</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="struct_f_l_a_s_h___erase_init_type_def_1a883b193a78c63e993f1d70102eac64b3" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___erase_init_type_def_1a883b193a78c63e993f1d70102eac64b3" kindref="member">NbPages</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}<sp/><ref refid="struct_f_l_a_s_h___erase_init_type_def" kindref="compound">FLASH_EraseInitTypeDef</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="struct_f_l_a_s_h___o_b_program_init_type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63" refid="struct_f_l_a_s_h___o_b_program_init_type_def_1ac5941efaeb6bd9e3c0852613f990ebd8" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___o_b_program_init_type_def_1ac5941efaeb6bd9e3c0852613f990ebd8" kindref="member">OptionType</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="struct_f_l_a_s_h___o_b_program_init_type_def_1ae7d8307ee7a0754760d067430448b8df" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___o_b_program_init_type_def_1ae7d8307ee7a0754760d067430448b8df" kindref="member">WRPArea</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68" refid="struct_f_l_a_s_h___o_b_program_init_type_def_1a8dd2e3028f6a42c22d89107ad81b5171" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___o_b_program_init_type_def_1a8dd2e3028f6a42c22d89107ad81b5171" kindref="member">WRPStartOffset</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70" refid="struct_f_l_a_s_h___o_b_program_init_type_def_1af0e01c4c38905cd3ed60c8836d28da20" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___o_b_program_init_type_def_1af0e01c4c38905cd3ed60c8836d28da20" kindref="member">WRPEndOffset</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72" refid="struct_f_l_a_s_h___o_b_program_init_type_def_1a671880a1dafb7b92e0e2b65593407c12" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___o_b_program_init_type_def_1a671880a1dafb7b92e0e2b65593407c12" kindref="member">RDPLevel</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="struct_f_l_a_s_h___o_b_program_init_type_def_1a84b990aa673c75ca04bd361e8157953d" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___o_b_program_init_type_def_1a84b990aa673c75ca04bd361e8157953d" kindref="member">USERType</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="struct_f_l_a_s_h___o_b_program_init_type_def_1aefa4621be119ce8af715a2271b53168c" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___o_b_program_init_type_def_1aefa4621be119ce8af715a2271b53168c" kindref="member">USERConfig</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_PCROP_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>uint32_t<sp/>PCROPConfig;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>uint32_t<sp/>PCROP1AStartAddr;<sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>uint32_t<sp/>PCROP1AEndAddr;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>uint32_t<sp/>PCROP1BStartAddr;<sp/><sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>uint32_t<sp/>PCROP1BEndAddr;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>uint32_t<sp/>PCROP2AStartAddr;<sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>uint32_t<sp/>PCROP2AEndAddr;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>uint32_t<sp/>PCROP2BStartAddr;<sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>uint32_t<sp/>PCROP2BEndAddr;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_PCROP_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_SECURABLE_MEMORY_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>uint32_t<sp/>BootEntryPoint;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>uint32_t<sp/>SecSize;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>uint32_t<sp/>SecSize2;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_SECURABLE_MEMORY_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}<sp/><ref refid="struct_f_l_a_s_h___o_b_program_init_type_def" kindref="compound">FLASH_OBProgramInitTypeDef</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="struct_f_l_a_s_h___process_type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138" refid="struct_f_l_a_s_h___process_type_def_1ad4cf225029dbefe8d3fe660c33b8bb6b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1ab367482e943333a1299294eadaad284b" kindref="member">HAL_LockTypeDef</ref><sp/><sp/><sp/><ref refid="struct_f_l_a_s_h___process_type_def_1ad4cf225029dbefe8d3fe660c33b8bb6b" kindref="member">Lock</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>FLASH<sp/>locking<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="struct_f_l_a_s_h___process_type_def_1a66f47ab0beaa0defb8a75817dbab2ef3" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_f_l_a_s_h___process_type_def_1a66f47ab0beaa0defb8a75817dbab2ef3" kindref="member">ErrorCode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>FLASH<sp/>error<sp/>code<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="struct_f_l_a_s_h___process_type_def_1adda092bee12e49fc4cb5468429e2e8d3" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_f_l_a_s_h___process_type_def_1adda092bee12e49fc4cb5468429e2e8d3" kindref="member">ProcedureOnGoing</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Internal<sp/>variable<sp/>to<sp/>indicate<sp/>which<sp/>procedure<sp/>is<sp/>ongoing<sp/>or<sp/>not<sp/>in<sp/>IT<sp/>context<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="struct_f_l_a_s_h___process_type_def_1aca1b23fd721c8d8dc70a8227e336b6e8" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_f_l_a_s_h___process_type_def_1aca1b23fd721c8d8dc70a8227e336b6e8" kindref="member">Address</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Internal<sp/>variable<sp/>to<sp/>save<sp/>address<sp/>selected<sp/>for<sp/>program<sp/>in<sp/>IT<sp/>context<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="struct_f_l_a_s_h___process_type_def_1aa07868a5b012861c6111322c3dccdbec" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_f_l_a_s_h___process_type_def_1aa07868a5b012861c6111322c3dccdbec" kindref="member">Banks</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Internal<sp/>variable<sp/>to<sp/>save<sp/>current<sp/>bank<sp/>selected<sp/>during<sp/>erase<sp/>in<sp/>IT<sp/>context<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="struct_f_l_a_s_h___process_type_def_1ad5ac387429b4b85d2ee00e34559b4a28" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_f_l_a_s_h___process_type_def_1ad5ac387429b4b85d2ee00e34559b4a28" kindref="member">Page</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Internal<sp/>variable<sp/>to<sp/>define<sp/>the<sp/>current<sp/>page<sp/>which<sp/>is<sp/>erasing<sp/>in<sp/>IT<sp/>context<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="struct_f_l_a_s_h___process_type_def_1aaa07dbf9d1176059fe93dfab7b808ca6" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_f_l_a_s_h___process_type_def_1aaa07dbf9d1176059fe93dfab7b808ca6" kindref="member">NbPagesToErase</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Internal<sp/>variable<sp/>to<sp/>save<sp/>the<sp/>remaining<sp/>pages<sp/>to<sp/>erase<sp/>in<sp/>IT<sp/>context<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}<sp/><ref refid="struct_f_l_a_s_h___process_type_def" kindref="compound">FLASH_ProcessTypeDef</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>constants<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="158" refid="group___f_l_a_s_h___keys_1gafd77e7bf91765d891ce63e2f0084b019" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_KEY1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x45670123U<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_KEY2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xCDEF89ABU<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="group___f_l_a_s_h___keys_1ga1630c4f338daf2741daa1273f657164f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_OPTKEY1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x08192A3BU<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_OPTKEY2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x4C5D6E7FU<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171" refid="group___f_l_a_s_h___latency_1ga1276f51e97dc9857ca261fae4eb890f3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_LATENCY_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000UL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="group___f_l_a_s_h___latency_1ga28c611f2cb4a3772ab37c538357fd5f6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_LATENCY_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_ACR_LATENCY_0<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="group___f_l_a_s_h___latency_1ga69d209f9cb4f625010d72555c8dceb03" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_LATENCY_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_ACR_LATENCY_1<sp/></highlight></codeline>
+<codeline lineno="181" refid="group___f_l_a_s_h___flags_1gaf043ba4d8f837350bfc7754a99fae5a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_EOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_SR_EOP_Pos)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="group___f_l_a_s_h___flags_1gad8a96ceda91fcf0d1299da933b5816f1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_OPERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_SR_OPERR_Pos)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="group___f_l_a_s_h___flags_1ga16feb349d40137ba1d00bc44937fcd33" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_PROGERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_SR_PROGERR_Pos)<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="group___f_l_a_s_h___flags_1ga6abf64f916992585899369166db3f266" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_WRPERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_SR_WRPERR_Pos)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="group___f_l_a_s_h___flags_1ga2c3f4dbea065f8ea2987eada4dab30bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_PGAERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_SR_PGAERR_Pos)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="group___f_l_a_s_h___flags_1gac20909664e371d2ca0436a055393f9c4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_SIZERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_SR_SIZERR_Pos)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187" refid="group___f_l_a_s_h___flags_1ga25b80c716320e667162846da8be09b68" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_PGSERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_SR_PGSERR_Pos)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="group___f_l_a_s_h___flags_1ga706480b4a9e153c0affd52bb239925bc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_MISERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_SR_MISERR_Pos)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="group___f_l_a_s_h___flags_1gad8f375a352a04668679609fe25eb1b03" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_FASTERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_SR_FASTERR_Pos)<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_PCROP_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_RDERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_SR_RDERR_Pos)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_PCROP_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="group___f_l_a_s_h___flags_1gacb2c4c991a260c3f110cd8c72f302864" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_OPTVERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_SR_OPTVERR_Pos)<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="group___f_l_a_s_h___flags_1ga02cbd877d8534450a09c259edb599176" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_BSY1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_SR_BSY1_Pos)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_BSY2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_SR_BSY2_Pos)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="group___f_l_a_s_h___flags_1gad3bc368f954ad7744deda3315da2fff7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_BSY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_FLAG_BSY1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="group___f_l_a_s_h___flags_1gaa31cc1631af91a80ea3416de835a7e12" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_CFGBSY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_SR_CFGBSY_Pos)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_PESD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_SR_PESD_Pos)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="group___f_l_a_s_h___flags_1gaeff451eb172193ab40ad206d2c136ff7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_ECCC1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_ECCR1_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_ECCR_ECCC_Pos)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="group___f_l_a_s_h___flags_1ga1d79a70a87dba5187c4dac48c3d68aa5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_ECCD1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_ECCR1_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_ECCR_ECCD_Pos)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_ECCC2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_ECCR2_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_ECC2R_ECCC_Pos)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_ECCD2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_ECCR2_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_ECC2R_ECCD_Pos)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="group___f_l_a_s_h___flags_1ga1cbecfb0d93e7ae15054d3a561e7b6ef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_ECCC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_FLAG_ECCC1<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="group___f_l_a_s_h___flags_1ga8de3284440e43c3818efe15bd61ef284" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_ECCD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_FLAG_ECCD1<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="219" refid="group___f_l_a_s_h___interrupt__definition_1gaea20e80e1806d58a7544cfe8659e7f11" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_IT_EOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_CR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_CR_EOPIE_Pos)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="group___f_l_a_s_h___interrupt__definition_1ga501c9645076ef3ec2b0dad64da0a8d7e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_IT_OPERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_CR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_CR_ERRIE_Pos)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_PCROP_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_IT_RDERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_CR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_CR_RDERRIE_Pos)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_PCROP_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="group___f_l_a_s_h___interrupt__definition_1gaca7868799bea66927ac2b8b8d8c8be1a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_IT_ECCC1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_ECCR1_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_ECCR_ECCCIE_Pos)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_IT_ECCC2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_FLAG_ECCR2_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS)<sp/>|<sp/>FLASH_ECC2R_ECCCIE_Pos)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="group___f_l_a_s_h___interrupt__definition_1gaecdc533ad50a649b780f72e8dee48a1b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_IT_ECCC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_IT_ECCC1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="236" refid="group___f_l_a_s_h___error_1gae7fb9ee7198d393aba27ade3a9f50a70" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_FLASH_ERROR_NONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="group___f_l_a_s_h___error_1gaea8e1eca1542855674348d52279fdd0a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_FLASH_ERROR_OP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SR_OPERR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238" refid="group___f_l_a_s_h___error_1ga516a75e6f98eed9daefa0b442a74c04b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_FLASH_ERROR_PROG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SR_PROGERR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="group___f_l_a_s_h___error_1ga27e871d85f9311272098315bc3723075" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_FLASH_ERROR_WRP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SR_WRPERR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240" refid="group___f_l_a_s_h___error_1gad9f62b6567543610f667bce580550662" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_FLASH_ERROR_PGA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SR_PGAERR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="group___f_l_a_s_h___error_1gad9f0302264e7cb25d16a81d8af268b89" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_FLASH_ERROR_SIZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SR_SIZERR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="group___f_l_a_s_h___error_1ga7132ff3b7f45c0cfe818d61bdb01dc64" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_FLASH_ERROR_PGS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SR_PGSERR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="group___f_l_a_s_h___error_1ga9f448f3c8b97cf8cc2d0956befccc4ab" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_FLASH_ERROR_MIS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SR_MISERR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="group___f_l_a_s_h___error_1gada84a0f9e92018ac0fec3b63dd748564" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_FLASH_ERROR_FAST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SR_FASTERR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_PCROP_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_FLASH_ERROR_RD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SR_RDERR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_PCROP_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="group___f_l_a_s_h___error_1ga9fe984a57c2e92c27c4217468d1b2d93" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_FLASH_ERROR_OPTV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SR_OPTVERR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="group___f_l_a_s_h___error_1ga39abcc2365256317eda5c1655fcd44f3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_FLASH_ERROR_ECCD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_ECCR_ECCD</highlight></codeline>
+<codeline lineno="257" refid="group___f_l_a_s_h___type___erase_1ga3664ce55155ec4990873c51737d787ce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_TYPEERASE_PAGES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_CR_PER<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="group___f_l_a_s_h___type___erase_1ga191e5180504a54e509ee9b50f85d9621" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_TYPEERASE_MASS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_CR_MER1<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="266" refid="group___f_l_a_s_h___banks_1ga8ac3f24496e5de6a2f6bd3ff77f0ca53" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_BANK_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_CR_MER1<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_BANK_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_CR_MER2<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="278" refid="group___f_l_a_s_h___type___program_1gabdc2b0b4d2e66c2be90fafbfbf1e225f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_TYPEPROGRAM_DOUBLEWORD<sp/><sp/><sp/><sp/>FLASH_CR_PG<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279" refid="group___f_l_a_s_h___type___program_1gae2edb2ca56dde4aba97c77502c580d81" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_TYPEPROGRAM_FAST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_CR_FSTPG<sp/><sp/></highlight></codeline>
+<codeline lineno="287" refid="group___f_l_a_s_h___o_b___type_1ga48712a166ea192ddcda0f2653679f9ec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPTIONBYTE_WRP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000001U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288" refid="group___f_l_a_s_h___o_b___type_1ga8f0bdb21ef13bae39d5d8b6619e2df06" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPTIONBYTE_RDP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000002U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289" refid="group___f_l_a_s_h___o_b___type_1gac7d843e666e15c79688a1914e8ffe7a5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPTIONBYTE_USER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000004U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_PCROP_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPTIONBYTE_PCROP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000008U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_PCROP_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_SECURABLE_MEMORY_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPTIONBYTE_SEC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000010U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_SECURABLE_MEMORY_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_PCROP_SUPPORT)<sp/>&amp;&amp;<sp/>defined(FLASH_SECURABLE_MEMORY_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPTIONBYTE_ALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(OPTIONBYTE_WRP<sp/><sp/><sp/>|<sp/>OPTIONBYTE_RDP<sp/>|<sp/>OPTIONBYTE_USER<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="299"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OPTIONBYTE_PCROP<sp/>|<sp/>OPTIONBYTE_SEC)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301" refid="group___f_l_a_s_h___o_b___type_1ga242f762f6db284aa457287f8bd74145b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPTIONBYTE_ALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(OPTIONBYTE_WRP<sp/><sp/><sp/>|<sp/>OPTIONBYTE_RDP<sp/>|<sp/>OPTIONBYTE_USER)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_PCROP_SUPPORT<sp/>&amp;&amp;<sp/>FLASH_SECURABLE_MEMORY_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="310" refid="group___f_l_a_s_h___o_b___w_r_p___area_1ga050a1591840ca8a8c64adbaa19bd315a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_WRPAREA_ZONE_A<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000001U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="group___f_l_a_s_h___o_b___w_r_p___area_1ga5a092d46555e9eff1512cd5cc92cf76a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_WRPAREA_ZONE_B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000002U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_WRPAREA_ZONE2_A<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000004U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_WRPAREA_ZONE2_B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000008U<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="323" refid="group___f_l_a_s_h___o_b___read___protection_1ga22c7871bda267a2844ab9ca9f7bd38e4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_RDP_LEVEL_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x000000AAU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324" refid="group___f_l_a_s_h___o_b___read___protection_1ga778207f0d12d87bbff9d55e985aba5bc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_RDP_LEVEL_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x000000BBU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_RDP_LEVEL_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x000000CCU<sp/><sp/></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_BOR_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_BOR_EN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_BOR_EN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_BOR_LEV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_OPTR_BORF_LEV<sp/>|<sp/>FLASH_OPTR_BORR_LEV)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_BOR_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338" refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga9a7ab63ef27620c1cefe24ddf5b98c9d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_nRST_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_nRST_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339" refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga230f52c0bc901b7e136d94818c63cda2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_nRST_STDBY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_nRST_STDBY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_SHDW_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_nRST_SHDW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_nRST_SHDW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_SHDW_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343" refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1gadd91fcb984de1a1208bac3d6b50641db" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_IWDG_SW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_IWDG_SW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="344" refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga1a7ae96d361bcb5605777881c47241f8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_IWDG_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_IWDG_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345" refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1gab0b376afa9327bc01686d5f868e78296" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_IWDG_STDBY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_IWDG_STDBY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346" refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga352689fac3e55f95629dba2dac135756" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_WWDG_SW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_WWDG_SW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_BANK_SWAP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_nSWAP_BANK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_DUAL_BANK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_DUAL_BANK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351" refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1gaa36132a142d5479a09509fb4baa091a1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_RAM_PARITY_CHECK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_RAM_PARITY_CHECK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352" refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga670f10402371b7bbc8a41051ea0de4ee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_nBOOT_SEL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_nBOOT_SEL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353" refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga69b5cfc52df7f7ce2f6fc6d8d7437260" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_nBOOT1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_nBOOT1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="354" refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga92068731498388a39698a7d2cfc4efdc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_nBOOT0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_nBOOT0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(GPIO_NRST_CONFIG_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_NRST_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_NRST_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GPIO_NRST_CONFIG_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_OPTR_IRHEN)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_INPUT_RESET_HOLDER<sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_IRHEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_OPTR_IRHEN<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_BOR_SUPPORT)<sp/>&amp;&amp;<sp/>defined(PWR_SHDW_SUPPORT)<sp/>&amp;&amp;<sp/>defined(GPIO_NRST_CONFIG_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_ALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(OB_USER_BOR_EN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OB_USER_BOR_LEV<sp/><sp/><sp/><sp/>|<sp/>OB_USER_nRST_STOP<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="365"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OB_USER_nRST_STDBY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OB_USER_nRST_SHDW<sp/><sp/>|<sp/>OB_USER_IWDG_SW<sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="366"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OB_USER_IWDG_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OB_USER_IWDG_STDBY<sp/>|<sp/>OB_USER_WWDG_SW<sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="367"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OB_USER_BANK_SWAP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OB_USER_DUAL_BANK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="368"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OB_USER_RAM_PARITY_CHECK<sp/>|<sp/>OB_USER_nBOOT_SEL<sp/><sp/>|<sp/>OB_USER_nBOOT1<sp/><sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="369"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OB_USER_nBOOT0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OB_USER_NRST_MODE<sp/><sp/>|<sp/>OB_USER_INPUT_RESET_HOLDER)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_ALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OB_USER_nRST_STOP<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="372"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>OB_USER_nRST_STDBY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OB_USER_IWDG_SW<sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="373"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>OB_USER_IWDG_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OB_USER_IWDG_STDBY<sp/>|<sp/>OB_USER_WWDG_SW<sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="374"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>OB_USER_BANK_SWAP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OB_USER_DUAL_BANK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="375"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>OB_USER_RAM_PARITY_CHECK<sp/>|<sp/>OB_USER_nBOOT_SEL<sp/><sp/>|<sp/>OB_USER_nBOOT1<sp/><sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="376"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>OB_USER_nBOOT0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_BOR_SUPPORT<sp/>&amp;&amp;<sp/>PWR_SHDW_SUPPORT<sp/>&amp;&amp;<sp/>GPIO_NRST_CONFIG_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_BOR_SUPPORT)<sp/>&amp;&amp;<sp/>defined(PWR_SHDW_SUPPORT)<sp/>&amp;&amp;<sp/>defined(GPIO_NRST_CONFIG_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_ALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(OB_USER_BOR_EN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OB_USER_BOR_LEV<sp/><sp/><sp/><sp/>|<sp/>OB_USER_nRST_STOP<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="381"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OB_USER_nRST_STDBY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OB_USER_nRST_SHDW<sp/><sp/>|<sp/>OB_USER_IWDG_SW<sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="382"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OB_USER_IWDG_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OB_USER_IWDG_STDBY<sp/>|<sp/>OB_USER_WWDG_SW<sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="383"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OB_USER_RAM_PARITY_CHECK<sp/>|<sp/>OB_USER_nBOOT_SEL<sp/><sp/>|<sp/>OB_USER_nBOOT1<sp/><sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="384"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OB_USER_nBOOT0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OB_USER_NRST_MODE<sp/><sp/>|<sp/>OB_USER_INPUT_RESET_HOLDER)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_ALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OB_USER_nRST_STOP<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="387"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>OB_USER_nRST_STDBY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OB_USER_IWDG_SW<sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="388"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>OB_USER_IWDG_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OB_USER_IWDG_STDBY<sp/>|<sp/>OB_USER_WWDG_SW<sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="389"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>OB_USER_RAM_PARITY_CHECK<sp/>|<sp/>OB_USER_nBOOT_SEL<sp/><sp/>|<sp/>OB_USER_nBOOT1<sp/><sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="390" refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga9232b0910914b321a97762e030c53833" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>OB_USER_nBOOT0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_BOR_SUPPORT<sp/>&amp;&amp;<sp/>PWR_SHDW_SUPPORT<sp/>&amp;&amp;<sp/>GPIO_NRST_CONFIG_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_BOR_SUPPORT)</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_BOR_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_BOR_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_BOR_EN<sp/><sp/></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_BOR_LEVEL_FALLING_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_BOR_LEVEL_FALLING_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_BORF_LEV_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_BOR_LEVEL_FALLING_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_BORF_LEV_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_BOR_LEVEL_FALLING_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_OPTR_BORF_LEV_0<sp/>|<sp/>FLASH_OPTR_BORF_LEV_1)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_BOR_LEVEL_RISING_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_BOR_LEVEL_RISING_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_BORR_LEV_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_BOR_LEVEL_RISING_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_BORR_LEV_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_BOR_LEVEL_RISING_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_OPTR_BORR_LEV_0<sp/>|<sp/>FLASH_OPTR_BORR_LEV_1)<sp/></highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_BOR_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426" refid="group___f_l_a_s_h___o_b___u_s_e_r__n_r_s_t___s_t_o_p_1gaef92c03b1f279c532bfa13d3bb074b57" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_STOP_RST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="427" refid="group___f_l_a_s_h___o_b___u_s_e_r__n_r_s_t___s_t_o_p_1gac440badc145bc62ab85e1cbca9483584" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_STOP_NORST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_nRST_STOP<sp/><sp/></highlight></codeline>
+<codeline lineno="435" refid="group___f_l_a_s_h___o_b___u_s_e_r__n_r_s_t___s_t_a_n_d_b_y_1ga7e5c8a161424cc9ce917e0a97e7bc809" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_STANDBY_RST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="436" refid="group___f_l_a_s_h___o_b___u_s_e_r__n_r_s_t___s_t_a_n_d_b_y_1ga5909d7b439118a4d5ae9fed62ff7b272" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_STANDBY_NORST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_nRST_STDBY<sp/></highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_SHDW_SUPPORT)</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_SHUTDOWN_RST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_SHUTDOWN_NORST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_nRST_SHDW<sp/><sp/></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_SHDW_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455" refid="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_w_1gadfcbfa963d79c339ec8e2d5a7734e47a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_IWDG_HW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="456" refid="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_w_1ga5a357e232c955444c3f2ccb9a937ffce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_IWDG_SW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_IWDG_SW<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="464" refid="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_t_o_p_1gae0c882a6f14ebe5d1969b50d5a2dbb17" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_IWDG_STOP_FREEZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="465" refid="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_t_o_p_1ga987e1a1bee2772467b010a71888b0047" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_IWDG_STOP_RUN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_IWDG_STOP<sp/><sp/></highlight></codeline>
+<codeline lineno="473" refid="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_t_a_n_d_b_y_1ga2033b993c192a55757fc3fb0d8cfebc9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_IWDG_STDBY_FREEZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="474" refid="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_t_a_n_d_b_y_1gaed53e663482a87712d6424ef921167cb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_IWDG_STDBY_RUN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_IWDG_STDBY<sp/></highlight></codeline>
+<codeline lineno="482" refid="group___f_l_a_s_h___o_b___u_s_e_r___w_w_d_g___s_w_1ga32aa93fb6a71b73966b2bf934927835f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_WWDG_HW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="483" refid="group___f_l_a_s_h___o_b___u_s_e_r___w_w_d_g___s_w_1ga1e5f3b6d137856b1acc34e7dbc81ffd9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_WWDG_SW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_WWDG_SW<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_DUALBANK_SWAP_ENABLE<sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_DUALBANK_SWAP_DISABLE<sp/><sp/><sp/>FLASH_OPTR_nSWAP_BANK<sp/><sp/></highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_DUALBANK_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="502"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_USER_DUALBANK_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_DUAL_BANK<sp/><sp/></highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="507"><highlight class="normal"></highlight></codeline>
+<codeline lineno="511" refid="group___f_l_a_s_h___o_b___u_s_e_r___s_r_a_m___p_a_r_i_t_y_1gad4e3ce135a13a5cbf94f02b9ba86f060" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_SRAM_PARITY_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="512" refid="group___f_l_a_s_h___o_b___u_s_e_r___s_r_a_m___p_a_r_i_t_y_1ga38553cf9e68b6e14aeed95bb0bf30ba5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_SRAM_PARITY_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_RAM_PARITY_CHECK<sp/><sp/></highlight></codeline>
+<codeline lineno="520" refid="group___f_l_a_s_h___o_b___u_s_e_r__n_b_o_o_t___s_e_l_1ga5c8cb8a7bdf6c7df601e5f512297ede5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_BOOT0_FROM_PIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="521" refid="group___f_l_a_s_h___o_b___u_s_e_r__n_b_o_o_t___s_e_l_1ga62cccb42136f83137d1d19b8496f173b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_BOOT0_FROM_OB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_nBOOT_SEL<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="529" refid="group___f_l_a_s_h___o_b___u_s_e_r__n_b_o_o_t1_1gab7a107055cc822c0dbd3f89d1aaf5033" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_BOOT1_SRAM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="530" refid="group___f_l_a_s_h___o_b___u_s_e_r__n_b_o_o_t1_1ga700c5e9893e6f29f90dc3fd4ba1c4406" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_BOOT1_SYSTEM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_nBOOT1<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="538" refid="group___f_l_a_s_h___o_b___u_s_e_r__n_b_o_o_t0_1ga850fe9675bde700e178ca8b201801c2b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_nBOOT0_RESET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="539" refid="group___f_l_a_s_h___o_b___u_s_e_r__n_b_o_o_t0_1ga3a2098ac7ef5854f1a39a5562e3d8248" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_nBOOT0_SET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_nBOOT0<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="544"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(GPIO_NRST_CONFIG_SUPPORT)</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_RESET_MODE_INPUT_ONLY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_NRST_MODE_0<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_RESET_MODE_GPIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_NRST_MODE_1<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_RESET_MODE_INPUT_OUTPUT<sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_NRST_MODE<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="554"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GPIO_NRST_CONFIG_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="555"><highlight class="normal"></highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_OPTR_IRHEN)</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_IRH_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="561"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_IRH_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_OPTR_IRHEN<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="565"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_OPTR_IRHEN<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="566"><highlight class="normal"></highlight></codeline>
+<codeline lineno="567"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_PCROP_SUPPORT)</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_PCROP_ZONE_A<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000001U<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="572"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_PCROP_ZONE_B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000002U<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_PCROP_ZONE2_A<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000004U<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="575"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_PCROP_ZONE2_B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000008U<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="576"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_PCROP_RDP_NOT_ERASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="586"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_PCROP_RDP_ERASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_PCROP1AER_PCROP_RDP<sp/></highlight></codeline>
+<codeline lineno="592"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_PCROP_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="593"><highlight class="normal"></highlight></codeline>
+<codeline lineno="594"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_SECURABLE_MEMORY_SUPPORT)</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_BOOT_ENTRY_FORCED_NONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_BOOT_ENTRY_FORCED_FLASH<sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SECR_BOOT_LOCK<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="603"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_SECURABLE_MEMORY_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="604"><highlight class="normal"></highlight></codeline>
+<codeline lineno="609"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>macros<sp/>-----------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="624" refid="group___f_l_a_s_h___exported___macros_1gac1c9f459b798cc3700b90a6245df5a1a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_FLASH_SET_LATENCY(__LATENCY__)<sp/><sp/><sp/><sp/>MODIFY_REG(FLASH-&gt;ACR,<sp/>FLASH_ACR_LATENCY,<sp/>(__LATENCY__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="625"><highlight class="normal"></highlight></codeline>
+<codeline lineno="634" refid="group___f_l_a_s_h___exported___macros_1gaa537e44d74ce35ff5bfef80edf03f895" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_FLASH_GET_LATENCY()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>READ_BIT(FLASH-&gt;ACR,<sp/>FLASH_ACR_LATENCY)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="635"><highlight class="normal"></highlight></codeline>
+<codeline lineno="640" refid="group___f_l_a_s_h___exported___macros_1gad36059641057f824516303ea92734e6f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_FLASH_PREFETCH_BUFFER_ENABLE()<sp/><sp/><sp/><sp/>SET_BIT(FLASH-&gt;ACR,<sp/>FLASH_ACR_PRFTEN)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="641"><highlight class="normal"></highlight></codeline>
+<codeline lineno="646" refid="group___f_l_a_s_h___exported___macros_1ga646a4cb92e85659334d14a8c78f0ede8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_FLASH_PREFETCH_BUFFER_DISABLE()<sp/><sp/><sp/>CLEAR_BIT(FLASH-&gt;ACR,<sp/>FLASH_ACR_PRFTEN)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="647"><highlight class="normal"></highlight></codeline>
+<codeline lineno="652" refid="group___f_l_a_s_h___exported___macros_1gaddb00cd85fe48a524fad33c7fe63e038" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_FLASH_INSTRUCTION_CACHE_ENABLE()<sp/><sp/>SET_BIT(FLASH-&gt;ACR,<sp/>FLASH_ACR_ICEN)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="653"><highlight class="normal"></highlight></codeline>
+<codeline lineno="658" refid="group___f_l_a_s_h___exported___macros_1ga01bf00ed6e7c0e74ed0931f3b8b033ed" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_FLASH_INSTRUCTION_CACHE_DISABLE()<sp/>CLEAR_BIT(FLASH-&gt;ACR,<sp/>FLASH_ACR_ICEN)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="659"><highlight class="normal"></highlight></codeline>
+<codeline lineno="665" refid="group___f_l_a_s_h___exported___macros_1ga69dff538775ee23738d54eef4a259b66" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_FLASH_INSTRUCTION_CACHE_RESET()<sp/><sp/><sp/>do<sp/>{<sp/>SET_BIT(FLASH-&gt;ACR,<sp/>FLASH_ACR_ICRST);<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="666"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CLEAR_BIT(FLASH-&gt;ACR,<sp/>FLASH_ACR_ICRST);<sp/>\</highlight></codeline>
+<codeline lineno="667"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0U)</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="691"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_FLASH_ENABLE_IT(__INTERRUPT__)<sp/><sp/><sp/><sp/>do<sp/>{<sp/>if(((__INTERRUPT__)<sp/>&amp;<sp/>(FLASH_FLAG_CR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/>{<sp/>SET_BIT(FLASH-&gt;CR,<sp/>(1uL<sp/>&lt;&lt;<sp/>((__INTERRUPT__)<sp/>&amp;<sp/>0x1Fu)));<sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="692"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if(((__INTERRUPT__)<sp/>&amp;<sp/>(FLASH_FLAG_ECCR1_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/>{<sp/>SET_BIT(FLASH-&gt;ECCR,<sp/>(1uL<sp/>&lt;&lt;<sp/>((__INTERRUPT__)<sp/>&amp;<sp/>0x1Fu)));<sp/>}<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="693"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if(((__INTERRUPT__)<sp/>&amp;<sp/>(FLASH_FLAG_ECCR2_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/>{<sp/>SET_BIT(FLASH-&gt;ECC2R,<sp/>(1uL<sp/>&lt;&lt;<sp/>((__INTERRUPT__)<sp/>&amp;<sp/>0x1Fu)));<sp/>}<sp/><sp/>\</highlight></codeline>
+<codeline lineno="694"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while(0U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="695"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="696" refid="group___f_l_a_s_h___interrupt_1ga13fa137a911f02a2f94fb9fb0762a340" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_FLASH_ENABLE_IT(__INTERRUPT__)<sp/><sp/><sp/><sp/>do<sp/>{<sp/>if(((__INTERRUPT__)<sp/>&amp;<sp/>(FLASH_FLAG_CR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/>{<sp/>SET_BIT(FLASH-&gt;CR,<sp/>(1uL<sp/>&lt;&lt;<sp/>((__INTERRUPT__)<sp/>&amp;<sp/>0x1Fu)));<sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="697"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if(((__INTERRUPT__)<sp/>&amp;<sp/>(FLASH_FLAG_ECCR1_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/>{<sp/>SET_BIT(FLASH-&gt;ECCR,<sp/>(1uL<sp/>&lt;&lt;<sp/>((__INTERRUPT__)<sp/>&amp;<sp/>0x1Fu)));<sp/>}<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="698"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while(0U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="699"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="700"><highlight class="normal"></highlight></codeline>
+<codeline lineno="714"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="715"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_FLASH_DISABLE_IT(__INTERRUPT__)<sp/><sp/><sp/>do<sp/>{<sp/>if(((__INTERRUPT__)<sp/>&amp;<sp/>(FLASH_FLAG_CR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/>{<sp/>CLEAR_BIT(FLASH-&gt;CR,<sp/>(1uL<sp/>&lt;&lt;<sp/>((__INTERRUPT__)<sp/>&amp;<sp/>0x1Fu)));<sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="716"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if(((__INTERRUPT__)<sp/>&amp;<sp/>(FLASH_FLAG_ECCR1_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/>{<sp/>CLEAR_BIT(FLASH-&gt;ECCR,<sp/>(1uL<sp/>&lt;&lt;<sp/>((__INTERRUPT__)<sp/>&amp;<sp/>0x1Fu)));<sp/>}<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="717"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if(((__INTERRUPT__)<sp/>&amp;<sp/>(FLASH_FLAG_ECCR2_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/>{<sp/>CLEAR_BIT(FLASH-&gt;ECC2R,<sp/>(1uL<sp/>&lt;&lt;<sp/>((__INTERRUPT__)<sp/>&amp;<sp/>0x1Fu)));<sp/>}<sp/><sp/>\</highlight></codeline>
+<codeline lineno="718"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while(0U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="719"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="720" refid="group___f_l_a_s_h___interrupt_1ga1f40f507b5d4b3a4da68e4244a1097ee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_FLASH_DISABLE_IT(__INTERRUPT__)<sp/><sp/><sp/>do<sp/>{<sp/>if(((__INTERRUPT__)<sp/>&amp;<sp/>(FLASH_FLAG_CR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/>{<sp/>CLEAR_BIT(FLASH-&gt;CR,<sp/>(1uL<sp/>&lt;&lt;<sp/>((__INTERRUPT__)<sp/>&amp;<sp/>0x1Fu)));<sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="721"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if(((__INTERRUPT__)<sp/>&amp;<sp/>(FLASH_FLAG_ECCR1_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/>{<sp/>CLEAR_BIT(FLASH-&gt;ECCR,<sp/>(1uL<sp/>&lt;&lt;<sp/>((__INTERRUPT__)<sp/>&amp;<sp/>0x1Fu)));<sp/>}<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="722"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while(0U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="723"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="724"><highlight class="normal"></highlight></codeline>
+<codeline lineno="753"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="754"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_FLASH_GET_FLAG(__FLAG__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((((__FLAG__)<sp/>&amp;<sp/>(FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/>?<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="755"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(READ_BIT(FLASH-&gt;SR,<sp/>(1uL<sp/>&lt;&lt;<sp/>((__FLAG__)<sp/>&amp;<sp/>0x1Fu)))<sp/>!=<sp/>0x00u)<sp/>:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="756"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((((__FLAG__)<sp/>&amp;<sp/>(FLASH_FLAG_ECCR1_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/>?<sp/>\</highlight></codeline>
+<codeline lineno="757"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(READ_BIT(FLASH-&gt;ECCR,<sp/>(1uL<sp/>&lt;&lt;<sp/>((__FLAG__)<sp/>&amp;<sp/>0x1Fu)))<sp/>!=<sp/>0x00u)<sp/>:<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="758"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(READ_BIT(FLASH-&gt;ECC2R,<sp/>(1uL<sp/>&lt;&lt;<sp/>((__FLAG__)<sp/>&amp;<sp/>0x1Fu)))<sp/>!=<sp/>0x00u)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="759"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="760" refid="group___f_l_a_s_h___interrupt_1ga0d3dd161fecc0e47c9e109c7c28672c1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_FLASH_GET_FLAG(__FLAG__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((((__FLAG__)<sp/>&amp;<sp/>(FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/>?<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="761"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(READ_BIT(FLASH-&gt;SR,<sp/>(1uL<sp/>&lt;&lt;<sp/>((__FLAG__)<sp/>&amp;<sp/>0x1Fu)))<sp/>!=<sp/>0x00u)<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="762"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(READ_BIT(FLASH-&gt;ECCR,<sp/>(1uL<sp/>&lt;&lt;<sp/>((__FLAG__)<sp/>&amp;<sp/>0x1Fu)))<sp/>!=<sp/>0x00u))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="763"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="764"><highlight class="normal"></highlight></codeline>
+<codeline lineno="789"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="790"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_FLASH_CLEAR_FLAG(__FLAG__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>do<sp/>{<sp/>if(((__FLAG__)<sp/>&amp;<sp/>(FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>FLASH-&gt;SR<sp/>=<sp/>(1uL<sp/>&lt;&lt;<sp/>((__FLAG__)<sp/>&amp;<sp/>0x1Fu));<sp/>}<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="791"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if(((__FLAG__)<sp/>&amp;<sp/>(FLASH_FLAG_ECCR1_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/>{<sp/>FLASH-&gt;ECCR<sp/>=<sp/>(1uL<sp/>&lt;&lt;<sp/>((__FLAG__)<sp/>&amp;<sp/>0x1Fu));<sp/>}<sp/><sp/>\</highlight></codeline>
+<codeline lineno="792"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if(((__FLAG__)<sp/>&amp;<sp/>(FLASH_FLAG_ECCR2_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/>{<sp/>FLASH-&gt;ECC2R<sp/>=<sp/>(1uL<sp/>&lt;&lt;<sp/>((__FLAG__)<sp/>&amp;<sp/>0x1Fu));<sp/>}<sp/><sp/>\</highlight></codeline>
+<codeline lineno="793"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while(0U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="794"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="795" refid="group___f_l_a_s_h___interrupt_1ga68e49c4675761e2ec35153e747de7622" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_FLASH_CLEAR_FLAG(__FLAG__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>do<sp/>{<sp/>if(((__FLAG__)<sp/>&amp;<sp/>(FLASH_FLAG_SR_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>FLASH-&gt;SR<sp/>=<sp/>(1uL<sp/>&lt;&lt;<sp/>((__FLAG__)<sp/>&amp;<sp/>0x1Fu));<sp/>}<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="796"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if(((__FLAG__)<sp/>&amp;<sp/>(FLASH_FLAG_ECCR1_ID<sp/>&lt;&lt;<sp/>FLASH_FLAG_REG_POS))<sp/>!=<sp/>0U)<sp/>{<sp/>FLASH-&gt;ECCR<sp/>=<sp/>(1uL<sp/>&lt;&lt;<sp/>((__FLAG__)<sp/>&amp;<sp/>0x1Fu));<sp/>}<sp/><sp/>\</highlight></codeline>
+<codeline lineno="797"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while(0U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="798"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="803"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Include<sp/>FLASH<sp/>HAL<sp/>Extended<sp/>module<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="804"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32g0xx__hal__flash__ex_8h" kindref="compound">stm32g0xx_hal_flash_ex.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="805"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>variables<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="809"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct_f_l_a_s_h___process_type_def" kindref="compound">FLASH_ProcessTypeDef</ref><sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>;</highlight></codeline>
+<codeline lineno="814"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>functions<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="819"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Program<sp/>operation<sp/>functions<sp/><sp/>***********************************************/</highlight></codeline>
+<codeline lineno="823" refid="group___f_l_a_s_h___exported___functions___group1_1gab94b3dc16c5c6fcc30ba2cb897de8bae" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><sp/><ref refid="group___f_l_a_s_h___exported___functions___group1_1gab94b3dc16c5c6fcc30ba2cb897de8bae" kindref="member">HAL_FLASH_Program</ref>(uint32_t<sp/>TypeProgram,<sp/>uint32_t<sp/>Address,<sp/>uint64_t<sp/>Data);</highlight></codeline>
+<codeline lineno="824" refid="group___f_l_a_s_h___exported___functions___group1_1ga85ee0375f81ac12bf0acd013189f68d3" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><sp/><ref refid="group___f_l_a_s_h___exported___functions___group1_1ga85ee0375f81ac12bf0acd013189f68d3" kindref="member">HAL_FLASH_Program_IT</ref>(uint32_t<sp/>TypeProgram,<sp/>uint32_t<sp/>Address,<sp/>uint64_t<sp/>Data);</highlight></codeline>
+<codeline lineno="825"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>FLASH<sp/>IRQ<sp/>handler<sp/>method<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="826" refid="group___f_l_a_s_h___exported___functions___group1_1ga083f13f6a000dfcb80c7a27853eba528" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h___exported___functions___group1_1ga083f13f6a000dfcb80c7a27853eba528" kindref="member">HAL_FLASH_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="827"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Callbacks<sp/>in<sp/>non<sp/>blocking<sp/>modes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="828" refid="group___f_l_a_s_h___exported___functions___group1_1ga71a7e85ede66fae4eadaf8854f81b5c8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h___exported___functions___group1_1ga71a7e85ede66fae4eadaf8854f81b5c8" kindref="member">HAL_FLASH_EndOfOperationCallback</ref>(uint32_t<sp/>ReturnValue);</highlight></codeline>
+<codeline lineno="829" refid="group___f_l_a_s_h___exported___functions___group1_1ga237e17bd9b1d257bd8e2880227b8484e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h___exported___functions___group1_1ga237e17bd9b1d257bd8e2880227b8484e" kindref="member">HAL_FLASH_OperationErrorCallback</ref>(uint32_t<sp/>ReturnValue);</highlight></codeline>
+<codeline lineno="834"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Peripheral<sp/>Control<sp/>functions<sp/><sp/>**********************************************/</highlight></codeline>
+<codeline lineno="838" refid="group___f_l_a_s_h___exported___functions___group2_1ga23d4ff42a8873bac585c92ce4f633747" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><sp/><ref refid="group___f_l_a_s_h___exported___functions___group2_1ga23d4ff42a8873bac585c92ce4f633747" kindref="member">HAL_FLASH_Unlock</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="839" refid="group___f_l_a_s_h___exported___functions___group2_1gae07eeca0b0aa9d5047f8df88d82f4bcd" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><sp/><ref refid="group___f_l_a_s_h___exported___functions___group2_1gae07eeca0b0aa9d5047f8df88d82f4bcd" kindref="member">HAL_FLASH_Lock</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="840"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Option<sp/>bytes<sp/>control<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="841" refid="group___f_l_a_s_h___exported___functions___group2_1ga6e8f380b7a938592f0b6f05d0ebf69c3" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><sp/><ref refid="group___f_l_a_s_h___exported___functions___group2_1ga6e8f380b7a938592f0b6f05d0ebf69c3" kindref="member">HAL_FLASH_OB_Unlock</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="842" refid="group___f_l_a_s_h___exported___functions___group2_1ga3ff599bd7eba88f7a169a537ccbf3e3f" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><sp/><ref refid="group___f_l_a_s_h___exported___functions___group2_1ga3ff599bd7eba88f7a169a537ccbf3e3f" kindref="member">HAL_FLASH_OB_Lock</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="843" refid="group___f_l_a_s_h___exported___functions___group2_1ga046c539c76aaae3d487d59193f74c9db" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><sp/><ref refid="group___f_l_a_s_h___exported___functions___group2_1ga046c539c76aaae3d487d59193f74c9db" kindref="member">HAL_FLASH_OB_Launch</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="848"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Peripheral<sp/>State<sp/>functions<sp/><sp/>************************************************/</highlight></codeline>
+<codeline lineno="852" refid="group___f_l_a_s_h___exported___functions___group3_1ga20e71ba6b2a09cd5b9f0bd369f842de3" refkind="member"><highlight class="normal">uint32_t<sp/><ref refid="group___f_l_a_s_h___exported___functions___group3_1ga20e71ba6b2a09cd5b9f0bd369f842de3" kindref="member">HAL_FLASH_GetError</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="861"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>types<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="865" refid="group___f_l_a_s_h___private__types_1gaf89afc110a32ac9dcf0d06b89ffd9224" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><sp/><ref refid="group___f_l_a_s_h___private__types_1gaf89afc110a32ac9dcf0d06b89ffd9224" kindref="member">FLASH_WaitForLastOperation</ref>(uint32_t<sp/>Timeout);</highlight></codeline>
+<codeline lineno="870"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>constants<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="874" refid="group___f_l_a_s_h___private___constants_1ga2329f89a17061e62bf5d160cc0962e5c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SIZE_DATA_REGISTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASHSIZE_BASE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="875"><highlight class="normal"></highlight></codeline>
+<codeline lineno="876"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="877"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_DUAL_BANK_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_R_BASE<sp/>+<sp/>0x20U)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="878"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SALES_TYPE_Pos<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(24U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="879"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SALES_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x3UL<sp/>&lt;&lt;<sp/>FLASH_SALES_TYPE_Pos)<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="880"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SALES_TYPE_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1UL<sp/>&lt;&lt;<sp/>FLASH_SALES_TYPE_Pos)<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="881"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SALES_TYPE_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x2UL<sp/>&lt;&lt;<sp/>FLASH_SALES_TYPE_Pos)<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="882"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SALES_VALUE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((*((uint32_t<sp/>*)PACKAGE_BASE))<sp/>&amp;<sp/>(FLASH_SALES_TYPE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="883"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OB_DUAL_BANK_VALUE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((*((uint32_t<sp/>*)OB_DUAL_BANK_BASE))<sp/>&amp;<sp/>(FLASH_OPTR_DUAL_BANK))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="884"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_BANK_NB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((FLASH_SALES_VALUE<sp/>==<sp/>0U)\</highlight></codeline>
+<codeline lineno="885"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>((FLASH_SALES_VALUE<sp/>==<sp/>FLASH_SALES_TYPE_0)<sp/>&amp;&amp;<sp/>(OB_DUAL_BANK_VALUE<sp/>==<sp/>0U)))?1U:2U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="886"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_BANK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_BANK_NB==1U)?(FLASH_SIZE):(FLASH_SIZE<sp/>&gt;&gt;<sp/>1U))<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="887"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="888" refid="group___f_l_a_s_h___private___constants_1gaa9034a4a03acf9350fa141303b5ab86a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_BANK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_SIZE)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="889"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="890"><highlight class="normal"></highlight></codeline>
+<codeline lineno="891" refid="group___f_l_a_s_h___private___constants_1ga4cc14e2c99ae7f8e5a8e371d03c8532c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_PAGE_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000800U<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="892" refid="group___f_l_a_s_h___private___constants_1ga3d98541dcb89735b8d2fd559b75d1ebf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_PAGE_NB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_BANK_SIZE/FLASH_PAGE_SIZE)<sp/></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>pages<sp/>per<sp/>bank<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="893" refid="group___f_l_a_s_h___private___constants_1ga76e8ea58ef37913dcdb61efae2d6ab8f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_TIMEOUT_VALUE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1000U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="894" refid="group___f_l_a_s_h___private___constants_1ga9f4e94ec0af00dc7fc7632b9d4112720" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_TYPENONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000U<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="896"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_PCROP_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="897"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SR_ERRORS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_SR_OPERR<sp/><sp/>|<sp/>FLASH_SR_PROGERR<sp/>|<sp/>FLASH_SR_WRPERR<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="898"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SR_PGAERR<sp/>|<sp/>FLASH_SR_SIZERR<sp/><sp/>|<sp/>FLASH_SR_PGSERR<sp/>|<sp/><sp/>\</highlight></codeline>
+<codeline lineno="899"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SR_MISERR<sp/>|<sp/>FLASH_SR_FASTERR<sp/>|<sp/>FLASH_SR_RDERR<sp/>|<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="900"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SR_OPTVERR)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="901"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="902"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SR_ERRORS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_SR_OPERR<sp/><sp/>|<sp/>FLASH_SR_PROGERR<sp/>|<sp/>FLASH_SR_WRPERR<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="903"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SR_PGAERR<sp/>|<sp/>FLASH_SR_SIZERR<sp/><sp/>|<sp/>FLASH_SR_PGSERR<sp/>|<sp/><sp/>\</highlight></codeline>
+<codeline lineno="904"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SR_MISERR<sp/>|<sp/>FLASH_SR_FASTERR<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="905" refid="group___f_l_a_s_h___private___constants_1ga58a73aff56bdb7f5b8b85639ff6809cb" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_SR_OPTVERR)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="906"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_PCROP_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="907"><highlight class="normal"></highlight></codeline>
+<codeline lineno="908"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="909"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SR_CLEAR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_SR_ERRORS<sp/>|<sp/>FLASH_SR_EOP<sp/>|<sp/>FLASH_SR_PESD)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="910"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="911" refid="group___f_l_a_s_h___private___constants_1ga300fa40384ef7d2f9c9dca779fb0efd3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SR_CLEAR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_SR_ERRORS<sp/>|<sp/>FLASH_SR_EOP)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="912"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="913"><highlight class="normal"></highlight></codeline>
+<codeline lineno="914"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Internal<sp/>defines<sp/>for<sp/>HAL<sp/>macro<sp/>usage<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="915" refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_REG_POS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>16u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="916" refid="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_SR_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="917" refid="group___f_l_a_s_h___private___constants_1ga640f48347791c15967d7eeda287f66c9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_CR_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="918" refid="group___f_l_a_s_h___private___constants_1ga12fc6723eee1c92a9ccbbea964c69e81" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_ECCR1_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="919" refid="group___f_l_a_s_h___private___constants_1gad53ca50925d6869ab0e65cf0f8c96dc8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_FLAG_ECCR2_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="920"><highlight class="normal"></highlight></codeline>
+<codeline lineno="925"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>macros<sp/>------------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="929" refid="group___f_l_a_s_h___private___macros_1gad61c3f03e200c830de6065fd5988a699" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_FLASH_MAIN_MEM_ADDRESS(__ADDRESS__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__ADDRESS__)<sp/>&gt;=<sp/>(FLASH_BASE))\</highlight></codeline>
+<codeline lineno="930"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>((__ADDRESS__)<sp/>&lt;=<sp/>(FLASH_BASE<sp/>+<sp/>FLASH_SIZE<sp/>-<sp/>1UL)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="931"><highlight class="normal"></highlight></codeline>
+<codeline lineno="932" refid="group___f_l_a_s_h___private___macros_1ga9a7dbfac79dc9131c4437bf588892b25" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_FLASH_MAIN_FIRSTHALF_MEM_ADDRESS(__ADDRESS__)<sp/><sp/>(((__ADDRESS__)<sp/>&gt;=<sp/>(FLASH_BASE))\</highlight></codeline>
+<codeline lineno="933"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>((__ADDRESS__)<sp/>&lt;=<sp/>(FLASH_BASE<sp/>+<sp/>FLASH_BANK_SIZE<sp/>-<sp/>1UL)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="934"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="935"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_FLASH_MAIN_SECONDHALF_MEM_ADDRESS(__ADDRESS__)<sp/>(((__ADDRESS__)<sp/>&gt;=<sp/>(FLASH_BASE<sp/>+<sp/>FLASH_BANK_SIZE))\</highlight></codeline>
+<codeline lineno="936"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>((__ADDRESS__)<sp/>&lt;=<sp/>(FLASH_BASE<sp/>+<sp/>FLASH_SIZE<sp/>-<sp/>1UL)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="937"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="938"><highlight class="normal"></highlight></codeline>
+<codeline lineno="939" refid="group___f_l_a_s_h___private___macros_1gaab0084e7763398c3757f2cbab09c1a4b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_FLASH_PROGRAM_MAIN_MEM_ADDRESS(__ADDRESS__)<sp/>(((__ADDRESS__)<sp/>&gt;=<sp/>(FLASH_BASE))\</highlight></codeline>
+<codeline lineno="940"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>((__ADDRESS__)<sp/>&lt;=<sp/>(FLASH_BASE<sp/>+<sp/>FLASH_SIZE<sp/>-<sp/>8UL)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="941"><highlight class="normal"></highlight></codeline>
+<codeline lineno="942" refid="group___f_l_a_s_h___private___macros_1ga5118b5e17b62de15351f690cfed8d357" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_FLASH_PROGRAM_OTP_ADDRESS(__ADDRESS__)<sp/><sp/><sp/><sp/><sp/><sp/>(((__ADDRESS__)<sp/>&gt;=<sp/>0x1FFF7000U)\</highlight></codeline>
+<codeline lineno="943"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>((__ADDRESS__)<sp/>&lt;=<sp/>(0x1FFF7400U<sp/>-<sp/>8UL)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="944"><highlight class="normal"></highlight></codeline>
+<codeline lineno="945" refid="group___f_l_a_s_h___private___macros_1gac07480adefa0f54a920561a97c2e5b8a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_FLASH_PROGRAM_ADDRESS(__ADDRESS__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((IS_FLASH_PROGRAM_MAIN_MEM_ADDRESS(__ADDRESS__))\</highlight></codeline>
+<codeline lineno="946"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>(IS_FLASH_PROGRAM_OTP_ADDRESS(__ADDRESS__)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="947"><highlight class="normal"></highlight></codeline>
+<codeline lineno="948" refid="group___f_l_a_s_h___private___macros_1gaa8232c18c001193e0bd845812463f3cd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_FLASH_FAST_PROGRAM_ADDRESS(__ADDRESS__)<sp/><sp/><sp/><sp/><sp/>(((__ADDRESS__)<sp/>&gt;=<sp/>(FLASH_BASE))\</highlight></codeline>
+<codeline lineno="949"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>((__ADDRESS__)<sp/>&lt;=<sp/>(FLASH_BASE<sp/>+<sp/>FLASH_SIZE<sp/>-<sp/>256UL)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="950"><highlight class="normal"></highlight></codeline>
+<codeline lineno="951" refid="group___f_l_a_s_h___private___macros_1gad91fb7bc62a909243b53001188ff7234" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_FLASH_PAGE(__PAGE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PAGE__)<sp/>&lt;<sp/>FLASH_PAGE_NB)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="952"><highlight class="normal"></highlight></codeline>
+<codeline lineno="953"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="954"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_FLASH_BANK(__BANK__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="955"><highlight class="preprocessor"><sp/><sp/>((FLASH_BANK_NB<sp/>==<sp/>2U)<sp/>?<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="956"><highlight class="preprocessor"><sp/><sp/><sp/>(((__BANK__)<sp/>==<sp/>FLASH_BANK_1)<sp/><sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="957"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>((__BANK__)<sp/>==<sp/>FLASH_BANK_2)<sp/><sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="958"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>((__BANK__)<sp/>==<sp/>(FLASH_BANK_2<sp/>|<sp/>FLASH_BANK_1))):<sp/>\</highlight></codeline>
+<codeline lineno="959"><highlight class="preprocessor"><sp/><sp/><sp/>((__BANK__)<sp/>==<sp/>FLASH_BANK_1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="960"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="961" refid="group___f_l_a_s_h___private___macros_1ga63d7a9a5d75e71de560a965b5e276ce6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_FLASH_BANK(__BANK__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__BANK__)<sp/>==<sp/>FLASH_BANK_1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="962"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="963"><highlight class="normal"></highlight></codeline>
+<codeline lineno="964" refid="group___f_l_a_s_h___private___macros_1ga4d40dfc92b46733adbabaae5f3db59ab" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_FLASH_TYPEERASE(__VALUE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__VALUE__)<sp/>==<sp/>FLASH_TYPEERASE_PAGES)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="965"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__VALUE__)<sp/>==<sp/>FLASH_TYPEERASE_MASS))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="966"><highlight class="normal"></highlight></codeline>
+<codeline lineno="967" refid="group___f_l_a_s_h___private___macros_1gab96611359d7c156f22f1b37929933e34" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_FLASH_TYPEPROGRAM(__VALUE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__VALUE__)<sp/>==<sp/>FLASH_TYPEPROGRAM_DOUBLEWORD)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="968"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__VALUE__)<sp/>==<sp/>FLASH_TYPEPROGRAM_FAST))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="969"><highlight class="normal"></highlight></codeline>
+<codeline lineno="970" refid="group___f_l_a_s_h___private___macros_1gaaced64683b0f15981a06f3d7581387a4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_OPTIONBYTE(__VALUE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((((__VALUE__)<sp/>&amp;<sp/>OPTIONBYTE_ALL)<sp/>!=<sp/>0x00U)<sp/>&amp;&amp;<sp/>\</highlight></codeline>
+<codeline lineno="971"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__VALUE__)<sp/>&amp;<sp/>~OPTIONBYTE_ALL)<sp/>==<sp/>0x00U))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="972"><highlight class="normal"></highlight></codeline>
+<codeline lineno="973"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="974"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_OB_WRPAREA(__VALUE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="975"><highlight class="preprocessor"><sp/><sp/>((FLASH_BANK_NB<sp/>==<sp/>2U)<sp/>?<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="976"><highlight class="preprocessor"><sp/><sp/><sp/>(((__VALUE__)<sp/>==<sp/>OB_WRPAREA_ZONE_A)<sp/>||<sp/>((__VALUE__)<sp/>==<sp/>OB_WRPAREA_ZONE_B)<sp/>||<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="977"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>((__VALUE__)<sp/>==<sp/>OB_WRPAREA_ZONE2_A)<sp/>||<sp/>((__VALUE__)<sp/>==<sp/>OB_WRPAREA_ZONE2_B))<sp/>:<sp/><sp/>\</highlight></codeline>
+<codeline lineno="978"><highlight class="preprocessor"><sp/><sp/><sp/>(((__VALUE__)<sp/>==<sp/>OB_WRPAREA_ZONE_A)<sp/>||<sp/>((__VALUE__)<sp/>==<sp/>OB_WRPAREA_ZONE_B)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="979"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="980" refid="group___f_l_a_s_h___private___macros_1gaa650b86609eea7c5f6e21e482670434e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_OB_WRPAREA(__VALUE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__VALUE__)<sp/>==<sp/>OB_WRPAREA_ZONE_A)\</highlight></codeline>
+<codeline lineno="981"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>((__VALUE__)<sp/>==<sp/>OB_WRPAREA_ZONE_B))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="982"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="983"><highlight class="normal"></highlight></codeline>
+<codeline lineno="984" refid="group___f_l_a_s_h___private___macros_1ga056f83cc3381fed3f2d51de9768ebc4c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_OB_RDP_LEVEL(__LEVEL__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__LEVEL__)<sp/>==<sp/>OB_RDP_LEVEL_0)<sp/><sp/><sp/>||\</highlight></codeline>
+<codeline lineno="985"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__LEVEL__)<sp/>==<sp/>OB_RDP_LEVEL_1)<sp/><sp/><sp/>||\</highlight></codeline>
+<codeline lineno="986"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__LEVEL__)<sp/>==<sp/>OB_RDP_LEVEL_2))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="987"><highlight class="normal"></highlight></codeline>
+<codeline lineno="988" refid="group___f_l_a_s_h___private___macros_1ga7e7e9b0cf2412d8a9c09c52019ac3919" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_OB_USER_TYPE(__TYPE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((((__TYPE__)<sp/>&amp;<sp/>OB_USER_ALL)<sp/>!=<sp/>0x00U)<sp/>&amp;&amp;<sp/>\</highlight></codeline>
+<codeline lineno="989"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__TYPE__)<sp/>&amp;<sp/>~OB_USER_ALL)<sp/>==<sp/>0x00U))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="990"><highlight class="normal"></highlight></codeline>
+<codeline lineno="991" refid="group___f_l_a_s_h___private___macros_1ga2d5322a0c5cfadffa23b543823a1e346" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_OB_USER_CONFIG(__TYPE__,__CONFIG__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((~(__TYPE__)<sp/>&amp;<sp/>(__CONFIG__))<sp/>==<sp/>0x00U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="992"><highlight class="normal"></highlight></codeline>
+<codeline lineno="993"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_PCROP_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="994"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="995"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_OB_PCROP_CONFIG(__CONFIG__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="996"><highlight class="preprocessor"><sp/><sp/>((FLASH_BANK_NB<sp/>==<sp/>2U)<sp/>?<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="997"><highlight class="preprocessor"><sp/><sp/><sp/>(((__CONFIG__)<sp/>&amp;<sp/>~(OB_PCROP_ZONE_A<sp/>|<sp/>OB_PCROP_ZONE_B<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="998"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OB_PCROP_ZONE2_A<sp/>|<sp/>OB_PCROP_ZONE2_B<sp/>|<sp/>OB_PCROP_RDP_ERASE))<sp/>==<sp/>0x00U):<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="999"><highlight class="preprocessor"><sp/><sp/><sp/>(((__CONFIG__)<sp/>&amp;<sp/>~(OB_PCROP_ZONE_A<sp/>|<sp/>OB_PCROP_ZONE_B<sp/>|<sp/>OB_PCROP_RDP_ERASE))<sp/>==<sp/>0x00U))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1000"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1001"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_OB_PCROP_CONFIG(__CONFIG__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__CONFIG__)\</highlight></codeline>
+<codeline lineno="1002"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<sp/>~(OB_PCROP_ZONE_A<sp/>|<sp/>OB_PCROP_ZONE_B<sp/>|<sp/>OB_PCROP_RDP_ERASE))<sp/>==<sp/>0x00U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1003"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1004"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_PCROP_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1005"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1006"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_SECURABLE_MEMORY_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1007"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_OB_SEC_BOOT_LOCK(__VALUE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__VALUE__)<sp/>==<sp/>OB_BOOT_ENTRY_FORCED_NONE)\</highlight></codeline>
+<codeline lineno="1008"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>((__VALUE__)<sp/>==<sp/>OB_BOOT_ENTRY_FORCED_FLASH))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1009"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1010"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_OB_SEC_SIZE(__VALUE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__VALUE__)<sp/>&lt;<sp/>(FLASH_PAGE_NB<sp/>+<sp/>1U))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1011"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_SECURABLE_MEMORY_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1012"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1013" refid="group___f_l_a_s_h___private___macros_1gad8585a26722685574b9586a771a9aa8a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_FLASH_LATENCY(__LATENCY__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__LATENCY__)<sp/>==<sp/>FLASH_LATENCY_0)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="1014"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__LATENCY__)<sp/>==<sp/>FLASH_LATENCY_1)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="1015"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__LATENCY__)<sp/>==<sp/>FLASH_LATENCY_2))</highlight></codeline>
+<codeline lineno="1028"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1029"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1030"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1031"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1032"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STM32G0xx_HAL_FLASH_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1033"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h"/>
+  </compounddef>
+</doxygen>

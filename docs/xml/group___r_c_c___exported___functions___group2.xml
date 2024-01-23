@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___r_c_c___exported___functions___group2" kind="group">
+    <compoundname>RCC_Exported_Functions_Group2</compoundname>
+    <title>RCC_Exported_Functions_Group2</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___r_c_c___exported___functions___group2_1ga9de46b9c4ecdb1a5e34136b051a6132c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_RCC_MCOConfig</definition>
+        <argsstring>(uint32_t RCC_MCOx, uint32_t RCC_MCOSource, uint32_t RCC_MCODiv)</argsstring>
+        <name>HAL_RCC_MCOConfig</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>RCC_MCOx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>RCC_MCOSource</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>RCC_MCODiv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3098" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" declline="3098" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_c_c___exported___functions___group2_1gaa0f440ce71c18e95b12b2044cc044bea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_RCC_EnableCSS</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_RCC_EnableCSS</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3099" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" declline="3099" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_c_c___exported___functions___group2_1gafe14ba91cb8921dd4801cd2540dd531b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_RCC_EnableLSECSS</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_RCC_EnableLSECSS</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3100" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" declline="3100" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_c_c___exported___functions___group2_1ga77435ffa1ac91ae8e9b1920688a68038" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_RCC_DisableLSECSS</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_RCC_DisableLSECSS</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3101" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" declline="3101" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_c_c___exported___functions___group2_1ga887cafe88b21a059061b077a1e3fa7d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t HAL_RCC_GetSysClockFreq</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_RCC_GetSysClockFreq</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3102" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" declline="3102" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_c_c___exported___functions___group2_1ga38d6c5c7a5d8758849912c9aa0a2156d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t HAL_RCC_GetHCLKFreq</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_RCC_GetHCLKFreq</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3103" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" declline="3103" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_c_c___exported___functions___group2_1gab3042d8ac5703ac696cabf0ee461c599" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t HAL_RCC_GetPCLK1Freq</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_RCC_GetPCLK1Freq</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3104" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" declline="3104" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_c_c___exported___functions___group2_1gae2f9413fc447c2d7d6af3a8669c77b36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_RCC_GetOscConfig</definition>
+        <argsstring>(RCC_OscInitTypeDef *RCC_OscInitStruct)</argsstring>
+        <name>HAL_RCC_GetOscConfig</name>
+        <param>
+          <type><ref refid="struct_r_c_c___osc_init_type_def" kindref="compound">RCC_OscInitTypeDef</ref> *</type>
+          <declname>RCC_OscInitStruct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3105" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" declline="3105" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_c_c___exported___functions___group2_1gabc95375dfca279d88b9ded9d063d2323" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_RCC_GetClockConfig</definition>
+        <argsstring>(RCC_ClkInitTypeDef *RCC_ClkInitStruct, uint32_t *pFLatency)</argsstring>
+        <name>HAL_RCC_GetClockConfig</name>
+        <param>
+          <type><ref refid="struct_r_c_c___clk_init_type_def" kindref="compound">RCC_ClkInitTypeDef</ref> *</type>
+          <declname>RCC_ClkInitStruct</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>pFLatency</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3106" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" declline="3106" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_c_c___exported___functions___group2_1ga77803b82af5414509017b2c57e8bc1a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t HAL_RCC_GetResetSource</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_RCC_GetResetSource</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3107" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" declline="3107" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_c_c___exported___functions___group2_1ga0c124cf403362750513cae7fb6e6b195" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_RCC_NMI_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_RCC_NMI_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3109" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" declline="3109" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_c_c___exported___functions___group2_1gaa05b9157de5a48617bd06eb6aafa68aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_RCC_CSSCallback</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_RCC_CSSCallback</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3111" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" declline="3111" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_c_c___exported___functions___group2_1ga229639f8ae637843fd9b41676b5b284d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_RCC_LSECSSCallback</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_RCC_LSECSSCallback</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3112" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" declline="3112" declcolumn="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

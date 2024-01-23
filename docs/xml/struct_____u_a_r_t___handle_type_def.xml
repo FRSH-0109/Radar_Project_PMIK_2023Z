@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_____u_a_r_t___handle_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>__UART_HandleTypeDef</compoundname>
+    <includes refid="stm32g0xx__hal__uart_8h" local="no">stm32g0xx_hal_uart.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1a2b30b6d22df80fbebd8ceefc6f162310" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_u_s_a_r_t___type_def" kindref="compound">USART_TypeDef</ref> *</type>
+        <definition>USART_TypeDef* Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <qualifiedname>__UART_HandleTypeDef::Instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART registers base address <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="220" column="28" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1a6b5ab0619ea07655a7f3bc92f78fafaa" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_u_a_r_t___init_type_def" kindref="compound">UART_InitTypeDef</ref></type>
+        <definition>UART_InitTypeDef Init</definition>
+        <argsstring></argsstring>
+        <name>Init</name>
+        <qualifiedname>__UART_HandleTypeDef::Init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART communication parameters <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="222" column="28" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1a4785c6c4b0e998062a50b706a739c6c5" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_u_a_r_t___adv_feature_init_type_def" kindref="compound">UART_AdvFeatureInitTypeDef</ref></type>
+        <definition>UART_AdvFeatureInitTypeDef AdvancedInit</definition>
+        <argsstring></argsstring>
+        <name>AdvancedInit</name>
+        <qualifiedname>__UART_HandleTypeDef::AdvancedInit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Advanced Features initialization parameters </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="224" column="30" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1a56746f60fbacd516e52e344de94f8195" prot="public" static="no" mutable="no">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* pTxBuffPtr</definition>
+        <argsstring></argsstring>
+        <name>pTxBuffPtr</name>
+        <qualifiedname>__UART_HandleTypeDef::pTxBuffPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to UART Tx transfer Buffer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="226" column="28" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1a80907b65d6f9541bc0dee444d16bc45b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TxXferSize</definition>
+        <argsstring></argsstring>
+        <name>TxXferSize</name>
+        <qualifiedname>__UART_HandleTypeDef::TxXferSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Tx Transfer size <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="228" column="28" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1a1823437fbed80bdd1510782ced4e5532" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TxXferCount</definition>
+        <argsstring></argsstring>
+        <name>TxXferCount</name>
+        <qualifiedname>__UART_HandleTypeDef::TxXferCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Tx Transfer Counter <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="230" column="28" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1a7cee540cb21048ac48ba17355440e668" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* pRxBuffPtr</definition>
+        <argsstring></argsstring>
+        <name>pRxBuffPtr</name>
+        <qualifiedname>__UART_HandleTypeDef::pRxBuffPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to UART Rx transfer Buffer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="232" column="28" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1ac12f5f1f6295b3c3327d5feabf5a96fb" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t RxXferSize</definition>
+        <argsstring></argsstring>
+        <name>RxXferSize</name>
+        <qualifiedname>__UART_HandleTypeDef::RxXferSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Rx Transfer size <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="234" column="28" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1ad95a26d6b12b7087bba3d1b769175db2" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t RxXferCount</definition>
+        <argsstring></argsstring>
+        <name>RxXferCount</name>
+        <qualifiedname>__UART_HandleTypeDef::RxXferCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Rx Transfer Counter <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="236" column="28" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1ab8dae64f3b86c2eb2b7a080fcdee3ef4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Mask</definition>
+        <argsstring></argsstring>
+        <name>Mask</name>
+        <qualifiedname>__UART_HandleTypeDef::Mask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Rx RDR register mask <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="238" column="28" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1af1e1c91773389b7106a54bcc8d48b64e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FifoMode</definition>
+        <argsstring></argsstring>
+        <name>FifoMode</name>
+        <qualifiedname>__UART_HandleTypeDef::FifoMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies if the FIFO mode is being used. This parameter can be a value of <ref refid="group___u_a_r_t_ex___f_i_f_o__mode" kindref="compound">UARTEx FIFO mode</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="240" column="28" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1a3cd3fa87f15dcbca9a876ec343ccf3b7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t NbRxDataToProcess</definition>
+        <argsstring></argsstring>
+        <name>NbRxDataToProcess</name>
+        <qualifiedname>__UART_HandleTypeDef::NbRxDataToProcess</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of data to process during RX ISR execution </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="243" column="28" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1a4edc9627c21dad457c2cfadf59f08b45" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t NbTxDataToProcess</definition>
+        <argsstring></argsstring>
+        <name>NbTxDataToProcess</name>
+        <qualifiedname>__UART_HandleTypeDef::NbTxDataToProcess</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of data to process during TX ISR execution </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="245" column="28" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1a861b12a5639c751ef2c54a2508b7919f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> <ref refid="group___u_a_r_t___exported___types_1ga9f272475ea543a68fd8cb19f03a9bce9" kindref="member">HAL_UART_RxTypeTypeDef</ref></type>
+        <definition>__IO HAL_UART_RxTypeTypeDef ReceptionType</definition>
+        <argsstring></argsstring>
+        <name>ReceptionType</name>
+        <qualifiedname>__UART_HandleTypeDef::ReceptionType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of ongoing reception <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="247" column="31" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1a372214fec6d84261294a8783e9a10ef2" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> <ref refid="group___u_a_r_t___exported___types_1gadddf3d5480235c945dc8eec58f961203" kindref="member">HAL_UART_RxEventTypeTypeDef</ref></type>
+        <definition>__IO HAL_UART_RxEventTypeTypeDef RxEventType</definition>
+        <argsstring></argsstring>
+        <name>RxEventType</name>
+        <qualifiedname>__UART_HandleTypeDef::RxEventType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of Rx Event <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="249" column="36" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1a0926a4022cd4341cf25b918a7d74f9b8" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* RxISR) (struct __UART_HandleTypeDef *huart)</definition>
+        <argsstring>)(struct __UART_HandleTypeDef *huart)</argsstring>
+        <name>RxISR</name>
+        <qualifiedname>__UART_HandleTypeDef::RxISR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function pointer on Rx IRQ handler </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="251" column="3" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1a0cdae59c1d16b3bd4bcba349503728ed" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* TxISR) (struct __UART_HandleTypeDef *huart)</definition>
+        <argsstring>)(struct __UART_HandleTypeDef *huart)</argsstring>
+        <name>TxISR</name>
+        <qualifiedname>__UART_HandleTypeDef::TxISR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function pointer on Tx IRQ handler </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="253" column="3" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1a33e13c28b1a70e6164417abb026d7a22" prot="public" static="no" mutable="no">
+        <type><ref refid="group___d_m_a___exported___types_1ga41b754a906b86bce54dc79938970138b" kindref="member">DMA_HandleTypeDef</ref> *</type>
+        <definition>DMA_HandleTypeDef* hdmatx</definition>
+        <argsstring></argsstring>
+        <name>hdmatx</name>
+        <qualifiedname>__UART_HandleTypeDef::hdmatx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Tx DMA Handle parameters <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="255" column="28" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1abd0aeec20298a55d89a440320e35634f" prot="public" static="no" mutable="no">
+        <type><ref refid="group___d_m_a___exported___types_1ga41b754a906b86bce54dc79938970138b" kindref="member">DMA_HandleTypeDef</ref> *</type>
+        <definition>DMA_HandleTypeDef* hdmarx</definition>
+        <argsstring></argsstring>
+        <name>hdmarx</name>
+        <qualifiedname>__UART_HandleTypeDef::hdmarx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Rx DMA Handle parameters <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="257" column="28" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1ad4cf225029dbefe8d3fe660c33b8bb6b" prot="public" static="no" mutable="no">
+        <type><ref refid="stm32g0xx__hal__def_8h_1ab367482e943333a1299294eadaad284b" kindref="member">HAL_LockTypeDef</ref></type>
+        <definition>HAL_LockTypeDef Lock</definition>
+        <argsstring></argsstring>
+        <name>Lock</name>
+        <qualifiedname>__UART_HandleTypeDef::Lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Locking object <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="259" column="29" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1ab596705b6ce037e8debc149ccee148da" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> <ref refid="group___u_a_r_t___exported___types_1ga94c58ae1f4dbcf6032224edfc93a6e19" kindref="member">HAL_UART_StateTypeDef</ref></type>
+        <definition>__IO HAL_UART_StateTypeDef gState</definition>
+        <argsstring></argsstring>
+        <name>gState</name>
+        <qualifiedname>__UART_HandleTypeDef::gState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART state information related to global Handle management and also related to Tx operations. This parameter can be a value of <ref refid="group___u_a_r_t___exported___types_1ga94c58ae1f4dbcf6032224edfc93a6e19" kindref="member">HAL_UART_StateTypeDef</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="261" column="33" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1a198c30da19a1529e1665bec6dc455815" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> <ref refid="group___u_a_r_t___exported___types_1ga94c58ae1f4dbcf6032224edfc93a6e19" kindref="member">HAL_UART_StateTypeDef</ref></type>
+        <definition>__IO HAL_UART_StateTypeDef RxState</definition>
+        <argsstring></argsstring>
+        <name>RxState</name>
+        <qualifiedname>__UART_HandleTypeDef::RxState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART state information related to Rx operations. This parameter can be a value of <ref refid="group___u_a_r_t___exported___types_1ga94c58ae1f4dbcf6032224edfc93a6e19" kindref="member">HAL_UART_StateTypeDef</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="265" column="33" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____u_a_r_t___handle_type_def_1a123c5063e6a3b1901b2fbe5f88c53a7e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t ErrorCode</definition>
+        <argsstring></argsstring>
+        <name>ErrorCode</name>
+        <qualifiedname>__UART_HandleTypeDef::ErrorCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Error code <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="268" column="33" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>UART handle Structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>DMAMUX_ChannelStatus_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___channel_status___type_def"/>
+      </node>
+      <node id="8">
+        <label>DMAMUX_Channel_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___channel___type_def"/>
+      </node>
+      <node id="11">
+        <label>DMAMUX_RequestGenStatus_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___request_gen_status___type_def"/>
+      </node>
+      <node id="10">
+        <label>DMAMUX_RequestGen_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___request_gen___type_def"/>
+      </node>
+      <node id="6">
+        <label>DMA_Channel_TypeDef</label>
+        <link refid="struct_d_m_a___channel___type_def"/>
+      </node>
+      <node id="7">
+        <label>DMA_InitTypeDef</label>
+        <link refid="struct_d_m_a___init_type_def"/>
+      </node>
+      <node id="4">
+        <label>UART_AdvFeatureInitTypeDef</label>
+        <link refid="struct_u_a_r_t___adv_feature_init_type_def"/>
+      </node>
+      <node id="3">
+        <label>UART_InitTypeDef</label>
+        <link refid="struct_u_a_r_t___init_type_def"/>
+      </node>
+      <node id="2">
+        <label>USART_TypeDef</label>
+        <link refid="struct_u_s_a_r_t___type_def"/>
+      </node>
+      <node id="5">
+        <label>__DMA_HandleTypeDef</label>
+        <link refid="struct_____d_m_a___handle_type_def"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Instance</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Init</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>DMAmuxChannel</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>DMAmuxChannelStatus</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>DMAmuxRequestGen</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>DMAmuxRequestGenStatus</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>__UART_HandleTypeDef</label>
+        <link refid="struct_____u_a_r_t___handle_type_def"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Instance</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Init</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>AdvancedInit</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>hdmarx</edgelabel>
+          <edgelabel>hdmatx</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="218" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="219" bodyend="288"/>
+    <listofallmembers>
+      <member refid="struct_____u_a_r_t___handle_type_def_1a4785c6c4b0e998062a50b706a739c6c5" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>AdvancedInit</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1a123c5063e6a3b1901b2fbe5f88c53a7e" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>ErrorCode</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1af1e1c91773389b7106a54bcc8d48b64e" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>FifoMode</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1ab596705b6ce037e8debc149ccee148da" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>gState</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1abd0aeec20298a55d89a440320e35634f" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>hdmarx</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1a33e13c28b1a70e6164417abb026d7a22" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>hdmatx</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1a6b5ab0619ea07655a7f3bc92f78fafaa" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>Init</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1a2b30b6d22df80fbebd8ceefc6f162310" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>Instance</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1ad4cf225029dbefe8d3fe660c33b8bb6b" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>Lock</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1ab8dae64f3b86c2eb2b7a080fcdee3ef4" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>Mask</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1a3cd3fa87f15dcbca9a876ec343ccf3b7" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>NbRxDataToProcess</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1a4edc9627c21dad457c2cfadf59f08b45" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>NbTxDataToProcess</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1a7cee540cb21048ac48ba17355440e668" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>pRxBuffPtr</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1a56746f60fbacd516e52e344de94f8195" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>pTxBuffPtr</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1a861b12a5639c751ef2c54a2508b7919f" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>ReceptionType</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1a372214fec6d84261294a8783e9a10ef2" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>RxEventType</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1a0926a4022cd4341cf25b918a7d74f9b8" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>RxISR</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1a198c30da19a1529e1665bec6dc455815" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>RxState</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1ad95a26d6b12b7087bba3d1b769175db2" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>RxXferCount</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1ac12f5f1f6295b3c3327d5feabf5a96fb" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>RxXferSize</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1a0cdae59c1d16b3bd4bcba349503728ed" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>TxISR</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1a1823437fbed80bdd1510782ced4e5532" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>TxXferCount</name></member>
+      <member refid="struct_____u_a_r_t___handle_type_def_1a80907b65d6f9541bc0dee444d16bc45b" prot="public" virt="non-virtual"><scope>__UART_HandleTypeDef</scope><name>TxXferSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="tim_8h" kind="file" language="C++">
+    <compoundname>tim.h</compoundname>
+    <includes refid="main_8h" local="yes">main.h</includes>
+    <includedby refid="main_8c" local="yes">Core/Src/main.c</includedby>
+    <includedby refid="tim_8c" local="yes">Core/Src/tim.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Core/Inc/tim.h</label>
+        <link refid="tim_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="8">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="3">
+        <label>stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>stm32g0xx_hal_cortex.h</label>
+        <link refid="stm32g0xx__hal__cortex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stm32g0xx_hal_dma.h</label>
+        <link refid="stm32g0xx__hal__dma_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stm32g0xx_hal_dma_ex.h</label>
+        <link refid="stm32g0xx__hal__dma__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>stm32g0xx_hal_exti.h</label>
+        <link refid="stm32g0xx__hal__exti_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>stm32g0xx_hal_flash.h</label>
+        <link refid="stm32g0xx__hal__flash_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>stm32g0xx_hal_flash_ex.h</label>
+        <link refid="stm32g0xx__hal__flash__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stm32g0xx_hal_gpio.h</label>
+        <link refid="stm32g0xx__hal__gpio_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stm32g0xx_hal_gpio_ex.h</label>
+        <link refid="stm32g0xx__hal__gpio__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>stm32g0xx_hal_pwr.h</label>
+        <link refid="stm32g0xx__hal__pwr_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>stm32g0xx_hal_pwr_ex.h</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stm32g0xx_hal_rcc.h</label>
+        <link refid="stm32g0xx__hal__rcc_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stm32g0xx_hal_rcc_ex.h</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>stm32g0xx_hal_spi.h</label>
+        <link refid="stm32g0xx__hal__spi_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>stm32g0xx_hal_spi_ex.h</label>
+        <link refid="stm32g0xx__hal__spi__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>stm32g0xx_hal_tim.h</label>
+        <link refid="stm32g0xx__hal__tim_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>stm32g0xx_hal_tim_ex.h</label>
+        <link refid="stm32g0xx__hal__tim__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>stm32g0xx_hal_uart.h</label>
+        <link refid="stm32g0xx__hal__uart_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>stm32g0xx_hal_uart_ex.h</label>
+        <link refid="stm32g0xx__hal__uart__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stm32g0xx_ll_dma.h</label>
+        <link refid="stm32g0xx__ll__dma_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stm32g0xx_ll_dmamux.h</label>
+        <link refid="stm32g0xx__ll__dmamux_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stm32g0xx_ll_rcc.h</label>
+        <link refid="stm32g0xx__ll__rcc_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>stdbool.h</label>
+      </node>
+      <node id="9">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>Core/Inc/tim.h</label>
+        <link refid="tim_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="3">
+        <label>Core/Src/tim.c</label>
+        <link refid="tim_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="tim_8h_1aac3d2c59ee0e3bbae1b99529a154eb62" prot="public" static="no" extern="yes" mutable="no">
+        <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref></type>
+        <definition>TIM_HandleTypeDef htim3</definition>
+        <argsstring></argsstring>
+        <name>htim3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="35" column="26" bodyfile="Core/Src/tim.c" bodystart="27" bodyend="-1" declfile="Core/Inc/tim.h" declline="35" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="tim_8h_1ae4b8faf50eeb07577983d36e4c3894b8" prot="public" static="no" extern="yes" mutable="no">
+        <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref></type>
+        <definition>TIM_HandleTypeDef htim14</definition>
+        <argsstring></argsstring>
+        <name>htim14</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="37" column="26" bodyfile="Core/Src/tim.c" bodystart="28" bodyend="-1" declfile="Core/Inc/tim.h" declline="37" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="tim_8h_1af0bea8d8759a0d7e0e296edc9f5d6936" prot="public" static="no" extern="yes" mutable="no">
+        <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref></type>
+        <definition>TIM_HandleTypeDef htim16</definition>
+        <argsstring></argsstring>
+        <name>htim16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="39" column="26" bodyfile="Core/Src/tim.c" bodystart="29" bodyend="-1" declfile="Core/Inc/tim.h" declline="39" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="tim_8h_1a51c6d0c070f8c00f33ee08b4f1eb6e90" prot="public" static="no" extern="yes" mutable="no">
+        <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref></type>
+        <definition>TIM_HandleTypeDef htim17</definition>
+        <argsstring></argsstring>
+        <name>htim17</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="41" column="26" bodyfile="Core/Src/tim.c" bodystart="30" bodyend="-1" declfile="Core/Inc/tim.h" declline="41" declcolumn="26"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="tim_8h_1a7912f2916786a2c33cb6fb8259ade58c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_TIM3_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_TIM3_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="47" column="6" bodyfile="Core/Src/tim.c" bodystart="33" bodyend="71" declfile="Core/Inc/tim.h" declline="47" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tim_8h_1a34e45e5fe68cc66a86b26df2da7e18b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_TIM14_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_TIM14_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="48" column="6" bodyfile="Core/Src/tim.c" bodystart="73" bodyend="97" declfile="Core/Inc/tim.h" declline="48" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tim_8h_1ac648e7f125deef46d41cd8b3f632efe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_TIM16_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_TIM16_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="49" column="6" bodyfile="Core/Src/tim.c" bodystart="99" bodyend="155" declfile="Core/Inc/tim.h" declline="49" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tim_8h_1af7d58ba47b8cffa9bf63d7021a7d5d77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_TIM17_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_TIM17_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="50" column="6" bodyfile="Core/Src/tim.c" bodystart="157" bodyend="182" declfile="Core/Inc/tim.h" declline="50" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tim_8h_1ae70bce6c39d0b570a7523b86738cec4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_TIM_MspPostInit</definition>
+        <argsstring>(TIM_HandleTypeDef *htim)</argsstring>
+        <name>HAL_TIM_MspPostInit</name>
+        <param>
+          <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+          <declname>htim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>TIM16 GPIO Configuration PA6 ---<mdash/>&gt; TIM16_CH1</para>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="52" column="6" bodyfile="Core/Src/tim.c" bodystart="240" bodyend="266" declfile="Core/Inc/tim.h" declline="52" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This file contains all the function prototypes for the <ref refid="tim_8c" kindref="compound">tim.c</ref> file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="attention"><para></para>
+</simplesect>
+Copyright (c) 2023 STMicroelectronics. All rights reserved.</para>
+<para>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Header<sp/>*/</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Header<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__TIM_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__TIM_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="main_8h" kindref="compound">main.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Includes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Includes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref><sp/><ref refid="tim_8h_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref><sp/><ref refid="tim_8h_1ae4b8faf50eeb07577983d36e4c3894b8" kindref="member">htim14</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref><sp/><ref refid="tim_8h_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref><sp/><ref refid="tim_8h_1a51c6d0c070f8c00f33ee08b4f1eb6e90" kindref="member">htim17</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Private<sp/>defines<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Private<sp/>defines<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tim_8h_1a7912f2916786a2c33cb6fb8259ade58c" kindref="member">MX_TIM3_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tim_8h_1a34e45e5fe68cc66a86b26df2da7e18b4" kindref="member">MX_TIM14_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tim_8h_1ac648e7f125deef46d41cd8b3f632efe0" kindref="member">MX_TIM16_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tim_8h_1af7d58ba47b8cffa9bf63d7021a7d5d77" kindref="member">MX_TIM17_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tim_8h_1ae70bce6c39d0b570a7523b86738cec4b" kindref="member">HAL_TIM_MspPostInit</ref>(<ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref><sp/>*htim);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Prototypes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Prototypes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__TIM_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Core/Inc/tim.h"/>
+  </compounddef>
+</doxygen>

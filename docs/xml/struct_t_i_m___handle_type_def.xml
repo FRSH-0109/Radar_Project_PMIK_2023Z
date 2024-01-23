@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_t_i_m___handle_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>TIM_HandleTypeDef</compoundname>
+    <includes refid="stm32g0xx__hal__tim_8h" local="no">stm32g0xx_hal_tim.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_t_i_m___handle_type_def_1a4076faade36875a6a05767135bb70b86" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref> *</type>
+        <definition>TIM_TypeDef* Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <qualifiedname>TIM_HandleTypeDef::Instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register base address <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="356" column="38" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_t_i_m___base___init_type_def" kindref="compound">TIM_Base_InitTypeDef</ref></type>
+        <definition>TIM_Base_InitTypeDef Init</definition>
+        <argsstring></argsstring>
+        <name>Init</name>
+        <qualifiedname>TIM_HandleTypeDef::Init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM Time Base required parameters <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="357" column="38" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___handle_type_def_1a57eac61d1d06cad73bdd26dabe961753" prot="public" static="no" mutable="no">
+        <type><ref refid="group___t_i_m___exported___types_1gaa3fa7bcbb4707f1151ccfc90a8cf9706" kindref="member">HAL_TIM_ActiveChannel</ref></type>
+        <definition>HAL_TIM_ActiveChannel Channel</definition>
+        <argsstring></argsstring>
+        <name>Channel</name>
+        <qualifiedname>TIM_HandleTypeDef::Channel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Active channel <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="358" column="38" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___handle_type_def_1ac129fca4918fc510a515d89370aa9006" prot="public" static="no" mutable="no">
+        <type><ref refid="group___d_m_a___exported___types_1ga41b754a906b86bce54dc79938970138b" kindref="member">DMA_HandleTypeDef</ref> *</type>
+        <definition>DMA_HandleTypeDef* hdma[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>hdma</name>
+        <qualifiedname>TIM_HandleTypeDef::hdma</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA Handlers array This array is accessed by a <ref refid="group___d_m_a___handle__index" kindref="compound">TIM DMA Handle Index</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="359" column="38" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___handle_type_def_1ad4cf225029dbefe8d3fe660c33b8bb6b" prot="public" static="no" mutable="no">
+        <type><ref refid="stm32g0xx__hal__def_8h_1ab367482e943333a1299294eadaad284b" kindref="member">HAL_LockTypeDef</ref></type>
+        <definition>HAL_LockTypeDef Lock</definition>
+        <argsstring></argsstring>
+        <name>Lock</name>
+        <qualifiedname>TIM_HandleTypeDef::Lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Locking object <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="361" column="38" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___handle_type_def_1ad4c7388b23a70d7a1a257d6c94df29f3" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> <ref refid="group___t_i_m___exported___types_1gae0994cf5970e56ca4903e9151f40010c" kindref="member">HAL_TIM_StateTypeDef</ref></type>
+        <definition>__IO HAL_TIM_StateTypeDef State</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <qualifiedname>TIM_HandleTypeDef::State</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM operation state <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="362" column="38" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___handle_type_def_1a69604c9883d863bc756d419905248d17" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> <ref refid="group___t_i_m___exported___types_1ga1a70fcbe9952e18af5c890e216a15f34" kindref="member">HAL_TIM_ChannelStateTypeDef</ref></type>
+        <definition>__IO HAL_TIM_ChannelStateTypeDef ChannelState[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>ChannelState</name>
+        <qualifiedname>TIM_HandleTypeDef::ChannelState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM channel operation state <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="363" column="38" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___handle_type_def_1a2d1fe96f7ffe53fe7a958dbccc125beb" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> <ref refid="group___t_i_m___exported___types_1ga1a70fcbe9952e18af5c890e216a15f34" kindref="member">HAL_TIM_ChannelStateTypeDef</ref></type>
+        <definition>__IO HAL_TIM_ChannelStateTypeDef ChannelNState[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>ChannelNState</name>
+        <qualifiedname>TIM_HandleTypeDef::ChannelNState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TIM complementary channel operation state <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="364" column="38" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___handle_type_def_1af9f37bc98fa1295cc65af8fbd2aab848" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> <ref refid="group___t_i_m___exported___types_1ga9b87df539778a60ea940a9d5ba793f7c" kindref="member">HAL_TIM_DMABurstStateTypeDef</ref></type>
+        <definition>__IO HAL_TIM_DMABurstStateTypeDef DMABurstState</definition>
+        <argsstring></argsstring>
+        <name>DMABurstState</name>
+        <qualifiedname>TIM_HandleTypeDef::DMABurstState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA burst operation state <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="365" column="38" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>TIM Time Base Handle Structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>DMAMUX_ChannelStatus_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___channel_status___type_def"/>
+      </node>
+      <node id="7">
+        <label>DMAMUX_Channel_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___channel___type_def"/>
+      </node>
+      <node id="10">
+        <label>DMAMUX_RequestGenStatus_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___request_gen_status___type_def"/>
+      </node>
+      <node id="9">
+        <label>DMAMUX_RequestGen_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___request_gen___type_def"/>
+      </node>
+      <node id="5">
+        <label>DMA_Channel_TypeDef</label>
+        <link refid="struct_d_m_a___channel___type_def"/>
+      </node>
+      <node id="6">
+        <label>DMA_InitTypeDef</label>
+        <link refid="struct_d_m_a___init_type_def"/>
+      </node>
+      <node id="3">
+        <label>TIM_Base_InitTypeDef</label>
+        <link refid="struct_t_i_m___base___init_type_def"/>
+      </node>
+      <node id="1">
+        <label>TIM_HandleTypeDef</label>
+        <link refid="struct_t_i_m___handle_type_def"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Instance</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Init</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>hdma</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TIM_TypeDef</label>
+        <link refid="struct_t_i_m___type_def"/>
+      </node>
+      <node id="4">
+        <label>__DMA_HandleTypeDef</label>
+        <link refid="struct_____d_m_a___handle_type_def"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Instance</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Init</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>DMAmuxChannel</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>DMAmuxChannelStatus</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>DMAmuxRequestGen</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>DMAmuxRequestGenStatus</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="353" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="355" bodyend="397"/>
+    <listofallmembers>
+      <member refid="struct_t_i_m___handle_type_def_1a57eac61d1d06cad73bdd26dabe961753" prot="public" virt="non-virtual"><scope>TIM_HandleTypeDef</scope><name>Channel</name></member>
+      <member refid="struct_t_i_m___handle_type_def_1a2d1fe96f7ffe53fe7a958dbccc125beb" prot="public" virt="non-virtual"><scope>TIM_HandleTypeDef</scope><name>ChannelNState</name></member>
+      <member refid="struct_t_i_m___handle_type_def_1a69604c9883d863bc756d419905248d17" prot="public" virt="non-virtual"><scope>TIM_HandleTypeDef</scope><name>ChannelState</name></member>
+      <member refid="struct_t_i_m___handle_type_def_1af9f37bc98fa1295cc65af8fbd2aab848" prot="public" virt="non-virtual"><scope>TIM_HandleTypeDef</scope><name>DMABurstState</name></member>
+      <member refid="struct_t_i_m___handle_type_def_1ac129fca4918fc510a515d89370aa9006" prot="public" virt="non-virtual"><scope>TIM_HandleTypeDef</scope><name>hdma</name></member>
+      <member refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" prot="public" virt="non-virtual"><scope>TIM_HandleTypeDef</scope><name>Init</name></member>
+      <member refid="struct_t_i_m___handle_type_def_1a4076faade36875a6a05767135bb70b86" prot="public" virt="non-virtual"><scope>TIM_HandleTypeDef</scope><name>Instance</name></member>
+      <member refid="struct_t_i_m___handle_type_def_1ad4cf225029dbefe8d3fe660c33b8bb6b" prot="public" virt="non-virtual"><scope>TIM_HandleTypeDef</scope><name>Lock</name></member>
+      <member refid="struct_t_i_m___handle_type_def_1ad4c7388b23a70d7a1a257d6c94df29f3" prot="public" virt="non-virtual"><scope>TIM_HandleTypeDef</scope><name>State</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

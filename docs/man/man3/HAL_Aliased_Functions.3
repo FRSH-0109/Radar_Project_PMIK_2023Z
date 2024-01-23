@@ -1,0 +1,90 @@
+.TH "HAL_Aliased_Functions" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+HAL_Aliased_Functions \- HAL Generic Aliased Functions maintained for legacy purpose
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHAL_EnableDBGSleepMode\fP   HAL_DBGMCU_EnableDBGSleepMode"
+.br
+.ti -1c
+.RI "#define \fBHAL_DisableDBGSleepMode\fP   HAL_DBGMCU_DisableDBGSleepMode"
+.br
+.ti -1c
+.RI "#define \fBHAL_EnableDBGStopMode\fP   \fBHAL_DBGMCU_EnableDBGStopMode\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_DisableDBGStopMode\fP   \fBHAL_DBGMCU_DisableDBGStopMode\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_EnableDBGStandbyMode\fP   \fBHAL_DBGMCU_EnableDBGStandbyMode\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_DisableDBGStandbyMode\fP   \fBHAL_DBGMCU_DisableDBGStandbyMode\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_DBG_LowPowerConfig\fP(Periph,  cmd)"
+.br
+.ti -1c
+.RI "#define \fBHAL_VREFINT_OutputSelect\fP   HAL_SYSCFG_VREFINT_OutputSelect"
+.br
+.ti -1c
+.RI "#define \fBHAL_Lock_Cmd\fP(cmd)   (((cmd)==\fBENABLE\fP) ? HAL_SYSCFG_Enable_Lock_VREFINT() : HAL_SYSCFG_Disable_Lock_VREFINT())"
+.br
+.ti -1c
+.RI "#define \fBHAL_VREFINT_Cmd\fP(cmd)   (((cmd)==\fBENABLE\fP)? HAL_SYSCFG_EnableVREFINT() : HAL_SYSCFG_DisableVREFINT())"
+.br
+.ti -1c
+.RI "#define \fBHAL_ADC_EnableBuffer_Cmd\fP(cmd)   (((cmd)==\fBENABLE\fP) ? HAL_ADCEx_EnableVREFINT() : HAL_ADCEx_DisableVREFINT())"
+.br
+.ti -1c
+.RI "#define \fBHAL_ADC_EnableBufferSensor_Cmd\fP(cmd)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define HAL_ADC_EnableBuffer_Cmd(cmd)   (((cmd)==\fBENABLE\fP) ? HAL_ADCEx_EnableVREFINT() : HAL_ADCEx_DisableVREFINT())"
+
+.SS "#define HAL_ADC_EnableBufferSensor_Cmd(cmd)"
+\fBValue:\fP.PP
+.nf
+                                              (((cmd\\
+                                              )==ENABLE) ?  HAL_ADCEx_EnableVREFINTTempSensor() : HAL_ADCEx_DisableVREFINTTempSensor())
+.fi
+
+.SS "#define HAL_DBG_LowPowerConfig(Periph, cmd)"
+\fBValue:\fP.PP
+.nf
+                                              (((cmd\\
+                                              )==ENABLE)? HAL_DBGMCU_DBG_EnableLowPowerConfig(Periph) : HAL_DBGMCU_DBG_DisableLowPowerConfig(Periph))
+.fi
+
+.SS "#define HAL_DisableDBGSleepMode   HAL_DBGMCU_DisableDBGSleepMode"
+
+.SS "#define HAL_DisableDBGStandbyMode   \fBHAL_DBGMCU_DisableDBGStandbyMode\fP"
+
+.SS "#define HAL_DisableDBGStopMode   \fBHAL_DBGMCU_DisableDBGStopMode\fP"
+
+.SS "#define HAL_EnableDBGSleepMode   HAL_DBGMCU_EnableDBGSleepMode"
+
+.SS "#define HAL_EnableDBGStandbyMode   \fBHAL_DBGMCU_EnableDBGStandbyMode\fP"
+
+.SS "#define HAL_EnableDBGStopMode   \fBHAL_DBGMCU_EnableDBGStopMode\fP"
+
+.SS "#define HAL_Lock_Cmd(cmd)   (((cmd)==\fBENABLE\fP) ? HAL_SYSCFG_Enable_Lock_VREFINT() : HAL_SYSCFG_Disable_Lock_VREFINT())"
+
+.SS "#define HAL_VREFINT_Cmd(cmd)   (((cmd)==\fBENABLE\fP)? HAL_SYSCFG_EnableVREFINT() : HAL_SYSCFG_DisableVREFINT())"
+
+.SS "#define HAL_VREFINT_OutputSelect   HAL_SYSCFG_VREFINT_OutputSelect"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

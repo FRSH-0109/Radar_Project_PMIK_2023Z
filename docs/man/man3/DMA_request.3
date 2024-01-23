@@ -1,0 +1,267 @@
+.TH "DMA_request" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DMA_request \- DMA request
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDMA_REQUEST_MEM2MEM\fP   LL_DMAMUX_REQ_MEM2MEM"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_GENERATOR0\fP   LL_DMAMUX_REQ_GENERATOR0"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_GENERATOR1\fP   LL_DMAMUX_REQ_GENERATOR1"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_GENERATOR2\fP   LL_DMAMUX_REQ_GENERATOR2"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_GENERATOR3\fP   LL_DMAMUX_REQ_GENERATOR3"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_ADC1\fP   LL_DMAMUX_REQ_ADC1"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_I2C1_RX\fP   LL_DMAMUX_REQ_I2C1_RX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_I2C1_TX\fP   LL_DMAMUX_REQ_I2C1_TX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_I2C2_RX\fP   LL_DMAMUX_REQ_I2C2_RX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_I2C2_TX\fP   LL_DMAMUX_REQ_I2C2_TX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_SPI1_RX\fP   LL_DMAMUX_REQ_SPI1_RX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_SPI1_TX\fP   LL_DMAMUX_REQ_SPI1_TX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_SPI2_RX\fP   LL_DMAMUX_REQ_SPI2_RX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_SPI2_TX\fP   LL_DMAMUX_REQ_SPI2_TX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM1_CH1\fP   LL_DMAMUX_REQ_TIM1_CH1"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM1_CH2\fP   LL_DMAMUX_REQ_TIM1_CH2"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM1_CH3\fP   LL_DMAMUX_REQ_TIM1_CH3"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM1_CH4\fP   LL_DMAMUX_REQ_TIM1_CH4"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM1_TRIG_COM\fP   LL_DMAMUX_REQ_TIM1_TRIG_COM"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM1_UP\fP   LL_DMAMUX_REQ_TIM1_UP"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM3_CH1\fP   LL_DMAMUX_REQ_TIM3_CH1"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM3_CH2\fP   LL_DMAMUX_REQ_TIM3_CH2"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM3_CH3\fP   LL_DMAMUX_REQ_TIM3_CH3"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM3_CH4\fP   LL_DMAMUX_REQ_TIM3_CH4"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM3_TRIG\fP   LL_DMAMUX_REQ_TIM3_TRIG"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM3_UP\fP   LL_DMAMUX_REQ_TIM3_UP"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM16_CH1\fP   LL_DMAMUX_REQ_TIM16_CH1"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM16_COM\fP   LL_DMAMUX_REQ_TIM16_COM"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM16_UP\fP   LL_DMAMUX_REQ_TIM16_UP"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM17_CH1\fP   LL_DMAMUX_REQ_TIM17_CH1"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM17_COM\fP   LL_DMAMUX_REQ_TIM17_COM"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM17_UP\fP   LL_DMAMUX_REQ_TIM17_UP"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_USART1_RX\fP   LL_DMAMUX_REQ_USART1_RX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_USART1_TX\fP   LL_DMAMUX_REQ_USART1_TX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_USART2_RX\fP   LL_DMAMUX_REQ_USART2_RX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_USART2_TX\fP   LL_DMAMUX_REQ_USART2_TX"
+.br
+.ti -1c
+.RI "#define \fBDMA_MAX_REQUEST\fP   LL_DMAMUX_MAX_REQ"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DMA_MAX_REQUEST   LL_DMAMUX_MAX_REQ"
+
+.SS "#define DMA_REQUEST_ADC1   LL_DMAMUX_REQ_ADC1"
+DMAMUX ADC1 request 
+.br
+ 
+.SS "#define DMA_REQUEST_GENERATOR0   LL_DMAMUX_REQ_GENERATOR0"
+DMAMUX request generator 0 
+.SS "#define DMA_REQUEST_GENERATOR1   LL_DMAMUX_REQ_GENERATOR1"
+DMAMUX request generator 1 
+.SS "#define DMA_REQUEST_GENERATOR2   LL_DMAMUX_REQ_GENERATOR2"
+DMAMUX request generator 2 
+.SS "#define DMA_REQUEST_GENERATOR3   LL_DMAMUX_REQ_GENERATOR3"
+DMAMUX request generator 3 
+.SS "#define DMA_REQUEST_I2C1_RX   LL_DMAMUX_REQ_I2C1_RX"
+DMAMUX I2C1 RX request 
+.br
+ 
+.SS "#define DMA_REQUEST_I2C1_TX   LL_DMAMUX_REQ_I2C1_TX"
+DMAMUX I2C1 TX request 
+.br
+ 
+.SS "#define DMA_REQUEST_I2C2_RX   LL_DMAMUX_REQ_I2C2_RX"
+DMAMUX I2C2 RX request 
+.br
+ 
+.SS "#define DMA_REQUEST_I2C2_TX   LL_DMAMUX_REQ_I2C2_TX"
+DMAMUX I2C2 TX request 
+.br
+ 
+.SS "#define DMA_REQUEST_MEM2MEM   LL_DMAMUX_REQ_MEM2MEM"
+memory to memory transfer 
+.br
+ 
+.SS "#define DMA_REQUEST_SPI1_RX   LL_DMAMUX_REQ_SPI1_RX"
+DMAMUX SPI1 RX request 
+.br
+ 
+.SS "#define DMA_REQUEST_SPI1_TX   LL_DMAMUX_REQ_SPI1_TX"
+DMAMUX SPI1 TX request 
+.br
+ 
+.SS "#define DMA_REQUEST_SPI2_RX   LL_DMAMUX_REQ_SPI2_RX"
+DMAMUX SPI2 RX request 
+.br
+ 
+.SS "#define DMA_REQUEST_SPI2_TX   LL_DMAMUX_REQ_SPI2_TX"
+DMAMUX SPI2 TX request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM16_CH1   LL_DMAMUX_REQ_TIM16_CH1"
+DMAMUX TIM16 CH1 request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM16_COM   LL_DMAMUX_REQ_TIM16_COM"
+DMAMUX TIM16 COM request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM16_UP   LL_DMAMUX_REQ_TIM16_UP"
+DMAMUX TIM16 UP request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM17_CH1   LL_DMAMUX_REQ_TIM17_CH1"
+DMAMUX TIM17 CH1 request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM17_COM   LL_DMAMUX_REQ_TIM17_COM"
+DMAMUX TIM17 COM request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM17_UP   LL_DMAMUX_REQ_TIM17_UP"
+DMAMUX TIM17 UP request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM1_CH1   LL_DMAMUX_REQ_TIM1_CH1"
+DMAMUX TIM1 CH1 request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM1_CH2   LL_DMAMUX_REQ_TIM1_CH2"
+DMAMUX TIM1 CH2 request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM1_CH3   LL_DMAMUX_REQ_TIM1_CH3"
+DMAMUX TIM1 CH3 request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM1_CH4   LL_DMAMUX_REQ_TIM1_CH4"
+DMAMUX TIM1 CH4 request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM1_TRIG_COM   LL_DMAMUX_REQ_TIM1_TRIG_COM"
+DMAMUX TIM1 TRIG COM request 
+.SS "#define DMA_REQUEST_TIM1_UP   LL_DMAMUX_REQ_TIM1_UP"
+DMAMUX TIM1 UP request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM3_CH1   LL_DMAMUX_REQ_TIM3_CH1"
+DMAMUX TIM3 CH1 request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM3_CH2   LL_DMAMUX_REQ_TIM3_CH2"
+DMAMUX TIM3 CH2 request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM3_CH3   LL_DMAMUX_REQ_TIM3_CH3"
+DMAMUX TIM3 CH3 request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM3_CH4   LL_DMAMUX_REQ_TIM3_CH4"
+DMAMUX TIM3 CH4 request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM3_TRIG   LL_DMAMUX_REQ_TIM3_TRIG"
+DMAMUX TIM3 TRIG request 
+.br
+ 
+.SS "#define DMA_REQUEST_TIM3_UP   LL_DMAMUX_REQ_TIM3_UP"
+DMAMUX TIM3 UP request 
+.br
+ 
+.SS "#define DMA_REQUEST_USART1_RX   LL_DMAMUX_REQ_USART1_RX"
+DMAMUX USART1 RX request 
+.br
+ 
+.SS "#define DMA_REQUEST_USART1_TX   LL_DMAMUX_REQ_USART1_TX"
+DMAMUX USART1 TX request 
+.br
+ 
+.SS "#define DMA_REQUEST_USART2_RX   LL_DMAMUX_REQ_USART2_RX"
+DMAMUX USART2 RX request 
+.br
+ 
+.SS "#define DMA_REQUEST_USART2_TX   LL_DMAMUX_REQ_USART2_TX"
+DMAMUX USART2 TX request 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

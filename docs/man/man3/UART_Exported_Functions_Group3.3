@@ -1,0 +1,65 @@
+.TH "UART_Exported_Functions_Group3" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Exported_Functions_Group3 \- Peripheral Control functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBHAL_UART_ReceiverTimeout_Config\fP (\fBUART_HandleTypeDef\fP *huart, uint32_t TimeoutValue)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_EnableReceiverTimeout\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_DisableReceiverTimeout\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_LIN_SendBreak\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_MultiProcessor_EnableMuteMode\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_MultiProcessor_DisableMuteMode\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_MultiProcessor_EnterMuteMode\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_HalfDuplex_EnableTransmitter\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_HalfDuplex_EnableReceiver\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBHAL_StatusTypeDef\fP HAL_HalfDuplex_EnableReceiver (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_HalfDuplex_EnableTransmitter (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_LIN_SendBreak (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_MultiProcessor_DisableMuteMode (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_MultiProcessor_EnableMuteMode (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "void HAL_MultiProcessor_EnterMuteMode (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_DisableReceiverTimeout (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_EnableReceiverTimeout (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "void HAL_UART_ReceiverTimeout_Config (\fBUART_HandleTypeDef\fP * huart, uint32_t TimeoutValue)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

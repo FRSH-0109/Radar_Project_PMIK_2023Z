@@ -1,0 +1,1146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___exported__macros" kind="group">
+    <compoundname>Exported_macros</compoundname>
+    <title>Exported_macros</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___exported__macros_1ga2204b62b378bcf08b3b9006c184c7c23" prot="public" static="no">
+        <name>IS_ADC_ALL_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1ga90d2d5c526ce5c0a551f533eccbee71a" kindref="member">ADC1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7096" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7096" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gad8a5831c786b6b265531b890a194cbe2" prot="public" static="no">
+        <name>IS_ADC_COMMON_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1gaf1919c64fc774aab31190346fd5457e2" kindref="member">ADC1_COMMON</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7098" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7098" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gaa514941a7f02f65eb27450c05e4e8dd1" prot="public" static="no">
+        <name>IS_CRC_ALL_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1ga4381bb54c2dbc34500521165aa7b89b1" kindref="member">CRC</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7104" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga40beb02b397c5f47e22a83fc28034afe" prot="public" static="no">
+        <name>IS_DMA_ALL_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                       (((INSTANCE) == <ref refid="group___peripheral__declaration_1gac83c5be824be1c02716e2522e80ddf7a" kindref="member">DMA1_Channel1</ref>) || \
+                                       ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga23d7631dd10c645e06971b2543ba2949" kindref="member">DMA1_Channel2</ref>) || \
+                                       ((INSTANCE) == <ref refid="group___peripheral__declaration_1gacf7b6093a37b306d7f1f50b2f200f0d0" kindref="member">DMA1_Channel3</ref>) || \
+                                       ((INSTANCE) == <ref refid="group___peripheral__declaration_1gad2c42743316bf64da557130061b1f56a" kindref="member">DMA1_Channel4</ref>) || \
+                                       ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga06ff98ddef3c962795d2e2444004abff" kindref="member">DMA1_Channel5</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7108" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7108" bodyend="7112"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga4cf9b6545e8c9fd1ff4b8717c7c5f147" prot="public" static="no">
+        <name>IS_DMAMUX_ALL_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1gacdd9451393b5f43783b46b8e5ca54a22" kindref="member">DMAMUX1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7114" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gaed72f51d7b6f8099ff8a37c87cf9c39b" prot="public" static="no">
+        <name>IS_DMAMUX_REQUEST_GEN_ALL_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                                      (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga7f2de783aee1e5411ae43f2e59dc49d6" kindref="member">DMAMUX1_RequestGenerator0</ref>) || \
+                                                      ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga83e88aa28c950544c6ebf1abb20c373d" kindref="member">DMAMUX1_RequestGenerator1</ref>) || \
+                                                      ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga1450a8de2768f65e97bf6df9d4cecb4a" kindref="member">DMAMUX1_RequestGenerator2</ref>) || \
+                                                      ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga8a66bf5b6f1c6303f622ab091dcce796" kindref="member">DMAMUX1_RequestGenerator3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7116" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7116" bodyend="7119"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga783626dd2431afebea836a102e318957" prot="public" static="no">
+        <name>IS_GPIO_ALL_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                        (((INSTANCE) == <ref refid="group___peripheral__declaration_1gac485358099728ddae050db37924dd6b7" kindref="member">GPIOA</ref>) || \
+                                        ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga68b66ac73be4c836db878a42e1fea3cd" kindref="member">GPIOB</ref>) || \
+                                        ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2dca03332d620196ba943bc2346eaa08" kindref="member">GPIOC</ref>) || \
+                                        ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga7580b1a929ea9df59725ba9c18eba6ac" kindref="member">GPIOD</ref>) || \
+                                        ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga43c3022dede7c9db7a58d3c3409dbc8d" kindref="member">GPIOF</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7122" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7122" bodyend="7126"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga9d2e0c4bb80b983730a3a5d98d56f535" prot="public" static="no">
+        <name>IS_GPIO_AF_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer><ref refid="group___exported__macros_1ga783626dd2431afebea836a102e318957" kindref="member">IS_GPIO_ALL_INSTANCE</ref>(INSTANCE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7128" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gaa84537785f7bf8425db6e392187ea2e6" prot="public" static="no">
+        <name>IS_GPIO_LOCK_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                         (((INSTANCE) == <ref refid="group___peripheral__declaration_1gac485358099728ddae050db37924dd6b7" kindref="member">GPIOA</ref>) || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga68b66ac73be4c836db878a42e1fea3cd" kindref="member">GPIOB</ref>) || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2dca03332d620196ba943bc2346eaa08" kindref="member">GPIOC</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7131" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7131" bodyend="7133"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gacdf0149a4e8c41a6814c13613c38a6b2" prot="public" static="no">
+        <name>IS_I2C_ALL_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                       (((INSTANCE) == <ref refid="group___peripheral__declaration_1gab45d257574da6fe1f091cc45b7eda6cc" kindref="member">I2C1</ref>) || \
+                                       ((INSTANCE) == <ref refid="group___peripheral__declaration_1gafa60ac20c1921ef1002083bb3e1f5d16" kindref="member">I2C2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7136" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7136" bodyend="7137"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gab4230e8bd4d88adc4250f041d67375ce" prot="public" static="no">
+        <name>IS_RTC_ALL_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1ga5359a088f5d8b20ce74d920e46059304" kindref="member">RTC</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7141" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gaf492fcfe71eab8d1dadf4d837b840af6" prot="public" static="no">
+        <name>IS_SMBUS_ALL_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>(((INSTANCE) == <ref refid="group___peripheral__declaration_1gab45d257574da6fe1f091cc45b7eda6cc" kindref="member">I2C1</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7144" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gadf692bda16bac3264bccff7f59ddaab9" prot="public" static="no">
+        <name>IS_I2C_WAKEUP_FROMSTOP_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>(((INSTANCE) == <ref refid="group___peripheral__declaration_1gab45d257574da6fe1f091cc45b7eda6cc" kindref="member">I2C1</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7147" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga59c7619a86c03df3ebeb4bd8aaef982c" prot="public" static="no">
+        <name>IS_SPI_ALL_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                       (((INSTANCE) == <ref refid="group___peripheral__declaration_1gad483be344a28ac800be8f03654a9612f" kindref="member">SPI1</ref>) || \
+                                       ((INSTANCE) == <ref refid="group___peripheral__declaration_1gaf2c3d8ce359dcfbb2261e07ed42af72b" kindref="member">SPI2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7150" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7150" bodyend="7151"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga0b35685911e3c7a38ee89e5cdc5a82fa" prot="public" static="no">
+        <name>IS_I2S_ALL_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1gad483be344a28ac800be8f03654a9612f" kindref="member">SPI1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7154" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gaba506eb03409b21388d7c5a6401a4f98" prot="public" static="no">
+        <name>IS_TIM_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                         (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)   || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)   || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2dd30f46fad69dd73e1d8941a43daffe" kindref="member">TIM14</ref>)  || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>)  || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7158" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7158" bodyend="7162"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gac41867bf288927ff8ff10a85e67a591b" prot="public" static="no">
+        <name>IS_TIM_32B_COUNTER_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7165" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga68b8d9ca22720c9034753c604d83500d" prot="public" static="no">
+        <name>IS_TIM_BREAK_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                            (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)    || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>)   || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7168" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7168" bodyend="7170"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga99d4e13b270b8dba4bce38dc3dd32e1f" prot="public" static="no">
+        <name>IS_TIM_BREAKSOURCE_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                               (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)   || \
+                                               ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>)  || \
+                                               ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7173" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7173" bodyend="7175"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga64ee0eb39ee44221618c397a8f74c7b8" prot="public" static="no">
+        <name>IS_TIM_BKIN2_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7178" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga0c02efc77b1bfb640d7f6593f58ad464" prot="public" static="no">
+        <name>IS_TIM_CC1_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                         (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)   || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)   || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2dd30f46fad69dd73e1d8941a43daffe" kindref="member">TIM14</ref>)  || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>)  || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7181" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7181" bodyend="7185"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga6ef84d278cf917c7e420b94687b39c7c" prot="public" static="no">
+        <name>IS_TIM_CC2_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                         (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)   || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7188" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7188" bodyend="7189"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga0c37cb8f925fd43622cce7a4c00fd95e" prot="public" static="no">
+        <name>IS_TIM_CC3_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                         (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)   || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7192" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7192" bodyend="7193"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gae72b7182a73d81c33196265b31091c07" prot="public" static="no">
+        <name>IS_TIM_CC4_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                         (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)   || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7196" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7196" bodyend="7197"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga792dfa11e701c0e2dad3ed9e6b32fdff" prot="public" static="no">
+        <name>IS_TIM_CC5_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7200" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga41866b98e60d00f42889a97271d2fefa" prot="public" static="no">
+        <name>IS_TIM_CC6_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7203" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga8111ef18a809cd882ef327399fdbfc8f" prot="public" static="no">
+        <name>IS_TIM_CCDMA_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                            (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)   || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>)  || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7206" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7206" bodyend="7208"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gad51d77b3bcc12a3a5c308d727b561371" prot="public" static="no">
+        <name>IS_TIM_DMA_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                            (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)   || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)   || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>)  || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7211" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7211" bodyend="7214"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gad80a186286ce3daa92249a8d52111aaf" prot="public" static="no">
+        <name>IS_TIM_DMA_CC_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                            (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)   || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)   || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2dd30f46fad69dd73e1d8941a43daffe" kindref="member">TIM14</ref>)  || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>)  || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7217" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7217" bodyend="7221"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga1ed43d4e9823446a1b9d43afc452f42e" prot="public" static="no">
+        <name>IS_TIM_DMABURST_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                            (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)   || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)   || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>)  || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7224" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7224" bodyend="7227"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga6517a51ea79512a42bc53c718a77f18e" prot="public" static="no">
+        <name>IS_TIM_CCX_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <param><defname>CHANNEL</defname></param>
+        <initializer>    ((((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>) &amp;&amp;                  \
+     (((CHANNEL) == <ref refid="group___t_i_m___channel_1ga6b1541e4a49d62610899e24bf23f4879" kindref="member">TIM_CHANNEL_1</ref>) ||          \
+      ((CHANNEL) == <ref refid="group___t_i_m___channel_1ga33e02d43345a7ac5886f01b39e4f7ccd" kindref="member">TIM_CHANNEL_2</ref>) ||          \
+      ((CHANNEL) == <ref refid="group___t_i_m___channel_1ga4ea100c1789b178f3cb46721b7257e2d" kindref="member">TIM_CHANNEL_3</ref>) ||          \
+      ((CHANNEL) == <ref refid="group___t_i_m___channel_1gad59ef74820ee8bf77fa1f8d589fde2ac" kindref="member">TIM_CHANNEL_4</ref>) ||          \
+      ((CHANNEL) == <ref refid="group___t_i_m___channel_1gae7a7e7ef775b2cce4dc5da3821c0703f" kindref="member">TIM_CHANNEL_5</ref>) ||          \
+      ((CHANNEL) == <ref refid="group___t_i_m___channel_1gaf1042743f56a664b152ff0a03597807e" kindref="member">TIM_CHANNEL_6</ref>)))           \
+     ||                                        \
+     (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>) &amp;&amp;                  \
+     (((CHANNEL) == <ref refid="group___t_i_m___channel_1ga6b1541e4a49d62610899e24bf23f4879" kindref="member">TIM_CHANNEL_1</ref>) ||          \
+      ((CHANNEL) == <ref refid="group___t_i_m___channel_1ga33e02d43345a7ac5886f01b39e4f7ccd" kindref="member">TIM_CHANNEL_2</ref>) ||          \
+      ((CHANNEL) == <ref refid="group___t_i_m___channel_1ga4ea100c1789b178f3cb46721b7257e2d" kindref="member">TIM_CHANNEL_3</ref>) ||          \
+      ((CHANNEL) == <ref refid="group___t_i_m___channel_1gad59ef74820ee8bf77fa1f8d589fde2ac" kindref="member">TIM_CHANNEL_4</ref>)))           \
+     ||                                        \
+     (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2dd30f46fad69dd73e1d8941a43daffe" kindref="member">TIM14</ref>) &amp;&amp;                 \
+     (((CHANNEL) == <ref refid="group___t_i_m___channel_1ga6b1541e4a49d62610899e24bf23f4879" kindref="member">TIM_CHANNEL_1</ref>)))           \
+     ||                                        \
+     (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>) &amp;&amp;                 \
+     (((CHANNEL) == <ref refid="group___t_i_m___channel_1ga6b1541e4a49d62610899e24bf23f4879" kindref="member">TIM_CHANNEL_1</ref>)))           \
+     ||                                        \
+     (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>) &amp;&amp;                 \
+      (((CHANNEL) == <ref refid="group___t_i_m___channel_1ga6b1541e4a49d62610899e24bf23f4879" kindref="member">TIM_CHANNEL_1</ref>))))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7230" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7230" bodyend="7252"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga7181cfd1649c4e65e24b7c863e94a54f" prot="public" static="no">
+        <name>IS_TIM_CCXN_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <param><defname>CHANNEL</defname></param>
+        <initializer>   ((((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>) &amp;&amp;                    \
+     (((CHANNEL) == <ref refid="group___t_i_m___channel_1ga6b1541e4a49d62610899e24bf23f4879" kindref="member">TIM_CHANNEL_1</ref>) ||           \
+      ((CHANNEL) == <ref refid="group___t_i_m___channel_1ga33e02d43345a7ac5886f01b39e4f7ccd" kindref="member">TIM_CHANNEL_2</ref>) ||           \
+      ((CHANNEL) == <ref refid="group___t_i_m___channel_1ga4ea100c1789b178f3cb46721b7257e2d" kindref="member">TIM_CHANNEL_3</ref>)))            \
+    ||                                          \
+    (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>) &amp;&amp;                   \
+     ((CHANNEL) == <ref refid="group___t_i_m___channel_1ga6b1541e4a49d62610899e24bf23f4879" kindref="member">TIM_CHANNEL_1</ref>))              \
+    ||                                          \
+    (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>) &amp;&amp;                   \
+     ((CHANNEL) == <ref refid="group___t_i_m___channel_1ga6b1541e4a49d62610899e24bf23f4879" kindref="member">TIM_CHANNEL_1</ref>)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7254" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7254" bodyend="7264"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gac54b9f42e8ab07c41abe7d96d13d698a" prot="public" static="no">
+        <name>IS_TIM_CLOCK_DIVISION_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                                    (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)    || \
+                                                    ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)    || \
+                                                    ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2dd30f46fad69dd73e1d8941a43daffe" kindref="member">TIM14</ref>)   || \
+                                                    ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>)   || \
+                                                    ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7267" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7267" bodyend="7271"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga0ca20886f56bf7611ad511433b9caade" prot="public" static="no">
+        <name>IS_TIM_CLOCKSOURCE_ETRMODE1_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                                        (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>) || \
+                                                        ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7274" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7274" bodyend="7275"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga7beb8f84094e6a1567d10177cc4fdae9" prot="public" static="no">
+        <name>IS_TIM_CLOCKSOURCE_ETRMODE2_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                                        (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>) || \
+                                                        ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7278" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7278" bodyend="7279"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gacbd23fd1f9f73dc249b16c89131a671c" prot="public" static="no">
+        <name>IS_TIM_CLOCKSOURCE_TIX_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                                        (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>) || \
+                                                        ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7282" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7282" bodyend="7283"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga57882c3c75fddf0ccf0c6ecf99b3d3df" prot="public" static="no">
+        <name>IS_TIM_CLOCKSOURCE_ITRX_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                                        (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>) || \
+                                                        ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7286" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7286" bodyend="7287"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga51daa1c0bd3d45064f3e7a77ca35bc1d" prot="public" static="no">
+        <name>IS_TIM_COMBINED3PHASEPWM_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7290" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga5f61206c3c8b20784f9d237dce300afd" prot="public" static="no">
+        <name>IS_TIM_COMMUTATION_EVENT_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                                     (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)   || \
+                                                     ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>)  || \
+                                                     ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7293" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7293" bodyend="7295"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gaac0e3e7e7a18fd8eb81734b2baf9e3be" prot="public" static="no">
+        <name>IS_TIM_COUNTER_MODE_SELECT_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                                        (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>) || \
+                                                        ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7298" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7298" bodyend="7299"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gacb14170c4996e004849647d8cb626402" prot="public" static="no">
+        <name>IS_TIM_ENCODER_INTERFACE_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                                      (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)  || \
+                                                      ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7302" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7302" bodyend="7303"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga979ea18ba0931f5ed15cc2f3ac84794b" prot="public" static="no">
+        <name>IS_TIM_HALL_SENSOR_INTERFACE_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                                         (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)   || \
+                                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7306" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7306" bodyend="7307"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gac71942c3817f1a893ef84fefe69496b7" prot="public" static="no">
+        <name>IS_TIM_ETR_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                            (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)  || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7310" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7310" bodyend="7311"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gad7e5f47436a6e962b6f5d9e0599e0ecb" prot="public" static="no">
+        <name>IS_TIM_ETRSEL_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                             (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)  || \
+                                             ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7314" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7314" bodyend="7315"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga98104b1522d066b0c20205ca179d0eba" prot="public" static="no">
+        <name>IS_TIM_MASTER_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                            (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)  || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7318" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7318" bodyend="7319"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga3ba7d4187dba8dfb4ffd610312e8af14" prot="public" static="no">
+        <name>IS_TIM_SLAVE_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                            (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)  || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7322" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7322" bodyend="7323"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga7bf2abf939c55a4c8284c184735accdc" prot="public" static="no">
+        <name>IS_TIM_OCXREF_CLEAR_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                                       (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>) || \
+                                                       ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7326" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7326" bodyend="7327"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gaf21dd7665ca60d5753b17beb5473af29" prot="public" static="no">
+        <name>IS_TIM_OCCS_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                                       (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)  || \
+                                                       ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7330" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7330" bodyend="7331"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga6bb03cf116b07bfe1bd527f8ab61a7f9" prot="public" static="no">
+        <name>IS_TIM_REMAP_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7334" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga3b470612fd4c4e29fb985247056b1e07" prot="public" static="no">
+        <name>IS_TIM_REPETITION_COUNTER_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                                       (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)  || \
+                                                       ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>) || \
+                                                       ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7337" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7337" bodyend="7339"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga68305c0173caf4e109020403624d252f" prot="public" static="no">
+        <name>IS_TIM_TRGO2_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>(((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7342" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga6e06388143bb7bb111c78a3686dd753a" prot="public" static="no">
+        <name>IS_TIM_XOR_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                            (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)   || \
+                                            ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7345" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7345" bodyend="7346"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gab776355fbf66b74870bf2f5c0abd35ac" prot="public" static="no">
+        <name>IS_TIM_TISEL_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                         (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)   || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)   || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2dd30f46fad69dd73e1d8941a43daffe" kindref="member">TIM14</ref>)  || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>)  || \
+                                         ((INSTANCE) == <ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7349" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7349" bodyend="7353"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga7e85353dbe9dc9d80ad06f0b935c12e1" prot="public" static="no">
+        <name>IS_TIM_ADVANCED_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>(((INSTANCE) == <ref refid="group___peripheral__declaration_1ga2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7356" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gacbd2efab4cd39d4867c4dbeacb87e84b" prot="public" static="no">
+        <name>IS_UART_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                    (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga92871691058ff7ccffd7635930cb08da" kindref="member">USART1</ref>) || \
+                                    ((INSTANCE) == <ref refid="group___peripheral__declaration_1gaf114a9eab03ca08a6fb720e511595930" kindref="member">USART2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7359" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7359" bodyend="7360"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gafbce654f84a7c994817453695ac91cbe" prot="public" static="no">
+        <name>IS_USART_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                     (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga92871691058ff7ccffd7635930cb08da" kindref="member">USART1</ref>) || \
+                                     ((INSTANCE) == <ref refid="group___peripheral__declaration_1gaf114a9eab03ca08a6fb720e511595930" kindref="member">USART2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7363" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7363" bodyend="7364"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gaf9a11d0720f3efa780126414a4ac50ad" prot="public" static="no">
+        <name>IS_UART_HWFLOW_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                           (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga92871691058ff7ccffd7635930cb08da" kindref="member">USART1</ref>) || \
+                                           ((INSTANCE) == <ref refid="group___peripheral__declaration_1gaf114a9eab03ca08a6fb720e511595930" kindref="member">USART2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7366" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7366" bodyend="7367"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gab2734c105403831749ccb34eeb058988" prot="public" static="no">
+        <name>IS_SMARTCARD_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1ga92871691058ff7ccffd7635930cb08da" kindref="member">USART1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7370" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga4130cef42f8cada5a91c38b85f76939e" prot="public" static="no">
+        <name>IS_USART_AUTOBAUDRATE_DETECTION_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1ga92871691058ff7ccffd7635930cb08da" kindref="member">USART1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7372" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga69c4aa0c561c4c39c621710fbbb0cb7b" prot="public" static="no">
+        <name>IS_UART_HALFDUPLEX_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                                 (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga92871691058ff7ccffd7635930cb08da" kindref="member">USART1</ref>) || \
+                                                 ((INSTANCE) == <ref refid="group___peripheral__declaration_1gaf114a9eab03ca08a6fb720e511595930" kindref="member">USART2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7374" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7374" bodyend="7375"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga7d2763df993c77cfa6e249ec7bc80482" prot="public" static="no">
+        <name>IS_UART_LIN_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1ga92871691058ff7ccffd7635930cb08da" kindref="member">USART1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7378" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga6303097822ab1977cc83f05319a10f1e" prot="public" static="no">
+        <name>IS_UART_WAKEUP_FROMSTOP_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1ga92871691058ff7ccffd7635930cb08da" kindref="member">USART1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7380" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga98f122ffe4d77f03a13f682301e2d596" prot="public" static="no">
+        <name>IS_UART_DRIVER_ENABLE_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                                      (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga92871691058ff7ccffd7635930cb08da" kindref="member">USART1</ref>) || \
+                                                      ((INSTANCE) == <ref refid="group___peripheral__declaration_1gaf114a9eab03ca08a6fb720e511595930" kindref="member">USART2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7383" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7383" bodyend="7384"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gad8d8a7aadc02ce444005b06704625bd8" prot="public" static="no">
+        <name>IS_UART_SPI_SLAVE_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>                                              (((INSTANCE) == <ref refid="group___peripheral__declaration_1ga92871691058ff7ccffd7635930cb08da" kindref="member">USART1</ref>) || \
+                                              ((INSTANCE) == <ref refid="group___peripheral__declaration_1gaf114a9eab03ca08a6fb720e511595930" kindref="member">USART2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7387" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7387" bodyend="7388"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga475c1cee6992ab9325a52bca1b34c496" prot="public" static="no">
+        <name>IS_UART_FIFO_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1ga92871691058ff7ccffd7635930cb08da" kindref="member">USART1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7391" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga98ae6698dc54d8441fce553a65bf5429" prot="public" static="no">
+        <name>IS_IRDA_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1ga92871691058ff7ccffd7635930cb08da" kindref="member">USART1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7394" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gabe1d97ef8a001d77efa0d7633e7a42de" prot="public" static="no">
+        <name>IS_LPUART_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7396" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gad9ec4c52f0572ee67d043e006f1d5e39" prot="public" static="no">
+        <name>IS_IWDG_ALL_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1gad16b79dd94ee85d261d08a8ee94187e7" kindref="member">IWDG</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7399" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gac2a8aaec233e19987232455643a04d6f" prot="public" static="no">
+        <name>IS_WWDG_ALL_INSTANCE</name>
+        <param><defname>INSTANCE</defname></param>
+        <initializer>((INSTANCE) == <ref refid="group___peripheral__declaration_1ga9821fd01757986612ddb8982e2fe27f1" kindref="member">WWDG</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7402" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga30e139a699359f36d6a4905104e79b77" prot="public" static="no">
+        <name>SVC_IRQn</name>
+        <initializer><ref refid="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a4ce820b3cc6cf3a796b41aadc0cf1237" kindref="member">SVCall_IRQn</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="7413" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="7413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" prot="public" static="no">
+        <name>SET_BIT</name>
+        <param><defname>REG</defname></param>
+        <param><defname>BIT</defname></param>
+        <initializer>((REG) |= (BIT))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="170" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" prot="public" static="no">
+        <name>CLEAR_BIT</name>
+        <param><defname>REG</defname></param>
+        <param><defname>BIT</defname></param>
+        <initializer>((REG) &amp;= ~(BIT))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="172" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" prot="public" static="no">
+        <name>READ_BIT</name>
+        <param><defname>REG</defname></param>
+        <param><defname>BIT</defname></param>
+        <initializer>((REG) &amp; (BIT))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="174" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga1378fbdda39f40b85420df55f41460ef" prot="public" static="no">
+        <name>CLEAR_REG</name>
+        <param><defname>REG</defname></param>
+        <initializer>((REG) = (0x0))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="176" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga32f78bffcaf6d13023dcd7f05e0c4d57" prot="public" static="no">
+        <name>WRITE_REG</name>
+        <param><defname>REG</defname></param>
+        <param><defname>VAL</defname></param>
+        <initializer>((REG) = (VAL))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="178" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1gae7f188a4d26c9e713a48414783421071" prot="public" static="no">
+        <name>READ_REG</name>
+        <param><defname>REG</defname></param>
+        <initializer>((REG))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="180" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga6553c99f510c3bab8cc0a91602053247" prot="public" static="no">
+        <name>MODIFY_REG</name>
+        <param><defname>REG</defname></param>
+        <param><defname>CLEARMASK</defname></param>
+        <param><defname>SETMASK</defname></param>
+        <initializer><ref refid="group___exported__macros_1ga32f78bffcaf6d13023dcd7f05e0c4d57" kindref="member">WRITE_REG</ref>((REG), (((<ref refid="group___exported__macros_1gae7f188a4d26c9e713a48414783421071" kindref="member">READ_REG</ref>(REG)) &amp; (~(CLEARMASK))) | (SETMASK)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="182" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga5daccb3b4245b833e81ff60fd1f4cf80" prot="public" static="no">
+        <name>ATOMIC_SET_BIT</name>
+        <param><defname>REG</defname></param>
+        <param><defname>BIT</defname></param>
+        <initializer>  do {                                                       \
+    uint32_t primask;                                        \
+    primask = <ref refid="group___c_m_s_i_s___core___reg_acc_functions_1ga4ff59fb9e280d19e79e6875863a65f0a" kindref="member">__get_PRIMASK</ref>();                               \
+    <ref refid="group___c_m_s_i_s___core___reg_acc_functions_1gaf4a17d3be7dbb066489836d849930d92" kindref="member">__set_PRIMASK</ref>(1);                                        \
+    <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>((REG), (BIT));                                   \
+    <ref refid="group___c_m_s_i_s___core___reg_acc_functions_1gaf4a17d3be7dbb066489836d849930d92" kindref="member">__set_PRIMASK</ref>(primask);                                  \
+  } while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="186" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="186" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga08dfef58d3b054b80745eda49e8907fb" prot="public" static="no">
+        <name>ATOMIC_CLEAR_BIT</name>
+        <param><defname>REG</defname></param>
+        <param><defname>BIT</defname></param>
+        <initializer>  do {                                                       \
+    uint32_t primask;                                        \
+    primask = <ref refid="group___c_m_s_i_s___core___reg_acc_functions_1ga4ff59fb9e280d19e79e6875863a65f0a" kindref="member">__get_PRIMASK</ref>();                               \
+    <ref refid="group___c_m_s_i_s___core___reg_acc_functions_1gaf4a17d3be7dbb066489836d849930d92" kindref="member">__set_PRIMASK</ref>(1);                                        \
+    <ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>((REG), (BIT));                                 \
+    <ref refid="group___c_m_s_i_s___core___reg_acc_functions_1gaf4a17d3be7dbb066489836d849930d92" kindref="member">__set_PRIMASK</ref>(primask);                                  \
+  } while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="196" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="196" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga89dc36b64605a58fd1666d76b51bde1c" prot="public" static="no">
+        <name>ATOMIC_MODIFY_REG</name>
+        <param><defname>REG</defname></param>
+        <param><defname>CLEARMSK</defname></param>
+        <param><defname>SETMASK</defname></param>
+        <initializer>  do {                                                       \
+    uint32_t primask;                                        \
+    primask = <ref refid="group___c_m_s_i_s___core___reg_acc_functions_1ga4ff59fb9e280d19e79e6875863a65f0a" kindref="member">__get_PRIMASK</ref>();                               \
+    <ref refid="group___c_m_s_i_s___core___reg_acc_functions_1gaf4a17d3be7dbb066489836d849930d92" kindref="member">__set_PRIMASK</ref>(1);                                        \
+    <ref refid="group___exported__macros_1ga6553c99f510c3bab8cc0a91602053247" kindref="member">MODIFY_REG</ref>((REG), (CLEARMSK), (SETMASK));                \
+    <ref refid="group___c_m_s_i_s___core___reg_acc_functions_1gaf4a17d3be7dbb066489836d849930d92" kindref="member">__set_PRIMASK</ref>(primask);                                  \
+  } while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="206" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="206" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga567c489b25ec989c6ffcda6e1a49c4c2" prot="public" static="no">
+        <name>ATOMIC_SETH_BIT</name>
+        <param><defname>REG</defname></param>
+        <param><defname>BIT</defname></param>
+        <initializer><ref refid="group___exported__macros_1ga5daccb3b4245b833e81ff60fd1f4cf80" kindref="member">ATOMIC_SET_BIT</ref>(REG, BIT)                                   \</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="216" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="216" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga72150176ac8514f3a9f71b354d344661" prot="public" static="no">
+        <name>ATOMIC_CLEARH_BIT</name>
+        <param><defname>REG</defname></param>
+        <param><defname>BIT</defname></param>
+        <initializer><ref refid="group___exported__macros_1ga08dfef58d3b054b80745eda49e8907fb" kindref="member">ATOMIC_CLEAR_BIT</ref>(REG, BIT)                               \</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="219" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="219" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="define" id="group___exported__macros_1ga8774e17ec273484ebb30efd3f9307f3a" prot="public" static="no">
+        <name>ATOMIC_MODIFYH_REG</name>
+        <param><defname>REG</defname></param>
+        <param><defname>CLEARMSK</defname></param>
+        <param><defname>SETMASK</defname></param>
+        <initializer><ref refid="group___exported__macros_1ga89dc36b64605a58fd1666d76b51bde1c" kindref="member">ATOMIC_MODIFY_REG</ref>(REG, CLEARMSK, SETMASK) \</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="222" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="222" bodyend="223"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

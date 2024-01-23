@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_p_i___c_r_c___calculation" kind="group">
+    <compoundname>SPI_CRC_Calculation</compoundname>
+    <title>SPI CRC Calculation</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i___c_r_c___calculation_1ga9cd586b66473d7f207103a443280820e" prot="public" static="no">
+        <name>SPI_CRCCALCULATION_DISABLE</name>
+        <initializer>(0x00000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="328" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___c_r_c___calculation_1ga431d368997c9c41e8923cbcd41b00123" prot="public" static="no">
+        <name>SPI_CRCCALCULATION_ENABLE</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gac9339b7c6466f09ad26c26b3bb81c51b" kindref="member">SPI_CR1_CRCEN</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="329" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

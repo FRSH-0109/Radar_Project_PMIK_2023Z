@@ -1,0 +1,78 @@
+.TH "GPIO_Private_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GPIO_Private_Macros \- GPIO Private Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_GPIO_PIN_ACTION\fP(ACTION)   (((ACTION) == \fBGPIO_PIN_RESET\fP) || ((ACTION) == \fBGPIO_PIN_SET\fP))"
+.br
+.ti -1c
+.RI "#define \fBIS_GPIO_PIN\fP(__PIN__)"
+.br
+.ti -1c
+.RI "#define \fBIS_GPIO_MODE\fP(__MODE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_GPIO_SPEED\fP(__SPEED__)"
+.br
+.ti -1c
+.RI "#define \fBIS_GPIO_PULL\fP(__PULL__)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_GPIO_MODE(__MODE__)"
+\fBValue:\fP.PP
+.nf
+                                     (((__MODE__) == GPIO_MODE_INPUT)              ||\\
+                                     ((__MODE__) == GPIO_MODE_OUTPUT_PP)          ||\\
+                                     ((__MODE__) == GPIO_MODE_OUTPUT_OD)          ||\\
+                                     ((__MODE__) == GPIO_MODE_AF_PP)              ||\\
+                                     ((__MODE__) == GPIO_MODE_AF_OD)              ||\\
+                                     ((__MODE__) == GPIO_MODE_IT_RISING)          ||\\
+                                     ((__MODE__) == GPIO_MODE_IT_FALLING)         ||\\
+                                     ((__MODE__) == GPIO_MODE_IT_RISING_FALLING)  ||\\
+                                     ((__MODE__) == GPIO_MODE_EVT_RISING)         ||\\
+                                     ((__MODE__) == GPIO_MODE_EVT_FALLING)        ||\\
+                                     ((__MODE__) == GPIO_MODE_EVT_RISING_FALLING) ||\\
+                                     ((__MODE__) == GPIO_MODE_ANALOG))
+.fi
+
+.SS "#define IS_GPIO_PIN(__PIN__)"
+\fBValue:\fP.PP
+.nf
+                                     ((((uint32_t)(__PIN__) & GPIO_PIN_MASK) != 0x00u) &&\\
+                                     (((uint32_t)(__PIN__) & ~GPIO_PIN_MASK) == 0x00u))
+.fi
+
+.SS "#define IS_GPIO_PIN_ACTION(ACTION)   (((ACTION) == \fBGPIO_PIN_RESET\fP) || ((ACTION) == \fBGPIO_PIN_SET\fP))"
+
+.SS "#define IS_GPIO_PULL(__PULL__)"
+\fBValue:\fP.PP
+.nf
+                                     (((__PULL__) == GPIO_NOPULL)   ||\\
+                                     ((__PULL__) == GPIO_PULLUP)   || \\
+                                     ((__PULL__) == GPIO_PULLDOWN))
+.fi
+
+.SS "#define IS_GPIO_SPEED(__SPEED__)"
+\fBValue:\fP.PP
+.nf
+                                     (((__SPEED__) == GPIO_SPEED_FREQ_LOW)    ||\\
+                                     ((__SPEED__) == GPIO_SPEED_FREQ_MEDIUM) ||\\
+                                     ((__SPEED__) == GPIO_SPEED_FREQ_HIGH)   ||\\
+                                     ((__SPEED__) == GPIO_SPEED_FREQ_VERY_HIGH))
+.fi
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

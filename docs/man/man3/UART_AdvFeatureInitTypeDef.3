@@ -1,0 +1,74 @@
+.TH "UART_AdvFeatureInitTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_AdvFeatureInitTypeDef \- UART Advanced Features initialization structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_hal_uart\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBAdvFeatureInit\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBTxPinLevelInvert\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRxPinLevelInvert\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDataInvert\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBSwap\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBOverrunDisable\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDMADisableonRxError\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBAutoBaudRateEnable\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBAutoBaudRateMode\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBMSBFirst\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+UART Advanced Features initialization structure definition\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t UART_AdvFeatureInitTypeDef::AdvFeatureInit"
+Specifies which advanced UART features is initialized\&. Several Advanced Features may be initialized at the same time \&. This parameter can be a value of \fBUART Advanced Feature Initialization Type\fP\&. 
+.SS "uint32_t UART_AdvFeatureInitTypeDef::AutoBaudRateEnable"
+Specifies whether auto Baud rate detection is enabled\&. This parameter can be a value of \fBUART Advanced Feature Auto BaudRate Enable\fP\&. 
+.SS "uint32_t UART_AdvFeatureInitTypeDef::AutoBaudRateMode"
+If auto Baud rate detection is enabled, specifies how the rate detection is carried out\&. This parameter can be a value of \fBUART Advanced Feature AutoBaud Rate Mode\fP\&. 
+.SS "uint32_t UART_AdvFeatureInitTypeDef::DataInvert"
+Specifies whether data are inverted (positive/direct logic vs negative/inverted logic)\&. This parameter can be a value of \fBUART Advanced Feature Binary Data Inversion\fP\&. 
+.SS "uint32_t UART_AdvFeatureInitTypeDef::DMADisableonRxError"
+Specifies whether the DMA is disabled in case of reception error\&. This parameter can be a value of \fBUART Advanced Feature DMA Disable On Rx Error\fP\&. 
+.SS "uint32_t UART_AdvFeatureInitTypeDef::MSBFirst"
+Specifies whether MSB is sent first on UART line\&. This parameter can be a value of \fBUART Advanced Feature MSB First\fP\&. 
+.SS "uint32_t UART_AdvFeatureInitTypeDef::OverrunDisable"
+Specifies whether the reception overrun detection is disabled\&. This parameter can be a value of \fBUART Advanced Feature Overrun Disable\fP\&. 
+.SS "uint32_t UART_AdvFeatureInitTypeDef::RxPinLevelInvert"
+Specifies whether the RX pin active level is inverted\&. This parameter can be a value of \fBUART Advanced Feature RX Pin Active Level Inversion\fP\&. 
+.SS "uint32_t UART_AdvFeatureInitTypeDef::Swap"
+Specifies whether TX and RX pins are swapped\&. This parameter can be a value of \fBUART Advanced Feature RX TX Pins Swap\fP\&. 
+.SS "uint32_t UART_AdvFeatureInitTypeDef::TxPinLevelInvert"
+Specifies whether the TX pin active level is inverted\&. This parameter can be a value of \fBUART Advanced Feature TX Pin Active Level Inversion\fP\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

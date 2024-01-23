@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_y_s_c_f_g___exported___macros" kind="group">
+    <compoundname>SYSCFG_Exported_Macros</compoundname>
+    <title>SYSCFG Exported Macros</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1ga7d84ff8c28a8a139a2e970c0e9703115" prot="public" static="no">
+        <name>__HAL_GET_PENDING_IT</name>
+        <param><defname>__SOURCE__</defname></param>
+        <initializer>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;IT_LINE_SR[((__SOURCE__) &gt;&gt; 0x18U)] &amp; ((__SOURCE__) &amp; 0x00FFFFFF))</initializer>
+        <briefdescription>
+<para>ISR wrapper check. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Allow to determine interrupt source per line. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="511" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1ga9500619e1ec21659bd32b1dfecd5afc1" prot="public" static="no">
+        <name>__HAL_SYSCFG_REMAPMEMORY_FLASH</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR1, <ref refid="group___peripheral___registers___bits___definition_1gae844133af99402c342767b0406cb874d" kindref="member">SYSCFG_CFGR1_MEM_MODE</ref>)</initializer>
+        <briefdescription>
+<para>Main Flash memory mapped at 0x00000000. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="515" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="515" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1ga59782d94690fd538b25def536c81c3ed" prot="public" static="no">
+        <name>__HAL_SYSCFG_REMAPMEMORY_SYSTEMFLASH</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga6553c99f510c3bab8cc0a91602053247" kindref="member">MODIFY_REG</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR1, <ref refid="group___peripheral___registers___bits___definition_1gae844133af99402c342767b0406cb874d" kindref="member">SYSCFG_CFGR1_MEM_MODE</ref>, <ref refid="group___peripheral___registers___bits___definition_1gafc84f4abe53c4d2516ab017626477817" kindref="member">SYSCFG_CFGR1_MEM_MODE_0</ref>)</initializer>
+        <briefdescription>
+<para>System Flash memory mapped at 0x00000000. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="519" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="519" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1ga86d36fdb1571fd56ffeecfaed80c6805" prot="public" static="no">
+        <name>__HAL_SYSCFG_REMAPMEMORY_SRAM</name>
+        <param></param>
+        <initializer>  <ref refid="group___exported__macros_1ga6553c99f510c3bab8cc0a91602053247" kindref="member">MODIFY_REG</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR1, <ref refid="group___peripheral___registers___bits___definition_1gae844133af99402c342767b0406cb874d" kindref="member">SYSCFG_CFGR1_MEM_MODE</ref>, (<ref refid="group___peripheral___registers___bits___definition_1gaa51c3dbda77acf522defca9e8b8801a3" kindref="member">SYSCFG_CFGR1_MEM_MODE_1</ref>|<ref refid="group___peripheral___registers___bits___definition_1gafc84f4abe53c4d2516ab017626477817" kindref="member">SYSCFG_CFGR1_MEM_MODE_0</ref>))</initializer>
+        <briefdescription>
+<para>Embedded SRAM mapped at 0x00000000. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="523" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="523" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1ga0e71eb2b553f1a7b8172710184a89caa" prot="public" static="no">
+        <name>__HAL_SYSCFG_GET_BOOT_MODE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR1, <ref refid="group___peripheral___registers___bits___definition_1gae844133af99402c342767b0406cb874d" kindref="member">SYSCFG_CFGR1_MEM_MODE</ref>)</initializer>
+        <briefdescription>
+<para>Return the boot mode as configured by user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>boot mode as configured by user. The returned value can be one of the following values <ref refid="group___s_y_s_c_f_g___boot_mode" kindref="compound">Boot Mode</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="531" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1gab24317e13f473c7c93771ac11ad893c3" prot="public" static="no">
+        <name>__HAL_SYSCFG_BREAK_ECC_LOCK</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR2, <ref refid="group___peripheral___registers___bits___definition_1gae75e85c4c032560b4db88cd8fcb3aaf9" kindref="member">SYSCFG_CFGR2_ECCL</ref>)</initializer>
+        <briefdescription>
+<para>SYSCFG Break ECC lock. Enable and lock the connection of Flash ECC error connection to TIM1 Break input. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The selected configuration is locked and can be unlocked only by system reset. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="537" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="537" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1gaf8339b79c4009bcc95d2582b990d56ec" prot="public" static="no">
+        <name>__HAL_SYSCFG_BREAK_LOCKUP_LOCK</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR2, <ref refid="group___peripheral___registers___bits___definition_1ga37867c85a6455883bf60424879a281f4" kindref="member">SYSCFG_CFGR2_CLL</ref>)</initializer>
+        <briefdescription>
+<para>SYSCFG Break Cortex-M0+ Lockup lock. Enables and locks the connection of Cortex-M0+ LOCKUP (Hardfault) output to TIM1/15/16/17 Break input. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The selected configuration is locked and can be unlocked only by system reset. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="544" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="544" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1gac689c750434ae295da2e2d620a399262" prot="public" static="no">
+        <name>__HAL_SYSCFG_BREAK_SRAMPARITY_LOCK</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR2,<ref refid="group___peripheral___registers___bits___definition_1gacbf387c6e12d90c012dd85636c5dc31b" kindref="member">SYSCFG_CFGR2_SPL</ref>)</initializer>
+        <briefdescription>
+<para>SYSCFG Break SRAM PARITY lock Enables and locks the SRAM_PARITY error signal with Break Input of TIMER1/15/16/17. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The selected configuration is locked and can only be unlocked by system reset </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="558" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1gab3fd5c52e58af5f6746de4a8accebe4f" prot="public" static="no">
+        <name>__HAL_SYSCFG_RAM_PARITYCHECK_DISABLE</name>
+        <param></param>
+        <initializer>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR2 |= <ref refid="group___peripheral___registers___bits___definition_1ga155014fba33b6dc281892ec1ff27e4da" kindref="member">SYSCFG_CFGR2_SPF</ref>)</initializer>
+        <briefdescription>
+<para>Parity check on RAM disable macro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Disabling the parity check on RAM locks the configuration bit. To re-enable the parity check on RAM perform a system reset. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="564" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1ga78c5423e17aa4c8cda0872ca3003e71c" prot="public" static="no">
+        <name>__HAL_SYSCFG_CLEAR_FLAG</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR2, <ref refid="group___peripheral___registers___bits___definition_1ga155014fba33b6dc281892ec1ff27e4da" kindref="member">SYSCFG_CFGR2_SPF</ref>)</initializer>
+        <briefdescription>
+<para>Set the PEF bit to clear the SRAM Parity Error Flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="568" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="568" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1ga61181f4b4955f17858475485f8cd366c" prot="public" static="no">
+        <name>__HAL_SYSCFG_FASTMODEPLUS_ENABLE</name>
+        <param><defname>__FASTMODEPLUS__</defname></param>
+        <initializer>                                                                do {<ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___s_y_s_c_f_g___private___macros_1ga2d44c67961ec9f4feecec777364c13a0" kindref="member">IS_SYSCFG_FASTMODEPLUS</ref>((__FASTMODEPLUS__)));\
+                                                                <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR1, (__FASTMODEPLUS__));\
+                                                               }while(0U)</initializer>
+        <briefdescription>
+<para>Fast-mode Plus driving capability enable/disable macros. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>__FASTMODEPLUS__</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This parameter can be a value of <ref refid="group___s_y_s_c_f_g___fast_mode_plus___g_p_i_o" kindref="compound">Fast mode Plus on GPIO</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="573" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="573" bodyend="575"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1ga5f20cbc8ad78101d527209003dc014f2" prot="public" static="no">
+        <name>__HAL_SYSCFG_FASTMODEPLUS_DISABLE</name>
+        <param><defname>__FASTMODEPLUS__</defname></param>
+        <initializer>                                                                do {<ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___s_y_s_c_f_g___private___macros_1ga2d44c67961ec9f4feecec777364c13a0" kindref="member">IS_SYSCFG_FASTMODEPLUS</ref>((__FASTMODEPLUS__)));\
+                                                                <ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR1, (__FASTMODEPLUS__));\
+                                                               }while(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="577" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="577" bodyend="579"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1ga7a4a5add516a37c06fc6aff8abfc7fcd" prot="public" static="no">
+        <name>__HAL_SYSCFG_GET_PENDING_IT</name>
+        <param><defname>__SOURCE__</defname></param>
+        <initializer>  (<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;IT_LINE_SR[((__SOURCE__) &gt;&gt; 0x18U)] &amp; ((__SOURCE__) &amp; 0x00FFFFFFU))</initializer>
+        <briefdescription>
+<para>ISR wrapper check. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Allow to determine interrupt source per line. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="597" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="597" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1ga1c22b551078a6d6320be612046797834" prot="public" static="no">
+        <name>__HAL_SYSCFG_IRDA_ENV_SELECTION</name>
+        <param><defname>__SOURCE__</defname></param>
+        <initializer>                                                         do {<ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___s_y_s_c_f_g___private___macros_1ga782e6d930c80255039b3aaad70890718" kindref="member">IS_HAL_SYSCFG_IRDA_ENV_SEL</ref>((__SOURCE__)));\
+                                                         <ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR1, <ref refid="group___peripheral___registers___bits___definition_1gaf60f9d9a19609cd9f8720a0b07335045" kindref="member">SYSCFG_CFGR1_IR_MOD</ref>);\
+                                                         <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR1, (__SOURCE__));\
+                                                        }while(0U)</initializer>
+        <briefdescription>
+<para>selection of the modulation envelope signal macro, using bits [7:6] of SYSCFG_CFGR1 register </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>__SOURCE__</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This parameter can be a value of <ref refid="group___h_a_l___i_r___e_n_v___s_e_l" kindref="compound">IR Modulation Envelope signal selection</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="603" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="603" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1ga2a6e3111893107673904d9cb1aad253b" prot="public" static="no">
+        <name>__HAL_SYSCFG_GET_IRDA_ENV_SELECTION</name>
+        <param></param>
+        <initializer>((<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR1) &amp; 0x000000C0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="608" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="608" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1ga2968b3544f3e968630833d10eeb23d96" prot="public" static="no">
+        <name>__HAL_SYSCFG_IRDA_OUT_POLARITY_SELECTION</name>
+        <param><defname>__SEL__</defname></param>
+        <initializer>                                                                do { <ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___s_y_s_c_f_g___private___macros_1gaf1f673d4fd68fa7b19334f5350e442d8" kindref="member">IS_HAL_SYSCFG_IRDA_POL_SEL</ref>((__SEL__)));\
+                                                                <ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR1, <ref refid="group___peripheral___registers___bits___definition_1ga5a7177e17b6fc0241514b6667d318fe9" kindref="member">SYSCFG_CFGR1_IR_POL</ref>);\
+                                                                <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR1,(__SEL__));\
+                                                              }while(0U)</initializer>
+        <briefdescription>
+<para>IROut Polarity Selection, using bit[5] of SYSCFG_CFGR1 register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>__SEL__</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This parameter can be a value of <ref refid="group___h_a_l___i_r___p_o_l___s_e_l" kindref="compound">IR output polarity selection</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="613" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="613" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1ga0cb1201b6fd6edb681da6e1505cc6f66" prot="public" static="no">
+        <name>__HAL_SYSCFG_GET_POLARITY</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR1, <ref refid="group___peripheral___registers___bits___definition_1ga5a7177e17b6fc0241514b6667d318fe9" kindref="member">SYSCFG_CFGR1_IR_POL</ref>)</initializer>
+        <briefdescription>
+<para>Return the IROut Polarity mode as configured by user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IROut polarity as configured by user. The returned value can be one of <ref refid="group___h_a_l___i_r___p_o_l___s_e_l" kindref="compound">IR output polarity selection</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="623" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="623" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1ga3b1b9b75d7e98ba9890379f09bf7ef0b" prot="public" static="no">
+        <name>__HAL_SYSCFG_BREAK_ENABLE</name>
+        <param><defname>__BREAK__</defname></param>
+        <initializer>                                                     do {<ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___s_y_s_c_f_g___private___macros_1ga123b29e8d38b29577a004e3b0f97d624" kindref="member">IS_SYSCFG_BREAK_CONFIG</ref>((__BREAK__)));\
+                                                     <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR2, (__BREAK__));\
+                                                    }while(0U)</initializer>
+        <briefdescription>
+<para>Break input to TIM1/15/16/17 capability enable/disable macros. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>__BREAK__</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This parameter can be a value of <ref refid="group___s_y_s_c_f_g___break" kindref="compound">Break</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="628" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="628" bodyend="630"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___exported___macros_1ga046406cfa2083f72aa3ee71141a6532e" prot="public" static="no">
+        <name>__HAL_SYSCFG_BREAK_DISABLE</name>
+        <param><defname>__BREAK__</defname></param>
+        <initializer>                                                     do {<ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___s_y_s_c_f_g___private___macros_1ga123b29e8d38b29577a004e3b0f97d624" kindref="member">IS_SYSCFG_BREAK_CONFIG</ref>((__BREAK__)));\
+                                                     <ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga3c833fe1c486cb62250ccbca32899cb8" kindref="member">SYSCFG</ref>-&gt;CFGR2, (__BREAK__));\
+                                                    }while(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="632" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="632" bodyend="634"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

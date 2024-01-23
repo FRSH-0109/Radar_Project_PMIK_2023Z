@@ -1,0 +1,967 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="usart__custom_8h" kind="file" language="C++">
+    <compoundname>usart_custom.h</compoundname>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includedby refid="main_8c" local="yes">Core/Src/main.c</includedby>
+    <includedby refid="radar_8h" local="yes">RadarApp/RadarDriver/radar.h</includedby>
+    <includedby refid="usart__custom_8c" local="yes">RadarApp/usart_custom/usart_custom.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>RadarApp/usart_custom/usart_custom.h</label>
+        <link refid="usart__custom_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="4">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="4">
+        <label>RadarApp/RadarDriver/radar.c</label>
+        <link refid="radar_8c"/>
+      </node>
+      <node id="3">
+        <label>RadarApp/RadarDriver/radar.h</label>
+        <link refid="radar_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>RadarApp/usart_custom/usart_custom.c</label>
+        <link refid="usart__custom_8c"/>
+      </node>
+      <node id="1">
+        <label>RadarApp/usart_custom/usart_custom.h</label>
+        <link refid="usart__custom_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_u_a_r_t___custom___handle_type_def" prot="public">UART_Custom_HandleTypeDef</innerclass>
+    <innerclass refid="struct_u_a_r_t___queue" prot="public">UART_Queue</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="usart__custom_8h_1adf0178118c42a9224dd770222fc81497" prot="public" static="no">
+        <name>MAX_UART_RX_DATA_LEN</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines maximum length of single received uart message </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="18" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1ad33fa5c178f516badf8b705c646ba9f9" prot="public" static="no">
+        <name>MAX_UART_TX_DATA_LEN</name>
+        <initializer>30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines maximum length of single transmitted uart message </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="19" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1a1ed0601fc12697a226bb7717c7ab573e" prot="public" static="no">
+        <name>UART_QUEUE_LEN</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines maximum length of uart queue (both tx and rx) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="21" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1ad3ab3c92bd02a106c0182be9c79dac55" prot="public" static="no">
+        <name>UART_TX_TRANSMISSION_CMPLT_TIMEOUT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines timeout after next tx message is allowed to be sent </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="24" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1a6547da940a1c63d92d200f92f5509884" prot="public" static="no">
+        <name>COMMAND_START</name>
+        <initializer>&quot;START&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar START command </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="26" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1a6b66389416f72046f80d9c2c1a77d63f" prot="public" static="no">
+        <name>COMMAND_STOP</name>
+        <initializer>&quot;STOP&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar STOP command </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="27" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1a32ec74d8416e440eada5dc39f7bbb70e" prot="public" static="no">
+        <name>COMMAND_GET_RADAR_POSITION</name>
+        <initializer>&quot;RADARGETPOS&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar position getter command </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="28" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1a2947acf776dfe702ef6160098dd5befb" prot="public" static="no">
+        <name>COMMAND_SET_RADAR_POSITION</name>
+        <initializer>&quot;RADARSETPOS&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar position setter command </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="29" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1a07f8ec7fbb604c801d0d8bdd5768e8eb" prot="public" static="no">
+        <name>COMMAND_GET_RADAR_STEP</name>
+        <initializer>&quot;RADARGETSTEP&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar servo single step getter command </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="30" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1a1f77428b61c541203cab70145eb29521" prot="public" static="no">
+        <name>COMMAND_SET_RADAR_STEP</name>
+        <initializer>&quot;RADARSETSTEP&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar servo single step setter command </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="31" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1a928e45f29cb44f16b29fecd2d902d8df" prot="public" static="no">
+        <name>COMMAND_GET_RADAR_POS_MIN</name>
+        <initializer>&quot;RADARGETPOSMIN&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar min position getter command </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="32" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1a589d75ff318022a4c91c872b7d080643" prot="public" static="no">
+        <name>COMMAND_GET_RADAR_POS_MAX</name>
+        <initializer>&quot;RADARGETPOSMAX&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar max position getter command </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="33" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1ae124f9df385262c264482a5720ca4c29" prot="public" static="no">
+        <name>COMMAND_SET_RADAR_POS_MIN</name>
+        <initializer>&quot;RADARSETPOSMIN&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar min position setter command </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="34" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1ae0abe32ca9558776605bb52edb877ce2" prot="public" static="no">
+        <name>COMMAND_SET_RADAR_POS_MAX</name>
+        <initializer>&quot;RADARSETPOSMAX&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar min position setter command </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="35" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1a87e889c83c8bb5fe95eef467e97324ae" prot="public" static="no">
+        <name>COMMAND_SET_RADAR_SENSOR_PERIOD</name>
+        <initializer>&quot;RADARSETSENSORPERIOD&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar sensor measure period setter command, in ms </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="36" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1ad2e5fdeff329cb9461a501a30a427479" prot="public" static="no">
+        <name>COMMAND_GET_RADAR_SENSOR_PERIOD</name>
+        <initializer>&quot;RADARGETSENSORPERIOD&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar sensor measure period getter command, in ms </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="37" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1a20001dd5b0549da64d44fb993776e591" prot="public" static="no">
+        <name>COMMAND_GET_RADAR_SENSOR_MEASURE</name>
+        <initializer>&quot;RADARGETSENSORMEASURE&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar sensor measure getter command </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="38" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1a17ad9cab657264453606c4336af72ef5" prot="public" static="no">
+        <name>COMMAND_GET_RADAR_DRAW_SCALE</name>
+        <initializer>&quot;RADARGETDRAWSCALE&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar drawing scale getter command </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="39" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1a1f725e00de2969785293adb422d7ac35" prot="public" static="no">
+        <name>COMMAND_SET_RADAR_DRAW_SCALE</name>
+        <initializer>&quot;RADARSETDRAWSCALE&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar drawing scale setter command </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="40" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1a674552e14bdfbf1353a65d826222b1da" prot="public" static="no">
+        <name>COMMAND_GET_RADAR_DRAW_RULES</name>
+        <initializer>&quot;RADARGETDRAWRULES&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar drawing rules (in centimeters) getter command </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="41" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__custom_8h_1a3486962082cdaf2c29d61c7099b75541" prot="public" static="no">
+        <name>COMMAND_SET_RADAR_DRAW_RULES</name>
+        <initializer>&quot;RADARSETDRAWRULES&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String for Radar drawing rules (in centimeters) setter command </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="42" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CommandType</name>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a7272b7f468cc8202d75d96a8043f9e87" prot="public">
+          <name>COMMAND_TYPE_IDLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352ad067bb0a784084623648fd149c3768c4" prot="public">
+          <name>COMMAND_TYPE_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352ae442cf6a5aa8d6270bd646e928af19b0" prot="public">
+          <name>COMMAND_TYPE_STOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a6759dda3a89ea617c6535fd492790e7d" prot="public">
+          <name>COMMAND_TYPE_SET_POS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a21276fbc1ae96774c5eb8367ca6f1d11" prot="public">
+          <name>COMMAND_TYPE_GET_POS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352ae5984587ad3258688d05ffae48475902" prot="public">
+          <name>COMMAND_TYPE_SET_STEP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a3d94d1bcc54db15c881c3e520d3d9732" prot="public">
+          <name>COMMAND_TYPE_GET_STEP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352aad50a044ab6e6a8996b8fa8205cfd55b" prot="public">
+          <name>COMMAND_TYPE_GET_POS_MIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a3fee678b3bd7e7f389e89110002d183c" prot="public">
+          <name>COMMAND_TYPE_GET_POS_MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a476ef9ec942339853c7ed9d676d0e3e5" prot="public">
+          <name>COMMAND_TYPE_SET_POS_MIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a7521841ceae5759a2e4d08da783d077e" prot="public">
+          <name>COMMAND_TYPE_SET_POS_MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352ad12f98e1b0e69ac0ccf8c5633ffa2a54" prot="public">
+          <name>COMMAND_TYPE_GET_SENSOR_PERIOD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352acdcd32b093e7a31e121d9a65d8546385" prot="public">
+          <name>COMMAND_TYPE_SET_SENSOR_PERIOD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352aa314a1e1244d7b6f89a45ca0ef88ebcf" prot="public">
+          <name>COMMAND_TYPE_GET_SENSOR_MEASURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a5c968c059a75367c9bcb1f4f82ffb71e" prot="public">
+          <name>COMMAND_TYPE_GET_DRAW_SCALE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352ab54684c7e7eb692bda06a46888116eaa" prot="public">
+          <name>COMMAND_TYPE_SET_DRAW_SCALE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a858946b754a6edb87080905ce69e578d" prot="public">
+          <name>COMMAND_TYPE_GET_DRAW_RULES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352aa492f0fce57cb811434e7080dd8e9279" prot="public">
+          <name>COMMAND_TYPE_SET_DRAW_RULES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumerate for received commands </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="47" column="1" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="48" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="enum" id="usart__custom_8h_1af5055605e320b3f9ea9fa330b57604e7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ResponseType</name>
+        <enumvalue id="usart__custom_8h_1af5055605e320b3f9ea9fa330b57604e7ad9a009eaad7d808678adbea41b8b1faa" prot="public">
+          <name>RESPONSE_OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1af5055605e320b3f9ea9fa330b57604e7acebd78e00b6e0841ba1526eb58c32a43" prot="public">
+          <name>RESPONSE_UNKNOW_CMD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usart__custom_8h_1af5055605e320b3f9ea9fa330b57604e7ada8db732ee34297d85ba9014b3e3f166" prot="public">
+          <name>RESPONSE_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumerate for responses on received commands </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="72" column="1" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="73" bodyend="77"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="usart__custom_8h_1a13354363ebe3491f72b95bcd1c109b2c" prot="public" static="no">
+        <type>struct <ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref></type>
+        <definition>typedef struct UART_Custom_HandleTypeDef UART_Custom_HandleTypeDef</definition>
+        <argsstring></argsstring>
+        <name>UART_Custom_HandleTypeDef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure for custom uart handle </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="100" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="usart__custom_8h_1afe5519ba8c8fbd534e3c858649e83470" prot="public" static="no">
+        <type>struct <ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref></type>
+        <definition>typedef struct UART_Queue UART_Queue</definition>
+        <argsstring></argsstring>
+        <name>UART_Queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure for uart queue </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="116" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="usart__custom_8h_1a4dd5805db71c5e3e11920b812bddaa71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352" kindref="member">CommandType</ref></type>
+        <definition>CommandType CommandDecode</definition>
+        <argsstring>(uint8_t *data, uint16_t dataLen)</argsstring>
+        <name>CommandDecode</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>dataLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for checking if any of uart commands is received</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to uin8_t type array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataLen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of data to decoded </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>CommandType which was(or not) decoded </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="86" column="13" bodyfile="RadarApp/usart_custom/usart_custom.c" bodystart="73" bodyend="149" declfile="RadarApp/usart_custom/usart_custom.h" declline="86" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="usart__custom_8h_1affe2663ea2814b2c9ab3695c28961355" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void uartQueueInit</definition>
+        <argsstring>(volatile UART_Queue *uartQueue)</argsstring>
+        <name>uartQueueInit</name>
+        <param>
+          <type>volatile <ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref> *</type>
+          <declname>uartQueue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for init uart queue structure</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uartQueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref> struct instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="123" column="6" bodyfile="RadarApp/usart_custom/usart_custom.c" bodystart="388" bodyend="395" declfile="RadarApp/usart_custom/usart_custom.h" declline="123" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="usart__custom_8h_1ab0cdd1e74b215a0e58dca5e866c11de8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void uartQueueAdd</definition>
+        <argsstring>(volatile UART_Queue *uartQueue, uint8_t *dataTxSource, uint16_t msgLen)</argsstring>
+        <name>uartQueueAdd</name>
+        <param>
+          <type>volatile <ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref> *</type>
+          <declname>uartQueue</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dataTxSource</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>msgLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for adding next data to be send via uart queue</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uartQueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref> struct instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataTxSource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to data array to be added to queue </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msgLen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value for added data buffer length </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="132" column="6" bodyfile="RadarApp/usart_custom/usart_custom.c" bodystart="397" bodyend="402" declfile="RadarApp/usart_custom/usart_custom.h" declline="132" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="usart__custom_8h_1a971ac04f29008014c47a53f31a0eca02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void uartQueueClear</definition>
+        <argsstring>(volatile UART_Queue *uartQueue)</argsstring>
+        <name>uartQueueClear</name>
+        <param>
+          <type>volatile <ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref> *</type>
+          <declname>uartQueue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for clearing whole uart structure</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uartQueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref> struct instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="139" column="6" bodyfile="RadarApp/usart_custom/usart_custom.c" bodystart="404" bodyend="413" declfile="RadarApp/usart_custom/usart_custom.h" declline="139" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="usart__custom_8h_1a434833c4433f588d5fda684a54dcb0ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void uartQueueTransmit</definition>
+        <argsstring>(volatile UART_Queue *uartQueue, UART_Custom_HandleTypeDef *huartCustom)</argsstring>
+        <name>uartQueueTransmit</name>
+        <param>
+          <type>volatile <ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref> *</type>
+          <declname>uartQueue</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref> *</type>
+          <declname>huartCustom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for transmitting next data in queue</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uartQueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref> struct instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>huartCustom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref> struct instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="147" column="6" bodyfile="RadarApp/usart_custom/usart_custom.c" bodystart="415" bodyend="437" declfile="RadarApp/usart_custom/usart_custom.h" declline="147" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="usart__custom_8h_1abbc250ac23ac518f14aa24e1f9a11ead" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void uartQueueReceive</definition>
+        <argsstring>(volatile UART_Queue *uartQueue)</argsstring>
+        <name>uartQueueReceive</name>
+        <param>
+          <type>volatile <ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref> *</type>
+          <declname>uartQueue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for receiving next waiting data in queue</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uartQueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref> struct instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="154" column="6" bodyfile="RadarApp/usart_custom/usart_custom.c" bodystart="246" bodyend="386" declfile="RadarApp/usart_custom/usart_custom.h" declline="154" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="usart__custom_8h_1ae07c419a1a1df7134ddbfedd9bdf7c91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void uartCustomInit</definition>
+        <argsstring>(UART_Custom_HandleTypeDef *huartCustom, UART_HandleTypeDef *huart, uint16_t rxDataLen, uint16_t txDataLen)</argsstring>
+        <name>uartCustomInit</name>
+        <param>
+          <type><ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref> *</type>
+          <declname>huartCustom</declname>
+        </param>
+        <param>
+          <type><ref refid="group___u_a_r_t___exported___types_1ga5de4a49eb132735325e706f406c69d6e" kindref="member">UART_HandleTypeDef</ref> *</type>
+          <declname>huart</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>rxDataLen</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>txDataLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for receiving next waiting data in queue</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>huartCustom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref> struct instance param huart pointer to UART_HandleTypeDef struct instance param rxDataLen value for maximum rx data length param txDataLen value for maximum tx data length </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="164" column="6" bodyfile="RadarApp/usart_custom/usart_custom.c" bodystart="23" bodyend="30" declfile="RadarApp/usart_custom/usart_custom.h" declline="164" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="usart__custom_8h_1a123702bc9950b2a0ce9a34e889842f74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef uartCustomReceiveDMA</definition>
+        <argsstring>(UART_Custom_HandleTypeDef *huartCustom)</argsstring>
+        <name>uartCustomReceiveDMA</name>
+        <param>
+          <type><ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref> *</type>
+          <declname>huartCustom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for calling receiving process via uart with DMA</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>huartCustom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref> struct instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="171" column="19" bodyfile="RadarApp/usart_custom/usart_custom.c" bodystart="32" bodyend="36" declfile="RadarApp/usart_custom/usart_custom.h" declline="171" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="usart__custom_8h_1a74ea4ae09ad7d11a8ed037ed585f4c24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef uartCustomTransmitDMA</definition>
+        <argsstring>(UART_Custom_HandleTypeDef *huartCustom, uint16_t msgLen)</argsstring>
+        <name>uartCustomTransmitDMA</name>
+        <param>
+          <type><ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref> *</type>
+          <declname>huartCustom</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>msgLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for calling DMA transmit via uart</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>huartCustom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref> struct instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msgLen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value for maximum tx data length </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="179" column="19" bodyfile="RadarApp/usart_custom/usart_custom.c" bodystart="38" bodyend="46" declfile="RadarApp/usart_custom/usart_custom.h" declline="179" declcolumn="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Header file for custom uart handling, consists of all used variables, enums or functions that are connected directly with uart communication. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Kamil Kosnik, Kacper Radzikowski </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z">https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INC_USART_CUSTOM_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INC_USART_CUSTOM_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="usart__custom_8h_1adf0178118c42a9224dd770222fc81497" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_UART_RX_DATA_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>100<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="usart__custom_8h_1ad33fa5c178f516badf8b705c646ba9f9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_UART_TX_DATA_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>30<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="usart__custom_8h_1a1ed0601fc12697a226bb7717c7ab573e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_QUEUE_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="usart__custom_8h_1ad3ab3c92bd02a106c0182be9c79dac55" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_TX_TRANSMISSION_CMPLT_TIMEOUT<sp/>3<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="usart__custom_8h_1a6547da940a1c63d92d200f92f5509884" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_START<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;START&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="usart__custom_8h_1a6b66389416f72046f80d9c2c1a77d63f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;STOP&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="usart__custom_8h_1a32ec74d8416e440eada5dc39f7bbb70e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_GET_RADAR_POSITION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;RADARGETPOS&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="usart__custom_8h_1a2947acf776dfe702ef6160098dd5befb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_SET_RADAR_POSITION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;RADARSETPOS&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="usart__custom_8h_1a07f8ec7fbb604c801d0d8bdd5768e8eb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_GET_RADAR_STEP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;RADARGETSTEP&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="usart__custom_8h_1a1f77428b61c541203cab70145eb29521" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_SET_RADAR_STEP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;RADARSETSTEP&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="usart__custom_8h_1a928e45f29cb44f16b29fecd2d902d8df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_GET_RADAR_POS_MIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;RADARGETPOSMIN&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="usart__custom_8h_1a589d75ff318022a4c91c872b7d080643" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_GET_RADAR_POS_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;RADARGETPOSMAX&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="usart__custom_8h_1ae124f9df385262c264482a5720ca4c29" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_SET_RADAR_POS_MIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;RADARSETPOSMIN&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="usart__custom_8h_1ae0abe32ca9558776605bb52edb877ce2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_SET_RADAR_POS_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;RADARSETPOSMAX&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="usart__custom_8h_1a87e889c83c8bb5fe95eef467e97324ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_SET_RADAR_SENSOR_PERIOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;RADARSETSENSORPERIOD&quot;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="usart__custom_8h_1ad2e5fdeff329cb9461a501a30a427479" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_GET_RADAR_SENSOR_PERIOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;RADARGETSENSORPERIOD&quot;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="usart__custom_8h_1a20001dd5b0549da64d44fb993776e591" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_GET_RADAR_SENSOR_MEASURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;RADARGETSENSORMEASURE&quot;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="usart__custom_8h_1a17ad9cab657264453606c4336af72ef5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_GET_RADAR_DRAW_SCALE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;RADARGETDRAWSCALE&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="usart__custom_8h_1a1f725e00de2969785293adb422d7ac35" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_SET_RADAR_DRAW_SCALE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;RADARSETDRAWSCALE&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="usart__custom_8h_1a674552e14bdfbf1353a65d826222b1da" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_GET_RADAR_DRAW_RULES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;RADARGETDRAWRULES&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="usart__custom_8h_1a3486962082cdaf2c29d61c7099b75541" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_SET_RADAR_DRAW_RULES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;RADARSETDRAWRULES&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a7272b7f468cc8202d75d96a8043f9e87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a7272b7f468cc8202d75d96a8043f9e87" kindref="member">COMMAND_TYPE_IDLE</ref>,</highlight></codeline>
+<codeline lineno="50" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352ad067bb0a784084623648fd149c3768c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352ad067bb0a784084623648fd149c3768c4" kindref="member">COMMAND_TYPE_START</ref>,</highlight></codeline>
+<codeline lineno="51" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352ae442cf6a5aa8d6270bd646e928af19b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352ae442cf6a5aa8d6270bd646e928af19b0" kindref="member">COMMAND_TYPE_STOP</ref>,</highlight></codeline>
+<codeline lineno="52" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a6759dda3a89ea617c6535fd492790e7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a6759dda3a89ea617c6535fd492790e7d" kindref="member">COMMAND_TYPE_SET_POS</ref>,</highlight></codeline>
+<codeline lineno="53" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a21276fbc1ae96774c5eb8367ca6f1d11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a21276fbc1ae96774c5eb8367ca6f1d11" kindref="member">COMMAND_TYPE_GET_POS</ref>,</highlight></codeline>
+<codeline lineno="54" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352ae5984587ad3258688d05ffae48475902" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352ae5984587ad3258688d05ffae48475902" kindref="member">COMMAND_TYPE_SET_STEP</ref>,</highlight></codeline>
+<codeline lineno="55" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a3d94d1bcc54db15c881c3e520d3d9732" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a3d94d1bcc54db15c881c3e520d3d9732" kindref="member">COMMAND_TYPE_GET_STEP</ref>,</highlight></codeline>
+<codeline lineno="56" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352aad50a044ab6e6a8996b8fa8205cfd55b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352aad50a044ab6e6a8996b8fa8205cfd55b" kindref="member">COMMAND_TYPE_GET_POS_MIN</ref>,</highlight></codeline>
+<codeline lineno="57" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a3fee678b3bd7e7f389e89110002d183c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a3fee678b3bd7e7f389e89110002d183c" kindref="member">COMMAND_TYPE_GET_POS_MAX</ref>,</highlight></codeline>
+<codeline lineno="58" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a476ef9ec942339853c7ed9d676d0e3e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a476ef9ec942339853c7ed9d676d0e3e5" kindref="member">COMMAND_TYPE_SET_POS_MIN</ref>,</highlight></codeline>
+<codeline lineno="59" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a7521841ceae5759a2e4d08da783d077e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a7521841ceae5759a2e4d08da783d077e" kindref="member">COMMAND_TYPE_SET_POS_MAX</ref>,</highlight></codeline>
+<codeline lineno="60" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352ad12f98e1b0e69ac0ccf8c5633ffa2a54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352ad12f98e1b0e69ac0ccf8c5633ffa2a54" kindref="member">COMMAND_TYPE_GET_SENSOR_PERIOD</ref>,</highlight></codeline>
+<codeline lineno="61" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352acdcd32b093e7a31e121d9a65d8546385" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352acdcd32b093e7a31e121d9a65d8546385" kindref="member">COMMAND_TYPE_SET_SENSOR_PERIOD</ref>,</highlight></codeline>
+<codeline lineno="62" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352aa314a1e1244d7b6f89a45ca0ef88ebcf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352aa314a1e1244d7b6f89a45ca0ef88ebcf" kindref="member">COMMAND_TYPE_GET_SENSOR_MEASURE</ref>,</highlight></codeline>
+<codeline lineno="63" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a5c968c059a75367c9bcb1f4f82ffb71e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a5c968c059a75367c9bcb1f4f82ffb71e" kindref="member">COMMAND_TYPE_GET_DRAW_SCALE</ref>,</highlight></codeline>
+<codeline lineno="64" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352ab54684c7e7eb692bda06a46888116eaa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352ab54684c7e7eb692bda06a46888116eaa" kindref="member">COMMAND_TYPE_SET_DRAW_SCALE</ref>,</highlight></codeline>
+<codeline lineno="65" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a858946b754a6edb87080905ce69e578d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352a858946b754a6edb87080905ce69e578d" kindref="member">COMMAND_TYPE_GET_DRAW_RULES</ref>,</highlight></codeline>
+<codeline lineno="66" refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352aa492f0fce57cb811434e7080dd8e9279" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352aa492f0fce57cb811434e7080dd8e9279" kindref="member">COMMAND_TYPE_SET_DRAW_RULES</ref>,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}<ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352" kindref="member">CommandType</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="usart__custom_8h_1af5055605e320b3f9ea9fa330b57604e7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74" refid="usart__custom_8h_1af5055605e320b3f9ea9fa330b57604e7ad9a009eaad7d808678adbea41b8b1faa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1af5055605e320b3f9ea9fa330b57604e7ad9a009eaad7d808678adbea41b8b1faa" kindref="member">RESPONSE_OK</ref>,</highlight></codeline>
+<codeline lineno="75" refid="usart__custom_8h_1af5055605e320b3f9ea9fa330b57604e7acebd78e00b6e0841ba1526eb58c32a43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1af5055605e320b3f9ea9fa330b57604e7acebd78e00b6e0841ba1526eb58c32a43" kindref="member">RESPONSE_UNKNOW_CMD</ref>,</highlight></codeline>
+<codeline lineno="76" refid="usart__custom_8h_1af5055605e320b3f9ea9fa330b57604e7ada8db732ee34297d85ba9014b3e3f166" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart__custom_8h_1af5055605e320b3f9ea9fa330b57604e7ada8db732ee34297d85ba9014b3e3f166" kindref="member">RESPONSE_ERROR</ref>,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}<ref refid="usart__custom_8h_1af5055605e320b3f9ea9fa330b57604e7" kindref="member">ResponseType</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><ref refid="usart__custom_8h_1a21e038f5b8958e203d28bc4f18472352" kindref="member">CommandType</ref><sp/><ref refid="usart__custom_8h_1a4dd5805db71c5e3e11920b812bddaa71" kindref="member">CommandDecode</ref>(uint8_t<sp/>*data,<sp/>uint16_t<sp/>dataLen);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="struct_u_a_r_t___custom___handle_type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93" refid="struct_u_a_r_t___custom___handle_type_def_1a1ed7dab212fde0a3a4600d33399c67b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_____u_a_r_t___handle_type_def" kindref="compound">UART_HandleTypeDef</ref><sp/>*<ref refid="struct_u_a_r_t___custom___handle_type_def_1a1ed7dab212fde0a3a4600d33399c67b6" kindref="member">huart</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="struct_u_a_r_t___custom___handle_type_def_1a962988d59051dfab0ce7da4c9d66f7b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_u_a_r_t___custom___handle_type_def_1a962988d59051dfab0ce7da4c9d66f7b2" kindref="member">dataRxMaxLen</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="struct_u_a_r_t___custom___handle_type_def_1aa1a20fe601cf7e4b3f0134222621c0ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_u_a_r_t___custom___handle_type_def_1aa1a20fe601cf7e4b3f0134222621c0ad" kindref="member">dataTxMaxLen</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96" refid="struct_u_a_r_t___custom___handle_type_def_1aeea8c98a5a0f7d7f8d5719f46a45f2d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="struct_u_a_r_t___custom___handle_type_def_1aeea8c98a5a0f7d7f8d5719f46a45f2d2" kindref="member">dataRx</ref>[<ref refid="usart__custom_8h_1adf0178118c42a9224dd770222fc81497" kindref="member">MAX_UART_RX_DATA_LEN</ref>];<sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="struct_u_a_r_t___custom___handle_type_def_1ab9bc9891f04881264d1131c2a5ffe711" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_u_a_r_t___custom___handle_type_def_1ab9bc9891f04881264d1131c2a5ffe711" kindref="member">dataTx</ref>[<ref refid="usart__custom_8h_1ad33fa5c178f516badf8b705c646ba9f9" kindref="member">MAX_UART_TX_DATA_LEN</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="struct_u_a_r_t___custom___handle_type_def_1a9011455a25b27b0d2bc3cbd56eafb3ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t___custom___handle_type_def_1a9011455a25b27b0d2bc3cbd56eafb3ad" kindref="member">txTransmissionCmplt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99" refid="struct_u_a_r_t___custom___handle_type_def_1aa2fa02d67a76264094f28e5349d128bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_u_a_r_t___custom___handle_type_def_1aa2fa02d67a76264094f28e5349d128bd" kindref="member">txTransmissionCmpltTime</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100" refid="usart__custom_8h_1a13354363ebe3491f72b95bcd1c109b2c" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="struct_u_a_r_t___queue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107" refid="struct_u_a_r_t___queue_1aabf0dabd48dff725071bf5ec713f42e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="struct_u_a_r_t___queue_1aabf0dabd48dff725071bf5ec713f42e9" kindref="member">dataRx</ref>[<ref refid="usart__custom_8h_1a1ed0601fc12697a226bb7717c7ab573e" kindref="member">UART_QUEUE_LEN</ref>][<ref refid="usart__custom_8h_1adf0178118c42a9224dd770222fc81497" kindref="member">MAX_UART_RX_DATA_LEN</ref>];<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108" refid="struct_u_a_r_t___queue_1ad5bd92c0c4e4441b3843d3718af24cdd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_u_a_r_t___queue_1ad5bd92c0c4e4441b3843d3718af24cdd" kindref="member">dataRxLength</ref>[<ref refid="usart__custom_8h_1a1ed0601fc12697a226bb7717c7ab573e" kindref="member">UART_QUEUE_LEN</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109" refid="struct_u_a_r_t___queue_1ac87fbf2375e4a60a0ea19b9c572fc02b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="struct_u_a_r_t___queue_1ac87fbf2375e4a60a0ea19b9c572fc02b" kindref="member">headIxndex</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110" refid="struct_u_a_r_t___queue_1a3b4e9fc9e72aaeaa7086915ef71e9e18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="struct_u_a_r_t___queue_1a3b4e9fc9e72aaeaa7086915ef71e9e18" kindref="member">tailIndex</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112" refid="struct_u_a_r_t___queue_1a3efa81db0281c5e6ec8803214fe30378" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_u_a_r_t___queue_1a3efa81db0281c5e6ec8803214fe30378" kindref="member">dataTx</ref>[<ref refid="usart__custom_8h_1a1ed0601fc12697a226bb7717c7ab573e" kindref="member">UART_QUEUE_LEN</ref>][<ref refid="usart__custom_8h_1ad33fa5c178f516badf8b705c646ba9f9" kindref="member">MAX_UART_TX_DATA_LEN</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113" refid="struct_u_a_r_t___queue_1a7be530387eca02e13ed41567d8c328af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_u_a_r_t___queue_1a7be530387eca02e13ed41567d8c328af" kindref="member">dataTxLength</ref>[<ref refid="usart__custom_8h_1a1ed0601fc12697a226bb7717c7ab573e" kindref="member">UART_QUEUE_LEN</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114" refid="struct_u_a_r_t___queue_1a614486ec92e3549168b31c4350e47910" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="struct_u_a_r_t___queue_1a614486ec92e3549168b31c4350e47910" kindref="member">dataIndex</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115" refid="struct_u_a_r_t___queue_1a21c6464b9d460c444aae6a9b093c02b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="struct_u_a_r_t___queue_1a21c6464b9d460c444aae6a9b093c02b9" kindref="member">transmitIndex</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116" refid="usart__custom_8h_1afe5519ba8c8fbd534e3c858649e83470" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart__custom_8h_1affe2663ea2814b2c9ab3695c28961355" kindref="member">uartQueueInit</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref><sp/>*uartQueue);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart__custom_8h_1ab0cdd1e74b215a0e58dca5e866c11de8" kindref="member">uartQueueAdd</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref><sp/>*uartQueue,<sp/>uint8_t<sp/>*dataTxSource,<sp/>uint16_t<sp/>msgLen);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart__custom_8h_1a971ac04f29008014c47a53f31a0eca02" kindref="member">uartQueueClear</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref><sp/>*uartQueue);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart__custom_8h_1a434833c4433f588d5fda684a54dcb0ff" kindref="member">uartQueueTransmit</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref><sp/>*uartQueue,<sp/><ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref><sp/>*huartCustom);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart__custom_8h_1abbc250ac23ac518f14aa24e1f9a11ead" kindref="member">uartQueueReceive</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref><sp/>*uartQueue);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart__custom_8h_1ae07c419a1a1df7134ddbfedd9bdf7c91" kindref="member">uartCustomInit</ref>(<ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref><sp/>*huartCustom,<sp/><ref refid="struct_____u_a_r_t___handle_type_def" kindref="compound">UART_HandleTypeDef</ref><sp/>*huart,<sp/>uint16_t<sp/>rxDataLen,<sp/>uint16_t<sp/>txDataLen);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="usart__custom_8h_1a123702bc9950b2a0ce9a34e889842f74" kindref="member">uartCustomReceiveDMA</ref>(<ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref><sp/>*huartCustom);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="usart__custom_8h_1a74ea4ae09ad7d11a8ed037ed585f4c24" kindref="member">uartCustomTransmitDMA</ref>(<ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref><sp/>*huartCustom,<sp/>uint16_t<sp/>msgLen);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INC_USART_CUSTOM_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="RadarApp/usart_custom/usart_custom.h"/>
+  </compounddef>
+</doxygen>

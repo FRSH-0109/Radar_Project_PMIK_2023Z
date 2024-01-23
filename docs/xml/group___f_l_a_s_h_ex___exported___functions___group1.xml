@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___f_l_a_s_h_ex___exported___functions___group1" kind="group">
+    <compoundname>FLASHEx_Exported_Functions_Group1</compoundname>
+    <title>FLASHEx_Exported_Functions_Group1</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___f_l_a_s_h_ex___exported___functions___group1_1ga9c4e0c7b4f528b7cccae6ad610eb5953" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_FLASHEx_Erase</definition>
+        <argsstring>(FLASH_EraseInitTypeDef *pEraseInit, uint32_t *PageError)</argsstring>
+        <name>HAL_FLASHEx_Erase</name>
+        <param>
+          <type><ref refid="struct_f_l_a_s_h___erase_init_type_def" kindref="compound">FLASH_EraseInitTypeDef</ref> *</type>
+          <declname>pEraseInit</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>PageError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" line="64" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" declline="64" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h_ex___exported___functions___group1_1gaf58c6764859e4febc21abe462dfb2615" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_FLASHEx_Erase_IT</definition>
+        <argsstring>(FLASH_EraseInitTypeDef *pEraseInit)</argsstring>
+        <name>HAL_FLASHEx_Erase_IT</name>
+        <param>
+          <type><ref refid="struct_f_l_a_s_h___erase_init_type_def" kindref="compound">FLASH_EraseInitTypeDef</ref> *</type>
+          <declname>pEraseInit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" line="65" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" declline="65" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h_ex___exported___functions___group1_1ga93f96d794f4dbe97347cbc804e1bb880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_FLASHEx_EnableDebugger</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_FLASHEx_EnableDebugger</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" line="66" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" declline="66" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h_ex___exported___functions___group1_1ga42d8fc9973278f3d58b012ecd1c50430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_FLASHEx_DisableDebugger</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_FLASHEx_DisableDebugger</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" line="67" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" declline="67" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h_ex___exported___functions___group1_1ga479621962d2c3c479a41077bd6ca9252" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t HAL_FLASHEx_FlashEmptyCheck</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_FLASHEx_FlashEmptyCheck</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" line="68" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" declline="68" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h_ex___exported___functions___group1_1ga69d8c505290f866fd8d818b674a41764" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_FLASHEx_ForceFlashEmpty</definition>
+        <argsstring>(uint32_t FlashEmpty)</argsstring>
+        <name>HAL_FLASHEx_ForceFlashEmpty</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>FlashEmpty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" line="69" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" declline="69" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h_ex___exported___functions___group1_1ga001dd4a8defa9eb24a17c4df5953a41d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_FLASHEx_OBProgram</definition>
+        <argsstring>(FLASH_OBProgramInitTypeDef *pOBInit)</argsstring>
+        <name>HAL_FLASHEx_OBProgram</name>
+        <param>
+          <type><ref refid="struct_f_l_a_s_h___o_b_program_init_type_def" kindref="compound">FLASH_OBProgramInitTypeDef</ref> *</type>
+          <declname>pOBInit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" line="73" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" declline="73" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h_ex___exported___functions___group1_1ga6d45d5442b8147533b1100ec40fe75d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_FLASHEx_OBGetConfig</definition>
+        <argsstring>(FLASH_OBProgramInitTypeDef *pOBInit)</argsstring>
+        <name>HAL_FLASHEx_OBGetConfig</name>
+        <param>
+          <type><ref refid="struct_f_l_a_s_h___o_b_program_init_type_def" kindref="compound">FLASH_OBProgramInitTypeDef</ref> *</type>
+          <declname>pOBInit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" line="74" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" declline="74" declcolumn="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

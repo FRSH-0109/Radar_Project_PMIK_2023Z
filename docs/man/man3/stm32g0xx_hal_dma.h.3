@@ -1,0 +1,460 @@
+.TH "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h \- Header file of DMA HAL module\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32g0xx_hal_def\&.h'\fP
+.br
+\fC#include 'stm32g0xx_ll_dma\&.h'\fP
+.br
+\fC#include 'stm32g0xx_hal_dma_ex\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBDMA_InitTypeDef\fP"
+.br
+.RI "DMA Configuration Structure definition\&. "
+.ti -1c
+.RI "struct \fB__DMA_HandleTypeDef\fP"
+.br
+.RI "DMA handle Structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHAL_DMA_ERROR_NONE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMA_ERROR_TE\fP   0x00000001U"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMA_ERROR_NO_XFER\fP   0x00000004U"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMA_ERROR_TIMEOUT\fP   0x00000020U"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMA_ERROR_PARAM\fP   0x00000040U"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMA_ERROR_BUSY\fP   0x00000080U"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMA_ERROR_NOT_SUPPORTED\fP   0x00000100U"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMA_ERROR_SYNC\fP   0x00000200U"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMA_ERROR_REQGEN\fP   0x00000400U"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_MEM2MEM\fP   LL_DMAMUX_REQ_MEM2MEM"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_GENERATOR0\fP   LL_DMAMUX_REQ_GENERATOR0"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_GENERATOR1\fP   LL_DMAMUX_REQ_GENERATOR1"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_GENERATOR2\fP   LL_DMAMUX_REQ_GENERATOR2"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_GENERATOR3\fP   LL_DMAMUX_REQ_GENERATOR3"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_ADC1\fP   LL_DMAMUX_REQ_ADC1"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_I2C1_RX\fP   LL_DMAMUX_REQ_I2C1_RX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_I2C1_TX\fP   LL_DMAMUX_REQ_I2C1_TX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_I2C2_RX\fP   LL_DMAMUX_REQ_I2C2_RX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_I2C2_TX\fP   LL_DMAMUX_REQ_I2C2_TX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_SPI1_RX\fP   LL_DMAMUX_REQ_SPI1_RX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_SPI1_TX\fP   LL_DMAMUX_REQ_SPI1_TX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_SPI2_RX\fP   LL_DMAMUX_REQ_SPI2_RX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_SPI2_TX\fP   LL_DMAMUX_REQ_SPI2_TX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM1_CH1\fP   LL_DMAMUX_REQ_TIM1_CH1"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM1_CH2\fP   LL_DMAMUX_REQ_TIM1_CH2"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM1_CH3\fP   LL_DMAMUX_REQ_TIM1_CH3"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM1_CH4\fP   LL_DMAMUX_REQ_TIM1_CH4"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM1_TRIG_COM\fP   LL_DMAMUX_REQ_TIM1_TRIG_COM"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM1_UP\fP   LL_DMAMUX_REQ_TIM1_UP"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM3_CH1\fP   LL_DMAMUX_REQ_TIM3_CH1"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM3_CH2\fP   LL_DMAMUX_REQ_TIM3_CH2"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM3_CH3\fP   LL_DMAMUX_REQ_TIM3_CH3"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM3_CH4\fP   LL_DMAMUX_REQ_TIM3_CH4"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM3_TRIG\fP   LL_DMAMUX_REQ_TIM3_TRIG"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM3_UP\fP   LL_DMAMUX_REQ_TIM3_UP"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM16_CH1\fP   LL_DMAMUX_REQ_TIM16_CH1"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM16_COM\fP   LL_DMAMUX_REQ_TIM16_COM"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM16_UP\fP   LL_DMAMUX_REQ_TIM16_UP"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM17_CH1\fP   LL_DMAMUX_REQ_TIM17_CH1"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM17_COM\fP   LL_DMAMUX_REQ_TIM17_COM"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_TIM17_UP\fP   LL_DMAMUX_REQ_TIM17_UP"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_USART1_RX\fP   LL_DMAMUX_REQ_USART1_RX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_USART1_TX\fP   LL_DMAMUX_REQ_USART1_TX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_USART2_RX\fP   LL_DMAMUX_REQ_USART2_RX"
+.br
+.ti -1c
+.RI "#define \fBDMA_REQUEST_USART2_TX\fP   LL_DMAMUX_REQ_USART2_TX"
+.br
+.ti -1c
+.RI "#define \fBDMA_MAX_REQUEST\fP   LL_DMAMUX_MAX_REQ"
+.br
+.ti -1c
+.RI "#define \fBDMA_PERIPH_TO_MEMORY\fP   LL_DMA_DIRECTION_PERIPH_TO_MEMORY"
+.br
+.ti -1c
+.RI "#define \fBDMA_MEMORY_TO_PERIPH\fP   LL_DMA_DIRECTION_MEMORY_TO_PERIPH"
+.br
+.ti -1c
+.RI "#define \fBDMA_MEMORY_TO_MEMORY\fP   LL_DMA_DIRECTION_MEMORY_TO_MEMORY"
+.br
+.ti -1c
+.RI "#define \fBDMA_PINC_ENABLE\fP   LL_DMA_PERIPH_INCREMENT"
+.br
+.ti -1c
+.RI "#define \fBDMA_PINC_DISABLE\fP   LL_DMA_PERIPH_NOINCREMENT"
+.br
+.ti -1c
+.RI "#define \fBDMA_MINC_ENABLE\fP   LL_DMA_MEMORY_INCREMENT"
+.br
+.ti -1c
+.RI "#define \fBDMA_MINC_DISABLE\fP   LL_DMA_MEMORY_NOINCREMENT"
+.br
+.ti -1c
+.RI "#define \fBDMA_PDATAALIGN_BYTE\fP   LL_DMA_PDATAALIGN_BYTE"
+.br
+.ti -1c
+.RI "#define \fBDMA_PDATAALIGN_HALFWORD\fP   LL_DMA_PDATAALIGN_HALFWORD"
+.br
+.ti -1c
+.RI "#define \fBDMA_PDATAALIGN_WORD\fP   LL_DMA_PDATAALIGN_WORD"
+.br
+.ti -1c
+.RI "#define \fBDMA_MDATAALIGN_BYTE\fP   LL_DMA_MDATAALIGN_BYTE"
+.br
+.ti -1c
+.RI "#define \fBDMA_MDATAALIGN_HALFWORD\fP   LL_DMA_MDATAALIGN_HALFWORD"
+.br
+.ti -1c
+.RI "#define \fBDMA_MDATAALIGN_WORD\fP   LL_DMA_MDATAALIGN_WORD"
+.br
+.ti -1c
+.RI "#define \fBDMA_NORMAL\fP   LL_DMA_MODE_NORMAL"
+.br
+.ti -1c
+.RI "#define \fBDMA_CIRCULAR\fP   LL_DMA_MODE_CIRCULAR"
+.br
+.ti -1c
+.RI "#define \fBDMA_PRIORITY_LOW\fP   LL_DMA_PRIORITY_LOW"
+.br
+.ti -1c
+.RI "#define \fBDMA_PRIORITY_MEDIUM\fP   LL_DMA_PRIORITY_MEDIUM"
+.br
+.ti -1c
+.RI "#define \fBDMA_PRIORITY_HIGH\fP   LL_DMA_PRIORITY_HIGH"
+.br
+.ti -1c
+.RI "#define \fBDMA_PRIORITY_VERY_HIGH\fP   LL_DMA_PRIORITY_VERYHIGH"
+.br
+.ti -1c
+.RI "#define \fBDMA_IT_TC\fP   \fBDMA_CCR_TCIE\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_IT_HT\fP   \fBDMA_CCR_HTIE\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_IT_TE\fP   \fBDMA_CCR_TEIE\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_GI1\fP   \fBDMA_ISR_GIF1\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_TC1\fP   \fBDMA_ISR_TCIF1\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_HT1\fP   \fBDMA_ISR_HTIF1\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_TE1\fP   \fBDMA_ISR_TEIF1\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_GI2\fP   \fBDMA_ISR_GIF2\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_TC2\fP   \fBDMA_ISR_TCIF2\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_HT2\fP   \fBDMA_ISR_HTIF2\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_TE2\fP   \fBDMA_ISR_TEIF2\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_GI3\fP   \fBDMA_ISR_GIF3\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_TC3\fP   \fBDMA_ISR_TCIF3\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_HT3\fP   \fBDMA_ISR_HTIF3\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_TE3\fP   \fBDMA_ISR_TEIF3\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_GI4\fP   \fBDMA_ISR_GIF4\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_TC4\fP   \fBDMA_ISR_TCIF4\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_HT4\fP   \fBDMA_ISR_HTIF4\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_TE4\fP   \fBDMA_ISR_TEIF4\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_GI5\fP   \fBDMA_ISR_GIF5\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_TC5\fP   \fBDMA_ISR_TCIF5\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_HT5\fP   \fBDMA_ISR_HTIF5\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_FLAG_TE5\fP   \fBDMA_ISR_TEIF5\fP"
+.br
+.ti -1c
+.RI "#define \fB__HAL_DMA_RESET_HANDLE_STATE\fP(__HANDLE__)   ((__HANDLE__)\->State = \fBHAL_DMA_STATE_RESET\fP)"
+.br
+.RI "Reset DMA handle state\&. "
+.ti -1c
+.RI "#define \fB__HAL_DMA_ENABLE\fP(__HANDLE__)   ((__HANDLE__)\->Instance\->CCR |=  \fBDMA_CCR_EN\fP)"
+.br
+.RI "Enable the specified DMA Channel\&. "
+.ti -1c
+.RI "#define \fB__HAL_DMA_DISABLE\fP(__HANDLE__)   ((__HANDLE__)\->Instance\->CCR &=  ~\fBDMA_CCR_EN\fP)"
+.br
+.RI "Disable the specified DMA Channel\&. "
+.ti -1c
+.RI "#define \fB__HAL_DMA_GET_TC_FLAG_INDEX\fP(__HANDLE__)"
+.br
+.RI "Return the current DMA Channel transfer complete flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_DMA_GET_HT_FLAG_INDEX\fP(__HANDLE__)"
+.br
+.RI "Return the current DMA Channel half transfer complete flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_DMA_GET_TE_FLAG_INDEX\fP(__HANDLE__)"
+.br
+.RI "Return the current DMA Channel transfer error flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_DMA_GET_GI_FLAG_INDEX\fP(__HANDLE__)"
+.br
+.RI "Return the current DMA Channel Global interrupt flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_DMA_GET_FLAG\fP(__HANDLE__,  __FLAG__)   (\fBDMA1\fP\->ISR & (__FLAG__))"
+.br
+.RI "Get the DMA Channel pending flags\&. "
+.ti -1c
+.RI "#define \fB__HAL_DMA_CLEAR_FLAG\fP(__HANDLE__,  __FLAG__)   (\fBDMA1\fP\->IFCR |= (__FLAG__))"
+.br
+.RI "Clear the DMA Channel pending flags\&. "
+.ti -1c
+.RI "#define \fB__HAL_DMA_ENABLE_IT\fP(__HANDLE__,  __INTERRUPT__)   ((__HANDLE__)\->Instance\->CCR |= (__INTERRUPT__))"
+.br
+.RI "Enable the specified DMA Channel interrupts\&. "
+.ti -1c
+.RI "#define \fB__HAL_DMA_DISABLE_IT\fP(__HANDLE__,  __INTERRUPT__)   ((__HANDLE__)\->Instance\->CCR &= ~(__INTERRUPT__))"
+.br
+.RI "Disable the specified DMA Channel interrupts\&. "
+.ti -1c
+.RI "#define \fB__HAL_DMA_GET_IT_SOURCE\fP(__HANDLE__,  __INTERRUPT__)   (((__HANDLE__)\->Instance\->CCR & (__INTERRUPT__)))"
+.br
+.RI "Check whether the specified DMA Channel interrupt is enabled or disabled\&. "
+.ti -1c
+.RI "#define \fB__HAL_DMA_GET_COUNTER\fP(__HANDLE__)   ((__HANDLE__)\->Instance\->CNDTR)"
+.br
+.RI "Returns the number of remaining data units in the current DMA Channel transfer\&. "
+.ti -1c
+.RI "#define \fBIS_DMA_DIRECTION\fP(DIRECTION)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_BUFFER_SIZE\fP(SIZE)   (((SIZE) >= 0x1U) && ((SIZE) < \fBDMA_CNDTR_NDT\fP))"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_PERIPHERAL_INC_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_MEMORY_INC_STATE\fP(STATE)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_ALL_REQUEST\fP(REQUEST)   ((REQUEST) <= \fBDMA_MAX_REQUEST\fP)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_PERIPHERAL_DATA_SIZE\fP(SIZE)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_MEMORY_DATA_SIZE\fP(SIZE)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_MODE\fP(MODE)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMA_PRIORITY\fP(PRIORITY)"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fB__DMA_HandleTypeDef\fP \fBDMA_HandleTypeDef\fP"
+.br
+.RI "DMA handle Structure definition\&. "
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBHAL_DMA_StateTypeDef\fP { \fBHAL_DMA_STATE_RESET\fP = 0x00U, \fBHAL_DMA_STATE_READY\fP = 0x01U, \fBHAL_DMA_STATE_BUSY\fP = 0x02U, \fBHAL_DMA_STATE_TIMEOUT\fP = 0x03U }"
+.br
+.RI "HAL DMA State structures definition\&. "
+.ti -1c
+.RI "enum \fBHAL_DMA_LevelCompleteTypeDef\fP { \fBHAL_DMA_FULL_TRANSFER\fP = 0x00U, \fBHAL_DMA_HALF_TRANSFER\fP = 0x01U }"
+.br
+.RI "HAL DMA Error Code structure definition\&. "
+.ti -1c
+.RI "enum \fBHAL_DMA_CallbackIDTypeDef\fP { \fBHAL_DMA_XFER_CPLT_CB_ID\fP = 0x00U, \fBHAL_DMA_XFER_HALFCPLT_CB_ID\fP = 0x01U, \fBHAL_DMA_XFER_ERROR_CB_ID\fP = 0x02U, \fBHAL_DMA_XFER_ABORT_CB_ID\fP = 0x03U, \fBHAL_DMA_XFER_ALL_CB_ID\fP = 0x04U }"
+.br
+.RI "HAL DMA Callback ID structure definition\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_DMA_Init\fP (\fBDMA_HandleTypeDef\fP *hdma)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_DMA_DeInit\fP (\fBDMA_HandleTypeDef\fP *hdma)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_DMA_Start\fP (\fBDMA_HandleTypeDef\fP *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t DataLength)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_DMA_Start_IT\fP (\fBDMA_HandleTypeDef\fP *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t DataLength)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_DMA_Abort\fP (\fBDMA_HandleTypeDef\fP *hdma)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_DMA_Abort_IT\fP (\fBDMA_HandleTypeDef\fP *hdma)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_DMA_PollForTransfer\fP (\fBDMA_HandleTypeDef\fP *hdma, \fBHAL_DMA_LevelCompleteTypeDef\fP CompleteLevel, uint32_t Timeout)"
+.br
+.ti -1c
+.RI "void \fBHAL_DMA_IRQHandler\fP (\fBDMA_HandleTypeDef\fP *hdma)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_DMA_RegisterCallback\fP (\fBDMA_HandleTypeDef\fP *hdma, \fBHAL_DMA_CallbackIDTypeDef\fP CallbackID, void(*pCallback)(\fBDMA_HandleTypeDef\fP *_hdma))"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_DMA_UnRegisterCallback\fP (\fBDMA_HandleTypeDef\fP *hdma, \fBHAL_DMA_CallbackIDTypeDef\fP CallbackID)"
+.br
+.ti -1c
+.RI "\fBHAL_DMA_StateTypeDef\fP \fBHAL_DMA_GetState\fP (\fBDMA_HandleTypeDef\fP *hdma)"
+.br
+.ti -1c
+.RI "uint32_t \fBHAL_DMA_GetError\fP (\fBDMA_HandleTypeDef\fP *hdma)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file of DMA HAL module\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBAttention\fP
+.RS 4
+.RE
+.PP
+Copyright (c) 2018 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,45 @@
+.TH "RCC_System_Clock_Source" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_System_Clock_Source \- System Clock Source
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_SYSCLKSOURCE_HSI\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_SYSCLKSOURCE_HSE\fP   \fBRCC_CFGR_SW_0\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_SYSCLKSOURCE_PLLCLK\fP   \fBRCC_CFGR_SW_1\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_SYSCLKSOURCE_LSI\fP   (\fBRCC_CFGR_SW_1\fP | \fBRCC_CFGR_SW_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_SYSCLKSOURCE_LSE\fP   \fBRCC_CFGR_SW_2\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RCC_SYSCLKSOURCE_HSE   \fBRCC_CFGR_SW_0\fP"
+HSE selection as system clock 
+.SS "#define RCC_SYSCLKSOURCE_HSI   0x00000000U"
+HSI selection as system clock 
+.SS "#define RCC_SYSCLKSOURCE_LSE   \fBRCC_CFGR_SW_2\fP"
+LSE selection as system clock 
+.SS "#define RCC_SYSCLKSOURCE_LSI   (\fBRCC_CFGR_SW_1\fP | \fBRCC_CFGR_SW_0\fP)"
+LSI selection as system clock 
+.SS "#define RCC_SYSCLKSOURCE_PLLCLK   \fBRCC_CFGR_SW_1\fP"
+PLL selection as system clock 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

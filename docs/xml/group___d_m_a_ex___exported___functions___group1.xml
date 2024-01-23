@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___d_m_a_ex___exported___functions___group1" kind="group">
+    <compoundname>DMAEx_Exported_Functions_Group1</compoundname>
+    <title>DMAEx_Exported_Functions_Group1</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___d_m_a_ex___exported___functions___group1_1gaf0ce6122a4aae8570d7998abbcf808c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_DMAEx_ConfigMuxRequestGenerator</definition>
+        <argsstring>(DMA_HandleTypeDef *hdma, HAL_DMA_MuxRequestGeneratorConfigTypeDef *pRequestGeneratorConfig)</argsstring>
+        <name>HAL_DMAEx_ConfigMuxRequestGenerator</name>
+        <param>
+          <type><ref refid="group___d_m_a___exported___types_1ga41b754a906b86bce54dc79938970138b" kindref="member">DMA_HandleTypeDef</ref> *</type>
+          <declname>hdma</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_h_a_l___d_m_a___mux_request_generator_config_type_def" kindref="compound">HAL_DMA_MuxRequestGeneratorConfigTypeDef</ref> *</type>
+          <declname>pRequestGeneratorConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" line="206" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" declline="206" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_m_a_ex___exported___functions___group1_1ga786b1f03f07515586bafd9f5a2ef44e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_DMAEx_EnableMuxRequestGenerator</definition>
+        <argsstring>(DMA_HandleTypeDef *hdma)</argsstring>
+        <name>HAL_DMAEx_EnableMuxRequestGenerator</name>
+        <param>
+          <type><ref refid="group___d_m_a___exported___types_1ga41b754a906b86bce54dc79938970138b" kindref="member">DMA_HandleTypeDef</ref> *</type>
+          <declname>hdma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" line="208" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" declline="208" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_m_a_ex___exported___functions___group1_1ga073619d9b9501a03c6c95e558f17c0cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_DMAEx_DisableMuxRequestGenerator</definition>
+        <argsstring>(DMA_HandleTypeDef *hdma)</argsstring>
+        <name>HAL_DMAEx_DisableMuxRequestGenerator</name>
+        <param>
+          <type><ref refid="group___d_m_a___exported___types_1ga41b754a906b86bce54dc79938970138b" kindref="member">DMA_HandleTypeDef</ref> *</type>
+          <declname>hdma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" line="209" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" declline="209" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_m_a_ex___exported___functions___group1_1gad719bdb39e95faa2070b64ce85682d7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_DMAEx_ConfigMuxSync</definition>
+        <argsstring>(DMA_HandleTypeDef *hdma, HAL_DMA_MuxSyncConfigTypeDef *pSyncConfig)</argsstring>
+        <name>HAL_DMAEx_ConfigMuxSync</name>
+        <param>
+          <type><ref refid="group___d_m_a___exported___types_1ga41b754a906b86bce54dc79938970138b" kindref="member">DMA_HandleTypeDef</ref> *</type>
+          <declname>hdma</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_h_a_l___d_m_a___mux_sync_config_type_def" kindref="compound">HAL_DMA_MuxSyncConfigTypeDef</ref> *</type>
+          <declname>pSyncConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" line="213" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" declline="213" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_m_a_ex___exported___functions___group1_1ga2ed4f769237d01666549b6b1cc1902c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_DMAEx_MUX_IRQHandler</definition>
+        <argsstring>(DMA_HandleTypeDef *hdma)</argsstring>
+        <name>HAL_DMAEx_MUX_IRQHandler</name>
+        <param>
+          <type><ref refid="group___d_m_a___exported___types_1ga41b754a906b86bce54dc79938970138b" kindref="member">DMA_HandleTypeDef</ref> *</type>
+          <declname>hdma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" line="216" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" declline="216" declcolumn="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

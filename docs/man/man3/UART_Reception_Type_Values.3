@@ -1,0 +1,48 @@
+.TH "UART_Reception_Type_Values" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Reception_Type_Values \- UART Reception type values
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHAL_UART_RECEPTION_STANDARD\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_RECEPTION_TOIDLE\fP   (0x00000001U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_RECEPTION_TORTO\fP   (0x00000002U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_RECEPTION_TOCHARMATCH\fP   (0x00000003U)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define HAL_UART_RECEPTION_STANDARD   (0x00000000U)"
+Standard reception 
+.br
+ 
+.SS "#define HAL_UART_RECEPTION_TOCHARMATCH   (0x00000003U)"
+Reception till completion or CM event 
+.br
+ 
+.SS "#define HAL_UART_RECEPTION_TOIDLE   (0x00000001U)"
+Reception till completion or IDLE event 
+.br
+ 
+.SS "#define HAL_UART_RECEPTION_TORTO   (0x00000002U)"
+Reception till completion or RTO event 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

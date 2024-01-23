@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___t_i_m_ex___exported___functions___group5" kind="group">
+    <compoundname>TIMEx_Exported_Functions_Group5</compoundname>
+    <title>Extended Peripheral Control functions</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___t_i_m_ex___exported___functions___group5_1gab5802aa4b8b5a79b93b209b0277622ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_TIMEx_ConfigCommutEvent</definition>
+        <argsstring>(TIM_HandleTypeDef *htim, uint32_t InputTrigger, uint32_t CommutationSource)</argsstring>
+        <name>HAL_TIMEx_ConfigCommutEvent</name>
+        <param>
+          <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+          <declname>htim</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>InputTrigger</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>CommutationSource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="419" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" declline="419" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_ex___exported___functions___group5_1gad9f5f717a203adafb70e66451b4f0472" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_TIMEx_ConfigCommutEvent_IT</definition>
+        <argsstring>(TIM_HandleTypeDef *htim, uint32_t InputTrigger, uint32_t CommutationSource)</argsstring>
+        <name>HAL_TIMEx_ConfigCommutEvent_IT</name>
+        <param>
+          <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+          <declname>htim</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>InputTrigger</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>CommutationSource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="421" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" declline="421" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_ex___exported___functions___group5_1ga6ab2af489cfc5783e4ddd76a35edde31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_TIMEx_ConfigCommutEvent_DMA</definition>
+        <argsstring>(TIM_HandleTypeDef *htim, uint32_t InputTrigger, uint32_t CommutationSource)</argsstring>
+        <name>HAL_TIMEx_ConfigCommutEvent_DMA</name>
+        <param>
+          <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+          <declname>htim</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>InputTrigger</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>CommutationSource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="423" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" declline="423" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_ex___exported___functions___group5_1ga772129e4fa76d4af34b9b6913698d3c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_TIMEx_MasterConfigSynchronization</definition>
+        <argsstring>(TIM_HandleTypeDef *htim, const TIM_MasterConfigTypeDef *sMasterConfig)</argsstring>
+        <name>HAL_TIMEx_MasterConfigSynchronization</name>
+        <param>
+          <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+          <declname>htim</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_t_i_m___master_config_type_def" kindref="compound">TIM_MasterConfigTypeDef</ref> *</type>
+          <declname>sMasterConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="425" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" declline="425" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_ex___exported___functions___group5_1ga5ebf7ce00c211c085633ed1fb964d054" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_TIMEx_ConfigBreakDeadTime</definition>
+        <argsstring>(TIM_HandleTypeDef *htim, const TIM_BreakDeadTimeConfigTypeDef *sBreakDeadTimeConfig)</argsstring>
+        <name>HAL_TIMEx_ConfigBreakDeadTime</name>
+        <param>
+          <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+          <declname>htim</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_t_i_m___break_dead_time_config_type_def" kindref="compound">TIM_BreakDeadTimeConfigTypeDef</ref> *</type>
+          <declname>sBreakDeadTimeConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="427" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" declline="427" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_ex___exported___functions___group5_1gac256ab9cf21b344ff49044dcff0e64fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_TIMEx_ConfigBreakInput</definition>
+        <argsstring>(TIM_HandleTypeDef *htim, uint32_t BreakInput, const TIMEx_BreakInputConfigTypeDef *sBreakInputConfig)</argsstring>
+        <name>HAL_TIMEx_ConfigBreakInput</name>
+        <param>
+          <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+          <declname>htim</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>BreakInput</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_t_i_m_ex___break_input_config_type_def" kindref="compound">TIMEx_BreakInputConfigTypeDef</ref> *</type>
+          <declname>sBreakInputConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="429" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" declline="429" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_ex___exported___functions___group5_1ga8aef10325df17a0d17a3a0a7ebfae383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_TIMEx_GroupChannel5</definition>
+        <argsstring>(TIM_HandleTypeDef *htim, uint32_t Channels)</argsstring>
+        <name>HAL_TIMEx_GroupChannel5</name>
+        <param>
+          <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+          <declname>htim</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Channels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="431" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" declline="431" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_ex___exported___functions___group5_1ga683118282daf3aa2e319eb8eea93af31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_TIMEx_RemapConfig</definition>
+        <argsstring>(TIM_HandleTypeDef *htim, uint32_t Remap)</argsstring>
+        <name>HAL_TIMEx_RemapConfig</name>
+        <param>
+          <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+          <declname>htim</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Remap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="432" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" declline="432" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_ex___exported___functions___group5_1ga5861f4ea858df4905a2f1fdeec6321a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_TIMEx_TISelection</definition>
+        <argsstring>(TIM_HandleTypeDef *htim, uint32_t TISelection, uint32_t Channel)</argsstring>
+        <name>HAL_TIMEx_TISelection</name>
+        <param>
+          <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+          <declname>htim</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>TISelection</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="433" column="20" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" declline="433" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_ex___exported___functions___group5_1ga016cb04e175f5a27ce01f9d1802c1826" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_TIMEx_DisarmBreakInput</definition>
+        <argsstring>(TIM_HandleTypeDef *htim, uint32_t BreakInput)</argsstring>
+        <name>HAL_TIMEx_DisarmBreakInput</name>
+        <param>
+          <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+          <declname>htim</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>BreakInput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="435" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" declline="435" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_ex___exported___functions___group5_1ga97991f186d084f95ea75410f2986333a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_TIMEx_ReArmBreakInput</definition>
+        <argsstring>(TIM_HandleTypeDef *htim, uint32_t BreakInput)</argsstring>
+        <name>HAL_TIMEx_ReArmBreakInput</name>
+        <param>
+          <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+          <declname>htim</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>BreakInput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="436" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" declline="436" declcolumn="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Peripheral Control functions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

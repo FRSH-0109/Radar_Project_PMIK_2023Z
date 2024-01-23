@@ -1,0 +1,250 @@
+.TH "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h \- Header file of DMA HAL extension module\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32g0xx_hal_def\&.h'\fP
+.br
+\fC#include 'stm32g0xx_ll_dmamux\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBHAL_DMA_MuxSyncConfigTypeDef\fP"
+.br
+.RI "HAL DMAMUX Synchronization configuration structure definition\&. "
+.ti -1c
+.RI "struct \fBHAL_DMA_MuxRequestGeneratorConfigTypeDef\fP"
+.br
+.RI "HAL DMAMUX request generator parameters structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_EXTI0\fP   LL_DMAMUX_SYNC_EXTI_LINE0"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_EXTI1\fP   LL_DMAMUX_SYNC_EXTI_LINE1"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_EXTI2\fP   LL_DMAMUX_SYNC_EXTI_LINE2"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_EXTI3\fP   LL_DMAMUX_SYNC_EXTI_LINE3"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_EXTI4\fP   LL_DMAMUX_SYNC_EXTI_LINE4"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_EXTI5\fP   LL_DMAMUX_SYNC_EXTI_LINE5"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_EXTI6\fP   LL_DMAMUX_SYNC_EXTI_LINE6"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_EXTI7\fP   LL_DMAMUX_SYNC_EXTI_LINE7"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_EXTI8\fP   LL_DMAMUX_SYNC_EXTI_LINE8"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_EXTI9\fP   LL_DMAMUX_SYNC_EXTI_LINE9"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_EXTI10\fP   LL_DMAMUX_SYNC_EXTI_LINE10"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_EXTI11\fP   LL_DMAMUX_SYNC_EXTI_LINE11"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_EXTI12\fP   LL_DMAMUX_SYNC_EXTI_LINE12"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_EXTI13\fP   LL_DMAMUX_SYNC_EXTI_LINE13"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_EXTI14\fP   LL_DMAMUX_SYNC_EXTI_LINE14"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_EXTI15\fP   LL_DMAMUX_SYNC_EXTI_LINE15"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_DMAMUX1_CH0_EVT\fP   LL_DMAMUX_SYNC_DMAMUX_CH0"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_DMAMUX1_CH1_EVT\fP   LL_DMAMUX_SYNC_DMAMUX_CH1"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_DMAMUX1_CH2_EVT\fP   LL_DMAMUX_SYNC_DMAMUX_CH2"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_DMAMUX1_CH3_EVT\fP   LL_DMAMUX_SYNC_DMAMUX_CH3"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_SYNC_TIM14_OC\fP   LL_DMAMUX_SYNC_TIM14_OC"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_MAX_SYNC\fP   \fBHAL_DMAMUX1_SYNC_TIM14_OC\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX_SYNC_NO_EVENT\fP   LL_DMAMUX_SYNC_NO_EVENT"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX_SYNC_RISING\fP   LL_DMAMUX_SYNC_POL_RISING"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX_SYNC_FALLING\fP   LL_DMAMUX_SYNC_POL_FALLING"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX_SYNC_RISING_FALLING\fP   LL_DMAMUX_SYNC_POL_RISING_FALLING"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_EXTI0\fP   LL_DMAMUX_REQ_GEN_EXTI_LINE0"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_EXTI1\fP   LL_DMAMUX_REQ_GEN_EXTI_LINE1"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_EXTI2\fP   LL_DMAMUX_REQ_GEN_EXTI_LINE2"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_EXTI3\fP   LL_DMAMUX_REQ_GEN_EXTI_LINE3"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_EXTI4\fP   LL_DMAMUX_REQ_GEN_EXTI_LINE4"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_EXTI5\fP   LL_DMAMUX_REQ_GEN_EXTI_LINE5"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_EXTI6\fP   LL_DMAMUX_REQ_GEN_EXTI_LINE6"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_EXTI7\fP   LL_DMAMUX_REQ_GEN_EXTI_LINE7"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_EXTI8\fP   LL_DMAMUX_REQ_GEN_EXTI_LINE8"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_EXTI9\fP   LL_DMAMUX_REQ_GEN_EXTI_LINE9"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_EXTI10\fP   LL_DMAMUX_REQ_GEN_EXTI_LINE10"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_EXTI11\fP   LL_DMAMUX_REQ_GEN_EXTI_LINE11"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_EXTI12\fP   LL_DMAMUX_REQ_GEN_EXTI_LINE12"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_EXTI13\fP   LL_DMAMUX_REQ_GEN_EXTI_LINE13"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_EXTI14\fP   LL_DMAMUX_REQ_GEN_EXTI_LINE14"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_EXTI15\fP   LL_DMAMUX_REQ_GEN_EXTI_LINE15"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_DMAMUX1_CH0_EVT\fP   LL_DMAMUX_REQ_GEN_DMAMUX_CH0"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_DMAMUX1_CH1_EVT\fP   LL_DMAMUX_REQ_GEN_DMAMUX_CH1"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_DMAMUX1_CH2_EVT\fP   LL_DMAMUX_REQ_GEN_DMAMUX_CH2"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_DMAMUX1_CH3_EVT\fP   LL_DMAMUX_REQ_GEN_DMAMUX_CH3"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_REQ_GEN_TIM14_OC\fP   LL_DMAMUX_REQ_GEN_TIM14_OC"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX1_MAX_REQ_GEN\fP   \fBHAL_DMAMUX1_REQ_GEN_TIM14_OC\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX_REQ_GEN_NO_EVENT\fP   LL_DMAMUX_REQ_GEN_NO_EVENT"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX_REQ_GEN_RISING\fP   LL_DMAMUX_REQ_GEN_POL_RISING"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX_REQ_GEN_FALLING\fP   LL_DMAMUX_REQ_GEN_POL_FALLING"
+.br
+.ti -1c
+.RI "#define \fBHAL_DMAMUX_REQ_GEN_RISING_FALLING\fP   LL_DMAMUX_REQ_GEN_POL_RISING_FALLING"
+.br
+.ti -1c
+.RI "#define \fBIS_DMAMUX_SYNC_SIGNAL_ID\fP(SIGNAL_ID)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMAMUX_SYNC_REQUEST_NUMBER\fP(REQUEST_NUMBER)   (((REQUEST_NUMBER) > 0U) && ((REQUEST_NUMBER) <= 32U))"
+.br
+.ti -1c
+.RI "#define \fBIS_DMAMUX_SYNC_POLARITY\fP(POLARITY)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMAMUX_SYNC_STATE\fP(SYNC)   (((SYNC) == \fBDISABLE\fP)   || ((SYNC) == \fBENABLE\fP))"
+.br
+.ti -1c
+.RI "#define \fBIS_DMAMUX_SYNC_EVENT\fP(EVENT)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMAMUX_REQUEST_GEN_SIGNAL_ID\fP(SIGNAL_ID)"
+.br
+.ti -1c
+.RI "#define \fBIS_DMAMUX_REQUEST_GEN_REQUEST_NUMBER\fP(REQUEST_NUMBER)   (((REQUEST_NUMBER) > 0U) && ((REQUEST_NUMBER) <= 32U))"
+.br
+.ti -1c
+.RI "#define \fBIS_DMAMUX_REQUEST_GEN_POLARITY\fP(POLARITY)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_DMAEx_ConfigMuxRequestGenerator\fP (\fBDMA_HandleTypeDef\fP *hdma, \fBHAL_DMA_MuxRequestGeneratorConfigTypeDef\fP *pRequestGeneratorConfig)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_DMAEx_EnableMuxRequestGenerator\fP (\fBDMA_HandleTypeDef\fP *hdma)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_DMAEx_DisableMuxRequestGenerator\fP (\fBDMA_HandleTypeDef\fP *hdma)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_DMAEx_ConfigMuxSync\fP (\fBDMA_HandleTypeDef\fP *hdma, \fBHAL_DMA_MuxSyncConfigTypeDef\fP *pSyncConfig)"
+.br
+.ti -1c
+.RI "void \fBHAL_DMAEx_MUX_IRQHandler\fP (\fBDMA_HandleTypeDef\fP *hdma)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file of DMA HAL extension module\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBAttention\fP
+.RS 4
+.RE
+.PP
+Copyright (c) 2018 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

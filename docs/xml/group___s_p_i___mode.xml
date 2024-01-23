@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_p_i___mode" kind="group">
+    <compoundname>SPI_Mode</compoundname>
+    <title>SPI Mode</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i___mode_1ga75f094fee5a9dc10b88401ccd17925d3" prot="public" static="no">
+        <name>SPI_MODE_SLAVE</name>
+        <initializer>(0x00000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="219" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___mode_1gaa335c2abdfad9e6f6c2677719d93b64e" prot="public" static="no">
+        <name>SPI_MODE_MASTER</name>
+        <initializer>(<ref refid="group___peripheral___registers___bits___definition_1ga5b3b6ae107fc37bf18e14506298d7a55" kindref="member">SPI_CR1_MSTR</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga5f154374b58c0234f82ea326cb303a1e" kindref="member">SPI_CR1_SSI</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="220" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

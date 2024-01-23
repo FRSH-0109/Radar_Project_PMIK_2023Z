@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___u_a_r_t___exported___functions___group4" kind="group">
+    <compoundname>UART_Exported_Functions_Group4</compoundname>
+    <title>Peripheral State and Error functions</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_a_r_t___exported___functions___group4_1gad2799699d4d4b3c9d7fac0c3523fe45e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___u_a_r_t___exported___types_1ga94c58ae1f4dbcf6032224edfc93a6e19" kindref="member">HAL_UART_StateTypeDef</ref></type>
+        <definition>HAL_UART_StateTypeDef HAL_UART_GetState</definition>
+        <argsstring>(const UART_HandleTypeDef *huart)</argsstring>
+        <name>HAL_UART_GetState</name>
+        <param>
+          <type>const <ref refid="group___u_a_r_t___exported___types_1ga5de4a49eb132735325e706f406c69d6e" kindref="member">UART_HandleTypeDef</ref> *</type>
+          <declname>huart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="1691" column="23" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" declline="1691" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t___exported___functions___group4_1ga7297bf8c1679501a19c34f737c2eeea7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t HAL_UART_GetError</definition>
+        <argsstring>(const UART_HandleTypeDef *huart)</argsstring>
+        <name>HAL_UART_GetError</name>
+        <param>
+          <type>const <ref refid="group___u_a_r_t___exported___types_1ga5de4a49eb132735325e706f406c69d6e" kindref="member">UART_HandleTypeDef</ref> *</type>
+          <declname>huart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="1692" column="23" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" declline="1692" declcolumn="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

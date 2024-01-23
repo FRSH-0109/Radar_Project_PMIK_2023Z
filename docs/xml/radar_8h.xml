@@ -1,0 +1,845 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="radar_8h" kind="file" language="C++">
+    <compoundname>radar.h</compoundname>
+    <includes refid="main_8h" local="yes">main.h</includes>
+    <includes local="yes">stdio.h</includes>
+    <includes refid="servo__driver_8h" local="yes">servo_driver.h</includes>
+    <includes refid="distance__sensor_8h" local="yes">distance_sensor.h</includes>
+    <includes refid="usart__custom_8h" local="yes">usart_custom.h</includes>
+    <includedby refid="main_8c" local="yes">Core/Src/main.c</includedby>
+    <includedby refid="radar_8c" local="yes">RadarApp/RadarDriver/radar.c</includedby>
+    <includedby refid="usart__custom_8c" local="yes">RadarApp/usart_custom/usart_custom.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="8">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="3">
+        <label>stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>stm32g0xx_hal_cortex.h</label>
+        <link refid="stm32g0xx__hal__cortex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stm32g0xx_hal_dma.h</label>
+        <link refid="stm32g0xx__hal__dma_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stm32g0xx_hal_dma_ex.h</label>
+        <link refid="stm32g0xx__hal__dma__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>stm32g0xx_hal_exti.h</label>
+        <link refid="stm32g0xx__hal__exti_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>stm32g0xx_hal_flash.h</label>
+        <link refid="stm32g0xx__hal__flash_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>stm32g0xx_hal_flash_ex.h</label>
+        <link refid="stm32g0xx__hal__flash__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stm32g0xx_hal_gpio.h</label>
+        <link refid="stm32g0xx__hal__gpio_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stm32g0xx_hal_gpio_ex.h</label>
+        <link refid="stm32g0xx__hal__gpio__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>stm32g0xx_hal_pwr.h</label>
+        <link refid="stm32g0xx__hal__pwr_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>stm32g0xx_hal_pwr_ex.h</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stm32g0xx_hal_rcc.h</label>
+        <link refid="stm32g0xx__hal__rcc_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stm32g0xx_hal_rcc_ex.h</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>stm32g0xx_hal_spi.h</label>
+        <link refid="stm32g0xx__hal__spi_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>stm32g0xx_hal_spi_ex.h</label>
+        <link refid="stm32g0xx__hal__spi__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>stm32g0xx_hal_tim.h</label>
+        <link refid="stm32g0xx__hal__tim_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>stm32g0xx_hal_tim_ex.h</label>
+        <link refid="stm32g0xx__hal__tim__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>stm32g0xx_hal_uart.h</label>
+        <link refid="stm32g0xx__hal__uart_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>stm32g0xx_hal_uart_ex.h</label>
+        <link refid="stm32g0xx__hal__uart__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stm32g0xx_ll_dma.h</label>
+        <link refid="stm32g0xx__ll__dma_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stm32g0xx_ll_dmamux.h</label>
+        <link refid="stm32g0xx__ll__dmamux_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stm32g0xx_ll_rcc.h</label>
+        <link refid="stm32g0xx__ll__rcc_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>distance_sensor.h</label>
+        <link refid="distance__sensor_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RadarApp/RadarDriver/radar.h</label>
+        <link refid="radar_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>servo_driver.h</label>
+        <link refid="servo__driver_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>usart_custom.h</label>
+        <link refid="usart__custom_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>stdbool.h</label>
+      </node>
+      <node id="9">
+        <label>stddef.h</label>
+      </node>
+      <node id="33">
+        <label>stdint.h</label>
+      </node>
+      <node id="31">
+        <label>stdio.h</label>
+      </node>
+      <node id="36">
+        <label>stdlib.h</label>
+      </node>
+      <node id="37">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="3">
+        <label>RadarApp/RadarDriver/radar.c</label>
+        <link refid="radar_8c"/>
+      </node>
+      <node id="1">
+        <label>RadarApp/RadarDriver/radar.h</label>
+        <link refid="radar_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>RadarApp/usart_custom/usart_custom.c</label>
+        <link refid="usart__custom_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structradar_struct" prot="public">radarStruct</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="radar_8h_1a1a568c862b32e2a6af3d0fda00ebc68c" prot="public" static="no">
+        <name>SENSOR_MEASURE_PERIOD_DEFAULT_MS</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="4" column="9" bodyfile="RadarApp/RadarDriver/radar.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="radar_8h_1a312279113d5a54b8d98e248b4e02eb89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void radarInit</definition>
+        <argsstring>(radarStruct *radar, servoDriverStruct *servo, TIM_HandleTypeDef *servo_tim, distanceSensorStruct *sensor, TIM_HandleTypeDef *sensor_tim)</argsstring>
+        <name>radarInit</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type><ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> *</type>
+          <declname>servo</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+          <declname>servo_tim</declname>
+        </param>
+        <param>
+          <type><ref refid="structdistance_sensor_struct" kindref="compound">distanceSensorStruct</ref> *</type>
+          <declname>sensor</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+          <declname>sensor_tim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="27" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="5" bodyend="19" declfile="RadarApp/RadarDriver/radar.h" declline="27" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1a909f36a45ee821d7528d2f4aee5a1e82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void radarServoUpdate</definition>
+        <argsstring>(radarStruct *radar)</argsstring>
+        <name>radarServoUpdate</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="30" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="23" bodyend="40" declfile="RadarApp/RadarDriver/radar.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1a4ba239034505324ee3dee22dfd0254e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool radarSetPositionMin</definition>
+        <argsstring>(radarStruct *radar, float pos)</argsstring>
+        <name>radarSetPositionMin</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="31" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="42" bodyend="51" declfile="RadarApp/RadarDriver/radar.h" declline="31" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1afa0e1f30efba3b6c3ea56a5d0b7b4008" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float radarGetPositionMin</definition>
+        <argsstring>(radarStruct *radar)</argsstring>
+        <name>radarGetPositionMin</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="32" column="7" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="53" bodyend="56" declfile="RadarApp/RadarDriver/radar.h" declline="32" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1affc98cfe5b10eb360e5e2aff374b0eaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool radarSetPositionMax</definition>
+        <argsstring>(radarStruct *radar, float pos)</argsstring>
+        <name>radarSetPositionMax</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="33" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="58" bodyend="67" declfile="RadarApp/RadarDriver/radar.h" declline="33" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1a5c23a940c59e3e96d1d3011f5bfdfd64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float radarGetPositionMax</definition>
+        <argsstring>(radarStruct *radar)</argsstring>
+        <name>radarGetPositionMax</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="34" column="7" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="69" bodyend="72" declfile="RadarApp/RadarDriver/radar.h" declline="34" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1a19fed3b3d140e2c18a4122ad7e783ac6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void radarServoStart</definition>
+        <argsstring>(radarStruct *radar)</argsstring>
+        <name>radarServoStart</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="36" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="74" bodyend="78" declfile="RadarApp/RadarDriver/radar.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1a22df522cbce2d07e06b2c92be3f0349b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void radarServoStop</definition>
+        <argsstring>(radarStruct *radar)</argsstring>
+        <name>radarServoStop</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="37" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="80" bodyend="83" declfile="RadarApp/RadarDriver/radar.h" declline="37" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1aa4b19eb1148531f570f708bb4ee262cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool radarSetPositionUpdatePeriod</definition>
+        <argsstring>(radarStruct *radar, uint16_t periodMs)</argsstring>
+        <name>radarSetPositionUpdatePeriod</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>periodMs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="39" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="85" bodyend="95" declfile="RadarApp/RadarDriver/radar.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1a3eaae4e20f433f2c438c8f94caaaae99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool radarSetPositionUpdateStep</definition>
+        <argsstring>(radarStruct *radar, float step)</argsstring>
+        <name>radarSetPositionUpdateStep</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>step</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="40" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="97" bodyend="106" declfile="RadarApp/RadarDriver/radar.h" declline="40" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1ac1d20aa713a5266f7bcee82d90b96abb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool radarSetPosition</definition>
+        <argsstring>(radarStruct *radar, float pos)</argsstring>
+        <name>radarSetPosition</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="41" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="126" bodyend="134" declfile="RadarApp/RadarDriver/radar.h" declline="41" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1adf43ab91ae524d0b9a07b3976d4cf028" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float radarGetPosition</definition>
+        <argsstring>(radarStruct *radar)</argsstring>
+        <name>radarGetPosition</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="42" column="7" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="136" bodyend="139" declfile="RadarApp/RadarDriver/radar.h" declline="42" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1abfc9c42283fc76d21b3e56cc39c8f385" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void radarMeasureStart</definition>
+        <argsstring>(radarStruct *radar)</argsstring>
+        <name>radarMeasureStart</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="46" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="145" bodyend="148" declfile="RadarApp/RadarDriver/radar.h" declline="46" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1ad5258fad0b27b8d14b803775e6f1457c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void radarMeasureStop</definition>
+        <argsstring>(radarStruct *radar)</argsstring>
+        <name>radarMeasureStop</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="47" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="150" bodyend="153" declfile="RadarApp/RadarDriver/radar.h" declline="47" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1aed51c9df6791df40aa7f91d19cd4cb06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool radarSetMeasureFreq</definition>
+        <argsstring>(radarStruct *radar, uint16_t periodMs)</argsstring>
+        <name>radarSetMeasureFreq</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>periodMs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="49" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="155" bodyend="166" declfile="RadarApp/RadarDriver/radar.h" declline="49" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1a190f69a9906f7f4c05b19e814bf1b2ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void radarTriggerMeasure</definition>
+        <argsstring>(radarStruct *radar)</argsstring>
+        <name>radarTriggerMeasure</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="51" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="168" bodyend="171" declfile="RadarApp/RadarDriver/radar.h" declline="51" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1a8d37f58cbd2c9affac492868fdc72b5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double radarGetMeasure</definition>
+        <argsstring>(radarStruct *radar)</argsstring>
+        <name>radarGetMeasure</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="52" column="8" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="173" bodyend="176" declfile="RadarApp/RadarDriver/radar.h" declline="52" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1ade099662844a751716ebda7bd3c1de78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool radarParseSetPosition</definition>
+        <argsstring>(radarStruct *radar, uint8_t *data)</argsstring>
+        <name>radarParseSetPosition</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="56" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="190" bodyend="208" declfile="RadarApp/RadarDriver/radar.h" declline="56" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1a93217053e1875c7eac9c60f4bb30a149" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool radarParseSetStep</definition>
+        <argsstring>(radarStruct *radar, uint8_t *data)</argsstring>
+        <name>radarParseSetStep</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="57" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="210" bodyend="228" declfile="RadarApp/RadarDriver/radar.h" declline="57" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1ac2d8eafddd3e2e5ceec639b9009c40fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool radarParseSetPositionMinMax</definition>
+        <argsstring>(radarStruct *radar, uint8_t *data, bool isMin)</argsstring>
+        <name>radarParseSetPositionMinMax</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isMin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="58" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="230" bodyend="263" declfile="RadarApp/RadarDriver/radar.h" declline="58" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1a7c584e4dccab771e02d9520ec9cc89bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool radarParseSetMeasurePeriod</definition>
+        <argsstring>(radarStruct *radar, uint8_t *data)</argsstring>
+        <name>radarParseSetMeasurePeriod</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="59" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="265" bodyend="283" declfile="RadarApp/RadarDriver/radar.h" declline="59" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1a446ac04525db3179676463097f06d3ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool radarParseSetDrawScale</definition>
+        <argsstring>(radarStruct *radar, uint8_t *data)</argsstring>
+        <name>radarParseSetDrawScale</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="60" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="285" bodyend="304" declfile="RadarApp/RadarDriver/radar.h" declline="60" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="radar_8h_1af268b360cfbc8508e87589e75178eff4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool radarParseSetDrawRules</definition>
+        <argsstring>(radarStruct *radar, uint8_t *data)</argsstring>
+        <name>radarParseSetDrawRules</name>
+        <param>
+          <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/RadarDriver/radar.h" line="61" column="6" bodyfile="RadarApp/RadarDriver/radar.c" bodystart="306" bodyend="325" declfile="RadarApp/RadarDriver/radar.h" declline="61" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>RADAR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RADAR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="radar_8h_1a1a568c862b32e2a6af3d0fda00ebc68c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_MEASURE_PERIOD_DEFAULT_MS<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="main_8h" kindref="compound">main.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdio.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="servo__driver_8h" kindref="compound">servo_driver.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="distance__sensor_8h" kindref="compound">distance_sensor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usart__custom_8h" kindref="compound">usart_custom.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="structradar_struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="structradar_struct_1a6c8cdd798ccc2f670ee0e3aa6c5e6134" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref>*<sp/><ref refid="structradar_struct_1a6c8cdd798ccc2f670ee0e3aa6c5e6134" kindref="member">servo</ref>;</highlight></codeline>
+<codeline lineno="14" refid="structradar_struct_1a76777b356ab2a080225682528119c4fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structradar_struct_1a76777b356ab2a080225682528119c4fe" kindref="member">position</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>degrees</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="structradar_struct_1ab672500a9007146bfda15d235a46beb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref>*<sp/><ref refid="structradar_struct_1ab672500a9007146bfda15d235a46beb5" kindref="member">servoTim</ref>;</highlight></codeline>
+<codeline lineno="16" refid="structradar_struct_1a24f98188f53563ee9a05cc92cd0352b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structradar_struct_1a24f98188f53563ee9a05cc92cd0352b1" kindref="member">positionUpdatePeriodMs</ref>;</highlight></codeline>
+<codeline lineno="17" refid="structradar_struct_1a83f07e02ef2f0c0682cc8dff5de67695" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structradar_struct_1a83f07e02ef2f0c0682cc8dff5de67695" kindref="member">positionUpdateStep</ref>;</highlight></codeline>
+<codeline lineno="18" refid="structradar_struct_1acac5383e682fd24496c39ab7d5023a46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structradar_struct_1acac5383e682fd24496c39ab7d5023a46" kindref="member">positionMin</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>degrees</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="structradar_struct_1a9dca5220660a30c5b0649234a6c22761" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structradar_struct_1a9dca5220660a30c5b0649234a6c22761" kindref="member">positionMax</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>degrees</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="structradar_struct_1a64137967141ad97b940c16a035615d09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><ref refid="structradar_struct_1a64137967141ad97b940c16a035615d09" kindref="member">direction</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="structradar_struct_1ae6f33f315a2b57c10b065315ac58041e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdistance_sensor_struct" kindref="compound">distanceSensorStruct</ref>*<sp/><ref refid="structradar_struct_1ae6f33f315a2b57c10b065315ac58041e" kindref="member">sensor</ref>;</highlight></codeline>
+<codeline lineno="23" refid="structradar_struct_1a6f7e33950e97ef1b091da9946f94b7ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref>*<sp/><ref refid="structradar_struct_1a6f7e33950e97ef1b091da9946f94b7ea" kindref="member">sensorTim</ref>;</highlight></codeline>
+<codeline lineno="24" refid="structradar_struct_1a1fb6c4ca380736554edf1b5778d03bb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structradar_struct_1a1fb6c4ca380736554edf1b5778d03bb6" kindref="member">measurePeriodMs</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}<ref refid="structradar_struct" kindref="compound">radarStruct</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1a312279113d5a54b8d98e248b4e02eb89" kindref="member">radarInit</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>,<sp/><ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref>*<sp/>servo,<sp/><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref>*<sp/>servo_tim,<sp/><ref refid="structdistance_sensor_struct" kindref="compound">distanceSensorStruct</ref>*<sp/>sensor,<sp/><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref>*<sp/>sensor_tim);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1a909f36a45ee821d7528d2f4aee5a1e82" kindref="member">radarServoUpdate</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1a4ba239034505324ee3dee22dfd0254e1" kindref="member">radarSetPositionMin</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pos);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1afa0e1f30efba3b6c3ea56a5d0b7b4008" kindref="member">radarGetPositionMin</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1affc98cfe5b10eb360e5e2aff374b0eaa" kindref="member">radarSetPositionMax</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pos);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1a5c23a940c59e3e96d1d3011f5bfdfd64" kindref="member">radarGetPositionMax</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1a19fed3b3d140e2c18a4122ad7e783ac6" kindref="member">radarServoStart</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1a22df522cbce2d07e06b2c92be3f0349b" kindref="member">radarServoStop</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1aa4b19eb1148531f570f708bb4ee262cc" kindref="member">radarSetPositionUpdatePeriod</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>,<sp/>uint16_t<sp/>periodMs);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1a3eaae4e20f433f2c438c8f94caaaae99" kindref="member">radarSetPositionUpdateStep</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>step);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1ac1d20aa713a5266f7bcee82d90b96abb" kindref="member">radarSetPosition</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pos);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1adf43ab91ae524d0b9a07b3976d4cf028" kindref="member">radarGetPosition</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>);</highlight></codeline>
+<codeline lineno="44"></codeline>
+<codeline lineno="46"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1abfc9c42283fc76d21b3e56cc39c8f385" kindref="member">radarMeasureStart</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1ad5258fad0b27b8d14b803775e6f1457c" kindref="member">radarMeasureStop</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1aed51c9df6791df40aa7f91d19cd4cb06" kindref="member">radarSetMeasureFreq</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>,<sp/>uint16_t<sp/>periodMs);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1a190f69a9906f7f4c05b19e814bf1b2ce" kindref="member">radarTriggerMeasure</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1a8d37f58cbd2c9affac492868fdc72b5e" kindref="member">radarGetMeasure</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//DATA<sp/>PARSING//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1ade099662844a751716ebda7bd3c1de78" kindref="member">radarParseSetPosition</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>,<sp/>uint8_t*<sp/>data);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1a93217053e1875c7eac9c60f4bb30a149" kindref="member">radarParseSetStep</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>,<sp/>uint8_t*<sp/>data);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1ac2d8eafddd3e2e5ceec639b9009c40fc" kindref="member">radarParseSetPositionMinMax</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>,<sp/>uint8_t*<sp/>data,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isMin);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1a7c584e4dccab771e02d9520ec9cc89bb" kindref="member">radarParseSetMeasurePeriod</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>,<sp/>uint8_t*<sp/>data);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1a446ac04525db3179676463097f06d3ac" kindref="member">radarParseSetDrawScale</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>,<sp/>uint8_t*<sp/>data);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="radar_8h_1af268b360cfbc8508e87589e75178eff4" kindref="member">radarParseSetDrawRules</ref>(<ref refid="structradar_struct" kindref="compound">radarStruct</ref>*<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>,<sp/>uint8_t*<sp/>data);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="RadarApp/RadarDriver/radar.h"/>
+  </compounddef>
+</doxygen>

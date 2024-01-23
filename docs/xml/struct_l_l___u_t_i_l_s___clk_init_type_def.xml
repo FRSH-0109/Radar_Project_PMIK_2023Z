@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_l_l___u_t_i_l_s___clk_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>LL_UTILS_ClkInitTypeDef</compoundname>
+    <includes refid="stm32g0xx__ll__utils_8h" local="no">stm32g0xx_ll_utils.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_l_l___u_t_i_l_s___clk_init_type_def_1a082c91ea9f270509aca7ae6ec42c2a54" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AHBCLKDivider</definition>
+        <argsstring></argsstring>
+        <name>AHBCLKDivider</name>
+        <qualifiedname>LL_UTILS_ClkInitTypeDef::AHBCLKDivider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The AHB clock (HCLK) divider. This clock is derived from the system clock (SYSCLK). This parameter can be a value of RCC_LL_EC_SYSCLK_DIV</para>
+<para>This feature can be modified afterwards using unitary function LL_RCC_SetAHBPrescaler(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" line="121" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_l_l___u_t_i_l_s___clk_init_type_def_1a994aca51c40decfc340e045da1a6ca19" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t APB1CLKDivider</definition>
+        <argsstring></argsstring>
+        <name>APB1CLKDivider</name>
+        <qualifiedname>LL_UTILS_ClkInitTypeDef::APB1CLKDivider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The APB1 clock (PCLK1) divider. This clock is derived from the AHB clock (HCLK). This parameter can be a value of RCC_LL_EC_APB1_DIV</para>
+<para>This feature can be modified afterwards using unitary function LL_RCC_SetAPB1Prescaler(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" line="127" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>UTILS System, AHB and APB buses clock configuration structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" line="119" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" bodystart="120" bodyend="132"/>
+    <listofallmembers>
+      <member refid="struct_l_l___u_t_i_l_s___clk_init_type_def_1a082c91ea9f270509aca7ae6ec42c2a54" prot="public" virt="non-virtual"><scope>LL_UTILS_ClkInitTypeDef</scope><name>AHBCLKDivider</name></member>
+      <member refid="struct_l_l___u_t_i_l_s___clk_init_type_def_1a994aca51c40decfc340e045da1a6ca19" prot="public" virt="non-virtual"><scope>LL_UTILS_ClkInitTypeDef</scope><name>APB1CLKDivider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,76 @@
+.TH "RCC_AHB_Clock_Sleep_Enabled_Disabled_Status" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_AHB_Clock_Sleep_Enabled_Disabled_Status \- AHB Peripheral Clock Sleep Enabled or Disabled Status
+.PP
+ \- Check whether the AHB peripheral clock during Low Power (Sleep) mode is enabled or not\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_RCC_DMA1_IS_CLK_SLEEP_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_DMA1SMEN\fP) != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_FLASH_IS_CLK_SLEEP_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_FLASHSMEN\fP)!= \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_SRAM_IS_CLK_SLEEP_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_SRAMSMEN\fP) != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_CRC_IS_CLK_SLEEP_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_CRCSMEN\fP)  != \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_DMA1_IS_CLK_SLEEP_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_DMA1SMEN\fP)  == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_FLASH_IS_CLK_SLEEP_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_FLASHSMEN\fP) == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_SRAM_IS_CLK_SLEEP_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_SRAMSMEN\fP)  == \fBRESET\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_CRC_IS_CLK_SLEEP_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_CRCSMEN\fP)   == \fBRESET\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Check whether the AHB peripheral clock during Low Power (Sleep) mode is enabled or not\&. 
+
+
+.PP
+\fBNote\fP
+.RS 4
+Peripheral clock gating in SLEEP mode can be used to further reduce power consumption\&. 
+.PP
+After wakeup from SLEEP mode, the peripheral clock is enabled again\&. 
+.PP
+By default, all peripheral clocks are enabled during SLEEP mode\&. 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_RCC_CRC_IS_CLK_SLEEP_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_CRCSMEN\fP)   == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_CRC_IS_CLK_SLEEP_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_CRCSMEN\fP)  != \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_DMA1_IS_CLK_SLEEP_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_DMA1SMEN\fP)  == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_DMA1_IS_CLK_SLEEP_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_DMA1SMEN\fP) != \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_FLASH_IS_CLK_SLEEP_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_FLASHSMEN\fP) == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_FLASH_IS_CLK_SLEEP_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_FLASHSMEN\fP)!= \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_SRAM_IS_CLK_SLEEP_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_SRAMSMEN\fP)  == \fBRESET\fP)"
+
+.SS "#define __HAL_RCC_SRAM_IS_CLK_SLEEP_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_SRAMSMEN\fP) != \fBRESET\fP)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

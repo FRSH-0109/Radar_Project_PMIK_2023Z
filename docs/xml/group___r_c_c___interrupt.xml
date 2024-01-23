@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___r_c_c___interrupt" kind="group">
+    <compoundname>RCC_Interrupt</compoundname>
+    <title>Interrupts</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_c_c___interrupt_1ga2b4ef277c1b71f96e0bef4b9a72fca94" prot="public" static="no">
+        <name>RCC_IT_LSIRDY</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gad1f597c9d40c025a6695824b5da27c13" kindref="member">RCC_CIFR_LSIRDYF</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LSI Ready Interrupt flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="728" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="728" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___interrupt_1gad6b6e78a426850f595ef180d292a673d" prot="public" static="no">
+        <name>RCC_IT_LSERDY</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga1559f0774dd54852c12a02bf7b867b93" kindref="member">RCC_CIFR_LSERDYF</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LSE Ready Interrupt flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="729" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="729" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___interrupt_1ga69637e51b71f73f519c8c0a0613d042f" prot="public" static="no">
+        <name>RCC_IT_HSIRDY</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga035d773e029fec439d29551774b9304a" kindref="member">RCC_CIFR_HSIRDYF</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HSI Ready Interrupt flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="730" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="730" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___interrupt_1gad13eaede352bca59611e6cae68665866" prot="public" static="no">
+        <name>RCC_IT_HSERDY</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga5d12419149aa1342fc0d0a79ae380c50" kindref="member">RCC_CIFR_HSERDYF</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HSE Ready Interrupt flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="731" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="731" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___interrupt_1ga68d48e7811fb58f2649dce6cf0d823d9" prot="public" static="no">
+        <name>RCC_IT_PLLRDY</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga31b19d1c3bec6c7ce1fc4e67b1bd8bb3" kindref="member">RCC_CIFR_PLLRDYF</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PLL Ready Interrupt flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="732" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="732" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___interrupt_1ga9bb34a4912d2084dc1c0834eb53aa7a3" prot="public" static="no">
+        <name>RCC_IT_CSS</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gac7ca64b3739a65df1bdb70cec7be93d9" kindref="member">RCC_CIFR_CSSF</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HSE Clock Security System Interrupt flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="733" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="733" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___interrupt_1gaf3f259914cb56820b1649c9d4413736c" prot="public" static="no">
+        <name>RCC_IT_LSECSS</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga0f50f7bc98c719172190873cc10bf5b5" kindref="member">RCC_CIFR_LSECSSF</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LSE Clock Security System Interrupt flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="734" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="734" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

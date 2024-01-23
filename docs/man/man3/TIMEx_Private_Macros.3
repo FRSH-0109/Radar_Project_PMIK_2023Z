@@ -1,0 +1,65 @@
+.TH "TIMEx_Private_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIMEx_Private_Macros \- TIM Extended Private Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_TIM_REMAP\fP(__REMAP__)   ((((__REMAP__) & 0xFFFC3FFFU) == 0x00000000U))"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_BREAKINPUT\fP(__BREAKINPUT__)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_BREAKINPUTSOURCE\fP(__SOURCE__)   ((__SOURCE__) == \fBTIM_BREAKINPUTSOURCE_BKIN\fP)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_BREAKINPUTSOURCE_STATE\fP(__STATE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_BREAKINPUTSOURCE_POLARITY\fP(__POLARITY__)"
+.br
+.ti -1c
+.RI "#define \fBIS_TIM_TISEL\fP(__TISEL__)   ((((__TISEL__) & 0xF0F0F0F0U) == 0x00000000U))"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_TIM_BREAKINPUT(__BREAKINPUT__)"
+\fBValue:\fP.PP
+.nf
+                                            (((__BREAKINPUT__) == TIM_BREAKINPUT_BRK)  || \\
+                                            ((__BREAKINPUT__) == TIM_BREAKINPUT_BRK2))
+.fi
+
+.SS "#define IS_TIM_BREAKINPUTSOURCE(__SOURCE__)   ((__SOURCE__) == \fBTIM_BREAKINPUTSOURCE_BKIN\fP)"
+
+.SS "#define IS_TIM_BREAKINPUTSOURCE_POLARITY(__POLARITY__)"
+\fBValue:\fP.PP
+.nf
+                                                         (((__POLARITY__) == TIM_BREAKINPUTSOURCE_POLARITY_LOW)  || \\
+                                                         ((__POLARITY__) == TIM_BREAKINPUTSOURCE_POLARITY_HIGH))
+.fi
+
+.SS "#define IS_TIM_BREAKINPUTSOURCE_STATE(__STATE__)"
+\fBValue:\fP.PP
+.nf
+                                                   (((__STATE__) == TIM_BREAKINPUTSOURCE_DISABLE)  || \\
+                                                   ((__STATE__) == TIM_BREAKINPUTSOURCE_ENABLE))
+.fi
+
+.SS "#define IS_TIM_REMAP(__REMAP__)   ((((__REMAP__) & 0xFFFC3FFFU) == 0x00000000U))"
+
+.SS "#define IS_TIM_TISEL(__TISEL__)   ((((__TISEL__) & 0xF0F0F0F0U) == 0x00000000U))"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

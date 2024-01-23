@@ -1,0 +1,45 @@
+.TH "FLASH_Interrupt_definition" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FLASH_Interrupt_definition \- FLASH Interrupts Definition
+.PP
+ \- FLASH Interrupt definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFLASH_IT_EOP\fP   ((\fBFLASH_FLAG_CR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_CR_EOPIE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_IT_OPERR\fP   ((\fBFLASH_FLAG_CR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_CR_ERRIE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_IT_ECCC1\fP   ((\fBFLASH_FLAG_ECCR1_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_ECCR_ECCCIE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_IT_ECCC\fP   \fBFLASH_IT_ECCC1\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+FLASH Interrupt definition\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FLASH_IT_ECCC   \fBFLASH_IT_ECCC1\fP"
+ECC Correction - legacy name for single bank 
+.SS "#define FLASH_IT_ECCC1   ((\fBFLASH_FLAG_ECCR1_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_ECCR_ECCCIE_Pos\fP)"
+ECC Correction on Bank 1 Interrupt source 
+.SS "#define FLASH_IT_EOP   ((\fBFLASH_FLAG_CR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_CR_EOPIE_Pos\fP)"
+End of FLASH Operation Interrupt source 
+.SS "#define FLASH_IT_OPERR   ((\fBFLASH_FLAG_CR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_CR_ERRIE_Pos\fP)"
+Error Interrupt source 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

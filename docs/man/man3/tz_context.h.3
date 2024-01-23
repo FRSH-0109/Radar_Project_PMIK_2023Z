@@ -1,0 +1,134 @@
+.TH "Drivers/CMSIS/Include/tz_context.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drivers/CMSIS/Include/tz_context.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdint\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTZ_CONTEXT_H\fP"
+.br
+.ti -1c
+.RI "#define \fBTZ_MODULEID_T\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef uint32_t \fBTZ_ModuleId_t\fP"
+.br
+.ti -1c
+.RI "typedef uint32_t \fBTZ_MemoryId_t\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBTZ_InitContextSystem_S\fP (void)"
+.br
+.ti -1c
+.RI "\fBTZ_MemoryId_t\fP \fBTZ_AllocModuleContext_S\fP (\fBTZ_ModuleId_t\fP module)"
+.br
+.ti -1c
+.RI "uint32_t \fBTZ_FreeModuleContext_S\fP (\fBTZ_MemoryId_t\fP id)"
+.br
+.ti -1c
+.RI "uint32_t \fBTZ_LoadContext_S\fP (\fBTZ_MemoryId_t\fP id)"
+.br
+.ti -1c
+.RI "uint32_t \fBTZ_StoreContext_S\fP (\fBTZ_MemoryId_t\fP id)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define TZ_CONTEXT_H"
+
+.SS "#define TZ_MODULEID_T"
+
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef uint32_t \fBTZ_MemoryId_t\fP"
+TZ Memory ID identifies an allocated memory slot\&. 
+.SS "typedef uint32_t \fBTZ_ModuleId_t\fP"
+Data type that identifies secure software modules called by a process\&. 
+.SH "Function Documentation"
+.PP 
+.SS "\fBTZ_MemoryId_t\fP TZ_AllocModuleContext_S (\fBTZ_ModuleId_t\fP module)"
+Allocate context memory for calling secure software modules in TrustZone 
+.PP
+\fBParameters\fP
+.RS 4
+\fImodule\fP identifies software modules called from non-secure mode 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+value != 0 id TrustZone memory slot identifier 
+.PP
+value 0 no memory available or internal error 
+.RE
+.PP
+
+.SS "uint32_t TZ_FreeModuleContext_S (\fBTZ_MemoryId_t\fP id)"
+Free context memory that was previously allocated with \fBTZ_AllocModuleContext_S\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP TrustZone memory slot identifier 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+execution status (1: success, 0: error) 
+.RE
+.PP
+
+.SS "uint32_t TZ_InitContextSystem_S (void)"
+Initialize secure context memory system 
+.PP
+\fBReturns\fP
+.RS 4
+execution status (1: success, 0: error) 
+.RE
+.PP
+
+.SS "uint32_t TZ_LoadContext_S (\fBTZ_MemoryId_t\fP id)"
+Load secure context (called on RTOS thread context switch) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP TrustZone memory slot identifier 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+execution status (1: success, 0: error) 
+.RE
+.PP
+
+.SS "uint32_t TZ_StoreContext_S (\fBTZ_MemoryId_t\fP id)"
+Store secure context (called on RTOS thread context switch) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP TrustZone memory slot identifier 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+execution status (1: success, 0: error) 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status" kind="group">
+    <compoundname>RCC_AHB_Peripheral_Clock_Enabled_Disabled_Status</compoundname>
+    <title>AHB Peripheral Clock Enabled or Disabled Status</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_1gaab05e603c9cadd72e4b6397837b46cef" prot="public" static="no">
+        <name>__HAL_RCC_DMA1_IS_CLK_ENABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;AHBENR, <ref refid="group___peripheral___registers___bits___definition_1gac8c3053f1ce37c9f643f0e31471927ea" kindref="member">RCC_AHBENR_DMA1EN</ref>)  != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1429" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_1gacc14db2565af722699ef4b29221d2acd" prot="public" static="no">
+        <name>__HAL_RCC_FLASH_IS_CLK_ENABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;AHBENR, <ref refid="group___peripheral___registers___bits___definition_1gac8d9c84356530f36e7b349d38c033928" kindref="member">RCC_AHBENR_FLASHEN</ref>) != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1433" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_1ga0e1b25cbf589c1c47c1d069e4c803d56" prot="public" static="no">
+        <name>__HAL_RCC_CRC_IS_CLK_ENABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;AHBENR, <ref refid="group___peripheral___registers___bits___definition_1gade3ee302bf659a2bfbf75e1a00630242" kindref="member">RCC_AHBENR_CRCEN</ref>)   != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1434" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_1gae89d94d6252c79e450623f69eb939ed6" prot="public" static="no">
+        <name>__HAL_RCC_DMA1_IS_CLK_DISABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;AHBENR, <ref refid="group___peripheral___registers___bits___definition_1gac8c3053f1ce37c9f643f0e31471927ea" kindref="member">RCC_AHBENR_DMA1EN</ref>)  == <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1442" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_1ga2a09cde9411c951a02b82ef8b5129d6d" prot="public" static="no">
+        <name>__HAL_RCC_FLASH_IS_CLK_DISABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;AHBENR, <ref refid="group___peripheral___registers___bits___definition_1gac8d9c84356530f36e7b349d38c033928" kindref="member">RCC_AHBENR_FLASHEN</ref>) == <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1446" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_1ga3d2645916b9ee9bad8c724a719c621d9" prot="public" static="no">
+        <name>__HAL_RCC_CRC_IS_CLK_DISABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;AHBENR, <ref refid="group___peripheral___registers___bits___definition_1gade3ee302bf659a2bfbf75e1a00630242" kindref="member">RCC_AHBENR_CRCEN</ref>)   == <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1447" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1447" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Check whether the AHB peripheral clock is enabled or not. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

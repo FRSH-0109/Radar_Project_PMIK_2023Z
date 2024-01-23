@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_p_i___n_s_s_p___mode" kind="group">
+    <compoundname>SPI_NSSP_Mode</compoundname>
+    <title>SPI NSS Pulse Mode</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i___n_s_s_p___mode_1gac6243661f7fabde22ef936590f88be78" prot="public" static="no">
+        <name>SPI_NSS_PULSE_ENABLE</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga2e7d9d05424a68e6b02b82280541dbd2" kindref="member">SPI_CR2_NSSP</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="286" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___n_s_s_p___mode_1ga34736b4ea038be7723b31a0416a26832" prot="public" static="no">
+        <name>SPI_NSS_PULSE_DISABLE</name>
+        <initializer>(0x00000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="287" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___p_w_r_ex___private___macros" kind="group">
+    <compoundname>PWREx_Private_Macros</compoundname>
+    <title>PWR Extended Private Macros</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___p_w_r_ex___private___macros_1ga271976c1e479959e9f5a23c61745ab3a" prot="public" static="no">
+        <name>IS_PWR_BATTERY_RESISTOR_SELECT</name>
+        <param><defname>__RESISTOR__</defname></param>
+        <initializer>                                                      (((__RESISTOR__) == <ref refid="group___p_w_r_ex___v_b_a_t___battery___charging___selection_1ga27d3d5ee9e0fc78ecac6e41498a37916" kindref="member">PWR_BATTERY_CHARGING_RESISTOR_5</ref>) || \
+                                                      ((__RESISTOR__) == <ref refid="group___p_w_r_ex___v_b_a_t___battery___charging___selection_1gacebb57480a111beaf8ca05f014cbd096" kindref="member">PWR_BATTERY_CHARGING_RESISTOR_1_5</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="500" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" bodystart="500" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r_ex___private___macros_1ga63bba0938dd122a0a9d612fd473342dd" prot="public" static="no">
+        <name>IS_PWR_GPIO_BIT_NUMBER</name>
+        <param><defname>__BIT_NUMBER__</defname></param>
+        <initializer>                                                 ((((__BIT_NUMBER__) &amp; 0x0000FFFFu) != 0x00u) &amp;&amp; \
+                                                 (((__BIT_NUMBER__) &amp; 0xFFFF0000u) == 0x00u))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="503" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" bodystart="503" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r_ex___private___macros_1ga993e3325f8c019aae05694e16afab13a" prot="public" static="no">
+        <name>IS_PWR_GPIO</name>
+        <param><defname>__GPIO__</defname></param>
+        <initializer>                                             (((__GPIO__) == <ref refid="group___p_w_r_ex___g_p_i_o___port_1ga89e70f23992ce82aed435254a3a2436a" kindref="member">PWR_GPIO_A</ref>) || \
+                                             ((__GPIO__) == <ref refid="group___p_w_r_ex___g_p_i_o___port_1ga56dd775ffa87ae1e07b84ff963b6f723" kindref="member">PWR_GPIO_B</ref>) || \
+                                             ((__GPIO__) == <ref refid="group___p_w_r_ex___g_p_i_o___port_1gaffb175dc1b426b66fc8334298dedfb2d" kindref="member">PWR_GPIO_C</ref>) || \
+                                             ((__GPIO__) == <ref refid="group___p_w_r_ex___g_p_i_o___port_1ga8313451988e399483edbb9bc5925654d" kindref="member">PWR_GPIO_D</ref>) || \
+                                             ((__GPIO__) == <ref refid="group___p_w_r_ex___g_p_i_o___port_1ga94b434338719750707a69ee3b449c4d6" kindref="member">PWR_GPIO_F</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="513" column="10" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" bodystart="513" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r_ex___private___macros_1ga0f2481ecabd15fce28fa073838985894" prot="public" static="no">
+        <name>IS_PWR_FLASH_POWERDOWN</name>
+        <param><defname>__MODE__</defname></param>
+        <initializer>                                             ((((__MODE__) &amp; (<ref refid="group___p_w_r_ex___flash___power_down_1ga09d759cd12585c2538a7a5ae6d26381c" kindref="member">PWR_FLASHPD_LPRUN</ref> | <ref refid="group___p_w_r_ex___flash___power_down_1ga6d65383a84498625b0e424dfa43b1100" kindref="member">PWR_FLASHPD_LPSLEEP</ref> | <ref refid="group___p_w_r_ex___flash___power_down_1ga90a75367aa4291b1507da7c987ac0c28" kindref="member">PWR_FLASHPD_STOP</ref>)) != 0x00u) &amp;&amp; \
+                                             (((__MODE__) &amp; ~(<ref refid="group___p_w_r_ex___flash___power_down_1ga09d759cd12585c2538a7a5ae6d26381c" kindref="member">PWR_FLASHPD_LPRUN</ref> | <ref refid="group___p_w_r_ex___flash___power_down_1ga6d65383a84498625b0e424dfa43b1100" kindref="member">PWR_FLASHPD_LPSLEEP</ref> | <ref refid="group___p_w_r_ex___flash___power_down_1ga90a75367aa4291b1507da7c987ac0c28" kindref="member">PWR_FLASHPD_STOP</ref>)) == 0x00u))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="520" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" bodystart="520" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r_ex___private___macros_1ga35f3636d8fff27feb210e9860076ef2f" prot="public" static="no">
+        <name>IS_PWR_VOLTAGE_SCALING_RANGE</name>
+        <param><defname>RANGE</defname></param>
+        <initializer>                                             (((RANGE) == <ref refid="group___p_w_r_ex___regulator___voltage___scale_1ga3b5ca5ab9c19938a14d273825bcf840e" kindref="member">PWR_REGULATOR_VOLTAGE_SCALE1</ref>) || \
+                                             ((RANGE) == <ref refid="group___p_w_r_ex___regulator___voltage___scale_1gaa0d38e304a0adfdbb58a61c96bdb95e9" kindref="member">PWR_REGULATOR_VOLTAGE_SCALE2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" line="523" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" bodystart="523" bodyend="524"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

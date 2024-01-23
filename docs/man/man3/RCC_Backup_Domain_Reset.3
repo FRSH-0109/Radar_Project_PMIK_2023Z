@@ -1,0 +1,47 @@
+.TH "RCC_Backup_Domain_Reset" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_Backup_Domain_Reset \- RCC Backup Domain Reset
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_RCC_BACKUPRESET_FORCE\fP()   \fBSET_BIT\fP(\fBRCC\fP\->BDCR, \fBRCC_BDCR_BDRST\fP)"
+.br
+.RI "Macros to force or release the Backup domain reset\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_BACKUPRESET_RELEASE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->BDCR, \fBRCC_BDCR_BDRST\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_RCC_BACKUPRESET_FORCE()   \fBSET_BIT\fP(\fBRCC\fP\->BDCR, \fBRCC_BDCR_BDRST\fP)"
+
+.PP
+Macros to force or release the Backup domain reset\&. 
+.PP
+\fBNote\fP
+.RS 4
+This function resets the RTC peripheral (including the backup registers) and the RTC clock source selection in RCC_CSR register\&. 
+.PP
+The BKPSRAM is not affected by this reset\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_RCC_BACKUPRESET_RELEASE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->BDCR, \fBRCC_BDCR_BDRST\fP)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,43 @@
+\doxysection{servo\+\_\+driver.\+h}
+\hypertarget{servo__driver_8h_source}{}\label{servo__driver_8h_source}\index{RadarApp/ServoDriver/servo\_driver.h@{RadarApp/ServoDriver/servo\_driver.h}}
+\mbox{\hyperlink{servo__driver_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ SERVO\_DRIVER\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ SERVO\_DRIVER\_H}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ SERVO\_MIN\_DEGREES\ 0.0f\ \ \ \ \ \ }}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ SERVO\_MAX\_DEGREES\ 180.0f\ \ \ \ }}
+\DoxyCodeLine{00023\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structservo_driver_struct_afc1af0b1401452570571cb2261fae0a2}{degreesMin}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structservo_driver_struct_ad7d129de79462605d163ac9cd0153101}{degreesMax}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{structservo_driver_struct_ae58cfcf62f825adac798acdb7328024e}{pulseWidthMin}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{structservo_driver_struct_a06b7608e42efb1b7afa8b4c852bb609d}{pulseWidthMax}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structservo_driver_struct_ab5714dc534cee43335450548d8d5e79f}{positionInDegrees}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{structservo_driver_struct_a5ca561b85876367a491830913bd31c53}{positionInPulseWidth}};\ \ }
+\DoxyCodeLine{00033\ \}\mbox{\hyperlink{structservo_driver_struct}{servoDriverStruct}};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00045\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{servo__driver_8h_a20a27d2eaa060a951a5807b5bb48919e}{servoDriverInit}}(\mbox{\hyperlink{structservo_driver_struct}{servoDriverStruct}}\ *servoDriver,\ \textcolor{keywordtype}{float}\ dMin,\ \textcolor{keywordtype}{float}\ dMax,\ uint16\_t\ pMin,\ uint16\_t\ pMax);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{servo__driver_8h_a1acdc2cc47d587de4954d1e7602f4898}{servoDriverStart}}(\mbox{\hyperlink{structservo_driver_struct}{servoDriverStruct}}\ *servoDriver);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{servo__driver_8h_a632cccd31e765ad946feea85d0a13d8d}{servoDriverStop}}(\mbox{\hyperlink{structservo_driver_struct}{servoDriverStruct}}\ *servoDriver);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{servo__driver_8h_a3a027ed11a1051d0c899706817c68e37}{servoDriverStartTimer}}(\mbox{\hyperlink{structservo_driver_struct}{servoDriverStruct}}\ *servoDriver);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{servo__driver_8h_a9644009cc702a14f3a480ad472ee4d6a}{servoDriverStopTimer}}(\mbox{\hyperlink{structservo_driver_struct}{servoDriverStruct}}\ *servoDriver);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00082\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{servo__driver_8h_a5728d01171e0105187a4e732e23a1fd9}{servoDriverSetDegrees}}(\mbox{\hyperlink{structservo_driver_struct}{servoDriverStruct}}\ *servoDriver,\ \textcolor{keywordtype}{float}\ degrees);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00091\ uint16\_t\ \mbox{\hyperlink{servo__driver_8h_a5ae45f5c916eb47431e59f94d645bbc7}{servoDriverDegreesToPulseWidth}}(\mbox{\hyperlink{structservo_driver_struct}{servoDriverStruct}}\ *servoDriver,\ \textcolor{keywordtype}{float}\ degrees);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00098\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{servo__driver_8h_aa8a4bdef9b3e742a5e225dd29a804db6}{servoDriverSetPulseWidth}}(\mbox{\hyperlink{structservo_driver_struct}{servoDriverStruct}}\ *servoDriver);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,1276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_i_l_i9341_8h" kind="file" language="C++">
+    <compoundname>ILI9341.h</compoundname>
+    <includedby refid="main_8c" local="yes">Core/Src/main.c</includedby>
+    <includedby refid="_i_l_i9341_8c" local="yes">RadarApp/DisplayDriver/ILI9341.c</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="3">
+        <label>RadarApp/DisplayDriver/ILI9341.c</label>
+        <link refid="_i_l_i9341_8c"/>
+      </node>
+      <node id="1">
+        <label>RadarApp/DisplayDriver/ILI9341.h</label>
+        <link refid="_i_l_i9341_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_i_l_i9341_8h_1af7afbc31379d61268899eef5e9dd4ef5" prot="public" static="no">
+        <name>ILI9341_ROTATION</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="14" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1afc86ae8ef4d7c6b3bfb0f83f9d4dcf63" prot="public" static="no">
+        <name>ILI9341_TFTWIDTH</name>
+        <initializer>320</initializer>
+        <briefdescription>
+<para>ILI9341 max TFT width. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="20" column="10" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a5790338f2cee9bbd8fb015d02c9c52d3" prot="public" static="no">
+        <name>ILI9341_TFTHEIGHT</name>
+        <initializer>240</initializer>
+        <briefdescription>
+<para>ILI9341 max TFT height. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="21" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a58488419649441aec5166d08b1160837" prot="public" static="no">
+        <name>ILI9341_NOP</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+<para>No-op register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="23" column="10" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a05c1fbaa5809b6e45dd1da9fd0c05fc0" prot="public" static="no">
+        <name>ILI9341_SWRESET</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+<para>Software reset register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="24" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a97969fc9b0fb77e372d895f647387207" prot="public" static="no">
+        <name>ILI9341_RDDID</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+<para>Read display identification information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="25" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a85532e0077d505687036b92bd7e70989" prot="public" static="no">
+        <name>ILI9341_RDDST</name>
+        <initializer>0x09</initializer>
+        <briefdescription>
+<para>Read Display Status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="26" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a91c32c640e65f7e890fdbb5aed29077b" prot="public" static="no">
+        <name>ILI9341_SLPIN</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+<para>Enter Sleep Mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="28" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a2183eaeed3b4f2e82f1f1a5aed9cf8e1" prot="public" static="no">
+        <name>ILI9341_SLPOUT</name>
+        <initializer>0x11</initializer>
+        <briefdescription>
+<para>Sleep Out. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="29" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a9960c17c0ec3f5adde7cf7fa94f27220" prot="public" static="no">
+        <name>ILI9341_PTLON</name>
+        <initializer>0x12</initializer>
+        <briefdescription>
+<para>Partial Mode ON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="30" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1ac657aed4eab33cf9ba9c3a44919218ab" prot="public" static="no">
+        <name>ILI9341_NORON</name>
+        <initializer>0x13</initializer>
+        <briefdescription>
+<para>Normal Display Mode ON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="31" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1ad9996d51efbffc39bd2909a46dcb443b" prot="public" static="no">
+        <name>ILI9341_RDMODE</name>
+        <initializer>0x0A</initializer>
+        <briefdescription>
+<para>Read Display Power Mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="33" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1aa9692e6f195c64bf7ffbdf1c37e2a473" prot="public" static="no">
+        <name>ILI9341_RDMADCTL</name>
+        <initializer>0x0B</initializer>
+        <briefdescription>
+<para>Read Display MADCTL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="34" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1aaa8ea7376d8942dded4e00bfe006c9bd" prot="public" static="no">
+        <name>ILI9341_RDPIXFMT</name>
+        <initializer>0x0C</initializer>
+        <briefdescription>
+<para>Read Display Pixel Format. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="35" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a4e4b9406383c20af1be6e0e05f319abf" prot="public" static="no">
+        <name>ILI9341_RDIMGFMT</name>
+        <initializer>0x0D</initializer>
+        <briefdescription>
+<para>Read Display Image Format. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="36" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1ada2055b1b89e10dd1a854d98022ce40c" prot="public" static="no">
+        <name>ILI9341_RDSELFDIAG</name>
+        <initializer>0x0F</initializer>
+        <briefdescription>
+<para>Read Display Self-Diagnostic Result. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="37" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1aa373acfd567ed1ab59f04d44fe1e5b6f" prot="public" static="no">
+        <name>ILI9341_INVOFF</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+<para>Display Inversion OFF. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="39" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a310ca5d5d75b141c72e36a14e8b2bb8a" prot="public" static="no">
+        <name>ILI9341_INVON</name>
+        <initializer>0x21</initializer>
+        <briefdescription>
+<para>Display Inversion ON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="40" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a37d467e2a578e59844315ee76621fecb" prot="public" static="no">
+        <name>ILI9341_GAMMASET</name>
+        <initializer>0x26</initializer>
+        <briefdescription>
+<para>Gamma Set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="41" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a96cd1f1e426827243075de8477439222" prot="public" static="no">
+        <name>ILI9341_DISPOFF</name>
+        <initializer>0x28</initializer>
+        <briefdescription>
+<para>Display OFF. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="42" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a278999b9f435340e6a689165c860050a" prot="public" static="no">
+        <name>ILI9341_DISPON</name>
+        <initializer>0x29</initializer>
+        <briefdescription>
+<para>Display ON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="43" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a0735e9a5ee316588f5430559b56074c4" prot="public" static="no">
+        <name>ILI9341_CASET</name>
+        <initializer>0x2A</initializer>
+        <briefdescription>
+<para>Column Address Set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="45" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1acc4a8ed569a4c04d4ef11e6a458fc2e0" prot="public" static="no">
+        <name>ILI9341_PASET</name>
+        <initializer>0x2B</initializer>
+        <briefdescription>
+<para>Page Address Set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="46" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a7130c62347e51a4bafb7070ba393ee39" prot="public" static="no">
+        <name>ILI9341_RAMWR</name>
+        <initializer>0x2C</initializer>
+        <briefdescription>
+<para>Memory Write. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="47" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a1380e18775e66a698eb0120f64af8d27" prot="public" static="no">
+        <name>ILI9341_RAMRD</name>
+        <initializer>0x2E</initializer>
+        <briefdescription>
+<para>Memory Read. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="48" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a9d46802e696356cd1b7625d36c20e8dd" prot="public" static="no">
+        <name>ILI9341_PTLAR</name>
+        <initializer>0x30</initializer>
+        <briefdescription>
+<para>Partial Area. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="50" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1aba45bf6c8278bf5210bab2607e993cf3" prot="public" static="no">
+        <name>ILI9341_VSCRDEF</name>
+        <initializer>0x33</initializer>
+        <briefdescription>
+<para>Vertical Scrolling Definition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="51" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a3788bc35c2adfe007f3b6a03b85d2071" prot="public" static="no">
+        <name>ILI9341_MADCTL</name>
+        <initializer>0x36</initializer>
+        <briefdescription>
+<para>Memory Access Control. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="52" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1aed59201f8eb2291e618d3b3151adc497" prot="public" static="no">
+        <name>ILI9341_VSCRSADD</name>
+        <initializer>0x37</initializer>
+        <briefdescription>
+<para>Vertical Scrolling Start Address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="53" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1ae22acdf8d6ceb5710050b7a1b8bfcefc" prot="public" static="no">
+        <name>ILI9341_PIXFMT</name>
+        <initializer>0x3A</initializer>
+        <briefdescription>
+<para>COLMOD: Pixel Format Set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="54" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a086515b5e792ce35f8cd0b875bd1f16e" prot="public" static="no">
+        <name>ILI9341_FRMCTR1</name>
+        <initializer>  0xB1</initializer>
+        <briefdescription>
+<para>Frame Rate Control (In Normal Mode/Full Colors)/*#end#*<zwj/>/. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="56" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a144a76fa56427d7e38c99708fa42e47f" prot="public" static="no">
+        <name>ILI9341_FRMCTR2</name>
+        <initializer>0xB2</initializer>
+        <briefdescription>
+<para>Frame Rate Control (In Idle Mode/8 colors) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="58" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a1be5fe675d09e59287ef886e11c87bcb" prot="public" static="no">
+        <name>ILI9341_FRMCTR3</name>
+        <initializer>  0xB3</initializer>
+        <briefdescription>
+<para>Frame Rate control (In Partial Mode/Full Colors)/*#end#*<zwj/>/. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="59" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1ac499cd0e0c7f17006dcc2e6998915d57" prot="public" static="no">
+        <name>ILI9341_INVCTR</name>
+        <initializer>0xB4</initializer>
+        <briefdescription>
+<para>Display Inversion Control. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="61" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a808fd63764a8bf4de696d11e897e68de" prot="public" static="no">
+        <name>ILI9341_DFUNCTR</name>
+        <initializer>0xB6</initializer>
+        <briefdescription>
+<para>Display Function Control. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="62" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a2429382736b6d514ab4085a8ea5951d4" prot="public" static="no">
+        <name>ILI9341_PWCTR1</name>
+        <initializer>0xC0</initializer>
+        <briefdescription>
+<para>Power Control 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="64" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1ae6bf550a370a529b19263c6e05649b07" prot="public" static="no">
+        <name>ILI9341_PWCTR2</name>
+        <initializer>0xC1</initializer>
+        <briefdescription>
+<para>Power Control 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="65" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1ace7ad088cfc571e05a4066a9dd8a0049" prot="public" static="no">
+        <name>ILI9341_PWCTR3</name>
+        <initializer>0xC2</initializer>
+        <briefdescription>
+<para>Power Control 3. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="66" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a44774f69e5dfc0d7b87f5a8bf5cad0e9" prot="public" static="no">
+        <name>ILI9341_PWCTR4</name>
+        <initializer>0xC3</initializer>
+        <briefdescription>
+<para>Power Control 4. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="67" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1af606a5acf671a097da5af39f83091fd6" prot="public" static="no">
+        <name>ILI9341_PWCTR5</name>
+        <initializer>0xC4</initializer>
+        <briefdescription>
+<para>Power Control 5. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="68" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a3ac0bad81e82dca703ea78d9f1ad8cd1" prot="public" static="no">
+        <name>ILI9341_VMCTR1</name>
+        <initializer>0xC5</initializer>
+        <briefdescription>
+<para>VCOM Control 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="69" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1ae2d100e90910bf4aedb20fb88b3f582c" prot="public" static="no">
+        <name>ILI9341_VMCTR2</name>
+        <initializer>0xC7</initializer>
+        <briefdescription>
+<para>VCOM Control 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="70" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a9e00fc41e2ce41f264f7f19a01bd6b41" prot="public" static="no">
+        <name>ILI9341_RDID1</name>
+        <initializer>0xDA</initializer>
+        <briefdescription>
+<para>Read ID 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="72" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a18b8144a0ab0fce95e1873102b72da8a" prot="public" static="no">
+        <name>ILI9341_RDID2</name>
+        <initializer>0xDB</initializer>
+        <briefdescription>
+<para>Read ID 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="73" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a31b7dff5fc8d6affa4f328a4de46ce9f" prot="public" static="no">
+        <name>ILI9341_RDID3</name>
+        <initializer>0xDC</initializer>
+        <briefdescription>
+<para>Read ID 3. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="74" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a2866fa67540c7099f2c5d724196f430e" prot="public" static="no">
+        <name>ILI9341_RDID4</name>
+        <initializer>0xDD</initializer>
+        <briefdescription>
+<para>Read ID 4. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="75" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a5e137029ba159bd4a942dbe44fbb45bd" prot="public" static="no">
+        <name>ILI9341_GMCTRP1</name>
+        <initializer>0xE0</initializer>
+        <briefdescription>
+<para>Positive Gamma Correction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="77" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1aa2c11f3421fe0cfd04de4afc144145ae" prot="public" static="no">
+        <name>ILI9341_GMCTRN1</name>
+        <initializer>0xE1</initializer>
+        <briefdescription>
+<para>Negative Gamma Correction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="78" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a50166b9a65012fb2f8fe0a0d5f519fa3" prot="public" static="no">
+        <name>ILI9341_BLACK</name>
+        <initializer>0x0000</initializer>
+        <briefdescription>
+<para>0, 0, 0 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="82" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1acaae04786d06f0ba08c8bea6b714b572" prot="public" static="no">
+        <name>ILI9341_NAVY</name>
+        <initializer>0x000F</initializer>
+        <briefdescription>
+<para>0, 0, 123 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="83" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a5a9d46f3af002ee1edc832257f3683a3" prot="public" static="no">
+        <name>ILI9341_DARKGREEN</name>
+        <initializer>0x03E0</initializer>
+        <briefdescription>
+<para>0, 125, 0 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="84" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1adbc78927dc7105782714d69048580576" prot="public" static="no">
+        <name>ILI9341_DARKCYAN</name>
+        <initializer>0x03EF</initializer>
+        <briefdescription>
+<para>0, 125, 123 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="85" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a8fdcfa7e66294fbedf701b2822a9c6e9" prot="public" static="no">
+        <name>ILI9341_MAROON</name>
+        <initializer>0x7800</initializer>
+        <briefdescription>
+<para>123, 0, 0 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="86" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a4371aa3db522c197cae529a235553071" prot="public" static="no">
+        <name>ILI9341_PURPLE</name>
+        <initializer>0x780F</initializer>
+        <briefdescription>
+<para>123, 0, 123 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="87" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1ae8f5be0a5e731a047a1a7b5edaa0e46f" prot="public" static="no">
+        <name>ILI9341_OLIVE</name>
+        <initializer>0x7BE0</initializer>
+        <briefdescription>
+<para>123, 125, 0 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="88" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a35990ea476b079cd6746056777fadfd8" prot="public" static="no">
+        <name>ILI9341_LIGHTGREY</name>
+        <initializer>0xC618</initializer>
+        <briefdescription>
+<para>198, 195, 198 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="89" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a56f69dad2de457c03d71ea0b38395c41" prot="public" static="no">
+        <name>ILI9341_DARKGREY</name>
+        <initializer>0x7BEF</initializer>
+        <briefdescription>
+<para>123, 125, 123 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="90" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1aa15cf651d66764cb8024808d6ea48eef" prot="public" static="no">
+        <name>ILI9341_BLUE</name>
+        <initializer>0x001F</initializer>
+        <briefdescription>
+<para>0, 0, 255 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="91" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a2eb4b5e896b0b144970f33002134bb98" prot="public" static="no">
+        <name>ILI9341_GREEN</name>
+        <initializer>0x07E0</initializer>
+        <briefdescription>
+<para>0, 255, 0 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="92" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1af04ea4a1f89418c734ba76739a2e730f" prot="public" static="no">
+        <name>ILI9341_CYAN</name>
+        <initializer>0x07FF</initializer>
+        <briefdescription>
+<para>0, 255, 255 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="93" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a4ebe718620305116033cb3f969cfc08b" prot="public" static="no">
+        <name>ILI9341_RED</name>
+        <initializer>0xF800</initializer>
+        <briefdescription>
+<para>255, 0, 0 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="94" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1ae858232678ff269cf0edd404aabcb989" prot="public" static="no">
+        <name>ILI9341_MAGENTA</name>
+        <initializer>0xF81F</initializer>
+        <briefdescription>
+<para>255, 0, 255 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="95" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a0313d113622009bfd9b6011fc9bffcc9" prot="public" static="no">
+        <name>ILI9341_YELLOW</name>
+        <initializer>0xFFE0</initializer>
+        <briefdescription>
+<para>255, 255, 0 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="96" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a604507ef031b95291b2d177088fe03e4" prot="public" static="no">
+        <name>ILI9341_WHITE</name>
+        <initializer>0xFFFF</initializer>
+        <briefdescription>
+<para>255, 255, 255 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="97" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a857910d1b98cb9d77a29c2beb5af949d" prot="public" static="no">
+        <name>ILI9341_ORANGE</name>
+        <initializer>0xFD20</initializer>
+        <briefdescription>
+<para>255, 165, 0 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="98" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a5f9867862411a57b73cecbc0155e7507" prot="public" static="no">
+        <name>ILI9341_GREENYELLOW</name>
+        <initializer>0xAFE5</initializer>
+        <briefdescription>
+<para>173, 255, 41 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="99" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1ad39cea2dab75ccfd9d83fab73ce1a56d" prot="public" static="no">
+        <name>ILI9341_PINK</name>
+        <initializer>0xFC18</initializer>
+        <briefdescription>
+<para>255, 130, 198 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="100" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1ab30e6bd24448245df1d60a3e1c4ddbdf" prot="public" static="no">
+        <name>MADCTL_MY</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+<para>Bottom to top. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="102" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a6d18ed48efb3186877a07d0e81155453" prot="public" static="no">
+        <name>MADCTL_MX</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+<para>Right to left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="103" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1adc23a239d2b6976d53254ef4fc5d1713" prot="public" static="no">
+        <name>MADCTL_MV</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+<para>Reverse Mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="104" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a9ecee6d3131d3b4f750b94d5766b998a" prot="public" static="no">
+        <name>MADCTL_ML</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+<para>LCD refresh Bottom to top. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="105" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1acc1e55b52f8a56b7719ab147308a1668" prot="public" static="no">
+        <name>MADCTL_RGB</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+<para>Red-Green-Blue pixel order. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="106" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a659f0d6f0c258a3d91f882a59dfa76f5" prot="public" static="no">
+        <name>MADCTL_BGR</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+<para>Blue-Green-Red pixel order. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="107" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1a6f8b9fad1b5db52b70960b389056f0dd" prot="public" static="no">
+        <name>MADCTL_MH</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+<para>LCD refresh right to left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="108" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_i9341_8h_1ab2970cf3904979db60867ba793efa832" prot="public" static="no">
+        <name>ILI9341_SPI_TIMEOUT</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="110" column="9" bodyfile="RadarApp/DisplayDriver/ILI9341.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_i_l_i9341_8h_1a0f241f9cfcb703e2994154ea35251892" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_SendCommand</definition>
+        <argsstring>(uint8_t Command)</argsstring>
+        <name>ILI9341_SendCommand</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>Command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="112" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="120" bodyend="131" declfile="RadarApp/DisplayDriver/ILI9341.h" declline="112" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8h_1a7ae207b9f55148240d0dee03167a25f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_SendToTFT</definition>
+        <argsstring>(uint8_t *Byte, uint32_t Length)</argsstring>
+        <name>ILI9341_SendToTFT</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>Byte</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="113" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="99" bodyend="118" declfile="RadarApp/DisplayDriver/ILI9341.h" declline="113" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8h_1a0538f2015fef138ace1fd64a3d652cd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_Init</definition>
+        <argsstring>(SPI_HandleTypeDef *hspi)</argsstring>
+        <name>ILI9341_Init</name>
+        <param>
+          <type><ref refid="group___s_p_i___exported___types_1gab633e49dd034de2f3a1fe79853d78d18" kindref="member">SPI_HandleTypeDef</ref> *</type>
+          <declname>hspi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="114" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="43" bodyend="75" declfile="RadarApp/DisplayDriver/ILI9341.h" declline="114" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8h_1aa1381a729cb6af2b71c6bed0c37cc906" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_SendCommandAndData</definition>
+        <argsstring>(uint8_t Command, uint8_t *Data, uint16_t Length)</argsstring>
+        <name>ILI9341_SendCommandAndData</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>Command</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>Data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>Length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="115" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="133" bodyend="146" declfile="RadarApp/DisplayDriver/ILI9341.h" declline="115" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8h_1aeee3186252cba83694826a2c2c7014c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_WritePixel</definition>
+        <argsstring>(uint16_t x, uint16_t y, uint16_t color)</argsstring>
+        <name>ILI9341_WritePixel</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="116" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="184" bodyend="197" declfile="RadarApp/DisplayDriver/ILI9341.h" declline="116" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8h_1a81ddeb47ba6c0c3353ae31e7e15b4910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_SendData16</definition>
+        <argsstring>(uint16_t Data)</argsstring>
+        <name>ILI9341_SendData16</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="117" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="169" bodyend="182" declfile="RadarApp/DisplayDriver/ILI9341.h" declline="117" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8h_1a89228cd93ba2f68acf969f8f7eccd78b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_SetAddrWindow</definition>
+        <argsstring>(uint16_t x1, uint16_t y1, uint16_t w, uint16_t h)</argsstring>
+        <name>ILI9341_SetAddrWindow</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="118" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="148" bodyend="167" declfile="RadarApp/DisplayDriver/ILI9341.h" declline="118" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8h_1a324ebd8d3bc5309c8c9da80b0c07d10a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_WriteScreen</definition>
+        <argsstring>(uint16_t color)</argsstring>
+        <name>ILI9341_WriteScreen</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="119" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="209" bodyend="244" declfile="RadarApp/DisplayDriver/ILI9341.h" declline="119" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8h_1a0fcdb5427fdab7f7eb09abce73b9ea5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_DrawImage</definition>
+        <argsstring>(int x, int y, const uint8_t *img, uint16_t w, uint16_t h)</argsstring>
+        <name>ILI9341_DrawImage</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="120" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="199" bodyend="207" declfile="RadarApp/DisplayDriver/ILI9341.h" declline="120" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8h_1a6ac0c89f746e798e7430746bf50fe499" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_SetRotation</definition>
+        <argsstring>(uint8_t m)</argsstring>
+        <name>ILI9341_SetRotation</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.h" line="121" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="77" bodyend="97" declfile="RadarApp/DisplayDriver/ILI9341.h" declline="121" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>ILI9341.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>MIT<sp/>License.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>25.05.2017</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Mateusz<sp/>Salamon</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>www.msalamon.pl</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>mateusz@msalamon.pl</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INC_ILI9341_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INC_ILI9341_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="_i_l_i9341_8h_1af7afbc31379d61268899eef5e9dd4ef5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_ROTATION<sp/>3<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(ILI9341_ROTATION<sp/>==<sp/>0<sp/><sp/>||<sp/><sp/>ILI9341_ROTATION<sp/>==<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ILI9341_TFTWIDTH<sp/>240<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ILI9341_TFTHEIGHT<sp/>320<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="_i_l_i9341_8h_1afc86ae8ef4d7c6b3bfb0f83f9d4dcf63" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_TFTWIDTH<sp/>320<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_i_l_i9341_8h_1a5790338f2cee9bbd8fb015d02c9c52d3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_TFTHEIGHT<sp/>240<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="_i_l_i9341_8h_1a58488419649441aec5166d08b1160837" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_NOP<sp/>0x00<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="_i_l_i9341_8h_1a05c1fbaa5809b6e45dd1da9fd0c05fc0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_SWRESET<sp/>0x01<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_i_l_i9341_8h_1a97969fc9b0fb77e372d895f647387207" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_RDDID<sp/>0x04<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="_i_l_i9341_8h_1a85532e0077d505687036b92bd7e70989" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_RDDST<sp/>0x09<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="_i_l_i9341_8h_1a91c32c640e65f7e890fdbb5aed29077b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_SLPIN<sp/>0x10<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="_i_l_i9341_8h_1a2183eaeed3b4f2e82f1f1a5aed9cf8e1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_SLPOUT<sp/>0x11<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="_i_l_i9341_8h_1a9960c17c0ec3f5adde7cf7fa94f27220" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_PTLON<sp/>0x12<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="_i_l_i9341_8h_1ac657aed4eab33cf9ba9c3a44919218ab" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_NORON<sp/>0x13<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_i_l_i9341_8h_1ad9996d51efbffc39bd2909a46dcb443b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_RDMODE<sp/>0x0A<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="_i_l_i9341_8h_1aa9692e6f195c64bf7ffbdf1c37e2a473" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_RDMADCTL<sp/>0x0B<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="_i_l_i9341_8h_1aaa8ea7376d8942dded4e00bfe006c9bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_RDPIXFMT<sp/>0x0C<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_i_l_i9341_8h_1a4e4b9406383c20af1be6e0e05f319abf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_RDIMGFMT<sp/>0x0D<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="_i_l_i9341_8h_1ada2055b1b89e10dd1a854d98022ce40c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_RDSELFDIAG<sp/>0x0F<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_i_l_i9341_8h_1aa373acfd567ed1ab59f04d44fe1e5b6f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_INVOFF<sp/>0x20<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="_i_l_i9341_8h_1a310ca5d5d75b141c72e36a14e8b2bb8a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_INVON<sp/>0x21<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="_i_l_i9341_8h_1a37d467e2a578e59844315ee76621fecb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_GAMMASET<sp/>0x26<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_i_l_i9341_8h_1a96cd1f1e426827243075de8477439222" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_DISPOFF<sp/>0x28<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="_i_l_i9341_8h_1a278999b9f435340e6a689165c860050a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_DISPON<sp/>0x29<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="_i_l_i9341_8h_1a0735e9a5ee316588f5430559b56074c4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_CASET<sp/>0x2A<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="_i_l_i9341_8h_1acc4a8ed569a4c04d4ef11e6a458fc2e0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_PASET<sp/>0x2B<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="_i_l_i9341_8h_1a7130c62347e51a4bafb7070ba393ee39" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_RAMWR<sp/>0x2C<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_i_l_i9341_8h_1a1380e18775e66a698eb0120f64af8d27" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_RAMRD<sp/>0x2E<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="_i_l_i9341_8h_1a9d46802e696356cd1b7625d36c20e8dd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_PTLAR<sp/>0x30<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="_i_l_i9341_8h_1aba45bf6c8278bf5210bab2607e993cf3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_VSCRDEF<sp/>0x33<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="_i_l_i9341_8h_1a3788bc35c2adfe007f3b6a03b85d2071" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_MADCTL<sp/>0x36<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_i_l_i9341_8h_1aed59201f8eb2291e618d3b3151adc497" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_VSCRSADD<sp/>0x37<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_i_l_i9341_8h_1ae22acdf8d6ceb5710050b7a1b8bfcefc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_PIXFMT<sp/>0x3A<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_FRMCTR1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="57" refid="_i_l_i9341_8h_1a086515b5e792ce35f8cd0b875bd1f16e" refkind="member"><highlight class="preprocessor"><sp/><sp/>0xB1<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="_i_l_i9341_8h_1a144a76fa56427d7e38c99708fa42e47f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_FRMCTR2<sp/>0xB2<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_FRMCTR3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="60" refid="_i_l_i9341_8h_1a1be5fe675d09e59287ef886e11c87bcb" refkind="member"><highlight class="preprocessor"><sp/><sp/>0xB3<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="_i_l_i9341_8h_1ac499cd0e0c7f17006dcc2e6998915d57" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_INVCTR<sp/>0xB4<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="_i_l_i9341_8h_1a808fd63764a8bf4de696d11e897e68de" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_DFUNCTR<sp/>0xB6<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="_i_l_i9341_8h_1a2429382736b6d514ab4085a8ea5951d4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_PWCTR1<sp/>0xC0<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_i_l_i9341_8h_1ae6bf550a370a529b19263c6e05649b07" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_PWCTR2<sp/>0xC1<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="_i_l_i9341_8h_1ace7ad088cfc571e05a4066a9dd8a0049" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_PWCTR3<sp/>0xC2<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="_i_l_i9341_8h_1a44774f69e5dfc0d7b87f5a8bf5cad0e9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_PWCTR4<sp/>0xC3<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="_i_l_i9341_8h_1af606a5acf671a097da5af39f83091fd6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_PWCTR5<sp/>0xC4<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="_i_l_i9341_8h_1a3ac0bad81e82dca703ea78d9f1ad8cd1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_VMCTR1<sp/>0xC5<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="_i_l_i9341_8h_1ae2d100e90910bf4aedb20fb88b3f582c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_VMCTR2<sp/>0xC7<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="_i_l_i9341_8h_1a9e00fc41e2ce41f264f7f19a01bd6b41" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_RDID1<sp/>0xDA<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="_i_l_i9341_8h_1a18b8144a0ab0fce95e1873102b72da8a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_RDID2<sp/>0xDB<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="_i_l_i9341_8h_1a31b7dff5fc8d6affa4f328a4de46ce9f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_RDID3<sp/>0xDC<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="_i_l_i9341_8h_1a2866fa67540c7099f2c5d724196f430e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_RDID4<sp/>0xDD<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="_i_l_i9341_8h_1a5e137029ba159bd4a942dbe44fbb45bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_GMCTRP1<sp/>0xE0<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="_i_l_i9341_8h_1aa2c11f3421fe0cfd04de4afc144145ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_GMCTRN1<sp/>0xE1<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ILI9341_PWCTR6<sp/><sp/><sp/><sp/><sp/>0xFC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Color<sp/>definitions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="_i_l_i9341_8h_1a50166b9a65012fb2f8fe0a0d5f519fa3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_BLACK<sp/>0x0000<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="_i_l_i9341_8h_1acaae04786d06f0ba08c8bea6b714b572" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_NAVY<sp/>0x000F<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="_i_l_i9341_8h_1a5a9d46f3af002ee1edc832257f3683a3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_DARKGREEN<sp/>0x03E0<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="_i_l_i9341_8h_1adbc78927dc7105782714d69048580576" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_DARKCYAN<sp/>0x03EF<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="_i_l_i9341_8h_1a8fdcfa7e66294fbedf701b2822a9c6e9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_MAROON<sp/>0x7800<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="_i_l_i9341_8h_1a4371aa3db522c197cae529a235553071" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_PURPLE<sp/>0x780F<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="_i_l_i9341_8h_1ae8f5be0a5e731a047a1a7b5edaa0e46f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_OLIVE<sp/>0x7BE0<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="_i_l_i9341_8h_1a35990ea476b079cd6746056777fadfd8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_LIGHTGREY<sp/>0xC618<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="_i_l_i9341_8h_1a56f69dad2de457c03d71ea0b38395c41" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_DARKGREY<sp/>0x7BEF<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="_i_l_i9341_8h_1aa15cf651d66764cb8024808d6ea48eef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_BLUE<sp/>0x001F<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="_i_l_i9341_8h_1a2eb4b5e896b0b144970f33002134bb98" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_GREEN<sp/>0x07E0<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="_i_l_i9341_8h_1af04ea4a1f89418c734ba76739a2e730f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_CYAN<sp/>0x07FF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="_i_l_i9341_8h_1a4ebe718620305116033cb3f969cfc08b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_RED<sp/>0xF800<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="_i_l_i9341_8h_1ae858232678ff269cf0edd404aabcb989" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_MAGENTA<sp/>0xF81F<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="_i_l_i9341_8h_1a0313d113622009bfd9b6011fc9bffcc9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_YELLOW<sp/>0xFFE0<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="_i_l_i9341_8h_1a604507ef031b95291b2d177088fe03e4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_WHITE<sp/>0xFFFF<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="_i_l_i9341_8h_1a857910d1b98cb9d77a29c2beb5af949d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_ORANGE<sp/>0xFD20<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="_i_l_i9341_8h_1a5f9867862411a57b73cecbc0155e7507" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_GREENYELLOW<sp/>0xAFE5<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="_i_l_i9341_8h_1ad39cea2dab75ccfd9d83fab73ce1a56d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_PINK<sp/>0xFC18<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="_i_l_i9341_8h_1ab30e6bd24448245df1d60a3e1c4ddbdf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MADCTL_MY<sp/>0x80<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="_i_l_i9341_8h_1a6d18ed48efb3186877a07d0e81155453" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MADCTL_MX<sp/>0x40<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="_i_l_i9341_8h_1adc23a239d2b6976d53254ef4fc5d1713" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MADCTL_MV<sp/>0x20<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="_i_l_i9341_8h_1a9ecee6d3131d3b4f750b94d5766b998a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MADCTL_ML<sp/>0x10<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="_i_l_i9341_8h_1acc1e55b52f8a56b7719ab147308a1668" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MADCTL_RGB<sp/>0x00<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="_i_l_i9341_8h_1a659f0d6f0c258a3d91f882a59dfa76f5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MADCTL_BGR<sp/>0x08<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="_i_l_i9341_8h_1a6f8b9fad1b5db52b70960b389056f0dd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MADCTL_MH<sp/>0x04<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="_i_l_i9341_8h_1ab2970cf3904979db60867ba793efa832" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILI9341_SPI_TIMEOUT<sp/>1000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8h_1a0f241f9cfcb703e2994154ea35251892" kindref="member">ILI9341_SendCommand</ref>(uint8_t<sp/>Command);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8h_1a7ae207b9f55148240d0dee03167a25f9" kindref="member">ILI9341_SendToTFT</ref>(uint8_t<sp/>*Byte,<sp/>uint32_t<sp/>Length);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8h_1a0538f2015fef138ace1fd64a3d652cd1" kindref="member">ILI9341_Init</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8h_1aa1381a729cb6af2b71c6bed0c37cc906" kindref="member">ILI9341_SendCommandAndData</ref>(uint8_t<sp/>Command,<sp/>uint8_t<sp/>*Data,<sp/>uint16_t<sp/>Length);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8h_1aeee3186252cba83694826a2c2c7014c5" kindref="member">ILI9341_WritePixel</ref>(uint16_t<sp/>x,<sp/>uint16_t<sp/>y,<sp/>uint16_t<sp/>color);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8h_1a81ddeb47ba6c0c3353ae31e7e15b4910" kindref="member">ILI9341_SendData16</ref>(uint16_t<sp/>Data);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8h_1a89228cd93ba2f68acf969f8f7eccd78b" kindref="member">ILI9341_SetAddrWindow</ref>(uint16_t<sp/>x1,<sp/>uint16_t<sp/>y1,<sp/>uint16_t<sp/>w,<sp/>uint16_t<sp/>h);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8h_1a324ebd8d3bc5309c8c9da80b0c07d10a" kindref="member">ILI9341_WriteScreen</ref>(uint16_t<sp/>color);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8h_1a0fcdb5427fdab7f7eb09abce73b9ea5b" kindref="member">ILI9341_DrawImage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*img,<sp/>uint16_t<sp/>w,<sp/>uint16_t<sp/>h);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8h_1a6ac0c89f746e798e7430746bf50fe499" kindref="member">ILI9341_SetRotation</ref>(uint8_t<sp/>m);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INC_ILI9341_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="RadarApp/DisplayDriver/ILI9341.h"/>
+  </compounddef>
+</doxygen>

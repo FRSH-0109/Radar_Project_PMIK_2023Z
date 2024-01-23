@@ -1,0 +1,60 @@
+.TH "RCC_HSI_Div" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_HSI_Div \- HSI Div
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_HSI_DIV1\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_HSI_DIV2\fP   \fBRCC_CR_HSIDIV_0\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_HSI_DIV4\fP   \fBRCC_CR_HSIDIV_1\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_HSI_DIV8\fP   (\fBRCC_CR_HSIDIV_1\fP|\fBRCC_CR_HSIDIV_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_HSI_DIV16\fP   \fBRCC_CR_HSIDIV_2\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_HSI_DIV32\fP   (\fBRCC_CR_HSIDIV_2\fP|\fBRCC_CR_HSIDIV_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_HSI_DIV64\fP   (\fBRCC_CR_HSIDIV_2\fP|\fBRCC_CR_HSIDIV_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_HSI_DIV128\fP   (\fBRCC_CR_HSIDIV_2\fP|\fBRCC_CR_HSIDIV_1\fP|\fBRCC_CR_HSIDIV_0\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RCC_HSI_DIV1   0x00000000U"
+HSI clock is not divided 
+.SS "#define RCC_HSI_DIV128   (\fBRCC_CR_HSIDIV_2\fP|\fBRCC_CR_HSIDIV_1\fP|\fBRCC_CR_HSIDIV_0\fP)"
+HSI clock is divided by 128 
+.SS "#define RCC_HSI_DIV16   \fBRCC_CR_HSIDIV_2\fP"
+HSI clock is divided by 16 
+.SS "#define RCC_HSI_DIV2   \fBRCC_CR_HSIDIV_0\fP"
+HSI clock is divided by 2 
+.SS "#define RCC_HSI_DIV32   (\fBRCC_CR_HSIDIV_2\fP|\fBRCC_CR_HSIDIV_0\fP)"
+HSI clock is divided by 32 
+.SS "#define RCC_HSI_DIV4   \fBRCC_CR_HSIDIV_1\fP"
+HSI clock is divided by 4 
+.SS "#define RCC_HSI_DIV64   (\fBRCC_CR_HSIDIV_2\fP|\fBRCC_CR_HSIDIV_1\fP)"
+HSI clock is divided by 64 
+.SS "#define RCC_HSI_DIV8   (\fBRCC_CR_HSIDIV_1\fP|\fBRCC_CR_HSIDIV_0\fP)"
+HSI clock is divided by 8 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

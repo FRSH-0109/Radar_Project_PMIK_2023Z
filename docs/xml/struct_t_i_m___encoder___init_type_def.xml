@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_t_i_m___encoder___init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>TIM_Encoder_InitTypeDef</compoundname>
+    <includes refid="stm32g0xx__hal__tim_8h" local="no">stm32g0xx_hal_tim.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_t_i_m___encoder___init_type_def_1ab451cb61e197d30ca8d3ce1c820ae1a4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EncoderMode</definition>
+        <argsstring></argsstring>
+        <name>EncoderMode</name>
+        <qualifiedname>TIM_Encoder_InitTypeDef::EncoderMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the active edge of the input signal. This parameter can be a value of <ref refid="group___t_i_m___encoder___mode" kindref="compound">TIM Encoder Mode</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="167" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___encoder___init_type_def_1ac1191c7421a3ca4c53ec7875870812e5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t IC1Polarity</definition>
+        <argsstring></argsstring>
+        <name>IC1Polarity</name>
+        <qualifiedname>TIM_Encoder_InitTypeDef::IC1Polarity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the active edge of the input signal. This parameter can be a value of <ref refid="group___t_i_m___encoder___input___polarity" kindref="compound">TIM Encoder Input Polarity</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="170" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___encoder___init_type_def_1ae0c7ebe03057c1dd939555d1d924afd1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t IC1Selection</definition>
+        <argsstring></argsstring>
+        <name>IC1Selection</name>
+        <qualifiedname>TIM_Encoder_InitTypeDef::IC1Selection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the input. This parameter can be a value of <ref refid="group___t_i_m___input___capture___selection" kindref="compound">TIM Input Capture Selection</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="173" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___encoder___init_type_def_1aa913a8df0a4c97fefa87ff760fae10cb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t IC1Prescaler</definition>
+        <argsstring></argsstring>
+        <name>IC1Prescaler</name>
+        <qualifiedname>TIM_Encoder_InitTypeDef::IC1Prescaler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the Input Capture Prescaler. This parameter can be a value of <ref refid="group___t_i_m___input___capture___prescaler" kindref="compound">TIM Input Capture Prescaler</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="176" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___encoder___init_type_def_1a5efa2ad5085fe72fb0b5dc2e2fc61def" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t IC1Filter</definition>
+        <argsstring></argsstring>
+        <name>IC1Filter</name>
+        <qualifiedname>TIM_Encoder_InitTypeDef::IC1Filter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the input capture filter. This parameter can be a number between Min_Data = 0x0 and Max_Data = 0xF </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="179" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___encoder___init_type_def_1a67a8a854c58aedd9d37aa9f2ad4f49b4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t IC2Polarity</definition>
+        <argsstring></argsstring>
+        <name>IC2Polarity</name>
+        <qualifiedname>TIM_Encoder_InitTypeDef::IC2Polarity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the active edge of the input signal. This parameter can be a value of <ref refid="group___t_i_m___encoder___input___polarity" kindref="compound">TIM Encoder Input Polarity</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="182" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___encoder___init_type_def_1af5b15660e7593a0fa62ee00059b3a9f4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t IC2Selection</definition>
+        <argsstring></argsstring>
+        <name>IC2Selection</name>
+        <qualifiedname>TIM_Encoder_InitTypeDef::IC2Selection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the input. This parameter can be a value of <ref refid="group___t_i_m___input___capture___selection" kindref="compound">TIM Input Capture Selection</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="185" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___encoder___init_type_def_1a0ce08ea64b9e8986336acf65fbfc1976" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t IC2Prescaler</definition>
+        <argsstring></argsstring>
+        <name>IC2Prescaler</name>
+        <qualifiedname>TIM_Encoder_InitTypeDef::IC2Prescaler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the Input Capture Prescaler. This parameter can be a value of <ref refid="group___t_i_m___input___capture___prescaler" kindref="compound">TIM Input Capture Prescaler</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="188" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___encoder___init_type_def_1ab64eaec6065c8729c961721901f6a8d7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t IC2Filter</definition>
+        <argsstring></argsstring>
+        <name>IC2Filter</name>
+        <qualifiedname>TIM_Encoder_InitTypeDef::IC2Filter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the input capture filter. This parameter can be a number between Min_Data = 0x0 and Max_Data = 0xF </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="191" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>TIM Encoder Configuration Structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" line="165" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h" bodystart="166" bodyend="193"/>
+    <listofallmembers>
+      <member refid="struct_t_i_m___encoder___init_type_def_1ab451cb61e197d30ca8d3ce1c820ae1a4" prot="public" virt="non-virtual"><scope>TIM_Encoder_InitTypeDef</scope><name>EncoderMode</name></member>
+      <member refid="struct_t_i_m___encoder___init_type_def_1a5efa2ad5085fe72fb0b5dc2e2fc61def" prot="public" virt="non-virtual"><scope>TIM_Encoder_InitTypeDef</scope><name>IC1Filter</name></member>
+      <member refid="struct_t_i_m___encoder___init_type_def_1ac1191c7421a3ca4c53ec7875870812e5" prot="public" virt="non-virtual"><scope>TIM_Encoder_InitTypeDef</scope><name>IC1Polarity</name></member>
+      <member refid="struct_t_i_m___encoder___init_type_def_1aa913a8df0a4c97fefa87ff760fae10cb" prot="public" virt="non-virtual"><scope>TIM_Encoder_InitTypeDef</scope><name>IC1Prescaler</name></member>
+      <member refid="struct_t_i_m___encoder___init_type_def_1ae0c7ebe03057c1dd939555d1d924afd1" prot="public" virt="non-virtual"><scope>TIM_Encoder_InitTypeDef</scope><name>IC1Selection</name></member>
+      <member refid="struct_t_i_m___encoder___init_type_def_1ab64eaec6065c8729c961721901f6a8d7" prot="public" virt="non-virtual"><scope>TIM_Encoder_InitTypeDef</scope><name>IC2Filter</name></member>
+      <member refid="struct_t_i_m___encoder___init_type_def_1a67a8a854c58aedd9d37aa9f2ad4f49b4" prot="public" virt="non-virtual"><scope>TIM_Encoder_InitTypeDef</scope><name>IC2Polarity</name></member>
+      <member refid="struct_t_i_m___encoder___init_type_def_1a0ce08ea64b9e8986336acf65fbfc1976" prot="public" virt="non-virtual"><scope>TIM_Encoder_InitTypeDef</scope><name>IC2Prescaler</name></member>
+      <member refid="struct_t_i_m___encoder___init_type_def_1af5b15660e7593a0fa62ee00059b3a9f4" prot="public" virt="non-virtual"><scope>TIM_Encoder_InitTypeDef</scope><name>IC2Selection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

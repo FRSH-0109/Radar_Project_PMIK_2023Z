@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___library__configuration__section" kind="group">
+    <compoundname>Library_configuration_section</compoundname>
+    <title>Library_configuration_section</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___library__configuration__section_1ga0bceb9a48a0ae11a60412e3caf784c02" prot="public" static="no">
+        <name>STM32G0</name>
+        <briefdescription>
+<para>STM32 Family. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="51" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___library__configuration__section_1ga3457045001233e741ebbc9120041bd0c" prot="public" static="no">
+        <name>__STM32G0_CMSIS_VERSION_MAIN</name>
+        <initializer>(0x01U)</initializer>
+        <briefdescription>
+<para>Comment the line below if you will not use the peripherals drivers. In this case, these drivers will not be included and the application code will be based on direct access to peripherals registers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt; STM32G0B0xx Devices</para>
+<para>&lt; STM32G0B1xx Devices</para>
+<para>&lt; STM32G0C1xx Devices</para>
+<para>&lt; STM32G070xx Devices</para>
+<para>&lt; STM32G071xx Devices</para>
+<para>&lt; STM32G081xx Devices</para>
+<para>&lt; STM32G050xx Devices</para>
+<para>&lt; STM32G051xx Devices</para>
+<para>&lt; STM32G061xx Devices</para>
+<para>&lt; STM32G030xx Devices</para>
+<para>&lt; STM32G031xx Devices</para>
+<para>&lt; STM32G041xx Devices</para>
+<para>CMSIS Device version number $VERSION$ [31:24] main version </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="91" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___library__configuration__section_1gab891f9867f3ae38d1103545500e92760" prot="public" static="no">
+        <name>__STM32G0_CMSIS_VERSION_SUB1</name>
+        <initializer>(0x04U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[23:16] sub1 version </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="92" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___library__configuration__section_1ga393e45a20a2b2dcedfa79605269c7c4d" prot="public" static="no">
+        <name>__STM32G0_CMSIS_VERSION_SUB2</name>
+        <initializer>(0x03U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[15:8] sub2 version </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="93" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___library__configuration__section_1ga3b82c9012470049f76329421ff1fc4c3" prot="public" static="no">
+        <name>__STM32G0_CMSIS_VERSION_RC</name>
+        <initializer>(0x00U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[7:0] release candidate </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="94" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___library__configuration__section_1gab3fbd68df92fb597b3a48347710dc0a9" prot="public" static="no">
+        <name>__STM32G0_CMSIS_VERSION</name>
+        <initializer>                                       ((<ref refid="group___library__configuration__section_1ga3457045001233e741ebbc9120041bd0c" kindref="member">__STM32G0_CMSIS_VERSION_MAIN</ref> &lt;&lt; 24)\
+                                       |(<ref refid="group___library__configuration__section_1gab891f9867f3ae38d1103545500e92760" kindref="member">__STM32G0_CMSIS_VERSION_SUB1</ref> &lt;&lt; 16)\
+                                       |(<ref refid="group___library__configuration__section_1ga393e45a20a2b2dcedfa79605269c7c4d" kindref="member">__STM32G0_CMSIS_VERSION_SUB2</ref> &lt;&lt; 8 )\
+                                       |(<ref refid="group___library__configuration__section_1ga3b82c9012470049f76329421ff1fc4c3" kindref="member">__STM32G0_CMSIS_VERSION_RC</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" line="95" column="9" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" bodystart="95" bodyend="98"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

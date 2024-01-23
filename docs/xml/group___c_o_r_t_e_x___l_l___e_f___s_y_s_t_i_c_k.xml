@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___c_o_r_t_e_x___l_l___e_f___s_y_s_t_i_c_k" kind="group">
+    <compoundname>CORTEX_LL_EF_SYSTICK</compoundname>
+    <title>SYSTICK</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___c_o_r_t_e_x___l_l___e_f___s_y_s_t_i_c_k_1gaf5dfb37d859552753594f9cc66431ba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t LL_SYSTICK_IsActiveCounterFlag</definition>
+        <argsstring>(void)</argsstring>
+        <name>LL_SYSTICK_IsActiveCounterFlag</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function checks if the Systick counter flag is active or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>It can be used in timeout function on application side. @rmtoll STK_CTRL COUNTFLAG LL_SYSTICK_IsActiveCounterFlag </para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>State</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of bit (1 or 0). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" line="215" column="26" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" bodystart="215" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_o_r_t_e_x___l_l___e_f___s_y_s_t_i_c_k_1gaaf98ae8e0298b44c5d58a3ba9ef358f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void LL_SYSTICK_SetClkSource</definition>
+        <argsstring>(uint32_t Source)</argsstring>
+        <name>LL_SYSTICK_SetClkSource</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>Source</declname>
+        </param>
+        <briefdescription>
+<para>Configures the SysTick clock source @rmtoll STK_CTRL CLKSOURCE LL_SYSTICK_SetClkSource. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This parameter can be one of the following values: <itemizedlist>
+<listitem><para><ref refid="group___c_o_r_t_e_x___l_l___e_c___c_l_k_s_o_u_r_c_e___h_c_l_k_1gab13c4588c1b1a8b867541a4ad928d205" kindref="member">LL_SYSTICK_CLKSOURCE_HCLK_DIV8</ref> </para>
+</listitem>
+<listitem><para><ref refid="group___c_o_r_t_e_x___l_l___e_c___c_l_k_s_o_u_r_c_e___h_c_l_k_1gaa92530d2f2cd8ce785297e4aed960ff0" kindref="member">LL_SYSTICK_CLKSOURCE_HCLK</ref> </para>
+</listitem>
+</itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" line="228" column="22" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" bodystart="228" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_o_r_t_e_x___l_l___e_f___s_y_s_t_i_c_k_1ga2cfeb1396db13a9fbc208cc659064b19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t LL_SYSTICK_GetClkSource</definition>
+        <argsstring>(void)</argsstring>
+        <name>LL_SYSTICK_GetClkSource</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get the SysTick clock source @rmtoll STK_CTRL CLKSOURCE LL_SYSTICK_GetClkSource. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Returned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value can be one of the following values: <itemizedlist>
+<listitem><para><ref refid="group___c_o_r_t_e_x___l_l___e_c___c_l_k_s_o_u_r_c_e___h_c_l_k_1gab13c4588c1b1a8b867541a4ad928d205" kindref="member">LL_SYSTICK_CLKSOURCE_HCLK_DIV8</ref> </para>
+</listitem>
+<listitem><para><ref refid="group___c_o_r_t_e_x___l_l___e_c___c_l_k_s_o_u_r_c_e___h_c_l_k_1gaa92530d2f2cd8ce785297e4aed960ff0" kindref="member">LL_SYSTICK_CLKSOURCE_HCLK</ref> </para>
+</listitem>
+</itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" line="247" column="26" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" bodystart="247" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_o_r_t_e_x___l_l___e_f___s_y_s_t_i_c_k_1ga770fac4394ddde9a53e1a236c81538f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void LL_SYSTICK_EnableIT</definition>
+        <argsstring>(void)</argsstring>
+        <name>LL_SYSTICK_EnableIT</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable SysTick exception request @rmtoll STK_CTRL TICKINT LL_SYSTICK_EnableIT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" line="257" column="22" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" bodystart="257" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_o_r_t_e_x___l_l___e_f___s_y_s_t_i_c_k_1ga11d0d066050805c9e8d24718d8a15e4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void LL_SYSTICK_DisableIT</definition>
+        <argsstring>(void)</argsstring>
+        <name>LL_SYSTICK_DisableIT</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Disable SysTick exception request @rmtoll STK_CTRL TICKINT LL_SYSTICK_DisableIT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" line="267" column="22" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" bodystart="267" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_o_r_t_e_x___l_l___e_f___s_y_s_t_i_c_k_1gab34484042fd5a82aa80ba94223b6fbde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t LL_SYSTICK_IsEnabledIT</definition>
+        <argsstring>(void)</argsstring>
+        <name>LL_SYSTICK_IsEnabledIT</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Checks if the SYSTICK interrupt is enabled or disabled. @rmtoll STK_CTRL TICKINT LL_SYSTICK_IsEnabledIT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>State</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of bit (1 or 0). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" line="277" column="26" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" bodystart="277" bodyend="280"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

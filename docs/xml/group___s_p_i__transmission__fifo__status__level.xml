@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_p_i__transmission__fifo__status__level" kind="group">
+    <compoundname>SPI_transmission_fifo_status_level</compoundname>
+    <title>SPI Transmission FIFO Status Level</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i__transmission__fifo__status__level_1gab9b0d7e2ab72c8ea98643791effa0576" prot="public" static="no">
+        <name>SPI_FTLVL_EMPTY</name>
+        <initializer>(0x00000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="394" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i__transmission__fifo__status__level_1ga039713282e09cee7d70416ffc376b0e2" prot="public" static="no">
+        <name>SPI_FTLVL_QUARTER_FULL</name>
+        <initializer>(0x00000800U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="395" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i__transmission__fifo__status__level_1ga24ec0c2f3fbab8659495c7034f7488fc" prot="public" static="no">
+        <name>SPI_FTLVL_HALF_FULL</name>
+        <initializer>(0x00001000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="396" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i__transmission__fifo__status__level_1gafb4f8ba450a3df2f7a5586e3fb89c60d" prot="public" static="no">
+        <name>SPI_FTLVL_FULL</name>
+        <initializer>(0x00001800U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="397" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,194 @@
+\doxysection{Radar\+App/\+Servo\+Driver/servo\+\_\+driver.h File Reference}
+\hypertarget{servo__driver_8h}{}\label{servo__driver_8h}\index{RadarApp/ServoDriver/servo\_driver.h@{RadarApp/ServoDriver/servo\_driver.h}}
+
+
+File containing code of servomechanism driver controlled by PWM, which was created for Radar embedded project.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{servo__driver_8h_a7b73184f5eb708f2127342b793ecae91}{SERVO\+\_\+\+MIN\+\_\+\+DEGREES}}~0.\+0f
+\item 
+\#define \mbox{\hyperlink{servo__driver_8h_a74e21cbe86a16280fdf6c0d28f1c6954}{SERVO\+\_\+\+MAX\+\_\+\+DEGREES}}~180.\+0f
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{servo__driver_8h_a20a27d2eaa060a951a5807b5bb48919e}{servo\+Driver\+Init}} (\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo\+Driver, float d\+Min, float d\+Max, uint16\+\_\+t p\+Min, uint16\+\_\+t p\+Max)
+\item 
+void \mbox{\hyperlink{servo__driver_8h_a1acdc2cc47d587de4954d1e7602f4898}{servo\+Driver\+Start}} (\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo\+Driver)
+\item 
+void \mbox{\hyperlink{servo__driver_8h_a632cccd31e765ad946feea85d0a13d8d}{servo\+Driver\+Stop}} (\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo\+Driver)
+\item 
+void \mbox{\hyperlink{servo__driver_8h_a3a027ed11a1051d0c899706817c68e37}{servo\+Driver\+Start\+Timer}} (\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo\+Driver)
+\item 
+void \mbox{\hyperlink{servo__driver_8h_a9644009cc702a14f3a480ad472ee4d6a}{servo\+Driver\+Stop\+Timer}} (\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo\+Driver)
+\item 
+bool \mbox{\hyperlink{servo__driver_8h_a5728d01171e0105187a4e732e23a1fd9}{servo\+Driver\+Set\+Degrees}} (\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo\+Driver, float degrees)
+\item 
+uint16\+\_\+t \mbox{\hyperlink{servo__driver_8h_a5ae45f5c916eb47431e59f94d645bbc7}{servo\+Driver\+Degrees\+To\+Pulse\+Width}} (\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo\+Driver, float degrees)
+\item 
+void \mbox{\hyperlink{servo__driver_8h_aa8a4bdef9b3e742a5e225dd29a804db6}{servo\+Driver\+Set\+Pulse\+Width}} (\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo\+Driver)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File containing code of servomechanism driver controlled by PWM, which was created for Radar embedded project. 
+
+\begin{DoxyAuthor}{Author}
+Kami Kośnik, Kacper Radzikowski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20 Nov 2023 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z}{\texttt{ https\+://github.\+com/\+FRSH-\/0109/\+Radar\+\_\+\+Project\+\_\+\+PMIK\+\_\+2023Z}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{servo__driver_8h_a74e21cbe86a16280fdf6c0d28f1c6954}\label{servo__driver_8h_a74e21cbe86a16280fdf6c0d28f1c6954} 
+\index{servo\_driver.h@{servo\_driver.h}!SERVO\_MAX\_DEGREES@{SERVO\_MAX\_DEGREES}}
+\index{SERVO\_MAX\_DEGREES@{SERVO\_MAX\_DEGREES}!servo\_driver.h@{servo\_driver.h}}
+\doxysubsubsection{\texorpdfstring{SERVO\_MAX\_DEGREES}{SERVO\_MAX\_DEGREES}}
+{\footnotesize\ttfamily \#define SERVO\+\_\+\+MAX\+\_\+\+DEGREES~180.\+0f}
+
+Maximum hardware servo position in degrees \Hypertarget{servo__driver_8h_a7b73184f5eb708f2127342b793ecae91}\label{servo__driver_8h_a7b73184f5eb708f2127342b793ecae91} 
+\index{servo\_driver.h@{servo\_driver.h}!SERVO\_MIN\_DEGREES@{SERVO\_MIN\_DEGREES}}
+\index{SERVO\_MIN\_DEGREES@{SERVO\_MIN\_DEGREES}!servo\_driver.h@{servo\_driver.h}}
+\doxysubsubsection{\texorpdfstring{SERVO\_MIN\_DEGREES}{SERVO\_MIN\_DEGREES}}
+{\footnotesize\ttfamily \#define SERVO\+\_\+\+MIN\+\_\+\+DEGREES~0.\+0f}
+
+Minimum hardware servo position in degrees 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{servo__driver_8h_a5ae45f5c916eb47431e59f94d645bbc7}\label{servo__driver_8h_a5ae45f5c916eb47431e59f94d645bbc7} 
+\index{servo\_driver.h@{servo\_driver.h}!servoDriverDegreesToPulseWidth@{servoDriverDegreesToPulseWidth}}
+\index{servoDriverDegreesToPulseWidth@{servoDriverDegreesToPulseWidth}!servo\_driver.h@{servo\_driver.h}}
+\doxysubsubsection{\texorpdfstring{servoDriverDegreesToPulseWidth()}{servoDriverDegreesToPulseWidth()}}
+{\footnotesize\ttfamily uint16\+\_\+t servo\+Driver\+Degrees\+To\+Pulse\+Width (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo\+Driver,  }\item[{float}]{degrees }\end{DoxyParamCaption})}
+
+Function for converting degrees value into pulse width
+
+
+\begin{DoxyParams}{Parameters}
+{\em servo\+Driver} & pointer to \doxylink{structservo_driver_struct}{servo\+Driver\+Struct} struct \\
+\hline
+{\em degrees} & value of degrees to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint16\+\_\+t value of corresponding pulse width 
+\end{DoxyReturn}
+\Hypertarget{servo__driver_8h_a20a27d2eaa060a951a5807b5bb48919e}\label{servo__driver_8h_a20a27d2eaa060a951a5807b5bb48919e} 
+\index{servo\_driver.h@{servo\_driver.h}!servoDriverInit@{servoDriverInit}}
+\index{servoDriverInit@{servoDriverInit}!servo\_driver.h@{servo\_driver.h}}
+\doxysubsubsection{\texorpdfstring{servoDriverInit()}{servoDriverInit()}}
+{\footnotesize\ttfamily void servo\+Driver\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo\+Driver,  }\item[{float}]{d\+Min,  }\item[{float}]{d\+Max,  }\item[{uint16\+\_\+t}]{p\+Min,  }\item[{uint16\+\_\+t}]{p\+Max }\end{DoxyParamCaption})}
+
+Function for initialization of servo structure instance
+
+
+\begin{DoxyParams}{Parameters}
+{\em servo\+Driver} & pointer to \doxylink{structservo_driver_struct}{servo\+Driver\+Struct} struct \\
+\hline
+{\em d\+Min} & value of minimal degrees movement for servo \\
+\hline
+{\em d\+Max} & value of maximal degrees movement for servo \\
+\hline
+{\em p\+Min} & value of minimal pulse width corresponding to minimal degrees value \\
+\hline
+{\em p\+Max} & value of maximal pulse width corresponding to minimal degrees value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{servo__driver_8h_a5728d01171e0105187a4e732e23a1fd9}\label{servo__driver_8h_a5728d01171e0105187a4e732e23a1fd9} 
+\index{servo\_driver.h@{servo\_driver.h}!servoDriverSetDegrees@{servoDriverSetDegrees}}
+\index{servoDriverSetDegrees@{servoDriverSetDegrees}!servo\_driver.h@{servo\_driver.h}}
+\doxysubsubsection{\texorpdfstring{servoDriverSetDegrees()}{servoDriverSetDegrees()}}
+{\footnotesize\ttfamily bool servo\+Driver\+Set\+Degrees (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo\+Driver,  }\item[{float}]{degrees }\end{DoxyParamCaption})}
+
+Function for setting servo position in degrees
+
+
+\begin{DoxyParams}{Parameters}
+{\em servo\+Driver} & pointer to \doxylink{structservo_driver_struct}{servo\+Driver\+Struct} struct \\
+\hline
+{\em degrees} & value of degrees to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool is action was successful 
+\end{DoxyReturn}
+\Hypertarget{servo__driver_8h_aa8a4bdef9b3e742a5e225dd29a804db6}\label{servo__driver_8h_aa8a4bdef9b3e742a5e225dd29a804db6} 
+\index{servo\_driver.h@{servo\_driver.h}!servoDriverSetPulseWidth@{servoDriverSetPulseWidth}}
+\index{servoDriverSetPulseWidth@{servoDriverSetPulseWidth}!servo\_driver.h@{servo\_driver.h}}
+\doxysubsubsection{\texorpdfstring{servoDriverSetPulseWidth()}{servoDriverSetPulseWidth()}}
+{\footnotesize\ttfamily void servo\+Driver\+Set\+Pulse\+Width (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo\+Driver }\end{DoxyParamCaption})}
+
+Function for setting pulse width from struct into timer instance
+
+
+\begin{DoxyParams}{Parameters}
+{\em servo\+Driver} & pointer to \doxylink{structservo_driver_struct}{servo\+Driver\+Struct} struct \\
+\hline
+\end{DoxyParams}
+\Hypertarget{servo__driver_8h_a1acdc2cc47d587de4954d1e7602f4898}\label{servo__driver_8h_a1acdc2cc47d587de4954d1e7602f4898} 
+\index{servo\_driver.h@{servo\_driver.h}!servoDriverStart@{servoDriverStart}}
+\index{servoDriverStart@{servoDriverStart}!servo\_driver.h@{servo\_driver.h}}
+\doxysubsubsection{\texorpdfstring{servoDriverStart()}{servoDriverStart()}}
+{\footnotesize\ttfamily void servo\+Driver\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo\+Driver }\end{DoxyParamCaption})}
+
+Function for starting servo movement
+
+
+\begin{DoxyParams}{Parameters}
+{\em servo\+Driver} & pointer to \doxylink{structservo_driver_struct}{servo\+Driver\+Struct} struct \\
+\hline
+\end{DoxyParams}
+\Hypertarget{servo__driver_8h_a3a027ed11a1051d0c899706817c68e37}\label{servo__driver_8h_a3a027ed11a1051d0c899706817c68e37} 
+\index{servo\_driver.h@{servo\_driver.h}!servoDriverStartTimer@{servoDriverStartTimer}}
+\index{servoDriverStartTimer@{servoDriverStartTimer}!servo\_driver.h@{servo\_driver.h}}
+\doxysubsubsection{\texorpdfstring{servoDriverStartTimer()}{servoDriverStartTimer()}}
+{\footnotesize\ttfamily void servo\+Driver\+Start\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo\+Driver }\end{DoxyParamCaption})}
+
+Function for starting timer paired with certain servo struct
+
+
+\begin{DoxyParams}{Parameters}
+{\em servo\+Driver} & pointer to \doxylink{structservo_driver_struct}{servo\+Driver\+Struct} struct \\
+\hline
+\end{DoxyParams}
+\Hypertarget{servo__driver_8h_a632cccd31e765ad946feea85d0a13d8d}\label{servo__driver_8h_a632cccd31e765ad946feea85d0a13d8d} 
+\index{servo\_driver.h@{servo\_driver.h}!servoDriverStop@{servoDriverStop}}
+\index{servoDriverStop@{servoDriverStop}!servo\_driver.h@{servo\_driver.h}}
+\doxysubsubsection{\texorpdfstring{servoDriverStop()}{servoDriverStop()}}
+{\footnotesize\ttfamily void servo\+Driver\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo\+Driver }\end{DoxyParamCaption})}
+
+Function for stopping servo movement
+
+
+\begin{DoxyParams}{Parameters}
+{\em servo\+Driver} & pointer to \doxylink{structservo_driver_struct}{servo\+Driver\+Struct} struct \\
+\hline
+\end{DoxyParams}
+\Hypertarget{servo__driver_8h_a9644009cc702a14f3a480ad472ee4d6a}\label{servo__driver_8h_a9644009cc702a14f3a480ad472ee4d6a} 
+\index{servo\_driver.h@{servo\_driver.h}!servoDriverStopTimer@{servoDriverStopTimer}}
+\index{servoDriverStopTimer@{servoDriverStopTimer}!servo\_driver.h@{servo\_driver.h}}
+\doxysubsubsection{\texorpdfstring{servoDriverStopTimer()}{servoDriverStopTimer()}}
+{\footnotesize\ttfamily void servo\+Driver\+Stop\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo\+Driver }\end{DoxyParamCaption})}
+
+Function for stopping timer paired with certain servo struct
+
+
+\begin{DoxyParams}{Parameters}
+{\em servo\+Driver} & pointer to \doxylink{structservo_driver_struct}{servo\+Driver\+Struct} struct \\
+\hline
+\end{DoxyParams}

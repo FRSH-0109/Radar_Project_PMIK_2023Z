@@ -1,0 +1,38 @@
+.TH "LL_UTILS_ClkInitTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+LL_UTILS_ClkInitTypeDef \- UTILS System, AHB and APB buses clock configuration structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_ll_utils\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBAHBCLKDivider\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBAPB1CLKDivider\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+UTILS System, AHB and APB buses clock configuration structure definition\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t LL_UTILS_ClkInitTypeDef::AHBCLKDivider"
+The AHB clock (HCLK) divider\&. This clock is derived from the system clock (SYSCLK)\&. This parameter can be a value of \fBRCC_LL_EC_SYSCLK_DIV\fP
+.PP
+This feature can be modified afterwards using unitary function \fBLL_RCC_SetAHBPrescaler()\fP\&. 
+.SS "uint32_t LL_UTILS_ClkInitTypeDef::APB1CLKDivider"
+The APB1 clock (PCLK1) divider\&. This clock is derived from the AHB clock (HCLK)\&. This parameter can be a value of \fBRCC_LL_EC_APB1_DIV\fP
+.PP
+This feature can be modified afterwards using unitary function \fBLL_RCC_SetAPB1Prescaler()\fP\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

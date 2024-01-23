@@ -1,0 +1,54 @@
+.TH "CRC_TypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CRC_TypeDef \- CRC calculation unit\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g030xx\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBIDR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBINIT\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPOL\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+CRC calculation unit\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t CRC_TypeDef::CR"
+CRC Control register, Address offset: 0x08 
+.SS "\fB__IO\fP uint32_t CRC_TypeDef::DR"
+CRC Data register, Address offset: 0x00 
+.SS "\fB__IO\fP uint32_t CRC_TypeDef::IDR"
+CRC Independent data register, Address offset: 0x04 
+.SS "\fB__IO\fP uint32_t CRC_TypeDef::INIT"
+Initial CRC value register, Address offset: 0x10 
+.SS "\fB__IO\fP uint32_t CRC_TypeDef::POL"
+CRC polynomial register, Address offset: 0x14 
+.SS "uint32_t CRC_TypeDef::RESERVED1"
+Reserved, 0x0C 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

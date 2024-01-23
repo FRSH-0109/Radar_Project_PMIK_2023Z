@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___f_l_a_s_h_ex___private___macros" kind="group">
+    <compoundname>FLASHEx_Private_Macros</compoundname>
+    <title>FLASHEx Private Macros</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___f_l_a_s_h_ex___private___macros_1ga982dd20191ab5fda149d01fa46869133" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FLASH_PageErase</definition>
+        <argsstring>(uint32_t Banks, uint32_t Page)</argsstring>
+        <name>FLASH_PageErase</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>Banks</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" line="98" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" declline="98" declcolumn="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_l_a_s_h_ex___private___macros_1ga07fc54c971c43f2217c3a07cc8247759" prot="public" static="no">
+        <name>IS_FLASH_EMPTY_CHECK</name>
+        <param><defname>__VALUE__</defname></param>
+        <initializer>(((__VALUE__) == <ref refid="group___f_l_a_s_h_ex___empty___check_1gac8b9cdc4d10feccc7e4ad5c5e3d5fe32" kindref="member">FLASH_PROG_EMPTY</ref>) || ((__VALUE__) == <ref refid="group___f_l_a_s_h_ex___empty___check_1ga4009670d557381dd548e31da68ac8ebf" kindref="member">FLASH_PROG_NOT_EMPTY</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" line="97" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

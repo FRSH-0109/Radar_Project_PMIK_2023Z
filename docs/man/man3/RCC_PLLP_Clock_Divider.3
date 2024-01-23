@@ -1,0 +1,191 @@
+.TH "RCC_PLLP_Clock_Divider" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_PLLP_Clock_Divider \- PLLP Clock Divider
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV2\fP   \fBRCC_PLLCFGR_PLLP_0\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV3\fP   \fBRCC_PLLCFGR_PLLP_1\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV4\fP   (\fBRCC_PLLCFGR_PLLP_1\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV5\fP   \fBRCC_PLLCFGR_PLLP_2\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV6\fP   (\fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV7\fP   (\fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV8\fP   (\fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_1\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV9\fP   \fBRCC_PLLCFGR_PLLP_3\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV10\fP   (\fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV11\fP   (\fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV12\fP   (\fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_1\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV13\fP   (\fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_2\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV14\fP   (\fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV15\fP   (\fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV16\fP   (\fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_1\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV17\fP   \fBRCC_PLLCFGR_PLLP_4\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV18\fP   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV19\fP   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV20\fP   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_1\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV21\fP   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_2\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV22\fP   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV23\fP   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV24\fP   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_1\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV25\fP   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_3\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV26\fP   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV27\fP   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV28\fP   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_1\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV29\fP   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_2\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV30\fP   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV31\fP   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_PLLP_DIV32\fP   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_1\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RCC_PLLP_DIV10   (\fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+PLLP division factor = 10 
+.SS "#define RCC_PLLP_DIV11   (\fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_1\fP)"
+PLLP division factor = 11 
+.SS "#define RCC_PLLP_DIV12   (\fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_1\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+PLLP division factor = 12 
+.SS "#define RCC_PLLP_DIV13   (\fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_2\fP)"
+PLLP division factor = 13 
+.SS "#define RCC_PLLP_DIV14   (\fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+PLLP division factor = 14 
+.SS "#define RCC_PLLP_DIV15   (\fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_1\fP)"
+PLLP division factor = 15 
+.SS "#define RCC_PLLP_DIV16   (\fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_1\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+PLLP division factor = 16 
+.SS "#define RCC_PLLP_DIV17   \fBRCC_PLLCFGR_PLLP_4\fP"
+PLLP division factor = 17 
+.SS "#define RCC_PLLP_DIV18   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+PLLP division factor = 18 
+.SS "#define RCC_PLLP_DIV19   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_1\fP)"
+PLLP division factor = 19 
+.SS "#define RCC_PLLP_DIV2   \fBRCC_PLLCFGR_PLLP_0\fP"
+PLLP division factor = 2 
+.br
+ 
+.SS "#define RCC_PLLP_DIV20   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_1\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+PLLP division factor = 20 
+.SS "#define RCC_PLLP_DIV21   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_2\fP)"
+PLLP division factor = 21 
+.SS "#define RCC_PLLP_DIV22   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+PLLP division factor = 22 
+.SS "#define RCC_PLLP_DIV23   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_1\fP)"
+PLLP division factor = 23 
+.SS "#define RCC_PLLP_DIV24   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_1\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+PLLP division factor = 24 
+.SS "#define RCC_PLLP_DIV25   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_3\fP)"
+PLLP division factor = 25 
+.SS "#define RCC_PLLP_DIV26   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+PLLP division factor = 26 
+.SS "#define RCC_PLLP_DIV27   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_1\fP)"
+PLLP division factor = 27 
+.SS "#define RCC_PLLP_DIV28   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_1\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+PLLP division factor = 28 
+.SS "#define RCC_PLLP_DIV29   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_2\fP)"
+PLLP division factor = 29 
+.SS "#define RCC_PLLP_DIV3   \fBRCC_PLLCFGR_PLLP_1\fP"
+PLLP division factor = 3 
+.br
+ 
+.SS "#define RCC_PLLP_DIV30   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+PLLP division factor = 30 
+.SS "#define RCC_PLLP_DIV31   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_1\fP)"
+PLLP division factor = 31 
+.SS "#define RCC_PLLP_DIV32   (\fBRCC_PLLCFGR_PLLP_4\fP | \fBRCC_PLLCFGR_PLLP_3\fP | \fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_1\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+PLLP division factor = 32 
+.SS "#define RCC_PLLP_DIV4   (\fBRCC_PLLCFGR_PLLP_1\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+PLLP division factor = 4 
+.br
+ 
+.SS "#define RCC_PLLP_DIV5   \fBRCC_PLLCFGR_PLLP_2\fP"
+PLLP division factor = 5 
+.br
+ 
+.SS "#define RCC_PLLP_DIV6   (\fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+PLLP division factor = 6 
+.br
+ 
+.SS "#define RCC_PLLP_DIV7   (\fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_1\fP)"
+PLLP division factor = 7 
+.br
+ 
+.SS "#define RCC_PLLP_DIV8   (\fBRCC_PLLCFGR_PLLP_2\fP | \fBRCC_PLLCFGR_PLLP_1\fP | \fBRCC_PLLCFGR_PLLP_0\fP)"
+PLLP division factor = 8 
+.br
+ 
+.SS "#define RCC_PLLP_DIV9   \fBRCC_PLLCFGR_PLLP_3\fP"
+PLLP division factor = 9 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

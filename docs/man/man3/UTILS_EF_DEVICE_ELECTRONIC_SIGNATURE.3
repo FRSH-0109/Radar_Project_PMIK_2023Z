@@ -1,0 +1,100 @@
+.TH "UTILS_EF_DEVICE_ELECTRONIC_SIGNATURE" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UTILS_EF_DEVICE_ELECTRONIC_SIGNATURE \- DEVICE ELECTRONIC SIGNATURE
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_GetUID_Word0\fP (void)"
+.br
+.RI "Get Word0 of the unique device identifier (UID based on 96 bits) "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_GetUID_Word1\fP (void)"
+.br
+.RI "Get Word1 of the unique device identifier (UID based on 96 bits) "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_GetUID_Word2\fP (void)"
+.br
+.RI "Get Word2 of the unique device identifier (UID based on 96 bits) "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_GetFlashSize\fP (void)"
+.br
+.RI "Get Flash memory size\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_GetPackageType\fP (void)"
+.br
+.RI "Get Package type\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "\fB__STATIC_INLINE\fP uint32_t LL_GetFlashSize (void)"
+
+.PP
+Get Flash memory size\&. 
+.PP
+\fBNote\fP
+.RS 4
+This bitfield indicates the size of the device Flash memory expressed in Kbytes\&. As an example, 0x040 corresponds to 64 Kbytes\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fIFLASH_SIZE[15:0]\fP Flash memory size 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP uint32_t LL_GetPackageType (void)"
+
+.PP
+Get Package type\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIPKG[3:0]\fP Package type - This parameter can be a value of \fBPACKAGE TYPE\fP  
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP uint32_t LL_GetUID_Word0 (void)"
+
+.PP
+Get Word0 of the unique device identifier (UID based on 96 bits) 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIUID[31:0]\fP X and Y coordinates on the wafer expressed in BCD format 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP uint32_t LL_GetUID_Word1 (void)"
+
+.PP
+Get Word1 of the unique device identifier (UID based on 96 bits) 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIUID[63:32]\fP Wafer number (UID[39:32]) & LOT_NUM[23:0] (UID[63:40]) 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP uint32_t LL_GetUID_Word2 (void)"
+
+.PP
+Get Word2 of the unique device identifier (UID based on 96 bits) 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIUID[95:64]\fP Lot number (ASCII encoded) - LOT_NUM[55:24] 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

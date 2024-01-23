@@ -1,0 +1,145 @@
+.TH "UART_Exported_Functions_Group2" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Exported_Functions_Group2 \- IO operation functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Transmit\fP (\fBUART_HandleTypeDef\fP *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Receive\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Transmit_IT\fP (\fBUART_HandleTypeDef\fP *huart, const uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Receive_IT\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Transmit_DMA\fP (\fBUART_HandleTypeDef\fP *huart, const uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Receive_DMA\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_DMAPause\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_DMAResume\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_DMAStop\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Abort\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_AbortTransmit\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_AbortReceive\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Abort_IT\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_AbortTransmit_IT\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_AbortReceive_IT\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_IRQHandler\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_TxHalfCpltCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_TxCpltCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_RxHalfCpltCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_RxCpltCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_ErrorCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_AbortCpltCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_AbortTransmitCpltCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_AbortReceiveCpltCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UARTEx_RxEventCallback\fP (\fBUART_HandleTypeDef\fP *huart, uint16_t Size)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_Abort (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_Abort_IT (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "void HAL_UART_AbortCpltCallback (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_AbortReceive (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_AbortReceive_IT (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "void HAL_UART_AbortReceiveCpltCallback (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_AbortTransmit (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_AbortTransmit_IT (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "void HAL_UART_AbortTransmitCpltCallback (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_DMAPause (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_DMAResume (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_DMAStop (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "void HAL_UART_ErrorCallback (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "void HAL_UART_IRQHandler (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_Receive (\fBUART_HandleTypeDef\fP * huart, uint8_t * pData, uint16_t Size, uint32_t Timeout)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_Receive_DMA (\fBUART_HandleTypeDef\fP * huart, uint8_t * pData, uint16_t Size)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_Receive_IT (\fBUART_HandleTypeDef\fP * huart, uint8_t * pData, uint16_t Size)"
+
+.SS "void HAL_UART_RxCpltCallback (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "void HAL_UART_RxHalfCpltCallback (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_Transmit (\fBUART_HandleTypeDef\fP * huart, const uint8_t * pData, uint16_t Size, uint32_t Timeout)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_Transmit_DMA (\fBUART_HandleTypeDef\fP * huart, const uint8_t * pData, uint16_t Size)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_Transmit_IT (\fBUART_HandleTypeDef\fP * huart, const uint8_t * pData, uint16_t Size)"
+
+.SS "void HAL_UART_TxCpltCallback (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "void HAL_UART_TxHalfCpltCallback (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "void HAL_UARTEx_RxEventCallback (\fBUART_HandleTypeDef\fP * huart, uint16_t Size)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

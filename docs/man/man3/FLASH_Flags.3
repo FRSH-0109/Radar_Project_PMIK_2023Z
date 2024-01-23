@@ -1,0 +1,107 @@
+.TH "FLASH_Flags" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FLASH_Flags \- FLASH Flags Definition
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFLASH_FLAG_EOP\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_EOP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_OPERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_OPERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_PROGERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_PROGERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_WRPERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_WRPERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_PGAERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_PGAERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_SIZERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_SIZERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_PGSERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_PGSERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_MISERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_MISERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_FASTERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_FASTERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_OPTVERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_OPTVERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_BSY1\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_BSY1_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_BSY\fP   \fBFLASH_FLAG_BSY1\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_CFGBSY\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_CFGBSY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_ECCC1\fP   ((\fBFLASH_FLAG_ECCR1_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_ECCR_ECCC_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_ECCD1\fP   ((\fBFLASH_FLAG_ECCR1_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_ECCR_ECCD_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_ECCC\fP   \fBFLASH_FLAG_ECCC1\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_ECCD\fP   \fBFLASH_FLAG_ECCD1\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FLASH_FLAG_BSY   \fBFLASH_FLAG_BSY1\fP"
+FLASH Operation Busy flag - legacy name for single bank 
+.SS "#define FLASH_FLAG_BSY1   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_BSY1_Pos\fP)"
+FLASH Operation Busy flag for Bank 1 
+.SS "#define FLASH_FLAG_CFGBSY   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_CFGBSY_Pos\fP)"
+FLASH Configuration Busy flag 
+.SS "#define FLASH_FLAG_ECCC   \fBFLASH_FLAG_ECCC1\fP"
+FLASH ECC correction - legacy name for single bank 
+.SS "#define FLASH_FLAG_ECCC1   ((\fBFLASH_FLAG_ECCR1_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_ECCR_ECCC_Pos\fP)"
+FLASH ECC correction on bank 1 
+.SS "#define FLASH_FLAG_ECCD   \fBFLASH_FLAG_ECCD1\fP"
+FLASH ECC detection - legacy name for single bank 
+.SS "#define FLASH_FLAG_ECCD1   ((\fBFLASH_FLAG_ECCR1_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_ECCR_ECCD_Pos\fP)"
+FLASH ECC detection on bank 1 
+.SS "#define FLASH_FLAG_EOP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_EOP_Pos\fP)"
+FLASH End of operation flag 
+.SS "#define FLASH_FLAG_FASTERR   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_FASTERR_Pos\fP)"
+FLASH Fast programming error flag 
+.SS "#define FLASH_FLAG_MISERR   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_MISERR_Pos\fP)"
+FLASH Fast programming data miss error flag 
+.SS "#define FLASH_FLAG_OPERR   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_OPERR_Pos\fP)"
+FLASH Operation error flag 
+.SS "#define FLASH_FLAG_OPTVERR   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_OPTVERR_Pos\fP)"
+FLASH Option validity error flag 
+.SS "#define FLASH_FLAG_PGAERR   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_PGAERR_Pos\fP)"
+FLASH Programming alignment error flag 
+.SS "#define FLASH_FLAG_PGSERR   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_PGSERR_Pos\fP)"
+FLASH Programming sequence error flag 
+.SS "#define FLASH_FLAG_PROGERR   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_PROGERR_Pos\fP)"
+FLASH Programming error flag 
+.SS "#define FLASH_FLAG_SIZERR   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_SIZERR_Pos\fP)"
+FLASH Size error flag 
+.br
+ 
+.SS "#define FLASH_FLAG_WRPERR   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_WRPERR_Pos\fP)"
+FLASH Write protection error flag 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,40 @@
+.TH "FLASH_Keys" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FLASH_Keys \- FLASH Keys
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFLASH_KEY1\fP   0x45670123U"
+.br
+.ti -1c
+.RI "#define \fBFLASH_KEY2\fP   0xCDEF89ABU"
+.br
+.ti -1c
+.RI "#define \fBFLASH_OPTKEY1\fP   0x08192A3BU"
+.br
+.ti -1c
+.RI "#define \fBFLASH_OPTKEY2\fP   0x4C5D6E7FU"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FLASH_KEY1   0x45670123U"
+Flash key1 
+.SS "#define FLASH_KEY2   0xCDEF89ABU"
+Flash key2: used with FLASH_KEY1 to unlock the FLASH registers access 
+.SS "#define FLASH_OPTKEY1   0x08192A3BU"
+Flash option byte key1 
+.SS "#define FLASH_OPTKEY2   0x4C5D6E7FU"
+Flash option byte key2: used with FLASH_OPTKEY1 to allow option bytes operations 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

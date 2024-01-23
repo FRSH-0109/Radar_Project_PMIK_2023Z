@@ -1,0 +1,69 @@
+.TH "UART_Error_Definition" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Error_Definition \- UART Error Definition
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHAL_UART_ERROR_NONE\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_ERROR_PE\fP   (0x00000001U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_ERROR_NE\fP   (0x00000002U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_ERROR_FE\fP   (0x00000004U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_ERROR_ORE\fP   (0x00000008U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_ERROR_DMA\fP   (0x00000010U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_ERROR_RTO\fP   (0x00000020U)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define HAL_UART_ERROR_DMA   (0x00000010U)"
+DMA transfer error 
+.br
+ 
+.SS "#define HAL_UART_ERROR_FE   (0x00000004U)"
+Frame error 
+.br
+ 
+.SS "#define HAL_UART_ERROR_NE   (0x00000002U)"
+Noise error 
+.br
+ 
+.SS "#define HAL_UART_ERROR_NONE   (0x00000000U)"
+No error 
+.br
+ 
+.SS "#define HAL_UART_ERROR_ORE   (0x00000008U)"
+Overrun error 
+.br
+ 
+.SS "#define HAL_UART_ERROR_PE   (0x00000001U)"
+Parity error 
+.br
+ 
+.SS "#define HAL_UART_ERROR_RTO   (0x00000020U)"
+Receiver Timeout error 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

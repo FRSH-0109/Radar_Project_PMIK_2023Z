@@ -1,0 +1,667 @@
+.TH "RadarApp/DisplayDriver/ILI9341.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RadarApp/DisplayDriver/ILI9341.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBILI9341_ROTATION\fP   3"
+.br
+.ti -1c
+.RI "#define \fBILI9341_TFTWIDTH\fP   320"
+.br
+.RI "ILI9341 max TFT width\&. "
+.ti -1c
+.RI "#define \fBILI9341_TFTHEIGHT\fP   240"
+.br
+.RI "ILI9341 max TFT height\&. "
+.ti -1c
+.RI "#define \fBILI9341_NOP\fP   0x00"
+.br
+.RI "No-op register\&. "
+.ti -1c
+.RI "#define \fBILI9341_SWRESET\fP   0x01"
+.br
+.RI "Software reset register\&. "
+.ti -1c
+.RI "#define \fBILI9341_RDDID\fP   0x04"
+.br
+.RI "Read display identification information\&. "
+.ti -1c
+.RI "#define \fBILI9341_RDDST\fP   0x09"
+.br
+.RI "Read Display Status\&. "
+.ti -1c
+.RI "#define \fBILI9341_SLPIN\fP   0x10"
+.br
+.RI "Enter Sleep Mode\&. "
+.ti -1c
+.RI "#define \fBILI9341_SLPOUT\fP   0x11"
+.br
+.RI "Sleep Out\&. "
+.ti -1c
+.RI "#define \fBILI9341_PTLON\fP   0x12"
+.br
+.RI "Partial Mode ON\&. "
+.ti -1c
+.RI "#define \fBILI9341_NORON\fP   0x13"
+.br
+.RI "Normal Display Mode ON\&. "
+.ti -1c
+.RI "#define \fBILI9341_RDMODE\fP   0x0A"
+.br
+.RI "Read Display Power Mode\&. "
+.ti -1c
+.RI "#define \fBILI9341_RDMADCTL\fP   0x0B"
+.br
+.RI "Read Display MADCTL\&. "
+.ti -1c
+.RI "#define \fBILI9341_RDPIXFMT\fP   0x0C"
+.br
+.RI "Read Display Pixel Format\&. "
+.ti -1c
+.RI "#define \fBILI9341_RDIMGFMT\fP   0x0D"
+.br
+.RI "Read Display Image Format\&. "
+.ti -1c
+.RI "#define \fBILI9341_RDSELFDIAG\fP   0x0F"
+.br
+.RI "Read Display Self-Diagnostic Result\&. "
+.ti -1c
+.RI "#define \fBILI9341_INVOFF\fP   0x20"
+.br
+.RI "Display Inversion OFF\&. "
+.ti -1c
+.RI "#define \fBILI9341_INVON\fP   0x21"
+.br
+.RI "Display Inversion ON\&. "
+.ti -1c
+.RI "#define \fBILI9341_GAMMASET\fP   0x26"
+.br
+.RI "Gamma Set\&. "
+.ti -1c
+.RI "#define \fBILI9341_DISPOFF\fP   0x28"
+.br
+.RI "Display OFF\&. "
+.ti -1c
+.RI "#define \fBILI9341_DISPON\fP   0x29"
+.br
+.RI "Display ON\&. "
+.ti -1c
+.RI "#define \fBILI9341_CASET\fP   0x2A"
+.br
+.RI "Column Address Set\&. "
+.ti -1c
+.RI "#define \fBILI9341_PASET\fP   0x2B"
+.br
+.RI "Page Address Set\&. "
+.ti -1c
+.RI "#define \fBILI9341_RAMWR\fP   0x2C"
+.br
+.RI "Memory Write\&. "
+.ti -1c
+.RI "#define \fBILI9341_RAMRD\fP   0x2E"
+.br
+.RI "Memory Read\&. "
+.ti -1c
+.RI "#define \fBILI9341_PTLAR\fP   0x30"
+.br
+.RI "Partial Area\&. "
+.ti -1c
+.RI "#define \fBILI9341_VSCRDEF\fP   0x33"
+.br
+.RI "Vertical Scrolling Definition\&. "
+.ti -1c
+.RI "#define \fBILI9341_MADCTL\fP   0x36"
+.br
+.RI "Memory Access Control\&. "
+.ti -1c
+.RI "#define \fBILI9341_VSCRSADD\fP   0x37"
+.br
+.RI "Vertical Scrolling Start Address\&. "
+.ti -1c
+.RI "#define \fBILI9341_PIXFMT\fP   0x3A"
+.br
+.RI "COLMOD: Pixel Format Set\&. "
+.ti -1c
+.RI "#define \fBILI9341_FRMCTR1\fP     0xB1"
+.br
+.RI "Frame Rate Control (In Normal Mode/Full Colors)/*#end#*/\&. "
+.ti -1c
+.RI "#define \fBILI9341_FRMCTR2\fP   0xB2"
+.br
+.RI "Frame Rate Control (In Idle Mode/8 colors) "
+.ti -1c
+.RI "#define \fBILI9341_FRMCTR3\fP     0xB3"
+.br
+.RI "Frame Rate control (In Partial Mode/Full Colors)/*#end#*/\&. "
+.ti -1c
+.RI "#define \fBILI9341_INVCTR\fP   0xB4"
+.br
+.RI "Display Inversion Control\&. "
+.ti -1c
+.RI "#define \fBILI9341_DFUNCTR\fP   0xB6"
+.br
+.RI "Display Function Control\&. "
+.ti -1c
+.RI "#define \fBILI9341_PWCTR1\fP   0xC0"
+.br
+.RI "Power Control 1\&. "
+.ti -1c
+.RI "#define \fBILI9341_PWCTR2\fP   0xC1"
+.br
+.RI "Power Control 2\&. "
+.ti -1c
+.RI "#define \fBILI9341_PWCTR3\fP   0xC2"
+.br
+.RI "Power Control 3\&. "
+.ti -1c
+.RI "#define \fBILI9341_PWCTR4\fP   0xC3"
+.br
+.RI "Power Control 4\&. "
+.ti -1c
+.RI "#define \fBILI9341_PWCTR5\fP   0xC4"
+.br
+.RI "Power Control 5\&. "
+.ti -1c
+.RI "#define \fBILI9341_VMCTR1\fP   0xC5"
+.br
+.RI "VCOM Control 1\&. "
+.ti -1c
+.RI "#define \fBILI9341_VMCTR2\fP   0xC7"
+.br
+.RI "VCOM Control 2\&. "
+.ti -1c
+.RI "#define \fBILI9341_RDID1\fP   0xDA"
+.br
+.RI "Read ID 1\&. "
+.ti -1c
+.RI "#define \fBILI9341_RDID2\fP   0xDB"
+.br
+.RI "Read ID 2\&. "
+.ti -1c
+.RI "#define \fBILI9341_RDID3\fP   0xDC"
+.br
+.RI "Read ID 3\&. "
+.ti -1c
+.RI "#define \fBILI9341_RDID4\fP   0xDD"
+.br
+.RI "Read ID 4\&. "
+.ti -1c
+.RI "#define \fBILI9341_GMCTRP1\fP   0xE0"
+.br
+.RI "Positive Gamma Correction\&. "
+.ti -1c
+.RI "#define \fBILI9341_GMCTRN1\fP   0xE1"
+.br
+.RI "Negative Gamma Correction\&. "
+.ti -1c
+.RI "#define \fBILI9341_BLACK\fP   0x0000"
+.br
+.RI "0, 0, 0 "
+.ti -1c
+.RI "#define \fBILI9341_NAVY\fP   0x000F"
+.br
+.RI "0, 0, 123 "
+.ti -1c
+.RI "#define \fBILI9341_DARKGREEN\fP   0x03E0"
+.br
+.RI "0, 125, 0 "
+.ti -1c
+.RI "#define \fBILI9341_DARKCYAN\fP   0x03EF"
+.br
+.RI "0, 125, 123 "
+.ti -1c
+.RI "#define \fBILI9341_MAROON\fP   0x7800"
+.br
+.RI "123, 0, 0 "
+.ti -1c
+.RI "#define \fBILI9341_PURPLE\fP   0x780F"
+.br
+.RI "123, 0, 123 "
+.ti -1c
+.RI "#define \fBILI9341_OLIVE\fP   0x7BE0"
+.br
+.RI "123, 125, 0 "
+.ti -1c
+.RI "#define \fBILI9341_LIGHTGREY\fP   0xC618"
+.br
+.RI "198, 195, 198 "
+.ti -1c
+.RI "#define \fBILI9341_DARKGREY\fP   0x7BEF"
+.br
+.RI "123, 125, 123 "
+.ti -1c
+.RI "#define \fBILI9341_BLUE\fP   0x001F"
+.br
+.RI "0, 0, 255 "
+.ti -1c
+.RI "#define \fBILI9341_GREEN\fP   0x07E0"
+.br
+.RI "0, 255, 0 "
+.ti -1c
+.RI "#define \fBILI9341_CYAN\fP   0x07FF"
+.br
+.RI "0, 255, 255 "
+.ti -1c
+.RI "#define \fBILI9341_RED\fP   0xF800"
+.br
+.RI "255, 0, 0 "
+.ti -1c
+.RI "#define \fBILI9341_MAGENTA\fP   0xF81F"
+.br
+.RI "255, 0, 255 "
+.ti -1c
+.RI "#define \fBILI9341_YELLOW\fP   0xFFE0"
+.br
+.RI "255, 255, 0 "
+.ti -1c
+.RI "#define \fBILI9341_WHITE\fP   0xFFFF"
+.br
+.RI "255, 255, 255 "
+.ti -1c
+.RI "#define \fBILI9341_ORANGE\fP   0xFD20"
+.br
+.RI "255, 165, 0 "
+.ti -1c
+.RI "#define \fBILI9341_GREENYELLOW\fP   0xAFE5"
+.br
+.RI "173, 255, 41 "
+.ti -1c
+.RI "#define \fBILI9341_PINK\fP   0xFC18"
+.br
+.RI "255, 130, 198 "
+.ti -1c
+.RI "#define \fBMADCTL_MY\fP   0x80"
+.br
+.RI "Bottom to top\&. "
+.ti -1c
+.RI "#define \fBMADCTL_MX\fP   0x40"
+.br
+.RI "Right to left\&. "
+.ti -1c
+.RI "#define \fBMADCTL_MV\fP   0x20"
+.br
+.RI "Reverse Mode\&. "
+.ti -1c
+.RI "#define \fBMADCTL_ML\fP   0x10"
+.br
+.RI "LCD refresh Bottom to top\&. "
+.ti -1c
+.RI "#define \fBMADCTL_RGB\fP   0x00"
+.br
+.RI "Red-Green-Blue pixel order\&. "
+.ti -1c
+.RI "#define \fBMADCTL_BGR\fP   0x08"
+.br
+.RI "Blue-Green-Red pixel order\&. "
+.ti -1c
+.RI "#define \fBMADCTL_MH\fP   0x04"
+.br
+.RI "LCD refresh right to left\&. "
+.ti -1c
+.RI "#define \fBILI9341_SPI_TIMEOUT\fP   1000"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBILI9341_SendCommand\fP (uint8_t Command)"
+.br
+.ti -1c
+.RI "void \fBILI9341_SendToTFT\fP (uint8_t *Byte, uint32_t Length)"
+.br
+.ti -1c
+.RI "void \fBILI9341_Init\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBILI9341_SendCommandAndData\fP (uint8_t Command, uint8_t *Data, uint16_t Length)"
+.br
+.ti -1c
+.RI "void \fBILI9341_WritePixel\fP (uint16_t x, uint16_t y, uint16_t color)"
+.br
+.ti -1c
+.RI "void \fBILI9341_SendData16\fP (uint16_t Data)"
+.br
+.ti -1c
+.RI "void \fBILI9341_SetAddrWindow\fP (uint16_t x1, uint16_t y1, uint16_t w, uint16_t h)"
+.br
+.ti -1c
+.RI "void \fBILI9341_WriteScreen\fP (uint16_t color)"
+.br
+.ti -1c
+.RI "void \fBILI9341_DrawImage\fP (int x, int y, const uint8_t *img, uint16_t w, uint16_t h)"
+.br
+.ti -1c
+.RI "void \fBILI9341_SetRotation\fP (uint8_t m)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ILI9341_BLACK   0x0000"
+
+.PP
+0, 0, 0 
+.SS "#define ILI9341_BLUE   0x001F"
+
+.PP
+0, 0, 255 
+.SS "#define ILI9341_CASET   0x2A"
+
+.PP
+Column Address Set\&. 
+.SS "#define ILI9341_CYAN   0x07FF"
+
+.PP
+0, 255, 255 
+.SS "#define ILI9341_DARKCYAN   0x03EF"
+
+.PP
+0, 125, 123 
+.SS "#define ILI9341_DARKGREEN   0x03E0"
+
+.PP
+0, 125, 0 
+.SS "#define ILI9341_DARKGREY   0x7BEF"
+
+.PP
+123, 125, 123 
+.SS "#define ILI9341_DFUNCTR   0xB6"
+
+.PP
+Display Function Control\&. 
+.SS "#define ILI9341_DISPOFF   0x28"
+
+.PP
+Display OFF\&. 
+.SS "#define ILI9341_DISPON   0x29"
+
+.PP
+Display ON\&. 
+.SS "#define ILI9341_FRMCTR1     0xB1"
+
+.PP
+Frame Rate Control (In Normal Mode/Full Colors)/*#end#*/\&. 
+.SS "#define ILI9341_FRMCTR2   0xB2"
+
+.PP
+Frame Rate Control (In Idle Mode/8 colors) 
+.SS "#define ILI9341_FRMCTR3     0xB3"
+
+.PP
+Frame Rate control (In Partial Mode/Full Colors)/*#end#*/\&. 
+.SS "#define ILI9341_GAMMASET   0x26"
+
+.PP
+Gamma Set\&. 
+.SS "#define ILI9341_GMCTRN1   0xE1"
+
+.PP
+Negative Gamma Correction\&. 
+.SS "#define ILI9341_GMCTRP1   0xE0"
+
+.PP
+Positive Gamma Correction\&. 
+.SS "#define ILI9341_GREEN   0x07E0"
+
+.PP
+0, 255, 0 
+.SS "#define ILI9341_GREENYELLOW   0xAFE5"
+
+.PP
+173, 255, 41 
+.SS "#define ILI9341_INVCTR   0xB4"
+
+.PP
+Display Inversion Control\&. 
+.SS "#define ILI9341_INVOFF   0x20"
+
+.PP
+Display Inversion OFF\&. 
+.SS "#define ILI9341_INVON   0x21"
+
+.PP
+Display Inversion ON\&. 
+.SS "#define ILI9341_LIGHTGREY   0xC618"
+
+.PP
+198, 195, 198 
+.SS "#define ILI9341_MADCTL   0x36"
+
+.PP
+Memory Access Control\&. 
+.SS "#define ILI9341_MAGENTA   0xF81F"
+
+.PP
+255, 0, 255 
+.SS "#define ILI9341_MAROON   0x7800"
+
+.PP
+123, 0, 0 
+.SS "#define ILI9341_NAVY   0x000F"
+
+.PP
+0, 0, 123 
+.SS "#define ILI9341_NOP   0x00"
+
+.PP
+No-op register\&. 
+.SS "#define ILI9341_NORON   0x13"
+
+.PP
+Normal Display Mode ON\&. 
+.SS "#define ILI9341_OLIVE   0x7BE0"
+
+.PP
+123, 125, 0 
+.SS "#define ILI9341_ORANGE   0xFD20"
+
+.PP
+255, 165, 0 
+.SS "#define ILI9341_PASET   0x2B"
+
+.PP
+Page Address Set\&. 
+.SS "#define ILI9341_PINK   0xFC18"
+
+.PP
+255, 130, 198 
+.SS "#define ILI9341_PIXFMT   0x3A"
+
+.PP
+COLMOD: Pixel Format Set\&. 
+.SS "#define ILI9341_PTLAR   0x30"
+
+.PP
+Partial Area\&. 
+.SS "#define ILI9341_PTLON   0x12"
+
+.PP
+Partial Mode ON\&. 
+.SS "#define ILI9341_PURPLE   0x780F"
+
+.PP
+123, 0, 123 
+.SS "#define ILI9341_PWCTR1   0xC0"
+
+.PP
+Power Control 1\&. 
+.SS "#define ILI9341_PWCTR2   0xC1"
+
+.PP
+Power Control 2\&. 
+.SS "#define ILI9341_PWCTR3   0xC2"
+
+.PP
+Power Control 3\&. 
+.SS "#define ILI9341_PWCTR4   0xC3"
+
+.PP
+Power Control 4\&. 
+.SS "#define ILI9341_PWCTR5   0xC4"
+
+.PP
+Power Control 5\&. 
+.SS "#define ILI9341_RAMRD   0x2E"
+
+.PP
+Memory Read\&. 
+.SS "#define ILI9341_RAMWR   0x2C"
+
+.PP
+Memory Write\&. 
+.SS "#define ILI9341_RDDID   0x04"
+
+.PP
+Read display identification information\&. 
+.SS "#define ILI9341_RDDST   0x09"
+
+.PP
+Read Display Status\&. 
+.SS "#define ILI9341_RDID1   0xDA"
+
+.PP
+Read ID 1\&. 
+.SS "#define ILI9341_RDID2   0xDB"
+
+.PP
+Read ID 2\&. 
+.SS "#define ILI9341_RDID3   0xDC"
+
+.PP
+Read ID 3\&. 
+.SS "#define ILI9341_RDID4   0xDD"
+
+.PP
+Read ID 4\&. 
+.SS "#define ILI9341_RDIMGFMT   0x0D"
+
+.PP
+Read Display Image Format\&. 
+.SS "#define ILI9341_RDMADCTL   0x0B"
+
+.PP
+Read Display MADCTL\&. 
+.SS "#define ILI9341_RDMODE   0x0A"
+
+.PP
+Read Display Power Mode\&. 
+.SS "#define ILI9341_RDPIXFMT   0x0C"
+
+.PP
+Read Display Pixel Format\&. 
+.SS "#define ILI9341_RDSELFDIAG   0x0F"
+
+.PP
+Read Display Self-Diagnostic Result\&. 
+.SS "#define ILI9341_RED   0xF800"
+
+.PP
+255, 0, 0 
+.SS "#define ILI9341_ROTATION   3"
+
+.SS "#define ILI9341_SLPIN   0x10"
+
+.PP
+Enter Sleep Mode\&. 
+.SS "#define ILI9341_SLPOUT   0x11"
+
+.PP
+Sleep Out\&. 
+.SS "#define ILI9341_SPI_TIMEOUT   1000"
+
+.SS "#define ILI9341_SWRESET   0x01"
+
+.PP
+Software reset register\&. 
+.SS "#define ILI9341_TFTHEIGHT   240"
+
+.PP
+ILI9341 max TFT height\&. 
+.SS "#define ILI9341_TFTWIDTH   320"
+
+.PP
+ILI9341 max TFT width\&. 
+.SS "#define ILI9341_VMCTR1   0xC5"
+
+.PP
+VCOM Control 1\&. 
+.SS "#define ILI9341_VMCTR2   0xC7"
+
+.PP
+VCOM Control 2\&. 
+.SS "#define ILI9341_VSCRDEF   0x33"
+
+.PP
+Vertical Scrolling Definition\&. 
+.SS "#define ILI9341_VSCRSADD   0x37"
+
+.PP
+Vertical Scrolling Start Address\&. 
+.SS "#define ILI9341_WHITE   0xFFFF"
+
+.PP
+255, 255, 255 
+.SS "#define ILI9341_YELLOW   0xFFE0"
+
+.PP
+255, 255, 0 
+.SS "#define MADCTL_BGR   0x08"
+
+.PP
+Blue-Green-Red pixel order\&. 
+.SS "#define MADCTL_MH   0x04"
+
+.PP
+LCD refresh right to left\&. 
+.SS "#define MADCTL_ML   0x10"
+
+.PP
+LCD refresh Bottom to top\&. 
+.SS "#define MADCTL_MV   0x20"
+
+.PP
+Reverse Mode\&. 
+.SS "#define MADCTL_MX   0x40"
+
+.PP
+Right to left\&. 
+.SS "#define MADCTL_MY   0x80"
+
+.PP
+Bottom to top\&. 
+.SS "#define MADCTL_RGB   0x00"
+
+.PP
+Red-Green-Blue pixel order\&. 
+.SH "Function Documentation"
+.PP 
+.SS "void ILI9341_DrawImage (int x, int y, const uint8_t * img, uint16_t w, uint16_t h)"
+
+.SS "void ILI9341_Init (\fBSPI_HandleTypeDef\fP * hspi)"
+
+.SS "void ILI9341_SendCommand (uint8_t Command)"
+
+.SS "void ILI9341_SendCommandAndData (uint8_t Command, uint8_t * Data, uint16_t Length)"
+
+.SS "void ILI9341_SendData16 (uint16_t Data)"
+
+.SS "void ILI9341_SendToTFT (uint8_t * Byte, uint32_t Length)"
+
+.SS "void ILI9341_SetAddrWindow (uint16_t x1, uint16_t y1, uint16_t w, uint16_t h)"
+
+.SS "void ILI9341_SetRotation (uint8_t m)"
+
+.SS "void ILI9341_WritePixel (uint16_t x, uint16_t y, uint16_t color)"
+
+.SS "void ILI9341_WriteScreen (uint16_t color)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,149 @@
+.TH "RCC_TypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_TypeDef \- Reset and Clock Control\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g030xx\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBICSCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCFGR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPLLCFGR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRESERVED0\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRESERVED1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCIER\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCIFR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCICR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBIOPRSTR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAHBRSTR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAPBRSTR1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAPBRSTR2\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBIOPENR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAHBENR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAPBENR1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAPBENR2\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBIOPSMENR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAHBSMENR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAPBSMENR1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAPBSMENR2\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCCIPR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRESERVED2\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBBDCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCSR\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Reset and Clock Control\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::AHBENR"
+RCC AHB peripherals clock enable register, Address offset: 0x38 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::AHBRSTR"
+RCC AHB peripherals reset register, Address offset: 0x28 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::AHBSMENR"
+RCC AHB peripheral clocks enable in sleep mode register, Address offset: 0x48 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::APBENR1"
+RCC APB peripherals clock enable register1, Address offset: 0x3C 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::APBENR2"
+RCC APB peripherals clock enable register2, Address offset: 0x40 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::APBRSTR1"
+RCC APB peripherals reset register 1, Address offset: 0x2C 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::APBRSTR2"
+RCC APB peripherals reset register 2, Address offset: 0x30 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::APBSMENR1"
+RCC APB peripheral clocks enable in sleep mode register1, Address offset: 0x4C 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::APBSMENR2"
+RCC APB peripheral clocks enable in sleep mode register2, Address offset: 0x50 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::BDCR"
+RCC Backup Domain Control Register, Address offset: 0x5C 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::CCIPR"
+RCC Peripherals Independent Clocks Configuration Register, Address offset: 0x54 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::CFGR"
+RCC Regulated Domain Clocks Configuration Register, Address offset: 0x08 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::CICR"
+RCC Clock Interrupt Clear Register, Address offset: 0x20 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::CIER"
+RCC Clock Interrupt Enable Register, Address offset: 0x18 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::CIFR"
+RCC Clock Interrupt Flag Register, Address offset: 0x1C 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::CR"
+RCC Clock Sources Control Register, Address offset: 0x00 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::CSR"
+RCC Unregulated Domain Clock Control and Status Register, Address offset: 0x60 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::ICSCR"
+RCC Internal Clock Sources Calibration Register, Address offset: 0x04 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::IOPENR"
+RCC IO port enable register, Address offset: 0x34 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::IOPRSTR"
+RCC IO port reset register, Address offset: 0x24 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::IOPSMENR"
+RCC IO port clocks enable in sleep mode register, Address offset: 0x44 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::PLLCFGR"
+RCC System PLL configuration Register, Address offset: 0x0C 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::RESERVED0"
+Reserved, Address offset: 0x10 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::RESERVED1"
+Reserved, Address offset: 0x14 
+.SS "\fB__IO\fP uint32_t RCC_TypeDef::RESERVED2"
+Reserved, Address offset: 0x58 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

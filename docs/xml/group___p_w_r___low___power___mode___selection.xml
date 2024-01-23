@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___p_w_r___low___power___mode___selection" kind="group">
+    <compoundname>PWR_Low_Power_Mode_Selection</compoundname>
+    <title>PWR Low Power Mode Selection</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___p_w_r___low___power___mode___selection_1gae163dddadea03ea51d61e4d86c6efe86" prot="public" static="no">
+        <name>PWR_LOWPOWERMODE_STOP0</name>
+        <initializer>(0x00000000u)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop 0: stop mode with main regulator </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="93" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___low___power___mode___selection_1ga6e436b19d68a17f664de329633049aa9" prot="public" static="no">
+        <name>PWR_LOWPOWERMODE_STOP1</name>
+        <initializer>(<ref refid="group___peripheral___registers___bits___definition_1gabce752abd8bb8fcf2292868e67bdd590" kindref="member">PWR_CR1_LPMS_0</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop 1: stop mode with low power regulator </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="94" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___low___power___mode___selection_1ga2174d41ab7c2a94ce6d059aa739e388b" prot="public" static="no">
+        <name>PWR_LOWPOWERMODE_STANDBY</name>
+        <initializer>(<ref refid="group___peripheral___registers___bits___definition_1gabce752abd8bb8fcf2292868e67bdd590" kindref="member">PWR_CR1_LPMS_0</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga606cc4cd7b7b88aff883479b84917a3c" kindref="member">PWR_CR1_LPMS_1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standby mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="95" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

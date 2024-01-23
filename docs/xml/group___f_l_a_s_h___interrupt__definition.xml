@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___f_l_a_s_h___interrupt__definition" kind="group">
+    <compoundname>FLASH_Interrupt_definition</compoundname>
+    <title>FLASH Interrupts Definition</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_l_a_s_h___interrupt__definition_1gaea20e80e1806d58a7544cfe8659e7f11" prot="public" static="no">
+        <name>FLASH_IT_EOP</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga640f48347791c15967d7eeda287f66c9" kindref="member">FLASH_FLAG_CR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1ga4e162a7fa45cb85ba0df0942a2519478" kindref="member">FLASH_CR_EOPIE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>End of FLASH Operation Interrupt source </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="219" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___interrupt__definition_1ga501c9645076ef3ec2b0dad64da0a8d7e" prot="public" static="no">
+        <name>FLASH_IT_OPERR</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga640f48347791c15967d7eeda287f66c9" kindref="member">FLASH_FLAG_CR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1gab075c4eeff509cfe0f34040c29edfb05" kindref="member">FLASH_CR_ERRIE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error Interrupt source </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="220" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___interrupt__definition_1gaca7868799bea66927ac2b8b8d8c8be1a" prot="public" static="no">
+        <name>FLASH_IT_ECCC1</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga12fc6723eee1c92a9ccbbea964c69e81" kindref="member">FLASH_FLAG_ECCR1_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1gad5f5d8ded8f1cfb89a4c023e516479b0" kindref="member">FLASH_ECCR_ECCCIE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ECC Correction on Bank 1 Interrupt source </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="224" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___interrupt__definition_1gaecdc533ad50a649b780f72e8dee48a1b" prot="public" static="no">
+        <name>FLASH_IT_ECCC</name>
+        <initializer><ref refid="group___f_l_a_s_h___interrupt__definition_1gaca7868799bea66927ac2b8b8d8c8be1a" kindref="member">FLASH_IT_ECCC1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ECC Correction - legacy name for single bank </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="228" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>FLASH Interrupt definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

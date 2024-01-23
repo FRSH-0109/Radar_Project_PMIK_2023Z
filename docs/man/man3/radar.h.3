@@ -1,0 +1,161 @@
+.TH "RadarApp/RadarDriver/radar.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RadarApp/RadarDriver/radar.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'main\&.h'\fP
+.br
+\fC#include 'stdio\&.h'\fP
+.br
+\fC#include 'servo_driver\&.h'\fP
+.br
+\fC#include 'distance_sensor\&.h'\fP
+.br
+\fC#include 'usart_custom\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBradarStruct\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSENSOR_MEASURE_PERIOD_DEFAULT_MS\fP   100"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBradarInit\fP (\fBradarStruct\fP *\fBradar\fP, \fBservoDriverStruct\fP *servo, \fBTIM_HandleTypeDef\fP *servo_tim, \fBdistanceSensorStruct\fP *sensor, \fBTIM_HandleTypeDef\fP *sensor_tim)"
+.br
+.ti -1c
+.RI "void \fBradarServoUpdate\fP (\fBradarStruct\fP *\fBradar\fP)"
+.br
+.ti -1c
+.RI "bool \fBradarSetPositionMin\fP (\fBradarStruct\fP *\fBradar\fP, float pos)"
+.br
+.ti -1c
+.RI "float \fBradarGetPositionMin\fP (\fBradarStruct\fP *\fBradar\fP)"
+.br
+.ti -1c
+.RI "bool \fBradarSetPositionMax\fP (\fBradarStruct\fP *\fBradar\fP, float pos)"
+.br
+.ti -1c
+.RI "float \fBradarGetPositionMax\fP (\fBradarStruct\fP *\fBradar\fP)"
+.br
+.ti -1c
+.RI "void \fBradarServoStart\fP (\fBradarStruct\fP *\fBradar\fP)"
+.br
+.ti -1c
+.RI "void \fBradarServoStop\fP (\fBradarStruct\fP *\fBradar\fP)"
+.br
+.ti -1c
+.RI "bool \fBradarSetPositionUpdatePeriod\fP (\fBradarStruct\fP *\fBradar\fP, uint16_t periodMs)"
+.br
+.ti -1c
+.RI "bool \fBradarSetPositionUpdateStep\fP (\fBradarStruct\fP *\fBradar\fP, float step)"
+.br
+.ti -1c
+.RI "bool \fBradarSetPosition\fP (\fBradarStruct\fP *\fBradar\fP, float pos)"
+.br
+.ti -1c
+.RI "float \fBradarGetPosition\fP (\fBradarStruct\fP *\fBradar\fP)"
+.br
+.ti -1c
+.RI "void \fBradarMeasureStart\fP (\fBradarStruct\fP *\fBradar\fP)"
+.br
+.ti -1c
+.RI "void \fBradarMeasureStop\fP (\fBradarStruct\fP *\fBradar\fP)"
+.br
+.ti -1c
+.RI "bool \fBradarSetMeasureFreq\fP (\fBradarStruct\fP *\fBradar\fP, uint16_t periodMs)"
+.br
+.ti -1c
+.RI "void \fBradarTriggerMeasure\fP (\fBradarStruct\fP *\fBradar\fP)"
+.br
+.ti -1c
+.RI "double \fBradarGetMeasure\fP (\fBradarStruct\fP *\fBradar\fP)"
+.br
+.ti -1c
+.RI "bool \fBradarParseSetPosition\fP (\fBradarStruct\fP *\fBradar\fP, uint8_t *data)"
+.br
+.ti -1c
+.RI "bool \fBradarParseSetStep\fP (\fBradarStruct\fP *\fBradar\fP, uint8_t *data)"
+.br
+.ti -1c
+.RI "bool \fBradarParseSetPositionMinMax\fP (\fBradarStruct\fP *\fBradar\fP, uint8_t *data, bool isMin)"
+.br
+.ti -1c
+.RI "bool \fBradarParseSetMeasurePeriod\fP (\fBradarStruct\fP *\fBradar\fP, uint8_t *data)"
+.br
+.ti -1c
+.RI "bool \fBradarParseSetDrawScale\fP (\fBradarStruct\fP *\fBradar\fP, uint8_t *data)"
+.br
+.ti -1c
+.RI "bool \fBradarParseSetDrawRules\fP (\fBradarStruct\fP *\fBradar\fP, uint8_t *data)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define SENSOR_MEASURE_PERIOD_DEFAULT_MS   100"
+
+.SH "Function Documentation"
+.PP 
+.SS "double radarGetMeasure (\fBradarStruct\fP * radar)"
+
+.SS "float radarGetPosition (\fBradarStruct\fP * radar)"
+
+.SS "float radarGetPositionMax (\fBradarStruct\fP * radar)"
+
+.SS "float radarGetPositionMin (\fBradarStruct\fP * radar)"
+
+.SS "void radarInit (\fBradarStruct\fP * radar, \fBservoDriverStruct\fP * servo, \fBTIM_HandleTypeDef\fP * servo_tim, \fBdistanceSensorStruct\fP * sensor, \fBTIM_HandleTypeDef\fP * sensor_tim)"
+
+.SS "void radarMeasureStart (\fBradarStruct\fP * radar)"
+
+.SS "void radarMeasureStop (\fBradarStruct\fP * radar)"
+
+.SS "bool radarParseSetDrawRules (\fBradarStruct\fP * radar, uint8_t * data)"
+
+.SS "bool radarParseSetDrawScale (\fBradarStruct\fP * radar, uint8_t * data)"
+
+.SS "bool radarParseSetMeasurePeriod (\fBradarStruct\fP * radar, uint8_t * data)"
+
+.SS "bool radarParseSetPosition (\fBradarStruct\fP * radar, uint8_t * data)"
+
+.SS "bool radarParseSetPositionMinMax (\fBradarStruct\fP * radar, uint8_t * data, bool isMin)"
+
+.SS "bool radarParseSetStep (\fBradarStruct\fP * radar, uint8_t * data)"
+
+.SS "void radarServoStart (\fBradarStruct\fP * radar)"
+
+.SS "void radarServoStop (\fBradarStruct\fP * radar)"
+
+.SS "void radarServoUpdate (\fBradarStruct\fP * radar)"
+
+.SS "bool radarSetMeasureFreq (\fBradarStruct\fP * radar, uint16_t periodMs)"
+
+.SS "bool radarSetPosition (\fBradarStruct\fP * radar, float pos)"
+
+.SS "bool radarSetPositionMax (\fBradarStruct\fP * radar, float pos)"
+
+.SS "bool radarSetPositionMin (\fBradarStruct\fP * radar, float pos)"
+
+.SS "bool radarSetPositionUpdatePeriod (\fBradarStruct\fP * radar, uint16_t periodMs)"
+
+.SS "bool radarSetPositionUpdateStep (\fBradarStruct\fP * radar, float step)"
+
+.SS "void radarTriggerMeasure (\fBradarStruct\fP * radar)\fC [inline]\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

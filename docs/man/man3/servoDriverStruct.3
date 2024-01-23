@@ -1,0 +1,53 @@
+.TH "servoDriverStruct" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+servoDriverStruct
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <servo_driver\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "float \fBdegreesMin\fP"
+.br
+.ti -1c
+.RI "float \fBdegreesMax\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBpulseWidthMin\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBpulseWidthMax\fP"
+.br
+.ti -1c
+.RI "float \fBpositionInDegrees\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBpositionInPulseWidth\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure for control servomechanisms with pwm singal, 
+.SH "Member Data Documentation"
+.PP 
+.SS "float servoDriverStruct::degreesMax"
+Maximum degrees value for movement 
+.SS "float servoDriverStruct::degreesMin"
+Minimum degrees value for movement 
+.SS "float servoDriverStruct::positionInDegrees"
+Actual position in degrees 
+.SS "uint16_t servoDriverStruct::positionInPulseWidth"
+Actual position in pulse width 
+.SS "uint16_t servoDriverStruct::pulseWidthMax"
+Maximum pwm pulse width for movement 
+.SS "uint16_t servoDriverStruct::pulseWidthMin"
+Minimum pwm pulse width for movement 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

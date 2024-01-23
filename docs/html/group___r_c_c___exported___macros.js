@@ -1,0 +1,27 @@
+var group___r_c_c___exported___macros =
+[
+    [ "AHB Peripheral Clock Enable Disable", "group___r_c_c___a_h_b___peripheral___clock___enable___disable.html", "group___r_c_c___a_h_b___peripheral___clock___enable___disable" ],
+    [ "IOPORT Clock Enable Disable", "group___r_c_c___i_o_p_o_r_t___clock___enable___disable.html", "group___r_c_c___i_o_p_o_r_t___clock___enable___disable" ],
+    [ "APB1 Peripheral Clock Enable Disable", "group___r_c_c___a_p_b1___clock___enable___disable.html", "group___r_c_c___a_p_b1___clock___enable___disable" ],
+    [ "APB2 Peripheral Clock Enable Disable", "group___r_c_c___a_p_b2___clock___enable___disable.html", "group___r_c_c___a_p_b2___clock___enable___disable" ],
+    [ "AHB Peripheral Clock Enabled or Disabled Status", "group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status.html", "group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status" ],
+    [ "IOPORT Clock Enabled or Disabled Status", "group___r_c_c___i_o_p_o_r_t___clock___enabled___disabled___status.html", "group___r_c_c___i_o_p_o_r_t___clock___enabled___disabled___status" ],
+    [ "APB1 Peripheral Clock Enabled or Disabled Status", "group___r_c_c___a_p_b1___clock___enabled___disabled___status.html", "group___r_c_c___a_p_b1___clock___enabled___disabled___status" ],
+    [ "APB2 Peripheral Clock Enabled or Disabled Status", "group___r_c_c___a_p_b2___clock___enabled___disabled___status.html", "group___r_c_c___a_p_b2___clock___enabled___disabled___status" ],
+    [ "AHB Peripheral Force Release Reset", "group___r_c_c___a_h_b___force___release___reset.html", "group___r_c_c___a_h_b___force___release___reset" ],
+    [ "IOPORT Force Release Reset", "group___r_c_c___i_o_p_o_r_t___force___release___reset.html", "group___r_c_c___i_o_p_o_r_t___force___release___reset" ],
+    [ "APB1 Peripheral Force Release Reset", "group___r_c_c___a_p_b1___force___release___reset.html", "group___r_c_c___a_p_b1___force___release___reset" ],
+    [ "APB2 Peripheral Force Release Reset", "group___r_c_c___a_p_b2___force___release___reset.html", "group___r_c_c___a_p_b2___force___release___reset" ],
+    [ "AHB Peripherals Clock Sleep Enable Disable", "group___r_c_c___a_h_b___clock___sleep___enable___disable.html", "group___r_c_c___a_h_b___clock___sleep___enable___disable" ],
+    [ "IOPORT Clock Sleep Enable Disable", "group___r_c_c___i_o_p_o_r_t___clock___sleep___enable___disable.html", "group___r_c_c___i_o_p_o_r_t___clock___sleep___enable___disable" ],
+    [ "APB1 Peripheral Clock Sleep Enable Disable", "group___r_c_c___a_p_b1___clock___sleep___enable___disable.html", "group___r_c_c___a_p_b1___clock___sleep___enable___disable" ],
+    [ "APB2 Peripheral Clock Sleep Enable Disable", "group___r_c_c___a_p_b2___clock___sleep___enable___disable.html", "group___r_c_c___a_p_b2___clock___sleep___enable___disable" ],
+    [ "AHB Peripheral Clock Sleep Enabled or Disabled Status", "group___r_c_c___a_h_b___clock___sleep___enabled___disabled___status.html", "group___r_c_c___a_h_b___clock___sleep___enabled___disabled___status" ],
+    [ "IOPORT Clock Sleep Enabled or Disabled Status", "group___r_c_c___i_o_p_o_r_t___clock___sleep___enabled___disabled___status.html", "group___r_c_c___i_o_p_o_r_t___clock___sleep___enabled___disabled___status" ],
+    [ "APB1 Peripheral Clock Sleep Enabled or Disabled Status", "group___r_c_c___a_p_b1___clock___sleep___enabled___disabled___status.html", "group___r_c_c___a_p_b1___clock___sleep___enabled___disabled___status" ],
+    [ "APB2 Peripheral Clock Sleep Enabled or Disabled Status", "group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status.html", "group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status" ],
+    [ "RCC Backup Domain Reset", "group___r_c_c___backup___domain___reset.html", "group___r_c_c___backup___domain___reset" ],
+    [ "RCC RTC Clock Configuration", "group___r_c_c___r_t_c___clock___configuration.html", "group___r_c_c___r_t_c___clock___configuration" ],
+    [ "RCC Clock Configuration", "group___r_c_c___clock___configuration.html", "group___r_c_c___clock___configuration" ],
+    [ "Flags Interrupts Management", "group___r_c_c___flags___interrupts___management.html", "group___r_c_c___flags___interrupts___management" ]
+];

@@ -1,0 +1,35 @@
+.TH "PWR_Low_Power_Mode_Selection" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PWR_Low_Power_Mode_Selection \- PWR Low Power Mode Selection
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPWR_LOWPOWERMODE_STOP0\fP   (0x00000000u)"
+.br
+.ti -1c
+.RI "#define \fBPWR_LOWPOWERMODE_STOP1\fP   (\fBPWR_CR1_LPMS_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_LOWPOWERMODE_STANDBY\fP   (\fBPWR_CR1_LPMS_0\fP | \fBPWR_CR1_LPMS_1\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define PWR_LOWPOWERMODE_STANDBY   (\fBPWR_CR1_LPMS_0\fP | \fBPWR_CR1_LPMS_1\fP)"
+Standby mode 
+.SS "#define PWR_LOWPOWERMODE_STOP0   (0x00000000u)"
+Stop 0: stop mode with main regulator 
+.SS "#define PWR_LOWPOWERMODE_STOP1   (\fBPWR_CR1_LPMS_0\fP)"
+Stop 1: stop mode with low power regulator 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

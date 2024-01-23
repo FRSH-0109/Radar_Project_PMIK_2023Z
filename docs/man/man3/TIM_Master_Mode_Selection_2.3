@@ -1,0 +1,128 @@
+.TH "TIM_Master_Mode_Selection_2" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_Master_Mode_Selection_2 \- TIM Master Mode Selection 2 (TRGO2)
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_TRGO2_RESET\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGO2_ENABLE\fP   \fBTIM_CR2_MMS2_0\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGO2_UPDATE\fP   \fBTIM_CR2_MMS2_1\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGO2_OC1\fP   (\fBTIM_CR2_MMS2_1\fP | \fBTIM_CR2_MMS2_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGO2_OC1REF\fP   \fBTIM_CR2_MMS2_2\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGO2_OC2REF\fP   (\fBTIM_CR2_MMS2_2\fP | \fBTIM_CR2_MMS2_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGO2_OC3REF\fP   (\fBTIM_CR2_MMS2_2\fP | \fBTIM_CR2_MMS2_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGO2_OC4REF\fP   (\fBTIM_CR2_MMS2_2\fP | \fBTIM_CR2_MMS2_1\fP | \fBTIM_CR2_MMS2_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGO2_OC5REF\fP   \fBTIM_CR2_MMS2_3\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGO2_OC6REF\fP   (\fBTIM_CR2_MMS2_3\fP | \fBTIM_CR2_MMS2_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGO2_OC4REF_RISINGFALLING\fP   (\fBTIM_CR2_MMS2_3\fP | \fBTIM_CR2_MMS2_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGO2_OC6REF_RISINGFALLING\fP   (\fBTIM_CR2_MMS2_3\fP | \fBTIM_CR2_MMS2_1\fP | \fBTIM_CR2_MMS2_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGO2_OC4REF_RISING_OC6REF_RISING\fP   (\fBTIM_CR2_MMS2_3\fP | \fBTIM_CR2_MMS2_2\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGO2_OC4REF_RISING_OC6REF_FALLING\fP   (\fBTIM_CR2_MMS2_3\fP | \fBTIM_CR2_MMS2_2\fP | \fBTIM_CR2_MMS2_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGO2_OC5REF_RISING_OC6REF_RISING\fP   (\fBTIM_CR2_MMS2_3\fP | \fBTIM_CR2_MMS2_2\fP |\fBTIM_CR2_MMS2_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM_TRGO2_OC5REF_RISING_OC6REF_FALLING\fP   (\fBTIM_CR2_MMS2_3\fP | \fBTIM_CR2_MMS2_2\fP | \fBTIM_CR2_MMS2_1\fP | \fBTIM_CR2_MMS2_0\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define TIM_TRGO2_ENABLE   \fBTIM_CR2_MMS2_0\fP"
+TIMx_CR1\&.CEN bit is used as trigger output (TRGO2) 
+.br
+ 
+.SS "#define TIM_TRGO2_OC1   (\fBTIM_CR2_MMS2_1\fP | \fBTIM_CR2_MMS2_0\fP)"
+Capture or a compare match 1 is used as trigger output (TRGO2) 
+.SS "#define TIM_TRGO2_OC1REF   \fBTIM_CR2_MMS2_2\fP"
+OC1REF signal is used as trigger output (TRGO2) 
+.br
+ 
+.SS "#define TIM_TRGO2_OC2REF   (\fBTIM_CR2_MMS2_2\fP | \fBTIM_CR2_MMS2_0\fP)"
+OC2REF signal is used as trigger output (TRGO2) 
+.br
+ 
+.SS "#define TIM_TRGO2_OC3REF   (\fBTIM_CR2_MMS2_2\fP | \fBTIM_CR2_MMS2_1\fP)"
+OC3REF signal is used as trigger output (TRGO2) 
+.br
+ 
+.SS "#define TIM_TRGO2_OC4REF   (\fBTIM_CR2_MMS2_2\fP | \fBTIM_CR2_MMS2_1\fP | \fBTIM_CR2_MMS2_0\fP)"
+OC4REF signal is used as trigger output (TRGO2) 
+.br
+ 
+.SS "#define TIM_TRGO2_OC4REF_RISING_OC6REF_FALLING   (\fBTIM_CR2_MMS2_3\fP | \fBTIM_CR2_MMS2_2\fP | \fBTIM_CR2_MMS2_0\fP)"
+OC4REF rising or OC6REF falling edges generate pulses on TRGO2 
+.SS "#define TIM_TRGO2_OC4REF_RISING_OC6REF_RISING   (\fBTIM_CR2_MMS2_3\fP | \fBTIM_CR2_MMS2_2\fP)"
+OC4REF or OC6REF rising edges generate pulses on TRGO2 
+.br
+ 
+.SS "#define TIM_TRGO2_OC4REF_RISINGFALLING   (\fBTIM_CR2_MMS2_3\fP | \fBTIM_CR2_MMS2_1\fP)"
+OC4REF rising or falling edges generate pulses on TRGO2 
+.br
+ 
+.SS "#define TIM_TRGO2_OC5REF   \fBTIM_CR2_MMS2_3\fP"
+OC5REF signal is used as trigger output (TRGO2) 
+.br
+ 
+.SS "#define TIM_TRGO2_OC5REF_RISING_OC6REF_FALLING   (\fBTIM_CR2_MMS2_3\fP | \fBTIM_CR2_MMS2_2\fP | \fBTIM_CR2_MMS2_1\fP | \fBTIM_CR2_MMS2_0\fP)"
+OC5REF or OC6REF rising edges generate pulses on TRGO2 
+.br
+ 
+.SS "#define TIM_TRGO2_OC5REF_RISING_OC6REF_RISING   (\fBTIM_CR2_MMS2_3\fP | \fBTIM_CR2_MMS2_2\fP |\fBTIM_CR2_MMS2_1\fP)"
+OC5REF or OC6REF rising edges generate pulses on TRGO2 
+.br
+ 
+.SS "#define TIM_TRGO2_OC6REF   (\fBTIM_CR2_MMS2_3\fP | \fBTIM_CR2_MMS2_0\fP)"
+OC6REF signal is used as trigger output (TRGO2) 
+.br
+ 
+.SS "#define TIM_TRGO2_OC6REF_RISINGFALLING   (\fBTIM_CR2_MMS2_3\fP | \fBTIM_CR2_MMS2_1\fP | \fBTIM_CR2_MMS2_0\fP)"
+OC6REF rising or falling edges generate pulses on TRGO2 
+.br
+ 
+.SS "#define TIM_TRGO2_RESET   0x00000000U"
+TIMx_EGR\&.UG bit is used as trigger output (TRGO2) 
+.br
+ 
+.SS "#define TIM_TRGO2_UPDATE   \fBTIM_CR2_MMS2_1\fP"
+Update event is used as trigger output (TRGO2) 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

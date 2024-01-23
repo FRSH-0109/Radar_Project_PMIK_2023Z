@@ -1,0 +1,578 @@
+.TH "SPI_Private_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_Private_Macros \- SPI Private Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSPI_1LINE_TX\fP(__HANDLE__)   \fBSET_BIT\fP((__HANDLE__)\->Instance\->CR1, \fBSPI_CR1_BIDIOE\fP)"
+.br
+.RI "Set the SPI transmit-only mode\&. "
+.ti -1c
+.RI "#define \fBSPI_1LINE_RX\fP(__HANDLE__)   \fBCLEAR_BIT\fP((__HANDLE__)\->Instance\->CR1, \fBSPI_CR1_BIDIOE\fP)"
+.br
+.RI "Set the SPI receive-only mode\&. "
+.ti -1c
+.RI "#define \fBSPI_RESET_CRC\fP(__HANDLE__)"
+.br
+.RI "Reset the CRC calculation of the SPI\&. "
+.ti -1c
+.RI "#define \fBSPI_CHECK_FLAG\fP(__SR__,  __FLAG__)"
+.br
+.RI "Check whether the specified SPI flag is set or not\&. "
+.ti -1c
+.RI "#define \fBSPI_CHECK_IT_SOURCE\fP(__CR2__,  __INTERRUPT__)"
+.br
+.RI "Check whether the specified SPI Interrupt is set or not\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_MODE\fP(__MODE__)"
+.br
+.RI "Checks if SPI Mode parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_DIRECTION\fP(__MODE__)"
+.br
+.RI "Checks if SPI Direction Mode parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_DIRECTION_2LINES\fP(__MODE__)   ((__MODE__) == \fBSPI_DIRECTION_2LINES\fP)"
+.br
+.RI "Checks if SPI Direction Mode parameter is 2 lines\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_DIRECTION_2LINES_OR_1LINE\fP(__MODE__)"
+.br
+.RI "Checks if SPI Direction Mode parameter is 1 or 2 lines\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_DATASIZE\fP(__DATASIZE__)"
+.br
+.RI "Checks if SPI Data Size parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_CPOL\fP(__CPOL__)"
+.br
+.RI "Checks if SPI Serial clock steady state parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_CPHA\fP(__CPHA__)"
+.br
+.RI "Checks if SPI Clock Phase parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_NSS\fP(__NSS__)"
+.br
+.RI "Checks if SPI Slave Select parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_NSSP\fP(__NSSP__)"
+.br
+.RI "Checks if SPI NSS Pulse parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_BAUDRATE_PRESCALER\fP(__PRESCALER__)"
+.br
+.RI "Checks if SPI Baudrate prescaler parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_FIRST_BIT\fP(__BIT__)"
+.br
+.RI "Checks if SPI MSB LSB transmission parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_TIMODE\fP(__MODE__)"
+.br
+.RI "Checks if SPI TI mode parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_CRC_CALCULATION\fP(__CALCULATION__)"
+.br
+.RI "Checks if SPI CRC calculation enabled state is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_CRC_LENGTH\fP(__LENGTH__)"
+.br
+.RI "Checks if SPI CRC length is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_CRC_POLYNOMIAL\fP(__POLYNOMIAL__)"
+.br
+.RI "Checks if SPI polynomial value to be used for the CRC calculation, is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_DMA_HANDLE\fP(__HANDLE__)   ((__HANDLE__) != NULL)"
+.br
+.RI "Checks if DMA handle is valid\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_SPI_BAUDRATE_PRESCALER(__PRESCALER__)"
+\fBValue:\fP.PP
+.nf
+                                                  (((__PRESCALER__) == SPI_BAUDRATEPRESCALER_2)   || \\
+                                                  ((__PRESCALER__) == SPI_BAUDRATEPRESCALER_4)   || \\
+                                                  ((__PRESCALER__) == SPI_BAUDRATEPRESCALER_8)   || \\
+                                                  ((__PRESCALER__) == SPI_BAUDRATEPRESCALER_16)  || \\
+                                                  ((__PRESCALER__) == SPI_BAUDRATEPRESCALER_32)  || \\
+                                                  ((__PRESCALER__) == SPI_BAUDRATEPRESCALER_64)  || \\
+                                                  ((__PRESCALER__) == SPI_BAUDRATEPRESCALER_128) || \\
+                                                  ((__PRESCALER__) == SPI_BAUDRATEPRESCALER_256))
+.fi
+
+.PP
+Checks if SPI Baudrate prescaler parameter is in allowed range\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__PRESCALER__\fP specifies the SPI Baudrate prescaler\&. This parameter can be a value of \fBSPI BaudRate Prescaler\fP 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define IS_SPI_CPHA(__CPHA__)"
+\fBValue:\fP.PP
+.nf
+                                    (((__CPHA__) == SPI_PHASE_1EDGE) || \\
+                                    ((__CPHA__) == SPI_PHASE_2EDGE))
+.fi
+
+.PP
+Checks if SPI Clock Phase parameter is in allowed range\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__CPHA__\fP specifies the SPI Clock Phase\&. This parameter can be a value of \fBSPI Clock Phase\fP 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define IS_SPI_CPOL(__CPOL__)"
+\fBValue:\fP.PP
+.nf
+                                    (((__CPOL__) == SPI_POLARITY_LOW) || \\
+                                    ((__CPOL__) == SPI_POLARITY_HIGH))
+.fi
+
+.PP
+Checks if SPI Serial clock steady state parameter is in allowed range\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__CPOL__\fP specifies the SPI serial clock steady state\&. This parameter can be a value of \fBSPI Clock Polarity\fP 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define IS_SPI_CRC_CALCULATION(__CALCULATION__)"
+\fBValue:\fP.PP
+.nf
+                                                 (((__CALCULATION__) == SPI_CRCCALCULATION_DISABLE) || \\
+                                                 ((__CALCULATION__) == SPI_CRCCALCULATION_ENABLE))
+.fi
+
+.PP
+Checks if SPI CRC calculation enabled state is in allowed range\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__CALCULATION__\fP specifies the SPI CRC calculation enable state\&. This parameter can be a value of \fBSPI CRC Calculation\fP 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define IS_SPI_CRC_LENGTH(__LENGTH__)"
+\fBValue:\fP.PP
+.nf
+                                       (((__LENGTH__) == SPI_CRC_LENGTH_DATASIZE) || \\
+                                       ((__LENGTH__) == SPI_CRC_LENGTH_8BIT)     || \\
+                                       ((__LENGTH__) == SPI_CRC_LENGTH_16BIT))
+.fi
+
+.PP
+Checks if SPI CRC length is in allowed range\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__LENGTH__\fP specifies the SPI CRC length\&. This parameter can be a value of \fBSPI CRC Length\fP 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define IS_SPI_CRC_POLYNOMIAL(__POLYNOMIAL__)"
+\fBValue:\fP.PP
+.nf
+                                               (((__POLYNOMIAL__) >= 0x1U)    && \\
+                                               ((__POLYNOMIAL__) <= 0xFFFFU) && \\
+                                              (((__POLYNOMIAL__)&0x1U) != 0U))
+.fi
+
+.PP
+Checks if SPI polynomial value to be used for the CRC calculation, is in allowed range\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__POLYNOMIAL__\fP specifies the SPI polynomial value to be used for the CRC calculation\&. This parameter must be a number between Min_Data = 0 and Max_Data = 65535 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define IS_SPI_DATASIZE(__DATASIZE__)"
+\fBValue:\fP.PP
+.nf
+                                       (((__DATASIZE__) == SPI_DATASIZE_16BIT) || \\
+                                       ((__DATASIZE__) == SPI_DATASIZE_15BIT) || \\
+                                       ((__DATASIZE__) == SPI_DATASIZE_14BIT) || \\
+                                       ((__DATASIZE__) == SPI_DATASIZE_13BIT) || \\
+                                       ((__DATASIZE__) == SPI_DATASIZE_12BIT) || \\
+                                       ((__DATASIZE__) == SPI_DATASIZE_11BIT) || \\
+                                       ((__DATASIZE__) == SPI_DATASIZE_10BIT) || \\
+                                       ((__DATASIZE__) == SPI_DATASIZE_9BIT)  || \\
+                                       ((__DATASIZE__) == SPI_DATASIZE_8BIT)  || \\
+                                       ((__DATASIZE__) == SPI_DATASIZE_7BIT)  || \\
+                                       ((__DATASIZE__) == SPI_DATASIZE_6BIT)  || \\
+                                       ((__DATASIZE__) == SPI_DATASIZE_5BIT)  || \\
+                                       ((__DATASIZE__) == SPI_DATASIZE_4BIT))
+.fi
+
+.PP
+Checks if SPI Data Size parameter is in allowed range\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__DATASIZE__\fP specifies the SPI Data Size\&. This parameter can be a value of \fBSPI Data Size\fP 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define IS_SPI_DIRECTION(__MODE__)"
+\fBValue:\fP.PP
+.nf
+                                    (((__MODE__) == SPI_DIRECTION_2LINES)        || \\
+                                    ((__MODE__) == SPI_DIRECTION_2LINES_RXONLY) || \\
+                                    ((__MODE__) == SPI_DIRECTION_1LINE))
+.fi
+
+.PP
+Checks if SPI Direction Mode parameter is in allowed range\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__MODE__\fP specifies the SPI Direction Mode\&. This parameter can be a value of \fBSPI Direction Mode\fP 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define IS_SPI_DIRECTION_2LINES(__MODE__)   ((__MODE__) == \fBSPI_DIRECTION_2LINES\fP)"
+
+.PP
+Checks if SPI Direction Mode parameter is 2 lines\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__MODE__\fP specifies the SPI Direction Mode\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define IS_SPI_DIRECTION_2LINES_OR_1LINE(__MODE__)"
+\fBValue:\fP.PP
+.nf
+                                                    (((__MODE__) == SPI_DIRECTION_2LINES) || \\
+                                                    ((__MODE__) == SPI_DIRECTION_1LINE))
+.fi
+
+.PP
+Checks if SPI Direction Mode parameter is 1 or 2 lines\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__MODE__\fP specifies the SPI Direction Mode\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define IS_SPI_DMA_HANDLE(__HANDLE__)   ((__HANDLE__) != NULL)"
+
+.PP
+Checks if DMA handle is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies a DMA Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define IS_SPI_FIRST_BIT(__BIT__)"
+\fBValue:\fP.PP
+.nf
+                                    (((__BIT__) == SPI_FIRSTBIT_MSB) || \\
+                                    ((__BIT__) == SPI_FIRSTBIT_LSB))
+.fi
+
+.PP
+Checks if SPI MSB LSB transmission parameter is in allowed range\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__BIT__\fP specifies the SPI MSB LSB transmission (whether data transfer starts from MSB or LSB bit)\&. This parameter can be a value of \fBSPI MSB LSB Transmission\fP 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define IS_SPI_MODE(__MODE__)"
+\fBValue:\fP.PP
+.nf
+                                    (((__MODE__) == SPI_MODE_SLAVE)   || \\
+                                    ((__MODE__) == SPI_MODE_MASTER))
+.fi
+
+.PP
+Checks if SPI Mode parameter is in allowed range\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__MODE__\fP specifies the SPI Mode\&. This parameter can be a value of \fBSPI Mode\fP 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define IS_SPI_NSS(__NSS__)"
+\fBValue:\fP.PP
+.nf
+                                    (((__NSS__) == SPI_NSS_SOFT)       || \\
+                                    ((__NSS__) == SPI_NSS_HARD_INPUT) || \\
+                                    ((__NSS__) == SPI_NSS_HARD_OUTPUT))
+.fi
+
+.PP
+Checks if SPI Slave Select parameter is in allowed range\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__NSS__\fP specifies the SPI Slave Select management parameter\&. This parameter can be a value of \fBSPI Slave Select Management\fP 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define IS_SPI_NSSP(__NSSP__)"
+\fBValue:\fP.PP
+.nf
+                                    (((__NSSP__) == SPI_NSS_PULSE_ENABLE) || \\
+                                    ((__NSSP__) == SPI_NSS_PULSE_DISABLE))
+.fi
+
+.PP
+Checks if SPI NSS Pulse parameter is in allowed range\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__NSSP__\fP specifies the SPI NSS Pulse Mode parameter\&. This parameter can be a value of \fBSPI NSS Pulse Mode\fP 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define IS_SPI_TIMODE(__MODE__)"
+\fBValue:\fP.PP
+.nf
+                                    (((__MODE__) == SPI_TIMODE_DISABLE) || \\
+                                    ((__MODE__) == SPI_TIMODE_ENABLE))
+.fi
+
+.PP
+Checks if SPI TI mode parameter is in allowed range\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__MODE__\fP specifies the SPI TI mode\&. This parameter can be a value of \fBSPI TI Mode\fP 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define SPI_1LINE_RX(__HANDLE__)   \fBCLEAR_BIT\fP((__HANDLE__)\->Instance\->CR1, \fBSPI_CR1_BIDIOE\fP)"
+
+.PP
+Set the SPI receive-only mode\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the SPI Handle\&. This parameter can be SPI where x: 1, 2, or 3 to select the SPI peripheral\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define SPI_1LINE_TX(__HANDLE__)   \fBSET_BIT\fP((__HANDLE__)\->Instance\->CR1, \fBSPI_CR1_BIDIOE\fP)"
+
+.PP
+Set the SPI transmit-only mode\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the SPI Handle\&. This parameter can be SPI where x: 1, 2, or 3 to select the SPI peripheral\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define SPI_CHECK_FLAG(__SR__, __FLAG__)"
+\fBValue:\fP.PP
+.nf
+                                          ((((__SR__) & ((__FLAG__) & SPI_FLAG_MASK)) == \\
+                                          ((__FLAG__) & SPI_FLAG_MASK)) ? SET : RESET)
+.fi
+
+.PP
+Check whether the specified SPI flag is set or not\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__SR__\fP copy of SPI SR register\&. 
+.br
+\fI__FLAG__\fP specifies the flag to check\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+SPI_FLAG_RXNE: Receive buffer not empty flag 
+.IP "\(bu" 1
+SPI_FLAG_TXE: Transmit buffer empty flag 
+.IP "\(bu" 1
+SPI_FLAG_CRCERR: CRC error flag 
+.IP "\(bu" 1
+SPI_FLAG_MODF: Mode fault flag 
+.IP "\(bu" 1
+SPI_FLAG_OVR: Overrun flag 
+.IP "\(bu" 1
+SPI_FLAG_BSY: Busy flag 
+.IP "\(bu" 1
+SPI_FLAG_FRE: Frame format error flag 
+.IP "\(bu" 1
+SPI_FLAG_FTLVL: SPI fifo transmission level 
+.IP "\(bu" 1
+SPI_FLAG_FRLVL: SPI fifo reception level 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP or RESET\&. 
+.RE
+.PP
+
+.SS "#define SPI_CHECK_IT_SOURCE(__CR2__, __INTERRUPT__)"
+\fBValue:\fP.PP
+.nf
+                                                     ((((__CR2__) & (__INTERRUPT__)) == \\
+                                                     (__INTERRUPT__)) ? SET : RESET)
+.fi
+
+.PP
+Check whether the specified SPI Interrupt is set or not\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__CR2__\fP copy of SPI CR2 register\&. 
+.br
+\fI__INTERRUPT__\fP specifies the SPI interrupt source to check\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+SPI_IT_TXE: Tx buffer empty interrupt enable 
+.IP "\(bu" 1
+SPI_IT_RXNE: RX buffer not empty interrupt enable 
+.IP "\(bu" 1
+SPI_IT_ERR: Error interrupt enable 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP or RESET\&. 
+.RE
+.PP
+
+.SS "#define SPI_RESET_CRC(__HANDLE__)"
+\fBValue:\fP.PP
+.nf
+                                       do{CLEAR_BIT((__HANDLE__)\->Instance\->CR1, SPI_CR1_CRCEN);\\
+                                       SET_BIT((__HANDLE__)\->Instance\->CR1, SPI_CR1_CRCEN);}while(0U)
+.fi
+
+.PP
+Reset the CRC calculation of the SPI\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the SPI Handle\&. This parameter can be SPI where x: 1, 2, or 3 to select the SPI peripheral\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

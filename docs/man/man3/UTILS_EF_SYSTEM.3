@@ -1,0 +1,40 @@
+.TH "UTILS_EF_SYSTEM" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UTILS_EF_SYSTEM \- SYSTEM
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBLL_SetSystemCoreClock\fP (uint32_t HCLKFrequency)"
+.br
+.ti -1c
+.RI "\fBErrorStatus\fP \fBLL_PLL_ConfigSystemClock_HSI\fP (\fBLL_UTILS_PLLInitTypeDef\fP *UTILS_PLLInitStruct, \fBLL_UTILS_ClkInitTypeDef\fP *UTILS_ClkInitStruct)"
+.br
+.ti -1c
+.RI "\fBErrorStatus\fP \fBLL_PLL_ConfigSystemClock_HSE\fP (uint32_t HSEFrequency, uint32_t HSEBypass, \fBLL_UTILS_PLLInitTypeDef\fP *UTILS_PLLInitStruct, \fBLL_UTILS_ClkInitTypeDef\fP *UTILS_ClkInitStruct)"
+.br
+.ti -1c
+.RI "\fBErrorStatus\fP \fBLL_SetFlashLatency\fP (uint32_t HCLKFrequency)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBErrorStatus\fP LL_PLL_ConfigSystemClock_HSE (uint32_t HSEFrequency, uint32_t HSEBypass, \fBLL_UTILS_PLLInitTypeDef\fP * UTILS_PLLInitStruct, \fBLL_UTILS_ClkInitTypeDef\fP * UTILS_ClkInitStruct)"
+
+.SS "\fBErrorStatus\fP LL_PLL_ConfigSystemClock_HSI (\fBLL_UTILS_PLLInitTypeDef\fP * UTILS_PLLInitStruct, \fBLL_UTILS_ClkInitTypeDef\fP * UTILS_ClkInitStruct)"
+
+.SS "\fBErrorStatus\fP LL_SetFlashLatency (uint32_t HCLKFrequency)"
+
+.SS "void LL_SetSystemCoreClock (uint32_t HCLKFrequency)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

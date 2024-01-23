@@ -1,0 +1,39 @@
+.TH "UART_Mode" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Mode \- UART Transfer Mode
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_MODE_RX\fP   \fBUSART_CR1_RE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_MODE_TX\fP   \fBUSART_CR1_TE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_MODE_TX_RX\fP   (\fBUSART_CR1_TE\fP |\fBUSART_CR1_RE\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define UART_MODE_RX   \fBUSART_CR1_RE\fP"
+RX mode 
+.br
+ 
+.SS "#define UART_MODE_TX   \fBUSART_CR1_TE\fP"
+TX mode 
+.br
+ 
+.SS "#define UART_MODE_TX_RX   (\fBUSART_CR1_TE\fP |\fBUSART_CR1_RE\fP)"
+RX and TX mode 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

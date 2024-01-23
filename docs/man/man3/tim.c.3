@@ -1,0 +1,92 @@
+.TH "Core/Src/tim.c" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Core/Src/tim.c \- This file provides code for the configuration of the TIM instances\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'tim\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBMX_TIM3_Init\fP (void)"
+.br
+.ti -1c
+.RI "void \fBMX_TIM14_Init\fP (void)"
+.br
+.ti -1c
+.RI "void \fBMX_TIM16_Init\fP (void)"
+.br
+.ti -1c
+.RI "void \fBMX_TIM17_Init\fP (void)"
+.br
+.ti -1c
+.RI "void \fBHAL_TIM_Base_MspInit\fP (\fBTIM_HandleTypeDef\fP *tim_baseHandle)"
+.br
+.ti -1c
+.RI "void \fBHAL_TIM_MspPostInit\fP (\fBTIM_HandleTypeDef\fP *timHandle)"
+.br
+.ti -1c
+.RI "void \fBHAL_TIM_Base_MspDeInit\fP (\fBTIM_HandleTypeDef\fP *tim_baseHandle)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBTIM_HandleTypeDef\fP \fBhtim3\fP"
+.br
+.ti -1c
+.RI "\fBTIM_HandleTypeDef\fP \fBhtim14\fP"
+.br
+.ti -1c
+.RI "\fBTIM_HandleTypeDef\fP \fBhtim16\fP"
+.br
+.ti -1c
+.RI "\fBTIM_HandleTypeDef\fP \fBhtim17\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file provides code for the configuration of the TIM instances\&. 
+
+
+.PP
+\fBAttention\fP
+.RS 4
+
+.RE
+.PP
+Copyright (c) 2023 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Function Documentation"
+.PP 
+.SS "void HAL_TIM_MspPostInit (\fBTIM_HandleTypeDef\fP * timHandle)"
+TIM16 GPIO Configuration PA6 ------> TIM16_CH1
+.SS "void MX_TIM14_Init (void)"
+
+.SS "void MX_TIM16_Init (void)"
+
+.SS "void MX_TIM17_Init (void)"
+
+.SS "void MX_TIM3_Init (void)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "\fBTIM_HandleTypeDef\fP htim14"
+
+.SS "\fBTIM_HandleTypeDef\fP htim16"
+
+.SS "\fBTIM_HandleTypeDef\fP htim17"
+
+.SS "\fBTIM_HandleTypeDef\fP htim3"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

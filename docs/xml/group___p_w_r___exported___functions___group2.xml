@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___p_w_r___exported___functions___group2" kind="group">
+    <compoundname>PWR_Exported_Functions_Group2</compoundname>
+    <title>Peripheral Control functions</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___p_w_r___exported___functions___group2_1ga3d07cef39bf294db4aed7e06e5dbf9af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWR_EnableBkUpAccess</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_PWR_EnableBkUpAccess</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="288" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" declline="288" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions___group2_1ga1513de5f2e4b72e094fb04bab786fec8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWR_DisableBkUpAccess</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_PWR_DisableBkUpAccess</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="289" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" declline="289" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions___group2_1gab821ac9058a5feb78491bff15d9ae591" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWR_EnableWakeUpPin</definition>
+        <argsstring>(uint32_t WakeUpPinPolarity)</argsstring>
+        <name>HAL_PWR_EnableWakeUpPin</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>WakeUpPinPolarity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="292" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" declline="292" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions___group2_1gab12ca816929e23e36f5ed8f4ccdb1472" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWR_DisableWakeUpPin</definition>
+        <argsstring>(uint32_t WakeUpPinx)</argsstring>
+        <name>HAL_PWR_DisableWakeUpPin</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>WakeUpPinx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="293" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" declline="293" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions___group2_1ga5c84f4e046525c22d233c8a3443fab5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWR_EnterSLEEPMode</definition>
+        <argsstring>(uint32_t Regulator, uint8_t SLEEPEntry)</argsstring>
+        <name>HAL_PWR_EnterSLEEPMode</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>Regulator</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>SLEEPEntry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="296" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" declline="296" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions___group2_1gacfca5f1062274423e08317c0a5a225fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWR_EnterSTOPMode</definition>
+        <argsstring>(uint32_t Regulator, uint8_t STOPEntry)</argsstring>
+        <name>HAL_PWR_EnterSTOPMode</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>Regulator</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>STOPEntry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="297" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" declline="297" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions___group2_1ga40736f74c169077fcd08f34470559aa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWR_EnterSTANDBYMode</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_PWR_EnterSTANDBYMode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="298" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" declline="298" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions___group2_1ga85d0154c96068b286072a64fca4c7e6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWR_EnableSleepOnExit</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_PWR_EnableSleepOnExit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="299" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" declline="299" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions___group2_1ga1da299e8186a3e08a694865bd41c3bb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWR_DisableSleepOnExit</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_PWR_DisableSleepOnExit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="300" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" declline="300" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions___group2_1ga6f33b1c8c8cc85129c68ac302a281033" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWR_EnableSEVOnPend</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_PWR_EnableSEVOnPend</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="301" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" declline="301" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_r___exported___functions___group2_1ga7811014def9b864dd490a63ada4bab68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_PWR_DisableSEVOnPend</definition>
+        <argsstring>(void)</argsstring>
+        <name>HAL_PWR_DisableSEVOnPend</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="302" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" declline="302" declcolumn="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

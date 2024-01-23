@@ -1,0 +1,39 @@
+.TH "EXTI_HandleTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EXTI_HandleTypeDef \- EXTI Handle structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_hal_exti\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBLine\fP"
+.br
+.ti -1c
+.RI "void(* \fBRisingCallback\fP )(void)"
+.br
+.ti -1c
+.RI "void(* \fBFallingCallback\fP )(void)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+EXTI Handle structure definition\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "void(* EXTI_HandleTypeDef::FallingCallback) (void)"
+Exti falling callback 
+.SS "uint32_t EXTI_HandleTypeDef::Line"
+Exti line number 
+.SS "void(* EXTI_HandleTypeDef::RisingCallback) (void)"
+Exti rising callback 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

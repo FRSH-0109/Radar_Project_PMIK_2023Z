@@ -1,0 +1,73 @@
+.TH "PWREx_Private_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PWREx_Private_Macros \- PWR Extended Private Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_PWR_BATTERY_RESISTOR_SELECT\fP(__RESISTOR__)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_GPIO_BIT_NUMBER\fP(__BIT_NUMBER__)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_GPIO\fP(__GPIO__)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_FLASH_POWERDOWN\fP(__MODE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_VOLTAGE_SCALING_RANGE\fP(RANGE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_PWR_BATTERY_RESISTOR_SELECT(__RESISTOR__)"
+\fBValue:\fP.PP
+.nf
+                                                      (((__RESISTOR__) == PWR_BATTERY_CHARGING_RESISTOR_5) || \\
+                                                      ((__RESISTOR__) == PWR_BATTERY_CHARGING_RESISTOR_1_5))
+.fi
+
+.SS "#define IS_PWR_FLASH_POWERDOWN(__MODE__)"
+\fBValue:\fP.PP
+.nf
+                                             ((((__MODE__) & (PWR_FLASHPD_LPRUN | PWR_FLASHPD_LPSLEEP | PWR_FLASHPD_STOP)) != 0x00u) && \\
+                                             (((__MODE__) & ~(PWR_FLASHPD_LPRUN | PWR_FLASHPD_LPSLEEP | PWR_FLASHPD_STOP)) == 0x00u))
+.fi
+
+.SS "#define IS_PWR_GPIO(__GPIO__)"
+\fBValue:\fP.PP
+.nf
+                                             (((__GPIO__) == PWR_GPIO_A) || \\
+                                             ((__GPIO__) == PWR_GPIO_B) || \\
+                                             ((__GPIO__) == PWR_GPIO_C) || \\
+                                             ((__GPIO__) == PWR_GPIO_D) || \\
+                                             ((__GPIO__) == PWR_GPIO_F))
+.fi
+
+.SS "#define IS_PWR_GPIO_BIT_NUMBER(__BIT_NUMBER__)"
+\fBValue:\fP.PP
+.nf
+                                                 ((((__BIT_NUMBER__) & 0x0000FFFFu) != 0x00u) && \\
+                                                 (((__BIT_NUMBER__) & 0xFFFF0000u) == 0x00u))
+.fi
+
+.SS "#define IS_PWR_VOLTAGE_SCALING_RANGE(RANGE)"
+\fBValue:\fP.PP
+.nf
+                                             (((RANGE) == PWR_REGULATOR_VOLTAGE_SCALE1) || \\
+                                             ((RANGE) == PWR_REGULATOR_VOLTAGE_SCALE2))
+.fi
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

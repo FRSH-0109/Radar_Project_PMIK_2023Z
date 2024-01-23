@@ -1,0 +1,30 @@
+.TH "FLASH_OB_USER_nBOOT1" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FLASH_OB_USER_nBOOT1 \- FLASH Option Bytes User BOOT1 Type
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBOB_BOOT1_SRAM\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBOB_BOOT1_SYSTEM\fP   \fBFLASH_OPTR_nBOOT1\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define OB_BOOT1_SRAM   0x00000000U"
+Embedded SRAM is selected as boot space (if nBOOT0=0 or BOOT0_pin=1) 
+.SS "#define OB_BOOT1_SYSTEM   \fBFLASH_OPTR_nBOOT1\fP"
+System memory is selected as boot space (if nBOOT0=0 or BOOT0_pin=1) 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

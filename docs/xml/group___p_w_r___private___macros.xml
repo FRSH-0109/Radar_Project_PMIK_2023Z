@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___p_w_r___private___macros" kind="group">
+    <compoundname>PWR_Private_Macros</compoundname>
+    <title>PWR Private Macros</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___p_w_r___private___macros_1gac6fcc59d6ff95b8feda1b228517f9c3f" prot="public" static="no">
+        <name>IS_PWR_WAKEUP_PIN</name>
+        <param><defname>PIN</defname></param>
+        <initializer>                                                   ((((PIN) &amp; ((<ref refid="group___peripheral___registers___bits___definition_1ga72d649521bf79820bc4c040d2f4fc116" kindref="member">PWR_CR4_WP</ref> &lt;&lt; 8U) | (<ref refid="group___peripheral___registers___bits___definition_1gafd81a36df9d6c650511a6b4670707748" kindref="member">PWR_CR3_EWUP</ref>))) != 0x00000000u) &amp;&amp; \
+                                                   (((PIN) &amp; ~((<ref refid="group___peripheral___registers___bits___definition_1ga72d649521bf79820bc4c040d2f4fc116" kindref="member">PWR_CR4_WP</ref> &lt;&lt; 8U) | (<ref refid="group___peripheral___registers___bits___definition_1gafd81a36df9d6c650511a6b4670707748" kindref="member">PWR_CR3_EWUP</ref>))) == 0x00000000u))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="251" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="251" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___private___macros_1ga03c105070272141c0bab5f2b74469072" prot="public" static="no">
+        <name>IS_PWR_REGULATOR</name>
+        <param><defname>REGULATOR</defname></param>
+        <initializer>                                                   (((REGULATOR) == <ref refid="group___p_w_r___regulator__state__in___s_l_e_e_p___s_t_o_p__mode_1ga1d5b4e1482184286e28c16162f530039" kindref="member">PWR_MAINREGULATOR_ON</ref>) || \
+                                                   ((REGULATOR) == <ref refid="group___p_w_r___regulator__state__in___s_l_e_e_p___s_t_o_p__mode_1gab9922a15f8414818d736d5e7fcace963" kindref="member">PWR_LOWPOWERREGULATOR_ON</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="254" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="254" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___private___macros_1ga9b36a9c213a77d36340788b2e7e277ff" prot="public" static="no">
+        <name>IS_PWR_SLEEP_ENTRY</name>
+        <param><defname>ENTRY</defname></param>
+        <initializer>                                                   (((ENTRY) == <ref refid="group___p_w_r___s_l_e_e_p__mode__entry_1ga4f0f99a3526c57efb3501b016639fa45" kindref="member">PWR_SLEEPENTRY_WFI</ref>) || \
+                                                   ((ENTRY) == <ref refid="group___p_w_r___s_l_e_e_p__mode__entry_1ga2ef4bd42ad37dcfcd0813676087d559e" kindref="member">PWR_SLEEPENTRY_WFE</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="257" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="257" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___private___macros_1ga4a94eb1f400dec6e486fbc229cbea8a0" prot="public" static="no">
+        <name>IS_PWR_STOP_ENTRY</name>
+        <param><defname>ENTRY</defname></param>
+        <initializer>                                                   (((ENTRY) == <ref refid="group___p_w_r___s_t_o_p__mode__entry_1ga3bdb1a9c9b421b73ab148d45eb90fa9b" kindref="member">PWR_STOPENTRY_WFI</ref>) || \
+                                                   ((ENTRY) == <ref refid="group___p_w_r___s_t_o_p__mode__entry_1ga2e1ee5c9577cc322474a826fa97de798" kindref="member">PWR_STOPENTRY_WFE</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="260" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="260" bodyend="261"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

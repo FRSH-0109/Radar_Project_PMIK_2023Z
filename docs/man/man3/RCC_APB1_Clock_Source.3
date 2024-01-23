@@ -1,0 +1,45 @@
+.TH "RCC_APB1_Clock_Source" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_APB1_Clock_Source \- APB Clock Source
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_HCLK_DIV1\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_HCLK_DIV2\fP   \fBRCC_CFGR_PPRE_2\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_HCLK_DIV4\fP   (\fBRCC_CFGR_PPRE_2\fP | \fBRCC_CFGR_PPRE_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_HCLK_DIV8\fP   (\fBRCC_CFGR_PPRE_2\fP | \fBRCC_CFGR_PPRE_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_HCLK_DIV16\fP   (\fBRCC_CFGR_PPRE_2\fP | \fBRCC_CFGR_PPRE_1\fP | \fBRCC_CFGR_PPRE_0\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RCC_HCLK_DIV1   0x00000000U"
+HCLK not divided 
+.SS "#define RCC_HCLK_DIV16   (\fBRCC_CFGR_PPRE_2\fP | \fBRCC_CFGR_PPRE_1\fP | \fBRCC_CFGR_PPRE_0\fP)"
+HCLK divided by 16 
+.SS "#define RCC_HCLK_DIV2   \fBRCC_CFGR_PPRE_2\fP"
+HCLK divided by 2 
+.SS "#define RCC_HCLK_DIV4   (\fBRCC_CFGR_PPRE_2\fP | \fBRCC_CFGR_PPRE_0\fP)"
+HCLK divided by 4 
+.SS "#define RCC_HCLK_DIV8   (\fBRCC_CFGR_PPRE_2\fP | \fBRCC_CFGR_PPRE_1\fP)"
+HCLK divided by 8 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

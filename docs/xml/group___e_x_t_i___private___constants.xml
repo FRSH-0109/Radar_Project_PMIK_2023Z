@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___e_x_t_i___private___constants" kind="group">
+    <compoundname>EXTI_Private_Constants</compoundname>
+    <title>EXTI Private Constants</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___e_x_t_i___private___constants_1ga508bbe670f4f32775988b55e6914b6ec" prot="public" static="no">
+        <name>EXTI_PROPERTY_SHIFT</name>
+        <initializer>24u</initializer>
+        <briefdescription>
+<para>EXTI Line property definition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" line="246" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___private___constants_1ga6a646555edd627e1e7b43aa4e87b4aa7" prot="public" static="no">
+        <name>EXTI_DIRECT</name>
+        <initializer>(0x01uL &lt;&lt; <ref refid="group___e_x_t_i___private___constants_1ga508bbe670f4f32775988b55e6914b6ec" kindref="member">EXTI_PROPERTY_SHIFT</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" line="247" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___private___constants_1ga6f245ca02e17c1798fe43a66ea5b7fa4" prot="public" static="no">
+        <name>EXTI_CONFIG</name>
+        <initializer>(0x02uL &lt;&lt; <ref refid="group___e_x_t_i___private___constants_1ga508bbe670f4f32775988b55e6914b6ec" kindref="member">EXTI_PROPERTY_SHIFT</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" line="248" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___private___constants_1gacfa322960fc87db022536119cabb4d2a" prot="public" static="no">
+        <name>EXTI_GPIO</name>
+        <initializer>((0x04uL &lt;&lt; <ref refid="group___e_x_t_i___private___constants_1ga508bbe670f4f32775988b55e6914b6ec" kindref="member">EXTI_PROPERTY_SHIFT</ref>) | <ref refid="group___e_x_t_i___private___constants_1ga6f245ca02e17c1798fe43a66ea5b7fa4" kindref="member">EXTI_CONFIG</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" line="249" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___private___constants_1gac15c8e004a79171f659e6cba49e8a57a" prot="public" static="no">
+        <name>EXTI_RESERVED</name>
+        <initializer>(0x08uL &lt;&lt; <ref refid="group___e_x_t_i___private___constants_1ga508bbe670f4f32775988b55e6914b6ec" kindref="member">EXTI_PROPERTY_SHIFT</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" line="250" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___private___constants_1ga6aa8e044ea8987b6839f419123734e4b" prot="public" static="no">
+        <name>EXTI_PROPERTY_MASK</name>
+        <initializer>(<ref refid="group___e_x_t_i___private___constants_1ga6a646555edd627e1e7b43aa4e87b4aa7" kindref="member">EXTI_DIRECT</ref> | <ref refid="group___e_x_t_i___private___constants_1ga6f245ca02e17c1798fe43a66ea5b7fa4" kindref="member">EXTI_CONFIG</ref> | <ref refid="group___e_x_t_i___private___constants_1gacfa322960fc87db022536119cabb4d2a" kindref="member">EXTI_GPIO</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" line="251" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___private___constants_1ga187f8b65fedba7cc4a5662552dd0eb40" prot="public" static="no">
+        <name>EXTI_REG_SHIFT</name>
+        <initializer>16u</initializer>
+        <briefdescription>
+<para>EXTI Register and bit usage. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" line="256" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___private___constants_1ga091fa19d9bb51b0b09be614b0857265e" prot="public" static="no">
+        <name>EXTI_REG1</name>
+        <initializer>(0x00uL &lt;&lt; <ref refid="group___e_x_t_i___private___constants_1ga187f8b65fedba7cc4a5662552dd0eb40" kindref="member">EXTI_REG_SHIFT</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" line="257" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___private___constants_1gae6c7c1bc326dac76cae7eee9d499ed68" prot="public" static="no">
+        <name>EXTI_REG2</name>
+        <initializer>(0x01uL &lt;&lt; <ref refid="group___e_x_t_i___private___constants_1ga187f8b65fedba7cc4a5662552dd0eb40" kindref="member">EXTI_REG_SHIFT</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" line="258" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___private___constants_1ga1aa525d078e0b4ba049f08d9f06f4012" prot="public" static="no">
+        <name>EXTI_REG_MASK</name>
+        <initializer>(<ref refid="group___e_x_t_i___private___constants_1ga091fa19d9bb51b0b09be614b0857265e" kindref="member">EXTI_REG1</ref> | <ref refid="group___e_x_t_i___private___constants_1gae6c7c1bc326dac76cae7eee9d499ed68" kindref="member">EXTI_REG2</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" line="259" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___private___constants_1ga755405defae45017e19a17fd0279869c" prot="public" static="no">
+        <name>EXTI_PIN_MASK</name>
+        <initializer>0x0000001Fu</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" line="260" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___private___constants_1ga657f081646b552ee10bdfc7af94b5cdf" prot="public" static="no">
+        <name>EXTI_MODE_MASK</name>
+        <initializer>(<ref refid="group___e_x_t_i___mode_1ga672fef88f86b5d8a421194e3dac0f2e1" kindref="member">EXTI_MODE_EVENT</ref> | <ref refid="group___e_x_t_i___mode_1gae1e032ec592296be21f416a79a44f4f5" kindref="member">EXTI_MODE_INTERRUPT</ref>)</initializer>
+        <briefdescription>
+<para>EXTI Mask for interrupt &amp; event mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" line="265" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___private___constants_1ga3e14df666414849fd5a3907a96a2a892" prot="public" static="no">
+        <name>EXTI_TRIGGER_MASK</name>
+        <initializer>(<ref refid="group___e_x_t_i___trigger_1ga648bd5d6c2bebd85b5ea85f8af9a2ccc" kindref="member">EXTI_TRIGGER_RISING</ref> | <ref refid="group___e_x_t_i___trigger_1ga7461c33165994159edf79a095c227937" kindref="member">EXTI_TRIGGER_FALLING</ref>)</initializer>
+        <briefdescription>
+<para>EXTI Mask for trigger possibilities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" line="270" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_x_t_i___private___constants_1ga577c4d3186ba6dd303761b23510595ef" prot="public" static="no">
+        <name>EXTI_LINE_NB</name>
+        <initializer>32uL</initializer>
+        <briefdescription>
+<para>EXTI Line number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" line="286" column="10" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

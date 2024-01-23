@@ -1,0 +1,260 @@
+.TH "Peripheral_declaration" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Peripheral_declaration \- Peripheral_declaration
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM3\fP   ((\fBTIM_TypeDef\fP *) \fBTIM3_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM14\fP   ((\fBTIM_TypeDef\fP *) \fBTIM14_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBRTC\fP   ((\fBRTC_TypeDef\fP *) \fBRTC_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTAMP\fP   ((\fBTAMP_TypeDef\fP *) \fBTAMP_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBWWDG\fP   ((\fBWWDG_TypeDef\fP *) \fBWWDG_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBIWDG\fP   ((\fBIWDG_TypeDef\fP *) \fBIWDG_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBSPI2\fP   ((\fBSPI_TypeDef\fP *) \fBSPI2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBUSART2\fP   ((\fBUSART_TypeDef\fP *) \fBUSART2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C1\fP   ((\fBI2C_TypeDef\fP *) \fBI2C1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C2\fP   ((\fBI2C_TypeDef\fP *) \fBI2C2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR\fP   ((\fBPWR_TypeDef\fP *) \fBPWR_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC\fP   ((\fBRCC_TypeDef\fP *) \fBRCC_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBEXTI\fP   ((\fBEXTI_TypeDef\fP *) \fBEXTI_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBSYSCFG\fP   ((\fBSYSCFG_TypeDef\fP *) \fBSYSCFG_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM1\fP   ((\fBTIM_TypeDef\fP *) \fBTIM1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBSPI1\fP   ((\fBSPI_TypeDef\fP *) \fBSPI1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBUSART1\fP   ((\fBUSART_TypeDef\fP *) \fBUSART1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM16\fP   ((\fBTIM_TypeDef\fP *) \fBTIM16_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBTIM17\fP   ((\fBTIM_TypeDef\fP *) \fBTIM17_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA1\fP   ((\fBDMA_TypeDef\fP *) \fBDMA1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH\fP   ((\fBFLASH_TypeDef\fP *) \fBFLASH_R_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBCRC\fP   ((\fBCRC_TypeDef\fP *) \fBCRC_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOA\fP   ((\fBGPIO_TypeDef\fP *) \fBGPIOA_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOB\fP   ((\fBGPIO_TypeDef\fP *) \fBGPIOB_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOC\fP   ((\fBGPIO_TypeDef\fP *) \fBGPIOC_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOD\fP   ((\fBGPIO_TypeDef\fP *) \fBGPIOD_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOF\fP   ((\fBGPIO_TypeDef\fP *) \fBGPIOF_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBADC1\fP   ((\fBADC_TypeDef\fP *) \fBADC1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBADC1_COMMON\fP   ((\fBADC_Common_TypeDef\fP *) \fBADC1_COMMON_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBADC\fP   (\fBADC1_COMMON\fP) /* Kept for legacy purpose */"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel1\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel2\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel3\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel3_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel4\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel4_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel5\fP   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel5_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1\fP   ((\fBDMAMUX_Channel_TypeDef\fP *) \fBDMAMUX1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_Channel0\fP   ((\fBDMAMUX_Channel_TypeDef\fP *) \fBDMAMUX1_Channel0_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_Channel1\fP   ((\fBDMAMUX_Channel_TypeDef\fP *) \fBDMAMUX1_Channel1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_Channel2\fP   ((\fBDMAMUX_Channel_TypeDef\fP *) \fBDMAMUX1_Channel2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_Channel3\fP   ((\fBDMAMUX_Channel_TypeDef\fP *) \fBDMAMUX1_Channel3_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_Channel4\fP   ((\fBDMAMUX_Channel_TypeDef\fP *) \fBDMAMUX1_Channel4_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_RequestGenerator0\fP   ((\fBDMAMUX_RequestGen_TypeDef\fP *) \fBDMAMUX1_RequestGenerator0_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_RequestGenerator1\fP   ((\fBDMAMUX_RequestGen_TypeDef\fP *) \fBDMAMUX1_RequestGenerator1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_RequestGenerator2\fP   ((\fBDMAMUX_RequestGen_TypeDef\fP *) \fBDMAMUX1_RequestGenerator2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_RequestGenerator3\fP   ((\fBDMAMUX_RequestGen_TypeDef\fP *) \fBDMAMUX1_RequestGenerator3_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_ChannelStatus\fP   ((\fBDMAMUX_ChannelStatus_TypeDef\fP *) \fBDMAMUX1_ChannelStatus_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_RequestGenStatus\fP   ((\fBDMAMUX_RequestGenStatus_TypeDef\fP *) \fBDMAMUX1_RequestGenStatus_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDBG\fP   ((\fBDBG_TypeDef\fP *) \fBDBG_BASE\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ADC   (\fBADC1_COMMON\fP) /* Kept for legacy purpose */"
+
+.SS "#define ADC1   ((\fBADC_TypeDef\fP *) \fBADC1_BASE\fP)"
+
+.SS "#define ADC1_COMMON   ((\fBADC_Common_TypeDef\fP *) \fBADC1_COMMON_BASE\fP)"
+
+.SS "#define CRC   ((\fBCRC_TypeDef\fP *) \fBCRC_BASE\fP)"
+
+.SS "#define DBG   ((\fBDBG_TypeDef\fP *) \fBDBG_BASE\fP)"
+
+.SS "#define DMA1   ((\fBDMA_TypeDef\fP *) \fBDMA1_BASE\fP)"
+
+.SS "#define DMA1_Channel1   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel1_BASE\fP)"
+
+.SS "#define DMA1_Channel2   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel2_BASE\fP)"
+
+.SS "#define DMA1_Channel3   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel3_BASE\fP)"
+
+.SS "#define DMA1_Channel4   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel4_BASE\fP)"
+
+.SS "#define DMA1_Channel5   ((\fBDMA_Channel_TypeDef\fP *) \fBDMA1_Channel5_BASE\fP)"
+
+.SS "#define DMAMUX1   ((\fBDMAMUX_Channel_TypeDef\fP *) \fBDMAMUX1_BASE\fP)"
+
+.SS "#define DMAMUX1_Channel0   ((\fBDMAMUX_Channel_TypeDef\fP *) \fBDMAMUX1_Channel0_BASE\fP)"
+
+.SS "#define DMAMUX1_Channel1   ((\fBDMAMUX_Channel_TypeDef\fP *) \fBDMAMUX1_Channel1_BASE\fP)"
+
+.SS "#define DMAMUX1_Channel2   ((\fBDMAMUX_Channel_TypeDef\fP *) \fBDMAMUX1_Channel2_BASE\fP)"
+
+.SS "#define DMAMUX1_Channel3   ((\fBDMAMUX_Channel_TypeDef\fP *) \fBDMAMUX1_Channel3_BASE\fP)"
+
+.SS "#define DMAMUX1_Channel4   ((\fBDMAMUX_Channel_TypeDef\fP *) \fBDMAMUX1_Channel4_BASE\fP)"
+
+.SS "#define DMAMUX1_ChannelStatus   ((\fBDMAMUX_ChannelStatus_TypeDef\fP *) \fBDMAMUX1_ChannelStatus_BASE\fP)"
+
+.SS "#define DMAMUX1_RequestGenerator0   ((\fBDMAMUX_RequestGen_TypeDef\fP *) \fBDMAMUX1_RequestGenerator0_BASE\fP)"
+
+.SS "#define DMAMUX1_RequestGenerator1   ((\fBDMAMUX_RequestGen_TypeDef\fP *) \fBDMAMUX1_RequestGenerator1_BASE\fP)"
+
+.SS "#define DMAMUX1_RequestGenerator2   ((\fBDMAMUX_RequestGen_TypeDef\fP *) \fBDMAMUX1_RequestGenerator2_BASE\fP)"
+
+.SS "#define DMAMUX1_RequestGenerator3   ((\fBDMAMUX_RequestGen_TypeDef\fP *) \fBDMAMUX1_RequestGenerator3_BASE\fP)"
+
+.SS "#define DMAMUX1_RequestGenStatus   ((\fBDMAMUX_RequestGenStatus_TypeDef\fP *) \fBDMAMUX1_RequestGenStatus_BASE\fP)"
+
+.SS "#define EXTI   ((\fBEXTI_TypeDef\fP *) \fBEXTI_BASE\fP)"
+
+.SS "#define FLASH   ((\fBFLASH_TypeDef\fP *) \fBFLASH_R_BASE\fP)"
+
+.SS "#define GPIOA   ((\fBGPIO_TypeDef\fP *) \fBGPIOA_BASE\fP)"
+
+.SS "#define GPIOB   ((\fBGPIO_TypeDef\fP *) \fBGPIOB_BASE\fP)"
+
+.SS "#define GPIOC   ((\fBGPIO_TypeDef\fP *) \fBGPIOC_BASE\fP)"
+
+.SS "#define GPIOD   ((\fBGPIO_TypeDef\fP *) \fBGPIOD_BASE\fP)"
+
+.SS "#define GPIOF   ((\fBGPIO_TypeDef\fP *) \fBGPIOF_BASE\fP)"
+
+.SS "#define I2C1   ((\fBI2C_TypeDef\fP *) \fBI2C1_BASE\fP)"
+
+.SS "#define I2C2   ((\fBI2C_TypeDef\fP *) \fBI2C2_BASE\fP)"
+
+.SS "#define IWDG   ((\fBIWDG_TypeDef\fP *) \fBIWDG_BASE\fP)"
+
+.SS "#define PWR   ((\fBPWR_TypeDef\fP *) \fBPWR_BASE\fP)"
+
+.SS "#define RCC   ((\fBRCC_TypeDef\fP *) \fBRCC_BASE\fP)"
+
+.SS "#define RTC   ((\fBRTC_TypeDef\fP *) \fBRTC_BASE\fP)"
+
+.SS "#define SPI1   ((\fBSPI_TypeDef\fP *) \fBSPI1_BASE\fP)"
+
+.SS "#define SPI2   ((\fBSPI_TypeDef\fP *) \fBSPI2_BASE\fP)"
+
+.SS "#define SYSCFG   ((\fBSYSCFG_TypeDef\fP *) \fBSYSCFG_BASE\fP)"
+
+.SS "#define TAMP   ((\fBTAMP_TypeDef\fP *) \fBTAMP_BASE\fP)"
+
+.SS "#define TIM1   ((\fBTIM_TypeDef\fP *) \fBTIM1_BASE\fP)"
+
+.SS "#define TIM14   ((\fBTIM_TypeDef\fP *) \fBTIM14_BASE\fP)"
+
+.SS "#define TIM16   ((\fBTIM_TypeDef\fP *) \fBTIM16_BASE\fP)"
+
+.SS "#define TIM17   ((\fBTIM_TypeDef\fP *) \fBTIM17_BASE\fP)"
+
+.SS "#define TIM3   ((\fBTIM_TypeDef\fP *) \fBTIM3_BASE\fP)"
+
+.SS "#define USART1   ((\fBUSART_TypeDef\fP *) \fBUSART1_BASE\fP)"
+
+.SS "#define USART2   ((\fBUSART_TypeDef\fP *) \fBUSART2_BASE\fP)"
+
+.SS "#define WWDG   ((\fBWWDG_TypeDef\fP *) \fBWWDG_BASE\fP)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

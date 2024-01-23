@@ -1,0 +1,117 @@
+.TH "GPIO_mode" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GPIO_mode \- GPIO mode
+.PP
+ \- GPIO Configuration Mode Elements values convention: 0x00WX00YZ\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBGPIO_MODE_INPUT\fP   \fBMODE_INPUT\fP"
+.br
+.ti -1c
+.RI "#define \fBGPIO_MODE_OUTPUT_PP\fP   (\fBMODE_OUTPUT\fP | \fBOUTPUT_PP\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_MODE_OUTPUT_OD\fP   (\fBMODE_OUTPUT\fP | \fBOUTPUT_OD\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_MODE_AF_PP\fP   (\fBMODE_AF\fP | \fBOUTPUT_PP\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_MODE_AF_OD\fP   (\fBMODE_AF\fP | \fBOUTPUT_OD\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_MODE_ANALOG\fP   \fBMODE_ANALOG\fP"
+.br
+.ti -1c
+.RI "#define \fBGPIO_MODE_IT_RISING\fP   (\fBMODE_INPUT\fP | \fBEXTI_IT\fP | \fBTRIGGER_RISING\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_MODE_IT_FALLING\fP   (\fBMODE_INPUT\fP | \fBEXTI_IT\fP | \fBTRIGGER_FALLING\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_MODE_IT_RISING_FALLING\fP   (\fBMODE_INPUT\fP | \fBEXTI_IT\fP | \fBTRIGGER_RISING\fP | \fBTRIGGER_FALLING\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_MODE_EVT_RISING\fP   (\fBMODE_INPUT\fP | \fBEXTI_EVT\fP | \fBTRIGGER_RISING\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_MODE_EVT_FALLING\fP   (\fBMODE_INPUT\fP | \fBEXTI_EVT\fP | \fBTRIGGER_FALLING\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_MODE_EVT_RISING_FALLING\fP   (\fBMODE_INPUT\fP | \fBEXTI_EVT\fP | \fBTRIGGER_RISING\fP | \fBTRIGGER_FALLING\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+GPIO Configuration Mode Elements values convention: 0x00WX00YZ\&. 
+
+
+.IP "\(bu" 2
+W : EXTI trigger detection on 3 bits
+.IP "\(bu" 2
+X : EXTI mode (IT or Event) on 2 bits
+.IP "\(bu" 2
+Y : Output type (Push Pull or Open Drain) on 1 bit
+.IP "\(bu" 2
+Z : GPIO mode (Input, Output, Alternate or Analog) on 2 bits 
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define GPIO_MODE_AF_OD   (\fBMODE_AF\fP | \fBOUTPUT_OD\fP)"
+Alternate Function Open Drain Mode 
+.br
+ 
+.SS "#define GPIO_MODE_AF_PP   (\fBMODE_AF\fP | \fBOUTPUT_PP\fP)"
+Alternate Function Push Pull Mode 
+.br
+ 
+.SS "#define GPIO_MODE_ANALOG   \fBMODE_ANALOG\fP"
+Analog Mode 
+.br
+ 
+.SS "#define GPIO_MODE_EVT_FALLING   (\fBMODE_INPUT\fP | \fBEXTI_EVT\fP | \fBTRIGGER_FALLING\fP)"
+External Event Mode with Falling edge trigger detection 
+.br
+ 
+.SS "#define GPIO_MODE_EVT_RISING   (\fBMODE_INPUT\fP | \fBEXTI_EVT\fP | \fBTRIGGER_RISING\fP)"
+External Event Mode with Rising edge trigger detection 
+.br
+ 
+.SS "#define GPIO_MODE_EVT_RISING_FALLING   (\fBMODE_INPUT\fP | \fBEXTI_EVT\fP | \fBTRIGGER_RISING\fP | \fBTRIGGER_FALLING\fP)"
+External Event Mode with Rising/Falling edge trigger detection 
+.br
+ 
+.SS "#define GPIO_MODE_INPUT   \fBMODE_INPUT\fP"
+Input Floating Mode 
+.br
+ 
+.SS "#define GPIO_MODE_IT_FALLING   (\fBMODE_INPUT\fP | \fBEXTI_IT\fP | \fBTRIGGER_FALLING\fP)"
+External Interrupt Mode with Falling edge trigger detection 
+.br
+ 
+.SS "#define GPIO_MODE_IT_RISING   (\fBMODE_INPUT\fP | \fBEXTI_IT\fP | \fBTRIGGER_RISING\fP)"
+External Interrupt Mode with Rising edge trigger detection 
+.br
+ 
+.SS "#define GPIO_MODE_IT_RISING_FALLING   (\fBMODE_INPUT\fP | \fBEXTI_IT\fP | \fBTRIGGER_RISING\fP | \fBTRIGGER_FALLING\fP)"
+External Interrupt Mode with Rising/Falling edge trigger detection 
+.SS "#define GPIO_MODE_OUTPUT_OD   (\fBMODE_OUTPUT\fP | \fBOUTPUT_OD\fP)"
+Output Open Drain Mode 
+.br
+ 
+.SS "#define GPIO_MODE_OUTPUT_PP   (\fBMODE_OUTPUT\fP | \fBOUTPUT_PP\fP)"
+Output Push Pull Mode 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

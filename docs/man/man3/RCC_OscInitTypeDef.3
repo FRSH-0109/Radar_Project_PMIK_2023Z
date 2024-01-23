@@ -1,0 +1,78 @@
+.TH "RCC_OscInitTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_OscInitTypeDef \- RCC Internal/External Oscillator (HSE, HSI, LSE and LSI) configuration structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_hal_rcc\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBOscillatorType\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBHSEState\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBLSEState\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBHSIState\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBHSIDiv\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBHSICalibrationValue\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBLSIState\fP"
+.br
+.ti -1c
+.RI "\fBRCC_PLLInitTypeDef\fP \fBPLL\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+RCC Internal/External Oscillator (HSE, HSI, LSE and LSI) configuration structure definition\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t RCC_OscInitTypeDef::HSEState"
+The new state of the HSE\&. This parameter can be a value of \fBHSE Config\fP 
+.br
+ 
+.SS "uint32_t RCC_OscInitTypeDef::HSICalibrationValue"
+The calibration trimming value (default is RCC_HSICALIBRATION_DEFAULT)\&. This parameter must be a number between Min_Data = 0x00 and Max_Data = 0x7F 
+.SS "uint32_t RCC_OscInitTypeDef::HSIDiv"
+The division factor of the HSI16\&. This parameter can be a value of \fBHSI Div\fP 
+.br
+ 
+.SS "uint32_t RCC_OscInitTypeDef::HSIState"
+The new state of the HSI\&. This parameter can be a value of \fBHSI Config\fP 
+.br
+ 
+.SS "uint32_t RCC_OscInitTypeDef::LSEState"
+The new state of the LSE\&. This parameter can be a value of \fBLSE Config\fP 
+.br
+ 
+.SS "uint32_t RCC_OscInitTypeDef::LSIState"
+The new state of the LSI\&. This parameter can be a value of \fBLSI Config\fP 
+.br
+ 
+.SS "uint32_t RCC_OscInitTypeDef::OscillatorType"
+The oscillators to be configured\&. This parameter can be a value of \fBOscillator Type\fP 
+.br
+ 
+.SS "\fBRCC_PLLInitTypeDef\fP RCC_OscInitTypeDef::PLL"
+Main PLL structure parameters 
+.br
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

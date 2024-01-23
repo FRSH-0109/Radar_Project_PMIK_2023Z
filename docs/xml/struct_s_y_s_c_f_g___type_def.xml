@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_s_y_s_c_f_g___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>SYSCFG_TypeDef</compoundname>
+    <includes refid="stm32g030xx_8h" local="no">stm32g030xx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_y_s_c_f_g___type_def_1a7a12ab903dcfa91c96beb2e36562eed6" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CFGR1</definition>
+        <argsstring></argsstring>
+        <name>CFGR1</name>
+        <qualifiedname>SYSCFG_TypeDef::CFGR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SYSCFG configuration register 1, Address offset: 0x00 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="445" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_y_s_c_f_g___type_def_1a92bdd34d0bb3e2d14a3ce60040036510" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED0[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>RESERVED0</name>
+        <qualifiedname>SYSCFG_TypeDef::RESERVED0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved, 0x04 <ndash/>0x14 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="446" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_y_s_c_f_g___type_def_1ad587bd6f59142b90c879b7c8aaf1bb8c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CFGR2</definition>
+        <argsstring></argsstring>
+        <name>CFGR2</name>
+        <qualifiedname>SYSCFG_TypeDef::CFGR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SYSCFG configuration register 2, Address offset: 0x18 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="447" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_y_s_c_f_g___type_def_1a4a24d43a2341a46dad0527df5f6eac94" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED1[25]</definition>
+        <argsstring>[25]</argsstring>
+        <name>RESERVED1</name>
+        <qualifiedname>SYSCFG_TypeDef::RESERVED1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved 0x1C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="448" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_y_s_c_f_g___type_def_1a31a2eaa95011919096818a2282612830" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t IT_LINE_SR[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>IT_LINE_SR</name>
+        <qualifiedname>SYSCFG_TypeDef::IT_LINE_SR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SYSCFG configuration IT_LINE register, Address offset: 0x80 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="449" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="449" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>System configuration controller. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="443" column="1" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="444" bodyend="450"/>
+    <listofallmembers>
+      <member refid="struct_s_y_s_c_f_g___type_def_1a7a12ab903dcfa91c96beb2e36562eed6" prot="public" virt="non-virtual"><scope>SYSCFG_TypeDef</scope><name>CFGR1</name></member>
+      <member refid="struct_s_y_s_c_f_g___type_def_1ad587bd6f59142b90c879b7c8aaf1bb8c" prot="public" virt="non-virtual"><scope>SYSCFG_TypeDef</scope><name>CFGR2</name></member>
+      <member refid="struct_s_y_s_c_f_g___type_def_1a31a2eaa95011919096818a2282612830" prot="public" virt="non-virtual"><scope>SYSCFG_TypeDef</scope><name>IT_LINE_SR</name></member>
+      <member refid="struct_s_y_s_c_f_g___type_def_1a92bdd34d0bb3e2d14a3ce60040036510" prot="public" virt="non-virtual"><scope>SYSCFG_TypeDef</scope><name>RESERVED0</name></member>
+      <member refid="struct_s_y_s_c_f_g___type_def_1a4a24d43a2341a46dad0527df5f6eac94" prot="public" virt="non-virtual"><scope>SYSCFG_TypeDef</scope><name>RESERVED1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

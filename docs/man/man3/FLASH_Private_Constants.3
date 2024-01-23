@@ -1,0 +1,92 @@
+.TH "FLASH_Private_Constants" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FLASH_Private_Constants \- FLASH Private Constants
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFLASH_SIZE_DATA_REGISTER\fP   \fBFLASHSIZE_BASE\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_BANK_SIZE\fP   (\fBFLASH_SIZE\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_PAGE_SIZE\fP   0x00000800U"
+.br
+.ti -1c
+.RI "#define \fBFLASH_PAGE_NB\fP   (\fBFLASH_BANK_SIZE\fP/\fBFLASH_PAGE_SIZE\fP) /* Number of pages per bank */"
+.br
+.ti -1c
+.RI "#define \fBFLASH_TIMEOUT_VALUE\fP   1000U"
+.br
+.ti -1c
+.RI "#define \fBFLASH_TYPENONE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBFLASH_SR_ERRORS\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_SR_CLEAR\fP   (\fBFLASH_SR_ERRORS\fP | \fBFLASH_SR_EOP\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_REG_POS\fP   16u"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_SR_ID\fP   1u"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_CR_ID\fP   2u"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_ECCR1_ID\fP   4u"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_ECCR2_ID\fP   8u"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FLASH_BANK_SIZE   (\fBFLASH_SIZE\fP)"
+FLASH Bank Size 
+.SS "#define FLASH_FLAG_CR_ID   2u"
+
+.SS "#define FLASH_FLAG_ECCR1_ID   4u"
+
+.SS "#define FLASH_FLAG_ECCR2_ID   8u"
+
+.SS "#define FLASH_FLAG_REG_POS   16u"
+
+.SS "#define FLASH_FLAG_SR_ID   1u"
+
+.SS "#define FLASH_PAGE_NB   (\fBFLASH_BANK_SIZE\fP/\fBFLASH_PAGE_SIZE\fP) /* Number of pages per bank */"
+
+.SS "#define FLASH_PAGE_SIZE   0x00000800U"
+FLASH Page Size, 2 KBytes 
+.SS "#define FLASH_SIZE_DATA_REGISTER   \fBFLASHSIZE_BASE\fP"
+
+.SS "#define FLASH_SR_CLEAR   (\fBFLASH_SR_ERRORS\fP | \fBFLASH_SR_EOP\fP)"
+
+.SS "#define FLASH_SR_ERRORS"
+\fBValue:\fP.PP
+.nf
+                                         (FLASH_SR_OPERR  | FLASH_SR_PROGERR | FLASH_SR_WRPERR | \\
+                                         FLASH_SR_PGAERR | FLASH_SR_SIZERR  | FLASH_SR_PGSERR |  \\
+                                         FLASH_SR_MISERR | FLASH_SR_FASTERR |                    \\
+                                         FLASH_SR_OPTVERR)
+.fi
+All SR error flags 
+.SS "#define FLASH_TIMEOUT_VALUE   1000U"
+FLASH Execution Timeout, 1 s 
+.SS "#define FLASH_TYPENONE   0x00000000U"
+No programming Procedure On Going 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

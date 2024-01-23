@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_p_i___c_r_c__length" kind="group">
+    <compoundname>SPI_CRC_length</compoundname>
+    <title>SPI CRC Length</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i___c_r_c__length_1ga2c09210b093323a8e84af832657568ce" prot="public" static="no">
+        <name>SPI_CRC_LENGTH_DATASIZE</name>
+        <initializer>(0x00000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="341" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___c_r_c__length_1ga9340cbde2576d63c53c3ee50d3303886" prot="public" static="no">
+        <name>SPI_CRC_LENGTH_8BIT</name>
+        <initializer>(0x00000001U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="342" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___c_r_c__length_1ga780edaa0a72a79c4d0fa9618541aaad8" prot="public" static="no">
+        <name>SPI_CRC_LENGTH_16BIT</name>
+        <initializer>(0x00000002U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="343" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This parameter can be one of the following values: SPI_CRC_LENGTH_DATASIZE: aligned with the data size SPI_CRC_LENGTH_8BIT : CRC 8bit SPI_CRC_LENGTH_16BIT : CRC 16bit </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,65 @@
+\doxysection{radar.\+h}
+\hypertarget{radar_8h_source}{}\label{radar_8h_source}\index{RadarApp/RadarDriver/radar.h@{RadarApp/RadarDriver/radar.h}}
+\mbox{\hyperlink{radar_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RADAR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RADAR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ SENSOR\_MEASURE\_PERIOD\_DEFAULT\_MS\ 100}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{main_8h}{main.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}stdio.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{servo__driver_8h}{servo\_driver.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{distance__sensor_8h}{distance\_sensor.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{usart__custom_8h}{usart\_custom.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{structservo_driver_struct}{servoDriverStruct}}*\ \mbox{\hyperlink{structradar_struct_a6c8cdd798ccc2f670ee0e3aa6c5e6134}{servo}};}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structradar_struct_a76777b356ab2a080225682528119c4fe}{position}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ in\ degrees}}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{struct_t_i_m___handle_type_def}{TIM\_HandleTypeDef}}*\ \mbox{\hyperlink{structradar_struct_ab672500a9007146bfda15d235a46beb5}{servoTim}};}
+\DoxyCodeLine{00016\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{structradar_struct_a24f98188f53563ee9a05cc92cd0352b1}{positionUpdatePeriodMs}};}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structradar_struct_a83f07e02ef2f0c0682cc8dff5de67695}{positionUpdateStep}};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structradar_struct_acac5383e682fd24496c39ab7d5023a46}{positionMin}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ in\ degrees}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structradar_struct_a9dca5220660a30c5b0649234a6c22761}{positionMax}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ in\ degrees}}
+\DoxyCodeLine{00020\ \ \ \ \ int8\_t\ \mbox{\hyperlink{structradar_struct_a64137967141ad97b940c16a035615d09}{direction}};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{structdistance_sensor_struct}{distanceSensorStruct}}*\ \mbox{\hyperlink{structradar_struct_ae6f33f315a2b57c10b065315ac58041e}{sensor}};}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{struct_t_i_m___handle_type_def}{TIM\_HandleTypeDef}}*\ \mbox{\hyperlink{structradar_struct_a6f7e33950e97ef1b091da9946f94b7ea}{sensorTim}};}
+\DoxyCodeLine{00024\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{structradar_struct_a1fb6c4ca380736554edf1b5778d03bb6}{measurePeriodMs}};}
+\DoxyCodeLine{00025\ \}\mbox{\hyperlink{structradar_struct}{radarStruct}};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{radar_8h_a312279113d5a54b8d98e248b4e02eb89}{radarInit}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}},\ \mbox{\hyperlink{structservo_driver_struct}{servoDriverStruct}}*\ servo,\ \mbox{\hyperlink{struct_t_i_m___handle_type_def}{TIM\_HandleTypeDef}}*\ servo\_tim,\ \mbox{\hyperlink{structdistance_sensor_struct}{distanceSensorStruct}}*\ sensor,\ \mbox{\hyperlink{struct_t_i_m___handle_type_def}{TIM\_HandleTypeDef}}*\ sensor\_tim);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{radar_8h_a909f36a45ee821d7528d2f4aee5a1e82}{radarServoUpdate}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}});}
+\DoxyCodeLine{00031\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{radar_8h_a4ba239034505324ee3dee22dfd0254e1}{radarSetPositionMin}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}},\ \textcolor{keywordtype}{float}\ pos);}
+\DoxyCodeLine{00032\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{radar_8h_afa0e1f30efba3b6c3ea56a5d0b7b4008}{radarGetPositionMin}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}});}
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{radar_8h_affc98cfe5b10eb360e5e2aff374b0eaa}{radarSetPositionMax}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}},\ \textcolor{keywordtype}{float}\ pos);}
+\DoxyCodeLine{00034\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{radar_8h_a5c23a940c59e3e96d1d3011f5bfdfd64}{radarGetPositionMax}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}});}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{radar_8h_a19fed3b3d140e2c18a4122ad7e783ac6}{radarServoStart}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}});}
+\DoxyCodeLine{00037\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{radar_8h_a22df522cbce2d07e06b2c92be3f0349b}{radarServoStop}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}});}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{radar_8h_aa4b19eb1148531f570f708bb4ee262cc}{radarSetPositionUpdatePeriod}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}},\ uint16\_t\ periodMs);}
+\DoxyCodeLine{00040\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{radar_8h_a3eaae4e20f433f2c438c8f94caaaae99}{radarSetPositionUpdateStep}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}},\ \textcolor{keywordtype}{float}\ step);}
+\DoxyCodeLine{00041\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{radar_8h_ac1d20aa713a5266f7bcee82d90b96abb}{radarSetPosition}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}},\ \textcolor{keywordtype}{float}\ pos);}
+\DoxyCodeLine{00042\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{radar_8h_adf43ab91ae524d0b9a07b3976d4cf028}{radarGetPosition}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}});}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{radar_8h_abfc9c42283fc76d21b3e56cc39c8f385}{radarMeasureStart}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}});}
+\DoxyCodeLine{00047\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{radar_8h_ad5258fad0b27b8d14b803775e6f1457c}{radarMeasureStop}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}});}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{radar_8h_aed51c9df6791df40aa7f91d19cd4cb06}{radarSetMeasureFreq}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}},\ uint16\_t\ periodMs);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{radar_8h_a190f69a9906f7f4c05b19e814bf1b2ce}{radarTriggerMeasure}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}});}
+\DoxyCodeLine{00052\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{radar_8h_a8d37f58cbd2c9affac492868fdc72b5e}{radarGetMeasure}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}});}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{comment}{//DATA\ PARSING//}}
+\DoxyCodeLine{00056\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{radar_8h_ade099662844a751716ebda7bd3c1de78}{radarParseSetPosition}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}},\ uint8\_t*\ data);}
+\DoxyCodeLine{00057\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{radar_8h_a93217053e1875c7eac9c60f4bb30a149}{radarParseSetStep}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}},\ uint8\_t*\ data);}
+\DoxyCodeLine{00058\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{radar_8h_ac2d8eafddd3e2e5ceec639b9009c40fc}{radarParseSetPositionMinMax}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}},\ uint8\_t*\ data,\ \textcolor{keywordtype}{bool}\ isMin);}
+\DoxyCodeLine{00059\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{radar_8h_a7c584e4dccab771e02d9520ec9cc89bb}{radarParseSetMeasurePeriod}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}},\ uint8\_t*\ data);}
+\DoxyCodeLine{00060\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{radar_8h_a446ac04525db3179676463097f06d3ac}{radarParseSetDrawScale}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}},\ uint8\_t*\ data);}
+\DoxyCodeLine{00061\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{radar_8h_af268b360cfbc8508e87589e75178eff4}{radarParseSetDrawRules}}(\mbox{\hyperlink{structradar_struct}{radarStruct}}*\ \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}},\ uint8\_t*\ data);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

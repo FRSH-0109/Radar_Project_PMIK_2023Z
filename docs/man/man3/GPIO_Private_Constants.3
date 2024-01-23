@@ -1,0 +1,110 @@
+.TH "GPIO_Private_Constants" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GPIO_Private_Constants \- GPIO Private Constants
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBGPIO_MODE_Pos\fP   0u"
+.br
+.ti -1c
+.RI "#define \fBGPIO_MODE\fP   (0x3uL << \fBGPIO_MODE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBMODE_INPUT\fP   (0x0uL << \fBGPIO_MODE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBMODE_OUTPUT\fP   (0x1uL << \fBGPIO_MODE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBMODE_AF\fP   (0x2uL << \fBGPIO_MODE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBMODE_ANALOG\fP   (0x3uL << \fBGPIO_MODE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBOUTPUT_TYPE_Pos\fP   4u"
+.br
+.ti -1c
+.RI "#define \fBOUTPUT_TYPE\fP   (0x1uL << \fBOUTPUT_TYPE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBOUTPUT_PP\fP   (0x0uL << \fBOUTPUT_TYPE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBOUTPUT_OD\fP   (0x1uL << \fBOUTPUT_TYPE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_MODE_Pos\fP   16u"
+.br
+.ti -1c
+.RI "#define \fBEXTI_MODE\fP   (0x3uL << \fBEXTI_MODE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_IT\fP   (0x1uL << \fBEXTI_MODE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_EVT\fP   (0x2uL << \fBEXTI_MODE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBTRIGGER_MODE_Pos\fP   20u"
+.br
+.ti -1c
+.RI "#define \fBTRIGGER_MODE\fP   (0x7uL << \fBTRIGGER_MODE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBTRIGGER_RISING\fP   (0x1uL << \fBTRIGGER_MODE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBTRIGGER_FALLING\fP   (0x2uL << \fBTRIGGER_MODE_Pos\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define EXTI_EVT   (0x2uL << \fBEXTI_MODE_Pos\fP)"
+
+.SS "#define EXTI_IT   (0x1uL << \fBEXTI_MODE_Pos\fP)"
+
+.SS "#define EXTI_MODE   (0x3uL << \fBEXTI_MODE_Pos\fP)"
+
+.SS "#define EXTI_MODE_Pos   16u"
+
+.SS "#define GPIO_MODE   (0x3uL << \fBGPIO_MODE_Pos\fP)"
+
+.SS "#define GPIO_MODE_Pos   0u"
+
+.SS "#define MODE_AF   (0x2uL << \fBGPIO_MODE_Pos\fP)"
+
+.SS "#define MODE_ANALOG   (0x3uL << \fBGPIO_MODE_Pos\fP)"
+
+.SS "#define MODE_INPUT   (0x0uL << \fBGPIO_MODE_Pos\fP)"
+
+.SS "#define MODE_OUTPUT   (0x1uL << \fBGPIO_MODE_Pos\fP)"
+
+.SS "#define OUTPUT_OD   (0x1uL << \fBOUTPUT_TYPE_Pos\fP)"
+
+.SS "#define OUTPUT_PP   (0x0uL << \fBOUTPUT_TYPE_Pos\fP)"
+
+.SS "#define OUTPUT_TYPE   (0x1uL << \fBOUTPUT_TYPE_Pos\fP)"
+
+.SS "#define OUTPUT_TYPE_Pos   4u"
+
+.SS "#define TRIGGER_FALLING   (0x2uL << \fBTRIGGER_MODE_Pos\fP)"
+
+.SS "#define TRIGGER_MODE   (0x7uL << \fBTRIGGER_MODE_Pos\fP)"
+
+.SS "#define TRIGGER_MODE_Pos   20u"
+
+.SS "#define TRIGGER_RISING   (0x1uL << \fBTRIGGER_MODE_Pos\fP)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

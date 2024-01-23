@@ -1,0 +1,116 @@
+.TH "RCC_RTC_Clock_Configuration" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_RTC_Clock_Configuration \- RCC RTC Clock Configuration
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_RCC_RTC_ENABLE\fP()   \fBSET_BIT\fP(\fBRCC\fP\->BDCR, \fBRCC_BDCR_RTCEN\fP)"
+.br
+.RI "Macros to enable or disable the RTC clock\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_RTC_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->BDCR, \fBRCC_BDCR_RTCEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_RTC_CONFIG\fP(__RTC_CLKSOURCE__)     \fBMODIFY_REG\fP( \fBRCC\fP\->BDCR, \fBRCC_BDCR_RTCSEL\fP, (__RTC_CLKSOURCE__))"
+.br
+.RI "Macros to configure the RTC clock (RTCCLK)\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_GET_RTC_SOURCE\fP()   ((uint32_t)(\fBREAD_BIT\fP(\fBRCC\fP\->BDCR, \fBRCC_BDCR_RTCSEL\fP)))"
+.br
+.RI "Macro to get the RTC clock source\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_RCC_GET_RTC_SOURCE()   ((uint32_t)(\fBREAD_BIT\fP(\fBRCC\fP\->BDCR, \fBRCC_BDCR_RTCSEL\fP)))"
+
+.PP
+Macro to get the RTC clock source\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIThe\fP returned value can be one of the following: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_RTCCLKSOURCE_NONE\fP No clock selected as RTC clock\&. 
+.IP "\(bu" 1
+\fBRCC_RTCCLKSOURCE_LSE\fP LSE selected as RTC clock\&. 
+.IP "\(bu" 1
+\fBRCC_RTCCLKSOURCE_LSI\fP LSI selected as RTC clock\&. 
+.IP "\(bu" 1
+\fBRCC_RTCCLKSOURCE_HSE_DIV32\fP HSE clock divided by 32 selected 
+.PP
+.RE
+.PP
+
+.SS "#define __HAL_RCC_RTC_CONFIG(__RTC_CLKSOURCE__)     \fBMODIFY_REG\fP( \fBRCC\fP\->BDCR, \fBRCC_BDCR_RTCSEL\fP, (__RTC_CLKSOURCE__))"
+
+.PP
+Macros to configure the RTC clock (RTCCLK)\&. 
+.PP
+\fBNote\fP
+.RS 4
+As the RTC clock configuration bits are in the Backup domain and write access is denied to this domain after reset, you have to enable write access using the Power Backup Access macro before to configure the RTC clock source (to be done once after reset)\&. 
+.PP
+Once the RTC clock is configured it cannot be changed unless the Backup domain is reset using \fB__HAL_RCC_BACKUPRESET_FORCE()\fP macro, or by a Power On Reset (POR)\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__RTC_CLKSOURCE__\fP specifies the RTC clock source\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_RTCCLKSOURCE_NONE\fP No clock selected as RTC clock\&. 
+.IP "\(bu" 1
+\fBRCC_RTCCLKSOURCE_LSE\fP LSE selected as RTC clock\&. 
+.IP "\(bu" 1
+\fBRCC_RTCCLKSOURCE_LSI\fP LSI selected as RTC clock\&. 
+.IP "\(bu" 1
+\fBRCC_RTCCLKSOURCE_HSE_DIV32\fP HSE clock divided by 32 selected
+.PP
+.RE
+.PP
+\fBNote\fP
+.RS 4
+If the LSE or LSI is used as RTC clock source, the RTC continues to work in STOP and STANDBY modes, and can be used as wakeup source\&. However, when the HSE clock is used as RTC clock source, the RTC cannot be used in STOP and STANDBY modes\&. 
+.PP
+The maximum input clock frequency for RTC is 1MHz (when using HSE as RTC clock source)\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_RCC_RTC_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->BDCR, \fBRCC_BDCR_RTCEN\fP)"
+
+.SS "#define __HAL_RCC_RTC_ENABLE()   \fBSET_BIT\fP(\fBRCC\fP\->BDCR, \fBRCC_BDCR_RTCEN\fP)"
+
+.PP
+Macros to enable or disable the RTC clock\&. 
+.PP
+\fBNote\fP
+.RS 4
+As the RTC is in the Backup domain and write access is denied to this domain after reset, you have to enable write access using \fBHAL_PWR_EnableBkUpAccess()\fP function before to configure the RTC (to be done once after reset)\&. 
+.PP
+These macros must be used after the RTC clock source was selected\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

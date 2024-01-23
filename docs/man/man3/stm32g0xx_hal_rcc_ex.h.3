@@ -1,0 +1,177 @@
+.TH "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h \- Header file of RCC HAL Extended module\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32g0xx_hal_def\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBRCC_PeriphCLKInitTypeDef\fP"
+.br
+.RI "RCC extended clocks structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_LSCOSOURCE_LSI\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_LSCOSOURCE_LSE\fP   \fBRCC_BDCR_LSCOSEL\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_PERIPHCLK_USART1\fP   0x00000001U"
+.br
+.ti -1c
+.RI "#define \fBRCC_PERIPHCLK_I2C1\fP   0x00000020U"
+.br
+.ti -1c
+.RI "#define \fBRCC_PERIPHCLK_I2S1\fP   0x00000800U"
+.br
+.ti -1c
+.RI "#define \fBRCC_PERIPHCLK_ADC\fP   0x00004000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_PERIPHCLK_RTC\fP   0x00020000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_USART1CLKSOURCE_PCLK1\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_USART1CLKSOURCE_SYSCLK\fP   \fBRCC_CCIPR_USART1SEL_0\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_USART1CLKSOURCE_HSI\fP   \fBRCC_CCIPR_USART1SEL_1\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_USART1CLKSOURCE_LSE\fP   (\fBRCC_CCIPR_USART1SEL_0\fP | \fBRCC_CCIPR_USART1SEL_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_I2C1CLKSOURCE_PCLK1\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_I2C1CLKSOURCE_SYSCLK\fP   \fBRCC_CCIPR_I2C1SEL_0\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_I2C1CLKSOURCE_HSI\fP   \fBRCC_CCIPR_I2C1SEL_1\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_I2S1CLKSOURCE_SYSCLK\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_I2S1CLKSOURCE_PLL\fP   \fBRCC_CCIPR_I2S1SEL_0\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_I2S1CLKSOURCE_HSI\fP   \fBRCC_CCIPR_I2S1SEL_1\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_I2S1CLKSOURCE_EXT\fP   \fBRCC_CCIPR_I2S1SEL\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_ADCCLKSOURCE_SYSCLK\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_ADCCLKSOURCE_PLLADC\fP   \fBRCC_CCIPR_ADCSEL_0\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_ADCCLKSOURCE_HSI\fP   \fBRCC_CCIPR_ADCSEL_1\fP"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_I2C1_CONFIG\fP(__I2C1_CLKSOURCE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_I2C1SEL\fP, (uint32_t)(__I2C1_CLKSOURCE__))"
+.br
+.RI "Macro to configure the I2C1 clock (I2C1CLK)\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_GET_I2C1_SOURCE\fP()   ((uint32_t)(\fBREAD_BIT\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_I2C1SEL\fP)))"
+.br
+.RI "Macro to get the I2C1 clock source\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_I2S1_CONFIG\fP(__I2S1_CLKSOURCE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_I2S1SEL\fP, (uint32_t)(__I2S1_CLKSOURCE__))"
+.br
+.RI "Macro to configure the I2S1 clock (I2S1CLK)\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_GET_I2S1_SOURCE\fP()   ((uint32_t)(\fBREAD_BIT\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_I2S1SEL\fP)))"
+.br
+.RI "Macro to get the I2S1 clock source\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_USART1_CONFIG\fP(__USART1_CLKSOURCE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_USART1SEL\fP, (uint32_t)(__USART1_CLKSOURCE__))"
+.br
+.RI "Macro to configure the USART1 clock (USART1CLK)\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_GET_USART1_SOURCE\fP()   ((uint32_t)(\fBREAD_BIT\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_USART1SEL\fP)))"
+.br
+.RI "Macro to get the USART1 clock source\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_ADC_CONFIG\fP(__ADC_CLKSOURCE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_ADCSEL\fP, (uint32_t)(__ADC_CLKSOURCE__))"
+.br
+.RI "Macro to configure the ADC interface clock\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_GET_ADC_SOURCE\fP()   ((uint32_t)(\fBREAD_BIT\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_ADCSEL\fP)))"
+.br
+.RI "Macro to get the ADC clock source\&. "
+.ti -1c
+.RI "#define \fBIS_RCC_LSCOSOURCE\fP(__SOURCE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_RCC_USART1CLKSOURCE\fP(__SOURCE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_RCC_I2C1CLKSOURCE\fP(__SOURCE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_RCC_I2S1CLKSOURCE\fP(__SOURCE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_RCC_ADCCLKSOURCE\fP(__SOURCE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_RCC_USBCLKSOURCE\fP(__SOURCE__)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_RCCEx_PeriphCLKConfig\fP (\fBRCC_PeriphCLKInitTypeDef\fP *PeriphClkInit)"
+.br
+.ti -1c
+.RI "void \fBHAL_RCCEx_GetPeriphCLKConfig\fP (\fBRCC_PeriphCLKInitTypeDef\fP *PeriphClkInit)"
+.br
+.ti -1c
+.RI "uint32_t \fBHAL_RCCEx_GetPeriphCLKFreq\fP (uint32_t PeriphClk)"
+.br
+.ti -1c
+.RI "void \fBHAL_RCCEx_EnableLSCO\fP (uint32_t LSCOSource)"
+.br
+.ti -1c
+.RI "void \fBHAL_RCCEx_DisableLSCO\fP (void)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file of RCC HAL Extended module\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBAttention\fP
+.RS 4
+.RE
+.PP
+Copyright (c) 2018 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

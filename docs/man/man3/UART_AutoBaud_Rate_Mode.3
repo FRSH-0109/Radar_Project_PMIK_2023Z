@@ -1,0 +1,48 @@
+.TH "UART_AutoBaud_Rate_Mode" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_AutoBaud_Rate_Mode \- UART Advanced Feature AutoBaud Rate Mode
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_AUTOBAUDRATE_ONSTARTBIT\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_AUTOBAUDRATE_ONFALLINGEDGE\fP   \fBUSART_CR2_ABRMODE_0\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_AUTOBAUDRATE_ON0X7FFRAME\fP   \fBUSART_CR2_ABRMODE_1\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_AUTOBAUDRATE_ON0X55FRAME\fP   \fBUSART_CR2_ABRMODE\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define UART_ADVFEATURE_AUTOBAUDRATE_ON0X55FRAME   \fBUSART_CR2_ABRMODE\fP"
+Auto Baud rate detection on 0x55 frame detection 
+.br
+ 
+.SS "#define UART_ADVFEATURE_AUTOBAUDRATE_ON0X7FFRAME   \fBUSART_CR2_ABRMODE_1\fP"
+Auto Baud rate detection on 0x7F frame detection 
+.br
+ 
+.SS "#define UART_ADVFEATURE_AUTOBAUDRATE_ONFALLINGEDGE   \fBUSART_CR2_ABRMODE_0\fP"
+Auto Baud rate detection on falling edge 
+.br
+ 
+.SS "#define UART_ADVFEATURE_AUTOBAUDRATE_ONSTARTBIT   0x00000000U"
+Auto Baud rate detection on start bit 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

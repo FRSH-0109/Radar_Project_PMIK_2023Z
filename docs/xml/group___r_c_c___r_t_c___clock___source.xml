@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___r_c_c___r_t_c___clock___source" kind="group">
+    <compoundname>RCC_RTC_Clock_Source</compoundname>
+    <title>RTC Clock Source</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_c_c___r_t_c___clock___source_1ga7ac4762e5f4ebe4a04aea58edc9c46a9" prot="public" static="no">
+        <name>RCC_RTCCLKSOURCE_NONE</name>
+        <initializer>0x00000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>No clock configured for RTC </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="620" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="620" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___r_t_c___clock___source_1ga5dca8d63f250a20bd6bc005670d0c150" prot="public" static="no">
+        <name>RCC_RTCCLKSOURCE_LSE</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga6701d58e40e4c16e9be49436fcbe23d0" kindref="member">RCC_BDCR_RTCSEL_0</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LSE oscillator clock used as RTC clock </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="621" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="621" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___r_t_c___clock___source_1gab47a1afb8b5eef9f20f4772961d0a5f4" prot="public" static="no">
+        <name>RCC_RTCCLKSOURCE_LSI</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gaac4e378027f3293ec520ed6d18c633f4" kindref="member">RCC_BDCR_RTCSEL_1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LSI oscillator clock used as RTC clock </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="622" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="622" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___r_t_c___clock___source_1ga070b819c6eca00d4b89cbf35216c3a92" prot="public" static="no">
+        <name>RCC_RTCCLKSOURCE_HSE_DIV32</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gabe30dbd38f6456990ee641648bc05d40" kindref="member">RCC_BDCR_RTCSEL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HSE oscillator clock divided by 32 used as RTC clock </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="623" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="623" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

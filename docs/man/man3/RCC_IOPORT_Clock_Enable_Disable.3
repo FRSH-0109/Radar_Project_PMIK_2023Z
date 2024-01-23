@@ -1,0 +1,132 @@
+.TH "RCC_IOPORT_Clock_Enable_Disable" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_IOPORT_Clock_Enable_Disable \- IOPORT Clock Enable Disable
+.PP
+ \- Enable or disable the IO Ports clock\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOA_CLK_ENABLE\fP()"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOB_CLK_ENABLE\fP()"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOC_CLK_ENABLE\fP()"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOD_CLK_ENABLE\fP()"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOF_CLK_ENABLE\fP()"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOA_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOAEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOB_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOBEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOC_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOCEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOD_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIODEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOF_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOFEN\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Enable or disable the IO Ports clock\&. 
+
+
+.PP
+\fBNote\fP
+.RS 4
+After reset, the IO ports clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it\&. 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_RCC_GPIOA_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOAEN\fP)"
+
+.SS "#define __HAL_RCC_GPIOA_CLK_ENABLE()"
+\fBValue:\fP.PP
+.nf
+                                                    do { \\
+                                                    __IO uint32_t tmpreg; \\
+                                                    SET_BIT(RCC\->IOPENR, RCC_IOPENR_GPIOAEN); \\
+   /* Delay after an RCC peripheral clock enabling */ \\
+                                                    tmpreg = READ_BIT(RCC\->IOPENR, RCC_IOPENR_GPIOAEN); \\
+                                                    UNUSED(tmpreg); \\
+                                                  } while(0U)
+.fi
+
+.SS "#define __HAL_RCC_GPIOB_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOBEN\fP)"
+
+.SS "#define __HAL_RCC_GPIOB_CLK_ENABLE()"
+\fBValue:\fP.PP
+.nf
+                                                    do { \\
+                                                    __IO uint32_t tmpreg; \\
+                                                    SET_BIT(RCC\->IOPENR, RCC_IOPENR_GPIOBEN); \\
+   /* Delay after an RCC peripheral clock enabling */ \\
+                                                    tmpreg = READ_BIT(RCC\->IOPENR, RCC_IOPENR_GPIOBEN); \\
+                                                    UNUSED(tmpreg); \\
+                                                  } while(0U)
+.fi
+
+.SS "#define __HAL_RCC_GPIOC_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOCEN\fP)"
+
+.SS "#define __HAL_RCC_GPIOC_CLK_ENABLE()"
+\fBValue:\fP.PP
+.nf
+                                                    do { \\
+                                                    __IO uint32_t tmpreg; \\
+                                                    SET_BIT(RCC\->IOPENR, RCC_IOPENR_GPIOCEN); \\
+   /* Delay after an RCC peripheral clock enabling */ \\
+                                                    tmpreg = READ_BIT(RCC\->IOPENR, RCC_IOPENR_GPIOCEN); \\
+                                                    UNUSED(tmpreg); \\
+                                                  } while(0U)
+.fi
+
+.SS "#define __HAL_RCC_GPIOD_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIODEN\fP)"
+
+.SS "#define __HAL_RCC_GPIOD_CLK_ENABLE()"
+\fBValue:\fP.PP
+.nf
+                                                    do { \\
+                                                    __IO uint32_t tmpreg; \\
+                                                    SET_BIT(RCC\->IOPENR, RCC_IOPENR_GPIODEN); \\
+   /* Delay after an RCC peripheral clock enabling */ \\
+                                                    tmpreg = READ_BIT(RCC\->IOPENR, RCC_IOPENR_GPIODEN); \\
+                                                    UNUSED(tmpreg); \\
+                                                  } while(0U)
+.fi
+
+.SS "#define __HAL_RCC_GPIOF_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPENR, \fBRCC_IOPENR_GPIOFEN\fP)"
+
+.SS "#define __HAL_RCC_GPIOF_CLK_ENABLE()"
+\fBValue:\fP.PP
+.nf
+                                                    do { \\
+                                                    __IO uint32_t tmpreg; \\
+                                                    SET_BIT(RCC\->IOPENR, RCC_IOPENR_GPIOFEN); \\
+   /* Delay after an RCC peripheral clock enabling */ \\
+                                                    tmpreg = READ_BIT(RCC\->IOPENR, RCC_IOPENR_GPIOFEN); \\
+                                                    UNUSED(tmpreg); \\
+                                                  } while(0U)
+.fi
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

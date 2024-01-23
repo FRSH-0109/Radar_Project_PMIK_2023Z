@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_u_a_r_t___custom___handle_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>UART_Custom_HandleTypeDef</compoundname>
+    <includes refid="usart__custom_8h" local="no">usart_custom.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_a_r_t___custom___handle_type_def_1a1ed7dab212fde0a3a4600d33399c67b6" prot="public" static="no" mutable="no">
+        <type><ref refid="group___u_a_r_t___exported___types_1ga5de4a49eb132735325e706f406c69d6e" kindref="member">UART_HandleTypeDef</ref> *</type>
+        <definition>UART_HandleTypeDef* huart</definition>
+        <argsstring></argsstring>
+        <name>huart</name>
+        <qualifiedname>UART_Custom_HandleTypeDef::huart</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to HAL uart handle </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="93" column="20" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___custom___handle_type_def_1a962988d59051dfab0ce7da4c9d66f7b2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dataRxMaxLen</definition>
+        <argsstring></argsstring>
+        <name>dataRxMaxLen</name>
+        <qualifiedname>UART_Custom_HandleTypeDef::dataRxMaxLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum rx uart buffer length </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="94" column="10" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___custom___handle_type_def_1aa1a20fe601cf7e4b3f0134222621c0ad" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dataTxMaxLen</definition>
+        <argsstring></argsstring>
+        <name>dataTxMaxLen</name>
+        <qualifiedname>UART_Custom_HandleTypeDef::dataTxMaxLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum tx uart buffer length </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="95" column="10" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___custom___handle_type_def_1aeea8c98a5a0f7d7f8d5719f46a45f2d2" prot="public" static="no" mutable="no">
+        <type>volatile uint8_t</type>
+        <definition>volatile uint8_t dataRx[MAX_UART_RX_DATA_LEN]</definition>
+        <argsstring>[MAX_UART_RX_DATA_LEN]</argsstring>
+        <name>dataRx</name>
+        <qualifiedname>UART_Custom_HandleTypeDef::dataRx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of rx uart data used store recent received data before passing to queue </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="96" column="18" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___custom___handle_type_def_1ab9bc9891f04881264d1131c2a5ffe711" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dataTx[MAX_UART_TX_DATA_LEN]</definition>
+        <argsstring>[MAX_UART_TX_DATA_LEN]</argsstring>
+        <name>dataTx</name>
+        <qualifiedname>UART_Custom_HandleTypeDef::dataTx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of tx uart data used to store data before passing to queue </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="97" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___custom___handle_type_def_1a9011455a25b27b0d2bc3cbd56eafb3ad" prot="public" static="no" mutable="no">
+        <type>volatile bool</type>
+        <definition>volatile bool txTransmissionCmplt</definition>
+        <argsstring></argsstring>
+        <name>txTransmissionCmplt</name>
+        <qualifiedname>UART_Custom_HandleTypeDef::txTransmissionCmplt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag for indicate if data was already send </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="98" column="15" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___custom___handle_type_def_1aa2fa02d67a76264094f28e5349d128bd" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t txTransmissionCmpltTime</definition>
+        <argsstring></argsstring>
+        <name>txTransmissionCmpltTime</name>
+        <qualifiedname>UART_Custom_HandleTypeDef::txTransmissionCmpltTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value for measuring time out of last send data frame </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="99" column="19" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure for custom uart handle </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>DMAMUX_ChannelStatus_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___channel_status___type_def"/>
+      </node>
+      <node id="9">
+        <label>DMAMUX_Channel_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___channel___type_def"/>
+      </node>
+      <node id="12">
+        <label>DMAMUX_RequestGenStatus_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___request_gen_status___type_def"/>
+      </node>
+      <node id="11">
+        <label>DMAMUX_RequestGen_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___request_gen___type_def"/>
+      </node>
+      <node id="7">
+        <label>DMA_Channel_TypeDef</label>
+        <link refid="struct_d_m_a___channel___type_def"/>
+      </node>
+      <node id="8">
+        <label>DMA_InitTypeDef</label>
+        <link refid="struct_d_m_a___init_type_def"/>
+      </node>
+      <node id="5">
+        <label>UART_AdvFeatureInitTypeDef</label>
+        <link refid="struct_u_a_r_t___adv_feature_init_type_def"/>
+      </node>
+      <node id="1">
+        <label>UART_Custom_HandleTypeDef</label>
+        <link refid="struct_u_a_r_t___custom___handle_type_def"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>huart</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>UART_InitTypeDef</label>
+        <link refid="struct_u_a_r_t___init_type_def"/>
+      </node>
+      <node id="3">
+        <label>USART_TypeDef</label>
+        <link refid="struct_u_s_a_r_t___type_def"/>
+      </node>
+      <node id="6">
+        <label>__DMA_HandleTypeDef</label>
+        <link refid="struct_____d_m_a___handle_type_def"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Instance</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Init</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>DMAmuxChannel</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>DMAmuxChannelStatus</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>DMAmuxRequestGen</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>DMAmuxRequestGenStatus</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>__UART_HandleTypeDef</label>
+        <link refid="struct_____u_a_r_t___handle_type_def"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Instance</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Init</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>AdvancedInit</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>hdmarx</edgelabel>
+          <edgelabel>hdmatx</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="RadarApp/usart_custom/usart_custom.h" line="91" column="1" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="92" bodyend="100"/>
+    <listofallmembers>
+      <member refid="struct_u_a_r_t___custom___handle_type_def_1aeea8c98a5a0f7d7f8d5719f46a45f2d2" prot="public" virt="non-virtual"><scope>UART_Custom_HandleTypeDef</scope><name>dataRx</name></member>
+      <member refid="struct_u_a_r_t___custom___handle_type_def_1a962988d59051dfab0ce7da4c9d66f7b2" prot="public" virt="non-virtual"><scope>UART_Custom_HandleTypeDef</scope><name>dataRxMaxLen</name></member>
+      <member refid="struct_u_a_r_t___custom___handle_type_def_1ab9bc9891f04881264d1131c2a5ffe711" prot="public" virt="non-virtual"><scope>UART_Custom_HandleTypeDef</scope><name>dataTx</name></member>
+      <member refid="struct_u_a_r_t___custom___handle_type_def_1aa1a20fe601cf7e4b3f0134222621c0ad" prot="public" virt="non-virtual"><scope>UART_Custom_HandleTypeDef</scope><name>dataTxMaxLen</name></member>
+      <member refid="struct_u_a_r_t___custom___handle_type_def_1a1ed7dab212fde0a3a4600d33399c67b6" prot="public" virt="non-virtual"><scope>UART_Custom_HandleTypeDef</scope><name>huart</name></member>
+      <member refid="struct_u_a_r_t___custom___handle_type_def_1a9011455a25b27b0d2bc3cbd56eafb3ad" prot="public" virt="non-virtual"><scope>UART_Custom_HandleTypeDef</scope><name>txTransmissionCmplt</name></member>
+      <member refid="struct_u_a_r_t___custom___handle_type_def_1aa2fa02d67a76264094f28e5349d128bd" prot="public" virt="non-virtual"><scope>UART_Custom_HandleTypeDef</scope><name>txTransmissionCmpltTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

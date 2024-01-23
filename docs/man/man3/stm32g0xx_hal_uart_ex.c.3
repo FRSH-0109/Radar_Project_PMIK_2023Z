@@ -1,0 +1,57 @@
+.TH "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c \- Extended UART HAL module driver\&. This file provides firmware functions to manage the following extended functionalities of the Universal Asynchronous Receiver Transmitter Peripheral (UART)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32g0xx_hal\&.h'\fP
+.br
+
+.SH "Detailed Description"
+.PP 
+Extended UART HAL module driver\&. This file provides firmware functions to manage the following extended functionalities of the Universal Asynchronous Receiver Transmitter Peripheral (UART)\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+MCD Application Team
+.IP "\(bu" 2
+Initialization and de-initialization functions
+.IP "\(bu" 2
+Peripheral Control functions
+.PP
+.RE
+.PP
+\fBAttention\fP
+.RS 4
+.RE
+.PP
+Copyright (c) 2018 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&.
+.PP
+.PP
+.nf
+==============================================================================
+             ##### UART peripheral extended features  #####
+==============================================================================
+
+  (#) Declare a UART_HandleTypeDef handle structure\&.
+
+  (#) For the UART RS485 Driver Enable mode, initialize the UART registers
+      by calling the HAL_RS485Ex_Init() API\&.
+
+  (#) FIFO mode enabling/disabling and RX/TX FIFO threshold programming\&.
+
+      -@- When UART operates in FIFO mode, FIFO mode must be enabled prior
+          starting RX/TX transfers\&. Also RX/TX FIFO thresholds must be
+          configured prior starting RX/TX transfers\&..fi
+.PP
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

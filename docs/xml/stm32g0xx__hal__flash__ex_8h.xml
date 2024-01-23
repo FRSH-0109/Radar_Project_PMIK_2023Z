@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="stm32g0xx__hal__flash__ex_8h" kind="file" language="C++">
+    <compoundname>stm32g0xx_hal_flash_ex.h</compoundname>
+    <includes refid="stm32g0xx__hal__def_8h" local="yes">stm32g0xx_hal_def.h</includes>
+    <includedby refid="stm32g0xx__hal__flash_8h" local="yes">Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="4">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="2">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h</label>
+        <link refid="stm32g0xx__hal__flash__ex_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>Core/Inc/dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Core/Inc/gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Core/Inc/main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Core/Inc/spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Core/Inc/stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Core/Inc/tim.h</label>
+        <link refid="tim_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Core/Inc/usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Core/Src/dma.c</label>
+        <link refid="dma_8c"/>
+      </node>
+      <node id="10">
+        <label>Core/Src/gpio.c</label>
+        <link refid="gpio_8c"/>
+      </node>
+      <node id="8">
+        <label>Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="12">
+        <label>Core/Src/spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="18">
+        <label>Core/Src/stm32g0xx_hal_msp.c</label>
+        <link refid="stm32g0xx__hal__msp_8c"/>
+      </node>
+      <node id="19">
+        <label>Core/Src/stm32g0xx_it.c</label>
+        <link refid="stm32g0xx__it_8c"/>
+      </node>
+      <node id="14">
+        <label>Core/Src/tim.c</label>
+        <link refid="tim_8c"/>
+      </node>
+      <node id="16">
+        <label>Core/Src/usart.c</label>
+        <link refid="usart_8c"/>
+      </node>
+      <node id="4">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h</label>
+        <link refid="stm32g0xx__hal__flash_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h</label>
+        <link refid="stm32g0xx__hal__flash__ex_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c</label>
+        <link refid="stm32g0xx__hal_8c"/>
+      </node>
+      <node id="25">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c</label>
+        <link refid="stm32g0xx__hal__cortex_8c"/>
+      </node>
+      <node id="26">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c</label>
+        <link refid="stm32g0xx__hal__dma_8c"/>
+      </node>
+      <node id="27">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c</label>
+        <link refid="stm32g0xx__hal__dma__ex_8c"/>
+      </node>
+      <node id="28">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c</label>
+        <link refid="stm32g0xx__hal__exti_8c"/>
+      </node>
+      <node id="29">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c</label>
+        <link refid="stm32g0xx__hal__flash_8c"/>
+      </node>
+      <node id="30">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c</label>
+        <link refid="stm32g0xx__hal__flash__ex_8c"/>
+      </node>
+      <node id="31">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c</label>
+        <link refid="stm32g0xx__hal__gpio_8c"/>
+      </node>
+      <node id="32">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c</label>
+        <link refid="stm32g0xx__hal__pwr_8c"/>
+      </node>
+      <node id="33">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8c"/>
+      </node>
+      <node id="34">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c</label>
+        <link refid="stm32g0xx__hal__rcc_8c"/>
+      </node>
+      <node id="35">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8c"/>
+      </node>
+      <node id="36">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c</label>
+        <link refid="stm32g0xx__hal__spi_8c"/>
+      </node>
+      <node id="37">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c</label>
+        <link refid="stm32g0xx__hal__spi__ex_8c"/>
+      </node>
+      <node id="38">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c</label>
+        <link refid="stm32g0xx__hal__tim_8c"/>
+      </node>
+      <node id="39">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c</label>
+        <link refid="stm32g0xx__hal__tim__ex_8c"/>
+      </node>
+      <node id="40">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c</label>
+        <link refid="stm32g0xx__hal__uart_8c"/>
+      </node>
+      <node id="41">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c</label>
+        <link refid="stm32g0xx__hal__uart__ex_8c"/>
+      </node>
+      <node id="20">
+        <label>RadarApp/DisplayDriver/GFX_Color.c</label>
+        <link refid="_g_f_x___color_8c"/>
+      </node>
+      <node id="21">
+        <label>RadarApp/DisplayDriver/ILI9341.c</label>
+        <link refid="_i_l_i9341_8c"/>
+      </node>
+      <node id="23">
+        <label>RadarApp/RadarDriver/radar.c</label>
+        <link refid="radar_8c"/>
+      </node>
+      <node id="22">
+        <label>RadarApp/RadarDriver/radar.h</label>
+        <link refid="radar_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>RadarApp/usart_custom/usart_custom.c</label>
+        <link refid="usart__custom_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <member refid="group___f_l_a_s_h_ex___empty___check_1ga4009670d557381dd548e31da68ac8ebf" kind="define"><name>FLASH_PROG_NOT_EMPTY</name></member>
+      <member refid="group___f_l_a_s_h_ex___empty___check_1gac8b9cdc4d10feccc7e4ad5c5e3d5fe32" kind="define"><name>FLASH_PROG_EMPTY</name></member>
+      <member refid="group___f_l_a_s_h_ex___private___constants_1ga756941e1f5b0ccf307d0dc8bcfddd6d8" kind="define"><name>FLASH_PCROP_GRANULARITY_OFFSET</name></member>
+      <member refid="group___f_l_a_s_h_ex___private___constants_1gaa53468c1b0bd3625d13db05b3da9cb88" kind="define"><name>FLASH_PCROP_GRANULARITY</name></member>
+      <member refid="group___f_l_a_s_h_ex___private___macros_1ga07fc54c971c43f2217c3a07cc8247759" kind="define"><name>IS_FLASH_EMPTY_CHECK</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga9c4e0c7b4f528b7cccae6ad610eb5953" kind="function"><name>HAL_FLASHEx_Erase</name></member>
+      <member refid="group___f_l_a_s_h_ex___exported___functions___group1_1gaf58c6764859e4febc21abe462dfb2615" kind="function"><name>HAL_FLASHEx_Erase_IT</name></member>
+      <member refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga93f96d794f4dbe97347cbc804e1bb880" kind="function"><name>HAL_FLASHEx_EnableDebugger</name></member>
+      <member refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga42d8fc9973278f3d58b012ecd1c50430" kind="function"><name>HAL_FLASHEx_DisableDebugger</name></member>
+      <member refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga479621962d2c3c479a41077bd6ca9252" kind="function"><name>HAL_FLASHEx_FlashEmptyCheck</name></member>
+      <member refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga69d8c505290f866fd8d818b674a41764" kind="function"><name>HAL_FLASHEx_ForceFlashEmpty</name></member>
+      <member refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga001dd4a8defa9eb24a17c4df5953a41d" kind="function"><name>HAL_FLASHEx_OBProgram</name></member>
+      <member refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga6d45d5442b8147533b1100ec40fe75d7" kind="function"><name>HAL_FLASHEx_OBGetConfig</name></member>
+      <member refid="group___f_l_a_s_h_ex___private___macros_1ga982dd20191ab5fda149d01fa46869133" kind="function"><name>FLASH_PageErase</name></member>
+    </sectiondef>
+    <briefdescription>
+<para>Header file of FLASH HAL Extended module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team </para>
+</simplesect>
+<simplesect kind="attention"><para></para>
+</simplesect>
+Copyright (c) 2018 STMicroelectronics. All rights reserved.</para>
+<para>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>STM32G0xx_HAL_FLASH_EX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32G0xx_HAL_FLASH_EX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32g0xx__hal__def_8h" kindref="compound">stm32g0xx_hal_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>types<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>constants<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="45" refid="group___f_l_a_s_h_ex___empty___check_1ga4009670d557381dd548e31da68ac8ebf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_PROG_NOT_EMPTY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000u<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="group___f_l_a_s_h_ex___empty___check_1gac8b9cdc4d10feccc7e4ad5c5e3d5fe32" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_PROG_EMPTY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_ACR_PROGEMPTY<sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>macro<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>functions<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Extended<sp/>Program<sp/>operation<sp/>functions<sp/><sp/>*************************************/</highlight></codeline>
+<codeline lineno="64" refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga9c4e0c7b4f528b7cccae6ad610eb5953" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga9c4e0c7b4f528b7cccae6ad610eb5953" kindref="member">HAL_FLASHEx_Erase</ref>(<ref refid="struct_f_l_a_s_h___erase_init_type_def" kindref="compound">FLASH_EraseInitTypeDef</ref><sp/>*pEraseInit,<sp/>uint32_t<sp/>*PageError);</highlight></codeline>
+<codeline lineno="65" refid="group___f_l_a_s_h_ex___exported___functions___group1_1gaf58c6764859e4febc21abe462dfb2615" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___f_l_a_s_h_ex___exported___functions___group1_1gaf58c6764859e4febc21abe462dfb2615" kindref="member">HAL_FLASHEx_Erase_IT</ref>(<ref refid="struct_f_l_a_s_h___erase_init_type_def" kindref="compound">FLASH_EraseInitTypeDef</ref><sp/>*pEraseInit);</highlight></codeline>
+<codeline lineno="66" refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga93f96d794f4dbe97347cbc804e1bb880" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga93f96d794f4dbe97347cbc804e1bb880" kindref="member">HAL_FLASHEx_EnableDebugger</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67" refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga42d8fc9973278f3d58b012ecd1c50430" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga42d8fc9973278f3d58b012ecd1c50430" kindref="member">HAL_FLASHEx_DisableDebugger</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="68" refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga479621962d2c3c479a41077bd6ca9252" refkind="member"><highlight class="normal">uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga479621962d2c3c479a41077bd6ca9252" kindref="member">HAL_FLASHEx_FlashEmptyCheck</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69" refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga69d8c505290f866fd8d818b674a41764" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga69d8c505290f866fd8d818b674a41764" kindref="member">HAL_FLASHEx_ForceFlashEmpty</ref>(uint32_t<sp/>FlashEmpty);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_SECURABLE_MEMORY_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_FLASHEx_EnableSecMemProtection(uint32_t<sp/>Banks);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_SECURABLE_MEMORY_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga001dd4a8defa9eb24a17c4df5953a41d" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga001dd4a8defa9eb24a17c4df5953a41d" kindref="member">HAL_FLASHEx_OBProgram</ref>(<ref refid="struct_f_l_a_s_h___o_b_program_init_type_def" kindref="compound">FLASH_OBProgramInitTypeDef</ref><sp/>*pOBInit);</highlight></codeline>
+<codeline lineno="74" refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga6d45d5442b8147533b1100ec40fe75d7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h_ex___exported___functions___group1_1ga6d45d5442b8147533b1100ec40fe75d7" kindref="member">HAL_FLASHEx_OBGetConfig</ref>(<ref refid="struct_f_l_a_s_h___o_b_program_init_type_def" kindref="compound">FLASH_OBProgramInitTypeDef</ref><sp/>*pOBInit);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>macros<sp/>------------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="87" refid="group___f_l_a_s_h_ex___private___constants_1ga756941e1f5b0ccf307d0dc8bcfddd6d8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_PCROP_GRANULARITY_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9u<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="group___f_l_a_s_h_ex___private___constants_1gaa53468c1b0bd3625d13db05b3da9cb88" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_PCROP_GRANULARITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1UL<sp/>&lt;&lt;<sp/>FLASH_PCROP_GRANULARITY_OFFSET)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="group___f_l_a_s_h_ex___private___macros_1ga07fc54c971c43f2217c3a07cc8247759" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_FLASH_EMPTY_CHECK(__VALUE__)<sp/><sp/><sp/><sp/><sp/>(((__VALUE__)<sp/>==<sp/>FLASH_PROG_EMPTY)<sp/>||<sp/>((__VALUE__)<sp/>==<sp/>FLASH_PROG_NOT_EMPTY))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="group___f_l_a_s_h_ex___private___macros_1ga982dd20191ab5fda149d01fa46869133" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h_ex___private___macros_1ga982dd20191ab5fda149d01fa46869133" kindref="member">FLASH_PageErase</ref>(uint32_t<sp/>Banks,<sp/>uint32_t<sp/>Page);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STM32G0xx_HAL_FLASH_EX_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h"/>
+  </compounddef>
+</doxygen>

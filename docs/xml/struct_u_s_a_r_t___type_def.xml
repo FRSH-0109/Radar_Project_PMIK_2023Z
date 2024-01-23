@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_u_s_a_r_t___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>USART_TypeDef</compoundname>
+    <includes refid="stm32g030xx_8h" local="no">stm32g030xx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1ab0ec7102960640751d44e92ddac994f0" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CR1</definition>
+        <argsstring></argsstring>
+        <name>CR1</name>
+        <qualifiedname>USART_TypeDef::CR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Control register 1, Address offset: 0x00 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="491" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="491" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1afdfa307571967afb1d97943e982b6586" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CR2</definition>
+        <argsstring></argsstring>
+        <name>CR2</name>
+        <qualifiedname>USART_TypeDef::CR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Control register 2, Address offset: 0x04 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="492" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1add5b8e29a64c55dcd65ca4201118e9d1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CR3</definition>
+        <argsstring></argsstring>
+        <name>CR3</name>
+        <qualifiedname>USART_TypeDef::CR3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Control register 3, Address offset: 0x08 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="493" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="493" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1a092e59d908b2ca112e31047e942340cb" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t BRR</definition>
+        <argsstring></argsstring>
+        <name>BRR</name>
+        <qualifiedname>USART_TypeDef::BRR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Baud rate register, Address offset: 0x0C <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="494" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="494" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1a5dd0cb6c861eaf26470f56f451c1edbf" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t GTPR</definition>
+        <argsstring></argsstring>
+        <name>GTPR</name>
+        <qualifiedname>USART_TypeDef::GTPR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Guard time and prescaler register, Address offset: 0x10 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="495" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1af702fd1614d8606cf715e9f961f2e381" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t RTOR</definition>
+        <argsstring></argsstring>
+        <name>RTOR</name>
+        <qualifiedname>USART_TypeDef::RTOR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Receiver Time Out register, Address offset: 0x14 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="496" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="496" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1aab90d7451f8af4b6e6fd1de6c72d8f22" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t RQR</definition>
+        <argsstring></argsstring>
+        <name>RQR</name>
+        <qualifiedname>USART_TypeDef::RQR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Request register, Address offset: 0x18 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="497" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1ab3c49a96815fcbee63d95e1e74f20e75" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <qualifiedname>USART_TypeDef::ISR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Interrupt and status register, Address offset: 0x1C <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="498" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1a0a8c8230846fd8ff154b9fde8dfa0399" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t ICR</definition>
+        <argsstring></argsstring>
+        <name>ICR</name>
+        <qualifiedname>USART_TypeDef::ICR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Interrupt flag Clear register, Address offset: 0x20 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="499" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="499" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1a8aa81f5cac584bdef4235fcc7e8fa745" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t RDR</definition>
+        <argsstring></argsstring>
+        <name>RDR</name>
+        <qualifiedname>USART_TypeDef::RDR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Receive Data register, Address offset: 0x24 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="500" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="500" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1a40540a209bca9f0e2045a5748e1803da" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t TDR</definition>
+        <argsstring></argsstring>
+        <name>TDR</name>
+        <qualifiedname>USART_TypeDef::TDR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Transmit Data register, Address offset: 0x28 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="501" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___type_def_1af455f54206b36a7cfd7441501adf7535" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PRESC</definition>
+        <argsstring></argsstring>
+        <name>PRESC</name>
+        <qualifiedname>USART_TypeDef::PRESC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USART Prescaler register, Address offset: 0x2C <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="502" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="502" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Universal Synchronous Asynchronous Receiver Transmitter. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="489" column="1" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="490" bodyend="503"/>
+    <listofallmembers>
+      <member refid="struct_u_s_a_r_t___type_def_1a092e59d908b2ca112e31047e942340cb" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>BRR</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1ab0ec7102960640751d44e92ddac994f0" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>CR1</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1afdfa307571967afb1d97943e982b6586" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>CR2</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1add5b8e29a64c55dcd65ca4201118e9d1" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>CR3</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1a5dd0cb6c861eaf26470f56f451c1edbf" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>GTPR</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1a0a8c8230846fd8ff154b9fde8dfa0399" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>ICR</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1ab3c49a96815fcbee63d95e1e74f20e75" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>ISR</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1af455f54206b36a7cfd7441501adf7535" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>PRESC</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1a8aa81f5cac584bdef4235fcc7e8fa745" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>RDR</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1aab90d7451f8af4b6e6fd1de6c72d8f22" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>RQR</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1af702fd1614d8606cf715e9f961f2e381" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>RTOR</name></member>
+      <member refid="struct_u_s_a_r_t___type_def_1a40540a209bca9f0e2045a5748e1803da" prot="public" virt="non-virtual"><scope>USART_TypeDef</scope><name>TDR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

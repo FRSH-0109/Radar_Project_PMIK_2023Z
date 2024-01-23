@@ -1,0 +1,216 @@
+\doxysection{Radar\+App/\+Radar\+Driver/radar.h File Reference}
+\hypertarget{radar_8h}{}\label{radar_8h}\index{RadarApp/RadarDriver/radar.h@{RadarApp/RadarDriver/radar.h}}
+{\ttfamily \#include "{}main.\+h"{}}\newline
+{\ttfamily \#include "{}stdio.\+h"{}}\newline
+{\ttfamily \#include "{}servo\+\_\+driver.\+h"{}}\newline
+{\ttfamily \#include "{}distance\+\_\+sensor.\+h"{}}\newline
+{\ttfamily \#include "{}usart\+\_\+custom.\+h"{}}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structradar_struct}{radar\+Struct}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{radar_8h_a1a568c862b32e2a6af3d0fda00ebc68c}{SENSOR\+\_\+\+MEASURE\+\_\+\+PERIOD\+\_\+\+DEFAULT\+\_\+\+MS}}~100
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{radar_8h_a312279113d5a54b8d98e248b4e02eb89}{radar\+Init}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, \mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo, \mbox{\hyperlink{struct_t_i_m___handle_type_def}{TIM\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}servo\+\_\+tim, \mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor, \mbox{\hyperlink{struct_t_i_m___handle_type_def}{TIM\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}sensor\+\_\+tim)
+\item 
+void \mbox{\hyperlink{radar_8h_a909f36a45ee821d7528d2f4aee5a1e82}{radar\+Servo\+Update}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+\item 
+bool \mbox{\hyperlink{radar_8h_a4ba239034505324ee3dee22dfd0254e1}{radar\+Set\+Position\+Min}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, float pos)
+\item 
+float \mbox{\hyperlink{radar_8h_afa0e1f30efba3b6c3ea56a5d0b7b4008}{radar\+Get\+Position\+Min}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+\item 
+bool \mbox{\hyperlink{radar_8h_affc98cfe5b10eb360e5e2aff374b0eaa}{radar\+Set\+Position\+Max}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, float pos)
+\item 
+float \mbox{\hyperlink{radar_8h_a5c23a940c59e3e96d1d3011f5bfdfd64}{radar\+Get\+Position\+Max}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+\item 
+void \mbox{\hyperlink{radar_8h_a19fed3b3d140e2c18a4122ad7e783ac6}{radar\+Servo\+Start}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+\item 
+void \mbox{\hyperlink{radar_8h_a22df522cbce2d07e06b2c92be3f0349b}{radar\+Servo\+Stop}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+\item 
+bool \mbox{\hyperlink{radar_8h_aa4b19eb1148531f570f708bb4ee262cc}{radar\+Set\+Position\+Update\+Period}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, uint16\+\_\+t period\+Ms)
+\item 
+bool \mbox{\hyperlink{radar_8h_a3eaae4e20f433f2c438c8f94caaaae99}{radar\+Set\+Position\+Update\+Step}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, float step)
+\item 
+bool \mbox{\hyperlink{radar_8h_ac1d20aa713a5266f7bcee82d90b96abb}{radar\+Set\+Position}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, float pos)
+\item 
+float \mbox{\hyperlink{radar_8h_adf43ab91ae524d0b9a07b3976d4cf028}{radar\+Get\+Position}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+\item 
+void \mbox{\hyperlink{radar_8h_abfc9c42283fc76d21b3e56cc39c8f385}{radar\+Measure\+Start}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+\item 
+void \mbox{\hyperlink{radar_8h_ad5258fad0b27b8d14b803775e6f1457c}{radar\+Measure\+Stop}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+\item 
+bool \mbox{\hyperlink{radar_8h_aed51c9df6791df40aa7f91d19cd4cb06}{radar\+Set\+Measure\+Freq}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, uint16\+\_\+t period\+Ms)
+\item 
+void \mbox{\hyperlink{radar_8h_a190f69a9906f7f4c05b19e814bf1b2ce}{radar\+Trigger\+Measure}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+\item 
+double \mbox{\hyperlink{radar_8h_a8d37f58cbd2c9affac492868fdc72b5e}{radar\+Get\+Measure}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+\item 
+bool \mbox{\hyperlink{radar_8h_ade099662844a751716ebda7bd3c1de78}{radar\+Parse\+Set\+Position}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data)
+\item 
+bool \mbox{\hyperlink{radar_8h_a93217053e1875c7eac9c60f4bb30a149}{radar\+Parse\+Set\+Step}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data)
+\item 
+bool \mbox{\hyperlink{radar_8h_ac2d8eafddd3e2e5ceec639b9009c40fc}{radar\+Parse\+Set\+Position\+Min\+Max}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data, bool is\+Min)
+\item 
+bool \mbox{\hyperlink{radar_8h_a7c584e4dccab771e02d9520ec9cc89bb}{radar\+Parse\+Set\+Measure\+Period}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data)
+\item 
+bool \mbox{\hyperlink{radar_8h_a446ac04525db3179676463097f06d3ac}{radar\+Parse\+Set\+Draw\+Scale}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data)
+\item 
+bool \mbox{\hyperlink{radar_8h_af268b360cfbc8508e87589e75178eff4}{radar\+Parse\+Set\+Draw\+Rules}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{radar_8h_a1a568c862b32e2a6af3d0fda00ebc68c}\label{radar_8h_a1a568c862b32e2a6af3d0fda00ebc68c} 
+\index{radar.h@{radar.h}!SENSOR\_MEASURE\_PERIOD\_DEFAULT\_MS@{SENSOR\_MEASURE\_PERIOD\_DEFAULT\_MS}}
+\index{SENSOR\_MEASURE\_PERIOD\_DEFAULT\_MS@{SENSOR\_MEASURE\_PERIOD\_DEFAULT\_MS}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{SENSOR\_MEASURE\_PERIOD\_DEFAULT\_MS}{SENSOR\_MEASURE\_PERIOD\_DEFAULT\_MS}}
+{\footnotesize\ttfamily \#define SENSOR\+\_\+\+MEASURE\+\_\+\+PERIOD\+\_\+\+DEFAULT\+\_\+\+MS~100}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{radar_8h_a8d37f58cbd2c9affac492868fdc72b5e}\label{radar_8h_a8d37f58cbd2c9affac492868fdc72b5e} 
+\index{radar.h@{radar.h}!radarGetMeasure@{radarGetMeasure}}
+\index{radarGetMeasure@{radarGetMeasure}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarGetMeasure()}{radarGetMeasure()}}
+{\footnotesize\ttfamily double radar\+Get\+Measure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_adf43ab91ae524d0b9a07b3976d4cf028}\label{radar_8h_adf43ab91ae524d0b9a07b3976d4cf028} 
+\index{radar.h@{radar.h}!radarGetPosition@{radarGetPosition}}
+\index{radarGetPosition@{radarGetPosition}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarGetPosition()}{radarGetPosition()}}
+{\footnotesize\ttfamily float radar\+Get\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_a5c23a940c59e3e96d1d3011f5bfdfd64}\label{radar_8h_a5c23a940c59e3e96d1d3011f5bfdfd64} 
+\index{radar.h@{radar.h}!radarGetPositionMax@{radarGetPositionMax}}
+\index{radarGetPositionMax@{radarGetPositionMax}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarGetPositionMax()}{radarGetPositionMax()}}
+{\footnotesize\ttfamily float radar\+Get\+Position\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_afa0e1f30efba3b6c3ea56a5d0b7b4008}\label{radar_8h_afa0e1f30efba3b6c3ea56a5d0b7b4008} 
+\index{radar.h@{radar.h}!radarGetPositionMin@{radarGetPositionMin}}
+\index{radarGetPositionMin@{radarGetPositionMin}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarGetPositionMin()}{radarGetPositionMin()}}
+{\footnotesize\ttfamily float radar\+Get\+Position\+Min (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_a312279113d5a54b8d98e248b4e02eb89}\label{radar_8h_a312279113d5a54b8d98e248b4e02eb89} 
+\index{radar.h@{radar.h}!radarInit@{radarInit}}
+\index{radarInit@{radarInit}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarInit()}{radarInit()}}
+{\footnotesize\ttfamily void radar\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo,  }\item[{\mbox{\hyperlink{struct_t_i_m___handle_type_def}{TIM\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{servo\+\_\+tim,  }\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor,  }\item[{\mbox{\hyperlink{struct_t_i_m___handle_type_def}{TIM\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{sensor\+\_\+tim }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_abfc9c42283fc76d21b3e56cc39c8f385}\label{radar_8h_abfc9c42283fc76d21b3e56cc39c8f385} 
+\index{radar.h@{radar.h}!radarMeasureStart@{radarMeasureStart}}
+\index{radarMeasureStart@{radarMeasureStart}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarMeasureStart()}{radarMeasureStart()}}
+{\footnotesize\ttfamily void radar\+Measure\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_ad5258fad0b27b8d14b803775e6f1457c}\label{radar_8h_ad5258fad0b27b8d14b803775e6f1457c} 
+\index{radar.h@{radar.h}!radarMeasureStop@{radarMeasureStop}}
+\index{radarMeasureStop@{radarMeasureStop}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarMeasureStop()}{radarMeasureStop()}}
+{\footnotesize\ttfamily void radar\+Measure\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_af268b360cfbc8508e87589e75178eff4}\label{radar_8h_af268b360cfbc8508e87589e75178eff4} 
+\index{radar.h@{radar.h}!radarParseSetDrawRules@{radarParseSetDrawRules}}
+\index{radarParseSetDrawRules@{radarParseSetDrawRules}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarParseSetDrawRules()}{radarParseSetDrawRules()}}
+{\footnotesize\ttfamily bool radar\+Parse\+Set\+Draw\+Rules (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_a446ac04525db3179676463097f06d3ac}\label{radar_8h_a446ac04525db3179676463097f06d3ac} 
+\index{radar.h@{radar.h}!radarParseSetDrawScale@{radarParseSetDrawScale}}
+\index{radarParseSetDrawScale@{radarParseSetDrawScale}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarParseSetDrawScale()}{radarParseSetDrawScale()}}
+{\footnotesize\ttfamily bool radar\+Parse\+Set\+Draw\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_a7c584e4dccab771e02d9520ec9cc89bb}\label{radar_8h_a7c584e4dccab771e02d9520ec9cc89bb} 
+\index{radar.h@{radar.h}!radarParseSetMeasurePeriod@{radarParseSetMeasurePeriod}}
+\index{radarParseSetMeasurePeriod@{radarParseSetMeasurePeriod}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarParseSetMeasurePeriod()}{radarParseSetMeasurePeriod()}}
+{\footnotesize\ttfamily bool radar\+Parse\+Set\+Measure\+Period (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_ade099662844a751716ebda7bd3c1de78}\label{radar_8h_ade099662844a751716ebda7bd3c1de78} 
+\index{radar.h@{radar.h}!radarParseSetPosition@{radarParseSetPosition}}
+\index{radarParseSetPosition@{radarParseSetPosition}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarParseSetPosition()}{radarParseSetPosition()}}
+{\footnotesize\ttfamily bool radar\+Parse\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_ac2d8eafddd3e2e5ceec639b9009c40fc}\label{radar_8h_ac2d8eafddd3e2e5ceec639b9009c40fc} 
+\index{radar.h@{radar.h}!radarParseSetPositionMinMax@{radarParseSetPositionMinMax}}
+\index{radarParseSetPositionMinMax@{radarParseSetPositionMinMax}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarParseSetPositionMinMax()}{radarParseSetPositionMinMax()}}
+{\footnotesize\ttfamily bool radar\+Parse\+Set\+Position\+Min\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data,  }\item[{bool}]{is\+Min }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_a93217053e1875c7eac9c60f4bb30a149}\label{radar_8h_a93217053e1875c7eac9c60f4bb30a149} 
+\index{radar.h@{radar.h}!radarParseSetStep@{radarParseSetStep}}
+\index{radarParseSetStep@{radarParseSetStep}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarParseSetStep()}{radarParseSetStep()}}
+{\footnotesize\ttfamily bool radar\+Parse\+Set\+Step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_a19fed3b3d140e2c18a4122ad7e783ac6}\label{radar_8h_a19fed3b3d140e2c18a4122ad7e783ac6} 
+\index{radar.h@{radar.h}!radarServoStart@{radarServoStart}}
+\index{radarServoStart@{radarServoStart}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarServoStart()}{radarServoStart()}}
+{\footnotesize\ttfamily void radar\+Servo\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_a22df522cbce2d07e06b2c92be3f0349b}\label{radar_8h_a22df522cbce2d07e06b2c92be3f0349b} 
+\index{radar.h@{radar.h}!radarServoStop@{radarServoStop}}
+\index{radarServoStop@{radarServoStop}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarServoStop()}{radarServoStop()}}
+{\footnotesize\ttfamily void radar\+Servo\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_a909f36a45ee821d7528d2f4aee5a1e82}\label{radar_8h_a909f36a45ee821d7528d2f4aee5a1e82} 
+\index{radar.h@{radar.h}!radarServoUpdate@{radarServoUpdate}}
+\index{radarServoUpdate@{radarServoUpdate}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarServoUpdate()}{radarServoUpdate()}}
+{\footnotesize\ttfamily void radar\+Servo\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_aed51c9df6791df40aa7f91d19cd4cb06}\label{radar_8h_aed51c9df6791df40aa7f91d19cd4cb06} 
+\index{radar.h@{radar.h}!radarSetMeasureFreq@{radarSetMeasureFreq}}
+\index{radarSetMeasureFreq@{radarSetMeasureFreq}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarSetMeasureFreq()}{radarSetMeasureFreq()}}
+{\footnotesize\ttfamily bool radar\+Set\+Measure\+Freq (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{uint16\+\_\+t}]{period\+Ms }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_ac1d20aa713a5266f7bcee82d90b96abb}\label{radar_8h_ac1d20aa713a5266f7bcee82d90b96abb} 
+\index{radar.h@{radar.h}!radarSetPosition@{radarSetPosition}}
+\index{radarSetPosition@{radarSetPosition}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarSetPosition()}{radarSetPosition()}}
+{\footnotesize\ttfamily bool radar\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{float}]{pos }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_affc98cfe5b10eb360e5e2aff374b0eaa}\label{radar_8h_affc98cfe5b10eb360e5e2aff374b0eaa} 
+\index{radar.h@{radar.h}!radarSetPositionMax@{radarSetPositionMax}}
+\index{radarSetPositionMax@{radarSetPositionMax}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarSetPositionMax()}{radarSetPositionMax()}}
+{\footnotesize\ttfamily bool radar\+Set\+Position\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{float}]{pos }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_a4ba239034505324ee3dee22dfd0254e1}\label{radar_8h_a4ba239034505324ee3dee22dfd0254e1} 
+\index{radar.h@{radar.h}!radarSetPositionMin@{radarSetPositionMin}}
+\index{radarSetPositionMin@{radarSetPositionMin}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarSetPositionMin()}{radarSetPositionMin()}}
+{\footnotesize\ttfamily bool radar\+Set\+Position\+Min (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{float}]{pos }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_aa4b19eb1148531f570f708bb4ee262cc}\label{radar_8h_aa4b19eb1148531f570f708bb4ee262cc} 
+\index{radar.h@{radar.h}!radarSetPositionUpdatePeriod@{radarSetPositionUpdatePeriod}}
+\index{radarSetPositionUpdatePeriod@{radarSetPositionUpdatePeriod}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarSetPositionUpdatePeriod()}{radarSetPositionUpdatePeriod()}}
+{\footnotesize\ttfamily bool radar\+Set\+Position\+Update\+Period (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{uint16\+\_\+t}]{period\+Ms }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_a3eaae4e20f433f2c438c8f94caaaae99}\label{radar_8h_a3eaae4e20f433f2c438c8f94caaaae99} 
+\index{radar.h@{radar.h}!radarSetPositionUpdateStep@{radarSetPositionUpdateStep}}
+\index{radarSetPositionUpdateStep@{radarSetPositionUpdateStep}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarSetPositionUpdateStep()}{radarSetPositionUpdateStep()}}
+{\footnotesize\ttfamily bool radar\+Set\+Position\+Update\+Step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{float}]{step }\end{DoxyParamCaption})}
+
+\Hypertarget{radar_8h_a190f69a9906f7f4c05b19e814bf1b2ce}\label{radar_8h_a190f69a9906f7f4c05b19e814bf1b2ce} 
+\index{radar.h@{radar.h}!radarTriggerMeasure@{radarTriggerMeasure}}
+\index{radarTriggerMeasure@{radarTriggerMeasure}!radar.h@{radar.h}}
+\doxysubsubsection{\texorpdfstring{radarTriggerMeasure()}{radarTriggerMeasure()}}
+{\footnotesize\ttfamily void radar\+Trigger\+Measure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

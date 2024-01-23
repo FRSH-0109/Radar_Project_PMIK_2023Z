@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_d_b_g___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>DBG_TypeDef</compoundname>
+    <includes refid="stm32g030xx_8h" local="no">stm32g030xx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_d_b_g___type_def_1a24df28d0e440321b21f6f07b3bb93dea" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t IDCODE</definition>
+        <argsstring></argsstring>
+        <name>IDCODE</name>
+        <qualifiedname>DBG_TypeDef::IDCODE</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MCU device ID code, Address offset: 0x00 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="173" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_b_g___type_def_1ab40c89c59391aaa9d9a8ec011dd0907a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <qualifiedname>DBG_TypeDef::CR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Debug configuration register, Address offset: 0x04 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="174" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_b_g___type_def_1a2089cf326ba112b24ab3d49e481ade19" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t APBFZ1</definition>
+        <argsstring></argsstring>
+        <name>APBFZ1</name>
+        <qualifiedname>DBG_TypeDef::APBFZ1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Debug APB freeze register 1, Address offset: 0x08 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="175" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_b_g___type_def_1a92d1ff22a51d7e9f0753b46ffb8c892c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t APBFZ2</definition>
+        <argsstring></argsstring>
+        <name>APBFZ2</name>
+        <qualifiedname>DBG_TypeDef::APBFZ2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Debug APB freeze register 2, Address offset: 0x0C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="176" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Debug MCU. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="171" column="1" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="172" bodyend="177"/>
+    <listofallmembers>
+      <member refid="struct_d_b_g___type_def_1a2089cf326ba112b24ab3d49e481ade19" prot="public" virt="non-virtual"><scope>DBG_TypeDef</scope><name>APBFZ1</name></member>
+      <member refid="struct_d_b_g___type_def_1a92d1ff22a51d7e9f0753b46ffb8c892c" prot="public" virt="non-virtual"><scope>DBG_TypeDef</scope><name>APBFZ2</name></member>
+      <member refid="struct_d_b_g___type_def_1ab40c89c59391aaa9d9a8ec011dd0907a" prot="public" virt="non-virtual"><scope>DBG_TypeDef</scope><name>CR</name></member>
+      <member refid="struct_d_b_g___type_def_1a24df28d0e440321b21f6f07b3bb93dea" prot="public" virt="non-virtual"><scope>DBG_TypeDef</scope><name>IDCODE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

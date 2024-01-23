@@ -1,0 +1,75 @@
+.TH "radarStruct" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+radarStruct
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <radar\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBservoDriverStruct\fP * \fBservo\fP"
+.br
+.ti -1c
+.RI "float \fBposition\fP"
+.br
+.ti -1c
+.RI "\fBTIM_HandleTypeDef\fP * \fBservoTim\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBpositionUpdatePeriodMs\fP"
+.br
+.ti -1c
+.RI "float \fBpositionUpdateStep\fP"
+.br
+.ti -1c
+.RI "float \fBpositionMin\fP"
+.br
+.ti -1c
+.RI "float \fBpositionMax\fP"
+.br
+.ti -1c
+.RI "int8_t \fBdirection\fP"
+.br
+.ti -1c
+.RI "\fBdistanceSensorStruct\fP * \fBsensor\fP"
+.br
+.ti -1c
+.RI "\fBTIM_HandleTypeDef\fP * \fBsensorTim\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBmeasurePeriodMs\fP"
+.br
+.in -1c
+.SH "Member Data Documentation"
+.PP 
+.SS "int8_t radarStruct::direction"
+
+.SS "uint16_t radarStruct::measurePeriodMs"
+
+.SS "float radarStruct::position"
+
+.SS "float radarStruct::positionMax"
+
+.SS "float radarStruct::positionMin"
+
+.SS "uint16_t radarStruct::positionUpdatePeriodMs"
+
+.SS "float radarStruct::positionUpdateStep"
+
+.SS "\fBdistanceSensorStruct\fP* radarStruct::sensor"
+
+.SS "\fBTIM_HandleTypeDef\fP* radarStruct::sensorTim"
+
+.SS "\fBservoDriverStruct\fP* radarStruct::servo"
+
+.SS "\fBTIM_HandleTypeDef\fP* radarStruct::servoTim"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

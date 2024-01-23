@@ -1,0 +1,132 @@
+.TH "UART_Exported_Types" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Exported_Types \- UART Exported Types
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBUART_InitTypeDef\fP"
+.br
+.RI "UART Init Structure definition\&. "
+.ti -1c
+.RI "struct \fBUART_AdvFeatureInitTypeDef\fP"
+.br
+.RI "UART Advanced Features initialization structure definition\&. "
+.ti -1c
+.RI "struct \fB__UART_HandleTypeDef\fP"
+.br
+.RI "UART handle Structure definition\&. "
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef uint32_t \fBHAL_UART_StateTypeDef\fP"
+.br
+.RI "HAL UART State definition\&. "
+.ti -1c
+.RI "typedef uint32_t \fBHAL_UART_RxTypeTypeDef\fP"
+.br
+.RI "HAL UART Reception type definition\&. "
+.ti -1c
+.RI "typedef uint32_t \fBHAL_UART_RxEventTypeTypeDef\fP"
+.br
+.RI "HAL UART Rx Event type definition\&. "
+.ti -1c
+.RI "typedef struct \fB__UART_HandleTypeDef\fP \fBUART_HandleTypeDef\fP"
+.br
+.RI "UART handle Structure definition\&. "
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBUART_ClockSourceTypeDef\fP { \fBUART_CLOCKSOURCE_PCLK1\fP = 0x00U, \fBUART_CLOCKSOURCE_HSI\fP = 0x02U, \fBUART_CLOCKSOURCE_SYSCLK\fP = 0x04U, \fBUART_CLOCKSOURCE_LSE\fP = 0x08U, \fBUART_CLOCKSOURCE_UNDEFINED\fP = 0x10U }"
+.br
+.RI "UART clock sources definition\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef uint32_t \fBHAL_UART_RxEventTypeTypeDef\fP"
+
+.PP
+HAL UART Rx Event type definition\&. 
+.PP
+\fBNote\fP
+.RS 4
+HAL UART Rx Event type value aims to identify which type of Event has occurred leading to call of the RxEvent callback\&. This parameter can be a value of \fBUART RxEvent type values\fP : HAL_UART_RXEVENT_TC = 0x00U, HAL_UART_RXEVENT_HT = 0x01U, HAL_UART_RXEVENT_IDLE = 0x02U, 
+.RE
+.PP
+
+.SS "typedef uint32_t \fBHAL_UART_RxTypeTypeDef\fP"
+
+.PP
+HAL UART Reception type definition\&. 
+.PP
+\fBNote\fP
+.RS 4
+HAL UART Reception type value aims to identify which type of Reception is ongoing\&. This parameter can be a value of \fBUART Reception type values\fP : HAL_UART_RECEPTION_STANDARD = 0x00U, HAL_UART_RECEPTION_TOIDLE = 0x01U, HAL_UART_RECEPTION_TORTO = 0x02U, HAL_UART_RECEPTION_TOCHARMATCH = 0x03U, 
+.RE
+.PP
+
+.SS "typedef uint32_t \fBHAL_UART_StateTypeDef\fP"
+
+.PP
+HAL UART State definition\&. 
+.PP
+\fBNote\fP
+.RS 4
+HAL UART State value is a combination of 2 different substates: gState and RxState (see \fBUART State Code Definition\fP)\&.
+.IP "\(bu" 2
+gState contains UART state information related to global Handle management and also information related to Tx operations\&. gState value coding follow below described bitmap : b7-b6 Error information 00 : No Error 01 : (Not Used) 10 : Timeout 11 : Error b5 Peripheral initialization status 0 : Reset (Peripheral not initialized) 1 : Init done (Peripheral initialized\&. HAL UART Init function already called) b4-b3 (not used) xx : Should be set to 00 b2 Intrinsic process state 0 : Ready 1 : Busy (Peripheral busy with some configuration or internal operations) b1 (not used) x : Should be set to 0 b0 Tx state 0 : Ready (no Tx operation ongoing) 1 : Busy (Tx operation ongoing)
+.IP "\(bu" 2
+RxState contains information related to Rx operations\&. RxState value coding follow below described bitmap : b7-b6 (not used) xx : Should be set to 00 b5 Peripheral initialization status 0 : Reset (Peripheral not initialized) 1 : Init done (Peripheral initialized) b4-b2 (not used) xxx : Should be set to 000 b1 Rx state 0 : Ready (no Rx operation ongoing) 1 : Busy (Rx operation ongoing) b0 (not used) x : Should be set to 0\&. 
+.PP
+.RE
+.PP
+
+.SS "typedef struct \fB__UART_HandleTypeDef\fP \fBUART_HandleTypeDef\fP"
+
+.PP
+UART handle Structure definition\&. 
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBUART_ClockSourceTypeDef\fP"
+
+.PP
+UART clock sources definition\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUART_CLOCKSOURCE_PCLK1 \fP\fP
+PCLK1 clock source 
+.br
+ 
+.TP
+\fB\fIUART_CLOCKSOURCE_HSI \fP\fP
+HSI clock source 
+.br
+ 
+.TP
+\fB\fIUART_CLOCKSOURCE_SYSCLK \fP\fP
+SYSCLK clock source 
+.TP
+\fB\fIUART_CLOCKSOURCE_LSE \fP\fP
+LSE clock source 
+.br
+ 
+.TP
+\fB\fIUART_CLOCKSOURCE_UNDEFINED \fP\fP
+Undefined clock source 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

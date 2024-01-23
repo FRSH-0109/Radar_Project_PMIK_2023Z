@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="stm32g0xx__hal__dma__ex_8h" kind="file" language="C++">
+    <compoundname>stm32g0xx_hal_dma_ex.h</compoundname>
+    <includes refid="stm32g0xx__hal__def_8h" local="yes">stm32g0xx_hal_def.h</includes>
+    <includes refid="stm32g0xx__ll__dmamux_8h" local="yes">stm32g0xx_ll_dmamux.h</includes>
+    <includedby refid="stm32g0xx__hal__dma_8h" local="yes">Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="4">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="2">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h</label>
+        <link refid="stm32g0xx__hal__dma__ex_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32g0xx_ll_dmamux.h</label>
+        <link refid="stm32g0xx__ll__dmamux_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>Core/Inc/dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Core/Inc/gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Core/Inc/main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Core/Inc/spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Core/Inc/stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Core/Inc/tim.h</label>
+        <link refid="tim_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Core/Inc/usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Core/Src/dma.c</label>
+        <link refid="dma_8c"/>
+      </node>
+      <node id="10">
+        <label>Core/Src/gpio.c</label>
+        <link refid="gpio_8c"/>
+      </node>
+      <node id="8">
+        <label>Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="12">
+        <label>Core/Src/spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="18">
+        <label>Core/Src/stm32g0xx_hal_msp.c</label>
+        <link refid="stm32g0xx__hal__msp_8c"/>
+      </node>
+      <node id="19">
+        <label>Core/Src/stm32g0xx_it.c</label>
+        <link refid="stm32g0xx__it_8c"/>
+      </node>
+      <node id="14">
+        <label>Core/Src/tim.c</label>
+        <link refid="tim_8c"/>
+      </node>
+      <node id="16">
+        <label>Core/Src/usart.c</label>
+        <link refid="usart_8c"/>
+      </node>
+      <node id="4">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h</label>
+        <link refid="stm32g0xx__hal__dma_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h</label>
+        <link refid="stm32g0xx__hal__dma__ex_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c</label>
+        <link refid="stm32g0xx__hal_8c"/>
+      </node>
+      <node id="25">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c</label>
+        <link refid="stm32g0xx__hal__cortex_8c"/>
+      </node>
+      <node id="26">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c</label>
+        <link refid="stm32g0xx__hal__dma_8c"/>
+      </node>
+      <node id="27">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c</label>
+        <link refid="stm32g0xx__hal__dma__ex_8c"/>
+      </node>
+      <node id="28">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c</label>
+        <link refid="stm32g0xx__hal__exti_8c"/>
+      </node>
+      <node id="29">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c</label>
+        <link refid="stm32g0xx__hal__flash_8c"/>
+      </node>
+      <node id="30">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c</label>
+        <link refid="stm32g0xx__hal__flash__ex_8c"/>
+      </node>
+      <node id="31">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c</label>
+        <link refid="stm32g0xx__hal__gpio_8c"/>
+      </node>
+      <node id="32">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c</label>
+        <link refid="stm32g0xx__hal__pwr_8c"/>
+      </node>
+      <node id="33">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8c"/>
+      </node>
+      <node id="34">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c</label>
+        <link refid="stm32g0xx__hal__rcc_8c"/>
+      </node>
+      <node id="35">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8c"/>
+      </node>
+      <node id="36">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c</label>
+        <link refid="stm32g0xx__hal__spi_8c"/>
+      </node>
+      <node id="37">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c</label>
+        <link refid="stm32g0xx__hal__spi__ex_8c"/>
+      </node>
+      <node id="38">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c</label>
+        <link refid="stm32g0xx__hal__tim_8c"/>
+      </node>
+      <node id="39">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c</label>
+        <link refid="stm32g0xx__hal__tim__ex_8c"/>
+      </node>
+      <node id="40">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c</label>
+        <link refid="stm32g0xx__hal__uart_8c"/>
+      </node>
+      <node id="41">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c</label>
+        <link refid="stm32g0xx__hal__uart__ex_8c"/>
+      </node>
+      <node id="20">
+        <label>RadarApp/DisplayDriver/GFX_Color.c</label>
+        <link refid="_g_f_x___color_8c"/>
+      </node>
+      <node id="21">
+        <label>RadarApp/DisplayDriver/ILI9341.c</label>
+        <link refid="_i_l_i9341_8c"/>
+      </node>
+      <node id="23">
+        <label>RadarApp/RadarDriver/radar.c</label>
+        <link refid="radar_8c"/>
+      </node>
+      <node id="22">
+        <label>RadarApp/RadarDriver/radar.h</label>
+        <link refid="radar_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>RadarApp/usart_custom/usart_custom.c</label>
+        <link refid="usart__custom_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_h_a_l___d_m_a___mux_sync_config_type_def" prot="public">HAL_DMA_MuxSyncConfigTypeDef</innerclass>
+    <innerclass refid="struct_h_a_l___d_m_a___mux_request_generator_config_type_def" prot="public">HAL_DMA_MuxRequestGeneratorConfigTypeDef</innerclass>
+    <sectiondef kind="define">
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga820c02372d1c1e24144e59727239effc" kind="define"><name>HAL_DMAMUX1_SYNC_EXTI0</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga85872e27e47f90cab700dc10a833cd94" kind="define"><name>HAL_DMAMUX1_SYNC_EXTI1</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga5d2208e5bab872e1904ac24da145aaac" kind="define"><name>HAL_DMAMUX1_SYNC_EXTI2</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga49aebb8a5b594132c81cfe58d62d8f34" kind="define"><name>HAL_DMAMUX1_SYNC_EXTI3</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gacdf6ba29dcd1234bb57c4d83df047291" kind="define"><name>HAL_DMAMUX1_SYNC_EXTI4</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gaf1d52fc4ad3572ec61d51d7d74e36da7" kind="define"><name>HAL_DMAMUX1_SYNC_EXTI5</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gabc1dd752adce7b6bda440589581cc62f" kind="define"><name>HAL_DMAMUX1_SYNC_EXTI6</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga57dd336957c9a0768f9e596bfad937bd" kind="define"><name>HAL_DMAMUX1_SYNC_EXTI7</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga52a58e2dbcf0ecd1153697c4fb9d97bd" kind="define"><name>HAL_DMAMUX1_SYNC_EXTI8</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gad9e216a8ee3525c6123d04c3c802f501" kind="define"><name>HAL_DMAMUX1_SYNC_EXTI9</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gaf2cbc2c0a04f54d948fad74714b6c5e1" kind="define"><name>HAL_DMAMUX1_SYNC_EXTI10</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gabae269717cd3e6da8a7a0889b680038b" kind="define"><name>HAL_DMAMUX1_SYNC_EXTI11</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga873be2e68973752ffab5fb15266cf8a2" kind="define"><name>HAL_DMAMUX1_SYNC_EXTI12</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gad45c424c88e14920ff6b209c33beb6ff" kind="define"><name>HAL_DMAMUX1_SYNC_EXTI13</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga18c49a9d0bd809b17524dcf55c5a4b31" kind="define"><name>HAL_DMAMUX1_SYNC_EXTI14</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga3287c620a3cfcc08306ca2c947ef8f14" kind="define"><name>HAL_DMAMUX1_SYNC_EXTI15</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gadada2b2b68e80ed05b4d411deecdbe72" kind="define"><name>HAL_DMAMUX1_SYNC_DMAMUX1_CH0_EVT</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga2c85590b782b1d7685fa2824e6e94bed" kind="define"><name>HAL_DMAMUX1_SYNC_DMAMUX1_CH1_EVT</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga1e88be8a12f1ee518bd648d28f82c721" kind="define"><name>HAL_DMAMUX1_SYNC_DMAMUX1_CH2_EVT</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gad06a10fa07b43143d5cb968021c53bf8" kind="define"><name>HAL_DMAMUX1_SYNC_DMAMUX1_CH3_EVT</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gacafb763ae86eefa62b63946a64f07668" kind="define"><name>HAL_DMAMUX1_SYNC_TIM14_OC</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gad6552e8ffc06e057a070b186156b34be" kind="define"><name>HAL_DMAMUX1_MAX_SYNC</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_polarity__selection_1gaa8b1d6e81ee59c0628f3bce29ccf134b" kind="define"><name>HAL_DMAMUX_SYNC_NO_EVENT</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_polarity__selection_1gad4f63b3d3f679a6515b32641eac6b7f3" kind="define"><name>HAL_DMAMUX_SYNC_RISING</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_polarity__selection_1gab2ee2ed0e142780a10ffae50c10ea0d3" kind="define"><name>HAL_DMAMUX_SYNC_FALLING</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___sync_polarity__selection_1gab705a14d27bb03f26f81ecd0f18268af" kind="define"><name>HAL_DMAMUX_SYNC_RISING_FALLING</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gaea9fae129d2157cb1cc5f54245bf775f" kind="define"><name>HAL_DMAMUX1_REQ_GEN_EXTI0</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1ga0a7dbbcc102f72b45c582ddd91daf730" kind="define"><name>HAL_DMAMUX1_REQ_GEN_EXTI1</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gaa59a48ac233df6e3fabdfb8c1f3051eb" kind="define"><name>HAL_DMAMUX1_REQ_GEN_EXTI2</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1ga4abdbbe626f440241206011fe0625531" kind="define"><name>HAL_DMAMUX1_REQ_GEN_EXTI3</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gadce976edb40e2330261e974fed3cde19" kind="define"><name>HAL_DMAMUX1_REQ_GEN_EXTI4</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1ga12a4b7568160425188bd67e121372467" kind="define"><name>HAL_DMAMUX1_REQ_GEN_EXTI5</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gacfb6f9d6475a8b9c8d6cfdc78159ac4c" kind="define"><name>HAL_DMAMUX1_REQ_GEN_EXTI6</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gadf52993e07e9f4908b9f695e070e57bc" kind="define"><name>HAL_DMAMUX1_REQ_GEN_EXTI7</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gab329821ec8134716961828b98db57e0e" kind="define"><name>HAL_DMAMUX1_REQ_GEN_EXTI8</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1ga9f60d48ed7a03a85df37f42cec987647" kind="define"><name>HAL_DMAMUX1_REQ_GEN_EXTI9</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1ga58fbf685d82b5aebfcbd233f6247ba6a" kind="define"><name>HAL_DMAMUX1_REQ_GEN_EXTI10</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gaee2bd3e4f3dddf76c1c26b1fb635771a" kind="define"><name>HAL_DMAMUX1_REQ_GEN_EXTI11</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gab3e1a40a191ade22a42aa150a4a2840e" kind="define"><name>HAL_DMAMUX1_REQ_GEN_EXTI12</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gaf7c0454994d4ac7bc6d68153cf725a9d" kind="define"><name>HAL_DMAMUX1_REQ_GEN_EXTI13</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1ga1570a58905d90fcb1d1c854ac3d446f5" kind="define"><name>HAL_DMAMUX1_REQ_GEN_EXTI14</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gaafd457d9685ecb458c1e21cf3dc61504" kind="define"><name>HAL_DMAMUX1_REQ_GEN_EXTI15</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1ga0ab5f1826053b5930dbf66055fc289f5" kind="define"><name>HAL_DMAMUX1_REQ_GEN_DMAMUX1_CH0_EVT</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gaa6baef2e1d0b8a2ae04ada8bd0e2015e" kind="define"><name>HAL_DMAMUX1_REQ_GEN_DMAMUX1_CH1_EVT</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gaa1bf3c5a1be50196d9eb3157630efd24" kind="define"><name>HAL_DMAMUX1_REQ_GEN_DMAMUX1_CH2_EVT</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gaacef9b6f80702aa1218a63059257a4fb" kind="define"><name>HAL_DMAMUX1_REQ_GEN_DMAMUX1_CH3_EVT</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gadef24ca64bc882b2f08de5dc7d38b5d2" kind="define"><name>HAL_DMAMUX1_REQ_GEN_TIM14_OC</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1ga6eaf3dc6865f91160f164ffa94d75608" kind="define"><name>HAL_DMAMUX1_MAX_REQ_GEN</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___request_genenerator_polarity__selection_1gae3aed48930b69abaa33eb22846713c02" kind="define"><name>HAL_DMAMUX_REQ_GEN_NO_EVENT</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___request_genenerator_polarity__selection_1gaaa1f41347f9cb8cb5698ac54cd78a231" kind="define"><name>HAL_DMAMUX_REQ_GEN_RISING</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___request_genenerator_polarity__selection_1ga57ffa0ff2fac3d39f6721068fc5001a8" kind="define"><name>HAL_DMAMUX_REQ_GEN_FALLING</name></member>
+      <member refid="group___d_m_a_ex___d_m_a_m_u_x___request_genenerator_polarity__selection_1ga988e899ab81ba1cffd5e399c890ad298" kind="define"><name>HAL_DMAMUX_REQ_GEN_RISING_FALLING</name></member>
+      <member refid="group___d_m_a_ex___private___macros_1gace9e93ce8fbac8137eb4f4043e398471" kind="define"><name>IS_DMAMUX_SYNC_SIGNAL_ID</name></member>
+      <member refid="group___d_m_a_ex___private___macros_1ga558077b36b0a28f13aa6e3901b0bc3b7" kind="define"><name>IS_DMAMUX_SYNC_REQUEST_NUMBER</name></member>
+      <member refid="group___d_m_a_ex___private___macros_1gaaa05d69b908dd2d78540da6997590012" kind="define"><name>IS_DMAMUX_SYNC_POLARITY</name></member>
+      <member refid="group___d_m_a_ex___private___macros_1gabef88bd7531f3bc3a9cb807f76b243f0" kind="define"><name>IS_DMAMUX_SYNC_STATE</name></member>
+      <member refid="group___d_m_a_ex___private___macros_1ga8f06cc3561c442ce2fdb192a85bc3d99" kind="define"><name>IS_DMAMUX_SYNC_EVENT</name></member>
+      <member refid="group___d_m_a_ex___private___macros_1ga6e68deba3ecfe83dfe73a42730e56dbd" kind="define"><name>IS_DMAMUX_REQUEST_GEN_SIGNAL_ID</name></member>
+      <member refid="group___d_m_a_ex___private___macros_1ga2e93828eacf890335947826617002477" kind="define"><name>IS_DMAMUX_REQUEST_GEN_REQUEST_NUMBER</name></member>
+      <member refid="group___d_m_a_ex___private___macros_1ga221ba2c84284ddc0cf883b6ce91a3652" kind="define"><name>IS_DMAMUX_REQUEST_GEN_POLARITY</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group___d_m_a_ex___exported___functions___group1_1gaf0ce6122a4aae8570d7998abbcf808c2" kind="function"><name>HAL_DMAEx_ConfigMuxRequestGenerator</name></member>
+      <member refid="group___d_m_a_ex___exported___functions___group1_1ga786b1f03f07515586bafd9f5a2ef44e8" kind="function"><name>HAL_DMAEx_EnableMuxRequestGenerator</name></member>
+      <member refid="group___d_m_a_ex___exported___functions___group1_1ga073619d9b9501a03c6c95e558f17c0cf" kind="function"><name>HAL_DMAEx_DisableMuxRequestGenerator</name></member>
+      <member refid="group___d_m_a_ex___exported___functions___group1_1gad719bdb39e95faa2070b64ce85682d7e" kind="function"><name>HAL_DMAEx_ConfigMuxSync</name></member>
+      <member refid="group___d_m_a_ex___exported___functions___group1_1ga2ed4f769237d01666549b6b1cc1902c7" kind="function"><name>HAL_DMAEx_MUX_IRQHandler</name></member>
+    </sectiondef>
+    <briefdescription>
+<para>Header file of DMA HAL extension module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team </para>
+</simplesect>
+<simplesect kind="attention"><para></para>
+</simplesect>
+Copyright (c) 2018 STMicroelectronics. All rights reserved.</para>
+<para>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>STM32G0xx_HAL_DMA_EX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32G0xx_HAL_DMA_EX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32g0xx__hal__def_8h" kindref="compound">stm32g0xx_hal_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32g0xx__ll__dmamux_8h" kindref="compound">stm32g0xx_ll_dmamux.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>types<sp/>------------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="47" refid="struct_h_a_l___d_m_a___mux_sync_config_type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49" refid="struct_h_a_l___d_m_a___mux_sync_config_type_def_1a4ef93606c67966acc563bf0310deb41a" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_h_a_l___d_m_a___mux_sync_config_type_def_1a4ef93606c67966acc563bf0310deb41a" kindref="member">SyncSignalID</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="struct_h_a_l___d_m_a___mux_sync_config_type_def_1a37e1815fbee67df61d816d67b25862b0" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_h_a_l___d_m_a___mux_sync_config_type_def_1a37e1815fbee67df61d816d67b25862b0" kindref="member">SyncPolarity</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="struct_h_a_l___d_m_a___mux_sync_config_type_def_1ac2b94fdec06b819485f9e2d5460458b9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref><sp/><ref refid="struct_h_a_l___d_m_a___mux_sync_config_type_def_1ac2b94fdec06b819485f9e2d5460458b9" kindref="member">SyncEnable</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="struct_h_a_l___d_m_a___mux_sync_config_type_def_1a5ee470a808913e5869eb96c47a72d714" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___exported__types_1gac9a7e9a35d2513ec15c3b537aaa4fba1" kindref="member">FunctionalState</ref><sp/><ref refid="struct_h_a_l___d_m_a___mux_sync_config_type_def_1a5ee470a808913e5869eb96c47a72d714" kindref="member">EventEnable</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="struct_h_a_l___d_m_a___mux_sync_config_type_def_1aa98130d429e9c3f42fc783fa8d70a00f" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_h_a_l___d_m_a___mux_sync_config_type_def_1aa98130d429e9c3f42fc783fa8d70a00f" kindref="member">RequestNumber</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}<sp/><ref refid="struct_h_a_l___d_m_a___mux_sync_config_type_def" kindref="compound">HAL_DMA_MuxSyncConfigTypeDef</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="struct_h_a_l___d_m_a___mux_request_generator_config_type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73" refid="struct_h_a_l___d_m_a___mux_request_generator_config_type_def_1a87987c676e576d350e77f0fbc51391e2" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_h_a_l___d_m_a___mux_request_generator_config_type_def_1a87987c676e576d350e77f0fbc51391e2" kindref="member">SignalID</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="struct_h_a_l___d_m_a___mux_request_generator_config_type_def_1aa8163c013b720459c0e6a92c84d5bef9" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_h_a_l___d_m_a___mux_request_generator_config_type_def_1aa8163c013b720459c0e6a92c84d5bef9" kindref="member">Polarity</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79" refid="struct_h_a_l___d_m_a___mux_request_generator_config_type_def_1aa98130d429e9c3f42fc783fa8d70a00f" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_h_a_l___d_m_a___mux_request_generator_config_type_def_1aa98130d429e9c3f42fc783fa8d70a00f" kindref="member">RequestNumber</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}<sp/><ref refid="struct_h_a_l___d_m_a___mux_request_generator_config_type_def" kindref="compound">HAL_DMA_MuxRequestGeneratorConfigTypeDef</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>constants<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="96" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga820c02372d1c1e24144e59727239effc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_EXTI0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_EXTI_LINE0<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga85872e27e47f90cab700dc10a833cd94" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_EXTI1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_EXTI_LINE1<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga5d2208e5bab872e1904ac24da145aaac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_EXTI2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_EXTI_LINE2<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga49aebb8a5b594132c81cfe58d62d8f34" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_EXTI3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_EXTI_LINE3<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gacdf6ba29dcd1234bb57c4d83df047291" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_EXTI4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_EXTI_LINE4<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gaf1d52fc4ad3572ec61d51d7d74e36da7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_EXTI5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_EXTI_LINE5<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gabc1dd752adce7b6bda440589581cc62f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_EXTI6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_EXTI_LINE6<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga57dd336957c9a0768f9e596bfad937bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_EXTI7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_EXTI_LINE7<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga52a58e2dbcf0ecd1153697c4fb9d97bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_EXTI8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_EXTI_LINE8<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gad9e216a8ee3525c6123d04c3c802f501" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_EXTI9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_EXTI_LINE9<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gaf2cbc2c0a04f54d948fad74714b6c5e1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_EXTI10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_EXTI_LINE10<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gabae269717cd3e6da8a7a0889b680038b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_EXTI11<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_EXTI_LINE11<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga873be2e68973752ffab5fb15266cf8a2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_EXTI12<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_EXTI_LINE12<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gad45c424c88e14920ff6b209c33beb6ff" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_EXTI13<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_EXTI_LINE13<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga18c49a9d0bd809b17524dcf55c5a4b31" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_EXTI14<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_EXTI_LINE14<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga3287c620a3cfcc08306ca2c947ef8f14" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_EXTI15<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_EXTI_LINE15<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gadada2b2b68e80ed05b4d411deecdbe72" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_DMAMUX1_CH0_EVT<sp/><sp/>LL_DMAMUX_SYNC_DMAMUX_CH0<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga2c85590b782b1d7685fa2824e6e94bed" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_DMAMUX1_CH1_EVT<sp/><sp/>LL_DMAMUX_SYNC_DMAMUX_CH1<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1ga1e88be8a12f1ee518bd648d28f82c721" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_DMAMUX1_CH2_EVT<sp/><sp/>LL_DMAMUX_SYNC_DMAMUX_CH2<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gad06a10fa07b43143d5cb968021c53bf8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_DMAMUX1_CH3_EVT<sp/><sp/>LL_DMAMUX_SYNC_DMAMUX_CH3<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LPTIM1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_LPTIM1_OUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_LPTIM1_OUT<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LPTIM1<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LPTIM2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_LPTIM2_OUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_LPTIM2_OUT<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LPTIM2<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gacafb763ae86eefa62b63946a64f07668" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_SYNC_TIM14_OC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_TIM14_OC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_signal_i_d__selection_1gad6552e8ffc06e057a070b186156b34be" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_MAX_SYNC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_DMAMUX1_SYNC_TIM14_OC</highlight></codeline>
+<codeline lineno="132" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_polarity__selection_1gaa8b1d6e81ee59c0628f3bce29ccf134b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX_SYNC_NO_EVENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_NO_EVENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_polarity__selection_1gad4f63b3d3f679a6515b32641eac6b7f3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX_SYNC_RISING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_POL_RISING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_polarity__selection_1gab2ee2ed0e142780a10ffae50c10ea0d3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX_SYNC_FALLING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_POL_FALLING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="group___d_m_a_ex___d_m_a_m_u_x___sync_polarity__selection_1gab705a14d27bb03f26f81ecd0f18268af" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX_SYNC_RISING_FALLING<sp/><sp/><sp/><sp/>LL_DMAMUX_SYNC_POL_RISING_FALLING<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gaea9fae129d2157cb1cc5f54245bf775f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_EXTI0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE0<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1ga0a7dbbcc102f72b45c582ddd91daf730" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_EXTI1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE1<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gaa59a48ac233df6e3fabdfb8c1f3051eb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_EXTI2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE2<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1ga4abdbbe626f440241206011fe0625531" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_EXTI3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE3<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gadce976edb40e2330261e974fed3cde19" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_EXTI4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE4<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1ga12a4b7568160425188bd67e121372467" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_EXTI5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE5<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gacfb6f9d6475a8b9c8d6cfdc78159ac4c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_EXTI6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE6<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gadf52993e07e9f4908b9f695e070e57bc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_EXTI7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE7<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gab329821ec8134716961828b98db57e0e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_EXTI8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE8<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1ga9f60d48ed7a03a85df37f42cec987647" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_EXTI9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE9<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1ga58fbf685d82b5aebfcbd233f6247ba6a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_EXTI10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE10<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gaee2bd3e4f3dddf76c1c26b1fb635771a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_EXTI11<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE11<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gab3e1a40a191ade22a42aa150a4a2840e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_EXTI12<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE12<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gaf7c0454994d4ac7bc6d68153cf725a9d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_EXTI13<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE13<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1ga1570a58905d90fcb1d1c854ac3d446f5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_EXTI14<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE14<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gaafd457d9685ecb458c1e21cf3dc61504" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_EXTI15<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_EXTI_LINE15<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1ga0ab5f1826053b5930dbf66055fc289f5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_DMAMUX1_CH0_EVT<sp/><sp/>LL_DMAMUX_REQ_GEN_DMAMUX_CH0<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gaa6baef2e1d0b8a2ae04ada8bd0e2015e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_DMAMUX1_CH1_EVT<sp/><sp/>LL_DMAMUX_REQ_GEN_DMAMUX_CH1<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gaa1bf3c5a1be50196d9eb3157630efd24" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_DMAMUX1_CH2_EVT<sp/><sp/>LL_DMAMUX_REQ_GEN_DMAMUX_CH2<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gaacef9b6f80702aa1218a63059257a4fb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_DMAMUX1_CH3_EVT<sp/><sp/>LL_DMAMUX_REQ_GEN_DMAMUX_CH3<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LPTIM1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_LPTIM1_OUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_LPTIM1_OUT<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LPTIM1<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LPTIM2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_LPTIM2_OUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_LPTIM2_OUT<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LPTIM2<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1gadef24ca64bc882b2f08de5dc7d38b5d2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_REQ_GEN_TIM14_OC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_TIM14_OC<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection_1ga6eaf3dc6865f91160f164ffa94d75608" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX1_MAX_REQ_GEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_DMAMUX1_REQ_GEN_TIM14_OC</highlight></codeline>
+<codeline lineno="180" refid="group___d_m_a_ex___d_m_a_m_u_x___request_genenerator_polarity__selection_1gae3aed48930b69abaa33eb22846713c02" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX_REQ_GEN_NO_EVENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_NO_EVENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="group___d_m_a_ex___d_m_a_m_u_x___request_genenerator_polarity__selection_1gaaa1f41347f9cb8cb5698ac54cd78a231" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX_REQ_GEN_RISING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_POL_RISING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="group___d_m_a_ex___d_m_a_m_u_x___request_genenerator_polarity__selection_1ga57ffa0ff2fac3d39f6721068fc5001a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX_REQ_GEN_FALLING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_DMAMUX_REQ_GEN_POL_FALLING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="group___d_m_a_ex___d_m_a_m_u_x___request_genenerator_polarity__selection_1ga988e899ab81ba1cffd5e399c890ad298" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_DMAMUX_REQ_GEN_RISING_FALLING<sp/>LL_DMAMUX_REQ_GEN_POL_RISING_FALLING<sp/><sp/></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>macro<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>functions<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>IO<sp/>operation<sp/>functions<sp/>*****************************************************/</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------<sp/>REQUEST<sp/>-----------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="group___d_m_a_ex___exported___functions___group1_1gaf0ce6122a4aae8570d7998abbcf808c2" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___d_m_a_ex___exported___functions___group1_1gaf0ce6122a4aae8570d7998abbcf808c2" kindref="member">HAL_DMAEx_ConfigMuxRequestGenerator</ref>(<ref refid="struct_____d_m_a___handle_type_def" kindref="compound">DMA_HandleTypeDef</ref><sp/>*hdma,</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_h_a_l___d_m_a___mux_request_generator_config_type_def" kindref="compound">HAL_DMA_MuxRequestGeneratorConfigTypeDef</ref><sp/>*pRequestGeneratorConfig);</highlight></codeline>
+<codeline lineno="208" refid="group___d_m_a_ex___exported___functions___group1_1ga786b1f03f07515586bafd9f5a2ef44e8" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___d_m_a_ex___exported___functions___group1_1ga786b1f03f07515586bafd9f5a2ef44e8" kindref="member">HAL_DMAEx_EnableMuxRequestGenerator</ref>(<ref refid="struct_____d_m_a___handle_type_def" kindref="compound">DMA_HandleTypeDef</ref><sp/>*hdma);</highlight></codeline>
+<codeline lineno="209" refid="group___d_m_a_ex___exported___functions___group1_1ga073619d9b9501a03c6c95e558f17c0cf" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___d_m_a_ex___exported___functions___group1_1ga073619d9b9501a03c6c95e558f17c0cf" kindref="member">HAL_DMAEx_DisableMuxRequestGenerator</ref>(<ref refid="struct_____d_m_a___handle_type_def" kindref="compound">DMA_HandleTypeDef</ref><sp/>*hdma);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>--------------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------<sp/>SYNCHRO<sp/>-----------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="group___d_m_a_ex___exported___functions___group1_1gad719bdb39e95faa2070b64ce85682d7e" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___d_m_a_ex___exported___functions___group1_1gad719bdb39e95faa2070b64ce85682d7e" kindref="member">HAL_DMAEx_ConfigMuxSync</ref>(<ref refid="struct_____d_m_a___handle_type_def" kindref="compound">DMA_HandleTypeDef</ref><sp/>*hdma,<sp/><ref refid="struct_h_a_l___d_m_a___mux_sync_config_type_def" kindref="compound">HAL_DMA_MuxSyncConfigTypeDef</ref><sp/>*pSyncConfig);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>--------------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="group___d_m_a_ex___exported___functions___group1_1ga2ed4f769237d01666549b6b1cc1902c7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___d_m_a_ex___exported___functions___group1_1ga2ed4f769237d01666549b6b1cc1902c7" kindref="member">HAL_DMAEx_MUX_IRQHandler</ref>(<ref refid="struct_____d_m_a___handle_type_def" kindref="compound">DMA_HandleTypeDef</ref><sp/>*hdma);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>macros<sp/>------------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="233" refid="group___d_m_a_ex___private___macros_1gace9e93ce8fbac8137eb4f4043e398471" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_DMAMUX_SYNC_SIGNAL_ID(SIGNAL_ID)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((SIGNAL_ID)<sp/>==<sp/>HAL_DMAMUX1_SYNC_EXTI0)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="234"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((SIGNAL_ID)<sp/>&gt;=<sp/>HAL_DMAMUX1_SYNC_EXTI1)<sp/>&amp;&amp;<sp/>\</highlight></codeline>
+<codeline lineno="235"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SIGNAL_ID)<sp/>&lt;=<sp/>HAL_DMAMUX1_MAX_SYNC)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="group___d_m_a_ex___private___macros_1ga558077b36b0a28f13aa6e3901b0bc3b7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_DMAMUX_SYNC_REQUEST_NUMBER(REQUEST_NUMBER)<sp/><sp/><sp/>(((REQUEST_NUMBER)<sp/>&gt;<sp/>0U)<sp/>&amp;&amp;<sp/>((REQUEST_NUMBER)<sp/>&lt;=<sp/>32U))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="group___d_m_a_ex___private___macros_1gaaa05d69b908dd2d78540da6997590012" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_DMAMUX_SYNC_POLARITY(POLARITY)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((POLARITY)<sp/>==<sp/>HAL_DMAMUX_SYNC_NO_EVENT)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="240"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((POLARITY)<sp/>==<sp/>HAL_DMAMUX_SYNC_RISING)<sp/><sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="241"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((POLARITY)<sp/>==<sp/>HAL_DMAMUX_SYNC_FALLING)<sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="242"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((POLARITY)<sp/>==<sp/>HAL_DMAMUX_SYNC_RISING_FALLING))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="group___d_m_a_ex___private___macros_1gabef88bd7531f3bc3a9cb807f76b243f0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_DMAMUX_SYNC_STATE(SYNC)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((SYNC)<sp/>==<sp/>DISABLE)<sp/><sp/><sp/>||<sp/>((SYNC)<sp/>==<sp/>ENABLE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="group___d_m_a_ex___private___macros_1ga8f06cc3561c442ce2fdb192a85bc3d99" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_DMAMUX_SYNC_EVENT(EVENT)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((EVENT)<sp/>==<sp/>DISABLE)<sp/><sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="247"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((EVENT)<sp/>==<sp/>ENABLE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="group___d_m_a_ex___private___macros_1ga6e68deba3ecfe83dfe73a42730e56dbd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_DMAMUX_REQUEST_GEN_SIGNAL_ID(SIGNAL_ID)<sp/><sp/><sp/><sp/><sp/><sp/>(((SIGNAL_ID)<sp/>==<sp/>HAL_DMAMUX1_REQ_GEN_EXTI0)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="250"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((SIGNAL_ID)<sp/>&gt;=<sp/>HAL_DMAMUX1_REQ_GEN_EXTI1)<sp/>&amp;&amp;<sp/>\</highlight></codeline>
+<codeline lineno="251"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SIGNAL_ID)<sp/>&lt;=<sp/>HAL_DMAMUX1_MAX_REQ_GEN)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="group___d_m_a_ex___private___macros_1ga2e93828eacf890335947826617002477" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_DMAMUX_REQUEST_GEN_REQUEST_NUMBER(REQUEST_NUMBER)<sp/>(((REQUEST_NUMBER)<sp/>&gt;<sp/>0U)<sp/>&amp;&amp;<sp/>((REQUEST_NUMBER)<sp/>&lt;=<sp/>32U))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="group___d_m_a_ex___private___macros_1ga221ba2c84284ddc0cf883b6ce91a3652" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_DMAMUX_REQUEST_GEN_POLARITY(POLARITY)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((POLARITY)<sp/>==<sp/>HAL_DMAMUX_REQ_GEN_NO_EVENT)||<sp/>\</highlight></codeline>
+<codeline lineno="256"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((POLARITY)<sp/>==<sp/>HAL_DMAMUX_REQ_GEN_RISING)<sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="257"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((POLARITY)<sp/>==<sp/>HAL_DMAMUX_REQ_GEN_FALLING)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="258"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((POLARITY)<sp/>==<sp/>HAL_DMAMUX_REQ_GEN_RISING_FALLING))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STM32G0xx_HAL_DMA_EX_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h"/>
+  </compounddef>
+</doxygen>

@@ -4,7 +4,6 @@ extern drawHelperStruct drawHelper;
 
 void radarInit(radarStruct* radar, servoDriverStruct* servo, TIM_HandleTypeDef* servo_tim, distanceSensorStruct* sensor, TIM_HandleTypeDef* sensor_tim)
 {
-	//TODO: assert arguments
 	radar->servo = servo;
 	radar->position = 0.0f;
 	radar->servoTim = servo_tim;
@@ -42,7 +41,7 @@ void radarServoUpdate(radarStruct* radar)
 
 bool radarSetPositionMin(radarStruct* radar, float pos)
 {
-	if(pos >= 0.0 && pos <= 180.0 && pos < radar->positionMax)
+	if(pos >= SERVO_MIN_DEGREES && pos <= SERVO_MAX_DEGREES && pos < radar->positionMax)
 	{
 		radar->positionMin = pos;
 		return true;
@@ -58,7 +57,7 @@ float radarGetPositionMin(radarStruct* radar)
 
 bool radarSetPositionMax(radarStruct* radar, float pos)
 {
-	if(pos >= 0.0 && pos <= 180.0 && pos > radar->positionMin)
+	if(pos >= SERVO_MIN_DEGREES && pos <= SERVO_MAX_DEGREES && pos > radar->positionMin)
 	{
 		radar->positionMax = pos;
 		return true;

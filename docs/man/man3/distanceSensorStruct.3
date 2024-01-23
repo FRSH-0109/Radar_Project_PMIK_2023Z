@@ -1,0 +1,43 @@
+.TH "distanceSensorStruct" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+distanceSensorStruct
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <distance_sensor\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBfactor\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBticks\fP"
+.br
+.ti -1c
+.RI "double \fBdistnace\fP"
+.br
+.ti -1c
+.RI "bool \fBreadyToMeasure\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure for control certain sensor 
+.SH "Member Data Documentation"
+.PP 
+.SS "double distanceSensorStruct::distnace"
+Calculated distance from sensor 
+.SS "double distanceSensorStruct::factor"
+Factor for calculation ticks amount to distance 
+.SS "bool distanceSensorStruct::readyToMeasure"
+Flag for controlling sensor behavior wile measurements 
+.SS "uint16_t distanceSensorStruct::ticks"
+Signal length in ticks from distance sensor measurement 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

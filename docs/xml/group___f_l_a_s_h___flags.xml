@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___f_l_a_s_h___flags" kind="group">
+    <compoundname>FLASH_Flags</compoundname>
+    <title>FLASH Flags Definition</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1gaf043ba4d8f837350bfc7754a99fae5a9" prot="public" static="no">
+        <name>FLASH_FLAG_EOP</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" kindref="member">FLASH_FLAG_SR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1ga2013e875c4c210b820e502feea6c9fb1" kindref="member">FLASH_SR_EOP_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH End of operation flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="181" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1gad8a96ceda91fcf0d1299da933b5816f1" prot="public" static="no">
+        <name>FLASH_FLAG_OPERR</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" kindref="member">FLASH_FLAG_SR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1ga66326a667d2cae284b5cfcc54074c286" kindref="member">FLASH_SR_OPERR_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Operation error flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="182" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1ga16feb349d40137ba1d00bc44937fcd33" prot="public" static="no">
+        <name>FLASH_FLAG_PROGERR</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" kindref="member">FLASH_FLAG_SR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1ga68991e09c74ca049836a7a082941b46d" kindref="member">FLASH_SR_PROGERR_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Programming error flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="183" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1ga6abf64f916992585899369166db3f266" prot="public" static="no">
+        <name>FLASH_FLAG_WRPERR</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" kindref="member">FLASH_FLAG_SR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1gace591108151f52fd0f18273c00403b80" kindref="member">FLASH_SR_WRPERR_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Write protection error flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="184" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1ga2c3f4dbea065f8ea2987eada4dab30bd" prot="public" static="no">
+        <name>FLASH_FLAG_PGAERR</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" kindref="member">FLASH_FLAG_SR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1ga1e91ef00a66f31c28b41f990b0a5b57f" kindref="member">FLASH_SR_PGAERR_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Programming alignment error flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="185" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1gac20909664e371d2ca0436a055393f9c4" prot="public" static="no">
+        <name>FLASH_FLAG_SIZERR</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" kindref="member">FLASH_FLAG_SR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1gacc7a92c0d6e0133bf9225a7c57464ff5" kindref="member">FLASH_SR_SIZERR_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Size error flag <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="186" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1ga25b80c716320e667162846da8be09b68" prot="public" static="no">
+        <name>FLASH_FLAG_PGSERR</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" kindref="member">FLASH_FLAG_SR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1gaa714dc154587b83701170e6795646f36" kindref="member">FLASH_SR_PGSERR_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Programming sequence error flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="187" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1ga706480b4a9e153c0affd52bb239925bc" prot="public" static="no">
+        <name>FLASH_FLAG_MISERR</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" kindref="member">FLASH_FLAG_SR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1ga4db50373d858ad6e39867358ad433133" kindref="member">FLASH_SR_MISERR_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Fast programming data miss error flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="188" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1gad8f375a352a04668679609fe25eb1b03" prot="public" static="no">
+        <name>FLASH_FLAG_FASTERR</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" kindref="member">FLASH_FLAG_SR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1ga169b636b4513c45bc86f1b5b6062cdf2" kindref="member">FLASH_SR_FASTERR_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Fast programming error flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="189" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1gacb2c4c991a260c3f110cd8c72f302864" prot="public" static="no">
+        <name>FLASH_FLAG_OPTVERR</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" kindref="member">FLASH_FLAG_SR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1ga6021a832133d2e3a66409e463eeed484" kindref="member">FLASH_SR_OPTVERR_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Option validity error flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="193" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1ga02cbd877d8534450a09c259edb599176" prot="public" static="no">
+        <name>FLASH_FLAG_BSY1</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" kindref="member">FLASH_FLAG_SR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1ga937ce79570b3d6ecb062c4695d56e357" kindref="member">FLASH_SR_BSY1_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Operation Busy flag for Bank 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="194" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1gad3bc368f954ad7744deda3315da2fff7" prot="public" static="no">
+        <name>FLASH_FLAG_BSY</name>
+        <initializer><ref refid="group___f_l_a_s_h___flags_1ga02cbd877d8534450a09c259edb599176" kindref="member">FLASH_FLAG_BSY1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Operation Busy flag - legacy name for single bank </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="198" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1gaa31cc1631af91a80ea3416de835a7e12" prot="public" static="no">
+        <name>FLASH_FLAG_CFGBSY</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" kindref="member">FLASH_FLAG_SR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1gaa7df59c2bd3f5d68decf1fbb88d2a65d" kindref="member">FLASH_SR_CFGBSY_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Configuration Busy flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="199" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1gaeff451eb172193ab40ad206d2c136ff7" prot="public" static="no">
+        <name>FLASH_FLAG_ECCC1</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga12fc6723eee1c92a9ccbbea964c69e81" kindref="member">FLASH_FLAG_ECCR1_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1gada8c599defb92b97d3b22ad4d92d7dde" kindref="member">FLASH_ECCR_ECCC_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH ECC correction on bank 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="203" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1ga1d79a70a87dba5187c4dac48c3d68aa5" prot="public" static="no">
+        <name>FLASH_FLAG_ECCD1</name>
+        <initializer>((<ref refid="group___f_l_a_s_h___private___constants_1ga12fc6723eee1c92a9ccbbea964c69e81" kindref="member">FLASH_FLAG_ECCR1_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>) | <ref refid="group___peripheral___registers___bits___definition_1ga8aef3ce67e593729a6d587d8ac71bacd" kindref="member">FLASH_ECCR_ECCD_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH ECC detection on bank 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="204" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1ga1cbecfb0d93e7ae15054d3a561e7b6ef" prot="public" static="no">
+        <name>FLASH_FLAG_ECCC</name>
+        <initializer><ref refid="group___f_l_a_s_h___flags_1gaeff451eb172193ab40ad206d2c136ff7" kindref="member">FLASH_FLAG_ECCC1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH ECC correction - legacy name for single bank </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="209" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___flags_1ga8de3284440e43c3818efe15bd61ef284" prot="public" static="no">
+        <name>FLASH_FLAG_ECCD</name>
+        <initializer><ref refid="group___f_l_a_s_h___flags_1ga1d79a70a87dba5187c4dac48c3d68aa5" kindref="member">FLASH_FLAG_ECCD1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH ECC detection - legacy name for single bank </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="210" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

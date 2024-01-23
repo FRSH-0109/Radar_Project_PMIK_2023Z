@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_f_l_a_s_h___erase_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>FLASH_EraseInitTypeDef</compoundname>
+    <includes refid="stm32g0xx__hal__flash_8h" local="no">stm32g0xx_hal_flash.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_l_a_s_h___erase_init_type_def_1ae2154c09320f3ef7feb8f4a84e9ac17b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TypeErase</definition>
+        <argsstring></argsstring>
+        <name>TypeErase</name>
+        <qualifiedname>FLASH_EraseInitTypeDef::TypeErase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mass erase or page erase. This parameter can be a value of <ref refid="group___f_l_a_s_h___type___erase" kindref="compound">FLASH Erase Type</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="47" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___erase_init_type_def_1aa07868a5b012861c6111322c3dccdbec" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Banks</definition>
+        <argsstring></argsstring>
+        <name>Banks</name>
+        <qualifiedname>FLASH_EraseInitTypeDef::Banks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Select bank to erase. This parameter must be a value of <ref refid="group___f_l_a_s_h___banks" kindref="compound">FLASH Banks</ref> (FLASH_BANK_BOTH should be used only for mass erase) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="49" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___erase_init_type_def_1ad5ac387429b4b85d2ee00e34559b4a28" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Page</definition>
+        <argsstring></argsstring>
+        <name>Page</name>
+        <qualifiedname>FLASH_EraseInitTypeDef::Page</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initial Flash page to erase when page erase is enabled This parameter must be a value between 0 and (FLASH_PAGE_NB - 1) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="52" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___erase_init_type_def_1a883b193a78c63e993f1d70102eac64b3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t NbPages</definition>
+        <argsstring></argsstring>
+        <name>NbPages</name>
+        <qualifiedname>FLASH_EraseInitTypeDef::NbPages</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of pages to be erased. This parameter must be a value between 1 and (FLASH_PAGE_NB - value of initial page) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="54" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>FLASH Erase structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="45" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="46" bodyend="56"/>
+    <listofallmembers>
+      <member refid="struct_f_l_a_s_h___erase_init_type_def_1aa07868a5b012861c6111322c3dccdbec" prot="public" virt="non-virtual"><scope>FLASH_EraseInitTypeDef</scope><name>Banks</name></member>
+      <member refid="struct_f_l_a_s_h___erase_init_type_def_1a883b193a78c63e993f1d70102eac64b3" prot="public" virt="non-virtual"><scope>FLASH_EraseInitTypeDef</scope><name>NbPages</name></member>
+      <member refid="struct_f_l_a_s_h___erase_init_type_def_1ad5ac387429b4b85d2ee00e34559b4a28" prot="public" virt="non-virtual"><scope>FLASH_EraseInitTypeDef</scope><name>Page</name></member>
+      <member refid="struct_f_l_a_s_h___erase_init_type_def_1ae2154c09320f3ef7feb8f4a84e9ac17b" prot="public" virt="non-virtual"><scope>FLASH_EraseInitTypeDef</scope><name>TypeErase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

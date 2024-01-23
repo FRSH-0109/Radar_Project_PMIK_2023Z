@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___f_l_a_s_h___o_b___u_s_e_r___type" kind="group">
+    <compoundname>FLASH_OB_USER_Type</compoundname>
+    <title>FLASH Option Bytes User Type</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga9a7ab63ef27620c1cefe24ddf5b98c9d" prot="public" static="no">
+        <name>OB_USER_nRST_STOP</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga3fe1d7d6e7eff66678a365e41d8bfa0a" kindref="member">FLASH_OPTR_nRST_STOP</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset generated when entering the stop mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="338" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga230f52c0bc901b7e136d94818c63cda2" prot="public" static="no">
+        <name>OB_USER_nRST_STDBY</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gadcdd563c7e71e0783c4ebd4a1d55187f" kindref="member">FLASH_OPTR_nRST_STDBY</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset generated when entering the standby mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="339" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___o_b___u_s_e_r___type_1gadd91fcb984de1a1208bac3d6b50641db" prot="public" static="no">
+        <name>OB_USER_IWDG_SW</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga6c393c989958d4839a5085f93e9611dd" kindref="member">FLASH_OPTR_IWDG_SW</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Independent watchdog selection </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="343" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga1a7ae96d361bcb5605777881c47241f8" prot="public" static="no">
+        <name>OB_USER_IWDG_STOP</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga8b7e18ae68b0e19a4ebb84c208e5ef18" kindref="member">FLASH_OPTR_IWDG_STOP</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Independent watchdog counter freeze in stop mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="344" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___o_b___u_s_e_r___type_1gab0b376afa9327bc01686d5f868e78296" prot="public" static="no">
+        <name>OB_USER_IWDG_STDBY</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga05f51efadbac7ced5adc340325575386" kindref="member">FLASH_OPTR_IWDG_STDBY</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Independent watchdog counter freeze in standby mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="345" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga352689fac3e55f95629dba2dac135756" prot="public" static="no">
+        <name>OB_USER_WWDG_SW</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga6293710a5145793a40d4ad7cd6071141" kindref="member">FLASH_OPTR_WWDG_SW</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Window watchdog selection </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="346" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___o_b___u_s_e_r___type_1gaa36132a142d5479a09509fb4baa091a1" prot="public" static="no">
+        <name>OB_USER_RAM_PARITY_CHECK</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga159c3706d66851e73d8341929b0cfeac" kindref="member">FLASH_OPTR_RAM_PARITY_CHECK</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sram parity check control </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="351" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga670f10402371b7bbc8a41051ea0de4ee" prot="public" static="no">
+        <name>OB_USER_nBOOT_SEL</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga54def787c57fe57ed3fdb917817b2e81" kindref="member">FLASH_OPTR_nBOOT_SEL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Boot Selection </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="352" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga69b5cfc52df7f7ce2f6fc6d8d7437260" prot="public" static="no">
+        <name>OB_USER_nBOOT1</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gabf943c30e99bf56e7949aecd3c9771d2" kindref="member">FLASH_OPTR_nBOOT1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>nBoot1 configuration </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="353" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga92068731498388a39698a7d2cfc4efdc" prot="public" static="no">
+        <name>OB_USER_nBOOT0</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gaa82520452ad7060939806e9f962891d8" kindref="member">FLASH_OPTR_nBOOT0</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>nBoot0 configuration </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="354" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga9232b0910914b321a97762e030c53833" prot="public" static="no">
+        <name>OB_USER_ALL</name>
+        <initializer>    (                                                <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga9a7ab63ef27620c1cefe24ddf5b98c9d" kindref="member">OB_USER_nRST_STOP</ref> | \
+    <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga230f52c0bc901b7e136d94818c63cda2" kindref="member">OB_USER_nRST_STDBY</ref>                            | <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1gadd91fcb984de1a1208bac3d6b50641db" kindref="member">OB_USER_IWDG_SW</ref>   | \
+    <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga1a7ae96d361bcb5605777881c47241f8" kindref="member">OB_USER_IWDG_STOP</ref>        | <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1gab0b376afa9327bc01686d5f868e78296" kindref="member">OB_USER_IWDG_STDBY</ref> | <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga352689fac3e55f95629dba2dac135756" kindref="member">OB_USER_WWDG_SW</ref>   | \
+    <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1gaa36132a142d5479a09509fb4baa091a1" kindref="member">OB_USER_RAM_PARITY_CHECK</ref> | <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga670f10402371b7bbc8a41051ea0de4ee" kindref="member">OB_USER_nBOOT_SEL</ref>  | <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga69b5cfc52df7f7ce2f6fc6d8d7437260" kindref="member">OB_USER_nBOOT1</ref>    | \
+    <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga92068731498388a39698a7d2cfc4efdc" kindref="member">OB_USER_nBOOT0</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>all option bits </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="386" column="11" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="386" bodyend="390"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_u_a_r_t___queue" kind="struct" language="C++" prot="public">
+    <compoundname>UART_Queue</compoundname>
+    <includes refid="usart__custom_8h" local="no">usart_custom.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_a_r_t___queue_1aabf0dabd48dff725071bf5ec713f42e9" prot="public" static="no" mutable="no">
+        <type>volatile uint8_t</type>
+        <definition>volatile uint8_t dataRx[UART_QUEUE_LEN][MAX_UART_RX_DATA_LEN]</definition>
+        <argsstring>[UART_QUEUE_LEN][MAX_UART_RX_DATA_LEN]</argsstring>
+        <name>dataRx</name>
+        <qualifiedname>UART_Queue::dataRx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of data buffers of rx uart data queue </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="107" column="18" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___queue_1ad5bd92c0c4e4441b3843d3718af24cdd" prot="public" static="no" mutable="no">
+        <type>volatile uint16_t</type>
+        <definition>volatile uint16_t dataRxLength[UART_QUEUE_LEN]</definition>
+        <argsstring>[UART_QUEUE_LEN]</argsstring>
+        <name>dataRxLength</name>
+        <qualifiedname>UART_Queue::dataRxLength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of data lengths of rx uart data frames </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="108" column="19" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___queue_1ac87fbf2375e4a60a0ea19b9c572fc02b" prot="public" static="no" mutable="no">
+        <type>volatile uint8_t</type>
+        <definition>volatile uint8_t headIxndex</definition>
+        <argsstring></argsstring>
+        <name>headIxndex</name>
+        <qualifiedname>UART_Queue::headIxndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of queue position to write next data frame </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="109" column="18" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___queue_1a3b4e9fc9e72aaeaa7086915ef71e9e18" prot="public" static="no" mutable="no">
+        <type>volatile uint8_t</type>
+        <definition>volatile uint8_t tailIndex</definition>
+        <argsstring></argsstring>
+        <name>tailIndex</name>
+        <qualifiedname>UART_Queue::tailIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of queue position to read next data frame </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="110" column="18" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___queue_1a3efa81db0281c5e6ec8803214fe30378" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dataTx[UART_QUEUE_LEN][MAX_UART_TX_DATA_LEN]</definition>
+        <argsstring>[UART_QUEUE_LEN][MAX_UART_TX_DATA_LEN]</argsstring>
+        <name>dataTx</name>
+        <qualifiedname>UART_Queue::dataTx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of data buffers of tx uart data queue </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="112" column="9" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___queue_1a7be530387eca02e13ed41567d8c328af" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dataTxLength[UART_QUEUE_LEN]</definition>
+        <argsstring>[UART_QUEUE_LEN]</argsstring>
+        <name>dataTxLength</name>
+        <qualifiedname>UART_Queue::dataTxLength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of data lengths of tx uart data frames </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="113" column="10" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___queue_1a614486ec92e3549168b31c4350e47910" prot="public" static="no" mutable="no">
+        <type>volatile uint8_t</type>
+        <definition>volatile uint8_t dataIndex</definition>
+        <argsstring></argsstring>
+        <name>dataIndex</name>
+        <qualifiedname>UART_Queue::dataIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of queue position to write next data frame </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="114" column="18" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___queue_1a21c6464b9d460c444aae6a9b093c02b9" prot="public" static="no" mutable="no">
+        <type>volatile uint8_t</type>
+        <definition>volatile uint8_t transmitIndex</definition>
+        <argsstring></argsstring>
+        <name>transmitIndex</name>
+        <qualifiedname>UART_Queue::transmitIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of queue position to transmit next data frame </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/usart_custom/usart_custom.h" line="115" column="18" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure for uart queue </para>
+    </detaileddescription>
+    <location file="RadarApp/usart_custom/usart_custom.h" line="105" column="1" bodyfile="RadarApp/usart_custom/usart_custom.h" bodystart="106" bodyend="116"/>
+    <listofallmembers>
+      <member refid="struct_u_a_r_t___queue_1a614486ec92e3549168b31c4350e47910" prot="public" virt="non-virtual"><scope>UART_Queue</scope><name>dataIndex</name></member>
+      <member refid="struct_u_a_r_t___queue_1aabf0dabd48dff725071bf5ec713f42e9" prot="public" virt="non-virtual"><scope>UART_Queue</scope><name>dataRx</name></member>
+      <member refid="struct_u_a_r_t___queue_1ad5bd92c0c4e4441b3843d3718af24cdd" prot="public" virt="non-virtual"><scope>UART_Queue</scope><name>dataRxLength</name></member>
+      <member refid="struct_u_a_r_t___queue_1a3efa81db0281c5e6ec8803214fe30378" prot="public" virt="non-virtual"><scope>UART_Queue</scope><name>dataTx</name></member>
+      <member refid="struct_u_a_r_t___queue_1a7be530387eca02e13ed41567d8c328af" prot="public" virt="non-virtual"><scope>UART_Queue</scope><name>dataTxLength</name></member>
+      <member refid="struct_u_a_r_t___queue_1ac87fbf2375e4a60a0ea19b9c572fc02b" prot="public" virt="non-virtual"><scope>UART_Queue</scope><name>headIxndex</name></member>
+      <member refid="struct_u_a_r_t___queue_1a3b4e9fc9e72aaeaa7086915ef71e9e18" prot="public" virt="non-virtual"><scope>UART_Queue</scope><name>tailIndex</name></member>
+      <member refid="struct_u_a_r_t___queue_1a21c6464b9d460c444aae6a9b093c02b9" prot="public" virt="non-virtual"><scope>UART_Queue</scope><name>transmitIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

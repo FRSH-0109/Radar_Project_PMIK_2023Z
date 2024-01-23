@@ -1,0 +1,319 @@
+.TH "Peripheral_memory_map" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Peripheral_memory_map \- Peripheral_memory_map
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFLASH_BASE\fP   (0x08000000UL)"
+.br
+.ti -1c
+.RI "#define \fBSRAM_BASE\fP   (0x20000000UL)"
+.br
+.ti -1c
+.RI "#define \fBPERIPH_BASE\fP   (0x40000000UL)"
+.br
+.ti -1c
+.RI "#define \fBIOPORT_BASE\fP   (0x50000000UL)"
+.br
+.ti -1c
+.RI "#define \fBSRAM_SIZE_MAX\fP   (0x00002000UL)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_SIZE\fP   (((*((uint32_t *)\fBFLASHSIZE_BASE\fP)) & (0x007FU)) << 10U)"
+.br
+.ti -1c
+.RI "#define \fBAPBPERIPH_BASE\fP   (\fBPERIPH_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBAHBPERIPH_BASE\fP   (\fBPERIPH_BASE\fP + 0x00020000UL)"
+.br
+.ti -1c
+.RI "#define \fBTIM3_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00000400UL)"
+.br
+.ti -1c
+.RI "#define \fBTIM14_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00002000UL)"
+.br
+.ti -1c
+.RI "#define \fBRTC_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00002800UL)"
+.br
+.ti -1c
+.RI "#define \fBWWDG_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00002C00UL)"
+.br
+.ti -1c
+.RI "#define \fBIWDG_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00003000UL)"
+.br
+.ti -1c
+.RI "#define \fBSPI2_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00003800UL)"
+.br
+.ti -1c
+.RI "#define \fBUSART2_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00004400UL)"
+.br
+.ti -1c
+.RI "#define \fBI2C1_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00005400UL)"
+.br
+.ti -1c
+.RI "#define \fBI2C2_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00005800UL)"
+.br
+.ti -1c
+.RI "#define \fBPWR_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00007000UL)"
+.br
+.ti -1c
+.RI "#define \fBTAMP_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x0000B000UL)"
+.br
+.ti -1c
+.RI "#define \fBSYSCFG_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00010000UL)"
+.br
+.ti -1c
+.RI "#define \fBADC1_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00012400UL)"
+.br
+.ti -1c
+.RI "#define \fBADC1_COMMON_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00012708UL)"
+.br
+.ti -1c
+.RI "#define \fBADC_BASE\fP   (\fBADC1_COMMON_BASE\fP) /* Kept for legacy purpose */"
+.br
+.ti -1c
+.RI "#define \fBTIM1_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00012C00UL)"
+.br
+.ti -1c
+.RI "#define \fBSPI1_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00013000UL)"
+.br
+.ti -1c
+.RI "#define \fBUSART1_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00013800UL)"
+.br
+.ti -1c
+.RI "#define \fBTIM16_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00014400UL)"
+.br
+.ti -1c
+.RI "#define \fBTIM17_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00014800UL)"
+.br
+.ti -1c
+.RI "#define \fBDBG_BASE\fP   (\fBAPBPERIPH_BASE\fP + 0x00015800UL)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_BASE\fP   (\fBAHBPERIPH_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x00000800UL)"
+.br
+.ti -1c
+.RI "#define \fBRCC_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x00001000UL)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x00001800UL)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_R_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x00002000UL)"
+.br
+.ti -1c
+.RI "#define \fBCRC_BASE\fP   (\fBAHBPERIPH_BASE\fP + 0x00003000UL)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel1_BASE\fP   (\fBDMA1_BASE\fP + 0x00000008UL)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel2_BASE\fP   (\fBDMA1_BASE\fP + 0x0000001CUL)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel3_BASE\fP   (\fBDMA1_BASE\fP + 0x00000030UL)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel4_BASE\fP   (\fBDMA1_BASE\fP + 0x00000044UL)"
+.br
+.ti -1c
+.RI "#define \fBDMA1_Channel5_BASE\fP   (\fBDMA1_BASE\fP + 0x00000058UL)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_Channel0_BASE\fP   (\fBDMAMUX1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_Channel1_BASE\fP   (\fBDMAMUX1_BASE\fP + 0x00000004UL)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_Channel2_BASE\fP   (\fBDMAMUX1_BASE\fP + 0x00000008UL)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_Channel3_BASE\fP   (\fBDMAMUX1_BASE\fP + 0x0000000CUL)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_Channel4_BASE\fP   (\fBDMAMUX1_BASE\fP + 0x00000010UL)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_RequestGenerator0_BASE\fP   (\fBDMAMUX1_BASE\fP + 0x00000100UL)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_RequestGenerator1_BASE\fP   (\fBDMAMUX1_BASE\fP + 0x00000104UL)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_RequestGenerator2_BASE\fP   (\fBDMAMUX1_BASE\fP + 0x00000108UL)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_RequestGenerator3_BASE\fP   (\fBDMAMUX1_BASE\fP + 0x0000010CUL)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_ChannelStatus_BASE\fP   (\fBDMAMUX1_BASE\fP + 0x00000080UL)"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX1_RequestGenStatus_BASE\fP   (\fBDMAMUX1_BASE\fP + 0x00000140UL)"
+.br
+.ti -1c
+.RI "#define \fBGPIOA_BASE\fP   (\fBIOPORT_BASE\fP + 0x00000000UL)"
+.br
+.ti -1c
+.RI "#define \fBGPIOB_BASE\fP   (\fBIOPORT_BASE\fP + 0x00000400UL)"
+.br
+.ti -1c
+.RI "#define \fBGPIOC_BASE\fP   (\fBIOPORT_BASE\fP + 0x00000800UL)"
+.br
+.ti -1c
+.RI "#define \fBGPIOD_BASE\fP   (\fBIOPORT_BASE\fP + 0x00000C00UL)"
+.br
+.ti -1c
+.RI "#define \fBGPIOF_BASE\fP   (\fBIOPORT_BASE\fP + 0x00001400UL)"
+.br
+.ti -1c
+.RI "#define \fBPACKAGE_BASE\fP   (0x1FFF7500UL)"
+.br
+.ti -1c
+.RI "#define \fBUID_BASE\fP   (0x1FFF7590UL)"
+.br
+.ti -1c
+.RI "#define \fBFLASHSIZE_BASE\fP   (0x1FFF75E0UL)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ADC1_BASE   (\fBAPBPERIPH_BASE\fP + 0x00012400UL)"
+
+.SS "#define ADC1_COMMON_BASE   (\fBAPBPERIPH_BASE\fP + 0x00012708UL)"
+
+.SS "#define ADC_BASE   (\fBADC1_COMMON_BASE\fP) /* Kept for legacy purpose */"
+
+.SS "#define AHBPERIPH_BASE   (\fBPERIPH_BASE\fP + 0x00020000UL)"
+APB peripherals 
+.SS "#define APBPERIPH_BASE   (\fBPERIPH_BASE\fP)"
+
+.SS "#define CRC_BASE   (\fBAHBPERIPH_BASE\fP + 0x00003000UL)"
+
+.SS "#define DBG_BASE   (\fBAPBPERIPH_BASE\fP + 0x00015800UL)"
+AHB peripherals 
+.SS "#define DMA1_BASE   (\fBAHBPERIPH_BASE\fP)"
+
+.SS "#define DMA1_Channel1_BASE   (\fBDMA1_BASE\fP + 0x00000008UL)"
+
+.SS "#define DMA1_Channel2_BASE   (\fBDMA1_BASE\fP + 0x0000001CUL)"
+
+.SS "#define DMA1_Channel3_BASE   (\fBDMA1_BASE\fP + 0x00000030UL)"
+
+.SS "#define DMA1_Channel4_BASE   (\fBDMA1_BASE\fP + 0x00000044UL)"
+
+.SS "#define DMA1_Channel5_BASE   (\fBDMA1_BASE\fP + 0x00000058UL)"
+
+.SS "#define DMAMUX1_BASE   (\fBAHBPERIPH_BASE\fP + 0x00000800UL)"
+
+.SS "#define DMAMUX1_Channel0_BASE   (\fBDMAMUX1_BASE\fP)"
+
+.SS "#define DMAMUX1_Channel1_BASE   (\fBDMAMUX1_BASE\fP + 0x00000004UL)"
+
+.SS "#define DMAMUX1_Channel2_BASE   (\fBDMAMUX1_BASE\fP + 0x00000008UL)"
+
+.SS "#define DMAMUX1_Channel3_BASE   (\fBDMAMUX1_BASE\fP + 0x0000000CUL)"
+
+.SS "#define DMAMUX1_Channel4_BASE   (\fBDMAMUX1_BASE\fP + 0x00000010UL)"
+
+.SS "#define DMAMUX1_ChannelStatus_BASE   (\fBDMAMUX1_BASE\fP + 0x00000080UL)"
+
+.SS "#define DMAMUX1_RequestGenerator0_BASE   (\fBDMAMUX1_BASE\fP + 0x00000100UL)"
+
+.SS "#define DMAMUX1_RequestGenerator1_BASE   (\fBDMAMUX1_BASE\fP + 0x00000104UL)"
+
+.SS "#define DMAMUX1_RequestGenerator2_BASE   (\fBDMAMUX1_BASE\fP + 0x00000108UL)"
+
+.SS "#define DMAMUX1_RequestGenerator3_BASE   (\fBDMAMUX1_BASE\fP + 0x0000010CUL)"
+
+.SS "#define DMAMUX1_RequestGenStatus_BASE   (\fBDMAMUX1_BASE\fP + 0x00000140UL)"
+IOPORT 
+.SS "#define EXTI_BASE   (\fBAHBPERIPH_BASE\fP + 0x00001800UL)"
+
+.SS "#define FLASH_BASE   (0x08000000UL)"
+FLASH base address 
+.SS "#define FLASH_R_BASE   (\fBAHBPERIPH_BASE\fP + 0x00002000UL)"
+
+.SS "#define FLASH_SIZE   (((*((uint32_t *)\fBFLASHSIZE_BASE\fP)) & (0x007FU)) << 10U)"
+Peripheral memory map 
+.SS "#define FLASHSIZE_BASE   (0x1FFF75E0UL)"
+Flash size data register base address 
+.br
+ 
+.SS "#define GPIOA_BASE   (\fBIOPORT_BASE\fP + 0x00000000UL)"
+
+.SS "#define GPIOB_BASE   (\fBIOPORT_BASE\fP + 0x00000400UL)"
+
+.SS "#define GPIOC_BASE   (\fBIOPORT_BASE\fP + 0x00000800UL)"
+
+.SS "#define GPIOD_BASE   (\fBIOPORT_BASE\fP + 0x00000C00UL)"
+
+.SS "#define GPIOF_BASE   (\fBIOPORT_BASE\fP + 0x00001400UL)"
+Device Electronic Signature 
+.SS "#define I2C1_BASE   (\fBAPBPERIPH_BASE\fP + 0x00005400UL)"
+
+.SS "#define I2C2_BASE   (\fBAPBPERIPH_BASE\fP + 0x00005800UL)"
+
+.SS "#define IOPORT_BASE   (0x50000000UL)"
+IOPORT base address 
+.SS "#define IWDG_BASE   (\fBAPBPERIPH_BASE\fP + 0x00003000UL)"
+
+.SS "#define PACKAGE_BASE   (0x1FFF7500UL)"
+Package data register base address 
+.br
+ 
+.SS "#define PERIPH_BASE   (0x40000000UL)"
+Peripheral base address 
+.SS "#define PWR_BASE   (\fBAPBPERIPH_BASE\fP + 0x00007000UL)"
+
+.SS "#define RCC_BASE   (\fBAHBPERIPH_BASE\fP + 0x00001000UL)"
+
+.SS "#define RTC_BASE   (\fBAPBPERIPH_BASE\fP + 0x00002800UL)"
+
+.SS "#define SPI1_BASE   (\fBAPBPERIPH_BASE\fP + 0x00013000UL)"
+
+.SS "#define SPI2_BASE   (\fBAPBPERIPH_BASE\fP + 0x00003800UL)"
+
+.SS "#define SRAM_BASE   (0x20000000UL)"
+SRAM base address 
+.SS "#define SRAM_SIZE_MAX   (0x00002000UL)"
+maximum SRAM size (up to 8 KBytes) 
+.SS "#define SYSCFG_BASE   (\fBAPBPERIPH_BASE\fP + 0x00010000UL)"
+
+.SS "#define TAMP_BASE   (\fBAPBPERIPH_BASE\fP + 0x0000B000UL)"
+
+.SS "#define TIM14_BASE   (\fBAPBPERIPH_BASE\fP + 0x00002000UL)"
+
+.SS "#define TIM16_BASE   (\fBAPBPERIPH_BASE\fP + 0x00014400UL)"
+
+.SS "#define TIM17_BASE   (\fBAPBPERIPH_BASE\fP + 0x00014800UL)"
+
+.SS "#define TIM1_BASE   (\fBAPBPERIPH_BASE\fP + 0x00012C00UL)"
+
+.SS "#define TIM3_BASE   (\fBAPBPERIPH_BASE\fP + 0x00000400UL)"
+
+.SS "#define UID_BASE   (0x1FFF7590UL)"
+Unique device ID register base address 
+.SS "#define USART1_BASE   (\fBAPBPERIPH_BASE\fP + 0x00013800UL)"
+
+.SS "#define USART2_BASE   (\fBAPBPERIPH_BASE\fP + 0x00004400UL)"
+
+.SS "#define WWDG_BASE   (\fBAPBPERIPH_BASE\fP + 0x00002C00UL)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

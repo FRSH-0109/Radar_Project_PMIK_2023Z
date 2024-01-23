@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___r_c_c___a_p_b2___clock___enable___disable" kind="group">
+    <compoundname>RCC_APB2_Clock_Enable_Disable</compoundname>
+    <title>APB2 Peripheral Clock Enable Disable</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1gafc3ffcbb86e4913ae336ba094ca199e1" prot="public" static="no">
+        <name>__HAL_RCC_SYSCFG_CLK_ENABLE</name>
+        <param></param>
+        <initializer>                                                    do { \
+                                                    <ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t tmpreg; \
+                                                    <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1ga9542ae577219d7d83e0bd18944136cc6" kindref="member">RCC_APBENR2_SYSCFGEN</ref>); \
+   /* Delay after an <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref> peripheral clock enabling */ \
+                                                    tmpreg = <ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1ga9542ae577219d7d83e0bd18944136cc6" kindref="member">RCC_APBENR2_SYSCFGEN</ref>); \
+                                                    <ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(tmpreg); \
+                                                  } while(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1260" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1260" bodyend="1266"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1gad693d7300ed7134b60bb1a645e762358" prot="public" static="no">
+        <name>__HAL_RCC_TIM1_CLK_ENABLE</name>
+        <param></param>
+        <initializer>                                                    do { \
+                                                    <ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t tmpreg; \
+                                                    <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1gab02b38d79863391d5ad0938e5542d0ff" kindref="member">RCC_APBENR2_TIM1EN</ref>); \
+   /* Delay after an <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref> peripheral clock enabling */ \
+                                                    tmpreg = <ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1gab02b38d79863391d5ad0938e5542d0ff" kindref="member">RCC_APBENR2_TIM1EN</ref>); \
+                                                    <ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(tmpreg); \
+                                                  } while(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1268" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1268" bodyend="1274"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1ga856c7460aa481976644736c703c6702d" prot="public" static="no">
+        <name>__HAL_RCC_SPI1_CLK_ENABLE</name>
+        <param></param>
+        <initializer>                                                    do { \
+                                                    <ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t tmpreg; \
+                                                    <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1gad3df3dbadaf9d4b4f216280a04a38ad0" kindref="member">RCC_APBENR2_SPI1EN</ref>); \
+   /* Delay after an <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref> peripheral clock enabling */ \
+                                                    tmpreg = <ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1gad3df3dbadaf9d4b4f216280a04a38ad0" kindref="member">RCC_APBENR2_SPI1EN</ref>); \
+                                                    <ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(tmpreg); \
+                                                  } while(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1276" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1276" bodyend="1282"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1ga932afe7cea6c567ad63e0f83308b9d3e" prot="public" static="no">
+        <name>__HAL_RCC_USART1_CLK_ENABLE</name>
+        <param></param>
+        <initializer>                                                    do { \
+                                                    <ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t tmpreg; \
+                                                    <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1gae6fc2200f262ff397292841a744c4bfb" kindref="member">RCC_APBENR2_USART1EN</ref>); \
+   /* Delay after an <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref> peripheral clock enabling */ \
+                                                    tmpreg = <ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1gae6fc2200f262ff397292841a744c4bfb" kindref="member">RCC_APBENR2_USART1EN</ref>); \
+                                                    <ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(tmpreg); \
+                                                  } while(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1284" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1284" bodyend="1290"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1ga28c0bd63fbc7500f9c209ef42c0931b6" prot="public" static="no">
+        <name>__HAL_RCC_TIM14_CLK_ENABLE</name>
+        <param></param>
+        <initializer>                                                     do { \
+                                                     <ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t tmpreg; \
+                                                     <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1ga26bc9a6d6d688435b11f1dac7dcd029a" kindref="member">RCC_APBENR2_TIM14EN</ref>); \
+    /* Delay after an <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref> peripheral clock enabling */ \
+                                                     tmpreg = <ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1ga26bc9a6d6d688435b11f1dac7dcd029a" kindref="member">RCC_APBENR2_TIM14EN</ref>); \
+                                                     <ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(tmpreg); \
+                                                   } while(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1292" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1292" bodyend="1298"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1ga9753b09f531d9d48d31abd4f74c26d26" prot="public" static="no">
+        <name>__HAL_RCC_TIM16_CLK_ENABLE</name>
+        <param></param>
+        <initializer>                                                    do { \
+                                                    <ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t tmpreg; \
+                                                    <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1ga2958e6568c987fe824d2f1be053809e2" kindref="member">RCC_APBENR2_TIM16EN</ref>); \
+   /* Delay after an <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref> peripheral clock enabling */ \
+                                                    tmpreg = <ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1ga2958e6568c987fe824d2f1be053809e2" kindref="member">RCC_APBENR2_TIM16EN</ref>); \
+                                                    <ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(tmpreg); \
+                                                  } while(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1310" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1310" bodyend="1316"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1ga983ec0b6719bbf98e40818a8e6817c58" prot="public" static="no">
+        <name>__HAL_RCC_TIM17_CLK_ENABLE</name>
+        <param></param>
+        <initializer>                                                    do { \
+                                                    <ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t tmpreg; \
+                                                    <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1ga9bf031737f9b3c60c563d03ed72cb950" kindref="member">RCC_APBENR2_TIM17EN</ref>); \
+   /* Delay after an <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref> peripheral clock enabling */ \
+                                                    tmpreg = <ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1ga9bf031737f9b3c60c563d03ed72cb950" kindref="member">RCC_APBENR2_TIM17EN</ref>); \
+                                                    <ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(tmpreg); \
+                                                  } while(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1318" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1318" bodyend="1324"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1ga646c863666584ab4fca8fc93fe4112c5" prot="public" static="no">
+        <name>__HAL_RCC_ADC_CLK_ENABLE</name>
+        <param></param>
+        <initializer>                                                  do { \
+                                                  <ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t tmpreg; \
+                                                  <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1ga45a2058e993b3249fa8549ae59df6143" kindref="member">RCC_APBENR2_ADCEN</ref>); \
+ /* Delay after an <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref> peripheral clock enabling */ \
+                                                  tmpreg = <ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1ga45a2058e993b3249fa8549ae59df6143" kindref="member">RCC_APBENR2_ADCEN</ref>); \
+                                                  <ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(tmpreg); \
+                                                } while(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1326" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1326" bodyend="1332"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1ga9fb7035f007ec272b725e51018a36b23" prot="public" static="no">
+        <name>__HAL_RCC_TIM3_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR1, <ref refid="group___peripheral___registers___bits___definition_1ga03f1d5ec8eb20c9c8719d0dd04987993" kindref="member">RCC_APBENR1_TIM3EN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1337" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1gad3ec940a13a275a574d438af19f164c4" prot="public" static="no">
+        <name>__HAL_RCC_RTCAPB_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR1, <ref refid="group___peripheral___registers___bits___definition_1ga96e4940e637f5d872919098290901cef" kindref="member">RCC_APBENR1_RTCAPBEN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1350" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1gabb56a85a6424a60da8edc681f3a1c918" prot="public" static="no">
+        <name>__HAL_RCC_SPI2_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR1, <ref refid="group___peripheral___registers___bits___definition_1ga1a2b6ebd5f763811e7ad2e122f924bff" kindref="member">RCC_APBENR1_SPI2EN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1351" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1ga1edc6c83fbebf8b4265ef9500aa04b04" prot="public" static="no">
+        <name>__HAL_RCC_USART2_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR1, <ref refid="group___peripheral___registers___bits___definition_1ga5b93124bda3d29b9441f4fdfa27032ad" kindref="member">RCC_APBENR1_USART2EN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1355" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1ga490a853eae72da96aad5379a6e939dd8" prot="public" static="no">
+        <name>__HAL_RCC_I2C1_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR1, <ref refid="group___peripheral___registers___bits___definition_1gab81b671b8acda0069ed928e7b2715530" kindref="member">RCC_APBENR1_I2C1EN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1374" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1ga3ebc5988bcf1e2965ed482fd76c67b22" prot="public" static="no">
+        <name>__HAL_RCC_I2C2_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR1, <ref refid="group___peripheral___registers___bits___definition_1gab3578e2f41d9aeaf9acad97e4610634e" kindref="member">RCC_APBENR1_I2C2EN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1375" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1gabe91adc2aacd167316a573d1101d50d2" prot="public" static="no">
+        <name>__HAL_RCC_DBGMCU_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR1, <ref refid="group___peripheral___registers___bits___definition_1ga2d6b84afa00844763d73ea36fb140758" kindref="member">RCC_APBENR1_DBGEN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1394" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1gaf3db86d2db2bad45732a742b6a91ea0b" prot="public" static="no">
+        <name>__HAL_RCC_PWR_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR1, <ref refid="group___peripheral___registers___bits___definition_1ga99324657dd1adf8b0a3b55732055e6d1" kindref="member">RCC_APBENR1_PWREN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1395" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1gaf04a5f1f0d6d8577706022a866f4528e" prot="public" static="no">
+        <name>__HAL_RCC_SYSCFG_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1ga9542ae577219d7d83e0bd18944136cc6" kindref="member">RCC_APBENR2_SYSCFGEN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1405" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1gaa9eacfb8ee244074ec63dae0b9f621c2" prot="public" static="no">
+        <name>__HAL_RCC_TIM1_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1gab02b38d79863391d5ad0938e5542d0ff" kindref="member">RCC_APBENR2_TIM1EN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1406" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1gaf2ccb5c6b63a60deb6463cbc629c10fe" prot="public" static="no">
+        <name>__HAL_RCC_SPI1_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1gad3df3dbadaf9d4b4f216280a04a38ad0" kindref="member">RCC_APBENR2_SPI1EN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1407" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1gae0050944298552e9f02f56ec8634f5a6" prot="public" static="no">
+        <name>__HAL_RCC_USART1_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1gae6fc2200f262ff397292841a744c4bfb" kindref="member">RCC_APBENR2_USART1EN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1408" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1ga492911cce1e54350519e7793c897102b" prot="public" static="no">
+        <name>__HAL_RCC_TIM14_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1ga26bc9a6d6d688435b11f1dac7dcd029a" kindref="member">RCC_APBENR2_TIM14EN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1409" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1ga4f23f7c1565e07731f200059c8ed4db9" prot="public" static="no">
+        <name>__HAL_RCC_TIM16_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1ga2958e6568c987fe824d2f1be053809e2" kindref="member">RCC_APBENR2_TIM16EN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1413" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1ga6c046db26bd6495179e6171dc6caeff3" prot="public" static="no">
+        <name>__HAL_RCC_TIM17_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1ga9bf031737f9b3c60c563d03ed72cb950" kindref="member">RCC_APBENR2_TIM17EN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1414" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___enable___disable_1gabcdcfe2178943b36539cd5edf8402c19" prot="public" static="no">
+        <name>__HAL_RCC_ADC_CLK_DISABLE</name>
+        <param></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBENR2, <ref refid="group___peripheral___registers___bits___definition_1ga45a2058e993b3249fa8549ae59df6143" kindref="member">RCC_APBENR2_ADCEN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="1415" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="1415" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Enable or disable the APB2 peripheral clock. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

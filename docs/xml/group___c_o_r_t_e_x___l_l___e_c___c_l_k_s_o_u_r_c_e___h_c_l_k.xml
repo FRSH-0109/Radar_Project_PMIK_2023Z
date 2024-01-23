@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___c_o_r_t_e_x___l_l___e_c___c_l_k_s_o_u_r_c_e___h_c_l_k" kind="group">
+    <compoundname>CORTEX_LL_EC_CLKSOURCE_HCLK</compoundname>
+    <title>SYSTICK Clock Source</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_o_r_t_e_x___l_l___e_c___c_l_k_s_o_u_r_c_e___h_c_l_k_1gab13c4588c1b1a8b867541a4ad928d205" prot="public" static="no">
+        <name>LL_SYSTICK_CLKSOURCE_HCLK_DIV8</name>
+        <initializer>0x00000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AHB clock divided by 8 selected as SysTick clock source. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" line="68" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_o_r_t_e_x___l_l___e_c___c_l_k_s_o_u_r_c_e___h_c_l_k_1gaa92530d2f2cd8ce785297e4aed960ff0" prot="public" static="no">
+        <name>LL_SYSTICK_CLKSOURCE_HCLK</name>
+        <initializer><ref refid="group___c_m_s_i_s___c_o_r_e_1gaa41d06039797423a46596bd313d57373" kindref="member">SysTick_CTRL_CLKSOURCE_Msk</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AHB clock selected as SysTick clock source. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" line="69" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

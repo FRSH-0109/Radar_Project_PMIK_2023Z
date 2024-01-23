@@ -1,0 +1,89 @@
+.TH "FLASH_TypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FLASH_TypeDef \- FLASH Registers\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g030xx\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBACR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBKEYR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBOPTKEYR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBSR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBECCR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED2\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBOPTR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED3\fP [2]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBWRP1AR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBWRP1BR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED4\fP [2]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+FLASH Registers\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t FLASH_TypeDef::ACR"
+FLASH Access Control register, Address offset: 0x00 
+.SS "\fB__IO\fP uint32_t FLASH_TypeDef::CR"
+FLASH Control register, Address offset: 0x14 
+.SS "\fB__IO\fP uint32_t FLASH_TypeDef::ECCR"
+FLASH ECC register, Address offset: 0x18 
+.SS "\fB__IO\fP uint32_t FLASH_TypeDef::KEYR"
+FLASH Key register, Address offset: 0x08 
+.SS "\fB__IO\fP uint32_t FLASH_TypeDef::OPTKEYR"
+FLASH Option Key register, Address offset: 0x0C 
+.SS "\fB__IO\fP uint32_t FLASH_TypeDef::OPTR"
+FLASH Option register, Address offset: 0x20 
+.SS "uint32_t FLASH_TypeDef::RESERVED1"
+Reserved1, Address offset: 0x04 
+.SS "uint32_t FLASH_TypeDef::RESERVED2"
+Reserved2, Address offset: 0x1C 
+.SS "uint32_t FLASH_TypeDef::RESERVED3[2]"
+Reserved3, Address offset: 0x24--0x28 
+.SS "uint32_t FLASH_TypeDef::RESERVED4[2]"
+Reserved4, Address offset: 0x34--0x38 
+.SS "\fB__IO\fP uint32_t FLASH_TypeDef::SR"
+FLASH Status register, Address offset: 0x10 
+.SS "\fB__IO\fP uint32_t FLASH_TypeDef::WRP1AR"
+FLASH Bank WRP area A address register, Address offset: 0x2C 
+.SS "\fB__IO\fP uint32_t FLASH_TypeDef::WRP1BR"
+FLASH Bank WRP area B address register, Address offset: 0x30 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

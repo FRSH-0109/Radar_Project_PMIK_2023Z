@@ -1,0 +1,725 @@
+.TH "RCC_Clock_Configuration" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_Clock_Configuration \- RCC Clock Configuration
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_RCC_HSI_ENABLE\fP()   \fBSET_BIT\fP(\fBRCC\fP\->CR, \fBRCC_CR_HSION\fP)"
+.br
+.RI "Macros to enable the Internal High Speed oscillator (HSI)\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_HSI_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->CR, \fBRCC_CR_HSION\fP)"
+.br
+.RI "Macros to disable the Internal High Speed oscillator (HSI)\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_HSI_CALIBRATIONVALUE_ADJUST\fP(__HSICALIBRATIONVALUE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->ICSCR, \fBRCC_ICSCR_HSITRIM\fP, (uint32_t)(__HSICALIBRATIONVALUE__) << \fBRCC_ICSCR_HSITRIM_Pos\fP)"
+.br
+.RI "Macro to adjust the Internal High Speed oscillator (HSI) calibration value\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_HSISTOP_ENABLE\fP()   \fBSET_BIT\fP(\fBRCC\fP\->CR, \fBRCC_CR_HSIKERON\fP)"
+.br
+.RI "Macros to enable or disable the force of the Internal High Speed oscillator (HSI) in STOP mode to be quickly available as kernel clock for USARTs and I2Cs\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_HSISTOP_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->CR, \fBRCC_CR_HSIKERON\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_HSI_CONFIG\fP(__HSIDIV__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CR, \fBRCC_CR_HSIDIV\fP, (__HSIDIV__))"
+.br
+.RI "Macro to configure the HSISYS clock\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_LSI_ENABLE\fP()   \fBSET_BIT\fP(\fBRCC\fP\->CSR, \fBRCC_CSR_LSION\fP)"
+.br
+.RI "Macros to enable or disable the Internal Low Speed oscillator (LSI)\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_LSI_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->CSR, \fBRCC_CSR_LSION\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_HSE_CONFIG\fP(__STATE__)"
+.br
+.RI "Macro to configure the External High Speed oscillator (HSE)\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_LSE_CONFIG\fP(__STATE__)"
+.br
+.RI "Macro to configure the External Low Speed oscillator (LSE)\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_PLL_ENABLE\fP()   \fBSET_BIT\fP(\fBRCC\fP\->CR, \fBRCC_CR_PLLON\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_PLL_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->CR, \fBRCC_CR_PLLON\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_PLL_PLLSOURCE_CONFIG\fP(__PLLSOURCE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->PLLCFGR, \fBRCC_PLLCFGR_PLLSRC\fP, (__PLLSOURCE__))"
+.br
+.RI "Macro to configure the PLL clock source\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_PLL_PLLM_CONFIG\fP(__PLLM__)     \fBMODIFY_REG\fP(\fBRCC\fP\->PLLCFGR, \fBRCC_PLLCFGR_PLLM\fP, (__PLLM__))"
+.br
+.RI "Macro to configure the PLL multiplication factor\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_PLL_CONFIG\fP(__PLLSOURCE__,  __PLLM__,  __PLLN__,  __PLLP__,  __PLLR__)"
+.br
+.RI "Macro to configure the main PLL clock source, multiplication and division factors\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_GET_PLL_OSCSOURCE\fP()   ((uint32_t)(\fBRCC\fP\->PLLCFGR & \fBRCC_PLLCFGR_PLLSRC\fP))"
+.br
+.RI "Macro to get the oscillator used as PLL clock source\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_PLLCLKOUT_ENABLE\fP(__PLLCLOCKOUT__)   \fBSET_BIT\fP(\fBRCC\fP\->PLLCFGR, (__PLLCLOCKOUT__))"
+.br
+.RI "Enable each clock output (RCC_PLLRCLK, RCC_PLLQCLK(*), RCC_PLLPCLK) "
+.ti -1c
+.RI "#define \fB__HAL_RCC_PLLCLKOUT_DISABLE\fP(__PLLCLOCKOUT__)   \fBCLEAR_BIT\fP(\fBRCC\fP\->PLLCFGR, (__PLLCLOCKOUT__))"
+.br
+.RI "Disable each clock output (RCC_PLLRCLK, RCC_PLLQCLK(*), RCC_PLLPCLK) "
+.ti -1c
+.RI "#define \fB__HAL_RCC_GET_PLLCLKOUT_CONFIG\fP(__PLLCLOCKOUT__)   \fBREAD_BIT\fP(\fBRCC\fP\->PLLCFGR, (__PLLCLOCKOUT__))"
+.br
+.RI "Get clock output enable status (RCC_PLLRCLK, RCC_PLLQCLK(*), RCC_PLLPCLK) "
+.ti -1c
+.RI "#define \fB__HAL_RCC_SYSCLK_CONFIG\fP(__SYSCLKSOURCE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CFGR, \fBRCC_CFGR_SW\fP, (__SYSCLKSOURCE__))"
+.br
+.RI "Macro to configure the system clock source\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_GET_SYSCLK_SOURCE\fP()   (\fBRCC\fP\->CFGR & \fBRCC_CFGR_SWS\fP)"
+.br
+.RI "Macro to get the clock source used as system clock\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_LSEDRIVE_CONFIG\fP(__LSEDRIVE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->BDCR, \fBRCC_BDCR_LSEDRV\fP, (uint32_t)(__LSEDRIVE__))"
+.br
+.RI "Macro to configure the External Low Speed oscillator (LSE) drive capability\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_MCO1_CONFIG\fP(__MCOCLKSOURCE__,  __MCODIV__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CFGR, (\fBRCC_CFGR_MCOSEL\fP | \fBRCC_CFGR_MCOPRE\fP), ((__MCOCLKSOURCE__) | (__MCODIV__)))"
+.br
+.RI "Macro to configure the Microcontroller output clock\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_RCC_GET_PLL_OSCSOURCE()   ((uint32_t)(\fBRCC\fP\->PLLCFGR & \fBRCC_PLLCFGR_PLLSRC\fP))"
+
+.PP
+Macro to get the oscillator used as PLL clock source\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIThe\fP oscillator used as PLL clock source\&. The returned value can be one of the following: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_PLLSOURCE_NONE\fP No oscillator is used as PLL clock source\&. 
+.IP "\(bu" 1
+\fBRCC_PLLSOURCE_HSI\fP HSI oscillator is used as PLL clock source\&. 
+.IP "\(bu" 1
+\fBRCC_PLLSOURCE_HSE\fP HSE oscillator is used as PLL clock source\&. 
+.PP
+.RE
+.PP
+
+.SS "#define __HAL_RCC_GET_PLLCLKOUT_CONFIG(__PLLCLOCKOUT__)   \fBREAD_BIT\fP(\fBRCC\fP\->PLLCFGR, (__PLLCLOCKOUT__))"
+
+.PP
+Get clock output enable status (RCC_PLLRCLK, RCC_PLLQCLK(*), RCC_PLLPCLK) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__PLLCLOCKOUT__\fP specifies the output PLL clock to be checked\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+RCC_PLLPCLK This clock may be used to generate the clock for ADC, I2S1\&.  
+.IP "\(bu" 1
+\fBRCC_PLLRCLK\fP This Clock is used to generate the high speed system clock (up to 64MHz) 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP / RESET 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+(*) RCC_PLLQCLK availability depends on devices 
+.RE
+.PP
+
+.SS "#define __HAL_RCC_GET_SYSCLK_SOURCE()   (\fBRCC\fP\->CFGR & \fBRCC_CFGR_SWS\fP)"
+
+.PP
+Macro to get the clock source used as system clock\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIThe\fP clock source used as system clock\&. The returned value can be one of the following: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_SYSCLKSOURCE_STATUS_HSI\fP HSI used as system clock\&. 
+.IP "\(bu" 1
+\fBRCC_SYSCLKSOURCE_STATUS_HSE\fP HSE used as system clock\&. 
+.IP "\(bu" 1
+\fBRCC_SYSCLKSOURCE_STATUS_PLLCLK\fP PLL used as system clock\&. 
+.IP "\(bu" 1
+\fBRCC_SYSCLKSOURCE_STATUS_LSI\fP LSI used as system clock source\&. 
+.IP "\(bu" 1
+\fBRCC_SYSCLKSOURCE_STATUS_LSE\fP LSE used as system clock source\&. 
+.PP
+.RE
+.PP
+
+.SS "#define __HAL_RCC_HSE_CONFIG(__STATE__)"
+\fBValue:\fP.PP
+.nf
+                                              do {                                        \\
+                                              if((__STATE__) == RCC_HSE_ON)          \\
+                                              {                                      \\
+                                                SET_BIT(RCC\->CR, RCC_CR_HSEON);      \\
+                                              }                                      \\
+                                              else if((__STATE__) == RCC_HSE_BYPASS) \\
+                                              {                                      \\
+                                                SET_BIT(RCC\->CR, RCC_CR_HSEBYP);     \\
+                                                SET_BIT(RCC\->CR, RCC_CR_HSEON);      \\
+                                              }                                      \\
+                                              else                                   \\
+                                              {                                      \\
+                                                CLEAR_BIT(RCC\->CR, RCC_CR_HSEON);    \\
+                                                CLEAR_BIT(RCC\->CR, RCC_CR_HSEBYP);   \\
+                                              }                                      \\
+                                            } while(0U)
+.fi
+
+.PP
+Macro to configure the External High Speed oscillator (HSE)\&. 
+.PP
+\fBNote\fP
+.RS 4
+Transition HSE Bypass to HSE On and HSE On to HSE Bypass are not supported by this macro\&. User should request a transition to HSE Off first and then HSE On or HSE Bypass\&. 
+.PP
+After enabling the HSE (RCC_HSE_ON or RCC_HSE_Bypass), the application software should wait on HSERDY flag to be set indicating that HSE clock is stable and can be used to clock the PLL and/or system clock\&. 
+.PP
+HSE state can not be changed if it is used directly or through the PLL as system clock\&. In this case, you have to select another source of the system clock then change the HSE state (ex\&. disable it)\&. 
+.PP
+The HSE is stopped by hardware when entering STOP and STANDBY modes\&. 
+.PP
+This function reset the CSSON bit, so if the clock security system(CSS) was previously enabled you have to enable it again after calling this function\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__STATE__\fP specifies the new state of the HSE\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_HSE_OFF\fP Turn OFF the HSE oscillator, HSERDY flag goes low after 6 HSE oscillator clock cycles\&. 
+.IP "\(bu" 1
+\fBRCC_HSE_ON\fP Turn ON the HSE oscillator\&. 
+.IP "\(bu" 1
+\fBRCC_HSE_BYPASS\fP HSE oscillator bypassed with external clock\&. 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_RCC_HSI_CALIBRATIONVALUE_ADJUST(__HSICALIBRATIONVALUE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->ICSCR, \fBRCC_ICSCR_HSITRIM\fP, (uint32_t)(__HSICALIBRATIONVALUE__) << \fBRCC_ICSCR_HSITRIM_Pos\fP)"
+
+.PP
+Macro to adjust the Internal High Speed oscillator (HSI) calibration value\&. 
+.PP
+\fBNote\fP
+.RS 4
+The calibration is used to compensate for the variations in voltage and temperature that influence the frequency of the internal HSI RC\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HSICALIBRATIONVALUE__\fP specifies the calibration trimming value (default is RCC_HSICALIBRATION_DEFAULT)\&. This parameter must be a number between 0 and 127\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_RCC_HSI_CONFIG(__HSIDIV__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CR, \fBRCC_CR_HSIDIV\fP, (__HSIDIV__))"
+
+.PP
+Macro to configure the HSISYS clock\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HSIDIV__\fP specifies the HSI16 division factor\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_HSI_DIV1\fP HSI clock source is divided by 1 
+.IP "\(bu" 1
+\fBRCC_HSI_DIV2\fP HSI clock source is divided by 2 
+.IP "\(bu" 1
+\fBRCC_HSI_DIV4\fP HSI clock source is divided by 4 
+.IP "\(bu" 1
+\fBRCC_HSI_DIV8\fP HSI clock source is divided by 8 
+.IP "\(bu" 1
+\fBRCC_HSI_DIV16\fP HSI clock source is divided by 16 
+.IP "\(bu" 1
+\fBRCC_HSI_DIV32\fP HSI clock source is divided by 32 
+.IP "\(bu" 1
+\fBRCC_HSI_DIV64\fP HSI clock source is divided by 64 
+.IP "\(bu" 1
+\fBRCC_HSI_DIV128\fP HSI clock source is divided by 128 
+.PP
+.RE
+.PP
+
+.SS "#define __HAL_RCC_HSI_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->CR, \fBRCC_CR_HSION\fP)"
+
+.PP
+Macros to disable the Internal High Speed oscillator (HSI)\&. 
+.PP
+\fBNote\fP
+.RS 4
+HSI can not be stopped if it is used as system clock source\&. In this case, you have to select another source of the system clock then stop the HSI\&. 
+.PP
+When the HSI is stopped, HSIRDY flag goes low after 6 HSI oscillator clock cycles\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_RCC_HSI_ENABLE()   \fBSET_BIT\fP(\fBRCC\fP\->CR, \fBRCC_CR_HSION\fP)"
+
+.PP
+Macros to enable the Internal High Speed oscillator (HSI)\&. 
+.PP
+\fBNote\fP
+.RS 4
+The HSI is stopped by hardware when entering STOP and STANDBY modes\&. It is used (enabled by hardware) as system clock source after startup from Reset, wakeup from STOP and STANDBY mode, or in case of failure of the HSE used directly or indirectly as system clock (if the Clock Security System CSS is enabled)\&. 
+.PP
+After enabling the HSI, the application software should wait on HSIRDY flag to be set indicating that HSI clock is stable and can be used as system clock source\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_RCC_HSISTOP_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->CR, \fBRCC_CR_HSIKERON\fP)"
+
+.SS "#define __HAL_RCC_HSISTOP_ENABLE()   \fBSET_BIT\fP(\fBRCC\fP\->CR, \fBRCC_CR_HSIKERON\fP)"
+
+.PP
+Macros to enable or disable the force of the Internal High Speed oscillator (HSI) in STOP mode to be quickly available as kernel clock for USARTs and I2Cs\&. 
+.PP
+\fBNote\fP
+.RS 4
+Keeping the HSI ON in STOP mode allows to avoid slowing down the communication speed because of the HSI startup time\&. 
+.PP
+The enable of this function has not effect on the HSION bit\&. This parameter can be: ENABLE or DISABLE\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_RCC_LSE_CONFIG(__STATE__)"
+\fBValue:\fP.PP
+.nf
+                                              do {                                          \\
+                                              if((__STATE__) == RCC_LSE_ON)            \\
+                                              {                                        \\
+                                                SET_BIT(RCC\->BDCR, RCC_BDCR_LSEON);    \\
+                                              }                                        \\
+                                              else if((__STATE__) == RCC_LSE_BYPASS)   \\
+                                              {                                        \\
+                                                SET_BIT(RCC\->BDCR, RCC_BDCR_LSEBYP);   \\
+                                                SET_BIT(RCC\->BDCR, RCC_BDCR_LSEON);    \\
+                                              }                                        \\
+                                              else                                     \\
+                                              {                                        \\
+                                                CLEAR_BIT(RCC\->BDCR, RCC_BDCR_LSEON);  \\
+                                                CLEAR_BIT(RCC\->BDCR, RCC_BDCR_LSEBYP); \\
+                                              }                                        \\
+                                            } while(0U)
+.fi
+
+.PP
+Macro to configure the External Low Speed oscillator (LSE)\&. 
+.PP
+\fBNote\fP
+.RS 4
+Transitions LSE Bypass to LSE On and LSE On to LSE Bypass are not supported by this macro\&. User should request a transition to LSE Off first and then LSE On or LSE Bypass\&. 
+.PP
+As the LSE is in the Backup domain and write access is denied to this domain after reset, you have to enable write access using \fBHAL_PWR_EnableBkUpAccess()\fP function before to configure the LSE (to be done once after reset)\&. 
+.PP
+After enabling the LSE (RCC_LSE_ON or RCC_LSE_BYPASS), the application software should wait on LSERDY flag to be set indicating that LSE clock is stable and can be used to clock the RTC\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__STATE__\fP specifies the new state of the LSE\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_LSE_OFF\fP Turn OFF the LSE oscillator, LSERDY flag goes low after 6 LSE oscillator clock cycles\&. 
+.IP "\(bu" 1
+\fBRCC_LSE_ON\fP Turn ON the LSE oscillator\&. 
+.IP "\(bu" 1
+\fBRCC_LSE_BYPASS\fP LSE oscillator bypassed with external clock\&. 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_RCC_LSEDRIVE_CONFIG(__LSEDRIVE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->BDCR, \fBRCC_BDCR_LSEDRV\fP, (uint32_t)(__LSEDRIVE__))"
+
+.PP
+Macro to configure the External Low Speed oscillator (LSE) drive capability\&. 
+.PP
+\fBNote\fP
+.RS 4
+As the LSE is in the Backup domain and write access is denied to this domain after reset, you have to enable write access using \fBHAL_PWR_EnableBkUpAccess()\fP function before to configure the LSE (to be done once after reset)\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__LSEDRIVE__\fP specifies the new state of the LSE drive capability\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_LSEDRIVE_LOW\fP LSE oscillator low drive capability\&. 
+.IP "\(bu" 1
+\fBRCC_LSEDRIVE_MEDIUMLOW\fP LSE oscillator medium low drive capability\&. 
+.IP "\(bu" 1
+\fBRCC_LSEDRIVE_MEDIUMHIGH\fP LSE oscillator medium high drive capability\&. 
+.IP "\(bu" 1
+\fBRCC_LSEDRIVE_HIGH\fP LSE oscillator high drive capability\&. 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_RCC_LSI_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->CSR, \fBRCC_CSR_LSION\fP)"
+
+.SS "#define __HAL_RCC_LSI_ENABLE()   \fBSET_BIT\fP(\fBRCC\fP\->CSR, \fBRCC_CSR_LSION\fP)"
+
+.PP
+Macros to enable or disable the Internal Low Speed oscillator (LSI)\&. 
+.PP
+\fBNote\fP
+.RS 4
+After enabling the LSI, the application software should wait on LSIRDY flag to be set indicating that LSI clock is stable and can be used to clock the IWDG and/or the RTC\&. 
+.PP
+LSI can not be disabled if the IWDG is running\&. 
+.PP
+When the LSI is stopped, LSIRDY flag goes low after 6 LSI oscillator clock cycles\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_RCC_MCO1_CONFIG(__MCOCLKSOURCE__, __MCODIV__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CFGR, (\fBRCC_CFGR_MCOSEL\fP | \fBRCC_CFGR_MCOPRE\fP), ((__MCOCLKSOURCE__) | (__MCODIV__)))"
+
+.PP
+Macro to configure the Microcontroller output clock\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__MCOCLKSOURCE__\fP specifies the MCO clock source\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_MCO1SOURCE_NOCLOCK\fP MCO output disabled 
+.IP "\(bu" 1
+\fBRCC_MCO1SOURCE_SYSCLK\fP System clock selected as MCO source 
+.IP "\(bu" 1
+\fBRCC_MCO1SOURCE_HSI\fP HSI clock selected as MCO source 
+.IP "\(bu" 1
+\fBRCC_MCO1SOURCE_HSE\fP HSE clock selected as MCO sourcee 
+.IP "\(bu" 1
+\fBRCC_MCO1SOURCE_PLLCLK\fP Main PLL clock selected as MCO source 
+.IP "\(bu" 1
+\fBRCC_MCO1SOURCE_LSI\fP LSI clock selected as MCO source 
+.IP "\(bu" 1
+\fBRCC_MCO1SOURCE_LSE\fP LSE clock selected as MCO source 
+.IP "\(bu" 1
+\fBRCC_MCO1SOURCE_PLLPCLK\fP PLLP output clock selected as MCO source 
+.IP "\(bu" 1
+\fBRCC_MCO1SOURCE_PLLQCLK\fP PLLQ output clock selected as MCO source 
+.IP "\(bu" 1
+\fBRCC_MCO1SOURCE_RTCCLK\fP RTC clock selected as MCO source 
+.IP "\(bu" 1
+\fBRCC_MCO1SOURCE_RTC_WKUP\fP RTC_WKUP clock selected as MCO source  
+.PP
+.br
+\fI__MCODIV__\fP specifies the MCO clock prescaler\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_MCODIV_1\fP MCO clock source is divided by 1 
+.IP "\(bu" 1
+\fBRCC_MCODIV_2\fP MCO clock source is divided by 2 
+.IP "\(bu" 1
+\fBRCC_MCODIV_4\fP MCO clock source is divided by 4 
+.IP "\(bu" 1
+\fBRCC_MCODIV_8\fP MCO clock source is divided by 8 
+.IP "\(bu" 1
+\fBRCC_MCODIV_16\fP MCO clock source is divided by 16 
+.IP "\(bu" 1
+\fBRCC_MCODIV_32\fP MCO clock source is divided by 32 
+.IP "\(bu" 1
+\fBRCC_MCODIV_64\fP MCO clock source is divided by 64 
+.IP "\(bu" 1
+\fBRCC_MCODIV_128\fP MCO clock source is divided by 128  
+.PP
+.RE
+.PP
+
+.SS "#define __HAL_RCC_PLL_CONFIG(__PLLSOURCE__, __PLLM__, __PLLN__, __PLLP__, __PLLR__)"
+\fBValue:\fP.PP
+.nf
+  MODIFY_REG(RCC\->PLLCFGR,                                                   \\
+             (RCC_PLLCFGR_PLLSRC | RCC_PLLCFGR_PLLM | RCC_PLLCFGR_PLLN |     \\
+              RCC_PLLCFGR_PLLP | RCC_PLLCFGR_PLLR),                          \\
+             ((uint32_t) (__PLLSOURCE__)                     |              \\
+              (uint32_t) (__PLLM__)                           |              \\
+              (uint32_t) ((__PLLN__) << RCC_PLLCFGR_PLLN_Pos) |              \\
+              (uint32_t) (__PLLP__)                           |              \\
+              (uint32_t) (__PLLR__)))
+.fi
+
+.PP
+Macro to configure the main PLL clock source, multiplication and division factors\&. 
+.PP
+\fBNote\fP
+.RS 4
+This function must be used only when the main PLL is disabled\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__PLLSOURCE__\fP specifies the PLL entry clock source\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_PLLSOURCE_NONE\fP No clock selected as PLL clock entry 
+.IP "\(bu" 1
+\fBRCC_PLLSOURCE_HSI\fP HSI oscillator clock selected as PLL clock entry 
+.IP "\(bu" 1
+\fBRCC_PLLSOURCE_HSE\fP HSE oscillator clock selected as PLL clock entry
+.PP
+.br
+\fI__PLLM__\fP specifies the division factor for PLL VCO input clock\&. This parameter must be a value of RCC_PLLM_Clock_Divider\&. 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+You have to set the PLLM parameter correctly to ensure that the VCO input frequency ranges from 4 to 16 MHz\&. It is recommended to select a frequency of 16 MHz to limit PLL jitter\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__PLLN__\fP specifies the multiplication factor for PLL VCO output clock\&. This parameter must be a number between 8 and 86\&. 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+You have to set the PLLN parameter correctly to ensure that the VCO output frequency is between 64 and 344 MHz\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__PLLP__\fP specifies the division factor for ADC clock\&. This parameter must be a value of \fBPLLP Clock Divider\fP\&.
+.br
+\fI__PLLQ__\fP specifies the division factor for RBG & HS Timers clocks\&.(1) This parameter must be a value of \fBRCC_PLLQ_Clock_Divider\fP 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+(1)__PLLQ__ parameter availability depends on devices 
+.PP
+If the USB FS is used in your application, you have to set the PLLQ parameter correctly to have 48 MHz clock for the USB\&. However, the RNG needs a frequency lower than or equal to 48 MHz to work correctly\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__PLLR__\fP specifies the division factor for the main system clock\&. This parameter must be a value of RCC_PLLR_Clock_Divider 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+You have to set the PLL parameters correctly to not exceed 64MHZ\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_RCC_PLL_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->CR, \fBRCC_CR_PLLON\fP)"
+
+.SS "#define __HAL_RCC_PLL_ENABLE()   \fBSET_BIT\fP(\fBRCC\fP\->CR, \fBRCC_CR_PLLON\fP)"
+
+.SS "#define __HAL_RCC_PLL_PLLM_CONFIG(__PLLM__)     \fBMODIFY_REG\fP(\fBRCC\fP\->PLLCFGR, \fBRCC_PLLCFGR_PLLM\fP, (__PLLM__))"
+
+.PP
+Macro to configure the PLL multiplication factor\&. 
+.PP
+\fBNote\fP
+.RS 4
+This function must be used only when the main PLL is disabled\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__PLLM__\fP specifies the division factor for PLL VCO input clock This parameter must be a value of RCC_PLLM_Clock_Divider\&. 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+You have to set the PLLM parameter correctly to ensure that the VCO input frequency ranges from 4 to 16 MHz\&. It is recommended to select a frequency of 16 MHz to limit PLL jitter\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_RCC_PLL_PLLSOURCE_CONFIG(__PLLSOURCE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->PLLCFGR, \fBRCC_PLLCFGR_PLLSRC\fP, (__PLLSOURCE__))"
+
+.PP
+Macro to configure the PLL clock source\&. 
+.PP
+\fBNote\fP
+.RS 4
+This function must be used only when the main PLL is disabled\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__PLLSOURCE__\fP specifies the PLL entry clock source\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_PLLSOURCE_NONE\fP No clock selected as PLL clock entry 
+.IP "\(bu" 1
+\fBRCC_PLLSOURCE_HSI\fP HSI oscillator clock selected as PLL clock entry 
+.IP "\(bu" 1
+\fBRCC_PLLSOURCE_HSE\fP HSE oscillator clock selected as PLL clock entry 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_RCC_PLLCLKOUT_DISABLE(__PLLCLOCKOUT__)   \fBCLEAR_BIT\fP(\fBRCC\fP\->PLLCFGR, (__PLLCLOCKOUT__))"
+
+.PP
+Disable each clock output (RCC_PLLRCLK, RCC_PLLQCLK(*), RCC_PLLPCLK) 
+.PP
+\fBNote\fP
+.RS 4
+Disabling clock outputs RCC_PLLPCLK and RCC_PLLQCLK(*) can be done at anytime without the need to stop the PLL in order to save power\&. But RCC_PLLRCLK cannot be stopped if used as System Clock\&. 
+.PP
+(*) RCC_PLLQCLK availability depends on devices 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__PLLCLOCKOUT__\fP specifies the PLL clock to be output\&. This parameter can be one or a combination of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_PLLPCLK\fP This clock may be used to generate the clock for the ADC, I2S1\&.  
+.IP "\(bu" 1
+\fBRCC_PLLRCLK\fP This Clock is used to generate the high speed system clock (up to 64MHz) 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_RCC_PLLCLKOUT_ENABLE(__PLLCLOCKOUT__)   \fBSET_BIT\fP(\fBRCC\fP\->PLLCFGR, (__PLLCLOCKOUT__))"
+
+.PP
+Enable each clock output (RCC_PLLRCLK, RCC_PLLQCLK(*), RCC_PLLPCLK) 
+.PP
+\fBNote\fP
+.RS 4
+Enabling clock outputs RCC_PLLPCLK and RCC_PLLQCLK(*) can be done at anytime without the need to stop the PLL in order to save power\&. But RCC_PLLRCLK cannot be stopped if used as System Clock\&. 
+.PP
+(*) RCC_PLLQCLK availability depends on devices 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__PLLCLOCKOUT__\fP specifies the PLL clock to be output\&. This parameter can be one or a combination of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_PLLPCLK\fP This clock is used to generate the clock for the ADC\&.  
+.IP "\(bu" 1
+\fBRCC_PLLRCLK\fP This Clock is used to generate the high speed system clock (up to 64MHz) 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_RCC_SYSCLK_CONFIG(__SYSCLKSOURCE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CFGR, \fBRCC_CFGR_SW\fP, (__SYSCLKSOURCE__))"
+
+.PP
+Macro to configure the system clock source\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__SYSCLKSOURCE__\fP specifies the system clock source\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_SYSCLKSOURCE_HSI\fP HSI oscillator is used as system clock source\&. 
+.IP "\(bu" 1
+\fBRCC_SYSCLKSOURCE_HSE\fP HSE oscillator is used as system clock source\&. 
+.IP "\(bu" 1
+\fBRCC_SYSCLKSOURCE_PLLCLK\fP PLL output is used as system clock source\&. 
+.IP "\(bu" 1
+\fBRCC_SYSCLKSOURCE_LSI\fP LSI oscillator is used as system clock source\&. 
+.IP "\(bu" 1
+\fBRCC_SYSCLKSOURCE_LSE\fP LSE oscillator is used as system clock source\&. 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

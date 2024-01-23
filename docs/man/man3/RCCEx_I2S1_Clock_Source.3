@@ -1,0 +1,40 @@
+.TH "RCCEx_I2S1_Clock_Source" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCCEx_I2S1_Clock_Source \- RCC I2S1 Clock Source
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_I2S1CLKSOURCE_SYSCLK\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_I2S1CLKSOURCE_PLL\fP   \fBRCC_CCIPR_I2S1SEL_0\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_I2S1CLKSOURCE_HSI\fP   \fBRCC_CCIPR_I2S1SEL_1\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_I2S1CLKSOURCE_EXT\fP   \fBRCC_CCIPR_I2S1SEL\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RCC_I2S1CLKSOURCE_EXT   \fBRCC_CCIPR_I2S1SEL\fP"
+External I2S clock source selected as I2S1 clock 
+.SS "#define RCC_I2S1CLKSOURCE_HSI   \fBRCC_CCIPR_I2S1SEL_1\fP"
+HSI clock selected as I2S1 clock 
+.SS "#define RCC_I2S1CLKSOURCE_PLL   \fBRCC_CCIPR_I2S1SEL_0\fP"
+PLL 'P' selected as I2S1 clock 
+.SS "#define RCC_I2S1CLKSOURCE_SYSCLK   0x00000000U"
+SYSCLK clock selected as I2S1 clock 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

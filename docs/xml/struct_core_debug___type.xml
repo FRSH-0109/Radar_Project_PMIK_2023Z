@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_core_debug___type" kind="struct" language="C++" prot="public">
+    <compoundname>CoreDebug_Type</compoundname>
+    <includes refid="core__armv81mml_8h" local="no">core_armv81mml.h</includes>
+    <sectiondef kind="public-attrib">
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga94ca828091a9226ab6684fbf30e52909" kind="variable"><name>DHCSR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gab74a9ec90ad18e4f7a20362d362b754a" kind="variable"><name>DCRSR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gad1dbd0dd98b6d9327f70545e0081ddbf" kind="variable"><name>DCRDR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gaa99de5f8c609f10c25ed51f57b2edd74" kind="variable"><name>DEMCR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga1defe18fe95571e383d754b13d3f6c51" kind="variable"><name>RESERVED4</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga65047e5b8051fa0c84200f8229a155b3" kind="variable"><name>DAUTHCTRL</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga2916e1173ded6e0fc26e8445e72a6087" kind="variable"><name>DSCSR</name></member>
+    </sectiondef>
+    <briefdescription>
+<para>Structure type to access the Core Debug Register (CoreDebug). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/CMSIS/Include/core_armv81mml.h" line="1876" column="1" bodyfile="Drivers/CMSIS/Include/core_armv81mml.h" bodystart="1877" bodyend="1885"/>
+    <listofallmembers>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga65047e5b8051fa0c84200f8229a155b3" prot="public" virt="non-virtual"><scope>CoreDebug_Type</scope><name>DAUTHCTRL</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gad1dbd0dd98b6d9327f70545e0081ddbf" prot="public" virt="non-virtual"><scope>CoreDebug_Type</scope><name>DCRDR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gab74a9ec90ad18e4f7a20362d362b754a" prot="public" virt="non-virtual"><scope>CoreDebug_Type</scope><name>DCRSR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gaa99de5f8c609f10c25ed51f57b2edd74" prot="public" virt="non-virtual"><scope>CoreDebug_Type</scope><name>DEMCR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga94ca828091a9226ab6684fbf30e52909" prot="public" virt="non-virtual"><scope>CoreDebug_Type</scope><name>DHCSR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga2916e1173ded6e0fc26e8445e72a6087" prot="public" virt="non-virtual"><scope>CoreDebug_Type</scope><name>DSCSR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga1defe18fe95571e383d754b13d3f6c51" prot="public" virt="non-virtual"><scope>CoreDebug_Type</scope><name>RESERVED4</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

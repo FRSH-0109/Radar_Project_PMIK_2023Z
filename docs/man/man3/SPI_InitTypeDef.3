@@ -1,0 +1,96 @@
+.TH "SPI_InitTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_InitTypeDef \- SPI Configuration Structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_hal_spi\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBMode\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDirection\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDataSize\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBCLKPolarity\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBCLKPhase\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBNSS\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBBaudRatePrescaler\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFirstBit\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBTIMode\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBCRCCalculation\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBCRCPolynomial\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBCRCLength\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBNSSPMode\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+SPI Configuration Structure definition\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t SPI_InitTypeDef::BaudRatePrescaler"
+Specifies the Baud Rate prescaler value which will be used to configure the transmit and receive SCK clock\&. This parameter can be a value of \fBSPI BaudRate Prescaler\fP 
+.PP
+\fBNote\fP
+.RS 4
+The communication clock is derived from the master clock\&. The slave clock does not need to be set\&. 
+.RE
+.PP
+
+.SS "uint32_t SPI_InitTypeDef::CLKPhase"
+Specifies the clock active edge for the bit capture\&. This parameter can be a value of \fBSPI Clock Phase\fP 
+.SS "uint32_t SPI_InitTypeDef::CLKPolarity"
+Specifies the serial clock steady state\&. This parameter can be a value of \fBSPI Clock Polarity\fP 
+.SS "uint32_t SPI_InitTypeDef::CRCCalculation"
+Specifies if the CRC calculation is enabled or not\&. This parameter can be a value of \fBSPI CRC Calculation\fP 
+.SS "uint32_t SPI_InitTypeDef::CRCLength"
+Specifies the CRC Length used for the CRC calculation\&. CRC Length is only used with Data8 and Data16, not other data size This parameter can be a value of \fBSPI CRC Length\fP 
+.SS "uint32_t SPI_InitTypeDef::CRCPolynomial"
+Specifies the polynomial used for the CRC calculation\&. This parameter must be an odd number between Min_Data = 1 and Max_Data = 65535 
+.SS "uint32_t SPI_InitTypeDef::DataSize"
+Specifies the SPI data size\&. This parameter can be a value of \fBSPI Data Size\fP 
+.SS "uint32_t SPI_InitTypeDef::Direction"
+Specifies the SPI bidirectional mode state\&. This parameter can be a value of \fBSPI Direction Mode\fP 
+.SS "uint32_t SPI_InitTypeDef::FirstBit"
+Specifies whether data transfers start from MSB or LSB bit\&. This parameter can be a value of \fBSPI MSB LSB Transmission\fP 
+.SS "uint32_t SPI_InitTypeDef::Mode"
+Specifies the SPI operating mode\&. This parameter can be a value of \fBSPI Mode\fP 
+.SS "uint32_t SPI_InitTypeDef::NSS"
+Specifies whether the NSS signal is managed by hardware (NSS pin) or by software using the SSI bit\&. This parameter can be a value of \fBSPI Slave Select Management\fP 
+.SS "uint32_t SPI_InitTypeDef::NSSPMode"
+Specifies whether the NSSP signal is enabled or not \&. This parameter can be a value of \fBSPI NSS Pulse Mode\fP This mode is activated by the NSSP bit in the SPIx_CR2 register and it takes effect only if the SPI interface is configured as Motorola SPI master (FRF=0) with capture on the first edge (SPIx_CR1 CPHA = 0, CPOL setting is ignored)\&.\&. 
+.SS "uint32_t SPI_InitTypeDef::TIMode"
+Specifies if the TI mode is enabled or not\&. This parameter can be a value of \fBSPI TI Mode\fP 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

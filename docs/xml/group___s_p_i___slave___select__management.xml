@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_p_i___slave___select__management" kind="group">
+    <compoundname>SPI_Slave_Select_management</compoundname>
+    <title>SPI Slave Select Management</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i___slave___select__management_1ga0bf14691b9d03eb158f190cefa7ab8fc" prot="public" static="no">
+        <name>SPI_NSS_SOFT</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga0e236047e05106cf1ba7929766311382" kindref="member">SPI_CR1_SSM</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="276" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___slave___select__management_1ga62c42a5e28ce3b0dc92c5186c10accf8" prot="public" static="no">
+        <name>SPI_NSS_HARD_INPUT</name>
+        <initializer>(0x00000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="277" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___slave___select__management_1gab7f2da432661406a37fa2afe4efacd87" prot="public" static="no">
+        <name>SPI_NSS_HARD_OUTPUT</name>
+        <initializer>(<ref refid="group___peripheral___registers___bits___definition_1gae94612b95395eff626f5f3d7d28352dd" kindref="member">SPI_CR2_SSOE</ref> &lt;&lt; 16U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="278" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

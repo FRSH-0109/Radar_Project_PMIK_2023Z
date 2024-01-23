@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___h_a_l___d_a_c___aliased___macros" kind="group">
+    <compoundname>HAL_DAC_Aliased_Macros</compoundname>
+    <title>HAL DAC Aliased Macros maintained for legacy purpose</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___h_a_l___d_a_c___aliased___macros_1ga354fd3b8705eea7292d4e4169497da60" prot="public" static="no">
+        <name>__HAL_DHR12R1_ALIGNEMENT</name>
+        <initializer>DAC_DHR12R1_ALIGNMENT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" line="1990" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" bodystart="1990" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___d_a_c___aliased___macros_1ga2201f928be872705c094e047e49c4b82" prot="public" static="no">
+        <name>__HAL_DHR12R2_ALIGNEMENT</name>
+        <initializer>DAC_DHR12R2_ALIGNMENT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" line="1991" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" bodystart="1991" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___d_a_c___aliased___macros_1ga32958593af3de40d27a9944ab91a7255" prot="public" static="no">
+        <name>__HAL_DHR12RD_ALIGNEMENT</name>
+        <initializer>DAC_DHR12RD_ALIGNMENT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" line="1992" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" bodystart="1992" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___d_a_c___aliased___macros_1ga71522f902db10a227650387b90a0ae45" prot="public" static="no">
+        <name>IS_DAC_GENERATE_WAVE</name>
+        <initializer><ref refid="group___h_a_l___d_a_c___aliased___macros_1ga45c25065fb713820f6dbae0009376e1c" kindref="member">IS_DAC_WAVE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" line="1993" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" bodystart="1993" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___d_a_c___aliased___macros_1ga45c25065fb713820f6dbae0009376e1c" prot="public" static="no">
+        <name>IS_DAC_WAVE</name>
+        <param><defname>WAVE</defname></param>
+        <initializer>                           (((WAVE) == <ref refid="group___h_a_l___d_a_c___aliased___defines_1ga7e80010819867e162e936510093a4cef" kindref="member">DAC_WAVE_NONE</ref>) || \
+                           ((WAVE) == <ref refid="group___h_a_l___d_a_c___aliased___defines_1ga4585a41ff6dfd14971119283f1d8045b" kindref="member">DAC_WAVE_NOISE</ref>)|| \
+                           ((WAVE) == <ref refid="group___h_a_l___d_a_c___aliased___defines_1ga8340be3743135476cb33a7daf7e6ace5" kindref="member">DAC_WAVE_TRIANGLE</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" line="2262" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" bodystart="2262" bodyend="2264"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

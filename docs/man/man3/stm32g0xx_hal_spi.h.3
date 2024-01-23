@@ -1,0 +1,514 @@
+.TH "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h \- Header file of SPI HAL module\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32g0xx_hal_def\&.h'\fP
+.br
+\fC#include 'stm32g0xx_hal_spi_ex\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBSPI_InitTypeDef\fP"
+.br
+.RI "SPI Configuration Structure definition\&. "
+.ti -1c
+.RI "struct \fB__SPI_HandleTypeDef\fP"
+.br
+.RI "SPI handle Structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHAL_SPI_ERROR_NONE\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_SPI_ERROR_MODF\fP   (0x00000001U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_SPI_ERROR_CRC\fP   (0x00000002U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_SPI_ERROR_OVR\fP   (0x00000004U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_SPI_ERROR_FRE\fP   (0x00000008U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_SPI_ERROR_DMA\fP   (0x00000010U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_SPI_ERROR_FLAG\fP   (0x00000020U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_SPI_ERROR_ABORT\fP   (0x00000040U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_MODE_SLAVE\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_MODE_MASTER\fP   (\fBSPI_CR1_MSTR\fP | \fBSPI_CR1_SSI\fP)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DIRECTION_2LINES\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DIRECTION_2LINES_RXONLY\fP   \fBSPI_CR1_RXONLY\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_DIRECTION_1LINE\fP   \fBSPI_CR1_BIDIMODE\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_DATASIZE_4BIT\fP   (0x00000300U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DATASIZE_5BIT\fP   (0x00000400U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DATASIZE_6BIT\fP   (0x00000500U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DATASIZE_7BIT\fP   (0x00000600U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DATASIZE_8BIT\fP   (0x00000700U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DATASIZE_9BIT\fP   (0x00000800U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DATASIZE_10BIT\fP   (0x00000900U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DATASIZE_11BIT\fP   (0x00000A00U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DATASIZE_12BIT\fP   (0x00000B00U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DATASIZE_13BIT\fP   (0x00000C00U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DATASIZE_14BIT\fP   (0x00000D00U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DATASIZE_15BIT\fP   (0x00000E00U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_DATASIZE_16BIT\fP   (0x00000F00U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_POLARITY_LOW\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_POLARITY_HIGH\fP   \fBSPI_CR1_CPOL\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_PHASE_1EDGE\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_PHASE_2EDGE\fP   \fBSPI_CR1_CPHA\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_NSS_SOFT\fP   \fBSPI_CR1_SSM\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_NSS_HARD_INPUT\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_NSS_HARD_OUTPUT\fP   (\fBSPI_CR2_SSOE\fP << 16U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_NSS_PULSE_ENABLE\fP   \fBSPI_CR2_NSSP\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_NSS_PULSE_DISABLE\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_BAUDRATEPRESCALER_2\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_BAUDRATEPRESCALER_4\fP   (\fBSPI_CR1_BR_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBSPI_BAUDRATEPRESCALER_8\fP   (\fBSPI_CR1_BR_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBSPI_BAUDRATEPRESCALER_16\fP   (\fBSPI_CR1_BR_1\fP | \fBSPI_CR1_BR_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBSPI_BAUDRATEPRESCALER_32\fP   (\fBSPI_CR1_BR_2\fP)"
+.br
+.ti -1c
+.RI "#define \fBSPI_BAUDRATEPRESCALER_64\fP   (\fBSPI_CR1_BR_2\fP | \fBSPI_CR1_BR_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBSPI_BAUDRATEPRESCALER_128\fP   (\fBSPI_CR1_BR_2\fP | \fBSPI_CR1_BR_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBSPI_BAUDRATEPRESCALER_256\fP   (\fBSPI_CR1_BR_2\fP | \fBSPI_CR1_BR_1\fP | \fBSPI_CR1_BR_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBSPI_FIRSTBIT_MSB\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_FIRSTBIT_LSB\fP   \fBSPI_CR1_LSBFIRST\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_TIMODE_DISABLE\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_TIMODE_ENABLE\fP   \fBSPI_CR2_FRF\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_CRCCALCULATION_DISABLE\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_CRCCALCULATION_ENABLE\fP   \fBSPI_CR1_CRCEN\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_CRC_LENGTH_DATASIZE\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_CRC_LENGTH_8BIT\fP   (0x00000001U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_CRC_LENGTH_16BIT\fP   (0x00000002U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_RXFIFO_THRESHOLD\fP   \fBSPI_CR2_FRXTH\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_RXFIFO_THRESHOLD_QF\fP   \fBSPI_CR2_FRXTH\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_RXFIFO_THRESHOLD_HF\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_IT_TXE\fP   \fBSPI_CR2_TXEIE\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_IT_RXNE\fP   \fBSPI_CR2_RXNEIE\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_IT_ERR\fP   \fBSPI_CR2_ERRIE\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_RXNE\fP   \fBSPI_SR_RXNE\fP   /* SPI status flag: Rx buffer not empty flag       */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_TXE\fP   \fBSPI_SR_TXE\fP    /* SPI status flag: Tx buffer empty flag           */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_BSY\fP   \fBSPI_SR_BSY\fP    /* SPI status flag: Busy flag                      */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_CRCERR\fP   \fBSPI_SR_CRCERR\fP /* SPI Error flag: \fBCRC\fP error flag                  */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_MODF\fP   \fBSPI_SR_MODF\fP   /* SPI Error flag: Mode fault flag                 */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_OVR\fP   \fBSPI_SR_OVR\fP    /* SPI Error flag: Overrun flag                    */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_FRE\fP   \fBSPI_SR_FRE\fP    /* SPI Error flag: TI mode frame format error flag */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_FTLVL\fP   \fBSPI_SR_FTLVL\fP  /* SPI fifo transmission level                     */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_FRLVL\fP   \fBSPI_SR_FRLVL\fP  /* SPI fifo reception level                        */"
+.br
+.ti -1c
+.RI "#define \fBSPI_FLAG_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_FTLVL_EMPTY\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_FTLVL_QUARTER_FULL\fP   (0x00000800U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_FTLVL_HALF_FULL\fP   (0x00001000U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_FTLVL_FULL\fP   (0x00001800U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_FRLVL_EMPTY\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_FRLVL_QUARTER_FULL\fP   (0x00000200U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_FRLVL_HALF_FULL\fP   (0x00000400U)"
+.br
+.ti -1c
+.RI "#define \fBSPI_FRLVL_FULL\fP   (0x00000600U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_SPI_RESET_HANDLE_STATE\fP(__HANDLE__)   ((__HANDLE__)\->State = \fBHAL_SPI_STATE_RESET\fP)"
+.br
+.RI "Reset SPI handle state\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_ENABLE_IT\fP(__HANDLE__,  __INTERRUPT__)   \fBSET_BIT\fP((__HANDLE__)\->Instance\->CR2, (__INTERRUPT__))"
+.br
+.RI "Enable the specified SPI interrupts\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_DISABLE_IT\fP(__HANDLE__,  __INTERRUPT__)   \fBCLEAR_BIT\fP((__HANDLE__)\->Instance\->CR2, (__INTERRUPT__))"
+.br
+.RI "Disable the specified SPI interrupts\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_GET_IT_SOURCE\fP(__HANDLE__,  __INTERRUPT__)"
+.br
+.RI "Check whether the specified SPI interrupt source is enabled or not\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_GET_FLAG\fP(__HANDLE__,  __FLAG__)   ((((__HANDLE__)\->Instance\->SR) & (__FLAG__)) == (__FLAG__))"
+.br
+.RI "Check whether the specified SPI flag is set or not\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_CLEAR_CRCERRFLAG\fP(__HANDLE__)   ((__HANDLE__)\->Instance\->SR = (uint16_t)(~\fBSPI_FLAG_CRCERR\fP))"
+.br
+.RI "Clear the SPI CRCERR pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_CLEAR_MODFFLAG\fP(__HANDLE__)"
+.br
+.RI "Clear the SPI MODF pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_CLEAR_OVRFLAG\fP(__HANDLE__)"
+.br
+.RI "Clear the SPI OVR pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_CLEAR_FREFLAG\fP(__HANDLE__)"
+.br
+.RI "Clear the SPI FRE pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_ENABLE\fP(__HANDLE__)   \fBSET_BIT\fP((__HANDLE__)\->Instance\->CR1, \fBSPI_CR1_SPE\fP)"
+.br
+.RI "Enable the SPI peripheral\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_DISABLE\fP(__HANDLE__)   \fBCLEAR_BIT\fP((__HANDLE__)\->Instance\->CR1, \fBSPI_CR1_SPE\fP)"
+.br
+.RI "Disable the SPI peripheral\&. "
+.ti -1c
+.RI "#define \fBSPI_1LINE_TX\fP(__HANDLE__)   \fBSET_BIT\fP((__HANDLE__)\->Instance\->CR1, \fBSPI_CR1_BIDIOE\fP)"
+.br
+.RI "Set the SPI transmit-only mode\&. "
+.ti -1c
+.RI "#define \fBSPI_1LINE_RX\fP(__HANDLE__)   \fBCLEAR_BIT\fP((__HANDLE__)\->Instance\->CR1, \fBSPI_CR1_BIDIOE\fP)"
+.br
+.RI "Set the SPI receive-only mode\&. "
+.ti -1c
+.RI "#define \fBSPI_RESET_CRC\fP(__HANDLE__)"
+.br
+.RI "Reset the CRC calculation of the SPI\&. "
+.ti -1c
+.RI "#define \fBSPI_CHECK_FLAG\fP(__SR__,  __FLAG__)"
+.br
+.RI "Check whether the specified SPI flag is set or not\&. "
+.ti -1c
+.RI "#define \fBSPI_CHECK_IT_SOURCE\fP(__CR2__,  __INTERRUPT__)"
+.br
+.RI "Check whether the specified SPI Interrupt is set or not\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_MODE\fP(__MODE__)"
+.br
+.RI "Checks if SPI Mode parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_DIRECTION\fP(__MODE__)"
+.br
+.RI "Checks if SPI Direction Mode parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_DIRECTION_2LINES\fP(__MODE__)   ((__MODE__) == \fBSPI_DIRECTION_2LINES\fP)"
+.br
+.RI "Checks if SPI Direction Mode parameter is 2 lines\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_DIRECTION_2LINES_OR_1LINE\fP(__MODE__)"
+.br
+.RI "Checks if SPI Direction Mode parameter is 1 or 2 lines\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_DATASIZE\fP(__DATASIZE__)"
+.br
+.RI "Checks if SPI Data Size parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_CPOL\fP(__CPOL__)"
+.br
+.RI "Checks if SPI Serial clock steady state parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_CPHA\fP(__CPHA__)"
+.br
+.RI "Checks if SPI Clock Phase parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_NSS\fP(__NSS__)"
+.br
+.RI "Checks if SPI Slave Select parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_NSSP\fP(__NSSP__)"
+.br
+.RI "Checks if SPI NSS Pulse parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_BAUDRATE_PRESCALER\fP(__PRESCALER__)"
+.br
+.RI "Checks if SPI Baudrate prescaler parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_FIRST_BIT\fP(__BIT__)"
+.br
+.RI "Checks if SPI MSB LSB transmission parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_TIMODE\fP(__MODE__)"
+.br
+.RI "Checks if SPI TI mode parameter is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_CRC_CALCULATION\fP(__CALCULATION__)"
+.br
+.RI "Checks if SPI CRC calculation enabled state is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_CRC_LENGTH\fP(__LENGTH__)"
+.br
+.RI "Checks if SPI CRC length is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_CRC_POLYNOMIAL\fP(__POLYNOMIAL__)"
+.br
+.RI "Checks if SPI polynomial value to be used for the CRC calculation, is in allowed range\&. "
+.ti -1c
+.RI "#define \fBIS_SPI_DMA_HANDLE\fP(__HANDLE__)   ((__HANDLE__) != NULL)"
+.br
+.RI "Checks if DMA handle is valid\&. "
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fB__SPI_HandleTypeDef\fP \fBSPI_HandleTypeDef\fP"
+.br
+.RI "SPI handle Structure definition\&. "
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBHAL_SPI_StateTypeDef\fP { \fBHAL_SPI_STATE_RESET\fP = 0x00U, \fBHAL_SPI_STATE_READY\fP = 0x01U, \fBHAL_SPI_STATE_BUSY\fP = 0x02U, \fBHAL_SPI_STATE_BUSY_TX\fP = 0x03U, \fBHAL_SPI_STATE_BUSY_RX\fP = 0x04U, \fBHAL_SPI_STATE_BUSY_TX_RX\fP = 0x05U, \fBHAL_SPI_STATE_ERROR\fP = 0x06U, \fBHAL_SPI_STATE_ABORT\fP = 0x07U }"
+.br
+.RI "HAL SPI State structure definition\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Init\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_DeInit\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_MspInit\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_MspDeInit\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Transmit\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Receive\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_TransmitReceive\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pTxData, uint8_t *pRxData, uint16_t Size, uint32_t Timeout)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Transmit_IT\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Receive_IT\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_TransmitReceive_IT\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pTxData, uint8_t *pRxData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Transmit_DMA\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Receive_DMA\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_TransmitReceive_DMA\fP (\fBSPI_HandleTypeDef\fP *hspi, uint8_t *pTxData, uint8_t *pRxData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_DMAPause\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_DMAResume\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_DMAStop\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Abort\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_SPI_Abort_IT\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_IRQHandler\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_TxCpltCallback\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_RxCpltCallback\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_TxRxCpltCallback\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_TxHalfCpltCallback\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_RxHalfCpltCallback\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_TxRxHalfCpltCallback\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_ErrorCallback\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void \fBHAL_SPI_AbortCpltCallback\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "\fBHAL_SPI_StateTypeDef\fP \fBHAL_SPI_GetState\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "uint32_t \fBHAL_SPI_GetError\fP (\fBSPI_HandleTypeDef\fP *hspi)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file of SPI HAL module\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBAttention\fP
+.RS 4
+.RE
+.PP
+Copyright (c) 2018 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

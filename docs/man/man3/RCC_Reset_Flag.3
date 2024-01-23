@@ -1,0 +1,66 @@
+.TH "RCC_Reset_Flag" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_Reset_Flag \- Reset Flag
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_RESET_FLAG_OBL\fP   \fBRCC_CSR_OBLRSTF\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_RESET_FLAG_PIN\fP   \fBRCC_CSR_PINRSTF\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_RESET_FLAG_PWR\fP   \fBRCC_CSR_PWRRSTF\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_RESET_FLAG_SW\fP   \fBRCC_CSR_SFTRSTF\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_RESET_FLAG_IWDG\fP   \fBRCC_CSR_IWDGRSTF\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_RESET_FLAG_WWDG\fP   \fBRCC_CSR_WWDGRSTF\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_RESET_FLAG_LPWR\fP   \fBRCC_CSR_LPWRRSTF\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_RESET_FLAG_ALL\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RCC_RESET_FLAG_ALL"
+\fBValue:\fP.PP
+.nf
+                                        (RCC_RESET_FLAG_OBL | RCC_RESET_FLAG_PIN | RCC_RESET_FLAG_PWR | \\
+                                        RCC_RESET_FLAG_SW | RCC_RESET_FLAG_IWDG | RCC_RESET_FLAG_WWDG | \\
+                                        RCC_RESET_FLAG_LPWR)
+.fi
+
+.SS "#define RCC_RESET_FLAG_IWDG   \fBRCC_CSR_IWDGRSTF\fP"
+Independent Watchdog reset flag 
+.SS "#define RCC_RESET_FLAG_LPWR   \fBRCC_CSR_LPWRRSTF\fP"
+Low power reset flag 
+.SS "#define RCC_RESET_FLAG_OBL   \fBRCC_CSR_OBLRSTF\fP"
+Option Byte Loader reset flag 
+.SS "#define RCC_RESET_FLAG_PIN   \fBRCC_CSR_PINRSTF\fP"
+PIN reset flag 
+.SS "#define RCC_RESET_FLAG_PWR   \fBRCC_CSR_PWRRSTF\fP"
+BOR or POR/PDR reset flag 
+.SS "#define RCC_RESET_FLAG_SW   \fBRCC_CSR_SFTRSTF\fP"
+Software Reset flag 
+.SS "#define RCC_RESET_FLAG_WWDG   \fBRCC_CSR_WWDGRSTF\fP"
+Window watchdog reset flag 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

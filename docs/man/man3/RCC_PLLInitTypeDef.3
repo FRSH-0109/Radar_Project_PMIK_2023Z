@@ -1,0 +1,66 @@
+.TH "RCC_PLLInitTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_PLLInitTypeDef \- RCC PLL configuration structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_hal_rcc\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBPLLState\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBPLLSource\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBPLLM\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBPLLN\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBPLLP\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBPLLR\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+RCC PLL configuration structure definition\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t RCC_PLLInitTypeDef::PLLM"
+PLLM: Division factor for PLL VCO input clock\&. This parameter must be a value of \fBPLLM Clock Divider\fP 
+.br
+ 
+.SS "uint32_t RCC_PLLInitTypeDef::PLLN"
+PLLN: Multiplication factor for PLL VCO output clock\&. This parameter must be a number between Min_Data = 8 and Max_Data = 86 
+.br
+ 
+.SS "uint32_t RCC_PLLInitTypeDef::PLLP"
+PLLP: PLL Division factor\&. User have to set the PLLQ parameter correctly to not exceed max frequency 64MHZ\&. This parameter must be a value of \fBPLLP Clock Divider\fP 
+.br
+ 
+.SS "uint32_t RCC_PLLInitTypeDef::PLLR"
+PLLR: PLL Division for the main system clock\&. User have to set the PLLR parameter correctly to not exceed max frequency 64MHZ\&. This parameter must be a value of \fBPLLR Clock Divider\fP 
+.br
+ 
+.SS "uint32_t RCC_PLLInitTypeDef::PLLSource"
+RCC_PLLSource: PLL entry clock source\&. This parameter must be a value of \fBPLL Clock Source\fP 
+.br
+ 
+.SS "uint32_t RCC_PLLInitTypeDef::PLLState"
+The new state of the PLL\&. This parameter can be a value of \fBPLL Config\fP 
+.br
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

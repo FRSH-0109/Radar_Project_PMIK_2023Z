@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___h_a_l___i2_c___aliased___functions" kind="group">
+    <compoundname>HAL_I2C_Aliased_Functions</compoundname>
+    <title>HAL I2C Aliased Functions maintained for legacy purpose</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___h_a_l___i2_c___aliased___functions_1ga29a6d7298eb9b8290229e37a6eee9c21" prot="public" static="no">
+        <name>HAL_I2CEx_AnalogFilter_Config</name>
+        <initializer>HAL_I2CEx_ConfigAnalogFilter</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" line="1632" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" bodystart="1632" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___i2_c___aliased___functions_1gad145cb83d816a71f5f8085e5abb9cf8a" prot="public" static="no">
+        <name>HAL_I2CEx_DigitalFilter_Config</name>
+        <initializer>HAL_I2CEx_ConfigDigitalFilter</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" line="1633" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" bodystart="1633" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___i2_c___aliased___functions_1gab58dc8da5184549e6b0ada3895968b2d" prot="public" static="no">
+        <name>HAL_FMPI2CEx_AnalogFilter_Config</name>
+        <initializer>HAL_FMPI2CEx_ConfigAnalogFilter</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" line="1634" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" bodystart="1634" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___i2_c___aliased___functions_1ga26c863f7dd300fa407da0a808888c8d2" prot="public" static="no">
+        <name>HAL_FMPI2CEx_DigitalFilter_Config</name>
+        <initializer>HAL_FMPI2CEx_ConfigDigitalFilter</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" line="1635" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" bodystart="1635" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___i2_c___aliased___functions_1ga340e0d97db96b108c18718d4b37bdb29" prot="public" static="no">
+        <name>HAL_I2CFastModePlusConfig</name>
+        <param><defname>SYSCFG_I2CFastModePlus</defname></param>
+        <param><defname>cmd</defname></param>
+        <initializer>                                                                 (((cmd\
+                                                                 )==<ref refid="group___exported__types_1ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf" kindref="member">ENABLE</ref>)? HAL_I2CEx_EnableFastModePlus(SYSCFG_I2CFastModePlus): HAL_I2CEx_DisableFastModePlus(SYSCFG_I2CFastModePlus))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" line="1637" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" bodystart="1637" bodyend="1638"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

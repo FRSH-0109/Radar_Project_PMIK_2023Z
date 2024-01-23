@@ -1,0 +1,50 @@
+.TH "EXTI_Exported_Functions_Group1" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EXTI_Exported_Functions_Group1 \- Configuration functions
+.PP
+ \- Configuration functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_EXTI_SetConfigLine\fP (\fBEXTI_HandleTypeDef\fP *hexti, \fBEXTI_ConfigTypeDef\fP *pExtiConfig)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_EXTI_GetConfigLine\fP (\fBEXTI_HandleTypeDef\fP *hexti, \fBEXTI_ConfigTypeDef\fP *pExtiConfig)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_EXTI_ClearConfigLine\fP (\fBEXTI_HandleTypeDef\fP *hexti)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_EXTI_RegisterCallback\fP (\fBEXTI_HandleTypeDef\fP *hexti, \fBEXTI_CallbackIDTypeDef\fP CallbackID, void(*pPendingCbfn)(void))"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_EXTI_GetHandle\fP (\fBEXTI_HandleTypeDef\fP *hexti, uint32_t ExtiLine)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Configuration functions\&. 
+
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBHAL_StatusTypeDef\fP HAL_EXTI_ClearConfigLine (\fBEXTI_HandleTypeDef\fP * hexti)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_EXTI_GetConfigLine (\fBEXTI_HandleTypeDef\fP * hexti, \fBEXTI_ConfigTypeDef\fP * pExtiConfig)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_EXTI_GetHandle (\fBEXTI_HandleTypeDef\fP * hexti, uint32_t ExtiLine)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_EXTI_RegisterCallback (\fBEXTI_HandleTypeDef\fP * hexti, \fBEXTI_CallbackIDTypeDef\fP CallbackID, void(*)(void) pPendingCbfn)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_EXTI_SetConfigLine (\fBEXTI_HandleTypeDef\fP * hexti, \fBEXTI_ConfigTypeDef\fP * pExtiConfig)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

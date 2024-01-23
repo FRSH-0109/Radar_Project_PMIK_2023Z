@@ -1,0 +1,105 @@
+.TH "EXTI_Private_Constants" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EXTI_Private_Constants \- EXTI Private Constants
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBEXTI_PROPERTY_SHIFT\fP   24u"
+.br
+.RI "EXTI Line property definition\&. "
+.ti -1c
+.RI "#define \fBEXTI_DIRECT\fP   (0x01uL << \fBEXTI_PROPERTY_SHIFT\fP)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_CONFIG\fP   (0x02uL << \fBEXTI_PROPERTY_SHIFT\fP)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_GPIO\fP   ((0x04uL << \fBEXTI_PROPERTY_SHIFT\fP) | \fBEXTI_CONFIG\fP)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_RESERVED\fP   (0x08uL << \fBEXTI_PROPERTY_SHIFT\fP)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_PROPERTY_MASK\fP   (\fBEXTI_DIRECT\fP | \fBEXTI_CONFIG\fP | \fBEXTI_GPIO\fP)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_REG_SHIFT\fP   16u"
+.br
+.RI "EXTI Register and bit usage\&. "
+.ti -1c
+.RI "#define \fBEXTI_REG1\fP   (0x00uL << \fBEXTI_REG_SHIFT\fP)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_REG2\fP   (0x01uL << \fBEXTI_REG_SHIFT\fP)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_REG_MASK\fP   (\fBEXTI_REG1\fP | \fBEXTI_REG2\fP)"
+.br
+.ti -1c
+.RI "#define \fBEXTI_PIN_MASK\fP   0x0000001Fu"
+.br
+.ti -1c
+.RI "#define \fBEXTI_MODE_MASK\fP   (\fBEXTI_MODE_EVENT\fP | \fBEXTI_MODE_INTERRUPT\fP)"
+.br
+.RI "EXTI Mask for interrupt & event mode\&. "
+.ti -1c
+.RI "#define \fBEXTI_TRIGGER_MASK\fP   (\fBEXTI_TRIGGER_RISING\fP | \fBEXTI_TRIGGER_FALLING\fP)"
+.br
+.RI "EXTI Mask for trigger possibilities\&. "
+.ti -1c
+.RI "#define \fBEXTI_LINE_NB\fP   32uL"
+.br
+.RI "EXTI Line number\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define EXTI_CONFIG   (0x02uL << \fBEXTI_PROPERTY_SHIFT\fP)"
+
+.SS "#define EXTI_DIRECT   (0x01uL << \fBEXTI_PROPERTY_SHIFT\fP)"
+
+.SS "#define EXTI_GPIO   ((0x04uL << \fBEXTI_PROPERTY_SHIFT\fP) | \fBEXTI_CONFIG\fP)"
+
+.SS "#define EXTI_LINE_NB   32uL"
+
+.PP
+EXTI Line number\&. 
+.SS "#define EXTI_MODE_MASK   (\fBEXTI_MODE_EVENT\fP | \fBEXTI_MODE_INTERRUPT\fP)"
+
+.PP
+EXTI Mask for interrupt & event mode\&. 
+.SS "#define EXTI_PIN_MASK   0x0000001Fu"
+
+.SS "#define EXTI_PROPERTY_MASK   (\fBEXTI_DIRECT\fP | \fBEXTI_CONFIG\fP | \fBEXTI_GPIO\fP)"
+
+.SS "#define EXTI_PROPERTY_SHIFT   24u"
+
+.PP
+EXTI Line property definition\&. 
+.SS "#define EXTI_REG1   (0x00uL << \fBEXTI_REG_SHIFT\fP)"
+
+.SS "#define EXTI_REG2   (0x01uL << \fBEXTI_REG_SHIFT\fP)"
+
+.SS "#define EXTI_REG_MASK   (\fBEXTI_REG1\fP | \fBEXTI_REG2\fP)"
+
+.SS "#define EXTI_REG_SHIFT   16u"
+
+.PP
+EXTI Register and bit usage\&. 
+.SS "#define EXTI_RESERVED   (0x08uL << \fBEXTI_PROPERTY_SHIFT\fP)"
+
+.SS "#define EXTI_TRIGGER_MASK   (\fBEXTI_TRIGGER_RISING\fP | \fBEXTI_TRIGGER_FALLING\fP)"
+
+.PP
+EXTI Mask for trigger possibilities\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

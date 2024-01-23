@@ -1,0 +1,1190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="main_8c" kind="file" language="C++">
+    <compoundname>main.c</compoundname>
+    <includes refid="main_8h" local="yes">main.h</includes>
+    <includes refid="dma_8h" local="yes">dma.h</includes>
+    <includes refid="spi_8h" local="yes">spi.h</includes>
+    <includes refid="tim_8h" local="yes">tim.h</includes>
+    <includes refid="usart_8h" local="yes">usart.h</includes>
+    <includes refid="gpio_8h" local="yes">gpio.h</includes>
+    <includes local="no">math.h</includes>
+    <includes refid="usart__custom_8h" local="yes">usart_custom.h</includes>
+    <includes refid="servo__driver_8h" local="yes">servo_driver.h</includes>
+    <includes refid="_i_l_i9341_8h" local="yes">ILI9341.h</includes>
+    <includes refid="_g_f_x___color_8h" local="yes">GFX_Color.h</includes>
+    <includes refid="font__8x5_8h" local="yes">fonts/font_8x5.h</includes>
+    <includes refid="distance__sensor_8h" local="yes">distance_sensor.h</includes>
+    <includes refid="radar_8h" local="yes">radar.h</includes>
+    <incdepgraph>
+      <node id="31">
+        <label>dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>tim.h</label>
+        <link refid="tim_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Core/Src/main.c</label>
+        <link refid="main_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="8">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="3">
+        <label>stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>stm32g0xx_hal_cortex.h</label>
+        <link refid="stm32g0xx__hal__cortex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stm32g0xx_hal_dma.h</label>
+        <link refid="stm32g0xx__hal__dma_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stm32g0xx_hal_dma_ex.h</label>
+        <link refid="stm32g0xx__hal__dma__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>stm32g0xx_hal_exti.h</label>
+        <link refid="stm32g0xx__hal__exti_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>stm32g0xx_hal_flash.h</label>
+        <link refid="stm32g0xx__hal__flash_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>stm32g0xx_hal_flash_ex.h</label>
+        <link refid="stm32g0xx__hal__flash__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stm32g0xx_hal_gpio.h</label>
+        <link refid="stm32g0xx__hal__gpio_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stm32g0xx_hal_gpio_ex.h</label>
+        <link refid="stm32g0xx__hal__gpio__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>stm32g0xx_hal_pwr.h</label>
+        <link refid="stm32g0xx__hal__pwr_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>stm32g0xx_hal_pwr_ex.h</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stm32g0xx_hal_rcc.h</label>
+        <link refid="stm32g0xx__hal__rcc_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stm32g0xx_hal_rcc_ex.h</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>stm32g0xx_hal_spi.h</label>
+        <link refid="stm32g0xx__hal__spi_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>stm32g0xx_hal_spi_ex.h</label>
+        <link refid="stm32g0xx__hal__spi__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>stm32g0xx_hal_tim.h</label>
+        <link refid="stm32g0xx__hal__tim_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>stm32g0xx_hal_tim_ex.h</label>
+        <link refid="stm32g0xx__hal__tim__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>stm32g0xx_hal_uart.h</label>
+        <link refid="stm32g0xx__hal__uart_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>stm32g0xx_hal_uart_ex.h</label>
+        <link refid="stm32g0xx__hal__uart__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stm32g0xx_ll_dma.h</label>
+        <link refid="stm32g0xx__ll__dma_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stm32g0xx_ll_dmamux.h</label>
+        <link refid="stm32g0xx__ll__dmamux_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stm32g0xx_ll_rcc.h</label>
+        <link refid="stm32g0xx__ll__rcc_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>GFX_Color.h</label>
+        <link refid="_g_f_x___color_8h"/>
+      </node>
+      <node id="42">
+        <label>ILI9341.h</label>
+        <link refid="_i_l_i9341_8h"/>
+      </node>
+      <node id="44">
+        <label>fonts/font_8x5.h</label>
+        <link refid="font__8x5_8h"/>
+      </node>
+      <node id="45">
+        <label>distance_sensor.h</label>
+        <link refid="distance__sensor_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>radar.h</label>
+        <link refid="radar_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>servo_driver.h</label>
+        <link refid="servo__driver_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>usart_custom.h</label>
+        <link refid="usart__custom_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>math.h</label>
+      </node>
+      <node id="30">
+        <label>stdbool.h</label>
+      </node>
+      <node id="9">
+        <label>stddef.h</label>
+      </node>
+      <node id="41">
+        <label>stdint.h</label>
+      </node>
+      <node id="47">
+        <label>stdio.h</label>
+      </node>
+      <node id="38">
+        <label>stdlib.h</label>
+      </node>
+      <node id="39">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="main_8c_1a4e519356505feeb7b9659dcdc97161c0" prot="public" static="no" mutable="no">
+        <type><ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref></type>
+        <definition>servoDriverStruct servoPA6</definition>
+        <argsstring></argsstring>
+        <name>servoPA6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="49" column="19" bodyfile="Core/Src/main.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="main_8c_1a94c36cf45267b6e4d4ec02ad2438c2da" prot="public" static="no" mutable="no">
+        <type><ref refid="structdistance_sensor_struct" kindref="compound">distanceSensorStruct</ref></type>
+        <definition>distanceSensorStruct distanceSensorPA2</definition>
+        <argsstring></argsstring>
+        <name>distanceSensorPA2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="50" column="22" bodyfile="Core/Src/main.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" prot="public" static="no" mutable="no">
+        <type><ref refid="structradar_struct" kindref="compound">radarStruct</ref></type>
+        <definition>radarStruct radar</definition>
+        <argsstring></argsstring>
+        <name>radar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="52" column="13" bodyfile="Core/Src/main.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" prot="public" static="no" mutable="no">
+        <type><ref refid="structdraw_helper_struct" kindref="compound">drawHelperStruct</ref></type>
+        <definition>drawHelperStruct drawHelper</definition>
+        <argsstring></argsstring>
+        <name>drawHelper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="53" column="18" bodyfile="Core/Src/main.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="main_8c_1aa8f73ccd6c2e2b10c7ee326ad9b700ce" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref></type>
+        <definition>UART_Custom_HandleTypeDef huartPC</definition>
+        <argsstring></argsstring>
+        <name>huartPC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="55" column="27" bodyfile="Core/Src/main.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="main_8c_1a730b36042999ad73efb22a259d91845a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref></type>
+        <definition>UART_Queue uartQueuePC</definition>
+        <argsstring></argsstring>
+        <name>uartQueuePC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="56" column="12" bodyfile="Core/Src/main.c" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="main_8c_1a34251392f0d5e2461e3aef615918c235" prot="public" static="no" extern="yes" mutable="no">
+        <type><ref refid="group___d_m_a___exported___types_1ga41b754a906b86bce54dc79938970138b" kindref="member">DMA_HandleTypeDef</ref></type>
+        <definition>DMA_HandleTypeDef hdma_usart1_rx</definition>
+        <argsstring></argsstring>
+        <name>hdma_usart1_rx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="57" column="26" bodyfile="Core/Src/usart.c" bodystart="28" bodyend="-1" declfile="Core/Src/main.c" declline="57" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="main_8c_1a5af94ab36bfe698db3e6beea96d10a90" prot="public" static="no" extern="yes" mutable="no">
+        <type><ref refid="group___d_m_a___exported___types_1ga41b754a906b86bce54dc79938970138b" kindref="member">DMA_HandleTypeDef</ref></type>
+        <definition>DMA_HandleTypeDef hdma_usart1_tx</definition>
+        <argsstring></argsstring>
+        <name>hdma_usart1_tx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="58" column="26" bodyfile="Core/Src/usart.c" bodystart="29" bodyend="-1" declfile="Core/Src/main.c" declline="58" declcolumn="26"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="main_8c_1a70af21c671abfcc773614a9a4f63d920" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SystemClock_Config</definition>
+        <argsstring>(void)</argsstring>
+        <name>SystemClock_Config</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>System Clock Configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Configure the main internal regulator output voltage</para>
+<para>Initializes the RCC Oscillators according to the specified parameters in the <ref refid="struct_r_c_c___osc_init_type_def" kindref="compound">RCC_OscInitTypeDef</ref> structure.</para>
+<para>Initializes the CPU, AHB and APB buses clocks</para>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="153" column="6" bodyfile="Core/Src/main.c" bodystart="153" bodyend="192" declfile="Core/Src/main.c" declline="62" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1a4990b1c13cc4573981034104cc9d0cb7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MX_NVIC_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_NVIC_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>NVIC Configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="198" column="13" bodyfile="Core/Src/main.c" bodystart="198" bodyend="203" declfile="Core/Src/main.c" declline="63" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>The application entry point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="76" column="5" bodyfile="Core/Src/main.c" bodystart="76" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1a753dcda9075115cc1c781e4332085f84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawClear</definition>
+        <argsstring>()</argsstring>
+        <name>drawClear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="207" column="6" bodyfile="Core/Src/main.c" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1aedda947c024e77ba1f14c739913870bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawSetup</definition>
+        <argsstring>()</argsstring>
+        <name>drawSetup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="212" column="6" bodyfile="Core/Src/main.c" bodystart="212" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1ab3557cb07835dec370fd8b7855343aae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool drawSetupUpdate</definition>
+        <argsstring>(double drawScale, uint8_t measureScalesNumber)</argsstring>
+        <name>drawSetupUpdate</name>
+        <param>
+          <type>double</type>
+          <declname>drawScale</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>measureScalesNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="235" column="6" bodyfile="Core/Src/main.c" bodystart="235" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1ab5b93ed998b46e745b6713b6d7a27e32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawMeasure</definition>
+        <argsstring>()</argsstring>
+        <name>drawMeasure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="276" column="6" bodyfile="Core/Src/main.c" bodystart="276" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1af9f0ac13160d4a1b3eb13b6a0fa76502" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawMeasureScale</definition>
+        <argsstring>()</argsstring>
+        <name>drawMeasureScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="293" column="6" bodyfile="Core/Src/main.c" bodystart="293" bodyend="303"/>
+      </memberdef>
+      <member refid="group___t_i_m___exported___functions___group9_1ga8a3b0ad512a6e6c6157440b68d395eac" kind="function"><name>HAL_TIM_PeriodElapsedCallback</name></member>
+      <memberdef kind="function" id="main_8c_1a6b42437e0654d88f5b7a68caa22a733c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void distanceSensorTrigOn</definition>
+        <argsstring>(distanceSensorStruct *sensor)</argsstring>
+        <name>distanceSensorTrigOn</name>
+        <param>
+          <type><ref refid="structdistance_sensor_struct" kindref="compound">distanceSensorStruct</ref> *</type>
+          <declname>sensor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="318" column="6" bodyfile="Core/Src/main.c" bodystart="318" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1a9b87431c23c2a12baa879f62f43bda05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void distanceSensorDelay</definition>
+        <argsstring>(distanceSensorStruct *sensor, uint32_t delay)</argsstring>
+        <name>distanceSensorDelay</name>
+        <param>
+          <type><ref refid="structdistance_sensor_struct" kindref="compound">distanceSensorStruct</ref> *</type>
+          <declname>sensor</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="326" column="6" bodyfile="Core/Src/main.c" bodystart="326" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1a902cb6ceee556ebfc81c8d1181d87cc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void distanceSensorTrigOff</definition>
+        <argsstring>(distanceSensorStruct *sensor)</argsstring>
+        <name>distanceSensorTrigOff</name>
+        <param>
+          <type><ref refid="structdistance_sensor_struct" kindref="compound">distanceSensorStruct</ref> *</type>
+          <declname>sensor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="334" column="6" bodyfile="Core/Src/main.c" bodystart="334" bodyend="340"/>
+      </memberdef>
+      <member refid="group___g_p_i_o___exported___functions___group2_1ga537318eafe9182b60dc22ef54966c6a1" kind="function"><name>HAL_GPIO_EXTI_Rising_Callback</name></member>
+      <member refid="group___g_p_i_o___exported___functions___group2_1ga0b334860563f4a109443e0a604af2300" kind="function"><name>HAL_GPIO_EXTI_Falling_Callback</name></member>
+      <memberdef kind="function" id="main_8c_1a3a027ed11a1051d0c899706817c68e37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void servoDriverStartTimer</definition>
+        <argsstring>(servoDriverStruct *servoDriver)</argsstring>
+        <name>servoDriverStartTimer</name>
+        <param>
+          <type><ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> *</type>
+          <declname>servoDriver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for starting timer paired with certain servo struct</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>servoDriver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> struct </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="362" column="6" bodyfile="Core/Src/main.c" bodystart="362" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1a9644009cc702a14f3a480ad472ee4d6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void servoDriverStopTimer</definition>
+        <argsstring>(servoDriverStruct *servoDriver)</argsstring>
+        <name>servoDriverStopTimer</name>
+        <param>
+          <type><ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> *</type>
+          <declname>servoDriver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for stopping timer paired with certain servo struct</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>servoDriver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> struct </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="370" column="6" bodyfile="Core/Src/main.c" bodystart="370" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1aa8a4bdef9b3e742a5e225dd29a804db6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void servoDriverSetPulseWidth</definition>
+        <argsstring>(servoDriverStruct *servoDriver)</argsstring>
+        <name>servoDriverSetPulseWidth</name>
+        <param>
+          <type><ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> *</type>
+          <declname>servoDriver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for setting pulse width from struct into timer instance</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>servoDriver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> struct </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="378" column="6" bodyfile="Core/Src/main.c" bodystart="378" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1a1730ffe1e560465665eb47d9264826f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Error_Handler</definition>
+        <argsstring>(void)</argsstring>
+        <name>Error_Handler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is executed in case of error occurrence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/main.c" line="392" column="6" bodyfile="Core/Src/main.c" bodystart="392" bodyend="401"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Main source file of ultrasonic radar project. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Kamil Kośnik, Kacper Radzikowski </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z">https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Header<sp/>*/</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Header<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="main_8h" kindref="compound">main.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dma_8h" kindref="compound">dma.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="spi_8h" kindref="compound">spi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tim_8h" kindref="compound">tim.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usart_8h" kindref="compound">usart.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gpio_8h" kindref="compound">gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>includes<sp/>----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Includes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usart__custom_8h" kindref="compound">usart_custom.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="servo__driver_8h" kindref="compound">servo_driver.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_i_l_i9341_8h" kindref="compound">ILI9341.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_g_f_x___color_8h" kindref="compound">GFX_Color.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="font__8x5_8h" kindref="compound">fonts/font_8x5.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="distance__sensor_8h" kindref="compound">distance_sensor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="radar_8h" kindref="compound">radar.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Includes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>typedef<sp/>-----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>PTD<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>PTD<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>define<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>PD<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>PD<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>macro<sp/>-------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>PM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>PM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>variables<sp/>---------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>PV<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref><sp/><ref refid="main_8c_1a4e519356505feeb7b9659dcdc97161c0" kindref="member">servoPA6</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><ref refid="structdistance_sensor_struct" kindref="compound">distanceSensorStruct</ref><sp/><ref refid="main_8c_1a94c36cf45267b6e4d4ec02ad2438c2da" kindref="member">distanceSensorPA2</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><ref refid="structradar_struct" kindref="compound">radarStruct</ref><sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><ref refid="structdraw_helper_struct" kindref="compound">drawHelperStruct</ref><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><ref refid="struct_u_a_r_t___custom___handle_type_def" kindref="compound">UART_Custom_HandleTypeDef</ref><sp/><ref refid="main_8c_1aa8f73ccd6c2e2b10c7ee326ad9b700ce" kindref="member">huartPC</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><ref refid="struct_u_a_r_t___queue" kindref="compound">UART_Queue</ref><sp/><ref refid="main_8c_1a730b36042999ad73efb22a259d91845a" kindref="member">uartQueuePC</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct_____d_m_a___handle_type_def" kindref="compound">DMA_HandleTypeDef</ref><sp/><ref refid="main_8c_1a34251392f0d5e2461e3aef615918c235" kindref="member">hdma_usart1_rx</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct_____d_m_a___handle_type_def" kindref="compound">DMA_HandleTypeDef</ref><sp/><ref refid="main_8c_1a5af94ab36bfe698db3e6beea96d10a90" kindref="member">hdma_usart1_tx</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>PV<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>function<sp/>prototypes<sp/>-----------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a70af21c671abfcc773614a9a4f63d920" kindref="member">SystemClock_Config</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MX_NVIC_Init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>PFP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>PFP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>user<sp/>code<sp/>---------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member">main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>MCU<sp/>Configuration--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>of<sp/>all<sp/>peripherals,<sp/>Initializes<sp/>the<sp/>Flash<sp/>interface<sp/>and<sp/>the<sp/>Systick.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___h_a_l___exported___functions___group1_1gaecac54d350c3730e6831eb404e557dc4" kindref="member">HAL_Init</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Init<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Init<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>the<sp/>system<sp/>clock<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><ref refid="main_8c_1a70af21c671abfcc773614a9a4f63d920" kindref="member">SystemClock_Config</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>SysInit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>SysInit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>all<sp/>configured<sp/>peripherals<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><ref refid="gpio_8h_1ac724e431d2af879252de35615be2bdea" kindref="member">MX_GPIO_Init</ref>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><ref refid="dma_8h_1a323249dac769f9855c10b4ec9446b707" kindref="member">MX_DMA_Init</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><ref refid="tim_8h_1ac648e7f125deef46d41cd8b3f632efe0" kindref="member">MX_TIM16_Init</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><ref refid="spi_8h_1af81398f9775695df0b172367651ca3e6" kindref="member">MX_SPI1_Init</ref>();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><ref refid="tim_8h_1af7d58ba47b8cffa9bf63d7021a7d5d77" kindref="member">MX_TIM17_Init</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><ref refid="tim_8h_1a34e45e5fe68cc66a86b26df2da7e18b4" kindref="member">MX_TIM14_Init</ref>();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><ref refid="tim_8h_1a7912f2916786a2c33cb6fb8259ade58c" kindref="member">MX_TIM3_Init</ref>();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><ref refid="usart_8h_1a57d1167735baafab8e3288526c424929" kindref="member">MX_USART1_UART_Init</ref>();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>interrupts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>MX_NVIC_Init();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><ref refid="_i_l_i9341_8c_1a0538f2015fef138ace1fd64a3d652cd1" kindref="member">ILI9341_Init</ref>(&amp;<ref refid="spi_8h_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><ref refid="_i_l_i9341_8c_1a324ebd8d3bc5309c8c9da80b0c07d10a" kindref="member">ILI9341_WriteScreen</ref>(<ref refid="_i_l_i9341_8h_1a50166b9a65012fb2f8fe0a0d5f519fa3" kindref="member">ILI9341_BLACK</ref>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><ref refid="_g_f_x___color_8c_1a596e777e1054a75cc927606847f187ce" kindref="member">GFX_SetFont</ref>(<ref refid="font__8x5_8h_1aedc877cb4a91dd324fb4cc4ce5f818c8" kindref="member">font_8x5</ref>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="servo__driver_8c_1a20a27d2eaa060a951a5807b5bb48919e" kindref="member">servoDriverInit</ref>(&amp;<ref refid="main_8c_1a4e519356505feeb7b9659dcdc97161c0" kindref="member">servoPA6</ref>,<sp/>0,<sp/>180,<sp/>700,<sp/>2650);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><ref refid="distance__sensor_8c_1aea4bc35ea8c7e00d2399a54ba0eb870e" kindref="member">distanceSensorInit</ref>(&amp;<ref refid="main_8c_1a94c36cf45267b6e4d4ec02ad2438c2da" kindref="member">distanceSensorPA2</ref>,<sp/>58.0f);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><ref refid="usart__custom_8c_1ae07c419a1a1df7134ddbfedd9bdf7c91" kindref="member">uartCustomInit</ref>(&amp;<ref refid="main_8c_1aa8f73ccd6c2e2b10c7ee326ad9b700ce" kindref="member">huartPC</ref>,<sp/>&amp;<ref refid="usart_8h_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>,<sp/><ref refid="usart__custom_8h_1adf0178118c42a9224dd770222fc81497" kindref="member">MAX_UART_RX_DATA_LEN</ref>,<sp/><ref refid="usart__custom_8h_1ad33fa5c178f516badf8b705c646ba9f9" kindref="member">MAX_UART_TX_DATA_LEN</ref>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><ref refid="usart__custom_8c_1a123702bc9950b2a0ce9a34e889842f74" kindref="member">uartCustomReceiveDMA</ref>(&amp;<ref refid="main_8c_1aa8f73ccd6c2e2b10c7ee326ad9b700ce" kindref="member">huartPC</ref>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="group___d_m_a___exported___macros_1ga2867eab09398df2daac55c3f327654da" kindref="member">__HAL_DMA_DISABLE_IT</ref>(&amp;<ref refid="main_8c_1a34251392f0d5e2461e3aef615918c235" kindref="member">hdma_usart1_rx</ref>,<sp/><ref refid="group___d_m_a__interrupt__enable__definitions_1gadf11c572b9797e04a14b105fdc2e5f66" kindref="member">DMA_IT_HT</ref>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><ref refid="radar_8c_1a312279113d5a54b8d98e248b4e02eb89" kindref="member">radarInit</ref>(&amp;<ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>,<sp/>&amp;<ref refid="main_8c_1a4e519356505feeb7b9659dcdc97161c0" kindref="member">servoPA6</ref>,<sp/>&amp;<ref refid="tim_8h_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>,<sp/>&amp;<ref refid="main_8c_1a94c36cf45267b6e4d4ec02ad2438c2da" kindref="member">distanceSensorPA2</ref>,<sp/>&amp;<ref refid="tim_8h_1ae4b8faf50eeb07577983d36e4c3894b8" kindref="member">htim14</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><ref refid="radar_8c_1abfc9c42283fc76d21b3e56cc39c8f385" kindref="member">radarMeasureStart</ref>(&amp;<ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><ref refid="radar_8c_1a19fed3b3d140e2c18a4122ad7e783ac6" kindref="member">radarServoStart</ref>(&amp;<ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><ref refid="main_8c_1aedda947c024e77ba1f14c739913870bd" kindref="member">drawSetup</ref>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Infinite<sp/>loop<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>WHILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>WHILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="usart__custom_8c_1abbc250ac23ac518f14aa24e1f9a11ead" kindref="member">uartQueueReceive</ref>(&amp;<ref refid="main_8c_1a730b36042999ad73efb22a259d91845a" kindref="member">uartQueuePC</ref>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="usart__custom_8c_1a434833c4433f588d5fda684a54dcb0ff" kindref="member">uartQueueTransmit</ref>(&amp;<ref refid="main_8c_1a730b36042999ad73efb22a259d91845a" kindref="member">uartQueuePC</ref>,<sp/>&amp;<ref refid="main_8c_1aa8f73ccd6c2e2b10c7ee326ad9b700ce" kindref="member">huartPC</ref>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1ab5b93ed998b46e745b6713b6d7a27e32" kindref="member">drawMeasure</ref>();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1af9f0ac13160d4a1b3eb13b6a0fa76502" kindref="member">drawMeasureScale</ref>();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a70af21c671abfcc773614a9a4f63d920" kindref="member">SystemClock_Config</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><ref refid="struct_r_c_c___osc_init_type_def" kindref="compound">RCC_OscInitTypeDef</ref><sp/>RCC_OscInitStruct<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><ref refid="struct_r_c_c___clk_init_type_def" kindref="compound">RCC_ClkInitTypeDef</ref><sp/>RCC_ClkInitStruct<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><ref refid="group___p_w_r_ex___exported___functions___group1_1ga1a1e616641c2dc696681ace585d9afb5" kindref="member">HAL_PWREx_ControlVoltageScaling</ref>(<ref refid="group___p_w_r_ex___regulator___voltage___scale_1ga3b5ca5ab9c19938a14d273825bcf840e" kindref="member">PWR_REGULATOR_VOLTAGE_SCALE1</ref>);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>RCC_OscInitStruct.<ref refid="struct_r_c_c___osc_init_type_def_1a23b9d1da2a92936c618d2416406275a3" kindref="member">OscillatorType</ref><sp/>=<sp/><ref refid="group___r_c_c___oscillator___type_1gaa7ff7cbe9b0c2c511b0d0555e2a32a23" kindref="member">RCC_OSCILLATORTYPE_HSI</ref>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>RCC_OscInitStruct.<ref refid="struct_r_c_c___osc_init_type_def_1a49183e0be5cf522de0fa1968df0bf0d7" kindref="member">HSIState</ref><sp/>=<sp/><ref refid="group___r_c_c___h_s_i___config_1ga0bf09ef9e46d5da25cced7b3122f92f5" kindref="member">RCC_HSI_ON</ref>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>RCC_OscInitStruct.<ref refid="struct_r_c_c___osc_init_type_def_1a621a40ae95fb6f4f35c5a25b59dfc5f5" kindref="member">HSIDiv</ref><sp/>=<sp/><ref refid="group___r_c_c___h_s_i___div_1ga47ea1a7697d9e3f7eda06b45bc7f4db6" kindref="member">RCC_HSI_DIV1</ref>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/>RCC_OscInitStruct.<ref refid="struct_r_c_c___osc_init_type_def_1ad28b977e258a3ee788cd6c2d72430c30" kindref="member">HSICalibrationValue</ref><sp/>=<sp/><ref refid="group___r_c_c___h_s_i___config_1ga03cf582e263fb7e31a7783d8adabd7a0" kindref="member">RCC_HSICALIBRATION_DEFAULT</ref>;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/>RCC_OscInitStruct.<ref refid="struct_r_c_c___osc_init_type_def_1a7ec4025786fa81e2a4bfc42832c0eddf" kindref="member">PLL</ref>.<ref refid="struct_r_c_c___p_l_l_init_type_def_1ab3bb33f461bb409576e1c899c962e0b0" kindref="member">PLLState</ref><sp/>=<sp/><ref refid="group___r_c_c___p_l_l___config_1gaf86dbee130304ba5760818f56d34ec91" kindref="member">RCC_PLL_ON</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>RCC_OscInitStruct.<ref refid="struct_r_c_c___osc_init_type_def_1a7ec4025786fa81e2a4bfc42832c0eddf" kindref="member">PLL</ref>.<ref refid="struct_r_c_c___p_l_l_init_type_def_1a418ecda4a355c6a161e4893a7bc1897f" kindref="member">PLLSource</ref><sp/>=<sp/><ref refid="group___r_c_c___p_l_l___clock___source_1ga0e07703f1ccb3d60f8a47a2dc631c218" kindref="member">RCC_PLLSOURCE_HSI</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>RCC_OscInitStruct.<ref refid="struct_r_c_c___osc_init_type_def_1a7ec4025786fa81e2a4bfc42832c0eddf" kindref="member">PLL</ref>.<ref refid="struct_r_c_c___p_l_l_init_type_def_1adb1ffaed93a1680042e24b5442b90af4" kindref="member">PLLM</ref><sp/>=<sp/><ref refid="group___r_c_c___p_l_l_m___clock___divider_1gad70e3a8bfa2a06efcaa3e7ffe150fb36" kindref="member">RCC_PLLM_DIV1</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>RCC_OscInitStruct.<ref refid="struct_r_c_c___osc_init_type_def_1a7ec4025786fa81e2a4bfc42832c0eddf" kindref="member">PLL</ref>.<ref refid="struct_r_c_c___p_l_l_init_type_def_1a2e8a73f7961f8d6570193c68daba88a6" kindref="member">PLLN</ref><sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>RCC_OscInitStruct.<ref refid="struct_r_c_c___osc_init_type_def_1a7ec4025786fa81e2a4bfc42832c0eddf" kindref="member">PLL</ref>.<ref refid="struct_r_c_c___p_l_l_init_type_def_1ae2047a6040de6fcd43e0033a7b09a226" kindref="member">PLLP</ref><sp/>=<sp/><ref refid="group___r_c_c___p_l_l_p___clock___divider_1ga16248cbd581f020b8a8d1cf0d9f0864d" kindref="member">RCC_PLLP_DIV2</ref>;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>RCC_OscInitStruct.<ref refid="struct_r_c_c___osc_init_type_def_1a7ec4025786fa81e2a4bfc42832c0eddf" kindref="member">PLL</ref>.<ref refid="struct_r_c_c___p_l_l_init_type_def_1a5777f8788531e0fc3f35b0e5d1c7a445" kindref="member">PLLR</ref><sp/>=<sp/><ref refid="group___r_c_c___p_l_l_r___clock___divider_1ga8542180301c08434a774ee3033b89564" kindref="member">RCC_PLLR_DIV2</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___r_c_c___exported___functions___group1_1ga9c504088722e03830df6caad932ad06b" kindref="member">HAL_RCC_OscConfig</ref>(&amp;RCC_OscInitStruct)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8c_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>RCC_ClkInitStruct.<ref refid="struct_r_c_c___clk_init_type_def_1afe92b105bff8e698233c286bb3018384" kindref="member">ClockType</ref><sp/>=<sp/><ref refid="group___r_c_c___system___clock___type_1gaa5330efbd790632856a2b15851517ef9" kindref="member">RCC_CLOCKTYPE_HCLK</ref>|<ref refid="group___r_c_c___system___clock___type_1ga7e721f5bf3fe925f78dae0356165332e" kindref="member">RCC_CLOCKTYPE_SYSCLK</ref></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<ref refid="group___r_c_c___system___clock___type_1gab00c7b70f0770a616be4b5df45a454c4" kindref="member">RCC_CLOCKTYPE_PCLK1</ref>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>RCC_ClkInitStruct.<ref refid="struct_r_c_c___clk_init_type_def_1a02b70c23b593a55814d887f483ea0871" kindref="member">SYSCLKSource</ref><sp/>=<sp/><ref refid="group___r_c_c___system___clock___source_1ga5caf08ac71d7dd7e7b2e3e421606aca7" kindref="member">RCC_SYSCLKSOURCE_PLLCLK</ref>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>RCC_ClkInitStruct.<ref refid="struct_r_c_c___clk_init_type_def_1a082c91ea9f270509aca7ae6ec42c2a54" kindref="member">AHBCLKDivider</ref><sp/>=<sp/><ref refid="group___r_c_c___a_h_b___clock___source_1ga226f5bf675015ea677868132b6b83494" kindref="member">RCC_SYSCLK_DIV1</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>RCC_ClkInitStruct.<ref refid="struct_r_c_c___clk_init_type_def_1a994aca51c40decfc340e045da1a6ca19" kindref="member">APB1CLKDivider</ref><sp/>=<sp/><ref refid="group___r_c_c___a_p_b1___clock___source_1ga8e3fcdef0e5d77bb61a52420fe1e9fbc" kindref="member">RCC_HCLK_DIV1</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___r_c_c___exported___functions___group1_1gad0a4b5c7459219fafc15f3f867563ef3" kindref="member">HAL_RCC_ClockConfig</ref>(&amp;RCC_ClkInitStruct,<sp/><ref refid="group___f_l_a_s_h___latency_1ga69d209f9cb4f625010d72555c8dceb03" kindref="member">FLASH_LATENCY_2</ref>)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8c_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MX_NVIC_Init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>TIM16_IRQn<sp/>interrupt<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1ga8581a82025a4780efd00876a66e3e91b" kindref="member">HAL_NVIC_SetPriority</ref>(<ref refid="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8affb53ebc9ffb3bdec7cb44ab642d32cb" kindref="member">TIM16_IRQn</ref>,<sp/>1,<sp/>0);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1gaaad4492c1b25e006d69948a15790352a" kindref="member">HAL_NVIC_EnableIRQ</ref>(<ref refid="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8affb53ebc9ffb3bdec7cb44ab642d32cb" kindref="member">TIM16_IRQn</ref>);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>4<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a753dcda9075115cc1c781e4332085f84" kindref="member">drawClear</ref>()</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1a324ebd8d3bc5309c8c9da80b0c07d10a" kindref="member">ILI9341_WriteScreen</ref>(<ref refid="_i_l_i9341_8h_1a50166b9a65012fb2f8fe0a0d5f519fa3" kindref="member">ILI9341_BLACK</ref>);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1aedda947c024e77ba1f14c739913870bd" kindref="member">drawSetup</ref>()</highlight></codeline>
+<codeline lineno="213"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1aeb3238cbef436c3e4bac1fa66d733e99" kindref="member">drawScale</ref><sp/>=<sp/><ref refid="main_8h_1a4af2c73d1e7851081703024de435fa9b" kindref="member">DRAW_SCALE_DEFAULT</ref>;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" kindref="member">measureScalesNumber</ref><sp/>=<sp/><ref refid="main_8h_1a3cdb91333ac7cef682e120946800997c" kindref="member">MEASURE_SCALES_NUMBER_DEFAULT</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" kindref="member">measureScaleY</ref><sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" kindref="member">measureScaleY</ref><sp/>=<sp/>malloc(<ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" kindref="member">measureScalesNumber</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(uint16_t));</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a8c9f16a7e18d06854e12f89c5fb5c031" kindref="member">measureScaleCm</ref><sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a8c9f16a7e18d06854e12f89c5fb5c031" kindref="member">measureScaleCm</ref><sp/>=<sp/>malloc(<ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" kindref="member">measureScalesNumber</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(uint16_t));</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1affa6ef93faeb748b815a0edc0390aa14" kindref="member">xp</ref><sp/>=<sp/><ref refid="_i_l_i9341_8h_1afc86ae8ef4d7c6b3bfb0f83f9d4dcf63" kindref="member">ILI9341_TFTWIDTH</ref><sp/>/<sp/>2,<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a5c3d54605970a1ce4360b1ddc1f6e9ec" kindref="member">yp</ref><sp/>=<sp/><ref refid="_i_l_i9341_8h_1a5790338f2cee9bbd8fb015d02c9c52d3" kindref="member">ILI9341_TFTHEIGHT</ref><sp/>-<sp/>10;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" kindref="member">measureScalesNumber</ref>;<sp/>++i)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" kindref="member">measureScaleY</ref>[i]<sp/>=<sp/>(<ref refid="_i_l_i9341_8h_1a5790338f2cee9bbd8fb015d02c9c52d3" kindref="member">ILI9341_TFTHEIGHT</ref><sp/>*<sp/>(i<sp/>+<sp/>1))<sp/>/<sp/>(<ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" kindref="member">measureScalesNumber</ref><sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a8c9f16a7e18d06854e12f89c5fb5c031" kindref="member">measureScaleCm</ref>[i]<sp/>=<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" kindref="member">measureScaleY</ref>[i]<sp/>/<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1aeb3238cbef436c3e4bac1fa66d733e99" kindref="member">drawScale</ref>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="main_8c_1ab3557cb07835dec370fd8b7855343aae" kindref="member">drawSetupUpdate</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>drawScale,<sp/>uint8_t<sp/>measureScalesNumber)</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(drawScale<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(measureScalesNumber<sp/>&gt;<sp/>10)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1aeb3238cbef436c3e4bac1fa66d733e99" kindref="member">drawScale</ref><sp/>=<sp/>drawScale;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" kindref="member">measureScalesNumber</ref><sp/>=<sp/>measureScalesNumber;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" kindref="member">measureScaleY</ref><sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" kindref="member">measureScaleY</ref><sp/>=<sp/>realloc(<ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" kindref="member">measureScaleY</ref>,<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" kindref="member">measureScalesNumber</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(uint16_t));</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" kindref="member">measureScaleY</ref><sp/>=<sp/>malloc(<ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" kindref="member">measureScalesNumber</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(uint16_t));</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a8c9f16a7e18d06854e12f89c5fb5c031" kindref="member">measureScaleCm</ref><sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a8c9f16a7e18d06854e12f89c5fb5c031" kindref="member">measureScaleCm</ref><sp/>=<sp/>realloc(<ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a8c9f16a7e18d06854e12f89c5fb5c031" kindref="member">measureScaleCm</ref>,<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" kindref="member">measureScalesNumber</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(uint16_t));</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a8c9f16a7e18d06854e12f89c5fb5c031" kindref="member">measureScaleCm</ref><sp/>=<sp/>malloc(<ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" kindref="member">measureScalesNumber</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(uint16_t));</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" kindref="member">measureScalesNumber</ref>;<sp/>++i)</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" kindref="member">measureScaleY</ref>[i]<sp/>=<sp/>(<ref refid="_i_l_i9341_8h_1a5790338f2cee9bbd8fb015d02c9c52d3" kindref="member">ILI9341_TFTHEIGHT</ref><sp/>*<sp/>(i<sp/>+<sp/>1))<sp/>/<sp/>(<ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" kindref="member">measureScalesNumber</ref><sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a8c9f16a7e18d06854e12f89c5fb5c031" kindref="member">measureScaleCm</ref>[i]<sp/>=<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" kindref="member">measureScaleY</ref>[i]<sp/>/<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1aeb3238cbef436c3e4bac1fa66d733e99" kindref="member">drawScale</ref>;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1ab5b93ed998b46e745b6713b6d7a27e32" kindref="member">drawMeasure</ref>()</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>posErrorTreshold<sp/>=<sp/>0.5;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dist<sp/>=<sp/><ref refid="radar_8c_1a8d37f58cbd2c9affac492868fdc72b5e" kindref="member">radarGetMeasure</ref>(&amp;<ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pos<sp/>=<sp/><ref refid="radar_8c_1adf43ab91ae524d0b9a07b3976d4cf028" kindref="member">radarGetPosition</ref>(&amp;<ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>radians<sp/>=<sp/>pos<sp/>*<sp/><ref refid="main_8h_1a7bf0b4b8b3cf2f13f25573b3e151ed88" kindref="member">DEGREES_TO_RADIANS</ref>;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>yk<sp/>=<sp/>round(sin(radians)<sp/>*<sp/>dist<sp/>*<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1aeb3238cbef436c3e4bac1fa66d733e99" kindref="member">drawScale</ref>);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>xk<sp/>=<sp/>round(cos(radians)<sp/>*<sp/>dist<sp/>*<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1aeb3238cbef436c3e4bac1fa66d733e99" kindref="member">drawScale</ref>);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_f_x___color_8c_1ad3342c4916c09b7e6264afa73c533382" kindref="member">GFX_DrawLine</ref>(<ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1affa6ef93faeb748b815a0edc0390aa14" kindref="member">xp</ref>,<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a5c3d54605970a1ce4360b1ddc1f6e9ec" kindref="member">yp</ref>,<sp/>xk<sp/>+<sp/><ref refid="_i_l_i9341_8h_1afc86ae8ef4d7c6b3bfb0f83f9d4dcf63" kindref="member">ILI9341_TFTWIDTH</ref><sp/>/<sp/>2,<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a5c3d54605970a1ce4360b1ddc1f6e9ec" kindref="member">yp</ref><sp/>-<sp/>yk,<sp/><ref refid="_i_l_i9341_8h_1a2eb4b5e896b0b144970f33002134bb98" kindref="member">ILI9341_GREEN</ref>);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((pos<sp/>+<sp/>posErrorTreshold)<sp/>&gt;=<sp/><ref refid="radar_8c_1a5c23a940c59e3e96d1d3011f5bfdfd64" kindref="member">radarGetPositionMax</ref>(&amp;<ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>)<sp/>||<sp/>(pos<sp/>-<sp/>posErrorTreshold)<sp/>&lt;=<sp/><ref refid="radar_8c_1afa0e1f30efba3b6c3ea56a5d0b7b4008" kindref="member">radarGetPositionMin</ref>(&amp;<ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>)<sp/>)</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1a753dcda9075115cc1c781e4332085f84" kindref="member">drawClear</ref>();</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1af9f0ac13160d4a1b3eb13b6a0fa76502" kindref="member">drawMeasureScale</ref>()</highlight></codeline>
+<codeline lineno="294"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" kindref="member">measureScalesNumber</ref>;<sp/>++i)</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_f_x___color_8c_1a7e0aa6a2910ddecdf56189ec3903d25e" kindref="member">GFX_DrawCircleHelper</ref>(<ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1affa6ef93faeb748b815a0edc0390aa14" kindref="member">xp</ref>,<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a5c3d54605970a1ce4360b1ddc1f6e9ec" kindref="member">yp</ref>,<sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" kindref="member">measureScaleY</ref>[i],<sp/>0x01,<sp/><ref refid="_i_l_i9341_8h_1a4ebe718620305116033cb3f969cfc08b" kindref="member">ILI9341_RED</ref>);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_f_x___color_8c_1a7e0aa6a2910ddecdf56189ec3903d25e" kindref="member">GFX_DrawCircleHelper</ref>(<ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1affa6ef93faeb748b815a0edc0390aa14" kindref="member">xp</ref>,<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a5c3d54605970a1ce4360b1ddc1f6e9ec" kindref="member">yp</ref>,<sp/><sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" kindref="member">measureScaleY</ref>[i],<sp/>0x02,<sp/><ref refid="_i_l_i9341_8h_1a4ebe718620305116033cb3f969cfc08b" kindref="member">ILI9341_RED</ref>);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>value[10]<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>len<sp/>=<sp/>sprintf((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*__restrict)value,<sp/></highlight><highlight class="stringliteral">&quot;%dcm&quot;</highlight><highlight class="normal">,<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a8c9f16a7e18d06854e12f89c5fb5c031" kindref="member">measureScaleCm</ref>[i]);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_f_x___color_8c_1ae4afef6fed31387849b2bddd1f242abb" kindref="member">GFX_DrawString</ref>(<ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1affa6ef93faeb748b815a0edc0390aa14" kindref="member">xp</ref><sp/>-<sp/>len,<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a5c3d54605970a1ce4360b1ddc1f6e9ec" kindref="member">yp</ref><sp/>-<sp/><ref refid="main_8c_1adf53ce83636ba14bf6b66c48aae16e49" kindref="member">drawHelper</ref>.<ref refid="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" kindref="member">measureScaleY</ref>[i],<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*__restrict)value,<sp/><ref refid="_i_l_i9341_8h_1a4ebe718620305116033cb3f969cfc08b" kindref="member">ILI9341_RED</ref>);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___t_i_m___exported___functions___group9_1ga8a3b0ad512a6e6c6157440b68d395eac" kindref="member">HAL_TIM_PeriodElapsedCallback</ref>(<ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref><sp/>*htim)</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(htim<sp/>==<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>.<ref refid="structradar_struct_1a6f7e33950e97ef1b091da9946f94b7ea" kindref="member">sensorTim</ref>)</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="radar_8c_1a190f69a9906f7f4c05b19e814bf1b2ce" kindref="member">radarTriggerMeasure</ref>(&amp;<ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(htim<sp/>==<sp/><ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>.<ref refid="structradar_struct_1ab672500a9007146bfda15d235a46beb5" kindref="member">servoTim</ref>)</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="radar_8c_1a909f36a45ee821d7528d2f4aee5a1e82" kindref="member">radarServoUpdate</ref>(&amp;<ref refid="main_8c_1a9f3a2a5f24724aadbb21c4a8e74b5a09" kindref="member">radar</ref>);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Distance<sp/>sensor<sp/>weak<sp/>overwritten<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a6b42437e0654d88f5b7a68caa22a733c" kindref="member">distanceSensorTrigOn</ref>(<ref refid="structdistance_sensor_struct" kindref="compound">distanceSensorStruct</ref><sp/>*sensor)</highlight></codeline>
+<codeline lineno="319"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sensor<sp/>==<sp/>&amp;<ref refid="main_8c_1a94c36cf45267b6e4d4ec02ad2438c2da" kindref="member">distanceSensorPA2</ref>)</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1ac0cb523c51cd31ba87835f6ff07e02b5" kindref="member">SENSOR_TRIG_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a77848f01afe06bfce62413be34070dea" kindref="member">SENSOR_TRIG_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a746c062509db3ad1e47beed7527f9f8a" kindref="member">GPIO_PIN_SET</ref>);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a9b87431c23c2a12baa879f62f43bda05" kindref="member">distanceSensorDelay</ref>(<ref refid="structdistance_sensor_struct" kindref="compound">distanceSensorStruct</ref><sp/>*sensor,<sp/>uint32_t<sp/>delay)</highlight></codeline>
+<codeline lineno="327"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sensor<sp/>==<sp/>&amp;<ref refid="main_8c_1a94c36cf45267b6e4d4ec02ad2438c2da" kindref="member">distanceSensorPA2</ref>)</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___h_a_l___exported___functions___group2_1gae63b34eea12780ca2e1100c2402da18e" kindref="member">HAL_Delay</ref>(delay);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a902cb6ceee556ebfc81c8d1181d87cc9" kindref="member">distanceSensorTrigOff</ref>(<ref refid="structdistance_sensor_struct" kindref="compound">distanceSensorStruct</ref><sp/>*sensor)</highlight></codeline>
+<codeline lineno="335"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sensor<sp/>==<sp/>&amp;<ref refid="main_8c_1a94c36cf45267b6e4d4ec02ad2438c2da" kindref="member">distanceSensorPA2</ref>)</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1ac0cb523c51cd31ba87835f6ff07e02b5" kindref="member">SENSOR_TRIG_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a77848f01afe06bfce62413be34070dea" kindref="member">SENSOR_TRIG_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a90af2af95004ea61d76950ff3f2f6ec2" kindref="member">GPIO_PIN_RESET</ref>);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Distance<sp/>sensor<sp/>weak<sp/>overwritten<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1ga537318eafe9182b60dc22ef54966c6a1" kindref="member">HAL_GPIO_EXTI_Rising_Callback</ref>(uint16_t<sp/>GPIO_Pin)</highlight></codeline>
+<codeline lineno="344"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(GPIO_Pin<sp/>==<sp/><ref refid="main_8h_1ab24a9f98eeaddd5710269e92b7d2d6f6" kindref="member">SENSOR_ECHO_Pin</ref>)</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_i_m___exported___functions___group1_1gaf7e5ee80207a338050413e14f7bd24f9" kindref="member">HAL_TIM_Base_Start</ref>(&amp;<ref refid="tim_8h_1a51c6d0c070f8c00f33ee08b4f1eb6e90" kindref="member">htim17</ref>);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="349"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1ga0b334860563f4a109443e0a604af2300" kindref="member">HAL_GPIO_EXTI_Falling_Callback</ref>(uint16_t<sp/>GPIO_Pin)</highlight></codeline>
+<codeline lineno="352"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(GPIO_Pin<sp/>==<sp/><ref refid="main_8h_1ab24a9f98eeaddd5710269e92b7d2d6f6" kindref="member">SENSOR_ECHO_Pin</ref>)</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_i_m___exported___functions___group1_1ga78697261126cd2facc463b81e8c4b238" kindref="member">HAL_TIM_Base_Stop</ref>(&amp;<ref refid="tim_8h_1a51c6d0c070f8c00f33ee08b4f1eb6e90" kindref="member">htim17</ref>);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="distance__sensor_8c_1a964997505302c61de0ece0f151663c4c" kindref="member">distanceSensorGetEcho</ref>(&amp;<ref refid="main_8c_1a94c36cf45267b6e4d4ec02ad2438c2da" kindref="member">distanceSensorPA2</ref>,<sp/><ref refid="group___t_i_m___exported___macros_1gaf1af08014b9d06efbbb091d58d47c8ba" kindref="member">__HAL_TIM_GET_COUNTER</ref>(&amp;<ref refid="tim_8h_1a51c6d0c070f8c00f33ee08b4f1eb6e90" kindref="member">htim17</ref>));</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_i_m___exported___macros_1ga9746ac75e4cd25cec1a9ebac8cb82b97" kindref="member">__HAL_TIM_SET_COUNTER</ref>(&amp;<ref refid="tim_8h_1a51c6d0c070f8c00f33ee08b4f1eb6e90" kindref="member">htim17</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Servo<sp/>weak<sp/>overwritten<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a3a027ed11a1051d0c899706817c68e37" kindref="member">servoDriverStartTimer</ref>(<ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref><sp/>*servoDriver)</highlight></codeline>
+<codeline lineno="363"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(servoDriver<sp/>==<sp/>&amp;<ref refid="main_8c_1a4e519356505feeb7b9659dcdc97161c0" kindref="member">servoPA6</ref>)</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_i_m___exported___functions___group3_1gaca1f5fbc35101d0fc7e8af31c9a0c26c" kindref="member">HAL_TIM_PWM_Start_IT</ref>(&amp;<ref refid="tim_8h_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>,<sp/><ref refid="group___t_i_m___channel_1ga6b1541e4a49d62610899e24bf23f4879" kindref="member">TIM_CHANNEL_1</ref>);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="368"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a9644009cc702a14f3a480ad472ee4d6a" kindref="member">servoDriverStopTimer</ref>(<ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref><sp/>*servoDriver)</highlight></codeline>
+<codeline lineno="371"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(servoDriver<sp/>==<sp/>&amp;<ref refid="main_8c_1a4e519356505feeb7b9659dcdc97161c0" kindref="member">servoPA6</ref>)</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_i_m___exported___functions___group3_1ga0559af125dc5fb2bb183a6a4b86808b5" kindref="member">HAL_TIM_PWM_Stop_IT</ref>(&amp;<ref refid="tim_8h_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>,<sp/><ref refid="group___t_i_m___channel_1ga6b1541e4a49d62610899e24bf23f4879" kindref="member">TIM_CHANNEL_1</ref>);</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="376"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1aa8a4bdef9b3e742a5e225dd29a804db6" kindref="member">servoDriverSetPulseWidth</ref>(<ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref><sp/>*servoDriver)</highlight></codeline>
+<codeline lineno="379"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(servoDriver<sp/>==<sp/>&amp;<ref refid="main_8c_1a4e519356505feeb7b9659dcdc97161c0" kindref="member">servoPA6</ref>)</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_i_m___exported___macros_1ga300d0c9624c3b072d3afeb7cef639b66" kindref="member">__HAL_TIM_SET_COMPARE</ref>(&amp;<ref refid="tim_8h_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>,<sp/><ref refid="group___t_i_m___channel_1ga6b1541e4a49d62610899e24bf23f4879" kindref="member">TIM_CHANNEL_1</ref>,<sp/>servoDriver-&gt;<ref refid="structservo_driver_struct_1a5ca561b85876367a491830913bd31c53" kindref="member">positionInPulseWidth</ref>);</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="384"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>4<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="393"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Error_Handler_Debug<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>User<sp/>can<sp/>add<sp/>his<sp/>own<sp/>implementation<sp/>to<sp/>report<sp/>the<sp/>HAL<sp/>error<sp/>return<sp/>state<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><ref refid="cmsis__iccarm_8h_1a6cb98c1adc8a28bc3b48649a3421195d" kindref="member">__disable_irq</ref>();</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Error_Handler_Debug<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/>USE_FULL_ASSERT</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>assert_failed(uint8_t<sp/>*file,<sp/>uint32_t<sp/>line)</highlight></codeline>
+<codeline lineno="412"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>6<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>User<sp/>can<sp/>add<sp/>his<sp/>own<sp/>implementation<sp/>to<sp/>report<sp/>the<sp/>file<sp/>name<sp/>and<sp/>line<sp/>number,</highlight></codeline>
+<codeline lineno="415"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>ex:<sp/>printf(&quot;Wrong<sp/>parameters<sp/>value:<sp/>file<sp/>%s<sp/>on<sp/>line<sp/>%d\r\n&quot;,<sp/>file,<sp/>line)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>6<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_FULL_ASSERT<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Core/Src/main.c"/>
+  </compounddef>
+</doxygen>

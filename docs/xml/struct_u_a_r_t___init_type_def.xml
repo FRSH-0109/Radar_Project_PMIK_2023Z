@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_u_a_r_t___init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>UART_InitTypeDef</compoundname>
+    <includes refid="stm32g0xx__hal__uart_8h" local="no">stm32g0xx_hal_uart.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_a_r_t___init_type_def_1aaad609733f3fd8146c8745e953a91b2a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t BaudRate</definition>
+        <argsstring></argsstring>
+        <name>BaudRate</name>
+        <qualifiedname>UART_InitTypeDef::BaudRate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This member configures the UART communication baud rate. The baud rate register is computed using the following formula: </para>
+<sect1 id="struct_u_a_r_t___init_type_def_1autotoc_md13">
+<title>LPUART:</title>
+<para>Baud Rate Register = ((256 * lpuart_ker_ckpres) / ((huart-&gt;Init.BaudRate))) where lpuart_ker_ck_pres is the UART input clock divided by a prescaler </para>
+</sect1>
+<sect1 id="struct_u_a_r_t___init_type_def_1autotoc_md14">
+<title>UART:</title>
+<para><itemizedlist>
+<listitem><para>If oversampling is 16 or in LIN mode, Baud Rate Register = ((uart_ker_ckpres) / ((huart-&gt;Init.BaudRate)))</para>
+</listitem><listitem><para>If oversampling is 8, Baud Rate Register[15:4] = ((2 * uart_ker_ckpres) / ((huart-&gt;Init.BaudRate)))[15:4] Baud Rate Register[3] = 0 Baud Rate Register[2:0] = (((2 * uart_ker_ckpres) / ((huart-&gt;Init.BaudRate)))[3:0]) &gt;&gt; 1 where uart_ker_ck_pres is the UART input clock divided by a prescaler </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="48" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___init_type_def_1ae5e60b9a021fe0009588fc86c7584a5a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t WordLength</definition>
+        <argsstring></argsstring>
+        <name>WordLength</name>
+        <qualifiedname>UART_InitTypeDef::WordLength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the number of data bits transmitted or received in a frame. This parameter can be a value of <ref refid="group___u_a_r_t_ex___word___length" kindref="compound">UARTEx Word Length</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="66" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___init_type_def_1a8394ba239444e3e5fe1ada1c37cb1019" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t StopBits</definition>
+        <argsstring></argsstring>
+        <name>StopBits</name>
+        <qualifiedname>UART_InitTypeDef::StopBits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the number of stop bits transmitted. This parameter can be a value of <ref refid="group___u_a_r_t___stop___bits" kindref="compound">UART Number of Stop Bits</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="69" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___init_type_def_1a1d60a99b8f3965f01ab23444b154ba79" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Parity</definition>
+        <argsstring></argsstring>
+        <name>Parity</name>
+        <qualifiedname>UART_InitTypeDef::Parity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the parity mode. This parameter can be a value of <ref refid="group___u_a_r_t___parity" kindref="compound">UART Parity</ref> <simplesect kind="note"><para>When parity is enabled, the computed parity is inserted at the MSB position of the transmitted data (9th bit when the word length is set to 9 data bits; 8th bit when the word length is set to 8 data bits). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="72" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Mode</definition>
+        <argsstring></argsstring>
+        <name>Mode</name>
+        <qualifiedname>UART_InitTypeDef::Mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the Receive or Transmit mode is enabled or disabled. This parameter can be a value of <ref refid="group___u_a_r_t___mode" kindref="compound">UART Transfer Mode</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="79" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___init_type_def_1a0a933d213b17470c582c8fec23a24d09" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t HwFlowCtl</definition>
+        <argsstring></argsstring>
+        <name>HwFlowCtl</name>
+        <qualifiedname>UART_InitTypeDef::HwFlowCtl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the hardware flow control mode is enabled or disabled. This parameter can be a value of <ref refid="group___u_a_r_t___hardware___flow___control" kindref="compound">UART Hardware Flow Control</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="82" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___init_type_def_1a35770b237370fda7fd0fabad22898490" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OverSampling</definition>
+        <argsstring></argsstring>
+        <name>OverSampling</name>
+        <qualifiedname>UART_InitTypeDef::OverSampling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether the Over sampling 8 is enabled or disabled, to achieve higher speed (up to f_PCLK/8). This parameter can be a value of <ref refid="group___u_a_r_t___over___sampling" kindref="compound">UART Over Sampling</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="86" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___init_type_def_1af699e096fa74b5f58c1ee172025981ba" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OneBitSampling</definition>
+        <argsstring></argsstring>
+        <name>OneBitSampling</name>
+        <qualifiedname>UART_InitTypeDef::OneBitSampling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether a single sample or three samples&apos; majority vote is selected. Selecting the single sample method increases the receiver tolerance to clock deviations. This parameter can be a value of <ref refid="group___u_a_r_t___one_bit___sampling" kindref="compound">UART One Bit Sampling Method</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="90" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t___init_type_def_1ab791f8fac403d508e1c53b6f27cf1f24" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ClockPrescaler</definition>
+        <argsstring></argsstring>
+        <name>ClockPrescaler</name>
+        <qualifiedname>UART_InitTypeDef::ClockPrescaler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the prescaler value used to divide the UART clock source. This parameter can be a value of <ref refid="group___u_a_r_t___clock_prescaler" kindref="compound">UART Clock Prescaler</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="94" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>UART Init Structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="46" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="47" bodyend="97"/>
+    <listofallmembers>
+      <member refid="struct_u_a_r_t___init_type_def_1aaad609733f3fd8146c8745e953a91b2a" prot="public" virt="non-virtual"><scope>UART_InitTypeDef</scope><name>BaudRate</name></member>
+      <member refid="struct_u_a_r_t___init_type_def_1ab791f8fac403d508e1c53b6f27cf1f24" prot="public" virt="non-virtual"><scope>UART_InitTypeDef</scope><name>ClockPrescaler</name></member>
+      <member refid="struct_u_a_r_t___init_type_def_1a0a933d213b17470c582c8fec23a24d09" prot="public" virt="non-virtual"><scope>UART_InitTypeDef</scope><name>HwFlowCtl</name></member>
+      <member refid="struct_u_a_r_t___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" prot="public" virt="non-virtual"><scope>UART_InitTypeDef</scope><name>Mode</name></member>
+      <member refid="struct_u_a_r_t___init_type_def_1af699e096fa74b5f58c1ee172025981ba" prot="public" virt="non-virtual"><scope>UART_InitTypeDef</scope><name>OneBitSampling</name></member>
+      <member refid="struct_u_a_r_t___init_type_def_1a35770b237370fda7fd0fabad22898490" prot="public" virt="non-virtual"><scope>UART_InitTypeDef</scope><name>OverSampling</name></member>
+      <member refid="struct_u_a_r_t___init_type_def_1a1d60a99b8f3965f01ab23444b154ba79" prot="public" virt="non-virtual"><scope>UART_InitTypeDef</scope><name>Parity</name></member>
+      <member refid="struct_u_a_r_t___init_type_def_1a8394ba239444e3e5fe1ada1c37cb1019" prot="public" virt="non-virtual"><scope>UART_InitTypeDef</scope><name>StopBits</name></member>
+      <member refid="struct_u_a_r_t___init_type_def_1ae5e60b9a021fe0009588fc86c7584a5a" prot="public" virt="non-virtual"><scope>UART_InitTypeDef</scope><name>WordLength</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

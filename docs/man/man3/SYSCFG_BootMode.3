@@ -1,0 +1,37 @@
+.TH "SYSCFG_BootMode" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SYSCFG_BootMode \- Boot Mode
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSYSCFG_BOOT_MAINFLASH\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBSYSCFG_BOOT_SYSTEMFLASH\fP   \fBSYSCFG_CFGR1_MEM_MODE_0\fP"
+.br
+.ti -1c
+.RI "#define \fBSYSCFG_BOOT_SRAM\fP   (\fBSYSCFG_CFGR1_MEM_MODE_1\fP | \fBSYSCFG_CFGR1_MEM_MODE_0\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define SYSCFG_BOOT_MAINFLASH   0x00000000U"
+Main Flash memory mapped at 0x0000 0000 
+.br
+ 
+.SS "#define SYSCFG_BOOT_SRAM   (\fBSYSCFG_CFGR1_MEM_MODE_1\fP | \fBSYSCFG_CFGR1_MEM_MODE_0\fP)"
+Embedded SRAM mapped at 0x0000 0000 
+.SS "#define SYSCFG_BOOT_SYSTEMFLASH   \fBSYSCFG_CFGR1_MEM_MODE_0\fP"
+System Flash memory mapped at 0x0000 0000 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

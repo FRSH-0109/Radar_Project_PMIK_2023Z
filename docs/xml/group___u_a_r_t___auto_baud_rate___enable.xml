@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___u_a_r_t___auto_baud_rate___enable" kind="group">
+    <compoundname>UART_AutoBaudRate_Enable</compoundname>
+    <title>UART Advanced Feature Auto BaudRate Enable</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_a_r_t___auto_baud_rate___enable_1gaca66b20599569c6b7576f0600050bb61" prot="public" static="no">
+        <name>UART_ADVFEATURE_AUTOBAUDRATE_DISABLE</name>
+        <initializer>0x00000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RX Auto Baud rate detection enable <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="615" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="615" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___auto_baud_rate___enable_1gad4eee70c6d23721dd95c6a2465e10ca4" prot="public" static="no">
+        <name>UART_ADVFEATURE_AUTOBAUDRATE_ENABLE</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gaaa290a89959d43fecf43f89d66123a0a" kindref="member">USART_CR2_ABREN</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RX Auto Baud rate detection disable </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="616" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="616" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

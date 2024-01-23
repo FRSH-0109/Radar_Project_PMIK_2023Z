@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___peripheral__interrupt__number__definition" kind="group">
+    <compoundname>Peripheral_interrupt_number_definition</compoundname>
+    <title>Peripheral_interrupt_number_definition</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___peripheral__interrupt__number__definition_1ga7e1129cd8a196f4284d41db3e82ad5c8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>IRQn_Type</name>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8ade177d9c70c89e084093024b932a4e30" prot="public">
+          <name>NonMaskableInt_IRQn</name>
+          <initializer>= -14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>2 Non Maskable Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8ab1a222a34a32f0ef5ac65e714efc1f85" prot="public">
+          <name>HardFault_IRQn</name>
+          <initializer>= -13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>3 Cortex-M Hard Fault Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a4ce820b3cc6cf3a796b41aadc0cf1237" prot="public">
+          <name>SVCall_IRQn</name>
+          <initializer>= -5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>11 Cortex-M SV Call Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a03c3cc89984928816d81793fc7bce4a2" prot="public">
+          <name>PendSV_IRQn</name>
+          <initializer>= -2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>14 Cortex-M Pend SV Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a6dbff8f8543325f3474cbae2446776e7" prot="public">
+          <name>SysTick_IRQn</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>15 Cortex-M System Tick Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a971089d7566ef902dfa0c80ac3a8fd52" prot="public">
+          <name>WWDG_IRQn</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Window WatchDog Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8adb9304ebbf89eacbf6481e8388605ee0" prot="public">
+          <name>RTC_TAMP_IRQn</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>RTC interrupt through the EXTI line 19 &amp; 21 <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a91b73963ce243a1d031576d49e137fab" prot="public">
+          <name>FLASH_IRQn</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FLASH global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a5710b22392997bac63daa5c999730f77" prot="public">
+          <name>RCC_IRQn</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>RCC global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8aa192e935e6b7fc8089fc612477bf3a79" prot="public">
+          <name>EXTI0_1_IRQn</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EXTI 0 and 1 Interrupts <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a78602dc46ee54b2c1f3e6f0ef8f59e5f" prot="public">
+          <name>EXTI2_3_IRQn</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EXTI Line 2 and 3 Interrupts <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8aec19518b6dd2358a8b78c2aa29e5d462" prot="public">
+          <name>EXTI4_15_IRQn</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EXTI Line 4 to 15 Interrupts <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a3ccf41a34f494246c67d3239afa9c97f" prot="public">
+          <name>DMA1_Channel1_IRQn</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMA1 Channel 1 Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8aa9d5577443e46249121f0d7e2ad50e71" prot="public">
+          <name>DMA1_Channel2_3_IRQn</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMA1 Channel 2 and Channel 3 Interrupts <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8ac2121a3f5f5845f265d44f40ef1e8aae" prot="public">
+          <name>DMA1_Ch4_5_DMAMUX1_OVR_IRQn</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMA1 Channel 4 to Channel 5 and DMAMUX1 Overrun Interrupts <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a34f5005b5e508c84906c6f951f31c1bb" prot="public">
+          <name>ADC1_IRQn</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ADC1 Interrupts <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a82ac24e8e4e0df100fe48bc65524dbf5" prot="public">
+          <name>TIM1_BRK_UP_TRG_COM_IRQn</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TIM1 Break, Update, Trigger and Commutation Interrupts <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8af312f0a21f600f9b286427e50c549ca9" prot="public">
+          <name>TIM1_CC_IRQn</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TIM1 Capture Compare Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a985574288f66e2a00e97387424a9a2d8" prot="public">
+          <name>TIM3_IRQn</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TIM3 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8ad1f8257995120fd90b0d4c177a02de5f" prot="public">
+          <name>TIM14_IRQn</name>
+          <initializer>= 19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TIM14 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8affb53ebc9ffb3bdec7cb44ab642d32cb" prot="public">
+          <name>TIM16_IRQn</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TIM16 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a35a4ce7d826d3458485265d1dea2b50d" prot="public">
+          <name>TIM17_IRQn</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TIM17 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8af651b1769e03e4653b1a4a7c88132398" prot="public">
+          <name>I2C1_IRQn</name>
+          <initializer>= 23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2C1 Interrupt (combined with EXTI 23) <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a0e9ff46d0a6311ca3cc43a71702d638d" prot="public">
+          <name>I2C2_IRQn</name>
+          <initializer>= 24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2C2 Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8aacdff1a9c42582ed663214cbe62c1174" prot="public">
+          <name>SPI1_IRQn</name>
+          <initializer>= 25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SPI1/I2S1 Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a505fbd4ccf7c2a14c8b76dc9e58f7ede" prot="public">
+          <name>SPI2_IRQn</name>
+          <initializer>= 26</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SPI2 Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8ad97cb163e1f678367e37c50d54d161ab" prot="public">
+          <name>USART1_IRQn</name>
+          <initializer>= 27</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USART1 Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a3f9c48714d0e5baaba6613343f0da68e" prot="public">
+          <name>USART2_IRQn</name>
+          <initializer>= 28</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USART2 Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>stm32g030xx Interrupt Number Definition, according to the selected device in <ref refid="group___library__configuration__section" kindref="compound">Library_configuration_section</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt; Interrupt Number Definition </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="69" column="1" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="70" bodyend="101"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

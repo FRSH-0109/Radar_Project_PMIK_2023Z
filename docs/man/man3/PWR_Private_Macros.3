@@ -1,0 +1,60 @@
+.TH "PWR_Private_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PWR_Private_Macros \- PWR Private Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_PWR_WAKEUP_PIN\fP(PIN)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_REGULATOR\fP(REGULATOR)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_SLEEP_ENTRY\fP(ENTRY)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_STOP_ENTRY\fP(ENTRY)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_PWR_REGULATOR(REGULATOR)"
+\fBValue:\fP.PP
+.nf
+                                                   (((REGULATOR) == PWR_MAINREGULATOR_ON) || \\
+                                                   ((REGULATOR) == PWR_LOWPOWERREGULATOR_ON))
+.fi
+
+.SS "#define IS_PWR_SLEEP_ENTRY(ENTRY)"
+\fBValue:\fP.PP
+.nf
+                                                   (((ENTRY) == PWR_SLEEPENTRY_WFI) || \\
+                                                   ((ENTRY) == PWR_SLEEPENTRY_WFE))
+.fi
+
+.SS "#define IS_PWR_STOP_ENTRY(ENTRY)"
+\fBValue:\fP.PP
+.nf
+                                                   (((ENTRY) == PWR_STOPENTRY_WFI) || \\
+                                                   ((ENTRY) == PWR_STOPENTRY_WFE))
+.fi
+
+.SS "#define IS_PWR_WAKEUP_PIN(PIN)"
+\fBValue:\fP.PP
+.nf
+                                                   ((((PIN) & ((PWR_CR4_WP << 8U) | (PWR_CR3_EWUP))) != 0x00000000u) && \\
+                                                   (((PIN) & ~((PWR_CR4_WP << 8U) | (PWR_CR3_EWUP))) == 0x00000000u))
+.fi
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

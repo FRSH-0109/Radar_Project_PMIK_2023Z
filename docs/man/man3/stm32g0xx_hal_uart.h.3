@@ -1,0 +1,1022 @@
+.TH "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h \- Header file of UART HAL module\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32g0xx_hal_def\&.h'\fP
+.br
+\fC#include 'stm32g0xx_hal_uart_ex\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBUART_InitTypeDef\fP"
+.br
+.RI "UART Init Structure definition\&. "
+.ti -1c
+.RI "struct \fBUART_AdvFeatureInitTypeDef\fP"
+.br
+.RI "UART Advanced Features initialization structure definition\&. "
+.ti -1c
+.RI "struct \fB__UART_HandleTypeDef\fP"
+.br
+.RI "UART handle Structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHAL_UART_STATE_RESET\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_STATE_READY\fP   0x00000020U"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_STATE_BUSY\fP   0x00000024U"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_STATE_BUSY_TX\fP   0x00000021U"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_STATE_BUSY_RX\fP   0x00000022U"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_STATE_BUSY_TX_RX\fP   0x00000023U"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_STATE_TIMEOUT\fP   0x000000A0U"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_STATE_ERROR\fP   0x000000E0U"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_ERROR_NONE\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_ERROR_PE\fP   (0x00000001U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_ERROR_NE\fP   (0x00000002U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_ERROR_FE\fP   (0x00000004U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_ERROR_ORE\fP   (0x00000008U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_ERROR_DMA\fP   (0x00000010U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_ERROR_RTO\fP   (0x00000020U)"
+.br
+.ti -1c
+.RI "#define \fBUART_STOPBITS_0_5\fP   \fBUSART_CR2_STOP_0\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_STOPBITS_1\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_STOPBITS_1_5\fP   (\fBUSART_CR2_STOP_0\fP | \fBUSART_CR2_STOP_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_STOPBITS_2\fP   \fBUSART_CR2_STOP_1\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_PARITY_NONE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_PARITY_EVEN\fP   \fBUSART_CR1_PCE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_PARITY_ODD\fP   (\fBUSART_CR1_PCE\fP | \fBUSART_CR1_PS\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_HWCONTROL_NONE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_HWCONTROL_RTS\fP   \fBUSART_CR3_RTSE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_HWCONTROL_CTS\fP   \fBUSART_CR3_CTSE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_HWCONTROL_RTS_CTS\fP   (\fBUSART_CR3_RTSE\fP | \fBUSART_CR3_CTSE\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_MODE_RX\fP   \fBUSART_CR1_RE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_MODE_TX\fP   \fBUSART_CR1_TE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_MODE_TX_RX\fP   (\fBUSART_CR1_TE\fP |\fBUSART_CR1_RE\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_STATE_DISABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_STATE_ENABLE\fP   \fBUSART_CR1_UE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_OVERSAMPLING_16\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_OVERSAMPLING_8\fP   \fBUSART_CR1_OVER8\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_ONE_BIT_SAMPLE_DISABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_ONE_BIT_SAMPLE_ENABLE\fP   \fBUSART_CR3_ONEBIT\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_PRESCALER_DIV1\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_PRESCALER_DIV2\fP   0x00000001U"
+.br
+.ti -1c
+.RI "#define \fBUART_PRESCALER_DIV4\fP   0x00000002U"
+.br
+.ti -1c
+.RI "#define \fBUART_PRESCALER_DIV6\fP   0x00000003U"
+.br
+.ti -1c
+.RI "#define \fBUART_PRESCALER_DIV8\fP   0x00000004U"
+.br
+.ti -1c
+.RI "#define \fBUART_PRESCALER_DIV10\fP   0x00000005U"
+.br
+.ti -1c
+.RI "#define \fBUART_PRESCALER_DIV12\fP   0x00000006U"
+.br
+.ti -1c
+.RI "#define \fBUART_PRESCALER_DIV16\fP   0x00000007U"
+.br
+.ti -1c
+.RI "#define \fBUART_PRESCALER_DIV32\fP   0x00000008U"
+.br
+.ti -1c
+.RI "#define \fBUART_PRESCALER_DIV64\fP   0x00000009U"
+.br
+.ti -1c
+.RI "#define \fBUART_PRESCALER_DIV128\fP   0x0000000AU"
+.br
+.ti -1c
+.RI "#define \fBUART_PRESCALER_DIV256\fP   0x0000000BU"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_AUTOBAUDRATE_ONSTARTBIT\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_AUTOBAUDRATE_ONFALLINGEDGE\fP   \fBUSART_CR2_ABRMODE_0\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_AUTOBAUDRATE_ON0X7FFRAME\fP   \fBUSART_CR2_ABRMODE_1\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_AUTOBAUDRATE_ON0X55FRAME\fP   \fBUSART_CR2_ABRMODE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_RECEIVER_TIMEOUT_DISABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_RECEIVER_TIMEOUT_ENABLE\fP   \fBUSART_CR2_RTOEN\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_LIN_DISABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_LIN_ENABLE\fP   \fBUSART_CR2_LINEN\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_LINBREAKDETECTLENGTH_10B\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_LINBREAKDETECTLENGTH_11B\fP   \fBUSART_CR2_LBDL\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_DMA_TX_DISABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_DMA_TX_ENABLE\fP   \fBUSART_CR3_DMAT\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_DMA_RX_DISABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_DMA_RX_ENABLE\fP   \fBUSART_CR3_DMAR\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_HALF_DUPLEX_DISABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_HALF_DUPLEX_ENABLE\fP   \fBUSART_CR3_HDSEL\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_WAKEUPMETHOD_IDLELINE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_WAKEUPMETHOD_ADDRESSMARK\fP   \fBUSART_CR1_WAKE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_AUTOBAUD_REQUEST\fP   \fBUSART_RQR_ABRRQ\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_SENDBREAK_REQUEST\fP   \fBUSART_RQR_SBKRQ\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_MUTE_MODE_REQUEST\fP   \fBUSART_RQR_MMRQ\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_RXDATA_FLUSH_REQUEST\fP   \fBUSART_RQR_RXFRQ\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_TXDATA_FLUSH_REQUEST\fP   \fBUSART_RQR_TXFRQ\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_NO_INIT\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_TXINVERT_INIT\fP   0x00000001U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_RXINVERT_INIT\fP   0x00000002U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_DATAINVERT_INIT\fP   0x00000004U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_SWAP_INIT\fP   0x00000008U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_RXOVERRUNDISABLE_INIT\fP   0x00000010U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_DMADISABLEONERROR_INIT\fP   0x00000020U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_AUTOBAUDRATE_INIT\fP   0x00000040U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_MSBFIRST_INIT\fP   0x00000080U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_TXINV_DISABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_TXINV_ENABLE\fP   \fBUSART_CR2_TXINV\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_RXINV_DISABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_RXINV_ENABLE\fP   \fBUSART_CR2_RXINV\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_DATAINV_DISABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_DATAINV_ENABLE\fP   \fBUSART_CR2_DATAINV\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_SWAP_DISABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_SWAP_ENABLE\fP   \fBUSART_CR2_SWAP\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_OVERRUN_ENABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_OVERRUN_DISABLE\fP   \fBUSART_CR3_OVRDIS\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_AUTOBAUDRATE_DISABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_AUTOBAUDRATE_ENABLE\fP   \fBUSART_CR2_ABREN\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_DMA_ENABLEONRXERROR\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_DMA_DISABLEONRXERROR\fP   \fBUSART_CR3_DDRE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_MSBFIRST_DISABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_MSBFIRST_ENABLE\fP   \fBUSART_CR2_MSBFIRST\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_STOPMODE_DISABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_STOPMODE_ENABLE\fP   \fBUSART_CR1_UESM\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_MUTEMODE_DISABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_MUTEMODE_ENABLE\fP   \fBUSART_CR1_MME\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_CR2_ADDRESS_LSB_POS\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBUART_WAKEUP_ON_ADDRESS\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_WAKEUP_ON_STARTBIT\fP   \fBUSART_CR3_WUS_1\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_WAKEUP_ON_READDATA_NONEMPTY\fP   \fBUSART_CR3_WUS\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_DE_POLARITY_HIGH\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_DE_POLARITY_LOW\fP   \fBUSART_CR3_DEP\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_CR1_DEAT_ADDRESS_LSB_POS\fP   21U"
+.br
+.ti -1c
+.RI "#define \fBUART_CR1_DEDT_ADDRESS_LSB_POS\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_MASK\fP   0x001FU"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_TIMEOUT_VALUE\fP   0x1FFFFFFU"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_TXFT\fP   \fBUSART_ISR_TXFT\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_RXFT\fP   \fBUSART_ISR_RXFT\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_RXFF\fP   \fBUSART_ISR_RXFF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_TXFE\fP   \fBUSART_ISR_TXFE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_REACK\fP   \fBUSART_ISR_REACK\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_TEACK\fP   \fBUSART_ISR_TEACK\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_WUF\fP   \fBUSART_ISR_WUF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_RWU\fP   \fBUSART_ISR_RWU\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_SBKF\fP   \fBUSART_ISR_SBKF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_CMF\fP   \fBUSART_ISR_CMF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_BUSY\fP   \fBUSART_ISR_BUSY\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_ABRF\fP   \fBUSART_ISR_ABRF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_ABRE\fP   \fBUSART_ISR_ABRE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_RTOF\fP   \fBUSART_ISR_RTOF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_CTS\fP   \fBUSART_ISR_CTS\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_CTSIF\fP   \fBUSART_ISR_CTSIF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_LBDF\fP   \fBUSART_ISR_LBDF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_TXE\fP   \fBUSART_ISR_TXE_TXFNF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_TXFNF\fP   \fBUSART_ISR_TXE_TXFNF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_TC\fP   \fBUSART_ISR_TC\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_RXNE\fP   \fBUSART_ISR_RXNE_RXFNE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_RXFNE\fP   \fBUSART_ISR_RXNE_RXFNE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_IDLE\fP   \fBUSART_ISR_IDLE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_ORE\fP   \fBUSART_ISR_ORE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_NE\fP   \fBUSART_ISR_NE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_FE\fP   \fBUSART_ISR_FE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_FLAG_PE\fP   \fBUSART_ISR_PE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_PE\fP   0x0028U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_TXE\fP   0x0727U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_TXFNF\fP   0x0727U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_TC\fP   0x0626U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_RXNE\fP   0x0525U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_RXFNE\fP   0x0525U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_IDLE\fP   0x0424U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_LBD\fP   0x0846U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_CTS\fP   0x096AU"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_CM\fP   0x112EU"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_WUF\fP   0x1476U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_RXFF\fP   0x183FU"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_TXFE\fP   0x173EU"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_RXFT\fP   0x1A7CU"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_TXFT\fP   0x1B77U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_RTO\fP   0x0B3AU"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_ERR\fP   0x0060U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_ORE\fP   0x0300U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_NE\fP   0x0200U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_FE\fP   0x0100U"
+.br
+.ti -1c
+.RI "#define \fBUART_CLEAR_PEF\fP   \fBUSART_ICR_PECF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_CLEAR_FEF\fP   \fBUSART_ICR_FECF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_CLEAR_NEF\fP   \fBUSART_ICR_NECF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_CLEAR_OREF\fP   \fBUSART_ICR_ORECF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_CLEAR_IDLEF\fP   \fBUSART_ICR_IDLECF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_CLEAR_TXFECF\fP   \fBUSART_ICR_TXFECF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_CLEAR_TCF\fP   \fBUSART_ICR_TCCF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_CLEAR_LBDF\fP   \fBUSART_ICR_LBDCF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_CLEAR_CTSF\fP   \fBUSART_ICR_CTSCF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_CLEAR_CMF\fP   \fBUSART_ICR_CMCF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_CLEAR_WUF\fP   \fBUSART_ICR_WUCF\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_CLEAR_RTOF\fP   \fBUSART_ICR_RTOCF\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_RECEPTION_STANDARD\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_RECEPTION_TOIDLE\fP   (0x00000001U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_RECEPTION_TORTO\fP   (0x00000002U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_RECEPTION_TOCHARMATCH\fP   (0x00000003U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_RXEVENT_TC\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_RXEVENT_HT\fP   (0x00000001U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_RXEVENT_IDLE\fP   (0x00000002U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_UART_RESET_HANDLE_STATE\fP(__HANDLE__)"
+.br
+.RI "Reset UART handle states\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_FLUSH_DRREGISTER\fP(__HANDLE__)"
+.br
+.RI "Flush the UART Data registers\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_CLEAR_FLAG\fP(__HANDLE__,  __FLAG__)   ((__HANDLE__)\->Instance\->ICR = (__FLAG__))"
+.br
+.RI "Clear the specified UART pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_CLEAR_PEFLAG\fP(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_PEF\fP)"
+.br
+.RI "Clear the UART PE pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_CLEAR_FEFLAG\fP(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_FEF\fP)"
+.br
+.RI "Clear the UART FE pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_CLEAR_NEFLAG\fP(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_NEF\fP)"
+.br
+.RI "Clear the UART NE pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_CLEAR_OREFLAG\fP(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_OREF\fP)"
+.br
+.RI "Clear the UART ORE pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_CLEAR_IDLEFLAG\fP(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_IDLEF\fP)"
+.br
+.RI "Clear the UART IDLE pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_CLEAR_TXFECF\fP(__HANDLE__)   \fB__HAL_UART_CLEAR_FLAG\fP((__HANDLE__), \fBUART_CLEAR_TXFECF\fP)"
+.br
+.RI "Clear the UART TX FIFO empty clear flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_GET_FLAG\fP(__HANDLE__,  __FLAG__)   (((__HANDLE__)\->Instance\->ISR & (__FLAG__)) == (__FLAG__))"
+.br
+.RI "Check whether the specified UART flag is set or not\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_ENABLE_IT\fP(__HANDLE__,  __INTERRUPT__)"
+.br
+.RI "Enable the specified UART interrupt\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_DISABLE_IT\fP(__HANDLE__,  __INTERRUPT__)"
+.br
+.RI "Disable the specified UART interrupt\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_GET_IT\fP(__HANDLE__,  __INTERRUPT__)"
+.br
+.RI "Check whether the specified UART interrupt has occurred or not\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_GET_IT_SOURCE\fP(__HANDLE__,  __INTERRUPT__)"
+.br
+.RI "Check whether the specified UART interrupt source is enabled or not\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_CLEAR_IT\fP(__HANDLE__,  __IT_CLEAR__)   ((__HANDLE__)\->Instance\->ICR = (uint32_t)(__IT_CLEAR__))"
+.br
+.RI "Clear the specified UART ISR flag, in setting the proper ICR register flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_SEND_REQ\fP(__HANDLE__,  __REQ__)   ((__HANDLE__)\->Instance\->RQR |= (uint16_t)(__REQ__))"
+.br
+.RI "Set a specific UART request flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_ONE_BIT_SAMPLE_ENABLE\fP(__HANDLE__)   ((__HANDLE__)\->Instance\->CR3|= \fBUSART_CR3_ONEBIT\fP)"
+.br
+.RI "Enable the UART one bit sample method\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_ONE_BIT_SAMPLE_DISABLE\fP(__HANDLE__)   ((__HANDLE__)\->Instance\->CR3 &= ~\fBUSART_CR3_ONEBIT\fP)"
+.br
+.RI "Disable the UART one bit sample method\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_ENABLE\fP(__HANDLE__)   ((__HANDLE__)\->Instance\->CR1 |= \fBUSART_CR1_UE\fP)"
+.br
+.RI "Enable UART\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_DISABLE\fP(__HANDLE__)   ((__HANDLE__)\->Instance\->CR1 &= ~\fBUSART_CR1_UE\fP)"
+.br
+.RI "Disable UART\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_HWCONTROL_CTS_ENABLE\fP(__HANDLE__)"
+.br
+.RI "Enable CTS flow control\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_HWCONTROL_CTS_DISABLE\fP(__HANDLE__)"
+.br
+.RI "Disable CTS flow control\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_HWCONTROL_RTS_ENABLE\fP(__HANDLE__)"
+.br
+.RI "Enable RTS flow control\&. "
+.ti -1c
+.RI "#define \fB__HAL_UART_HWCONTROL_RTS_DISABLE\fP(__HANDLE__)"
+.br
+.RI "Disable RTS flow control\&. "
+.ti -1c
+.RI "#define \fBUART_GET_DIV_FACTOR\fP(__CLOCKPRESCALER__)"
+.br
+.RI "Get UART clok division factor from clock prescaler value\&. "
+.ti -1c
+.RI "#define \fBUART_DIV_LPUART\fP(__PCLK__,  __BAUD__,  __CLOCKPRESCALER__)"
+.br
+.RI "BRR division operation to set BRR register with LPUART\&. "
+.ti -1c
+.RI "#define \fBUART_DIV_SAMPLING8\fP(__PCLK__,  __BAUD__,  __CLOCKPRESCALER__)     (((((__PCLK__)/\fBUARTPrescTable\fP[(__CLOCKPRESCALER__)])*2U) + ((__BAUD__)/2U)) / (__BAUD__))"
+.br
+.RI "BRR division operation to set BRR register in 8-bit oversampling mode\&. "
+.ti -1c
+.RI "#define \fBUART_DIV_SAMPLING16\fP(__PCLK__,  __BAUD__,  __CLOCKPRESCALER__)     ((((__PCLK__)/\fBUARTPrescTable\fP[(__CLOCKPRESCALER__)]) + ((__BAUD__)/2U)) / (__BAUD__))"
+.br
+.RI "BRR division operation to set BRR register in 16-bit oversampling mode\&. "
+.ti -1c
+.RI "#define \fBUART_INSTANCE_LOWPOWER\fP(__HANDLE__)   (\fBIS_LPUART_INSTANCE\fP((__HANDLE__)\->Instance))"
+.br
+.RI "Check whether or not UART instance is Low Power UART\&. "
+.ti -1c
+.RI "#define \fBIS_UART_BAUDRATE\fP(__BAUDRATE__)   ((__BAUDRATE__) < 8000001U)"
+.br
+.RI "Check UART Baud rate\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ASSERTIONTIME\fP(__TIME__)   ((__TIME__) <= 0x1FU)"
+.br
+.RI "Check UART assertion time\&. "
+.ti -1c
+.RI "#define \fBIS_UART_DEASSERTIONTIME\fP(__TIME__)   ((__TIME__) <= 0x1FU)"
+.br
+.RI "Check UART deassertion time\&. "
+.ti -1c
+.RI "#define \fBIS_UART_STOPBITS\fP(__STOPBITS__)"
+.br
+.RI "Ensure that UART frame number of stop bits is valid\&. "
+.ti -1c
+.RI "#define \fBIS_LPUART_STOPBITS\fP(__STOPBITS__)"
+.br
+.RI "Ensure that LPUART frame number of stop bits is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_PARITY\fP(__PARITY__)"
+.br
+.RI "Ensure that UART frame parity is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_HARDWARE_FLOW_CONTROL\fP(__CONTROL__)"
+.br
+.RI "Ensure that UART hardware flow control is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_MODE\fP(__MODE__)   ((((__MODE__) & (~((uint32_t)(\fBUART_MODE_TX_RX\fP)))) == 0x00U) && ((__MODE__) != 0x00U))"
+.br
+.RI "Ensure that UART communication mode is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_STATE\fP(__STATE__)"
+.br
+.RI "Ensure that UART state is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_OVERSAMPLING\fP(__SAMPLING__)"
+.br
+.RI "Ensure that UART oversampling is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ONE_BIT_SAMPLE\fP(__ONEBIT__)"
+.br
+.RI "Ensure that UART frame sampling is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_AUTOBAUDRATEMODE\fP(__MODE__)"
+.br
+.RI "Ensure that UART auto Baud rate detection mode is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_RECEIVER_TIMEOUT\fP(__TIMEOUT__)"
+.br
+.RI "Ensure that UART receiver timeout setting is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_RECEIVER_TIMEOUT_VALUE\fP(__TIMEOUTVALUE__)   ((__TIMEOUTVALUE__) <= 0xFFFFFFU)"
+.br
+.RI "Check the receiver timeout value\&. "
+.ti -1c
+.RI "#define \fBIS_UART_LIN\fP(__LIN__)"
+.br
+.RI "Ensure that UART LIN state is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_LIN_BREAK_DETECT_LENGTH\fP(__LENGTH__)"
+.br
+.RI "Ensure that UART LIN break detection length is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_DMA_TX\fP(__DMATX__)"
+.br
+.RI "Ensure that UART DMA TX state is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_DMA_RX\fP(__DMARX__)"
+.br
+.RI "Ensure that UART DMA RX state is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_HALF_DUPLEX\fP(__HDSEL__)"
+.br
+.RI "Ensure that UART half-duplex state is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_WAKEUPMETHOD\fP(__WAKEUP__)"
+.br
+.RI "Ensure that UART wake-up method is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_REQUEST_PARAMETER\fP(__PARAM__)"
+.br
+.RI "Ensure that UART request parameter is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_INIT\fP(__INIT__)"
+.br
+.RI "Ensure that UART advanced features initialization is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_TXINV\fP(__TXINV__)"
+.br
+.RI "Ensure that UART frame TX inversion setting is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_RXINV\fP(__RXINV__)"
+.br
+.RI "Ensure that UART frame RX inversion setting is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_DATAINV\fP(__DATAINV__)"
+.br
+.RI "Ensure that UART frame data inversion setting is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_SWAP\fP(__SWAP__)"
+.br
+.RI "Ensure that UART frame RX/TX pins swap setting is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_OVERRUN\fP(__OVERRUN__)"
+.br
+.RI "Ensure that UART frame overrun setting is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_AUTOBAUDRATE\fP(__AUTOBAUDRATE__)"
+.br
+.RI "Ensure that UART auto Baud rate state is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_DMAONRXERROR\fP(__DMA__)"
+.br
+.RI "Ensure that UART DMA enabling or disabling on error setting is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_MSBFIRST\fP(__MSBFIRST__)"
+.br
+.RI "Ensure that UART frame MSB first setting is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_STOPMODE\fP(__STOPMODE__)"
+.br
+.RI "Ensure that UART stop mode state is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_MUTE_MODE\fP(__MUTE__)"
+.br
+.RI "Ensure that UART mute mode state is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_WAKEUP_SELECTION\fP(__WAKE__)"
+.br
+.RI "Ensure that UART wake-up selection is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_DE_POLARITY\fP(__POLARITY__)"
+.br
+.RI "Ensure that UART driver enable polarity is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_PRESCALER\fP(__CLOCKPRESCALER__)"
+.br
+.RI "Ensure that UART Prescaler is valid\&. "
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef uint32_t \fBHAL_UART_StateTypeDef\fP"
+.br
+.RI "HAL UART State definition\&. "
+.ti -1c
+.RI "typedef uint32_t \fBHAL_UART_RxTypeTypeDef\fP"
+.br
+.RI "HAL UART Reception type definition\&. "
+.ti -1c
+.RI "typedef uint32_t \fBHAL_UART_RxEventTypeTypeDef\fP"
+.br
+.RI "HAL UART Rx Event type definition\&. "
+.ti -1c
+.RI "typedef struct \fB__UART_HandleTypeDef\fP \fBUART_HandleTypeDef\fP"
+.br
+.RI "UART handle Structure definition\&. "
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBUART_ClockSourceTypeDef\fP { \fBUART_CLOCKSOURCE_PCLK1\fP = 0x00U, \fBUART_CLOCKSOURCE_HSI\fP = 0x02U, \fBUART_CLOCKSOURCE_SYSCLK\fP = 0x04U, \fBUART_CLOCKSOURCE_LSE\fP = 0x08U, \fBUART_CLOCKSOURCE_UNDEFINED\fP = 0x10U }"
+.br
+.RI "UART clock sources definition\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Init\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_HalfDuplex_Init\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_LIN_Init\fP (\fBUART_HandleTypeDef\fP *huart, uint32_t BreakDetectLength)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_MultiProcessor_Init\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t Address, uint32_t WakeUpMethod)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_DeInit\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_MspInit\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_MspDeInit\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Transmit\fP (\fBUART_HandleTypeDef\fP *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Receive\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Transmit_IT\fP (\fBUART_HandleTypeDef\fP *huart, const uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Receive_IT\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Transmit_DMA\fP (\fBUART_HandleTypeDef\fP *huart, const uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Receive_DMA\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_DMAPause\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_DMAResume\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_DMAStop\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Abort\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_AbortTransmit\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_AbortReceive\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Abort_IT\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_AbortTransmit_IT\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_AbortReceive_IT\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_IRQHandler\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_TxHalfCpltCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_TxCpltCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_RxHalfCpltCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_RxCpltCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_ErrorCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_AbortCpltCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_AbortTransmitCpltCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_AbortReceiveCpltCallback\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UARTEx_RxEventCallback\fP (\fBUART_HandleTypeDef\fP *huart, uint16_t Size)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_ReceiverTimeout_Config\fP (\fBUART_HandleTypeDef\fP *huart, uint32_t TimeoutValue)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_EnableReceiverTimeout\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_DisableReceiverTimeout\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_LIN_SendBreak\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_MultiProcessor_EnableMuteMode\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_MultiProcessor_DisableMuteMode\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_MultiProcessor_EnterMuteMode\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_HalfDuplex_EnableTransmitter\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_HalfDuplex_EnableReceiver\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_UART_StateTypeDef\fP \fBHAL_UART_GetState\fP (const \fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "uint32_t \fBHAL_UART_GetError\fP (const \fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBUART_SetConfig\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBUART_CheckIdleState\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBUART_WaitOnFlagUntilTimeout\fP (\fBUART_HandleTypeDef\fP *huart, uint32_t Flag, \fBFlagStatus\fP Status, uint32_t Tickstart, uint32_t Timeout)"
+.br
+.ti -1c
+.RI "void \fBUART_AdvFeatureConfig\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBUART_Start_Receive_IT\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBUART_Start_Receive_DMA\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t *pData, uint16_t Size)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const uint16_t \fBUARTPrescTable\fP [12]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file of UART HAL module\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBAttention\fP
+.RS 4
+.RE
+.PP
+Copyright (c) 2018 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,162 @@
+.TH "RCC_APB1_Clock_Enabled_Disabled_Status" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_APB1_Clock_Enabled_Disabled_Status \- APB1 Peripheral Clock Enabled or Disabled Status
+.PP
+ \- Check whether the APB1 peripheral clock is enabled or not\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM3_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_TIM3EN\fP)   != 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM6_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, RCC_APBENR1_TIM6EN)   != 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM7_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, RCC_APBENR1_TIM7EN)   != 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_RTCAPB_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_RTCAPBEN\fP) != 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_WWDG_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_WWDGEN\fP)   != 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_SPI2_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_SPI2EN\fP)   != 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_USART2_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_USART2EN\fP) != 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_USART3_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, RCC_APBENR1_USART3EN) != 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_USART4_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, RCC_APBENR1_USART4EN) != 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_I2C1_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_I2C1EN\fP)   != 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_I2C2_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_I2C2EN\fP)   != 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_DBGMCU_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_DBGEN\fP)    != 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_PWR_IS_CLK_ENABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_PWREN\fP)    != 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM3_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_TIM3EN\fP)   == 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM6_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, RCC_APBENR1_TIM6EN)   == 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM7_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, RCC_APBENR1_TIM7EN)   == 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_RTCAPB_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_RTCAPBEN\fP) == 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_WWDG_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_WWDGEN\fP)   == 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_SPI2_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_SPI2EN\fP)   == 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_USART2_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_USART2EN\fP) == 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_USART3_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, RCC_APBENR1_USART3EN) == 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_USART4_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, RCC_APBENR1_USART4EN) == 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_I2C1_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_I2C1EN\fP)   == 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_I2C2_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_I2C2EN\fP)   == 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_DBGMCU_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_DBGEN\fP)    == 0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_PWR_IS_CLK_DISABLED\fP()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_PWREN\fP)    == 0U)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Check whether the APB1 peripheral clock is enabled or not\&. 
+
+
+.PP
+\fBNote\fP
+.RS 4
+After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it\&. 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_RCC_DBGMCU_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_DBGEN\fP)    == 0U)"
+
+.SS "#define __HAL_RCC_DBGMCU_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_DBGEN\fP)    != 0U)"
+
+.SS "#define __HAL_RCC_I2C1_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_I2C1EN\fP)   == 0U)"
+
+.SS "#define __HAL_RCC_I2C1_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_I2C1EN\fP)   != 0U)"
+
+.SS "#define __HAL_RCC_I2C2_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_I2C2EN\fP)   == 0U)"
+
+.SS "#define __HAL_RCC_I2C2_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_I2C2EN\fP)   != 0U)"
+
+.SS "#define __HAL_RCC_PWR_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_PWREN\fP)    == 0U)"
+
+.SS "#define __HAL_RCC_PWR_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_PWREN\fP)    != 0U)"
+
+.SS "#define __HAL_RCC_RTCAPB_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_RTCAPBEN\fP) == 0U)"
+
+.SS "#define __HAL_RCC_RTCAPB_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_RTCAPBEN\fP) != 0U)"
+
+.SS "#define __HAL_RCC_SPI2_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_SPI2EN\fP)   == 0U)"
+
+.SS "#define __HAL_RCC_SPI2_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_SPI2EN\fP)   != 0U)"
+
+.SS "#define __HAL_RCC_TIM3_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_TIM3EN\fP)   == 0U)"
+
+.SS "#define __HAL_RCC_TIM3_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_TIM3EN\fP)   != 0U)"
+
+.SS "#define __HAL_RCC_TIM6_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, RCC_APBENR1_TIM6EN)   == 0U)"
+
+.SS "#define __HAL_RCC_TIM6_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, RCC_APBENR1_TIM6EN)   != 0U)"
+
+.SS "#define __HAL_RCC_TIM7_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, RCC_APBENR1_TIM7EN)   == 0U)"
+
+.SS "#define __HAL_RCC_TIM7_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, RCC_APBENR1_TIM7EN)   != 0U)"
+
+.SS "#define __HAL_RCC_USART2_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_USART2EN\fP) == 0U)"
+
+.SS "#define __HAL_RCC_USART2_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_USART2EN\fP) != 0U)"
+
+.SS "#define __HAL_RCC_USART3_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, RCC_APBENR1_USART3EN) == 0U)"
+
+.SS "#define __HAL_RCC_USART3_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, RCC_APBENR1_USART3EN) != 0U)"
+
+.SS "#define __HAL_RCC_USART4_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, RCC_APBENR1_USART4EN) == 0U)"
+
+.SS "#define __HAL_RCC_USART4_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, RCC_APBENR1_USART4EN) != 0U)"
+
+.SS "#define __HAL_RCC_WWDG_IS_CLK_DISABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_WWDGEN\fP)   == 0U)"
+
+.SS "#define __HAL_RCC_WWDG_IS_CLK_ENABLED()   (\fBREAD_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_WWDGEN\fP)   != 0U)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

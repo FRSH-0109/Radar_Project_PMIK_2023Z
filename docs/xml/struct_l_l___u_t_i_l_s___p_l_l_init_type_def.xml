@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_l_l___u_t_i_l_s___p_l_l_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>LL_UTILS_PLLInitTypeDef</compoundname>
+    <includes refid="stm32g0xx__ll__utils_8h" local="no">stm32g0xx_ll_utils.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_l_l___u_t_i_l_s___p_l_l_init_type_def_1adb1ffaed93a1680042e24b5442b90af4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PLLM</definition>
+        <argsstring></argsstring>
+        <name>PLLM</name>
+        <qualifiedname>LL_UTILS_PLLInitTypeDef::PLLM</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Division factor for PLL VCO input clock. This parameter can be a value of RCC_LL_EC_PLLM_DIV</para>
+<para>This feature can be modified afterwards using unitary function LL_RCC_PLL_ConfigDomain_SYS(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" line="97" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_l_l___u_t_i_l_s___p_l_l_init_type_def_1a2e8a73f7961f8d6570193c68daba88a6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PLLN</definition>
+        <argsstring></argsstring>
+        <name>PLLN</name>
+        <qualifiedname>LL_UTILS_PLLInitTypeDef::PLLN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiplication factor for PLL VCO output clock. This parameter must be a number between Min_Data = 8 and Max_Data = 86</para>
+<para>This feature can be modified afterwards using unitary function LL_RCC_PLL_ConfigDomain_SYS(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" line="103" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_l_l___u_t_i_l_s___p_l_l_init_type_def_1a5777f8788531e0fc3f35b0e5d1c7a445" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PLLR</definition>
+        <argsstring></argsstring>
+        <name>PLLR</name>
+        <qualifiedname>LL_UTILS_PLLInitTypeDef::PLLR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Division for the main system clock. This parameter can be a value of RCC_LL_EC_PLLR_DIV</para>
+<para>This feature can be modified afterwards using unitary function LL_RCC_PLL_ConfigDomain_SYS(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" line="109" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>UTILS PLL structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" line="95" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" bodystart="96" bodyend="114"/>
+    <listofallmembers>
+      <member refid="struct_l_l___u_t_i_l_s___p_l_l_init_type_def_1adb1ffaed93a1680042e24b5442b90af4" prot="public" virt="non-virtual"><scope>LL_UTILS_PLLInitTypeDef</scope><name>PLLM</name></member>
+      <member refid="struct_l_l___u_t_i_l_s___p_l_l_init_type_def_1a2e8a73f7961f8d6570193c68daba88a6" prot="public" virt="non-virtual"><scope>LL_UTILS_PLLInitTypeDef</scope><name>PLLN</name></member>
+      <member refid="struct_l_l___u_t_i_l_s___p_l_l_init_type_def_1a5777f8788531e0fc3f35b0e5d1c7a445" prot="public" virt="non-virtual"><scope>LL_UTILS_PLLInitTypeDef</scope><name>PLLR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

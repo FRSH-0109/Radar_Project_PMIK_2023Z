@@ -1,0 +1,46 @@
+.TH "TIM_Group_Channel5" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_Group_Channel5 \- TIM Group Channel 5 and Channel 1, 2 or 3
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_GROUPCH5_NONE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBTIM_GROUPCH5_OC1REFC\fP   \fBTIM_CCR5_GC5C1\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_GROUPCH5_OC2REFC\fP   \fBTIM_CCR5_GC5C2\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_GROUPCH5_OC3REFC\fP   \fBTIM_CCR5_GC5C3\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define TIM_GROUPCH5_NONE   0x00000000U"
+No effect of OC5REF on OC1REFC, OC2REFC and OC3REFC 
+.SS "#define TIM_GROUPCH5_OC1REFC   \fBTIM_CCR5_GC5C1\fP"
+OC1REFC is the logical AND of OC1REFC and OC5REF 
+.br
+ 
+.SS "#define TIM_GROUPCH5_OC2REFC   \fBTIM_CCR5_GC5C2\fP"
+OC2REFC is the logical AND of OC2REFC and OC5REF 
+.br
+ 
+.SS "#define TIM_GROUPCH5_OC3REFC   \fBTIM_CCR5_GC5C3\fP"
+OC3REFC is the logical AND of OC3REFC and OC5REF 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

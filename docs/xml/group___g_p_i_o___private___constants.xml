@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___g_p_i_o___private___constants" kind="group">
+    <compoundname>GPIO_Private_Constants</compoundname>
+    <title>GPIO Private Constants</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1ga46e17845a1dfa2827eceb154e992b525" prot="public" static="no">
+        <name>GPIO_MODE_Pos</name>
+        <initializer>0u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="250" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1ga9f30425211b75e4ab36c4e7cbea06a41" prot="public" static="no">
+        <name>GPIO_MODE</name>
+        <initializer>(0x3uL &lt;&lt; <ref refid="group___g_p_i_o___private___constants_1ga46e17845a1dfa2827eceb154e992b525" kindref="member">GPIO_MODE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="251" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1ga89aaf2dc63dbfb7a60898372d496a56c" prot="public" static="no">
+        <name>MODE_INPUT</name>
+        <initializer>(0x0uL &lt;&lt; <ref refid="group___g_p_i_o___private___constants_1ga46e17845a1dfa2827eceb154e992b525" kindref="member">GPIO_MODE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="252" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1ga3b23ec3cf56d4fc73dd1185b7f2792d6" prot="public" static="no">
+        <name>MODE_OUTPUT</name>
+        <initializer>(0x1uL &lt;&lt; <ref refid="group___g_p_i_o___private___constants_1ga46e17845a1dfa2827eceb154e992b525" kindref="member">GPIO_MODE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="253" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1ga60ce9a309c9629a88569a919d84313c1" prot="public" static="no">
+        <name>MODE_AF</name>
+        <initializer>(0x2uL &lt;&lt; <ref refid="group___g_p_i_o___private___constants_1ga46e17845a1dfa2827eceb154e992b525" kindref="member">GPIO_MODE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="254" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1ga6184043271806f6f261da2471fbb22be" prot="public" static="no">
+        <name>MODE_ANALOG</name>
+        <initializer>(0x3uL &lt;&lt; <ref refid="group___g_p_i_o___private___constants_1ga46e17845a1dfa2827eceb154e992b525" kindref="member">GPIO_MODE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="255" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1gafe471d87fbc31effdccdf78ec66dfd15" prot="public" static="no">
+        <name>OUTPUT_TYPE_Pos</name>
+        <initializer>4u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="256" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1gaf282b119b7274dd3e3beb01a18ae9803" prot="public" static="no">
+        <name>OUTPUT_TYPE</name>
+        <initializer>(0x1uL &lt;&lt; <ref refid="group___g_p_i_o___private___constants_1gafe471d87fbc31effdccdf78ec66dfd15" kindref="member">OUTPUT_TYPE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="257" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1ga282324fff426c331d129b53d159ea008" prot="public" static="no">
+        <name>OUTPUT_PP</name>
+        <initializer>(0x0uL &lt;&lt; <ref refid="group___g_p_i_o___private___constants_1gafe471d87fbc31effdccdf78ec66dfd15" kindref="member">OUTPUT_TYPE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="258" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1gaea041a6db0843f4b27a6a39b829d56e7" prot="public" static="no">
+        <name>OUTPUT_OD</name>
+        <initializer>(0x1uL &lt;&lt; <ref refid="group___g_p_i_o___private___constants_1gafe471d87fbc31effdccdf78ec66dfd15" kindref="member">OUTPUT_TYPE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="259" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1gac27495ace01f8e82684b3b82bd920e17" prot="public" static="no">
+        <name>EXTI_MODE_Pos</name>
+        <initializer>16u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="260" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1ga50756019598a98c1dd294fb6c54da638" prot="public" static="no">
+        <name>EXTI_MODE</name>
+        <initializer>(0x3uL &lt;&lt; <ref refid="group___g_p_i_o___private___constants_1gac27495ace01f8e82684b3b82bd920e17" kindref="member">EXTI_MODE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="261" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1ga81df8693ca52b68e306ba007a99b2d4d" prot="public" static="no">
+        <name>EXTI_IT</name>
+        <initializer>(0x1uL &lt;&lt; <ref refid="group___g_p_i_o___private___constants_1gac27495ace01f8e82684b3b82bd920e17" kindref="member">EXTI_MODE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="262" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1ga51a5ff147c0774ad7c7ff954be7328b1" prot="public" static="no">
+        <name>EXTI_EVT</name>
+        <initializer>(0x2uL &lt;&lt; <ref refid="group___g_p_i_o___private___constants_1gac27495ace01f8e82684b3b82bd920e17" kindref="member">EXTI_MODE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="263" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1gaebb89365408d0b9eb230b49b39d2db43" prot="public" static="no">
+        <name>TRIGGER_MODE_Pos</name>
+        <initializer>20u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="264" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1gaae6a22a29315c180fb982bf349acbf29" prot="public" static="no">
+        <name>TRIGGER_MODE</name>
+        <initializer>(0x7uL &lt;&lt; <ref refid="group___g_p_i_o___private___constants_1gaebb89365408d0b9eb230b49b39d2db43" kindref="member">TRIGGER_MODE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="265" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1gae41780e16294f38d4a092f3bd8511473" prot="public" static="no">
+        <name>TRIGGER_RISING</name>
+        <initializer>(0x1uL &lt;&lt; <ref refid="group___g_p_i_o___private___constants_1gaebb89365408d0b9eb230b49b39d2db43" kindref="member">TRIGGER_MODE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="266" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o___private___constants_1ga79c022a14dc50cb5433c9f40dcd98463" prot="public" static="no">
+        <name>TRIGGER_FALLING</name>
+        <initializer>(0x2uL &lt;&lt; <ref refid="group___g_p_i_o___private___constants_1gaebb89365408d0b9eb230b49b39d2db43" kindref="member">TRIGGER_MODE_Pos</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" line="267" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

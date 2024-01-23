@@ -1,0 +1,186 @@
+.TH "UART_Interrupt_definition" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Interrupt_definition \- UART Interrupts Definition
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_IT_PE\fP   0x0028U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_TXE\fP   0x0727U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_TXFNF\fP   0x0727U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_TC\fP   0x0626U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_RXNE\fP   0x0525U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_RXFNE\fP   0x0525U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_IDLE\fP   0x0424U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_LBD\fP   0x0846U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_CTS\fP   0x096AU"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_CM\fP   0x112EU"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_WUF\fP   0x1476U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_RXFF\fP   0x183FU"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_TXFE\fP   0x173EU"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_RXFT\fP   0x1A7CU"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_TXFT\fP   0x1B77U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_RTO\fP   0x0B3AU"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_ERR\fP   0x0060U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_ORE\fP   0x0300U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_NE\fP   0x0200U"
+.br
+.ti -1c
+.RI "#define \fBUART_IT_FE\fP   0x0100U"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Elements values convention: 000ZZZZZ0XXYYYYYb
+.IP "\(bu" 2
+YYYYY : Interrupt source position in the XX register (5bits)
+.IP "\(bu" 2
+XX : Interrupt source register (2bits)
+.IP "  \(bu" 4
+01: CR1 register
+.IP "  \(bu" 4
+10: CR2 register
+.IP "  \(bu" 4
+11: CR3 register
+.PP
+
+.IP "\(bu" 2
+ZZZZZ : Flag position in the ISR register(5bits) Elements values convention: 000000000XXYYYYYb
+.IP "\(bu" 2
+YYYYY : Interrupt source position in the XX register (5bits)
+.IP "\(bu" 2
+XX : Interrupt source register (2bits)
+.IP "  \(bu" 4
+01: CR1 register
+.IP "  \(bu" 4
+10: CR2 register
+.IP "  \(bu" 4
+11: CR3 register Elements values convention: 0000ZZZZ00000000b
+.PP
+
+.IP "\(bu" 2
+ZZZZ : Flag position in the ISR register(4bits) 
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define UART_IT_CM   0x112EU"
+UART character match interruption 
+.br
+ 
+.SS "#define UART_IT_CTS   0x096AU"
+UART CTS interruption 
+.br
+ 
+.SS "#define UART_IT_ERR   0x0060U"
+UART error interruption 
+.br
+ 
+.SS "#define UART_IT_FE   0x0100U"
+UART frame error interruption 
+.br
+ 
+.SS "#define UART_IT_IDLE   0x0424U"
+UART idle interruption 
+.br
+ 
+.SS "#define UART_IT_LBD   0x0846U"
+UART LIN break detection interruption 
+.br
+ 
+.SS "#define UART_IT_NE   0x0200U"
+UART noise error interruption 
+.br
+ 
+.SS "#define UART_IT_ORE   0x0300U"
+UART overrun error interruption 
+.br
+ 
+.SS "#define UART_IT_PE   0x0028U"
+UART parity error interruption 
+.br
+ 
+.SS "#define UART_IT_RTO   0x0B3AU"
+UART receiver timeout interruption 
+.br
+ 
+.SS "#define UART_IT_RXFF   0x183FU"
+UART RXFIFO full interruption 
+.br
+ 
+.SS "#define UART_IT_RXFNE   0x0525U"
+UART RXFIFO not empty interruption 
+.br
+ 
+.SS "#define UART_IT_RXFT   0x1A7CU"
+UART RXFIFO threshold reached interruption 
+.br
+ 
+.SS "#define UART_IT_RXNE   0x0525U"
+UART read data register not empty interruption 
+.SS "#define UART_IT_TC   0x0626U"
+UART transmission complete interruption 
+.br
+ 
+.SS "#define UART_IT_TXE   0x0727U"
+UART transmit data register empty interruption 
+.SS "#define UART_IT_TXFE   0x173EU"
+UART TXFIFO empty interruption 
+.br
+ 
+.SS "#define UART_IT_TXFNF   0x0727U"
+UART TX FIFO not full interruption 
+.br
+ 
+.SS "#define UART_IT_TXFT   0x1B77U"
+UART TXFIFO threshold reached interruption 
+.br
+ 
+.SS "#define UART_IT_WUF   0x1476U"
+UART wake-up from stop mode interruption 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

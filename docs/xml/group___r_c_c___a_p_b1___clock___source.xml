@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___r_c_c___a_p_b1___clock___source" kind="group">
+    <compoundname>RCC_APB1_Clock_Source</compoundname>
+    <title>APB Clock Source</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___clock___source_1ga8e3fcdef0e5d77bb61a52420fe1e9fbc" prot="public" static="no">
+        <name>RCC_HCLK_DIV1</name>
+        <initializer>0x00000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HCLK not divided </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="608" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="608" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___clock___source_1ga4d2ebcf280d85e8449a5fb7b994b5169" prot="public" static="no">
+        <name>RCC_HCLK_DIV2</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga9dd1090e3533051080ad6330c23bb1e8" kindref="member">RCC_CFGR_PPRE_2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HCLK divided by 2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="609" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="609" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___clock___source_1ga85b5f4fd936e22a3f4df5ed756f6e083" prot="public" static="no">
+        <name>RCC_HCLK_DIV4</name>
+        <initializer>(<ref refid="group___peripheral___registers___bits___definition_1ga9dd1090e3533051080ad6330c23bb1e8" kindref="member">RCC_CFGR_PPRE_2</ref> | <ref refid="group___peripheral___registers___bits___definition_1gad4c209254b4d64fed532dc3b1b225cad" kindref="member">RCC_CFGR_PPRE_0</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HCLK divided by 4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="610" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="610" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___clock___source_1gadb18bc60e2c639cb59244bedb54f7bb3" prot="public" static="no">
+        <name>RCC_HCLK_DIV8</name>
+        <initializer>(<ref refid="group___peripheral___registers___bits___definition_1ga9dd1090e3533051080ad6330c23bb1e8" kindref="member">RCC_CFGR_PPRE_2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga739d2ec3ef025971724c56bd441a028c" kindref="member">RCC_CFGR_PPRE_1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HCLK divided by 8 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="611" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="611" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b1___clock___source_1ga27ac27d48360121bc2dc68b99dc8845d" prot="public" static="no">
+        <name>RCC_HCLK_DIV16</name>
+        <initializer>(<ref refid="group___peripheral___registers___bits___definition_1ga9dd1090e3533051080ad6330c23bb1e8" kindref="member">RCC_CFGR_PPRE_2</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga739d2ec3ef025971724c56bd441a028c" kindref="member">RCC_CFGR_PPRE_1</ref> | <ref refid="group___peripheral___registers___bits___definition_1gad4c209254b4d64fed532dc3b1b225cad" kindref="member">RCC_CFGR_PPRE_0</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HCLK divided by 16 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="612" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="612" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

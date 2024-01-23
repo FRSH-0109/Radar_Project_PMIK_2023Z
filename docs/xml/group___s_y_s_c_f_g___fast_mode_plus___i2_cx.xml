@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_y_s_c_f_g___fast_mode_plus___i2_cx" kind="group">
+    <compoundname>SYSCFG_FastModePlus_I2Cx</compoundname>
+    <title>Fast mode Plus driving capability activation for I2Cx</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_y_s_c_f_g___fast_mode_plus___i2_cx_1ga4911308679b2105b9717cba3ae8ed05c" prot="public" static="no">
+        <name>SYSCFG_FASTMODEPLUS_I2C1</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga97e28a2c5e89597d5d447b3d206a3fd6" kindref="member">SYSCFG_CFGR1_I2C1_FMP</ref></initializer>
+        <briefdescription>
+<para>Fast mode Plus driving capability on a specific GPIO. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable Fast mode Plus on I2C1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="187" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___fast_mode_plus___i2_cx_1ga6913a48c7dab495541cf7cd87050fb68" prot="public" static="no">
+        <name>SYSCFG_FASTMODEPLUS_I2C2</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga465e2f2a75b970e887cd2c8fb0b11e54" kindref="member">SYSCFG_CFGR1_I2C2_FMP</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable Fast mode Plus on I2C2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="188" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

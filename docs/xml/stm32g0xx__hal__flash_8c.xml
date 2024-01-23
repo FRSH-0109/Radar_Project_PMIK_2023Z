@@ -1,0 +1,724 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="stm32g0xx__hal__flash_8c" kind="file" language="C++">
+    <compoundname>stm32g0xx_hal_flash.c</compoundname>
+    <includes refid="stm32g0xx__hal_8h" local="yes">stm32g0xx_hal.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="7">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="2">
+        <label>stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stm32g0xx_hal_cortex.h</label>
+        <link refid="stm32g0xx__hal__cortex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stm32g0xx_hal_dma.h</label>
+        <link refid="stm32g0xx__hal__dma_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stm32g0xx_hal_dma_ex.h</label>
+        <link refid="stm32g0xx__hal__dma__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>stm32g0xx_hal_exti.h</label>
+        <link refid="stm32g0xx__hal__exti_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>stm32g0xx_hal_flash.h</label>
+        <link refid="stm32g0xx__hal__flash_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>stm32g0xx_hal_flash_ex.h</label>
+        <link refid="stm32g0xx__hal__flash__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stm32g0xx_hal_gpio.h</label>
+        <link refid="stm32g0xx__hal__gpio_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stm32g0xx_hal_gpio_ex.h</label>
+        <link refid="stm32g0xx__hal__gpio__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>stm32g0xx_hal_pwr.h</label>
+        <link refid="stm32g0xx__hal__pwr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>stm32g0xx_hal_pwr_ex.h</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stm32g0xx_hal_rcc.h</label>
+        <link refid="stm32g0xx__hal__rcc_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stm32g0xx_hal_rcc_ex.h</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>stm32g0xx_hal_spi.h</label>
+        <link refid="stm32g0xx__hal__spi_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>stm32g0xx_hal_spi_ex.h</label>
+        <link refid="stm32g0xx__hal__spi__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>stm32g0xx_hal_tim.h</label>
+        <link refid="stm32g0xx__hal__tim_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>stm32g0xx_hal_tim_ex.h</label>
+        <link refid="stm32g0xx__hal__tim__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>stm32g0xx_hal_uart.h</label>
+        <link refid="stm32g0xx__hal__uart_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>stm32g0xx_hal_uart_ex.h</label>
+        <link refid="stm32g0xx__hal__uart__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stm32g0xx_ll_dma.h</label>
+        <link refid="stm32g0xx__ll__dma_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stm32g0xx_ll_dmamux.h</label>
+        <link refid="stm32g0xx__ll__dmamux_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stm32g0xx_ll_rcc.h</label>
+        <link refid="stm32g0xx__ll__rcc_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c</label>
+        <link refid="stm32g0xx__hal__flash_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>FLASH HAL module driver. This file provides firmware functions to manage the following functionalities of the internal FLASH memory: </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team<itemizedlist>
+<listitem><para>Program operations functions</para>
+</listitem><listitem><para>Memory Control functions</para>
+</listitem><listitem><para>Peripheral Errors functions</para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+<verbatim> ==============================================================================
+                       ##### FLASH peripheral features #####
+ ==============================================================================
+
+ [..] The Flash memory interface manages CPU AHB I-Code and D-Code accesses
+      to the Flash memory. It implements the erase and program Flash memory operations
+      and the read and write protection mechanisms.
+
+ [..] The Flash memory interface accelerates code execution with a system of instruction
+      prefetch and cache lines.
+
+ [..] The FLASH main features are:
+     (+) Flash memory read operations
+     (+) Flash memory program/erase operations
+     (+) Read / write protections
+     (+) Option bytes programming
+     (+) Prefetch on I-Code
+     (+) 32 cache lines of 4*64 bits on I-Code
+     (+) Error code correction (ECC) : Data in flash are 72-bits word
+         (8 bits added per double word)
+
+                       ##### How to use this driver #####
+==============================================================================
+   [..]
+     This driver provides functions and macros to configure and program the FLASH
+     memory of all STM32G0xx devices.
+
+     (#) Flash Memory IO Programming functions:
+          (++) Lock and Unlock the FLASH interface using HAL_FLASH_Unlock() and
+               HAL_FLASH_Lock() functions
+          (++) Program functions: double word and fast program (full row programming)
+          (++) There are two modes of programming:
+           (+++) Polling mode using HAL_FLASH_Program() function
+           (+++) Interrupt mode using HAL_FLASH_Program_IT() function
+
+     (#) Interrupts and flags management functions:
+          (++) Handle FLASH interrupts by calling HAL_FLASH_IRQHandler()
+          (++) Callback functions are called when the flash operations are finished :
+               HAL_FLASH_EndOfOperationCallback() when everything is ok, otherwise
+               HAL_FLASH_OperationErrorCallback()
+          (++) Get error flag status by calling HAL_GetError()
+
+     (#) Option bytes management functions :
+          (++) Lock and Unlock the option bytes using HAL_FLASH_OB_Unlock() and
+               HAL_FLASH_OB_Lock() functions
+          (++) Launch the reload of the option bytes using HAL_FLASH_OB_Launch() function.
+               In this case, a reset is generated
+
+   [..]
+     In addition to these functions, this driver includes a set of macros allowing
+     to handle the following operations:
+      (+) Set the latency
+      (+) Enable/Disable the prefetch buffer
+      (+) Enable/Disable the Instruction cache
+      (+) Reset the Instruction cache
+      (+) Enable/Disable the Flash power-down during low-power run and sleep modes
+      (+) Enable/Disable the Flash interrupts
+      (+) Monitor the Flash flags status</verbatim></para>
+<para><simplesect kind="attention"><para></para>
+</simplesect>
+Copyright (c) 2018 STMicroelectronics. All rights reserved.</para>
+<para>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32g0xx__hal_8h" kindref="compound">stm32g0xx_hal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAL_FLASH_MODULE_ENABLED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>typedef<sp/>-----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>defines<sp/>-----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>macros<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>variables<sp/>---------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><ref refid="struct_f_l_a_s_h___process_type_def" kindref="compound">FLASH_ProcessTypeDef</ref><sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref><sp/><sp/>=<sp/>{.<ref refid="struct_f_l_a_s_h___process_type_def_1ad4cf225029dbefe8d3fe660c33b8bb6b" kindref="member">Lock</ref><sp/>=<sp/><ref refid="stm32g0xx__hal__def_8h_1ab367482e943333a1299294eadaad284ba9bd487430440139444e6e7ff226005c0" kindref="member">HAL_UNLOCKED</ref>,<sp/>\</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.ErrorCode<sp/>=<sp/><ref refid="group___f_l_a_s_h___error_1gae7fb9ee7198d393aba27ade3a9f50a70" kindref="member">HAL_FLASH_ERROR_NONE</ref>,<sp/>\</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.ProcedureOnGoing<sp/>=<sp/><ref refid="group___f_l_a_s_h___private___constants_1ga9f4e94ec0af00dc7fc7632b9d4112720" kindref="member">FLASH_TYPENONE</ref>,<sp/>\</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.Address<sp/>=<sp/>0U,<sp/>\</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.Banks<sp/>=<sp/>0U,<sp/>\</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.Page<sp/>=<sp/>0U,<sp/>\</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.NbPagesToErase<sp/>=<sp/>0U</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>function<sp/>prototypes<sp/>-----------------------------------------------*/</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_Program_DoubleWord(uint32_t<sp/>Address,<sp/>uint64_t<sp/>Data);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_Program_Fast(uint32_t<sp/>Address,<sp/>uint32_t<sp/>DataAddress);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>functions<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___f_l_a_s_h___exported___functions___group1_1gab94b3dc16c5c6fcc30ba2cb897de8bae" kindref="member">HAL_FLASH_Program</ref>(uint32_t<sp/>TypeProgram,<sp/>uint32_t<sp/>Address,<sp/>uint64_t<sp/>Data)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/>status;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___f_l_a_s_h___private___macros_1gab96611359d7c156f22f1b37929933e34" kindref="member">IS_FLASH_TYPEPROGRAM</ref>(TypeProgram));</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Process<sp/>Locked<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1ad3d96e1b9022ba76b69eeda91027b36c" kindref="member">__HAL_LOCK</ref>(&amp;<ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>error<sp/>code<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1a66f47ab0beaa0defb8a75817dbab2ef3" kindref="member">ErrorCode</ref><sp/>=<sp/><ref refid="group___f_l_a_s_h___error_1gae7fb9ee7198d393aba27ade3a9f50a70" kindref="member">HAL_FLASH_ERROR_NONE</ref>;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>last<sp/>operation<sp/>to<sp/>be<sp/>completed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>status<sp/>=<sp/><ref refid="group___f_l_a_s_h___private__types_1gaf89afc110a32ac9dcf0d06b89ffd9224" kindref="member">FLASH_WaitForLastOperation</ref>(<ref refid="group___f_l_a_s_h___private___constants_1ga76e8ea58ef37913dcdb61efae2d6ab8f" kindref="member">FLASH_TIMEOUT_VALUE</ref>);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>==<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(TypeProgram<sp/>==<sp/><ref refid="group___f_l_a_s_h___type___program_1gabdc2b0b4d2e66c2be90fafbfbf1e225f" kindref="member">FLASH_TYPEPROGRAM_DOUBLEWORD</ref>)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___f_l_a_s_h___private___macros_1gac07480adefa0f54a920561a97c2e5b8a" kindref="member">IS_FLASH_PROGRAM_ADDRESS</ref>(Address));</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Program<sp/>double-word<sp/>(64-bit)<sp/>at<sp/>a<sp/>specified<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_Program_DoubleWord(Address,<sp/>Data);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___f_l_a_s_h___private___macros_1gaa8232c18c001193e0bd845812463f3cd" kindref="member">IS_FLASH_FAST_PROGRAM_ADDRESS</ref>(Address));</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Fast<sp/>program<sp/>a<sp/>32<sp/>row<sp/>double-word<sp/>(64-bit)<sp/>at<sp/>a<sp/>specified<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_Program_Fast(Address,<sp/>(uint32_t)Data);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>last<sp/>operation<sp/>to<sp/>be<sp/>completed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="group___f_l_a_s_h___private__types_1gaf89afc110a32ac9dcf0d06b89ffd9224" kindref="member">FLASH_WaitForLastOperation</ref>(<ref refid="group___f_l_a_s_h___private___constants_1ga76e8ea58ef37913dcdb61efae2d6ab8f" kindref="member">FLASH_TIMEOUT_VALUE</ref>);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>If<sp/>the<sp/>program<sp/>operation<sp/>is<sp/>completed,<sp/>disable<sp/>the<sp/>PG<sp/>or<sp/>FSTPG<sp/>Bit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR,<sp/>TypeProgram);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Process<sp/>Unlocked<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1a7c2c23627aed2bb71d8c1ad071cda004" kindref="member">__HAL_UNLOCK</ref>(&amp;<ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>return<sp/>status<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___f_l_a_s_h___exported___functions___group1_1ga85ee0375f81ac12bf0acd013189f68d3" kindref="member">HAL_FLASH_Program_IT</ref>(uint32_t<sp/>TypeProgram,<sp/>uint32_t<sp/>Address,<sp/>uint64_t<sp/>Data)</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/>status;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___f_l_a_s_h___private___macros_1gab96611359d7c156f22f1b37929933e34" kindref="member">IS_FLASH_TYPEPROGRAM</ref>(TypeProgram));</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Process<sp/>Locked<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1ad3d96e1b9022ba76b69eeda91027b36c" kindref="member">__HAL_LOCK</ref>(&amp;<ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>error<sp/>code<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1a66f47ab0beaa0defb8a75817dbab2ef3" kindref="member">ErrorCode</ref><sp/>=<sp/><ref refid="group___f_l_a_s_h___error_1gae7fb9ee7198d393aba27ade3a9f50a70" kindref="member">HAL_FLASH_ERROR_NONE</ref>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>last<sp/>operation<sp/>to<sp/>be<sp/>completed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/>status<sp/>=<sp/><ref refid="group___f_l_a_s_h___private__types_1gaf89afc110a32ac9dcf0d06b89ffd9224" kindref="member">FLASH_WaitForLastOperation</ref>(<ref refid="group___f_l_a_s_h___private___constants_1ga76e8ea58ef37913dcdb61efae2d6ab8f" kindref="member">FLASH_TIMEOUT_VALUE</ref>);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Process<sp/>Unlocked<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1a7c2c23627aed2bb71d8c1ad071cda004" kindref="member">__HAL_UNLOCK</ref>(&amp;<ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>internal<sp/>variables<sp/>used<sp/>by<sp/>the<sp/>IRQ<sp/>handler<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1adda092bee12e49fc4cb5468429e2e8d3" kindref="member">ProcedureOnGoing</ref><sp/>=<sp/>TypeProgram;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1aca1b23fd721c8d8dc70a8227e336b6e8" kindref="member">Address</ref><sp/>=<sp/>Address;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enable<sp/>End<sp/>of<sp/>Operation<sp/>and<sp/>Error<sp/>interrupts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR<sp/>|=<sp/><ref refid="group___peripheral___registers___bits___definition_1gab9e69856f654ec430a42791a34799db0" kindref="member">FLASH_CR_EOPIE</ref><sp/>|<sp/><ref refid="group___peripheral___registers___bits___definition_1ga930897cecdaa9dbef8c640b84acbd8c2" kindref="member">FLASH_CR_ERRIE</ref>;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(TypeProgram<sp/>==<sp/><ref refid="group___f_l_a_s_h___type___program_1gabdc2b0b4d2e66c2be90fafbfbf1e225f" kindref="member">FLASH_TYPEPROGRAM_DOUBLEWORD</ref>)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___f_l_a_s_h___private___macros_1gac07480adefa0f54a920561a97c2e5b8a" kindref="member">IS_FLASH_PROGRAM_ADDRESS</ref>(Address));</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Program<sp/>double-word<sp/>(64-bit)<sp/>at<sp/>a<sp/>specified<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_Program_DoubleWord(Address,<sp/>Data);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___f_l_a_s_h___private___macros_1gaa8232c18c001193e0bd845812463f3cd" kindref="member">IS_FLASH_FAST_PROGRAM_ADDRESS</ref>(Address));</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Fast<sp/>program<sp/>a<sp/>32<sp/>row<sp/>double-word<sp/>(64-bit)<sp/>at<sp/>a<sp/>specified<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_Program_Fast(Address,<sp/>(uint32_t)Data);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>return<sp/>status<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___f_l_a_s_h___exported___functions___group1_1ga083f13f6a000dfcb80c7a27853eba528" kindref="member">HAL_FLASH_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="283"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/>uint32_t<sp/>param;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/>uint32_t<sp/>error;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Save<sp/>flash<sp/>errors.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/>error<sp/>=<sp/>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;SR<sp/>&amp;<sp/><ref refid="group___f_l_a_s_h___private___constants_1ga58a73aff56bdb7f5b8b85639ff6809cb" kindref="member">FLASH_SR_ERRORS</ref>);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>A]<sp/>Set<sp/>parameter<sp/>for<sp/>user<sp/>or<sp/>error<sp/>callbacks<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>check<sp/>operation<sp/>was<sp/>a<sp/>program<sp/>or<sp/>erase<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1adda092bee12e49fc4cb5468429e2e8d3" kindref="member">ProcedureOnGoing</ref><sp/>&amp;<sp/><ref refid="group___f_l_a_s_h___type___erase_1ga191e5180504a54e509ee9b50f85d9621" kindref="member">FLASH_TYPEERASE_MASS</ref>)<sp/>!=<sp/>0x00U)</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>return<sp/>bank<sp/>number<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>param<sp/>=<sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1aa07868a5b012861c6111322c3dccdbec" kindref="member">Banks</ref>;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>operation<sp/>only<sp/>for<sp/>page<sp/>erase<sp/>or<sp/>program<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR,<sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1adda092bee12e49fc4cb5468429e2e8d3" kindref="member">ProcedureOnGoing</ref>);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1adda092bee12e49fc4cb5468429e2e8d3" kindref="member">ProcedureOnGoing</ref><sp/>&amp;<sp/>(<ref refid="group___f_l_a_s_h___type___program_1gabdc2b0b4d2e66c2be90fafbfbf1e225f" kindref="member">FLASH_TYPEPROGRAM_DOUBLEWORD</ref><sp/>|<sp/><ref refid="group___f_l_a_s_h___type___program_1gae2edb2ca56dde4aba97c77502c580d81" kindref="member">FLASH_TYPEPROGRAM_FAST</ref>))<sp/>!=<sp/>0x00U)</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>return<sp/>address<sp/>being<sp/>programmed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>param<sp/>=<sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1aca1b23fd721c8d8dc70a8227e336b6e8" kindref="member">Address</ref>;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>return<sp/>page<sp/>number<sp/>being<sp/>erased<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>param<sp/>=<sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1ad5ac387429b4b85d2ee00e34559b4a28" kindref="member">Page</ref>;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>B]<sp/>Check<sp/>errors<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(error<sp/>!=<sp/>0x00U)</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Save<sp/>the<sp/>error<sp/>code*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1a66f47ab0beaa0defb8a75817dbab2ef3" kindref="member">ErrorCode</ref><sp/>|=<sp/>error;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>clear<sp/>error<sp/>flags<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;SR<sp/>=<sp/><ref refid="group___f_l_a_s_h___private___constants_1ga58a73aff56bdb7f5b8b85639ff6809cb" kindref="member">FLASH_SR_ERRORS</ref>;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Stop<sp/>the<sp/>procedure<sp/>ongoing*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1adda092bee12e49fc4cb5468429e2e8d3" kindref="member">ProcedureOnGoing</ref><sp/>=<sp/><ref refid="group___f_l_a_s_h___private___constants_1ga9f4e94ec0af00dc7fc7632b9d4112720" kindref="member">FLASH_TYPENONE</ref>;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Error<sp/>callback<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h___exported___functions___group1_1ga237e17bd9b1d257bd8e2880227b8484e" kindref="member">HAL_FLASH_OperationErrorCallback</ref>(param);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>C]<sp/>Check<sp/>FLASH<sp/>End<sp/>of<sp/>Operation<sp/>flag<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;SR<sp/>&amp;<sp/><ref refid="group___peripheral___registers___bits___definition_1gae1301c6b487cfefa247c54a576a0c12b" kindref="member">FLASH_SR_EOP</ref>)<sp/>!=<sp/>0x00U)</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>FLASH<sp/>End<sp/>of<sp/>Operation<sp/>pending<sp/>bit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;SR<sp/>=<sp/><ref refid="group___peripheral___registers___bits___definition_1gae1301c6b487cfefa247c54a576a0c12b" kindref="member">FLASH_SR_EOP</ref>;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1adda092bee12e49fc4cb5468429e2e8d3" kindref="member">ProcedureOnGoing</ref><sp/>==<sp/><ref refid="group___f_l_a_s_h___type___erase_1ga3664ce55155ec4990873c51737d787ce" kindref="member">FLASH_TYPEERASE_PAGES</ref>)</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Nb<sp/>of<sp/>pages<sp/>to<sp/>erased<sp/>can<sp/>be<sp/>decreased<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1aaa07dbf9d1176059fe93dfab7b808ca6" kindref="member">NbPagesToErase</ref>--;</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>if<sp/>there<sp/>are<sp/>still<sp/>pages<sp/>to<sp/>erase*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1aaa07dbf9d1176059fe93dfab7b808ca6" kindref="member">NbPagesToErase</ref><sp/>!=<sp/>0x00U)</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Increment<sp/>page<sp/>number<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1ad5ac387429b4b85d2ee00e34559b4a28" kindref="member">Page</ref>++;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h_ex___private___macros_1ga982dd20191ab5fda149d01fa46869133" kindref="member">FLASH_PageErase</ref>(<ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1aa07868a5b012861c6111322c3dccdbec" kindref="member">Banks</ref>,<sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1ad5ac387429b4b85d2ee00e34559b4a28" kindref="member">Page</ref>);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>more<sp/>pages<sp/>to<sp/>erase:<sp/>stop<sp/>erase<sp/>pages<sp/>procedure<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1adda092bee12e49fc4cb5468429e2e8d3" kindref="member">ProcedureOnGoing</ref><sp/>=<sp/><ref refid="group___f_l_a_s_h___private___constants_1ga9f4e94ec0af00dc7fc7632b9d4112720" kindref="member">FLASH_TYPENONE</ref>;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Stop<sp/>the<sp/>ongoing<sp/>procedure<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1adda092bee12e49fc4cb5468429e2e8d3" kindref="member">ProcedureOnGoing</ref><sp/>=<sp/><ref refid="group___f_l_a_s_h___private___constants_1ga9f4e94ec0af00dc7fc7632b9d4112720" kindref="member">FLASH_TYPENONE</ref>;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>User<sp/>callback<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h___exported___functions___group1_1ga71a7e85ede66fae4eadaf8854f81b5c8" kindref="member">HAL_FLASH_EndOfOperationCallback</ref>(param);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1adda092bee12e49fc4cb5468429e2e8d3" kindref="member">ProcedureOnGoing</ref><sp/>==<sp/><ref refid="group___f_l_a_s_h___private___constants_1ga9f4e94ec0af00dc7fc7632b9d4112720" kindref="member">FLASH_TYPENONE</ref>)</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Disable<sp/>End<sp/>of<sp/>Operation<sp/>and<sp/>Error<sp/>interrupts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR<sp/>&amp;=<sp/>~(<ref refid="group___peripheral___registers___bits___definition_1gab9e69856f654ec430a42791a34799db0" kindref="member">FLASH_CR_EOPIE</ref><sp/>|<sp/><ref refid="group___peripheral___registers___bits___definition_1ga930897cecdaa9dbef8c640b84acbd8c2" kindref="member">FLASH_CR_ERRIE</ref>);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Process<sp/>Unlocked<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1a7c2c23627aed2bb71d8c1ad071cda004" kindref="member">__HAL_UNLOCK</ref>(&amp;<ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>);</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="372"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal">__weak<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___f_l_a_s_h___exported___functions___group1_1ga71a7e85ede66fae4eadaf8854f81b5c8" kindref="member">HAL_FLASH_EndOfOperationCallback</ref>(uint32_t<sp/>ReturnValue)</highlight></codeline>
+<codeline lineno="383"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Prevent<sp/>unused<sp/>argument(s)<sp/>compilation<sp/>warning<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(ReturnValue);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>NOTE<sp/>:<sp/>This<sp/>function<sp/>should<sp/>not<sp/>be<sp/>modified,<sp/>when<sp/>the<sp/>callback<sp/>is<sp/>needed,</highlight></codeline>
+<codeline lineno="388"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>HAL_FLASH_EndOfOperationCallback<sp/>could<sp/>be<sp/>implemented<sp/>in<sp/>the<sp/>user<sp/>file</highlight></codeline>
+<codeline lineno="389"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal">__weak<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___f_l_a_s_h___exported___functions___group1_1ga237e17bd9b1d257bd8e2880227b8484e" kindref="member">HAL_FLASH_OperationErrorCallback</ref>(uint32_t<sp/>ReturnValue)</highlight></codeline>
+<codeline lineno="401"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Prevent<sp/>unused<sp/>argument(s)<sp/>compilation<sp/>warning<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(ReturnValue);</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>NOTE<sp/>:<sp/>This<sp/>function<sp/>should<sp/>not<sp/>be<sp/>modified,<sp/>when<sp/>the<sp/>callback<sp/>is<sp/>needed,</highlight></codeline>
+<codeline lineno="406"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>HAL_FLASH_OperationErrorCallback<sp/>could<sp/>be<sp/>implemented<sp/>in<sp/>the<sp/>user<sp/>file</highlight></codeline>
+<codeline lineno="407"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___f_l_a_s_h___exported___functions___group2_1ga23d4ff42a8873bac585c92ce4f633747" kindref="member">HAL_FLASH_Unlock</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="434"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/>status<sp/>=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>;</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gab25f1fa4127fa015361b61a6f3180784" kindref="member">FLASH_CR_LOCK</ref>)<sp/>!=<sp/>0x00U)</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Authorize<sp/>the<sp/>FLASH<sp/>Registers<sp/>access<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___exported__macros_1ga32f78bffcaf6d13023dcd7f05e0c4d57" kindref="member">WRITE_REG</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;KEYR,<sp/><ref refid="group___f_l_a_s_h___keys_1gafd77e7bf91765d891ce63e2f0084b019" kindref="member">FLASH_KEY1</ref>);</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___exported__macros_1ga32f78bffcaf6d13023dcd7f05e0c4d57" kindref="member">WRITE_REG</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;KEYR,<sp/><ref refid="group___f_l_a_s_h___keys_1gaee83d0f557e158da52f4a205db6b60a7" kindref="member">FLASH_KEY2</ref>);</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>verify<sp/>Flash<sp/>is<sp/>unlock<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gab25f1fa4127fa015361b61a6f3180784" kindref="member">FLASH_CR_LOCK</ref>)<sp/>!=<sp/>0x00U)</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa5a04e395e501e4e400172c610478c4a4" kindref="member">HAL_ERROR</ref>;</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="451"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___f_l_a_s_h___exported___functions___group2_1gae07eeca0b0aa9d5047f8df88d82f4bcd" kindref="member">HAL_FLASH_Lock</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="458"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/>status<sp/>=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa5a04e395e501e4e400172c610478c4a4" kindref="member">HAL_ERROR</ref>;</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>the<sp/>LOCK<sp/>Bit<sp/>to<sp/>lock<sp/>the<sp/>FLASH<sp/>Registers<sp/>access<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gab25f1fa4127fa015361b61a6f3180784" kindref="member">FLASH_CR_LOCK</ref>);</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>verify<sp/>Flash<sp/>is<sp/>locked<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gab25f1fa4127fa015361b61a6f3180784" kindref="member">FLASH_CR_LOCK</ref>)<sp/>!=<sp/>0x00u)</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>;</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="471"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___f_l_a_s_h___exported___functions___group2_1ga6e8f380b7a938592f0b6f05d0ebf69c3" kindref="member">HAL_FLASH_OB_Unlock</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="478"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/>status<sp/>=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa5a04e395e501e4e400172c610478c4a4" kindref="member">HAL_ERROR</ref>;</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga07d6b8d395266a214a18813f7d30ce56" kindref="member">FLASH_CR_OPTLOCK</ref>)<sp/>!=<sp/>0x00U)</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Authorizes<sp/>the<sp/>Option<sp/>Byte<sp/>register<sp/>programming<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___exported__macros_1ga32f78bffcaf6d13023dcd7f05e0c4d57" kindref="member">WRITE_REG</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;OPTKEYR,<sp/><ref refid="group___f_l_a_s_h___keys_1ga1630c4f338daf2741daa1273f657164f" kindref="member">FLASH_OPTKEY1</ref>);</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___exported__macros_1ga32f78bffcaf6d13023dcd7f05e0c4d57" kindref="member">WRITE_REG</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;OPTKEYR,<sp/><ref refid="group___f_l_a_s_h___keys_1gae0da3085d59cf73089bfb1a2b9d9367d" kindref="member">FLASH_OPTKEY2</ref>);</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>verify<sp/>option<sp/>bytes<sp/>are<sp/>unlocked<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga07d6b8d395266a214a18813f7d30ce56" kindref="member">FLASH_CR_OPTLOCK</ref>)<sp/>==<sp/>0x00U)</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>;</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="495"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___f_l_a_s_h___exported___functions___group2_1ga3ff599bd7eba88f7a169a537ccbf3e3f" kindref="member">HAL_FLASH_OB_Lock</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="502"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/>status<sp/>=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa5a04e395e501e4e400172c610478c4a4" kindref="member">HAL_ERROR</ref>;</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>the<sp/>OPTLOCK<sp/>Bit<sp/>to<sp/>lock<sp/>the<sp/>FLASH<sp/>Option<sp/>Byte<sp/>Registers<sp/>access<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga07d6b8d395266a214a18813f7d30ce56" kindref="member">FLASH_CR_OPTLOCK</ref>);</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"></highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>verify<sp/>option<sp/>bytes<sp/>are<sp/>locked<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga07d6b8d395266a214a18813f7d30ce56" kindref="member">FLASH_CR_OPTLOCK</ref>)<sp/>!=<sp/>0x00u)</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>;</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"></highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="515"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___f_l_a_s_h___exported___functions___group2_1ga046c539c76aaae3d487d59193f74c9db" kindref="member">HAL_FLASH_OB_Launch</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="522"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>the<sp/>bit<sp/>to<sp/>force<sp/>the<sp/>option<sp/>byte<sp/>reloading<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR,<sp/><ref refid="group___peripheral___registers___bits___definition_1gae39d20c1cf47080881d5c054146e8863" kindref="member">FLASH_CR_OBL_LAUNCH</ref>);</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>We<sp/>should<sp/>not<sp/>reach<sp/>here<sp/>:<sp/>Option<sp/>byte<sp/>launch<sp/>generates<sp/>Option<sp/>byte<sp/>reset</highlight></codeline>
+<codeline lineno="527"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>so<sp/>return<sp/>error<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa5a04e395e501e4e400172c610478c4a4" kindref="member">HAL_ERROR</ref>;</highlight></codeline>
+<codeline lineno="529"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"></highlight></codeline>
+<codeline lineno="566"><highlight class="normal">uint32_t<sp/><ref refid="group___f_l_a_s_h___exported___functions___group3_1ga20e71ba6b2a09cd5b9f0bd369f842de3" kindref="member">HAL_FLASH_GetError</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="567"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1a66f47ab0beaa0defb8a75817dbab2ef3" kindref="member">ErrorCode</ref>;</highlight></codeline>
+<codeline lineno="569"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"></highlight></codeline>
+<codeline lineno="579"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>functions<sp/>---------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="580"><highlight class="normal"></highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___f_l_a_s_h___private__types_1gaf89afc110a32ac9dcf0d06b89ffd9224" kindref="member">FLASH_WaitForLastOperation</ref>(uint32_t<sp/>Timeout)</highlight></codeline>
+<codeline lineno="591"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/>uint32_t<sp/>error;</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>the<sp/>FLASH<sp/>operation<sp/>to<sp/>complete<sp/>by<sp/>polling<sp/>on<sp/>BUSY<sp/>flag<sp/>to<sp/>be<sp/>reset.</highlight></codeline>
+<codeline lineno="594"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>Even<sp/>if<sp/>the<sp/>FLASH<sp/>operation<sp/>fails,<sp/>the<sp/>BUSY<sp/>flag<sp/>will<sp/>be<sp/>reset<sp/>and<sp/>an<sp/>error</highlight></codeline>
+<codeline lineno="595"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>flag<sp/>will<sp/>be<sp/>set<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/>uint32_t<sp/>timeout<sp/>=<sp/><ref refid="group___h_a_l___exported___functions___group2_1gaf2c4f03d53e997a54e1fd5e80daa55c4" kindref="member">HAL_GetTick</ref>()<sp/>+<sp/>Timeout;</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"></highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>if<sp/>any<sp/>operation<sp/>is<sp/>ongoing<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/>error<sp/>=<sp/>(<ref refid="group___peripheral___registers___bits___definition_1ga69ca523d207e38373a4c2c0a6a229a56" kindref="member">FLASH_SR_BSY1</ref><sp/>|<sp/>FLASH_SR_BSY2);</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/>error<sp/>=<sp/><ref refid="group___peripheral___registers___bits___definition_1ga69ca523d207e38373a4c2c0a6a229a56" kindref="member">FLASH_SR_BSY1</ref>;</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="604"><highlight class="normal"></highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;SR<sp/>&amp;<sp/>error)<sp/>!=<sp/>0x00U)</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___h_a_l___exported___functions___group2_1gaf2c4f03d53e997a54e1fd5e80daa55c4" kindref="member">HAL_GetTick</ref>()<sp/>&gt;=<sp/>timeout)</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa00c89549bc881c35e8e4cd9e718337e5" kindref="member">HAL_TIMEOUT</ref>;</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"></highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>check<sp/>flash<sp/>errors<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/>error<sp/>=<sp/>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;SR<sp/>&amp;<sp/><ref refid="group___f_l_a_s_h___private___constants_1ga58a73aff56bdb7f5b8b85639ff6809cb" kindref="member">FLASH_SR_ERRORS</ref>);</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"></highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>SR<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;SR<sp/>=<sp/><ref refid="group___f_l_a_s_h___private___constants_1ga300fa40384ef7d2f9c9dca779fb0efd3" kindref="member">FLASH_SR_CLEAR</ref>;</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"></highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(error<sp/>!=<sp/>0x00U)</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Save<sp/>the<sp/>error<sp/>code*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___f_l_a_s_h___exported___variables_1ga165f289b9549ab9094501a388afe9742" kindref="member">pFlash</ref>.<ref refid="struct_f_l_a_s_h___process_type_def_1a66f47ab0beaa0defb8a75817dbab2ef3" kindref="member">ErrorCode</ref><sp/>=<sp/>error;</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa5a04e395e501e4e400172c610478c4a4" kindref="member">HAL_ERROR</ref>;</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"></highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>control<sp/>register<sp/>to<sp/>be<sp/>written<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/>timeout<sp/>=<sp/><ref refid="group___h_a_l___exported___functions___group2_1gaf2c4f03d53e997a54e1fd5e80daa55c4" kindref="member">HAL_GetTick</ref>()<sp/>+<sp/>Timeout;</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"></highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;SR<sp/>&amp;<sp/><ref refid="group___peripheral___registers___bits___definition_1gaf0affdd373e88f8af29b7a004c0224d1" kindref="member">FLASH_SR_CFGBSY</ref>)<sp/>!=<sp/>0x00U)</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___h_a_l___exported___functions___group2_1gaf2c4f03d53e997a54e1fd5e80daa55c4" kindref="member">HAL_GetTick</ref>()<sp/>&gt;=<sp/>timeout)</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa00c89549bc881c35e8e4cd9e718337e5" kindref="member">HAL_TIMEOUT</ref>;</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"></highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>;</highlight></codeline>
+<codeline lineno="638"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"></highlight></codeline>
+<codeline lineno="646"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FLASH_Program_DoubleWord(uint32_t<sp/>Address,<sp/>uint64_t<sp/>Data)</highlight></codeline>
+<codeline lineno="647"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>PG<sp/>bit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga47754b39bd7a7c79c251d6376f97f661" kindref="member">FLASH_CR_PG</ref>);</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"></highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Program<sp/>first<sp/>word<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/>*(uint32_t<sp/>*)Address<sp/>=<sp/>(uint32_t)Data;</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"></highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Barrier<sp/>to<sp/>ensure<sp/>programming<sp/>is<sp/>performed<sp/>in<sp/>2<sp/>steps,<sp/>in<sp/>right<sp/>order</highlight></codeline>
+<codeline lineno="655"><highlight class="comment"><sp/><sp/><sp/><sp/>(independently<sp/>of<sp/>compiler<sp/>optimization<sp/>behavior)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___core___instruction_interface_1gaad233022e850a009fc6f7602be1182f6" kindref="member">__ISB</ref>();</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"></highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Program<sp/>second<sp/>word<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/>*(uint32_t<sp/>*)(Address<sp/>+<sp/>4U)<sp/>=<sp/>(uint32_t)(Data<sp/>&gt;&gt;<sp/>32U);</highlight></codeline>
+<codeline lineno="660"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"></highlight></codeline>
+<codeline lineno="668"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>__RAM_FUNC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FLASH_Program_Fast(uint32_t<sp/>Address,<sp/>uint32_t<sp/>DataAddress)</highlight></codeline>
+<codeline lineno="669"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/>uint8_t<sp/>index<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/>uint32_t<sp/>dest<sp/>=<sp/>Address;</highlight></codeline>
+<codeline lineno="672"><highlight class="normal"><sp/><sp/>uint32_t<sp/>src<sp/>=<sp/>DataAddress;</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"><sp/><sp/>uint32_t<sp/>primask_bit;</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"></highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>FSTPG<sp/>bit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR,<sp/><ref refid="group___peripheral___registers___bits___definition_1ga612c895365dc78ab2b7d17584f435e9d" kindref="member">FLASH_CR_FSTPG</ref>);</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"></highlight></codeline>
+<codeline lineno="678"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enter<sp/>critical<sp/>section:<sp/>row<sp/>programming<sp/>should<sp/>not<sp/>be<sp/>longer<sp/>than<sp/>7<sp/>ms<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/>primask_bit<sp/>=<sp/><ref refid="group___c_m_s_i_s___core___reg_acc_functions_1ga4ff59fb9e280d19e79e6875863a65f0a" kindref="member">__get_PRIMASK</ref>();</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><ref refid="cmsis__iccarm_8h_1a6cb98c1adc8a28bc3b48649a3421195d" kindref="member">__disable_irq</ref>();</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"></highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Fast<sp/>Program<sp/>:<sp/>64<sp/>words<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(index<sp/>&lt;<sp/>64U)</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/>*(uint32_t<sp/>*)dest<sp/>=<sp/>*(uint32_t<sp/>*)src;</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/>src<sp/>+=<sp/>4U;</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/>dest<sp/>+=<sp/>4U;</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/>index++;</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"></highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>wait<sp/>for<sp/>BSY1<sp/>in<sp/>order<sp/>to<sp/>be<sp/>sure<sp/>that<sp/>flash<sp/>operation<sp/>is<sp/>ended<sp/>befoire</highlight></codeline>
+<codeline lineno="692"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>allowing<sp/>prefetch<sp/>in<sp/>flash.<sp/>Timeout<sp/>does<sp/>not<sp/>return<sp/>status,<sp/>as<sp/>it<sp/>will</highlight></codeline>
+<codeline lineno="693"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>be<sp/>anyway<sp/>done<sp/>later<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="694"><highlight class="normal"></highlight></codeline>
+<codeline lineno="695"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(FLASH_DBANK_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;SR<sp/>&amp;<sp/>(<ref refid="group___peripheral___registers___bits___definition_1ga69ca523d207e38373a4c2c0a6a229a56" kindref="member">FLASH_SR_BSY1</ref><sp/>|<sp/>FLASH_SR_BSY2))<sp/>!=<sp/>0x00U)</highlight></codeline>
+<codeline lineno="697"><highlight class="normal">#</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="698"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;SR<sp/>&amp;<sp/><ref refid="group___peripheral___registers___bits___definition_1ga69ca523d207e38373a4c2c0a6a229a56" kindref="member">FLASH_SR_BSY1</ref>)<sp/>!=<sp/>0x00U)</highlight></codeline>
+<codeline lineno="699"><highlight class="normal">#endif<sp/></highlight><highlight class="comment">/*<sp/>FLASH_DBANK_SUPPORT<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="701"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"></highlight></codeline>
+<codeline lineno="703"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Exit<sp/>critical<sp/>section:<sp/>restore<sp/>previous<sp/>priority<sp/>mask<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="704"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___core___reg_acc_functions_1gaf4a17d3be7dbb066489836d849930d92" kindref="member">__set_PRIMASK</ref>(primask_bit);</highlight></codeline>
+<codeline lineno="705"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"></highlight></codeline>
+<codeline lineno="711"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_FLASH_MODULE_ENABLED<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="712"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c"/>
+  </compounddef>
+</doxygen>

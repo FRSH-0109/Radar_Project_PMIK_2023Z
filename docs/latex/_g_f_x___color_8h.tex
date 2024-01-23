@@ -1,0 +1,358 @@
+\doxysection{Radar\+App/\+Display\+Driver/\+GFX\+\_\+\+Color.h File Reference}
+\hypertarget{_g_f_x___color_8h}{}\label{_g_f_x___color_8h}\index{RadarApp/DisplayDriver/GFX\_Color.h@{RadarApp/DisplayDriver/GFX\_Color.h}}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_a0087da8bf630427b2be84146f9aa817a}{AVR\+\_\+\+USING}}~0
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_a3fe83b7acdb281b9c0f815e8ef47d1fb}{STM32\+\_\+\+USING}}~1
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}}~uint16\+\_\+t
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_ac101099e7c44cddd11b39d4b5d9b76e8}{GFX\+\_\+\+Draw\+Pixel}}(x,  y,  color)~\mbox{\hyperlink{_i_l_i9341_8c_aeee3186252cba83694826a2c2c7014c5}{ILI9341\+\_\+\+Write\+Pixel}}(x,y,color)
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_a241aeeb764887ae5e3de58b98f04b16d}{WIDTH}}~SSD1306\+\_\+\+LCDWIDTH
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_aed89bd71aee8be823e8a20ec4e093c1e}{HEIGHT}}~SSD1306\+\_\+\+LCDHEIGHT
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_aa8829668df37049cbb948e7a2bdaf24c}{PIXEL\+\_\+\+BLACK}}~\mbox{\hyperlink{_i_l_i9341_8h_a50166b9a65012fb2f8fe0a0d5f519fa3}{ILI9341\+\_\+\+BLACK}}
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_a7eea33a429d9f1e57ad4a7da800d7eb9}{PIXEL\+\_\+\+WHITE}}~\mbox{\hyperlink{_i_l_i9341_8h_a604507ef031b95291b2d177088fe03e4}{ILI9341\+\_\+\+WHITE}}
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_affb2a25da634c05a8480a9e5ffbb614b}{USING\+\_\+\+STRINGS}}~1
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_ae4e2b54d0e9d9917fee0f4f9471248bd}{USING\+\_\+\+IMAGE}}~1
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_aff1d8c5cab0391bb1e033c49f376b7cd}{USING\+\_\+\+IMAGE\+\_\+\+ROTATE}}~1
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_a5d68655e0ed708bb53ce7dfa4aa0b7f5}{USING\+\_\+\+RECTANGLE}}~1
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_a3b159d18c3abe5e03ce58f374aa714a0}{USING\+\_\+\+CIRCLE}}~1
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_ac1321cff02c252062c60fc7937c6897a}{USING\+\_\+\+FILL\+\_\+\+CIRCLE}}~1
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_aafd0dfb111b1e0432eec27e304ef9799}{USING\+\_\+\+ROUND\+\_\+\+RECTANGLE}}~1
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_a829cb83ba75e238d08489056102fb509}{USING\+\_\+\+FILL\+\_\+\+ROUND\+\_\+\+RECTANGLE}}~1
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_a2993e64e47a8a63d2753e6a9bb54df61}{USING\+\_\+\+TRIANGLE}}~1
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_a3d63cb7f63e5d7a410283a3e1fdfe9f6}{USING\+\_\+\+FILL\+\_\+\+TRIANGLE}}~1
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_a9fc617c090e61e028d49ac8d0ffa195b}{USING\+\_\+\+FILL\+\_\+\+RECTANGLE}}~1
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_a5a9ca40b946991d0973122213eed650f}{USING\+\_\+\+LINES}}~1
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_a996979944387eae41c8646bee1a43347}{CIRCLE\+\_\+\+HELPER}}
+\item 
+\#define \mbox{\hyperlink{_g_f_x___color_8h_ae24e42076857448fb99ecccf601aad1a}{FILL\+\_\+\+CIRCLE\+\_\+\+HELPER}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_a596e777e1054a75cc927606847f187ce}{GFX\+\_\+\+Set\+Font}} (const uint8\+\_\+t \texorpdfstring{$\ast$}{*}font\+\_\+t)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_a25bf38fe8e0c3d3a242a6ade2b366ddd}{GFX\+\_\+\+Set\+Font\+Size}} (uint8\+\_\+t size\+\_\+t)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_g_f_x___color_8h_afc7fa4357b8e39e7921b39f91afed253}{GFX\+\_\+\+Get\+Font\+Height}} (void)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_g_f_x___color_8h_a0baffeeea8d7717541e68161b398d568}{GFX\+\_\+\+Get\+Font\+Width}} (void)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_g_f_x___color_8h_ad0d8418c19681d21ede57c9f94002c00}{GFX\+\_\+\+Get\+Font\+Size}} (void)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_ace713583b87d448f79610acb3fd279a5}{GFX\+\_\+\+Draw\+Char}} (int x, int y, char chr, \mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}} color)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_ae4afef6fed31387849b2bddd1f242abb}{GFX\+\_\+\+Draw\+String}} (int x, int y, char \texorpdfstring{$\ast$}{*}str, \mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}} color)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_a53ffa293c0fc65aa299dc03c824729b4}{GFX\+\_\+\+Draw\+String\+\_\+const\+\_\+size}} (int x, int y, char \texorpdfstring{$\ast$}{*}str, \mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}} color, uint8\+\_\+t const\+\_\+size)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_a344587315e8efa17178ab82ab2bb013c}{GFX\+\_\+\+Draw\+Char\+\_\+const\+\_\+size}} (int x, int y, char chr, \mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}} color, uint8\+\_\+t const\+\_\+size)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_ad3342c4916c09b7e6264afa73c533382}{GFX\+\_\+\+Draw\+Line}} (int x\+\_\+start, int y\+\_\+start, int x\+\_\+end, int y\+\_\+end, \mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}} color)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_a9c4f1dd628691910617cfc6875f36696}{GFX\+\_\+\+Draw\+Rectangle}} (int x, int y, uint16\+\_\+t w, uint16\+\_\+t h, \mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}} color)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_aa4174018595051ef59fa9b443865bd7c}{GFX\+\_\+\+Draw\+Fill\+Rectangle}} (int x, int y, uint16\+\_\+t w, uint16\+\_\+t h, \mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}} color)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_ac01dbc1da0cefba24b38056b49bdd8c4}{GFX\+\_\+\+Draw\+Circle}} (int x0, int y0, uint16\+\_\+t r, \mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}} color)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_a7e0aa6a2910ddecdf56189ec3903d25e}{GFX\+\_\+\+Draw\+Circle\+Helper}} (int x0, int y0, uint16\+\_\+t r, uint8\+\_\+t cornername, \mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}} color)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_a1d7cd8472bce76c8dd8bbba7ab53e10b}{GFX\+\_\+\+Draw\+Fill\+Circle}} (int x0, int y0, uint16\+\_\+t r, \mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}} color)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_a2e36718ba835609b1aecd4ddf3131302}{GFX\+\_\+\+Draw\+Round\+Rectangle}} (int x, int y, uint16\+\_\+t w, uint16\+\_\+t h, uint16\+\_\+t r, \mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}} color)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_abacc0a541cb47255ef77bdbf64471653}{GFX\+\_\+\+Draw\+Fill\+Round\+Rectangle}} (int x, int y, uint16\+\_\+t w, uint16\+\_\+t h, uint16\+\_\+t r, \mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}} color)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_a2d76c57a88461e77257af6ab5df26235}{GFX\+\_\+\+Draw\+Triangle}} (int x0, int y0, int x1, int y1, int x2, int y2, \mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}} color)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_a2dd7abbfd0a6c989d5a317f238d5ce21}{GFX\+\_\+\+Draw\+Fill\+Triangle}} (int x0, int y0, int x1, int y1, int x2, int y2, \mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}} color)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_a9a9fc6c36509ec595d6d36681a270cca}{GFX\+\_\+\+Image}} (int x, int y, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}img, uint16\+\_\+t w, uint16\+\_\+t h)
+\item 
+void \mbox{\hyperlink{_g_f_x___color_8h_aab6a1316ded700e486a3282035f61c87}{GFX\+\_\+\+Image\+Rotate}} (int x, int y, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}img, uint8\+\_\+t w, uint8\+\_\+t h, \mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}} color, uint16\+\_\+t angle)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_g_f_x___color_8h_a0087da8bf630427b2be84146f9aa817a}\label{_g_f_x___color_8h_a0087da8bf630427b2be84146f9aa817a} 
+\index{GFX\_Color.h@{GFX\_Color.h}!AVR\_USING@{AVR\_USING}}
+\index{AVR\_USING@{AVR\_USING}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{AVR\_USING}{AVR\_USING}}
+{\footnotesize\ttfamily \#define AVR\+\_\+\+USING~0}
+
+\Hypertarget{_g_f_x___color_8h_a996979944387eae41c8646bee1a43347}\label{_g_f_x___color_8h_a996979944387eae41c8646bee1a43347} 
+\index{GFX\_Color.h@{GFX\_Color.h}!CIRCLE\_HELPER@{CIRCLE\_HELPER}}
+\index{CIRCLE\_HELPER@{CIRCLE\_HELPER}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{CIRCLE\_HELPER}{CIRCLE\_HELPER}}
+{\footnotesize\ttfamily \#define CIRCLE\+\_\+\+HELPER}
+
+\Hypertarget{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}\label{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046} 
+\index{GFX\_Color.h@{GFX\_Color.h}!ColorType@{ColorType}}
+\index{ColorType@{ColorType}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{ColorType}{ColorType}}
+{\footnotesize\ttfamily \#define Color\+Type~uint16\+\_\+t}
+
+\Hypertarget{_g_f_x___color_8h_ae24e42076857448fb99ecccf601aad1a}\label{_g_f_x___color_8h_ae24e42076857448fb99ecccf601aad1a} 
+\index{GFX\_Color.h@{GFX\_Color.h}!FILL\_CIRCLE\_HELPER@{FILL\_CIRCLE\_HELPER}}
+\index{FILL\_CIRCLE\_HELPER@{FILL\_CIRCLE\_HELPER}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{FILL\_CIRCLE\_HELPER}{FILL\_CIRCLE\_HELPER}}
+{\footnotesize\ttfamily \#define FILL\+\_\+\+CIRCLE\+\_\+\+HELPER}
+
+\Hypertarget{_g_f_x___color_8h_ac101099e7c44cddd11b39d4b5d9b76e8}\label{_g_f_x___color_8h_ac101099e7c44cddd11b39d4b5d9b76e8} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_DrawPixel@{GFX\_DrawPixel}}
+\index{GFX\_DrawPixel@{GFX\_DrawPixel}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_DrawPixel}{GFX\_DrawPixel}}
+{\footnotesize\ttfamily \#define GFX\+\_\+\+Draw\+Pixel(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y,  }\item[{}]{color }\end{DoxyParamCaption})~\mbox{\hyperlink{_i_l_i9341_8c_aeee3186252cba83694826a2c2c7014c5}{ILI9341\+\_\+\+Write\+Pixel}}(x,y,color)}
+
+\Hypertarget{_g_f_x___color_8h_aed89bd71aee8be823e8a20ec4e093c1e}\label{_g_f_x___color_8h_aed89bd71aee8be823e8a20ec4e093c1e} 
+\index{GFX\_Color.h@{GFX\_Color.h}!HEIGHT@{HEIGHT}}
+\index{HEIGHT@{HEIGHT}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{HEIGHT}{HEIGHT}}
+{\footnotesize\ttfamily \#define HEIGHT~SSD1306\+\_\+\+LCDHEIGHT}
+
+\Hypertarget{_g_f_x___color_8h_aa8829668df37049cbb948e7a2bdaf24c}\label{_g_f_x___color_8h_aa8829668df37049cbb948e7a2bdaf24c} 
+\index{GFX\_Color.h@{GFX\_Color.h}!PIXEL\_BLACK@{PIXEL\_BLACK}}
+\index{PIXEL\_BLACK@{PIXEL\_BLACK}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{PIXEL\_BLACK}{PIXEL\_BLACK}}
+{\footnotesize\ttfamily \#define PIXEL\+\_\+\+BLACK~\mbox{\hyperlink{_i_l_i9341_8h_a50166b9a65012fb2f8fe0a0d5f519fa3}{ILI9341\+\_\+\+BLACK}}}
+
+\Hypertarget{_g_f_x___color_8h_a7eea33a429d9f1e57ad4a7da800d7eb9}\label{_g_f_x___color_8h_a7eea33a429d9f1e57ad4a7da800d7eb9} 
+\index{GFX\_Color.h@{GFX\_Color.h}!PIXEL\_WHITE@{PIXEL\_WHITE}}
+\index{PIXEL\_WHITE@{PIXEL\_WHITE}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{PIXEL\_WHITE}{PIXEL\_WHITE}}
+{\footnotesize\ttfamily \#define PIXEL\+\_\+\+WHITE~\mbox{\hyperlink{_i_l_i9341_8h_a604507ef031b95291b2d177088fe03e4}{ILI9341\+\_\+\+WHITE}}}
+
+\Hypertarget{_g_f_x___color_8h_a3fe83b7acdb281b9c0f815e8ef47d1fb}\label{_g_f_x___color_8h_a3fe83b7acdb281b9c0f815e8ef47d1fb} 
+\index{GFX\_Color.h@{GFX\_Color.h}!STM32\_USING@{STM32\_USING}}
+\index{STM32\_USING@{STM32\_USING}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{STM32\_USING}{STM32\_USING}}
+{\footnotesize\ttfamily \#define STM32\+\_\+\+USING~1}
+
+\Hypertarget{_g_f_x___color_8h_a3b159d18c3abe5e03ce58f374aa714a0}\label{_g_f_x___color_8h_a3b159d18c3abe5e03ce58f374aa714a0} 
+\index{GFX\_Color.h@{GFX\_Color.h}!USING\_CIRCLE@{USING\_CIRCLE}}
+\index{USING\_CIRCLE@{USING\_CIRCLE}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{USING\_CIRCLE}{USING\_CIRCLE}}
+{\footnotesize\ttfamily \#define USING\+\_\+\+CIRCLE~1}
+
+\Hypertarget{_g_f_x___color_8h_ac1321cff02c252062c60fc7937c6897a}\label{_g_f_x___color_8h_ac1321cff02c252062c60fc7937c6897a} 
+\index{GFX\_Color.h@{GFX\_Color.h}!USING\_FILL\_CIRCLE@{USING\_FILL\_CIRCLE}}
+\index{USING\_FILL\_CIRCLE@{USING\_FILL\_CIRCLE}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{USING\_FILL\_CIRCLE}{USING\_FILL\_CIRCLE}}
+{\footnotesize\ttfamily \#define USING\+\_\+\+FILL\+\_\+\+CIRCLE~1}
+
+\Hypertarget{_g_f_x___color_8h_a9fc617c090e61e028d49ac8d0ffa195b}\label{_g_f_x___color_8h_a9fc617c090e61e028d49ac8d0ffa195b} 
+\index{GFX\_Color.h@{GFX\_Color.h}!USING\_FILL\_RECTANGLE@{USING\_FILL\_RECTANGLE}}
+\index{USING\_FILL\_RECTANGLE@{USING\_FILL\_RECTANGLE}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{USING\_FILL\_RECTANGLE}{USING\_FILL\_RECTANGLE}}
+{\footnotesize\ttfamily \#define USING\+\_\+\+FILL\+\_\+\+RECTANGLE~1}
+
+\Hypertarget{_g_f_x___color_8h_a829cb83ba75e238d08489056102fb509}\label{_g_f_x___color_8h_a829cb83ba75e238d08489056102fb509} 
+\index{GFX\_Color.h@{GFX\_Color.h}!USING\_FILL\_ROUND\_RECTANGLE@{USING\_FILL\_ROUND\_RECTANGLE}}
+\index{USING\_FILL\_ROUND\_RECTANGLE@{USING\_FILL\_ROUND\_RECTANGLE}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{USING\_FILL\_ROUND\_RECTANGLE}{USING\_FILL\_ROUND\_RECTANGLE}}
+{\footnotesize\ttfamily \#define USING\+\_\+\+FILL\+\_\+\+ROUND\+\_\+\+RECTANGLE~1}
+
+\Hypertarget{_g_f_x___color_8h_a3d63cb7f63e5d7a410283a3e1fdfe9f6}\label{_g_f_x___color_8h_a3d63cb7f63e5d7a410283a3e1fdfe9f6} 
+\index{GFX\_Color.h@{GFX\_Color.h}!USING\_FILL\_TRIANGLE@{USING\_FILL\_TRIANGLE}}
+\index{USING\_FILL\_TRIANGLE@{USING\_FILL\_TRIANGLE}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{USING\_FILL\_TRIANGLE}{USING\_FILL\_TRIANGLE}}
+{\footnotesize\ttfamily \#define USING\+\_\+\+FILL\+\_\+\+TRIANGLE~1}
+
+\Hypertarget{_g_f_x___color_8h_ae4e2b54d0e9d9917fee0f4f9471248bd}\label{_g_f_x___color_8h_ae4e2b54d0e9d9917fee0f4f9471248bd} 
+\index{GFX\_Color.h@{GFX\_Color.h}!USING\_IMAGE@{USING\_IMAGE}}
+\index{USING\_IMAGE@{USING\_IMAGE}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{USING\_IMAGE}{USING\_IMAGE}}
+{\footnotesize\ttfamily \#define USING\+\_\+\+IMAGE~1}
+
+\Hypertarget{_g_f_x___color_8h_aff1d8c5cab0391bb1e033c49f376b7cd}\label{_g_f_x___color_8h_aff1d8c5cab0391bb1e033c49f376b7cd} 
+\index{GFX\_Color.h@{GFX\_Color.h}!USING\_IMAGE\_ROTATE@{USING\_IMAGE\_ROTATE}}
+\index{USING\_IMAGE\_ROTATE@{USING\_IMAGE\_ROTATE}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{USING\_IMAGE\_ROTATE}{USING\_IMAGE\_ROTATE}}
+{\footnotesize\ttfamily \#define USING\+\_\+\+IMAGE\+\_\+\+ROTATE~1}
+
+\Hypertarget{_g_f_x___color_8h_a5a9ca40b946991d0973122213eed650f}\label{_g_f_x___color_8h_a5a9ca40b946991d0973122213eed650f} 
+\index{GFX\_Color.h@{GFX\_Color.h}!USING\_LINES@{USING\_LINES}}
+\index{USING\_LINES@{USING\_LINES}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{USING\_LINES}{USING\_LINES}}
+{\footnotesize\ttfamily \#define USING\+\_\+\+LINES~1}
+
+\Hypertarget{_g_f_x___color_8h_a5d68655e0ed708bb53ce7dfa4aa0b7f5}\label{_g_f_x___color_8h_a5d68655e0ed708bb53ce7dfa4aa0b7f5} 
+\index{GFX\_Color.h@{GFX\_Color.h}!USING\_RECTANGLE@{USING\_RECTANGLE}}
+\index{USING\_RECTANGLE@{USING\_RECTANGLE}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{USING\_RECTANGLE}{USING\_RECTANGLE}}
+{\footnotesize\ttfamily \#define USING\+\_\+\+RECTANGLE~1}
+
+\Hypertarget{_g_f_x___color_8h_aafd0dfb111b1e0432eec27e304ef9799}\label{_g_f_x___color_8h_aafd0dfb111b1e0432eec27e304ef9799} 
+\index{GFX\_Color.h@{GFX\_Color.h}!USING\_ROUND\_RECTANGLE@{USING\_ROUND\_RECTANGLE}}
+\index{USING\_ROUND\_RECTANGLE@{USING\_ROUND\_RECTANGLE}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{USING\_ROUND\_RECTANGLE}{USING\_ROUND\_RECTANGLE}}
+{\footnotesize\ttfamily \#define USING\+\_\+\+ROUND\+\_\+\+RECTANGLE~1}
+
+\Hypertarget{_g_f_x___color_8h_affb2a25da634c05a8480a9e5ffbb614b}\label{_g_f_x___color_8h_affb2a25da634c05a8480a9e5ffbb614b} 
+\index{GFX\_Color.h@{GFX\_Color.h}!USING\_STRINGS@{USING\_STRINGS}}
+\index{USING\_STRINGS@{USING\_STRINGS}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{USING\_STRINGS}{USING\_STRINGS}}
+{\footnotesize\ttfamily \#define USING\+\_\+\+STRINGS~1}
+
+\Hypertarget{_g_f_x___color_8h_a2993e64e47a8a63d2753e6a9bb54df61}\label{_g_f_x___color_8h_a2993e64e47a8a63d2753e6a9bb54df61} 
+\index{GFX\_Color.h@{GFX\_Color.h}!USING\_TRIANGLE@{USING\_TRIANGLE}}
+\index{USING\_TRIANGLE@{USING\_TRIANGLE}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{USING\_TRIANGLE}{USING\_TRIANGLE}}
+{\footnotesize\ttfamily \#define USING\+\_\+\+TRIANGLE~1}
+
+\Hypertarget{_g_f_x___color_8h_a241aeeb764887ae5e3de58b98f04b16d}\label{_g_f_x___color_8h_a241aeeb764887ae5e3de58b98f04b16d} 
+\index{GFX\_Color.h@{GFX\_Color.h}!WIDTH@{WIDTH}}
+\index{WIDTH@{WIDTH}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{WIDTH}{WIDTH}}
+{\footnotesize\ttfamily \#define WIDTH~SSD1306\+\_\+\+LCDWIDTH}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_g_f_x___color_8h_ace713583b87d448f79610acb3fd279a5}\label{_g_f_x___color_8h_ace713583b87d448f79610acb3fd279a5} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_DrawChar@{GFX\_DrawChar}}
+\index{GFX\_DrawChar@{GFX\_DrawChar}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_DrawChar()}{GFX\_DrawChar()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Draw\+Char (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{char}]{chr,  }\item[{\mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}}}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_a344587315e8efa17178ab82ab2bb013c}\label{_g_f_x___color_8h_a344587315e8efa17178ab82ab2bb013c} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_DrawChar\_const\_size@{GFX\_DrawChar\_const\_size}}
+\index{GFX\_DrawChar\_const\_size@{GFX\_DrawChar\_const\_size}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_DrawChar\_const\_size()}{GFX\_DrawChar\_const\_size()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Draw\+Char\+\_\+const\+\_\+size (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{char}]{chr,  }\item[{\mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}}}]{color,  }\item[{uint8\+\_\+t}]{const\+\_\+size }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_ac01dbc1da0cefba24b38056b49bdd8c4}\label{_g_f_x___color_8h_ac01dbc1da0cefba24b38056b49bdd8c4} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_DrawCircle@{GFX\_DrawCircle}}
+\index{GFX\_DrawCircle@{GFX\_DrawCircle}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_DrawCircle()}{GFX\_DrawCircle()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Draw\+Circle (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{uint16\+\_\+t}]{r,  }\item[{\mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}}}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_a7e0aa6a2910ddecdf56189ec3903d25e}\label{_g_f_x___color_8h_a7e0aa6a2910ddecdf56189ec3903d25e} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_DrawCircleHelper@{GFX\_DrawCircleHelper}}
+\index{GFX\_DrawCircleHelper@{GFX\_DrawCircleHelper}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_DrawCircleHelper()}{GFX\_DrawCircleHelper()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Draw\+Circle\+Helper (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{uint16\+\_\+t}]{r,  }\item[{uint8\+\_\+t}]{cornername,  }\item[{\mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}}}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_a1d7cd8472bce76c8dd8bbba7ab53e10b}\label{_g_f_x___color_8h_a1d7cd8472bce76c8dd8bbba7ab53e10b} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_DrawFillCircle@{GFX\_DrawFillCircle}}
+\index{GFX\_DrawFillCircle@{GFX\_DrawFillCircle}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_DrawFillCircle()}{GFX\_DrawFillCircle()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Draw\+Fill\+Circle (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{uint16\+\_\+t}]{r,  }\item[{\mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}}}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_aa4174018595051ef59fa9b443865bd7c}\label{_g_f_x___color_8h_aa4174018595051ef59fa9b443865bd7c} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_DrawFillRectangle@{GFX\_DrawFillRectangle}}
+\index{GFX\_DrawFillRectangle@{GFX\_DrawFillRectangle}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_DrawFillRectangle()}{GFX\_DrawFillRectangle()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Draw\+Fill\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{uint16\+\_\+t}]{w,  }\item[{uint16\+\_\+t}]{h,  }\item[{\mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}}}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_abacc0a541cb47255ef77bdbf64471653}\label{_g_f_x___color_8h_abacc0a541cb47255ef77bdbf64471653} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_DrawFillRoundRectangle@{GFX\_DrawFillRoundRectangle}}
+\index{GFX\_DrawFillRoundRectangle@{GFX\_DrawFillRoundRectangle}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_DrawFillRoundRectangle()}{GFX\_DrawFillRoundRectangle()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Draw\+Fill\+Round\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{uint16\+\_\+t}]{w,  }\item[{uint16\+\_\+t}]{h,  }\item[{uint16\+\_\+t}]{r,  }\item[{\mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}}}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_a2dd7abbfd0a6c989d5a317f238d5ce21}\label{_g_f_x___color_8h_a2dd7abbfd0a6c989d5a317f238d5ce21} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_DrawFillTriangle@{GFX\_DrawFillTriangle}}
+\index{GFX\_DrawFillTriangle@{GFX\_DrawFillTriangle}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_DrawFillTriangle()}{GFX\_DrawFillTriangle()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Draw\+Fill\+Triangle (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{\mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}}}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_ad3342c4916c09b7e6264afa73c533382}\label{_g_f_x___color_8h_ad3342c4916c09b7e6264afa73c533382} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_DrawLine@{GFX\_DrawLine}}
+\index{GFX\_DrawLine@{GFX\_DrawLine}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_DrawLine()}{GFX\_DrawLine()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Draw\+Line (\begin{DoxyParamCaption}\item[{int}]{x\+\_\+start,  }\item[{int}]{y\+\_\+start,  }\item[{int}]{x\+\_\+end,  }\item[{int}]{y\+\_\+end,  }\item[{\mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}}}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_a9c4f1dd628691910617cfc6875f36696}\label{_g_f_x___color_8h_a9c4f1dd628691910617cfc6875f36696} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_DrawRectangle@{GFX\_DrawRectangle}}
+\index{GFX\_DrawRectangle@{GFX\_DrawRectangle}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_DrawRectangle()}{GFX\_DrawRectangle()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Draw\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{uint16\+\_\+t}]{w,  }\item[{uint16\+\_\+t}]{h,  }\item[{\mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}}}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_a2e36718ba835609b1aecd4ddf3131302}\label{_g_f_x___color_8h_a2e36718ba835609b1aecd4ddf3131302} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_DrawRoundRectangle@{GFX\_DrawRoundRectangle}}
+\index{GFX\_DrawRoundRectangle@{GFX\_DrawRoundRectangle}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_DrawRoundRectangle()}{GFX\_DrawRoundRectangle()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Draw\+Round\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{uint16\+\_\+t}]{w,  }\item[{uint16\+\_\+t}]{h,  }\item[{uint16\+\_\+t}]{r,  }\item[{\mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}}}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_ae4afef6fed31387849b2bddd1f242abb}\label{_g_f_x___color_8h_ae4afef6fed31387849b2bddd1f242abb} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_DrawString@{GFX\_DrawString}}
+\index{GFX\_DrawString@{GFX\_DrawString}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_DrawString()}{GFX\_DrawString()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Draw\+String (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{\mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}}}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_a53ffa293c0fc65aa299dc03c824729b4}\label{_g_f_x___color_8h_a53ffa293c0fc65aa299dc03c824729b4} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_DrawString\_const\_size@{GFX\_DrawString\_const\_size}}
+\index{GFX\_DrawString\_const\_size@{GFX\_DrawString\_const\_size}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_DrawString\_const\_size()}{GFX\_DrawString\_const\_size()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Draw\+String\+\_\+const\+\_\+size (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{\mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}}}]{color,  }\item[{uint8\+\_\+t}]{const\+\_\+size }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_a2d76c57a88461e77257af6ab5df26235}\label{_g_f_x___color_8h_a2d76c57a88461e77257af6ab5df26235} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_DrawTriangle@{GFX\_DrawTriangle}}
+\index{GFX\_DrawTriangle@{GFX\_DrawTriangle}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_DrawTriangle()}{GFX\_DrawTriangle()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Draw\+Triangle (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{\mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}}}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_afc7fa4357b8e39e7921b39f91afed253}\label{_g_f_x___color_8h_afc7fa4357b8e39e7921b39f91afed253} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_GetFontHeight@{GFX\_GetFontHeight}}
+\index{GFX\_GetFontHeight@{GFX\_GetFontHeight}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_GetFontHeight()}{GFX\_GetFontHeight()}}
+{\footnotesize\ttfamily uint8\+\_\+t GFX\+\_\+\+Get\+Font\+Height (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_ad0d8418c19681d21ede57c9f94002c00}\label{_g_f_x___color_8h_ad0d8418c19681d21ede57c9f94002c00} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_GetFontSize@{GFX\_GetFontSize}}
+\index{GFX\_GetFontSize@{GFX\_GetFontSize}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_GetFontSize()}{GFX\_GetFontSize()}}
+{\footnotesize\ttfamily uint8\+\_\+t GFX\+\_\+\+Get\+Font\+Size (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_a0baffeeea8d7717541e68161b398d568}\label{_g_f_x___color_8h_a0baffeeea8d7717541e68161b398d568} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_GetFontWidth@{GFX\_GetFontWidth}}
+\index{GFX\_GetFontWidth@{GFX\_GetFontWidth}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_GetFontWidth()}{GFX\_GetFontWidth()}}
+{\footnotesize\ttfamily uint8\+\_\+t GFX\+\_\+\+Get\+Font\+Width (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_a9a9fc6c36509ec595d6d36681a270cca}\label{_g_f_x___color_8h_a9a9fc6c36509ec595d6d36681a270cca} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_Image@{GFX\_Image}}
+\index{GFX\_Image@{GFX\_Image}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_Image()}{GFX\_Image()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Image (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{img,  }\item[{uint16\+\_\+t}]{w,  }\item[{uint16\+\_\+t}]{h }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_aab6a1316ded700e486a3282035f61c87}\label{_g_f_x___color_8h_aab6a1316ded700e486a3282035f61c87} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_ImageRotate@{GFX\_ImageRotate}}
+\index{GFX\_ImageRotate@{GFX\_ImageRotate}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_ImageRotate()}{GFX\_ImageRotate()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Image\+Rotate (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{img,  }\item[{uint8\+\_\+t}]{w,  }\item[{uint8\+\_\+t}]{h,  }\item[{\mbox{\hyperlink{_g_f_x___color_8h_a8203569622d0ce5174c1debb0bce5046}{Color\+Type}}}]{color,  }\item[{uint16\+\_\+t}]{angle }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_a596e777e1054a75cc927606847f187ce}\label{_g_f_x___color_8h_a596e777e1054a75cc927606847f187ce} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_SetFont@{GFX\_SetFont}}
+\index{GFX\_SetFont@{GFX\_SetFont}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_SetFont()}{GFX\_SetFont()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Set\+Font (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{font\+\_\+t }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_f_x___color_8h_a25bf38fe8e0c3d3a242a6ade2b366ddd}\label{_g_f_x___color_8h_a25bf38fe8e0c3d3a242a6ade2b366ddd} 
+\index{GFX\_Color.h@{GFX\_Color.h}!GFX\_SetFontSize@{GFX\_SetFontSize}}
+\index{GFX\_SetFontSize@{GFX\_SetFontSize}!GFX\_Color.h@{GFX\_Color.h}}
+\doxysubsubsection{\texorpdfstring{GFX\_SetFontSize()}{GFX\_SetFontSize()}}
+{\footnotesize\ttfamily void GFX\+\_\+\+Set\+Font\+Size (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{size\+\_\+t }\end{DoxyParamCaption})}
+

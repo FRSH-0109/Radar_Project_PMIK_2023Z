@@ -1,0 +1,106 @@
+\doxysection{usart\+\_\+custom.\+h}
+\hypertarget{usart__custom_8h_source}{}\label{usart__custom_8h_source}\index{RadarApp/usart\_custom/usart\_custom.h@{RadarApp/usart\_custom/usart\_custom.h}}
+\mbox{\hyperlink{usart__custom_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ INC\_USART\_CUSTOM\_H\_}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ INC\_USART\_CUSTOM\_H\_}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ MAX\_UART\_RX\_DATA\_LEN\ \ \ \ \ \ \ \ 100\ \ \ \ \ }}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ MAX\_UART\_TX\_DATA\_LEN\ \ \ \ \ \ \ \ 30\ \ \ \ \ \ }}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ UART\_QUEUE\_LEN\ \ \ \ \ \ \ \ \ \ \ \ \ \ 3\ \ \ \ \ \ \ }}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ UART\_TX\_TRANSMISSION\_CMPLT\_TIMEOUT\ 3\ \ \ \ }}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ COMMAND\_START\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}START"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ COMMAND\_STOP\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}STOP"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ COMMAND\_GET\_RADAR\_POSITION\ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}RADARGETPOS"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ COMMAND\_SET\_RADAR\_POSITION\ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}RADARSETPOS"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ COMMAND\_GET\_RADAR\_STEP\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}RADARGETSTEP"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ COMMAND\_SET\_RADAR\_STEP\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}RADARSETSTEP"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ COMMAND\_GET\_RADAR\_POS\_MIN\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}RADARGETPOSMIN"{}\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ COMMAND\_GET\_RADAR\_POS\_MAX\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}RADARGETPOSMAX"{}\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ COMMAND\_SET\_RADAR\_POS\_MIN\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}RADARSETPOSMIN"{}\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ COMMAND\_SET\_RADAR\_POS\_MAX\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}RADARSETPOSMAX"{}\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ COMMAND\_SET\_RADAR\_SENSOR\_PERIOD\ \ \ \ \ \ \ \ \ "{}RADARSETSENSORPERIOD"{}\ \ \ \ \ \ }}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ COMMAND\_GET\_RADAR\_SENSOR\_PERIOD\ \ \ \ \ \ \ \ \ "{}RADARGETSENSORPERIOD"{}\ \ \ \ \ \ }}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ COMMAND\_GET\_RADAR\_SENSOR\_MEASURE\ \ \ \ \ \ \ \ "{}RADARGETSENSORMEASURE"{}\ \ \ \ \ }}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ COMMAND\_GET\_RADAR\_DRAW\_SCALE\ \ \ \ \ \ \ \ \ \ \ \ "{}RADARGETDRAWSCALE"{}\ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ COMMAND\_SET\_RADAR\_DRAW\_SCALE\ \ \ \ \ \ \ \ \ \ \ \ "{}RADARSETDRAWSCALE"{}\ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ COMMAND\_GET\_RADAR\_DRAW\_RULES\ \ \ \ \ \ \ \ \ \ \ \ "{}RADARGETDRAWRULES"{}\ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ COMMAND\_SET\_RADAR\_DRAW\_RULES\ \ \ \ \ \ \ \ \ \ \ \ "{}RADARSETDRAWRULES"{}\ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00047\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00048\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a7272b7f468cc8202d75d96a8043f9e87}{COMMAND\_TYPE\_IDLE}},}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ad067bb0a784084623648fd149c3768c4}{COMMAND\_TYPE\_START}},}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ae442cf6a5aa8d6270bd646e928af19b0}{COMMAND\_TYPE\_STOP}},}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a6759dda3a89ea617c6535fd492790e7d}{COMMAND\_TYPE\_SET\_POS}},}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a21276fbc1ae96774c5eb8367ca6f1d11}{COMMAND\_TYPE\_GET\_POS}},}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ae5984587ad3258688d05ffae48475902}{COMMAND\_TYPE\_SET\_STEP}},}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a3d94d1bcc54db15c881c3e520d3d9732}{COMMAND\_TYPE\_GET\_STEP}},}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352aad50a044ab6e6a8996b8fa8205cfd55b}{COMMAND\_TYPE\_GET\_POS\_MIN}},}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a3fee678b3bd7e7f389e89110002d183c}{COMMAND\_TYPE\_GET\_POS\_MAX}},}
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a476ef9ec942339853c7ed9d676d0e3e5}{COMMAND\_TYPE\_SET\_POS\_MIN}},}
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a7521841ceae5759a2e4d08da783d077e}{COMMAND\_TYPE\_SET\_POS\_MAX}},}
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ad12f98e1b0e69ac0ccf8c5633ffa2a54}{COMMAND\_TYPE\_GET\_SENSOR\_PERIOD}},}
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352acdcd32b093e7a31e121d9a65d8546385}{COMMAND\_TYPE\_SET\_SENSOR\_PERIOD}},}
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352aa314a1e1244d7b6f89a45ca0ef88ebcf}{COMMAND\_TYPE\_GET\_SENSOR\_MEASURE}},}
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a5c968c059a75367c9bcb1f4f82ffb71e}{COMMAND\_TYPE\_GET\_DRAW\_SCALE}},}
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ab54684c7e7eb692bda06a46888116eaa}{COMMAND\_TYPE\_SET\_DRAW\_SCALE}},}
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a858946b754a6edb87080905ce69e578d}{COMMAND\_TYPE\_GET\_DRAW\_RULES}},}
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352aa492f0fce57cb811434e7080dd8e9279}{COMMAND\_TYPE\_SET\_DRAW\_RULES}},}
+\DoxyCodeLine{00067\ \}\mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352}{CommandType}};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00073\ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7ad9a009eaad7d808678adbea41b8b1faa}{RESPONSE\_OK}},}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7acebd78e00b6e0841ba1526eb58c32a43}{RESPONSE\_UNKNOW\_CMD}},}
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7ada8db732ee34297d85ba9014b3e3f166}{RESPONSE\_ERROR}},}
+\DoxyCodeLine{00077\ \}\mbox{\hyperlink{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7}{ResponseType}};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00086\ \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352}{CommandType}}\ \mbox{\hyperlink{usart__custom_8h_a4dd5805db71c5e3e11920b812bddaa71}{CommandDecode}}(uint8\_t\ *data,\ uint16\_t\ dataLen);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00091\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\_Custom\_HandleTypeDef}}}
+\DoxyCodeLine{00092\ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{struct_____u_a_r_t___handle_type_def}{UART\_HandleTypeDef}}\ *\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def_a1ed7dab212fde0a3a4600d33399c67b6}{huart}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00094\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def_a962988d59051dfab0ce7da4c9d66f7b2}{dataRxMaxLen}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00095\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def_aa1a20fe601cf7e4b3f0134222621c0ad}{dataTxMaxLen}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keyword}{volatile}\ uint8\_t\ \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def_aeea8c98a5a0f7d7f8d5719f46a45f2d2}{dataRx}}[\mbox{\hyperlink{usart__custom_8h_adf0178118c42a9224dd770222fc81497}{MAX\_UART\_RX\_DATA\_LEN}}];\ \ \ \ }
+\DoxyCodeLine{00097\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def_ab9bc9891f04881264d1131c2a5ffe711}{dataTx}}[\mbox{\hyperlink{usart__custom_8h_ad33fa5c178f516badf8b705c646ba9f9}{MAX\_UART\_TX\_DATA\_LEN}}];\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keyword}{volatile}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def_a9011455a25b27b0d2bc3cbd56eafb3ad}{txTransmissionCmplt}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\_t\ \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def_aa2fa02d67a76264094f28e5349d128bd}{txTransmissionCmpltTime}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00100\ \}\ \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\_Custom\_HandleTypeDef}};}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00105\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_u_a_r_t___queue}{UART\_Queue}}}
+\DoxyCodeLine{00106\ \{}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keyword}{volatile}\ uint8\_t\ \mbox{\hyperlink{struct_u_a_r_t___queue_aabf0dabd48dff725071bf5ec713f42e9}{dataRx}}[\mbox{\hyperlink{usart__custom_8h_a1ed0601fc12697a226bb7717c7ab573e}{UART\_QUEUE\_LEN}}][\mbox{\hyperlink{usart__custom_8h_adf0178118c42a9224dd770222fc81497}{MAX\_UART\_RX\_DATA\_LEN}}];\ \ \ \ \ \ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{volatile}\ uint16\_t\ \mbox{\hyperlink{struct_u_a_r_t___queue_ad5bd92c0c4e4441b3843d3718af24cdd}{dataRxLength}}[\mbox{\hyperlink{usart__custom_8h_a1ed0601fc12697a226bb7717c7ab573e}{UART\_QUEUE\_LEN}}];\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keyword}{volatile}\ uint8\_t\ \mbox{\hyperlink{struct_u_a_r_t___queue_ac87fbf2375e4a60a0ea19b9c572fc02b}{headIxndex}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keyword}{volatile}\ uint8\_t\ \mbox{\hyperlink{struct_u_a_r_t___queue_a3b4e9fc9e72aaeaa7086915ef71e9e18}{tailIndex}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00112\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{struct_u_a_r_t___queue_a3efa81db0281c5e6ec8803214fe30378}{dataTx}}[\mbox{\hyperlink{usart__custom_8h_a1ed0601fc12697a226bb7717c7ab573e}{UART\_QUEUE\_LEN}}][\mbox{\hyperlink{usart__custom_8h_ad33fa5c178f516badf8b705c646ba9f9}{MAX\_UART\_TX\_DATA\_LEN}}];\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00113\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_u_a_r_t___queue_a7be530387eca02e13ed41567d8c328af}{dataTxLength}}[\mbox{\hyperlink{usart__custom_8h_a1ed0601fc12697a226bb7717c7ab573e}{UART\_QUEUE\_LEN}}];\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keyword}{volatile}\ uint8\_t\ \mbox{\hyperlink{struct_u_a_r_t___queue_a614486ec92e3549168b31c4350e47910}{dataIndex}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keyword}{volatile}\ uint8\_t\ \mbox{\hyperlink{struct_u_a_r_t___queue_a21c6464b9d460c444aae6a9b093c02b9}{transmitIndex}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00116\ \}\ \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\_Queue}};}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00123\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{usart__custom_8h_affe2663ea2814b2c9ab3695c28961355}{uartQueueInit}}(\textcolor{keyword}{volatile}\ \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\_Queue}}\ *uartQueue);}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00132\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{usart__custom_8h_ab0cdd1e74b215a0e58dca5e866c11de8}{uartQueueAdd}}(\textcolor{keyword}{volatile}\ \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\_Queue}}\ *uartQueue,\ uint8\_t\ *dataTxSource,\ uint16\_t\ msgLen);}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00139\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{usart__custom_8h_a971ac04f29008014c47a53f31a0eca02}{uartQueueClear}}(\textcolor{keyword}{volatile}\ \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\_Queue}}\ *uartQueue);}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00147\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{usart__custom_8h_a434833c4433f588d5fda684a54dcb0ff}{uartQueueTransmit}}(\textcolor{keyword}{volatile}\ \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\_Queue}}\ *uartQueue,\ \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\_Custom\_HandleTypeDef}}\ *huartCustom);}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00154\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{usart__custom_8h_abbc250ac23ac518f14aa24e1f9a11ead}{uartQueueReceive}}(\textcolor{keyword}{volatile}\ \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\_Queue}}\ *uartQueue);}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00164\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{usart__custom_8h_ae07c419a1a1df7134ddbfedd9bdf7c91}{uartCustomInit}}(\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\_Custom\_HandleTypeDef}}\ *huartCustom,\ \mbox{\hyperlink{struct_____u_a_r_t___handle_type_def}{UART\_HandleTypeDef}}\ *huart,\ uint16\_t\ rxDataLen,\ uint16\_t\ txDataLen);}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00171\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{usart__custom_8h_a123702bc9950b2a0ce9a34e889842f74}{uartCustomReceiveDMA}}(\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\_Custom\_HandleTypeDef}}\ *huartCustom);}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00179\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{usart__custom_8h_a74ea4ae09ad7d11a8ed037ed585f4c24}{uartCustomTransmitDMA}}(\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\_Custom\_HandleTypeDef}}\ *huartCustom,\ uint16\_t\ msgLen);}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ INC\_USART\_CUSTOM\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

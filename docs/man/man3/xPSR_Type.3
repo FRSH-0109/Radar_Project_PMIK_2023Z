@@ -1,0 +1,523 @@
+.TH "xPSR_Type" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+xPSR_Type \- Union type to access the Special-Purpose Program Status Registers (xPSR)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <core_armv81mml\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved0\fP:7"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::GE\fP:4"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved1\fP:4"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::T\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::IT\fP:2"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Q\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::V\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::C\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Z\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::N\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBw\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved0\fP:15"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::T\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved1\fP:3"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::V\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::C\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Z\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::N\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved0\fP:7"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::GE\fP:4"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved1\fP:4"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::T\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::IT\fP:2"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Q\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::V\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::C\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Z\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::N\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved0\fP:15"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::T\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved1\fP:3"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::V\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::C\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Z\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::N\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved0\fP:15"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::T\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved1\fP:3"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::V\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::C\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Z\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::N\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved0\fP:15"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::T\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved1\fP:3"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::V\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::C\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Z\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::N\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved0\fP:15"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::T\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved1\fP:3"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::V\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::C\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Z\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::N\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved0\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ICI_IT_1\fP:6"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved1\fP:8"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::T\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ICI_IT_2\fP:2"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Q\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::V\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::C\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Z\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::N\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved0\fP:7"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::GE\fP:4"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved1\fP:4"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::T\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::IT\fP:2"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Q\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::V\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::C\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Z\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::N\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved0\fP:7"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::GE\fP:4"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved1\fP:4"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::T\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::IT\fP:2"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Q\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::V\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::C\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Z\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::N\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved0\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ICI_IT_1\fP:6"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::GE\fP:4"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved1\fP:4"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::T\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ICI_IT_2\fP:2"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Q\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::V\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::C\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Z\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::N\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved0\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ICI_IT_1\fP:6"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::GE\fP:4"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved1\fP:4"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::T\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ICI_IT_2\fP:2"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Q\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::V\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::C\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Z\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::N\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved0\fP:15"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::T\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved1\fP:3"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::V\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::C\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Z\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::N\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ISR\fP:9"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved0\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ICI_IT_1\fP:6"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::_reserved1\fP:8"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::T\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::ICI_IT_2\fP:2"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Q\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::V\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::C\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::Z\fP:1"
+.br
+.ti -1c
+.RI "   uint32_t \fBxPSR_Type::N\fP:1"
+.br
+.ti -1c
+.RI "} \fBb\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Union type to access the Special-Purpose Program Status Registers (xPSR)\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

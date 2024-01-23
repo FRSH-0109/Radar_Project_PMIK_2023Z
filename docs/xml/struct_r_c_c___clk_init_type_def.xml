@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_r_c_c___clk_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>RCC_ClkInitTypeDef</compoundname>
+    <includes refid="stm32g0xx__hal__rcc_8h" local="no">stm32g0xx_hal_rcc.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_c_c___clk_init_type_def_1afe92b105bff8e698233c286bb3018384" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ClockType</definition>
+        <argsstring></argsstring>
+        <name>ClockType</name>
+        <qualifiedname>RCC_ClkInitTypeDef::ClockType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The clock to be configured. This parameter can be a combination of <ref refid="group___r_c_c___system___clock___type" kindref="compound">System Clock Type</ref> <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="326" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___clk_init_type_def_1a02b70c23b593a55814d887f483ea0871" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SYSCLKSource</definition>
+        <argsstring></argsstring>
+        <name>SYSCLKSource</name>
+        <qualifiedname>RCC_ClkInitTypeDef::SYSCLKSource</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The clock source used as system clock (SYSCLK). This parameter can be a value of <ref refid="group___r_c_c___system___clock___source" kindref="compound">System Clock Source</ref> <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="329" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___clk_init_type_def_1a082c91ea9f270509aca7ae6ec42c2a54" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AHBCLKDivider</definition>
+        <argsstring></argsstring>
+        <name>AHBCLKDivider</name>
+        <qualifiedname>RCC_ClkInitTypeDef::AHBCLKDivider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The AHB clock (HCLK) divider. This clock is derived from the system clock (SYSCLK). This parameter can be a value of <ref refid="group___r_c_c___a_h_b___clock___source" kindref="compound">AHB Clock Source</ref> <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="332" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___clk_init_type_def_1a994aca51c40decfc340e045da1a6ca19" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t APB1CLKDivider</definition>
+        <argsstring></argsstring>
+        <name>APB1CLKDivider</name>
+        <qualifiedname>RCC_ClkInitTypeDef::APB1CLKDivider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The APB1 clock (PCLK1) divider. This clock is derived from the AHB clock (HCLK). This parameter can be a value of <ref refid="group___r_c_c___a_p_b1___clock___source" kindref="compound">APB Clock Source</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="335" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>RCC System, AHB and APB buses clock configuration structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="324" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="325" bodyend="339"/>
+    <listofallmembers>
+      <member refid="struct_r_c_c___clk_init_type_def_1a082c91ea9f270509aca7ae6ec42c2a54" prot="public" virt="non-virtual"><scope>RCC_ClkInitTypeDef</scope><name>AHBCLKDivider</name></member>
+      <member refid="struct_r_c_c___clk_init_type_def_1a994aca51c40decfc340e045da1a6ca19" prot="public" virt="non-virtual"><scope>RCC_ClkInitTypeDef</scope><name>APB1CLKDivider</name></member>
+      <member refid="struct_r_c_c___clk_init_type_def_1afe92b105bff8e698233c286bb3018384" prot="public" virt="non-virtual"><scope>RCC_ClkInitTypeDef</scope><name>ClockType</name></member>
+      <member refid="struct_r_c_c___clk_init_type_def_1a02b70c23b593a55814d887f483ea0871" prot="public" virt="non-virtual"><scope>RCC_ClkInitTypeDef</scope><name>SYSCLKSource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

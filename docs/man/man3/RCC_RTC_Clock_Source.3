@@ -1,0 +1,40 @@
+.TH "RCC_RTC_Clock_Source" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_RTC_Clock_Source \- RTC Clock Source
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_RTCCLKSOURCE_NONE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_RTCCLKSOURCE_LSE\fP   \fBRCC_BDCR_RTCSEL_0\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_RTCCLKSOURCE_LSI\fP   \fBRCC_BDCR_RTCSEL_1\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_RTCCLKSOURCE_HSE_DIV32\fP   \fBRCC_BDCR_RTCSEL\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RCC_RTCCLKSOURCE_HSE_DIV32   \fBRCC_BDCR_RTCSEL\fP"
+HSE oscillator clock divided by 32 used as RTC clock 
+.SS "#define RCC_RTCCLKSOURCE_LSE   \fBRCC_BDCR_RTCSEL_0\fP"
+LSE oscillator clock used as RTC clock 
+.SS "#define RCC_RTCCLKSOURCE_LSI   \fBRCC_BDCR_RTCSEL_1\fP"
+LSI oscillator clock used as RTC clock 
+.SS "#define RCC_RTCCLKSOURCE_NONE   0x00000000U"
+No clock configured for RTC 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,45 @@
+.TH "RCC_System_Clock_Source_Status" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_System_Clock_Source_Status \- System Clock Source Status
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_SYSCLKSOURCE_STATUS_HSI\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_SYSCLKSOURCE_STATUS_HSE\fP   \fBRCC_CFGR_SWS_0\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_SYSCLKSOURCE_STATUS_PLLCLK\fP   \fBRCC_CFGR_SWS_1\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_SYSCLKSOURCE_STATUS_LSI\fP   (\fBRCC_CFGR_SWS_1\fP | \fBRCC_CFGR_SWS_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_SYSCLKSOURCE_STATUS_LSE\fP   \fBRCC_CFGR_SWS_2\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RCC_SYSCLKSOURCE_STATUS_HSE   \fBRCC_CFGR_SWS_0\fP"
+HSE used as system clock 
+.SS "#define RCC_SYSCLKSOURCE_STATUS_HSI   0x00000000U"
+HSI used as system clock 
+.SS "#define RCC_SYSCLKSOURCE_STATUS_LSE   \fBRCC_CFGR_SWS_2\fP"
+LSE used as system clock 
+.SS "#define RCC_SYSCLKSOURCE_STATUS_LSI   (\fBRCC_CFGR_SWS_1\fP | \fBRCC_CFGR_SWS_0\fP)"
+LSI used as system clock 
+.SS "#define RCC_SYSCLKSOURCE_STATUS_PLLCLK   \fBRCC_CFGR_SWS_1\fP"
+PLL used as system clock 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

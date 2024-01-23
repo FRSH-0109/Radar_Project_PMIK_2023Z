@@ -1,0 +1,40 @@
+.TH "FLASH_OB_Type" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FLASH_OB_Type \- FLASH Option Bytes Type
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBOPTIONBYTE_WRP\fP   0x00000001U"
+.br
+.ti -1c
+.RI "#define \fBOPTIONBYTE_RDP\fP   0x00000002U"
+.br
+.ti -1c
+.RI "#define \fBOPTIONBYTE_USER\fP   0x00000004U"
+.br
+.ti -1c
+.RI "#define \fBOPTIONBYTE_ALL\fP   (\fBOPTIONBYTE_WRP\fP   | \fBOPTIONBYTE_RDP\fP | \fBOPTIONBYTE_USER\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define OPTIONBYTE_ALL   (\fBOPTIONBYTE_WRP\fP   | \fBOPTIONBYTE_RDP\fP | \fBOPTIONBYTE_USER\fP)"
+All option byte configuration 
+.SS "#define OPTIONBYTE_RDP   0x00000002U"
+RDP option byte configuration 
+.SS "#define OPTIONBYTE_USER   0x00000004U"
+USER option byte configuration 
+.SS "#define OPTIONBYTE_WRP   0x00000001U"
+WRP option byte configuration 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

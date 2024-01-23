@@ -1,0 +1,485 @@
+.TH "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h \- Header file of FLASH HAL module\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32g0xx_hal_def\&.h'\fP
+.br
+\fC#include 'stm32g0xx_hal_flash_ex\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBFLASH_EraseInitTypeDef\fP"
+.br
+.RI "FLASH Erase structure definition\&. "
+.ti -1c
+.RI "struct \fBFLASH_OBProgramInitTypeDef\fP"
+.br
+.RI "FLASH Option Bytes Program structure definition\&. "
+.ti -1c
+.RI "struct \fBFLASH_ProcessTypeDef\fP"
+.br
+.RI "FLASH handle Structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFLASH_KEY1\fP   0x45670123U"
+.br
+.ti -1c
+.RI "#define \fBFLASH_KEY2\fP   0xCDEF89ABU"
+.br
+.ti -1c
+.RI "#define \fBFLASH_OPTKEY1\fP   0x08192A3BU"
+.br
+.ti -1c
+.RI "#define \fBFLASH_OPTKEY2\fP   0x4C5D6E7FU"
+.br
+.ti -1c
+.RI "#define \fBFLASH_LATENCY_0\fP   0x00000000UL"
+.br
+.ti -1c
+.RI "#define \fBFLASH_LATENCY_1\fP   \fBFLASH_ACR_LATENCY_0\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_LATENCY_2\fP   \fBFLASH_ACR_LATENCY_1\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_EOP\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_EOP_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_OPERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_OPERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_PROGERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_PROGERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_WRPERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_WRPERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_PGAERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_PGAERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_SIZERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_SIZERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_PGSERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_PGSERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_MISERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_MISERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_FASTERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_FASTERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_OPTVERR\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_OPTVERR_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_BSY1\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_BSY1_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_BSY\fP   \fBFLASH_FLAG_BSY1\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_CFGBSY\fP   ((\fBFLASH_FLAG_SR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_SR_CFGBSY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_ECCC1\fP   ((\fBFLASH_FLAG_ECCR1_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_ECCR_ECCC_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_ECCD1\fP   ((\fBFLASH_FLAG_ECCR1_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_ECCR_ECCD_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_ECCC\fP   \fBFLASH_FLAG_ECCC1\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_ECCD\fP   \fBFLASH_FLAG_ECCD1\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_IT_EOP\fP   ((\fBFLASH_FLAG_CR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_CR_EOPIE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_IT_OPERR\fP   ((\fBFLASH_FLAG_CR_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_CR_ERRIE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_IT_ECCC1\fP   ((\fBFLASH_FLAG_ECCR1_ID\fP << \fBFLASH_FLAG_REG_POS\fP) | \fBFLASH_ECCR_ECCCIE_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_IT_ECCC\fP   \fBFLASH_IT_ECCC1\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_FLASH_ERROR_NONE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBHAL_FLASH_ERROR_OP\fP   \fBFLASH_SR_OPERR\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_FLASH_ERROR_PROG\fP   \fBFLASH_SR_PROGERR\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_FLASH_ERROR_WRP\fP   \fBFLASH_SR_WRPERR\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_FLASH_ERROR_PGA\fP   \fBFLASH_SR_PGAERR\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_FLASH_ERROR_SIZ\fP   \fBFLASH_SR_SIZERR\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_FLASH_ERROR_PGS\fP   \fBFLASH_SR_PGSERR\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_FLASH_ERROR_MIS\fP   \fBFLASH_SR_MISERR\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_FLASH_ERROR_FAST\fP   \fBFLASH_SR_FASTERR\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_FLASH_ERROR_OPTV\fP   \fBFLASH_SR_OPTVERR\fP"
+.br
+.ti -1c
+.RI "#define \fBHAL_FLASH_ERROR_ECCD\fP   \fBFLASH_ECCR_ECCD\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_TYPEERASE_PAGES\fP   \fBFLASH_CR_PER\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_TYPEERASE_MASS\fP   \fBFLASH_CR_MER1\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_BANK_1\fP   \fBFLASH_CR_MER1\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_TYPEPROGRAM_DOUBLEWORD\fP   \fBFLASH_CR_PG\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_TYPEPROGRAM_FAST\fP   \fBFLASH_CR_FSTPG\fP"
+.br
+.ti -1c
+.RI "#define \fBOPTIONBYTE_WRP\fP   0x00000001U"
+.br
+.ti -1c
+.RI "#define \fBOPTIONBYTE_RDP\fP   0x00000002U"
+.br
+.ti -1c
+.RI "#define \fBOPTIONBYTE_USER\fP   0x00000004U"
+.br
+.ti -1c
+.RI "#define \fBOPTIONBYTE_ALL\fP   (\fBOPTIONBYTE_WRP\fP   | \fBOPTIONBYTE_RDP\fP | \fBOPTIONBYTE_USER\fP)"
+.br
+.ti -1c
+.RI "#define \fBOB_WRPAREA_ZONE_A\fP   0x00000001U"
+.br
+.ti -1c
+.RI "#define \fBOB_WRPAREA_ZONE_B\fP   0x00000002U"
+.br
+.ti -1c
+.RI "#define \fBOB_RDP_LEVEL_0\fP   0x000000AAU"
+.br
+.ti -1c
+.RI "#define \fBOB_RDP_LEVEL_1\fP   0x000000BBU"
+.br
+.ti -1c
+.RI "#define \fBOB_RDP_LEVEL_2\fP   0x000000CCU"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_nRST_STOP\fP   \fBFLASH_OPTR_nRST_STOP\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_nRST_STDBY\fP   \fBFLASH_OPTR_nRST_STDBY\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_IWDG_SW\fP   \fBFLASH_OPTR_IWDG_SW\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_IWDG_STOP\fP   \fBFLASH_OPTR_IWDG_STOP\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_IWDG_STDBY\fP   \fBFLASH_OPTR_IWDG_STDBY\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_WWDG_SW\fP   \fBFLASH_OPTR_WWDG_SW\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_RAM_PARITY_CHECK\fP   \fBFLASH_OPTR_RAM_PARITY_CHECK\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_nBOOT_SEL\fP   \fBFLASH_OPTR_nBOOT_SEL\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_nBOOT1\fP   \fBFLASH_OPTR_nBOOT1\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_nBOOT0\fP   \fBFLASH_OPTR_nBOOT0\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_USER_ALL\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_STOP_RST\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBOB_STOP_NORST\fP   \fBFLASH_OPTR_nRST_STOP\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_STANDBY_RST\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBOB_STANDBY_NORST\fP   \fBFLASH_OPTR_nRST_STDBY\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_IWDG_HW\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBOB_IWDG_SW\fP   \fBFLASH_OPTR_IWDG_SW\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_IWDG_STOP_FREEZE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBOB_IWDG_STOP_RUN\fP   \fBFLASH_OPTR_IWDG_STOP\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_IWDG_STDBY_FREEZE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBOB_IWDG_STDBY_RUN\fP   \fBFLASH_OPTR_IWDG_STDBY\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_WWDG_HW\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBOB_WWDG_SW\fP   \fBFLASH_OPTR_WWDG_SW\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_SRAM_PARITY_ENABLE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBOB_SRAM_PARITY_DISABLE\fP   \fBFLASH_OPTR_RAM_PARITY_CHECK\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_BOOT0_FROM_PIN\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBOB_BOOT0_FROM_OB\fP   \fBFLASH_OPTR_nBOOT_SEL\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_BOOT1_SRAM\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBOB_BOOT1_SYSTEM\fP   \fBFLASH_OPTR_nBOOT1\fP"
+.br
+.ti -1c
+.RI "#define \fBOB_nBOOT0_RESET\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBOB_nBOOT0_SET\fP   \fBFLASH_OPTR_nBOOT0\fP"
+.br
+.ti -1c
+.RI "#define \fB__HAL_FLASH_SET_LATENCY\fP(__LATENCY__)   \fBMODIFY_REG\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_LATENCY\fP, (__LATENCY__))"
+.br
+.RI "Set the FLASH Latency\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_GET_LATENCY\fP()   \fBREAD_BIT\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_LATENCY\fP)"
+.br
+.RI "Get the FLASH Latency\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_PREFETCH_BUFFER_ENABLE\fP()   \fBSET_BIT\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_PRFTEN\fP)"
+.br
+.RI "Enable the FLASH prefetch buffer\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_PREFETCH_BUFFER_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_PRFTEN\fP)"
+.br
+.RI "Disable the FLASH prefetch buffer\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_INSTRUCTION_CACHE_ENABLE\fP()   \fBSET_BIT\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_ICEN\fP)"
+.br
+.RI "Enable the FLASH instruction cache\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_INSTRUCTION_CACHE_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_ICEN\fP)"
+.br
+.RI "Disable the FLASH instruction cache\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_INSTRUCTION_CACHE_RESET\fP()"
+.br
+.RI "Reset the FLASH instruction Cache\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_ENABLE_IT\fP(__INTERRUPT__)"
+.br
+.RI "Enable the specified FLASH interrupt\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_DISABLE_IT\fP(__INTERRUPT__)"
+.br
+.RI "Disable the specified FLASH interrupt\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_GET_FLAG\fP(__FLAG__)"
+.br
+.RI "Check whether the specified FLASH flag is set or not\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_CLEAR_FLAG\fP(__FLAG__)"
+.br
+.RI "Clear the FLASH pending flags\&. "
+.ti -1c
+.RI "#define \fBFLASH_SIZE_DATA_REGISTER\fP   \fBFLASHSIZE_BASE\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_BANK_SIZE\fP   (\fBFLASH_SIZE\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_PAGE_SIZE\fP   0x00000800U"
+.br
+.ti -1c
+.RI "#define \fBFLASH_PAGE_NB\fP   (\fBFLASH_BANK_SIZE\fP/\fBFLASH_PAGE_SIZE\fP) /* Number of pages per bank */"
+.br
+.ti -1c
+.RI "#define \fBFLASH_TIMEOUT_VALUE\fP   1000U"
+.br
+.ti -1c
+.RI "#define \fBFLASH_TYPENONE\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBFLASH_SR_ERRORS\fP"
+.br
+.ti -1c
+.RI "#define \fBFLASH_SR_CLEAR\fP   (\fBFLASH_SR_ERRORS\fP | \fBFLASH_SR_EOP\fP)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_REG_POS\fP   16u"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_SR_ID\fP   1u"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_CR_ID\fP   2u"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_ECCR1_ID\fP   4u"
+.br
+.ti -1c
+.RI "#define \fBFLASH_FLAG_ECCR2_ID\fP   8u"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_MAIN_MEM_ADDRESS\fP(__ADDRESS__)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_MAIN_FIRSTHALF_MEM_ADDRESS\fP(__ADDRESS__)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_PROGRAM_MAIN_MEM_ADDRESS\fP(__ADDRESS__)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_PROGRAM_OTP_ADDRESS\fP(__ADDRESS__)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_PROGRAM_ADDRESS\fP(__ADDRESS__)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_FAST_PROGRAM_ADDRESS\fP(__ADDRESS__)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_PAGE\fP(__PAGE__)   ((__PAGE__) < \fBFLASH_PAGE_NB\fP)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_BANK\fP(__BANK__)   ((__BANK__) == \fBFLASH_BANK_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_TYPEERASE\fP(__VALUE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_TYPEPROGRAM\fP(__VALUE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_OPTIONBYTE\fP(__VALUE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_OB_WRPAREA\fP(__VALUE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_OB_RDP_LEVEL\fP(__LEVEL__)"
+.br
+.ti -1c
+.RI "#define \fBIS_OB_USER_TYPE\fP(__TYPE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_OB_USER_CONFIG\fP(__TYPE__,  __CONFIG__)   ((~(__TYPE__) & (__CONFIG__)) == 0x00U)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_LATENCY\fP(__LATENCY__)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_FLASH_Program\fP (uint32_t TypeProgram, uint32_t Address, uint64_t Data)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_FLASH_Program_IT\fP (uint32_t TypeProgram, uint32_t Address, uint64_t Data)"
+.br
+.ti -1c
+.RI "void \fBHAL_FLASH_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "void \fBHAL_FLASH_EndOfOperationCallback\fP (uint32_t ReturnValue)"
+.br
+.ti -1c
+.RI "void \fBHAL_FLASH_OperationErrorCallback\fP (uint32_t ReturnValue)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_FLASH_Unlock\fP (void)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_FLASH_Lock\fP (void)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_FLASH_OB_Unlock\fP (void)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_FLASH_OB_Lock\fP (void)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_FLASH_OB_Launch\fP (void)"
+.br
+.ti -1c
+.RI "uint32_t \fBHAL_FLASH_GetError\fP (void)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBFLASH_WaitForLastOperation\fP (uint32_t Timeout)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBFLASH_ProcessTypeDef\fP \fBpFlash\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file of FLASH HAL module\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBAttention\fP
+.RS 4
+.RE
+.PP
+Copyright (c) 2018 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,323 @@
+.TH "SPI_Exported_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_Exported_Macros \- SPI Exported Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_SPI_RESET_HANDLE_STATE\fP(__HANDLE__)   ((__HANDLE__)\->State = \fBHAL_SPI_STATE_RESET\fP)"
+.br
+.RI "Reset SPI handle state\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_ENABLE_IT\fP(__HANDLE__,  __INTERRUPT__)   \fBSET_BIT\fP((__HANDLE__)\->Instance\->CR2, (__INTERRUPT__))"
+.br
+.RI "Enable the specified SPI interrupts\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_DISABLE_IT\fP(__HANDLE__,  __INTERRUPT__)   \fBCLEAR_BIT\fP((__HANDLE__)\->Instance\->CR2, (__INTERRUPT__))"
+.br
+.RI "Disable the specified SPI interrupts\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_GET_IT_SOURCE\fP(__HANDLE__,  __INTERRUPT__)"
+.br
+.RI "Check whether the specified SPI interrupt source is enabled or not\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_GET_FLAG\fP(__HANDLE__,  __FLAG__)   ((((__HANDLE__)\->Instance\->SR) & (__FLAG__)) == (__FLAG__))"
+.br
+.RI "Check whether the specified SPI flag is set or not\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_CLEAR_CRCERRFLAG\fP(__HANDLE__)   ((__HANDLE__)\->Instance\->SR = (uint16_t)(~\fBSPI_FLAG_CRCERR\fP))"
+.br
+.RI "Clear the SPI CRCERR pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_CLEAR_MODFFLAG\fP(__HANDLE__)"
+.br
+.RI "Clear the SPI MODF pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_CLEAR_OVRFLAG\fP(__HANDLE__)"
+.br
+.RI "Clear the SPI OVR pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_CLEAR_FREFLAG\fP(__HANDLE__)"
+.br
+.RI "Clear the SPI FRE pending flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_ENABLE\fP(__HANDLE__)   \fBSET_BIT\fP((__HANDLE__)\->Instance\->CR1, \fBSPI_CR1_SPE\fP)"
+.br
+.RI "Enable the SPI peripheral\&. "
+.ti -1c
+.RI "#define \fB__HAL_SPI_DISABLE\fP(__HANDLE__)   \fBCLEAR_BIT\fP((__HANDLE__)\->Instance\->CR1, \fBSPI_CR1_SPE\fP)"
+.br
+.RI "Disable the SPI peripheral\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_SPI_CLEAR_CRCERRFLAG(__HANDLE__)   ((__HANDLE__)\->Instance\->SR = (uint16_t)(~\fBSPI_FLAG_CRCERR\fP))"
+
+.PP
+Clear the SPI CRCERR pending flag\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the SPI Handle\&. This parameter can be SPI where x: 1, 2, or 3 to select the SPI peripheral\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_SPI_CLEAR_FREFLAG(__HANDLE__)"
+\fBValue:\fP.PP
+.nf
+  do{                                              \\
+    __IO uint32_t tmpreg_fre = 0x00U;              \\
+    tmpreg_fre = (__HANDLE__)\->Instance\->SR;       \\
+    UNUSED(tmpreg_fre);                            \\
+  }while(0U)
+.fi
+
+.PP
+Clear the SPI FRE pending flag\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the SPI Handle\&. This parameter can be SPI where x: 1, 2, or 3 to select the SPI peripheral\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_SPI_CLEAR_MODFFLAG(__HANDLE__)"
+\fBValue:\fP.PP
+.nf
+  do{                                                    \\
+    __IO uint32_t tmpreg_modf = 0x00U;                   \\
+    tmpreg_modf = (__HANDLE__)\->Instance\->SR;            \\
+    CLEAR_BIT((__HANDLE__)\->Instance\->CR1, SPI_CR1_SPE); \\
+    UNUSED(tmpreg_modf);                                 \\
+  } while(0U)
+.fi
+
+.PP
+Clear the SPI MODF pending flag\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the SPI Handle\&. This parameter can be SPI where x: 1, 2, or 3 to select the SPI peripheral\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_SPI_CLEAR_OVRFLAG(__HANDLE__)"
+\fBValue:\fP.PP
+.nf
+  do{                                              \\
+    __IO uint32_t tmpreg_ovr = 0x00U;              \\
+    tmpreg_ovr = (__HANDLE__)\->Instance\->DR;       \\
+    tmpreg_ovr = (__HANDLE__)\->Instance\->SR;       \\
+    UNUSED(tmpreg_ovr);                            \\
+  } while(0U)
+.fi
+
+.PP
+Clear the SPI OVR pending flag\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the SPI Handle\&. This parameter can be SPI where x: 1, 2, or 3 to select the SPI peripheral\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_SPI_DISABLE(__HANDLE__)   \fBCLEAR_BIT\fP((__HANDLE__)\->Instance\->CR1, \fBSPI_CR1_SPE\fP)"
+
+.PP
+Disable the SPI peripheral\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the SPI Handle\&. This parameter can be SPI where x: 1, 2, or 3 to select the SPI peripheral\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_SPI_DISABLE_IT(__HANDLE__, __INTERRUPT__)   \fBCLEAR_BIT\fP((__HANDLE__)\->Instance\->CR2, (__INTERRUPT__))"
+
+.PP
+Disable the specified SPI interrupts\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the SPI handle\&. This parameter can be SPIx where x: 1, 2, or 3 to select the SPI peripheral\&. 
+.br
+\fI__INTERRUPT__\fP specifies the interrupt source to disable\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+SPI_IT_TXE: Tx buffer empty interrupt enable 
+.IP "\(bu" 1
+SPI_IT_RXNE: RX buffer not empty interrupt enable 
+.IP "\(bu" 1
+SPI_IT_ERR: Error interrupt enable 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_SPI_ENABLE(__HANDLE__)   \fBSET_BIT\fP((__HANDLE__)\->Instance\->CR1, \fBSPI_CR1_SPE\fP)"
+
+.PP
+Enable the SPI peripheral\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the SPI Handle\&. This parameter can be SPI where x: 1, 2, or 3 to select the SPI peripheral\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_SPI_ENABLE_IT(__HANDLE__, __INTERRUPT__)   \fBSET_BIT\fP((__HANDLE__)\->Instance\->CR2, (__INTERRUPT__))"
+
+.PP
+Enable the specified SPI interrupts\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the SPI Handle\&. This parameter can be SPI where x: 1, 2, or 3 to select the SPI peripheral\&. 
+.br
+\fI__INTERRUPT__\fP specifies the interrupt source to enable\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+SPI_IT_TXE: Tx buffer empty interrupt enable 
+.IP "\(bu" 1
+SPI_IT_RXNE: RX buffer not empty interrupt enable 
+.IP "\(bu" 1
+SPI_IT_ERR: Error interrupt enable 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_SPI_GET_FLAG(__HANDLE__, __FLAG__)   ((((__HANDLE__)\->Instance\->SR) & (__FLAG__)) == (__FLAG__))"
+
+.PP
+Check whether the specified SPI flag is set or not\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the SPI Handle\&. This parameter can be SPI where x: 1, 2, or 3 to select the SPI peripheral\&. 
+.br
+\fI__FLAG__\fP specifies the flag to check\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+SPI_FLAG_RXNE: Receive buffer not empty flag 
+.IP "\(bu" 1
+SPI_FLAG_TXE: Transmit buffer empty flag 
+.IP "\(bu" 1
+SPI_FLAG_CRCERR: CRC error flag 
+.IP "\(bu" 1
+SPI_FLAG_MODF: Mode fault flag 
+.IP "\(bu" 1
+SPI_FLAG_OVR: Overrun flag 
+.IP "\(bu" 1
+SPI_FLAG_BSY: Busy flag 
+.IP "\(bu" 1
+SPI_FLAG_FRE: Frame format error flag 
+.IP "\(bu" 1
+SPI_FLAG_FTLVL: SPI fifo transmission level 
+.IP "\(bu" 1
+SPI_FLAG_FRLVL: SPI fifo reception level 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fIThe\fP new state of \fBFLAG\fP (TRUE or FALSE)\&. 
+.RE
+.PP
+
+.SS "#define __HAL_SPI_GET_IT_SOURCE(__HANDLE__, __INTERRUPT__)"
+\fBValue:\fP.PP
+.nf
+                                                              ((((__HANDLE__)\->Instance\->CR2\\
+                                                              & (__INTERRUPT__)) == (__INTERRUPT__)) ? SET : RESET)
+.fi
+
+.PP
+Check whether the specified SPI interrupt source is enabled or not\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the SPI Handle\&. This parameter can be SPI where x: 1, 2, or 3 to select the SPI peripheral\&. 
+.br
+\fI__INTERRUPT__\fP specifies the SPI interrupt source to check\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+SPI_IT_TXE: Tx buffer empty interrupt enable 
+.IP "\(bu" 1
+SPI_IT_RXNE: RX buffer not empty interrupt enable 
+.IP "\(bu" 1
+SPI_IT_ERR: Error interrupt enable 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fIThe\fP new state of \fBIT\fP (TRUE or FALSE)\&. 
+.RE
+.PP
+
+.SS "#define __HAL_SPI_RESET_HANDLE_STATE(__HANDLE__)   ((__HANDLE__)\->State = \fBHAL_SPI_STATE_RESET\fP)"
+
+.PP
+Reset SPI handle state\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the SPI Handle\&. This parameter can be SPI where x: 1, 2, or 3 to select the SPI peripheral\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

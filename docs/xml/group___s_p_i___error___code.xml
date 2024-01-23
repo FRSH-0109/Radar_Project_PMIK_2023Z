@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_p_i___error___code" kind="group">
+    <compoundname>SPI_Error_Code</compoundname>
+    <title>SPI Error Code</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i___error___code_1gaac0006cdf5670741f8702e55d4bf4601" prot="public" static="no">
+        <name>HAL_SPI_ERROR_NONE</name>
+        <initializer>(0x00000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>No error <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="201" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___error___code_1ga75f5edd4e2a7a95bc9a994244df52460" prot="public" static="no">
+        <name>HAL_SPI_ERROR_MODF</name>
+        <initializer>(0x00000001U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MODF error <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="202" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___error___code_1gad1163823ec5fa89e4670366565d4ab93" prot="public" static="no">
+        <name>HAL_SPI_ERROR_CRC</name>
+        <initializer>(0x00000002U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CRC error <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="203" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___error___code_1ga9587f998fed196a4f30c38f2da731c0f" prot="public" static="no">
+        <name>HAL_SPI_ERROR_OVR</name>
+        <initializer>(0x00000004U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OVR error <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="204" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___error___code_1gaf03238e57dd0c4d277fef2aa7a083133" prot="public" static="no">
+        <name>HAL_SPI_ERROR_FRE</name>
+        <initializer>(0x00000008U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FRE error <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="205" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___error___code_1gaaf91992131301e3fc7f2ce62fb011f6c" prot="public" static="no">
+        <name>HAL_SPI_ERROR_DMA</name>
+        <initializer>(0x00000010U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA transfer error <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="206" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___error___code_1ga777b36b52caf926a384976baf34530a3" prot="public" static="no">
+        <name>HAL_SPI_ERROR_FLAG</name>
+        <initializer>(0x00000020U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error on RXNE/TXE/BSY/FTLVL/FRLVL Flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="207" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___error___code_1gab7fa15838d5ef9316ed8a0ec1c782fb7" prot="public" static="no">
+        <name>HAL_SPI_ERROR_ABORT</name>
+        <initializer>(0x00000040U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error during SPI Abort procedure <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="208" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

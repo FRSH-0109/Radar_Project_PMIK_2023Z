@@ -1,0 +1,95 @@
+.TH "SPI_Exported_Types" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_Exported_Types \- SPI Exported Types
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBSPI_InitTypeDef\fP"
+.br
+.RI "SPI Configuration Structure definition\&. "
+.ti -1c
+.RI "struct \fB__SPI_HandleTypeDef\fP"
+.br
+.RI "SPI handle Structure definition\&. "
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fB__SPI_HandleTypeDef\fP \fBSPI_HandleTypeDef\fP"
+.br
+.RI "SPI handle Structure definition\&. "
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBHAL_SPI_StateTypeDef\fP { \fBHAL_SPI_STATE_RESET\fP = 0x00U, \fBHAL_SPI_STATE_READY\fP = 0x01U, \fBHAL_SPI_STATE_BUSY\fP = 0x02U, \fBHAL_SPI_STATE_BUSY_TX\fP = 0x03U, \fBHAL_SPI_STATE_BUSY_RX\fP = 0x04U, \fBHAL_SPI_STATE_BUSY_TX_RX\fP = 0x05U, \fBHAL_SPI_STATE_ERROR\fP = 0x06U, \fBHAL_SPI_STATE_ABORT\fP = 0x07U }"
+.br
+.RI "HAL SPI State structure definition\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fB__SPI_HandleTypeDef\fP \fBSPI_HandleTypeDef\fP"
+
+.PP
+SPI handle Structure definition\&. 
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBHAL_SPI_StateTypeDef\fP"
+
+.PP
+HAL SPI State structure definition\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIHAL_SPI_STATE_RESET \fP\fP
+Peripheral not Initialized 
+.br
+ 
+.TP
+\fB\fIHAL_SPI_STATE_READY \fP\fP
+Peripheral Initialized and ready for use 
+.br
+ 
+.TP
+\fB\fIHAL_SPI_STATE_BUSY \fP\fP
+an internal process is ongoing 
+.br
+ 
+.TP
+\fB\fIHAL_SPI_STATE_BUSY_TX \fP\fP
+Data Transmission process is ongoing 
+.br
+ 
+.TP
+\fB\fIHAL_SPI_STATE_BUSY_RX \fP\fP
+Data Reception process is ongoing 
+.br
+ 
+.TP
+\fB\fIHAL_SPI_STATE_BUSY_TX_RX \fP\fP
+Data Transmission and Reception process is ongoing 
+.TP
+\fB\fIHAL_SPI_STATE_ERROR \fP\fP
+SPI error state 
+.br
+ 
+.TP
+\fB\fIHAL_SPI_STATE_ABORT \fP\fP
+SPI abort is ongoing 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,41 @@
+.TH "UART_WakeUp_from_Stop_Selection" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_WakeUp_from_Stop_Selection \- UART WakeUp From Stop Selection
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_WAKEUP_ON_ADDRESS\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_WAKEUP_ON_STARTBIT\fP   \fBUSART_CR3_WUS_1\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_WAKEUP_ON_READDATA_NONEMPTY\fP   \fBUSART_CR3_WUS\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define UART_WAKEUP_ON_ADDRESS   0x00000000U"
+UART wake-up on address 
+.br
+ 
+.SS "#define UART_WAKEUP_ON_READDATA_NONEMPTY   \fBUSART_CR3_WUS\fP"
+UART wake-up on receive data register not empty or RXFIFO is not empty 
+.br
+ 
+.SS "#define UART_WAKEUP_ON_STARTBIT   \fBUSART_CR3_WUS_1\fP"
+UART wake-up on start bit 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

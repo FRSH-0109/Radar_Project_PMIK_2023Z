@@ -1,0 +1,104 @@
+.TH "TAMP_TypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TAMP_TypeDef \- Tamper and backup registers\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g030xx\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCR1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCR2\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED0\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBFLTCR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED1\fP [7]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBIER\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBSR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMISR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED2\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBSCR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED3\fP [48]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBBKP0R\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBBKP1R\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBBKP2R\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBBKP3R\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBBKP4R\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Tamper and backup registers\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t TAMP_TypeDef::BKP0R"
+TAMP backup register 0, Address offset: 0x100 
+.SS "\fB__IO\fP uint32_t TAMP_TypeDef::BKP1R"
+TAMP backup register 1, Address offset: 0x104 
+.SS "\fB__IO\fP uint32_t TAMP_TypeDef::BKP2R"
+TAMP backup register 2, Address offset: 0x108 
+.SS "\fB__IO\fP uint32_t TAMP_TypeDef::BKP3R"
+TAMP backup register 3, Address offset: 0x10C 
+.SS "\fB__IO\fP uint32_t TAMP_TypeDef::BKP4R"
+TAMP backup register 4, Address offset: 0x110 
+.SS "\fB__IO\fP uint32_t TAMP_TypeDef::CR1"
+TAMP configuration register 1, Address offset: 0x00 
+.SS "\fB__IO\fP uint32_t TAMP_TypeDef::CR2"
+TAMP configuration register 2, Address offset: 0x04 
+.SS "\fB__IO\fP uint32_t TAMP_TypeDef::FLTCR"
+Reserved Address offset: 0x0C 
+.SS "\fB__IO\fP uint32_t TAMP_TypeDef::IER"
+TAMP Interrupt enable register, Address offset: 0x2C 
+.SS "\fB__IO\fP uint32_t TAMP_TypeDef::MISR"
+TAMP Masked Interrupt Status register, Address offset: 0x34 
+.SS "uint32_t TAMP_TypeDef::RESERVED0"
+Reserved Address offset: 0x08 
+.SS "uint32_t TAMP_TypeDef::RESERVED1[7]"
+Reserved Address offset: 0x10 -- 0x28 
+.SS "uint32_t TAMP_TypeDef::RESERVED2"
+Reserved Address offset: 0x38 
+.SS "uint32_t TAMP_TypeDef::RESERVED3[48]"
+Reserved Address offset: 0x54 -- 0xFC 
+.SS "\fB__IO\fP uint32_t TAMP_TypeDef::SCR"
+TAMP Status clear register, Address offset: 0x3C 
+.SS "\fB__IO\fP uint32_t TAMP_TypeDef::SR"
+TAMP Status register, Address offset: 0x30 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

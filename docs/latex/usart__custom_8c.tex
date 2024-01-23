@@ -1,0 +1,237 @@
+\doxysection{Radar\+App/usart\+\_\+custom/usart\+\_\+custom.c File Reference}
+\hypertarget{usart__custom_8c}{}\label{usart__custom_8c}\index{RadarApp/usart\_custom/usart\_custom.c@{RadarApp/usart\_custom/usart\_custom.c}}
+
+
+Source file for custom uart handling, consists of all used variables, enums or functions that are connected directly with uart communication.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}usart.\+h"{}}\newline
+{\ttfamily \#include $<$stm32g0xx\+\_\+hal\+\_\+dma.\+h$>$}\newline
+{\ttfamily \#include "{}usart\+\_\+custom.\+h"{}}\newline
+{\ttfamily \#include "{}radar.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{usart__custom_8c_ae07c419a1a1df7134ddbfedd9bdf7c91}{uart\+Custom\+Init}} (\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}huart\+Custom, \mbox{\hyperlink{group___u_a_r_t___exported___types_ga5de4a49eb132735325e706f406c69d6e}{UART\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}huart, uint16\+\_\+t rx\+Data\+Len, uint16\+\_\+t tx\+Data\+Len)
+\item 
+\mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\+\_\+\+Status\+Type\+Def}} \mbox{\hyperlink{usart__custom_8c_a123702bc9950b2a0ce9a34e889842f74}{uart\+Custom\+Receive\+DMA}} (\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}huart\+Custom)
+\item 
+\mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\+\_\+\+Status\+Type\+Def}} \mbox{\hyperlink{usart__custom_8c_a74ea4ae09ad7d11a8ed037ed585f4c24}{uart\+Custom\+Transmit\+DMA}} (\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}huart\+Custom, uint16\+\_\+t msg\+Len)
+\item 
+\mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352}{Command\+Type}} \mbox{\hyperlink{usart__custom_8c_a4dd5805db71c5e3e11920b812bddaa71}{Command\+Decode}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}data, uint16\+\_\+t data\+Len)
+\item 
+void \mbox{\hyperlink{usart__custom_8c_abbc250ac23ac518f14aa24e1f9a11ead}{uart\+Queue\+Receive}} (volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}uart\+Queue)
+\item 
+void \mbox{\hyperlink{usart__custom_8c_affe2663ea2814b2c9ab3695c28961355}{uart\+Queue\+Init}} (volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}uart\+Queue)
+\item 
+void \mbox{\hyperlink{usart__custom_8c_ab0cdd1e74b215a0e58dca5e866c11de8}{uart\+Queue\+Add}} (volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}uart\+Queue, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data\+Tx\+Source, uint16\+\_\+t msg\+Len)
+\item 
+void \mbox{\hyperlink{usart__custom_8c_a971ac04f29008014c47a53f31a0eca02}{uart\+Queue\+Clear}} (volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}uart\+Queue)
+\item 
+void \mbox{\hyperlink{usart__custom_8c_a434833c4433f588d5fda684a54dcb0ff}{uart\+Queue\+Transmit}} (volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}uart\+Queue, \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}huart\+Custom)
+\item 
+void \mbox{\hyperlink{group___u_a_r_t___exported___functions___group2_ga925534fb8bf7ca464fd05c982fe4bfa0}{HAL\+\_\+\+UARTEx\+\_\+\+Rx\+Event\+Callback}} (\mbox{\hyperlink{group___u_a_r_t___exported___types_ga5de4a49eb132735325e706f406c69d6e}{UART\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}huart, uint16\+\_\+t Size)
+\item 
+void \mbox{\hyperlink{group___u_a_r_t___exported___functions___group2_gabcdf9b59049eccbc87d54042f9235b1a}{HAL\+\_\+\+UART\+\_\+\+Tx\+Cplt\+Callback}} (\mbox{\hyperlink{group___u_a_r_t___exported___types_ga5de4a49eb132735325e706f406c69d6e}{UART\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}huart)
+\item 
+void \mbox{\hyperlink{group___u_a_r_t___exported___functions___group2_ga0e0456ea96d55db31de947fb3e954f18}{HAL\+\_\+\+UART\+\_\+\+Error\+Callback}} (\mbox{\hyperlink{group___u_a_r_t___exported___types_ga5de4a49eb132735325e706f406c69d6e}{UART\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}huart)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \mbox{\hyperlink{usart__custom_8c_aa8f73ccd6c2e2b10c7ee326ad9b700ce}{huart\+PC}}
+\item 
+\mbox{\hyperlink{group___d_m_a___exported___types_ga41b754a906b86bce54dc79938970138b}{DMA\+\_\+\+Handle\+Type\+Def}} \mbox{\hyperlink{usart__custom_8c_a34251392f0d5e2461e3aef615918c235}{hdma\+\_\+usart1\+\_\+rx}}
+\item 
+\mbox{\hyperlink{group___d_m_a___exported___types_ga41b754a906b86bce54dc79938970138b}{DMA\+\_\+\+Handle\+Type\+Def}} \mbox{\hyperlink{usart__custom_8c_a5af94ab36bfe698db3e6beea96d10a90}{hdma\+\_\+usart1\+\_\+tx}}
+\item 
+\mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \mbox{\hyperlink{usart__custom_8c_a730b36042999ad73efb22a259d91845a}{uart\+Queue\+PC}}
+\item 
+\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \mbox{\hyperlink{usart__custom_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}
+\item 
+\mbox{\hyperlink{structdraw_helper_struct}{draw\+Helper\+Struct}} \mbox{\hyperlink{usart__custom_8c_adf53ce83636ba14bf6b66c48aae16e49}{draw\+Helper}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Source file for custom uart handling, consists of all used variables, enums or functions that are connected directly with uart communication. 
+
+\begin{DoxyAuthor}{Author}
+Kamil Kosnik, Kacper Radzikowski 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z}{\texttt{ https\+://github.\+com/\+FRSH-\/0109/\+Radar\+\_\+\+Project\+\_\+\+PMIK\+\_\+2023Z}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{usart__custom_8c_a4dd5805db71c5e3e11920b812bddaa71}\label{usart__custom_8c_a4dd5805db71c5e3e11920b812bddaa71} 
+\index{usart\_custom.c@{usart\_custom.c}!CommandDecode@{CommandDecode}}
+\index{CommandDecode@{CommandDecode}!usart\_custom.c@{usart\_custom.c}}
+\doxysubsubsection{\texorpdfstring{CommandDecode()}{CommandDecode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352}{Command\+Type}} Command\+Decode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data,  }\item[{uint16\+\_\+t}]{data\+Len }\end{DoxyParamCaption})}
+
+Function for checking if any of uart commands is received
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & pointer to uin8\+\_\+t type array \\
+\hline
+{\em data\+Len} & length of data to decoded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Command\+Type which was(or not) decoded 
+\end{DoxyReturn}
+\Hypertarget{usart__custom_8c_ae07c419a1a1df7134ddbfedd9bdf7c91}\label{usart__custom_8c_ae07c419a1a1df7134ddbfedd9bdf7c91} 
+\index{usart\_custom.c@{usart\_custom.c}!uartCustomInit@{uartCustomInit}}
+\index{uartCustomInit@{uartCustomInit}!usart\_custom.c@{usart\_custom.c}}
+\doxysubsubsection{\texorpdfstring{uartCustomInit()}{uartCustomInit()}}
+{\footnotesize\ttfamily void uart\+Custom\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{huart\+Custom,  }\item[{\mbox{\hyperlink{group___u_a_r_t___exported___types_ga5de4a49eb132735325e706f406c69d6e}{UART\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{huart,  }\item[{uint16\+\_\+t}]{rx\+Data\+Len,  }\item[{uint16\+\_\+t}]{tx\+Data\+Len }\end{DoxyParamCaption})}
+
+Function for receiving next waiting data in queue
+
+
+\begin{DoxyParams}{Parameters}
+{\em huart\+Custom} & pointer to \doxylink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} struct instance param huart pointer to UART\+\_\+\+Handle\+Type\+Def struct instance param rx\+Data\+Len value for maximum rx data length param tx\+Data\+Len value for maximum tx data length \\
+\hline
+\end{DoxyParams}
+\Hypertarget{usart__custom_8c_a123702bc9950b2a0ce9a34e889842f74}\label{usart__custom_8c_a123702bc9950b2a0ce9a34e889842f74} 
+\index{usart\_custom.c@{usart\_custom.c}!uartCustomReceiveDMA@{uartCustomReceiveDMA}}
+\index{uartCustomReceiveDMA@{uartCustomReceiveDMA}!usart\_custom.c@{usart\_custom.c}}
+\doxysubsubsection{\texorpdfstring{uartCustomReceiveDMA()}{uartCustomReceiveDMA()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\+\_\+\+Status\+Type\+Def}} uart\+Custom\+Receive\+DMA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{huart\+Custom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Function for calling receiving process via uart with DMA
+
+
+\begin{DoxyParams}{Parameters}
+{\em huart\+Custom} & pointer to \doxylink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} struct instance \\
+\hline
+\end{DoxyParams}
+\Hypertarget{usart__custom_8c_a74ea4ae09ad7d11a8ed037ed585f4c24}\label{usart__custom_8c_a74ea4ae09ad7d11a8ed037ed585f4c24} 
+\index{usart\_custom.c@{usart\_custom.c}!uartCustomTransmitDMA@{uartCustomTransmitDMA}}
+\index{uartCustomTransmitDMA@{uartCustomTransmitDMA}!usart\_custom.c@{usart\_custom.c}}
+\doxysubsubsection{\texorpdfstring{uartCustomTransmitDMA()}{uartCustomTransmitDMA()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\+\_\+\+Status\+Type\+Def}} uart\+Custom\+Transmit\+DMA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{huart\+Custom,  }\item[{uint16\+\_\+t}]{msg\+Len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Function for calling DMA transmit via uart
+
+
+\begin{DoxyParams}{Parameters}
+{\em huart\+Custom} & pointer to \doxylink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} struct instance \\
+\hline
+{\em msg\+Len} & value for maximum tx data length \\
+\hline
+\end{DoxyParams}
+\Hypertarget{usart__custom_8c_ab0cdd1e74b215a0e58dca5e866c11de8}\label{usart__custom_8c_ab0cdd1e74b215a0e58dca5e866c11de8} 
+\index{usart\_custom.c@{usart\_custom.c}!uartQueueAdd@{uartQueueAdd}}
+\index{uartQueueAdd@{uartQueueAdd}!usart\_custom.c@{usart\_custom.c}}
+\doxysubsubsection{\texorpdfstring{uartQueueAdd()}{uartQueueAdd()}}
+{\footnotesize\ttfamily void uart\+Queue\+Add (\begin{DoxyParamCaption}\item[{volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}}]{uart\+Queue,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data\+Tx\+Source,  }\item[{uint16\+\_\+t}]{msg\+Len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Function for adding next data to be send via uart queue
+
+
+\begin{DoxyParams}{Parameters}
+{\em uart\+Queue} & pointer to \doxylink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue} struct instance \\
+\hline
+{\em data\+Tx\+Source} & pointer to data array to be added to queue \\
+\hline
+{\em msg\+Len} & value for added data buffer length \\
+\hline
+\end{DoxyParams}
+\Hypertarget{usart__custom_8c_a971ac04f29008014c47a53f31a0eca02}\label{usart__custom_8c_a971ac04f29008014c47a53f31a0eca02} 
+\index{usart\_custom.c@{usart\_custom.c}!uartQueueClear@{uartQueueClear}}
+\index{uartQueueClear@{uartQueueClear}!usart\_custom.c@{usart\_custom.c}}
+\doxysubsubsection{\texorpdfstring{uartQueueClear()}{uartQueueClear()}}
+{\footnotesize\ttfamily void uart\+Queue\+Clear (\begin{DoxyParamCaption}\item[{volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}}]{uart\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Function for clearing whole uart structure
+
+
+\begin{DoxyParams}{Parameters}
+{\em uart\+Queue} & pointer to \doxylink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue} struct instance \\
+\hline
+\end{DoxyParams}
+\Hypertarget{usart__custom_8c_affe2663ea2814b2c9ab3695c28961355}\label{usart__custom_8c_affe2663ea2814b2c9ab3695c28961355} 
+\index{usart\_custom.c@{usart\_custom.c}!uartQueueInit@{uartQueueInit}}
+\index{uartQueueInit@{uartQueueInit}!usart\_custom.c@{usart\_custom.c}}
+\doxysubsubsection{\texorpdfstring{uartQueueInit()}{uartQueueInit()}}
+{\footnotesize\ttfamily void uart\+Queue\+Init (\begin{DoxyParamCaption}\item[{volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}}]{uart\+Queue }\end{DoxyParamCaption})}
+
+Function for init uart queue structure
+
+
+\begin{DoxyParams}{Parameters}
+{\em uart\+Queue} & pointer to \doxylink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue} struct instance \\
+\hline
+\end{DoxyParams}
+\Hypertarget{usart__custom_8c_abbc250ac23ac518f14aa24e1f9a11ead}\label{usart__custom_8c_abbc250ac23ac518f14aa24e1f9a11ead} 
+\index{usart\_custom.c@{usart\_custom.c}!uartQueueReceive@{uartQueueReceive}}
+\index{uartQueueReceive@{uartQueueReceive}!usart\_custom.c@{usart\_custom.c}}
+\doxysubsubsection{\texorpdfstring{uartQueueReceive()}{uartQueueReceive()}}
+{\footnotesize\ttfamily void uart\+Queue\+Receive (\begin{DoxyParamCaption}\item[{volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}}]{uart\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Function for receiving next waiting data in queue
+
+
+\begin{DoxyParams}{Parameters}
+{\em uart\+Queue} & pointer to \doxylink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue} struct instance \\
+\hline
+\end{DoxyParams}
+\Hypertarget{usart__custom_8c_a434833c4433f588d5fda684a54dcb0ff}\label{usart__custom_8c_a434833c4433f588d5fda684a54dcb0ff} 
+\index{usart\_custom.c@{usart\_custom.c}!uartQueueTransmit@{uartQueueTransmit}}
+\index{uartQueueTransmit@{uartQueueTransmit}!usart\_custom.c@{usart\_custom.c}}
+\doxysubsubsection{\texorpdfstring{uartQueueTransmit()}{uartQueueTransmit()}}
+{\footnotesize\ttfamily void uart\+Queue\+Transmit (\begin{DoxyParamCaption}\item[{volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}}]{uart\+Queue,  }\item[{\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{huart\+Custom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Function for transmitting next data in queue
+
+
+\begin{DoxyParams}{Parameters}
+{\em uart\+Queue} & pointer to \doxylink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue} struct instance \\
+\hline
+{\em huart\+Custom} & pointer to \doxylink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} struct instance \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{usart__custom_8c_adf53ce83636ba14bf6b66c48aae16e49}\label{usart__custom_8c_adf53ce83636ba14bf6b66c48aae16e49} 
+\index{usart\_custom.c@{usart\_custom.c}!drawHelper@{drawHelper}}
+\index{drawHelper@{drawHelper}!usart\_custom.c@{usart\_custom.c}}
+\doxysubsubsection{\texorpdfstring{drawHelper}{drawHelper}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdraw_helper_struct}{draw\+Helper\+Struct}} draw\+Helper\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{usart__custom_8c_a34251392f0d5e2461e3aef615918c235}\label{usart__custom_8c_a34251392f0d5e2461e3aef615918c235} 
+\index{usart\_custom.c@{usart\_custom.c}!hdma\_usart1\_rx@{hdma\_usart1\_rx}}
+\index{hdma\_usart1\_rx@{hdma\_usart1\_rx}!usart\_custom.c@{usart\_custom.c}}
+\doxysubsubsection{\texorpdfstring{hdma\_usart1\_rx}{hdma\_usart1\_rx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___d_m_a___exported___types_ga41b754a906b86bce54dc79938970138b}{DMA\+\_\+\+Handle\+Type\+Def}} hdma\+\_\+usart1\+\_\+rx\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{usart__custom_8c_a5af94ab36bfe698db3e6beea96d10a90}\label{usart__custom_8c_a5af94ab36bfe698db3e6beea96d10a90} 
+\index{usart\_custom.c@{usart\_custom.c}!hdma\_usart1\_tx@{hdma\_usart1\_tx}}
+\index{hdma\_usart1\_tx@{hdma\_usart1\_tx}!usart\_custom.c@{usart\_custom.c}}
+\doxysubsubsection{\texorpdfstring{hdma\_usart1\_tx}{hdma\_usart1\_tx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___d_m_a___exported___types_ga41b754a906b86bce54dc79938970138b}{DMA\+\_\+\+Handle\+Type\+Def}} hdma\+\_\+usart1\+\_\+tx\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{usart__custom_8c_aa8f73ccd6c2e2b10c7ee326ad9b700ce}\label{usart__custom_8c_aa8f73ccd6c2e2b10c7ee326ad9b700ce} 
+\index{usart\_custom.c@{usart\_custom.c}!huartPC@{huartPC}}
+\index{huartPC@{huartPC}!usart\_custom.c@{usart\_custom.c}}
+\doxysubsubsection{\texorpdfstring{huartPC}{huartPC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} huart\+PC\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{usart__custom_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}\label{usart__custom_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09} 
+\index{usart\_custom.c@{usart\_custom.c}!radar@{radar}}
+\index{radar@{radar}!usart\_custom.c@{usart\_custom.c}}
+\doxysubsubsection{\texorpdfstring{radar}{radar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structradar_struct}{radar\+Struct}} radar\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{usart__custom_8c_a730b36042999ad73efb22a259d91845a}\label{usart__custom_8c_a730b36042999ad73efb22a259d91845a} 
+\index{usart\_custom.c@{usart\_custom.c}!uartQueuePC@{uartQueuePC}}
+\index{uartQueuePC@{uartQueuePC}!usart\_custom.c@{usart\_custom.c}}
+\doxysubsubsection{\texorpdfstring{uartQueuePC}{uartQueuePC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} uart\+Queue\+PC\hspace{0.3cm}{\ttfamily [extern]}}
+

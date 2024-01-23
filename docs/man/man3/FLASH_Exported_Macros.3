@@ -1,0 +1,162 @@
+.TH "FLASH_Exported_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FLASH_Exported_Macros \- FLASH Exported Macros
+.PP
+ \- macros to control FLASH features  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_FLASH_SET_LATENCY\fP(__LATENCY__)   \fBMODIFY_REG\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_LATENCY\fP, (__LATENCY__))"
+.br
+.RI "Set the FLASH Latency\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_GET_LATENCY\fP()   \fBREAD_BIT\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_LATENCY\fP)"
+.br
+.RI "Get the FLASH Latency\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_PREFETCH_BUFFER_ENABLE\fP()   \fBSET_BIT\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_PRFTEN\fP)"
+.br
+.RI "Enable the FLASH prefetch buffer\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_PREFETCH_BUFFER_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_PRFTEN\fP)"
+.br
+.RI "Disable the FLASH prefetch buffer\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_INSTRUCTION_CACHE_ENABLE\fP()   \fBSET_BIT\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_ICEN\fP)"
+.br
+.RI "Enable the FLASH instruction cache\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_INSTRUCTION_CACHE_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_ICEN\fP)"
+.br
+.RI "Disable the FLASH instruction cache\&. "
+.ti -1c
+.RI "#define \fB__HAL_FLASH_INSTRUCTION_CACHE_RESET\fP()"
+.br
+.RI "Reset the FLASH instruction Cache\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+macros to control FLASH features 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_FLASH_GET_LATENCY()   \fBREAD_BIT\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_LATENCY\fP)"
+
+.PP
+Get the FLASH Latency\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIFLASH\fP Latency Returned value can be one of the following values : 
+.PD 0
+.IP "\(bu" 1
+\fBFLASH_LATENCY_0\fP FLASH Zero wait state 
+.IP "\(bu" 1
+\fBFLASH_LATENCY_1\fP FLASH One wait state 
+.IP "\(bu" 1
+\fBFLASH_LATENCY_2\fP FLASH Two wait states 
+.PP
+.RE
+.PP
+
+.SS "#define __HAL_FLASH_INSTRUCTION_CACHE_DISABLE()   \fBCLEAR_BIT\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_ICEN\fP)"
+
+.PP
+Disable the FLASH instruction cache\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fInone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_FLASH_INSTRUCTION_CACHE_ENABLE()   \fBSET_BIT\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_ICEN\fP)"
+
+.PP
+Enable the FLASH instruction cache\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fInone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_FLASH_INSTRUCTION_CACHE_RESET()"
+\fBValue:\fP.PP
+.nf
+                                                     do { SET_BIT(FLASH\->ACR, FLASH_ACR_ICRST);   \\
+                                                     CLEAR_BIT(FLASH\->ACR, FLASH_ACR_ICRST); \\
+                                                   } while (0U)
+.fi
+
+.PP
+Reset the FLASH instruction Cache\&. 
+.PP
+\fBNote\fP
+.RS 4
+This function must be used only when the Instruction Cache is disabled\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_FLASH_PREFETCH_BUFFER_DISABLE()   \fBCLEAR_BIT\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_PRFTEN\fP)"
+
+.PP
+Disable the FLASH prefetch buffer\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_FLASH_PREFETCH_BUFFER_ENABLE()   \fBSET_BIT\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_PRFTEN\fP)"
+
+.PP
+Enable the FLASH prefetch buffer\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_FLASH_SET_LATENCY(__LATENCY__)   \fBMODIFY_REG\fP(\fBFLASH\fP\->ACR, \fBFLASH_ACR_LATENCY\fP, (__LATENCY__))"
+
+.PP
+Set the FLASH Latency\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__LATENCY__\fP FLASH Latency This parameter can be one of the following values : 
+.PD 0
+.IP "\(bu" 1
+\fBFLASH_LATENCY_0\fP FLASH Zero wait state 
+.IP "\(bu" 1
+\fBFLASH_LATENCY_1\fP FLASH One wait state 
+.IP "\(bu" 1
+\fBFLASH_LATENCY_2\fP FLASH Two wait states 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

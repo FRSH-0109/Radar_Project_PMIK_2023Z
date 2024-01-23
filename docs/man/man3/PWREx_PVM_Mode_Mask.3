@@ -1,0 +1,46 @@
+.TH "PWREx_PVM_Mode_Mask" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PWREx_PVM_Mode_Mask \- PWR PVM Mode Mask
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPVM_MODE_IT\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBPVM_MODE_EVT\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBPVM_RISING_EDGE\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBPVM_FALLING_EDGE\fP   ((uint32_t)0x00000002)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define PVM_FALLING_EDGE   ((uint32_t)0x00000002)"
+Mask for falling edge set as PVM trigger 
+.br
+ 
+.SS "#define PVM_MODE_EVT   ((uint32_t)0x00020000)"
+Mask for event yielded by PVM threshold crossing 
+.br
+ 
+.SS "#define PVM_MODE_IT   ((uint32_t)0x00010000)"
+Mask for interruption yielded by PVM threshold crossing 
+.SS "#define PVM_RISING_EDGE   ((uint32_t)0x00000001)"
+Mask for rising edge set as PVM trigger 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

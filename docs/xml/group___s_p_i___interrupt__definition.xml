@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_p_i___interrupt__definition" kind="group">
+    <compoundname>SPI_Interrupt_definition</compoundname>
+    <title>SPI Interrupt Definition</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i___interrupt__definition_1ga6f0778617fc5f58086e4e29cd3781f18" prot="public" static="no">
+        <name>SPI_IT_TXE</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga23f683a1252ccaf625cae1a978989b2c" kindref="member">SPI_CR2_TXEIE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="366" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___interrupt__definition_1ga6c6ea3686830c60d9363f97a5d1011cc" prot="public" static="no">
+        <name>SPI_IT_RXNE</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gaa7d4c37fbbcced7f2a0421e6ffd103ea" kindref="member">SPI_CR2_RXNEIE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="367" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i___interrupt__definition_1gace6a9377da7f18ea8b5c73163c2278d6" prot="public" static="no">
+        <name>SPI_IT_ERR</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gaf18705567de7ab52a62e5ef3ba27418b" kindref="member">SPI_CR2_ERRIE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="368" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

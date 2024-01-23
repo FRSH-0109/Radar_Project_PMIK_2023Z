@@ -1,0 +1,186 @@
+.TH "RadarApp/ServoDriver/servo_driver.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RadarApp/ServoDriver/servo_driver.h \- File containing code of servomechanism driver controlled by PWM, which was created for Radar embedded project\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdint\&.h>\fP
+.br
+\fC#include <stdbool\&.h>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBservoDriverStruct\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSERVO_MIN_DEGREES\fP   0\&.0f"
+.br
+.ti -1c
+.RI "#define \fBSERVO_MAX_DEGREES\fP   180\&.0f"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBservoDriverInit\fP (\fBservoDriverStruct\fP *servoDriver, float dMin, float dMax, uint16_t pMin, uint16_t pMax)"
+.br
+.ti -1c
+.RI "void \fBservoDriverStart\fP (\fBservoDriverStruct\fP *servoDriver)"
+.br
+.ti -1c
+.RI "void \fBservoDriverStop\fP (\fBservoDriverStruct\fP *servoDriver)"
+.br
+.ti -1c
+.RI "void \fBservoDriverStartTimer\fP (\fBservoDriverStruct\fP *servoDriver)"
+.br
+.ti -1c
+.RI "void \fBservoDriverStopTimer\fP (\fBservoDriverStruct\fP *servoDriver)"
+.br
+.ti -1c
+.RI "bool \fBservoDriverSetDegrees\fP (\fBservoDriverStruct\fP *servoDriver, float degrees)"
+.br
+.ti -1c
+.RI "uint16_t \fBservoDriverDegreesToPulseWidth\fP (\fBservoDriverStruct\fP *servoDriver, float degrees)"
+.br
+.ti -1c
+.RI "void \fBservoDriverSetPulseWidth\fP (\fBservoDriverStruct\fP *servoDriver)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+File containing code of servomechanism driver controlled by PWM, which was created for Radar embedded project\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Kami Kośnik, Kacper Radzikowski 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+20 Nov 2023 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define SERVO_MAX_DEGREES   180\&.0f"
+Maximum hardware servo position in degrees 
+.SS "#define SERVO_MIN_DEGREES   0\&.0f"
+Minimum hardware servo position in degrees 
+.SH "Function Documentation"
+.PP 
+.SS "uint16_t servoDriverDegreesToPulseWidth (\fBservoDriverStruct\fP * servoDriver, float degrees)"
+Function for converting degrees value into pulse width
+.PP
+\fBParameters\fP
+.RS 4
+\fIservoDriver\fP pointer to \fBservoDriverStruct\fP struct 
+.br
+\fIdegrees\fP value of degrees to convert 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+uint16_t value of corresponding pulse width 
+.RE
+.PP
+
+.SS "void servoDriverInit (\fBservoDriverStruct\fP * servoDriver, float dMin, float dMax, uint16_t pMin, uint16_t pMax)"
+Function for initialization of servo structure instance
+.PP
+\fBParameters\fP
+.RS 4
+\fIservoDriver\fP pointer to \fBservoDriverStruct\fP struct 
+.br
+\fIdMin\fP value of minimal degrees movement for servo 
+.br
+\fIdMax\fP value of maximal degrees movement for servo 
+.br
+\fIpMin\fP value of minimal pulse width corresponding to minimal degrees value 
+.br
+\fIpMax\fP value of maximal pulse width corresponding to minimal degrees value 
+.RE
+.PP
+
+.SS "bool servoDriverSetDegrees (\fBservoDriverStruct\fP * servoDriver, float degrees)"
+Function for setting servo position in degrees
+.PP
+\fBParameters\fP
+.RS 4
+\fIservoDriver\fP pointer to \fBservoDriverStruct\fP struct 
+.br
+\fIdegrees\fP value of degrees to set 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool is action was successful 
+.RE
+.PP
+
+.SS "void servoDriverSetPulseWidth (\fBservoDriverStruct\fP * servoDriver)"
+Function for setting pulse width from struct into timer instance
+.PP
+\fBParameters\fP
+.RS 4
+\fIservoDriver\fP pointer to \fBservoDriverStruct\fP struct 
+.RE
+.PP
+
+.SS "void servoDriverStart (\fBservoDriverStruct\fP * servoDriver)"
+Function for starting servo movement
+.PP
+\fBParameters\fP
+.RS 4
+\fIservoDriver\fP pointer to \fBservoDriverStruct\fP struct 
+.RE
+.PP
+
+.SS "void servoDriverStartTimer (\fBservoDriverStruct\fP * servoDriver)"
+Function for starting timer paired with certain servo struct
+.PP
+\fBParameters\fP
+.RS 4
+\fIservoDriver\fP pointer to \fBservoDriverStruct\fP struct 
+.RE
+.PP
+
+.SS "void servoDriverStop (\fBservoDriverStruct\fP * servoDriver)"
+Function for stopping servo movement
+.PP
+\fBParameters\fP
+.RS 4
+\fIservoDriver\fP pointer to \fBservoDriverStruct\fP struct 
+.RE
+.PP
+
+.SS "void servoDriverStopTimer (\fBservoDriverStruct\fP * servoDriver)"
+Function for stopping timer paired with certain servo struct
+.PP
+\fBParameters\fP
+.RS 4
+\fIservoDriver\fP pointer to \fBservoDriverStruct\fP struct 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

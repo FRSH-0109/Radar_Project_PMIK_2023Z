@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_h_a_l___d_m_a___mux_request_generator_config_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>HAL_DMA_MuxRequestGeneratorConfigTypeDef</compoundname>
+    <includes refid="stm32g0xx__hal__dma__ex_8h" local="no">stm32g0xx_hal_dma_ex.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_h_a_l___d_m_a___mux_request_generator_config_type_def_1a87987c676e576d350e77f0fbc51391e2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SignalID</definition>
+        <argsstring></argsstring>
+        <name>SignalID</name>
+        <qualifiedname>HAL_DMA_MuxRequestGeneratorConfigTypeDef::SignalID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the ID of the signal used for DMAMUX request generator This parameter can be a value of <ref refid="group___d_m_a_ex___d_m_a_m_u_x___signal_generator_i_d__selection" kindref="compound">DMAMUX SignalGeneratorID selection</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" line="73" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_h_a_l___d_m_a___mux_request_generator_config_type_def_1aa8163c013b720459c0e6a92c84d5bef9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Polarity</definition>
+        <argsstring></argsstring>
+        <name>Polarity</name>
+        <qualifiedname>HAL_DMA_MuxRequestGeneratorConfigTypeDef::Polarity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the polarity of the signal on which the request is generated. This parameter can be a value of <ref refid="group___d_m_a_ex___d_m_a_m_u_x___request_genenerator_polarity__selection" kindref="compound">DMAMUX RequestGeneneratorPolarity selection</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" line="76" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_h_a_l___d_m_a___mux_request_generator_config_type_def_1aa98130d429e9c3f42fc783fa8d70a00f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RequestNumber</definition>
+        <argsstring></argsstring>
+        <name>RequestNumber</name>
+        <qualifiedname>HAL_DMA_MuxRequestGeneratorConfigTypeDef::RequestNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the number of DMA request that will be generated after a signal event This parameter must be a number between Min_Data = 1 and Max_Data = 32 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" line="79" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>HAL DMAMUX request generator parameters structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" line="71" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h" bodystart="72" bodyend="82"/>
+    <listofallmembers>
+      <member refid="struct_h_a_l___d_m_a___mux_request_generator_config_type_def_1aa8163c013b720459c0e6a92c84d5bef9" prot="public" virt="non-virtual"><scope>HAL_DMA_MuxRequestGeneratorConfigTypeDef</scope><name>Polarity</name></member>
+      <member refid="struct_h_a_l___d_m_a___mux_request_generator_config_type_def_1aa98130d429e9c3f42fc783fa8d70a00f" prot="public" virt="non-virtual"><scope>HAL_DMA_MuxRequestGeneratorConfigTypeDef</scope><name>RequestNumber</name></member>
+      <member refid="struct_h_a_l___d_m_a___mux_request_generator_config_type_def_1a87987c676e576d350e77f0fbc51391e2" prot="public" virt="non-virtual"><scope>HAL_DMA_MuxRequestGeneratorConfigTypeDef</scope><name>SignalID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___f_l_a_s_h___interrupt" kind="group">
+    <compoundname>FLASH_Interrupt</compoundname>
+    <title>FLASH Interrupts Macros</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_l_a_s_h___interrupt_1ga13fa137a911f02a2f94fb9fb0762a340" prot="public" static="no">
+        <name>__HAL_FLASH_ENABLE_IT</name>
+        <param><defname>__INTERRUPT__</defname></param>
+        <initializer>                                                     do { if(((__INTERRUPT__) &amp; (<ref refid="group___f_l_a_s_h___private___constants_1ga640f48347791c15967d7eeda287f66c9" kindref="member">FLASH_FLAG_CR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>)) != 0U) { <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR, (1uL &lt;&lt; ((__INTERRUPT__) &amp; 0x1Fu))); }             \
+                                                     else if(((__INTERRUPT__) &amp; (<ref refid="group___f_l_a_s_h___private___constants_1ga12fc6723eee1c92a9ccbbea964c69e81" kindref="member">FLASH_FLAG_ECCR1_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>)) != 0U) { <ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;ECCR, (1uL &lt;&lt; ((__INTERRUPT__) &amp; 0x1Fu))); }   \
+                                                   } while(0U)</initializer>
+        <briefdescription>
+<para>Enable the specified FLASH interrupt. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>__INTERRUPT__</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FLASH interrupt This parameter can be one of the following values : <itemizedlist>
+<listitem><para><ref refid="group___f_l_a_s_h___interrupt__definition_1gaea20e80e1806d58a7544cfe8659e7f11" kindref="member">FLASH_IT_EOP</ref> End of FLASH Operation Interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___interrupt__definition_1ga501c9645076ef3ec2b0dad64da0a8d7e" kindref="member">FLASH_IT_OPERR</ref> Error Interrupt </para>
+</listitem>
+<listitem><para>FLASH_IT_RDERR PCROP Read Error Interrupt(*) </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___interrupt__definition_1gaca7868799bea66927ac2b8b8d8c8be1a" kindref="member">FLASH_IT_ECCC1</ref> ECC Correction Interrupt on bank 1 </para>
+</listitem>
+<listitem><para>FLASH_IT_ECCC2 ECC Correction Interrupt on bank 2(*) </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___interrupt__definition_1gaecdc533ad50a649b780f72e8dee48a1b" kindref="member">FLASH_IT_ECCC</ref> ECC Correction Interrupt - legacy name for single bank </para>
+</listitem>
+</itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>(*) availability depends on devices </para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="696" column="10" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="696" bodyend="698"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___interrupt_1ga1f40f507b5d4b3a4da68e4244a1097ee" prot="public" static="no">
+        <name>__HAL_FLASH_DISABLE_IT</name>
+        <param><defname>__INTERRUPT__</defname></param>
+        <initializer>                                                     do { if(((__INTERRUPT__) &amp; (<ref refid="group___f_l_a_s_h___private___constants_1ga640f48347791c15967d7eeda287f66c9" kindref="member">FLASH_FLAG_CR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>)) != 0U) { <ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;CR, (1uL &lt;&lt; ((__INTERRUPT__) &amp; 0x1Fu))); }             \
+                                                     else if(((__INTERRUPT__) &amp; (<ref refid="group___f_l_a_s_h___private___constants_1ga12fc6723eee1c92a9ccbbea964c69e81" kindref="member">FLASH_FLAG_ECCR1_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>)) != 0U) { <ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;ECCR, (1uL &lt;&lt; ((__INTERRUPT__) &amp; 0x1Fu))); }   \
+                                                   } while(0U)</initializer>
+        <briefdescription>
+<para>Disable the specified FLASH interrupt. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>__INTERRUPT__</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FLASH interrupt This parameter can be one of the following values : <itemizedlist>
+<listitem><para><ref refid="group___f_l_a_s_h___interrupt__definition_1gaea20e80e1806d58a7544cfe8659e7f11" kindref="member">FLASH_IT_EOP</ref> End of FLASH Operation Interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___interrupt__definition_1ga501c9645076ef3ec2b0dad64da0a8d7e" kindref="member">FLASH_IT_OPERR</ref> Error Interrupt </para>
+</listitem>
+<listitem><para>FLASH_IT_RDERR PCROP Read Error Interrupt(*) </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___interrupt__definition_1gaca7868799bea66927ac2b8b8d8c8be1a" kindref="member">FLASH_IT_ECCC1</ref> ECC Correction Interrupt on bank 1 </para>
+</listitem>
+<listitem><para>FLASH_IT_ECCC2 ECC Correction Interrupt on bank 2(*) </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___interrupt__definition_1gaecdc533ad50a649b780f72e8dee48a1b" kindref="member">FLASH_IT_ECCC</ref> ECC Correction Interrupt - legacy name for single bank </para>
+</listitem>
+</itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>(*) availability depends on devices </para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="720" column="10" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="720" bodyend="722"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___interrupt_1ga0d3dd161fecc0e47c9e109c7c28672c1" prot="public" static="no">
+        <name>__HAL_FLASH_GET_FLAG</name>
+        <param><defname>__FLAG__</defname></param>
+        <initializer>                                                 ((((__FLAG__) &amp; (<ref refid="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" kindref="member">FLASH_FLAG_SR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>)) != 0U) ?   \
+                                                 (<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;SR, (1uL &lt;&lt; ((__FLAG__) &amp; 0x1Fu))) != 0x00u) : \
+                                                 (<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;ECCR, (1uL &lt;&lt; ((__FLAG__) &amp; 0x1Fu))) != 0x00u))</initializer>
+        <briefdescription>
+<para>Check whether the specified FLASH flag is set or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>__FLAG__</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FLASH flag to check. This parameter can be one of the following values : <itemizedlist>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1gaf043ba4d8f837350bfc7754a99fae5a9" kindref="member">FLASH_FLAG_EOP</ref> FLASH End of Operation flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1gad8a96ceda91fcf0d1299da933b5816f1" kindref="member">FLASH_FLAG_OPERR</ref> FLASH Operation error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga16feb349d40137ba1d00bc44937fcd33" kindref="member">FLASH_FLAG_PROGERR</ref> FLASH Programming error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga6abf64f916992585899369166db3f266" kindref="member">FLASH_FLAG_WRPERR</ref> FLASH Write protection error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga2c3f4dbea065f8ea2987eada4dab30bd" kindref="member">FLASH_FLAG_PGAERR</ref> FLASH Programming alignment error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1gac20909664e371d2ca0436a055393f9c4" kindref="member">FLASH_FLAG_SIZERR</ref> FLASH Size error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga25b80c716320e667162846da8be09b68" kindref="member">FLASH_FLAG_PGSERR</ref> FLASH Programming sequence error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga706480b4a9e153c0affd52bb239925bc" kindref="member">FLASH_FLAG_MISERR</ref> FLASH Fast programming data miss error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1gad8f375a352a04668679609fe25eb1b03" kindref="member">FLASH_FLAG_FASTERR</ref> FLASH Fast programming error flag </para>
+</listitem>
+<listitem><para>FLASH_FLAG_RDERR FLASH PCROP read error flag(*) </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1gacb2c4c991a260c3f110cd8c72f302864" kindref="member">FLASH_FLAG_OPTVERR</ref> FLASH Option validity error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga02cbd877d8534450a09c259edb599176" kindref="member">FLASH_FLAG_BSY1</ref> FLASH bank 1 write/erase operations in progress flag </para>
+</listitem>
+<listitem><para>FLASH_FLAG_BSY2 FLASH bank 2 write/erase operations in progress flag(*) </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1gad3bc368f954ad7744deda3315da2fff7" kindref="member">FLASH_FLAG_BSY</ref> FLASH write/erase operations in progress flag - legacy name for single bank </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1gaa31cc1631af91a80ea3416de835a7e12" kindref="member">FLASH_FLAG_CFGBSY</ref> FLASH configuration is busy : program or erase setting are used. </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1gaeff451eb172193ab40ad206d2c136ff7" kindref="member">FLASH_FLAG_ECCC1</ref> FLASH one ECC error has been detected and corrected </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga1d79a70a87dba5187c4dac48c3d68aa5" kindref="member">FLASH_FLAG_ECCD1</ref> FLASH two ECC errors have been detected on bank 1 </para>
+</listitem>
+<listitem><para>FLASH_FLAG_ECCC2 FLASH one ECC error has been detected and corrected on bank 2(*) </para>
+</listitem>
+<listitem><para>FLASH_FLAG_ECCD2 FLASH two ECC errors have been detected on bank 2(*) </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga1cbecfb0d93e7ae15054d3a561e7b6ef" kindref="member">FLASH_FLAG_ECCC</ref> FLASH one ECC error has been detected and corrected - legacy name for single bank </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga8de3284440e43c3818efe15bd61ef284" kindref="member">FLASH_FLAG_ECCD</ref> FLASH two ECC errors have been detected - legacy name for single bank </para>
+</listitem>
+</itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>(*) availability depends on devices </para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>state of FLASH_FLAG (SET or RESET). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="760" column="10" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="760" bodyend="762"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___interrupt_1ga68e49c4675761e2ec35153e747de7622" prot="public" static="no">
+        <name>__HAL_FLASH_CLEAR_FLAG</name>
+        <param><defname>__FLAG__</defname></param>
+        <initializer>                                                     do { if(((__FLAG__) &amp; (<ref refid="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" kindref="member">FLASH_FLAG_SR_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>)) != 0U)         { <ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;SR = (1uL &lt;&lt; ((__FLAG__) &amp; 0x1Fu)); }    \
+                                                     else if(((__FLAG__) &amp; (<ref refid="group___f_l_a_s_h___private___constants_1ga12fc6723eee1c92a9ccbbea964c69e81" kindref="member">FLASH_FLAG_ECCR1_ID</ref> &lt;&lt; <ref refid="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" kindref="member">FLASH_FLAG_REG_POS</ref>)) != 0U) { <ref refid="group___peripheral__declaration_1ga844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;ECCR = (1uL &lt;&lt; ((__FLAG__) &amp; 0x1Fu)); }  \
+                                                   } while(0U)</initializer>
+        <briefdescription>
+<para>Clear the FLASH pending flags. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>__FLAG__</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the FLASH flags to clear. This parameter can be one of the following values : <itemizedlist>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1gaf043ba4d8f837350bfc7754a99fae5a9" kindref="member">FLASH_FLAG_EOP</ref> FLASH End of Operation flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1gad8a96ceda91fcf0d1299da933b5816f1" kindref="member">FLASH_FLAG_OPERR</ref> FLASH Operation error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga16feb349d40137ba1d00bc44937fcd33" kindref="member">FLASH_FLAG_PROGERR</ref> FLASH Programming error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga6abf64f916992585899369166db3f266" kindref="member">FLASH_FLAG_WRPERR</ref> FLASH Write protection error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga2c3f4dbea065f8ea2987eada4dab30bd" kindref="member">FLASH_FLAG_PGAERR</ref> FLASH Programming alignment error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1gac20909664e371d2ca0436a055393f9c4" kindref="member">FLASH_FLAG_SIZERR</ref> FLASH Size error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga25b80c716320e667162846da8be09b68" kindref="member">FLASH_FLAG_PGSERR</ref> FLASH Programming sequence error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga706480b4a9e153c0affd52bb239925bc" kindref="member">FLASH_FLAG_MISERR</ref> FLASH Fast programming data miss error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1gad8f375a352a04668679609fe25eb1b03" kindref="member">FLASH_FLAG_FASTERR</ref> FLASH Fast programming error flag </para>
+</listitem>
+<listitem><para>FLASH_FLAG_RDERR FLASH PCROP read error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1gacb2c4c991a260c3f110cd8c72f302864" kindref="member">FLASH_FLAG_OPTVERR</ref> FLASH Option validity error flag </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1gaeff451eb172193ab40ad206d2c136ff7" kindref="member">FLASH_FLAG_ECCC1</ref> FLASH one ECC error has been detected and corrected </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga1d79a70a87dba5187c4dac48c3d68aa5" kindref="member">FLASH_FLAG_ECCD1</ref> FLASH two ECC errors have been detected on bank 1 </para>
+</listitem>
+<listitem><para>FLASH_FLAG_ECCC2 FLASH one ECC error has been detected and corrected on bank 2(*) </para>
+</listitem>
+<listitem><para>FLASH_FLAG_ECCD2 FLASH two ECC errors have been detected on bank 2(*) </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga1cbecfb0d93e7ae15054d3a561e7b6ef" kindref="member">FLASH_FLAG_ECCC</ref> FLASH one ECC error has been detected and corrected - legacy name for single bank </para>
+</listitem>
+<listitem><para><ref refid="group___f_l_a_s_h___flags_1ga8de3284440e43c3818efe15bd61ef284" kindref="member">FLASH_FLAG_ECCD</ref> FLASH two ECC errors have been detected - legacy name for single bank </para>
+</listitem>
+</itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>(*) availability depends on devices </para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="795" column="10" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="795" bodyend="797"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>macros to handle FLASH interrupts </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___f_l_a_s_h___private___macros" kind="group">
+    <compoundname>FLASH_Private_Macros</compoundname>
+    <title>FLASH Private Macros</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_l_a_s_h___private___macros_1gad61c3f03e200c830de6065fd5988a699" prot="public" static="no">
+        <name>IS_FLASH_MAIN_MEM_ADDRESS</name>
+        <param><defname>__ADDRESS__</defname></param>
+        <initializer>                                                        (((__ADDRESS__) &gt;= (<ref refid="group___peripheral__memory__map_1ga23a9099a5f8fc9c6e253c0eecb2be8db" kindref="member">FLASH_BASE</ref>))\
+                                                        &amp;&amp; ((__ADDRESS__) &lt;= (<ref refid="group___peripheral__memory__map_1ga23a9099a5f8fc9c6e253c0eecb2be8db" kindref="member">FLASH_BASE</ref> + <ref refid="group___peripheral__memory__map_1gae69620948dea1b76e0ab7843ab719db7" kindref="member">FLASH_SIZE</ref> - 1UL)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="929" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="929" bodyend="930"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___macros_1ga9a7dbfac79dc9131c4437bf588892b25" prot="public" static="no">
+        <name>IS_FLASH_MAIN_FIRSTHALF_MEM_ADDRESS</name>
+        <param><defname>__ADDRESS__</defname></param>
+        <initializer>                                                           (((__ADDRESS__) &gt;= (<ref refid="group___peripheral__memory__map_1ga23a9099a5f8fc9c6e253c0eecb2be8db" kindref="member">FLASH_BASE</ref>))\
+                                                           &amp;&amp; ((__ADDRESS__) &lt;= (<ref refid="group___peripheral__memory__map_1ga23a9099a5f8fc9c6e253c0eecb2be8db" kindref="member">FLASH_BASE</ref> + <ref refid="group___f_l_a_s_h___private___constants_1gaa9034a4a03acf9350fa141303b5ab86a" kindref="member">FLASH_BANK_SIZE</ref> - 1UL)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="932" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="932" bodyend="933"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___macros_1gaab0084e7763398c3757f2cbab09c1a4b" prot="public" static="no">
+        <name>IS_FLASH_PROGRAM_MAIN_MEM_ADDRESS</name>
+        <param><defname>__ADDRESS__</defname></param>
+        <initializer>                                                        (((__ADDRESS__) &gt;= (<ref refid="group___peripheral__memory__map_1ga23a9099a5f8fc9c6e253c0eecb2be8db" kindref="member">FLASH_BASE</ref>))\
+                                                        &amp;&amp; ((__ADDRESS__) &lt;= (<ref refid="group___peripheral__memory__map_1ga23a9099a5f8fc9c6e253c0eecb2be8db" kindref="member">FLASH_BASE</ref> + <ref refid="group___peripheral__memory__map_1gae69620948dea1b76e0ab7843ab719db7" kindref="member">FLASH_SIZE</ref> - 8UL)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="939" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="939" bodyend="940"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___macros_1ga5118b5e17b62de15351f690cfed8d357" prot="public" static="no">
+        <name>IS_FLASH_PROGRAM_OTP_ADDRESS</name>
+        <param><defname>__ADDRESS__</defname></param>
+        <initializer>                                                        (((__ADDRESS__) &gt;= 0x1FFF7000U)\
+                                                        &amp;&amp; ((__ADDRESS__) &lt;= (0x1FFF7400U - 8UL)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="942" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="942" bodyend="943"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___macros_1gac07480adefa0f54a920561a97c2e5b8a" prot="public" static="no">
+        <name>IS_FLASH_PROGRAM_ADDRESS</name>
+        <param><defname>__ADDRESS__</defname></param>
+        <initializer>                                                        ((<ref refid="group___f_l_a_s_h___private___macros_1gaab0084e7763398c3757f2cbab09c1a4b" kindref="member">IS_FLASH_PROGRAM_MAIN_MEM_ADDRESS</ref>(__ADDRESS__))\
+                                                        || (<ref refid="group___f_l_a_s_h___private___macros_1ga5118b5e17b62de15351f690cfed8d357" kindref="member">IS_FLASH_PROGRAM_OTP_ADDRESS</ref>(__ADDRESS__)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="945" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="945" bodyend="946"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___macros_1gaa8232c18c001193e0bd845812463f3cd" prot="public" static="no">
+        <name>IS_FLASH_FAST_PROGRAM_ADDRESS</name>
+        <param><defname>__ADDRESS__</defname></param>
+        <initializer>                                                        (((__ADDRESS__) &gt;= (<ref refid="group___peripheral__memory__map_1ga23a9099a5f8fc9c6e253c0eecb2be8db" kindref="member">FLASH_BASE</ref>))\
+                                                        &amp;&amp; ((__ADDRESS__) &lt;= (<ref refid="group___peripheral__memory__map_1ga23a9099a5f8fc9c6e253c0eecb2be8db" kindref="member">FLASH_BASE</ref> + <ref refid="group___peripheral__memory__map_1gae69620948dea1b76e0ab7843ab719db7" kindref="member">FLASH_SIZE</ref> - 256UL)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="948" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="948" bodyend="949"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___macros_1gad91fb7bc62a909243b53001188ff7234" prot="public" static="no">
+        <name>IS_FLASH_PAGE</name>
+        <param><defname>__PAGE__</defname></param>
+        <initializer>((__PAGE__) &lt; <ref refid="group___f_l_a_s_h___private___constants_1ga3d98541dcb89735b8d2fd559b75d1ebf" kindref="member">FLASH_PAGE_NB</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="951" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="951" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___macros_1ga63d7a9a5d75e71de560a965b5e276ce6" prot="public" static="no">
+        <name>IS_FLASH_BANK</name>
+        <param><defname>__BANK__</defname></param>
+        <initializer>((__BANK__) == <ref refid="group___f_l_a_s_h___banks_1ga8ac3f24496e5de6a2f6bd3ff77f0ca53" kindref="member">FLASH_BANK_1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="961" column="10" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="961" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___macros_1ga4d40dfc92b46733adbabaae5f3db59ab" prot="public" static="no">
+        <name>IS_FLASH_TYPEERASE</name>
+        <param><defname>__VALUE__</defname></param>
+        <initializer>                                                        (((__VALUE__) == <ref refid="group___f_l_a_s_h___type___erase_1ga3664ce55155ec4990873c51737d787ce" kindref="member">FLASH_TYPEERASE_PAGES</ref>) || \
+                                                        ((__VALUE__) == <ref refid="group___f_l_a_s_h___type___erase_1ga191e5180504a54e509ee9b50f85d9621" kindref="member">FLASH_TYPEERASE_MASS</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="964" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="964" bodyend="965"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___macros_1gab96611359d7c156f22f1b37929933e34" prot="public" static="no">
+        <name>IS_FLASH_TYPEPROGRAM</name>
+        <param><defname>__VALUE__</defname></param>
+        <initializer>                                                        (((__VALUE__) == <ref refid="group___f_l_a_s_h___type___program_1gabdc2b0b4d2e66c2be90fafbfbf1e225f" kindref="member">FLASH_TYPEPROGRAM_DOUBLEWORD</ref>) || \
+                                                        ((__VALUE__) == <ref refid="group___f_l_a_s_h___type___program_1gae2edb2ca56dde4aba97c77502c580d81" kindref="member">FLASH_TYPEPROGRAM_FAST</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="967" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="967" bodyend="968"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___macros_1gaaced64683b0f15981a06f3d7581387a4" prot="public" static="no">
+        <name>IS_OPTIONBYTE</name>
+        <param><defname>__VALUE__</defname></param>
+        <initializer>                                                        ((((__VALUE__) &amp; <ref refid="group___f_l_a_s_h___o_b___type_1ga242f762f6db284aa457287f8bd74145b" kindref="member">OPTIONBYTE_ALL</ref>) != 0x00U) &amp;&amp; \
+                                                        (((__VALUE__) &amp; ~<ref refid="group___f_l_a_s_h___o_b___type_1ga242f762f6db284aa457287f8bd74145b" kindref="member">OPTIONBYTE_ALL</ref>) == 0x00U))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="970" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="970" bodyend="971"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___macros_1gaa650b86609eea7c5f6e21e482670434e" prot="public" static="no">
+        <name>IS_OB_WRPAREA</name>
+        <param><defname>__VALUE__</defname></param>
+        <initializer>                                                        (((__VALUE__) == <ref refid="group___f_l_a_s_h___o_b___w_r_p___area_1ga050a1591840ca8a8c64adbaa19bd315a" kindref="member">OB_WRPAREA_ZONE_A</ref>)\
+                                                        || ((__VALUE__) == <ref refid="group___f_l_a_s_h___o_b___w_r_p___area_1ga5a092d46555e9eff1512cd5cc92cf76a" kindref="member">OB_WRPAREA_ZONE_B</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="980" column="10" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="980" bodyend="981"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___macros_1ga056f83cc3381fed3f2d51de9768ebc4c" prot="public" static="no">
+        <name>IS_OB_RDP_LEVEL</name>
+        <param><defname>__LEVEL__</defname></param>
+        <initializer>                                                        (((__LEVEL__) == <ref refid="group___f_l_a_s_h___o_b___read___protection_1ga22c7871bda267a2844ab9ca9f7bd38e4" kindref="member">OB_RDP_LEVEL_0</ref>)   ||\
+                                                        ((__LEVEL__) == <ref refid="group___f_l_a_s_h___o_b___read___protection_1ga778207f0d12d87bbff9d55e985aba5bc" kindref="member">OB_RDP_LEVEL_1</ref>)   ||\
+                                                        ((__LEVEL__) == <ref refid="group___f_l_a_s_h___o_b___read___protection_1ga2262afca565429ce2808d835c49e5ee6" kindref="member">OB_RDP_LEVEL_2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="984" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="984" bodyend="986"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___macros_1ga7e7e9b0cf2412d8a9c09c52019ac3919" prot="public" static="no">
+        <name>IS_OB_USER_TYPE</name>
+        <param><defname>__TYPE__</defname></param>
+        <initializer>                                                        ((((__TYPE__) &amp; <ref refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga9232b0910914b321a97762e030c53833" kindref="member">OB_USER_ALL</ref>) != 0x00U) &amp;&amp; \
+                                                        (((__TYPE__) &amp; ~<ref refid="group___f_l_a_s_h___o_b___u_s_e_r___type_1ga9232b0910914b321a97762e030c53833" kindref="member">OB_USER_ALL</ref>) == 0x00U))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="988" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="988" bodyend="989"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___macros_1ga2d5322a0c5cfadffa23b543823a1e346" prot="public" static="no">
+        <name>IS_OB_USER_CONFIG</name>
+        <param><defname>__TYPE__</defname></param>
+        <param><defname>__CONFIG__</defname></param>
+        <initializer>((~(__TYPE__) &amp; (__CONFIG__)) == 0x00U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="991" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="991" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___macros_1gad8585a26722685574b9586a771a9aa8a" prot="public" static="no">
+        <name>IS_FLASH_LATENCY</name>
+        <param><defname>__LATENCY__</defname></param>
+        <initializer>                                                        (((__LATENCY__) == <ref refid="group___f_l_a_s_h___latency_1ga1276f51e97dc9857ca261fae4eb890f3" kindref="member">FLASH_LATENCY_0</ref>) || \
+                                                        ((__LATENCY__) == <ref refid="group___f_l_a_s_h___latency_1ga28c611f2cb4a3772ab37c538357fd5f6" kindref="member">FLASH_LATENCY_1</ref>) || \
+                                                        ((__LATENCY__) == <ref refid="group___f_l_a_s_h___latency_1ga69d209f9cb4f625010d72555c8dceb03" kindref="member">FLASH_LATENCY_2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="1013" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="1013" bodyend="1015"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

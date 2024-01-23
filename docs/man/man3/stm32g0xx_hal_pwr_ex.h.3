@@ -1,0 +1,200 @@
+.TH "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h \- Header file of PWR HAL Extended module\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32g0xx_hal_def\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPWR_BATTERY_CHARGING_RESISTOR_5\fP   (0x00000000u)"
+.br
+.ti -1c
+.RI "#define \fBPWR_BATTERY_CHARGING_RESISTOR_1_5\fP   \fBPWR_CR4_VBRS\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_BIT_0\fP   \fBPWR_PUCRB_PU0\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_BIT_1\fP   \fBPWR_PUCRB_PU1\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_BIT_2\fP   \fBPWR_PUCRB_PU2\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_BIT_3\fP   \fBPWR_PUCRB_PU3\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_BIT_4\fP   \fBPWR_PUCRB_PU4\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_BIT_5\fP   \fBPWR_PUCRB_PU5\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_BIT_6\fP   \fBPWR_PUCRB_PU6\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_BIT_7\fP   \fBPWR_PUCRB_PU7\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_BIT_8\fP   \fBPWR_PUCRB_PU8\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_BIT_9\fP   \fBPWR_PUCRB_PU9\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_BIT_10\fP   \fBPWR_PUCRB_PU10\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_BIT_11\fP   \fBPWR_PUCRB_PU11\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_BIT_12\fP   \fBPWR_PUCRB_PU12\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_BIT_13\fP   \fBPWR_PUCRB_PU13\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_BIT_14\fP   \fBPWR_PUCRB_PU14\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_BIT_15\fP   \fBPWR_PUCRB_PU15\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_A\fP   (0x00000000u)"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_B\fP   (0x00000001u)"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_C\fP   (0x00000002u)"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_D\fP   (0x00000003u)"
+.br
+.ti -1c
+.RI "#define \fBPWR_GPIO_F\fP   (0x00000005u)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLASHPD_LPRUN\fP   \fBPWR_CR1_FPD_LPRUN\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLASHPD_LPSLEEP\fP   \fBPWR_CR1_FPD_LPSLP\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLASHPD_STOP\fP   \fBPWR_CR1_FPD_STOP\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_REGULATOR_VOLTAGE_SCALE1\fP   \fBPWR_CR1_VOS_0\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_REGULATOR_VOLTAGE_SCALE2\fP   \fBPWR_CR1_VOS_1\fP"
+.br
+.ti -1c
+.RI "#define \fBPVM_MODE_IT\fP   ((uint32_t)0x00010000)"
+.br
+.ti -1c
+.RI "#define \fBPVM_MODE_EVT\fP   ((uint32_t)0x00020000)"
+.br
+.ti -1c
+.RI "#define \fBPVM_RISING_EDGE\fP   ((uint32_t)0x00000001)"
+.br
+.ti -1c
+.RI "#define \fBPVM_FALLING_EDGE\fP   ((uint32_t)0x00000002)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_BATTERY_RESISTOR_SELECT\fP(__RESISTOR__)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_GPIO_BIT_NUMBER\fP(__BIT_NUMBER__)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_GPIO\fP(__GPIO__)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_FLASH_POWERDOWN\fP(__MODE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_VOLTAGE_SCALING_RANGE\fP(RANGE)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBHAL_PWREx_EnableBatteryCharging\fP (uint32_t ResistorSelection)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWREx_DisableBatteryCharging\fP (void)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWREx_EnableInternalWakeUpLine\fP (void)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWREx_DisableInternalWakeUpLine\fP (void)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_PWREx_EnableGPIOPullUp\fP (uint32_t GPIO, uint32_t GPIONumber)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_PWREx_DisableGPIOPullUp\fP (uint32_t GPIO, uint32_t GPIONumber)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_PWREx_EnableGPIOPullDown\fP (uint32_t GPIO, uint32_t GPIONumber)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_PWREx_DisableGPIOPullDown\fP (uint32_t GPIO, uint32_t GPIONumber)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWREx_EnablePullUpPullDownConfig\fP (void)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWREx_DisablePullUpPullDownConfig\fP (void)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWREx_EnableFlashPowerDown\fP (uint32_t PowerMode)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWREx_DisableFlashPowerDown\fP (uint32_t PowerMode)"
+.br
+.ti -1c
+.RI "uint32_t \fBHAL_PWREx_GetVoltageRange\fP (void)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_PWREx_ControlVoltageScaling\fP (uint32_t VoltageScaling)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWREx_EnableLowPowerRunMode\fP (void)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_PWREx_DisableLowPowerRunMode\fP (void)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file of PWR HAL Extended module\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBAttention\fP
+.RS 4
+.RE
+.PP
+Copyright (c) 2018 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

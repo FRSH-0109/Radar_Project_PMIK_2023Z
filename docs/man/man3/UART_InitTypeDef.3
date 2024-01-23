@@ -1,0 +1,87 @@
+.TH "UART_InitTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_InitTypeDef \- UART Init Structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_hal_uart\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBBaudRate\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBWordLength\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBStopBits\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBParity\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBMode\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBHwFlowCtl\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBOverSampling\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBOneBitSampling\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBClockPrescaler\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+UART Init Structure definition\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t UART_InitTypeDef::BaudRate"
+This member configures the UART communication baud rate\&. The baud rate register is computed using the following formula: 
+.SH "LPUART:"
+.PP
+Baud Rate Register = ((256 * lpuart_ker_ckpres) / ((huart->Init\&.BaudRate))) where lpuart_ker_ck_pres is the UART input clock divided by a prescaler 
+.SH "UART:"
+.PP
+.IP "\(bu" 2
+If oversampling is 16 or in LIN mode, Baud Rate Register = ((uart_ker_ckpres) / ((huart->Init\&.BaudRate)))
+.IP "\(bu" 2
+If oversampling is 8, Baud Rate Register[15:4] = ((2 * uart_ker_ckpres) / ((huart->Init\&.BaudRate)))[15:4] Baud Rate Register[3] = 0 Baud Rate Register[2:0] = (((2 * uart_ker_ckpres) / ((huart->Init\&.BaudRate)))[3:0]) >> 1 where uart_ker_ck_pres is the UART input clock divided by a prescaler 
+.PP
+
+.SS "uint32_t UART_InitTypeDef::ClockPrescaler"
+Specifies the prescaler value used to divide the UART clock source\&. This parameter can be a value of \fBUART Clock Prescaler\fP\&. 
+.SS "uint32_t UART_InitTypeDef::HwFlowCtl"
+Specifies whether the hardware flow control mode is enabled or disabled\&. This parameter can be a value of \fBUART Hardware Flow Control\fP\&. 
+.SS "uint32_t UART_InitTypeDef::Mode"
+Specifies whether the Receive or Transmit mode is enabled or disabled\&. This parameter can be a value of \fBUART Transfer Mode\fP\&. 
+.SS "uint32_t UART_InitTypeDef::OneBitSampling"
+Specifies whether a single sample or three samples' majority vote is selected\&. Selecting the single sample method increases the receiver tolerance to clock deviations\&. This parameter can be a value of \fBUART One Bit Sampling Method\fP\&. 
+.SS "uint32_t UART_InitTypeDef::OverSampling"
+Specifies whether the Over sampling 8 is enabled or disabled, to achieve higher speed (up to f_PCLK/8)\&. This parameter can be a value of \fBUART Over Sampling\fP\&. 
+.SS "uint32_t UART_InitTypeDef::Parity"
+Specifies the parity mode\&. This parameter can be a value of \fBUART Parity\fP 
+.PP
+\fBNote\fP
+.RS 4
+When parity is enabled, the computed parity is inserted at the MSB position of the transmitted data (9th bit when the word length is set to 9 data bits; 8th bit when the word length is set to 8 data bits)\&. 
+.RE
+.PP
+
+.SS "uint32_t UART_InitTypeDef::StopBits"
+Specifies the number of stop bits transmitted\&. This parameter can be a value of \fBUART Number of Stop Bits\fP\&. 
+.SS "uint32_t UART_InitTypeDef::WordLength"
+Specifies the number of data bits transmitted or received in a frame\&. This parameter can be a value of \fBUARTEx Word Length\fP\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

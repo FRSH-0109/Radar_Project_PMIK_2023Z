@@ -1,0 +1,35 @@
+.TH "HAL_IR_ENV_SEL" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+HAL_IR_ENV_SEL \- IR Modulation Envelope signal selection
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_IRDA_ENV_SEL_TIM16\fP   (\fBSYSCFG_CFGR1_IR_MOD_0\fP & \fBSYSCFG_CFGR1_IR_MOD_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_IRDA_ENV_SEL_USART1\fP   (\fBSYSCFG_CFGR1_IR_MOD_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_IRDA_ENV_SEL_USART2\fP   (\fBSYSCFG_CFGR1_IR_MOD_1\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define HAL_SYSCFG_IRDA_ENV_SEL_TIM16   (\fBSYSCFG_CFGR1_IR_MOD_0\fP & \fBSYSCFG_CFGR1_IR_MOD_1\fP)"
+00: Timer16 is selected as IR Modulation envelope source 
+.SS "#define HAL_SYSCFG_IRDA_ENV_SEL_USART1   (\fBSYSCFG_CFGR1_IR_MOD_0\fP)"
+01: USART1 is selected as IR Modulation envelope source 
+.SS "#define HAL_SYSCFG_IRDA_ENV_SEL_USART2   (\fBSYSCFG_CFGR1_IR_MOD_1\fP)"
+10: USART2 is selected as IR Modulation envelope source 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

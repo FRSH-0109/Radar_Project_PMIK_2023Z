@@ -1,0 +1,56 @@
+.TH "Configuration_section_for_CMSIS" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Configuration_section_for_CMSIS \- Configuration_section_for_CMSIS
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__CM0PLUS_REV\fP   0U"
+.br
+.RI "Configuration of the Cortex-M0+ Processor and Core Peripherals\&. "
+.ti -1c
+.RI "#define \fB__MPU_PRESENT\fP   1U"
+.br
+.ti -1c
+.RI "#define \fB__VTOR_PRESENT\fP   1U"
+.br
+.ti -1c
+.RI "#define \fB__NVIC_PRIO_BITS\fP   2U"
+.br
+.ti -1c
+.RI "#define \fB__Vendor_SysTickConfig\fP   0U"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __CM0PLUS_REV   0U"
+
+.PP
+Configuration of the Cortex-M0+ Processor and Core Peripherals\&. Core Revision r0p0 
+.br
+ 
+.SS "#define __MPU_PRESENT   1U"
+STM32G0xx provides an MPU 
+.br
+ 
+.SS "#define __NVIC_PRIO_BITS   2U"
+STM32G0xx uses 2 Bits for the Priority Levels 
+.SS "#define __Vendor_SysTickConfig   0U"
+Set to 1 if different SysTick Config is used 
+.br
+ 
+.SS "#define __VTOR_PRESENT   1U"
+Vector Table Register supported 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

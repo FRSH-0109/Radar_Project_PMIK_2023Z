@@ -1,0 +1,195 @@
+.TH "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h \- Header file of PWR HAL module\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32g0xx_hal_def\&.h'\fP
+.br
+\fC#include 'stm32g0xx_hal_pwr_ex\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN1\fP   \fBPWR_CR3_EWUP1\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN2\fP   \fBPWR_CR3_EWUP2\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN4\fP   \fBPWR_CR3_EWUP4\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN6\fP   \fBPWR_CR3_EWUP6\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN1_HIGH\fP   \fBPWR_CR3_EWUP1\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN2_HIGH\fP   \fBPWR_CR3_EWUP2\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN4_HIGH\fP   \fBPWR_CR3_EWUP4\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN6_HIGH\fP   \fBPWR_CR3_EWUP6\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN1_LOW\fP   ((\fBPWR_CR4_WP1\fP << \fBPWR_WUP_POLARITY_SHIFT\fP) | \fBPWR_CR3_EWUP1\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN2_LOW\fP   ((\fBPWR_CR4_WP2\fP << \fBPWR_WUP_POLARITY_SHIFT\fP) | \fBPWR_CR3_EWUP2\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN4_LOW\fP   ((\fBPWR_CR4_WP4\fP << \fBPWR_WUP_POLARITY_SHIFT\fP) | \fBPWR_CR3_EWUP4\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN6_LOW\fP   ((\fBPWR_CR4_WP6\fP << \fBPWR_WUP_POLARITY_SHIFT\fP) | \fBPWR_CR3_EWUP6\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_LOWPOWERMODE_STOP0\fP   (0x00000000u)"
+.br
+.ti -1c
+.RI "#define \fBPWR_LOWPOWERMODE_STOP1\fP   (\fBPWR_CR1_LPMS_0\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_LOWPOWERMODE_STANDBY\fP   (\fBPWR_CR1_LPMS_0\fP | \fBPWR_CR1_LPMS_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_MAINREGULATOR_ON\fP   (0x00000000u)"
+.br
+.ti -1c
+.RI "#define \fBPWR_LOWPOWERREGULATOR_ON\fP   \fBPWR_CR1_LPR\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_SLEEPENTRY_WFI\fP   ((uint8_t)0x01u)"
+.br
+.ti -1c
+.RI "#define \fBPWR_SLEEPENTRY_WFE\fP   ((uint8_t)0x02u)"
+.br
+.ti -1c
+.RI "#define \fBPWR_STOPENTRY_WFI\fP   ((uint8_t)0x01u)"
+.br
+.ti -1c
+.RI "#define \fBPWR_STOPENTRY_WFE\fP   ((uint8_t)0x02u)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_WUF1\fP   (0x00010000u | \fBPWR_SR1_WUF1\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_WUF2\fP   (0x00010000u | \fBPWR_SR1_WUF2\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_WUF4\fP   (0x00010000u | \fBPWR_SR1_WUF4\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_WUF6\fP   (0x00010000u | \fBPWR_SR1_WUF6\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_WUF\fP   (0x00010000u | \fBPWR_SR1_WUF\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_SB\fP   (0x00010000u | \fBPWR_SR1_SBF\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_WUFI\fP   (0x00010000u | \fBPWR_SR1_WUFI\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_FLASH_READY\fP   (0x00020000u | \fBPWR_SR2_FLASH_RDY\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_REGLPS\fP   (0x00020000u | \fBPWR_SR2_REGLPS\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_REGLPF\fP   (0x00020000u | \fBPWR_SR2_REGLPF\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_PWR_GET_FLAG\fP(__FLAG__)"
+.br
+.RI "Check whether or not a specific PWR flag is set\&. "
+.ti -1c
+.RI "#define \fB__HAL_PWR_CLEAR_FLAG\fP(__FLAG__)   (\fBPWR\fP\->SCR = (__FLAG__))"
+.br
+.RI "Clear a specific PWR flag\&. "
+.ti -1c
+.RI "#define \fBPWR_WUP_POLARITY_SHIFT\fP   0x08u"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_WAKEUP_PIN\fP(PIN)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_REGULATOR\fP(REGULATOR)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_SLEEP_ENTRY\fP(ENTRY)"
+.br
+.ti -1c
+.RI "#define \fBIS_PWR_STOP_ENTRY\fP(ENTRY)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBHAL_PWR_DeInit\fP (void)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWR_EnableBkUpAccess\fP (void)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWR_DisableBkUpAccess\fP (void)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWR_EnableWakeUpPin\fP (uint32_t WakeUpPinPolarity)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWR_DisableWakeUpPin\fP (uint32_t WakeUpPinx)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWR_EnterSLEEPMode\fP (uint32_t Regulator, uint8_t SLEEPEntry)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWR_EnterSTOPMode\fP (uint32_t Regulator, uint8_t STOPEntry)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWR_EnterSTANDBYMode\fP (void)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWR_EnableSleepOnExit\fP (void)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWR_DisableSleepOnExit\fP (void)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWR_EnableSEVOnPend\fP (void)"
+.br
+.ti -1c
+.RI "void \fBHAL_PWR_DisableSEVOnPend\fP (void)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file of PWR HAL module\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBAttention\fP
+.RS 4
+.RE
+.PP
+Copyright (c) 2018 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

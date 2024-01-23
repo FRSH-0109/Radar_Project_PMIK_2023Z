@@ -1,0 +1,232 @@
+.TH "RCC_APB2_Clock_Enable_Disable" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_APB2_Clock_Enable_Disable \- APB2 Peripheral Clock Enable Disable
+.PP
+ \- Enable or disable the APB2 peripheral clock\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_RCC_SYSCFG_CLK_ENABLE\fP()"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM1_CLK_ENABLE\fP()"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_SPI1_CLK_ENABLE\fP()"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_USART1_CLK_ENABLE\fP()"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM14_CLK_ENABLE\fP()"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM16_CLK_ENABLE\fP()"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM17_CLK_ENABLE\fP()"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_ADC_CLK_ENABLE\fP()"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM3_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_TIM3EN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_RTCAPB_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_RTCAPBEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_SPI2_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_SPI2EN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_USART2_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_USART2EN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_I2C1_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_I2C1EN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_I2C2_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_I2C2EN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_DBGMCU_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_DBGEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_PWR_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_PWREN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_SYSCFG_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR2, \fBRCC_APBENR2_SYSCFGEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM1_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR2, \fBRCC_APBENR2_TIM1EN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_SPI1_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR2, \fBRCC_APBENR2_SPI1EN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_USART1_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR2, \fBRCC_APBENR2_USART1EN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM14_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR2, \fBRCC_APBENR2_TIM14EN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM16_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR2, \fBRCC_APBENR2_TIM16EN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_TIM17_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR2, \fBRCC_APBENR2_TIM17EN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_ADC_CLK_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR2, \fBRCC_APBENR2_ADCEN\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Enable or disable the APB2 peripheral clock\&. 
+
+
+.PP
+\fBNote\fP
+.RS 4
+After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it\&. 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_RCC_ADC_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR2, \fBRCC_APBENR2_ADCEN\fP)"
+
+.SS "#define __HAL_RCC_ADC_CLK_ENABLE()"
+\fBValue:\fP.PP
+.nf
+                                                  do { \\
+                                                  __IO uint32_t tmpreg; \\
+                                                  SET_BIT(RCC\->APBENR2, RCC_APBENR2_ADCEN); \\
+ /* Delay after an RCC peripheral clock enabling */ \\
+                                                  tmpreg = READ_BIT(RCC\->APBENR2, RCC_APBENR2_ADCEN); \\
+                                                  UNUSED(tmpreg); \\
+                                                } while(0U)
+.fi
+
+.SS "#define __HAL_RCC_DBGMCU_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_DBGEN\fP)"
+
+.SS "#define __HAL_RCC_I2C1_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_I2C1EN\fP)"
+
+.SS "#define __HAL_RCC_I2C2_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_I2C2EN\fP)"
+
+.SS "#define __HAL_RCC_PWR_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_PWREN\fP)"
+
+.SS "#define __HAL_RCC_RTCAPB_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_RTCAPBEN\fP)"
+
+.SS "#define __HAL_RCC_SPI1_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR2, \fBRCC_APBENR2_SPI1EN\fP)"
+
+.SS "#define __HAL_RCC_SPI1_CLK_ENABLE()"
+\fBValue:\fP.PP
+.nf
+                                                    do { \\
+                                                    __IO uint32_t tmpreg; \\
+                                                    SET_BIT(RCC\->APBENR2, RCC_APBENR2_SPI1EN); \\
+   /* Delay after an RCC peripheral clock enabling */ \\
+                                                    tmpreg = READ_BIT(RCC\->APBENR2, RCC_APBENR2_SPI1EN); \\
+                                                    UNUSED(tmpreg); \\
+                                                  } while(0U)
+.fi
+
+.SS "#define __HAL_RCC_SPI2_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_SPI2EN\fP)"
+
+.SS "#define __HAL_RCC_SYSCFG_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR2, \fBRCC_APBENR2_SYSCFGEN\fP)"
+
+.SS "#define __HAL_RCC_SYSCFG_CLK_ENABLE()"
+\fBValue:\fP.PP
+.nf
+                                                    do { \\
+                                                    __IO uint32_t tmpreg; \\
+                                                    SET_BIT(RCC\->APBENR2, RCC_APBENR2_SYSCFGEN); \\
+   /* Delay after an RCC peripheral clock enabling */ \\
+                                                    tmpreg = READ_BIT(RCC\->APBENR2, RCC_APBENR2_SYSCFGEN); \\
+                                                    UNUSED(tmpreg); \\
+                                                  } while(0U)
+.fi
+
+.SS "#define __HAL_RCC_TIM14_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR2, \fBRCC_APBENR2_TIM14EN\fP)"
+
+.SS "#define __HAL_RCC_TIM14_CLK_ENABLE()"
+\fBValue:\fP.PP
+.nf
+                                                     do { \\
+                                                     __IO uint32_t tmpreg; \\
+                                                     SET_BIT(RCC\->APBENR2, RCC_APBENR2_TIM14EN); \\
+    /* Delay after an RCC peripheral clock enabling */ \\
+                                                     tmpreg = READ_BIT(RCC\->APBENR2, RCC_APBENR2_TIM14EN); \\
+                                                     UNUSED(tmpreg); \\
+                                                   } while(0U)
+.fi
+
+.SS "#define __HAL_RCC_TIM16_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR2, \fBRCC_APBENR2_TIM16EN\fP)"
+
+.SS "#define __HAL_RCC_TIM16_CLK_ENABLE()"
+\fBValue:\fP.PP
+.nf
+                                                    do { \\
+                                                    __IO uint32_t tmpreg; \\
+                                                    SET_BIT(RCC\->APBENR2, RCC_APBENR2_TIM16EN); \\
+   /* Delay after an RCC peripheral clock enabling */ \\
+                                                    tmpreg = READ_BIT(RCC\->APBENR2, RCC_APBENR2_TIM16EN); \\
+                                                    UNUSED(tmpreg); \\
+                                                  } while(0U)
+.fi
+
+.SS "#define __HAL_RCC_TIM17_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR2, \fBRCC_APBENR2_TIM17EN\fP)"
+
+.SS "#define __HAL_RCC_TIM17_CLK_ENABLE()"
+\fBValue:\fP.PP
+.nf
+                                                    do { \\
+                                                    __IO uint32_t tmpreg; \\
+                                                    SET_BIT(RCC\->APBENR2, RCC_APBENR2_TIM17EN); \\
+   /* Delay after an RCC peripheral clock enabling */ \\
+                                                    tmpreg = READ_BIT(RCC\->APBENR2, RCC_APBENR2_TIM17EN); \\
+                                                    UNUSED(tmpreg); \\
+                                                  } while(0U)
+.fi
+
+.SS "#define __HAL_RCC_TIM1_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR2, \fBRCC_APBENR2_TIM1EN\fP)"
+
+.SS "#define __HAL_RCC_TIM1_CLK_ENABLE()"
+\fBValue:\fP.PP
+.nf
+                                                    do { \\
+                                                    __IO uint32_t tmpreg; \\
+                                                    SET_BIT(RCC\->APBENR2, RCC_APBENR2_TIM1EN); \\
+   /* Delay after an RCC peripheral clock enabling */ \\
+                                                    tmpreg = READ_BIT(RCC\->APBENR2, RCC_APBENR2_TIM1EN); \\
+                                                    UNUSED(tmpreg); \\
+                                                  } while(0U)
+.fi
+
+.SS "#define __HAL_RCC_TIM3_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_TIM3EN\fP)"
+
+.SS "#define __HAL_RCC_USART1_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR2, \fBRCC_APBENR2_USART1EN\fP)"
+
+.SS "#define __HAL_RCC_USART1_CLK_ENABLE()"
+\fBValue:\fP.PP
+.nf
+                                                    do { \\
+                                                    __IO uint32_t tmpreg; \\
+                                                    SET_BIT(RCC\->APBENR2, RCC_APBENR2_USART1EN); \\
+   /* Delay after an RCC peripheral clock enabling */ \\
+                                                    tmpreg = READ_BIT(RCC\->APBENR2, RCC_APBENR2_USART1EN); \\
+                                                    UNUSED(tmpreg); \\
+                                                  } while(0U)
+.fi
+
+.SS "#define __HAL_RCC_USART2_CLK_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->APBENR1, \fBRCC_APBENR1_USART2EN\fP)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

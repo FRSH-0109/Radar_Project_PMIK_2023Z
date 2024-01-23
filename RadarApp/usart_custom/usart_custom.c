@@ -1,24 +1,18 @@
-/*H**********************************************************************
- * FILENAME :        usart_custom.c
+/**
+ * @file usart_custom.c
  *
- * DESCRIPTION :
- *        Handling uarts transmit/receive operations by DMA.
+ * @brief Source file for custom uart handling, consists of all used
+ * variables, enums or functions that are connected directly with uart communication.
  *
- * PUBLIC FUNCTIONS :
- *       void     UartCustomInit(UART_Custom_HandleTypeDef *,  UART_HandleTypeDef *)
- *       void     void uartCustomReceiveDMA(UART_Custom_HandleTypeDef *huartCustom)
- *       void     uartCustomTransmitDMA(UART_Custom_HandleTypeDef *huartCustom, uint8_t msgLen)
- *
- * AUTHOR :    Kamil Kośnik        START DATE :    18 July 2022
- *
- *H*/
+ * @author Kamil Kosnik, Kacper Radzikowski
+ * @see https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z
+ */
 #include <stdio.h>
 #include "usart.h"
 #include <stm32g0xx_hal_dma.h>
 #include "usart_custom.h"
 #include "radar.h"
 
-//extern const uint8_t softVersion[3];////////////////////////////////version of software////////////////////////////////////
 extern UART_Custom_HandleTypeDef huartPC;
 extern DMA_HandleTypeDef hdma_usart1_rx;
 extern DMA_HandleTypeDef hdma_usart1_tx;
@@ -26,11 +20,6 @@ extern UART_Queue uartQueuePC;
 extern radarStruct radar;
 extern drawHelperStruct drawHelper;
 
-//Initialization of custom uart struct instance
-//@param  huartCustom - instance of custom uart struct
-//@param  huart - instance of HAL uart UART_handleTypeDef struct
-//@param  dataRxMaxLen - maximum length of received data by uart DMA
-//@param  dataTxMaxLen - maximum length of transmitted data by uart DMA
 void uartCustomInit(UART_Custom_HandleTypeDef *huartCustom, UART_HandleTypeDef *huart, uint16_t rxDataLen, uint16_t txDataLen)
 {
 	huartCustom->huart = huart;
@@ -40,17 +29,12 @@ void uartCustomInit(UART_Custom_HandleTypeDef *huartCustom, UART_HandleTypeDef *
 	huartCustom->dataTxMaxLen = txDataLen;
 }
 
-//Receive data through uart dma until idle state or maximum bytes received
-//@param  huartCustom - instance of custom uart struct
 inline HAL_StatusTypeDef uartCustomReceiveDMA(UART_Custom_HandleTypeDef *huartCustom)
 {
 	__HAL_UART_SEND_REQ(huartCustom->huart, UART_RXDATA_FLUSH_REQUEST);
 	return HAL_UARTEx_ReceiveToIdle_DMA(huartCustom->huart, (uint8_t*) huartCustom->dataRx, huartCustom->dataRxMaxLen);
 }
 
-//Transmit data through uart dma
-//@param  huartCustom - instance of custom uart struct
-//@param  msgLen - amount of bytes to be sent
 inline HAL_StatusTypeDef uartCustomTransmitDMA(UART_Custom_HandleTypeDef *huartCustom, uint16_t msgLen)
 {
 	if(huartCustom == &huartPC)
@@ -61,7 +45,6 @@ inline HAL_StatusTypeDef uartCustomTransmitDMA(UART_Custom_HandleTypeDef *huartC
 	return HAL_BUSY;
 }
 
-//PARSER
 static bool CommandSearchForString(uint8_t *data, uint16_t dataLen, const char* str)
 {
 	if(dataLen >= strlen(str))

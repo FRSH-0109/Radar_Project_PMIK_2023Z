@@ -1,0 +1,69 @@
+\doxysubsubsubsection{AHB Peripheral Clock Enabled or Disabled Status}
+\hypertarget{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status}{}\label{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status}\index{AHB Peripheral Clock Enabled or Disabled Status@{AHB Peripheral Clock Enabled or Disabled Status}}
+
+
+Check whether the AHB peripheral clock is enabled or not.  
+
+
+\doxysubsubsubsubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_gaab05e603c9cadd72e4b6397837b46cef}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+DMA1\+\_\+\+IS\+\_\+\+CLK\+\_\+\+ENABLED}}()~(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\+\_\+\+BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/$>$AHBENR, \mbox{\hyperlink{group___peripheral___registers___bits___definition_gac8c3053f1ce37c9f643f0e31471927ea}{RCC\+\_\+\+AHBENR\+\_\+\+DMA1\+EN}})  != \mbox{\hyperlink{group___exported__types_gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}})
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_gacc14db2565af722699ef4b29221d2acd}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+FLASH\+\_\+\+IS\+\_\+\+CLK\+\_\+\+ENABLED}}()~(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\+\_\+\+BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/$>$AHBENR, \mbox{\hyperlink{group___peripheral___registers___bits___definition_gac8d9c84356530f36e7b349d38c033928}{RCC\+\_\+\+AHBENR\+\_\+\+FLASHEN}}) != \mbox{\hyperlink{group___exported__types_gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}})
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_ga0e1b25cbf589c1c47c1d069e4c803d56}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+CRC\+\_\+\+IS\+\_\+\+CLK\+\_\+\+ENABLED}}()~(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\+\_\+\+BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/$>$AHBENR, \mbox{\hyperlink{group___peripheral___registers___bits___definition_gade3ee302bf659a2bfbf75e1a00630242}{RCC\+\_\+\+AHBENR\+\_\+\+CRCEN}})   != \mbox{\hyperlink{group___exported__types_gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}})
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_gae89d94d6252c79e450623f69eb939ed6}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+DMA1\+\_\+\+IS\+\_\+\+CLK\+\_\+\+DISABLED}}()~(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\+\_\+\+BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/$>$AHBENR, \mbox{\hyperlink{group___peripheral___registers___bits___definition_gac8c3053f1ce37c9f643f0e31471927ea}{RCC\+\_\+\+AHBENR\+\_\+\+DMA1\+EN}})  == \mbox{\hyperlink{group___exported__types_gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}})
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_ga2a09cde9411c951a02b82ef8b5129d6d}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+FLASH\+\_\+\+IS\+\_\+\+CLK\+\_\+\+DISABLED}}()~(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\+\_\+\+BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/$>$AHBENR, \mbox{\hyperlink{group___peripheral___registers___bits___definition_gac8d9c84356530f36e7b349d38c033928}{RCC\+\_\+\+AHBENR\+\_\+\+FLASHEN}}) == \mbox{\hyperlink{group___exported__types_gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}})
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_ga3d2645916b9ee9bad8c724a719c621d9}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+CRC\+\_\+\+IS\+\_\+\+CLK\+\_\+\+DISABLED}}()~(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\+\_\+\+BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/$>$AHBENR, \mbox{\hyperlink{group___peripheral___registers___bits___definition_gade3ee302bf659a2bfbf75e1a00630242}{RCC\+\_\+\+AHBENR\+\_\+\+CRCEN}})   == \mbox{\hyperlink{group___exported__types_gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsection{Detailed Description}
+Check whether the AHB peripheral clock is enabled or not. 
+
+\begin{DoxyNote}{Note}
+After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it. 
+\end{DoxyNote}
+
+
+\doxysubsubsubsubsection{Macro Definition Documentation}
+\Hypertarget{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_ga3d2645916b9ee9bad8c724a719c621d9}\label{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_ga3d2645916b9ee9bad8c724a719c621d9} 
+\index{AHB Peripheral Clock Enabled or Disabled Status@{AHB Peripheral Clock Enabled or Disabled Status}!\_\_HAL\_RCC\_CRC\_IS\_CLK\_DISABLED@{\_\_HAL\_RCC\_CRC\_IS\_CLK\_DISABLED}}
+\index{\_\_HAL\_RCC\_CRC\_IS\_CLK\_DISABLED@{\_\_HAL\_RCC\_CRC\_IS\_CLK\_DISABLED}!AHB Peripheral Clock Enabled or Disabled Status@{AHB Peripheral Clock Enabled or Disabled Status}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_CRC\_IS\_CLK\_DISABLED}{\_\_HAL\_RCC\_CRC\_IS\_CLK\_DISABLED}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+CRC\+\_\+\+IS\+\_\+\+CLK\+\_\+\+DISABLED(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\+\_\+\+BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/$>$AHBENR, \mbox{\hyperlink{group___peripheral___registers___bits___definition_gade3ee302bf659a2bfbf75e1a00630242}{RCC\+\_\+\+AHBENR\+\_\+\+CRCEN}})   == \mbox{\hyperlink{group___exported__types_gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}})}
+
+\Hypertarget{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_ga0e1b25cbf589c1c47c1d069e4c803d56}\label{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_ga0e1b25cbf589c1c47c1d069e4c803d56} 
+\index{AHB Peripheral Clock Enabled or Disabled Status@{AHB Peripheral Clock Enabled or Disabled Status}!\_\_HAL\_RCC\_CRC\_IS\_CLK\_ENABLED@{\_\_HAL\_RCC\_CRC\_IS\_CLK\_ENABLED}}
+\index{\_\_HAL\_RCC\_CRC\_IS\_CLK\_ENABLED@{\_\_HAL\_RCC\_CRC\_IS\_CLK\_ENABLED}!AHB Peripheral Clock Enabled or Disabled Status@{AHB Peripheral Clock Enabled or Disabled Status}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_CRC\_IS\_CLK\_ENABLED}{\_\_HAL\_RCC\_CRC\_IS\_CLK\_ENABLED}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+CRC\+\_\+\+IS\+\_\+\+CLK\+\_\+\+ENABLED(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\+\_\+\+BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/$>$AHBENR, \mbox{\hyperlink{group___peripheral___registers___bits___definition_gade3ee302bf659a2bfbf75e1a00630242}{RCC\+\_\+\+AHBENR\+\_\+\+CRCEN}})   != \mbox{\hyperlink{group___exported__types_gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}})}
+
+\Hypertarget{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_gae89d94d6252c79e450623f69eb939ed6}\label{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_gae89d94d6252c79e450623f69eb939ed6} 
+\index{AHB Peripheral Clock Enabled or Disabled Status@{AHB Peripheral Clock Enabled or Disabled Status}!\_\_HAL\_RCC\_DMA1\_IS\_CLK\_DISABLED@{\_\_HAL\_RCC\_DMA1\_IS\_CLK\_DISABLED}}
+\index{\_\_HAL\_RCC\_DMA1\_IS\_CLK\_DISABLED@{\_\_HAL\_RCC\_DMA1\_IS\_CLK\_DISABLED}!AHB Peripheral Clock Enabled or Disabled Status@{AHB Peripheral Clock Enabled or Disabled Status}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_DMA1\_IS\_CLK\_DISABLED}{\_\_HAL\_RCC\_DMA1\_IS\_CLK\_DISABLED}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+DMA1\+\_\+\+IS\+\_\+\+CLK\+\_\+\+DISABLED(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\+\_\+\+BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/$>$AHBENR, \mbox{\hyperlink{group___peripheral___registers___bits___definition_gac8c3053f1ce37c9f643f0e31471927ea}{RCC\+\_\+\+AHBENR\+\_\+\+DMA1\+EN}})  == \mbox{\hyperlink{group___exported__types_gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}})}
+
+\Hypertarget{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_gaab05e603c9cadd72e4b6397837b46cef}\label{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_gaab05e603c9cadd72e4b6397837b46cef} 
+\index{AHB Peripheral Clock Enabled or Disabled Status@{AHB Peripheral Clock Enabled or Disabled Status}!\_\_HAL\_RCC\_DMA1\_IS\_CLK\_ENABLED@{\_\_HAL\_RCC\_DMA1\_IS\_CLK\_ENABLED}}
+\index{\_\_HAL\_RCC\_DMA1\_IS\_CLK\_ENABLED@{\_\_HAL\_RCC\_DMA1\_IS\_CLK\_ENABLED}!AHB Peripheral Clock Enabled or Disabled Status@{AHB Peripheral Clock Enabled or Disabled Status}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_DMA1\_IS\_CLK\_ENABLED}{\_\_HAL\_RCC\_DMA1\_IS\_CLK\_ENABLED}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+DMA1\+\_\+\+IS\+\_\+\+CLK\+\_\+\+ENABLED(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\+\_\+\+BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/$>$AHBENR, \mbox{\hyperlink{group___peripheral___registers___bits___definition_gac8c3053f1ce37c9f643f0e31471927ea}{RCC\+\_\+\+AHBENR\+\_\+\+DMA1\+EN}})  != \mbox{\hyperlink{group___exported__types_gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}})}
+
+\Hypertarget{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_ga2a09cde9411c951a02b82ef8b5129d6d}\label{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_ga2a09cde9411c951a02b82ef8b5129d6d} 
+\index{AHB Peripheral Clock Enabled or Disabled Status@{AHB Peripheral Clock Enabled or Disabled Status}!\_\_HAL\_RCC\_FLASH\_IS\_CLK\_DISABLED@{\_\_HAL\_RCC\_FLASH\_IS\_CLK\_DISABLED}}
+\index{\_\_HAL\_RCC\_FLASH\_IS\_CLK\_DISABLED@{\_\_HAL\_RCC\_FLASH\_IS\_CLK\_DISABLED}!AHB Peripheral Clock Enabled or Disabled Status@{AHB Peripheral Clock Enabled or Disabled Status}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_FLASH\_IS\_CLK\_DISABLED}{\_\_HAL\_RCC\_FLASH\_IS\_CLK\_DISABLED}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+FLASH\+\_\+\+IS\+\_\+\+CLK\+\_\+\+DISABLED(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\+\_\+\+BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/$>$AHBENR, \mbox{\hyperlink{group___peripheral___registers___bits___definition_gac8d9c84356530f36e7b349d38c033928}{RCC\+\_\+\+AHBENR\+\_\+\+FLASHEN}}) == \mbox{\hyperlink{group___exported__types_gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}})}
+
+\Hypertarget{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_gacc14db2565af722699ef4b29221d2acd}\label{group___r_c_c___a_h_b___peripheral___clock___enabled___disabled___status_gacc14db2565af722699ef4b29221d2acd} 
+\index{AHB Peripheral Clock Enabled or Disabled Status@{AHB Peripheral Clock Enabled or Disabled Status}!\_\_HAL\_RCC\_FLASH\_IS\_CLK\_ENABLED@{\_\_HAL\_RCC\_FLASH\_IS\_CLK\_ENABLED}}
+\index{\_\_HAL\_RCC\_FLASH\_IS\_CLK\_ENABLED@{\_\_HAL\_RCC\_FLASH\_IS\_CLK\_ENABLED}!AHB Peripheral Clock Enabled or Disabled Status@{AHB Peripheral Clock Enabled or Disabled Status}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_FLASH\_IS\_CLK\_ENABLED}{\_\_HAL\_RCC\_FLASH\_IS\_CLK\_ENABLED}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+FLASH\+\_\+\+IS\+\_\+\+CLK\+\_\+\+ENABLED(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\+\_\+\+BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/$>$AHBENR, \mbox{\hyperlink{group___peripheral___registers___bits___definition_gac8d9c84356530f36e7b349d38c033928}{RCC\+\_\+\+AHBENR\+\_\+\+FLASHEN}}) != \mbox{\hyperlink{group___exported__types_gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05}{RESET}})}
+

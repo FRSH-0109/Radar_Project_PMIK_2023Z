@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___f_l_a_s_h___private___constants" kind="group">
+    <compoundname>FLASH_Private_Constants</compoundname>
+    <title>FLASH Private Constants</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_l_a_s_h___private___constants_1ga2329f89a17061e62bf5d160cc0962e5c" prot="public" static="no">
+        <name>FLASH_SIZE_DATA_REGISTER</name>
+        <initializer><ref refid="group___peripheral__memory__map_1ga776d985f2d4d40b588ef6ca9d573af78" kindref="member">FLASHSIZE_BASE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="874" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="874" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___constants_1gaa9034a4a03acf9350fa141303b5ab86a" prot="public" static="no">
+        <name>FLASH_BANK_SIZE</name>
+        <initializer>(<ref refid="group___peripheral__memory__map_1gae69620948dea1b76e0ab7843ab719db7" kindref="member">FLASH_SIZE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Bank Size </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="888" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="888" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___constants_1ga4cc14e2c99ae7f8e5a8e371d03c8532c" prot="public" static="no">
+        <name>FLASH_PAGE_SIZE</name>
+        <initializer>0x00000800U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Page Size, 2 KBytes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="891" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="891" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___constants_1ga3d98541dcb89735b8d2fd559b75d1ebf" prot="public" static="no">
+        <name>FLASH_PAGE_NB</name>
+        <initializer>(<ref refid="group___f_l_a_s_h___private___constants_1gaa9034a4a03acf9350fa141303b5ab86a" kindref="member">FLASH_BANK_SIZE</ref>/<ref refid="group___f_l_a_s_h___private___constants_1ga4cc14e2c99ae7f8e5a8e371d03c8532c" kindref="member">FLASH_PAGE_SIZE</ref>) /* Number of pages per bank */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="892" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="892" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___constants_1ga76e8ea58ef37913dcdb61efae2d6ab8f" prot="public" static="no">
+        <name>FLASH_TIMEOUT_VALUE</name>
+        <initializer>1000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Execution Timeout, 1 s </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="893" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="893" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___constants_1ga9f4e94ec0af00dc7fc7632b9d4112720" prot="public" static="no">
+        <name>FLASH_TYPENONE</name>
+        <initializer>0x00000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>No programming Procedure On Going </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="894" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="894" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___constants_1ga58a73aff56bdb7f5b8b85639ff6809cb" prot="public" static="no">
+        <name>FLASH_SR_ERRORS</name>
+        <initializer>                                         (<ref refid="group___peripheral___registers___bits___definition_1ga572ae889294e816eb130362cdb6193b2" kindref="member">FLASH_SR_OPERR</ref>  | <ref refid="group___peripheral___registers___bits___definition_1ga94268613a9ded4f23d2f2ddfdcd64e52" kindref="member">FLASH_SR_PROGERR</ref> | <ref refid="group___peripheral___registers___bits___definition_1gabf6f52f59b01530928d747cf32bd4d01" kindref="member">FLASH_SR_WRPERR</ref> | \
+                                         <ref refid="group___peripheral___registers___bits___definition_1gac98c2458e114e7f419f3222673878ce0" kindref="member">FLASH_SR_PGAERR</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga16d3e511fc0a438812ae9bb44e93e387" kindref="member">FLASH_SR_SIZERR</ref>  | <ref refid="group___peripheral___registers___bits___definition_1ga5d76ad3629a288bee0136b8b34f274f4" kindref="member">FLASH_SR_PGSERR</ref> |  \
+                                         <ref refid="group___peripheral___registers___bits___definition_1gabb8f37b970a127db71bb4409ff276629" kindref="member">FLASH_SR_MISERR</ref> | <ref refid="group___peripheral___registers___bits___definition_1ga84c0ca5e45806c2b63b22b9d94f589b3" kindref="member">FLASH_SR_FASTERR</ref> |                    \
+                                         <ref refid="group___peripheral___registers___bits___definition_1ga9c4f055b363ae642d291d73a68eb787d" kindref="member">FLASH_SR_OPTVERR</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>All SR error flags </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="902" column="10" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="902" bodyend="905"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___constants_1ga300fa40384ef7d2f9c9dca779fb0efd3" prot="public" static="no">
+        <name>FLASH_SR_CLEAR</name>
+        <initializer>(<ref refid="group___f_l_a_s_h___private___constants_1ga58a73aff56bdb7f5b8b85639ff6809cb" kindref="member">FLASH_SR_ERRORS</ref> | <ref refid="group___peripheral___registers___bits___definition_1gae1301c6b487cfefa247c54a576a0c12b" kindref="member">FLASH_SR_EOP</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="911" column="10" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="911" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___constants_1ga6b1670eca07964e3048818440462953f" prot="public" static="no">
+        <name>FLASH_FLAG_REG_POS</name>
+        <initializer>16u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="915" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="915" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___constants_1ga4b139864ff344bbc0c68d3b9ab35a4a7" prot="public" static="no">
+        <name>FLASH_FLAG_SR_ID</name>
+        <initializer>1u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="916" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="916" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___constants_1ga640f48347791c15967d7eeda287f66c9" prot="public" static="no">
+        <name>FLASH_FLAG_CR_ID</name>
+        <initializer>2u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="917" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="917" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___constants_1ga12fc6723eee1c92a9ccbbea964c69e81" prot="public" static="no">
+        <name>FLASH_FLAG_ECCR1_ID</name>
+        <initializer>4u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="918" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="918" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___private___constants_1gad53ca50925d6869ab0e65cf0f8c96dc8" prot="public" static="no">
+        <name>FLASH_FLAG_ECCR2_ID</name>
+        <initializer>8u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="919" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="919" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

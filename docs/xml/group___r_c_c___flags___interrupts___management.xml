@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___r_c_c___flags___interrupts___management" kind="group">
+    <compoundname>RCC_Flags_Interrupts_Management</compoundname>
+    <title>Flags Interrupts Management</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_c_c___flags___interrupts___management_1ga180fb20a37b31a6e4f7e59213a6c0405" prot="public" static="no">
+        <name>__HAL_RCC_ENABLE_IT</name>
+        <param><defname>__INTERRUPT__</defname></param>
+        <initializer><ref refid="group___exported__macros_1ga26474f43799fbade9cf300e21dd3a91a" kindref="member">SET_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CIER, (__INTERRUPT__))</initializer>
+        <briefdescription>
+<para>Enable RCC interrupt. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>__INTERRUPT__</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the RCC interrupt sources to be enabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para><ref refid="group___r_c_c___interrupt_1ga2b4ef277c1b71f96e0bef4b9a72fca94" kindref="member">RCC_IT_LSIRDY</ref> LSI ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1gad6b6e78a426850f595ef180d292a673d" kindref="member">RCC_IT_LSERDY</ref> LSE ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1ga69637e51b71f73f519c8c0a0613d042f" kindref="member">RCC_IT_HSIRDY</ref> HSI ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1gad13eaede352bca59611e6cae68665866" kindref="member">RCC_IT_HSERDY</ref> HSE ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1ga68d48e7811fb58f2649dce6cf0d823d9" kindref="member">RCC_IT_PLLRDY</ref> Main PLL ready interrupt  </para>
+</listitem>
+</itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2969" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2969" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___flags___interrupts___management_1gafc4df8cd4df0a529d11f18bf1f7e9f50" prot="public" static="no">
+        <name>__HAL_RCC_DISABLE_IT</name>
+        <param><defname>__INTERRUPT__</defname></param>
+        <initializer><ref refid="group___exported__macros_1ga133aae6fc0d41bffab39ab223a7001de" kindref="member">CLEAR_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CIER, (__INTERRUPT__))</initializer>
+        <briefdescription>
+<para>Disable RCC interrupt. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>__INTERRUPT__</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the RCC interrupt sources to be disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para><ref refid="group___r_c_c___interrupt_1ga2b4ef277c1b71f96e0bef4b9a72fca94" kindref="member">RCC_IT_LSIRDY</ref> LSI ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1gad6b6e78a426850f595ef180d292a673d" kindref="member">RCC_IT_LSERDY</ref> LSE ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1ga69637e51b71f73f519c8c0a0613d042f" kindref="member">RCC_IT_HSIRDY</ref> HSI ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1gad13eaede352bca59611e6cae68665866" kindref="member">RCC_IT_HSERDY</ref> HSE ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1ga68d48e7811fb58f2649dce6cf0d823d9" kindref="member">RCC_IT_PLLRDY</ref> Main PLL ready interrupt  </para>
+</listitem>
+</itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2984" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2984" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___flags___interrupts___management_1ga9d8ab157f58045b8daf8136bee54f139" prot="public" static="no">
+        <name>__HAL_RCC_CLEAR_IT</name>
+        <param><defname>__INTERRUPT__</defname></param>
+        <initializer>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CICR = (__INTERRUPT__))</initializer>
+        <briefdescription>
+<para>Clear RCC interrupt pending bits. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>__INTERRUPT__</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the interrupt pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem><para><ref refid="group___r_c_c___interrupt_1ga2b4ef277c1b71f96e0bef4b9a72fca94" kindref="member">RCC_IT_LSIRDY</ref> LSI ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1gad6b6e78a426850f595ef180d292a673d" kindref="member">RCC_IT_LSERDY</ref> LSE ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1ga69637e51b71f73f519c8c0a0613d042f" kindref="member">RCC_IT_HSIRDY</ref> HSI ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1gad13eaede352bca59611e6cae68665866" kindref="member">RCC_IT_HSERDY</ref> HSE ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1ga68d48e7811fb58f2649dce6cf0d823d9" kindref="member">RCC_IT_PLLRDY</ref> Main PLL ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1ga9bb34a4912d2084dc1c0834eb53aa7a3" kindref="member">RCC_IT_CSS</ref> HSE Clock security system interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1gaf3f259914cb56820b1649c9d4413736c" kindref="member">RCC_IT_LSECSS</ref> LSE Clock security system interrupt  </para>
+</listitem>
+</itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3001" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="3001" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___flags___interrupts___management_1ga134af980b892f362c05ae21922cd828d" prot="public" static="no">
+        <name>__HAL_RCC_GET_IT</name>
+        <param><defname>__INTERRUPT__</defname></param>
+        <initializer>((<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CIFR &amp; (__INTERRUPT__)) == (__INTERRUPT__))</initializer>
+        <briefdescription>
+<para>Check whether the RCC interrupt has occurred or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>__INTERRUPT__</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the RCC interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para><ref refid="group___r_c_c___interrupt_1ga2b4ef277c1b71f96e0bef4b9a72fca94" kindref="member">RCC_IT_LSIRDY</ref> LSI ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1gad6b6e78a426850f595ef180d292a673d" kindref="member">RCC_IT_LSERDY</ref> LSE ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1ga69637e51b71f73f519c8c0a0613d042f" kindref="member">RCC_IT_HSIRDY</ref> HSI ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1gad13eaede352bca59611e6cae68665866" kindref="member">RCC_IT_HSERDY</ref> HSE ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1ga68d48e7811fb58f2649dce6cf0d823d9" kindref="member">RCC_IT_PLLRDY</ref> Main PLL ready interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1ga9bb34a4912d2084dc1c0834eb53aa7a3" kindref="member">RCC_IT_CSS</ref> HSE Clock security system interrupt </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___interrupt_1gaf3f259914cb56820b1649c9d4413736c" kindref="member">RCC_IT_LSECSS</ref> LSE Clock security system interrupt  </para>
+</listitem>
+</itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of <bold>INTERRUPT</bold> (TRUE or FALSE). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3018" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="3018" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___flags___interrupts___management_1gaf28c11b36035ef1e27883ff7ee2c46b0" prot="public" static="no">
+        <name>__HAL_RCC_CLEAR_RESET_FLAGS</name>
+        <param></param>
+        <initializer>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CSR |= <ref refid="group___peripheral___registers___bits___definition_1gafc26c5996b14005a70afbeaa29aae716" kindref="member">RCC_CSR_RMVF</ref>)</initializer>
+        <briefdescription>
+<para>Set RMVF bit to clear the reset flags. The reset flags are: RCC_FLAG_OBLRST, RCC_FLAG_PINRST, RCC_FLAG_PWRRST, RCC_FLAG_SFTRST, RCC_FLAG_IWDGRST, RCC_FLAG_WWDGRST and RCC_FLAG_LPWRRST. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3025" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="3025" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___flags___interrupts___management_1gae2d7d461630562bf2a2ddb31b1f96449" prot="public" static="no">
+        <name>__HAL_RCC_GET_FLAG</name>
+        <param><defname>__FLAG__</defname></param>
+        <initializer>  (((((((__FLAG__) &gt;&gt; 5U) == <ref refid="group___r_c_c___private___constants_1ga56feb1abcd35b22427fa55164c585afa" kindref="member">CR_REG_INDEX</ref>) ? <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CR :                  \
+      ((((__FLAG__) &gt;&gt; 5U) == <ref refid="group___r_c_c___private___constants_1ga114b3e5b2a2cdb5d85f65511fe085a6d" kindref="member">BDCR_REG_INDEX</ref>) ? <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;BDCR :              \
+       ((((__FLAG__) &gt;&gt; 5U) == <ref refid="group___r_c_c___private___constants_1gab9507f2d9ee5d477b11363b052cd07c8" kindref="member">CSR_REG_INDEX</ref>) ? <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CSR : <ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CIFR))) &amp; \
+     (1U &lt;&lt; ((__FLAG__) &amp; <ref refid="group___r_c_c___private___constants_1ga80017c6bf8a5c6f53a1a21bb8db93a82" kindref="member">RCC_FLAG_MASK</ref>))) != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>) ? 1U : 0U)</initializer>
+        <briefdescription>
+<para>Check whether the selected RCC flag is set or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>__FLAG__</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem><para><ref refid="group___r_c_c___flag_1ga827d986723e7ce652fa733bb8184d216" kindref="member">RCC_FLAG_HSIRDY</ref> HSI oscillator clock ready </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___flag_1ga173edf47bec93cf269a0e8d0fec9997c" kindref="member">RCC_FLAG_HSERDY</ref> HSE oscillator clock ready </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___flag_1gaf82d8afb18d9df75db1d6c08b9c50046" kindref="member">RCC_FLAG_PLLRDY</ref> Main PLL clock ready </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___flag_1gac9fb963db446c16e46a18908f7fe1927" kindref="member">RCC_FLAG_LSERDY</ref> LSE oscillator clock ready </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___flag_1gac1d9d4f36f383c67b34a733f14e33bfe" kindref="member">RCC_FLAG_LSECSSD</ref> Clock security system failure on LSE oscillator detection </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___flag_1ga8c5e4992314d347597621bfe7ab10d72" kindref="member">RCC_FLAG_LSIRDY</ref> LSI oscillator clock ready  </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___flag_1ga13e6e02e27c887afbc2d65dc36ec50ae" kindref="member">RCC_FLAG_PWRRST</ref> BOR or POR/PDR reset </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___flag_1ga9bacaedece5c7cb6d9e52c1412e1a8ae" kindref="member">RCC_FLAG_OBLRST</ref> OBLRST reset </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___flag_1gabfc3ab5d4a8a94ec1c9f38794ce37ad6" kindref="member">RCC_FLAG_PINRST</ref> Pin reset </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___flag_1gaf7852615e9b19f0b2dbc8d08c7594b52" kindref="member">RCC_FLAG_SFTRST</ref> Software reset </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___flag_1gaac46bac8a97cf16635ff7ffc1e6c657f" kindref="member">RCC_FLAG_IWDGRST</ref> Independent Watchdog reset </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___flag_1gaa80b60b2d497ccd7b7de1075009999a7" kindref="member">RCC_FLAG_WWDGRST</ref> Window Watchdog reset </para>
+</listitem>
+<listitem><para><ref refid="group___r_c_c___flag_1ga67049531354aed7546971163d02c9920" kindref="member">RCC_FLAG_LPWRRST</ref> Low Power reset </para>
+</listitem>
+</itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state of <bold>FLAG</bold> (TRUE or FALSE). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="3056" column="10" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="3056" bodyend="3060"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>macros to manage the specified RCC Flags and interrupts. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

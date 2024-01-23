@@ -1,0 +1,69 @@
+.TH "SPI_TypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_TypeDef \- Serial Peripheral Interface\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g030xx\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCR1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCR2\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBSR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCRCPR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRXCRCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTXCRCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBI2SCFGR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBI2SPR\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Serial Peripheral Interface\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t SPI_TypeDef::CR1"
+SPI Control register 1 (not used in I2S mode), Address offset: 0x00 
+.SS "\fB__IO\fP uint32_t SPI_TypeDef::CR2"
+SPI Control register 2, Address offset: 0x04 
+.SS "\fB__IO\fP uint32_t SPI_TypeDef::CRCPR"
+SPI CRC polynomial register (not used in I2S mode), Address offset: 0x10 
+.SS "\fB__IO\fP uint32_t SPI_TypeDef::DR"
+SPI data register, Address offset: 0x0C 
+.SS "\fB__IO\fP uint32_t SPI_TypeDef::I2SCFGR"
+SPI_I2S configuration register, Address offset: 0x1C 
+.SS "\fB__IO\fP uint32_t SPI_TypeDef::I2SPR"
+SPI_I2S prescaler register, Address offset: 0x20 
+.SS "\fB__IO\fP uint32_t SPI_TypeDef::RXCRCR"
+SPI Rx CRC register (not used in I2S mode), Address offset: 0x14 
+.SS "\fB__IO\fP uint32_t SPI_TypeDef::SR"
+SPI Status register, Address offset: 0x08 
+.SS "\fB__IO\fP uint32_t SPI_TypeDef::TXCRCR"
+SPI Tx CRC register (not used in I2S mode), Address offset: 0x18 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

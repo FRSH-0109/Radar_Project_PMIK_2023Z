@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___u_a_r_t___mute___mode" kind="group">
+    <compoundname>UART_Mute_Mode</compoundname>
+    <title>UART Advanced Feature Mute Mode Enable</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_a_r_t___mute___mode_1ga11b6414641d82b941920c291e19aa042" prot="public" static="no">
+        <name>UART_ADVFEATURE_MUTEMODE_DISABLE</name>
+        <initializer>0x00000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART mute mode disable </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="653" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="653" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___mute___mode_1gaa9ca3763538abf310102ac34e81cdcbc" prot="public" static="no">
+        <name>UART_ADVFEATURE_MUTEMODE_ENABLE</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga4ae32b0c22f90fa8295d2ed96c2fd54d" kindref="member">USART_CR1_MME</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART mute mode enable <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="654" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="654" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

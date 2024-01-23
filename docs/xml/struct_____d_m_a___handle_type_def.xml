@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_____d_m_a___handle_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>__DMA_HandleTypeDef</compoundname>
+    <includes refid="stm32g0xx__hal__dma_8h" local="no">stm32g0xx_hal_dma.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1adc5940b5bbf1fc712118cd40ff3ea69b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_d_m_a___channel___type_def" kindref="compound">DMA_Channel_TypeDef</ref> *</type>
+        <definition>DMA_Channel_TypeDef* Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <qualifiedname>__DMA_HandleTypeDef::Instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register base address <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="115" column="35" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_d_m_a___init_type_def" kindref="compound">DMA_InitTypeDef</ref></type>
+        <definition>DMA_InitTypeDef Init</definition>
+        <argsstring></argsstring>
+        <name>Init</name>
+        <qualifiedname>__DMA_HandleTypeDef::Init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA communication parameters <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="117" column="35" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1ad4cf225029dbefe8d3fe660c33b8bb6b" prot="public" static="no" mutable="no">
+        <type><ref refid="stm32g0xx__hal__def_8h_1ab367482e943333a1299294eadaad284b" kindref="member">HAL_LockTypeDef</ref></type>
+        <definition>HAL_LockTypeDef Lock</definition>
+        <argsstring></argsstring>
+        <name>Lock</name>
+        <qualifiedname>__DMA_HandleTypeDef::Lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA locking object <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="119" column="35" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1a2263083d2bfa96222f3d7b8339c6faf8" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> <ref refid="group___d_m_a___exported___types_1ga9c012af359987a240826f29073bbe463" kindref="member">HAL_DMA_StateTypeDef</ref></type>
+        <definition>__IO HAL_DMA_StateTypeDef State</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <qualifiedname>__DMA_HandleTypeDef::State</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA transfer state <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="121" column="35" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1a6ee5f2130887847bbc051932ea43b73d" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* Parent</definition>
+        <argsstring></argsstring>
+        <name>Parent</name>
+        <qualifiedname>__DMA_HandleTypeDef::Parent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parent object state <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="123" column="10" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1a3d7716d1d7a5717f09525efd19334864" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* XferCpltCallback) (struct __DMA_HandleTypeDef *hdma)</definition>
+        <argsstring>)(struct __DMA_HandleTypeDef *hdma)</argsstring>
+        <name>XferCpltCallback</name>
+        <qualifiedname>__DMA_HandleTypeDef::XferCpltCallback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA transfer complete callback <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="125" column="3" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1aea6af14bab20d3f9a82f08df1abea01a" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* XferHalfCpltCallback) (struct __DMA_HandleTypeDef *hdma)</definition>
+        <argsstring>)(struct __DMA_HandleTypeDef *hdma)</argsstring>
+        <name>XferHalfCpltCallback</name>
+        <qualifiedname>__DMA_HandleTypeDef::XferHalfCpltCallback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA Half transfer complete callback <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="127" column="3" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1a695c6fe664a7baf827e461652ebdb9e0" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* XferErrorCallback) (struct __DMA_HandleTypeDef *hdma)</definition>
+        <argsstring>)(struct __DMA_HandleTypeDef *hdma)</argsstring>
+        <name>XferErrorCallback</name>
+        <qualifiedname>__DMA_HandleTypeDef::XferErrorCallback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA transfer error callback <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="129" column="3" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1a6253dc8680e566bbc244228374dd647d" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* XferAbortCallback) (struct __DMA_HandleTypeDef *hdma)</definition>
+        <argsstring>)(struct __DMA_HandleTypeDef *hdma)</argsstring>
+        <name>XferAbortCallback</name>
+        <qualifiedname>__DMA_HandleTypeDef::XferAbortCallback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA transfer abort callback <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="131" column="3" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1a123c5063e6a3b1901b2fbe5f88c53a7e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t ErrorCode</definition>
+        <argsstring></argsstring>
+        <name>ErrorCode</name>
+        <qualifiedname>__DMA_HandleTypeDef::ErrorCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA Error code <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="133" column="35" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1ae2d85e64eb57a8bccd3f70e74db09c31" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ChannelIndex</definition>
+        <argsstring></argsstring>
+        <name>ChannelIndex</name>
+        <qualifiedname>__DMA_HandleTypeDef::ChannelIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA Channel Index <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="139" column="35" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1a63aa7a453f14433a93bfc300db7e8eeb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_d_m_a_m_u_x___channel___type_def" kindref="compound">DMAMUX_Channel_TypeDef</ref> *</type>
+        <definition>DMAMUX_Channel_TypeDef* DMAmuxChannel</definition>
+        <argsstring></argsstring>
+        <name>DMAmuxChannel</name>
+        <qualifiedname>__DMA_HandleTypeDef::DMAmuxChannel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register base address <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="141" column="36" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1a382fc8a5a3c3eb587b7c75ece3448c93" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_d_m_a_m_u_x___channel_status___type_def" kindref="compound">DMAMUX_ChannelStatus_TypeDef</ref> *</type>
+        <definition>DMAMUX_ChannelStatus_TypeDef* DMAmuxChannelStatus</definition>
+        <argsstring></argsstring>
+        <name>DMAmuxChannelStatus</name>
+        <qualifiedname>__DMA_HandleTypeDef::DMAmuxChannelStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX Channels Status Base Address <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="143" column="36" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1aa96798fa1c9d4cb63d4f80835de42984" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMAmuxChannelStatusMask</definition>
+        <argsstring></argsstring>
+        <name>DMAmuxChannelStatusMask</name>
+        <qualifiedname>__DMA_HandleTypeDef::DMAmuxChannelStatusMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX Channel Status Mask <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="145" column="36" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1a7a9b5a2cdc6c1f7adbba53d8e4d86b83" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_d_m_a_m_u_x___request_gen___type_def" kindref="compound">DMAMUX_RequestGen_TypeDef</ref> *</type>
+        <definition>DMAMUX_RequestGen_TypeDef* DMAmuxRequestGen</definition>
+        <argsstring></argsstring>
+        <name>DMAmuxRequestGen</name>
+        <qualifiedname>__DMA_HandleTypeDef::DMAmuxRequestGen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX request generator Base Address </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="147" column="36" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1ad3f4a59882ebacecb280c8569c9e9010" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_d_m_a_m_u_x___request_gen_status___type_def" kindref="compound">DMAMUX_RequestGenStatus_TypeDef</ref> *</type>
+        <definition>DMAMUX_RequestGenStatus_TypeDef* DMAmuxRequestGenStatus</definition>
+        <argsstring></argsstring>
+        <name>DMAmuxRequestGenStatus</name>
+        <qualifiedname>__DMA_HandleTypeDef::DMAmuxRequestGenStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX request generator Address <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="149" column="36" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_m_a___handle_type_def_1a38f76cde279730ad689ac03a85fffc02" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMAmuxRequestGenStatusMask</definition>
+        <argsstring></argsstring>
+        <name>DMAmuxRequestGenStatusMask</name>
+        <qualifiedname>__DMA_HandleTypeDef::DMAmuxRequestGenStatusMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMAMUX request generator Status mask <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="151" column="36" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>DMA handle Structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>DMAMUX_ChannelStatus_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___channel_status___type_def"/>
+      </node>
+      <node id="4">
+        <label>DMAMUX_Channel_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___channel___type_def"/>
+      </node>
+      <node id="7">
+        <label>DMAMUX_RequestGenStatus_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___request_gen_status___type_def"/>
+      </node>
+      <node id="6">
+        <label>DMAMUX_RequestGen_TypeDef</label>
+        <link refid="struct_d_m_a_m_u_x___request_gen___type_def"/>
+      </node>
+      <node id="2">
+        <label>DMA_Channel_TypeDef</label>
+        <link refid="struct_d_m_a___channel___type_def"/>
+      </node>
+      <node id="3">
+        <label>DMA_InitTypeDef</label>
+        <link refid="struct_d_m_a___init_type_def"/>
+      </node>
+      <node id="1">
+        <label>__DMA_HandleTypeDef</label>
+        <link refid="struct_____d_m_a___handle_type_def"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Instance</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Init</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>DMAmuxChannel</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>DMAmuxChannelStatus</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>DMAmuxRequestGen</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>DMAmuxRequestGenStatus</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" line="113" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h" bodystart="114" bodyend="152"/>
+    <listofallmembers>
+      <member refid="struct_____d_m_a___handle_type_def_1ae2d85e64eb57a8bccd3f70e74db09c31" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>ChannelIndex</name></member>
+      <member refid="struct_____d_m_a___handle_type_def_1a63aa7a453f14433a93bfc300db7e8eeb" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>DMAmuxChannel</name></member>
+      <member refid="struct_____d_m_a___handle_type_def_1a382fc8a5a3c3eb587b7c75ece3448c93" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>DMAmuxChannelStatus</name></member>
+      <member refid="struct_____d_m_a___handle_type_def_1aa96798fa1c9d4cb63d4f80835de42984" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>DMAmuxChannelStatusMask</name></member>
+      <member refid="struct_____d_m_a___handle_type_def_1a7a9b5a2cdc6c1f7adbba53d8e4d86b83" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>DMAmuxRequestGen</name></member>
+      <member refid="struct_____d_m_a___handle_type_def_1ad3f4a59882ebacecb280c8569c9e9010" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>DMAmuxRequestGenStatus</name></member>
+      <member refid="struct_____d_m_a___handle_type_def_1a38f76cde279730ad689ac03a85fffc02" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>DMAmuxRequestGenStatusMask</name></member>
+      <member refid="struct_____d_m_a___handle_type_def_1a123c5063e6a3b1901b2fbe5f88c53a7e" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>ErrorCode</name></member>
+      <member refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>Init</name></member>
+      <member refid="struct_____d_m_a___handle_type_def_1adc5940b5bbf1fc712118cd40ff3ea69b" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>Instance</name></member>
+      <member refid="struct_____d_m_a___handle_type_def_1ad4cf225029dbefe8d3fe660c33b8bb6b" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>Lock</name></member>
+      <member refid="struct_____d_m_a___handle_type_def_1a6ee5f2130887847bbc051932ea43b73d" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>Parent</name></member>
+      <member refid="struct_____d_m_a___handle_type_def_1a2263083d2bfa96222f3d7b8339c6faf8" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>State</name></member>
+      <member refid="struct_____d_m_a___handle_type_def_1a6253dc8680e566bbc244228374dd647d" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>XferAbortCallback</name></member>
+      <member refid="struct_____d_m_a___handle_type_def_1a3d7716d1d7a5717f09525efd19334864" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>XferCpltCallback</name></member>
+      <member refid="struct_____d_m_a___handle_type_def_1a695c6fe664a7baf827e461652ebdb9e0" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>XferErrorCallback</name></member>
+      <member refid="struct_____d_m_a___handle_type_def_1aea6af14bab20d3f9a82f08df1abea01a" prot="public" virt="non-virtual"><scope>__DMA_HandleTypeDef</scope><name>XferHalfCpltCallback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

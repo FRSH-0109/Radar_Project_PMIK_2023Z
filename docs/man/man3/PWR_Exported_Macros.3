@@ -1,0 +1,108 @@
+.TH "PWR_Exported_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PWR_Exported_Macros \- PWR Exported Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_PWR_GET_FLAG\fP(__FLAG__)"
+.br
+.RI "Check whether or not a specific PWR flag is set\&. "
+.ti -1c
+.RI "#define \fB__HAL_PWR_CLEAR_FLAG\fP(__FLAG__)   (\fBPWR\fP\->SCR = (__FLAG__))"
+.br
+.RI "Clear a specific PWR flag\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_PWR_CLEAR_FLAG(__FLAG__)   (\fBPWR\fP\->SCR = (__FLAG__))"
+
+.PP
+Clear a specific PWR flag\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__FLAG__\fP specifies the flag to clear\&. This parameter can be a combination of following values: 
+.PD 0
+.IP "\(bu" 1
+PWR_FLAG_WUF1: Wake Up Flag 1\&. Indicates that a wakeup event was received from the WKUP pin 1\&. 
+.IP "\(bu" 1
+PWR_FLAG_WUF2: Wake Up Flag 2\&. Indicates that a wakeup event was received from the WKUP pin 2\&. 
+.IP "\(bu" 1
+PWR_FLAG_WUF3: Wake Up Flag 3\&. Indicates that a wakeup event was received from the WKUP pin 3\&. (*) 
+.IP "\(bu" 1
+PWR_FLAG_WUF4: Wake Up Flag 4\&. Indicates that a wakeup event was received from the WKUP pin 4\&. 
+.IP "\(bu" 1
+PWR_FLAG_WUF5: Wake Up Flag 5\&. Indicates that a wakeup event was received from the WKUP pin 5\&. (*) 
+.IP "\(bu" 1
+PWR_FLAG_WUF6: Wake Up Flag 6\&. Indicates that a wakeup event was received from the WKUP pin 6\&. 
+.IP "\(bu" 1
+PWR_FLAG_WUF: Encompasses all Wake Up Flags\&. 
+.IP "\(bu" 1
+PWR_FLAG_SB: Standby Flag\&. Indicates that the system entered Standby mode\&. 
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "#define __HAL_PWR_GET_FLAG(__FLAG__)"
+\fBValue:\fP.PP
+.nf
+                                             (((__FLAG__) & 0x00010000u) ?\\
+                                             ((PWR\->SR1 & ((__FLAG__) & ~0x00030000u)) == ((__FLAG__) & ~0x00030000u)) :\\
+                                             ((PWR\->SR2 & ((__FLAG__) & ~0x00030000u)) == ((__FLAG__) & ~0x00030000u)))
+.fi
+
+.PP
+Check whether or not a specific PWR flag is set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__FLAG__\fP specifies the flag to check\&. This parameter can be one a combination of following values: 
+.PD 0
+.IP "\(bu" 1
+PWR_FLAG_WUF1: Wake Up Flag 1\&. Indicates that a wakeup event was received from the WKUP pin 1\&. 
+.IP "\(bu" 1
+PWR_FLAG_WUF2: Wake Up Flag 2\&. Indicates that a wakeup event was received from the WKUP pin 2\&. 
+.IP "\(bu" 1
+PWR_FLAG_WUF3: Wake Up Flag 3\&. Indicates that a wakeup event was received from the WKUP pin 3\&. (*) 
+.IP "\(bu" 1
+PWR_FLAG_WUF4: Wake Up Flag 4\&. Indicates that a wakeup event was received from the WKUP pin 4\&. 
+.IP "\(bu" 1
+PWR_FLAG_WUF5: Wake Up Flag 5\&. Indicates that a wakeup event was received from the WKUP pin 5\&. (*) 
+.IP "\(bu" 1
+PWR_FLAG_WUF6: Wake Up Flag 6\&. Indicates that a wakeup event was received from the WKUP pin 6\&. 
+.IP "\(bu" 1
+PWR_FLAG_SB: StandBy Flag\&. Indicates that the system entered StandBy mode\&. 
+.IP "\(bu" 1
+PWR_FLAG_WUFI: Wake-Up Flag Internal\&. Set when a wakeup is detected on the internal wakeup line\&. OR a combination of following values: 
+.IP "\(bu" 1
+PWR_FLAG_FLASH_READY: Flash is ready\&. Indicates whether flash can be used or not 
+.IP "\(bu" 1
+PWR_FLAG_REGLPS: Low Power Regulator Started\&. Indicates whether or not the low-power regulator is ready\&. 
+.IP "\(bu" 1
+PWR_FLAG_REGLPF: Low Power Regulator Flag\&. Indicates whether the regulator is ready in main mode or is in low-power mode\&.  
+.PP
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fIThe\fP new state of \fBFLAG\fP (TRUE or FALSE)\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

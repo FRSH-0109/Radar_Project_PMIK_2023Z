@@ -1,0 +1,39 @@
+.TH "DMA_interrupt_enable_definitions" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DMA_interrupt_enable_definitions \- DMA interrupt enable definitions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDMA_IT_TC\fP   \fBDMA_CCR_TCIE\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_IT_HT\fP   \fBDMA_CCR_HTIE\fP"
+.br
+.ti -1c
+.RI "#define \fBDMA_IT_TE\fP   \fBDMA_CCR_TEIE\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DMA_IT_HT   \fBDMA_CCR_HTIE\fP"
+Half Transfer Complete interrupt 
+.SS "#define DMA_IT_TC   \fBDMA_CCR_TCIE\fP"
+Transfer Complete interrupt 
+.br
+ 
+.SS "#define DMA_IT_TE   \fBDMA_CCR_TEIE\fP"
+Transfer Error interrupt 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

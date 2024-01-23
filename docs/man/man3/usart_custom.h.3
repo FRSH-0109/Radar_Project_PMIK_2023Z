@@ -1,0 +1,366 @@
+.TH "RadarApp/usart_custom/usart_custom.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RadarApp/usart_custom/usart_custom.h \- Header file for custom uart handling, consists of all used variables, enums or functions that are connected directly with uart communication\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdbool\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBUART_Custom_HandleTypeDef\fP"
+.br
+.ti -1c
+.RI "struct \fBUART_Queue\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMAX_UART_RX_DATA_LEN\fP   100"
+.br
+.ti -1c
+.RI "#define \fBMAX_UART_TX_DATA_LEN\fP   30"
+.br
+.ti -1c
+.RI "#define \fBUART_QUEUE_LEN\fP   3"
+.br
+.ti -1c
+.RI "#define \fBUART_TX_TRANSMISSION_CMPLT_TIMEOUT\fP   3"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_START\fP   'START'"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_STOP\fP   'STOP'"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_GET_RADAR_POSITION\fP   'RADARGETPOS'"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_SET_RADAR_POSITION\fP   'RADARSETPOS'"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_GET_RADAR_STEP\fP   'RADARGETSTEP'"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_SET_RADAR_STEP\fP   'RADARSETSTEP'"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_GET_RADAR_POS_MIN\fP   'RADARGETPOSMIN'"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_GET_RADAR_POS_MAX\fP   'RADARGETPOSMAX'"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_SET_RADAR_POS_MIN\fP   'RADARSETPOSMIN'"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_SET_RADAR_POS_MAX\fP   'RADARSETPOSMAX'"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_SET_RADAR_SENSOR_PERIOD\fP   'RADARSETSENSORPERIOD'"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_GET_RADAR_SENSOR_PERIOD\fP   'RADARGETSENSORPERIOD'"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_GET_RADAR_SENSOR_MEASURE\fP   'RADARGETSENSORMEASURE'"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_GET_RADAR_DRAW_SCALE\fP   'RADARGETDRAWSCALE'"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_SET_RADAR_DRAW_SCALE\fP   'RADARSETDRAWSCALE'"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_GET_RADAR_DRAW_RULES\fP   'RADARGETDRAWRULES'"
+.br
+.ti -1c
+.RI "#define \fBCOMMAND_SET_RADAR_DRAW_RULES\fP   'RADARSETDRAWRULES'"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBUART_Custom_HandleTypeDef\fP \fBUART_Custom_HandleTypeDef\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBUART_Queue\fP \fBUART_Queue\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBCommandType\fP { \fBCOMMAND_TYPE_IDLE\fP, \fBCOMMAND_TYPE_START\fP, \fBCOMMAND_TYPE_STOP\fP, \fBCOMMAND_TYPE_SET_POS\fP, \fBCOMMAND_TYPE_GET_POS\fP, \fBCOMMAND_TYPE_SET_STEP\fP, \fBCOMMAND_TYPE_GET_STEP\fP, \fBCOMMAND_TYPE_GET_POS_MIN\fP, \fBCOMMAND_TYPE_GET_POS_MAX\fP, \fBCOMMAND_TYPE_SET_POS_MIN\fP, \fBCOMMAND_TYPE_SET_POS_MAX\fP, \fBCOMMAND_TYPE_GET_SENSOR_PERIOD\fP, \fBCOMMAND_TYPE_SET_SENSOR_PERIOD\fP, \fBCOMMAND_TYPE_GET_SENSOR_MEASURE\fP, \fBCOMMAND_TYPE_GET_DRAW_SCALE\fP, \fBCOMMAND_TYPE_SET_DRAW_SCALE\fP, \fBCOMMAND_TYPE_GET_DRAW_RULES\fP, \fBCOMMAND_TYPE_SET_DRAW_RULES\fP }"
+.br
+.ti -1c
+.RI "enum \fBResponseType\fP { \fBRESPONSE_OK\fP, \fBRESPONSE_UNKNOW_CMD\fP, \fBRESPONSE_ERROR\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCommandType\fP \fBCommandDecode\fP (uint8_t *data, uint16_t dataLen)"
+.br
+.ti -1c
+.RI "void \fBuartQueueInit\fP (volatile \fBUART_Queue\fP *uartQueue)"
+.br
+.ti -1c
+.RI "void \fBuartQueueAdd\fP (volatile \fBUART_Queue\fP *uartQueue, uint8_t *dataTxSource, uint16_t msgLen)"
+.br
+.ti -1c
+.RI "void \fBuartQueueClear\fP (volatile \fBUART_Queue\fP *uartQueue)"
+.br
+.ti -1c
+.RI "void \fBuartQueueTransmit\fP (volatile \fBUART_Queue\fP *uartQueue, \fBUART_Custom_HandleTypeDef\fP *huartCustom)"
+.br
+.ti -1c
+.RI "void \fBuartQueueReceive\fP (volatile \fBUART_Queue\fP *uartQueue)"
+.br
+.ti -1c
+.RI "void \fBuartCustomInit\fP (\fBUART_Custom_HandleTypeDef\fP *huartCustom, \fBUART_HandleTypeDef\fP *huart, uint16_t rxDataLen, uint16_t txDataLen)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBuartCustomReceiveDMA\fP (\fBUART_Custom_HandleTypeDef\fP *huartCustom)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBuartCustomTransmitDMA\fP (\fBUART_Custom_HandleTypeDef\fP *huartCustom, uint16_t msgLen)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file for custom uart handling, consists of all used variables, enums or functions that are connected directly with uart communication\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Kamil Kosnik, Kacper Radzikowski 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define COMMAND_GET_RADAR_DRAW_RULES   'RADARGETDRAWRULES'"
+String for Radar drawing rules (in centimeters) getter command 
+.SS "#define COMMAND_GET_RADAR_DRAW_SCALE   'RADARGETDRAWSCALE'"
+String for Radar drawing scale getter command 
+.SS "#define COMMAND_GET_RADAR_POS_MAX   'RADARGETPOSMAX'"
+String for Radar max position getter command 
+.SS "#define COMMAND_GET_RADAR_POS_MIN   'RADARGETPOSMIN'"
+String for Radar min position getter command 
+.SS "#define COMMAND_GET_RADAR_POSITION   'RADARGETPOS'"
+String for Radar position getter command 
+.SS "#define COMMAND_GET_RADAR_SENSOR_MEASURE   'RADARGETSENSORMEASURE'"
+String for Radar sensor measure getter command 
+.SS "#define COMMAND_GET_RADAR_SENSOR_PERIOD   'RADARGETSENSORPERIOD'"
+String for Radar sensor measure period getter command, in ms 
+.SS "#define COMMAND_GET_RADAR_STEP   'RADARGETSTEP'"
+String for Radar servo single step getter command 
+.SS "#define COMMAND_SET_RADAR_DRAW_RULES   'RADARSETDRAWRULES'"
+String for Radar drawing rules (in centimeters) setter command 
+.SS "#define COMMAND_SET_RADAR_DRAW_SCALE   'RADARSETDRAWSCALE'"
+String for Radar drawing scale setter command 
+.SS "#define COMMAND_SET_RADAR_POS_MAX   'RADARSETPOSMAX'"
+String for Radar min position setter command 
+.SS "#define COMMAND_SET_RADAR_POS_MIN   'RADARSETPOSMIN'"
+String for Radar min position setter command 
+.SS "#define COMMAND_SET_RADAR_POSITION   'RADARSETPOS'"
+String for Radar position setter command 
+.SS "#define COMMAND_SET_RADAR_SENSOR_PERIOD   'RADARSETSENSORPERIOD'"
+String for Radar sensor measure period setter command, in ms 
+.SS "#define COMMAND_SET_RADAR_STEP   'RADARSETSTEP'"
+String for Radar servo single step setter command 
+.SS "#define COMMAND_START   'START'"
+String for Radar START command 
+.SS "#define COMMAND_STOP   'STOP'"
+String for Radar STOP command 
+.SS "#define MAX_UART_RX_DATA_LEN   100"
+Defines maximum length of single received uart message 
+.SS "#define MAX_UART_TX_DATA_LEN   30"
+Defines maximum length of single transmitted uart message 
+.SS "#define UART_QUEUE_LEN   3"
+Defines maximum length of uart queue (both tx and rx) 
+.SS "#define UART_TX_TRANSMISSION_CMPLT_TIMEOUT   3"
+Defines timeout after next tx message is allowed to be sent 
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBUART_Custom_HandleTypeDef\fP \fBUART_Custom_HandleTypeDef\fP"
+Structure for custom uart handle 
+.SS "typedef struct \fBUART_Queue\fP \fBUART_Queue\fP"
+Structure for uart queue 
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBCommandType\fP"
+Enumerate for received commands 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fICOMMAND_TYPE_IDLE \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_START \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_STOP \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_SET_POS \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_GET_POS \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_SET_STEP \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_GET_STEP \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_GET_POS_MIN \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_GET_POS_MAX \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_SET_POS_MIN \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_SET_POS_MAX \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_GET_SENSOR_PERIOD \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_SET_SENSOR_PERIOD \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_GET_SENSOR_MEASURE \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_GET_DRAW_SCALE \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_SET_DRAW_SCALE \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_GET_DRAW_RULES \fP\fP
+.TP
+\fB\fICOMMAND_TYPE_SET_DRAW_RULES \fP\fP
+.SS "enum \fBResponseType\fP"
+Enumerate for responses on received commands 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRESPONSE_OK \fP\fP
+.TP
+\fB\fIRESPONSE_UNKNOW_CMD \fP\fP
+.TP
+\fB\fIRESPONSE_ERROR \fP\fP
+.SH "Function Documentation"
+.PP 
+.SS "\fBCommandType\fP CommandDecode (uint8_t * data, uint16_t dataLen)"
+Function for checking if any of uart commands is received
+.PP
+\fBParameters\fP
+.RS 4
+\fIdata\fP pointer to uin8_t type array 
+.br
+\fIdataLen\fP length of data to decoded 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+CommandType which was(or not) decoded 
+.RE
+.PP
+
+.SS "void uartCustomInit (\fBUART_Custom_HandleTypeDef\fP * huartCustom, \fBUART_HandleTypeDef\fP * huart, uint16_t rxDataLen, uint16_t txDataLen)"
+Function for receiving next waiting data in queue
+.PP
+\fBParameters\fP
+.RS 4
+\fIhuartCustom\fP pointer to \fBUART_Custom_HandleTypeDef\fP struct instance param huart pointer to UART_HandleTypeDef struct instance param rxDataLen value for maximum rx data length param txDataLen value for maximum tx data length 
+.RE
+.PP
+
+.SS "\fBHAL_StatusTypeDef\fP uartCustomReceiveDMA (\fBUART_Custom_HandleTypeDef\fP * huartCustom)\fC [inline]\fP"
+Function for calling receiving process via uart with DMA
+.PP
+\fBParameters\fP
+.RS 4
+\fIhuartCustom\fP pointer to \fBUART_Custom_HandleTypeDef\fP struct instance 
+.RE
+.PP
+
+.SS "\fBHAL_StatusTypeDef\fP uartCustomTransmitDMA (\fBUART_Custom_HandleTypeDef\fP * huartCustom, uint16_t msgLen)\fC [inline]\fP"
+Function for calling DMA transmit via uart
+.PP
+\fBParameters\fP
+.RS 4
+\fIhuartCustom\fP pointer to \fBUART_Custom_HandleTypeDef\fP struct instance 
+.br
+\fImsgLen\fP value for maximum tx data length 
+.RE
+.PP
+
+.SS "void uartQueueAdd (volatile \fBUART_Queue\fP * uartQueue, uint8_t * dataTxSource, uint16_t msgLen)\fC [inline]\fP"
+Function for adding next data to be send via uart queue
+.PP
+\fBParameters\fP
+.RS 4
+\fIuartQueue\fP pointer to \fBUART_Queue\fP struct instance 
+.br
+\fIdataTxSource\fP pointer to data array to be added to queue 
+.br
+\fImsgLen\fP value for added data buffer length 
+.RE
+.PP
+
+.SS "void uartQueueClear (volatile \fBUART_Queue\fP * uartQueue)\fC [inline]\fP"
+Function for clearing whole uart structure
+.PP
+\fBParameters\fP
+.RS 4
+\fIuartQueue\fP pointer to \fBUART_Queue\fP struct instance 
+.RE
+.PP
+
+.SS "void uartQueueInit (volatile \fBUART_Queue\fP * uartQueue)"
+Function for init uart queue structure
+.PP
+\fBParameters\fP
+.RS 4
+\fIuartQueue\fP pointer to \fBUART_Queue\fP struct instance 
+.RE
+.PP
+
+.SS "void uartQueueReceive (volatile \fBUART_Queue\fP * uartQueue)\fC [inline]\fP"
+Function for receiving next waiting data in queue
+.PP
+\fBParameters\fP
+.RS 4
+\fIuartQueue\fP pointer to \fBUART_Queue\fP struct instance 
+.RE
+.PP
+
+.SS "void uartQueueTransmit (volatile \fBUART_Queue\fP * uartQueue, \fBUART_Custom_HandleTypeDef\fP * huartCustom)\fC [inline]\fP"
+Function for transmitting next data in queue
+.PP
+\fBParameters\fP
+.RS 4
+\fIuartQueue\fP pointer to \fBUART_Queue\fP struct instance 
+.br
+\fIhuartCustom\fP pointer to \fBUART_Custom_HandleTypeDef\fP struct instance 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

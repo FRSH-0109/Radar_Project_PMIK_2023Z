@@ -1,0 +1,208 @@
+.TH "RCCEx_Exported_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCCEx_Exported_Macros \- RCCEx Exported Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_RCC_I2C1_CONFIG\fP(__I2C1_CLKSOURCE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_I2C1SEL\fP, (uint32_t)(__I2C1_CLKSOURCE__))"
+.br
+.RI "Macro to configure the I2C1 clock (I2C1CLK)\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_GET_I2C1_SOURCE\fP()   ((uint32_t)(\fBREAD_BIT\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_I2C1SEL\fP)))"
+.br
+.RI "Macro to get the I2C1 clock source\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_I2S1_CONFIG\fP(__I2S1_CLKSOURCE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_I2S1SEL\fP, (uint32_t)(__I2S1_CLKSOURCE__))"
+.br
+.RI "Macro to configure the I2S1 clock (I2S1CLK)\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_GET_I2S1_SOURCE\fP()   ((uint32_t)(\fBREAD_BIT\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_I2S1SEL\fP)))"
+.br
+.RI "Macro to get the I2S1 clock source\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_USART1_CONFIG\fP(__USART1_CLKSOURCE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_USART1SEL\fP, (uint32_t)(__USART1_CLKSOURCE__))"
+.br
+.RI "Macro to configure the USART1 clock (USART1CLK)\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_GET_USART1_SOURCE\fP()   ((uint32_t)(\fBREAD_BIT\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_USART1SEL\fP)))"
+.br
+.RI "Macro to get the USART1 clock source\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_ADC_CONFIG\fP(__ADC_CLKSOURCE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_ADCSEL\fP, (uint32_t)(__ADC_CLKSOURCE__))"
+.br
+.RI "Macro to configure the ADC interface clock\&. "
+.ti -1c
+.RI "#define \fB__HAL_RCC_GET_ADC_SOURCE\fP()   ((uint32_t)(\fBREAD_BIT\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_ADCSEL\fP)))"
+.br
+.RI "Macro to get the ADC clock source\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_RCC_ADC_CONFIG(__ADC_CLKSOURCE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_ADCSEL\fP, (uint32_t)(__ADC_CLKSOURCE__))"
+
+.PP
+Macro to configure the ADC interface clock\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__ADC_CLKSOURCE__\fP specifies the ADC digital interface clock source\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_ADCCLKSOURCE_PLLADC\fP PLL 'P' (PLLADC) Clock selected as ADC clock 
+.IP "\(bu" 1
+\fBRCC_ADCCLKSOURCE_SYSCLK\fP System Clock selected as ADC clock 
+.IP "\(bu" 1
+\fBRCC_ADCCLKSOURCE_HSI\fP HSI Clock selected as ADC clock 
+.PP
+.RE
+.PP
+
+.SS "#define __HAL_RCC_GET_ADC_SOURCE()   ((uint32_t)(\fBREAD_BIT\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_ADCSEL\fP)))"
+
+.PP
+Macro to get the ADC clock source\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIThe\fP clock source can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_ADCCLKSOURCE_PLLADC\fP PLL 'P' (PLLADC) Clock selected as ADC clock 
+.IP "\(bu" 1
+\fBRCC_ADCCLKSOURCE_SYSCLK\fP System Clock selected as ADC clock 
+.IP "\(bu" 1
+\fBRCC_ADCCLKSOURCE_HSI\fP HSI Clock selected as ADC clock 
+.PP
+.RE
+.PP
+
+.SS "#define __HAL_RCC_GET_I2C1_SOURCE()   ((uint32_t)(\fBREAD_BIT\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_I2C1SEL\fP)))"
+
+.PP
+Macro to get the I2C1 clock source\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIThe\fP clock source can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_I2C1CLKSOURCE_HSI\fP HSI selected as I2C1 clock 
+.IP "\(bu" 1
+\fBRCC_I2C1CLKSOURCE_SYSCLK\fP System Clock selected as I2C1 clock 
+.PP
+.RE
+.PP
+
+.SS "#define __HAL_RCC_GET_I2S1_SOURCE()   ((uint32_t)(\fBREAD_BIT\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_I2S1SEL\fP)))"
+
+.PP
+Macro to get the I2S1 clock source\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIThe\fP clock source can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_I2S1CLKSOURCE_SYSCLK\fP System Clock selected as I2S1 clock 
+.IP "\(bu" 1
+\fBRCC_I2S1CLKSOURCE_PLL\fP PLLP Clock selected as I2S1 clock 
+.IP "\(bu" 1
+\fBRCC_I2S1CLKSOURCE_HSI\fP HSI Clock selected as I2S1 clock 
+.IP "\(bu" 1
+\fBRCC_I2S1CLKSOURCE_EXT\fP External clock selected as I2S1 clock 
+.PP
+.RE
+.PP
+
+.SS "#define __HAL_RCC_GET_USART1_SOURCE()   ((uint32_t)(\fBREAD_BIT\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_USART1SEL\fP)))"
+
+.PP
+Macro to get the USART1 clock source\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIThe\fP clock source can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_USART1CLKSOURCE_PCLK1\fP PCLK1 selected as USART1 clock 
+.IP "\(bu" 1
+\fBRCC_USART1CLKSOURCE_HSI\fP HSI selected as USART1 clock 
+.IP "\(bu" 1
+\fBRCC_USART1CLKSOURCE_SYSCLK\fP System Clock selected as USART1 clock 
+.IP "\(bu" 1
+\fBRCC_USART1CLKSOURCE_LSE\fP LSE selected as USART1 clock 
+.PP
+.RE
+.PP
+
+.SS "#define __HAL_RCC_I2C1_CONFIG(__I2C1_CLKSOURCE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_I2C1SEL\fP, (uint32_t)(__I2C1_CLKSOURCE__))"
+
+.PP
+Macro to configure the I2C1 clock (I2C1CLK)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__I2C1_CLKSOURCE__\fP specifies the I2C1 clock source\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_I2C1CLKSOURCE_HSI\fP HSI selected as I2C1 clock 
+.IP "\(bu" 1
+\fBRCC_I2C1CLKSOURCE_SYSCLK\fP System Clock selected as I2C1 clock 
+.PP
+.RE
+.PP
+
+.SS "#define __HAL_RCC_I2S1_CONFIG(__I2S1_CLKSOURCE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_I2S1SEL\fP, (uint32_t)(__I2S1_CLKSOURCE__))"
+
+.PP
+Macro to configure the I2S1 clock (I2S1CLK)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__I2S1_CLKSOURCE__\fP specifies the I2S1 clock source\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_I2S1CLKSOURCE_SYSCLK\fP System Clock selected as I2S1 clock 
+.IP "\(bu" 1
+\fBRCC_I2S1CLKSOURCE_PLL\fP PLLP Clock selected as I2S1 clock 
+.IP "\(bu" 1
+\fBRCC_I2S1CLKSOURCE_HSI\fP HSI Clock selected as I2S1 clock 
+.IP "\(bu" 1
+\fBRCC_I2S1CLKSOURCE_EXT\fP External clock selected as I2S1 clock 
+.PP
+.RE
+.PP
+
+.SS "#define __HAL_RCC_USART1_CONFIG(__USART1_CLKSOURCE__)     \fBMODIFY_REG\fP(\fBRCC\fP\->CCIPR, \fBRCC_CCIPR_USART1SEL\fP, (uint32_t)(__USART1_CLKSOURCE__))"
+
+.PP
+Macro to configure the USART1 clock (USART1CLK)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__USART1_CLKSOURCE__\fP specifies the USART1 clock source\&. This parameter can be one of the following values: 
+.PD 0
+.IP "\(bu" 1
+\fBRCC_USART1CLKSOURCE_PCLK1\fP PCLK1 selected as USART1 clock 
+.IP "\(bu" 1
+\fBRCC_USART1CLKSOURCE_HSI\fP HSI selected as USART1 clock 
+.IP "\(bu" 1
+\fBRCC_USART1CLKSOURCE_SYSCLK\fP System Clock selected as USART1 clock 
+.IP "\(bu" 1
+\fBRCC_USART1CLKSOURCE_LSE\fP LSE selected as USART1 clock 
+.PP
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

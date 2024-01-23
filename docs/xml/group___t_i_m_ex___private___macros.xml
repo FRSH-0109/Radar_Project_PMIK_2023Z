@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___t_i_m_ex___private___macros" kind="group">
+    <compoundname>TIMEx_Private_Macros</compoundname>
+    <title>TIM Extended Private Macros</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m_ex___private___macros_1ga272fd7c1bd226d1b6eb26bd21b0fc5d5" prot="public" static="no">
+        <name>IS_TIM_REMAP</name>
+        <param><defname>__REMAP__</defname></param>
+        <initializer>((((__REMAP__) &amp; 0xFFFC3FFFU) == 0x00000000U))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="297" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m_ex___private___macros_1gac11038f927b530ed9ff66cbf88b5fe48" prot="public" static="no">
+        <name>IS_TIM_BREAKINPUT</name>
+        <param><defname>__BREAKINPUT__</defname></param>
+        <initializer>                                            (((__BREAKINPUT__) == <ref refid="group___t_i_m_ex___break___input_1ga729a1c5fd937111405416cb6dc216162" kindref="member">TIM_BREAKINPUT_BRK</ref>)  || \
+                                            ((__BREAKINPUT__) == <ref refid="group___t_i_m_ex___break___input_1ga2473abcbfc87ad498da670688ae3573d" kindref="member">TIM_BREAKINPUT_BRK2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="299" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" bodystart="299" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m_ex___private___macros_1ga8206e59b599377ce8abb3d806ffcf5a1" prot="public" static="no">
+        <name>IS_TIM_BREAKINPUTSOURCE</name>
+        <param><defname>__SOURCE__</defname></param>
+        <initializer>((__SOURCE__) == <ref refid="group___t_i_m_ex___break___input___source_1ga7c925e5a7769a9c0d3bbd15bde096985" kindref="member">TIM_BREAKINPUTSOURCE_BKIN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="312" column="10" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m_ex___private___macros_1gafea36303ed2332cea12b392d987649e3" prot="public" static="no">
+        <name>IS_TIM_BREAKINPUTSOURCE_STATE</name>
+        <param><defname>__STATE__</defname></param>
+        <initializer>                                                   (((__STATE__) == <ref refid="group___t_i_m_ex___break___input___source___enable_1gaa95a5b76d66c123e6234803f73dcafdb" kindref="member">TIM_BREAKINPUTSOURCE_DISABLE</ref>)  || \
+                                                   ((__STATE__) == <ref refid="group___t_i_m_ex___break___input___source___enable_1gaf955feb94df5918b6392c0b0a5dbfc45" kindref="member">TIM_BREAKINPUTSOURCE_ENABLE</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="315" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" bodystart="315" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m_ex___private___macros_1ga350bdeccbe405fde9ab61b83a53321ea" prot="public" static="no">
+        <name>IS_TIM_BREAKINPUTSOURCE_POLARITY</name>
+        <param><defname>__POLARITY__</defname></param>
+        <initializer>                                                         (((__POLARITY__) == <ref refid="group___t_i_m_ex___break___input___source___polarity_1ga74e8fc7221fa7e194acb39794b803334" kindref="member">TIM_BREAKINPUTSOURCE_POLARITY_LOW</ref>)  || \
+                                                         ((__POLARITY__) == <ref refid="group___t_i_m_ex___break___input___source___polarity_1ga0157e9dfd27513767399b58ec78e0693" kindref="member">TIM_BREAKINPUTSOURCE_POLARITY_HIGH</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="318" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" bodystart="318" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_i_m_ex___private___macros_1ga6c046891b6a59d63c2623b0847524da8" prot="public" static="no">
+        <name>IS_TIM_TISEL</name>
+        <param><defname>__TISEL__</defname></param>
+        <initializer>((((__TISEL__) &amp; 0xF0F0F0F0U) == 0x00000000U))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="321" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

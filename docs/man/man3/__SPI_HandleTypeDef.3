@@ -1,0 +1,136 @@
+.TH "__SPI_HandleTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+__SPI_HandleTypeDef \- SPI handle Structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_hal_spi\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBSPI_TypeDef\fP * \fBInstance\fP"
+.br
+.ti -1c
+.RI "\fBSPI_InitTypeDef\fP \fBInit\fP"
+.br
+.ti -1c
+.RI "uint8_t * \fBpTxBuffPtr\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBTxXferSize\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint16_t \fBTxXferCount\fP"
+.br
+.ti -1c
+.RI "uint8_t * \fBpRxBuffPtr\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBRxXferSize\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint16_t \fBRxXferCount\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBCRCSize\fP"
+.br
+.ti -1c
+.RI "void(* \fBRxISR\fP )(struct \fB__SPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "void(* \fBTxISR\fP )(struct \fB__SPI_HandleTypeDef\fP *hspi)"
+.br
+.ti -1c
+.RI "\fBDMA_HandleTypeDef\fP * \fBhdmatx\fP"
+.br
+.ti -1c
+.RI "\fBDMA_HandleTypeDef\fP * \fBhdmarx\fP"
+.br
+.ti -1c
+.RI "\fBHAL_LockTypeDef\fP \fBLock\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP \fBHAL_SPI_StateTypeDef\fP \fBState\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBErrorCode\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+SPI handle Structure definition\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t __SPI_HandleTypeDef::CRCSize"
+SPI CRC size used for the transfer 
+.br
+ 
+.SS "\fB__IO\fP uint32_t __SPI_HandleTypeDef::ErrorCode"
+SPI Error code 
+.br
+ 
+.SS "\fBDMA_HandleTypeDef\fP* __SPI_HandleTypeDef::hdmarx"
+SPI Rx DMA Handle parameters 
+.br
+ 
+.SS "\fBDMA_HandleTypeDef\fP* __SPI_HandleTypeDef::hdmatx"
+SPI Tx DMA Handle parameters 
+.br
+ 
+.SS "\fBSPI_InitTypeDef\fP __SPI_HandleTypeDef::Init"
+SPI communication parameters 
+.br
+ 
+.SS "\fBSPI_TypeDef\fP* __SPI_HandleTypeDef::Instance"
+SPI registers base address 
+.br
+ 
+.SS "\fBHAL_LockTypeDef\fP __SPI_HandleTypeDef::Lock"
+Locking object 
+.br
+ 
+.SS "uint8_t* __SPI_HandleTypeDef::pRxBuffPtr"
+Pointer to SPI Rx transfer Buffer 
+.br
+ 
+.SS "uint8_t* __SPI_HandleTypeDef::pTxBuffPtr"
+Pointer to SPI Tx transfer Buffer 
+.br
+ 
+.SS "void(* __SPI_HandleTypeDef::RxISR) (struct \fB__SPI_HandleTypeDef\fP *hspi)"
+function pointer on Rx ISR 
+.br
+ 
+.SS "\fB__IO\fP uint16_t __SPI_HandleTypeDef::RxXferCount"
+SPI Rx Transfer Counter 
+.br
+ 
+.SS "uint16_t __SPI_HandleTypeDef::RxXferSize"
+SPI Rx Transfer size 
+.br
+ 
+.SS "\fB__IO\fP \fBHAL_SPI_StateTypeDef\fP __SPI_HandleTypeDef::State"
+SPI communication state 
+.br
+ 
+.SS "void(* __SPI_HandleTypeDef::TxISR) (struct \fB__SPI_HandleTypeDef\fP *hspi)"
+function pointer on Tx ISR 
+.br
+ 
+.SS "\fB__IO\fP uint16_t __SPI_HandleTypeDef::TxXferCount"
+SPI Tx Transfer Counter 
+.br
+ 
+.SS "uint16_t __SPI_HandleTypeDef::TxXferSize"
+SPI Tx Transfer size 
+.br
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

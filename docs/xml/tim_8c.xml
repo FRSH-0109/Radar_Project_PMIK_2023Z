@@ -1,0 +1,693 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="tim_8c" kind="file" language="C++">
+    <compoundname>tim.c</compoundname>
+    <includes refid="tim_8h" local="yes">tim.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>tim.h</label>
+        <link refid="tim_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Core/Src/tim.c</label>
+        <link refid="tim_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="9">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="4">
+        <label>stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>stm32g0xx_hal_cortex.h</label>
+        <link refid="stm32g0xx__hal__cortex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stm32g0xx_hal_dma.h</label>
+        <link refid="stm32g0xx__hal__dma_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>stm32g0xx_hal_dma_ex.h</label>
+        <link refid="stm32g0xx__hal__dma__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>stm32g0xx_hal_exti.h</label>
+        <link refid="stm32g0xx__hal__exti_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>stm32g0xx_hal_flash.h</label>
+        <link refid="stm32g0xx__hal__flash_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>stm32g0xx_hal_flash_ex.h</label>
+        <link refid="stm32g0xx__hal__flash__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stm32g0xx_hal_gpio.h</label>
+        <link refid="stm32g0xx__hal__gpio_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stm32g0xx_hal_gpio_ex.h</label>
+        <link refid="stm32g0xx__hal__gpio__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>stm32g0xx_hal_pwr.h</label>
+        <link refid="stm32g0xx__hal__pwr_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>stm32g0xx_hal_pwr_ex.h</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32g0xx_hal_rcc.h</label>
+        <link refid="stm32g0xx__hal__rcc_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stm32g0xx_hal_rcc_ex.h</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>stm32g0xx_hal_spi.h</label>
+        <link refid="stm32g0xx__hal__spi_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>stm32g0xx_hal_spi_ex.h</label>
+        <link refid="stm32g0xx__hal__spi__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>stm32g0xx_hal_tim.h</label>
+        <link refid="stm32g0xx__hal__tim_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>stm32g0xx_hal_tim_ex.h</label>
+        <link refid="stm32g0xx__hal__tim__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>stm32g0xx_hal_uart.h</label>
+        <link refid="stm32g0xx__hal__uart_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>stm32g0xx_hal_uart_ex.h</label>
+        <link refid="stm32g0xx__hal__uart__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stm32g0xx_ll_dma.h</label>
+        <link refid="stm32g0xx__ll__dma_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stm32g0xx_ll_dmamux.h</label>
+        <link refid="stm32g0xx__ll__dmamux_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stm32g0xx_ll_rcc.h</label>
+        <link refid="stm32g0xx__ll__rcc_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>stdbool.h</label>
+      </node>
+      <node id="10">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="tim_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref></type>
+        <definition>TIM_HandleTypeDef htim3</definition>
+        <argsstring></argsstring>
+        <name>htim3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/tim.c" line="27" column="19" bodyfile="Core/Src/tim.c" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tim_8c_1ae4b8faf50eeb07577983d36e4c3894b8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref></type>
+        <definition>TIM_HandleTypeDef htim14</definition>
+        <argsstring></argsstring>
+        <name>htim14</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/tim.c" line="28" column="19" bodyfile="Core/Src/tim.c" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tim_8c_1af0bea8d8759a0d7e0e296edc9f5d6936" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref></type>
+        <definition>TIM_HandleTypeDef htim16</definition>
+        <argsstring></argsstring>
+        <name>htim16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/tim.c" line="29" column="19" bodyfile="Core/Src/tim.c" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tim_8c_1a51c6d0c070f8c00f33ee08b4f1eb6e90" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref></type>
+        <definition>TIM_HandleTypeDef htim17</definition>
+        <argsstring></argsstring>
+        <name>htim17</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/tim.c" line="30" column="19" bodyfile="Core/Src/tim.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="tim_8c_1a7912f2916786a2c33cb6fb8259ade58c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_TIM3_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_TIM3_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/tim.c" line="33" column="6" bodyfile="Core/Src/tim.c" bodystart="33" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="tim_8c_1a34e45e5fe68cc66a86b26df2da7e18b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_TIM14_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_TIM14_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/tim.c" line="73" column="6" bodyfile="Core/Src/tim.c" bodystart="73" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="tim_8c_1ac648e7f125deef46d41cd8b3f632efe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_TIM16_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_TIM16_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/tim.c" line="99" column="6" bodyfile="Core/Src/tim.c" bodystart="99" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="tim_8c_1af7d58ba47b8cffa9bf63d7021a7d5d77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_TIM17_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_TIM17_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/tim.c" line="157" column="6" bodyfile="Core/Src/tim.c" bodystart="157" bodyend="182"/>
+      </memberdef>
+      <member refid="group___t_i_m___exported___functions___group1_1ga818f4d5d1e2f417438d281b4ac9efb9c" kind="function"><name>HAL_TIM_Base_MspInit</name></member>
+      <memberdef kind="function" id="tim_8c_1a708f19bbc41b292fccf38f2d9796c46a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_TIM_MspPostInit</definition>
+        <argsstring>(TIM_HandleTypeDef *timHandle)</argsstring>
+        <name>HAL_TIM_MspPostInit</name>
+        <param>
+          <type><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref> *</type>
+          <declname>timHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>TIM16 GPIO Configuration PA6 ---<mdash/>&gt; TIM16_CH1</para>
+        </inbodydescription>
+        <location file="Core/Src/tim.c" line="240" column="6" bodyfile="Core/Src/tim.c" bodystart="240" bodyend="266"/>
+      </memberdef>
+      <member refid="group___t_i_m___exported___functions___group1_1ga13352a6c9cb3225511e5f29dbb894e84" kind="function"><name>HAL_TIM_Base_MspDeInit</name></member>
+    </sectiondef>
+    <briefdescription>
+<para>This file provides code for the configuration of the TIM instances. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="attention"><para></para>
+</simplesect>
+Copyright (c) 2023 STMicroelectronics. All rights reserved.</para>
+<para>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Header<sp/>*/</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Header<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tim_8h" kindref="compound">tim.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref><sp/><ref refid="tim_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref><sp/><ref refid="tim_8c_1ae4b8faf50eeb07577983d36e4c3894b8" kindref="member">htim14</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref><sp/><ref refid="tim_8c_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref><sp/><ref refid="tim_8c_1a51c6d0c070f8c00f33ee08b4f1eb6e90" kindref="member">htim17</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>TIM3<sp/>init<sp/>function<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tim_8c_1a7912f2916786a2c33cb6fb8259ade58c" kindref="member">MX_TIM3_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM3_Init<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM3_Init<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="struct_t_i_m___clock_config_type_def" kindref="compound">TIM_ClockConfigTypeDef</ref><sp/>sClockSourceConfig<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><ref refid="struct_t_i_m___master_config_type_def" kindref="compound">TIM_MasterConfigTypeDef</ref><sp/>sMasterConfig<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM3_Init<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM3_Init<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>.<ref refid="struct_t_i_m___handle_type_def_1a4076faade36875a6a05767135bb70b86" kindref="member">Instance</ref><sp/>=<sp/><ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1affb82025da5b8d4a06e61f1690460f4d" kindref="member">Prescaler</ref><sp/>=<sp/>64000-1;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a4b29303489c983d0e9326d7ae0196ceb" kindref="member">CounterMode</ref><sp/>=<sp/><ref refid="group___t_i_m___counter___mode_1ga9eb9ab91119c2c76d4db453d599c0b7d" kindref="member">TIM_COUNTERMODE_UP</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a49500eef6a2354eeee4adc005bf9cef6" kindref="member">Period</ref><sp/>=<sp/>1000-1;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a8f20e02ae2774e1523942604315b8e13" kindref="member">ClockDivision</ref><sp/>=<sp/><ref refid="group___t_i_m___clock_division_1ga309297ccd407a836ede6a42d4dc479c1" kindref="member">TIM_CLOCKDIVISION_DIV1</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a24796ba26d572a0993cb065a02865723" kindref="member">AutoReloadPreload</ref><sp/>=<sp/><ref refid="group___t_i_m___auto_reload_preload_1ga4d0cf7e2800d0ab10f3f0ebfac11c9c7" kindref="member">TIM_AUTORELOAD_PRELOAD_DISABLE</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___t_i_m___exported___functions___group1_1ga1b288eb68eb52c97b8d187cdd6e9088f" kindref="member">HAL_TIM_Base_Init</ref>(&amp;<ref refid="tim_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>sClockSourceConfig.<ref refid="struct_t_i_m___clock_config_type_def_1afe27815154e535b96e8fa1b4d2fdd596" kindref="member">ClockSource</ref><sp/>=<sp/><ref refid="group___t_i_m___clock___source_1ga9b398a201d8b6a4f200ebde86b1d8f3a" kindref="member">TIM_CLOCKSOURCE_INTERNAL</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___t_i_m___exported___functions___group8_1gaa29ed013caefca2a181a1cabac66d521" kindref="member">HAL_TIM_ConfigClockSource</ref>(&amp;<ref refid="tim_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>,<sp/>&amp;sClockSourceConfig)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>sMasterConfig.<ref refid="struct_t_i_m___master_config_type_def_1aafb70c2c7a9a93a3dad59a350df2b00f" kindref="member">MasterOutputTrigger</ref><sp/>=<sp/><ref refid="group___t_i_m___master___mode___selection_1ga32a8e436f2c0818a657b0d3fcf4e872d" kindref="member">TIM_TRGO_RESET</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>sMasterConfig.<ref refid="struct_t_i_m___master_config_type_def_1aa17903ecbee15ce7a6d51de5e9602d3f" kindref="member">MasterSlaveMode</ref><sp/>=<sp/><ref refid="group___t_i_m___master___slave___mode_1ga58ff99ef1d6d6f187e3615f9d3ec3b8b" kindref="member">TIM_MASTERSLAVEMODE_DISABLE</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___t_i_m_ex___exported___functions___group5_1ga772129e4fa76d4af34b9b6913698d3c8" kindref="member">HAL_TIMEx_MasterConfigSynchronization</ref>(&amp;<ref refid="tim_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>,<sp/>&amp;sMasterConfig)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM3_Init<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM3_Init<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>TIM14<sp/>init<sp/>function<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tim_8c_1a34e45e5fe68cc66a86b26df2da7e18b4" kindref="member">MX_TIM14_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM14_Init<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM14_Init<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM14_Init<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM14_Init<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1ae4b8faf50eeb07577983d36e4c3894b8" kindref="member">htim14</ref>.<ref refid="struct_t_i_m___handle_type_def_1a4076faade36875a6a05767135bb70b86" kindref="member">Instance</ref><sp/>=<sp/><ref refid="group___peripheral__declaration_1ga2dd30f46fad69dd73e1d8941a43daffe" kindref="member">TIM14</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1ae4b8faf50eeb07577983d36e4c3894b8" kindref="member">htim14</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1affb82025da5b8d4a06e61f1690460f4d" kindref="member">Prescaler</ref><sp/>=<sp/>64000-1;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1ae4b8faf50eeb07577983d36e4c3894b8" kindref="member">htim14</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a4b29303489c983d0e9326d7ae0196ceb" kindref="member">CounterMode</ref><sp/>=<sp/><ref refid="group___t_i_m___counter___mode_1ga9eb9ab91119c2c76d4db453d599c0b7d" kindref="member">TIM_COUNTERMODE_UP</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1ae4b8faf50eeb07577983d36e4c3894b8" kindref="member">htim14</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a49500eef6a2354eeee4adc005bf9cef6" kindref="member">Period</ref><sp/>=<sp/>1000-1;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1ae4b8faf50eeb07577983d36e4c3894b8" kindref="member">htim14</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a8f20e02ae2774e1523942604315b8e13" kindref="member">ClockDivision</ref><sp/>=<sp/><ref refid="group___t_i_m___clock_division_1ga309297ccd407a836ede6a42d4dc479c1" kindref="member">TIM_CLOCKDIVISION_DIV1</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1ae4b8faf50eeb07577983d36e4c3894b8" kindref="member">htim14</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a24796ba26d572a0993cb065a02865723" kindref="member">AutoReloadPreload</ref><sp/>=<sp/><ref refid="group___t_i_m___auto_reload_preload_1ga4d0cf7e2800d0ab10f3f0ebfac11c9c7" kindref="member">TIM_AUTORELOAD_PRELOAD_DISABLE</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___t_i_m___exported___functions___group1_1ga1b288eb68eb52c97b8d187cdd6e9088f" kindref="member">HAL_TIM_Base_Init</ref>(&amp;<ref refid="tim_8c_1ae4b8faf50eeb07577983d36e4c3894b8" kindref="member">htim14</ref>)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM14_Init<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM14_Init<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>TIM16<sp/>init<sp/>function<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tim_8c_1ac648e7f125deef46d41cd8b3f632efe0" kindref="member">MX_TIM16_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM16_Init<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM16_Init<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><ref refid="struct_t_i_m___o_c___init_type_def" kindref="compound">TIM_OC_InitTypeDef</ref><sp/>sConfigOC<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><ref refid="struct_t_i_m___break_dead_time_config_type_def" kindref="compound">TIM_BreakDeadTimeConfigTypeDef</ref><sp/>sBreakDeadTimeConfig<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM16_Init<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM16_Init<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>.<ref refid="struct_t_i_m___handle_type_def_1a4076faade36875a6a05767135bb70b86" kindref="member">Instance</ref><sp/>=<sp/><ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1affb82025da5b8d4a06e61f1690460f4d" kindref="member">Prescaler</ref><sp/>=<sp/>63;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a4b29303489c983d0e9326d7ae0196ceb" kindref="member">CounterMode</ref><sp/>=<sp/><ref refid="group___t_i_m___counter___mode_1ga9eb9ab91119c2c76d4db453d599c0b7d" kindref="member">TIM_COUNTERMODE_UP</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a49500eef6a2354eeee4adc005bf9cef6" kindref="member">Period</ref><sp/>=<sp/>19999;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a8f20e02ae2774e1523942604315b8e13" kindref="member">ClockDivision</ref><sp/>=<sp/><ref refid="group___t_i_m___clock_division_1ga309297ccd407a836ede6a42d4dc479c1" kindref="member">TIM_CLOCKDIVISION_DIV1</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a3c2ea8434bbce30aa191a816e27f9c1f" kindref="member">RepetitionCounter</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a24796ba26d572a0993cb065a02865723" kindref="member">AutoReloadPreload</ref><sp/>=<sp/><ref refid="group___t_i_m___auto_reload_preload_1ga4d0cf7e2800d0ab10f3f0ebfac11c9c7" kindref="member">TIM_AUTORELOAD_PRELOAD_DISABLE</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___t_i_m___exported___functions___group1_1ga1b288eb68eb52c97b8d187cdd6e9088f" kindref="member">HAL_TIM_Base_Init</ref>(&amp;<ref refid="tim_8c_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___t_i_m___exported___functions___group3_1ga25824b2eed564cc37a8983b99a83bdc7" kindref="member">HAL_TIM_PWM_Init</ref>(&amp;<ref refid="tim_8c_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>sConfigOC.<ref refid="struct_t_i_m___o_c___init_type_def_1add4ac9143086c89effbede5c54e958bf" kindref="member">OCMode</ref><sp/>=<sp/><ref refid="group___t_i_m___output___compare__and___p_w_m__modes_1ga766271da571888dfecd9130c3887e9c6" kindref="member">TIM_OCMODE_PWM1</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>sConfigOC.<ref refid="struct_t_i_m___o_c___init_type_def_1a5251c3bce4ca5baf013bc0ace0865a4c" kindref="member">Pulse</ref><sp/>=<sp/>10000;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>sConfigOC.<ref refid="struct_t_i_m___o_c___init_type_def_1a781c7dae9dec8b6c974b1bdf591b77e7" kindref="member">OCPolarity</ref><sp/>=<sp/><ref refid="group___t_i_m___output___compare___polarity_1ga5887380660b742f0045e9695914231b8" kindref="member">TIM_OCPOLARITY_HIGH</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>sConfigOC.<ref refid="struct_t_i_m___o_c___init_type_def_1a978da9dd7cda80eb5fe8d04828b9bbcc" kindref="member">OCNPolarity</ref><sp/>=<sp/><ref refid="group___t_i_m___output___compare___n___polarity_1gad5dbeb61519e4fd55db3a4d136e96316" kindref="member">TIM_OCNPOLARITY_HIGH</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>sConfigOC.<ref refid="struct_t_i_m___o_c___init_type_def_1aadc3d763f52920adcd0150ffbad1043a" kindref="member">OCFastMode</ref><sp/>=<sp/><ref refid="group___t_i_m___output___fast___state_1ga71429b63f2a6604171ccfd3a91ccf43a" kindref="member">TIM_OCFAST_DISABLE</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>sConfigOC.<ref refid="struct_t_i_m___o_c___init_type_def_1a57bb589da3cf2b39b727fe4a3d334ab3" kindref="member">OCIdleState</ref><sp/>=<sp/><ref refid="group___t_i_m___output___compare___idle___state_1ga56505fe4142096454f1da97683ce8bc2" kindref="member">TIM_OCIDLESTATE_RESET</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>sConfigOC.<ref refid="struct_t_i_m___o_c___init_type_def_1a78d21970d78c1e3e328692743406ba25" kindref="member">OCNIdleState</ref><sp/>=<sp/><ref refid="group___t_i_m___output___compare___n___idle___state_1ga7586655652e3c3f1cb4af1ed59d25901" kindref="member">TIM_OCNIDLESTATE_RESET</ref>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___t_i_m___exported___functions___group8_1ga258d2356d817adaa3d39d2d0b6de9223" kindref="member">HAL_TIM_PWM_ConfigChannel</ref>(&amp;<ref refid="tim_8c_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>,<sp/>&amp;sConfigOC,<sp/><ref refid="group___t_i_m___channel_1ga6b1541e4a49d62610899e24bf23f4879" kindref="member">TIM_CHANNEL_1</ref>)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>sBreakDeadTimeConfig.<ref refid="struct_t_i_m___break_dead_time_config_type_def_1af45695121f3b3fe1ab24e8fbdb56d781" kindref="member">OffStateRunMode</ref><sp/>=<sp/><ref refid="group___t_i_m___o_s_s_r___off___state___selection__for___run__mode__state_1gae11820b467ef6d74c90190c8cfce5e73" kindref="member">TIM_OSSR_DISABLE</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>sBreakDeadTimeConfig.<ref refid="struct_t_i_m___break_dead_time_config_type_def_1a24f5a355f44432458801392e40a80faa" kindref="member">OffStateIDLEMode</ref><sp/>=<sp/><ref refid="group___t_i_m___o_s_s_i___off___state___selection__for___idle__mode__state_1gab1a20c65a3d24ef770f8a2a14c24130b" kindref="member">TIM_OSSI_DISABLE</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>sBreakDeadTimeConfig.<ref refid="struct_t_i_m___break_dead_time_config_type_def_1a5fb4b2ca5382b21df284a2d0ce75d32c" kindref="member">LockLevel</ref><sp/>=<sp/><ref refid="group___t_i_m___lock__level_1ga304aece56a9391a4d9b1016144d98fbd" kindref="member">TIM_LOCKLEVEL_OFF</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>sBreakDeadTimeConfig.<ref refid="struct_t_i_m___break_dead_time_config_type_def_1a5a08cf07668e90bc708f8cccf709f2b4" kindref="member">DeadTime</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>sBreakDeadTimeConfig.<ref refid="struct_t_i_m___break_dead_time_config_type_def_1a2a1604bd7f46bd571a2507c5f873474f" kindref="member">BreakState</ref><sp/>=<sp/><ref refid="group___t_i_m___break___input__enable__disable_1ga8b34ce60f3f08c4b0d924a6546939994" kindref="member">TIM_BREAK_DISABLE</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>sBreakDeadTimeConfig.<ref refid="struct_t_i_m___break_dead_time_config_type_def_1a9ac85dcd5135063196b8954d9b779aa7" kindref="member">BreakPolarity</ref><sp/>=<sp/><ref refid="group___t_i_m___break___polarity_1ga97c30f1134accd61e3e42ce37e472700" kindref="member">TIM_BREAKPOLARITY_HIGH</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>sBreakDeadTimeConfig.<ref refid="struct_t_i_m___break_dead_time_config_type_def_1a9832cc0d752f1106cd4fc5a2f0e510c0" kindref="member">BreakFilter</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>sBreakDeadTimeConfig.<ref refid="struct_t_i_m___break_dead_time_config_type_def_1a811ab6cfce79a2aadab7fc040413c037" kindref="member">AutomaticOutput</ref><sp/>=<sp/><ref refid="group___t_i_m___a_o_e___bit___set___reset_1ga65b4336dee767fbe8d8cc4f980f6b18e" kindref="member">TIM_AUTOMATICOUTPUT_DISABLE</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___t_i_m_ex___exported___functions___group5_1ga5ebf7ce00c211c085633ed1fb964d054" kindref="member">HAL_TIMEx_ConfigBreakDeadTime</ref>(&amp;<ref refid="tim_8c_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>,<sp/>&amp;sBreakDeadTimeConfig)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM16_Init<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM16_Init<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1a708f19bbc41b292fccf38f2d9796c46a" kindref="member">HAL_TIM_MspPostInit</ref>(&amp;<ref refid="tim_8c_1af0bea8d8759a0d7e0e296edc9f5d6936" kindref="member">htim16</ref>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>TIM17<sp/>init<sp/>function<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tim_8c_1af7d58ba47b8cffa9bf63d7021a7d5d77" kindref="member">MX_TIM17_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM17_Init<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM17_Init<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM17_Init<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM17_Init<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1a51c6d0c070f8c00f33ee08b4f1eb6e90" kindref="member">htim17</ref>.<ref refid="struct_t_i_m___handle_type_def_1a4076faade36875a6a05767135bb70b86" kindref="member">Instance</ref><sp/>=<sp/><ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1a51c6d0c070f8c00f33ee08b4f1eb6e90" kindref="member">htim17</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1affb82025da5b8d4a06e61f1690460f4d" kindref="member">Prescaler</ref><sp/>=<sp/>63;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1a51c6d0c070f8c00f33ee08b4f1eb6e90" kindref="member">htim17</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a4b29303489c983d0e9326d7ae0196ceb" kindref="member">CounterMode</ref><sp/>=<sp/><ref refid="group___t_i_m___counter___mode_1ga9eb9ab91119c2c76d4db453d599c0b7d" kindref="member">TIM_COUNTERMODE_UP</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1a51c6d0c070f8c00f33ee08b4f1eb6e90" kindref="member">htim17</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a49500eef6a2354eeee4adc005bf9cef6" kindref="member">Period</ref><sp/>=<sp/>65535;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1a51c6d0c070f8c00f33ee08b4f1eb6e90" kindref="member">htim17</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a8f20e02ae2774e1523942604315b8e13" kindref="member">ClockDivision</ref><sp/>=<sp/><ref refid="group___t_i_m___clock_division_1ga309297ccd407a836ede6a42d4dc479c1" kindref="member">TIM_CLOCKDIVISION_DIV1</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1a51c6d0c070f8c00f33ee08b4f1eb6e90" kindref="member">htim17</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a3c2ea8434bbce30aa191a816e27f9c1f" kindref="member">RepetitionCounter</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><ref refid="tim_8c_1a51c6d0c070f8c00f33ee08b4f1eb6e90" kindref="member">htim17</ref>.<ref refid="struct_t_i_m___handle_type_def_1a21046dd4833b51c8e3f5c82ea134d03c" kindref="member">Init</ref>.<ref refid="struct_t_i_m___base___init_type_def_1a24796ba26d572a0993cb065a02865723" kindref="member">AutoReloadPreload</ref><sp/>=<sp/><ref refid="group___t_i_m___auto_reload_preload_1ga4d0cf7e2800d0ab10f3f0ebfac11c9c7" kindref="member">TIM_AUTORELOAD_PRELOAD_DISABLE</ref>;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___t_i_m___exported___functions___group1_1ga1b288eb68eb52c97b8d187cdd6e9088f" kindref="member">HAL_TIM_Base_Init</ref>(&amp;<ref refid="tim_8c_1a51c6d0c070f8c00f33ee08b4f1eb6e90" kindref="member">htim17</ref>)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM17_Init<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM17_Init<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___t_i_m___exported___functions___group1_1ga818f4d5d1e2f417438d281b4ac9efb9c" kindref="member">HAL_TIM_Base_MspInit</ref>(<ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref>*<sp/>tim_baseHandle)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tim_baseHandle-&gt;<ref refid="struct_t_i_m___handle_type_def_1a4076faade36875a6a05767135bb70b86" kindref="member">Instance</ref>==<ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM3_MspInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM3_MspInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TIM3<sp/>clock<sp/>enable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_c_c___a_p_b1___clock___enable___disable_1gaf62d32fdde03df10072d856515692c8d" kindref="member">__HAL_RCC_TIM3_CLK_ENABLE</ref>();</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TIM3<sp/>interrupt<sp/>Init<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1ga8581a82025a4780efd00876a66e3e91b" kindref="member">HAL_NVIC_SetPriority</ref>(<ref refid="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a985574288f66e2a00e97387424a9a2d8" kindref="member">TIM3_IRQn</ref>,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1gaaad4492c1b25e006d69948a15790352a" kindref="member">HAL_NVIC_EnableIRQ</ref>(<ref refid="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a985574288f66e2a00e97387424a9a2d8" kindref="member">TIM3_IRQn</ref>);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM3_MspInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM3_MspInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tim_baseHandle-&gt;<ref refid="struct_t_i_m___handle_type_def_1a4076faade36875a6a05767135bb70b86" kindref="member">Instance</ref>==<ref refid="group___peripheral__declaration_1ga2dd30f46fad69dd73e1d8941a43daffe" kindref="member">TIM14</ref>)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM14_MspInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM14_MspInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TIM14<sp/>clock<sp/>enable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_c_c___a_p_b2___clock___enable___disable_1ga28c0bd63fbc7500f9c209ef42c0931b6" kindref="member">__HAL_RCC_TIM14_CLK_ENABLE</ref>();</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TIM14<sp/>interrupt<sp/>Init<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1ga8581a82025a4780efd00876a66e3e91b" kindref="member">HAL_NVIC_SetPriority</ref>(<ref refid="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8ad1f8257995120fd90b0d4c177a02de5f" kindref="member">TIM14_IRQn</ref>,<sp/>1,<sp/>0);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1gaaad4492c1b25e006d69948a15790352a" kindref="member">HAL_NVIC_EnableIRQ</ref>(<ref refid="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8ad1f8257995120fd90b0d4c177a02de5f" kindref="member">TIM14_IRQn</ref>);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM14_MspInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM14_MspInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tim_baseHandle-&gt;<ref refid="struct_t_i_m___handle_type_def_1a4076faade36875a6a05767135bb70b86" kindref="member">Instance</ref>==<ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM16_MspInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM16_MspInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TIM16<sp/>clock<sp/>enable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_c_c___a_p_b2___clock___enable___disable_1ga9753b09f531d9d48d31abd4f74c26d26" kindref="member">__HAL_RCC_TIM16_CLK_ENABLE</ref>();</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM16_MspInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM16_MspInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tim_baseHandle-&gt;<ref refid="struct_t_i_m___handle_type_def_1a4076faade36875a6a05767135bb70b86" kindref="member">Instance</ref>==<ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM17_MspInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM17_MspInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TIM17<sp/>clock<sp/>enable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_c_c___a_p_b2___clock___enable___disable_1ga983ec0b6719bbf98e40818a8e6817c58" kindref="member">__HAL_RCC_TIM17_CLK_ENABLE</ref>();</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM17_MspInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM17_MspInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tim_8c_1a708f19bbc41b292fccf38f2d9796c46a" kindref="member">HAL_TIM_MspPostInit</ref>(<ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref>*<sp/>timHandle)</highlight></codeline>
+<codeline lineno="241"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><ref refid="struct_g_p_i_o___init_type_def" kindref="compound">GPIO_InitTypeDef</ref><sp/>GPIO_InitStruct<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(timHandle-&gt;<ref refid="struct_t_i_m___handle_type_def_1a4076faade36875a6a05767135bb70b86" kindref="member">Instance</ref>==<ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM16_MspPostInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM16_MspPostInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_c_c___i_o_p_o_r_t___clock___enable___disable_1ga1fde58d775fd2458002df817a68f486e" kindref="member">__HAL_RCC_GPIOA_CLK_ENABLE</ref>();</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1a871d0ab74071724e96b7cc9ae2a7532b" kindref="member">Pin</ref><sp/>=<sp/><ref refid="main_8h_1a184238358e23b4ab829703da23a46a08" kindref="member">SERVO_PWM_Pin</ref>;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>=<sp/><ref refid="group___g_p_i_o__mode_1ga526c72c5264316fc05c775b6cad4aa6a" kindref="member">GPIO_MODE_AF_PP</ref>;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1a6cdde08eb507b710f8179a4326548e26" kindref="member">Pull</ref><sp/>=<sp/><ref refid="group___g_p_i_o__pull_1ga5c2862579882c1cc64e36d38fbd07a4c" kindref="member">GPIO_NOPULL</ref>;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1ad04b2041f59d32492ec36a891418f3fd" kindref="member">Speed</ref><sp/>=<sp/><ref refid="group___g_p_i_o__speed_1gab7916c4265bfa1b26a5205ea9c1caa4e" kindref="member">GPIO_SPEED_FREQ_LOW</ref>;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1a9a352764836bb14ec56a94f77697b52d" kindref="member">Alternate</ref><sp/>=<sp/>GPIO_AF5_TIM16;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group1_1ga41bda93b6dd639e4905fdb1454eff98e" kindref="member">HAL_GPIO_Init</ref>(<ref refid="main_8h_1a8a5065227132d1a85e6b8981a0d7683e" kindref="member">SERVO_PWM_GPIO_Port</ref>,<sp/>&amp;GPIO_InitStruct);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM16_MspPostInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM16_MspPostInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___t_i_m___exported___functions___group1_1ga13352a6c9cb3225511e5f29dbb894e84" kindref="member">HAL_TIM_Base_MspDeInit</ref>(<ref refid="struct_t_i_m___handle_type_def" kindref="compound">TIM_HandleTypeDef</ref>*<sp/>tim_baseHandle)</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tim_baseHandle-&gt;<ref refid="struct_t_i_m___handle_type_def_1a4076faade36875a6a05767135bb70b86" kindref="member">Instance</ref>==<ref refid="group___peripheral__declaration_1ga61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM3_MspDeInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM3_MspDeInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Peripheral<sp/>clock<sp/>disable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_c_c___a_p_b2___clock___enable___disable_1ga9fb7035f007ec272b725e51018a36b23" kindref="member">__HAL_RCC_TIM3_CLK_DISABLE</ref>();</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TIM3<sp/>interrupt<sp/>Deinit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1ga50ca6290e068821cb84aa168f3e13967" kindref="member">HAL_NVIC_DisableIRQ</ref>(<ref refid="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a985574288f66e2a00e97387424a9a2d8" kindref="member">TIM3_IRQn</ref>);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM3_MspDeInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM3_MspDeInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tim_baseHandle-&gt;<ref refid="struct_t_i_m___handle_type_def_1a4076faade36875a6a05767135bb70b86" kindref="member">Instance</ref>==<ref refid="group___peripheral__declaration_1ga2dd30f46fad69dd73e1d8941a43daffe" kindref="member">TIM14</ref>)</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM14_MspDeInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM14_MspDeInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Peripheral<sp/>clock<sp/>disable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_c_c___a_p_b2___clock___enable___disable_1ga492911cce1e54350519e7793c897102b" kindref="member">__HAL_RCC_TIM14_CLK_DISABLE</ref>();</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TIM14<sp/>interrupt<sp/>Deinit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1ga50ca6290e068821cb84aa168f3e13967" kindref="member">HAL_NVIC_DisableIRQ</ref>(<ref refid="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8ad1f8257995120fd90b0d4c177a02de5f" kindref="member">TIM14_IRQn</ref>);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM14_MspDeInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM14_MspDeInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tim_baseHandle-&gt;<ref refid="struct_t_i_m___handle_type_def_1a4076faade36875a6a05767135bb70b86" kindref="member">Instance</ref>==<ref refid="group___peripheral__declaration_1ga73ec606e7dacf17e18c661e8ff8c7c8d" kindref="member">TIM16</ref>)</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM16_MspDeInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM16_MspDeInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Peripheral<sp/>clock<sp/>disable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_c_c___a_p_b2___clock___enable___disable_1ga4f23f7c1565e07731f200059c8ed4db9" kindref="member">__HAL_RCC_TIM16_CLK_DISABLE</ref>();</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TIM16<sp/>interrupt<sp/>Deinit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1ga50ca6290e068821cb84aa168f3e13967" kindref="member">HAL_NVIC_DisableIRQ</ref>(<ref refid="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8affb53ebc9ffb3bdec7cb44ab642d32cb" kindref="member">TIM16_IRQn</ref>);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM16_MspDeInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM16_MspDeInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tim_baseHandle-&gt;<ref refid="struct_t_i_m___handle_type_def_1a4076faade36875a6a05767135bb70b86" kindref="member">Instance</ref>==<ref refid="group___peripheral__declaration_1ga65aea6c8b36439e44ad6cde0e6891aab" kindref="member">TIM17</ref>)</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM17_MspDeInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM17_MspDeInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Peripheral<sp/>clock<sp/>disable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_c_c___a_p_b2___clock___enable___disable_1ga6c046db26bd6495179e6171dc6caeff3" kindref="member">__HAL_RCC_TIM17_CLK_DISABLE</ref>();</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>TIM17_MspDeInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>TIM17_MspDeInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Core/Src/tim.c"/>
+  </compounddef>
+</doxygen>

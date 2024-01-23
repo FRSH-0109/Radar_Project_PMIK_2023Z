@@ -1,0 +1,87 @@
+.TH "Library_configuration_section" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Library_configuration_section \- Library_configuration_section
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSTM32G0\fP"
+.br
+.RI "STM32 Family\&. "
+.ti -1c
+.RI "#define \fB__STM32G0_CMSIS_VERSION_MAIN\fP   (0x01U)"
+.br
+.RI "Comment the line below if you will not use the peripherals drivers\&. In this case, these drivers will not be included and the application code will be based on direct access to peripherals registers\&. "
+.ti -1c
+.RI "#define \fB__STM32G0_CMSIS_VERSION_SUB1\fP   (0x04U)"
+.br
+.ti -1c
+.RI "#define \fB__STM32G0_CMSIS_VERSION_SUB2\fP   (0x03U)"
+.br
+.ti -1c
+.RI "#define \fB__STM32G0_CMSIS_VERSION_RC\fP   (0x00U)"
+.br
+.ti -1c
+.RI "#define \fB__STM32G0_CMSIS_VERSION\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __STM32G0_CMSIS_VERSION"
+\fBValue:\fP.PP
+.nf
+                                       ((__STM32G0_CMSIS_VERSION_MAIN << 24)\\
+                                       |(__STM32G0_CMSIS_VERSION_SUB1 << 16)\\
+                                       |(__STM32G0_CMSIS_VERSION_SUB2 << 8 )\\
+                                       |(__STM32G0_CMSIS_VERSION_RC))
+.fi
+
+.SS "#define __STM32G0_CMSIS_VERSION_MAIN   (0x01U)"
+
+.PP
+Comment the line below if you will not use the peripherals drivers\&. In this case, these drivers will not be included and the application code will be based on direct access to peripherals registers\&. < STM32G0B0xx Devices
+.PP
+< STM32G0B1xx Devices
+.PP
+< STM32G0C1xx Devices
+.PP
+< STM32G070xx Devices
+.PP
+< STM32G071xx Devices
+.PP
+< STM32G081xx Devices
+.PP
+< STM32G050xx Devices
+.PP
+< STM32G051xx Devices
+.PP
+< STM32G061xx Devices
+.PP
+< STM32G030xx Devices
+.PP
+< STM32G031xx Devices
+.PP
+< STM32G041xx Devices
+.PP
+CMSIS Device version number $VERSION$ [31:24] main version 
+.SS "#define __STM32G0_CMSIS_VERSION_RC   (0x00U)"
+[7:0] release candidate 
+.SS "#define __STM32G0_CMSIS_VERSION_SUB1   (0x04U)"
+[23:16] sub1 version 
+.SS "#define __STM32G0_CMSIS_VERSION_SUB2   (0x03U)"
+[15:8] sub2 version 
+.SS "#define STM32G0"
+
+.PP
+STM32 Family\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

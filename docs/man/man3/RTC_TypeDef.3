@@ -1,0 +1,149 @@
+.TH "RTC_TypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RTC_TypeDef \- Real-Time Clock\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g030xx\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBDR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBSSR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBICSR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPRER\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBWUTR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED0\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBWPR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCALR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBSHIFTR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTSTR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTSDR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTSSSR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED2\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBALRMAR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBALRMASSR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBALRMBR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBALRMBSSR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBSR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMISR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED3\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBSCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBOR\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Real-Time Clock\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::ALRMAR"
+RTC alarm A register, Address offset: 0x40 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::ALRMASSR"
+RTC alarm A sub second register, Address offset: 0x44 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::ALRMBR"
+RTC alarm B register, Address offset: 0x48 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::ALRMBSSR"
+RTC alarm B sub second register, Address offset: 0x4C 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::CALR"
+RTC calibration register, Address offset: 0x28 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::CR"
+RTC control register, Address offset: 0x18 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::DR"
+RTC date register, Address offset: 0x04 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::ICSR"
+RTC initialization control and status register, Address offset: 0x0C 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::MISR"
+RTC Masked Interrupt Status register, Address offset: 0x54 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::OR"
+RTC option register, Address offset: 0x60 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::PRER"
+RTC prescaler register, Address offset: 0x10 
+.SS "uint32_t RTC_TypeDef::RESERVED0"
+Reserved Address offset: 0x1C 
+.SS "uint32_t RTC_TypeDef::RESERVED1"
+Reserved Address offset: 0x20 
+.SS "uint32_t RTC_TypeDef::RESERVED2"
+Reserved Address offset: 0x1C 
+.SS "uint32_t RTC_TypeDef::RESERVED3"
+Reserved Address offset: 0x58 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::SCR"
+RTC Status Clear register, Address offset: 0x5C 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::SHIFTR"
+RTC shift control register, Address offset: 0x2C 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::SR"
+RTC Status register, Address offset: 0x50 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::SSR"
+RTC sub second register, Address offset: 0x08 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::TR"
+RTC time register, Address offset: 0x00 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::TSDR"
+RTC time stamp date register, Address offset: 0x34 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::TSSSR"
+RTC time-stamp sub second register, Address offset: 0x38 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::TSTR"
+RTC time stamp time register, Address offset: 0x30 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::WPR"
+RTC write protection register, Address offset: 0x24 
+.SS "\fB__IO\fP uint32_t RTC_TypeDef::WUTR"
+RTC wakeup timer register, Address offset: 0x14 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

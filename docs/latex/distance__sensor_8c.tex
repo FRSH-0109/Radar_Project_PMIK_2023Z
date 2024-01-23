@@ -1,0 +1,57 @@
+\doxysection{Radar\+App/\+Distance\+Sensor\+Driver/distance\+\_\+sensor.c File Reference}
+\hypertarget{distance__sensor_8c}{}\label{distance__sensor_8c}\index{RadarApp/DistanceSensorDriver/distance\_sensor.c@{RadarApp/DistanceSensorDriver/distance\_sensor.c}}
+{\ttfamily \#include $<$distance\+\_\+sensor.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{distance__sensor_8c_aea4bc35ea8c7e00d2399a54ba0eb870e}{distance\+Sensor\+Init}} (\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor, double ticks\+To\+Distance\+Factor)
+\item 
+\mbox{\hyperlink{distance__sensor_8c_af9aace1b44b73111e15aa39f06f43456}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}} ((weak))
+\item 
+void \mbox{\hyperlink{distance__sensor_8c_a964e472531fcf3cede5de7d5b346e71b}{distance\+Sensor\+Send\+Trig}} (\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor)
+\item 
+void \mbox{\hyperlink{distance__sensor_8c_a964997505302c61de0ece0f151663c4c}{distance\+Sensor\+Get\+Echo}} (\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor, uint16\+\_\+t ticks)
+\item 
+bool \mbox{\hyperlink{distance__sensor_8c_a37c464e811677e7c95d8331281304d33}{distance\+Sensor\+Get\+Ready\+To\+Measure}} (\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor)
+\item 
+double \mbox{\hyperlink{distance__sensor_8c_af86e9e0dc722a2351b4e909023a53480}{distance\+Sensor\+Get\+Distance}} (\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{distance__sensor_8c_af9aace1b44b73111e15aa39f06f43456}\label{distance__sensor_8c_af9aace1b44b73111e15aa39f06f43456} 
+\index{distance\_sensor.c@{distance\_sensor.c}!\_\_attribute\_\_@{\_\_attribute\_\_}}
+\index{\_\_attribute\_\_@{\_\_attribute\_\_}!distance\_sensor.c@{distance\_sensor.c}}
+\doxysubsubsection{\texorpdfstring{\_\_attribute\_\_()}{\_\_attribute\_\_()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+attribute\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{(weak)}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{distance__sensor_8c_af86e9e0dc722a2351b4e909023a53480}\label{distance__sensor_8c_af86e9e0dc722a2351b4e909023a53480} 
+\index{distance\_sensor.c@{distance\_sensor.c}!distanceSensorGetDistance@{distanceSensorGetDistance}}
+\index{distanceSensorGetDistance@{distanceSensorGetDistance}!distance\_sensor.c@{distance\_sensor.c}}
+\doxysubsubsection{\texorpdfstring{distanceSensorGetDistance()}{distanceSensorGetDistance()}}
+{\footnotesize\ttfamily double distance\+Sensor\+Get\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor }\end{DoxyParamCaption})}
+
+\Hypertarget{distance__sensor_8c_a964997505302c61de0ece0f151663c4c}\label{distance__sensor_8c_a964997505302c61de0ece0f151663c4c} 
+\index{distance\_sensor.c@{distance\_sensor.c}!distanceSensorGetEcho@{distanceSensorGetEcho}}
+\index{distanceSensorGetEcho@{distanceSensorGetEcho}!distance\_sensor.c@{distance\_sensor.c}}
+\doxysubsubsection{\texorpdfstring{distanceSensorGetEcho()}{distanceSensorGetEcho()}}
+{\footnotesize\ttfamily void distance\+Sensor\+Get\+Echo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor,  }\item[{uint16\+\_\+t}]{ticks }\end{DoxyParamCaption})}
+
+\Hypertarget{distance__sensor_8c_a37c464e811677e7c95d8331281304d33}\label{distance__sensor_8c_a37c464e811677e7c95d8331281304d33} 
+\index{distance\_sensor.c@{distance\_sensor.c}!distanceSensorGetReadyToMeasure@{distanceSensorGetReadyToMeasure}}
+\index{distanceSensorGetReadyToMeasure@{distanceSensorGetReadyToMeasure}!distance\_sensor.c@{distance\_sensor.c}}
+\doxysubsubsection{\texorpdfstring{distanceSensorGetReadyToMeasure()}{distanceSensorGetReadyToMeasure()}}
+{\footnotesize\ttfamily bool distance\+Sensor\+Get\+Ready\+To\+Measure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor }\end{DoxyParamCaption})}
+
+\Hypertarget{distance__sensor_8c_aea4bc35ea8c7e00d2399a54ba0eb870e}\label{distance__sensor_8c_aea4bc35ea8c7e00d2399a54ba0eb870e} 
+\index{distance\_sensor.c@{distance\_sensor.c}!distanceSensorInit@{distanceSensorInit}}
+\index{distanceSensorInit@{distanceSensorInit}!distance\_sensor.c@{distance\_sensor.c}}
+\doxysubsubsection{\texorpdfstring{distanceSensorInit()}{distanceSensorInit()}}
+{\footnotesize\ttfamily void distance\+Sensor\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor,  }\item[{double}]{ticks\+To\+Distance\+Factor }\end{DoxyParamCaption})}
+
+\Hypertarget{distance__sensor_8c_a964e472531fcf3cede5de7d5b346e71b}\label{distance__sensor_8c_a964e472531fcf3cede5de7d5b346e71b} 
+\index{distance\_sensor.c@{distance\_sensor.c}!distanceSensorSendTrig@{distanceSensorSendTrig}}
+\index{distanceSensorSendTrig@{distanceSensorSendTrig}!distance\_sensor.c@{distance\_sensor.c}}
+\doxysubsubsection{\texorpdfstring{distanceSensorSendTrig()}{distanceSensorSendTrig()}}
+{\footnotesize\ttfamily void distance\+Sensor\+Send\+Trig (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor }\end{DoxyParamCaption})}
+

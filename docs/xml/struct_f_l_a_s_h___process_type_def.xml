@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_f_l_a_s_h___process_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>FLASH_ProcessTypeDef</compoundname>
+    <includes refid="stm32g0xx__hal__flash_8h" local="no">stm32g0xx_hal_flash.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_l_a_s_h___process_type_def_1ad4cf225029dbefe8d3fe660c33b8bb6b" prot="public" static="no" mutable="no">
+        <type><ref refid="stm32g0xx__hal__def_8h_1ab367482e943333a1299294eadaad284b" kindref="member">HAL_LockTypeDef</ref></type>
+        <definition>HAL_LockTypeDef Lock</definition>
+        <argsstring></argsstring>
+        <name>Lock</name>
+        <qualifiedname>FLASH_ProcessTypeDef::Lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="138" column="21" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___process_type_def_1a66f47ab0beaa0defb8a75817dbab2ef3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ErrorCode</definition>
+        <argsstring></argsstring>
+        <name>ErrorCode</name>
+        <qualifiedname>FLASH_ProcessTypeDef::ErrorCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="139" column="21" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___process_type_def_1adda092bee12e49fc4cb5468429e2e8d3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ProcedureOnGoing</definition>
+        <argsstring></argsstring>
+        <name>ProcedureOnGoing</name>
+        <qualifiedname>FLASH_ProcessTypeDef::ProcedureOnGoing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="140" column="21" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___process_type_def_1aca1b23fd721c8d8dc70a8227e336b6e8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Address</definition>
+        <argsstring></argsstring>
+        <name>Address</name>
+        <qualifiedname>FLASH_ProcessTypeDef::Address</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="141" column="21" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___process_type_def_1aa07868a5b012861c6111322c3dccdbec" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Banks</definition>
+        <argsstring></argsstring>
+        <name>Banks</name>
+        <qualifiedname>FLASH_ProcessTypeDef::Banks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="142" column="21" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___process_type_def_1ad5ac387429b4b85d2ee00e34559b4a28" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Page</definition>
+        <argsstring></argsstring>
+        <name>Page</name>
+        <qualifiedname>FLASH_ProcessTypeDef::Page</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="143" column="21" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___process_type_def_1aaa07dbf9d1176059fe93dfab7b808ca6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t NbPagesToErase</definition>
+        <argsstring></argsstring>
+        <name>NbPagesToErase</name>
+        <qualifiedname>FLASH_ProcessTypeDef::NbPagesToErase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="144" column="21" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>FLASH handle Structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="136" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="137" bodyend="145"/>
+    <listofallmembers>
+      <member refid="struct_f_l_a_s_h___process_type_def_1aca1b23fd721c8d8dc70a8227e336b6e8" prot="public" virt="non-virtual"><scope>FLASH_ProcessTypeDef</scope><name>Address</name></member>
+      <member refid="struct_f_l_a_s_h___process_type_def_1aa07868a5b012861c6111322c3dccdbec" prot="public" virt="non-virtual"><scope>FLASH_ProcessTypeDef</scope><name>Banks</name></member>
+      <member refid="struct_f_l_a_s_h___process_type_def_1a66f47ab0beaa0defb8a75817dbab2ef3" prot="public" virt="non-virtual"><scope>FLASH_ProcessTypeDef</scope><name>ErrorCode</name></member>
+      <member refid="struct_f_l_a_s_h___process_type_def_1ad4cf225029dbefe8d3fe660c33b8bb6b" prot="public" virt="non-virtual"><scope>FLASH_ProcessTypeDef</scope><name>Lock</name></member>
+      <member refid="struct_f_l_a_s_h___process_type_def_1aaa07dbf9d1176059fe93dfab7b808ca6" prot="public" virt="non-virtual"><scope>FLASH_ProcessTypeDef</scope><name>NbPagesToErase</name></member>
+      <member refid="struct_f_l_a_s_h___process_type_def_1ad5ac387429b4b85d2ee00e34559b4a28" prot="public" virt="non-virtual"><scope>FLASH_ProcessTypeDef</scope><name>Page</name></member>
+      <member refid="struct_f_l_a_s_h___process_type_def_1adda092bee12e49fc4cb5468429e2e8d3" prot="public" virt="non-virtual"><scope>FLASH_ProcessTypeDef</scope><name>ProcedureOnGoing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

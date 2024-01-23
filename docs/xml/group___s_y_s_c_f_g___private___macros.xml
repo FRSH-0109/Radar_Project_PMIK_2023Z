@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_y_s_c_f_g___private___macros" kind="group">
+    <compoundname>SYSCFG_Private_Macros</compoundname>
+    <title>SYSCFG Private Macros</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_y_s_c_f_g___private___macros_1ga123b29e8d38b29577a004e3b0f97d624" prot="public" static="no">
+        <name>IS_SYSCFG_BREAK_CONFIG</name>
+        <param><defname>__CONFIG__</defname></param>
+        <initializer>                                            (((__CONFIG__) == <ref refid="group___s_y_s_c_f_g___break_1ga0b12fed7483ef8feb8b29601d8e31ab5" kindref="member">SYSCFG_BREAK_SP</ref>)        || \
+                                            ((__CONFIG__) == <ref refid="group___s_y_s_c_f_g___break_1ga0072a6cf39044d79a06fa10de0f8ec22" kindref="member">SYSCFG_BREAK_ECC</ref>)       || \
+                                            ((__CONFIG__) == <ref refid="group___s_y_s_c_f_g___break_1gafa4da24adf8bc1a333276ad5955af133" kindref="member">SYSCFG_BREAK_LOCKUP</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="655" column="10" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="655" bodyend="657"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___private___macros_1ga782e6d930c80255039b3aaad70890718" prot="public" static="no">
+        <name>IS_HAL_SYSCFG_IRDA_ENV_SEL</name>
+        <param><defname>SEL</defname></param>
+        <initializer>                                           (((SEL) == <ref refid="group___h_a_l___i_r___e_n_v___s_e_l_1ga947f865cc1826ecb0a42da790ca95545" kindref="member">HAL_SYSCFG_IRDA_ENV_SEL_TIM16</ref>)   || \
+                                           ((SEL) == <ref refid="group___h_a_l___i_r___e_n_v___s_e_l_1gae4f35dbc8d64fd2057171f3e34abb2ec" kindref="member">HAL_SYSCFG_IRDA_ENV_SEL_USART1</ref>)  || \
+                                           ((SEL) == <ref refid="group___h_a_l___i_r___e_n_v___s_e_l_1ga9113234f4a34c1a1eb31180124017a4b" kindref="member">HAL_SYSCFG_IRDA_ENV_SEL_USART2</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="676" column="10" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="676" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___private___macros_1gaf1f673d4fd68fa7b19334f5350e442d8" prot="public" static="no">
+        <name>IS_HAL_SYSCFG_IRDA_POL_SEL</name>
+        <param><defname>SEL</defname></param>
+        <initializer>                                           (((SEL) == <ref refid="group___h_a_l___i_r___p_o_l___s_e_l_1gaebbd73d48c6c6d48aface6a2ae3e3ab5" kindref="member">HAL_SYSCFG_IRDA_POLARITY_NOT_INVERTED</ref>)   || \
+                                           ((SEL) == <ref refid="group___h_a_l___i_r___p_o_l___s_e_l_1ga7d22d4a13fb77a2a4313fe63831ddb39" kindref="member">HAL_SYSCFG_IRDA_POLARITY_INVERTED</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="680" column="11" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="680" bodyend="681"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___private___macros_1ga2d44c67961ec9f4feecec777364c13a0" prot="public" static="no">
+        <name>IS_SYSCFG_FASTMODEPLUS</name>
+        <param><defname>__PIN__</defname></param>
+        <initializer>                                         ((((__PIN__) &amp; <ref refid="group___s_y_s_c_f_g___fast_mode_plus___g_p_i_o_1ga5b365beabe5b397dad57a7ce8a7d8450" kindref="member">SYSCFG_FASTMODEPLUS_PA9</ref>)  == <ref refid="group___s_y_s_c_f_g___fast_mode_plus___g_p_i_o_1ga5b365beabe5b397dad57a7ce8a7d8450" kindref="member">SYSCFG_FASTMODEPLUS_PA9</ref>)  || \
+                                         (((__PIN__) &amp; <ref refid="group___s_y_s_c_f_g___fast_mode_plus___g_p_i_o_1ga9717fdd4e2bcaae46ddfd00c3e79ce65" kindref="member">SYSCFG_FASTMODEPLUS_PA10</ref>) == <ref refid="group___s_y_s_c_f_g___fast_mode_plus___g_p_i_o_1ga9717fdd4e2bcaae46ddfd00c3e79ce65" kindref="member">SYSCFG_FASTMODEPLUS_PA10</ref>) || \
+                                         (((__PIN__) &amp; <ref refid="group___s_y_s_c_f_g___fast_mode_plus___g_p_i_o_1ga1f9beaf68b00ae5598cb8d930da05704" kindref="member">SYSCFG_FASTMODEPLUS_PB6</ref>)  == <ref refid="group___s_y_s_c_f_g___fast_mode_plus___g_p_i_o_1ga1f9beaf68b00ae5598cb8d930da05704" kindref="member">SYSCFG_FASTMODEPLUS_PB6</ref>)  || \
+                                         (((__PIN__) &amp; <ref refid="group___s_y_s_c_f_g___fast_mode_plus___g_p_i_o_1ga4b939ef5ec69e81277ef2323d5917eb5" kindref="member">SYSCFG_FASTMODEPLUS_PB7</ref>)  == <ref refid="group___s_y_s_c_f_g___fast_mode_plus___g_p_i_o_1ga4b939ef5ec69e81277ef2323d5917eb5" kindref="member">SYSCFG_FASTMODEPLUS_PB7</ref>)  || \
+                                         (((__PIN__) &amp; <ref refid="group___s_y_s_c_f_g___fast_mode_plus___g_p_i_o_1ga2cd8442a02f25ed8e7e0ba6e5723edd4" kindref="member">SYSCFG_FASTMODEPLUS_PB8</ref>)  == <ref refid="group___s_y_s_c_f_g___fast_mode_plus___g_p_i_o_1ga2cd8442a02f25ed8e7e0ba6e5723edd4" kindref="member">SYSCFG_FASTMODEPLUS_PB8</ref>)  || \
+                                         (((__PIN__) &amp; <ref refid="group___s_y_s_c_f_g___fast_mode_plus___g_p_i_o_1ga71c50ae2406cd9b6dff73cd9cd189c3d" kindref="member">SYSCFG_FASTMODEPLUS_PB9</ref>)  == <ref refid="group___s_y_s_c_f_g___fast_mode_plus___g_p_i_o_1ga71c50ae2406cd9b6dff73cd9cd189c3d" kindref="member">SYSCFG_FASTMODEPLUS_PB9</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="698" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="698" bodyend="703"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___private___macros_1gae8f92f946553b887a94eeb8b6ce06d6e" prot="public" static="no">
+        <name>IS_HAL_REMAP_PIN</name>
+        <param><defname>RMP</defname></param>
+        <initializer>                                             (((RMP) == <ref refid="group___h_a_l___pin__remapping_1ga14e1f5f69a357f6f96342be6a3764ea1" kindref="member">SYSCFG_REMAP_PA11</ref>) || \
+                                             ((RMP) == <ref refid="group___h_a_l___pin__remapping_1ga6a488d188dd4f352c25414fb3efedd4d" kindref="member">SYSCFG_REMAP_PA12</ref>) || \
+                                             ((RMP) == (<ref refid="group___h_a_l___pin__remapping_1ga14e1f5f69a357f6f96342be6a3764ea1" kindref="member">SYSCFG_REMAP_PA11</ref> | <ref refid="group___h_a_l___pin__remapping_1ga6a488d188dd4f352c25414fb3efedd4d" kindref="member">SYSCFG_REMAP_PA12</ref>)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="705" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="705" bodyend="707"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

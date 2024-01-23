@@ -1,0 +1,40 @@
+.TH "TIM_Break_System" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_Break_System \- TIM Break System
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_BREAK_SYSTEM_ECC\fP   \fBSYSCFG_CFGR2_ECCL\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_BREAK_SYSTEM_PVD\fP   SYSCFG_CFGR2_PVDL"
+.br
+.ti -1c
+.RI "#define \fBTIM_BREAK_SYSTEM_SRAM_PARITY_ERROR\fP   \fBSYSCFG_CFGR2_SPL\fP"
+.br
+.ti -1c
+.RI "#define \fBTIM_BREAK_SYSTEM_LOCKUP\fP   \fBSYSCFG_CFGR2_CLL\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define TIM_BREAK_SYSTEM_ECC   \fBSYSCFG_CFGR2_ECCL\fP"
+Enables and locks the ECC error signal with Break Input of TIM1/15/16/17 
+.SS "#define TIM_BREAK_SYSTEM_LOCKUP   \fBSYSCFG_CFGR2_CLL\fP"
+Enables and locks the LOCKUP output of CortexM4 with Break Input of TIM1/15/16/17 
+.SS "#define TIM_BREAK_SYSTEM_PVD   SYSCFG_CFGR2_PVDL"
+Enables and locks the PVD connection with TIM1/15/16/17 Break Input and also the PVDE and PLS bits of the Power Control Interface 
+.SS "#define TIM_BREAK_SYSTEM_SRAM_PARITY_ERROR   \fBSYSCFG_CFGR2_SPL\fP"
+Enables and locks the SRAM_PARITY error signal with Break Input of TIM1/15/16/17 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

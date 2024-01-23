@@ -1,0 +1,55 @@
+.TH "RCC_Interrupt" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_Interrupt \- Interrupts
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_IT_LSIRDY\fP   \fBRCC_CIFR_LSIRDYF\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_IT_LSERDY\fP   \fBRCC_CIFR_LSERDYF\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_IT_HSIRDY\fP   \fBRCC_CIFR_HSIRDYF\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_IT_HSERDY\fP   \fBRCC_CIFR_HSERDYF\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_IT_PLLRDY\fP   \fBRCC_CIFR_PLLRDYF\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_IT_CSS\fP   \fBRCC_CIFR_CSSF\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_IT_LSECSS\fP   \fBRCC_CIFR_LSECSSF\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RCC_IT_CSS   \fBRCC_CIFR_CSSF\fP"
+HSE Clock Security System Interrupt flag 
+.SS "#define RCC_IT_HSERDY   \fBRCC_CIFR_HSERDYF\fP"
+HSE Ready Interrupt flag 
+.SS "#define RCC_IT_HSIRDY   \fBRCC_CIFR_HSIRDYF\fP"
+HSI Ready Interrupt flag 
+.SS "#define RCC_IT_LSECSS   \fBRCC_CIFR_LSECSSF\fP"
+LSE Clock Security System Interrupt flag 
+.SS "#define RCC_IT_LSERDY   \fBRCC_CIFR_LSERDYF\fP"
+LSE Ready Interrupt flag 
+.SS "#define RCC_IT_LSIRDY   \fBRCC_CIFR_LSIRDYF\fP"
+LSI Ready Interrupt flag 
+.SS "#define RCC_IT_PLLRDY   \fBRCC_CIFR_PLLRDYF\fP"
+PLL Ready Interrupt flag 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

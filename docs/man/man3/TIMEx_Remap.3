@@ -1,0 +1,40 @@
+.TH "TIMEx_Remap" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIMEx_Remap \- TIM Extended Remapping
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIM_TIM1_ETR_GPIO\fP   0x00000000U                                 /* !< TIM1_ETR is connected to GPIO */"
+.br
+.ti -1c
+.RI "#define \fBTIM_TIM1_ETR_ADC1_AWD1\fP   (\fBTIM1_AF1_ETRSEL_1\fP | \fBTIM1_AF1_ETRSEL_0\fP)     /* !< TIM1_ETR is connected to \fBADC1\fP AWD1 */"
+.br
+.ti -1c
+.RI "#define \fBTIM_TIM1_ETR_ADC1_AWD2\fP   \fBTIM1_AF1_ETRSEL_2\fP                           /* !< TIM1_ETR is connected to \fBADC1\fP AWD2 */"
+.br
+.ti -1c
+.RI "#define \fBTIM_TIM1_ETR_ADC1_AWD3\fP   (\fBTIM1_AF1_ETRSEL_2\fP | \fBTIM1_AF1_ETRSEL_0\fP)     /* !< TIM1_ETR is connected to \fBADC1\fP AWD3 */"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define TIM_TIM1_ETR_ADC1_AWD1   (\fBTIM1_AF1_ETRSEL_1\fP | \fBTIM1_AF1_ETRSEL_0\fP)     /* !< TIM1_ETR is connected to \fBADC1\fP AWD1 */"
+
+.SS "#define TIM_TIM1_ETR_ADC1_AWD2   \fBTIM1_AF1_ETRSEL_2\fP                           /* !< TIM1_ETR is connected to \fBADC1\fP AWD2 */"
+
+.SS "#define TIM_TIM1_ETR_ADC1_AWD3   (\fBTIM1_AF1_ETRSEL_2\fP | \fBTIM1_AF1_ETRSEL_0\fP)     /* !< TIM1_ETR is connected to \fBADC1\fP AWD3 */"
+
+.SS "#define TIM_TIM1_ETR_GPIO   0x00000000U                                 /* !< TIM1_ETR is connected to GPIO */"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

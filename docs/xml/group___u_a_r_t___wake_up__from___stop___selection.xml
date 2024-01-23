@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___u_a_r_t___wake_up__from___stop___selection" kind="group">
+    <compoundname>UART_WakeUp_from_Stop_Selection</compoundname>
+    <title>UART WakeUp From Stop Selection</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_a_r_t___wake_up__from___stop___selection_1ga926f94a665ed3d200e76aeb01f2ae275" prot="public" static="no">
+        <name>UART_WAKEUP_ON_ADDRESS</name>
+        <initializer>0x00000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART wake-up on address <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="670" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="670" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___wake_up__from___stop___selection_1gade5095181db7434078e904af198c1699" prot="public" static="no">
+        <name>UART_WAKEUP_ON_STARTBIT</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga3187bcba3c2e213f8a0523aa02837b32" kindref="member">USART_CR3_WUS_1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART wake-up on start bit <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="671" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="671" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___wake_up__from___stop___selection_1ga77464f7eaba9f0a34876b1df36b8292e" prot="public" static="no">
+        <name>UART_WAKEUP_ON_READDATA_NONEMPTY</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga76d102b464f15cbe18b0d83b61150293" kindref="member">USART_CR3_WUS</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART wake-up on receive data register not empty or RXFIFO is not empty <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="673" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="672" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

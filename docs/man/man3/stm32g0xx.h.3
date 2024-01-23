@@ -1,0 +1,129 @@
+.TH "Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h \- CMSIS STM32G0xx Device Peripheral Access Layer Header File\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSTM32G0\fP"
+.br
+.RI "STM32 Family\&. "
+.ti -1c
+.RI "#define \fB__STM32G0_CMSIS_VERSION_MAIN\fP   (0x01U)"
+.br
+.RI "Comment the line below if you will not use the peripherals drivers\&. In this case, these drivers will not be included and the application code will be based on direct access to peripherals registers\&. "
+.ti -1c
+.RI "#define \fB__STM32G0_CMSIS_VERSION_SUB1\fP   (0x04U)"
+.br
+.ti -1c
+.RI "#define \fB__STM32G0_CMSIS_VERSION_SUB2\fP   (0x03U)"
+.br
+.ti -1c
+.RI "#define \fB__STM32G0_CMSIS_VERSION_RC\fP   (0x00U)"
+.br
+.ti -1c
+.RI "#define \fB__STM32G0_CMSIS_VERSION\fP"
+.br
+.ti -1c
+.RI "#define \fBIS_FUNCTIONAL_STATE\fP(STATE)   (((STATE) == \fBDISABLE\fP) || ((STATE) == \fBENABLE\fP))"
+.br
+.ti -1c
+.RI "#define \fBSET_BIT\fP(REG,  BIT)   ((REG) |= (BIT))"
+.br
+.ti -1c
+.RI "#define \fBCLEAR_BIT\fP(REG,  BIT)   ((REG) &= ~(BIT))"
+.br
+.ti -1c
+.RI "#define \fBREAD_BIT\fP(REG,  BIT)   ((REG) & (BIT))"
+.br
+.ti -1c
+.RI "#define \fBCLEAR_REG\fP(REG)   ((REG) = (0x0))"
+.br
+.ti -1c
+.RI "#define \fBWRITE_REG\fP(REG,  VAL)   ((REG) = (VAL))"
+.br
+.ti -1c
+.RI "#define \fBREAD_REG\fP(REG)   ((REG))"
+.br
+.ti -1c
+.RI "#define \fBMODIFY_REG\fP(REG,  CLEARMASK,  SETMASK)   \fBWRITE_REG\fP((REG), (((\fBREAD_REG\fP(REG)) & (~(CLEARMASK))) | (SETMASK)))"
+.br
+.ti -1c
+.RI "#define \fBATOMIC_SET_BIT\fP(REG,  BIT)"
+.br
+.ti -1c
+.RI "#define \fBATOMIC_CLEAR_BIT\fP(REG,  BIT)"
+.br
+.ti -1c
+.RI "#define \fBATOMIC_MODIFY_REG\fP(REG,  CLEARMSK,  SETMASK)"
+.br
+.ti -1c
+.RI "#define \fBATOMIC_SETH_BIT\fP(REG,  BIT)   \fBATOMIC_SET_BIT\fP(REG, BIT)                                   \\"
+.br
+.ti -1c
+.RI "#define \fBATOMIC_CLEARH_BIT\fP(REG,  BIT)   \fBATOMIC_CLEAR_BIT\fP(REG, BIT)                               \\"
+.br
+.ti -1c
+.RI "#define \fBATOMIC_MODIFYH_REG\fP(REG,  CLEARMSK,  SETMASK)   \fBATOMIC_MODIFY_REG\fP(REG, CLEARMSK, SETMASK) \\"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef enum \fBFlagStatus\fP \fBITStatus\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBFlagStatus\fP { \fBRESET\fP = 0, \fBSET\fP = !RESET }"
+.br
+.ti -1c
+.RI "enum \fBFunctionalState\fP { \fBDISABLE\fP = 0, \fBENABLE\fP = !DISABLE }"
+.br
+.ti -1c
+.RI "enum \fBErrorStatus\fP { \fBSUCCESS\fP = 0, \fBERROR\fP = !SUCCESS }"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+CMSIS STM32G0xx Device Peripheral Access Layer Header File\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+MCD Application Team 
+.PP
+.nf
+     The file is the unique include file that the application programmer
+     is using in the C source code, usually in main\&.c\&. This file contains:
+      - Configuration section that allows to select:
+         - The STM32G0xx device used in the target application
+         - To use or not the peripherals drivers in application code(i\&.e\&.
+           code will be based on direct access to peripherals registers
+           rather than drivers API), this option is controlled by
+           '#define USE_HAL_DRIVER'
+
+.fi
+.PP
+.RE
+.PP
+\fBAttention\fP
+.RS 4
+.RE
+.PP
+Copyright (c) 2018-2021 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

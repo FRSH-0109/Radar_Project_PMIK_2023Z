@@ -1,0 +1,57 @@
+.TH "UART_Exported_Functions_Group1" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Exported_Functions_Group1 \- Initialization and de-initialization functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_Init\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_HalfDuplex_Init\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_LIN_Init\fP (\fBUART_HandleTypeDef\fP *huart, uint32_t BreakDetectLength)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_MultiProcessor_Init\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t Address, uint32_t WakeUpMethod)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UART_DeInit\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_MspInit\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_MspDeInit\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBHAL_StatusTypeDef\fP HAL_HalfDuplex_Init (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_LIN_Init (\fBUART_HandleTypeDef\fP * huart, uint32_t BreakDetectLength)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_MultiProcessor_Init (\fBUART_HandleTypeDef\fP * huart, uint8_t Address, uint32_t WakeUpMethod)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_DeInit (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UART_Init (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "void HAL_UART_MspDeInit (\fBUART_HandleTypeDef\fP * huart)"
+USART1 GPIO Configuration PA9 ------> USART1_TX PB7 ------> USART1_RX
+.SS "void HAL_UART_MspInit (\fBUART_HandleTypeDef\fP * huart)"
+Initializes the peripherals clocks
+.PP
+USART1 GPIO Configuration PA9 ------> USART1_TX PB7 ------> USART1_RX
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

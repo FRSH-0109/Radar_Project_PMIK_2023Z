@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_p_i___exported___functions___group1" kind="group">
+    <compoundname>SPI_Exported_Functions_Group1</compoundname>
+    <title>SPI_Exported_Functions_Group1</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___s_p_i___exported___functions___group1_1gaadb9d40e710c714d96b2501996658c44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_SPI_Init</definition>
+        <argsstring>(SPI_HandleTypeDef *hspi)</argsstring>
+        <name>HAL_SPI_Init</name>
+        <param>
+          <type><ref refid="group___s_p_i___exported___types_1gab633e49dd034de2f3a1fe79853d78d18" kindref="member">SPI_HandleTypeDef</ref> *</type>
+          <declname>hspi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="773" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" declline="773" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_p_i___exported___functions___group1_1gaca2db2a7bbed96ac013c565080fb61f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref></type>
+        <definition>HAL_StatusTypeDef HAL_SPI_DeInit</definition>
+        <argsstring>(SPI_HandleTypeDef *hspi)</argsstring>
+        <name>HAL_SPI_DeInit</name>
+        <param>
+          <type><ref refid="group___s_p_i___exported___types_1gab633e49dd034de2f3a1fe79853d78d18" kindref="member">SPI_HandleTypeDef</ref> *</type>
+          <declname>hspi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="774" column="19" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" declline="774" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_p_i___exported___functions___group1_1ga17f583be14b22caffa6c4e56dcd035ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_SPI_MspInit</definition>
+        <argsstring>(SPI_HandleTypeDef *hspi)</argsstring>
+        <name>HAL_SPI_MspInit</name>
+        <param>
+          <type><ref refid="group___s_p_i___exported___types_1gab633e49dd034de2f3a1fe79853d78d18" kindref="member">SPI_HandleTypeDef</ref> *</type>
+          <declname>hspi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>SPI1 GPIO Configuration PB3 ---<mdash/>&gt; SPI1_SCK PB4 ---<mdash/>&gt; SPI1_MISO PB5 ---<mdash/>&gt; SPI1_MOSI</para>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="775" column="6" bodyfile="Core/Src/spi.c" bodystart="64" bodyend="93" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" declline="775" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_p_i___exported___functions___group1_1gabadc4d4974af1afd943e8d13589068e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_SPI_MspDeInit</definition>
+        <argsstring>(SPI_HandleTypeDef *hspi)</argsstring>
+        <name>HAL_SPI_MspDeInit</name>
+        <param>
+          <type><ref refid="group___s_p_i___exported___types_1gab633e49dd034de2f3a1fe79853d78d18" kindref="member">SPI_HandleTypeDef</ref> *</type>
+          <declname>hspi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>SPI1 GPIO Configuration PB3 ---<mdash/>&gt; SPI1_SCK PB4 ---<mdash/>&gt; SPI1_MISO PB5 ---<mdash/>&gt; SPI1_MOSI</para>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="776" column="6" bodyfile="Core/Src/spi.c" bodystart="95" bodyend="117" declfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" declline="776" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,81 @@
+.TH "UART_Advanced_Features_Initialization_Type" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Advanced_Features_Initialization_Type \- UART Advanced Feature Initialization Type
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_NO_INIT\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_TXINVERT_INIT\fP   0x00000001U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_RXINVERT_INIT\fP   0x00000002U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_DATAINVERT_INIT\fP   0x00000004U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_SWAP_INIT\fP   0x00000008U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_RXOVERRUNDISABLE_INIT\fP   0x00000010U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_DMADISABLEONERROR_INIT\fP   0x00000020U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_AUTOBAUDRATE_INIT\fP   0x00000040U"
+.br
+.ti -1c
+.RI "#define \fBUART_ADVFEATURE_MSBFIRST_INIT\fP   0x00000080U"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define UART_ADVFEATURE_AUTOBAUDRATE_INIT   0x00000040U"
+Auto Baud rate detection initialization 
+.br
+ 
+.SS "#define UART_ADVFEATURE_DATAINVERT_INIT   0x00000004U"
+Binary data inversion 
+.br
+ 
+.SS "#define UART_ADVFEATURE_DMADISABLEONERROR_INIT   0x00000020U"
+DMA disable on Reception Error 
+.br
+ 
+.SS "#define UART_ADVFEATURE_MSBFIRST_INIT   0x00000080U"
+Most significant bit sent/received first 
+.SS "#define UART_ADVFEATURE_NO_INIT   0x00000000U"
+No advanced feature initialization 
+.br
+ 
+.SS "#define UART_ADVFEATURE_RXINVERT_INIT   0x00000002U"
+RX pin active level inversion 
+.br
+ 
+.SS "#define UART_ADVFEATURE_RXOVERRUNDISABLE_INIT   0x00000010U"
+RX overrun disable 
+.br
+ 
+.SS "#define UART_ADVFEATURE_SWAP_INIT   0x00000008U"
+TX/RX pins swap 
+.br
+ 
+.SS "#define UART_ADVFEATURE_TXINVERT_INIT   0x00000001U"
+TX pin active level inversion 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

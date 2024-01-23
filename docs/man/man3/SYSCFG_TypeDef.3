@@ -1,0 +1,49 @@
+.TH "SYSCFG_TypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SYSCFG_TypeDef \- System configuration controller\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g030xx\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCFGR1\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED0\fP [5]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCFGR2\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED1\fP [25]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBIT_LINE_SR\fP [32]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+System configuration controller\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t SYSCFG_TypeDef::CFGR1"
+SYSCFG configuration register 1, Address offset: 0x00 
+.SS "\fB__IO\fP uint32_t SYSCFG_TypeDef::CFGR2"
+SYSCFG configuration register 2, Address offset: 0x18 
+.SS "\fB__IO\fP uint32_t SYSCFG_TypeDef::IT_LINE_SR[32]"
+SYSCFG configuration IT_LINE register, Address offset: 0x80 
+.SS "uint32_t SYSCFG_TypeDef::RESERVED0[5]"
+Reserved, 0x04 --0x14 
+.SS "uint32_t SYSCFG_TypeDef::RESERVED1[25]"
+Reserved 0x1C 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

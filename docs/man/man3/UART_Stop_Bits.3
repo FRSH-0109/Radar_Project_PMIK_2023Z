@@ -1,0 +1,46 @@
+.TH "UART_Stop_Bits" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Stop_Bits \- UART Number of Stop Bits
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_STOPBITS_0_5\fP   \fBUSART_CR2_STOP_0\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_STOPBITS_1\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBUART_STOPBITS_1_5\fP   (\fBUSART_CR2_STOP_0\fP | \fBUSART_CR2_STOP_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_STOPBITS_2\fP   \fBUSART_CR2_STOP_1\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define UART_STOPBITS_0_5   \fBUSART_CR2_STOP_0\fP"
+UART frame with 0\&.5 stop bit 
+.br
+ 
+.SS "#define UART_STOPBITS_1   0x00000000U"
+UART frame with 1 stop bit 
+.br
+ 
+.SS "#define UART_STOPBITS_1_5   (\fBUSART_CR2_STOP_0\fP | \fBUSART_CR2_STOP_1\fP)"
+UART frame with 1\&.5 stop bits 
+.SS "#define UART_STOPBITS_2   \fBUSART_CR2_STOP_1\fP"
+UART frame with 2 stop bits 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

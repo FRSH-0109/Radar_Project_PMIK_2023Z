@@ -1,0 +1,98 @@
+\doxysection{Radar\+App/\+Distance\+Sensor\+Driver/distance\+\_\+sensor.h File Reference}
+\hypertarget{distance__sensor_8h}{}\label{distance__sensor_8h}\index{RadarApp/DistanceSensorDriver/distance\_sensor.h@{RadarApp/DistanceSensorDriver/distance\_sensor.h}}
+
+
+File containing code of ultrasonic distance sensor, implementation, modifications and making measurement.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{distance__sensor_8h_aea4bc35ea8c7e00d2399a54ba0eb870e}{distance\+Sensor\+Init}} (\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor, double ticks\+To\+Distance\+Factor)
+\item 
+void \mbox{\hyperlink{distance__sensor_8h_a6b42437e0654d88f5b7a68caa22a733c}{distance\+Sensor\+Trig\+On}} (\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor)
+\item 
+void \mbox{\hyperlink{distance__sensor_8h_a9b87431c23c2a12baa879f62f43bda05}{distance\+Sensor\+Delay}} (\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor, uint32\+\_\+t delay)
+\item 
+void \mbox{\hyperlink{distance__sensor_8h_a902cb6ceee556ebfc81c8d1181d87cc9}{distance\+Sensor\+Trig\+Off}} (\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor)
+\item 
+void \mbox{\hyperlink{distance__sensor_8h_a964e472531fcf3cede5de7d5b346e71b}{distance\+Sensor\+Send\+Trig}} (\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor)
+\item 
+void \mbox{\hyperlink{distance__sensor_8h_a964997505302c61de0ece0f151663c4c}{distance\+Sensor\+Get\+Echo}} (\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor, uint16\+\_\+t ticks)
+\item 
+bool \mbox{\hyperlink{distance__sensor_8h_a37c464e811677e7c95d8331281304d33}{distance\+Sensor\+Get\+Ready\+To\+Measure}} (\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor)
+\item 
+double \mbox{\hyperlink{distance__sensor_8h_af86e9e0dc722a2351b4e909023a53480}{distance\+Sensor\+Get\+Distance}} (\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File containing code of ultrasonic distance sensor, implementation, modifications and making measurement. 
+
+\begin{DoxyAuthor}{Author}
+Kami Kośnik, Kacper Radzikowski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20 Nov 2023 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z}{\texttt{ https\+://github.\+com/\+FRSH-\/0109/\+Radar\+\_\+\+Project\+\_\+\+PMIK\+\_\+2023Z}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{distance__sensor_8h_a9b87431c23c2a12baa879f62f43bda05}\label{distance__sensor_8h_a9b87431c23c2a12baa879f62f43bda05} 
+\index{distance\_sensor.h@{distance\_sensor.h}!distanceSensorDelay@{distanceSensorDelay}}
+\index{distanceSensorDelay@{distanceSensorDelay}!distance\_sensor.h@{distance\_sensor.h}}
+\doxysubsubsection{\texorpdfstring{distanceSensorDelay()}{distanceSensorDelay()}}
+{\footnotesize\ttfamily void distance\+Sensor\+Delay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor,  }\item[{uint32\+\_\+t}]{delay }\end{DoxyParamCaption})}
+
+\Hypertarget{distance__sensor_8h_af86e9e0dc722a2351b4e909023a53480}\label{distance__sensor_8h_af86e9e0dc722a2351b4e909023a53480} 
+\index{distance\_sensor.h@{distance\_sensor.h}!distanceSensorGetDistance@{distanceSensorGetDistance}}
+\index{distanceSensorGetDistance@{distanceSensorGetDistance}!distance\_sensor.h@{distance\_sensor.h}}
+\doxysubsubsection{\texorpdfstring{distanceSensorGetDistance()}{distanceSensorGetDistance()}}
+{\footnotesize\ttfamily double distance\+Sensor\+Get\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor }\end{DoxyParamCaption})}
+
+\Hypertarget{distance__sensor_8h_a964997505302c61de0ece0f151663c4c}\label{distance__sensor_8h_a964997505302c61de0ece0f151663c4c} 
+\index{distance\_sensor.h@{distance\_sensor.h}!distanceSensorGetEcho@{distanceSensorGetEcho}}
+\index{distanceSensorGetEcho@{distanceSensorGetEcho}!distance\_sensor.h@{distance\_sensor.h}}
+\doxysubsubsection{\texorpdfstring{distanceSensorGetEcho()}{distanceSensorGetEcho()}}
+{\footnotesize\ttfamily void distance\+Sensor\+Get\+Echo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor,  }\item[{uint16\+\_\+t}]{ticks }\end{DoxyParamCaption})}
+
+\Hypertarget{distance__sensor_8h_a37c464e811677e7c95d8331281304d33}\label{distance__sensor_8h_a37c464e811677e7c95d8331281304d33} 
+\index{distance\_sensor.h@{distance\_sensor.h}!distanceSensorGetReadyToMeasure@{distanceSensorGetReadyToMeasure}}
+\index{distanceSensorGetReadyToMeasure@{distanceSensorGetReadyToMeasure}!distance\_sensor.h@{distance\_sensor.h}}
+\doxysubsubsection{\texorpdfstring{distanceSensorGetReadyToMeasure()}{distanceSensorGetReadyToMeasure()}}
+{\footnotesize\ttfamily bool distance\+Sensor\+Get\+Ready\+To\+Measure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor }\end{DoxyParamCaption})}
+
+\Hypertarget{distance__sensor_8h_aea4bc35ea8c7e00d2399a54ba0eb870e}\label{distance__sensor_8h_aea4bc35ea8c7e00d2399a54ba0eb870e} 
+\index{distance\_sensor.h@{distance\_sensor.h}!distanceSensorInit@{distanceSensorInit}}
+\index{distanceSensorInit@{distanceSensorInit}!distance\_sensor.h@{distance\_sensor.h}}
+\doxysubsubsection{\texorpdfstring{distanceSensorInit()}{distanceSensorInit()}}
+{\footnotesize\ttfamily void distance\+Sensor\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor,  }\item[{double}]{ticks\+To\+Distance\+Factor }\end{DoxyParamCaption})}
+
+\Hypertarget{distance__sensor_8h_a964e472531fcf3cede5de7d5b346e71b}\label{distance__sensor_8h_a964e472531fcf3cede5de7d5b346e71b} 
+\index{distance\_sensor.h@{distance\_sensor.h}!distanceSensorSendTrig@{distanceSensorSendTrig}}
+\index{distanceSensorSendTrig@{distanceSensorSendTrig}!distance\_sensor.h@{distance\_sensor.h}}
+\doxysubsubsection{\texorpdfstring{distanceSensorSendTrig()}{distanceSensorSendTrig()}}
+{\footnotesize\ttfamily void distance\+Sensor\+Send\+Trig (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor }\end{DoxyParamCaption})}
+
+\Hypertarget{distance__sensor_8h_a902cb6ceee556ebfc81c8d1181d87cc9}\label{distance__sensor_8h_a902cb6ceee556ebfc81c8d1181d87cc9} 
+\index{distance\_sensor.h@{distance\_sensor.h}!distanceSensorTrigOff@{distanceSensorTrigOff}}
+\index{distanceSensorTrigOff@{distanceSensorTrigOff}!distance\_sensor.h@{distance\_sensor.h}}
+\doxysubsubsection{\texorpdfstring{distanceSensorTrigOff()}{distanceSensorTrigOff()}}
+{\footnotesize\ttfamily void distance\+Sensor\+Trig\+Off (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor }\end{DoxyParamCaption})}
+
+\Hypertarget{distance__sensor_8h_a6b42437e0654d88f5b7a68caa22a733c}\label{distance__sensor_8h_a6b42437e0654d88f5b7a68caa22a733c} 
+\index{distance\_sensor.h@{distance\_sensor.h}!distanceSensorTrigOn@{distanceSensorTrigOn}}
+\index{distanceSensorTrigOn@{distanceSensorTrigOn}!distance\_sensor.h@{distance\_sensor.h}}
+\doxysubsubsection{\texorpdfstring{distanceSensorTrigOn()}{distanceSensorTrigOn()}}
+{\footnotesize\ttfamily void distance\+Sensor\+Trig\+On (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor }\end{DoxyParamCaption})}
+

@@ -1,0 +1,44 @@
+.TH "DBG_TypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBG_TypeDef \- Debug MCU\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g030xx\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBIDCODE\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAPBFZ1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAPBFZ2\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Debug MCU\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t DBG_TypeDef::APBFZ1"
+Debug APB freeze register 1, Address offset: 0x08 
+.SS "\fB__IO\fP uint32_t DBG_TypeDef::APBFZ2"
+Debug APB freeze register 2, Address offset: 0x0C 
+.SS "\fB__IO\fP uint32_t DBG_TypeDef::CR"
+Debug configuration register, Address offset: 0x04 
+.SS "\fB__IO\fP uint32_t DBG_TypeDef::IDCODE"
+MCU device ID code, Address offset: 0x00 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

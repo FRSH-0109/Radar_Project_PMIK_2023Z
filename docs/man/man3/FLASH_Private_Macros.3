@@ -1,0 +1,167 @@
+.TH "FLASH_Private_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FLASH_Private_Macros \- FLASH Private Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_FLASH_MAIN_MEM_ADDRESS\fP(__ADDRESS__)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_MAIN_FIRSTHALF_MEM_ADDRESS\fP(__ADDRESS__)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_PROGRAM_MAIN_MEM_ADDRESS\fP(__ADDRESS__)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_PROGRAM_OTP_ADDRESS\fP(__ADDRESS__)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_PROGRAM_ADDRESS\fP(__ADDRESS__)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_FAST_PROGRAM_ADDRESS\fP(__ADDRESS__)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_PAGE\fP(__PAGE__)   ((__PAGE__) < \fBFLASH_PAGE_NB\fP)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_BANK\fP(__BANK__)   ((__BANK__) == \fBFLASH_BANK_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_TYPEERASE\fP(__VALUE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_TYPEPROGRAM\fP(__VALUE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_OPTIONBYTE\fP(__VALUE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_OB_WRPAREA\fP(__VALUE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_OB_RDP_LEVEL\fP(__LEVEL__)"
+.br
+.ti -1c
+.RI "#define \fBIS_OB_USER_TYPE\fP(__TYPE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_OB_USER_CONFIG\fP(__TYPE__,  __CONFIG__)   ((~(__TYPE__) & (__CONFIG__)) == 0x00U)"
+.br
+.ti -1c
+.RI "#define \fBIS_FLASH_LATENCY\fP(__LATENCY__)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_FLASH_BANK(__BANK__)   ((__BANK__) == \fBFLASH_BANK_1\fP)"
+
+.SS "#define IS_FLASH_FAST_PROGRAM_ADDRESS(__ADDRESS__)"
+\fBValue:\fP.PP
+.nf
+                                                        (((__ADDRESS__) >= (FLASH_BASE))\\
+                                                        && ((__ADDRESS__) <= (FLASH_BASE + FLASH_SIZE \- 256UL)))
+.fi
+
+.SS "#define IS_FLASH_LATENCY(__LATENCY__)"
+\fBValue:\fP.PP
+.nf
+                                                        (((__LATENCY__) == FLASH_LATENCY_0) || \\
+                                                        ((__LATENCY__) == FLASH_LATENCY_1) || \\
+                                                        ((__LATENCY__) == FLASH_LATENCY_2))
+.fi
+
+.SS "#define IS_FLASH_MAIN_FIRSTHALF_MEM_ADDRESS(__ADDRESS__)"
+\fBValue:\fP.PP
+.nf
+                                                           (((__ADDRESS__) >= (FLASH_BASE))\\
+                                                           && ((__ADDRESS__) <= (FLASH_BASE + FLASH_BANK_SIZE \- 1UL)))
+.fi
+
+.SS "#define IS_FLASH_MAIN_MEM_ADDRESS(__ADDRESS__)"
+\fBValue:\fP.PP
+.nf
+                                                        (((__ADDRESS__) >= (FLASH_BASE))\\
+                                                        && ((__ADDRESS__) <= (FLASH_BASE + FLASH_SIZE \- 1UL)))
+.fi
+
+.SS "#define IS_FLASH_PAGE(__PAGE__)   ((__PAGE__) < \fBFLASH_PAGE_NB\fP)"
+
+.SS "#define IS_FLASH_PROGRAM_ADDRESS(__ADDRESS__)"
+\fBValue:\fP.PP
+.nf
+                                                        ((IS_FLASH_PROGRAM_MAIN_MEM_ADDRESS(__ADDRESS__))\\
+                                                        || (IS_FLASH_PROGRAM_OTP_ADDRESS(__ADDRESS__)))
+.fi
+
+.SS "#define IS_FLASH_PROGRAM_MAIN_MEM_ADDRESS(__ADDRESS__)"
+\fBValue:\fP.PP
+.nf
+                                                        (((__ADDRESS__) >= (FLASH_BASE))\\
+                                                        && ((__ADDRESS__) <= (FLASH_BASE + FLASH_SIZE \- 8UL)))
+.fi
+
+.SS "#define IS_FLASH_PROGRAM_OTP_ADDRESS(__ADDRESS__)"
+\fBValue:\fP.PP
+.nf
+                                                        (((__ADDRESS__) >= 0x1FFF7000U)\\
+                                                        && ((__ADDRESS__) <= (0x1FFF7400U \- 8UL)))
+.fi
+
+.SS "#define IS_FLASH_TYPEERASE(__VALUE__)"
+\fBValue:\fP.PP
+.nf
+                                                        (((__VALUE__) == FLASH_TYPEERASE_PAGES) || \\
+                                                        ((__VALUE__) == FLASH_TYPEERASE_MASS))
+.fi
+
+.SS "#define IS_FLASH_TYPEPROGRAM(__VALUE__)"
+\fBValue:\fP.PP
+.nf
+                                                        (((__VALUE__) == FLASH_TYPEPROGRAM_DOUBLEWORD) || \\
+                                                        ((__VALUE__) == FLASH_TYPEPROGRAM_FAST))
+.fi
+
+.SS "#define IS_OB_RDP_LEVEL(__LEVEL__)"
+\fBValue:\fP.PP
+.nf
+                                                        (((__LEVEL__) == OB_RDP_LEVEL_0)   ||\\
+                                                        ((__LEVEL__) == OB_RDP_LEVEL_1)   ||\\
+                                                        ((__LEVEL__) == OB_RDP_LEVEL_2))
+.fi
+
+.SS "#define IS_OB_USER_CONFIG(__TYPE__, __CONFIG__)   ((~(__TYPE__) & (__CONFIG__)) == 0x00U)"
+
+.SS "#define IS_OB_USER_TYPE(__TYPE__)"
+\fBValue:\fP.PP
+.nf
+                                                        ((((__TYPE__) & OB_USER_ALL) != 0x00U) && \\
+                                                        (((__TYPE__) & ~OB_USER_ALL) == 0x00U))
+.fi
+
+.SS "#define IS_OB_WRPAREA(__VALUE__)"
+\fBValue:\fP.PP
+.nf
+                                                        (((__VALUE__) == OB_WRPAREA_ZONE_A)\\
+                                                        || ((__VALUE__) == OB_WRPAREA_ZONE_B))
+.fi
+
+.SS "#define IS_OPTIONBYTE(__VALUE__)"
+\fBValue:\fP.PP
+.nf
+                                                        ((((__VALUE__) & OPTIONBYTE_ALL) != 0x00U) && \\
+                                                        (((__VALUE__) & ~OPTIONBYTE_ALL) == 0x00U))
+.fi
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

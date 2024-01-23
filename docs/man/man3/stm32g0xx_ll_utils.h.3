@@ -1,0 +1,130 @@
+.TH "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h \- Header file of UTILS LL module\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32g0xx\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBLL_UTILS_PLLInitTypeDef\fP"
+.br
+.RI "UTILS PLL structure definition\&. "
+.ti -1c
+.RI "struct \fBLL_UTILS_ClkInitTypeDef\fP"
+.br
+.RI "UTILS System, AHB and APB buses clock configuration structure definition\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBLL_MAX_DELAY\fP   0xFFFFFFFFU"
+.br
+.ti -1c
+.RI "#define \fBUID_BASE_ADDRESS\fP   \fBUID_BASE\fP"
+.br
+.RI "Unique device ID register base address\&. "
+.ti -1c
+.RI "#define \fBFLASHSIZE_BASE_ADDRESS\fP   \fBFLASHSIZE_BASE\fP"
+.br
+.RI "Flash size data register base address\&. "
+.ti -1c
+.RI "#define \fBPACKAGE_BASE_ADDRESS\fP   \fBPACKAGE_BASE\fP"
+.br
+.RI "Package data register base address\&. "
+.ti -1c
+.RI "#define \fBLL_UTILS_HSEBYPASS_OFF\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBLL_UTILS_HSEBYPASS_ON\fP   0x00000001U"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_GetUID_Word0\fP (void)"
+.br
+.RI "Get Word0 of the unique device identifier (UID based on 96 bits) "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_GetUID_Word1\fP (void)"
+.br
+.RI "Get Word1 of the unique device identifier (UID based on 96 bits) "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_GetUID_Word2\fP (void)"
+.br
+.RI "Get Word2 of the unique device identifier (UID based on 96 bits) "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_GetFlashSize\fP (void)"
+.br
+.RI "Get Flash memory size\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_GetPackageType\fP (void)"
+.br
+.RI "Get Package type\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_InitTick\fP (uint32_t HCLKFrequency, uint32_t Ticks)"
+.br
+.RI "This function configures the Cortex-M SysTick source of the time base\&. "
+.ti -1c
+.RI "void \fBLL_Init1msTick\fP (uint32_t HCLKFrequency)"
+.br
+.ti -1c
+.RI "void \fBLL_mDelay\fP (uint32_t Delay)"
+.br
+.ti -1c
+.RI "void \fBLL_SetSystemCoreClock\fP (uint32_t HCLKFrequency)"
+.br
+.ti -1c
+.RI "\fBErrorStatus\fP \fBLL_PLL_ConfigSystemClock_HSI\fP (\fBLL_UTILS_PLLInitTypeDef\fP *UTILS_PLLInitStruct, \fBLL_UTILS_ClkInitTypeDef\fP *UTILS_ClkInitStruct)"
+.br
+.ti -1c
+.RI "\fBErrorStatus\fP \fBLL_PLL_ConfigSystemClock_HSE\fP (uint32_t HSEFrequency, uint32_t HSEBypass, \fBLL_UTILS_PLLInitTypeDef\fP *UTILS_PLLInitStruct, \fBLL_UTILS_ClkInitTypeDef\fP *UTILS_ClkInitStruct)"
+.br
+.ti -1c
+.RI "\fBErrorStatus\fP \fBLL_SetFlashLatency\fP (uint32_t HCLKFrequency)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file of UTILS LL module\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+MCD Application Team 
+.RE
+.PP
+\fBAttention\fP
+.RS 4
+.RE
+.PP
+Copyright (c) 2018 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&.
+.PP
+.PP
+.nf
+==============================================================================
+                   ##### How to use this driver #####
+==============================================================================
+  [\&.\&.]
+  The LL UTILS driver contains a set of generic APIs that can be
+  used by user:
+    (+) Device electronic signature
+    (+) Timing functions
+    (+) PLL configuration functions.fi
+.PP
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

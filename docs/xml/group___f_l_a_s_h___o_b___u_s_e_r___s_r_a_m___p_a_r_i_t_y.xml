@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___f_l_a_s_h___o_b___u_s_e_r___s_r_a_m___p_a_r_i_t_y" kind="group">
+    <compoundname>FLASH_OB_USER_SRAM_PARITY</compoundname>
+    <title>FLASH Option Bytes User SRAM parity</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_l_a_s_h___o_b___u_s_e_r___s_r_a_m___p_a_r_i_t_y_1gad4e3ce135a13a5cbf94f02b9ba86f060" prot="public" static="no">
+        <name>OB_SRAM_PARITY_ENABLE</name>
+        <initializer>0x00000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sram parity enable </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="511" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___o_b___u_s_e_r___s_r_a_m___p_a_r_i_t_y_1ga38553cf9e68b6e14aeed95bb0bf30ba5" prot="public" static="no">
+        <name>OB_SRAM_PARITY_DISABLE</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga159c3706d66851e73d8341929b0cfeac" kindref="member">FLASH_OPTR_RAM_PARITY_CHECK</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sram parity disable </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="512" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="512" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

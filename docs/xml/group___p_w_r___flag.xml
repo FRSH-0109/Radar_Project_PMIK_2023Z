@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___p_w_r___flag" kind="group">
+    <compoundname>PWR_Flag</compoundname>
+    <title>PWR Status Flags</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___p_w_r___flag_1gaa3527e755c08ac2b2d95edd7adc4ee70" prot="public" static="no">
+        <name>PWR_FLAG_WUF1</name>
+        <initializer>(0x00010000u | <ref refid="group___peripheral___registers___bits___definition_1ga2e5ea0407844efe67f89d52468199bf9" kindref="member">PWR_SR1_WUF1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wakeup event on wakeup pin 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="140" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___flag_1ga6be7514eb20788bbd92e78eed13c551c" prot="public" static="no">
+        <name>PWR_FLAG_WUF2</name>
+        <initializer>(0x00010000u | <ref refid="group___peripheral___registers___bits___definition_1ga0cb2045f5b3571c37bba90051c2b5ea6" kindref="member">PWR_SR1_WUF2</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wakeup event on wakeup pin 2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="141" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___flag_1gad406114253e536be4850a82229988d9c" prot="public" static="no">
+        <name>PWR_FLAG_WUF4</name>
+        <initializer>(0x00010000u | <ref refid="group___peripheral___registers___bits___definition_1ga92613bf31b9b2a8d63c24a0a1e8c5516" kindref="member">PWR_SR1_WUF4</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wakeup event on wakeup pin 4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="145" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___flag_1ga09f26e2a5727b4d1a57129108a5b68bb" prot="public" static="no">
+        <name>PWR_FLAG_WUF6</name>
+        <initializer>(0x00010000u | <ref refid="group___peripheral___registers___bits___definition_1gaa2358ee724f9b8fcdc1e1afd76118bd6" kindref="member">PWR_SR1_WUF6</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wakeup event on wakeup pin 6 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="149" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___flag_1ga2281815d6abca4ef74b06c46f27e31d2" prot="public" static="no">
+        <name>PWR_FLAG_WUF</name>
+        <initializer>(0x00010000u | <ref refid="group___peripheral___registers___bits___definition_1ga3cee25727108665face0ac2f709fcb72" kindref="member">PWR_SR1_WUF</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wakeup event on all wakeup pin <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="150" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___flag_1ga9e55f0b5dec2346d5c8dee3ab3c0c2df" prot="public" static="no">
+        <name>PWR_FLAG_SB</name>
+        <initializer>(0x00010000u | <ref refid="group___peripheral___registers___bits___definition_1ga52067a339f2800cca29e0373f1b7d5f1" kindref="member">PWR_SR1_SBF</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standby flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="151" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___flag_1ga6be01d28369a777d1d372baa9ed5b488" prot="public" static="no">
+        <name>PWR_FLAG_WUFI</name>
+        <initializer>(0x00010000u | <ref refid="group___peripheral___registers___bits___definition_1gab9bcd91a779fee2f98a91b1ac734b6c9" kindref="member">PWR_SR1_WUFI</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wakeup on internal wakeup line </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="152" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___flag_1ga03c7da76614e39540680e3bb693c0b6d" prot="public" static="no">
+        <name>PWR_FLAG_FLASH_READY</name>
+        <initializer>(0x00020000u | <ref refid="group___peripheral___registers___bits___definition_1ga2f445dadc401ac52d801fdcab051a40a" kindref="member">PWR_SR2_FLASH_RDY</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flash ready </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="153" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___flag_1ga83a0e30086ec21630b8a175ae48a2672" prot="public" static="no">
+        <name>PWR_FLAG_REGLPS</name>
+        <initializer>(0x00020000u | <ref refid="group___peripheral___registers___bits___definition_1ga911a8a399671b6dc3fca4948f1ad6872" kindref="member">PWR_SR2_REGLPS</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Regulator Low Power started </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="154" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_r___flag_1ga8ed9097fdb76809257ecc0e398a2904f" prot="public" static="no">
+        <name>PWR_FLAG_REGLPF</name>
+        <initializer>(0x00020000u | <ref refid="group___peripheral___registers___bits___definition_1ga8b4c0d31f1dbb17ccb85a6e582a00b9d" kindref="member">PWR_SR2_REGLPF</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Regulator Low Power flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" line="155" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Elements values convention: 0000 00XX 000Y YYYYb. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Y YYYY : Flag position in the XX register (5 bits)</para>
+</listitem><listitem><para>XX : Status register (2 bits)<itemizedlist>
+<listitem><para>01: SR1 register</para>
+</listitem><listitem><para>10: SR2 register The only exception is PWR_FLAG_WU, encompassing all wake-up flags and set to PWR_SR1_WUF. </para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

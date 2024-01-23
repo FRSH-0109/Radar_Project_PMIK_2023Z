@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="servo__driver_8c" kind="file" language="C++">
+    <compoundname>servo_driver.c</compoundname>
+    <includes refid="servo__driver_8h" local="yes">servo_driver.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>RadarApp/ServoDriver/servo_driver.c</label>
+        <link refid="servo__driver_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>servo_driver.h</label>
+        <link refid="servo__driver_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="servo__driver_8c_1a20a27d2eaa060a951a5807b5bb48919e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void servoDriverInit</definition>
+        <argsstring>(servoDriverStruct *servoDriver, float dMin, float dMax, uint16_t pMin, uint16_t pMax)</argsstring>
+        <name>servoDriverInit</name>
+        <param>
+          <type><ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> *</type>
+          <declname>servoDriver</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dMin</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dMax</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>pMin</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>pMax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for initialization of servo structure instance</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>servoDriver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> struct </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dMin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of minimal degrees movement for servo </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dMax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of maximal degrees movement for servo </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pMin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of minimal pulse width corresponding to minimal degrees value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pMax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of maximal pulse width corresponding to minimal degrees value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/ServoDriver/servo_driver.c" line="13" column="6" bodyfile="RadarApp/ServoDriver/servo_driver.c" bodystart="13" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="servo__driver_8c_1a1acdc2cc47d587de4954d1e7602f4898" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void servoDriverStart</definition>
+        <argsstring>(servoDriverStruct *servoDriver)</argsstring>
+        <name>servoDriverStart</name>
+        <param>
+          <type><ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> *</type>
+          <declname>servoDriver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for starting servo movement</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>servoDriver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> struct </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/ServoDriver/servo_driver.c" line="21" column="6" bodyfile="RadarApp/ServoDriver/servo_driver.c" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="servo__driver_8c_1a632cccd31e765ad946feea85d0a13d8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void servoDriverStop</definition>
+        <argsstring>(servoDriverStruct *servoDriver)</argsstring>
+        <name>servoDriverStop</name>
+        <param>
+          <type><ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> *</type>
+          <declname>servoDriver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for stopping servo movement</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>servoDriver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> struct </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/ServoDriver/servo_driver.c" line="26" column="6" bodyfile="RadarApp/ServoDriver/servo_driver.c" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="servo__driver_8c_1a956e2198e1d0411901f118383c708c28" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool servoDriverAssertPulseWidth</definition>
+        <argsstring>(servoDriverStruct *servoDriver, uint16_t pulseWidth)</argsstring>
+        <name>servoDriverAssertPulseWidth</name>
+        <param>
+          <type><ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> *</type>
+          <declname>servoDriver</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>pulseWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/ServoDriver/servo_driver.c" line="31" column="20" bodyfile="RadarApp/ServoDriver/servo_driver.c" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="servo__driver_8c_1aface62954242b8161432acf66fcc2f6c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool servoDriverAssertDegrees</definition>
+        <argsstring>(servoDriverStruct *servoDriver, float degrees)</argsstring>
+        <name>servoDriverAssertDegrees</name>
+        <param>
+          <type><ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> *</type>
+          <declname>servoDriver</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>degrees</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/ServoDriver/servo_driver.c" line="36" column="20" bodyfile="RadarApp/ServoDriver/servo_driver.c" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="servo__driver_8c_1a5728d01171e0105187a4e732e23a1fd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool servoDriverSetDegrees</definition>
+        <argsstring>(servoDriverStruct *servoDriver, float degrees)</argsstring>
+        <name>servoDriverSetDegrees</name>
+        <param>
+          <type><ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> *</type>
+          <declname>servoDriver</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>degrees</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for setting servo position in degrees</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>servoDriver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> struct </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>degrees</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of degrees to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool is action was successful </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/ServoDriver/servo_driver.c" line="41" column="6" bodyfile="RadarApp/ServoDriver/servo_driver.c" bodystart="41" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="servo__driver_8c_1a5ae45f5c916eb47431e59f94d645bbc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t servoDriverDegreesToPulseWidth</definition>
+        <argsstring>(servoDriverStruct *servoDriver, float degrees)</argsstring>
+        <name>servoDriverDegreesToPulseWidth</name>
+        <param>
+          <type><ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> *</type>
+          <declname>servoDriver</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>degrees</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for converting degrees value into pulse width</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>servoDriver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to <ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref> struct </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>degrees</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of degrees to convert </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint16_t value of corresponding pulse width </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/ServoDriver/servo_driver.c" line="60" column="10" bodyfile="RadarApp/ServoDriver/servo_driver.c" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="servo__driver_8c_1af9aace1b44b73111e15aa39f06f43456" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__</definition>
+        <argsstring>((weak))</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(weak)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/ServoDriver/servo_driver.c" line="67" column="1" bodyfile="RadarApp/ServoDriver/servo_driver.c" bodystart="67" bodyend="70"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>File containing code of servomechanism driver controlled by PWM, which was created for Radar embedded project. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Kami Kośnik, Kacper Radzikowski </para>
+</simplesect>
+<simplesect kind="date"><para>20 Nov 2023 </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z">https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="servo__driver_8h" kindref="compound">servo_driver.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="servo__driver_8c_1a20a27d2eaa060a951a5807b5bb48919e" kindref="member">servoDriverInit</ref>(<ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref><sp/>*servoDriver,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dMin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dMax,<sp/>uint16_t<sp/>pMin,<sp/>uint16_t<sp/>pMax)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>servoDriver-&gt;<ref refid="structservo_driver_struct_1afc1af0b1401452570571cb2261fae0a2" kindref="member">degreesMin</ref><sp/>=<sp/>dMin;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>servoDriver-&gt;<ref refid="structservo_driver_struct_1ad7d129de79462605d163ac9cd0153101" kindref="member">degreesMax</ref><sp/>=<sp/>dMax;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>servoDriver-&gt;<ref refid="structservo_driver_struct_1ae58cfcf62f825adac798acdb7328024e" kindref="member">pulseWidthMin</ref><sp/>=<sp/>pMin;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>servoDriver-&gt;<ref refid="structservo_driver_struct_1a06b7608e42efb1b7afa8b4c852bb609d" kindref="member">pulseWidthMax</ref><sp/>=<sp/>pMax;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="servo__driver_8c_1a1acdc2cc47d587de4954d1e7602f4898" kindref="member">servoDriverStart</ref>(<ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref><sp/>*servoDriver)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8c_1a3a027ed11a1051d0c899706817c68e37" kindref="member">servoDriverStartTimer</ref>(servoDriver);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="servo__driver_8c_1a632cccd31e765ad946feea85d0a13d8d" kindref="member">servoDriverStop</ref>(<ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref><sp/>*servoDriver)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8c_1a9644009cc702a14f3a480ad472ee4d6a" kindref="member">servoDriverStopTimer</ref>(servoDriver);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>servoDriverAssertPulseWidth(<ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref><sp/>*servoDriver,<sp/>uint16_t<sp/>pulseWidth)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(pulseWidth<sp/>&gt;=<sp/>servoDriver-&gt;<ref refid="structservo_driver_struct_1ae58cfcf62f825adac798acdb7328024e" kindref="member">pulseWidthMin</ref><sp/>&amp;&amp;<sp/>pulseWidth<sp/>&lt;=<sp/>servoDriver-&gt;pulseWidthMax);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>servoDriverAssertDegrees(<ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref><sp/>*servoDriver,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>degrees)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(degrees<sp/>&gt;=<sp/>servoDriver-&gt;<ref refid="structservo_driver_struct_1afc1af0b1401452570571cb2261fae0a2" kindref="member">degreesMin</ref><sp/>&amp;&amp;<sp/>degrees<sp/>&lt;=<sp/>servoDriver-&gt;degreesMax);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="servo__driver_8c_1a5728d01171e0105187a4e732e23a1fd9" kindref="member">servoDriverSetDegrees</ref>(<ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref><sp/>*servoDriver,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>degrees)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(servoDriverAssertDegrees(servoDriver,<sp/>degrees)<sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>servoDriver-&gt;<ref refid="structservo_driver_struct_1ab5714dc534cee43335450548d8d5e79f" kindref="member">positionInDegrees</ref><sp/>=<sp/>degrees;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>tmpPulseWidth<sp/>=<sp/><ref refid="servo__driver_8c_1a5ae45f5c916eb47431e59f94d645bbc7" kindref="member">servoDriverDegreesToPulseWidth</ref>(servoDriver,<sp/>degrees);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(servoDriverAssertPulseWidth(servoDriver,<sp/>tmpPulseWidth)<sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>servoDriver-&gt;<ref refid="structservo_driver_struct_1a5ca561b85876367a491830913bd31c53" kindref="member">positionInPulseWidth</ref><sp/>=<sp/>tmpPulseWidth;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8c_1aa8a4bdef9b3e742a5e225dd29a804db6" kindref="member">servoDriverSetPulseWidth</ref>(servoDriver);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">uint16_t<sp/><ref refid="servo__driver_8c_1a5ae45f5c916eb47431e59f94d645bbc7" kindref="member">servoDriverDegreesToPulseWidth</ref>(<ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref><sp/>*servoDriver,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>degrees)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>tmpPulseWidth<sp/>=<sp/>(((degrees<sp/>-<sp/>servoDriver-&gt;<ref refid="structservo_driver_struct_1afc1af0b1401452570571cb2261fae0a2" kindref="member">degreesMin</ref>)<sp/>*<sp/>(servoDriver-&gt;<ref refid="structservo_driver_struct_1a06b7608e42efb1b7afa8b4c852bb609d" kindref="member">pulseWidthMax</ref><sp/>-<sp/>servoDriver-&gt;<ref refid="structservo_driver_struct_1ae58cfcf62f825adac798acdb7328024e" kindref="member">pulseWidthMin</ref>)<sp/>)<sp/>/<sp/>(servoDriver-&gt;<ref refid="structservo_driver_struct_1ad7d129de79462605d163ac9cd0153101" kindref="member">degreesMax</ref><sp/>-<sp/>servoDriver-&gt;<ref refid="structservo_driver_struct_1afc1af0b1401452570571cb2261fae0a2" kindref="member">degreesMin</ref>))<sp/>+<sp/>servoDriver-&gt;<ref refid="structservo_driver_struct_1ae58cfcf62f825adac798acdb7328024e" kindref="member">pulseWidthMin</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tmpPulseWidth;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><ref refid="servo__driver_8c_1af9aace1b44b73111e15aa39f06f43456" kindref="member">__attribute__</ref>((weak))<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a3a027ed11a1051d0c899706817c68e37" kindref="member">servoDriverStartTimer</ref>(<ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref><sp/>*servoDriver)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><ref refid="servo__driver_8c_1af9aace1b44b73111e15aa39f06f43456" kindref="member">__attribute__</ref>((weak))<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a9644009cc702a14f3a480ad472ee4d6a" kindref="member">servoDriverStopTimer</ref>(<ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref><sp/>*servoDriver)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><ref refid="servo__driver_8c_1af9aace1b44b73111e15aa39f06f43456" kindref="member">__attribute__</ref>((weak))<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1aa8a4bdef9b3e742a5e225dd29a804db6" kindref="member">servoDriverSetPulseWidth</ref>(<ref refid="structservo_driver_struct" kindref="compound">servoDriverStruct</ref><sp/>*servoDriver)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="RadarApp/ServoDriver/servo_driver.c"/>
+  </compounddef>
+</doxygen>

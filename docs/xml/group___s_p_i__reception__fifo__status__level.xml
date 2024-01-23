@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_p_i__reception__fifo__status__level" kind="group">
+    <compoundname>SPI_reception_fifo_status_level</compoundname>
+    <title>SPI Reception FIFO Status Level</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_p_i__reception__fifo__status__level_1gacff8d3b7b616ec343a64624ee7f0bff7" prot="public" static="no">
+        <name>SPI_FRLVL_EMPTY</name>
+        <initializer>(0x00000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="406" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i__reception__fifo__status__level_1ga66988763eea1cfd54424369e43fb18f4" prot="public" static="no">
+        <name>SPI_FRLVL_QUARTER_FULL</name>
+        <initializer>(0x00000200U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="407" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i__reception__fifo__status__level_1ga7aa0da3b1a4379fafa19742219004007" prot="public" static="no">
+        <name>SPI_FRLVL_HALF_FULL</name>
+        <initializer>(0x00000400U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="408" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_p_i__reception__fifo__status__level_1gaac1ae95d9b33c6f3493aa5e010bb3239" prot="public" static="no">
+        <name>SPI_FRLVL_FULL</name>
+        <initializer>(0x00000600U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" line="409" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h" bodystart="409" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,85 @@
+.TH "RCC_IOPORT_Force_Release_Reset" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_IOPORT_Force_Release_Reset \- IOPORT Force Release Reset
+.PP
+ \- Force or release IO Port reset\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_RCC_IOP_FORCE_RESET\fP()   \fBWRITE_REG\fP(\fBRCC\fP\->IOPRSTR, 0xFFFFFFFFU)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOA_FORCE_RESET\fP()   \fBSET_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIOARST\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOB_FORCE_RESET\fP()   \fBSET_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIOBRST\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOC_FORCE_RESET\fP()   \fBSET_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIOCRST\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOD_FORCE_RESET\fP()   \fBSET_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIODRST\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOF_FORCE_RESET\fP()   \fBSET_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIOFRST\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_IOP_RELEASE_RESET\fP()   \fBWRITE_REG\fP(\fBRCC\fP\->IOPRSTR, 0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOA_RELEASE_RESET\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIOARST\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOB_RELEASE_RESET\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIOBRST\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOC_RELEASE_RESET\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIOCRST\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOD_RELEASE_RESET\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIODRST\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_GPIOF_RELEASE_RESET\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIOFRST\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Force or release IO Port reset\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_RCC_GPIOA_FORCE_RESET()   \fBSET_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIOARST\fP)"
+
+.SS "#define __HAL_RCC_GPIOA_RELEASE_RESET()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIOARST\fP)"
+
+.SS "#define __HAL_RCC_GPIOB_FORCE_RESET()   \fBSET_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIOBRST\fP)"
+
+.SS "#define __HAL_RCC_GPIOB_RELEASE_RESET()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIOBRST\fP)"
+
+.SS "#define __HAL_RCC_GPIOC_FORCE_RESET()   \fBSET_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIOCRST\fP)"
+
+.SS "#define __HAL_RCC_GPIOC_RELEASE_RESET()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIOCRST\fP)"
+
+.SS "#define __HAL_RCC_GPIOD_FORCE_RESET()   \fBSET_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIODRST\fP)"
+
+.SS "#define __HAL_RCC_GPIOD_RELEASE_RESET()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIODRST\fP)"
+
+.SS "#define __HAL_RCC_GPIOF_FORCE_RESET()   \fBSET_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIOFRST\fP)"
+
+.SS "#define __HAL_RCC_GPIOF_RELEASE_RESET()   \fBCLEAR_BIT\fP(\fBRCC\fP\->IOPRSTR, \fBRCC_IOPRSTR_GPIOFRST\fP)"
+
+.SS "#define __HAL_RCC_IOP_FORCE_RESET()   \fBWRITE_REG\fP(\fBRCC\fP\->IOPRSTR, 0xFFFFFFFFU)"
+
+.SS "#define __HAL_RCC_IOP_RELEASE_RESET()   \fBWRITE_REG\fP(\fBRCC\fP\->IOPRSTR, 0x00000000U)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

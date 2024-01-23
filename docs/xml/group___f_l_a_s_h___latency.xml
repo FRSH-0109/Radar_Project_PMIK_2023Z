@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___f_l_a_s_h___latency" kind="group">
+    <compoundname>FLASH_Latency</compoundname>
+    <title>FLASH Latency</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_l_a_s_h___latency_1ga1276f51e97dc9857ca261fae4eb890f3" prot="public" static="no">
+        <name>FLASH_LATENCY_0</name>
+        <initializer>0x00000000UL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Zero wait state </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="171" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___latency_1ga28c611f2cb4a3772ab37c538357fd5f6" prot="public" static="no">
+        <name>FLASH_LATENCY_1</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga6560c1d58df18c8740d70591bf7bc1ad" kindref="member">FLASH_ACR_LATENCY_0</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH One wait state </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="172" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___latency_1ga69d209f9cb4f625010d72555c8dceb03" prot="public" static="no">
+        <name>FLASH_LATENCY_2</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga85155f5d3f34ebe83989513793498c72" kindref="member">FLASH_ACR_LATENCY_1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH Two wait states </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="173" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

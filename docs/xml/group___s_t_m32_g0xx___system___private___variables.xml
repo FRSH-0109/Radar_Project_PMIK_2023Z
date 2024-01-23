@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_t_m32_g0xx___system___private___variables" kind="group">
+    <compoundname>STM32G0xx_System_Private_Variables</compoundname>
+    <title>STM32G0xx_System_Private_Variables</title>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="group___s_t_m32_g0xx___system___private___variables_1gaa3cd3e43291e81e795d642b79b6088e6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SystemCoreClock</definition>
+        <argsstring></argsstring>
+        <name>SystemCoreClock</name>
+        <initializer>= 16000000UL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Clock Frequency (Core Clock) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/system_stm32g0xx.c" line="159" column="12" bodyfile="Core/Src/system_stm32g0xx.c" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___s_t_m32_g0xx___system___private___variables_1ga094c87a4ec51afe55595514d0b40e6fa" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t AHBPrescTable[16UL]</definition>
+        <argsstring>[16UL]</argsstring>
+        <name>AHBPrescTable</name>
+        <initializer>= {0UL, 0UL, 0UL, 0UL, 0UL, 0UL, 0UL, 0UL, 1UL, 2UL, 3UL, 4UL, 6UL, 7UL, 8UL, 9UL}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AHB prescalers table values </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/system_stm32g0xx.c" line="161" column="18" bodyfile="Core/Src/system_stm32g0xx.c" bodystart="161" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___s_t_m32_g0xx___system___private___variables_1gaedf64a04048e826a42c4eac37c2ecda0" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t APBPrescTable[8UL]</definition>
+        <argsstring>[8UL]</argsstring>
+        <name>APBPrescTable</name>
+        <initializer>=  {0UL, 0UL, 0UL, 0UL, 1UL, 2UL, 3UL, 4UL}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>APB prescalers table values </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/system_stm32g0xx.c" line="162" column="18" bodyfile="Core/Src/system_stm32g0xx.c" bodystart="162" bodyend="162"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

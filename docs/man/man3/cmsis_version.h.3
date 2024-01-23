@@ -1,0 +1,60 @@
+.TH "Drivers/CMSIS/Include/cmsis_version.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drivers/CMSIS/Include/cmsis_version.h \- CMSIS Core(M) Version definitions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__CMSIS_VERSION_H\fP"
+.br
+.ti -1c
+.RI "#define \fB__CM_CMSIS_VERSION_MAIN\fP   ( 5U)"
+.br
+.ti -1c
+.RI "#define \fB__CM_CMSIS_VERSION_SUB\fP   ( 3U)"
+.br
+.ti -1c
+.RI "#define \fB__CM_CMSIS_VERSION\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+CMSIS Core(M) Version definitions\&. 
+
+
+.PP
+\fBVersion\fP
+.RS 4
+V5\&.0\&.3 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+24\&. June 2019 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __CM_CMSIS_VERSION"
+\fBValue:\fP.PP
+.nf
+                                   ((__CM_CMSIS_VERSION_MAIN << 16U) | \\
+                                   __CM_CMSIS_VERSION_SUB           )
+.fi
+CMSIS Core(M) version number 
+.SS "#define __CM_CMSIS_VERSION_MAIN   ( 5U)"
+[31:16] CMSIS Core(M) main version 
+.SS "#define __CM_CMSIS_VERSION_SUB   ( 3U)"
+[15:0] CMSIS Core(M) sub version 
+.SS "#define __CMSIS_VERSION_H"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

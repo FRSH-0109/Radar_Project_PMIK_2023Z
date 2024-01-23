@@ -1,0 +1,986 @@
+\doxysection{Radar\+App/\+Display\+Driver/\+ILI9341.h File Reference}
+\hypertarget{_i_l_i9341_8h}{}\label{_i_l_i9341_8h}\index{RadarApp/DisplayDriver/ILI9341.h@{RadarApp/DisplayDriver/ILI9341.h}}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_af7afbc31379d61268899eef5e9dd4ef5}{ILI9341\+\_\+\+ROTATION}}~3
+\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_afc86ae8ef4d7c6b3bfb0f83f9d4dcf63}{ILI9341\+\_\+\+TFTWIDTH}}~320
+\begin{DoxyCompactList}\small\item\em ILI9341 max TFT width. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a5790338f2cee9bbd8fb015d02c9c52d3}{ILI9341\+\_\+\+TFTHEIGHT}}~240
+\begin{DoxyCompactList}\small\item\em ILI9341 max TFT height. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a58488419649441aec5166d08b1160837}{ILI9341\+\_\+\+NOP}}~0x00
+\begin{DoxyCompactList}\small\item\em No-\/op register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a05c1fbaa5809b6e45dd1da9fd0c05fc0}{ILI9341\+\_\+\+SWRESET}}~0x01
+\begin{DoxyCompactList}\small\item\em Software reset register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a97969fc9b0fb77e372d895f647387207}{ILI9341\+\_\+\+RDDID}}~0x04
+\begin{DoxyCompactList}\small\item\em Read display identification information. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a85532e0077d505687036b92bd7e70989}{ILI9341\+\_\+\+RDDST}}~0x09
+\begin{DoxyCompactList}\small\item\em Read Display Status. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a91c32c640e65f7e890fdbb5aed29077b}{ILI9341\+\_\+\+SLPIN}}~0x10
+\begin{DoxyCompactList}\small\item\em Enter Sleep Mode. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a2183eaeed3b4f2e82f1f1a5aed9cf8e1}{ILI9341\+\_\+\+SLPOUT}}~0x11
+\begin{DoxyCompactList}\small\item\em Sleep Out. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a9960c17c0ec3f5adde7cf7fa94f27220}{ILI9341\+\_\+\+PTLON}}~0x12
+\begin{DoxyCompactList}\small\item\em Partial Mode ON. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_ac657aed4eab33cf9ba9c3a44919218ab}{ILI9341\+\_\+\+NORON}}~0x13
+\begin{DoxyCompactList}\small\item\em Normal Display Mode ON. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_ad9996d51efbffc39bd2909a46dcb443b}{ILI9341\+\_\+\+RDMODE}}~0x0A
+\begin{DoxyCompactList}\small\item\em Read Display Power Mode. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_aa9692e6f195c64bf7ffbdf1c37e2a473}{ILI9341\+\_\+\+RDMADCTL}}~0x0B
+\begin{DoxyCompactList}\small\item\em Read Display MADCTL. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_aaa8ea7376d8942dded4e00bfe006c9bd}{ILI9341\+\_\+\+RDPIXFMT}}~0x0C
+\begin{DoxyCompactList}\small\item\em Read Display Pixel Format. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a4e4b9406383c20af1be6e0e05f319abf}{ILI9341\+\_\+\+RDIMGFMT}}~0x0D
+\begin{DoxyCompactList}\small\item\em Read Display Image Format. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_ada2055b1b89e10dd1a854d98022ce40c}{ILI9341\+\_\+\+RDSELFDIAG}}~0x0F
+\begin{DoxyCompactList}\small\item\em Read Display Self-\/\+Diagnostic Result. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_aa373acfd567ed1ab59f04d44fe1e5b6f}{ILI9341\+\_\+\+INVOFF}}~0x20
+\begin{DoxyCompactList}\small\item\em Display Inversion OFF. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a310ca5d5d75b141c72e36a14e8b2bb8a}{ILI9341\+\_\+\+INVON}}~0x21
+\begin{DoxyCompactList}\small\item\em Display Inversion ON. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a37d467e2a578e59844315ee76621fecb}{ILI9341\+\_\+\+GAMMASET}}~0x26
+\begin{DoxyCompactList}\small\item\em Gamma Set. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a96cd1f1e426827243075de8477439222}{ILI9341\+\_\+\+DISPOFF}}~0x28
+\begin{DoxyCompactList}\small\item\em Display OFF. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a278999b9f435340e6a689165c860050a}{ILI9341\+\_\+\+DISPON}}~0x29
+\begin{DoxyCompactList}\small\item\em Display ON. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a0735e9a5ee316588f5430559b56074c4}{ILI9341\+\_\+\+CASET}}~0x2A
+\begin{DoxyCompactList}\small\item\em Column Address Set. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_acc4a8ed569a4c04d4ef11e6a458fc2e0}{ILI9341\+\_\+\+PASET}}~0x2B
+\begin{DoxyCompactList}\small\item\em Page Address Set. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a7130c62347e51a4bafb7070ba393ee39}{ILI9341\+\_\+\+RAMWR}}~0x2C
+\begin{DoxyCompactList}\small\item\em Memory Write. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a1380e18775e66a698eb0120f64af8d27}{ILI9341\+\_\+\+RAMRD}}~0x2E
+\begin{DoxyCompactList}\small\item\em Memory Read. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a9d46802e696356cd1b7625d36c20e8dd}{ILI9341\+\_\+\+PTLAR}}~0x30
+\begin{DoxyCompactList}\small\item\em Partial Area. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_aba45bf6c8278bf5210bab2607e993cf3}{ILI9341\+\_\+\+VSCRDEF}}~0x33
+\begin{DoxyCompactList}\small\item\em Vertical Scrolling Definition. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a3788bc35c2adfe007f3b6a03b85d2071}{ILI9341\+\_\+\+MADCTL}}~0x36
+\begin{DoxyCompactList}\small\item\em Memory Access Control. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_aed59201f8eb2291e618d3b3151adc497}{ILI9341\+\_\+\+VSCRSADD}}~0x37
+\begin{DoxyCompactList}\small\item\em Vertical Scrolling Start Address. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_ae22acdf8d6ceb5710050b7a1b8bfcefc}{ILI9341\+\_\+\+PIXFMT}}~0x3A
+\begin{DoxyCompactList}\small\item\em COLMOD\+: Pixel Format Set. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a086515b5e792ce35f8cd0b875bd1f16e}{ILI9341\+\_\+\+FRMCTR1}}~  0x\+B1
+\begin{DoxyCompactList}\small\item\em Frame Rate Control (In Normal Mode/\+Full Colors)/\texorpdfstring{$\ast$}{*}\#end\#\texorpdfstring{$\ast$}{*}/. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a144a76fa56427d7e38c99708fa42e47f}{ILI9341\+\_\+\+FRMCTR2}}~0x\+B2
+\begin{DoxyCompactList}\small\item\em Frame Rate Control (In Idle Mode/8 colors) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a1be5fe675d09e59287ef886e11c87bcb}{ILI9341\+\_\+\+FRMCTR3}}~  0x\+B3
+\begin{DoxyCompactList}\small\item\em Frame Rate control (In Partial Mode/\+Full Colors)/\texorpdfstring{$\ast$}{*}\#end\#\texorpdfstring{$\ast$}{*}/. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_ac499cd0e0c7f17006dcc2e6998915d57}{ILI9341\+\_\+\+INVCTR}}~0x\+B4
+\begin{DoxyCompactList}\small\item\em Display Inversion Control. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a808fd63764a8bf4de696d11e897e68de}{ILI9341\+\_\+\+DFUNCTR}}~0x\+B6
+\begin{DoxyCompactList}\small\item\em Display Function Control. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a2429382736b6d514ab4085a8ea5951d4}{ILI9341\+\_\+\+PWCTR1}}~0x\+C0
+\begin{DoxyCompactList}\small\item\em Power Control 1. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_ae6bf550a370a529b19263c6e05649b07}{ILI9341\+\_\+\+PWCTR2}}~0x\+C1
+\begin{DoxyCompactList}\small\item\em Power Control 2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_ace7ad088cfc571e05a4066a9dd8a0049}{ILI9341\+\_\+\+PWCTR3}}~0x\+C2
+\begin{DoxyCompactList}\small\item\em Power Control 3. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a44774f69e5dfc0d7b87f5a8bf5cad0e9}{ILI9341\+\_\+\+PWCTR4}}~0x\+C3
+\begin{DoxyCompactList}\small\item\em Power Control 4. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_af606a5acf671a097da5af39f83091fd6}{ILI9341\+\_\+\+PWCTR5}}~0x\+C4
+\begin{DoxyCompactList}\small\item\em Power Control 5. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a3ac0bad81e82dca703ea78d9f1ad8cd1}{ILI9341\+\_\+\+VMCTR1}}~0x\+C5
+\begin{DoxyCompactList}\small\item\em VCOM Control 1. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_ae2d100e90910bf4aedb20fb88b3f582c}{ILI9341\+\_\+\+VMCTR2}}~0x\+C7
+\begin{DoxyCompactList}\small\item\em VCOM Control 2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a9e00fc41e2ce41f264f7f19a01bd6b41}{ILI9341\+\_\+\+RDID1}}~0x\+DA
+\begin{DoxyCompactList}\small\item\em Read ID 1. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a18b8144a0ab0fce95e1873102b72da8a}{ILI9341\+\_\+\+RDID2}}~0x\+DB
+\begin{DoxyCompactList}\small\item\em Read ID 2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a31b7dff5fc8d6affa4f328a4de46ce9f}{ILI9341\+\_\+\+RDID3}}~0x\+DC
+\begin{DoxyCompactList}\small\item\em Read ID 3. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a2866fa67540c7099f2c5d724196f430e}{ILI9341\+\_\+\+RDID4}}~0x\+DD
+\begin{DoxyCompactList}\small\item\em Read ID 4. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a5e137029ba159bd4a942dbe44fbb45bd}{ILI9341\+\_\+\+GMCTRP1}}~0x\+E0
+\begin{DoxyCompactList}\small\item\em Positive Gamma Correction. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_aa2c11f3421fe0cfd04de4afc144145ae}{ILI9341\+\_\+\+GMCTRN1}}~0x\+E1
+\begin{DoxyCompactList}\small\item\em Negative Gamma Correction. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a50166b9a65012fb2f8fe0a0d5f519fa3}{ILI9341\+\_\+\+BLACK}}~0x0000
+\begin{DoxyCompactList}\small\item\em 0, 0, 0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_acaae04786d06f0ba08c8bea6b714b572}{ILI9341\+\_\+\+NAVY}}~0x000F
+\begin{DoxyCompactList}\small\item\em 0, 0, 123 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a5a9d46f3af002ee1edc832257f3683a3}{ILI9341\+\_\+\+DARKGREEN}}~0x03\+E0
+\begin{DoxyCompactList}\small\item\em 0, 125, 0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_adbc78927dc7105782714d69048580576}{ILI9341\+\_\+\+DARKCYAN}}~0x03\+EF
+\begin{DoxyCompactList}\small\item\em 0, 125, 123 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a8fdcfa7e66294fbedf701b2822a9c6e9}{ILI9341\+\_\+\+MAROON}}~0x7800
+\begin{DoxyCompactList}\small\item\em 123, 0, 0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a4371aa3db522c197cae529a235553071}{ILI9341\+\_\+\+PURPLE}}~0x780F
+\begin{DoxyCompactList}\small\item\em 123, 0, 123 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_ae8f5be0a5e731a047a1a7b5edaa0e46f}{ILI9341\+\_\+\+OLIVE}}~0x7\+BE0
+\begin{DoxyCompactList}\small\item\em 123, 125, 0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a35990ea476b079cd6746056777fadfd8}{ILI9341\+\_\+\+LIGHTGREY}}~0x\+C618
+\begin{DoxyCompactList}\small\item\em 198, 195, 198 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a56f69dad2de457c03d71ea0b38395c41}{ILI9341\+\_\+\+DARKGREY}}~0x7\+BEF
+\begin{DoxyCompactList}\small\item\em 123, 125, 123 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_aa15cf651d66764cb8024808d6ea48eef}{ILI9341\+\_\+\+BLUE}}~0x001F
+\begin{DoxyCompactList}\small\item\em 0, 0, 255 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a2eb4b5e896b0b144970f33002134bb98}{ILI9341\+\_\+\+GREEN}}~0x07\+E0
+\begin{DoxyCompactList}\small\item\em 0, 255, 0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_af04ea4a1f89418c734ba76739a2e730f}{ILI9341\+\_\+\+CYAN}}~0x07\+FF
+\begin{DoxyCompactList}\small\item\em 0, 255, 255 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a4ebe718620305116033cb3f969cfc08b}{ILI9341\+\_\+\+RED}}~0x\+F800
+\begin{DoxyCompactList}\small\item\em 255, 0, 0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_ae858232678ff269cf0edd404aabcb989}{ILI9341\+\_\+\+MAGENTA}}~0x\+F81F
+\begin{DoxyCompactList}\small\item\em 255, 0, 255 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a0313d113622009bfd9b6011fc9bffcc9}{ILI9341\+\_\+\+YELLOW}}~0x\+FFE0
+\begin{DoxyCompactList}\small\item\em 255, 255, 0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a604507ef031b95291b2d177088fe03e4}{ILI9341\+\_\+\+WHITE}}~0x\+FFFF
+\begin{DoxyCompactList}\small\item\em 255, 255, 255 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a857910d1b98cb9d77a29c2beb5af949d}{ILI9341\+\_\+\+ORANGE}}~0x\+FD20
+\begin{DoxyCompactList}\small\item\em 255, 165, 0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a5f9867862411a57b73cecbc0155e7507}{ILI9341\+\_\+\+GREENYELLOW}}~0x\+AFE5
+\begin{DoxyCompactList}\small\item\em 173, 255, 41 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_ad39cea2dab75ccfd9d83fab73ce1a56d}{ILI9341\+\_\+\+PINK}}~0x\+FC18
+\begin{DoxyCompactList}\small\item\em 255, 130, 198 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_ab30e6bd24448245df1d60a3e1c4ddbdf}{MADCTL\+\_\+\+MY}}~0x80
+\begin{DoxyCompactList}\small\item\em Bottom to top. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a6d18ed48efb3186877a07d0e81155453}{MADCTL\+\_\+\+MX}}~0x40
+\begin{DoxyCompactList}\small\item\em Right to left. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_adc23a239d2b6976d53254ef4fc5d1713}{MADCTL\+\_\+\+MV}}~0x20
+\begin{DoxyCompactList}\small\item\em Reverse Mode. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a9ecee6d3131d3b4f750b94d5766b998a}{MADCTL\+\_\+\+ML}}~0x10
+\begin{DoxyCompactList}\small\item\em LCD refresh Bottom to top. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_acc1e55b52f8a56b7719ab147308a1668}{MADCTL\+\_\+\+RGB}}~0x00
+\begin{DoxyCompactList}\small\item\em Red-\/\+Green-\/\+Blue pixel order. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a659f0d6f0c258a3d91f882a59dfa76f5}{MADCTL\+\_\+\+BGR}}~0x08
+\begin{DoxyCompactList}\small\item\em Blue-\/\+Green-\/\+Red pixel order. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_a6f8b9fad1b5db52b70960b389056f0dd}{MADCTL\+\_\+\+MH}}~0x04
+\begin{DoxyCompactList}\small\item\em LCD refresh right to left. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_i_l_i9341_8h_ab2970cf3904979db60867ba793efa832}{ILI9341\+\_\+\+SPI\+\_\+\+TIMEOUT}}~1000
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8h_a0f241f9cfcb703e2994154ea35251892}{ILI9341\+\_\+\+Send\+Command}} (uint8\+\_\+t Command)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8h_a7ae207b9f55148240d0dee03167a25f9}{ILI9341\+\_\+\+Send\+To\+TFT}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}Byte, uint32\+\_\+t Length)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8h_a0538f2015fef138ace1fd64a3d652cd1}{ILI9341\+\_\+\+Init}} (\mbox{\hyperlink{group___s_p_i___exported___types_gab633e49dd034de2f3a1fe79853d78d18}{SPI\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}hspi)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8h_aa1381a729cb6af2b71c6bed0c37cc906}{ILI9341\+\_\+\+Send\+Command\+And\+Data}} (uint8\+\_\+t Command, uint8\+\_\+t \texorpdfstring{$\ast$}{*}Data, uint16\+\_\+t Length)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8h_aeee3186252cba83694826a2c2c7014c5}{ILI9341\+\_\+\+Write\+Pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t color)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8h_a81ddeb47ba6c0c3353ae31e7e15b4910}{ILI9341\+\_\+\+Send\+Data16}} (uint16\+\_\+t Data)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8h_a89228cd93ba2f68acf969f8f7eccd78b}{ILI9341\+\_\+\+Set\+Addr\+Window}} (uint16\+\_\+t x1, uint16\+\_\+t y1, uint16\+\_\+t w, uint16\+\_\+t h)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8h_a324ebd8d3bc5309c8c9da80b0c07d10a}{ILI9341\+\_\+\+Write\+Screen}} (uint16\+\_\+t color)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8h_a0fcdb5427fdab7f7eb09abce73b9ea5b}{ILI9341\+\_\+\+Draw\+Image}} (int x, int y, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}img, uint16\+\_\+t w, uint16\+\_\+t h)
+\item 
+void \mbox{\hyperlink{_i_l_i9341_8h_a6ac0c89f746e798e7430746bf50fe499}{ILI9341\+\_\+\+Set\+Rotation}} (uint8\+\_\+t m)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_i_l_i9341_8h_a50166b9a65012fb2f8fe0a0d5f519fa3}\label{_i_l_i9341_8h_a50166b9a65012fb2f8fe0a0d5f519fa3} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_BLACK@{ILI9341\_BLACK}}
+\index{ILI9341\_BLACK@{ILI9341\_BLACK}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_BLACK}{ILI9341\_BLACK}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+BLACK~0x0000}
+
+
+
+0, 0, 0 
+
+\Hypertarget{_i_l_i9341_8h_aa15cf651d66764cb8024808d6ea48eef}\label{_i_l_i9341_8h_aa15cf651d66764cb8024808d6ea48eef} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_BLUE@{ILI9341\_BLUE}}
+\index{ILI9341\_BLUE@{ILI9341\_BLUE}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_BLUE}{ILI9341\_BLUE}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+BLUE~0x001F}
+
+
+
+0, 0, 255 
+
+\Hypertarget{_i_l_i9341_8h_a0735e9a5ee316588f5430559b56074c4}\label{_i_l_i9341_8h_a0735e9a5ee316588f5430559b56074c4} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_CASET@{ILI9341\_CASET}}
+\index{ILI9341\_CASET@{ILI9341\_CASET}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_CASET}{ILI9341\_CASET}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+CASET~0x2A}
+
+
+
+Column Address Set. 
+
+\Hypertarget{_i_l_i9341_8h_af04ea4a1f89418c734ba76739a2e730f}\label{_i_l_i9341_8h_af04ea4a1f89418c734ba76739a2e730f} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_CYAN@{ILI9341\_CYAN}}
+\index{ILI9341\_CYAN@{ILI9341\_CYAN}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_CYAN}{ILI9341\_CYAN}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+CYAN~0x07\+FF}
+
+
+
+0, 255, 255 
+
+\Hypertarget{_i_l_i9341_8h_adbc78927dc7105782714d69048580576}\label{_i_l_i9341_8h_adbc78927dc7105782714d69048580576} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_DARKCYAN@{ILI9341\_DARKCYAN}}
+\index{ILI9341\_DARKCYAN@{ILI9341\_DARKCYAN}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_DARKCYAN}{ILI9341\_DARKCYAN}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+DARKCYAN~0x03\+EF}
+
+
+
+0, 125, 123 
+
+\Hypertarget{_i_l_i9341_8h_a5a9d46f3af002ee1edc832257f3683a3}\label{_i_l_i9341_8h_a5a9d46f3af002ee1edc832257f3683a3} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_DARKGREEN@{ILI9341\_DARKGREEN}}
+\index{ILI9341\_DARKGREEN@{ILI9341\_DARKGREEN}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_DARKGREEN}{ILI9341\_DARKGREEN}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+DARKGREEN~0x03\+E0}
+
+
+
+0, 125, 0 
+
+\Hypertarget{_i_l_i9341_8h_a56f69dad2de457c03d71ea0b38395c41}\label{_i_l_i9341_8h_a56f69dad2de457c03d71ea0b38395c41} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_DARKGREY@{ILI9341\_DARKGREY}}
+\index{ILI9341\_DARKGREY@{ILI9341\_DARKGREY}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_DARKGREY}{ILI9341\_DARKGREY}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+DARKGREY~0x7\+BEF}
+
+
+
+123, 125, 123 
+
+\Hypertarget{_i_l_i9341_8h_a808fd63764a8bf4de696d11e897e68de}\label{_i_l_i9341_8h_a808fd63764a8bf4de696d11e897e68de} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_DFUNCTR@{ILI9341\_DFUNCTR}}
+\index{ILI9341\_DFUNCTR@{ILI9341\_DFUNCTR}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_DFUNCTR}{ILI9341\_DFUNCTR}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+DFUNCTR~0x\+B6}
+
+
+
+Display Function Control. 
+
+\Hypertarget{_i_l_i9341_8h_a96cd1f1e426827243075de8477439222}\label{_i_l_i9341_8h_a96cd1f1e426827243075de8477439222} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_DISPOFF@{ILI9341\_DISPOFF}}
+\index{ILI9341\_DISPOFF@{ILI9341\_DISPOFF}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_DISPOFF}{ILI9341\_DISPOFF}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+DISPOFF~0x28}
+
+
+
+Display OFF. 
+
+\Hypertarget{_i_l_i9341_8h_a278999b9f435340e6a689165c860050a}\label{_i_l_i9341_8h_a278999b9f435340e6a689165c860050a} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_DISPON@{ILI9341\_DISPON}}
+\index{ILI9341\_DISPON@{ILI9341\_DISPON}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_DISPON}{ILI9341\_DISPON}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+DISPON~0x29}
+
+
+
+Display ON. 
+
+\Hypertarget{_i_l_i9341_8h_a086515b5e792ce35f8cd0b875bd1f16e}\label{_i_l_i9341_8h_a086515b5e792ce35f8cd0b875bd1f16e} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_FRMCTR1@{ILI9341\_FRMCTR1}}
+\index{ILI9341\_FRMCTR1@{ILI9341\_FRMCTR1}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_FRMCTR1}{ILI9341\_FRMCTR1}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+FRMCTR1~  0x\+B1}
+
+
+
+Frame Rate Control (In Normal Mode/\+Full Colors)/\texorpdfstring{$\ast$}{*}\#end\#\texorpdfstring{$\ast$}{*}/. 
+
+\Hypertarget{_i_l_i9341_8h_a144a76fa56427d7e38c99708fa42e47f}\label{_i_l_i9341_8h_a144a76fa56427d7e38c99708fa42e47f} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_FRMCTR2@{ILI9341\_FRMCTR2}}
+\index{ILI9341\_FRMCTR2@{ILI9341\_FRMCTR2}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_FRMCTR2}{ILI9341\_FRMCTR2}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+FRMCTR2~0x\+B2}
+
+
+
+Frame Rate Control (In Idle Mode/8 colors) 
+
+\Hypertarget{_i_l_i9341_8h_a1be5fe675d09e59287ef886e11c87bcb}\label{_i_l_i9341_8h_a1be5fe675d09e59287ef886e11c87bcb} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_FRMCTR3@{ILI9341\_FRMCTR3}}
+\index{ILI9341\_FRMCTR3@{ILI9341\_FRMCTR3}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_FRMCTR3}{ILI9341\_FRMCTR3}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+FRMCTR3~  0x\+B3}
+
+
+
+Frame Rate control (In Partial Mode/\+Full Colors)/\texorpdfstring{$\ast$}{*}\#end\#\texorpdfstring{$\ast$}{*}/. 
+
+\Hypertarget{_i_l_i9341_8h_a37d467e2a578e59844315ee76621fecb}\label{_i_l_i9341_8h_a37d467e2a578e59844315ee76621fecb} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_GAMMASET@{ILI9341\_GAMMASET}}
+\index{ILI9341\_GAMMASET@{ILI9341\_GAMMASET}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_GAMMASET}{ILI9341\_GAMMASET}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+GAMMASET~0x26}
+
+
+
+Gamma Set. 
+
+\Hypertarget{_i_l_i9341_8h_aa2c11f3421fe0cfd04de4afc144145ae}\label{_i_l_i9341_8h_aa2c11f3421fe0cfd04de4afc144145ae} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_GMCTRN1@{ILI9341\_GMCTRN1}}
+\index{ILI9341\_GMCTRN1@{ILI9341\_GMCTRN1}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_GMCTRN1}{ILI9341\_GMCTRN1}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+GMCTRN1~0x\+E1}
+
+
+
+Negative Gamma Correction. 
+
+\Hypertarget{_i_l_i9341_8h_a5e137029ba159bd4a942dbe44fbb45bd}\label{_i_l_i9341_8h_a5e137029ba159bd4a942dbe44fbb45bd} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_GMCTRP1@{ILI9341\_GMCTRP1}}
+\index{ILI9341\_GMCTRP1@{ILI9341\_GMCTRP1}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_GMCTRP1}{ILI9341\_GMCTRP1}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+GMCTRP1~0x\+E0}
+
+
+
+Positive Gamma Correction. 
+
+\Hypertarget{_i_l_i9341_8h_a2eb4b5e896b0b144970f33002134bb98}\label{_i_l_i9341_8h_a2eb4b5e896b0b144970f33002134bb98} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_GREEN@{ILI9341\_GREEN}}
+\index{ILI9341\_GREEN@{ILI9341\_GREEN}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_GREEN}{ILI9341\_GREEN}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+GREEN~0x07\+E0}
+
+
+
+0, 255, 0 
+
+\Hypertarget{_i_l_i9341_8h_a5f9867862411a57b73cecbc0155e7507}\label{_i_l_i9341_8h_a5f9867862411a57b73cecbc0155e7507} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_GREENYELLOW@{ILI9341\_GREENYELLOW}}
+\index{ILI9341\_GREENYELLOW@{ILI9341\_GREENYELLOW}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_GREENYELLOW}{ILI9341\_GREENYELLOW}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+GREENYELLOW~0x\+AFE5}
+
+
+
+173, 255, 41 
+
+\Hypertarget{_i_l_i9341_8h_ac499cd0e0c7f17006dcc2e6998915d57}\label{_i_l_i9341_8h_ac499cd0e0c7f17006dcc2e6998915d57} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_INVCTR@{ILI9341\_INVCTR}}
+\index{ILI9341\_INVCTR@{ILI9341\_INVCTR}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_INVCTR}{ILI9341\_INVCTR}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+INVCTR~0x\+B4}
+
+
+
+Display Inversion Control. 
+
+\Hypertarget{_i_l_i9341_8h_aa373acfd567ed1ab59f04d44fe1e5b6f}\label{_i_l_i9341_8h_aa373acfd567ed1ab59f04d44fe1e5b6f} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_INVOFF@{ILI9341\_INVOFF}}
+\index{ILI9341\_INVOFF@{ILI9341\_INVOFF}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_INVOFF}{ILI9341\_INVOFF}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+INVOFF~0x20}
+
+
+
+Display Inversion OFF. 
+
+\Hypertarget{_i_l_i9341_8h_a310ca5d5d75b141c72e36a14e8b2bb8a}\label{_i_l_i9341_8h_a310ca5d5d75b141c72e36a14e8b2bb8a} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_INVON@{ILI9341\_INVON}}
+\index{ILI9341\_INVON@{ILI9341\_INVON}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_INVON}{ILI9341\_INVON}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+INVON~0x21}
+
+
+
+Display Inversion ON. 
+
+\Hypertarget{_i_l_i9341_8h_a35990ea476b079cd6746056777fadfd8}\label{_i_l_i9341_8h_a35990ea476b079cd6746056777fadfd8} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_LIGHTGREY@{ILI9341\_LIGHTGREY}}
+\index{ILI9341\_LIGHTGREY@{ILI9341\_LIGHTGREY}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_LIGHTGREY}{ILI9341\_LIGHTGREY}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+LIGHTGREY~0x\+C618}
+
+
+
+198, 195, 198 
+
+\Hypertarget{_i_l_i9341_8h_a3788bc35c2adfe007f3b6a03b85d2071}\label{_i_l_i9341_8h_a3788bc35c2adfe007f3b6a03b85d2071} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_MADCTL@{ILI9341\_MADCTL}}
+\index{ILI9341\_MADCTL@{ILI9341\_MADCTL}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_MADCTL}{ILI9341\_MADCTL}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+MADCTL~0x36}
+
+
+
+Memory Access Control. 
+
+\Hypertarget{_i_l_i9341_8h_ae858232678ff269cf0edd404aabcb989}\label{_i_l_i9341_8h_ae858232678ff269cf0edd404aabcb989} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_MAGENTA@{ILI9341\_MAGENTA}}
+\index{ILI9341\_MAGENTA@{ILI9341\_MAGENTA}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_MAGENTA}{ILI9341\_MAGENTA}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+MAGENTA~0x\+F81F}
+
+
+
+255, 0, 255 
+
+\Hypertarget{_i_l_i9341_8h_a8fdcfa7e66294fbedf701b2822a9c6e9}\label{_i_l_i9341_8h_a8fdcfa7e66294fbedf701b2822a9c6e9} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_MAROON@{ILI9341\_MAROON}}
+\index{ILI9341\_MAROON@{ILI9341\_MAROON}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_MAROON}{ILI9341\_MAROON}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+MAROON~0x7800}
+
+
+
+123, 0, 0 
+
+\Hypertarget{_i_l_i9341_8h_acaae04786d06f0ba08c8bea6b714b572}\label{_i_l_i9341_8h_acaae04786d06f0ba08c8bea6b714b572} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_NAVY@{ILI9341\_NAVY}}
+\index{ILI9341\_NAVY@{ILI9341\_NAVY}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_NAVY}{ILI9341\_NAVY}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+NAVY~0x000F}
+
+
+
+0, 0, 123 
+
+\Hypertarget{_i_l_i9341_8h_a58488419649441aec5166d08b1160837}\label{_i_l_i9341_8h_a58488419649441aec5166d08b1160837} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_NOP@{ILI9341\_NOP}}
+\index{ILI9341\_NOP@{ILI9341\_NOP}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_NOP}{ILI9341\_NOP}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+NOP~0x00}
+
+
+
+No-\/op register. 
+
+\Hypertarget{_i_l_i9341_8h_ac657aed4eab33cf9ba9c3a44919218ab}\label{_i_l_i9341_8h_ac657aed4eab33cf9ba9c3a44919218ab} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_NORON@{ILI9341\_NORON}}
+\index{ILI9341\_NORON@{ILI9341\_NORON}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_NORON}{ILI9341\_NORON}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+NORON~0x13}
+
+
+
+Normal Display Mode ON. 
+
+\Hypertarget{_i_l_i9341_8h_ae8f5be0a5e731a047a1a7b5edaa0e46f}\label{_i_l_i9341_8h_ae8f5be0a5e731a047a1a7b5edaa0e46f} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_OLIVE@{ILI9341\_OLIVE}}
+\index{ILI9341\_OLIVE@{ILI9341\_OLIVE}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_OLIVE}{ILI9341\_OLIVE}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+OLIVE~0x7\+BE0}
+
+
+
+123, 125, 0 
+
+\Hypertarget{_i_l_i9341_8h_a857910d1b98cb9d77a29c2beb5af949d}\label{_i_l_i9341_8h_a857910d1b98cb9d77a29c2beb5af949d} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_ORANGE@{ILI9341\_ORANGE}}
+\index{ILI9341\_ORANGE@{ILI9341\_ORANGE}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_ORANGE}{ILI9341\_ORANGE}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+ORANGE~0x\+FD20}
+
+
+
+255, 165, 0 
+
+\Hypertarget{_i_l_i9341_8h_acc4a8ed569a4c04d4ef11e6a458fc2e0}\label{_i_l_i9341_8h_acc4a8ed569a4c04d4ef11e6a458fc2e0} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_PASET@{ILI9341\_PASET}}
+\index{ILI9341\_PASET@{ILI9341\_PASET}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_PASET}{ILI9341\_PASET}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+PASET~0x2B}
+
+
+
+Page Address Set. 
+
+\Hypertarget{_i_l_i9341_8h_ad39cea2dab75ccfd9d83fab73ce1a56d}\label{_i_l_i9341_8h_ad39cea2dab75ccfd9d83fab73ce1a56d} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_PINK@{ILI9341\_PINK}}
+\index{ILI9341\_PINK@{ILI9341\_PINK}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_PINK}{ILI9341\_PINK}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+PINK~0x\+FC18}
+
+
+
+255, 130, 198 
+
+\Hypertarget{_i_l_i9341_8h_ae22acdf8d6ceb5710050b7a1b8bfcefc}\label{_i_l_i9341_8h_ae22acdf8d6ceb5710050b7a1b8bfcefc} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_PIXFMT@{ILI9341\_PIXFMT}}
+\index{ILI9341\_PIXFMT@{ILI9341\_PIXFMT}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_PIXFMT}{ILI9341\_PIXFMT}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+PIXFMT~0x3A}
+
+
+
+COLMOD\+: Pixel Format Set. 
+
+\Hypertarget{_i_l_i9341_8h_a9d46802e696356cd1b7625d36c20e8dd}\label{_i_l_i9341_8h_a9d46802e696356cd1b7625d36c20e8dd} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_PTLAR@{ILI9341\_PTLAR}}
+\index{ILI9341\_PTLAR@{ILI9341\_PTLAR}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_PTLAR}{ILI9341\_PTLAR}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+PTLAR~0x30}
+
+
+
+Partial Area. 
+
+\Hypertarget{_i_l_i9341_8h_a9960c17c0ec3f5adde7cf7fa94f27220}\label{_i_l_i9341_8h_a9960c17c0ec3f5adde7cf7fa94f27220} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_PTLON@{ILI9341\_PTLON}}
+\index{ILI9341\_PTLON@{ILI9341\_PTLON}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_PTLON}{ILI9341\_PTLON}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+PTLON~0x12}
+
+
+
+Partial Mode ON. 
+
+\Hypertarget{_i_l_i9341_8h_a4371aa3db522c197cae529a235553071}\label{_i_l_i9341_8h_a4371aa3db522c197cae529a235553071} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_PURPLE@{ILI9341\_PURPLE}}
+\index{ILI9341\_PURPLE@{ILI9341\_PURPLE}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_PURPLE}{ILI9341\_PURPLE}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+PURPLE~0x780F}
+
+
+
+123, 0, 123 
+
+\Hypertarget{_i_l_i9341_8h_a2429382736b6d514ab4085a8ea5951d4}\label{_i_l_i9341_8h_a2429382736b6d514ab4085a8ea5951d4} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_PWCTR1@{ILI9341\_PWCTR1}}
+\index{ILI9341\_PWCTR1@{ILI9341\_PWCTR1}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_PWCTR1}{ILI9341\_PWCTR1}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+PWCTR1~0x\+C0}
+
+
+
+Power Control 1. 
+
+\Hypertarget{_i_l_i9341_8h_ae6bf550a370a529b19263c6e05649b07}\label{_i_l_i9341_8h_ae6bf550a370a529b19263c6e05649b07} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_PWCTR2@{ILI9341\_PWCTR2}}
+\index{ILI9341\_PWCTR2@{ILI9341\_PWCTR2}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_PWCTR2}{ILI9341\_PWCTR2}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+PWCTR2~0x\+C1}
+
+
+
+Power Control 2. 
+
+\Hypertarget{_i_l_i9341_8h_ace7ad088cfc571e05a4066a9dd8a0049}\label{_i_l_i9341_8h_ace7ad088cfc571e05a4066a9dd8a0049} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_PWCTR3@{ILI9341\_PWCTR3}}
+\index{ILI9341\_PWCTR3@{ILI9341\_PWCTR3}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_PWCTR3}{ILI9341\_PWCTR3}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+PWCTR3~0x\+C2}
+
+
+
+Power Control 3. 
+
+\Hypertarget{_i_l_i9341_8h_a44774f69e5dfc0d7b87f5a8bf5cad0e9}\label{_i_l_i9341_8h_a44774f69e5dfc0d7b87f5a8bf5cad0e9} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_PWCTR4@{ILI9341\_PWCTR4}}
+\index{ILI9341\_PWCTR4@{ILI9341\_PWCTR4}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_PWCTR4}{ILI9341\_PWCTR4}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+PWCTR4~0x\+C3}
+
+
+
+Power Control 4. 
+
+\Hypertarget{_i_l_i9341_8h_af606a5acf671a097da5af39f83091fd6}\label{_i_l_i9341_8h_af606a5acf671a097da5af39f83091fd6} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_PWCTR5@{ILI9341\_PWCTR5}}
+\index{ILI9341\_PWCTR5@{ILI9341\_PWCTR5}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_PWCTR5}{ILI9341\_PWCTR5}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+PWCTR5~0x\+C4}
+
+
+
+Power Control 5. 
+
+\Hypertarget{_i_l_i9341_8h_a1380e18775e66a698eb0120f64af8d27}\label{_i_l_i9341_8h_a1380e18775e66a698eb0120f64af8d27} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_RAMRD@{ILI9341\_RAMRD}}
+\index{ILI9341\_RAMRD@{ILI9341\_RAMRD}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_RAMRD}{ILI9341\_RAMRD}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+RAMRD~0x2E}
+
+
+
+Memory Read. 
+
+\Hypertarget{_i_l_i9341_8h_a7130c62347e51a4bafb7070ba393ee39}\label{_i_l_i9341_8h_a7130c62347e51a4bafb7070ba393ee39} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_RAMWR@{ILI9341\_RAMWR}}
+\index{ILI9341\_RAMWR@{ILI9341\_RAMWR}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_RAMWR}{ILI9341\_RAMWR}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+RAMWR~0x2C}
+
+
+
+Memory Write. 
+
+\Hypertarget{_i_l_i9341_8h_a97969fc9b0fb77e372d895f647387207}\label{_i_l_i9341_8h_a97969fc9b0fb77e372d895f647387207} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_RDDID@{ILI9341\_RDDID}}
+\index{ILI9341\_RDDID@{ILI9341\_RDDID}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_RDDID}{ILI9341\_RDDID}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+RDDID~0x04}
+
+
+
+Read display identification information. 
+
+\Hypertarget{_i_l_i9341_8h_a85532e0077d505687036b92bd7e70989}\label{_i_l_i9341_8h_a85532e0077d505687036b92bd7e70989} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_RDDST@{ILI9341\_RDDST}}
+\index{ILI9341\_RDDST@{ILI9341\_RDDST}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_RDDST}{ILI9341\_RDDST}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+RDDST~0x09}
+
+
+
+Read Display Status. 
+
+\Hypertarget{_i_l_i9341_8h_a9e00fc41e2ce41f264f7f19a01bd6b41}\label{_i_l_i9341_8h_a9e00fc41e2ce41f264f7f19a01bd6b41} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_RDID1@{ILI9341\_RDID1}}
+\index{ILI9341\_RDID1@{ILI9341\_RDID1}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_RDID1}{ILI9341\_RDID1}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+RDID1~0x\+DA}
+
+
+
+Read ID 1. 
+
+\Hypertarget{_i_l_i9341_8h_a18b8144a0ab0fce95e1873102b72da8a}\label{_i_l_i9341_8h_a18b8144a0ab0fce95e1873102b72da8a} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_RDID2@{ILI9341\_RDID2}}
+\index{ILI9341\_RDID2@{ILI9341\_RDID2}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_RDID2}{ILI9341\_RDID2}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+RDID2~0x\+DB}
+
+
+
+Read ID 2. 
+
+\Hypertarget{_i_l_i9341_8h_a31b7dff5fc8d6affa4f328a4de46ce9f}\label{_i_l_i9341_8h_a31b7dff5fc8d6affa4f328a4de46ce9f} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_RDID3@{ILI9341\_RDID3}}
+\index{ILI9341\_RDID3@{ILI9341\_RDID3}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_RDID3}{ILI9341\_RDID3}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+RDID3~0x\+DC}
+
+
+
+Read ID 3. 
+
+\Hypertarget{_i_l_i9341_8h_a2866fa67540c7099f2c5d724196f430e}\label{_i_l_i9341_8h_a2866fa67540c7099f2c5d724196f430e} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_RDID4@{ILI9341\_RDID4}}
+\index{ILI9341\_RDID4@{ILI9341\_RDID4}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_RDID4}{ILI9341\_RDID4}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+RDID4~0x\+DD}
+
+
+
+Read ID 4. 
+
+\Hypertarget{_i_l_i9341_8h_a4e4b9406383c20af1be6e0e05f319abf}\label{_i_l_i9341_8h_a4e4b9406383c20af1be6e0e05f319abf} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_RDIMGFMT@{ILI9341\_RDIMGFMT}}
+\index{ILI9341\_RDIMGFMT@{ILI9341\_RDIMGFMT}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_RDIMGFMT}{ILI9341\_RDIMGFMT}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+RDIMGFMT~0x0D}
+
+
+
+Read Display Image Format. 
+
+\Hypertarget{_i_l_i9341_8h_aa9692e6f195c64bf7ffbdf1c37e2a473}\label{_i_l_i9341_8h_aa9692e6f195c64bf7ffbdf1c37e2a473} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_RDMADCTL@{ILI9341\_RDMADCTL}}
+\index{ILI9341\_RDMADCTL@{ILI9341\_RDMADCTL}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_RDMADCTL}{ILI9341\_RDMADCTL}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+RDMADCTL~0x0B}
+
+
+
+Read Display MADCTL. 
+
+\Hypertarget{_i_l_i9341_8h_ad9996d51efbffc39bd2909a46dcb443b}\label{_i_l_i9341_8h_ad9996d51efbffc39bd2909a46dcb443b} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_RDMODE@{ILI9341\_RDMODE}}
+\index{ILI9341\_RDMODE@{ILI9341\_RDMODE}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_RDMODE}{ILI9341\_RDMODE}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+RDMODE~0x0A}
+
+
+
+Read Display Power Mode. 
+
+\Hypertarget{_i_l_i9341_8h_aaa8ea7376d8942dded4e00bfe006c9bd}\label{_i_l_i9341_8h_aaa8ea7376d8942dded4e00bfe006c9bd} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_RDPIXFMT@{ILI9341\_RDPIXFMT}}
+\index{ILI9341\_RDPIXFMT@{ILI9341\_RDPIXFMT}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_RDPIXFMT}{ILI9341\_RDPIXFMT}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+RDPIXFMT~0x0C}
+
+
+
+Read Display Pixel Format. 
+
+\Hypertarget{_i_l_i9341_8h_ada2055b1b89e10dd1a854d98022ce40c}\label{_i_l_i9341_8h_ada2055b1b89e10dd1a854d98022ce40c} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_RDSELFDIAG@{ILI9341\_RDSELFDIAG}}
+\index{ILI9341\_RDSELFDIAG@{ILI9341\_RDSELFDIAG}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_RDSELFDIAG}{ILI9341\_RDSELFDIAG}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+RDSELFDIAG~0x0F}
+
+
+
+Read Display Self-\/\+Diagnostic Result. 
+
+\Hypertarget{_i_l_i9341_8h_a4ebe718620305116033cb3f969cfc08b}\label{_i_l_i9341_8h_a4ebe718620305116033cb3f969cfc08b} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_RED@{ILI9341\_RED}}
+\index{ILI9341\_RED@{ILI9341\_RED}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_RED}{ILI9341\_RED}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+RED~0x\+F800}
+
+
+
+255, 0, 0 
+
+\Hypertarget{_i_l_i9341_8h_af7afbc31379d61268899eef5e9dd4ef5}\label{_i_l_i9341_8h_af7afbc31379d61268899eef5e9dd4ef5} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_ROTATION@{ILI9341\_ROTATION}}
+\index{ILI9341\_ROTATION@{ILI9341\_ROTATION}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_ROTATION}{ILI9341\_ROTATION}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+ROTATION~3}
+
+\Hypertarget{_i_l_i9341_8h_a91c32c640e65f7e890fdbb5aed29077b}\label{_i_l_i9341_8h_a91c32c640e65f7e890fdbb5aed29077b} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_SLPIN@{ILI9341\_SLPIN}}
+\index{ILI9341\_SLPIN@{ILI9341\_SLPIN}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_SLPIN}{ILI9341\_SLPIN}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+SLPIN~0x10}
+
+
+
+Enter Sleep Mode. 
+
+\Hypertarget{_i_l_i9341_8h_a2183eaeed3b4f2e82f1f1a5aed9cf8e1}\label{_i_l_i9341_8h_a2183eaeed3b4f2e82f1f1a5aed9cf8e1} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_SLPOUT@{ILI9341\_SLPOUT}}
+\index{ILI9341\_SLPOUT@{ILI9341\_SLPOUT}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_SLPOUT}{ILI9341\_SLPOUT}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+SLPOUT~0x11}
+
+
+
+Sleep Out. 
+
+\Hypertarget{_i_l_i9341_8h_ab2970cf3904979db60867ba793efa832}\label{_i_l_i9341_8h_ab2970cf3904979db60867ba793efa832} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_SPI\_TIMEOUT@{ILI9341\_SPI\_TIMEOUT}}
+\index{ILI9341\_SPI\_TIMEOUT@{ILI9341\_SPI\_TIMEOUT}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_SPI\_TIMEOUT}{ILI9341\_SPI\_TIMEOUT}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+SPI\+\_\+\+TIMEOUT~1000}
+
+\Hypertarget{_i_l_i9341_8h_a05c1fbaa5809b6e45dd1da9fd0c05fc0}\label{_i_l_i9341_8h_a05c1fbaa5809b6e45dd1da9fd0c05fc0} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_SWRESET@{ILI9341\_SWRESET}}
+\index{ILI9341\_SWRESET@{ILI9341\_SWRESET}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_SWRESET}{ILI9341\_SWRESET}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+SWRESET~0x01}
+
+
+
+Software reset register. 
+
+\Hypertarget{_i_l_i9341_8h_a5790338f2cee9bbd8fb015d02c9c52d3}\label{_i_l_i9341_8h_a5790338f2cee9bbd8fb015d02c9c52d3} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_TFTHEIGHT@{ILI9341\_TFTHEIGHT}}
+\index{ILI9341\_TFTHEIGHT@{ILI9341\_TFTHEIGHT}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_TFTHEIGHT}{ILI9341\_TFTHEIGHT}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+TFTHEIGHT~240}
+
+
+
+ILI9341 max TFT height. 
+
+\Hypertarget{_i_l_i9341_8h_afc86ae8ef4d7c6b3bfb0f83f9d4dcf63}\label{_i_l_i9341_8h_afc86ae8ef4d7c6b3bfb0f83f9d4dcf63} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_TFTWIDTH@{ILI9341\_TFTWIDTH}}
+\index{ILI9341\_TFTWIDTH@{ILI9341\_TFTWIDTH}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_TFTWIDTH}{ILI9341\_TFTWIDTH}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+TFTWIDTH~320}
+
+
+
+ILI9341 max TFT width. 
+
+\Hypertarget{_i_l_i9341_8h_a3ac0bad81e82dca703ea78d9f1ad8cd1}\label{_i_l_i9341_8h_a3ac0bad81e82dca703ea78d9f1ad8cd1} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_VMCTR1@{ILI9341\_VMCTR1}}
+\index{ILI9341\_VMCTR1@{ILI9341\_VMCTR1}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_VMCTR1}{ILI9341\_VMCTR1}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+VMCTR1~0x\+C5}
+
+
+
+VCOM Control 1. 
+
+\Hypertarget{_i_l_i9341_8h_ae2d100e90910bf4aedb20fb88b3f582c}\label{_i_l_i9341_8h_ae2d100e90910bf4aedb20fb88b3f582c} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_VMCTR2@{ILI9341\_VMCTR2}}
+\index{ILI9341\_VMCTR2@{ILI9341\_VMCTR2}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_VMCTR2}{ILI9341\_VMCTR2}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+VMCTR2~0x\+C7}
+
+
+
+VCOM Control 2. 
+
+\Hypertarget{_i_l_i9341_8h_aba45bf6c8278bf5210bab2607e993cf3}\label{_i_l_i9341_8h_aba45bf6c8278bf5210bab2607e993cf3} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_VSCRDEF@{ILI9341\_VSCRDEF}}
+\index{ILI9341\_VSCRDEF@{ILI9341\_VSCRDEF}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_VSCRDEF}{ILI9341\_VSCRDEF}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+VSCRDEF~0x33}
+
+
+
+Vertical Scrolling Definition. 
+
+\Hypertarget{_i_l_i9341_8h_aed59201f8eb2291e618d3b3151adc497}\label{_i_l_i9341_8h_aed59201f8eb2291e618d3b3151adc497} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_VSCRSADD@{ILI9341\_VSCRSADD}}
+\index{ILI9341\_VSCRSADD@{ILI9341\_VSCRSADD}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_VSCRSADD}{ILI9341\_VSCRSADD}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+VSCRSADD~0x37}
+
+
+
+Vertical Scrolling Start Address. 
+
+\Hypertarget{_i_l_i9341_8h_a604507ef031b95291b2d177088fe03e4}\label{_i_l_i9341_8h_a604507ef031b95291b2d177088fe03e4} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_WHITE@{ILI9341\_WHITE}}
+\index{ILI9341\_WHITE@{ILI9341\_WHITE}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_WHITE}{ILI9341\_WHITE}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+WHITE~0x\+FFFF}
+
+
+
+255, 255, 255 
+
+\Hypertarget{_i_l_i9341_8h_a0313d113622009bfd9b6011fc9bffcc9}\label{_i_l_i9341_8h_a0313d113622009bfd9b6011fc9bffcc9} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_YELLOW@{ILI9341\_YELLOW}}
+\index{ILI9341\_YELLOW@{ILI9341\_YELLOW}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_YELLOW}{ILI9341\_YELLOW}}
+{\footnotesize\ttfamily \#define ILI9341\+\_\+\+YELLOW~0x\+FFE0}
+
+
+
+255, 255, 0 
+
+\Hypertarget{_i_l_i9341_8h_a659f0d6f0c258a3d91f882a59dfa76f5}\label{_i_l_i9341_8h_a659f0d6f0c258a3d91f882a59dfa76f5} 
+\index{ILI9341.h@{ILI9341.h}!MADCTL\_BGR@{MADCTL\_BGR}}
+\index{MADCTL\_BGR@{MADCTL\_BGR}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{MADCTL\_BGR}{MADCTL\_BGR}}
+{\footnotesize\ttfamily \#define MADCTL\+\_\+\+BGR~0x08}
+
+
+
+Blue-\/\+Green-\/\+Red pixel order. 
+
+\Hypertarget{_i_l_i9341_8h_a6f8b9fad1b5db52b70960b389056f0dd}\label{_i_l_i9341_8h_a6f8b9fad1b5db52b70960b389056f0dd} 
+\index{ILI9341.h@{ILI9341.h}!MADCTL\_MH@{MADCTL\_MH}}
+\index{MADCTL\_MH@{MADCTL\_MH}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{MADCTL\_MH}{MADCTL\_MH}}
+{\footnotesize\ttfamily \#define MADCTL\+\_\+\+MH~0x04}
+
+
+
+LCD refresh right to left. 
+
+\Hypertarget{_i_l_i9341_8h_a9ecee6d3131d3b4f750b94d5766b998a}\label{_i_l_i9341_8h_a9ecee6d3131d3b4f750b94d5766b998a} 
+\index{ILI9341.h@{ILI9341.h}!MADCTL\_ML@{MADCTL\_ML}}
+\index{MADCTL\_ML@{MADCTL\_ML}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{MADCTL\_ML}{MADCTL\_ML}}
+{\footnotesize\ttfamily \#define MADCTL\+\_\+\+ML~0x10}
+
+
+
+LCD refresh Bottom to top. 
+
+\Hypertarget{_i_l_i9341_8h_adc23a239d2b6976d53254ef4fc5d1713}\label{_i_l_i9341_8h_adc23a239d2b6976d53254ef4fc5d1713} 
+\index{ILI9341.h@{ILI9341.h}!MADCTL\_MV@{MADCTL\_MV}}
+\index{MADCTL\_MV@{MADCTL\_MV}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{MADCTL\_MV}{MADCTL\_MV}}
+{\footnotesize\ttfamily \#define MADCTL\+\_\+\+MV~0x20}
+
+
+
+Reverse Mode. 
+
+\Hypertarget{_i_l_i9341_8h_a6d18ed48efb3186877a07d0e81155453}\label{_i_l_i9341_8h_a6d18ed48efb3186877a07d0e81155453} 
+\index{ILI9341.h@{ILI9341.h}!MADCTL\_MX@{MADCTL\_MX}}
+\index{MADCTL\_MX@{MADCTL\_MX}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{MADCTL\_MX}{MADCTL\_MX}}
+{\footnotesize\ttfamily \#define MADCTL\+\_\+\+MX~0x40}
+
+
+
+Right to left. 
+
+\Hypertarget{_i_l_i9341_8h_ab30e6bd24448245df1d60a3e1c4ddbdf}\label{_i_l_i9341_8h_ab30e6bd24448245df1d60a3e1c4ddbdf} 
+\index{ILI9341.h@{ILI9341.h}!MADCTL\_MY@{MADCTL\_MY}}
+\index{MADCTL\_MY@{MADCTL\_MY}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{MADCTL\_MY}{MADCTL\_MY}}
+{\footnotesize\ttfamily \#define MADCTL\+\_\+\+MY~0x80}
+
+
+
+Bottom to top. 
+
+\Hypertarget{_i_l_i9341_8h_acc1e55b52f8a56b7719ab147308a1668}\label{_i_l_i9341_8h_acc1e55b52f8a56b7719ab147308a1668} 
+\index{ILI9341.h@{ILI9341.h}!MADCTL\_RGB@{MADCTL\_RGB}}
+\index{MADCTL\_RGB@{MADCTL\_RGB}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{MADCTL\_RGB}{MADCTL\_RGB}}
+{\footnotesize\ttfamily \#define MADCTL\+\_\+\+RGB~0x00}
+
+
+
+Red-\/\+Green-\/\+Blue pixel order. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_i_l_i9341_8h_a0fcdb5427fdab7f7eb09abce73b9ea5b}\label{_i_l_i9341_8h_a0fcdb5427fdab7f7eb09abce73b9ea5b} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_DrawImage@{ILI9341\_DrawImage}}
+\index{ILI9341\_DrawImage@{ILI9341\_DrawImage}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_DrawImage()}{ILI9341\_DrawImage()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Draw\+Image (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{img,  }\item[{uint16\+\_\+t}]{w,  }\item[{uint16\+\_\+t}]{h }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8h_a0538f2015fef138ace1fd64a3d652cd1}\label{_i_l_i9341_8h_a0538f2015fef138ace1fd64a3d652cd1} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_Init@{ILI9341\_Init}}
+\index{ILI9341\_Init@{ILI9341\_Init}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_Init()}{ILI9341\_Init()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___s_p_i___exported___types_gab633e49dd034de2f3a1fe79853d78d18}{SPI\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{hspi }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8h_a0f241f9cfcb703e2994154ea35251892}\label{_i_l_i9341_8h_a0f241f9cfcb703e2994154ea35251892} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_SendCommand@{ILI9341\_SendCommand}}
+\index{ILI9341\_SendCommand@{ILI9341\_SendCommand}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_SendCommand()}{ILI9341\_SendCommand()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Send\+Command (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{Command }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8h_aa1381a729cb6af2b71c6bed0c37cc906}\label{_i_l_i9341_8h_aa1381a729cb6af2b71c6bed0c37cc906} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_SendCommandAndData@{ILI9341\_SendCommandAndData}}
+\index{ILI9341\_SendCommandAndData@{ILI9341\_SendCommandAndData}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_SendCommandAndData()}{ILI9341\_SendCommandAndData()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Send\+Command\+And\+Data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{Command,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{Data,  }\item[{uint16\+\_\+t}]{Length }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8h_a81ddeb47ba6c0c3353ae31e7e15b4910}\label{_i_l_i9341_8h_a81ddeb47ba6c0c3353ae31e7e15b4910} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_SendData16@{ILI9341\_SendData16}}
+\index{ILI9341\_SendData16@{ILI9341\_SendData16}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_SendData16()}{ILI9341\_SendData16()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Send\+Data16 (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{Data }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8h_a7ae207b9f55148240d0dee03167a25f9}\label{_i_l_i9341_8h_a7ae207b9f55148240d0dee03167a25f9} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_SendToTFT@{ILI9341\_SendToTFT}}
+\index{ILI9341\_SendToTFT@{ILI9341\_SendToTFT}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_SendToTFT()}{ILI9341\_SendToTFT()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Send\+To\+TFT (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{Byte,  }\item[{uint32\+\_\+t}]{Length }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8h_a89228cd93ba2f68acf969f8f7eccd78b}\label{_i_l_i9341_8h_a89228cd93ba2f68acf969f8f7eccd78b} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_SetAddrWindow@{ILI9341\_SetAddrWindow}}
+\index{ILI9341\_SetAddrWindow@{ILI9341\_SetAddrWindow}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_SetAddrWindow()}{ILI9341\_SetAddrWindow()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Set\+Addr\+Window (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x1,  }\item[{uint16\+\_\+t}]{y1,  }\item[{uint16\+\_\+t}]{w,  }\item[{uint16\+\_\+t}]{h }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8h_a6ac0c89f746e798e7430746bf50fe499}\label{_i_l_i9341_8h_a6ac0c89f746e798e7430746bf50fe499} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_SetRotation@{ILI9341\_SetRotation}}
+\index{ILI9341\_SetRotation@{ILI9341\_SetRotation}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_SetRotation()}{ILI9341\_SetRotation()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Set\+Rotation (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{m }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8h_aeee3186252cba83694826a2c2c7014c5}\label{_i_l_i9341_8h_aeee3186252cba83694826a2c2c7014c5} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_WritePixel@{ILI9341\_WritePixel}}
+\index{ILI9341\_WritePixel@{ILI9341\_WritePixel}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_WritePixel()}{ILI9341\_WritePixel()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Write\+Pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{_i_l_i9341_8h_a324ebd8d3bc5309c8c9da80b0c07d10a}\label{_i_l_i9341_8h_a324ebd8d3bc5309c8c9da80b0c07d10a} 
+\index{ILI9341.h@{ILI9341.h}!ILI9341\_WriteScreen@{ILI9341\_WriteScreen}}
+\index{ILI9341\_WriteScreen@{ILI9341\_WriteScreen}!ILI9341.h@{ILI9341.h}}
+\doxysubsubsection{\texorpdfstring{ILI9341\_WriteScreen()}{ILI9341\_WriteScreen()}}
+{\footnotesize\ttfamily void ILI9341\+\_\+\+Write\+Screen (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
+

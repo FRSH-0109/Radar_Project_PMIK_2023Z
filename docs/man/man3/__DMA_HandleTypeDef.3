@@ -1,0 +1,141 @@
+.TH "__DMA_HandleTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+__DMA_HandleTypeDef \- DMA handle Structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_hal_dma\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBDMA_Channel_TypeDef\fP * \fBInstance\fP"
+.br
+.ti -1c
+.RI "\fBDMA_InitTypeDef\fP \fBInit\fP"
+.br
+.ti -1c
+.RI "\fBHAL_LockTypeDef\fP \fBLock\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP \fBHAL_DMA_StateTypeDef\fP \fBState\fP"
+.br
+.ti -1c
+.RI "void * \fBParent\fP"
+.br
+.ti -1c
+.RI "void(* \fBXferCpltCallback\fP )(struct \fB__DMA_HandleTypeDef\fP *hdma)"
+.br
+.ti -1c
+.RI "void(* \fBXferHalfCpltCallback\fP )(struct \fB__DMA_HandleTypeDef\fP *hdma)"
+.br
+.ti -1c
+.RI "void(* \fBXferErrorCallback\fP )(struct \fB__DMA_HandleTypeDef\fP *hdma)"
+.br
+.ti -1c
+.RI "void(* \fBXferAbortCallback\fP )(struct \fB__DMA_HandleTypeDef\fP *hdma)"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBErrorCode\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBChannelIndex\fP"
+.br
+.ti -1c
+.RI "\fBDMAMUX_Channel_TypeDef\fP * \fBDMAmuxChannel\fP"
+.br
+.ti -1c
+.RI "\fBDMAMUX_ChannelStatus_TypeDef\fP * \fBDMAmuxChannelStatus\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDMAmuxChannelStatusMask\fP"
+.br
+.ti -1c
+.RI "\fBDMAMUX_RequestGen_TypeDef\fP * \fBDMAmuxRequestGen\fP"
+.br
+.ti -1c
+.RI "\fBDMAMUX_RequestGenStatus_TypeDef\fP * \fBDMAmuxRequestGenStatus\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDMAmuxRequestGenStatusMask\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+DMA handle Structure definition\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t __DMA_HandleTypeDef::ChannelIndex"
+DMA Channel Index 
+.br
+ 
+.SS "\fBDMAMUX_Channel_TypeDef\fP* __DMA_HandleTypeDef::DMAmuxChannel"
+Register base address 
+.br
+ 
+.SS "\fBDMAMUX_ChannelStatus_TypeDef\fP* __DMA_HandleTypeDef::DMAmuxChannelStatus"
+DMAMUX Channels Status Base Address 
+.br
+ 
+.SS "uint32_t __DMA_HandleTypeDef::DMAmuxChannelStatusMask"
+DMAMUX Channel Status Mask 
+.br
+ 
+.SS "\fBDMAMUX_RequestGen_TypeDef\fP* __DMA_HandleTypeDef::DMAmuxRequestGen"
+DMAMUX request generator Base Address 
+.SS "\fBDMAMUX_RequestGenStatus_TypeDef\fP* __DMA_HandleTypeDef::DMAmuxRequestGenStatus"
+DMAMUX request generator Address 
+.br
+ 
+.SS "uint32_t __DMA_HandleTypeDef::DMAmuxRequestGenStatusMask"
+DMAMUX request generator Status mask 
+.br
+ 
+.SS "\fB__IO\fP uint32_t __DMA_HandleTypeDef::ErrorCode"
+DMA Error code 
+.br
+ 
+.SS "\fBDMA_InitTypeDef\fP __DMA_HandleTypeDef::Init"
+DMA communication parameters 
+.br
+ 
+.SS "\fBDMA_Channel_TypeDef\fP* __DMA_HandleTypeDef::Instance"
+Register base address 
+.br
+ 
+.SS "\fBHAL_LockTypeDef\fP __DMA_HandleTypeDef::Lock"
+DMA locking object 
+.br
+ 
+.SS "void* __DMA_HandleTypeDef::Parent"
+Parent object state 
+.br
+ 
+.SS "\fB__IO\fP \fBHAL_DMA_StateTypeDef\fP __DMA_HandleTypeDef::State"
+DMA transfer state 
+.br
+ 
+.SS "void(* __DMA_HandleTypeDef::XferAbortCallback) (struct \fB__DMA_HandleTypeDef\fP *hdma)"
+DMA transfer abort callback 
+.br
+ 
+.SS "void(* __DMA_HandleTypeDef::XferCpltCallback) (struct \fB__DMA_HandleTypeDef\fP *hdma)"
+DMA transfer complete callback 
+.br
+ 
+.SS "void(* __DMA_HandleTypeDef::XferErrorCallback) (struct \fB__DMA_HandleTypeDef\fP *hdma)"
+DMA transfer error callback 
+.br
+ 
+.SS "void(* __DMA_HandleTypeDef::XferHalfCpltCallback) (struct \fB__DMA_HandleTypeDef\fP *hdma)"
+DMA Half transfer complete callback 
+.br
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

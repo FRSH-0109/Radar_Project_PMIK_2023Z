@@ -1,0 +1,86 @@
+.TH "RCCEx_Private_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCCEx_Private_Macros \- RCCEx Private Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_RCC_LSCOSOURCE\fP(__SOURCE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_RCC_USART1CLKSOURCE\fP(__SOURCE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_RCC_I2C1CLKSOURCE\fP(__SOURCE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_RCC_I2S1CLKSOURCE\fP(__SOURCE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_RCC_ADCCLKSOURCE\fP(__SOURCE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_RCC_USBCLKSOURCE\fP(__SOURCE__)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_RCC_ADCCLKSOURCE(__SOURCE__)"
+\fBValue:\fP.PP
+.nf
+  (((__SOURCE__) == RCC_ADCCLKSOURCE_PLLADC)  || \\
+   ((__SOURCE__) == RCC_ADCCLKSOURCE_SYSCLK)  || \\
+   ((__SOURCE__) == RCC_ADCCLKSOURCE_HSI))
+.fi
+
+.SS "#define IS_RCC_I2C1CLKSOURCE(__SOURCE__)"
+\fBValue:\fP.PP
+.nf
+  (((__SOURCE__) == RCC_I2C1CLKSOURCE_PCLK1)   || \\
+   ((__SOURCE__) == RCC_I2C1CLKSOURCE_SYSCLK)  || \\
+   ((__SOURCE__) == RCC_I2C1CLKSOURCE_HSI))
+.fi
+
+.SS "#define IS_RCC_I2S1CLKSOURCE(__SOURCE__)"
+\fBValue:\fP.PP
+.nf
+  (((__SOURCE__) == RCC_I2S1CLKSOURCE_SYSCLK)|| \\
+   ((__SOURCE__) == RCC_I2S1CLKSOURCE_PLL)   || \\
+   ((__SOURCE__) == RCC_I2S1CLKSOURCE_HSI)   || \\
+   ((__SOURCE__) == RCC_I2S1CLKSOURCE_EXT))
+.fi
+
+.SS "#define IS_RCC_LSCOSOURCE(__SOURCE__)"
+\fBValue:\fP.PP
+.nf
+                                       (((__SOURCE__) == RCC_LSCOSOURCE_LSI) || \\
+                                       ((__SOURCE__) == RCC_LSCOSOURCE_LSE))
+.fi
+
+.SS "#define IS_RCC_USART1CLKSOURCE(__SOURCE__)"
+\fBValue:\fP.PP
+.nf
+  (((__SOURCE__) == RCC_USART1CLKSOURCE_PCLK1)  || \\
+   ((__SOURCE__) == RCC_USART1CLKSOURCE_SYSCLK) || \\
+   ((__SOURCE__) == RCC_USART1CLKSOURCE_LSE)    || \\
+   ((__SOURCE__) == RCC_USART1CLKSOURCE_HSI))
+.fi
+
+.SS "#define IS_RCC_USBCLKSOURCE(__SOURCE__)"
+\fBValue:\fP.PP
+.nf
+  (((__SOURCE__) == RCC_USBCLKSOURCE_HSE)|| \\
+   ((__SOURCE__) == RCC_USBCLKSOURCE_PLL))
+.fi
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

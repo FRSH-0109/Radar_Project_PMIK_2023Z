@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_r_c_c___osc_init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>RCC_OscInitTypeDef</compoundname>
+    <includes refid="stm32g0xx__hal__rcc_8h" local="no">stm32g0xx_hal_rcc.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_c_c___osc_init_type_def_1a23b9d1da2a92936c618d2416406275a3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OscillatorType</definition>
+        <argsstring></argsstring>
+        <name>OscillatorType</name>
+        <qualifiedname>RCC_OscInitTypeDef::OscillatorType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The oscillators to be configured. This parameter can be a value of <ref refid="group___r_c_c___oscillator___type" kindref="compound">Oscillator Type</ref> <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="290" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___osc_init_type_def_1ad499b1bbeeb8096235b534a9bfa53c9d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t HSEState</definition>
+        <argsstring></argsstring>
+        <name>HSEState</name>
+        <qualifiedname>RCC_OscInitTypeDef::HSEState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The new state of the HSE. This parameter can be a value of <ref refid="group___r_c_c___h_s_e___config" kindref="compound">HSE Config</ref> <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="293" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___osc_init_type_def_1abb72dd5bfb99667e36d99b6887f80a0a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LSEState</definition>
+        <argsstring></argsstring>
+        <name>LSEState</name>
+        <qualifiedname>RCC_OscInitTypeDef::LSEState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The new state of the LSE. This parameter can be a value of <ref refid="group___r_c_c___l_s_e___config" kindref="compound">LSE Config</ref> <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="296" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___osc_init_type_def_1a49183e0be5cf522de0fa1968df0bf0d7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t HSIState</definition>
+        <argsstring></argsstring>
+        <name>HSIState</name>
+        <qualifiedname>RCC_OscInitTypeDef::HSIState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The new state of the HSI. This parameter can be a value of <ref refid="group___r_c_c___h_s_i___config" kindref="compound">HSI Config</ref> <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="299" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___osc_init_type_def_1a621a40ae95fb6f4f35c5a25b59dfc5f5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t HSIDiv</definition>
+        <argsstring></argsstring>
+        <name>HSIDiv</name>
+        <qualifiedname>RCC_OscInitTypeDef::HSIDiv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The division factor of the HSI16. This parameter can be a value of <ref refid="group___r_c_c___h_s_i___div" kindref="compound">HSI Div</ref> <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="302" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___osc_init_type_def_1ad28b977e258a3ee788cd6c2d72430c30" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t HSICalibrationValue</definition>
+        <argsstring></argsstring>
+        <name>HSICalibrationValue</name>
+        <qualifiedname>RCC_OscInitTypeDef::HSICalibrationValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The calibration trimming value (default is RCC_HSICALIBRATION_DEFAULT). This parameter must be a number between Min_Data = 0x00 and Max_Data = 0x7F </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="305" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___osc_init_type_def_1a9acc15f6278f950ef02d5d6f819f68e8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LSIState</definition>
+        <argsstring></argsstring>
+        <name>LSIState</name>
+        <qualifiedname>RCC_OscInitTypeDef::LSIState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The new state of the LSI. This parameter can be a value of <ref refid="group___r_c_c___l_s_i___config" kindref="compound">LSI Config</ref> <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="308" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___osc_init_type_def_1a7ec4025786fa81e2a4bfc42832c0eddf" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_c_c___p_l_l_init_type_def" kindref="compound">RCC_PLLInitTypeDef</ref></type>
+        <definition>RCC_PLLInitTypeDef PLL</definition>
+        <argsstring></argsstring>
+        <name>PLL</name>
+        <qualifiedname>RCC_OscInitTypeDef::PLL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Main PLL structure parameters <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="317" column="22" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>RCC Internal/External Oscillator (HSE, HSI, LSE and LSI) configuration structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>RCC_OscInitTypeDef</label>
+        <link refid="struct_r_c_c___osc_init_type_def"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>PLL</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RCC_PLLInitTypeDef</label>
+        <link refid="struct_r_c_c___p_l_l_init_type_def"/>
+      </node>
+    </collaborationgraph>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="288" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="289" bodyend="319"/>
+    <listofallmembers>
+      <member refid="struct_r_c_c___osc_init_type_def_1ad499b1bbeeb8096235b534a9bfa53c9d" prot="public" virt="non-virtual"><scope>RCC_OscInitTypeDef</scope><name>HSEState</name></member>
+      <member refid="struct_r_c_c___osc_init_type_def_1ad28b977e258a3ee788cd6c2d72430c30" prot="public" virt="non-virtual"><scope>RCC_OscInitTypeDef</scope><name>HSICalibrationValue</name></member>
+      <member refid="struct_r_c_c___osc_init_type_def_1a621a40ae95fb6f4f35c5a25b59dfc5f5" prot="public" virt="non-virtual"><scope>RCC_OscInitTypeDef</scope><name>HSIDiv</name></member>
+      <member refid="struct_r_c_c___osc_init_type_def_1a49183e0be5cf522de0fa1968df0bf0d7" prot="public" virt="non-virtual"><scope>RCC_OscInitTypeDef</scope><name>HSIState</name></member>
+      <member refid="struct_r_c_c___osc_init_type_def_1abb72dd5bfb99667e36d99b6887f80a0a" prot="public" virt="non-virtual"><scope>RCC_OscInitTypeDef</scope><name>LSEState</name></member>
+      <member refid="struct_r_c_c___osc_init_type_def_1a9acc15f6278f950ef02d5d6f819f68e8" prot="public" virt="non-virtual"><scope>RCC_OscInitTypeDef</scope><name>LSIState</name></member>
+      <member refid="struct_r_c_c___osc_init_type_def_1a23b9d1da2a92936c618d2416406275a3" prot="public" virt="non-virtual"><scope>RCC_OscInitTypeDef</scope><name>OscillatorType</name></member>
+      <member refid="struct_r_c_c___osc_init_type_def_1a7ec4025786fa81e2a4bfc42832c0eddf" prot="public" virt="non-virtual"><scope>RCC_OscInitTypeDef</scope><name>PLL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

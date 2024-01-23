@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___u_a_r_t___driver_enable___polarity" kind="group">
+    <compoundname>UART_DriverEnable_Polarity</compoundname>
+    <title>UART DriverEnable Polarity</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_a_r_t___driver_enable___polarity_1ga0cff167e046507f91497853b772282c5" prot="public" static="no">
+        <name>UART_DE_POLARITY_HIGH</name>
+        <initializer>0x00000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Driver enable signal is active high </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="681" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="681" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___driver_enable___polarity_1ga92a5839b1b14f95ee4b8f4842a24f37b" prot="public" static="no">
+        <name>UART_DE_POLARITY_LOW</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga2000c42015289291da1c58fe27800d64" kindref="member">USART_CR3_DEP</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Driver enable signal is active low <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" line="682" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h" bodystart="682" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

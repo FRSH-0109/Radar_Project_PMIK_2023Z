@@ -1,0 +1,190 @@
+.TH "RadarApp/DisplayDriver/GFX_Color.c" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RadarApp/DisplayDriver/GFX_Color.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'main\&.h'\fP
+.br
+\fC#include 'GFX_Color\&.h'\fP
+.br
+\fC#include 'stdint\&.h'\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB_swap_int\fP(a,  b)   { int t = a; a = b; b = t; }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBGFX_SetFont\fP (const uint8_t *font_t)"
+.br
+.ti -1c
+.RI "void \fBGFX_SetFontSize\fP (uint8_t size_t)"
+.br
+.ti -1c
+.RI "uint8_t \fBGFX_GetFontHeight\fP (void)"
+.br
+.ti -1c
+.RI "uint8_t \fBGFX_GetFontWidth\fP (void)"
+.br
+.ti -1c
+.RI "uint8_t \fBGFX_GetFontSize\fP (void)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawChar\fP (int x, int y, char chr, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawChar_const_size\fP (int x, int y, char chr, \fBColorType\fP color, uint8_t const_size)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawString\fP (int x, int y, char *str, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawString_const_size\fP (int x, int y, char *str, \fBColorType\fP color, uint8_t const_size)"
+.br
+.ti -1c
+.RI "void \fBGFX_WriteLine\fP (int x_start, int y_start, int x_end, int y_end, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawFastVLine\fP (int x_start, int y_start, int h, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawFastHLine\fP (int x_start, int y_start, int w, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawLine\fP (int x_start, int y_start, int x_end, int y_end, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawRectangle\fP (int x, int y, uint16_t w, uint16_t h, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawFillRectangle\fP (int x, int y, uint16_t w, uint16_t h, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawCircle\fP (int x0, int y0, uint16_t r, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawCircleHelper\fP (int x0, int y0, uint16_t r, uint8_t cornername, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawFillCircleHelper\fP (int x0, int y0, uint16_t r, uint8_t cornername, int16_t delta, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawFillCircle\fP (int x0, int y0, uint16_t r, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawRoundRectangle\fP (int x, int y, uint16_t w, uint16_t h, uint16_t r, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawFillRoundRectangle\fP (int x, int y, uint16_t w, uint16_t h, uint16_t r, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawTriangle\fP (int x0, int y0, int x1, int y1, int x2, int y2, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_DrawFillTriangle\fP (int x0, int y0, int x1, int y1, int x2, int y2, \fBColorType\fP color)"
+.br
+.ti -1c
+.RI "void \fBGFX_Image\fP (int x, int y, const uint8_t *img, uint16_t w, uint16_t h)"
+.br
+.ti -1c
+.RI "double \fBsinus\fP (uint16_t angle)"
+.br
+.ti -1c
+.RI "void \fBGFX_ImageRotate\fP (int x, int y, const uint8_t *img, uint8_t w, uint8_t h, \fBColorType\fP color, uint16_t angle)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const uint8_t * \fBfont\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBsize\fP = 1"
+.br
+.ti -1c
+.RI "const double \fBsinus_LUT\fP []"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define _swap_int(a, b)   { int t = a; a = b; b = t; }"
+
+.SH "Function Documentation"
+.PP 
+.SS "void GFX_DrawChar (int x, int y, char chr, \fBColorType\fP color)"
+
+.SS "void GFX_DrawChar_const_size (int x, int y, char chr, \fBColorType\fP color, uint8_t const_size)"
+
+.SS "void GFX_DrawCircle (int x0, int y0, uint16_t r, \fBColorType\fP color)"
+
+.SS "void GFX_DrawCircleHelper (int x0, int y0, uint16_t r, uint8_t cornername, \fBColorType\fP color)"
+
+.SS "void GFX_DrawFastHLine (int x_start, int y_start, int w, \fBColorType\fP color)"
+
+.SS "void GFX_DrawFastVLine (int x_start, int y_start, int h, \fBColorType\fP color)"
+
+.SS "void GFX_DrawFillCircle (int x0, int y0, uint16_t r, \fBColorType\fP color)"
+
+.SS "void GFX_DrawFillCircleHelper (int x0, int y0, uint16_t r, uint8_t cornername, int16_t delta, \fBColorType\fP color)"
+
+.SS "void GFX_DrawFillRectangle (int x, int y, uint16_t w, uint16_t h, \fBColorType\fP color)"
+
+.SS "void GFX_DrawFillRoundRectangle (int x, int y, uint16_t w, uint16_t h, uint16_t r, \fBColorType\fP color)"
+
+.SS "void GFX_DrawFillTriangle (int x0, int y0, int x1, int y1, int x2, int y2, \fBColorType\fP color)"
+
+.SS "void GFX_DrawLine (int x_start, int y_start, int x_end, int y_end, \fBColorType\fP color)"
+
+.SS "void GFX_DrawRectangle (int x, int y, uint16_t w, uint16_t h, \fBColorType\fP color)"
+
+.SS "void GFX_DrawRoundRectangle (int x, int y, uint16_t w, uint16_t h, uint16_t r, \fBColorType\fP color)"
+
+.SS "void GFX_DrawString (int x, int y, char * str, \fBColorType\fP color)"
+
+.SS "void GFX_DrawString_const_size (int x, int y, char * str, \fBColorType\fP color, uint8_t const_size)"
+
+.SS "void GFX_DrawTriangle (int x0, int y0, int x1, int y1, int x2, int y2, \fBColorType\fP color)"
+
+.SS "uint8_t GFX_GetFontHeight (void)"
+
+.SS "uint8_t GFX_GetFontSize (void)"
+
+.SS "uint8_t GFX_GetFontWidth (void)"
+
+.SS "void GFX_Image (int x, int y, const uint8_t * img, uint16_t w, uint16_t h)"
+
+.SS "void GFX_ImageRotate (int x, int y, const uint8_t * img, uint8_t w, uint8_t h, \fBColorType\fP color, uint16_t angle)"
+
+.SS "void GFX_SetFont (const uint8_t * font_t)"
+
+.SS "void GFX_SetFontSize (uint8_t size_t)"
+
+.SS "void GFX_WriteLine (int x_start, int y_start, int x_end, int y_end, \fBColorType\fP color)"
+
+.SS "double sinus (uint16_t angle)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "const uint8_t* font"
+
+.SS "const double sinus_LUT[]"
+
+.SS "uint8_t size = 1"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,63 @@
+.TH "UART_Queue" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Queue
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <usart_custom\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "volatile uint8_t \fBdataRx\fP [\fBUART_QUEUE_LEN\fP][\fBMAX_UART_RX_DATA_LEN\fP]"
+.br
+.ti -1c
+.RI "volatile uint16_t \fBdataRxLength\fP [\fBUART_QUEUE_LEN\fP]"
+.br
+.ti -1c
+.RI "volatile uint8_t \fBheadIxndex\fP"
+.br
+.ti -1c
+.RI "volatile uint8_t \fBtailIndex\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBdataTx\fP [\fBUART_QUEUE_LEN\fP][\fBMAX_UART_TX_DATA_LEN\fP]"
+.br
+.ti -1c
+.RI "uint16_t \fBdataTxLength\fP [\fBUART_QUEUE_LEN\fP]"
+.br
+.ti -1c
+.RI "volatile uint8_t \fBdataIndex\fP"
+.br
+.ti -1c
+.RI "volatile uint8_t \fBtransmitIndex\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure for uart queue 
+.SH "Member Data Documentation"
+.PP 
+.SS "volatile uint8_t UART_Queue::dataIndex"
+Index of queue position to write next data frame 
+.SS "volatile uint8_t UART_Queue::dataRx[\fBUART_QUEUE_LEN\fP][\fBMAX_UART_RX_DATA_LEN\fP]"
+Array of data buffers of rx uart data queue 
+.SS "volatile uint16_t UART_Queue::dataRxLength[\fBUART_QUEUE_LEN\fP]"
+Array of data lengths of rx uart data frames 
+.SS "uint8_t UART_Queue::dataTx[\fBUART_QUEUE_LEN\fP][\fBMAX_UART_TX_DATA_LEN\fP]"
+Array of data buffers of tx uart data queue 
+.SS "uint16_t UART_Queue::dataTxLength[\fBUART_QUEUE_LEN\fP]"
+Array of data lengths of tx uart data frames 
+.SS "volatile uint8_t UART_Queue::headIxndex"
+Index of queue position to write next data frame 
+.SS "volatile uint8_t UART_Queue::tailIndex"
+Index of queue position to read next data frame 
+.SS "volatile uint8_t UART_Queue::transmitIndex"
+Index of queue position to transmit next data frame 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="spi_8c" kind="file" language="C++">
+    <compoundname>spi.c</compoundname>
+    <includes refid="spi_8h" local="yes">spi.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Core/Src/spi.c</label>
+        <link refid="spi_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="9">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="4">
+        <label>stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>stm32g0xx_hal_cortex.h</label>
+        <link refid="stm32g0xx__hal__cortex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stm32g0xx_hal_dma.h</label>
+        <link refid="stm32g0xx__hal__dma_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>stm32g0xx_hal_dma_ex.h</label>
+        <link refid="stm32g0xx__hal__dma__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>stm32g0xx_hal_exti.h</label>
+        <link refid="stm32g0xx__hal__exti_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>stm32g0xx_hal_flash.h</label>
+        <link refid="stm32g0xx__hal__flash_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>stm32g0xx_hal_flash_ex.h</label>
+        <link refid="stm32g0xx__hal__flash__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stm32g0xx_hal_gpio.h</label>
+        <link refid="stm32g0xx__hal__gpio_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stm32g0xx_hal_gpio_ex.h</label>
+        <link refid="stm32g0xx__hal__gpio__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>stm32g0xx_hal_pwr.h</label>
+        <link refid="stm32g0xx__hal__pwr_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>stm32g0xx_hal_pwr_ex.h</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32g0xx_hal_rcc.h</label>
+        <link refid="stm32g0xx__hal__rcc_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stm32g0xx_hal_rcc_ex.h</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>stm32g0xx_hal_spi.h</label>
+        <link refid="stm32g0xx__hal__spi_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>stm32g0xx_hal_spi_ex.h</label>
+        <link refid="stm32g0xx__hal__spi__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>stm32g0xx_hal_tim.h</label>
+        <link refid="stm32g0xx__hal__tim_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>stm32g0xx_hal_tim_ex.h</label>
+        <link refid="stm32g0xx__hal__tim__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>stm32g0xx_hal_uart.h</label>
+        <link refid="stm32g0xx__hal__uart_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>stm32g0xx_hal_uart_ex.h</label>
+        <link refid="stm32g0xx__hal__uart__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stm32g0xx_ll_dma.h</label>
+        <link refid="stm32g0xx__ll__dma_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stm32g0xx_ll_dmamux.h</label>
+        <link refid="stm32g0xx__ll__dmamux_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stm32g0xx_ll_rcc.h</label>
+        <link refid="stm32g0xx__ll__rcc_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>stdbool.h</label>
+      </node>
+      <node id="10">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" prot="public" static="no" mutable="no">
+        <type><ref refid="group___s_p_i___exported___types_1gab633e49dd034de2f3a1fe79853d78d18" kindref="member">SPI_HandleTypeDef</ref></type>
+        <definition>SPI_HandleTypeDef hspi1</definition>
+        <argsstring></argsstring>
+        <name>hspi1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/spi.c" line="27" column="19" bodyfile="Core/Src/spi.c" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="spi_8c_1af81398f9775695df0b172367651ca3e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_SPI1_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_SPI1_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/spi.c" line="30" column="6" bodyfile="Core/Src/spi.c" bodystart="30" bodyend="62"/>
+      </memberdef>
+      <member refid="group___s_p_i___exported___functions___group1_1ga17f583be14b22caffa6c4e56dcd035ef" kind="function"><name>HAL_SPI_MspInit</name></member>
+      <member refid="group___s_p_i___exported___functions___group1_1gabadc4d4974af1afd943e8d13589068e1" kind="function"><name>HAL_SPI_MspDeInit</name></member>
+    </sectiondef>
+    <briefdescription>
+<para>This file provides code for the configuration of the SPI instances. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="attention"><para></para>
+</simplesect>
+Copyright (c) 2023 STMicroelectronics. All rights reserved.</para>
+<para>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Header<sp/>*/</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Header<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="spi_8h" kindref="compound">spi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/><ref refid="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SPI1<sp/>init<sp/>function<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8c_1af81398f9775695df0b172367651ca3e6" kindref="member">MX_SPI1_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>SPI1_Init<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>SPI1_Init<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>SPI1_Init<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>SPI1_Init<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>.<ref refid="struct_____s_p_i___handle_type_def_1aa5c715deaf693cc2dbfa90f40681ee1d" kindref="member">Instance</ref><sp/>=<sp/><ref refid="group___peripheral__declaration_1gad483be344a28ac800be8f03654a9612f" kindref="member">SPI1</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><ref refid="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>.<ref refid="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" kindref="member">Init</ref>.<ref refid="struct_s_p_i___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>=<sp/><ref refid="group___s_p_i___mode_1gaa335c2abdfad9e6f6c2677719d93b64e" kindref="member">SPI_MODE_MASTER</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><ref refid="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>.<ref refid="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" kindref="member">Init</ref>.<ref refid="struct_s_p_i___init_type_def_1ab94410c1333b512e271b1c135fe50916" kindref="member">Direction</ref><sp/>=<sp/><ref refid="group___s_p_i___direction_1gaa7cb7f4bf4eebbf91bcfaeb17ebba7f3" kindref="member">SPI_DIRECTION_2LINES</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>.<ref refid="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" kindref="member">Init</ref>.<ref refid="struct_s_p_i___init_type_def_1a98999b0cd6e4c94f05b61b2554ee0371" kindref="member">DataSize</ref><sp/>=<sp/><ref refid="group___s_p_i___data___size_1ga773e9fc5d44c9661c829361fbd073152" kindref="member">SPI_DATASIZE_8BIT</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>.<ref refid="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" kindref="member">Init</ref>.<ref refid="struct_s_p_i___init_type_def_1a83f278c9d173d3cd021644692bf3c435" kindref="member">CLKPolarity</ref><sp/>=<sp/><ref refid="group___s_p_i___clock___polarity_1gaf61e3c6ec671baef099516265793c8df" kindref="member">SPI_POLARITY_LOW</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>.<ref refid="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" kindref="member">Init</ref>.<ref refid="struct_s_p_i___init_type_def_1aba7183911cbc41063270dab182de768f" kindref="member">CLKPhase</ref><sp/>=<sp/><ref refid="group___s_p_i___clock___phase_1ga208be78b79c51df200a495c4d2110b57" kindref="member">SPI_PHASE_1EDGE</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>.<ref refid="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" kindref="member">Init</ref>.<ref refid="struct_s_p_i___init_type_def_1ae4a064e48fd5945eda7210d515fed69c" kindref="member">NSS</ref><sp/>=<sp/><ref refid="group___s_p_i___slave___select__management_1ga0bf14691b9d03eb158f190cefa7ab8fc" kindref="member">SPI_NSS_SOFT</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>.<ref refid="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" kindref="member">Init</ref>.<ref refid="struct_s_p_i___init_type_def_1a2fa72ad4f27606fffa2ec9456bcb0a56" kindref="member">BaudRatePrescaler</ref><sp/>=<sp/><ref refid="group___s_p_i___baud_rate___prescaler_1ga807568c52b5ba449d7a2b1b85549db24" kindref="member">SPI_BAUDRATEPRESCALER_4</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>.<ref refid="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" kindref="member">Init</ref>.<ref refid="struct_s_p_i___init_type_def_1a9740c535f073c87bb06668385ce96002" kindref="member">FirstBit</ref><sp/>=<sp/><ref refid="group___s_p_i___m_s_b___l_s_b__transmission_1ga2280ac1a6ed587b516419b5df6a8ea55" kindref="member">SPI_FIRSTBIT_MSB</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><ref refid="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>.<ref refid="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" kindref="member">Init</ref>.<ref refid="struct_s_p_i___init_type_def_1a3db685adbdc6f7bfc7ad0191ba5ab277" kindref="member">TIMode</ref><sp/>=<sp/><ref refid="group___s_p_i___t_i__mode_1gaffbf066ee656a4d56b75fa721a2eabcd" kindref="member">SPI_TIMODE_DISABLE</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><ref refid="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>.<ref refid="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" kindref="member">Init</ref>.<ref refid="struct_s_p_i___init_type_def_1a9d334a47c34b01cbfa55ff66cfc1e0ce" kindref="member">CRCCalculation</ref><sp/>=<sp/><ref refid="group___s_p_i___c_r_c___calculation_1ga9cd586b66473d7f207103a443280820e" kindref="member">SPI_CRCCALCULATION_DISABLE</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>.<ref refid="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" kindref="member">Init</ref>.<ref refid="struct_s_p_i___init_type_def_1a48aef59cfd7bf0262b1ad993fef2fc7b" kindref="member">CRCPolynomial</ref><sp/>=<sp/>7;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>.<ref refid="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" kindref="member">Init</ref>.<ref refid="struct_s_p_i___init_type_def_1aba709d1ebebac9b3385fb61d6eeb79a2" kindref="member">CRCLength</ref><sp/>=<sp/><ref refid="group___s_p_i___c_r_c__length_1ga2c09210b093323a8e84af832657568ce" kindref="member">SPI_CRC_LENGTH_DATASIZE</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><ref refid="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>.<ref refid="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" kindref="member">Init</ref>.<ref refid="struct_s_p_i___init_type_def_1a537f238782f2847191f7d221ffaa6c9b" kindref="member">NSSPMode</ref><sp/>=<sp/><ref refid="group___s_p_i___n_s_s_p___mode_1gac6243661f7fabde22ef936590f88be78" kindref="member">SPI_NSS_PULSE_ENABLE</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___s_p_i___exported___functions___group1_1gaadb9d40e710c714d96b2501996658c44" kindref="member">HAL_SPI_Init</ref>(&amp;<ref refid="spi_8c_1a9c6222bae4d0328dd843ae099623b40b" kindref="member">hspi1</ref>)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>SPI1_Init<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>SPI1_Init<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___s_p_i___exported___functions___group1_1ga17f583be14b22caffa6c4e56dcd035ef" kindref="member">HAL_SPI_MspInit</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref>*<sp/>spiHandle)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="struct_g_p_i_o___init_type_def" kindref="compound">GPIO_InitTypeDef</ref><sp/>GPIO_InitStruct<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(spiHandle-&gt;<ref refid="struct_____s_p_i___handle_type_def_1aa5c715deaf693cc2dbfa90f40681ee1d" kindref="member">Instance</ref>==<ref refid="group___peripheral__declaration_1gad483be344a28ac800be8f03654a9612f" kindref="member">SPI1</ref>)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>SPI1_MspInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>SPI1_MspInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>SPI1<sp/>clock<sp/>enable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_c_c___a_p_b2___clock___enable___disable_1ga856c7460aa481976644736c703c6702d" kindref="member">__HAL_RCC_SPI1_CLK_ENABLE</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_c_c___i_o_p_o_r_t___clock___enable___disable_1ga5ad43f3f4d8163d40f7d402ef75d27c5" kindref="member">__HAL_RCC_GPIOB_CLK_ENABLE</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1a871d0ab74071724e96b7cc9ae2a7532b" kindref="member">Pin</ref><sp/>=<sp/><ref refid="group___g_p_i_o__pins_1gadcaf899c018a0dde572b5af783565c62" kindref="member">GPIO_PIN_3</ref>|<ref refid="group___g_p_i_o__pins_1gab3871e35868deecd260e586ad70d4b83" kindref="member">GPIO_PIN_4</ref>|<ref refid="group___g_p_i_o__pins_1ga01cc9ed93f6fd12fd3403362779aaa18" kindref="member">GPIO_PIN_5</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>=<sp/><ref refid="group___g_p_i_o__mode_1ga526c72c5264316fc05c775b6cad4aa6a" kindref="member">GPIO_MODE_AF_PP</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1a6cdde08eb507b710f8179a4326548e26" kindref="member">Pull</ref><sp/>=<sp/><ref refid="group___g_p_i_o__pull_1ga5c2862579882c1cc64e36d38fbd07a4c" kindref="member">GPIO_NOPULL</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1ad04b2041f59d32492ec36a891418f3fd" kindref="member">Speed</ref><sp/>=<sp/><ref refid="group___g_p_i_o__speed_1gab7916c4265bfa1b26a5205ea9c1caa4e" kindref="member">GPIO_SPEED_FREQ_LOW</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1a9a352764836bb14ec56a94f77697b52d" kindref="member">Alternate</ref><sp/>=<sp/>GPIO_AF0_SPI1;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group1_1ga41bda93b6dd639e4905fdb1454eff98e" kindref="member">HAL_GPIO_Init</ref>(<ref refid="group___peripheral__declaration_1ga68b66ac73be4c836db878a42e1fea3cd" kindref="member">GPIOB</ref>,<sp/>&amp;GPIO_InitStruct);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>SPI1_MspInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>SPI1_MspInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___s_p_i___exported___functions___group1_1gabadc4d4974af1afd943e8d13589068e1" kindref="member">HAL_SPI_MspDeInit</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref>*<sp/>spiHandle)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(spiHandle-&gt;<ref refid="struct_____s_p_i___handle_type_def_1aa5c715deaf693cc2dbfa90f40681ee1d" kindref="member">Instance</ref>==<ref refid="group___peripheral__declaration_1gad483be344a28ac800be8f03654a9612f" kindref="member">SPI1</ref>)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>SPI1_MspDeInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>SPI1_MspDeInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Peripheral<sp/>clock<sp/>disable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_c_c___a_p_b2___clock___enable___disable_1gaf2ccb5c6b63a60deb6463cbc629c10fe" kindref="member">__HAL_RCC_SPI1_CLK_DISABLE</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group1_1gafe9c756b5aa18961032a3f8aa572959b" kindref="member">HAL_GPIO_DeInit</ref>(<ref refid="group___peripheral__declaration_1ga68b66ac73be4c836db878a42e1fea3cd" kindref="member">GPIOB</ref>,<sp/><ref refid="group___g_p_i_o__pins_1gadcaf899c018a0dde572b5af783565c62" kindref="member">GPIO_PIN_3</ref>|<ref refid="group___g_p_i_o__pins_1gab3871e35868deecd260e586ad70d4b83" kindref="member">GPIO_PIN_4</ref>|<ref refid="group___g_p_i_o__pins_1ga01cc9ed93f6fd12fd3403362779aaa18" kindref="member">GPIO_PIN_5</ref>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>SPI1_MspDeInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>SPI1_MspDeInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Core/Src/spi.c"/>
+  </compounddef>
+</doxygen>

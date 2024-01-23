@@ -1,0 +1,89 @@
+.TH "PWR_Flag" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PWR_Flag \- PWR Status Flags
+.PP
+ \- Elements values convention: 0000 00XX 000Y YYYYb\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPWR_FLAG_WUF1\fP   (0x00010000u | \fBPWR_SR1_WUF1\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_WUF2\fP   (0x00010000u | \fBPWR_SR1_WUF2\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_WUF4\fP   (0x00010000u | \fBPWR_SR1_WUF4\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_WUF6\fP   (0x00010000u | \fBPWR_SR1_WUF6\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_WUF\fP   (0x00010000u | \fBPWR_SR1_WUF\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_SB\fP   (0x00010000u | \fBPWR_SR1_SBF\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_WUFI\fP   (0x00010000u | \fBPWR_SR1_WUFI\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_FLASH_READY\fP   (0x00020000u | \fBPWR_SR2_FLASH_RDY\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_REGLPS\fP   (0x00020000u | \fBPWR_SR2_REGLPS\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_FLAG_REGLPF\fP   (0x00020000u | \fBPWR_SR2_REGLPF\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Elements values convention: 0000 00XX 000Y YYYYb\&. 
+
+
+.IP "\(bu" 2
+Y YYYY : Flag position in the XX register (5 bits)
+.IP "\(bu" 2
+XX : Status register (2 bits)
+.IP "  \(bu" 4
+01: SR1 register
+.IP "  \(bu" 4
+10: SR2 register The only exception is PWR_FLAG_WU, encompassing all wake-up flags and set to PWR_SR1_WUF\&. 
+.PP
+
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define PWR_FLAG_FLASH_READY   (0x00020000u | \fBPWR_SR2_FLASH_RDY\fP)"
+Flash ready 
+.SS "#define PWR_FLAG_REGLPF   (0x00020000u | \fBPWR_SR2_REGLPF\fP)"
+Regulator Low Power flag 
+.SS "#define PWR_FLAG_REGLPS   (0x00020000u | \fBPWR_SR2_REGLPS\fP)"
+Regulator Low Power started 
+.SS "#define PWR_FLAG_SB   (0x00010000u | \fBPWR_SR1_SBF\fP)"
+Standby flag 
+.SS "#define PWR_FLAG_WUF   (0x00010000u | \fBPWR_SR1_WUF\fP)"
+Wakeup event on all wakeup pin 
+.br
+ 
+.SS "#define PWR_FLAG_WUF1   (0x00010000u | \fBPWR_SR1_WUF1\fP)"
+Wakeup event on wakeup pin 1 
+.SS "#define PWR_FLAG_WUF2   (0x00010000u | \fBPWR_SR1_WUF2\fP)"
+Wakeup event on wakeup pin 2 
+.SS "#define PWR_FLAG_WUF4   (0x00010000u | \fBPWR_SR1_WUF4\fP)"
+Wakeup event on wakeup pin 4 
+.SS "#define PWR_FLAG_WUF6   (0x00010000u | \fBPWR_SR1_WUF6\fP)"
+Wakeup event on wakeup pin 6 
+.SS "#define PWR_FLAG_WUFI   (0x00010000u | \fBPWR_SR1_WUFI\fP)"
+Wakeup on internal wakeup line 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

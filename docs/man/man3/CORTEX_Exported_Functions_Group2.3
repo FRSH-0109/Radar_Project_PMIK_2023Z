@@ -1,0 +1,60 @@
+.TH "CORTEX_Exported_Functions_Group2" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CORTEX_Exported_Functions_Group2 \- Peripheral Control functions
+.PP
+ \- Cortex control functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBHAL_NVIC_GetPriority\fP (\fBIRQn_Type\fP IRQn)"
+.br
+.ti -1c
+.RI "uint32_t \fBHAL_NVIC_GetPendingIRQ\fP (\fBIRQn_Type\fP IRQn)"
+.br
+.ti -1c
+.RI "void \fBHAL_NVIC_SetPendingIRQ\fP (\fBIRQn_Type\fP IRQn)"
+.br
+.ti -1c
+.RI "void \fBHAL_NVIC_ClearPendingIRQ\fP (\fBIRQn_Type\fP IRQn)"
+.br
+.ti -1c
+.RI "void \fBHAL_SYSTICK_CLKSourceConfig\fP (uint32_t CLKSource)"
+.br
+.ti -1c
+.RI "void \fBHAL_SYSTICK_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "void \fBHAL_SYSTICK_Callback\fP (void)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Cortex control functions\&. 
+
+
+.SH "Function Documentation"
+.PP 
+.SS "void HAL_NVIC_ClearPendingIRQ (\fBIRQn_Type\fP IRQn)"
+
+.SS "uint32_t HAL_NVIC_GetPendingIRQ (\fBIRQn_Type\fP IRQn)"
+
+.SS "uint32_t HAL_NVIC_GetPriority (\fBIRQn_Type\fP IRQn)"
+
+.SS "void HAL_NVIC_SetPendingIRQ (\fBIRQn_Type\fP IRQn)"
+
+.SS "void HAL_SYSTICK_Callback (void)"
+
+.SS "void HAL_SYSTICK_CLKSourceConfig (uint32_t CLKSource)"
+
+.SS "void HAL_SYSTICK_IRQHandler (void)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

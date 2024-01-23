@@ -1,0 +1,55 @@
+.TH "RCC_MCO1_Clock_Source" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_MCO1_Clock_Source \- MCO1 Clock Source
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_MCO1SOURCE_NOCLOCK\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCO1SOURCE_SYSCLK\fP   \fBRCC_CFGR_MCOSEL_0\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCO1SOURCE_HSI\fP   (\fBRCC_CFGR_MCOSEL_0\fP| \fBRCC_CFGR_MCOSEL_1\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCO1SOURCE_HSE\fP   \fBRCC_CFGR_MCOSEL_2\fP"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCO1SOURCE_PLLCLK\fP   (\fBRCC_CFGR_MCOSEL_0\fP|\fBRCC_CFGR_MCOSEL_2\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCO1SOURCE_LSI\fP   (\fBRCC_CFGR_MCOSEL_1\fP|\fBRCC_CFGR_MCOSEL_2\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_MCO1SOURCE_LSE\fP   (\fBRCC_CFGR_MCOSEL_0\fP|\fBRCC_CFGR_MCOSEL_1\fP|\fBRCC_CFGR_MCOSEL_2\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RCC_MCO1SOURCE_HSE   \fBRCC_CFGR_MCOSEL_2\fP"
+HSE selection as MCO1 source 
+.SS "#define RCC_MCO1SOURCE_HSI   (\fBRCC_CFGR_MCOSEL_0\fP| \fBRCC_CFGR_MCOSEL_1\fP)"
+HSI selection as MCO1 source 
+.SS "#define RCC_MCO1SOURCE_LSE   (\fBRCC_CFGR_MCOSEL_0\fP|\fBRCC_CFGR_MCOSEL_1\fP|\fBRCC_CFGR_MCOSEL_2\fP)"
+LSE selection as MCO1 source 
+.SS "#define RCC_MCO1SOURCE_LSI   (\fBRCC_CFGR_MCOSEL_1\fP|\fBRCC_CFGR_MCOSEL_2\fP)"
+LSI selection as MCO1 source 
+.SS "#define RCC_MCO1SOURCE_NOCLOCK   0x00000000U"
+MCO1 output disabled, no clock on MCO1 
+.SS "#define RCC_MCO1SOURCE_PLLCLK   (\fBRCC_CFGR_MCOSEL_0\fP|\fBRCC_CFGR_MCOSEL_2\fP)"
+PLLCLK selection as MCO1 source 
+.SS "#define RCC_MCO1SOURCE_SYSCLK   \fBRCC_CFGR_MCOSEL_0\fP"
+SYSCLK selection as MCO1 source 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

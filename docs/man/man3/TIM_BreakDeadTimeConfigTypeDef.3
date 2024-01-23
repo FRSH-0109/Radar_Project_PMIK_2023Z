@@ -1,0 +1,98 @@
+.TH "TIM_BreakDeadTimeConfigTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_BreakDeadTimeConfigTypeDef \- TIM Break input(s) and Dead time configuration Structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_hal_tim\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBOffStateRunMode\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBOffStateIDLEMode\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBLockLevel\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBDeadTime\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBBreakState\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBBreakPolarity\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBBreakFilter\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBBreakAFMode\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBBreak2State\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBBreak2Polarity\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBBreak2Filter\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBBreak2AFMode\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBAutomaticOutput\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+TIM Break input(s) and Dead time configuration Structure definition\&. 
+
+
+.PP
+\fBNote\fP
+.RS 4
+2 break inputs can be configured (BKIN and BKIN2) with configurable filter and polarity\&. 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t TIM_BreakDeadTimeConfigTypeDef::AutomaticOutput"
+TIM Automatic Output Enable state, This parameter can be a value of \fBTIM Automatic Output Enable\fP 
+.SS "uint32_t TIM_BreakDeadTimeConfigTypeDef::Break2AFMode"
+Specifies the alternate function mode of the break2 input\&.This parameter can be a value of \fBTIM Break2 Input Alternate Function Mode\fP 
+.SS "uint32_t TIM_BreakDeadTimeConfigTypeDef::Break2Filter"
+TIM break2 input filter\&.This parameter can be a number between Min_Data = 0x0 and Max_Data = 0xF 
+.SS "uint32_t TIM_BreakDeadTimeConfigTypeDef::Break2Polarity"
+TIM Break2 input polarity, This parameter can be a value of \fBTIM Break Input 2 Polarity\fP 
+.SS "uint32_t TIM_BreakDeadTimeConfigTypeDef::Break2State"
+TIM Break2 State, This parameter can be a value of \fBTIM Break input 2 Enable\fP 
+.SS "uint32_t TIM_BreakDeadTimeConfigTypeDef::BreakAFMode"
+Specifies the alternate function mode of the break input\&.This parameter can be a value of \fBTIM Break Input Alternate Function Mode\fP 
+.SS "uint32_t TIM_BreakDeadTimeConfigTypeDef::BreakFilter"
+Specifies the break input filter\&.This parameter can be a number between Min_Data = 0x0 and Max_Data = 0xF 
+.SS "uint32_t TIM_BreakDeadTimeConfigTypeDef::BreakPolarity"
+TIM Break input polarity, This parameter can be a value of \fBTIM Break Input Polarity\fP 
+.SS "uint32_t TIM_BreakDeadTimeConfigTypeDef::BreakState"
+TIM Break State, This parameter can be a value of \fBTIM Break Input Enable\fP 
+.SS "uint32_t TIM_BreakDeadTimeConfigTypeDef::DeadTime"
+TIM dead Time, This parameter can be a number between Min_Data = 0x00 and Max_Data = 0xFF 
+.SS "uint32_t TIM_BreakDeadTimeConfigTypeDef::LockLevel"
+TIM Lock level, This parameter can be a value of \fBTIM Lock level\fP 
+.SS "uint32_t TIM_BreakDeadTimeConfigTypeDef::OffStateIDLEMode"
+TIM off state in IDLE mode, This parameter can be a value of \fBTIM OSSI OffState Selection for Idle mode state\fP 
+.SS "uint32_t TIM_BreakDeadTimeConfigTypeDef::OffStateRunMode"
+TIM off state in run mode, This parameter can be a value of \fBTIM OSSR OffState Selection for Run mode state\fP 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

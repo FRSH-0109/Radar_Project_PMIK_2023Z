@@ -1,0 +1,278 @@
+\doxysection{Core/\+Src/main.c File Reference}
+\hypertarget{main_8c}{}\label{main_8c}\index{Core/Src/main.c@{Core/Src/main.c}}
+
+
+Main source file of ultrasonic radar project.  
+
+
+{\ttfamily \#include "{}main.\+h"{}}\newline
+{\ttfamily \#include "{}dma.\+h"{}}\newline
+{\ttfamily \#include "{}spi.\+h"{}}\newline
+{\ttfamily \#include "{}tim.\+h"{}}\newline
+{\ttfamily \#include "{}usart.\+h"{}}\newline
+{\ttfamily \#include "{}gpio.\+h"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include "{}usart\+\_\+custom.\+h"{}}\newline
+{\ttfamily \#include "{}servo\+\_\+driver.\+h"{}}\newline
+{\ttfamily \#include "{}ILI9341.\+h"{}}\newline
+{\ttfamily \#include "{}GFX\+\_\+\+Color.\+h"{}}\newline
+{\ttfamily \#include "{}fonts/font\+\_\+8x5.\+h"{}}\newline
+{\ttfamily \#include "{}distance\+\_\+sensor.\+h"{}}\newline
+{\ttfamily \#include "{}radar.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_a70af21c671abfcc773614a9a4f63d920}{System\+Clock\+\_\+\+Config}} (void)
+\begin{DoxyCompactList}\small\item\em System Clock Configuration. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em The application entry point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a753dcda9075115cc1c781e4332085f84}{draw\+Clear}} ()
+\item 
+void \mbox{\hyperlink{main_8c_aedda947c024e77ba1f14c739913870bd}{draw\+Setup}} ()
+\item 
+bool \mbox{\hyperlink{main_8c_ab3557cb07835dec370fd8b7855343aae}{draw\+Setup\+Update}} (double draw\+Scale, uint8\+\_\+t measure\+Scales\+Number)
+\item 
+void \mbox{\hyperlink{main_8c_ab5b93ed998b46e745b6713b6d7a27e32}{draw\+Measure}} ()
+\item 
+void \mbox{\hyperlink{main_8c_af9f0ac13160d4a1b3eb13b6a0fa76502}{draw\+Measure\+Scale}} ()
+\item 
+void \mbox{\hyperlink{group___t_i_m___exported___functions___group9_ga8a3b0ad512a6e6c6157440b68d395eac}{HAL\+\_\+\+TIM\+\_\+\+Period\+Elapsed\+Callback}} (\mbox{\hyperlink{struct_t_i_m___handle_type_def}{TIM\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}htim)
+\item 
+void \mbox{\hyperlink{main_8c_a6b42437e0654d88f5b7a68caa22a733c}{distance\+Sensor\+Trig\+On}} (\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor)
+\item 
+void \mbox{\hyperlink{main_8c_a9b87431c23c2a12baa879f62f43bda05}{distance\+Sensor\+Delay}} (\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor, uint32\+\_\+t delay)
+\item 
+void \mbox{\hyperlink{main_8c_a902cb6ceee556ebfc81c8d1181d87cc9}{distance\+Sensor\+Trig\+Off}} (\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor)
+\item 
+void \mbox{\hyperlink{group___g_p_i_o___exported___functions___group2_ga537318eafe9182b60dc22ef54966c6a1}{HAL\+\_\+\+GPIO\+\_\+\+EXTI\+\_\+\+Rising\+\_\+\+Callback}} (uint16\+\_\+t GPIO\+\_\+\+Pin)
+\item 
+void \mbox{\hyperlink{group___g_p_i_o___exported___functions___group2_ga0b334860563f4a109443e0a604af2300}{HAL\+\_\+\+GPIO\+\_\+\+EXTI\+\_\+\+Falling\+\_\+\+Callback}} (uint16\+\_\+t GPIO\+\_\+\+Pin)
+\item 
+void \mbox{\hyperlink{main_8c_a3a027ed11a1051d0c899706817c68e37}{servo\+Driver\+Start\+Timer}} (\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo\+Driver)
+\item 
+void \mbox{\hyperlink{main_8c_a9644009cc702a14f3a480ad472ee4d6a}{servo\+Driver\+Stop\+Timer}} (\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo\+Driver)
+\item 
+void \mbox{\hyperlink{main_8c_aa8a4bdef9b3e742a5e225dd29a804db6}{servo\+Driver\+Set\+Pulse\+Width}} (\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo\+Driver)
+\item 
+void \mbox{\hyperlink{main_8c_a1730ffe1e560465665eb47d9264826f9}{Error\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function is executed in case of error occurrence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \mbox{\hyperlink{main_8c_a4e519356505feeb7b9659dcdc97161c0}{servo\+PA6}}
+\item 
+\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \mbox{\hyperlink{main_8c_a94c36cf45267b6e4d4ec02ad2438c2da}{distance\+Sensor\+PA2}}
+\item 
+\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}
+\item 
+\mbox{\hyperlink{structdraw_helper_struct}{draw\+Helper\+Struct}} \mbox{\hyperlink{main_8c_adf53ce83636ba14bf6b66c48aae16e49}{draw\+Helper}}
+\item 
+\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \mbox{\hyperlink{main_8c_aa8f73ccd6c2e2b10c7ee326ad9b700ce}{huart\+PC}}
+\item 
+\mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \mbox{\hyperlink{main_8c_a730b36042999ad73efb22a259d91845a}{uart\+Queue\+PC}}
+\item 
+\mbox{\hyperlink{group___d_m_a___exported___types_ga41b754a906b86bce54dc79938970138b}{DMA\+\_\+\+Handle\+Type\+Def}} \mbox{\hyperlink{main_8c_a34251392f0d5e2461e3aef615918c235}{hdma\+\_\+usart1\+\_\+rx}}
+\item 
+\mbox{\hyperlink{group___d_m_a___exported___types_ga41b754a906b86bce54dc79938970138b}{DMA\+\_\+\+Handle\+Type\+Def}} \mbox{\hyperlink{main_8c_a5af94ab36bfe698db3e6beea96d10a90}{hdma\+\_\+usart1\+\_\+tx}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main source file of ultrasonic radar project. 
+
+\begin{DoxyAuthor}{Author}
+Kamil Kośnik, Kacper Radzikowski 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z}{\texttt{ https\+://github.\+com/\+FRSH-\/0109/\+Radar\+\_\+\+Project\+\_\+\+PMIK\+\_\+2023Z}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8c_a9b87431c23c2a12baa879f62f43bda05}\label{main_8c_a9b87431c23c2a12baa879f62f43bda05} 
+\index{main.c@{main.c}!distanceSensorDelay@{distanceSensorDelay}}
+\index{distanceSensorDelay@{distanceSensorDelay}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{distanceSensorDelay()}{distanceSensorDelay()}}
+{\footnotesize\ttfamily void distance\+Sensor\+Delay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor,  }\item[{uint32\+\_\+t}]{delay }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8c_a902cb6ceee556ebfc81c8d1181d87cc9}\label{main_8c_a902cb6ceee556ebfc81c8d1181d87cc9} 
+\index{main.c@{main.c}!distanceSensorTrigOff@{distanceSensorTrigOff}}
+\index{distanceSensorTrigOff@{distanceSensorTrigOff}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{distanceSensorTrigOff()}{distanceSensorTrigOff()}}
+{\footnotesize\ttfamily void distance\+Sensor\+Trig\+Off (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8c_a6b42437e0654d88f5b7a68caa22a733c}\label{main_8c_a6b42437e0654d88f5b7a68caa22a733c} 
+\index{main.c@{main.c}!distanceSensorTrigOn@{distanceSensorTrigOn}}
+\index{distanceSensorTrigOn@{distanceSensorTrigOn}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{distanceSensorTrigOn()}{distanceSensorTrigOn()}}
+{\footnotesize\ttfamily void distance\+Sensor\+Trig\+On (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8c_a753dcda9075115cc1c781e4332085f84}\label{main_8c_a753dcda9075115cc1c781e4332085f84} 
+\index{main.c@{main.c}!drawClear@{drawClear}}
+\index{drawClear@{drawClear}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{drawClear()}{drawClear()}}
+{\footnotesize\ttfamily void draw\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8c_ab5b93ed998b46e745b6713b6d7a27e32}\label{main_8c_ab5b93ed998b46e745b6713b6d7a27e32} 
+\index{main.c@{main.c}!drawMeasure@{drawMeasure}}
+\index{drawMeasure@{drawMeasure}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{drawMeasure()}{drawMeasure()}}
+{\footnotesize\ttfamily void draw\+Measure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8c_af9f0ac13160d4a1b3eb13b6a0fa76502}\label{main_8c_af9f0ac13160d4a1b3eb13b6a0fa76502} 
+\index{main.c@{main.c}!drawMeasureScale@{drawMeasureScale}}
+\index{drawMeasureScale@{drawMeasureScale}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{drawMeasureScale()}{drawMeasureScale()}}
+{\footnotesize\ttfamily void draw\+Measure\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8c_aedda947c024e77ba1f14c739913870bd}\label{main_8c_aedda947c024e77ba1f14c739913870bd} 
+\index{main.c@{main.c}!drawSetup@{drawSetup}}
+\index{drawSetup@{drawSetup}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{drawSetup()}{drawSetup()}}
+{\footnotesize\ttfamily void draw\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8c_ab3557cb07835dec370fd8b7855343aae}\label{main_8c_ab3557cb07835dec370fd8b7855343aae} 
+\index{main.c@{main.c}!drawSetupUpdate@{drawSetupUpdate}}
+\index{drawSetupUpdate@{drawSetupUpdate}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{drawSetupUpdate()}{drawSetupUpdate()}}
+{\footnotesize\ttfamily bool draw\+Setup\+Update (\begin{DoxyParamCaption}\item[{double}]{draw\+Scale,  }\item[{uint8\+\_\+t}]{measure\+Scales\+Number }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8c_a1730ffe1e560465665eb47d9264826f9}\label{main_8c_a1730ffe1e560465665eb47d9264826f9} 
+\index{main.c@{main.c}!Error\_Handler@{Error\_Handler}}
+\index{Error\_Handler@{Error\_Handler}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Error\_Handler()}{Error\_Handler()}}
+{\footnotesize\ttfamily void Error\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function is executed in case of error occurrence. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The application entry point. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em int} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{main_8c_aa8a4bdef9b3e742a5e225dd29a804db6}\label{main_8c_aa8a4bdef9b3e742a5e225dd29a804db6} 
+\index{main.c@{main.c}!servoDriverSetPulseWidth@{servoDriverSetPulseWidth}}
+\index{servoDriverSetPulseWidth@{servoDriverSetPulseWidth}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{servoDriverSetPulseWidth()}{servoDriverSetPulseWidth()}}
+{\footnotesize\ttfamily void servo\+Driver\+Set\+Pulse\+Width (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo\+Driver }\end{DoxyParamCaption})}
+
+Function for setting pulse width from struct into timer instance
+
+
+\begin{DoxyParams}{Parameters}
+{\em servo\+Driver} & pointer to \doxylink{structservo_driver_struct}{servo\+Driver\+Struct} struct \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8c_a3a027ed11a1051d0c899706817c68e37}\label{main_8c_a3a027ed11a1051d0c899706817c68e37} 
+\index{main.c@{main.c}!servoDriverStartTimer@{servoDriverStartTimer}}
+\index{servoDriverStartTimer@{servoDriverStartTimer}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{servoDriverStartTimer()}{servoDriverStartTimer()}}
+{\footnotesize\ttfamily void servo\+Driver\+Start\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo\+Driver }\end{DoxyParamCaption})}
+
+Function for starting timer paired with certain servo struct
+
+
+\begin{DoxyParams}{Parameters}
+{\em servo\+Driver} & pointer to \doxylink{structservo_driver_struct}{servo\+Driver\+Struct} struct \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8c_a9644009cc702a14f3a480ad472ee4d6a}\label{main_8c_a9644009cc702a14f3a480ad472ee4d6a} 
+\index{main.c@{main.c}!servoDriverStopTimer@{servoDriverStopTimer}}
+\index{servoDriverStopTimer@{servoDriverStopTimer}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{servoDriverStopTimer()}{servoDriverStopTimer()}}
+{\footnotesize\ttfamily void servo\+Driver\+Stop\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo\+Driver }\end{DoxyParamCaption})}
+
+Function for stopping timer paired with certain servo struct
+
+
+\begin{DoxyParams}{Parameters}
+{\em servo\+Driver} & pointer to \doxylink{structservo_driver_struct}{servo\+Driver\+Struct} struct \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8c_a70af21c671abfcc773614a9a4f63d920}\label{main_8c_a70af21c671abfcc773614a9a4f63d920} 
+\index{main.c@{main.c}!SystemClock\_Config@{SystemClock\_Config}}
+\index{SystemClock\_Config@{SystemClock\_Config}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{SystemClock\_Config()}{SystemClock\_Config()}}
+{\footnotesize\ttfamily void System\+Clock\+\_\+\+Config (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+System Clock Configuration. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+Configure the main internal regulator output voltage
+
+Initializes the RCC Oscillators according to the specified parameters in the \doxylink{struct_r_c_c___osc_init_type_def}{RCC\+\_\+\+Osc\+Init\+Type\+Def} structure.
+
+Initializes the CPU, AHB and APB buses clocks
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8c_a94c36cf45267b6e4d4ec02ad2438c2da}\label{main_8c_a94c36cf45267b6e4d4ec02ad2438c2da} 
+\index{main.c@{main.c}!distanceSensorPA2@{distanceSensorPA2}}
+\index{distanceSensorPA2@{distanceSensorPA2}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{distanceSensorPA2}{distanceSensorPA2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} distance\+Sensor\+PA2}
+
+\Hypertarget{main_8c_adf53ce83636ba14bf6b66c48aae16e49}\label{main_8c_adf53ce83636ba14bf6b66c48aae16e49} 
+\index{main.c@{main.c}!drawHelper@{drawHelper}}
+\index{drawHelper@{drawHelper}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{drawHelper}{drawHelper}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdraw_helper_struct}{draw\+Helper\+Struct}} draw\+Helper}
+
+\Hypertarget{main_8c_a34251392f0d5e2461e3aef615918c235}\label{main_8c_a34251392f0d5e2461e3aef615918c235} 
+\index{main.c@{main.c}!hdma\_usart1\_rx@{hdma\_usart1\_rx}}
+\index{hdma\_usart1\_rx@{hdma\_usart1\_rx}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{hdma\_usart1\_rx}{hdma\_usart1\_rx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___d_m_a___exported___types_ga41b754a906b86bce54dc79938970138b}{DMA\+\_\+\+Handle\+Type\+Def}} hdma\+\_\+usart1\+\_\+rx\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{main_8c_a5af94ab36bfe698db3e6beea96d10a90}\label{main_8c_a5af94ab36bfe698db3e6beea96d10a90} 
+\index{main.c@{main.c}!hdma\_usart1\_tx@{hdma\_usart1\_tx}}
+\index{hdma\_usart1\_tx@{hdma\_usart1\_tx}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{hdma\_usart1\_tx}{hdma\_usart1\_tx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___d_m_a___exported___types_ga41b754a906b86bce54dc79938970138b}{DMA\+\_\+\+Handle\+Type\+Def}} hdma\+\_\+usart1\+\_\+tx\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{main_8c_aa8f73ccd6c2e2b10c7ee326ad9b700ce}\label{main_8c_aa8f73ccd6c2e2b10c7ee326ad9b700ce} 
+\index{main.c@{main.c}!huartPC@{huartPC}}
+\index{huartPC@{huartPC}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{huartPC}{huartPC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} huart\+PC}
+
+\Hypertarget{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}\label{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09} 
+\index{main.c@{main.c}!radar@{radar}}
+\index{radar@{radar}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{radar}{radar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structradar_struct}{radar\+Struct}} radar}
+
+\Hypertarget{main_8c_a4e519356505feeb7b9659dcdc97161c0}\label{main_8c_a4e519356505feeb7b9659dcdc97161c0} 
+\index{main.c@{main.c}!servoPA6@{servoPA6}}
+\index{servoPA6@{servoPA6}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{servoPA6}{servoPA6}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} servo\+PA6}
+
+\Hypertarget{main_8c_a730b36042999ad73efb22a259d91845a}\label{main_8c_a730b36042999ad73efb22a259d91845a} 
+\index{main.c@{main.c}!uartQueuePC@{uartQueuePC}}
+\index{uartQueuePC@{uartQueuePC}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{uartQueuePC}{uartQueuePC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} uart\+Queue\+PC}
+

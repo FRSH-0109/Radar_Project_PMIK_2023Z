@@ -1,0 +1,99 @@
+.TH "RCC_Flag" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_Flag \- Flags
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCC_FLAG_HSIRDY\fP   ((\fBCR_REG_INDEX\fP << 5U) | \fBRCC_CR_HSIRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_FLAG_HSERDY\fP   ((\fBCR_REG_INDEX\fP << 5U) | \fBRCC_CR_HSERDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_FLAG_PLLRDY\fP   ((\fBCR_REG_INDEX\fP << 5U) | \fBRCC_CR_PLLRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_FLAG_LSERDY\fP   ((\fBBDCR_REG_INDEX\fP << 5U) | \fBRCC_BDCR_LSERDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_FLAG_LSECSSD\fP   ((\fBBDCR_REG_INDEX\fP << 5U) | \fBRCC_BDCR_LSECSSD_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_FLAG_LSIRDY\fP   ((\fBCSR_REG_INDEX\fP << 5U) | \fBRCC_CSR_LSIRDY_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_FLAG_OBLRST\fP   ((\fBCSR_REG_INDEX\fP << 5U) | \fBRCC_CSR_OBLRSTF_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_FLAG_PINRST\fP   ((\fBCSR_REG_INDEX\fP << 5U) | \fBRCC_CSR_PINRSTF_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_FLAG_PWRRST\fP   ((\fBCSR_REG_INDEX\fP << 5U) | \fBRCC_CSR_PWRRSTF_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_FLAG_SFTRST\fP   ((\fBCSR_REG_INDEX\fP << 5U) | \fBRCC_CSR_SFTRSTF_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_FLAG_IWDGRST\fP   ((\fBCSR_REG_INDEX\fP << 5U) | \fBRCC_CSR_IWDGRSTF_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_FLAG_WWDGRST\fP   ((\fBCSR_REG_INDEX\fP << 5U) | \fBRCC_CSR_WWDGRSTF_Pos\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCC_FLAG_LPWRRST\fP   ((\fBCSR_REG_INDEX\fP << 5U) | \fBRCC_CSR_LPWRRSTF_Pos\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Elements values convention: XXXYYYYYb
+.IP "\(bu" 2
+YYYYY : Flag position in the register
+.IP "\(bu" 2
+XXX : Register index
+.IP "  \(bu" 4
+001: CR register
+.IP "  \(bu" 4
+010: BDCR register
+.IP "  \(bu" 4
+011: CSR register 
+.PP
+
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RCC_FLAG_HSERDY   ((\fBCR_REG_INDEX\fP << 5U) | \fBRCC_CR_HSERDY_Pos\fP)"
+HSE Ready flag 
+.SS "#define RCC_FLAG_HSIRDY   ((\fBCR_REG_INDEX\fP << 5U) | \fBRCC_CR_HSIRDY_Pos\fP)"
+HSI Ready flag 
+.SS "#define RCC_FLAG_IWDGRST   ((\fBCSR_REG_INDEX\fP << 5U) | \fBRCC_CSR_IWDGRSTF_Pos\fP)"
+Independent Watchdog reset flag 
+.SS "#define RCC_FLAG_LPWRRST   ((\fBCSR_REG_INDEX\fP << 5U) | \fBRCC_CSR_LPWRRSTF_Pos\fP)"
+Low-Power reset flag 
+.SS "#define RCC_FLAG_LSECSSD   ((\fBBDCR_REG_INDEX\fP << 5U) | \fBRCC_BDCR_LSECSSD_Pos\fP)"
+LSE Clock Security System Interrupt flag 
+.SS "#define RCC_FLAG_LSERDY   ((\fBBDCR_REG_INDEX\fP << 5U) | \fBRCC_BDCR_LSERDY_Pos\fP)"
+LSE Ready flag 
+.SS "#define RCC_FLAG_LSIRDY   ((\fBCSR_REG_INDEX\fP << 5U) | \fBRCC_CSR_LSIRDY_Pos\fP)"
+LSI Ready flag 
+.SS "#define RCC_FLAG_OBLRST   ((\fBCSR_REG_INDEX\fP << 5U) | \fBRCC_CSR_OBLRSTF_Pos\fP)"
+Option Byte Loader reset flag 
+.SS "#define RCC_FLAG_PINRST   ((\fBCSR_REG_INDEX\fP << 5U) | \fBRCC_CSR_PINRSTF_Pos\fP)"
+PIN reset flag 
+.SS "#define RCC_FLAG_PLLRDY   ((\fBCR_REG_INDEX\fP << 5U) | \fBRCC_CR_PLLRDY_Pos\fP)"
+PLL Ready flag 
+.SS "#define RCC_FLAG_PWRRST   ((\fBCSR_REG_INDEX\fP << 5U) | \fBRCC_CSR_PWRRSTF_Pos\fP)"
+BOR or POR/PDR reset flag 
+.SS "#define RCC_FLAG_SFTRST   ((\fBCSR_REG_INDEX\fP << 5U) | \fBRCC_CSR_SFTRSTF_Pos\fP)"
+Software Reset flag 
+.SS "#define RCC_FLAG_WWDGRST   ((\fBCSR_REG_INDEX\fP << 5U) | \fBRCC_CSR_WWDGRSTF_Pos\fP)"
+Window watchdog reset flag 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

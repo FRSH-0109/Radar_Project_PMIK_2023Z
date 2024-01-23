@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structdistance_sensor_struct" kind="struct" language="C++" prot="public">
+    <compoundname>distanceSensorStruct</compoundname>
+    <includes refid="distance__sensor_8h" local="no">distance_sensor.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdistance_sensor_struct_1a2d7e5dd7a479c4c7aef6e6133a1441c5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double factor</definition>
+        <argsstring></argsstring>
+        <name>factor</name>
+        <qualifiedname>distanceSensorStruct::factor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Factor for calculation ticks amount to distance </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DistanceSensorDriver/distance_sensor.h" line="22" column="8" bodyfile="RadarApp/DistanceSensorDriver/distance_sensor.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdistance_sensor_struct_1a633f87461ad14b25bca192cdf65d1604" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ticks</definition>
+        <argsstring></argsstring>
+        <name>ticks</name>
+        <qualifiedname>distanceSensorStruct::ticks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Signal length in ticks from distance sensor measurement </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DistanceSensorDriver/distance_sensor.h" line="24" column="10" bodyfile="RadarApp/DistanceSensorDriver/distance_sensor.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdistance_sensor_struct_1a0e5f10c80469543c7999d506055e4557" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double distnace</definition>
+        <argsstring></argsstring>
+        <name>distnace</name>
+        <qualifiedname>distanceSensorStruct::distnace</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculated distance from sensor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DistanceSensorDriver/distance_sensor.h" line="25" column="8" bodyfile="RadarApp/DistanceSensorDriver/distance_sensor.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdistance_sensor_struct_1a98d184d41dde3a0f043defb9ce57fb4a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool readyToMeasure</definition>
+        <argsstring></argsstring>
+        <name>readyToMeasure</name>
+        <qualifiedname>distanceSensorStruct::readyToMeasure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag for controlling sensor behavior wile measurements </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DistanceSensorDriver/distance_sensor.h" line="27" column="6" bodyfile="RadarApp/DistanceSensorDriver/distance_sensor.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure for control certain sensor </para>
+    </detaileddescription>
+    <location file="RadarApp/DistanceSensorDriver/distance_sensor.h" line="20" column="1" bodyfile="RadarApp/DistanceSensorDriver/distance_sensor.h" bodystart="21" bodyend="28"/>
+    <listofallmembers>
+      <member refid="structdistance_sensor_struct_1a0e5f10c80469543c7999d506055e4557" prot="public" virt="non-virtual"><scope>distanceSensorStruct</scope><name>distnace</name></member>
+      <member refid="structdistance_sensor_struct_1a2d7e5dd7a479c4c7aef6e6133a1441c5" prot="public" virt="non-virtual"><scope>distanceSensorStruct</scope><name>factor</name></member>
+      <member refid="structdistance_sensor_struct_1a98d184d41dde3a0f043defb9ce57fb4a" prot="public" virt="non-virtual"><scope>distanceSensorStruct</scope><name>readyToMeasure</name></member>
+      <member refid="structdistance_sensor_struct_1a633f87461ad14b25bca192cdf65d1604" prot="public" virt="non-virtual"><scope>distanceSensorStruct</scope><name>ticks</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

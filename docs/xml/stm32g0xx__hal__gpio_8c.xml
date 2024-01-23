@@ -1,0 +1,618 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="stm32g0xx__hal__gpio_8c" kind="file" language="C++">
+    <compoundname>stm32g0xx_hal_gpio.c</compoundname>
+    <includes refid="stm32g0xx__hal_8h" local="yes">stm32g0xx_hal.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="7">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="2">
+        <label>stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stm32g0xx_hal_cortex.h</label>
+        <link refid="stm32g0xx__hal__cortex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stm32g0xx_hal_dma.h</label>
+        <link refid="stm32g0xx__hal__dma_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stm32g0xx_hal_dma_ex.h</label>
+        <link refid="stm32g0xx__hal__dma__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>stm32g0xx_hal_exti.h</label>
+        <link refid="stm32g0xx__hal__exti_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>stm32g0xx_hal_flash.h</label>
+        <link refid="stm32g0xx__hal__flash_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>stm32g0xx_hal_flash_ex.h</label>
+        <link refid="stm32g0xx__hal__flash__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stm32g0xx_hal_gpio.h</label>
+        <link refid="stm32g0xx__hal__gpio_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stm32g0xx_hal_gpio_ex.h</label>
+        <link refid="stm32g0xx__hal__gpio__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>stm32g0xx_hal_pwr.h</label>
+        <link refid="stm32g0xx__hal__pwr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>stm32g0xx_hal_pwr_ex.h</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stm32g0xx_hal_rcc.h</label>
+        <link refid="stm32g0xx__hal__rcc_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stm32g0xx_hal_rcc_ex.h</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>stm32g0xx_hal_spi.h</label>
+        <link refid="stm32g0xx__hal__spi_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>stm32g0xx_hal_spi_ex.h</label>
+        <link refid="stm32g0xx__hal__spi__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>stm32g0xx_hal_tim.h</label>
+        <link refid="stm32g0xx__hal__tim_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>stm32g0xx_hal_tim_ex.h</label>
+        <link refid="stm32g0xx__hal__tim__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>stm32g0xx_hal_uart.h</label>
+        <link refid="stm32g0xx__hal__uart_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>stm32g0xx_hal_uart_ex.h</label>
+        <link refid="stm32g0xx__hal__uart__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stm32g0xx_ll_dma.h</label>
+        <link refid="stm32g0xx__ll__dma_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stm32g0xx_ll_dmamux.h</label>
+        <link refid="stm32g0xx__ll__dmamux_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stm32g0xx_ll_rcc.h</label>
+        <link refid="stm32g0xx__ll__rcc_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c</label>
+        <link refid="stm32g0xx__hal__gpio_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>GPIO HAL module driver. This file provides firmware functions to manage the following functionalities of the General Purpose Input/Output (GPIO) peripheral: </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team<itemizedlist>
+<listitem><para>Initialization and de-initialization functions</para>
+</listitem><listitem><para>IO operation functions</para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="attention"><para></para>
+</simplesect>
+Copyright (c) 2018 STMicroelectronics. All rights reserved.</para>
+<para>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS.</para>
+<para><verbatim>==============================================================================
+                  ##### GPIO Peripheral features #####
+==============================================================================
+[..]
+  (+) Each port bit of the general-purpose I/O (GPIO) ports can be individually
+      configured by software in several modes:
+      (++) Input mode
+      (++) Analog mode
+      (++) Output mode
+      (++) Alternate function mode
+      (++) External interrupt/event lines
+
+  (+) During and just after reset, the alternate functions and external interrupt
+      lines are not active and the I/O ports are configured in input floating mode.
+
+  (+) All GPIO pins have weak internal pull-up and pull-down resistors, which can be
+      activated or not.
+
+  (+) In Output or Alternate mode, each IO can be configured on open-drain or push-pull
+      type and the IO speed can be selected depending on the VDD value.
+
+  (+) The microcontroller IO pins are connected to onboard peripherals/modules through a
+      multiplexer that allows only one peripheral alternate function (AF) connected
+     to an IO pin at a time. In this way, there can be no conflict between peripherals
+     sharing the same IO pin.
+
+  (+) All ports have external interrupt/event capability. To use external interrupt
+      lines, the port must be configured in input mode. All available GPIO pins are
+      connected to the 16 external interrupt/event lines from EXTI0 to EXTI15.
+
+  (+) The external interrupt/event controller consists of up to 28 edge detectors
+      (16 lines are connected to GPIO) for generating event/interrupt requests (each
+      input line can be independently configured to select the type (interrupt or event)
+      and the corresponding trigger event (rising or falling or both). Each line can
+      also be masked independently.
+
+                   ##### How to use this driver #####
+==============================================================================
+[..]
+  (#) Enable the GPIO AHB clock using the following function: __HAL_RCC_GPIOx_CLK_ENABLE().
+
+  (#) Configure the GPIO pin(s) using HAL_GPIO_Init().
+      (++) Configure the IO mode using &quot;Mode&quot; member from GPIO_InitTypeDef structure
+      (++) Activate Pull-up, Pull-down resistor using &quot;Pull&quot; member from GPIO_InitTypeDef
+           structure.
+      (++) In case of Output or alternate function mode selection: the speed is
+           configured through &quot;Speed&quot; member from GPIO_InitTypeDef structure.
+      (++) In alternate mode is selection, the alternate function connected to the IO
+           is configured through &quot;Alternate&quot; member from GPIO_InitTypeDef structure.
+      (++) Analog mode is required when a pin is to be used as ADC channel
+           or DAC output.
+      (++) In case of external interrupt/event selection the &quot;Mode&quot; member from
+           GPIO_InitTypeDef structure select the type (interrupt or event) and
+           the corresponding trigger event (rising or falling or both).
+
+  (#) In case of external interrupt/event mode selection, configure NVIC IRQ priority
+      mapped to the EXTI line using HAL_NVIC_SetPriority() and enable it using
+      HAL_NVIC_EnableIRQ().
+
+  (#) To get the level of a pin configured in input mode use HAL_GPIO_ReadPin().
+
+  (#) To set/reset the level of a pin configured in output mode use
+      HAL_GPIO_WritePin()/HAL_GPIO_TogglePin().
+
+ (#) To lock pin configuration until next reset use HAL_GPIO_LockPin().
+
+  (#) During and just after reset, the alternate functions are not
+      active and the GPIO pins are configured in input floating mode (except JTAG
+      pins).
+
+  (#) The LSE oscillator pins OSC32_IN and OSC32_OUT can be used as general purpose
+      (PC14 and PC15, respectively) when the LSE oscillator is off. The LSE has
+      priority over the GPIO function.
+
+  (#) The HSE oscillator pins OSC_IN/OSC_OUT can be used as
+      general purpose PF0 and PF1, respectively, when the HSE oscillator is off.
+      The HSE has priority over the GPIO function.</verbatim> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32g0xx__hal_8h" kindref="compound">stm32g0xx_hal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAL_GPIO_MODULE_ENABLED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>typedef<sp/>-----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>defines<sp/>------------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_NUMBER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(16u)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>macros<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>variables<sp/>---------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>function<sp/>prototypes<sp/>-----------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>functions<sp/>--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___g_p_i_o___exported___functions___group1_1ga41bda93b6dd639e4905fdb1454eff98e" kindref="member">HAL_GPIO_Init</ref>(<ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref><sp/><sp/>*GPIOx,<sp/><ref refid="struct_g_p_i_o___init_type_def" kindref="compound">GPIO_InitTypeDef</ref><sp/>*GPIO_Init)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/>uint32_t<sp/>position<sp/>=<sp/>0x00u;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>uint32_t<sp/>iocurrent;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>uint32_t<sp/>temp;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___exported__macros_1ga783626dd2431afebea836a102e318957" kindref="member">IS_GPIO_ALL_INSTANCE</ref>(GPIOx));</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___g_p_i_o___private___macros_1ga4911823233fa2bf64a4f04c6dbfa5485" kindref="member">IS_GPIO_PIN</ref>(GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a871d0ab74071724e96b7cc9ae2a7532b" kindref="member">Pin</ref>));</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___g_p_i_o___private___macros_1ga7e5d84d697017fb4f1cd820fb0a6ac83" kindref="member">IS_GPIO_MODE</ref>(GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref>));</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>the<sp/>port<sp/>pins<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(((GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a871d0ab74071724e96b7cc9ae2a7532b" kindref="member">Pin</ref>)<sp/>&gt;&gt;<sp/>position)<sp/>!=<sp/>0x00u)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>current<sp/>io<sp/>position<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>iocurrent<sp/>=<sp/>(GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a871d0ab74071724e96b7cc9ae2a7532b" kindref="member">Pin</ref>)<sp/>&amp;<sp/>(1uL<sp/>&lt;&lt;<sp/>position);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(iocurrent<sp/>!=<sp/>0x00u)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*---------------------<sp/>GPIO<sp/>Mode<sp/>Configuration<sp/>------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>In<sp/>case<sp/>of<sp/>Output<sp/>or<sp/>Alternate<sp/>function<sp/>mode<sp/>selection<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>&amp;<sp/><ref refid="group___g_p_i_o___private___constants_1ga9f30425211b75e4ab36c4e7cbea06a41" kindref="member">GPIO_MODE</ref>)<sp/>==<sp/><ref refid="group___g_p_i_o___private___constants_1ga3b23ec3cf56d4fc73dd1185b7f2792d6" kindref="member">MODE_OUTPUT</ref>)<sp/>||<sp/>((GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>&amp;<sp/><ref refid="group___g_p_i_o___private___constants_1ga9f30425211b75e4ab36c4e7cbea06a41" kindref="member">GPIO_MODE</ref>)<sp/>==<sp/><ref refid="group___g_p_i_o___private___constants_1ga60ce9a309c9629a88569a919d84313c1" kindref="member">MODE_AF</ref>))</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>Speed<sp/>parameter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___g_p_i_o___private___macros_1gaa0f47c8ac2940a95613fbf60795c81c5" kindref="member">IS_GPIO_SPEED</ref>(GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1ad04b2041f59d32492ec36a891418f3fd" kindref="member">Speed</ref>));</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>the<sp/>IO<sp/>Speed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1a328d16cc6213783ede54e4059ffd50a3" kindref="member">OSPEEDR</ref>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~(<ref refid="group___peripheral___registers___bits___definition_1ga25d567c6d24df0adb6402498fd5eb582" kindref="member">GPIO_OSPEEDR_OSPEED0</ref><sp/>&lt;&lt;<sp/>(position<sp/>*<sp/>2u));</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>(GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1ad04b2041f59d32492ec36a891418f3fd" kindref="member">Speed</ref><sp/>&lt;&lt;<sp/>(position<sp/>*<sp/>2u));</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1a328d16cc6213783ede54e4059ffd50a3" kindref="member">OSPEEDR</ref><sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>the<sp/>IO<sp/>Output<sp/>Type<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1a9543592bda60cb5261075594bdeedac9" kindref="member">OTYPER</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~(<ref refid="group___peripheral___registers___bits___definition_1ga2aebd85688999595239036bd63eac4a3" kindref="member">GPIO_OTYPER_OT0</ref><sp/>&lt;&lt;<sp/>position)<sp/>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>(((GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>&amp;<sp/><ref refid="group___g_p_i_o___private___constants_1gaf282b119b7274dd3e3beb01a18ae9803" kindref="member">OUTPUT_TYPE</ref>)<sp/>&gt;&gt;<sp/><ref refid="group___g_p_i_o___private___constants_1gafe471d87fbc31effdccdf78ec66dfd15" kindref="member">OUTPUT_TYPE_Pos</ref>)<sp/>&lt;&lt;<sp/>position);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1a9543592bda60cb5261075594bdeedac9" kindref="member">OTYPER</ref><sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>&amp;<sp/><ref refid="group___g_p_i_o___private___constants_1ga9f30425211b75e4ab36c4e7cbea06a41" kindref="member">GPIO_MODE</ref>)<sp/>!=<sp/><ref refid="group___g_p_i_o___private___constants_1ga6184043271806f6f261da2471fbb22be" kindref="member">MODE_ANALOG</ref>)</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>Pull<sp/>parameter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___g_p_i_o___private___macros_1ga6424c3fc83173de0f9f9374ed6633dc8" kindref="member">IS_GPIO_PULL</ref>(GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a6cdde08eb507b710f8179a4326548e26" kindref="member">Pull</ref>));</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Activate<sp/>the<sp/>Pull-up<sp/>or<sp/>Pull<sp/>down<sp/>resistor<sp/>for<sp/>the<sp/>current<sp/>IO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1abeed38529bd7b8de082e490e5d4f1727" kindref="member">PUPDR</ref>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~(<ref refid="group___peripheral___registers___bits___definition_1ga757af1d9f0ba5f4ed76320b6932e3741" kindref="member">GPIO_PUPDR_PUPD0</ref><sp/>&lt;&lt;<sp/>(position<sp/>*<sp/>2u));</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>((GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a6cdde08eb507b710f8179a4326548e26" kindref="member">Pull</ref>)<sp/>&lt;&lt;<sp/>(position<sp/>*<sp/>2u));</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1abeed38529bd7b8de082e490e5d4f1727" kindref="member">PUPDR</ref><sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>In<sp/>case<sp/>of<sp/>Alternate<sp/>function<sp/>mode<sp/>selection<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>&amp;<sp/><ref refid="group___g_p_i_o___private___constants_1ga9f30425211b75e4ab36c4e7cbea06a41" kindref="member">GPIO_MODE</ref>)<sp/>==<sp/><ref refid="group___g_p_i_o___private___constants_1ga60ce9a309c9629a88569a919d84313c1" kindref="member">MODE_AF</ref>)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>Alternate<sp/>function<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___exported__macros_1ga9d2e0c4bb80b983730a3a5d98d56f535" kindref="member">IS_GPIO_AF_INSTANCE</ref>(GPIOx));</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(IS_GPIO_AF(GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a9a352764836bb14ec56a94f77697b52d" kindref="member">Alternate</ref>));</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>Alternate<sp/>function<sp/>mapped<sp/>with<sp/>the<sp/>current<sp/>IO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1ab67c1158c04450d19ad483dcd2192e43" kindref="member">AFR</ref>[position<sp/>&gt;&gt;<sp/>3u];</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~(0xFu<sp/>&lt;&lt;<sp/>((position<sp/>&amp;<sp/>0x07u)<sp/>*<sp/>4u));</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>((GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a9a352764836bb14ec56a94f77697b52d" kindref="member">Alternate</ref>)<sp/>&lt;&lt;<sp/>((position<sp/>&amp;<sp/>0x07u)<sp/>*<sp/>4u));</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1ab67c1158c04450d19ad483dcd2192e43" kindref="member">AFR</ref>[position<sp/>&gt;&gt;<sp/>3u]<sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>IO<sp/>Direction<sp/>mode<sp/>(Input,<sp/>Output,<sp/>Alternate<sp/>or<sp/>Analog)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1a2b671a94c63a612f81e0e9de8152d01c" kindref="member">MODER</ref>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~(<ref refid="group___peripheral___registers___bits___definition_1gabad45500839e6f801c64ee9474e4da33" kindref="member">GPIO_MODER_MODE0</ref><sp/>&lt;&lt;<sp/>(position<sp/>*<sp/>2u));</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>((GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>&amp;<sp/><ref refid="group___g_p_i_o___private___constants_1ga9f30425211b75e4ab36c4e7cbea06a41" kindref="member">GPIO_MODE</ref>)<sp/>&lt;&lt;<sp/>(position<sp/>*<sp/>2u));</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1a2b671a94c63a612f81e0e9de8152d01c" kindref="member">MODER</ref><sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*---------------------<sp/>EXTI<sp/>Mode<sp/>Configuration<sp/>------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>the<sp/>External<sp/>Interrupt<sp/>or<sp/>event<sp/>for<sp/>the<sp/>current<sp/>IO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>&amp;<sp/><ref refid="group___g_p_i_o___private___constants_1ga50756019598a98c1dd294fb6c54da638" kindref="member">EXTI_MODE</ref>)<sp/>!=<sp/>0x00u)</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/><ref refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" kindref="member">EXTI</ref>-&gt;EXTICR[position<sp/>&gt;&gt;<sp/>2u];</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~(0x0FuL<sp/>&lt;&lt;<sp/>(8u<sp/>*<sp/>(position<sp/>&amp;<sp/>0x03u)));</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>(<ref refid="group___g_p_i_o_ex___get___port___index_1ga3830db89326a2268d296a6498fd31384" kindref="member">GPIO_GET_INDEX</ref>(GPIOx)<sp/>&lt;&lt;<sp/>(8u<sp/>*<sp/>(position<sp/>&amp;<sp/>0x03u)));</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" kindref="member">EXTI</ref>-&gt;EXTICR[position<sp/>&gt;&gt;<sp/>2u]<sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>Rising<sp/>Falling<sp/>edge<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/><ref refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" kindref="member">EXTI</ref>-&gt;RTSR1;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~(iocurrent);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>&amp;<sp/><ref refid="group___g_p_i_o___private___constants_1gae41780e16294f38d4a092f3bd8511473" kindref="member">TRIGGER_RISING</ref>)<sp/>!=<sp/>0x00u)</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>iocurrent;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" kindref="member">EXTI</ref>-&gt;RTSR1<sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/><ref refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" kindref="member">EXTI</ref>-&gt;FTSR1;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~(iocurrent);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>&amp;<sp/><ref refid="group___g_p_i_o___private___constants_1ga79c022a14dc50cb5433c9f40dcd98463" kindref="member">TRIGGER_FALLING</ref>)<sp/>!=<sp/>0x00u)</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>iocurrent;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" kindref="member">EXTI</ref>-&gt;FTSR1<sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>EXTI<sp/>line<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/><ref refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" kindref="member">EXTI</ref>-&gt;EMR1;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~(iocurrent);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>&amp;<sp/><ref refid="group___g_p_i_o___private___constants_1ga51a5ff147c0774ad7c7ff954be7328b1" kindref="member">EXTI_EVT</ref>)<sp/>!=<sp/>0x00u)</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>iocurrent;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" kindref="member">EXTI</ref>-&gt;EMR1<sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/><ref refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" kindref="member">EXTI</ref>-&gt;IMR1;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~(iocurrent);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((GPIO_Init-&gt;<ref refid="struct_g_p_i_o___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>&amp;<sp/><ref refid="group___g_p_i_o___private___constants_1ga81df8693ca52b68e306ba007a99b2d4d" kindref="member">EXTI_IT</ref>)<sp/>!=<sp/>0x00u)</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>iocurrent;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" kindref="member">EXTI</ref>-&gt;IMR1<sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>position++;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___g_p_i_o___exported___functions___group1_1gafe9c756b5aa18961032a3f8aa572959b" kindref="member">HAL_GPIO_DeInit</ref>(<ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref><sp/><sp/>*GPIOx,<sp/>uint32_t<sp/>GPIO_Pin)</highlight></codeline>
+<codeline lineno="290"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/>uint32_t<sp/>position<sp/>=<sp/>0x00u;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/>uint32_t<sp/>iocurrent;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/>uint32_t<sp/>tmp;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___exported__macros_1ga783626dd2431afebea836a102e318957" kindref="member">IS_GPIO_ALL_INSTANCE</ref>(GPIOx));</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___g_p_i_o___private___macros_1ga4911823233fa2bf64a4f04c6dbfa5485" kindref="member">IS_GPIO_PIN</ref>(GPIO_Pin));</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>the<sp/>port<sp/>pins<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((GPIO_Pin<sp/>&gt;&gt;<sp/>position)<sp/>!=<sp/>0x00u)</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>current<sp/>io<sp/>position<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>iocurrent<sp/>=<sp/>(GPIO_Pin)<sp/>&amp;<sp/>(1uL<sp/>&lt;&lt;<sp/>position);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(iocurrent<sp/>!=<sp/>0x00u)</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*-------------------------<sp/>EXTI<sp/>Mode<sp/>Configuration<sp/>--------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>the<sp/>External<sp/>Interrupt<sp/>or<sp/>Event<sp/>for<sp/>the<sp/>current<sp/>IO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/><ref refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" kindref="member">EXTI</ref>-&gt;EXTICR[position<sp/>&gt;&gt;<sp/>2u];</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>&amp;=<sp/>(0x0FuL<sp/>&lt;&lt;<sp/>(8u<sp/>*<sp/>(position<sp/>&amp;<sp/>0x03u)));</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp<sp/>==<sp/>(<ref refid="group___g_p_i_o_ex___get___port___index_1ga3830db89326a2268d296a6498fd31384" kindref="member">GPIO_GET_INDEX</ref>(GPIOx)<sp/>&lt;&lt;<sp/>(8u<sp/>*<sp/>(position<sp/>&amp;<sp/>0x03u))))</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>EXTI<sp/>line<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" kindref="member">EXTI</ref>-&gt;IMR1<sp/>&amp;=<sp/>~(iocurrent);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" kindref="member">EXTI</ref>-&gt;EMR1<sp/>&amp;=<sp/>~(iocurrent);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>Rising<sp/>Falling<sp/>edge<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" kindref="member">EXTI</ref>-&gt;FTSR1<sp/>&amp;=<sp/>~(iocurrent);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" kindref="member">EXTI</ref>-&gt;RTSR1<sp/>&amp;=<sp/>~(iocurrent);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>0x0FuL<sp/>&lt;&lt;<sp/>(8u<sp/>*<sp/>(position<sp/>&amp;<sp/>0x03u));</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___peripheral__declaration_1ga9189e770cd9b63dadd36683eb9843cac" kindref="member">EXTI</ref>-&gt;EXTICR[position<sp/>&gt;&gt;<sp/>2u]<sp/>&amp;=<sp/>~tmp;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*-------------------------<sp/>GPIO<sp/>Mode<sp/>Configuration<sp/>--------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>IO<sp/>in<sp/>Analog<sp/>Mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1a2b671a94c63a612f81e0e9de8152d01c" kindref="member">MODER</ref><sp/>|=<sp/>(<ref refid="group___peripheral___registers___bits___definition_1gabad45500839e6f801c64ee9474e4da33" kindref="member">GPIO_MODER_MODE0</ref><sp/>&lt;&lt;<sp/>(position<sp/>*<sp/>2u));</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>the<sp/>default<sp/>Alternate<sp/>Function<sp/>in<sp/>current<sp/>IO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1ab67c1158c04450d19ad483dcd2192e43" kindref="member">AFR</ref>[position<sp/>&gt;&gt;<sp/>3u]<sp/>&amp;=<sp/>~(0xFu<sp/>&lt;&lt;<sp/>((position<sp/>&amp;<sp/>0x07u)<sp/>*<sp/>4u))<sp/>;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>the<sp/>default<sp/>value<sp/>for<sp/>IO<sp/>Speed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1a328d16cc6213783ede54e4059ffd50a3" kindref="member">OSPEEDR</ref><sp/>&amp;=<sp/>~(<ref refid="group___peripheral___registers___bits___definition_1ga25d567c6d24df0adb6402498fd5eb582" kindref="member">GPIO_OSPEEDR_OSPEED0</ref><sp/>&lt;&lt;<sp/>(position<sp/>*<sp/>2u));</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>the<sp/>default<sp/>value<sp/>IO<sp/>Output<sp/>Type<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1a9543592bda60cb5261075594bdeedac9" kindref="member">OTYPER</ref><sp/><sp/>&amp;=<sp/>~(<ref refid="group___peripheral___registers___bits___definition_1ga2aebd85688999595239036bd63eac4a3" kindref="member">GPIO_OTYPER_OT0</ref><sp/>&lt;&lt;<sp/>position)<sp/>;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Deactivate<sp/>the<sp/>Pull-up<sp/>and<sp/>Pull-down<sp/>resistor<sp/>for<sp/>the<sp/>current<sp/>IO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1abeed38529bd7b8de082e490e5d4f1727" kindref="member">PUPDR</ref><sp/>&amp;=<sp/>~(<ref refid="group___peripheral___registers___bits___definition_1ga757af1d9f0ba5f4ed76320b6932e3741" kindref="member">GPIO_PUPDR_PUPD0</ref><sp/>&lt;&lt;<sp/>(position<sp/>*<sp/>2u));</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>position++;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="345"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><ref refid="group___g_p_i_o___exported___types_1ga5b3ef0486b179415581eb342e0ea6b43" kindref="member">GPIO_PinState</ref><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf2b819ea6551319ddd5670db318d2e4e" kindref="member">HAL_GPIO_ReadPin</ref>(<ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref><sp/>*GPIOx,<sp/>uint16_t<sp/>GPIO_Pin)</highlight></codeline>
+<codeline lineno="371"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><ref refid="group___g_p_i_o___exported___types_1ga5b3ef0486b179415581eb342e0ea6b43" kindref="member">GPIO_PinState</ref><sp/>bitstatus;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___g_p_i_o___private___macros_1ga4911823233fa2bf64a4f04c6dbfa5485" kindref="member">IS_GPIO_PIN</ref>(GPIO_Pin));</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1a328d2fe9ef1d513c3a97d30f98f0047c" kindref="member">IDR</ref><sp/>&amp;<sp/>GPIO_Pin)<sp/>!=<sp/>0x00u)</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/>bitstatus<sp/>=<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a746c062509db3ad1e47beed7527f9f8a" kindref="member">GPIO_PIN_SET</ref>;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/>bitstatus<sp/>=<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a90af2af95004ea61d76950ff3f2f6ec2" kindref="member">GPIO_PIN_RESET</ref>;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bitstatus;</highlight></codeline>
+<codeline lineno="386"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="404"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref><sp/>*GPIOx,<sp/>uint16_t<sp/>GPIO_Pin,<sp/><ref refid="group___g_p_i_o___exported___types_1ga5b3ef0486b179415581eb342e0ea6b43" kindref="member">GPIO_PinState</ref><sp/>PinState)</highlight></codeline>
+<codeline lineno="405"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___g_p_i_o___private___macros_1ga4911823233fa2bf64a4f04c6dbfa5485" kindref="member">IS_GPIO_PIN</ref>(GPIO_Pin));</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___g_p_i_o___private___macros_1ga6da646a4924c5cfae3024c660476f26f" kindref="member">IS_GPIO_PIN_ACTION</ref>(PinState));</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(PinState<sp/>!=<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a90af2af95004ea61d76950ff3f2f6ec2" kindref="member">GPIO_PIN_RESET</ref>)</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1ac25dd6b9e3d55e17589195b461c5ec80" kindref="member">BSRR</ref><sp/>=<sp/>(uint32_t)GPIO_Pin;</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1a092e59d908b2ca112e31047e942340cb" kindref="member">BRR</ref><sp/>=<sp/>(uint32_t)GPIO_Pin;</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="418"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf5e0c89f752de5cdedcc30db068133f6" kindref="member">HAL_GPIO_TogglePin</ref>(<ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref><sp/>*GPIOx,<sp/>uint16_t<sp/>GPIO_Pin)</highlight></codeline>
+<codeline lineno="428"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/>uint32_t<sp/>odr;</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___g_p_i_o___private___macros_1ga4911823233fa2bf64a4f04c6dbfa5485" kindref="member">IS_GPIO_PIN</ref>(GPIO_Pin));</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>get<sp/>current<sp/>Output<sp/>Data<sp/>Register<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/>odr<sp/>=<sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1abff7fffd2b5a718715a130006590c75c" kindref="member">ODR</ref>;</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>selected<sp/>pins<sp/>that<sp/>were<sp/>at<sp/>low<sp/>level,<sp/>and<sp/>reset<sp/>ones<sp/>that<sp/>were<sp/>high<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1ac25dd6b9e3d55e17589195b461c5ec80" kindref="member">BSRR</ref><sp/>=<sp/>((odr<sp/>&amp;<sp/>GPIO_Pin)<sp/>&lt;&lt;<sp/>GPIO_NUMBER)<sp/>|<sp/>(~odr<sp/>&amp;<sp/>GPIO_Pin);</highlight></codeline>
+<codeline lineno="439"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gad03c868b4a4fb25883c1bb86d0c7e9ca" kindref="member">HAL_GPIO_LockPin</ref>(<ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref><sp/>*GPIOx,<sp/>uint16_t<sp/>GPIO_Pin)</highlight></codeline>
+<codeline lineno="453"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref><sp/>uint32_t<sp/>tmp<sp/>=<sp/><ref refid="group___peripheral___registers___bits___definition_1gafa2a83bf31ef76ee3857c7cb0a90c4d9" kindref="member">GPIO_LCKR_LCKK</ref>;</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___exported__macros_1gaa84537785f7bf8425db6e392187ea2e6" kindref="member">IS_GPIO_LOCK_INSTANCE</ref>(GPIOx));</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__conf_8h_1a631dea7b230e600555f979c62af1de21" kindref="member">assert_param</ref>(<ref refid="group___g_p_i_o___private___macros_1ga4911823233fa2bf64a4f04c6dbfa5485" kindref="member">IS_GPIO_PIN</ref>(GPIO_Pin));</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Apply<sp/>lock<sp/>key<sp/>write<sp/>sequence<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/>tmp<sp/>|=<sp/>GPIO_Pin;</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>LCKx<sp/>bit(s):<sp/>LCKK=&apos;1&apos;<sp/>+<sp/>LCK[15-0]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1a2612a0f4b3fbdbb6293f6dc70105e190" kindref="member">LCKR</ref><sp/>=<sp/>tmp;</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>LCKx<sp/>bit(s):<sp/>LCKK=&apos;0&apos;<sp/>+<sp/>LCK[15-0]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1a2612a0f4b3fbdbb6293f6dc70105e190" kindref="member">LCKR</ref><sp/>=<sp/>GPIO_Pin;</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>LCKx<sp/>bit(s):<sp/>LCKK=&apos;1&apos;<sp/>+<sp/>LCK[15-0]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1a2612a0f4b3fbdbb6293f6dc70105e190" kindref="member">LCKR</ref><sp/>=<sp/>tmp;</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Read<sp/>LCKK<sp/>register.<sp/>This<sp/>read<sp/>is<sp/>mandatory<sp/>to<sp/>complete<sp/>key<sp/>lock<sp/>sequence<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/>tmp<sp/>=<sp/>GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1a2612a0f4b3fbdbb6293f6dc70105e190" kindref="member">LCKR</ref>;</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"></highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>read<sp/>again<sp/>in<sp/>order<sp/>to<sp/>confirm<sp/>lock<sp/>is<sp/>active<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((GPIOx-&gt;<ref refid="struct_g_p_i_o___type_def_1a2612a0f4b3fbdbb6293f6dc70105e190" kindref="member">LCKR</ref><sp/>&amp;<sp/><ref refid="group___peripheral___registers___bits___definition_1gafa2a83bf31ef76ee3857c7cb0a90c4d9" kindref="member">GPIO_LCKR_LCKK</ref>)<sp/>!=<sp/>0x00u)</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>;</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa5a04e395e501e4e400172c610478c4a4" kindref="member">HAL_ERROR</ref>;</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="480"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaa5de1ec4ebdd47e3e2b786224adaa9d0" kindref="member">HAL_GPIO_EXTI_IRQHandler</ref>(uint16_t<sp/>GPIO_Pin)</highlight></codeline>
+<codeline lineno="488"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>EXTI<sp/>line<sp/>interrupt<sp/>detected<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___g_p_i_o___exported___macros_1gae30b8e76200eeef4c38df12006965f7b" kindref="member">__HAL_GPIO_EXTI_GET_RISING_IT</ref>(GPIO_Pin)<sp/>!=<sp/>0x00u)</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___macros_1gabc31bdf23ded839fa99cf2e85ec7ba1e" kindref="member">__HAL_GPIO_EXTI_CLEAR_RISING_IT</ref>(GPIO_Pin);</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1ga537318eafe9182b60dc22ef54966c6a1" kindref="member">HAL_GPIO_EXTI_Rising_Callback</ref>(GPIO_Pin);</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___g_p_i_o___exported___macros_1gaa512d66c83f3023e718708935ae96cc2" kindref="member">__HAL_GPIO_EXTI_GET_FALLING_IT</ref>(GPIO_Pin)<sp/>!=<sp/>0x00u)</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___macros_1ga467905ff463a3ef448ea2520c869f179" kindref="member">__HAL_GPIO_EXTI_CLEAR_FALLING_IT</ref>(GPIO_Pin);</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1ga0b334860563f4a109443e0a604af2300" kindref="member">HAL_GPIO_EXTI_Falling_Callback</ref>(GPIO_Pin);</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="501"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"></highlight></codeline>
+<codeline lineno="508"><highlight class="normal">__weak<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1ga537318eafe9182b60dc22ef54966c6a1" kindref="member">HAL_GPIO_EXTI_Rising_Callback</ref>(uint16_t<sp/>GPIO_Pin)</highlight></codeline>
+<codeline lineno="509"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Prevent<sp/>unused<sp/>argument(s)<sp/>compilation<sp/>warning<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(GPIO_Pin);</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>NOTE:<sp/>This<sp/>function<sp/>should<sp/>not<sp/>be<sp/>modified,<sp/>when<sp/>the<sp/>callback<sp/>is<sp/>needed,</highlight></codeline>
+<codeline lineno="514"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>HAL_GPIO_EXTI_Rising_Callback<sp/>could<sp/>be<sp/>implemented<sp/>in<sp/>the<sp/>user<sp/>file</highlight></codeline>
+<codeline lineno="515"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"></highlight></codeline>
+<codeline lineno="523"><highlight class="normal">__weak<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1ga0b334860563f4a109443e0a604af2300" kindref="member">HAL_GPIO_EXTI_Falling_Callback</ref>(uint16_t<sp/>GPIO_Pin)</highlight></codeline>
+<codeline lineno="524"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Prevent<sp/>unused<sp/>argument(s)<sp/>compilation<sp/>warning<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1a6bc306171da085f4c7df2c66d2ff8e47" kindref="member">UNUSED</ref>(GPIO_Pin);</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>NOTE:<sp/>This<sp/>function<sp/>should<sp/>not<sp/>be<sp/>modified,<sp/>when<sp/>the<sp/>callback<sp/>is<sp/>needed,</highlight></codeline>
+<codeline lineno="529"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>HAL_GPIO_EXTI_Falling_Callback<sp/>could<sp/>be<sp/>implemented<sp/>in<sp/>the<sp/>user<sp/>file</highlight></codeline>
+<codeline lineno="530"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"></highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_GPIO_MODULE_ENABLED<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c"/>
+  </compounddef>
+</doxygen>

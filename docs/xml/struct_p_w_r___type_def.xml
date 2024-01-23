@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_p_w_r___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>PWR_TypeDef</compoundname>
+    <includes refid="stm32g030xx_8h" local="no">stm32g030xx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1ab0ec7102960640751d44e92ddac994f0" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CR1</definition>
+        <argsstring></argsstring>
+        <name>CR1</name>
+        <qualifiedname>PWR_TypeDef::CR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PWR Power Control Register 1, Address offset: 0x00 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="315" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1af86c61a5d38a4fc9cef942a12744486b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED0</definition>
+        <argsstring></argsstring>
+        <name>RESERVED0</name>
+        <qualifiedname>PWR_TypeDef::RESERVED0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved, Address offset: 0x04 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="316" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1add5b8e29a64c55dcd65ca4201118e9d1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CR3</definition>
+        <argsstring></argsstring>
+        <name>CR3</name>
+        <qualifiedname>PWR_TypeDef::CR3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PWR Power Control Register 3, Address offset: 0x08 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="317" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1aad73b4746976ca75f784db4062482f07" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CR4</definition>
+        <argsstring></argsstring>
+        <name>CR4</name>
+        <qualifiedname>PWR_TypeDef::CR4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PWR Power Control Register 4, Address offset: 0x0C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="318" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1acefca4fd83c4b7846ae6d3cfe7bb8df9" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t SR1</definition>
+        <argsstring></argsstring>
+        <name>SR1</name>
+        <qualifiedname>PWR_TypeDef::SR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PWR Power Status Register 1, Address offset: 0x10 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="319" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1a89623ee198737b29dc0a803310605a83" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t SR2</definition>
+        <argsstring></argsstring>
+        <name>SR2</name>
+        <qualifiedname>PWR_TypeDef::SR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PWR Power Status Register 2, Address offset: 0x14 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="320" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1a64a95891ad3e904dd5548112539c1c98" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t SCR</definition>
+        <argsstring></argsstring>
+        <name>SCR</name>
+        <qualifiedname>PWR_TypeDef::SCR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PWR Power Status Clear Register, Address offset: 0x18 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="321" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1ac4ac04e673b5b8320d53f7b0947db902" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED1</definition>
+        <argsstring></argsstring>
+        <name>RESERVED1</name>
+        <qualifiedname>PWR_TypeDef::RESERVED1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved, Address offset: 0x1C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="322" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1aeead890c47f378dffcb852b99d303ee6" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PUCRA</definition>
+        <argsstring></argsstring>
+        <name>PUCRA</name>
+        <qualifiedname>PWR_TypeDef::PUCRA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PWR Pull-Up Control Register of port A, Address offset: 0x20 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="323" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1a2676bf9a592b8a6befd85ae98ea597b0" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PDCRA</definition>
+        <argsstring></argsstring>
+        <name>PDCRA</name>
+        <qualifiedname>PWR_TypeDef::PDCRA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PWR Pull-Down Control Register of port A, Address offset: 0x24 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="324" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1ab72f8959a6bd611677cd4afbe9cf07d9" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PUCRB</definition>
+        <argsstring></argsstring>
+        <name>PUCRB</name>
+        <qualifiedname>PWR_TypeDef::PUCRB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PWR Pull-Up Control Register of port B, Address offset: 0x28 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="325" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1a1bc6c88bc9f84bd8b0f527cb86bfabe0" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PDCRB</definition>
+        <argsstring></argsstring>
+        <name>PDCRB</name>
+        <qualifiedname>PWR_TypeDef::PDCRB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PWR Pull-Down Control Register of port B, Address offset: 0x2C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="326" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1a5c4eba2c90ea7bf1ceb653301a77e8bf" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PUCRC</definition>
+        <argsstring></argsstring>
+        <name>PUCRC</name>
+        <qualifiedname>PWR_TypeDef::PUCRC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PWR Pull-Up Control Register of port C, Address offset: 0x30 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="327" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1a8b419b22309c807ea4e6f1121c1afc12" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PDCRC</definition>
+        <argsstring></argsstring>
+        <name>PDCRC</name>
+        <qualifiedname>PWR_TypeDef::PDCRC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PWR Pull-Down Control Register of port C, Address offset: 0x34 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="328" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1a99ccf6e37f84fddafa77b8f7e10f5b85" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PUCRD</definition>
+        <argsstring></argsstring>
+        <name>PUCRD</name>
+        <qualifiedname>PWR_TypeDef::PUCRD</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PWR Pull-Up Control Register of port D, Address offset: 0x38 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="329" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1a0c82c09f5896fc28b5455f2ae5fcb1b1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PDCRD</definition>
+        <argsstring></argsstring>
+        <name>PDCRD</name>
+        <qualifiedname>PWR_TypeDef::PDCRD</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PWR Pull-Down Control Register of port D, Address offset: 0x3C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="330" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1a4c9b972a304c0e08ca27cbe57627c496" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED2</definition>
+        <argsstring></argsstring>
+        <name>RESERVED2</name>
+        <qualifiedname>PWR_TypeDef::RESERVED2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved, Address offset: 0x40 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="331" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1af2b40c5e36a5e861490988275499e158" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED3</definition>
+        <argsstring></argsstring>
+        <name>RESERVED3</name>
+        <qualifiedname>PWR_TypeDef::RESERVED3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved, Address offset: 0x44 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="332" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1a6e7e6d82ae35200fb60f9b235d9774a1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PUCRF</definition>
+        <argsstring></argsstring>
+        <name>PUCRF</name>
+        <qualifiedname>PWR_TypeDef::PUCRF</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PWR Pull-Up Control Register of port F, Address offset: 0x48 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="333" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_r___type_def_1ac0307ace68686dbf855a02f79b593a95" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PDCRF</definition>
+        <argsstring></argsstring>
+        <name>PDCRF</name>
+        <qualifiedname>PWR_TypeDef::PDCRF</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PWR Pull-Down Control Register of port F, Address offset: 0x4C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="334" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Power Control. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="313" column="1" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="314" bodyend="335"/>
+    <listofallmembers>
+      <member refid="struct_p_w_r___type_def_1ab0ec7102960640751d44e92ddac994f0" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>CR1</name></member>
+      <member refid="struct_p_w_r___type_def_1add5b8e29a64c55dcd65ca4201118e9d1" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>CR3</name></member>
+      <member refid="struct_p_w_r___type_def_1aad73b4746976ca75f784db4062482f07" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>CR4</name></member>
+      <member refid="struct_p_w_r___type_def_1a2676bf9a592b8a6befd85ae98ea597b0" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>PDCRA</name></member>
+      <member refid="struct_p_w_r___type_def_1a1bc6c88bc9f84bd8b0f527cb86bfabe0" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>PDCRB</name></member>
+      <member refid="struct_p_w_r___type_def_1a8b419b22309c807ea4e6f1121c1afc12" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>PDCRC</name></member>
+      <member refid="struct_p_w_r___type_def_1a0c82c09f5896fc28b5455f2ae5fcb1b1" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>PDCRD</name></member>
+      <member refid="struct_p_w_r___type_def_1ac0307ace68686dbf855a02f79b593a95" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>PDCRF</name></member>
+      <member refid="struct_p_w_r___type_def_1aeead890c47f378dffcb852b99d303ee6" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>PUCRA</name></member>
+      <member refid="struct_p_w_r___type_def_1ab72f8959a6bd611677cd4afbe9cf07d9" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>PUCRB</name></member>
+      <member refid="struct_p_w_r___type_def_1a5c4eba2c90ea7bf1ceb653301a77e8bf" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>PUCRC</name></member>
+      <member refid="struct_p_w_r___type_def_1a99ccf6e37f84fddafa77b8f7e10f5b85" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>PUCRD</name></member>
+      <member refid="struct_p_w_r___type_def_1a6e7e6d82ae35200fb60f9b235d9774a1" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>PUCRF</name></member>
+      <member refid="struct_p_w_r___type_def_1af86c61a5d38a4fc9cef942a12744486b" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>RESERVED0</name></member>
+      <member refid="struct_p_w_r___type_def_1ac4ac04e673b5b8320d53f7b0947db902" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>RESERVED1</name></member>
+      <member refid="struct_p_w_r___type_def_1a4c9b972a304c0e08ca27cbe57627c496" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>RESERVED2</name></member>
+      <member refid="struct_p_w_r___type_def_1af2b40c5e36a5e861490988275499e158" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>RESERVED3</name></member>
+      <member refid="struct_p_w_r___type_def_1a64a95891ad3e904dd5548112539c1c98" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>SCR</name></member>
+      <member refid="struct_p_w_r___type_def_1acefca4fd83c4b7846ae6d3cfe7bb8df9" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>SR1</name></member>
+      <member refid="struct_p_w_r___type_def_1a89623ee198737b29dc0a803310605a83" prot="public" virt="non-virtual"><scope>PWR_TypeDef</scope><name>SR2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

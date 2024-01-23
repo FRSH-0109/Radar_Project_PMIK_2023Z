@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_r_c_c___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>RCC_TypeDef</compoundname>
+    <includes refid="stm32g030xx_8h" local="no">stm32g030xx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1ab40c89c59391aaa9d9a8ec011dd0907a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <qualifiedname>RCC_TypeDef::CR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC Clock Sources Control Register, Address offset: 0x00 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="342" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a056687364a883b087fc5664830563cad" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t ICSCR</definition>
+        <argsstring></argsstring>
+        <name>ICSCR</name>
+        <qualifiedname>RCC_TypeDef::ICSCR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC Internal Clock Sources Calibration Register, Address offset: 0x04 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="343" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a26f1e746ccbf9c9f67e7c60e61085ec1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CFGR</definition>
+        <argsstring></argsstring>
+        <name>CFGR</name>
+        <qualifiedname>RCC_TypeDef::CFGR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC Regulated Domain Clocks Configuration Register, Address offset: 0x08 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="344" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1ae6ff257862eba6b4b367feea786bf1fd" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PLLCFGR</definition>
+        <argsstring></argsstring>
+        <name>PLLCFGR</name>
+        <qualifiedname>RCC_TypeDef::PLLCFGR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC System PLL configuration Register, Address offset: 0x0C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="345" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1ab08951d2511e8867d6f97c25bde8848b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t RESERVED0</definition>
+        <argsstring></argsstring>
+        <name>RESERVED0</name>
+        <qualifiedname>RCC_TypeDef::RESERVED0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved, Address offset: 0x10 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="346" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a4ef165756193844225b702fa0db10196" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t RESERVED1</definition>
+        <argsstring></argsstring>
+        <name>RESERVED1</name>
+        <qualifiedname>RCC_TypeDef::RESERVED1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved, Address offset: 0x14 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="347" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a197c5ad92b90b5d78ebb04f072983c14" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CIER</definition>
+        <argsstring></argsstring>
+        <name>CIER</name>
+        <qualifiedname>RCC_TypeDef::CIER</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC Clock Interrupt Enable Register, Address offset: 0x18 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="348" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1af7b2383b3d5fbc21e7356b6cbefc2c0f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CIFR</definition>
+        <argsstring></argsstring>
+        <name>CIFR</name>
+        <qualifiedname>RCC_TypeDef::CIFR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC Clock Interrupt Flag Register, Address offset: 0x1C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="349" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a543aa341a8ebd0ea0c03b89bf0beceff" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CICR</definition>
+        <argsstring></argsstring>
+        <name>CICR</name>
+        <qualifiedname>RCC_TypeDef::CICR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC Clock Interrupt Clear Register, Address offset: 0x20 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="350" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a7b00c145cb4055a4f2a6d6a5c9d16032" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t IOPRSTR</definition>
+        <argsstring></argsstring>
+        <name>IOPRSTR</name>
+        <qualifiedname>RCC_TypeDef::IOPRSTR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC IO port reset register, Address offset: 0x24 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="351" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a0067b334dc6480de6ebe57955248758f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t AHBRSTR</definition>
+        <argsstring></argsstring>
+        <name>AHBRSTR</name>
+        <qualifiedname>RCC_TypeDef::AHBRSTR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC AHB peripherals reset register, Address offset: 0x28 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="352" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a2a225d7deb284d61869e781f0e4b9bf0" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t APBRSTR1</definition>
+        <argsstring></argsstring>
+        <name>APBRSTR1</name>
+        <qualifiedname>RCC_TypeDef::APBRSTR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC APB peripherals reset register 1, Address offset: 0x2C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="353" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a1fff31666b6c91ee92b955d8bae25159" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t APBRSTR2</definition>
+        <argsstring></argsstring>
+        <name>APBRSTR2</name>
+        <qualifiedname>RCC_TypeDef::APBRSTR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC APB peripherals reset register 2, Address offset: 0x30 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="354" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1affd28dc6ddec7885e7b0f2e2631388b1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t IOPENR</definition>
+        <argsstring></argsstring>
+        <name>IOPENR</name>
+        <qualifiedname>RCC_TypeDef::IOPENR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC IO port enable register, Address offset: 0x34 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="355" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1acdf2b32fb3d8dad6bee74bf4cbe25020" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t AHBENR</definition>
+        <argsstring></argsstring>
+        <name>AHBENR</name>
+        <qualifiedname>RCC_TypeDef::AHBENR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC AHB peripherals clock enable register, Address offset: 0x38 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="356" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a8a6d19c6a48b5e8e441d30d3776f3861" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t APBENR1</definition>
+        <argsstring></argsstring>
+        <name>APBENR1</name>
+        <qualifiedname>RCC_TypeDef::APBENR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC APB peripherals clock enable register1, Address offset: 0x3C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="357" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a764beb86862f4347abf4ce90f27aa977" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t APBENR2</definition>
+        <argsstring></argsstring>
+        <name>APBENR2</name>
+        <qualifiedname>RCC_TypeDef::APBENR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC APB peripherals clock enable register2, Address offset: 0x40 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="358" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a02ffd74ece967afd9be85342469e65b9" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t IOPSMENR</definition>
+        <argsstring></argsstring>
+        <name>IOPSMENR</name>
+        <qualifiedname>RCC_TypeDef::IOPSMENR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC IO port clocks enable in sleep mode register, Address offset: 0x44 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="359" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a33476477ea4cf2eb950970d6c82ded52" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t AHBSMENR</definition>
+        <argsstring></argsstring>
+        <name>AHBSMENR</name>
+        <qualifiedname>RCC_TypeDef::AHBSMENR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC AHB peripheral clocks enable in sleep mode register, Address offset: 0x48 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="360" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1aa9a31511acac26ad2064703c21f37a31" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t APBSMENR1</definition>
+        <argsstring></argsstring>
+        <name>APBSMENR1</name>
+        <qualifiedname>RCC_TypeDef::APBSMENR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC APB peripheral clocks enable in sleep mode register1, Address offset: 0x4C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="361" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a3be663a82f5e76d3c67562c1f9856429" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t APBSMENR2</definition>
+        <argsstring></argsstring>
+        <name>APBSMENR2</name>
+        <qualifiedname>RCC_TypeDef::APBSMENR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC APB peripheral clocks enable in sleep mode register2, Address offset: 0x50 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="362" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a04dc454e176d50a3a5918b2095880924" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CCIPR</definition>
+        <argsstring></argsstring>
+        <name>CCIPR</name>
+        <qualifiedname>RCC_TypeDef::CCIPR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC Peripherals Independent Clocks Configuration Register, Address offset: 0x54 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="363" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1ad01f74049d54369c31f8d545194d87a3" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t RESERVED2</definition>
+        <argsstring></argsstring>
+        <name>RESERVED2</name>
+        <qualifiedname>RCC_TypeDef::RESERVED2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved, Address offset: 0x58 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="364" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a0b9a3ced775287c8585a6a61af4b40e9" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t BDCR</definition>
+        <argsstring></argsstring>
+        <name>BDCR</name>
+        <qualifiedname>RCC_TypeDef::BDCR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC Backup Domain Control Register, Address offset: 0x5C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="365" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a876dd0a8546697065f406b7543e27af2" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CSR</definition>
+        <argsstring></argsstring>
+        <name>CSR</name>
+        <qualifiedname>RCC_TypeDef::CSR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RCC Unregulated Domain Clock Control and Status Register, Address offset: 0x60 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="366" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Reset and Clock Control. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="340" column="1" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="341" bodyend="367"/>
+    <listofallmembers>
+      <member refid="struct_r_c_c___type_def_1acdf2b32fb3d8dad6bee74bf4cbe25020" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>AHBENR</name></member>
+      <member refid="struct_r_c_c___type_def_1a0067b334dc6480de6ebe57955248758f" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>AHBRSTR</name></member>
+      <member refid="struct_r_c_c___type_def_1a33476477ea4cf2eb950970d6c82ded52" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>AHBSMENR</name></member>
+      <member refid="struct_r_c_c___type_def_1a8a6d19c6a48b5e8e441d30d3776f3861" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>APBENR1</name></member>
+      <member refid="struct_r_c_c___type_def_1a764beb86862f4347abf4ce90f27aa977" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>APBENR2</name></member>
+      <member refid="struct_r_c_c___type_def_1a2a225d7deb284d61869e781f0e4b9bf0" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>APBRSTR1</name></member>
+      <member refid="struct_r_c_c___type_def_1a1fff31666b6c91ee92b955d8bae25159" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>APBRSTR2</name></member>
+      <member refid="struct_r_c_c___type_def_1aa9a31511acac26ad2064703c21f37a31" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>APBSMENR1</name></member>
+      <member refid="struct_r_c_c___type_def_1a3be663a82f5e76d3c67562c1f9856429" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>APBSMENR2</name></member>
+      <member refid="struct_r_c_c___type_def_1a0b9a3ced775287c8585a6a61af4b40e9" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>BDCR</name></member>
+      <member refid="struct_r_c_c___type_def_1a04dc454e176d50a3a5918b2095880924" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>CCIPR</name></member>
+      <member refid="struct_r_c_c___type_def_1a26f1e746ccbf9c9f67e7c60e61085ec1" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>CFGR</name></member>
+      <member refid="struct_r_c_c___type_def_1a543aa341a8ebd0ea0c03b89bf0beceff" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>CICR</name></member>
+      <member refid="struct_r_c_c___type_def_1a197c5ad92b90b5d78ebb04f072983c14" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>CIER</name></member>
+      <member refid="struct_r_c_c___type_def_1af7b2383b3d5fbc21e7356b6cbefc2c0f" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>CIFR</name></member>
+      <member refid="struct_r_c_c___type_def_1ab40c89c59391aaa9d9a8ec011dd0907a" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>CR</name></member>
+      <member refid="struct_r_c_c___type_def_1a876dd0a8546697065f406b7543e27af2" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>CSR</name></member>
+      <member refid="struct_r_c_c___type_def_1a056687364a883b087fc5664830563cad" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>ICSCR</name></member>
+      <member refid="struct_r_c_c___type_def_1affd28dc6ddec7885e7b0f2e2631388b1" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>IOPENR</name></member>
+      <member refid="struct_r_c_c___type_def_1a7b00c145cb4055a4f2a6d6a5c9d16032" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>IOPRSTR</name></member>
+      <member refid="struct_r_c_c___type_def_1a02ffd74ece967afd9be85342469e65b9" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>IOPSMENR</name></member>
+      <member refid="struct_r_c_c___type_def_1ae6ff257862eba6b4b367feea786bf1fd" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>PLLCFGR</name></member>
+      <member refid="struct_r_c_c___type_def_1ab08951d2511e8867d6f97c25bde8848b" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>RESERVED0</name></member>
+      <member refid="struct_r_c_c___type_def_1a4ef165756193844225b702fa0db10196" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>RESERVED1</name></member>
+      <member refid="struct_r_c_c___type_def_1ad01f74049d54369c31f8d545194d87a3" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>RESERVED2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

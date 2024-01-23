@@ -1,0 +1,82 @@
+.TH "EXTI_Private_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EXTI_Private_Macros \- EXTI Private Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_EXTI_LINE\fP(__EXTI_LINE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_EXTI_MODE\fP(__MODE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_EXTI_TRIGGER\fP(__EXTI_LINE__)   (((__EXTI_LINE__) & ~\fBEXTI_TRIGGER_MASK\fP) == 0x00u)"
+.br
+.ti -1c
+.RI "#define \fBIS_EXTI_PENDING_EDGE\fP(__EXTI_LINE__)"
+.br
+.ti -1c
+.RI "#define \fBIS_EXTI_CONFIG_LINE\fP(__EXTI_LINE__)   (((__EXTI_LINE__) & \fBEXTI_CONFIG\fP) != 0x00u)"
+.br
+.ti -1c
+.RI "#define \fBIS_EXTI_GPIO_PORT\fP(__PORT__)"
+.br
+.ti -1c
+.RI "#define \fBIS_EXTI_GPIO_PIN\fP(__PIN__)   ((__PIN__) < 16u)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_EXTI_CONFIG_LINE(__EXTI_LINE__)   (((__EXTI_LINE__) & \fBEXTI_CONFIG\fP) != 0x00u)"
+
+.SS "#define IS_EXTI_GPIO_PIN(__PIN__)   ((__PIN__) < 16u)"
+
+.SS "#define IS_EXTI_GPIO_PORT(__PORT__)"
+\fBValue:\fP.PP
+.nf
+                                         (((__PORT__) == EXTI_GPIOA) || \\
+                                         ((__PORT__) == EXTI_GPIOB) || \\
+                                         ((__PORT__) == EXTI_GPIOC) || \\
+                                         ((__PORT__) == EXTI_GPIOD) || \\
+                                         ((__PORT__) == EXTI_GPIOF))
+.fi
+
+.SS "#define IS_EXTI_LINE(__EXTI_LINE__)"
+\fBValue:\fP.PP
+.nf
+                                        ((((__EXTI_LINE__) & ~(EXTI_PROPERTY_MASK | EXTI_REG_MASK | EXTI_PIN_MASK)) == 0x00u) && \\
+                                        ((((__EXTI_LINE__) & EXTI_PROPERTY_MASK) == EXTI_DIRECT)   || \\
+                                         (((__EXTI_LINE__) & EXTI_PROPERTY_MASK) == EXTI_CONFIG)   || \\
+                                         (((__EXTI_LINE__) & EXTI_PROPERTY_MASK) == EXTI_GPIO))    && \\
+                                         (((__EXTI_LINE__) & (EXTI_REG_MASK | EXTI_PIN_MASK))      < \\
+                                         (((EXTI_LINE_NB / 32u) << EXTI_REG_SHIFT) | (EXTI_LINE_NB % 32u))))
+.fi
+
+.SS "#define IS_EXTI_MODE(__MODE__)"
+\fBValue:\fP.PP
+.nf
+                                         ((((__MODE__) & EXTI_MODE_MASK) != 0x00u) && \\
+                                         (((__MODE__) & ~EXTI_MODE_MASK) == 0x00u))
+.fi
+
+.SS "#define IS_EXTI_PENDING_EDGE(__EXTI_LINE__)"
+\fBValue:\fP.PP
+.nf
+                                              (((__EXTI_LINE__) == EXTI_TRIGGER_RISING) || \\
+                                              ((__EXTI_LINE__) == EXTI_TRIGGER_FALLING))
+.fi
+
+.SS "#define IS_EXTI_TRIGGER(__EXTI_LINE__)   (((__EXTI_LINE__) & ~\fBEXTI_TRIGGER_MASK\fP) == 0x00u)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

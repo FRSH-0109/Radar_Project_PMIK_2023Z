@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structservo_driver_struct" kind="struct" language="C++" prot="public">
+    <compoundname>servoDriverStruct</compoundname>
+    <includes refid="servo__driver_8h" local="no">servo_driver.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structservo_driver_struct_1afc1af0b1401452570571cb2261fae0a2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float degreesMin</definition>
+        <argsstring></argsstring>
+        <name>degreesMin</name>
+        <qualifiedname>servoDriverStruct::degreesMin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum degrees value for movement </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/ServoDriver/servo_driver.h" line="25" column="7" bodyfile="RadarApp/ServoDriver/servo_driver.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structservo_driver_struct_1ad7d129de79462605d163ac9cd0153101" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float degreesMax</definition>
+        <argsstring></argsstring>
+        <name>degreesMax</name>
+        <qualifiedname>servoDriverStruct::degreesMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum degrees value for movement </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/ServoDriver/servo_driver.h" line="26" column="7" bodyfile="RadarApp/ServoDriver/servo_driver.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structservo_driver_struct_1ae58cfcf62f825adac798acdb7328024e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t pulseWidthMin</definition>
+        <argsstring></argsstring>
+        <name>pulseWidthMin</name>
+        <qualifiedname>servoDriverStruct::pulseWidthMin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum pwm pulse width for movement </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/ServoDriver/servo_driver.h" line="28" column="10" bodyfile="RadarApp/ServoDriver/servo_driver.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structservo_driver_struct_1a06b7608e42efb1b7afa8b4c852bb609d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t pulseWidthMax</definition>
+        <argsstring></argsstring>
+        <name>pulseWidthMax</name>
+        <qualifiedname>servoDriverStruct::pulseWidthMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum pwm pulse width for movement </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/ServoDriver/servo_driver.h" line="29" column="10" bodyfile="RadarApp/ServoDriver/servo_driver.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structservo_driver_struct_1ab5714dc534cee43335450548d8d5e79f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float positionInDegrees</definition>
+        <argsstring></argsstring>
+        <name>positionInDegrees</name>
+        <qualifiedname>servoDriverStruct::positionInDegrees</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Actual position in degrees </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/ServoDriver/servo_driver.h" line="31" column="7" bodyfile="RadarApp/ServoDriver/servo_driver.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structservo_driver_struct_1a5ca561b85876367a491830913bd31c53" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t positionInPulseWidth</definition>
+        <argsstring></argsstring>
+        <name>positionInPulseWidth</name>
+        <qualifiedname>servoDriverStruct::positionInPulseWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Actual position in pulse width </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/ServoDriver/servo_driver.h" line="32" column="10" bodyfile="RadarApp/ServoDriver/servo_driver.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure for control servomechanisms with pwm singal, </para>
+    </detaileddescription>
+    <location file="RadarApp/ServoDriver/servo_driver.h" line="23" column="1" bodyfile="RadarApp/ServoDriver/servo_driver.h" bodystart="24" bodyend="33"/>
+    <listofallmembers>
+      <member refid="structservo_driver_struct_1ad7d129de79462605d163ac9cd0153101" prot="public" virt="non-virtual"><scope>servoDriverStruct</scope><name>degreesMax</name></member>
+      <member refid="structservo_driver_struct_1afc1af0b1401452570571cb2261fae0a2" prot="public" virt="non-virtual"><scope>servoDriverStruct</scope><name>degreesMin</name></member>
+      <member refid="structservo_driver_struct_1ab5714dc534cee43335450548d8d5e79f" prot="public" virt="non-virtual"><scope>servoDriverStruct</scope><name>positionInDegrees</name></member>
+      <member refid="structservo_driver_struct_1a5ca561b85876367a491830913bd31c53" prot="public" virt="non-virtual"><scope>servoDriverStruct</scope><name>positionInPulseWidth</name></member>
+      <member refid="structservo_driver_struct_1a06b7608e42efb1b7afa8b4c852bb609d" prot="public" virt="non-virtual"><scope>servoDriverStruct</scope><name>pulseWidthMax</name></member>
+      <member refid="structservo_driver_struct_1ae58cfcf62f825adac798acdb7328024e" prot="public" virt="non-virtual"><scope>servoDriverStruct</scope><name>pulseWidthMin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

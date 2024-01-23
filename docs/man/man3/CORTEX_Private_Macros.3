@@ -1,0 +1,40 @@
+.TH "CORTEX_Private_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CORTEX_Private_Macros \- CORTEX Private Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_NVIC_PREEMPTION_PRIORITY\fP(PRIORITY)   ((PRIORITY) < 0x4U)"
+.br
+.ti -1c
+.RI "#define \fBIS_NVIC_DEVICE_IRQ\fP(IRQ)   ((IRQ) > \fBSysTick_IRQn\fP)"
+.br
+.ti -1c
+.RI "#define \fBIS_SYSTICK_CLK_SOURCE\fP(SOURCE)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_NVIC_DEVICE_IRQ(IRQ)   ((IRQ) > \fBSysTick_IRQn\fP)"
+
+.SS "#define IS_NVIC_PREEMPTION_PRIORITY(PRIORITY)   ((PRIORITY) < 0x4U)"
+
+.SS "#define IS_SYSTICK_CLK_SOURCE(SOURCE)"
+\fBValue:\fP.PP
+.nf
+                                                   (((SOURCE) == SYSTICK_CLKSOURCE_HCLK) || \\
+                                                   ((SOURCE) == SYSTICK_CLKSOURCE_HCLK_DIV8))
+.fi
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

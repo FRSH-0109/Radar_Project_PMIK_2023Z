@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_t_i_m___hall_sensor___init_type_def" kind="struct" language="C++" prot="public">
+    <compoundname>TIM_HallSensor_InitTypeDef</compoundname>
+    <includes refid="stm32g0xx__hal__tim__ex_8h" local="no">stm32g0xx_hal_tim_ex.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_t_i_m___hall_sensor___init_type_def_1ac1191c7421a3ca4c53ec7875870812e5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t IC1Polarity</definition>
+        <argsstring></argsstring>
+        <name>IC1Polarity</name>
+        <qualifiedname>TIM_HallSensor_InitTypeDef::IC1Polarity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the active edge of the input signal. This parameter can be a value of <ref refid="group___t_i_m___input___capture___polarity" kindref="compound">TIM Input Capture Polarity</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="49" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___hall_sensor___init_type_def_1aa913a8df0a4c97fefa87ff760fae10cb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t IC1Prescaler</definition>
+        <argsstring></argsstring>
+        <name>IC1Prescaler</name>
+        <qualifiedname>TIM_HallSensor_InitTypeDef::IC1Prescaler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the Input Capture Prescaler. This parameter can be a value of <ref refid="group___t_i_m___input___capture___prescaler" kindref="compound">TIM Input Capture Prescaler</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="52" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___hall_sensor___init_type_def_1a5efa2ad5085fe72fb0b5dc2e2fc61def" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t IC1Filter</definition>
+        <argsstring></argsstring>
+        <name>IC1Filter</name>
+        <qualifiedname>TIM_HallSensor_InitTypeDef::IC1Filter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the input capture filter. This parameter can be a number between Min_Data = 0x0 and Max_Data = 0xF </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="55" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_i_m___hall_sensor___init_type_def_1a5d74bf14283eb95439d6d37952274f07" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Commutation_Delay</definition>
+        <argsstring></argsstring>
+        <name>Commutation_Delay</name>
+        <qualifiedname>TIM_HallSensor_InitTypeDef::Commutation_Delay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the pulse value to be loaded into the Capture Compare Register. This parameter can be a number between Min_Data = 0x0000 and Max_Data = 0xFFFF </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="58" column="12" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>TIM Hall sensor Configuration Structure definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" line="47" column="1" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h" bodystart="48" bodyend="60"/>
+    <listofallmembers>
+      <member refid="struct_t_i_m___hall_sensor___init_type_def_1a5d74bf14283eb95439d6d37952274f07" prot="public" virt="non-virtual"><scope>TIM_HallSensor_InitTypeDef</scope><name>Commutation_Delay</name></member>
+      <member refid="struct_t_i_m___hall_sensor___init_type_def_1a5efa2ad5085fe72fb0b5dc2e2fc61def" prot="public" virt="non-virtual"><scope>TIM_HallSensor_InitTypeDef</scope><name>IC1Filter</name></member>
+      <member refid="struct_t_i_m___hall_sensor___init_type_def_1ac1191c7421a3ca4c53ec7875870812e5" prot="public" virt="non-virtual"><scope>TIM_HallSensor_InitTypeDef</scope><name>IC1Polarity</name></member>
+      <member refid="struct_t_i_m___hall_sensor___init_type_def_1aa913a8df0a4c97fefa87ff760fae10cb" prot="public" virt="non-virtual"><scope>TIM_HallSensor_InitTypeDef</scope><name>IC1Prescaler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

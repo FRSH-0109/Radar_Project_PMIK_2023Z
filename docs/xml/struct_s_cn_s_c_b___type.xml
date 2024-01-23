@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_s_cn_s_c_b___type" kind="struct" language="C++" prot="public">
+    <compoundname>SCnSCB_Type</compoundname>
+    <includes refid="core__armv81mml_8h" local="no">core_armv81mml.h</includes>
+    <sectiondef kind="public-attrib">
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gaffae06cd6df5e9fe9a92994052fd3bec" kind="variable"><name>RESERVED0</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gacf9b76331abd768af25a10b3625da4b4" kind="variable"><name>ICTR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gafabed911b9f91f9df848999e1b5d6504" kind="variable"><name>ACTLR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga6236035fc90059a599910d9cb9299ff0" kind="variable"><name>CPPWR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga22597a52981a247dfd72fc83fb1a54a3" kind="variable"><name>RESERVED1</name></member>
+    </sectiondef>
+    <briefdescription>
+<para>Structure type to access the System Control and ID Register not in the SCB. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/CMSIS/Include/core_armv81mml.h" line="1010" column="1" bodyfile="Drivers/CMSIS/Include/core_armv81mml.h" bodystart="1011" bodyend="1016"/>
+    <listofallmembers>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gafabed911b9f91f9df848999e1b5d6504" prot="public" virt="non-virtual"><scope>SCnSCB_Type</scope><name>ACTLR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga6236035fc90059a599910d9cb9299ff0" prot="public" virt="non-virtual"><scope>SCnSCB_Type</scope><name>CPPWR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gacf9b76331abd768af25a10b3625da4b4" prot="public" virt="non-virtual"><scope>SCnSCB_Type</scope><name>ICTR</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1gaffae06cd6df5e9fe9a92994052fd3bec" prot="public" virt="non-virtual"><scope>SCnSCB_Type</scope><name>RESERVED0</name></member>
+      <member refid="group___c_m_s_i_s__core___debug_functions_1ga22597a52981a247dfd72fc83fb1a54a3" prot="public" virt="non-virtual"><scope>SCnSCB_Type</scope><name>RESERVED1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

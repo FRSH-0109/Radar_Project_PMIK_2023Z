@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status" kind="group">
+    <compoundname>RCC_APB2_Clock_Sleep_Enabled_Disabled_Status</compoundname>
+    <title>APB2 Peripheral Clock Sleep Enabled or Disabled Status</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status_1ga0e518b9a088d789d700d121db458403a" prot="public" static="no">
+        <name>__HAL_RCC_SYSCFG_IS_CLK_SLEEP_ENABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBSMENR2 , <ref refid="group___peripheral___registers___bits___definition_1ga0780bc497f34d5ec9dd2531eefab2257" kindref="member">RCC_APBSMENR2_SYSCFGSMEN</ref>) != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2384" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status_1ga0b265851c7557da6b372ff462819caa9" prot="public" static="no">
+        <name>__HAL_RCC_TIM1_IS_CLK_SLEEP_ENABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBSMENR2 , <ref refid="group___peripheral___registers___bits___definition_1gae416903818139a5948149bbd74f78a87" kindref="member">RCC_APBSMENR2_TIM1SMEN</ref>)   != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2385" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status_1ga2db4e1edb831584a39e791c16edfea28" prot="public" static="no">
+        <name>__HAL_RCC_SPI1_IS_CLK_SLEEP_ENABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBSMENR2 , <ref refid="group___peripheral___registers___bits___definition_1gab9c49cfba4c4b2f15890098ff5d29501" kindref="member">RCC_APBSMENR2_SPI1SMEN</ref>)   != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2386" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status_1ga1059a391a514543547809a524b4cdf0d" prot="public" static="no">
+        <name>__HAL_RCC_USART1_IS_CLK_SLEEP_ENABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBSMENR2 , <ref refid="group___peripheral___registers___bits___definition_1ga6e8b65ca8fc100c52d9ec2ff8435a4a8" kindref="member">RCC_APBSMENR2_USART1SMEN</ref>) != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2387" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status_1gaa280dfb85ebcc1d58d93cb9ced93a86f" prot="public" static="no">
+        <name>__HAL_RCC_TIM14_IS_CLK_SLEEP_ENABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBSMENR2 , <ref refid="group___peripheral___registers___bits___definition_1gab9e9c7bf2243c4ad07b6d154d1904e09" kindref="member">RCC_APBSMENR2_TIM14SMEN</ref>)  != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2388" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status_1gacb9f81eb8d1fe44a89ac57c1fc3a5b2f" prot="public" static="no">
+        <name>__HAL_RCC_TIM16_IS_CLK_SLEEP_ENABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBSMENR2 , <ref refid="group___peripheral___registers___bits___definition_1ga0599e05f2f0da2677ed2bd79671648f3" kindref="member">RCC_APBSMENR2_TIM16SMEN</ref>)  != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2392" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status_1ga29de4124122709afb5d1497b9de3926b" prot="public" static="no">
+        <name>__HAL_RCC_TIM17_IS_CLK_SLEEP_ENABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBSMENR2 , <ref refid="group___peripheral___registers___bits___definition_1ga83625787a0c19dfd16bfe7fcb25c226c" kindref="member">RCC_APBSMENR2_TIM17SMEN</ref>)  != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2393" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status_1ga126e8386d8fd2c08f3d55459aa36df66" prot="public" static="no">
+        <name>__HAL_RCC_ADC_IS_CLK_SLEEP_ENABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBSMENR2 , <ref refid="group___peripheral___registers___bits___definition_1ga8081eeef778404080c55db53731c5f7b" kindref="member">RCC_APBSMENR2_ADCSMEN</ref>)    != <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2394" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status_1ga564fe78887dba5a7da7da1b9f2ffb372" prot="public" static="no">
+        <name>__HAL_RCC_SYSCFG_IS_CLK_SLEEP_DISABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBSMENR2 , <ref refid="group___peripheral___registers___bits___definition_1ga0780bc497f34d5ec9dd2531eefab2257" kindref="member">RCC_APBSMENR2_SYSCFGSMEN</ref>) == <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2397" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status_1ga78a957797ebffd3e539bb4c833c29a3d" prot="public" static="no">
+        <name>__HAL_RCC_TIM1_IS_CLK_SLEEP_DISABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBSMENR2 , <ref refid="group___peripheral___registers___bits___definition_1gae416903818139a5948149bbd74f78a87" kindref="member">RCC_APBSMENR2_TIM1SMEN</ref>)   == <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2398" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status_1gab9a82b96c7950398956ee6f58c3d5dda" prot="public" static="no">
+        <name>__HAL_RCC_SPI1_IS_CLK_SLEEP_DISABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBSMENR2 , <ref refid="group___peripheral___registers___bits___definition_1gab9c49cfba4c4b2f15890098ff5d29501" kindref="member">RCC_APBSMENR2_SPI1SMEN</ref>)   == <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2399" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status_1ga2123ed8a27c8cf060899c1e7a923b8c8" prot="public" static="no">
+        <name>__HAL_RCC_USART1_IS_CLK_SLEEP_DISABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBSMENR2 , <ref refid="group___peripheral___registers___bits___definition_1ga6e8b65ca8fc100c52d9ec2ff8435a4a8" kindref="member">RCC_APBSMENR2_USART1SMEN</ref>) == <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2400" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status_1gad93c4faee8e545c41c29bdf53aa866a6" prot="public" static="no">
+        <name>__HAL_RCC_TIM14_IS_CLK_SLEEP_DISABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBSMENR2 , <ref refid="group___peripheral___registers___bits___definition_1gab9e9c7bf2243c4ad07b6d154d1904e09" kindref="member">RCC_APBSMENR2_TIM14SMEN</ref>)  == <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2401" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status_1ga9b203fb1b015bc48bd3a707654d501ba" prot="public" static="no">
+        <name>__HAL_RCC_TIM16_IS_CLK_SLEEP_DISABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBSMENR2 , <ref refid="group___peripheral___registers___bits___definition_1ga0599e05f2f0da2677ed2bd79671648f3" kindref="member">RCC_APBSMENR2_TIM16SMEN</ref>)  == <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2405" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status_1ga6907183c65e23c16e829a0a9cbeda1fb" prot="public" static="no">
+        <name>__HAL_RCC_TIM17_IS_CLK_SLEEP_DISABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBSMENR2 , <ref refid="group___peripheral___registers___bits___definition_1ga83625787a0c19dfd16bfe7fcb25c226c" kindref="member">RCC_APBSMENR2_TIM17SMEN</ref>)  == <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2406" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_c_c___a_p_b2___clock___sleep___enabled___disabled___status_1ga5379dde2a5d532588ff930fab2c9ade2" prot="public" static="no">
+        <name>__HAL_RCC_ADC_IS_CLK_SLEEP_DISABLED</name>
+        <param></param>
+        <initializer>(<ref refid="group___exported__macros_1ga822bb1bb9710d5f2fa6396b84e583c33" kindref="member">READ_BIT</ref>(<ref refid="group___peripheral__declaration_1ga74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APBSMENR2 , <ref refid="group___peripheral___registers___bits___definition_1ga8081eeef778404080c55db53731c5f7b" kindref="member">RCC_APBSMENR2_ADCSMEN</ref>)    == <ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" line="2407" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h" bodystart="2407" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Check whether the APB2 peripheral clock during Low Power (Sleep) mode is enabled or not. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Peripheral clock gating in SLEEP mode can be used to further reduce power consumption. </para>
+</simplesect>
+<simplesect kind="note"><para>After wakeup from SLEEP mode, the peripheral clock is enabled again. </para>
+</simplesect>
+<simplesect kind="note"><para>By default, all peripheral clocks are enabled during SLEEP mode. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,130 @@
+.TH "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h \- Header file of CORTEX LL module\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32g0xx\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBLL_SYSTICK_CLKSOURCE_HCLK_DIV8\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBLL_SYSTICK_CLKSOURCE_HCLK\fP   \fBSysTick_CTRL_CLKSOURCE_Msk\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_SYSTICK_IsActiveCounterFlag\fP (void)"
+.br
+.RI "This function checks if the Systick counter flag is active or not\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_SYSTICK_SetClkSource\fP (uint32_t Source)"
+.br
+.RI "Configures the SysTick clock source @rmtoll STK_CTRL CLKSOURCE LL_SYSTICK_SetClkSource\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_SYSTICK_GetClkSource\fP (void)"
+.br
+.RI "Get the SysTick clock source @rmtoll STK_CTRL CLKSOURCE LL_SYSTICK_GetClkSource\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_SYSTICK_EnableIT\fP (void)"
+.br
+.RI "Enable SysTick exception request @rmtoll STK_CTRL TICKINT LL_SYSTICK_EnableIT\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_SYSTICK_DisableIT\fP (void)"
+.br
+.RI "Disable SysTick exception request @rmtoll STK_CTRL TICKINT LL_SYSTICK_DisableIT\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_SYSTICK_IsEnabledIT\fP (void)"
+.br
+.RI "Checks if the SYSTICK interrupt is enabled or disabled\&. @rmtoll STK_CTRL TICKINT LL_SYSTICK_IsEnabledIT\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_LPM_EnableSleep\fP (void)"
+.br
+.RI "Processor uses sleep as its low power mode @rmtoll SCB_SCR SLEEPDEEP LL_LPM_EnableSleep\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_LPM_EnableDeepSleep\fP (void)"
+.br
+.RI "Processor uses deep sleep as its low power mode @rmtoll SCB_SCR SLEEPDEEP LL_LPM_EnableDeepSleep\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_LPM_EnableSleepOnExit\fP (void)"
+.br
+.RI "Configures sleep-on-exit when returning from Handler mode to Thread mode\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_LPM_DisableSleepOnExit\fP (void)"
+.br
+.RI "Do not sleep when returning to Thread mode\&. @rmtoll SCB_SCR SLEEPONEXIT LL_LPM_DisableSleepOnExit\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_LPM_EnableEventOnPend\fP (void)"
+.br
+.RI "Enabled events and all interrupts, including disabled interrupts, can wakeup the processor\&. @rmtoll SCB_SCR SEVEONPEND LL_LPM_EnableEventOnPend\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_LPM_DisableEventOnPend\fP (void)"
+.br
+.RI "Only enabled interrupts or events can wakeup the processor, disabled interrupts are excluded @rmtoll SCB_SCR SEVEONPEND LL_LPM_DisableEventOnPend\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_CPUID_GetImplementer\fP (void)"
+.br
+.RI "Get Implementer code @rmtoll SCB_CPUID IMPLEMENTER LL_CPUID_GetImplementer\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_CPUID_GetVariant\fP (void)"
+.br
+.RI "Get Variant number (The r value in the rnpn product revision identifier) @rmtoll SCB_CPUID VARIANT LL_CPUID_GetVariant\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_CPUID_GetArchitecture\fP (void)"
+.br
+.RI "Get Architecture number @rmtoll SCB_CPUID ARCHITECTURE LL_CPUID_GetArchitecture\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_CPUID_GetParNo\fP (void)"
+.br
+.RI "Get Part number @rmtoll SCB_CPUID PARTNO LL_CPUID_GetParNo\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBLL_CPUID_GetRevision\fP (void)"
+.br
+.RI "Get Revision number (The p value in the rnpn product revision identifier, indicates patch release) @rmtoll SCB_CPUID REVISION LL_CPUID_GetRevision\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file of CORTEX LL module\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+MCD Application Team 
+.PP
+.nf
+==============================================================================
+                   ##### How to use this driver #####
+==============================================================================
+  [\&.\&.]
+  The LL CORTEX driver contains a set of generic APIs that can be
+  used by user:
+    (+) SYSTICK configuration used by LL_mDelay and LL_Init1msTick
+        functions
+    (+) Low power mode configuration (SCB register of Cortex-MCU)
+    (+) MPU API to configure and enable regions
+    (+) API to access to MCU info (CPUID register)
+.fi
+.PP
+.RE
+.PP
+\fBAttention\fP
+.RS 4
+.RE
+.PP
+Copyright (c) 2018 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___s_y_s_c_f_g___boot_mode" kind="group">
+    <compoundname>SYSCFG_BootMode</compoundname>
+    <title>Boot Mode</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_y_s_c_f_g___boot_mode_1ga1cfa68f41fcdf064fe4f57424067581c" prot="public" static="no">
+        <name>SYSCFG_BOOT_MAINFLASH</name>
+        <initializer>0x00000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Main Flash memory mapped at 0x0000 0000 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="66" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___boot_mode_1ga603891dcd1d145e4ffbaa2873181974a" prot="public" static="no">
+        <name>SYSCFG_BOOT_SYSTEMFLASH</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1gafc84f4abe53c4d2516ab017626477817" kindref="member">SYSCFG_CFGR1_MEM_MODE_0</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Flash memory mapped at 0x0000 0000 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="67" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s_c_f_g___boot_mode_1gab5f9d82b9c7af24984cb807d22ea0996" prot="public" static="no">
+        <name>SYSCFG_BOOT_SRAM</name>
+        <initializer>(<ref refid="group___peripheral___registers___bits___definition_1gaa51c3dbda77acf522defca9e8b8801a3" kindref="member">SYSCFG_CFGR1_MEM_MODE_1</ref> | <ref refid="group___peripheral___registers___bits___definition_1gafc84f4abe53c4d2516ab017626477817" kindref="member">SYSCFG_CFGR1_MEM_MODE_0</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Embedded SRAM mapped at 0x0000 0000 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" line="68" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,67 @@
+.TH "Core/Src/usart.c" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Core/Src/usart.c \- This file provides code for the configuration of the USART instances\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'usart\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBMX_USART1_UART_Init\fP (void)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_MspInit\fP (\fBUART_HandleTypeDef\fP *uartHandle)"
+.br
+.ti -1c
+.RI "void \fBHAL_UART_MspDeInit\fP (\fBUART_HandleTypeDef\fP *uartHandle)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBUART_HandleTypeDef\fP \fBhuart1\fP"
+.br
+.ti -1c
+.RI "\fBDMA_HandleTypeDef\fP \fBhdma_usart1_rx\fP"
+.br
+.ti -1c
+.RI "\fBDMA_HandleTypeDef\fP \fBhdma_usart1_tx\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file provides code for the configuration of the USART instances\&. 
+
+
+.PP
+\fBAttention\fP
+.RS 4
+
+.RE
+.PP
+Copyright (c) 2023 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Function Documentation"
+.PP 
+.SS "void MX_USART1_UART_Init (void)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "\fBDMA_HandleTypeDef\fP hdma_usart1_rx"
+
+.SS "\fBDMA_HandleTypeDef\fP hdma_usart1_tx"
+
+.SS "\fBUART_HandleTypeDef\fP huart1"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

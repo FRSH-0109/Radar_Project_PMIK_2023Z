@@ -1,0 +1,66 @@
+.TH "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c \- RCC HAL module driver\&. This file provides firmware functions to manage the following functionalities of the Reset and Clock Control (RCC) peripheral:  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32g0xx_hal\&.h'\fP
+.br
+
+.SH "Detailed Description"
+.PP 
+RCC HAL module driver\&. This file provides firmware functions to manage the following functionalities of the Reset and Clock Control (RCC) peripheral: 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+MCD Application Team
+.IP "\(bu" 2
+Initialization and de-initialization functions
+.IP "\(bu" 2
+Peripheral Control functions
+.PP
+.RE
+.PP
+.PP
+.nf
+==============================================================================
+                    ##### RCC specific features #####
+==============================================================================
+  [\&.\&.]
+    After reset the device is running from High Speed Internal oscillator
+    (from 8 MHz to reach 16MHz) with Flash 0 wait state\&. Flash prefetch buffer,
+    D-Cache and I-Cache are disabled, and all peripherals are off except internal
+    SRAM, Flash and JTAG\&.
+
+    (+) There is no prescaler on High speed (AHB) and Low speed (APB) buses:
+        all peripherals mapped on these buses are running at HSI speed\&.
+    (+) The clock for all peripherals is switched off, except the SRAM and FLASH\&.
+    (+) All GPIOs are in analog mode, except the JTAG pins which
+        are assigned to be used for debug purpose\&.
+
+  [\&.\&.]
+    Once the device started from reset, the user application has to:
+    (+) Configure the clock source to be used to drive the System clock
+        (if the application needs higher frequency/performance)
+    (+) Configure the System clock frequency and Flash settings
+    (+) Configure the AHB and APB buses prescalers
+    (+) Enable the clock for the peripheral(s) to be used
+    (+) Configure the clock source(s) for peripherals which clocks are not
+        derived from the System clock (RTC, ADC, RNG, HSTIM).fi
+.PP
+.PP
+\fBAttention\fP
+.RS 4
+.RE
+.PP
+Copyright (c) 2018 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

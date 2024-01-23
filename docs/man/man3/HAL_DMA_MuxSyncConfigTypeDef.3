@@ -1,0 +1,49 @@
+.TH "HAL_DMA_MuxSyncConfigTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+HAL_DMA_MuxSyncConfigTypeDef \- HAL DMAMUX Synchronization configuration structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_hal_dma_ex\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBSyncSignalID\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBSyncPolarity\fP"
+.br
+.ti -1c
+.RI "\fBFunctionalState\fP \fBSyncEnable\fP"
+.br
+.ti -1c
+.RI "\fBFunctionalState\fP \fBEventEnable\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRequestNumber\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+HAL DMAMUX Synchronization configuration structure definition\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFunctionalState\fP HAL_DMA_MuxSyncConfigTypeDef::EventEnable"
+Specifies if an event shall be generated once the RequestNumber is reached\&. This parameter can take the value ENABLE or DISABLE 
+.SS "uint32_t HAL_DMA_MuxSyncConfigTypeDef::RequestNumber"
+Specifies the number of DMA request that will be authorized after a sync event This parameter must be a number between Min_Data = 1 and Max_Data = 32 
+.SS "\fBFunctionalState\fP HAL_DMA_MuxSyncConfigTypeDef::SyncEnable"
+Specifies if the synchronization shall be enabled or disabled This parameter can take the value ENABLE or DISABLE 
+.SS "uint32_t HAL_DMA_MuxSyncConfigTypeDef::SyncPolarity"
+Specifies the polarity of the signal on which the DMA request is synchronized\&. This parameter can be a value of \fBDMAMUX SyncPolarity selection\fP 
+.SS "uint32_t HAL_DMA_MuxSyncConfigTypeDef::SyncSignalID"
+Specifies the synchronization signal gating the DMA request in periodic mode\&. This parameter can be a value of \fBDMAMUX SyncSignalID selection\fP 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

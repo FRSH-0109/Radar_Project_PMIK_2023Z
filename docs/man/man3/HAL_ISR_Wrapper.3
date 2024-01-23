@@ -1,0 +1,407 @@
+.TH "HAL_ISR_Wrapper" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+HAL_ISR_Wrapper \- HAL ISR Wrapper
+.PP
+ \- ISR Wrapper\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE0\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE1\fP   0x00000001U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE2\fP   0x00000002U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE3\fP   0x00000003U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE4\fP   0x00000004U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE5\fP   0x00000005U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE6\fP   0x00000006U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE7\fP   0x00000007U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE8\fP   0x00000008U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE9\fP   0x00000009U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE10\fP   0x0000000AU"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE11\fP   0x0000000BU"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE12\fP   0x0000000CU"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE13\fP   0x0000000DU"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE14\fP   0x0000000EU"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE15\fP   0x0000000FU"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE16\fP   0x00000010U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE17\fP   0x00000011U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE18\fP   0x00000012U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE19\fP   0x00000013U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE20\fP   0x00000014U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE21\fP   0x00000015U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE22\fP   0x00000016U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE23\fP   0x00000017U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE24\fP   0x00000018U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE25\fP   0x00000019U"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE26\fP   0x0000001AU"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE27\fP   0x0000001BU"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE28\fP   0x0000001CU"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE29\fP   0x0000001DU"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE30\fP   0x0000001EU"
+.br
+.ti -1c
+.RI "#define \fBHAL_SYSCFG_ITLINE31\fP   0x0000001FU"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_WWDG\fP   ((\fBHAL_SYSCFG_ITLINE0\fP << 0x18U) | \fBSYSCFG_ITLINE0_SR_EWDG\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_RTC\fP   ((\fBHAL_SYSCFG_ITLINE2\fP << 0x18U) | \fBSYSCFG_ITLINE2_SR_RTC\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_TAMPER\fP   ((\fBHAL_SYSCFG_ITLINE2\fP << 0x18U) | \fBSYSCFG_ITLINE2_SR_TAMPER\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_FLASH_ECC\fP   ((\fBHAL_SYSCFG_ITLINE3\fP << 0x18U) | \fBSYSCFG_ITLINE3_SR_FLASH_ECC\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_FLASH_ITF\fP   ((\fBHAL_SYSCFG_ITLINE3\fP << 0x18U) | \fBSYSCFG_ITLINE3_SR_FLASH_ITF\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_CLK_CTRL\fP   ((\fBHAL_SYSCFG_ITLINE4\fP << 0x18U) | \fBSYSCFG_ITLINE4_SR_CLK_CTRL\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_EXTI0\fP   ((\fBHAL_SYSCFG_ITLINE5\fP << 0x18U) | \fBSYSCFG_ITLINE5_SR_EXTI0\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_EXTI1\fP   ((\fBHAL_SYSCFG_ITLINE5\fP << 0x18U) | \fBSYSCFG_ITLINE5_SR_EXTI1\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_EXTI2\fP   ((\fBHAL_SYSCFG_ITLINE6\fP << 0x18U) | \fBSYSCFG_ITLINE6_SR_EXTI2\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_EXTI3\fP   ((\fBHAL_SYSCFG_ITLINE6\fP << 0x18U) | \fBSYSCFG_ITLINE6_SR_EXTI3\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_EXTI4\fP   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI4\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_EXTI5\fP   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI5\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_EXTI6\fP   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI6\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_EXTI7\fP   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI7\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_EXTI8\fP   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI8\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_EXTI9\fP   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI9\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_EXTI10\fP   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI10\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_EXTI11\fP   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI11\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_EXTI12\fP   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI12\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_EXTI13\fP   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI13\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_EXTI14\fP   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI14\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_EXTI15\fP   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI15\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_DMA1_CH1\fP   ((\fBHAL_SYSCFG_ITLINE9\fP << 0x18U) | \fBSYSCFG_ITLINE9_SR_DMA1_CH1\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_DMA1_CH2\fP   ((\fBHAL_SYSCFG_ITLINE10\fP << 0x18U) | \fBSYSCFG_ITLINE10_SR_DMA1_CH2\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_DMA1_CH3\fP   ((\fBHAL_SYSCFG_ITLINE10\fP << 0x18U) | \fBSYSCFG_ITLINE10_SR_DMA1_CH3\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_DMAMUX1\fP   ((\fBHAL_SYSCFG_ITLINE11\fP << 0x18U) | \fBSYSCFG_ITLINE11_SR_DMAMUX1\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_DMA1_CH4\fP   ((\fBHAL_SYSCFG_ITLINE11\fP << 0x18U) | \fBSYSCFG_ITLINE11_SR_DMA1_CH4\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_DMA1_CH5\fP   ((\fBHAL_SYSCFG_ITLINE11\fP << 0x18U) | \fBSYSCFG_ITLINE11_SR_DMA1_CH5\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_ADC\fP   ((\fBHAL_SYSCFG_ITLINE12\fP << 0x18U) | \fBSYSCFG_ITLINE12_SR_ADC\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_TIM1_BRK\fP   ((\fBHAL_SYSCFG_ITLINE13\fP << 0x18U) | \fBSYSCFG_ITLINE13_SR_TIM1_BRK\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_TIM1_UPD\fP   ((\fBHAL_SYSCFG_ITLINE13\fP << 0x18U) | \fBSYSCFG_ITLINE13_SR_TIM1_UPD\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_TIM1_TRG\fP   ((\fBHAL_SYSCFG_ITLINE13\fP << 0x18U) | \fBSYSCFG_ITLINE13_SR_TIM1_TRG\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_TIM1_CCU\fP   ((\fBHAL_SYSCFG_ITLINE13\fP << 0x18U) | \fBSYSCFG_ITLINE13_SR_TIM1_CCU\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_TIM1_CC\fP   ((\fBHAL_SYSCFG_ITLINE14\fP << 0x18U) | \fBSYSCFG_ITLINE14_SR_TIM1_CC\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_TIM3\fP   ((\fBHAL_SYSCFG_ITLINE16\fP << 0x18U) | \fBSYSCFG_ITLINE16_SR_TIM3_GLB\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_TIM14\fP   ((\fBHAL_SYSCFG_ITLINE19\fP << 0x18U) | \fBSYSCFG_ITLINE19_SR_TIM14_GLB\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_TIM16\fP   ((\fBHAL_SYSCFG_ITLINE21\fP << 0x18U) | \fBSYSCFG_ITLINE21_SR_TIM16_GLB\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_TIM17\fP   ((\fBHAL_SYSCFG_ITLINE22\fP << 0x18U) | \fBSYSCFG_ITLINE22_SR_TIM17_GLB\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_I2C1\fP   ((\fBHAL_SYSCFG_ITLINE23\fP << 0x18U) | \fBSYSCFG_ITLINE23_SR_I2C1_GLB\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_I2C2\fP   ((\fBHAL_SYSCFG_ITLINE24\fP << 0x18U) | \fBSYSCFG_ITLINE24_SR_I2C2_GLB\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_SPI1\fP   ((\fBHAL_SYSCFG_ITLINE25\fP << 0x18U) | \fBSYSCFG_ITLINE25_SR_SPI1\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_SPI2\fP   ((\fBHAL_SYSCFG_ITLINE26\fP << 0x18U) | \fBSYSCFG_ITLINE26_SR_SPI2\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_USART1\fP   ((\fBHAL_SYSCFG_ITLINE27\fP << 0x18U) | \fBSYSCFG_ITLINE27_SR_USART1_GLB\fP)"
+.br
+.ti -1c
+.RI "#define \fBHAL_ITLINE_USART2\fP   ((\fBHAL_SYSCFG_ITLINE28\fP << 0x18U) | \fBSYSCFG_ITLINE28_SR_USART2_GLB\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+ISR Wrapper\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define HAL_ITLINE_ADC   ((\fBHAL_SYSCFG_ITLINE12\fP << 0x18U) | \fBSYSCFG_ITLINE12_SR_ADC\fP)"
+ADC Interrupt 
+.SS "#define HAL_ITLINE_CLK_CTRL   ((\fBHAL_SYSCFG_ITLINE4\fP << 0x18U) | \fBSYSCFG_ITLINE4_SR_CLK_CTRL\fP)"
+CLK Control Interrupt 
+.SS "#define HAL_ITLINE_DMA1_CH1   ((\fBHAL_SYSCFG_ITLINE9\fP << 0x18U) | \fBSYSCFG_ITLINE9_SR_DMA1_CH1\fP)"
+DMA1 Channel 1 Interrupt 
+.SS "#define HAL_ITLINE_DMA1_CH2   ((\fBHAL_SYSCFG_ITLINE10\fP << 0x18U) | \fBSYSCFG_ITLINE10_SR_DMA1_CH2\fP)"
+DMA1 Channel 2 Interrupt 
+.SS "#define HAL_ITLINE_DMA1_CH3   ((\fBHAL_SYSCFG_ITLINE10\fP << 0x18U) | \fBSYSCFG_ITLINE10_SR_DMA1_CH3\fP)"
+DMA1 Channel 3 Interrupt 
+.SS "#define HAL_ITLINE_DMA1_CH4   ((\fBHAL_SYSCFG_ITLINE11\fP << 0x18U) | \fBSYSCFG_ITLINE11_SR_DMA1_CH4\fP)"
+DMA1 Channel 4 Interrupt 
+.SS "#define HAL_ITLINE_DMA1_CH5   ((\fBHAL_SYSCFG_ITLINE11\fP << 0x18U) | \fBSYSCFG_ITLINE11_SR_DMA1_CH5\fP)"
+DMA1 Channel 5 Interrupt 
+.SS "#define HAL_ITLINE_DMAMUX1   ((\fBHAL_SYSCFG_ITLINE11\fP << 0x18U) | \fBSYSCFG_ITLINE11_SR_DMAMUX1\fP)"
+DMAMUX1 Interrupt 
+.SS "#define HAL_ITLINE_EXTI0   ((\fBHAL_SYSCFG_ITLINE5\fP << 0x18U) | \fBSYSCFG_ITLINE5_SR_EXTI0\fP)"
+External Interrupt 0 
+.SS "#define HAL_ITLINE_EXTI1   ((\fBHAL_SYSCFG_ITLINE5\fP << 0x18U) | \fBSYSCFG_ITLINE5_SR_EXTI1\fP)"
+External Interrupt 1 
+.SS "#define HAL_ITLINE_EXTI10   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI10\fP)"
+EXTI10 Interrupt 
+.SS "#define HAL_ITLINE_EXTI11   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI11\fP)"
+EXTI11 Interrupt 
+.SS "#define HAL_ITLINE_EXTI12   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI12\fP)"
+EXTI12 Interrupt 
+.SS "#define HAL_ITLINE_EXTI13   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI13\fP)"
+EXTI13 Interrupt 
+.SS "#define HAL_ITLINE_EXTI14   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI14\fP)"
+EXTI14 Interrupt 
+.SS "#define HAL_ITLINE_EXTI15   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI15\fP)"
+EXTI15 Interrupt 
+.SS "#define HAL_ITLINE_EXTI2   ((\fBHAL_SYSCFG_ITLINE6\fP << 0x18U) | \fBSYSCFG_ITLINE6_SR_EXTI2\fP)"
+External Interrupt 2 
+.SS "#define HAL_ITLINE_EXTI3   ((\fBHAL_SYSCFG_ITLINE6\fP << 0x18U) | \fBSYSCFG_ITLINE6_SR_EXTI3\fP)"
+External Interrupt 3 
+.SS "#define HAL_ITLINE_EXTI4   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI4\fP)"
+EXTI4 Interrupt 
+.SS "#define HAL_ITLINE_EXTI5   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI5\fP)"
+EXTI5 Interrupt 
+.SS "#define HAL_ITLINE_EXTI6   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI6\fP)"
+EXTI6 Interrupt 
+.SS "#define HAL_ITLINE_EXTI7   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI7\fP)"
+EXTI7 Interrupt 
+.SS "#define HAL_ITLINE_EXTI8   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI8\fP)"
+EXTI8 Interrupt 
+.SS "#define HAL_ITLINE_EXTI9   ((\fBHAL_SYSCFG_ITLINE7\fP << 0x18U) | \fBSYSCFG_ITLINE7_SR_EXTI9\fP)"
+EXTI9 Interrupt 
+.SS "#define HAL_ITLINE_FLASH_ECC   ((\fBHAL_SYSCFG_ITLINE3\fP << 0x18U) | \fBSYSCFG_ITLINE3_SR_FLASH_ECC\fP)"
+Flash ECC Interrupt 
+.SS "#define HAL_ITLINE_FLASH_ITF   ((\fBHAL_SYSCFG_ITLINE3\fP << 0x18U) | \fBSYSCFG_ITLINE3_SR_FLASH_ITF\fP)"
+Flash ITF Interrupt 
+.SS "#define HAL_ITLINE_I2C1   ((\fBHAL_SYSCFG_ITLINE23\fP << 0x18U) | \fBSYSCFG_ITLINE23_SR_I2C1_GLB\fP)"
+I2C1 Interrupt -> exti[23] 
+.SS "#define HAL_ITLINE_I2C2   ((\fBHAL_SYSCFG_ITLINE24\fP << 0x18U) | \fBSYSCFG_ITLINE24_SR_I2C2_GLB\fP)"
+I2C2 Interrupt -> exti[24] 
+.SS "#define HAL_ITLINE_RTC   ((\fBHAL_SYSCFG_ITLINE2\fP << 0x18U) | \fBSYSCFG_ITLINE2_SR_RTC\fP)"
+RTC -> exti[19] Interrupt 
+.SS "#define HAL_ITLINE_SPI1   ((\fBHAL_SYSCFG_ITLINE25\fP << 0x18U) | \fBSYSCFG_ITLINE25_SR_SPI1\fP)"
+SPI1 Interrupt 
+.br
+ 
+.SS "#define HAL_ITLINE_SPI2   ((\fBHAL_SYSCFG_ITLINE26\fP << 0x18U) | \fBSYSCFG_ITLINE26_SR_SPI2\fP)"
+SPI2 Interrupt 
+.SS "#define HAL_ITLINE_TAMPER   ((\fBHAL_SYSCFG_ITLINE2\fP << 0x18U) | \fBSYSCFG_ITLINE2_SR_TAMPER\fP)"
+TAMPER -> exti[21] interrupt \&.\&.\&.\&. 
+.SS "#define HAL_ITLINE_TIM14   ((\fBHAL_SYSCFG_ITLINE19\fP << 0x18U) | \fBSYSCFG_ITLINE19_SR_TIM14_GLB\fP)"
+TIM14 Interrupt 
+.SS "#define HAL_ITLINE_TIM16   ((\fBHAL_SYSCFG_ITLINE21\fP << 0x18U) | \fBSYSCFG_ITLINE21_SR_TIM16_GLB\fP)"
+TIM16 Interrupt 
+.SS "#define HAL_ITLINE_TIM17   ((\fBHAL_SYSCFG_ITLINE22\fP << 0x18U) | \fBSYSCFG_ITLINE22_SR_TIM17_GLB\fP)"
+TIM17 Interrupt 
+.SS "#define HAL_ITLINE_TIM1_BRK   ((\fBHAL_SYSCFG_ITLINE13\fP << 0x18U) | \fBSYSCFG_ITLINE13_SR_TIM1_BRK\fP)"
+TIM1 BRK Interrupt 
+.SS "#define HAL_ITLINE_TIM1_CC   ((\fBHAL_SYSCFG_ITLINE14\fP << 0x18U) | \fBSYSCFG_ITLINE14_SR_TIM1_CC\fP)"
+TIM1 CC Interrupt 
+.SS "#define HAL_ITLINE_TIM1_CCU   ((\fBHAL_SYSCFG_ITLINE13\fP << 0x18U) | \fBSYSCFG_ITLINE13_SR_TIM1_CCU\fP)"
+TIM1 CCU Interrupt 
+.SS "#define HAL_ITLINE_TIM1_TRG   ((\fBHAL_SYSCFG_ITLINE13\fP << 0x18U) | \fBSYSCFG_ITLINE13_SR_TIM1_TRG\fP)"
+TIM1 TRG Interrupt 
+.SS "#define HAL_ITLINE_TIM1_UPD   ((\fBHAL_SYSCFG_ITLINE13\fP << 0x18U) | \fBSYSCFG_ITLINE13_SR_TIM1_UPD\fP)"
+TIM1 UPD Interrupt 
+.SS "#define HAL_ITLINE_TIM3   ((\fBHAL_SYSCFG_ITLINE16\fP << 0x18U) | \fBSYSCFG_ITLINE16_SR_TIM3_GLB\fP)"
+TIM3 Interrupt 
+.SS "#define HAL_ITLINE_USART1   ((\fBHAL_SYSCFG_ITLINE27\fP << 0x18U) | \fBSYSCFG_ITLINE27_SR_USART1_GLB\fP)"
+USART1 GLB Interrupt -> exti[25] 
+.SS "#define HAL_ITLINE_USART2   ((\fBHAL_SYSCFG_ITLINE28\fP << 0x18U) | \fBSYSCFG_ITLINE28_SR_USART2_GLB\fP)"
+USART2 GLB Interrupt -> exti[26] 
+.SS "#define HAL_ITLINE_WWDG   ((\fBHAL_SYSCFG_ITLINE0\fP << 0x18U) | \fBSYSCFG_ITLINE0_SR_EWDG\fP)"
+WWDG has expired \&.\&.\&.\&. 
+.SS "#define HAL_SYSCFG_ITLINE0   0x00000000U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE1   0x00000001U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE10   0x0000000AU"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE11   0x0000000BU"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE12   0x0000000CU"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE13   0x0000000DU"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE14   0x0000000EU"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE15   0x0000000FU"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE16   0x00000010U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE17   0x00000011U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE18   0x00000012U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE19   0x00000013U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE2   0x00000002U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE20   0x00000014U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE21   0x00000015U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE22   0x00000016U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE23   0x00000017U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE24   0x00000018U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE25   0x00000019U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE26   0x0000001AU"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE27   0x0000001BU"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE28   0x0000001CU"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE29   0x0000001DU"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE3   0x00000003U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE30   0x0000001EU"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE31   0x0000001FU"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE4   0x00000004U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE5   0x00000005U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE6   0x00000006U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE7   0x00000007U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE8   0x00000008U"
+Internal define for macro handling 
+.SS "#define HAL_SYSCFG_ITLINE9   0x00000009U"
+Internal define for macro handling 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

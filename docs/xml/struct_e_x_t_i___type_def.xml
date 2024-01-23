@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_e_x_t_i___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>EXTI_TypeDef</compoundname>
+    <includes refid="stm32g030xx_8h" local="no">stm32g030xx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_e_x_t_i___type_def_1a9977ed8528793541e579a317b264e657" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t RTSR1</definition>
+        <argsstring></argsstring>
+        <name>RTSR1</name>
+        <qualifiedname>EXTI_TypeDef::RTSR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>EXTI Rising Trigger Selection Register 1, Address offset: 0x00 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="226" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___type_def_1af19a6271cc16f9052ca5b8933fdedec2" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t FTSR1</definition>
+        <argsstring></argsstring>
+        <name>FTSR1</name>
+        <qualifiedname>EXTI_TypeDef::FTSR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>EXTI Falling Trigger Selection Register 1, Address offset: 0x04 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="227" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___type_def_1a1505a648822329eafa565c3fd5589b6c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t SWIER1</definition>
+        <argsstring></argsstring>
+        <name>SWIER1</name>
+        <qualifiedname>EXTI_TypeDef::SWIER1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>EXTI Software Interrupt event Register 1, Address offset: 0x08 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="228" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___type_def_1a1eb631cba78cb1fd8e5ec3dcb7973650" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t RPR1</definition>
+        <argsstring></argsstring>
+        <name>RPR1</name>
+        <qualifiedname>EXTI_TypeDef::RPR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>EXTI Rising Pending Register 1, Address offset: 0x0C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="229" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___type_def_1a4a8f8dd71bbf5746ce38d7c02e3dd974" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t FPR1</definition>
+        <argsstring></argsstring>
+        <name>FPR1</name>
+        <qualifiedname>EXTI_TypeDef::FPR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>EXTI Falling Pending Register 1, Address offset: 0x10 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="230" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___type_def_1a3fbace6e037136ce066518ee2fade33d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED1[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>RESERVED1</name>
+        <qualifiedname>EXTI_TypeDef::RESERVED1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved 1, 0x14 <ndash/> 0x1C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="231" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___type_def_1a8b8603b7573b23b95e0c28befdeb5617" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED2[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>RESERVED2</name>
+        <qualifiedname>EXTI_TypeDef::RESERVED2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved 2, 0x20 <ndash/> 0x30 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="232" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___type_def_1ae1f33f18c990a746caf5279546feab17" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED3[11]</definition>
+        <argsstring>[11]</argsstring>
+        <name>RESERVED3</name>
+        <qualifiedname>EXTI_TypeDef::RESERVED3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved 3, 0x34 <ndash/> 0x5C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="233" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___type_def_1a52f7bf8003ba69d66a4e86dea6eeab65" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t EXTICR[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>EXTICR</name>
+        <qualifiedname>EXTI_TypeDef::EXTICR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>EXTI External Interrupt Configuration Register, 0x60 <ndash/> 0x6C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="234" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___type_def_1a352d7134e44ad898333c77f8f7c6ca58" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED4[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>RESERVED4</name>
+        <qualifiedname>EXTI_TypeDef::RESERVED4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved 4, 0x70 <ndash/> 0x7C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="235" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___type_def_1a86124759eb82b2816e3b8e19e578ae23" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t IMR1</definition>
+        <argsstring></argsstring>
+        <name>IMR1</name>
+        <qualifiedname>EXTI_TypeDef::IMR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>EXTI Interrupt Mask Register 1, Address offset: 0x80 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="236" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___type_def_1a35cb1cf342522c35163ca68d129225bb" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t EMR1</definition>
+        <argsstring></argsstring>
+        <name>EMR1</name>
+        <qualifiedname>EXTI_TypeDef::EMR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>EXTI Event Mask Register 1, Address offset: 0x84 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="237" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Asynch Interrupt/Event Controller (EXTI) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="224" column="1" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="225" bodyend="238"/>
+    <listofallmembers>
+      <member refid="struct_e_x_t_i___type_def_1a35cb1cf342522c35163ca68d129225bb" prot="public" virt="non-virtual"><scope>EXTI_TypeDef</scope><name>EMR1</name></member>
+      <member refid="struct_e_x_t_i___type_def_1a52f7bf8003ba69d66a4e86dea6eeab65" prot="public" virt="non-virtual"><scope>EXTI_TypeDef</scope><name>EXTICR</name></member>
+      <member refid="struct_e_x_t_i___type_def_1a4a8f8dd71bbf5746ce38d7c02e3dd974" prot="public" virt="non-virtual"><scope>EXTI_TypeDef</scope><name>FPR1</name></member>
+      <member refid="struct_e_x_t_i___type_def_1af19a6271cc16f9052ca5b8933fdedec2" prot="public" virt="non-virtual"><scope>EXTI_TypeDef</scope><name>FTSR1</name></member>
+      <member refid="struct_e_x_t_i___type_def_1a86124759eb82b2816e3b8e19e578ae23" prot="public" virt="non-virtual"><scope>EXTI_TypeDef</scope><name>IMR1</name></member>
+      <member refid="struct_e_x_t_i___type_def_1a3fbace6e037136ce066518ee2fade33d" prot="public" virt="non-virtual"><scope>EXTI_TypeDef</scope><name>RESERVED1</name></member>
+      <member refid="struct_e_x_t_i___type_def_1a8b8603b7573b23b95e0c28befdeb5617" prot="public" virt="non-virtual"><scope>EXTI_TypeDef</scope><name>RESERVED2</name></member>
+      <member refid="struct_e_x_t_i___type_def_1ae1f33f18c990a746caf5279546feab17" prot="public" virt="non-virtual"><scope>EXTI_TypeDef</scope><name>RESERVED3</name></member>
+      <member refid="struct_e_x_t_i___type_def_1a352d7134e44ad898333c77f8f7c6ca58" prot="public" virt="non-virtual"><scope>EXTI_TypeDef</scope><name>RESERVED4</name></member>
+      <member refid="struct_e_x_t_i___type_def_1a1eb631cba78cb1fd8e5ec3dcb7973650" prot="public" virt="non-virtual"><scope>EXTI_TypeDef</scope><name>RPR1</name></member>
+      <member refid="struct_e_x_t_i___type_def_1a9977ed8528793541e579a317b264e657" prot="public" virt="non-virtual"><scope>EXTI_TypeDef</scope><name>RTSR1</name></member>
+      <member refid="struct_e_x_t_i___type_def_1a1505a648822329eafa565c3fd5589b6c" prot="public" virt="non-virtual"><scope>EXTI_TypeDef</scope><name>SWIER1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,76 @@
+.TH "RCC_AHB_Clock_Sleep_Enable_Disable" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCC_AHB_Clock_Sleep_Enable_Disable \- AHB Peripherals Clock Sleep Enable Disable
+.PP
+ \- Enable or disable the AHB peripherals clock during Low Power (Sleep) mode\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_RCC_DMA1_CLK_SLEEP_ENABLE\fP()   \fBSET_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_DMA1SMEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_FLASH_CLK_SLEEP_ENABLE\fP()   \fBSET_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_FLASHSMEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_SRAM_CLK_SLEEP_ENABLE\fP()   \fBSET_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_SRAMSMEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_CRC_CLK_SLEEP_ENABLE\fP()   \fBSET_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_CRCSMEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_DMA1_CLK_SLEEP_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_DMA1SMEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_FLASH_CLK_SLEEP_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_FLASHSMEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_SRAM_CLK_SLEEP_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_SRAMSMEN\fP)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_RCC_CRC_CLK_SLEEP_DISABLE\fP()   \fBCLEAR_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_CRCSMEN\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Enable or disable the AHB peripherals clock during Low Power (Sleep) mode\&. 
+
+
+.PP
+\fBNote\fP
+.RS 4
+Peripheral clock gating in SLEEP mode can be used to further reduce power consumption\&. 
+.PP
+After wakeup from SLEEP mode, the peripheral clock is enabled again\&. 
+.PP
+By default, all peripheral clocks are enabled during SLEEP mode\&. 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_RCC_CRC_CLK_SLEEP_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_CRCSMEN\fP)"
+
+.SS "#define __HAL_RCC_CRC_CLK_SLEEP_ENABLE()   \fBSET_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_CRCSMEN\fP)"
+
+.SS "#define __HAL_RCC_DMA1_CLK_SLEEP_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_DMA1SMEN\fP)"
+
+.SS "#define __HAL_RCC_DMA1_CLK_SLEEP_ENABLE()   \fBSET_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_DMA1SMEN\fP)"
+
+.SS "#define __HAL_RCC_FLASH_CLK_SLEEP_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_FLASHSMEN\fP)"
+
+.SS "#define __HAL_RCC_FLASH_CLK_SLEEP_ENABLE()   \fBSET_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_FLASHSMEN\fP)"
+
+.SS "#define __HAL_RCC_SRAM_CLK_SLEEP_DISABLE()   \fBCLEAR_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_SRAMSMEN\fP)"
+
+.SS "#define __HAL_RCC_SRAM_CLK_SLEEP_ENABLE()   \fBSET_BIT\fP(\fBRCC\fP\->AHBSMENR, \fBRCC_AHBSMENR_SRAMSMEN\fP)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

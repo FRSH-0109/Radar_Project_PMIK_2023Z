@@ -1,0 +1,45 @@
+.TH "LL_UTILS_PLLInitTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+LL_UTILS_PLLInitTypeDef \- UTILS PLL structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_ll_utils\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBPLLM\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBPLLN\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBPLLR\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+UTILS PLL structure definition\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t LL_UTILS_PLLInitTypeDef::PLLM"
+Division factor for PLL VCO input clock\&. This parameter can be a value of \fBRCC_LL_EC_PLLM_DIV\fP
+.PP
+This feature can be modified afterwards using unitary function \fBLL_RCC_PLL_ConfigDomain_SYS()\fP\&. 
+.SS "uint32_t LL_UTILS_PLLInitTypeDef::PLLN"
+Multiplication factor for PLL VCO output clock\&. This parameter must be a number between Min_Data = 8 and Max_Data = 86
+.PP
+This feature can be modified afterwards using unitary function \fBLL_RCC_PLL_ConfigDomain_SYS()\fP\&. 
+.SS "uint32_t LL_UTILS_PLLInitTypeDef::PLLR"
+Division for the main system clock\&. This parameter can be a value of \fBRCC_LL_EC_PLLR_DIV\fP
+.PP
+This feature can be modified afterwards using unitary function \fBLL_RCC_PLL_ConfigDomain_SYS()\fP\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

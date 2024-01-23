@@ -1,0 +1,129 @@
+\doxysection{ILI9341.\+h}
+\hypertarget{_i_l_i9341_8h_source}{}\label{_i_l_i9341_8h_source}\index{RadarApp/DisplayDriver/ILI9341.h@{RadarApp/DisplayDriver/ILI9341.h}}
+\mbox{\hyperlink{_i_l_i9341_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ ILI9341.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ The\ MIT\ License.}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ Created\ on:\ 25.05.2017}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ \ \ \ \ \ Author:\ Mateusz\ Salamon}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ \ \ \ \ \ www.msalamon.pl}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ \ \ \ \ \ mateusz@msalamon.pl}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ INC\_ILI9341\_H\_}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ INC\_ILI9341\_H\_}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ ILI9341\_ROTATION\ 3\ \ }}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#if\ (ILI9341\_ROTATION\ ==\ 0\ \ ||\ \ ILI9341\_ROTATION\ ==\ 2)}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \#define\ ILI9341\_TFTWIDTH\ 240\ \ }}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#define\ ILI9341\_TFTHEIGHT\ 320\ }}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ ILI9341\_TFTWIDTH\ 320\ \ }}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ ILI9341\_TFTHEIGHT\ 240\ }}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ ILI9341\_NOP\ 0x00\ \ \ \ \ }}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ ILI9341\_SWRESET\ 0x01\ }}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ ILI9341\_RDDID\ 0x04\ \ \ }}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ ILI9341\_RDDST\ 0x09\ \ \ }}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ ILI9341\_SLPIN\ 0x10\ \ }}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ ILI9341\_SLPOUT\ 0x11\ }}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ ILI9341\_PTLON\ 0x12\ \ }}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ ILI9341\_NORON\ 0x13\ \ }}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ ILI9341\_RDMODE\ 0x0A\ \ \ \ \ }}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ ILI9341\_RDMADCTL\ 0x0B\ \ \ }}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ ILI9341\_RDPIXFMT\ 0x0C\ \ \ }}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ ILI9341\_RDIMGFMT\ 0x0D\ \ \ }}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ ILI9341\_RDSELFDIAG\ 0x0F\ }}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ ILI9341\_INVOFF\ 0x20\ \ \ }}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ ILI9341\_INVON\ 0x21\ \ \ \ }}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ ILI9341\_GAMMASET\ 0x26\ }}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ ILI9341\_DISPOFF\ 0x28\ \ }}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ ILI9341\_DISPON\ 0x29\ \ \ }}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ ILI9341\_CASET\ 0x2A\ }}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ ILI9341\_PASET\ 0x2B\ }}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ ILI9341\_RAMWR\ 0x2C\ }}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ ILI9341\_RAMRD\ 0x2E\ }}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ ILI9341\_PTLAR\ 0x30\ \ \ \ }}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#define\ ILI9341\_VSCRDEF\ 0x33\ \ }}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ ILI9341\_MADCTL\ 0x36\ \ \ }}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ ILI9341\_VSCRSADD\ 0x37\ }}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ ILI9341\_PIXFMT\ 0x3A\ \ \ }}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#define\ ILI9341\_FRMCTR1\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\ \ 0xB1\ }}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#define\ ILI9341\_FRMCTR2\ 0xB2\ }}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#define\ ILI9341\_FRMCTR3\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\ \ 0xB3\ }}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#define\ ILI9341\_INVCTR\ 0xB4\ \ }}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#define\ ILI9341\_DFUNCTR\ 0xB6\ }}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#define\ ILI9341\_PWCTR1\ 0xC0\ }}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#define\ ILI9341\_PWCTR2\ 0xC1\ }}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#define\ ILI9341\_PWCTR3\ 0xC2\ }}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#define\ ILI9341\_PWCTR4\ 0xC3\ }}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#define\ ILI9341\_PWCTR5\ 0xC4\ }}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#define\ ILI9341\_VMCTR1\ 0xC5\ }}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#define\ ILI9341\_VMCTR2\ 0xC7\ }}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#define\ ILI9341\_RDID1\ 0xDA\ }}
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#define\ ILI9341\_RDID2\ 0xDB\ }}
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#define\ ILI9341\_RDID3\ 0xDC\ }}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#define\ ILI9341\_RDID4\ 0xDD\ }}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#define\ ILI9341\_GMCTRP1\ 0xE0\ }}
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#define\ ILI9341\_GMCTRN1\ 0xE1\ }}
+\DoxyCodeLine{00079\ \textcolor{comment}{//\#define\ ILI9341\_PWCTR6\ \ \ \ \ 0xFC}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{comment}{//\ Color\ definitions}}
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#define\ ILI9341\_BLACK\ 0x0000\ \ \ \ \ \ \ }}
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#define\ ILI9341\_NAVY\ 0x000F\ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#define\ ILI9341\_DARKGREEN\ 0x03E0\ \ \ }}
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#define\ ILI9341\_DARKCYAN\ 0x03EF\ \ \ \ }}
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#define\ ILI9341\_MAROON\ 0x7800\ \ \ \ \ \ }}
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#define\ ILI9341\_PURPLE\ 0x780F\ \ \ \ \ \ }}
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#define\ ILI9341\_OLIVE\ 0x7BE0\ \ \ \ \ \ \ }}
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#define\ ILI9341\_LIGHTGREY\ 0xC618\ \ \ }}
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#define\ ILI9341\_DARKGREY\ 0x7BEF\ \ \ \ }}
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#define\ ILI9341\_BLUE\ 0x001F\ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#define\ ILI9341\_GREEN\ 0x07E0\ \ \ \ \ \ \ }}
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#define\ ILI9341\_CYAN\ 0x07FF\ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#define\ ILI9341\_RED\ 0xF800\ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\#define\ ILI9341\_MAGENTA\ 0xF81F\ \ \ \ \ }}
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\#define\ ILI9341\_YELLOW\ 0xFFE0\ \ \ \ \ \ }}
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#define\ ILI9341\_WHITE\ 0xFFFF\ \ \ \ \ \ \ }}
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#define\ ILI9341\_ORANGE\ 0xFD20\ \ \ \ \ \ }}
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#define\ ILI9341\_GREENYELLOW\ 0xAFE5\ }}
+\DoxyCodeLine{00100\ \textcolor{preprocessor}{\#define\ ILI9341\_PINK\ 0xFC18\ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{preprocessor}{\#define\ MADCTL\_MY\ 0x80\ \ }}
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#define\ MADCTL\_MX\ 0x40\ \ }}
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#define\ MADCTL\_MV\ 0x20\ \ }}
+\DoxyCodeLine{00105\ \textcolor{preprocessor}{\#define\ MADCTL\_ML\ 0x10\ \ }}
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#define\ MADCTL\_RGB\ 0x00\ }}
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#define\ MADCTL\_BGR\ 0x08\ }}
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#define\ MADCTL\_MH\ 0x04\ \ }}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#define\ ILI9341\_SPI\_TIMEOUT\ 1000}}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_i_l_i9341_8h_a0f241f9cfcb703e2994154ea35251892}{ILI9341\_SendCommand}}(uint8\_t\ Command);}
+\DoxyCodeLine{00113\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_i_l_i9341_8h_a7ae207b9f55148240d0dee03167a25f9}{ILI9341\_SendToTFT}}(uint8\_t\ *Byte,\ uint32\_t\ Length);}
+\DoxyCodeLine{00114\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_i_l_i9341_8h_a0538f2015fef138ace1fd64a3d652cd1}{ILI9341\_Init}}(\mbox{\hyperlink{struct_____s_p_i___handle_type_def}{SPI\_HandleTypeDef}}\ *hspi);}
+\DoxyCodeLine{00115\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_i_l_i9341_8h_aa1381a729cb6af2b71c6bed0c37cc906}{ILI9341\_SendCommandAndData}}(uint8\_t\ Command,\ uint8\_t\ *Data,\ uint16\_t\ Length);}
+\DoxyCodeLine{00116\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_i_l_i9341_8h_aeee3186252cba83694826a2c2c7014c5}{ILI9341\_WritePixel}}(uint16\_t\ x,\ uint16\_t\ y,\ uint16\_t\ color);}
+\DoxyCodeLine{00117\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_i_l_i9341_8h_a81ddeb47ba6c0c3353ae31e7e15b4910}{ILI9341\_SendData16}}(uint16\_t\ Data);}
+\DoxyCodeLine{00118\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_i_l_i9341_8h_a89228cd93ba2f68acf969f8f7eccd78b}{ILI9341\_SetAddrWindow}}(uint16\_t\ x1,\ uint16\_t\ y1,\ uint16\_t\ w,\ uint16\_t\ h);}
+\DoxyCodeLine{00119\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_i_l_i9341_8h_a324ebd8d3bc5309c8c9da80b0c07d10a}{ILI9341\_WriteScreen}}(uint16\_t\ color);}
+\DoxyCodeLine{00120\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_i_l_i9341_8h_a0fcdb5427fdab7f7eb09abce73b9ea5b}{ILI9341\_DrawImage}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keyword}{const}\ uint8\_t\ *img,\ uint16\_t\ w,\ uint16\_t\ h);}
+\DoxyCodeLine{00121\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_i_l_i9341_8h_a6ac0c89f746e798e7430746bf50fe499}{ILI9341\_SetRotation}}(uint8\_t\ m);}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ INC\_ILI9341\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,115 @@
+.TH "CORTEX_LL_EF_LOW_POWER_MODE" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CORTEX_LL_EF_LOW_POWER_MODE \- LOW POWER MODE
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_LPM_EnableSleep\fP (void)"
+.br
+.RI "Processor uses sleep as its low power mode @rmtoll SCB_SCR SLEEPDEEP LL_LPM_EnableSleep\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_LPM_EnableDeepSleep\fP (void)"
+.br
+.RI "Processor uses deep sleep as its low power mode @rmtoll SCB_SCR SLEEPDEEP LL_LPM_EnableDeepSleep\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_LPM_EnableSleepOnExit\fP (void)"
+.br
+.RI "Configures sleep-on-exit when returning from Handler mode to Thread mode\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_LPM_DisableSleepOnExit\fP (void)"
+.br
+.RI "Do not sleep when returning to Thread mode\&. @rmtoll SCB_SCR SLEEPONEXIT LL_LPM_DisableSleepOnExit\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_LPM_EnableEventOnPend\fP (void)"
+.br
+.RI "Enabled events and all interrupts, including disabled interrupts, can wakeup the processor\&. @rmtoll SCB_SCR SEVEONPEND LL_LPM_EnableEventOnPend\&. "
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBLL_LPM_DisableEventOnPend\fP (void)"
+.br
+.RI "Only enabled interrupts or events can wakeup the processor, disabled interrupts are excluded @rmtoll SCB_SCR SEVEONPEND LL_LPM_DisableEventOnPend\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "\fB__STATIC_INLINE\fP void LL_LPM_DisableEventOnPend (void)"
+
+.PP
+Only enabled interrupts or events can wakeup the processor, disabled interrupts are excluded @rmtoll SCB_SCR SEVEONPEND LL_LPM_DisableEventOnPend\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP void LL_LPM_DisableSleepOnExit (void)"
+
+.PP
+Do not sleep when returning to Thread mode\&. @rmtoll SCB_SCR SLEEPONEXIT LL_LPM_DisableSleepOnExit\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP void LL_LPM_EnableDeepSleep (void)"
+
+.PP
+Processor uses deep sleep as its low power mode @rmtoll SCB_SCR SLEEPDEEP LL_LPM_EnableDeepSleep\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP void LL_LPM_EnableEventOnPend (void)"
+
+.PP
+Enabled events and all interrupts, including disabled interrupts, can wakeup the processor\&. @rmtoll SCB_SCR SEVEONPEND LL_LPM_EnableEventOnPend\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP void LL_LPM_EnableSleep (void)"
+
+.PP
+Processor uses sleep as its low power mode @rmtoll SCB_SCR SLEEPDEEP LL_LPM_EnableSleep\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP void LL_LPM_EnableSleepOnExit (void)"
+
+.PP
+Configures sleep-on-exit when returning from Handler mode to Thread mode\&. 
+.PP
+\fBNote\fP
+.RS 4
+Setting this bit to 1 enables an interrupt-driven application to avoid returning to an empty main application\&. @rmtoll SCB_SCR SLEEPONEXIT LL_LPM_EnableSleepOnExit 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,757 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="main_8h" kind="file" language="C++">
+    <compoundname>main.h</compoundname>
+    <includes refid="stm32g0xx__hal_8h" local="yes">stm32g0xx_hal.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includedby refid="dma_8h" local="yes">Core/Inc/dma.h</includedby>
+    <includedby refid="gpio_8h" local="yes">Core/Inc/gpio.h</includedby>
+    <includedby refid="spi_8h" local="yes">Core/Inc/spi.h</includedby>
+    <includedby refid="tim_8h" local="yes">Core/Inc/tim.h</includedby>
+    <includedby refid="usart_8h" local="yes">Core/Inc/usart.h</includedby>
+    <includedby refid="main_8c" local="yes">Core/Src/main.c</includedby>
+    <includedby refid="stm32g0xx__hal__msp_8c" local="yes">Core/Src/stm32g0xx_hal_msp.c</includedby>
+    <includedby refid="stm32g0xx__it_8c" local="yes">Core/Src/stm32g0xx_it.c</includedby>
+    <includedby refid="_g_f_x___color_8c" local="yes">RadarApp/DisplayDriver/GFX_Color.c</includedby>
+    <includedby refid="_i_l_i9341_8c" local="yes">RadarApp/DisplayDriver/ILI9341.c</includedby>
+    <includedby refid="radar_8h" local="yes">RadarApp/RadarDriver/radar.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Core/Inc/main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="7">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="2">
+        <label>stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stm32g0xx_hal_cortex.h</label>
+        <link refid="stm32g0xx__hal__cortex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stm32g0xx_hal_dma.h</label>
+        <link refid="stm32g0xx__hal__dma_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stm32g0xx_hal_dma_ex.h</label>
+        <link refid="stm32g0xx__hal__dma__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>stm32g0xx_hal_exti.h</label>
+        <link refid="stm32g0xx__hal__exti_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>stm32g0xx_hal_flash.h</label>
+        <link refid="stm32g0xx__hal__flash_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>stm32g0xx_hal_flash_ex.h</label>
+        <link refid="stm32g0xx__hal__flash__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stm32g0xx_hal_gpio.h</label>
+        <link refid="stm32g0xx__hal__gpio_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stm32g0xx_hal_gpio_ex.h</label>
+        <link refid="stm32g0xx__hal__gpio__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>stm32g0xx_hal_pwr.h</label>
+        <link refid="stm32g0xx__hal__pwr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>stm32g0xx_hal_pwr_ex.h</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stm32g0xx_hal_rcc.h</label>
+        <link refid="stm32g0xx__hal__rcc_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stm32g0xx_hal_rcc_ex.h</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>stm32g0xx_hal_spi.h</label>
+        <link refid="stm32g0xx__hal__spi_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>stm32g0xx_hal_spi_ex.h</label>
+        <link refid="stm32g0xx__hal__spi__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>stm32g0xx_hal_tim.h</label>
+        <link refid="stm32g0xx__hal__tim_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>stm32g0xx_hal_tim_ex.h</label>
+        <link refid="stm32g0xx__hal__tim__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>stm32g0xx_hal_uart.h</label>
+        <link refid="stm32g0xx__hal__uart_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>stm32g0xx_hal_uart_ex.h</label>
+        <link refid="stm32g0xx__hal__uart__ex_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stm32g0xx_ll_dma.h</label>
+        <link refid="stm32g0xx__ll__dma_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stm32g0xx_ll_dmamux.h</label>
+        <link refid="stm32g0xx__ll__dmamux_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stm32g0xx_ll_rcc.h</label>
+        <link refid="stm32g0xx__ll__rcc_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>stdbool.h</label>
+      </node>
+      <node id="8">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Core/Inc/dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Core/Inc/gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Core/Inc/main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Core/Inc/spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Core/Inc/tim.h</label>
+        <link refid="tim_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Core/Inc/usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Core/Src/dma.c</label>
+        <link refid="dma_8c"/>
+      </node>
+      <node id="6">
+        <label>Core/Src/gpio.c</label>
+        <link refid="gpio_8c"/>
+      </node>
+      <node id="4">
+        <label>Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="8">
+        <label>Core/Src/spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="14">
+        <label>Core/Src/stm32g0xx_hal_msp.c</label>
+        <link refid="stm32g0xx__hal__msp_8c"/>
+      </node>
+      <node id="15">
+        <label>Core/Src/stm32g0xx_it.c</label>
+        <link refid="stm32g0xx__it_8c"/>
+      </node>
+      <node id="10">
+        <label>Core/Src/tim.c</label>
+        <link refid="tim_8c"/>
+      </node>
+      <node id="12">
+        <label>Core/Src/usart.c</label>
+        <link refid="usart_8c"/>
+      </node>
+      <node id="16">
+        <label>RadarApp/DisplayDriver/GFX_Color.c</label>
+        <link refid="_g_f_x___color_8c"/>
+      </node>
+      <node id="17">
+        <label>RadarApp/DisplayDriver/ILI9341.c</label>
+        <link refid="_i_l_i9341_8c"/>
+      </node>
+      <node id="19">
+        <label>RadarApp/RadarDriver/radar.c</label>
+        <link refid="radar_8c"/>
+      </node>
+      <node id="18">
+        <label>RadarApp/RadarDriver/radar.h</label>
+        <link refid="radar_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>RadarApp/usart_custom/usart_custom.c</label>
+        <link refid="usart__custom_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structdraw_helper_struct" prot="public">drawHelperStruct</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="main_8h_1a7bf0b4b8b3cf2f13f25573b3e151ed88" prot="public" static="no">
+        <name>DEGREES_TO_RADIANS</name>
+        <initializer>M_PI / 180.0;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="39" column="9" bodyfile="Core/Inc/main.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a4af2c73d1e7851081703024de435fa9b" prot="public" static="no">
+        <name>DRAW_SCALE_DEFAULT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="40" column="9" bodyfile="Core/Inc/main.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a3cdb91333ac7cef682e120946800997c" prot="public" static="no">
+        <name>MEASURE_SCALES_NUMBER_DEFAULT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="41" column="9" bodyfile="Core/Inc/main.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a77848f01afe06bfce62413be34070dea" prot="public" static="no">
+        <name>SENSOR_TRIG_Pin</name>
+        <initializer><ref refid="group___g_p_i_o__pins_1ga6c35af4e75c3cb57bb650feaa7a136b5" kindref="member">GPIO_PIN_1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="74" column="9" bodyfile="Core/Inc/main.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1ac0cb523c51cd31ba87835f6ff07e02b5" prot="public" static="no">
+        <name>SENSOR_TRIG_GPIO_Port</name>
+        <initializer><ref refid="group___peripheral__declaration_1gac485358099728ddae050db37924dd6b7" kindref="member">GPIOA</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="75" column="9" bodyfile="Core/Inc/main.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1ab24a9f98eeaddd5710269e92b7d2d6f6" prot="public" static="no">
+        <name>SENSOR_ECHO_Pin</name>
+        <initializer><ref refid="group___g_p_i_o__pins_1ga6eee38b797a7268f04357dfa2759efd2" kindref="member">GPIO_PIN_2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="76" column="9" bodyfile="Core/Inc/main.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1afe5dcf31563d684bf1ed67b132fc4a57" prot="public" static="no">
+        <name>SENSOR_ECHO_GPIO_Port</name>
+        <initializer><ref refid="group___peripheral__declaration_1gac485358099728ddae050db37924dd6b7" kindref="member">GPIOA</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="77" column="9" bodyfile="Core/Inc/main.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1addbaa90b150534ae173edcc1c3cf0c60" prot="public" static="no">
+        <name>SENSOR_ECHO_EXTI_IRQn</name>
+        <initializer><ref refid="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8a78602dc46ee54b2c1f3e6f0ef8f59e5f" kindref="member">EXTI2_3_IRQn</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="78" column="9" bodyfile="Core/Inc/main.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a184238358e23b4ab829703da23a46a08" prot="public" static="no">
+        <name>SERVO_PWM_Pin</name>
+        <initializer><ref refid="group___g_p_i_o__pins_1ga9089f18f20ec88ee38ce6f27389e6d7e" kindref="member">GPIO_PIN_6</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="79" column="9" bodyfile="Core/Inc/main.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a8a5065227132d1a85e6b8981a0d7683e" prot="public" static="no">
+        <name>SERVO_PWM_GPIO_Port</name>
+        <initializer><ref refid="group___peripheral__declaration_1gac485358099728ddae050db37924dd6b7" kindref="member">GPIOA</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="80" column="9" bodyfile="Core/Inc/main.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a120abdffd1d0822954c508647983aeaa" prot="public" static="no">
+        <name>TFT_CS_Pin</name>
+        <initializer><ref refid="group___g_p_i_o__pins_1ga6c35af4e75c3cb57bb650feaa7a136b5" kindref="member">GPIO_PIN_1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="81" column="9" bodyfile="Core/Inc/main.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a74b968acc952c32492c1e30b26ebac1d" prot="public" static="no">
+        <name>TFT_CS_GPIO_Port</name>
+        <initializer><ref refid="group___peripheral__declaration_1ga7580b1a929ea9df59725ba9c18eba6ac" kindref="member">GPIOD</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="82" column="9" bodyfile="Core/Inc/main.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a446e1d1953995eb3631efd6d53b8c09b" prot="public" static="no">
+        <name>TFT_RESET_Pin</name>
+        <initializer><ref refid="group___g_p_i_o__pins_1ga6eee38b797a7268f04357dfa2759efd2" kindref="member">GPIO_PIN_2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="83" column="9" bodyfile="Core/Inc/main.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1aa7f68db3741ae30497ab407915db922a" prot="public" static="no">
+        <name>TFT_RESET_GPIO_Port</name>
+        <initializer><ref refid="group___peripheral__declaration_1ga7580b1a929ea9df59725ba9c18eba6ac" kindref="member">GPIOD</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="84" column="9" bodyfile="Core/Inc/main.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a75eb10efcc8b47cafcbf6dbd7317dd92" prot="public" static="no">
+        <name>TFT_DC_Pin</name>
+        <initializer><ref refid="group___g_p_i_o__pins_1gadcaf899c018a0dde572b5af783565c62" kindref="member">GPIO_PIN_3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="85" column="9" bodyfile="Core/Inc/main.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a2d19111c29b4bb576f2c35f8a024ed95" prot="public" static="no">
+        <name>TFT_DC_GPIO_Port</name>
+        <initializer><ref refid="group___peripheral__declaration_1ga7580b1a929ea9df59725ba9c18eba6ac" kindref="member">GPIOD</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="86" column="9" bodyfile="Core/Inc/main.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a10660a9fd49c4986512b3c2c0be955d7" prot="public" static="no">
+        <name>TT_LED_Pin</name>
+        <initializer><ref refid="group___g_p_i_o__pins_1ga9089f18f20ec88ee38ce6f27389e6d7e" kindref="member">GPIO_PIN_6</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="87" column="9" bodyfile="Core/Inc/main.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a78bbdd9e82306f859e9d57d52359c330" prot="public" static="no">
+        <name>TT_LED_GPIO_Port</name>
+        <initializer><ref refid="group___peripheral__declaration_1ga68b66ac73be4c836db878a42e1fea3cd" kindref="member">GPIOB</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="88" column="9" bodyfile="Core/Inc/main.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="main_8h_1a1730ffe1e560465665eb47d9264826f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Error_Handler</definition>
+        <argsstring>(void)</argsstring>
+        <name>Error_Handler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is executed in case of error occurrence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="63" column="6" bodyfile="Core/Src/main.c" bodystart="392" bodyend="401" declfile="Core/Inc/main.h" declline="63" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8h_1a753dcda9075115cc1c781e4332085f84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawClear</definition>
+        <argsstring>()</argsstring>
+        <name>drawClear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="66" column="6" bodyfile="Core/Src/main.c" bodystart="207" bodyend="210" declfile="Core/Inc/main.h" declline="66" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8h_1aedda947c024e77ba1f14c739913870bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawSetup</definition>
+        <argsstring>()</argsstring>
+        <name>drawSetup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="67" column="6" bodyfile="Core/Src/main.c" bodystart="212" bodyend="233" declfile="Core/Inc/main.h" declline="67" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8h_1ab3557cb07835dec370fd8b7855343aae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool drawSetupUpdate</definition>
+        <argsstring>(double drawScale, uint8_t measureScalesNumber)</argsstring>
+        <name>drawSetupUpdate</name>
+        <param>
+          <type>double</type>
+          <declname>drawScale</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>measureScalesNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="68" column="6" bodyfile="Core/Src/main.c" bodystart="235" bodyend="274" declfile="Core/Inc/main.h" declline="68" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8h_1ab5b93ed998b46e745b6713b6d7a27e32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawMeasure</definition>
+        <argsstring>()</argsstring>
+        <name>drawMeasure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="69" column="6" bodyfile="Core/Src/main.c" bodystart="276" bodyend="291" declfile="Core/Inc/main.h" declline="69" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8h_1af9f0ac13160d4a1b3eb13b6a0fa76502" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawMeasureScale</definition>
+        <argsstring>()</argsstring>
+        <name>drawMeasureScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/main.h" line="70" column="6" bodyfile="Core/Src/main.c" bodystart="293" bodyend="303" declfile="Core/Inc/main.h" declline="70" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>: Header for <ref refid="main_8c" kindref="compound">main.c</ref> file. This file contains the common defines of the application. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="attention"><para></para>
+</simplesect>
+Copyright (c) 2023 STMicroelectronics. All rights reserved.</para>
+<para>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Header<sp/>*/</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Header<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__MAIN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__MAIN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32g0xx__hal_8h" kindref="compound">stm32g0xx_hal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>includes<sp/>----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Includes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Includes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>types<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>ET<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="main_8h_1a7bf0b4b8b3cf2f13f25573b3e151ed88" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEGREES_TO_RADIANS<sp/>M_PI<sp/>/<sp/>180.0;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="main_8h_1a4af2c73d1e7851081703024de435fa9b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRAW_SCALE_DEFAULT<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="main_8h_1a3cdb91333ac7cef682e120946800997c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MEASURE_SCALES_NUMBER_DEFAULT<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structdraw_helper_struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44" refid="structdraw_helper_struct_1aeb3238cbef436c3e4bac1fa66d733e99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structdraw_helper_struct_1aeb3238cbef436c3e4bac1fa66d733e99" kindref="member">drawScale</ref>;</highlight></codeline>
+<codeline lineno="45" refid="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structdraw_helper_struct_1ab0b5ae05a58dca99008939a192b6594f" kindref="member">measureScalesNumber</ref>;</highlight></codeline>
+<codeline lineno="46" refid="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t*<sp/><ref refid="structdraw_helper_struct_1a772a9fb57529d22b98649db8344199d1" kindref="member">measureScaleY</ref>;</highlight></codeline>
+<codeline lineno="47" refid="structdraw_helper_struct_1a8c9f16a7e18d06854e12f89c5fb5c031" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t*<sp/><ref refid="structdraw_helper_struct_1a8c9f16a7e18d06854e12f89c5fb5c031" kindref="member">measureScaleCm</ref>;</highlight></codeline>
+<codeline lineno="48" refid="structdraw_helper_struct_1affa6ef93faeb748b815a0edc0390aa14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="structdraw_helper_struct_1affa6ef93faeb748b815a0edc0390aa14" kindref="member">xp</ref>,<sp/>yp;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}<ref refid="structdraw_helper_struct" kindref="compound">drawHelperStruct</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>ET<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>constants<sp/>--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>EC<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>EC<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>macro<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>EM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>EM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>functions<sp/>prototypes<sp/>---------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>EFP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8h_1a753dcda9075115cc1c781e4332085f84" kindref="member">drawClear</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8h_1aedda947c024e77ba1f14c739913870bd" kindref="member">drawSetup</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="main_8h_1ab3557cb07835dec370fd8b7855343aae" kindref="member">drawSetupUpdate</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>drawScale,<sp/>uint8_t<sp/>measureScalesNumber);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8h_1ab5b93ed998b46e745b6713b6d7a27e32" kindref="member">drawMeasure</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8h_1af9f0ac13160d4a1b3eb13b6a0fa76502" kindref="member">drawMeasureScale</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>EFP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>defines<sp/>-----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="main_8h_1a77848f01afe06bfce62413be34070dea" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_TRIG_Pin<sp/>GPIO_PIN_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="main_8h_1ac0cb523c51cd31ba87835f6ff07e02b5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_TRIG_GPIO_Port<sp/>GPIOA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="main_8h_1ab24a9f98eeaddd5710269e92b7d2d6f6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_ECHO_Pin<sp/>GPIO_PIN_2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="main_8h_1afe5dcf31563d684bf1ed67b132fc4a57" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_ECHO_GPIO_Port<sp/>GPIOA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="main_8h_1addbaa90b150534ae173edcc1c3cf0c60" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_ECHO_EXTI_IRQn<sp/>EXTI2_3_IRQn</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="main_8h_1a184238358e23b4ab829703da23a46a08" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERVO_PWM_Pin<sp/>GPIO_PIN_6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="main_8h_1a8a5065227132d1a85e6b8981a0d7683e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERVO_PWM_GPIO_Port<sp/>GPIOA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="main_8h_1a120abdffd1d0822954c508647983aeaa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TFT_CS_Pin<sp/>GPIO_PIN_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="main_8h_1a74b968acc952c32492c1e30b26ebac1d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TFT_CS_GPIO_Port<sp/>GPIOD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="main_8h_1a446e1d1953995eb3631efd6d53b8c09b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TFT_RESET_Pin<sp/>GPIO_PIN_2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="main_8h_1aa7f68db3741ae30497ab407915db922a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TFT_RESET_GPIO_Port<sp/>GPIOD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="main_8h_1a75eb10efcc8b47cafcbf6dbd7317dd92" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TFT_DC_Pin<sp/>GPIO_PIN_3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="main_8h_1a2d19111c29b4bb576f2c35f8a024ed95" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TFT_DC_GPIO_Port<sp/>GPIOD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="main_8h_1a10660a9fd49c4986512b3c2c0be955d7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TT_LED_Pin<sp/>GPIO_PIN_6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="main_8h_1a78bbdd9e82306f859e9d57d52359c330" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TT_LED_GPIO_Port<sp/>GPIOB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Private<sp/>defines<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Private<sp/>defines<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__MAIN_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Core/Inc/main.h"/>
+  </compounddef>
+</doxygen>

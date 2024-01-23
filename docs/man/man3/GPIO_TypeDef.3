@@ -1,0 +1,92 @@
+.TH "GPIO_TypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GPIO_TypeDef \- General Purpose I/O\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g030xx\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMODER\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBOTYPER\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBOSPEEDR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPUPDR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBIDR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBODR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBBSRR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBLCKR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBAFR\fP [2]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBBRR\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+General Purpose I/O\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t GPIO_TypeDef::AFR[2]"
+GPIO alternate function registers, Address offset: 0x20-0x24 
+.SS "\fB__IO\fP uint32_t GPIO_TypeDef::BRR"
+GPIO Bit Reset register, Address offset: 0x28 
+.br
+ 
+.SS "\fB__IO\fP uint32_t GPIO_TypeDef::BSRR"
+GPIO port bit set/reset register, Address offset: 0x18 
+.br
+ 
+.SS "\fB__IO\fP uint32_t GPIO_TypeDef::IDR"
+GPIO port input data register, Address offset: 0x10 
+.br
+ 
+.SS "\fB__IO\fP uint32_t GPIO_TypeDef::LCKR"
+GPIO port configuration lock register, Address offset: 0x1C 
+.br
+ 
+.SS "\fB__IO\fP uint32_t GPIO_TypeDef::MODER"
+GPIO port mode register, Address offset: 0x00 
+.br
+ 
+.SS "\fB__IO\fP uint32_t GPIO_TypeDef::ODR"
+GPIO port output data register, Address offset: 0x14 
+.br
+ 
+.SS "\fB__IO\fP uint32_t GPIO_TypeDef::OSPEEDR"
+GPIO port output speed register, Address offset: 0x08 
+.br
+ 
+.SS "\fB__IO\fP uint32_t GPIO_TypeDef::OTYPER"
+GPIO port output type register, Address offset: 0x04 
+.br
+ 
+.SS "\fB__IO\fP uint32_t GPIO_TypeDef::PUPDR"
+GPIO port pull-up/pull-down register, Address offset: 0x0C 
+.br
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

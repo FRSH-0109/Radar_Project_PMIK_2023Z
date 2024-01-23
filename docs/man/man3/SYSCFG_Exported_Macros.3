@@ -1,0 +1,285 @@
+.TH "SYSCFG_Exported_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SYSCFG_Exported_Macros \- SYSCFG Exported Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__HAL_GET_PENDING_IT\fP(__SOURCE__)   (\fBSYSCFG\fP\->IT_LINE_SR[((__SOURCE__) >> 0x18U)] & ((__SOURCE__) & 0x00FFFFFF))"
+.br
+.RI "ISR wrapper check\&. "
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_REMAPMEMORY_FLASH\fP()   \fBCLEAR_BIT\fP(\fBSYSCFG\fP\->CFGR1, \fBSYSCFG_CFGR1_MEM_MODE\fP)"
+.br
+.RI "Main Flash memory mapped at 0x00000000\&. "
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_REMAPMEMORY_SYSTEMFLASH\fP()   \fBMODIFY_REG\fP(\fBSYSCFG\fP\->CFGR1, \fBSYSCFG_CFGR1_MEM_MODE\fP, \fBSYSCFG_CFGR1_MEM_MODE_0\fP)"
+.br
+.RI "System Flash memory mapped at 0x00000000\&. "
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_REMAPMEMORY_SRAM\fP()     \fBMODIFY_REG\fP(\fBSYSCFG\fP\->CFGR1, \fBSYSCFG_CFGR1_MEM_MODE\fP, (\fBSYSCFG_CFGR1_MEM_MODE_1\fP|\fBSYSCFG_CFGR1_MEM_MODE_0\fP))"
+.br
+.RI "Embedded SRAM mapped at 0x00000000\&. "
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_GET_BOOT_MODE\fP()   \fBREAD_BIT\fP(\fBSYSCFG\fP\->CFGR1, \fBSYSCFG_CFGR1_MEM_MODE\fP)"
+.br
+.RI "Return the boot mode as configured by user\&. "
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_BREAK_ECC_LOCK\fP()   \fBSET_BIT\fP(\fBSYSCFG\fP\->CFGR2, \fBSYSCFG_CFGR2_ECCL\fP)"
+.br
+.RI "SYSCFG Break ECC lock\&. Enable and lock the connection of Flash ECC error connection to TIM1 Break input\&. "
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_BREAK_LOCKUP_LOCK\fP()   \fBSET_BIT\fP(\fBSYSCFG\fP\->CFGR2, \fBSYSCFG_CFGR2_CLL\fP)"
+.br
+.RI "SYSCFG Break Cortex-M0+ Lockup lock\&. Enables and locks the connection of Cortex-M0+ LOCKUP (Hardfault) output to TIM1/15/16/17 Break input\&. "
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_BREAK_SRAMPARITY_LOCK\fP()   \fBSET_BIT\fP(\fBSYSCFG\fP\->CFGR2,\fBSYSCFG_CFGR2_SPL\fP)"
+.br
+.RI "SYSCFG Break SRAM PARITY lock Enables and locks the SRAM_PARITY error signal with Break Input of TIMER1/15/16/17\&. "
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_RAM_PARITYCHECK_DISABLE\fP()   (\fBSYSCFG\fP\->CFGR2 |= \fBSYSCFG_CFGR2_SPF\fP)"
+.br
+.RI "Parity check on RAM disable macro\&. "
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_CLEAR_FLAG\fP()   \fBSET_BIT\fP(\fBSYSCFG\fP\->CFGR2, \fBSYSCFG_CFGR2_SPF\fP)"
+.br
+.RI "Set the PEF bit to clear the SRAM Parity Error Flag\&. "
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_FASTMODEPLUS_ENABLE\fP(__FASTMODEPLUS__)"
+.br
+.RI "Fast-mode Plus driving capability enable/disable macros\&. "
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_FASTMODEPLUS_DISABLE\fP(__FASTMODEPLUS__)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_GET_PENDING_IT\fP(__SOURCE__)     (\fBSYSCFG\fP\->IT_LINE_SR[((__SOURCE__) >> 0x18U)] & ((__SOURCE__) & 0x00FFFFFFU))"
+.br
+.RI "ISR wrapper check\&. "
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_IRDA_ENV_SELECTION\fP(__SOURCE__)"
+.br
+.RI "selection of the modulation envelope signal macro, using bits [7:6] of SYSCFG_CFGR1 register "
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_GET_IRDA_ENV_SELECTION\fP()   ((\fBSYSCFG\fP\->CFGR1) & 0x000000C0U)"
+.br
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_IRDA_OUT_POLARITY_SELECTION\fP(__SEL__)"
+.br
+.RI "IROut Polarity Selection, using bit[5] of SYSCFG_CFGR1 register\&. "
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_GET_POLARITY\fP()   \fBREAD_BIT\fP(\fBSYSCFG\fP\->CFGR1, \fBSYSCFG_CFGR1_IR_POL\fP)"
+.br
+.RI "Return the IROut Polarity mode as configured by user\&. "
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_BREAK_ENABLE\fP(__BREAK__)"
+.br
+.RI "Break input to TIM1/15/16/17 capability enable/disable macros\&. "
+.ti -1c
+.RI "#define \fB__HAL_SYSCFG_BREAK_DISABLE\fP(__BREAK__)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __HAL_GET_PENDING_IT(__SOURCE__)   (\fBSYSCFG\fP\->IT_LINE_SR[((__SOURCE__) >> 0x18U)] & ((__SOURCE__) & 0x00FFFFFF))"
+
+.PP
+ISR wrapper check\&. 
+.PP
+\fBNote\fP
+.RS 4
+Allow to determine interrupt source per line\&. 
+.RE
+.PP
+
+.SS "#define __HAL_SYSCFG_BREAK_DISABLE(__BREAK__)"
+\fBValue:\fP.PP
+.nf
+                                                     do {assert_param(IS_SYSCFG_BREAK_CONFIG((__BREAK__)));\\
+                                                     CLEAR_BIT(SYSCFG\->CFGR2, (__BREAK__));\\
+                                                    }while(0U)
+.fi
+
+.SS "#define __HAL_SYSCFG_BREAK_ECC_LOCK()   \fBSET_BIT\fP(\fBSYSCFG\fP\->CFGR2, \fBSYSCFG_CFGR2_ECCL\fP)"
+
+.PP
+SYSCFG Break ECC lock\&. Enable and lock the connection of Flash ECC error connection to TIM1 Break input\&. 
+.PP
+\fBNote\fP
+.RS 4
+The selected configuration is locked and can be unlocked only by system reset\&. 
+.RE
+.PP
+
+.SS "#define __HAL_SYSCFG_BREAK_ENABLE(__BREAK__)"
+\fBValue:\fP.PP
+.nf
+                                                     do {assert_param(IS_SYSCFG_BREAK_CONFIG((__BREAK__)));\\
+                                                     SET_BIT(SYSCFG\->CFGR2, (__BREAK__));\\
+                                                    }while(0U)
+.fi
+
+.PP
+Break input to TIM1/15/16/17 capability enable/disable macros\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__BREAK__\fP This parameter can be a value of \fBBreak\fP 
+.RE
+.PP
+
+.SS "#define __HAL_SYSCFG_BREAK_LOCKUP_LOCK()   \fBSET_BIT\fP(\fBSYSCFG\fP\->CFGR2, \fBSYSCFG_CFGR2_CLL\fP)"
+
+.PP
+SYSCFG Break Cortex-M0+ Lockup lock\&. Enables and locks the connection of Cortex-M0+ LOCKUP (Hardfault) output to TIM1/15/16/17 Break input\&. 
+.PP
+\fBNote\fP
+.RS 4
+The selected configuration is locked and can be unlocked only by system reset\&. 
+.RE
+.PP
+
+.SS "#define __HAL_SYSCFG_BREAK_SRAMPARITY_LOCK()   \fBSET_BIT\fP(\fBSYSCFG\fP\->CFGR2,\fBSYSCFG_CFGR2_SPL\fP)"
+
+.PP
+SYSCFG Break SRAM PARITY lock Enables and locks the SRAM_PARITY error signal with Break Input of TIMER1/15/16/17\&. 
+.PP
+\fBNote\fP
+.RS 4
+The selected configuration is locked and can only be unlocked by system reset 
+.RE
+.PP
+
+.SS "#define __HAL_SYSCFG_CLEAR_FLAG()   \fBSET_BIT\fP(\fBSYSCFG\fP\->CFGR2, \fBSYSCFG_CFGR2_SPF\fP)"
+
+.PP
+Set the PEF bit to clear the SRAM Parity Error Flag\&. 
+.SS "#define __HAL_SYSCFG_FASTMODEPLUS_DISABLE(__FASTMODEPLUS__)"
+\fBValue:\fP.PP
+.nf
+                                                                do {assert_param(IS_SYSCFG_FASTMODEPLUS((__FASTMODEPLUS__)));\\
+                                                                CLEAR_BIT(SYSCFG\->CFGR1, (__FASTMODEPLUS__));\\
+                                                               }while(0U)
+.fi
+
+.SS "#define __HAL_SYSCFG_FASTMODEPLUS_ENABLE(__FASTMODEPLUS__)"
+\fBValue:\fP.PP
+.nf
+                                                                do {assert_param(IS_SYSCFG_FASTMODEPLUS((__FASTMODEPLUS__)));\\
+                                                                SET_BIT(SYSCFG\->CFGR1, (__FASTMODEPLUS__));\\
+                                                               }while(0U)
+.fi
+
+.PP
+Fast-mode Plus driving capability enable/disable macros\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__FASTMODEPLUS__\fP This parameter can be a value of \fBFast mode Plus on GPIO\fP 
+.RE
+.PP
+
+.SS "#define __HAL_SYSCFG_GET_BOOT_MODE()   \fBREAD_BIT\fP(\fBSYSCFG\fP\->CFGR1, \fBSYSCFG_CFGR1_MEM_MODE\fP)"
+
+.PP
+Return the boot mode as configured by user\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIThe\fP boot mode as configured by user\&. The returned value can be one of the following values \fBBoot Mode\fP 
+.RE
+.PP
+
+.SS "#define __HAL_SYSCFG_GET_IRDA_ENV_SELECTION()   ((\fBSYSCFG\fP\->CFGR1) & 0x000000C0U)"
+
+.SS "#define __HAL_SYSCFG_GET_PENDING_IT(__SOURCE__)     (\fBSYSCFG\fP\->IT_LINE_SR[((__SOURCE__) >> 0x18U)] & ((__SOURCE__) & 0x00FFFFFFU))"
+
+.PP
+ISR wrapper check\&. 
+.PP
+\fBNote\fP
+.RS 4
+Allow to determine interrupt source per line\&. 
+.RE
+.PP
+
+.SS "#define __HAL_SYSCFG_GET_POLARITY()   \fBREAD_BIT\fP(\fBSYSCFG\fP\->CFGR1, \fBSYSCFG_CFGR1_IR_POL\fP)"
+
+.PP
+Return the IROut Polarity mode as configured by user\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fIThe\fP IROut polarity as configured by user\&. The returned value can be one of \fBIR output polarity selection\fP 
+.RE
+.PP
+
+.SS "#define __HAL_SYSCFG_IRDA_ENV_SELECTION(__SOURCE__)"
+\fBValue:\fP.PP
+.nf
+                                                         do {assert_param(IS_HAL_SYSCFG_IRDA_ENV_SEL((__SOURCE__)));\\
+                                                         CLEAR_BIT(SYSCFG\->CFGR1, SYSCFG_CFGR1_IR_MOD);\\
+                                                         SET_BIT(SYSCFG\->CFGR1, (__SOURCE__));\\
+                                                        }while(0U)
+.fi
+
+.PP
+selection of the modulation envelope signal macro, using bits [7:6] of SYSCFG_CFGR1 register 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__SOURCE__\fP This parameter can be a value of \fBIR Modulation Envelope signal selection\fP 
+.RE
+.PP
+
+.SS "#define __HAL_SYSCFG_IRDA_OUT_POLARITY_SELECTION(__SEL__)"
+\fBValue:\fP.PP
+.nf
+                                                                do { assert_param(IS_HAL_SYSCFG_IRDA_POL_SEL((__SEL__)));\\
+                                                                CLEAR_BIT(SYSCFG\->CFGR1, SYSCFG_CFGR1_IR_POL);\\
+                                                                SET_BIT(SYSCFG\->CFGR1,(__SEL__));\\
+                                                              }while(0U)
+.fi
+
+.PP
+IROut Polarity Selection, using bit[5] of SYSCFG_CFGR1 register\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__SEL__\fP This parameter can be a value of \fBIR output polarity selection\fP 
+.RE
+.PP
+
+.SS "#define __HAL_SYSCFG_RAM_PARITYCHECK_DISABLE()   (\fBSYSCFG\fP\->CFGR2 |= \fBSYSCFG_CFGR2_SPF\fP)"
+
+.PP
+Parity check on RAM disable macro\&. 
+.PP
+\fBNote\fP
+.RS 4
+Disabling the parity check on RAM locks the configuration bit\&. To re-enable the parity check on RAM perform a system reset\&. 
+.RE
+.PP
+
+.SS "#define __HAL_SYSCFG_REMAPMEMORY_FLASH()   \fBCLEAR_BIT\fP(\fBSYSCFG\fP\->CFGR1, \fBSYSCFG_CFGR1_MEM_MODE\fP)"
+
+.PP
+Main Flash memory mapped at 0x00000000\&. 
+.SS "#define __HAL_SYSCFG_REMAPMEMORY_SRAM()     \fBMODIFY_REG\fP(\fBSYSCFG\fP\->CFGR1, \fBSYSCFG_CFGR1_MEM_MODE\fP, (\fBSYSCFG_CFGR1_MEM_MODE_1\fP|\fBSYSCFG_CFGR1_MEM_MODE_0\fP))"
+
+.PP
+Embedded SRAM mapped at 0x00000000\&. 
+.SS "#define __HAL_SYSCFG_REMAPMEMORY_SYSTEMFLASH()   \fBMODIFY_REG\fP(\fBSYSCFG\fP\->CFGR1, \fBSYSCFG_CFGR1_MEM_MODE\fP, \fBSYSCFG_CFGR1_MEM_MODE_0\fP)"
+
+.PP
+System Flash memory mapped at 0x00000000\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

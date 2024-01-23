@@ -1,0 +1,85 @@
+.TH "TIM_HandleTypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIM_HandleTypeDef \- TIM Time Base Handle Structure definition\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g0xx_hal_tim\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBTIM_TypeDef\fP * \fBInstance\fP"
+.br
+.ti -1c
+.RI "\fBTIM_Base_InitTypeDef\fP \fBInit\fP"
+.br
+.ti -1c
+.RI "\fBHAL_TIM_ActiveChannel\fP \fBChannel\fP"
+.br
+.ti -1c
+.RI "\fBDMA_HandleTypeDef\fP * \fBhdma\fP [7]"
+.br
+.ti -1c
+.RI "\fBHAL_LockTypeDef\fP \fBLock\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP \fBHAL_TIM_StateTypeDef\fP \fBState\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP \fBHAL_TIM_ChannelStateTypeDef\fP \fBChannelState\fP [6]"
+.br
+.ti -1c
+.RI "\fB__IO\fP \fBHAL_TIM_ChannelStateTypeDef\fP \fBChannelNState\fP [4]"
+.br
+.ti -1c
+.RI "\fB__IO\fP \fBHAL_TIM_DMABurstStateTypeDef\fP \fBDMABurstState\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+TIM Time Base Handle Structure definition\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBHAL_TIM_ActiveChannel\fP TIM_HandleTypeDef::Channel"
+Active channel 
+.br
+ 
+.SS "\fB__IO\fP \fBHAL_TIM_ChannelStateTypeDef\fP TIM_HandleTypeDef::ChannelNState[4]"
+TIM complementary channel operation state 
+.br
+ 
+.SS "\fB__IO\fP \fBHAL_TIM_ChannelStateTypeDef\fP TIM_HandleTypeDef::ChannelState[6]"
+TIM channel operation state 
+.br
+ 
+.SS "\fB__IO\fP \fBHAL_TIM_DMABurstStateTypeDef\fP TIM_HandleTypeDef::DMABurstState"
+DMA burst operation state 
+.br
+ 
+.SS "\fBDMA_HandleTypeDef\fP* TIM_HandleTypeDef::hdma[7]"
+DMA Handlers array This array is accessed by a \fBTIM DMA Handle Index\fP 
+.SS "\fBTIM_Base_InitTypeDef\fP TIM_HandleTypeDef::Init"
+TIM Time Base required parameters 
+.br
+ 
+.SS "\fBTIM_TypeDef\fP* TIM_HandleTypeDef::Instance"
+Register base address 
+.br
+ 
+.SS "\fBHAL_LockTypeDef\fP TIM_HandleTypeDef::Lock"
+Locking object 
+.br
+ 
+.SS "\fB__IO\fP \fBHAL_TIM_StateTypeDef\fP TIM_HandleTypeDef::State"
+TIM operation state 
+.br
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

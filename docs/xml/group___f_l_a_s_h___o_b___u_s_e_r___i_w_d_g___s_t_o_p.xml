@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_t_o_p" kind="group">
+    <compoundname>FLASH_OB_USER_IWDG_STOP</compoundname>
+    <title>FLASH Option Bytes User IWDG Mode On Stop</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_t_o_p_1gae0c882a6f14ebe5d1969b50d5a2dbb17" prot="public" static="no">
+        <name>OB_IWDG_STOP_FREEZE</name>
+        <initializer>0x00000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Independent watchdog counter is frozen in Stop mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="464" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_l_a_s_h___o_b___u_s_e_r___i_w_d_g___s_t_o_p_1ga987e1a1bee2772467b010a71888b0047" prot="public" static="no">
+        <name>OB_IWDG_STOP_RUN</name>
+        <initializer><ref refid="group___peripheral___registers___bits___definition_1ga8b7e18ae68b0e19a4ebb84c208e5ef18" kindref="member">FLASH_OPTR_IWDG_STOP</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Independent watchdog counter is running in Stop mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" line="465" column="9" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,50 @@
+.TH "RadarApp/DistanceSensorDriver/distance_sensor.c" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RadarApp/DistanceSensorDriver/distance_sensor.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <distance_sensor\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBdistanceSensorInit\fP (\fBdistanceSensorStruct\fP *sensor, double ticksToDistanceFactor)"
+.br
+.ti -1c
+.RI "\fB__attribute__\fP ((weak))"
+.br
+.ti -1c
+.RI "void \fBdistanceSensorSendTrig\fP (\fBdistanceSensorStruct\fP *sensor)"
+.br
+.ti -1c
+.RI "void \fBdistanceSensorGetEcho\fP (\fBdistanceSensorStruct\fP *sensor, uint16_t ticks)"
+.br
+.ti -1c
+.RI "bool \fBdistanceSensorGetReadyToMeasure\fP (\fBdistanceSensorStruct\fP *sensor)"
+.br
+.ti -1c
+.RI "double \fBdistanceSensorGetDistance\fP (\fBdistanceSensorStruct\fP *sensor)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "__attribute__ ((weak))"
+
+.SS "double distanceSensorGetDistance (\fBdistanceSensorStruct\fP * sensor)"
+
+.SS "void distanceSensorGetEcho (\fBdistanceSensorStruct\fP * sensor, uint16_t ticks)"
+
+.SS "bool distanceSensorGetReadyToMeasure (\fBdistanceSensorStruct\fP * sensor)"
+
+.SS "void distanceSensorInit (\fBdistanceSensorStruct\fP * sensor, double ticksToDistanceFactor)"
+
+.SS "void distanceSensorSendTrig (\fBdistanceSensorStruct\fP * sensor)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

@@ -1,0 +1,180 @@
+.TH "Core/Inc/main.h" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Core/Inc/main.h \- : Header for \fBmain\&.c\fP file\&. This file contains the common defines of the application\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stm32g0xx_hal\&.h'\fP
+.br
+\fC#include <stdbool\&.h>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBdrawHelperStruct\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDEGREES_TO_RADIANS\fP   M_PI / 180\&.0;"
+.br
+.ti -1c
+.RI "#define \fBDRAW_SCALE_DEFAULT\fP   2"
+.br
+.ti -1c
+.RI "#define \fBMEASURE_SCALES_NUMBER_DEFAULT\fP   3"
+.br
+.ti -1c
+.RI "#define \fBSENSOR_TRIG_Pin\fP   \fBGPIO_PIN_1\fP"
+.br
+.ti -1c
+.RI "#define \fBSENSOR_TRIG_GPIO_Port\fP   \fBGPIOA\fP"
+.br
+.ti -1c
+.RI "#define \fBSENSOR_ECHO_Pin\fP   \fBGPIO_PIN_2\fP"
+.br
+.ti -1c
+.RI "#define \fBSENSOR_ECHO_GPIO_Port\fP   \fBGPIOA\fP"
+.br
+.ti -1c
+.RI "#define \fBSENSOR_ECHO_EXTI_IRQn\fP   \fBEXTI2_3_IRQn\fP"
+.br
+.ti -1c
+.RI "#define \fBSERVO_PWM_Pin\fP   \fBGPIO_PIN_6\fP"
+.br
+.ti -1c
+.RI "#define \fBSERVO_PWM_GPIO_Port\fP   \fBGPIOA\fP"
+.br
+.ti -1c
+.RI "#define \fBTFT_CS_Pin\fP   \fBGPIO_PIN_1\fP"
+.br
+.ti -1c
+.RI "#define \fBTFT_CS_GPIO_Port\fP   \fBGPIOD\fP"
+.br
+.ti -1c
+.RI "#define \fBTFT_RESET_Pin\fP   \fBGPIO_PIN_2\fP"
+.br
+.ti -1c
+.RI "#define \fBTFT_RESET_GPIO_Port\fP   \fBGPIOD\fP"
+.br
+.ti -1c
+.RI "#define \fBTFT_DC_Pin\fP   \fBGPIO_PIN_3\fP"
+.br
+.ti -1c
+.RI "#define \fBTFT_DC_GPIO_Port\fP   \fBGPIOD\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_LED_Pin\fP   \fBGPIO_PIN_6\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_LED_GPIO_Port\fP   \fBGPIOB\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBError_Handler\fP (void)"
+.br
+.RI "This function is executed in case of error occurrence\&. "
+.ti -1c
+.RI "void \fBdrawClear\fP ()"
+.br
+.ti -1c
+.RI "void \fBdrawSetup\fP ()"
+.br
+.ti -1c
+.RI "bool \fBdrawSetupUpdate\fP (double drawScale, uint8_t measureScalesNumber)"
+.br
+.ti -1c
+.RI "void \fBdrawMeasure\fP ()"
+.br
+.ti -1c
+.RI "void \fBdrawMeasureScale\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+: Header for \fBmain\&.c\fP file\&. This file contains the common defines of the application\&. 
+
+
+.PP
+\fBAttention\fP
+.RS 4
+
+.RE
+.PP
+Copyright (c) 2023 STMicroelectronics\&. All rights reserved\&.
+.PP
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component\&. If no LICENSE file comes with this software, it is provided AS-IS\&. 
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DEGREES_TO_RADIANS   M_PI / 180\&.0;"
+
+.SS "#define DRAW_SCALE_DEFAULT   2"
+
+.SS "#define MEASURE_SCALES_NUMBER_DEFAULT   3"
+
+.SS "#define SENSOR_ECHO_EXTI_IRQn   \fBEXTI2_3_IRQn\fP"
+
+.SS "#define SENSOR_ECHO_GPIO_Port   \fBGPIOA\fP"
+
+.SS "#define SENSOR_ECHO_Pin   \fBGPIO_PIN_2\fP"
+
+.SS "#define SENSOR_TRIG_GPIO_Port   \fBGPIOA\fP"
+
+.SS "#define SENSOR_TRIG_Pin   \fBGPIO_PIN_1\fP"
+
+.SS "#define SERVO_PWM_GPIO_Port   \fBGPIOA\fP"
+
+.SS "#define SERVO_PWM_Pin   \fBGPIO_PIN_6\fP"
+
+.SS "#define TFT_CS_GPIO_Port   \fBGPIOD\fP"
+
+.SS "#define TFT_CS_Pin   \fBGPIO_PIN_1\fP"
+
+.SS "#define TFT_DC_GPIO_Port   \fBGPIOD\fP"
+
+.SS "#define TFT_DC_Pin   \fBGPIO_PIN_3\fP"
+
+.SS "#define TFT_RESET_GPIO_Port   \fBGPIOD\fP"
+
+.SS "#define TFT_RESET_Pin   \fBGPIO_PIN_2\fP"
+
+.SS "#define TT_LED_GPIO_Port   \fBGPIOB\fP"
+
+.SS "#define TT_LED_Pin   \fBGPIO_PIN_6\fP"
+
+.SH "Function Documentation"
+.PP 
+.SS "void drawClear ()"
+
+.SS "void drawMeasure ()"
+
+.SS "void drawMeasureScale ()"
+
+.SS "void drawSetup ()"
+
+.SS "bool drawSetupUpdate (double drawScale, uint8_t measureScalesNumber)"
+
+.SS "void Error_Handler (void)"
+
+.PP
+This function is executed in case of error occurrence\&. 
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone\fP 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

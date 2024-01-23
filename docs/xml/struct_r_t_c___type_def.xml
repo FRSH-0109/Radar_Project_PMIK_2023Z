@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_r_t_c___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>RTC_TypeDef</compoundname>
+    <includes refid="stm32g030xx_8h" local="no">stm32g030xx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a63d179b7a36a715dce7203858d3be132" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t TR</definition>
+        <argsstring></argsstring>
+        <name>TR</name>
+        <qualifiedname>RTC_TypeDef::TR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC time register, Address offset: 0x00 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="374" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a3df0d8dfcd1ec958659ffe21eb64fa94" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t DR</definition>
+        <argsstring></argsstring>
+        <name>DR</name>
+        <qualifiedname>RTC_TypeDef::DR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC date register, Address offset: 0x04 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="375" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a8a868e5e76b52ced04c536be3dee08ec" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t SSR</definition>
+        <argsstring></argsstring>
+        <name>SSR</name>
+        <qualifiedname>RTC_TypeDef::SSR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC sub second register, Address offset: 0x08 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="376" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a8fec9e122b923822e7f951cd48cf1d47" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t ICSR</definition>
+        <argsstring></argsstring>
+        <name>ICSR</name>
+        <qualifiedname>RTC_TypeDef::ICSR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC initialization control and status register, Address offset: 0x0C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="377" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1ac9b4c6c5b29f3461ce3f875eea69f35b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PRER</definition>
+        <argsstring></argsstring>
+        <name>PRER</name>
+        <qualifiedname>RTC_TypeDef::PRER</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC prescaler register, Address offset: 0x10 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="378" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1ac5b3c8be61045a304d3076d4714d29f2" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t WUTR</definition>
+        <argsstring></argsstring>
+        <name>WUTR</name>
+        <qualifiedname>RTC_TypeDef::WUTR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC wakeup timer register, Address offset: 0x14 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="379" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1ab40c89c59391aaa9d9a8ec011dd0907a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <qualifiedname>RTC_TypeDef::CR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC control register, Address offset: 0x18 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="380" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1af86c61a5d38a4fc9cef942a12744486b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED0</definition>
+        <argsstring></argsstring>
+        <name>RESERVED0</name>
+        <qualifiedname>RTC_TypeDef::RESERVED0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved Address offset: 0x1C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="381" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1ac4ac04e673b5b8320d53f7b0947db902" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED1</definition>
+        <argsstring></argsstring>
+        <name>RESERVED1</name>
+        <qualifiedname>RTC_TypeDef::RESERVED1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved Address offset: 0x20 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="382" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a6204786b050eb135fabb15784698e86e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t WPR</definition>
+        <argsstring></argsstring>
+        <name>WPR</name>
+        <qualifiedname>RTC_TypeDef::WPR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC write protection register, Address offset: 0x24 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="383" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a2ce7c3842792c506635bb87a21588b58" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CALR</definition>
+        <argsstring></argsstring>
+        <name>CALR</name>
+        <qualifiedname>RTC_TypeDef::CALR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC calibration register, Address offset: 0x28 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="384" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a2372c05a6c5508e0a9adada793f68b4f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t SHIFTR</definition>
+        <argsstring></argsstring>
+        <name>SHIFTR</name>
+        <qualifiedname>RTC_TypeDef::SHIFTR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC shift control register, Address offset: 0x2C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="385" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a042059c8b4168681d6aecf30211dd7b8" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t TSTR</definition>
+        <argsstring></argsstring>
+        <name>TSTR</name>
+        <qualifiedname>RTC_TypeDef::TSTR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC time stamp time register, Address offset: 0x30 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="386" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1abeb6fb580a8fd128182aa9ba2738ac2c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t TSDR</definition>
+        <argsstring></argsstring>
+        <name>TSDR</name>
+        <qualifiedname>RTC_TypeDef::TSDR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC time stamp date register, Address offset: 0x34 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="387" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a1d6c2bc4c067d6a64ef30d16a5925796" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t TSSSR</definition>
+        <argsstring></argsstring>
+        <name>TSSSR</name>
+        <qualifiedname>RTC_TypeDef::TSSSR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC time-stamp sub second register, Address offset: 0x38 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="388" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a4c9b972a304c0e08ca27cbe57627c496" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED2</definition>
+        <argsstring></argsstring>
+        <name>RESERVED2</name>
+        <qualifiedname>RTC_TypeDef::RESERVED2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved Address offset: 0x1C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="389" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1ac005b1a5bc52634d5a34578cc9d2c3f6" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t ALRMAR</definition>
+        <argsstring></argsstring>
+        <name>ALRMAR</name>
+        <qualifiedname>RTC_TypeDef::ALRMAR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC alarm A register, Address offset: 0x40 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="390" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a61282fa74cede526af85fd9d20513646" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t ALRMASSR</definition>
+        <argsstring></argsstring>
+        <name>ALRMASSR</name>
+        <qualifiedname>RTC_TypeDef::ALRMASSR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC alarm A sub second register, Address offset: 0x44 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="391" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a4e513deb9f58a138ad9f317cc5a3555d" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t ALRMBR</definition>
+        <argsstring></argsstring>
+        <name>ALRMBR</name>
+        <qualifiedname>RTC_TypeDef::ALRMBR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC alarm B register, Address offset: 0x48 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="392" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a4ef7499da5d5beb1cfc81f7be057a7b2" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t ALRMBSSR</definition>
+        <argsstring></argsstring>
+        <name>ALRMBSSR</name>
+        <qualifiedname>RTC_TypeDef::ALRMBSSR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC alarm B sub second register, Address offset: 0x4C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="393" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1af6aca2bbd40c0fb6df7c3aebe224a360" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <qualifiedname>RTC_TypeDef::SR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC Status register, Address offset: 0x50 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="394" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a524e134cec519206cb41d0545e382978" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t MISR</definition>
+        <argsstring></argsstring>
+        <name>MISR</name>
+        <qualifiedname>RTC_TypeDef::MISR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC Masked Interrupt Status register, Address offset: 0x54 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="395" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1af2b40c5e36a5e861490988275499e158" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED3</definition>
+        <argsstring></argsstring>
+        <name>RESERVED3</name>
+        <qualifiedname>RTC_TypeDef::RESERVED3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved Address offset: 0x58 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="396" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a64a95891ad3e904dd5548112539c1c98" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t SCR</definition>
+        <argsstring></argsstring>
+        <name>SCR</name>
+        <qualifiedname>RTC_TypeDef::SCR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC Status Clear register, Address offset: 0x5C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="397" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a75ade4a9b3d40781fd80ce3e6589e98b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t OR</definition>
+        <argsstring></argsstring>
+        <name>OR</name>
+        <qualifiedname>RTC_TypeDef::OR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC option register, Address offset: 0x60 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="398" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Real-Time Clock. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="372" column="1" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="373" bodyend="399"/>
+    <listofallmembers>
+      <member refid="struct_r_t_c___type_def_1ac005b1a5bc52634d5a34578cc9d2c3f6" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>ALRMAR</name></member>
+      <member refid="struct_r_t_c___type_def_1a61282fa74cede526af85fd9d20513646" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>ALRMASSR</name></member>
+      <member refid="struct_r_t_c___type_def_1a4e513deb9f58a138ad9f317cc5a3555d" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>ALRMBR</name></member>
+      <member refid="struct_r_t_c___type_def_1a4ef7499da5d5beb1cfc81f7be057a7b2" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>ALRMBSSR</name></member>
+      <member refid="struct_r_t_c___type_def_1a2ce7c3842792c506635bb87a21588b58" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>CALR</name></member>
+      <member refid="struct_r_t_c___type_def_1ab40c89c59391aaa9d9a8ec011dd0907a" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>CR</name></member>
+      <member refid="struct_r_t_c___type_def_1a3df0d8dfcd1ec958659ffe21eb64fa94" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>DR</name></member>
+      <member refid="struct_r_t_c___type_def_1a8fec9e122b923822e7f951cd48cf1d47" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>ICSR</name></member>
+      <member refid="struct_r_t_c___type_def_1a524e134cec519206cb41d0545e382978" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>MISR</name></member>
+      <member refid="struct_r_t_c___type_def_1a75ade4a9b3d40781fd80ce3e6589e98b" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>OR</name></member>
+      <member refid="struct_r_t_c___type_def_1ac9b4c6c5b29f3461ce3f875eea69f35b" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>PRER</name></member>
+      <member refid="struct_r_t_c___type_def_1af86c61a5d38a4fc9cef942a12744486b" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>RESERVED0</name></member>
+      <member refid="struct_r_t_c___type_def_1ac4ac04e673b5b8320d53f7b0947db902" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>RESERVED1</name></member>
+      <member refid="struct_r_t_c___type_def_1a4c9b972a304c0e08ca27cbe57627c496" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>RESERVED2</name></member>
+      <member refid="struct_r_t_c___type_def_1af2b40c5e36a5e861490988275499e158" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>RESERVED3</name></member>
+      <member refid="struct_r_t_c___type_def_1a64a95891ad3e904dd5548112539c1c98" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>SCR</name></member>
+      <member refid="struct_r_t_c___type_def_1a2372c05a6c5508e0a9adada793f68b4f" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>SHIFTR</name></member>
+      <member refid="struct_r_t_c___type_def_1af6aca2bbd40c0fb6df7c3aebe224a360" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>SR</name></member>
+      <member refid="struct_r_t_c___type_def_1a8a868e5e76b52ced04c536be3dee08ec" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>SSR</name></member>
+      <member refid="struct_r_t_c___type_def_1a63d179b7a36a715dce7203858d3be132" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>TR</name></member>
+      <member refid="struct_r_t_c___type_def_1abeb6fb580a8fd128182aa9ba2738ac2c" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>TSDR</name></member>
+      <member refid="struct_r_t_c___type_def_1a1d6c2bc4c067d6a64ef30d16a5925796" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>TSSSR</name></member>
+      <member refid="struct_r_t_c___type_def_1a042059c8b4168681d6aecf30211dd7b8" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>TSTR</name></member>
+      <member refid="struct_r_t_c___type_def_1a6204786b050eb135fabb15784698e86e" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>WPR</name></member>
+      <member refid="struct_r_t_c___type_def_1ac5b3c8be61045a304d3076d4714d29f2" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>WUTR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

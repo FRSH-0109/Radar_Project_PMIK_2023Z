@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="usart_8c" kind="file" language="C++">
+    <compoundname>usart.c</compoundname>
+    <includes refid="usart_8h" local="yes">usart.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Core/Src/usart.c</label>
+        <link refid="usart_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="9">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="4">
+        <label>stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>stm32g0xx_hal_cortex.h</label>
+        <link refid="stm32g0xx__hal__cortex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stm32g0xx_hal_dma.h</label>
+        <link refid="stm32g0xx__hal__dma_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>stm32g0xx_hal_dma_ex.h</label>
+        <link refid="stm32g0xx__hal__dma__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>stm32g0xx_hal_exti.h</label>
+        <link refid="stm32g0xx__hal__exti_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>stm32g0xx_hal_flash.h</label>
+        <link refid="stm32g0xx__hal__flash_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>stm32g0xx_hal_flash_ex.h</label>
+        <link refid="stm32g0xx__hal__flash__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stm32g0xx_hal_gpio.h</label>
+        <link refid="stm32g0xx__hal__gpio_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stm32g0xx_hal_gpio_ex.h</label>
+        <link refid="stm32g0xx__hal__gpio__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>stm32g0xx_hal_pwr.h</label>
+        <link refid="stm32g0xx__hal__pwr_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>stm32g0xx_hal_pwr_ex.h</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32g0xx_hal_rcc.h</label>
+        <link refid="stm32g0xx__hal__rcc_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stm32g0xx_hal_rcc_ex.h</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>stm32g0xx_hal_spi.h</label>
+        <link refid="stm32g0xx__hal__spi_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>stm32g0xx_hal_spi_ex.h</label>
+        <link refid="stm32g0xx__hal__spi__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>stm32g0xx_hal_tim.h</label>
+        <link refid="stm32g0xx__hal__tim_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>stm32g0xx_hal_tim_ex.h</label>
+        <link refid="stm32g0xx__hal__tim__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>stm32g0xx_hal_uart.h</label>
+        <link refid="stm32g0xx__hal__uart_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>stm32g0xx_hal_uart_ex.h</label>
+        <link refid="stm32g0xx__hal__uart__ex_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stm32g0xx_ll_dma.h</label>
+        <link refid="stm32g0xx__ll__dma_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stm32g0xx_ll_dmamux.h</label>
+        <link refid="stm32g0xx__ll__dmamux_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stm32g0xx_ll_rcc.h</label>
+        <link refid="stm32g0xx__ll__rcc_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>stdbool.h</label>
+      </node>
+      <node id="10">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" prot="public" static="no" mutable="no">
+        <type><ref refid="group___u_a_r_t___exported___types_1ga5de4a49eb132735325e706f406c69d6e" kindref="member">UART_HandleTypeDef</ref></type>
+        <definition>UART_HandleTypeDef huart1</definition>
+        <argsstring></argsstring>
+        <name>huart1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/usart.c" line="27" column="20" bodyfile="Core/Src/usart.c" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8c_1a34251392f0d5e2461e3aef615918c235" prot="public" static="no" mutable="no">
+        <type><ref refid="group___d_m_a___exported___types_1ga41b754a906b86bce54dc79938970138b" kindref="member">DMA_HandleTypeDef</ref></type>
+        <definition>DMA_HandleTypeDef hdma_usart1_rx</definition>
+        <argsstring></argsstring>
+        <name>hdma_usart1_rx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/usart.c" line="28" column="19" bodyfile="Core/Src/usart.c" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8c_1a5af94ab36bfe698db3e6beea96d10a90" prot="public" static="no" mutable="no">
+        <type><ref refid="group___d_m_a___exported___types_1ga41b754a906b86bce54dc79938970138b" kindref="member">DMA_HandleTypeDef</ref></type>
+        <definition>DMA_HandleTypeDef hdma_usart1_tx</definition>
+        <argsstring></argsstring>
+        <name>hdma_usart1_tx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/usart.c" line="29" column="19" bodyfile="Core/Src/usart.c" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="usart_8c_1a57d1167735baafab8e3288526c424929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_USART1_UART_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_USART1_UART_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Src/usart.c" line="33" column="6" bodyfile="Core/Src/usart.c" bodystart="33" bodyend="74"/>
+      </memberdef>
+      <member refid="group___u_a_r_t___exported___functions___group1_1ga0e553b32211877322f949b14801bbfa7" kind="function"><name>HAL_UART_MspInit</name></member>
+      <member refid="group___u_a_r_t___exported___functions___group1_1ga718f39804e3b910d738a0e1e46151188" kind="function"><name>HAL_UART_MspDeInit</name></member>
+    </sectiondef>
+    <briefdescription>
+<para>This file provides code for the configuration of the USART instances. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="attention"><para></para>
+</simplesect>
+Copyright (c) 2023 STMicroelectronics. All rights reserved.</para>
+<para>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Header<sp/>*/</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Header<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usart_8h" kindref="compound">usart.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="struct_____u_a_r_t___handle_type_def" kindref="compound">UART_HandleTypeDef</ref><sp/><ref refid="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="struct_____d_m_a___handle_type_def" kindref="compound">DMA_HandleTypeDef</ref><sp/><ref refid="usart_8c_1a34251392f0d5e2461e3aef615918c235" kindref="member">hdma_usart1_rx</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><ref refid="struct_____d_m_a___handle_type_def" kindref="compound">DMA_HandleTypeDef</ref><sp/><ref refid="usart_8c_1a5af94ab36bfe698db3e6beea96d10a90" kindref="member">hdma_usart1_tx</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USART1<sp/>init<sp/>function<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8c_1a57d1167735baafab8e3288526c424929" kindref="member">MX_USART1_UART_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>USART1_Init<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>USART1_Init<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>USART1_Init<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>USART1_Init<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>.<ref refid="struct_____u_a_r_t___handle_type_def_1a2b30b6d22df80fbebd8ceefc6f162310" kindref="member">Instance</ref><sp/>=<sp/><ref refid="group___peripheral__declaration_1ga92871691058ff7ccffd7635930cb08da" kindref="member">USART1</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>.<ref refid="struct_____u_a_r_t___handle_type_def_1a6b5ab0619ea07655a7f3bc92f78fafaa" kindref="member">Init</ref>.<ref refid="struct_u_a_r_t___init_type_def_1aaad609733f3fd8146c8745e953a91b2a" kindref="member">BaudRate</ref><sp/>=<sp/>115200;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>.<ref refid="struct_____u_a_r_t___handle_type_def_1a6b5ab0619ea07655a7f3bc92f78fafaa" kindref="member">Init</ref>.<ref refid="struct_u_a_r_t___init_type_def_1ae5e60b9a021fe0009588fc86c7584a5a" kindref="member">WordLength</ref><sp/>=<sp/><ref refid="group___u_a_r_t_ex___word___length_1gaf394e9abaf17932ee89591f990fe6407" kindref="member">UART_WORDLENGTH_8B</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>.<ref refid="struct_____u_a_r_t___handle_type_def_1a6b5ab0619ea07655a7f3bc92f78fafaa" kindref="member">Init</ref>.<ref refid="struct_u_a_r_t___init_type_def_1a8394ba239444e3e5fe1ada1c37cb1019" kindref="member">StopBits</ref><sp/>=<sp/><ref refid="group___u_a_r_t___stop___bits_1ga7cf97e555292d574de8abc596ba0e2ce" kindref="member">UART_STOPBITS_1</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>.<ref refid="struct_____u_a_r_t___handle_type_def_1a6b5ab0619ea07655a7f3bc92f78fafaa" kindref="member">Init</ref>.<ref refid="struct_u_a_r_t___init_type_def_1a1d60a99b8f3965f01ab23444b154ba79" kindref="member">Parity</ref><sp/>=<sp/><ref refid="group___u_a_r_t___parity_1ga270dea6e1a92dd83fe58802450bdd60c" kindref="member">UART_PARITY_NONE</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>.<ref refid="struct_____u_a_r_t___handle_type_def_1a6b5ab0619ea07655a7f3bc92f78fafaa" kindref="member">Init</ref>.<ref refid="struct_u_a_r_t___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>=<sp/><ref refid="group___u_a_r_t___mode_1gab47c162935901e89322e2ce6700b6744" kindref="member">UART_MODE_TX_RX</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><ref refid="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>.<ref refid="struct_____u_a_r_t___handle_type_def_1a6b5ab0619ea07655a7f3bc92f78fafaa" kindref="member">Init</ref>.<ref refid="struct_u_a_r_t___init_type_def_1a0a933d213b17470c582c8fec23a24d09" kindref="member">HwFlowCtl</ref><sp/>=<sp/><ref refid="group___u_a_r_t___hardware___flow___control_1gae0569001c06b7760cd38c481f84116cf" kindref="member">UART_HWCONTROL_NONE</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><ref refid="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>.<ref refid="struct_____u_a_r_t___handle_type_def_1a6b5ab0619ea07655a7f3bc92f78fafaa" kindref="member">Init</ref>.<ref refid="struct_u_a_r_t___init_type_def_1a35770b237370fda7fd0fabad22898490" kindref="member">OverSampling</ref><sp/>=<sp/><ref refid="group___u_a_r_t___over___sampling_1gaa6a320ec65d248d76f21de818db1a2f0" kindref="member">UART_OVERSAMPLING_16</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>.<ref refid="struct_____u_a_r_t___handle_type_def_1a6b5ab0619ea07655a7f3bc92f78fafaa" kindref="member">Init</ref>.<ref refid="struct_u_a_r_t___init_type_def_1af699e096fa74b5f58c1ee172025981ba" kindref="member">OneBitSampling</ref><sp/>=<sp/><ref refid="group___u_a_r_t___one_bit___sampling_1gadfcb0e9db2719321048b249b2c5cc15f" kindref="member">UART_ONE_BIT_SAMPLE_DISABLE</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>.<ref refid="struct_____u_a_r_t___handle_type_def_1a6b5ab0619ea07655a7f3bc92f78fafaa" kindref="member">Init</ref>.<ref refid="struct_u_a_r_t___init_type_def_1ab791f8fac403d508e1c53b6f27cf1f24" kindref="member">ClockPrescaler</ref><sp/>=<sp/><ref refid="group___u_a_r_t___clock_prescaler_1ga7e210157853228d94668b5ee7233087d" kindref="member">UART_PRESCALER_DIV1</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><ref refid="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>.<ref refid="struct_____u_a_r_t___handle_type_def_1a4785c6c4b0e998062a50b706a739c6c5" kindref="member">AdvancedInit</ref>.<ref refid="struct_u_a_r_t___adv_feature_init_type_def_1ad3ebc9a49be4aa143250abfbe6c427d1" kindref="member">AdvFeatureInit</ref><sp/>=<sp/><ref refid="group___u_a_r_t___advanced___features___initialization___type_1gab696b28f33174d038e0bfd300c1b2a77" kindref="member">UART_ADVFEATURE_NO_INIT</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___u_a_r_t___exported___functions___group1_1gabe47045024787099b0bfa82bbe7b0b6a" kindref="member">HAL_UART_Init</ref>(&amp;<ref refid="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___u_a_r_t_ex___exported___functions___group3_1gae2e0da62ac7e71641ee696f6b6a3de11" kindref="member">HAL_UARTEx_SetTxFifoThreshold</ref>(&amp;<ref refid="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>,<sp/><ref refid="group___u_a_r_t_ex___t_x_f_i_f_o__threshold__level_1gac0167b844b8cc2d183b55a0b296b2803" kindref="member">UART_TXFIFO_THRESHOLD_1_8</ref>)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___u_a_r_t_ex___exported___functions___group3_1ga7aa1f7a62351e140b6bc74a26ce14e5e" kindref="member">HAL_UARTEx_SetRxFifoThreshold</ref>(&amp;<ref refid="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>,<sp/><ref refid="group___u_a_r_t_ex___r_x_f_i_f_o__threshold__level_1ga9cabde9885fe477df3625fa8fdc7a99a" kindref="member">UART_RXFIFO_THRESHOLD_1_8</ref>)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___u_a_r_t_ex___exported___functions___group3_1ga5f321105c87423e7156dbab60826b37a" kindref="member">HAL_UARTEx_DisableFifoMode</ref>(&amp;<ref refid="usart_8c_1a2cf715bef37f7e8ef385a30974a5f0d5" kindref="member">huart1</ref>)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>USART1_Init<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>USART1_Init<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t___exported___functions___group1_1ga0e553b32211877322f949b14801bbfa7" kindref="member">HAL_UART_MspInit</ref>(<ref refid="struct_____u_a_r_t___handle_type_def" kindref="compound">UART_HandleTypeDef</ref>*<sp/>uartHandle)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><ref refid="struct_g_p_i_o___init_type_def" kindref="compound">GPIO_InitTypeDef</ref><sp/>GPIO_InitStruct<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><ref refid="struct_r_c_c___periph_c_l_k_init_type_def" kindref="compound">RCC_PeriphCLKInitTypeDef</ref><sp/>PeriphClkInit<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(uartHandle-&gt;<ref refid="struct_____u_a_r_t___handle_type_def_1a2b30b6d22df80fbebd8ceefc6f162310" kindref="member">Instance</ref>==<ref refid="group___peripheral__declaration_1ga92871691058ff7ccffd7635930cb08da" kindref="member">USART1</ref>)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>USART1_MspInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>USART1_MspInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>PeriphClkInit.<ref refid="struct_r_c_c___periph_c_l_k_init_type_def_1a82dae3f6a5ae6c184bd1b95a88d41fc2" kindref="member">PeriphClockSelection</ref><sp/>=<sp/><ref refid="group___r_c_c_ex___periph___clock___selection_1ga45390869c206531ea6d98baefb2315ac" kindref="member">RCC_PERIPHCLK_USART1</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>PeriphClkInit.<ref refid="struct_r_c_c___periph_c_l_k_init_type_def_1a324fed138e6de514e7ebf932f762c0c3" kindref="member">Usart1ClockSelection</ref><sp/>=<sp/><ref refid="group___r_c_c_ex___u_s_a_r_t1___clock___source_1ga577d17f0ddb77fa4416338cd4d1891b5" kindref="member">RCC_USART1CLKSOURCE_PCLK1</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___r_c_c_ex___exported___functions___group1_1ga0c0f61a1e2f47cc81bc43d83ba3e0d95" kindref="member">HAL_RCCEx_PeriphCLKConfig</ref>(&amp;PeriphClkInit)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USART1<sp/>clock<sp/>enable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_c_c___a_p_b2___clock___enable___disable_1ga932afe7cea6c567ad63e0f83308b9d3e" kindref="member">__HAL_RCC_USART1_CLK_ENABLE</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_c_c___i_o_p_o_r_t___clock___enable___disable_1ga1fde58d775fd2458002df817a68f486e" kindref="member">__HAL_RCC_GPIOA_CLK_ENABLE</ref>();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_c_c___i_o_p_o_r_t___clock___enable___disable_1ga5ad43f3f4d8163d40f7d402ef75d27c5" kindref="member">__HAL_RCC_GPIOB_CLK_ENABLE</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1a871d0ab74071724e96b7cc9ae2a7532b" kindref="member">Pin</ref><sp/>=<sp/><ref refid="group___g_p_i_o__pins_1ga4c503cb4a0dc0d18261080051d9c2daf" kindref="member">GPIO_PIN_9</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>=<sp/><ref refid="group___g_p_i_o__mode_1ga526c72c5264316fc05c775b6cad4aa6a" kindref="member">GPIO_MODE_AF_PP</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1a6cdde08eb507b710f8179a4326548e26" kindref="member">Pull</ref><sp/>=<sp/><ref refid="group___g_p_i_o__pull_1ga5c2862579882c1cc64e36d38fbd07a4c" kindref="member">GPIO_NOPULL</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1ad04b2041f59d32492ec36a891418f3fd" kindref="member">Speed</ref><sp/>=<sp/><ref refid="group___g_p_i_o__speed_1gab7916c4265bfa1b26a5205ea9c1caa4e" kindref="member">GPIO_SPEED_FREQ_LOW</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1a9a352764836bb14ec56a94f77697b52d" kindref="member">Alternate</ref><sp/>=<sp/>GPIO_AF1_USART1;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group1_1ga41bda93b6dd639e4905fdb1454eff98e" kindref="member">HAL_GPIO_Init</ref>(<ref refid="group___peripheral__declaration_1gac485358099728ddae050db37924dd6b7" kindref="member">GPIOA</ref>,<sp/>&amp;GPIO_InitStruct);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1a871d0ab74071724e96b7cc9ae2a7532b" kindref="member">Pin</ref><sp/>=<sp/><ref refid="group___g_p_i_o__pins_1ga482cb86c2f036e630661a41e8986bcfe" kindref="member">GPIO_PIN_7</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>=<sp/><ref refid="group___g_p_i_o__mode_1ga526c72c5264316fc05c775b6cad4aa6a" kindref="member">GPIO_MODE_AF_PP</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1a6cdde08eb507b710f8179a4326548e26" kindref="member">Pull</ref><sp/>=<sp/><ref refid="group___g_p_i_o__pull_1ga5c2862579882c1cc64e36d38fbd07a4c" kindref="member">GPIO_NOPULL</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1ad04b2041f59d32492ec36a891418f3fd" kindref="member">Speed</ref><sp/>=<sp/><ref refid="group___g_p_i_o__speed_1gab7916c4265bfa1b26a5205ea9c1caa4e" kindref="member">GPIO_SPEED_FREQ_LOW</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.<ref refid="struct_g_p_i_o___init_type_def_1a9a352764836bb14ec56a94f77697b52d" kindref="member">Alternate</ref><sp/>=<sp/>GPIO_AF0_USART1;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group1_1ga41bda93b6dd639e4905fdb1454eff98e" kindref="member">HAL_GPIO_Init</ref>(<ref refid="group___peripheral__declaration_1ga68b66ac73be4c836db878a42e1fea3cd" kindref="member">GPIOB</ref>,<sp/>&amp;GPIO_InitStruct);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USART1<sp/>DMA<sp/>Init<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USART1_RX<sp/>Init<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a34251392f0d5e2461e3aef615918c235" kindref="member">hdma_usart1_rx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1adc5940b5bbf1fc712118cd40ff3ea69b" kindref="member">Instance</ref><sp/>=<sp/><ref refid="group___peripheral__declaration_1gac83c5be824be1c02716e2522e80ddf7a" kindref="member">DMA1_Channel1</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a34251392f0d5e2461e3aef615918c235" kindref="member">hdma_usart1_rx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" kindref="member">Init</ref>.<ref refid="struct_d_m_a___init_type_def_1a59f46df02cf1237d6888518fe2100209" kindref="member">Request</ref><sp/>=<sp/><ref refid="group___d_m_a__request_1gaf7741f1f65db03cde614ef623d86b054" kindref="member">DMA_REQUEST_USART1_RX</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a34251392f0d5e2461e3aef615918c235" kindref="member">hdma_usart1_rx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" kindref="member">Init</ref>.<ref refid="struct_d_m_a___init_type_def_1ab94410c1333b512e271b1c135fe50916" kindref="member">Direction</ref><sp/>=<sp/><ref refid="group___d_m_a___data__transfer__direction_1gacb2cbf03ecae6804ae4a6f60a3e37c12" kindref="member">DMA_PERIPH_TO_MEMORY</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a34251392f0d5e2461e3aef615918c235" kindref="member">hdma_usart1_rx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" kindref="member">Init</ref>.<ref refid="struct_d_m_a___init_type_def_1a4925ca3ceb52340daddc92817dc304d9" kindref="member">PeriphInc</ref><sp/>=<sp/><ref refid="group___d_m_a___peripheral__incremented__mode_1ga63e2aff2973d1a8f01d5d7b6e4894f39" kindref="member">DMA_PINC_DISABLE</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a34251392f0d5e2461e3aef615918c235" kindref="member">hdma_usart1_rx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" kindref="member">Init</ref>.<ref refid="struct_d_m_a___init_type_def_1a831756fbcd64feb1e570a9bf743b5b8d" kindref="member">MemInc</ref><sp/>=<sp/><ref refid="group___d_m_a___memory__incremented__mode_1ga43d30885699cc8378562316ff4fed1cd" kindref="member">DMA_MINC_ENABLE</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a34251392f0d5e2461e3aef615918c235" kindref="member">hdma_usart1_rx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" kindref="member">Init</ref>.<ref refid="struct_d_m_a___init_type_def_1aca5b89241171c093fd0fc6dacf72683c" kindref="member">PeriphDataAlignment</ref><sp/>=<sp/><ref refid="group___d_m_a___peripheral__data__size_1ga55b8c8f5ec95f10d26d6c5b1c9136730" kindref="member">DMA_PDATAALIGN_BYTE</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a34251392f0d5e2461e3aef615918c235" kindref="member">hdma_usart1_rx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" kindref="member">Init</ref>.<ref refid="struct_d_m_a___init_type_def_1afe3adac32f5411b1a744c030f398aa5e" kindref="member">MemDataAlignment</ref><sp/>=<sp/><ref refid="group___d_m_a___memory__data__size_1ga9ed07bddf736298eba11508382ea4d51" kindref="member">DMA_MDATAALIGN_BYTE</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a34251392f0d5e2461e3aef615918c235" kindref="member">hdma_usart1_rx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" kindref="member">Init</ref>.<ref refid="struct_d_m_a___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>=<sp/><ref refid="group___d_m_a__mode_1ga04941acfbbdefc53e1e08133cffa3b8a" kindref="member">DMA_NORMAL</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a34251392f0d5e2461e3aef615918c235" kindref="member">hdma_usart1_rx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" kindref="member">Init</ref>.<ref refid="struct_d_m_a___init_type_def_1a72acf77c0b19359eb70764505ae4bd70" kindref="member">Priority</ref><sp/>=<sp/><ref refid="group___d_m_a___priority__level_1ga0d1ed2bc9229ba3c953002bcf3a72130" kindref="member">DMA_PRIORITY_LOW</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___d_m_a___exported___functions___group1_1ga0fbcb690074233a03f2fa366dc22ff01" kindref="member">HAL_DMA_Init</ref>(&amp;<ref refid="usart_8c_1a34251392f0d5e2461e3aef615918c235" kindref="member">hdma_usart1_rx</ref>)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1af5b3b3d0eff8c4cb59d4d3909c247311" kindref="member">__HAL_LINKDMA</ref>(uartHandle,hdmarx,<ref refid="usart_8c_1a34251392f0d5e2461e3aef615918c235" kindref="member">hdma_usart1_rx</ref>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USART1_TX<sp/>Init<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a5af94ab36bfe698db3e6beea96d10a90" kindref="member">hdma_usart1_tx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1adc5940b5bbf1fc712118cd40ff3ea69b" kindref="member">Instance</ref><sp/>=<sp/><ref refid="group___peripheral__declaration_1ga23d7631dd10c645e06971b2543ba2949" kindref="member">DMA1_Channel2</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a5af94ab36bfe698db3e6beea96d10a90" kindref="member">hdma_usart1_tx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" kindref="member">Init</ref>.<ref refid="struct_d_m_a___init_type_def_1a59f46df02cf1237d6888518fe2100209" kindref="member">Request</ref><sp/>=<sp/><ref refid="group___d_m_a__request_1ga89aead5f618253b1bc265116797b2150" kindref="member">DMA_REQUEST_USART1_TX</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a5af94ab36bfe698db3e6beea96d10a90" kindref="member">hdma_usart1_tx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" kindref="member">Init</ref>.<ref refid="struct_d_m_a___init_type_def_1ab94410c1333b512e271b1c135fe50916" kindref="member">Direction</ref><sp/>=<sp/><ref refid="group___d_m_a___data__transfer__direction_1ga9e76fc559a2d5c766c969e6e921b1ee9" kindref="member">DMA_MEMORY_TO_PERIPH</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a5af94ab36bfe698db3e6beea96d10a90" kindref="member">hdma_usart1_tx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" kindref="member">Init</ref>.<ref refid="struct_d_m_a___init_type_def_1a4925ca3ceb52340daddc92817dc304d9" kindref="member">PeriphInc</ref><sp/>=<sp/><ref refid="group___d_m_a___peripheral__incremented__mode_1ga63e2aff2973d1a8f01d5d7b6e4894f39" kindref="member">DMA_PINC_DISABLE</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a5af94ab36bfe698db3e6beea96d10a90" kindref="member">hdma_usart1_tx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" kindref="member">Init</ref>.<ref refid="struct_d_m_a___init_type_def_1a831756fbcd64feb1e570a9bf743b5b8d" kindref="member">MemInc</ref><sp/>=<sp/><ref refid="group___d_m_a___memory__incremented__mode_1ga43d30885699cc8378562316ff4fed1cd" kindref="member">DMA_MINC_ENABLE</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a5af94ab36bfe698db3e6beea96d10a90" kindref="member">hdma_usart1_tx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" kindref="member">Init</ref>.<ref refid="struct_d_m_a___init_type_def_1aca5b89241171c093fd0fc6dacf72683c" kindref="member">PeriphDataAlignment</ref><sp/>=<sp/><ref refid="group___d_m_a___peripheral__data__size_1ga55b8c8f5ec95f10d26d6c5b1c9136730" kindref="member">DMA_PDATAALIGN_BYTE</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a5af94ab36bfe698db3e6beea96d10a90" kindref="member">hdma_usart1_tx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" kindref="member">Init</ref>.<ref refid="struct_d_m_a___init_type_def_1afe3adac32f5411b1a744c030f398aa5e" kindref="member">MemDataAlignment</ref><sp/>=<sp/><ref refid="group___d_m_a___memory__data__size_1ga9ed07bddf736298eba11508382ea4d51" kindref="member">DMA_MDATAALIGN_BYTE</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a5af94ab36bfe698db3e6beea96d10a90" kindref="member">hdma_usart1_tx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" kindref="member">Init</ref>.<ref refid="struct_d_m_a___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref><sp/>=<sp/><ref refid="group___d_m_a__mode_1ga04941acfbbdefc53e1e08133cffa3b8a" kindref="member">DMA_NORMAL</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a5af94ab36bfe698db3e6beea96d10a90" kindref="member">hdma_usart1_tx</ref>.<ref refid="struct_____d_m_a___handle_type_def_1a4352c7144ad5e1e4ab54a87d3be6eb62" kindref="member">Init</ref>.<ref refid="struct_d_m_a___init_type_def_1a72acf77c0b19359eb70764505ae4bd70" kindref="member">Priority</ref><sp/>=<sp/><ref refid="group___d_m_a___priority__level_1ga0d1ed2bc9229ba3c953002bcf3a72130" kindref="member">DMA_PRIORITY_LOW</ref>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___d_m_a___exported___functions___group1_1ga0fbcb690074233a03f2fa366dc22ff01" kindref="member">HAL_DMA_Init</ref>(&amp;<ref refid="usart_8c_1a5af94ab36bfe698db3e6beea96d10a90" kindref="member">hdma_usart1_tx</ref>)<sp/>!=<sp/><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632" kindref="member">HAL_OK</ref>)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1af5b3b3d0eff8c4cb59d4d3909c247311" kindref="member">__HAL_LINKDMA</ref>(uartHandle,hdmatx,<ref refid="usart_8c_1a5af94ab36bfe698db3e6beea96d10a90" kindref="member">hdma_usart1_tx</ref>);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USART1<sp/>interrupt<sp/>Init<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1ga8581a82025a4780efd00876a66e3e91b" kindref="member">HAL_NVIC_SetPriority</ref>(<ref refid="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8ad97cb163e1f678367e37c50d54d161ab" kindref="member">USART1_IRQn</ref>,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1gaaad4492c1b25e006d69948a15790352a" kindref="member">HAL_NVIC_EnableIRQ</ref>(<ref refid="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8ad97cb163e1f678367e37c50d54d161ab" kindref="member">USART1_IRQn</ref>);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>USART1_MspInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>USART1_MspInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t___exported___functions___group1_1ga718f39804e3b910d738a0e1e46151188" kindref="member">HAL_UART_MspDeInit</ref>(<ref refid="struct_____u_a_r_t___handle_type_def" kindref="compound">UART_HandleTypeDef</ref>*<sp/>uartHandle)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(uartHandle-&gt;<ref refid="struct_____u_a_r_t___handle_type_def_1a2b30b6d22df80fbebd8ceefc6f162310" kindref="member">Instance</ref>==<ref refid="group___peripheral__declaration_1ga92871691058ff7ccffd7635930cb08da" kindref="member">USART1</ref>)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>USART1_MspDeInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>USART1_MspDeInit<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Peripheral<sp/>clock<sp/>disable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_c_c___a_p_b2___clock___enable___disable_1gae0050944298552e9f02f56ec8634f5a6" kindref="member">__HAL_RCC_USART1_CLK_DISABLE</ref>();</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group1_1gafe9c756b5aa18961032a3f8aa572959b" kindref="member">HAL_GPIO_DeInit</ref>(<ref refid="group___peripheral__declaration_1gac485358099728ddae050db37924dd6b7" kindref="member">GPIOA</ref>,<sp/><ref refid="group___g_p_i_o__pins_1ga4c503cb4a0dc0d18261080051d9c2daf" kindref="member">GPIO_PIN_9</ref>);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group1_1gafe9c756b5aa18961032a3f8aa572959b" kindref="member">HAL_GPIO_DeInit</ref>(<ref refid="group___peripheral__declaration_1ga68b66ac73be4c836db878a42e1fea3cd" kindref="member">GPIOB</ref>,<sp/><ref refid="group___g_p_i_o__pins_1ga482cb86c2f036e630661a41e8986bcfe" kindref="member">GPIO_PIN_7</ref>);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USART1<sp/>DMA<sp/>DeInit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___d_m_a___exported___functions___group1_1ga7bb8587d642da11252a97f5c41c389ef" kindref="member">HAL_DMA_DeInit</ref>(uartHandle-&gt;<ref refid="struct_____u_a_r_t___handle_type_def_1abd0aeec20298a55d89a440320e35634f" kindref="member">hdmarx</ref>);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___d_m_a___exported___functions___group1_1ga7bb8587d642da11252a97f5c41c389ef" kindref="member">HAL_DMA_DeInit</ref>(uartHandle-&gt;<ref refid="struct_____u_a_r_t___handle_type_def_1a33e13c28b1a70e6164417abb026d7a22" kindref="member">hdmatx</ref>);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USART1<sp/>interrupt<sp/>Deinit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_o_r_t_e_x___exported___functions___group1_1ga50ca6290e068821cb84aa168f3e13967" kindref="member">HAL_NVIC_DisableIRQ</ref>(<ref refid="group___peripheral__interrupt__number__definition_1gga7e1129cd8a196f4284d41db3e82ad5c8ad97cb163e1f678367e37c50d54d161ab" kindref="member">USART1_IRQn</ref>);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>USART1_MspDeInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>USART1_MspDeInit<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Core/Src/usart.c"/>
+  </compounddef>
+</doxygen>

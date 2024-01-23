@@ -1,0 +1,820 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="stm32g0xx__hal__spi_8h" kind="file" language="C++">
+    <compoundname>stm32g0xx_hal_spi.h</compoundname>
+    <includes refid="stm32g0xx__hal__def_8h" local="yes">stm32g0xx_hal_def.h</includes>
+    <includes refid="stm32g0xx__hal__spi__ex_8h" local="yes">stm32g0xx_hal_spi_ex.h</includes>
+    <includedby refid="stm32g0xx__hal__conf_8h" local="yes">Core/Inc/stm32g0xx_hal_conf.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="4">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="2">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h</label>
+        <link refid="stm32g0xx__hal__spi_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32g0xx_hal_spi_ex.h</label>
+        <link refid="stm32g0xx__hal__spi__ex_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>Core/Inc/dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Core/Inc/gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Core/Inc/main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Core/Inc/spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Core/Inc/stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Core/Inc/tim.h</label>
+        <link refid="tim_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Core/Inc/usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Core/Src/dma.c</label>
+        <link refid="dma_8c"/>
+      </node>
+      <node id="9">
+        <label>Core/Src/gpio.c</label>
+        <link refid="gpio_8c"/>
+      </node>
+      <node id="7">
+        <label>Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="11">
+        <label>Core/Src/spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="17">
+        <label>Core/Src/stm32g0xx_hal_msp.c</label>
+        <link refid="stm32g0xx__hal__msp_8c"/>
+      </node>
+      <node id="18">
+        <label>Core/Src/stm32g0xx_it.c</label>
+        <link refid="stm32g0xx__it_8c"/>
+      </node>
+      <node id="13">
+        <label>Core/Src/tim.c</label>
+        <link refid="tim_8c"/>
+      </node>
+      <node id="15">
+        <label>Core/Src/usart.c</label>
+        <link refid="usart_8c"/>
+      </node>
+      <node id="3">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h</label>
+        <link refid="stm32g0xx__hal__spi_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c</label>
+        <link refid="stm32g0xx__hal_8c"/>
+      </node>
+      <node id="24">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c</label>
+        <link refid="stm32g0xx__hal__cortex_8c"/>
+      </node>
+      <node id="25">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c</label>
+        <link refid="stm32g0xx__hal__dma_8c"/>
+      </node>
+      <node id="26">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c</label>
+        <link refid="stm32g0xx__hal__dma__ex_8c"/>
+      </node>
+      <node id="27">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c</label>
+        <link refid="stm32g0xx__hal__exti_8c"/>
+      </node>
+      <node id="28">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c</label>
+        <link refid="stm32g0xx__hal__flash_8c"/>
+      </node>
+      <node id="29">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c</label>
+        <link refid="stm32g0xx__hal__flash__ex_8c"/>
+      </node>
+      <node id="30">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c</label>
+        <link refid="stm32g0xx__hal__gpio_8c"/>
+      </node>
+      <node id="31">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c</label>
+        <link refid="stm32g0xx__hal__pwr_8c"/>
+      </node>
+      <node id="32">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8c"/>
+      </node>
+      <node id="33">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c</label>
+        <link refid="stm32g0xx__hal__rcc_8c"/>
+      </node>
+      <node id="34">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8c"/>
+      </node>
+      <node id="35">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c</label>
+        <link refid="stm32g0xx__hal__spi_8c"/>
+      </node>
+      <node id="36">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c</label>
+        <link refid="stm32g0xx__hal__spi__ex_8c"/>
+      </node>
+      <node id="37">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c</label>
+        <link refid="stm32g0xx__hal__tim_8c"/>
+      </node>
+      <node id="38">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c</label>
+        <link refid="stm32g0xx__hal__tim__ex_8c"/>
+      </node>
+      <node id="39">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c</label>
+        <link refid="stm32g0xx__hal__uart_8c"/>
+      </node>
+      <node id="40">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c</label>
+        <link refid="stm32g0xx__hal__uart__ex_8c"/>
+      </node>
+      <node id="19">
+        <label>RadarApp/DisplayDriver/GFX_Color.c</label>
+        <link refid="_g_f_x___color_8c"/>
+      </node>
+      <node id="20">
+        <label>RadarApp/DisplayDriver/ILI9341.c</label>
+        <link refid="_i_l_i9341_8c"/>
+      </node>
+      <node id="22">
+        <label>RadarApp/RadarDriver/radar.c</label>
+        <link refid="radar_8c"/>
+      </node>
+      <node id="21">
+        <label>RadarApp/RadarDriver/radar.h</label>
+        <link refid="radar_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>RadarApp/usart_custom/usart_custom.c</label>
+        <link refid="usart__custom_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_s_p_i___init_type_def" prot="public">SPI_InitTypeDef</innerclass>
+    <innerclass refid="struct_____s_p_i___handle_type_def" prot="public">__SPI_HandleTypeDef</innerclass>
+    <sectiondef kind="define">
+      <member refid="group___s_p_i___error___code_1gaac0006cdf5670741f8702e55d4bf4601" kind="define"><name>HAL_SPI_ERROR_NONE</name></member>
+      <member refid="group___s_p_i___error___code_1ga75f5edd4e2a7a95bc9a994244df52460" kind="define"><name>HAL_SPI_ERROR_MODF</name></member>
+      <member refid="group___s_p_i___error___code_1gad1163823ec5fa89e4670366565d4ab93" kind="define"><name>HAL_SPI_ERROR_CRC</name></member>
+      <member refid="group___s_p_i___error___code_1ga9587f998fed196a4f30c38f2da731c0f" kind="define"><name>HAL_SPI_ERROR_OVR</name></member>
+      <member refid="group___s_p_i___error___code_1gaf03238e57dd0c4d277fef2aa7a083133" kind="define"><name>HAL_SPI_ERROR_FRE</name></member>
+      <member refid="group___s_p_i___error___code_1gaaf91992131301e3fc7f2ce62fb011f6c" kind="define"><name>HAL_SPI_ERROR_DMA</name></member>
+      <member refid="group___s_p_i___error___code_1ga777b36b52caf926a384976baf34530a3" kind="define"><name>HAL_SPI_ERROR_FLAG</name></member>
+      <member refid="group___s_p_i___error___code_1gab7fa15838d5ef9316ed8a0ec1c782fb7" kind="define"><name>HAL_SPI_ERROR_ABORT</name></member>
+      <member refid="group___s_p_i___mode_1ga75f094fee5a9dc10b88401ccd17925d3" kind="define"><name>SPI_MODE_SLAVE</name></member>
+      <member refid="group___s_p_i___mode_1gaa335c2abdfad9e6f6c2677719d93b64e" kind="define"><name>SPI_MODE_MASTER</name></member>
+      <member refid="group___s_p_i___direction_1gaa7cb7f4bf4eebbf91bcfaeb17ebba7f3" kind="define"><name>SPI_DIRECTION_2LINES</name></member>
+      <member refid="group___s_p_i___direction_1ga444826cf94667f75503f54704b2fb391" kind="define"><name>SPI_DIRECTION_2LINES_RXONLY</name></member>
+      <member refid="group___s_p_i___direction_1gab0f684caf5f1d6ac1e73d90a4778ab93" kind="define"><name>SPI_DIRECTION_1LINE</name></member>
+      <member refid="group___s_p_i___data___size_1ga333dd776c2e5bd34a62ec2c778e79b31" kind="define"><name>SPI_DATASIZE_4BIT</name></member>
+      <member refid="group___s_p_i___data___size_1gac419892f10e003ca1610b02764a9571a" kind="define"><name>SPI_DATASIZE_5BIT</name></member>
+      <member refid="group___s_p_i___data___size_1ga4ae84231733c205f5824fd04411f4256" kind="define"><name>SPI_DATASIZE_6BIT</name></member>
+      <member refid="group___s_p_i___data___size_1ga255495a4ed0b621c7febc3381cc126a3" kind="define"><name>SPI_DATASIZE_7BIT</name></member>
+      <member refid="group___s_p_i___data___size_1ga773e9fc5d44c9661c829361fbd073152" kind="define"><name>SPI_DATASIZE_8BIT</name></member>
+      <member refid="group___s_p_i___data___size_1ga5aaa20dba9ccfa33b21b5b0412b3b9a4" kind="define"><name>SPI_DATASIZE_9BIT</name></member>
+      <member refid="group___s_p_i___data___size_1ga45f9441b23fa3975e6a66329e3edc540" kind="define"><name>SPI_DATASIZE_10BIT</name></member>
+      <member refid="group___s_p_i___data___size_1gac89fef02c2b72a45f0d9bd4b9108464f" kind="define"><name>SPI_DATASIZE_11BIT</name></member>
+      <member refid="group___s_p_i___data___size_1ga6156f3714711c5aa25444cb0db4de48e" kind="define"><name>SPI_DATASIZE_12BIT</name></member>
+      <member refid="group___s_p_i___data___size_1ga99da120c51ef48974fea4a9da210184c" kind="define"><name>SPI_DATASIZE_13BIT</name></member>
+      <member refid="group___s_p_i___data___size_1gac9b8f5abf1d7d31f2d814e5f19546df9" kind="define"><name>SPI_DATASIZE_14BIT</name></member>
+      <member refid="group___s_p_i___data___size_1ga36b5ba62b97fae23c1162a87b256ca45" kind="define"><name>SPI_DATASIZE_15BIT</name></member>
+      <member refid="group___s_p_i___data___size_1ga902147b9ead27cd9333240c72ce74f59" kind="define"><name>SPI_DATASIZE_16BIT</name></member>
+      <member refid="group___s_p_i___clock___polarity_1gaf61e3c6ec671baef099516265793c8df" kind="define"><name>SPI_POLARITY_LOW</name></member>
+      <member refid="group___s_p_i___clock___polarity_1ga6910e2527b7511eb3a55946b9b775cff" kind="define"><name>SPI_POLARITY_HIGH</name></member>
+      <member refid="group___s_p_i___clock___phase_1ga208be78b79c51df200a495c4d2110b57" kind="define"><name>SPI_PHASE_1EDGE</name></member>
+      <member refid="group___s_p_i___clock___phase_1ga960275ac1d01d302c48e713399990c36" kind="define"><name>SPI_PHASE_2EDGE</name></member>
+      <member refid="group___s_p_i___slave___select__management_1ga0bf14691b9d03eb158f190cefa7ab8fc" kind="define"><name>SPI_NSS_SOFT</name></member>
+      <member refid="group___s_p_i___slave___select__management_1ga62c42a5e28ce3b0dc92c5186c10accf8" kind="define"><name>SPI_NSS_HARD_INPUT</name></member>
+      <member refid="group___s_p_i___slave___select__management_1gab7f2da432661406a37fa2afe4efacd87" kind="define"><name>SPI_NSS_HARD_OUTPUT</name></member>
+      <member refid="group___s_p_i___n_s_s_p___mode_1gac6243661f7fabde22ef936590f88be78" kind="define"><name>SPI_NSS_PULSE_ENABLE</name></member>
+      <member refid="group___s_p_i___n_s_s_p___mode_1ga34736b4ea038be7723b31a0416a26832" kind="define"><name>SPI_NSS_PULSE_DISABLE</name></member>
+      <member refid="group___s_p_i___baud_rate___prescaler_1ga3c1e615518e705b8120f164ff4c1968e" kind="define"><name>SPI_BAUDRATEPRESCALER_2</name></member>
+      <member refid="group___s_p_i___baud_rate___prescaler_1ga807568c52b5ba449d7a2b1b85549db24" kind="define"><name>SPI_BAUDRATEPRESCALER_4</name></member>
+      <member refid="group___s_p_i___baud_rate___prescaler_1ga2393359eb495f95163206e17194f4847" kind="define"><name>SPI_BAUDRATEPRESCALER_8</name></member>
+      <member refid="group___s_p_i___baud_rate___prescaler_1gad6a08d920ad4ee524cf55cd09e4c4d0e" kind="define"><name>SPI_BAUDRATEPRESCALER_16</name></member>
+      <member refid="group___s_p_i___baud_rate___prescaler_1ga53fda39d29f04b815f525b7f8c8dd9c2" kind="define"><name>SPI_BAUDRATEPRESCALER_32</name></member>
+      <member refid="group___s_p_i___baud_rate___prescaler_1ga64129361cbd23907d14144befe2209f4" kind="define"><name>SPI_BAUDRATEPRESCALER_64</name></member>
+      <member refid="group___s_p_i___baud_rate___prescaler_1ga939117a1ff97fbf4f1340cbb3141fb29" kind="define"><name>SPI_BAUDRATEPRESCALER_128</name></member>
+      <member refid="group___s_p_i___baud_rate___prescaler_1ga4debd0953aeeb470eae28a42aa8289c2" kind="define"><name>SPI_BAUDRATEPRESCALER_256</name></member>
+      <member refid="group___s_p_i___m_s_b___l_s_b__transmission_1ga2280ac1a6ed587b516419b5df6a8ea55" kind="define"><name>SPI_FIRSTBIT_MSB</name></member>
+      <member refid="group___s_p_i___m_s_b___l_s_b__transmission_1ga8b608690a1adf9df40f271c228a479a3" kind="define"><name>SPI_FIRSTBIT_LSB</name></member>
+      <member refid="group___s_p_i___t_i__mode_1gaffbf066ee656a4d56b75fa721a2eabcd" kind="define"><name>SPI_TIMODE_DISABLE</name></member>
+      <member refid="group___s_p_i___t_i__mode_1ga8b31d4b25f951edd1dfd7cf6d4387517" kind="define"><name>SPI_TIMODE_ENABLE</name></member>
+      <member refid="group___s_p_i___c_r_c___calculation_1ga9cd586b66473d7f207103a443280820e" kind="define"><name>SPI_CRCCALCULATION_DISABLE</name></member>
+      <member refid="group___s_p_i___c_r_c___calculation_1ga431d368997c9c41e8923cbcd41b00123" kind="define"><name>SPI_CRCCALCULATION_ENABLE</name></member>
+      <member refid="group___s_p_i___c_r_c__length_1ga2c09210b093323a8e84af832657568ce" kind="define"><name>SPI_CRC_LENGTH_DATASIZE</name></member>
+      <member refid="group___s_p_i___c_r_c__length_1ga9340cbde2576d63c53c3ee50d3303886" kind="define"><name>SPI_CRC_LENGTH_8BIT</name></member>
+      <member refid="group___s_p_i___c_r_c__length_1ga780edaa0a72a79c4d0fa9618541aaad8" kind="define"><name>SPI_CRC_LENGTH_16BIT</name></member>
+      <member refid="group___s_p_i___f_i_f_o__reception__threshold_1gad59c107b3fee1ca1d6366b4b3c995c88" kind="define"><name>SPI_RXFIFO_THRESHOLD</name></member>
+      <member refid="group___s_p_i___f_i_f_o__reception__threshold_1ga89c3d57e576b7855dc34df26fd6b9972" kind="define"><name>SPI_RXFIFO_THRESHOLD_QF</name></member>
+      <member refid="group___s_p_i___f_i_f_o__reception__threshold_1ga6e9184eadc370323383fe560209d1084" kind="define"><name>SPI_RXFIFO_THRESHOLD_HF</name></member>
+      <member refid="group___s_p_i___interrupt__definition_1ga6f0778617fc5f58086e4e29cd3781f18" kind="define"><name>SPI_IT_TXE</name></member>
+      <member refid="group___s_p_i___interrupt__definition_1ga6c6ea3686830c60d9363f97a5d1011cc" kind="define"><name>SPI_IT_RXNE</name></member>
+      <member refid="group___s_p_i___interrupt__definition_1gace6a9377da7f18ea8b5c73163c2278d6" kind="define"><name>SPI_IT_ERR</name></member>
+      <member refid="group___s_p_i___flags__definition_1ga7bd627ae57160a2f0aad1736194b5999" kind="define"><name>SPI_FLAG_RXNE</name></member>
+      <member refid="group___s_p_i___flags__definition_1gaf84a1e6af2739a6be58e1b23d9e6b914" kind="define"><name>SPI_FLAG_TXE</name></member>
+      <member refid="group___s_p_i___flags__definition_1gaf19c77ee876a3598d616ac07d136fc46" kind="define"><name>SPI_FLAG_BSY</name></member>
+      <member refid="group___s_p_i___flags__definition_1ga30fb6af50e1f3c61cb9de76b0101c889" kind="define"><name>SPI_FLAG_CRCERR</name></member>
+      <member refid="group___s_p_i___flags__definition_1gac7d3525ab98cc18f02270a4dba685897" kind="define"><name>SPI_FLAG_MODF</name></member>
+      <member refid="group___s_p_i___flags__definition_1gab45264da2296c75495a7437a045513ea" kind="define"><name>SPI_FLAG_OVR</name></member>
+      <member refid="group___s_p_i___flags__definition_1ga27dd114d8adc70f1439c054289f9313a" kind="define"><name>SPI_FLAG_FRE</name></member>
+      <member refid="group___s_p_i___flags__definition_1gac8148197385a872c6f996a78928d1c20" kind="define"><name>SPI_FLAG_FTLVL</name></member>
+      <member refid="group___s_p_i___flags__definition_1ga4406c904711e73f41bfbc930bfc92d58" kind="define"><name>SPI_FLAG_FRLVL</name></member>
+      <member refid="group___s_p_i___flags__definition_1ga1b2ed6861d967c5bc45a7e7c9101d33c" kind="define"><name>SPI_FLAG_MASK</name></member>
+      <member refid="group___s_p_i__transmission__fifo__status__level_1gab9b0d7e2ab72c8ea98643791effa0576" kind="define"><name>SPI_FTLVL_EMPTY</name></member>
+      <member refid="group___s_p_i__transmission__fifo__status__level_1ga039713282e09cee7d70416ffc376b0e2" kind="define"><name>SPI_FTLVL_QUARTER_FULL</name></member>
+      <member refid="group___s_p_i__transmission__fifo__status__level_1ga24ec0c2f3fbab8659495c7034f7488fc" kind="define"><name>SPI_FTLVL_HALF_FULL</name></member>
+      <member refid="group___s_p_i__transmission__fifo__status__level_1gafb4f8ba450a3df2f7a5586e3fb89c60d" kind="define"><name>SPI_FTLVL_FULL</name></member>
+      <member refid="group___s_p_i__reception__fifo__status__level_1gacff8d3b7b616ec343a64624ee7f0bff7" kind="define"><name>SPI_FRLVL_EMPTY</name></member>
+      <member refid="group___s_p_i__reception__fifo__status__level_1ga66988763eea1cfd54424369e43fb18f4" kind="define"><name>SPI_FRLVL_QUARTER_FULL</name></member>
+      <member refid="group___s_p_i__reception__fifo__status__level_1ga7aa0da3b1a4379fafa19742219004007" kind="define"><name>SPI_FRLVL_HALF_FULL</name></member>
+      <member refid="group___s_p_i__reception__fifo__status__level_1gaac1ae95d9b33c6f3493aa5e010bb3239" kind="define"><name>SPI_FRLVL_FULL</name></member>
+      <member refid="group___s_p_i___exported___macros_1ga0d846f9517715960873e854b4a0790b0" kind="define"><name>__HAL_SPI_RESET_HANDLE_STATE</name></member>
+      <member refid="group___s_p_i___exported___macros_1ga76064652f6f56d8868720b5541e854f5" kind="define"><name>__HAL_SPI_ENABLE_IT</name></member>
+      <member refid="group___s_p_i___exported___macros_1ga47fa7321c5755bfbff1a7229fbe5b21c" kind="define"><name>__HAL_SPI_DISABLE_IT</name></member>
+      <member refid="group___s_p_i___exported___macros_1gabdaab061e4603331a0ec4b9d651df0b5" kind="define"><name>__HAL_SPI_GET_IT_SOURCE</name></member>
+      <member refid="group___s_p_i___exported___macros_1gaa0bbe5fb55f93fd277ddb6acf58cec53" kind="define"><name>__HAL_SPI_GET_FLAG</name></member>
+      <member refid="group___s_p_i___exported___macros_1gad1cb4100b67726531ad426d300f4cd26" kind="define"><name>__HAL_SPI_CLEAR_CRCERRFLAG</name></member>
+      <member refid="group___s_p_i___exported___macros_1ga6c88becbe528c542156bc201622efba2" kind="define"><name>__HAL_SPI_CLEAR_MODFFLAG</name></member>
+      <member refid="group___s_p_i___exported___macros_1gaf6af33b1c5d334b9fe7bb778c5b6442e" kind="define"><name>__HAL_SPI_CLEAR_OVRFLAG</name></member>
+      <member refid="group___s_p_i___exported___macros_1ga7ff182f5cf6c731318c882351d6d7ac2" kind="define"><name>__HAL_SPI_CLEAR_FREFLAG</name></member>
+      <member refid="group___s_p_i___exported___macros_1ga16d2d73c2b16004499ae8d492e71fd4e" kind="define"><name>__HAL_SPI_ENABLE</name></member>
+      <member refid="group___s_p_i___exported___macros_1gaa10d88f87d16de53bd81dfb33bd56959" kind="define"><name>__HAL_SPI_DISABLE</name></member>
+      <member refid="group___s_p_i___private___macros_1gae3b2eb5e818e58b66474d42dedac5523" kind="define"><name>SPI_1LINE_TX</name></member>
+      <member refid="group___s_p_i___private___macros_1gaa8d58cef91c1874d5a4dde4014cf6269" kind="define"><name>SPI_1LINE_RX</name></member>
+      <member refid="group___s_p_i___private___macros_1gab120a0085b72939e7d19c4f6b3381a99" kind="define"><name>SPI_RESET_CRC</name></member>
+      <member refid="group___s_p_i___private___macros_1gae9c6be610681f2142fb012de95e6e59d" kind="define"><name>SPI_CHECK_FLAG</name></member>
+      <member refid="group___s_p_i___private___macros_1ga8ab087388d8930531498165ac8f066a2" kind="define"><name>SPI_CHECK_IT_SOURCE</name></member>
+      <member refid="group___s_p_i___private___macros_1ga3dd95189a3729f12ca354b757519ca01" kind="define"><name>IS_SPI_MODE</name></member>
+      <member refid="group___s_p_i___private___macros_1ga6c66285d42fc3baf5ecaceadb54ee42a" kind="define"><name>IS_SPI_DIRECTION</name></member>
+      <member refid="group___s_p_i___private___macros_1gaff84471ab30ddd79cefd0c43dfe628c8" kind="define"><name>IS_SPI_DIRECTION_2LINES</name></member>
+      <member refid="group___s_p_i___private___macros_1ga525d9decc1251ec9037bd3c66c0e3a8c" kind="define"><name>IS_SPI_DIRECTION_2LINES_OR_1LINE</name></member>
+      <member refid="group___s_p_i___private___macros_1gac04b1218a162772dca3854aa3a441856" kind="define"><name>IS_SPI_DATASIZE</name></member>
+      <member refid="group___s_p_i___private___macros_1gad60cb1a9c1e1f89e8e9740a0ca734443" kind="define"><name>IS_SPI_CPOL</name></member>
+      <member refid="group___s_p_i___private___macros_1gaf5ed92fbe83dada8ebcce64c04ef0f72" kind="define"><name>IS_SPI_CPHA</name></member>
+      <member refid="group___s_p_i___private___macros_1ga7e90530e595a47ab465e3e222014f5e3" kind="define"><name>IS_SPI_NSS</name></member>
+      <member refid="group___s_p_i___private___macros_1ga59317f70e75953c1c2f7d1d67d173db1" kind="define"><name>IS_SPI_NSSP</name></member>
+      <member refid="group___s_p_i___private___macros_1gad15d5bdc7ac1698d1956a25b200e1f25" kind="define"><name>IS_SPI_BAUDRATE_PRESCALER</name></member>
+      <member refid="group___s_p_i___private___macros_1ga780c503aa8adae30dea1f034ac500d7f" kind="define"><name>IS_SPI_FIRST_BIT</name></member>
+      <member refid="group___s_p_i___private___macros_1ga8e3c348af57cf973277018958fccfed9" kind="define"><name>IS_SPI_TIMODE</name></member>
+      <member refid="group___s_p_i___private___macros_1ga5416429a2e9024b142c972eacb1fd021" kind="define"><name>IS_SPI_CRC_CALCULATION</name></member>
+      <member refid="group___s_p_i___private___macros_1ga772f85d2cf9be95f50c9b9526462a85e" kind="define"><name>IS_SPI_CRC_LENGTH</name></member>
+      <member refid="group___s_p_i___private___macros_1ga1b4b6bb5771cb0070af660d169d4ef09" kind="define"><name>IS_SPI_CRC_POLYNOMIAL</name></member>
+      <member refid="group___s_p_i___private___macros_1gae54950bcff11d9165b99957cf8746ae4" kind="define"><name>IS_SPI_DMA_HANDLE</name></member>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <member refid="group___s_p_i___exported___types_1ga8891cb64e76198a860172d94c638c9b4" kind="enum"><name>HAL_SPI_StateTypeDef</name></member>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group___s_p_i___exported___types_1gab633e49dd034de2f3a1fe79853d78d18" kind="typedef"><name>SPI_HandleTypeDef</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group___s_p_i___exported___functions___group1_1gaadb9d40e710c714d96b2501996658c44" kind="function"><name>HAL_SPI_Init</name></member>
+      <member refid="group___s_p_i___exported___functions___group1_1gaca2db2a7bbed96ac013c565080fb61f2" kind="function"><name>HAL_SPI_DeInit</name></member>
+      <member refid="group___s_p_i___exported___functions___group1_1ga17f583be14b22caffa6c4e56dcd035ef" kind="function"><name>HAL_SPI_MspInit</name></member>
+      <member refid="group___s_p_i___exported___functions___group1_1gabadc4d4974af1afd943e8d13589068e1" kind="function"><name>HAL_SPI_MspDeInit</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga02ec86e05d0702387c221f90b6f041a2" kind="function"><name>HAL_SPI_Transmit</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1gafdf43dbe4e5ef225bed6650b6e8c6313" kind="function"><name>HAL_SPI_Receive</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga7c3106fe01493a33b08e5c617f45aeb1" kind="function"><name>HAL_SPI_TransmitReceive</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1gafbb309aa738bb3296934fb1a39ffbf40" kind="function"><name>HAL_SPI_Transmit_IT</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1gaaae0af2e2db7e7549b52b020a18f6168" kind="function"><name>HAL_SPI_Receive_IT</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga518c43d8323499451e7f4782a9dc6e32" kind="function"><name>HAL_SPI_TransmitReceive_IT</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga6aebe304396c3e18b55f926dae0dadcb" kind="function"><name>HAL_SPI_Transmit_DMA</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga626bb2ec54e7b6ff9bd5d807ae6e6e24" kind="function"><name>HAL_SPI_Receive_DMA</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga228553c64b10b8dade9fee525a8a489d" kind="function"><name>HAL_SPI_TransmitReceive_DMA</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga61e4a628d6918ec838736d65ae135031" kind="function"><name>HAL_SPI_DMAPause</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga7fdd4b7aa5c6bd560a476c833f546d93" kind="function"><name>HAL_SPI_DMAResume</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga7e01eb529af91fabc950180b927fa355" kind="function"><name>HAL_SPI_DMAStop</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga11c74b1d91d88ff336f674f6376cc904" kind="function"><name>HAL_SPI_Abort</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga75d7782876ed13b9f8aebfa8dbba5a1c" kind="function"><name>HAL_SPI_Abort_IT</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1gaf3da6e0a87468bc039b578c21329df47" kind="function"><name>HAL_SPI_IRQHandler</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga0a99ab4f6aa6ee7dc2abca5483910dde" kind="function"><name>HAL_SPI_TxCpltCallback</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga3df7021fe24cf874f8b1eec5bd5f4cb3" kind="function"><name>HAL_SPI_RxCpltCallback</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga04e63f382f172164c8e7cae4ff5d883c" kind="function"><name>HAL_SPI_TxRxCpltCallback</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga931ef2f7fd94ffa16ec431972b1b237f" kind="function"><name>HAL_SPI_TxHalfCpltCallback</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1gacf622756a3814edfacf449b5749b048a" kind="function"><name>HAL_SPI_RxHalfCpltCallback</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1gab46e2325b0880d5b5a301792438b151b" kind="function"><name>HAL_SPI_TxRxHalfCpltCallback</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga3db7835e7e7ac335887f62fedf156926" kind="function"><name>HAL_SPI_ErrorCallback</name></member>
+      <member refid="group___s_p_i___exported___functions___group2_1ga4a2593ec36fa4def11929e65f631f3cf" kind="function"><name>HAL_SPI_AbortCpltCallback</name></member>
+      <member refid="group___s_p_i___exported___functions___group3_1ga4e599e7fac80bb2eb0fd3f1737e50a5e" kind="function"><name>HAL_SPI_GetState</name></member>
+      <member refid="group___s_p_i___exported___functions___group3_1ga7f4d30dc380760d19ee4c582b91ed7f6" kind="function"><name>HAL_SPI_GetError</name></member>
+    </sectiondef>
+    <briefdescription>
+<para>Header file of SPI HAL module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team </para>
+</simplesect>
+<simplesect kind="attention"><para></para>
+</simplesect>
+Copyright (c) 2018 STMicroelectronics. All rights reserved.</para>
+<para>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>STM32G0xx_HAL_SPI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32G0xx_HAL_SPI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32g0xx__hal__def_8h" kindref="compound">stm32g0xx_hal_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>types<sp/>------------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="46" refid="struct_s_p_i___init_type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48" refid="struct_s_p_i___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_s_p_i___init_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="struct_s_p_i___init_type_def_1ab94410c1333b512e271b1c135fe50916" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_s_p_i___init_type_def_1ab94410c1333b512e271b1c135fe50916" kindref="member">Direction</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="struct_s_p_i___init_type_def_1a98999b0cd6e4c94f05b61b2554ee0371" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_s_p_i___init_type_def_1a98999b0cd6e4c94f05b61b2554ee0371" kindref="member">DataSize</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="struct_s_p_i___init_type_def_1a83f278c9d173d3cd021644692bf3c435" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_s_p_i___init_type_def_1a83f278c9d173d3cd021644692bf3c435" kindref="member">CLKPolarity</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="struct_s_p_i___init_type_def_1aba7183911cbc41063270dab182de768f" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_s_p_i___init_type_def_1aba7183911cbc41063270dab182de768f" kindref="member">CLKPhase</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63" refid="struct_s_p_i___init_type_def_1ae4a064e48fd5945eda7210d515fed69c" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_s_p_i___init_type_def_1ae4a064e48fd5945eda7210d515fed69c" kindref="member">NSS</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67" refid="struct_s_p_i___init_type_def_1a2fa72ad4f27606fffa2ec9456bcb0a56" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_s_p_i___init_type_def_1a2fa72ad4f27606fffa2ec9456bcb0a56" kindref="member">BaudRatePrescaler</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="struct_s_p_i___init_type_def_1a9740c535f073c87bb06668385ce96002" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_s_p_i___init_type_def_1a9740c535f073c87bb06668385ce96002" kindref="member">FirstBit</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="struct_s_p_i___init_type_def_1a3db685adbdc6f7bfc7ad0191ba5ab277" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_s_p_i___init_type_def_1a3db685adbdc6f7bfc7ad0191ba5ab277" kindref="member">TIMode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79" refid="struct_s_p_i___init_type_def_1a9d334a47c34b01cbfa55ff66cfc1e0ce" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_s_p_i___init_type_def_1a9d334a47c34b01cbfa55ff66cfc1e0ce" kindref="member">CRCCalculation</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82" refid="struct_s_p_i___init_type_def_1a48aef59cfd7bf0262b1ad993fef2fc7b" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_s_p_i___init_type_def_1a48aef59cfd7bf0262b1ad993fef2fc7b" kindref="member">CRCPolynomial</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85" refid="struct_s_p_i___init_type_def_1aba709d1ebebac9b3385fb61d6eeb79a2" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_s_p_i___init_type_def_1aba709d1ebebac9b3385fb61d6eeb79a2" kindref="member">CRCLength</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="struct_s_p_i___init_type_def_1a537f238782f2847191f7d221ffaa6c9b" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_s_p_i___init_type_def_1a537f238782f2847191f7d221ffaa6c9b" kindref="member">NSSPMode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}<sp/><ref refid="struct_s_p_i___init_type_def" kindref="compound">SPI_InitTypeDef</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="group___s_p_i___exported___types_1ga8891cb64e76198a860172d94c638c9b4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102" refid="group___s_p_i___exported___types_1gga8891cb64e76198a860172d94c638c9b4adbc218df2c9841b561282b40b3ded69d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___s_p_i___exported___types_1gga8891cb64e76198a860172d94c638c9b4adbc218df2c9841b561282b40b3ded69d" kindref="member">HAL_SPI_STATE_RESET</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00U,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="group___s_p_i___exported___types_1gga8891cb64e76198a860172d94c638c9b4abb3992c67a15c14bd1808ef6b63fa926" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___s_p_i___exported___types_1gga8891cb64e76198a860172d94c638c9b4abb3992c67a15c14bd1808ef6b63fa926" kindref="member">HAL_SPI_STATE_READY</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01U,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104" refid="group___s_p_i___exported___types_1gga8891cb64e76198a860172d94c638c9b4a0635e168bc0430253fe8e74cfe9768fd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___s_p_i___exported___types_1gga8891cb64e76198a860172d94c638c9b4a0635e168bc0430253fe8e74cfe9768fd" kindref="member">HAL_SPI_STATE_BUSY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x02U,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105" refid="group___s_p_i___exported___types_1gga8891cb64e76198a860172d94c638c9b4a5d82b644c7ca656ab5fe8a8e3cbc29ab" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___s_p_i___exported___types_1gga8891cb64e76198a860172d94c638c9b4a5d82b644c7ca656ab5fe8a8e3cbc29ab" kindref="member">HAL_SPI_STATE_BUSY_TX</ref><sp/><sp/><sp/><sp/>=<sp/>0x03U,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106" refid="group___s_p_i___exported___types_1gga8891cb64e76198a860172d94c638c9b4afd7e00128aca1feaa099c2595ffb9277" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___s_p_i___exported___types_1gga8891cb64e76198a860172d94c638c9b4afd7e00128aca1feaa099c2595ffb9277" kindref="member">HAL_SPI_STATE_BUSY_RX</ref><sp/><sp/><sp/><sp/>=<sp/>0x04U,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107" refid="group___s_p_i___exported___types_1gga8891cb64e76198a860172d94c638c9b4a9dae2883ae3e43ca28afc9453a14c938" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___s_p_i___exported___types_1gga8891cb64e76198a860172d94c638c9b4a9dae2883ae3e43ca28afc9453a14c938" kindref="member">HAL_SPI_STATE_BUSY_TX_RX</ref><sp/>=<sp/>0x05U,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108" refid="group___s_p_i___exported___types_1gga8891cb64e76198a860172d94c638c9b4a3cba266d2346abe3b62fa0acccab4711" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___s_p_i___exported___types_1gga8891cb64e76198a860172d94c638c9b4a3cba266d2346abe3b62fa0acccab4711" kindref="member">HAL_SPI_STATE_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x06U,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><ref refid="group___s_p_i___exported___types_1gga8891cb64e76198a860172d94c638c9b4a34f9231d040d752a034db85e3eb7f782" kindref="member">HAL_SPI_STATE_ABORT</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x07U<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110" refid="group___s_p_i___exported___types_1gga8891cb64e76198a860172d94c638c9b4a34f9231d040d752a034db85e3eb7f782" refkind="member"><highlight class="normal">}<sp/><ref refid="group___s_p_i___exported___types_1ga8891cb64e76198a860172d94c638c9b4" kindref="member">HAL_SPI_StateTypeDef</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="struct_____s_p_i___handle_type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_____s_p_i___handle_type_def" kindref="compound">__SPI_HandleTypeDef</ref></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117" refid="struct_____s_p_i___handle_type_def_1aa5c715deaf693cc2dbfa90f40681ee1d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_s_p_i___type_def" kindref="compound">SPI_TypeDef</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_____s_p_i___handle_type_def_1aa5c715deaf693cc2dbfa90f40681ee1d" kindref="member">Instance</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_s_p_i___init_type_def" kindref="compound">SPI_InitTypeDef</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_____s_p_i___handle_type_def_1a33f0dc84acb181a4702b30c92f007ca6" kindref="member">Init</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121" refid="struct_____s_p_i___handle_type_def_1a5cc31f7c52dafd32f27f8f2756dbf343" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_____s_p_i___handle_type_def_1a5cc31f7c52dafd32f27f8f2756dbf343" kindref="member">pTxBuffPtr</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123" refid="struct_____s_p_i___handle_type_def_1a80907b65d6f9541bc0dee444d16bc45b" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_____s_p_i___handle_type_def_1a80907b65d6f9541bc0dee444d16bc45b" kindref="member">TxXferSize</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="struct_____s_p_i___handle_type_def_1a1823437fbed80bdd1510782ced4e5532" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_____s_p_i___handle_type_def_1a1823437fbed80bdd1510782ced4e5532" kindref="member">TxXferCount</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="struct_____s_p_i___handle_type_def_1a7cee540cb21048ac48ba17355440e668" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_____s_p_i___handle_type_def_1a7cee540cb21048ac48ba17355440e668" kindref="member">pRxBuffPtr</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="struct_____s_p_i___handle_type_def_1ac12f5f1f6295b3c3327d5feabf5a96fb" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_____s_p_i___handle_type_def_1ac12f5f1f6295b3c3327d5feabf5a96fb" kindref="member">RxXferSize</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131" refid="struct_____s_p_i___handle_type_def_1ad95a26d6b12b7087bba3d1b769175db2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_____s_p_i___handle_type_def_1ad95a26d6b12b7087bba3d1b769175db2" kindref="member">RxXferCount</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133" refid="struct_____s_p_i___handle_type_def_1a752c564d700e8da6d94c705629d204aa" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_____s_p_i___handle_type_def_1a752c564d700e8da6d94c705629d204aa" kindref="member">CRCSize</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135" refid="struct_____s_p_i___handle_type_def_1ae69a57c50a44075680eb48ba13e41bf3" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/>(*<ref refid="struct_____s_p_i___handle_type_def_1ae69a57c50a44075680eb48ba13e41bf3" kindref="member">RxISR</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_____s_p_i___handle_type_def" kindref="compound">__SPI_HandleTypeDef</ref><sp/>*hspi);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137" refid="struct_____s_p_i___handle_type_def_1a445355c8080382b2d33c690e1790585f" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/>(*<ref refid="struct_____s_p_i___handle_type_def_1a445355c8080382b2d33c690e1790585f" kindref="member">TxISR</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_____s_p_i___handle_type_def" kindref="compound">__SPI_HandleTypeDef</ref><sp/>*hspi);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139" refid="struct_____s_p_i___handle_type_def_1a33e13c28b1a70e6164417abb026d7a22" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_____d_m_a___handle_type_def" kindref="compound">DMA_HandleTypeDef</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_____s_p_i___handle_type_def_1a33e13c28b1a70e6164417abb026d7a22" kindref="member">hdmatx</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141" refid="struct_____s_p_i___handle_type_def_1abd0aeec20298a55d89a440320e35634f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_____d_m_a___handle_type_def" kindref="compound">DMA_HandleTypeDef</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_____s_p_i___handle_type_def_1abd0aeec20298a55d89a440320e35634f" kindref="member">hdmarx</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143" refid="struct_____s_p_i___handle_type_def_1ad4cf225029dbefe8d3fe660c33b8bb6b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="stm32g0xx__hal__def_8h_1ab367482e943333a1299294eadaad284b" kindref="member">HAL_LockTypeDef</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_____s_p_i___handle_type_def_1ad4cf225029dbefe8d3fe660c33b8bb6b" kindref="member">Lock</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="145" refid="struct_____s_p_i___handle_type_def_1ac77adb7330099a917af1e9021cbb3de1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref><sp/><ref refid="group___s_p_i___exported___types_1ga8891cb64e76198a860172d94c638c9b4" kindref="member">HAL_SPI_StateTypeDef</ref><sp/><sp/><ref refid="struct_____s_p_i___handle_type_def_1ac77adb7330099a917af1e9021cbb3de1" kindref="member">State</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="147" refid="struct_____s_p_i___handle_type_def_1a123c5063e6a3b1901b2fbe5f88c53a7e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_____s_p_i___handle_type_def_1a123c5063e6a3b1901b2fbe5f88c53a7e" kindref="member">ErrorCode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_HAL_SPI_REGISTER_CALLBACKS<sp/>==<sp/>1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>void<sp/>(*<sp/>TxCpltCallback)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_____s_p_i___handle_type_def" kindref="compound">__SPI_HandleTypeDef</ref><sp/>*hspi);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>void<sp/>(*<sp/>RxCpltCallback)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_____s_p_i___handle_type_def" kindref="compound">__SPI_HandleTypeDef</ref><sp/>*hspi);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>void<sp/>(*<sp/>TxRxCpltCallback)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_____s_p_i___handle_type_def" kindref="compound">__SPI_HandleTypeDef</ref><sp/>*hspi);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>void<sp/>(*<sp/>TxHalfCpltCallback)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_____s_p_i___handle_type_def" kindref="compound">__SPI_HandleTypeDef</ref><sp/>*hspi);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>void<sp/>(*<sp/>RxHalfCpltCallback)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_____s_p_i___handle_type_def" kindref="compound">__SPI_HandleTypeDef</ref><sp/>*hspi);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/>void<sp/>(*<sp/>TxRxHalfCpltCallback)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_____s_p_i___handle_type_def" kindref="compound">__SPI_HandleTypeDef</ref><sp/>*hspi);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>void<sp/>(*<sp/>ErrorCallback)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_____s_p_i___handle_type_def" kindref="compound">__SPI_HandleTypeDef</ref><sp/>*hspi);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/>void<sp/>(*<sp/>AbortCpltCallback)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_____s_p_i___handle_type_def" kindref="compound">__SPI_HandleTypeDef</ref><sp/>*hspi);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>void<sp/>(*<sp/>MspInitCallback)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_____s_p_i___handle_type_def" kindref="compound">__SPI_HandleTypeDef</ref><sp/>*hspi);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>void<sp/>(*<sp/>MspDeInitCallback)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_____s_p_i___handle_type_def" kindref="compound">__SPI_HandleTypeDef</ref><sp/>*hspi);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>USE_HAL_SPI_REGISTER_CALLBACKS<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="group___s_p_i___exported___types_1gab633e49dd034de2f3a1fe79853d78d18" refkind="member"><highlight class="normal">}<sp/><ref refid="group___s_p_i___exported___types_1gab633e49dd034de2f3a1fe79853d78d18" kindref="member">SPI_HandleTypeDef</ref>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_HAL_SPI_REGISTER_CALLBACKS<sp/>==<sp/>1U)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>HAL_SPI_TX_COMPLETE_CB_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00U,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>HAL_SPI_RX_COMPLETE_CB_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01U,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>HAL_SPI_TX_RX_COMPLETE_CB_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x02U,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>HAL_SPI_TX_HALF_COMPLETE_CB_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x03U,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>HAL_SPI_RX_HALF_COMPLETE_CB_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x04U,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>HAL_SPI_TX_RX_HALF_COMPLETE_CB_ID<sp/><sp/><sp/><sp/><sp/>=<sp/>0x05U,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/>HAL_SPI_ERROR_CB_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x06U,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/>HAL_SPI_ABORT_CB_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x07U,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>HAL_SPI_MSPINIT_CB_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x08U,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>HAL_SPI_MSPDEINIT_CB_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x09U<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="181"><highlight class="normal">}<sp/>HAL_SPI_CallbackIDTypeDef;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><sp/>void<sp/>(*pSPI_CallbackTypeDef)(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);<sp/></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_HAL_SPI_REGISTER_CALLBACKS<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>constants<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="201" refid="group___s_p_i___error___code_1gaac0006cdf5670741f8702e55d4bf4601" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_SPI_ERROR_NONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000U)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="group___s_p_i___error___code_1ga75f5edd4e2a7a95bc9a994244df52460" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_SPI_ERROR_MODF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000001U)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="group___s_p_i___error___code_1gad1163823ec5fa89e4670366565d4ab93" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_SPI_ERROR_CRC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000002U)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="group___s_p_i___error___code_1ga9587f998fed196a4f30c38f2da731c0f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_SPI_ERROR_OVR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000004U)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="group___s_p_i___error___code_1gaf03238e57dd0c4d277fef2aa7a083133" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_SPI_ERROR_FRE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000008U)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="group___s_p_i___error___code_1gaaf91992131301e3fc7f2ce62fb011f6c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_SPI_ERROR_DMA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000010U)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="group___s_p_i___error___code_1ga777b36b52caf926a384976baf34530a3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_SPI_ERROR_FLAG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000020U)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="group___s_p_i___error___code_1gab7fa15838d5ef9316ed8a0ec1c782fb7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_SPI_ERROR_ABORT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000040U)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_HAL_SPI_REGISTER_CALLBACKS<sp/>==<sp/>1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_SPI_ERROR_INVALID_CALLBACK<sp/><sp/>(0x00000080U)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_HAL_SPI_REGISTER_CALLBACKS<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="219" refid="group___s_p_i___mode_1ga75f094fee5a9dc10b88401ccd17925d3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_MODE_SLAVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="group___s_p_i___mode_1gaa335c2abdfad9e6f6c2677719d93b64e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_MODE_MASTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SPI_CR1_MSTR<sp/>|<sp/>SPI_CR1_SSI)</highlight></codeline>
+<codeline lineno="228" refid="group___s_p_i___direction_1gaa7cb7f4bf4eebbf91bcfaeb17ebba7f3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DIRECTION_2LINES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="group___s_p_i___direction_1ga444826cf94667f75503f54704b2fb391" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DIRECTION_2LINES_RXONLY<sp/><sp/><sp/><sp/><sp/>SPI_CR1_RXONLY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="group___s_p_i___direction_1gab0f684caf5f1d6ac1e73d90a4778ab93" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DIRECTION_1LINE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_CR1_BIDIMODE</highlight></codeline>
+<codeline lineno="238" refid="group___s_p_i___data___size_1ga333dd776c2e5bd34a62ec2c778e79b31" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DATASIZE_4BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000300U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="group___s_p_i___data___size_1gac419892f10e003ca1610b02764a9571a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DATASIZE_5BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000400U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240" refid="group___s_p_i___data___size_1ga4ae84231733c205f5824fd04411f4256" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DATASIZE_6BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000500U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="group___s_p_i___data___size_1ga255495a4ed0b621c7febc3381cc126a3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DATASIZE_7BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000600U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="group___s_p_i___data___size_1ga773e9fc5d44c9661c829361fbd073152" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DATASIZE_8BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000700U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="group___s_p_i___data___size_1ga5aaa20dba9ccfa33b21b5b0412b3b9a4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DATASIZE_9BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000800U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="group___s_p_i___data___size_1ga45f9441b23fa3975e6a66329e3edc540" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DATASIZE_10BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000900U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="group___s_p_i___data___size_1gac89fef02c2b72a45f0d9bd4b9108464f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DATASIZE_11BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000A00U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="group___s_p_i___data___size_1ga6156f3714711c5aa25444cb0db4de48e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DATASIZE_12BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000B00U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="group___s_p_i___data___size_1ga99da120c51ef48974fea4a9da210184c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DATASIZE_13BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000C00U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="group___s_p_i___data___size_1gac9b8f5abf1d7d31f2d814e5f19546df9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DATASIZE_14BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000D00U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="group___s_p_i___data___size_1ga36b5ba62b97fae23c1162a87b256ca45" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DATASIZE_15BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000E00U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="group___s_p_i___data___size_1ga902147b9ead27cd9333240c72ce74f59" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DATASIZE_16BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000F00U)</highlight></codeline>
+<codeline lineno="258" refid="group___s_p_i___clock___polarity_1gaf61e3c6ec671baef099516265793c8df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_POLARITY_LOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="group___s_p_i___clock___polarity_1ga6910e2527b7511eb3a55946b9b775cff" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_POLARITY_HIGH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_CR1_CPOL</highlight></codeline>
+<codeline lineno="267" refid="group___s_p_i___clock___phase_1ga208be78b79c51df200a495c4d2110b57" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_PHASE_1EDGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268" refid="group___s_p_i___clock___phase_1ga960275ac1d01d302c48e713399990c36" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_PHASE_2EDGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_CR1_CPHA</highlight></codeline>
+<codeline lineno="276" refid="group___s_p_i___slave___select__management_1ga0bf14691b9d03eb158f190cefa7ab8fc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_NSS_SOFT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_CR1_SSM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277" refid="group___s_p_i___slave___select__management_1ga62c42a5e28ce3b0dc92c5186c10accf8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_NSS_HARD_INPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278" refid="group___s_p_i___slave___select__management_1gab7f2da432661406a37fa2afe4efacd87" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_NSS_HARD_OUTPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SPI_CR2_SSOE<sp/>&lt;&lt;<sp/>16U)</highlight></codeline>
+<codeline lineno="286" refid="group___s_p_i___n_s_s_p___mode_1gac6243661f7fabde22ef936590f88be78" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_NSS_PULSE_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_CR2_NSSP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287" refid="group___s_p_i___n_s_s_p___mode_1ga34736b4ea038be7723b31a0416a26832" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_NSS_PULSE_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000U)</highlight></codeline>
+<codeline lineno="295" refid="group___s_p_i___baud_rate___prescaler_1ga3c1e615518e705b8120f164ff4c1968e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_BAUDRATEPRESCALER_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296" refid="group___s_p_i___baud_rate___prescaler_1ga807568c52b5ba449d7a2b1b85549db24" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_BAUDRATEPRESCALER_4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SPI_CR1_BR_0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297" refid="group___s_p_i___baud_rate___prescaler_1ga2393359eb495f95163206e17194f4847" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_BAUDRATEPRESCALER_8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SPI_CR1_BR_1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298" refid="group___s_p_i___baud_rate___prescaler_1gad6a08d920ad4ee524cf55cd09e4c4d0e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_BAUDRATEPRESCALER_16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SPI_CR1_BR_1<sp/>|<sp/>SPI_CR1_BR_0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299" refid="group___s_p_i___baud_rate___prescaler_1ga53fda39d29f04b815f525b7f8c8dd9c2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_BAUDRATEPRESCALER_32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SPI_CR1_BR_2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300" refid="group___s_p_i___baud_rate___prescaler_1ga64129361cbd23907d14144befe2209f4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_BAUDRATEPRESCALER_64<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SPI_CR1_BR_2<sp/>|<sp/>SPI_CR1_BR_0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301" refid="group___s_p_i___baud_rate___prescaler_1ga939117a1ff97fbf4f1340cbb3141fb29" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_BAUDRATEPRESCALER_128<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SPI_CR1_BR_2<sp/>|<sp/>SPI_CR1_BR_1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302" refid="group___s_p_i___baud_rate___prescaler_1ga4debd0953aeeb470eae28a42aa8289c2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_BAUDRATEPRESCALER_256<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SPI_CR1_BR_2<sp/>|<sp/>SPI_CR1_BR_1<sp/>|<sp/>SPI_CR1_BR_0)</highlight></codeline>
+<codeline lineno="310" refid="group___s_p_i___m_s_b___l_s_b__transmission_1ga2280ac1a6ed587b516419b5df6a8ea55" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FIRSTBIT_MSB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="group___s_p_i___m_s_b___l_s_b__transmission_1ga8b608690a1adf9df40f271c228a479a3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FIRSTBIT_LSB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_CR1_LSBFIRST</highlight></codeline>
+<codeline lineno="319" refid="group___s_p_i___t_i__mode_1gaffbf066ee656a4d56b75fa721a2eabcd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_TIMODE_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320" refid="group___s_p_i___t_i__mode_1ga8b31d4b25f951edd1dfd7cf6d4387517" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_TIMODE_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_CR2_FRF</highlight></codeline>
+<codeline lineno="328" refid="group___s_p_i___c_r_c___calculation_1ga9cd586b66473d7f207103a443280820e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_CRCCALCULATION_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329" refid="group___s_p_i___c_r_c___calculation_1ga431d368997c9c41e8923cbcd41b00123" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_CRCCALCULATION_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_CR1_CRCEN</highlight></codeline>
+<codeline lineno="341" refid="group___s_p_i___c_r_c__length_1ga2c09210b093323a8e84af832657568ce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_CRC_LENGTH_DATASIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342" refid="group___s_p_i___c_r_c__length_1ga9340cbde2576d63c53c3ee50d3303886" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_CRC_LENGTH_8BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000001U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343" refid="group___s_p_i___c_r_c__length_1ga780edaa0a72a79c4d0fa9618541aaad8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_CRC_LENGTH_16BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000002U)</highlight></codeline>
+<codeline lineno="356" refid="group___s_p_i___f_i_f_o__reception__threshold_1gad59c107b3fee1ca1d6366b4b3c995c88" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_RXFIFO_THRESHOLD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_CR2_FRXTH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357" refid="group___s_p_i___f_i_f_o__reception__threshold_1ga89c3d57e576b7855dc34df26fd6b9972" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_RXFIFO_THRESHOLD_QF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_CR2_FRXTH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358" refid="group___s_p_i___f_i_f_o__reception__threshold_1ga6e9184eadc370323383fe560209d1084" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_RXFIFO_THRESHOLD_HF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000U)</highlight></codeline>
+<codeline lineno="366" refid="group___s_p_i___interrupt__definition_1ga6f0778617fc5f58086e4e29cd3781f18" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_IT_TXE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_CR2_TXEIE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="367" refid="group___s_p_i___interrupt__definition_1ga6c6ea3686830c60d9363f97a5d1011cc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_IT_RXNE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_CR2_RXNEIE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="368" refid="group___s_p_i___interrupt__definition_1gace6a9377da7f18ea8b5c73163c2278d6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_IT_ERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_CR2_ERRIE</highlight></codeline>
+<codeline lineno="376" refid="group___s_p_i___flags__definition_1ga7bd627ae57160a2f0aad1736194b5999" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FLAG_RXNE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_SR_RXNE<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>SPI<sp/>status<sp/>flag:<sp/>Rx<sp/>buffer<sp/>not<sp/>empty<sp/>flag<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377" refid="group___s_p_i___flags__definition_1gaf84a1e6af2739a6be58e1b23d9e6b914" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FLAG_TXE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_SR_TXE<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>SPI<sp/>status<sp/>flag:<sp/>Tx<sp/>buffer<sp/>empty<sp/>flag<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="378" refid="group___s_p_i___flags__definition_1gaf19c77ee876a3598d616ac07d136fc46" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FLAG_BSY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_SR_BSY<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>SPI<sp/>status<sp/>flag:<sp/>Busy<sp/>flag<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379" refid="group___s_p_i___flags__definition_1ga30fb6af50e1f3c61cb9de76b0101c889" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FLAG_CRCERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_SR_CRCERR<sp/></highlight><highlight class="comment">/*<sp/>SPI<sp/>Error<sp/>flag:<sp/>CRC<sp/>error<sp/>flag<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="380" refid="group___s_p_i___flags__definition_1gac7d3525ab98cc18f02270a4dba685897" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FLAG_MODF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_SR_MODF<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>SPI<sp/>Error<sp/>flag:<sp/>Mode<sp/>fault<sp/>flag<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="381" refid="group___s_p_i___flags__definition_1gab45264da2296c75495a7437a045513ea" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FLAG_OVR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_SR_OVR<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>SPI<sp/>Error<sp/>flag:<sp/>Overrun<sp/>flag<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="382" refid="group___s_p_i___flags__definition_1ga27dd114d8adc70f1439c054289f9313a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FLAG_FRE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_SR_FRE<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>SPI<sp/>Error<sp/>flag:<sp/>TI<sp/>mode<sp/>frame<sp/>format<sp/>error<sp/>flag<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="383" refid="group___s_p_i___flags__definition_1gac8148197385a872c6f996a78928d1c20" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FLAG_FTLVL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_SR_FTLVL<sp/><sp/></highlight><highlight class="comment">/*<sp/>SPI<sp/>fifo<sp/>transmission<sp/>level<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384" refid="group___s_p_i___flags__definition_1ga4406c904711e73f41bfbc930bfc92d58" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FLAG_FRLVL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_SR_FRLVL<sp/><sp/></highlight><highlight class="comment">/*<sp/>SPI<sp/>fifo<sp/>reception<sp/>level<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="385" refid="group___s_p_i___flags__definition_1ga1b2ed6861d967c5bc45a7e7c9101d33c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FLAG_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SPI_SR_RXNE<sp/>|<sp/>SPI_SR_TXE<sp/>|<sp/>SPI_SR_BSY<sp/>|<sp/>SPI_SR_CRCERR\</highlight></codeline>
+<codeline lineno="386"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>SPI_SR_MODF<sp/>|<sp/>SPI_SR_OVR<sp/>|<sp/>SPI_SR_FRE<sp/>|<sp/>SPI_SR_FTLVL<sp/>|<sp/>SPI_SR_FRLVL)</highlight></codeline>
+<codeline lineno="394" refid="group___s_p_i__transmission__fifo__status__level_1gab9b0d7e2ab72c8ea98643791effa0576" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FTLVL_EMPTY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="395" refid="group___s_p_i__transmission__fifo__status__level_1ga039713282e09cee7d70416ffc376b0e2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FTLVL_QUARTER_FULL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000800U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="396" refid="group___s_p_i__transmission__fifo__status__level_1ga24ec0c2f3fbab8659495c7034f7488fc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FTLVL_HALF_FULL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00001000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="397" refid="group___s_p_i__transmission__fifo__status__level_1gafb4f8ba450a3df2f7a5586e3fb89c60d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FTLVL_FULL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00001800U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406" refid="group___s_p_i__reception__fifo__status__level_1gacff8d3b7b616ec343a64624ee7f0bff7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FRLVL_EMPTY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="407" refid="group___s_p_i__reception__fifo__status__level_1ga66988763eea1cfd54424369e43fb18f4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FRLVL_QUARTER_FULL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000200U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="408" refid="group___s_p_i__reception__fifo__status__level_1ga7aa0da3b1a4379fafa19742219004007" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FRLVL_HALF_FULL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000400U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="409" refid="group___s_p_i__reception__fifo__status__level_1gaac1ae95d9b33c6f3493aa5e010bb3239" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FRLVL_FULL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000600U)</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>macros<sp/>-----------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_HAL_SPI_REGISTER_CALLBACKS<sp/>==<sp/>1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_SPI_RESET_HANDLE_STATE(__HANDLE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>do{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="430"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(__HANDLE__)-&gt;State<sp/>=<sp/>HAL_SPI_STATE_RESET;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="431"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(__HANDLE__)-&gt;MspInitCallback<sp/>=<sp/>NULL;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="432"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(__HANDLE__)-&gt;MspDeInitCallback<sp/>=<sp/>NULL;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="433"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="435" refid="group___s_p_i___exported___macros_1ga0d846f9517715960873e854b4a0790b0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_SPI_RESET_HANDLE_STATE(__HANDLE__)<sp/>((__HANDLE__)-&gt;State<sp/>=<sp/>HAL_SPI_STATE_RESET)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_HAL_SPI_REGISTER_CALLBACKS<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448" refid="group___s_p_i___exported___macros_1ga76064652f6f56d8868720b5541e854f5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_SPI_ENABLE_IT(__HANDLE__,<sp/>__INTERRUPT__)<sp/><sp/><sp/>SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR2,<sp/>(__INTERRUPT__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460" refid="group___s_p_i___exported___macros_1ga47fa7321c5755bfbff1a7229fbe5b21c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_SPI_DISABLE_IT(__HANDLE__,<sp/>__INTERRUPT__)<sp/><sp/>CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR2,<sp/>(__INTERRUPT__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472" refid="group___s_p_i___exported___macros_1gabdaab061e4603331a0ec4b9d651df0b5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_SPI_GET_IT_SOURCE(__HANDLE__,<sp/>__INTERRUPT__)<sp/>((((__HANDLE__)-&gt;Instance-&gt;CR2\</highlight></codeline>
+<codeline lineno="473"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<sp/>(__INTERRUPT__))<sp/>==<sp/>(__INTERRUPT__))<sp/>?<sp/>SET<sp/>:<sp/>RESET)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight></codeline>
+<codeline lineno="491" refid="group___s_p_i___exported___macros_1gaa0bbe5fb55f93fd277ddb6acf58cec53" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_SPI_GET_FLAG(__HANDLE__,<sp/>__FLAG__)<sp/>((((__HANDLE__)-&gt;Instance-&gt;SR)<sp/>&amp;<sp/>(__FLAG__))<sp/>==<sp/>(__FLAG__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight></codeline>
+<codeline lineno="498" refid="group___s_p_i___exported___macros_1gad1cb4100b67726531ad426d300f4cd26" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_SPI_CLEAR_CRCERRFLAG(__HANDLE__)<sp/>((__HANDLE__)-&gt;Instance-&gt;SR<sp/>=<sp/>(uint16_t)(~SPI_FLAG_CRCERR))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight></codeline>
+<codeline lineno="505" refid="group___s_p_i___exported___macros_1ga6c88becbe528c542156bc201622efba2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_SPI_CLEAR_MODFFLAG(__HANDLE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="506"><highlight class="preprocessor"><sp/><sp/>do{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="507"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>__IO<sp/>uint32_t<sp/>tmpreg_modf<sp/>=<sp/>0x00U;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="508"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>tmpreg_modf<sp/>=<sp/>(__HANDLE__)-&gt;Instance-&gt;SR;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="509"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1,<sp/>SPI_CR1_SPE);<sp/>\</highlight></codeline>
+<codeline lineno="510"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>UNUSED(tmpreg_modf);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="511"><highlight class="preprocessor"><sp/><sp/>}<sp/>while(0U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="512"><highlight class="normal"></highlight></codeline>
+<codeline lineno="518" refid="group___s_p_i___exported___macros_1gaf6af33b1c5d334b9fe7bb778c5b6442e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_SPI_CLEAR_OVRFLAG(__HANDLE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="519"><highlight class="preprocessor"><sp/><sp/>do{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="520"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>__IO<sp/>uint32_t<sp/>tmpreg_ovr<sp/>=<sp/>0x00U;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="521"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>tmpreg_ovr<sp/>=<sp/>(__HANDLE__)-&gt;Instance-&gt;DR;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="522"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>tmpreg_ovr<sp/>=<sp/>(__HANDLE__)-&gt;Instance-&gt;SR;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="523"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>UNUSED(tmpreg_ovr);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="524"><highlight class="preprocessor"><sp/><sp/>}<sp/>while(0U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="531" refid="group___s_p_i___exported___macros_1ga7ff182f5cf6c731318c882351d6d7ac2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_SPI_CLEAR_FREFLAG(__HANDLE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="532"><highlight class="preprocessor"><sp/><sp/>do{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="533"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>__IO<sp/>uint32_t<sp/>tmpreg_fre<sp/>=<sp/>0x00U;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="534"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>tmpreg_fre<sp/>=<sp/>(__HANDLE__)-&gt;Instance-&gt;SR;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="535"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>UNUSED(tmpreg_fre);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="536"><highlight class="preprocessor"><sp/><sp/>}while(0U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight></codeline>
+<codeline lineno="543" refid="group___s_p_i___exported___macros_1ga16d2d73c2b16004499ae8d492e71fd4e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_SPI_ENABLE(__HANDLE__)<sp/><sp/>SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1,<sp/>SPI_CR1_SPE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="544"><highlight class="normal"></highlight></codeline>
+<codeline lineno="550" refid="group___s_p_i___exported___macros_1gaa10d88f87d16de53bd81dfb33bd56959" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_SPI_DISABLE(__HANDLE__)<sp/>CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1,<sp/>SPI_CR1_SPE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="551"><highlight class="normal"></highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>macros<sp/>------------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="566" refid="group___s_p_i___private___macros_1gae3b2eb5e818e58b66474d42dedac5523" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_1LINE_TX(__HANDLE__)<sp/><sp/>SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1,<sp/>SPI_CR1_BIDIOE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="567"><highlight class="normal"></highlight></codeline>
+<codeline lineno="573" refid="group___s_p_i___private___macros_1gaa8d58cef91c1874d5a4dde4014cf6269" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_1LINE_RX(__HANDLE__)<sp/><sp/>CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1,<sp/>SPI_CR1_BIDIOE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="normal"></highlight></codeline>
+<codeline lineno="580" refid="group___s_p_i___private___macros_1gab120a0085b72939e7d19c4f6b3381a99" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_RESET_CRC(__HANDLE__)<sp/>do{CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1,<sp/>SPI_CR1_CRCEN);\</highlight></codeline>
+<codeline lineno="581"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1,<sp/>SPI_CR1_CRCEN);}while(0U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="582"><highlight class="normal"></highlight></codeline>
+<codeline lineno="598" refid="group___s_p_i___private___macros_1gae9c6be610681f2142fb012de95e6e59d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_CHECK_FLAG(__SR__,<sp/>__FLAG__)<sp/>((((__SR__)<sp/>&amp;<sp/>((__FLAG__)<sp/>&amp;<sp/>SPI_FLAG_MASK))<sp/>==<sp/>\</highlight></codeline>
+<codeline lineno="599"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__FLAG__)<sp/>&amp;<sp/>SPI_FLAG_MASK))<sp/>?<sp/>SET<sp/>:<sp/>RESET)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="600"><highlight class="normal"></highlight></codeline>
+<codeline lineno="610" refid="group___s_p_i___private___macros_1ga8ab087388d8930531498165ac8f066a2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_CHECK_IT_SOURCE(__CR2__,<sp/>__INTERRUPT__)<sp/>((((__CR2__)<sp/>&amp;<sp/>(__INTERRUPT__))<sp/>==<sp/>\</highlight></codeline>
+<codeline lineno="611"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(__INTERRUPT__))<sp/>?<sp/>SET<sp/>:<sp/>RESET)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="612"><highlight class="normal"></highlight></codeline>
+<codeline lineno="618" refid="group___s_p_i___private___macros_1ga3dd95189a3729f12ca354b757519ca01" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_SPI_MODE(__MODE__)<sp/><sp/><sp/><sp/><sp/><sp/>(((__MODE__)<sp/>==<sp/>SPI_MODE_SLAVE)<sp/><sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="619"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__MODE__)<sp/>==<sp/>SPI_MODE_MASTER))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="620"><highlight class="normal"></highlight></codeline>
+<codeline lineno="626" refid="group___s_p_i___private___macros_1ga6c66285d42fc3baf5ecaceadb54ee42a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_SPI_DIRECTION(__MODE__)<sp/>(((__MODE__)<sp/>==<sp/>SPI_DIRECTION_2LINES)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="627"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__MODE__)<sp/>==<sp/>SPI_DIRECTION_2LINES_RXONLY)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="628"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__MODE__)<sp/>==<sp/>SPI_DIRECTION_1LINE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="629"><highlight class="normal"></highlight></codeline>
+<codeline lineno="634" refid="group___s_p_i___private___macros_1gaff84471ab30ddd79cefd0c43dfe628c8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_SPI_DIRECTION_2LINES(__MODE__)<sp/>((__MODE__)<sp/>==<sp/>SPI_DIRECTION_2LINES)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="635"><highlight class="normal"></highlight></codeline>
+<codeline lineno="640" refid="group___s_p_i___private___macros_1ga525d9decc1251ec9037bd3c66c0e3a8c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_SPI_DIRECTION_2LINES_OR_1LINE(__MODE__)<sp/>(((__MODE__)<sp/>==<sp/>SPI_DIRECTION_2LINES)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="641"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__MODE__)<sp/>==<sp/>SPI_DIRECTION_1LINE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="642"><highlight class="normal"></highlight></codeline>
+<codeline lineno="648" refid="group___s_p_i___private___macros_1gac04b1218a162772dca3854aa3a441856" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_SPI_DATASIZE(__DATASIZE__)<sp/>(((__DATASIZE__)<sp/>==<sp/>SPI_DATASIZE_16BIT)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="649"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__DATASIZE__)<sp/>==<sp/>SPI_DATASIZE_15BIT)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="650"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__DATASIZE__)<sp/>==<sp/>SPI_DATASIZE_14BIT)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="651"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__DATASIZE__)<sp/>==<sp/>SPI_DATASIZE_13BIT)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="652"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__DATASIZE__)<sp/>==<sp/>SPI_DATASIZE_12BIT)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="653"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__DATASIZE__)<sp/>==<sp/>SPI_DATASIZE_11BIT)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="654"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__DATASIZE__)<sp/>==<sp/>SPI_DATASIZE_10BIT)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="655"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__DATASIZE__)<sp/>==<sp/>SPI_DATASIZE_9BIT)<sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="656"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__DATASIZE__)<sp/>==<sp/>SPI_DATASIZE_8BIT)<sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="657"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__DATASIZE__)<sp/>==<sp/>SPI_DATASIZE_7BIT)<sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="658"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__DATASIZE__)<sp/>==<sp/>SPI_DATASIZE_6BIT)<sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="659"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__DATASIZE__)<sp/>==<sp/>SPI_DATASIZE_5BIT)<sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="660"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__DATASIZE__)<sp/>==<sp/>SPI_DATASIZE_4BIT))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="661"><highlight class="normal"></highlight></codeline>
+<codeline lineno="667" refid="group___s_p_i___private___macros_1gad60cb1a9c1e1f89e8e9740a0ca734443" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_SPI_CPOL(__CPOL__)<sp/><sp/><sp/><sp/><sp/><sp/>(((__CPOL__)<sp/>==<sp/>SPI_POLARITY_LOW)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="668"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__CPOL__)<sp/>==<sp/>SPI_POLARITY_HIGH))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="669"><highlight class="normal"></highlight></codeline>
+<codeline lineno="675" refid="group___s_p_i___private___macros_1gaf5ed92fbe83dada8ebcce64c04ef0f72" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_SPI_CPHA(__CPHA__)<sp/><sp/><sp/><sp/><sp/><sp/>(((__CPHA__)<sp/>==<sp/>SPI_PHASE_1EDGE)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="676"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__CPHA__)<sp/>==<sp/>SPI_PHASE_2EDGE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="677"><highlight class="normal"></highlight></codeline>
+<codeline lineno="683" refid="group___s_p_i___private___macros_1ga7e90530e595a47ab465e3e222014f5e3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_SPI_NSS(__NSS__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__NSS__)<sp/>==<sp/>SPI_NSS_SOFT)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="684"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__NSS__)<sp/>==<sp/>SPI_NSS_HARD_INPUT)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="685"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__NSS__)<sp/>==<sp/>SPI_NSS_HARD_OUTPUT))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="686"><highlight class="normal"></highlight></codeline>
+<codeline lineno="692" refid="group___s_p_i___private___macros_1ga59317f70e75953c1c2f7d1d67d173db1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_SPI_NSSP(__NSSP__)<sp/><sp/><sp/><sp/><sp/><sp/>(((__NSSP__)<sp/>==<sp/>SPI_NSS_PULSE_ENABLE)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="693"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__NSSP__)<sp/>==<sp/>SPI_NSS_PULSE_DISABLE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="694"><highlight class="normal"></highlight></codeline>
+<codeline lineno="700" refid="group___s_p_i___private___macros_1gad15d5bdc7ac1698d1956a25b200e1f25" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_SPI_BAUDRATE_PRESCALER(__PRESCALER__)<sp/>(((__PRESCALER__)<sp/>==<sp/>SPI_BAUDRATEPRESCALER_2)<sp/><sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="701"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PRESCALER__)<sp/>==<sp/>SPI_BAUDRATEPRESCALER_4)<sp/><sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="702"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PRESCALER__)<sp/>==<sp/>SPI_BAUDRATEPRESCALER_8)<sp/><sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="703"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PRESCALER__)<sp/>==<sp/>SPI_BAUDRATEPRESCALER_16)<sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="704"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PRESCALER__)<sp/>==<sp/>SPI_BAUDRATEPRESCALER_32)<sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="705"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PRESCALER__)<sp/>==<sp/>SPI_BAUDRATEPRESCALER_64)<sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="706"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PRESCALER__)<sp/>==<sp/>SPI_BAUDRATEPRESCALER_128)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="707"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PRESCALER__)<sp/>==<sp/>SPI_BAUDRATEPRESCALER_256))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="708"><highlight class="normal"></highlight></codeline>
+<codeline lineno="714" refid="group___s_p_i___private___macros_1ga780c503aa8adae30dea1f034ac500d7f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_SPI_FIRST_BIT(__BIT__)<sp/><sp/>(((__BIT__)<sp/>==<sp/>SPI_FIRSTBIT_MSB)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="715"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__BIT__)<sp/>==<sp/>SPI_FIRSTBIT_LSB))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="716"><highlight class="normal"></highlight></codeline>
+<codeline lineno="722" refid="group___s_p_i___private___macros_1ga8e3c348af57cf973277018958fccfed9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_SPI_TIMODE(__MODE__)<sp/><sp/><sp/><sp/>(((__MODE__)<sp/>==<sp/>SPI_TIMODE_DISABLE)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="723"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__MODE__)<sp/>==<sp/>SPI_TIMODE_ENABLE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="724"><highlight class="normal"></highlight></codeline>
+<codeline lineno="730" refid="group___s_p_i___private___macros_1ga5416429a2e9024b142c972eacb1fd021" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_SPI_CRC_CALCULATION(__CALCULATION__)<sp/>(((__CALCULATION__)<sp/>==<sp/>SPI_CRCCALCULATION_DISABLE)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="731"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__CALCULATION__)<sp/>==<sp/>SPI_CRCCALCULATION_ENABLE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="732"><highlight class="normal"></highlight></codeline>
+<codeline lineno="738" refid="group___s_p_i___private___macros_1ga772f85d2cf9be95f50c9b9526462a85e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_SPI_CRC_LENGTH(__LENGTH__)<sp/>(((__LENGTH__)<sp/>==<sp/>SPI_CRC_LENGTH_DATASIZE)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="739"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__LENGTH__)<sp/>==<sp/>SPI_CRC_LENGTH_8BIT)<sp/><sp/><sp/><sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="740"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__LENGTH__)<sp/>==<sp/>SPI_CRC_LENGTH_16BIT))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="741"><highlight class="normal"></highlight></codeline>
+<codeline lineno="747" refid="group___s_p_i___private___macros_1ga1b4b6bb5771cb0070af660d169d4ef09" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_SPI_CRC_POLYNOMIAL(__POLYNOMIAL__)<sp/>(((__POLYNOMIAL__)<sp/>&gt;=<sp/>0x1U)<sp/><sp/><sp/><sp/>&amp;&amp;<sp/>\</highlight></codeline>
+<codeline lineno="748"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__POLYNOMIAL__)<sp/>&lt;=<sp/>0xFFFFU)<sp/>&amp;&amp;<sp/>\</highlight></codeline>
+<codeline lineno="749"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__POLYNOMIAL__)&amp;0x1U)<sp/>!=<sp/>0U))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="750"><highlight class="normal"></highlight></codeline>
+<codeline lineno="755" refid="group___s_p_i___private___macros_1gae54950bcff11d9165b99957cf8746ae4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_SPI_DMA_HANDLE(__HANDLE__)<sp/>((__HANDLE__)<sp/>!=<sp/>NULL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="756"><highlight class="normal"></highlight></codeline>
+<codeline lineno="761"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Include<sp/>SPI<sp/>HAL<sp/>Extended<sp/>module<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="762"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32g0xx__hal__spi__ex_8h" kindref="compound">stm32g0xx_hal_spi_ex.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="763"><highlight class="normal"></highlight></codeline>
+<codeline lineno="764"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>functions<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="772"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialization/de-initialization<sp/>functions<sp/><sp/>********************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="773" refid="group___s_p_i___exported___functions___group1_1gaadb9d40e710c714d96b2501996658c44" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group1_1gaadb9d40e710c714d96b2501996658c44" kindref="member">HAL_SPI_Init</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="774" refid="group___s_p_i___exported___functions___group1_1gaca2db2a7bbed96ac013c565080fb61f2" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group1_1gaca2db2a7bbed96ac013c565080fb61f2" kindref="member">HAL_SPI_DeInit</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="775"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___s_p_i___exported___functions___group1_1ga17f583be14b22caffa6c4e56dcd035ef" kindref="member">HAL_SPI_MspInit</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="776"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___s_p_i___exported___functions___group1_1gabadc4d4974af1afd943e8d13589068e1" kindref="member">HAL_SPI_MspDeInit</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="777"><highlight class="normal"></highlight></codeline>
+<codeline lineno="778"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Callbacks<sp/>Register/UnRegister<sp/>functions<sp/><sp/>***********************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="779"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_HAL_SPI_REGISTER_CALLBACKS<sp/>==<sp/>1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="780"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/>HAL_SPI_RegisterCallback(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi,<sp/>HAL_SPI_CallbackIDTypeDef<sp/>CallbackID,</highlight></codeline>
+<codeline lineno="781"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pSPI_CallbackTypeDef<sp/>pCallback);</highlight></codeline>
+<codeline lineno="782"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/>HAL_SPI_UnRegisterCallback(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi,<sp/>HAL_SPI_CallbackIDTypeDef<sp/>CallbackID);</highlight></codeline>
+<codeline lineno="783"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_HAL_SPI_REGISTER_CALLBACKS<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="791"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>I/O<sp/>operation<sp/>functions<sp/><sp/>***************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="792" refid="group___s_p_i___exported___functions___group2_1ga02ec86e05d0702387c221f90b6f041a2" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga02ec86e05d0702387c221f90b6f041a2" kindref="member">HAL_SPI_Transmit</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi,<sp/>uint8_t<sp/>*pData,<sp/>uint16_t<sp/>Size,<sp/>uint32_t<sp/>Timeout);</highlight></codeline>
+<codeline lineno="793" refid="group___s_p_i___exported___functions___group2_1gafdf43dbe4e5ef225bed6650b6e8c6313" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group2_1gafdf43dbe4e5ef225bed6650b6e8c6313" kindref="member">HAL_SPI_Receive</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi,<sp/>uint8_t<sp/>*pData,<sp/>uint16_t<sp/>Size,<sp/>uint32_t<sp/>Timeout);</highlight></codeline>
+<codeline lineno="794" refid="group___s_p_i___exported___functions___group2_1ga7c3106fe01493a33b08e5c617f45aeb1" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga7c3106fe01493a33b08e5c617f45aeb1" kindref="member">HAL_SPI_TransmitReceive</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi,<sp/>uint8_t<sp/>*pTxData,<sp/>uint8_t<sp/>*pRxData,<sp/>uint16_t<sp/>Size,</highlight></codeline>
+<codeline lineno="795"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>Timeout);</highlight></codeline>
+<codeline lineno="796" refid="group___s_p_i___exported___functions___group2_1gafbb309aa738bb3296934fb1a39ffbf40" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group2_1gafbb309aa738bb3296934fb1a39ffbf40" kindref="member">HAL_SPI_Transmit_IT</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi,<sp/>uint8_t<sp/>*pData,<sp/>uint16_t<sp/>Size);</highlight></codeline>
+<codeline lineno="797" refid="group___s_p_i___exported___functions___group2_1gaaae0af2e2db7e7549b52b020a18f6168" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group2_1gaaae0af2e2db7e7549b52b020a18f6168" kindref="member">HAL_SPI_Receive_IT</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi,<sp/>uint8_t<sp/>*pData,<sp/>uint16_t<sp/>Size);</highlight></codeline>
+<codeline lineno="798" refid="group___s_p_i___exported___functions___group2_1ga518c43d8323499451e7f4782a9dc6e32" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga518c43d8323499451e7f4782a9dc6e32" kindref="member">HAL_SPI_TransmitReceive_IT</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi,<sp/>uint8_t<sp/>*pTxData,<sp/>uint8_t<sp/>*pRxData,</highlight></codeline>
+<codeline lineno="799"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>Size);</highlight></codeline>
+<codeline lineno="800" refid="group___s_p_i___exported___functions___group2_1ga6aebe304396c3e18b55f926dae0dadcb" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga6aebe304396c3e18b55f926dae0dadcb" kindref="member">HAL_SPI_Transmit_DMA</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi,<sp/>uint8_t<sp/>*pData,<sp/>uint16_t<sp/>Size);</highlight></codeline>
+<codeline lineno="801" refid="group___s_p_i___exported___functions___group2_1ga626bb2ec54e7b6ff9bd5d807ae6e6e24" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga626bb2ec54e7b6ff9bd5d807ae6e6e24" kindref="member">HAL_SPI_Receive_DMA</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi,<sp/>uint8_t<sp/>*pData,<sp/>uint16_t<sp/>Size);</highlight></codeline>
+<codeline lineno="802" refid="group___s_p_i___exported___functions___group2_1ga228553c64b10b8dade9fee525a8a489d" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga228553c64b10b8dade9fee525a8a489d" kindref="member">HAL_SPI_TransmitReceive_DMA</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi,<sp/>uint8_t<sp/>*pTxData,<sp/>uint8_t<sp/>*pRxData,</highlight></codeline>
+<codeline lineno="803"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>Size);</highlight></codeline>
+<codeline lineno="804" refid="group___s_p_i___exported___functions___group2_1ga61e4a628d6918ec838736d65ae135031" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga61e4a628d6918ec838736d65ae135031" kindref="member">HAL_SPI_DMAPause</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="805" refid="group___s_p_i___exported___functions___group2_1ga7fdd4b7aa5c6bd560a476c833f546d93" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga7fdd4b7aa5c6bd560a476c833f546d93" kindref="member">HAL_SPI_DMAResume</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="806" refid="group___s_p_i___exported___functions___group2_1ga7e01eb529af91fabc950180b927fa355" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga7e01eb529af91fabc950180b927fa355" kindref="member">HAL_SPI_DMAStop</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="807"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Transfer<sp/>Abort<sp/>functions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="808" refid="group___s_p_i___exported___functions___group2_1ga11c74b1d91d88ff336f674f6376cc904" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga11c74b1d91d88ff336f674f6376cc904" kindref="member">HAL_SPI_Abort</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="809" refid="group___s_p_i___exported___functions___group2_1ga75d7782876ed13b9f8aebfa8dbba5a1c" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga75d7782876ed13b9f8aebfa8dbba5a1c" kindref="member">HAL_SPI_Abort_IT</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="810"><highlight class="normal"></highlight></codeline>
+<codeline lineno="811" refid="group___s_p_i___exported___functions___group2_1gaf3da6e0a87468bc039b578c21329df47" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___s_p_i___exported___functions___group2_1gaf3da6e0a87468bc039b578c21329df47" kindref="member">HAL_SPI_IRQHandler</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="812" refid="group___s_p_i___exported___functions___group2_1ga0a99ab4f6aa6ee7dc2abca5483910dde" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga0a99ab4f6aa6ee7dc2abca5483910dde" kindref="member">HAL_SPI_TxCpltCallback</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="813" refid="group___s_p_i___exported___functions___group2_1ga3df7021fe24cf874f8b1eec5bd5f4cb3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga3df7021fe24cf874f8b1eec5bd5f4cb3" kindref="member">HAL_SPI_RxCpltCallback</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="814" refid="group___s_p_i___exported___functions___group2_1ga04e63f382f172164c8e7cae4ff5d883c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga04e63f382f172164c8e7cae4ff5d883c" kindref="member">HAL_SPI_TxRxCpltCallback</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="815" refid="group___s_p_i___exported___functions___group2_1ga931ef2f7fd94ffa16ec431972b1b237f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga931ef2f7fd94ffa16ec431972b1b237f" kindref="member">HAL_SPI_TxHalfCpltCallback</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="816" refid="group___s_p_i___exported___functions___group2_1gacf622756a3814edfacf449b5749b048a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___s_p_i___exported___functions___group2_1gacf622756a3814edfacf449b5749b048a" kindref="member">HAL_SPI_RxHalfCpltCallback</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="817" refid="group___s_p_i___exported___functions___group2_1gab46e2325b0880d5b5a301792438b151b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___s_p_i___exported___functions___group2_1gab46e2325b0880d5b5a301792438b151b" kindref="member">HAL_SPI_TxRxHalfCpltCallback</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="818" refid="group___s_p_i___exported___functions___group2_1ga3db7835e7e7ac335887f62fedf156926" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga3db7835e7e7ac335887f62fedf156926" kindref="member">HAL_SPI_ErrorCallback</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="819" refid="group___s_p_i___exported___functions___group2_1ga4a2593ec36fa4def11929e65f631f3cf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___s_p_i___exported___functions___group2_1ga4a2593ec36fa4def11929e65f631f3cf" kindref="member">HAL_SPI_AbortCpltCallback</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="827"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Peripheral<sp/>State<sp/>and<sp/>Error<sp/>functions<sp/>***************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="828" refid="group___s_p_i___exported___functions___group3_1ga4e599e7fac80bb2eb0fd3f1737e50a5e" refkind="member"><highlight class="normal"><ref refid="group___s_p_i___exported___types_1ga8891cb64e76198a860172d94c638c9b4" kindref="member">HAL_SPI_StateTypeDef</ref><sp/><ref refid="group___s_p_i___exported___functions___group3_1ga4e599e7fac80bb2eb0fd3f1737e50a5e" kindref="member">HAL_SPI_GetState</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="829" refid="group___s_p_i___exported___functions___group3_1ga7f4d30dc380760d19ee4c582b91ed7f6" refkind="member"><highlight class="normal">uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___s_p_i___exported___functions___group3_1ga7f4d30dc380760d19ee4c582b91ed7f6" kindref="member">HAL_SPI_GetError</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi);</highlight></codeline>
+<codeline lineno="846"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="847"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="848"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="849"><highlight class="normal"></highlight></codeline>
+<codeline lineno="850"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STM32G0xx_HAL_SPI_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="851"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h"/>
+  </compounddef>
+</doxygen>

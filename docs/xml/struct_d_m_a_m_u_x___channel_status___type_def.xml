@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_d_m_a_m_u_x___channel_status___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>DMAMUX_ChannelStatus_TypeDef</compoundname>
+    <includes refid="stm32g030xx_8h" local="no">stm32g030xx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_d_m_a_m_u_x___channel_status___type_def_1a876dd0a8546697065f406b7543e27af2" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CSR</definition>
+        <argsstring></argsstring>
+        <name>CSR</name>
+        <qualifiedname>DMAMUX_ChannelStatus_TypeDef::CSR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA Channel Status Register Address offset: 0x0080 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="206" column="19" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a_m_u_x___channel_status___type_def_1ac011ddcfe531f8e16787ea851c1f3667" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CFR</definition>
+        <argsstring></argsstring>
+        <name>CFR</name>
+        <qualifiedname>DMAMUX_ChannelStatus_TypeDef::CFR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA Channel Clear Flag Register Address offset: 0x0084 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="207" column="19" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="204" column="1" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="205" bodyend="208"/>
+    <listofallmembers>
+      <member refid="struct_d_m_a_m_u_x___channel_status___type_def_1ac011ddcfe531f8e16787ea851c1f3667" prot="public" virt="non-virtual"><scope>DMAMUX_ChannelStatus_TypeDef</scope><name>CFR</name></member>
+      <member refid="struct_d_m_a_m_u_x___channel_status___type_def_1a876dd0a8546697065f406b7543e27af2" prot="public" virt="non-virtual"><scope>DMAMUX_ChannelStatus_TypeDef</scope><name>CSR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

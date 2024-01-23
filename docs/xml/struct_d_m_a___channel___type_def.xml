@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_d_m_a___channel___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>DMA_Channel_TypeDef</compoundname>
+    <includes refid="stm32g030xx_8h" local="no">stm32g030xx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_d_m_a___channel___type_def_1a5e1322e27c40bf91d172f9673f205c97" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CCR</definition>
+        <argsstring></argsstring>
+        <name>CCR</name>
+        <qualifiedname>DMA_Channel_TypeDef::CCR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA channel x configuration register <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="184" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a___channel___type_def_1aae019365e4288337da20775971c1a123" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CNDTR</definition>
+        <argsstring></argsstring>
+        <name>CNDTR</name>
+        <qualifiedname>DMA_Channel_TypeDef::CNDTR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA channel x number of data register <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="185" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a___channel___type_def_1a07aacf332c9bf310ff5be02140f892e1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CPAR</definition>
+        <argsstring></argsstring>
+        <name>CPAR</name>
+        <qualifiedname>DMA_Channel_TypeDef::CPAR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA channel x peripheral address register <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="186" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_m_a___channel___type_def_1ab51edd49cb9294ebe2db18fb5cf399dd" prot="public" static="no" mutable="no">
+        <type><ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CMAR</definition>
+        <argsstring></argsstring>
+        <name>CMAR</name>
+        <qualifiedname>DMA_Channel_TypeDef::CMAR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA channel x memory address register <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="187" column="17" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>DMA Controller. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" line="182" column="1" bodyfile="Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h" bodystart="183" bodyend="188"/>
+    <listofallmembers>
+      <member refid="struct_d_m_a___channel___type_def_1a5e1322e27c40bf91d172f9673f205c97" prot="public" virt="non-virtual"><scope>DMA_Channel_TypeDef</scope><name>CCR</name></member>
+      <member refid="struct_d_m_a___channel___type_def_1ab51edd49cb9294ebe2db18fb5cf399dd" prot="public" virt="non-virtual"><scope>DMA_Channel_TypeDef</scope><name>CMAR</name></member>
+      <member refid="struct_d_m_a___channel___type_def_1aae019365e4288337da20775971c1a123" prot="public" virt="non-virtual"><scope>DMA_Channel_TypeDef</scope><name>CNDTR</name></member>
+      <member refid="struct_d_m_a___channel___type_def_1a07aacf332c9bf310ff5be02140f892e1" prot="public" virt="non-virtual"><scope>DMA_Channel_TypeDef</scope><name>CPAR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

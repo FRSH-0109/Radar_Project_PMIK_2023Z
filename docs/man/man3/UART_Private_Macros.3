@@ -1,0 +1,1037 @@
+.TH "UART_Private_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Private_Macros \- UART Private Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_GET_DIV_FACTOR\fP(__CLOCKPRESCALER__)"
+.br
+.RI "Get UART clok division factor from clock prescaler value\&. "
+.ti -1c
+.RI "#define \fBUART_DIV_LPUART\fP(__PCLK__,  __BAUD__,  __CLOCKPRESCALER__)"
+.br
+.RI "BRR division operation to set BRR register with LPUART\&. "
+.ti -1c
+.RI "#define \fBUART_DIV_SAMPLING8\fP(__PCLK__,  __BAUD__,  __CLOCKPRESCALER__)     (((((__PCLK__)/\fBUARTPrescTable\fP[(__CLOCKPRESCALER__)])*2U) + ((__BAUD__)/2U)) / (__BAUD__))"
+.br
+.RI "BRR division operation to set BRR register in 8-bit oversampling mode\&. "
+.ti -1c
+.RI "#define \fBUART_DIV_SAMPLING16\fP(__PCLK__,  __BAUD__,  __CLOCKPRESCALER__)     ((((__PCLK__)/\fBUARTPrescTable\fP[(__CLOCKPRESCALER__)]) + ((__BAUD__)/2U)) / (__BAUD__))"
+.br
+.RI "BRR division operation to set BRR register in 16-bit oversampling mode\&. "
+.ti -1c
+.RI "#define \fBUART_INSTANCE_LOWPOWER\fP(__HANDLE__)   (\fBIS_LPUART_INSTANCE\fP((__HANDLE__)\->Instance))"
+.br
+.RI "Check whether or not UART instance is Low Power UART\&. "
+.ti -1c
+.RI "#define \fBIS_UART_BAUDRATE\fP(__BAUDRATE__)   ((__BAUDRATE__) < 8000001U)"
+.br
+.RI "Check UART Baud rate\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ASSERTIONTIME\fP(__TIME__)   ((__TIME__) <= 0x1FU)"
+.br
+.RI "Check UART assertion time\&. "
+.ti -1c
+.RI "#define \fBIS_UART_DEASSERTIONTIME\fP(__TIME__)   ((__TIME__) <= 0x1FU)"
+.br
+.RI "Check UART deassertion time\&. "
+.ti -1c
+.RI "#define \fBIS_UART_STOPBITS\fP(__STOPBITS__)"
+.br
+.RI "Ensure that UART frame number of stop bits is valid\&. "
+.ti -1c
+.RI "#define \fBIS_LPUART_STOPBITS\fP(__STOPBITS__)"
+.br
+.RI "Ensure that LPUART frame number of stop bits is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_PARITY\fP(__PARITY__)"
+.br
+.RI "Ensure that UART frame parity is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_HARDWARE_FLOW_CONTROL\fP(__CONTROL__)"
+.br
+.RI "Ensure that UART hardware flow control is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_MODE\fP(__MODE__)   ((((__MODE__) & (~((uint32_t)(\fBUART_MODE_TX_RX\fP)))) == 0x00U) && ((__MODE__) != 0x00U))"
+.br
+.RI "Ensure that UART communication mode is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_STATE\fP(__STATE__)"
+.br
+.RI "Ensure that UART state is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_OVERSAMPLING\fP(__SAMPLING__)"
+.br
+.RI "Ensure that UART oversampling is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ONE_BIT_SAMPLE\fP(__ONEBIT__)"
+.br
+.RI "Ensure that UART frame sampling is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_AUTOBAUDRATEMODE\fP(__MODE__)"
+.br
+.RI "Ensure that UART auto Baud rate detection mode is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_RECEIVER_TIMEOUT\fP(__TIMEOUT__)"
+.br
+.RI "Ensure that UART receiver timeout setting is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_RECEIVER_TIMEOUT_VALUE\fP(__TIMEOUTVALUE__)   ((__TIMEOUTVALUE__) <= 0xFFFFFFU)"
+.br
+.RI "Check the receiver timeout value\&. "
+.ti -1c
+.RI "#define \fBIS_UART_LIN\fP(__LIN__)"
+.br
+.RI "Ensure that UART LIN state is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_LIN_BREAK_DETECT_LENGTH\fP(__LENGTH__)"
+.br
+.RI "Ensure that UART LIN break detection length is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_DMA_TX\fP(__DMATX__)"
+.br
+.RI "Ensure that UART DMA TX state is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_DMA_RX\fP(__DMARX__)"
+.br
+.RI "Ensure that UART DMA RX state is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_HALF_DUPLEX\fP(__HDSEL__)"
+.br
+.RI "Ensure that UART half-duplex state is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_WAKEUPMETHOD\fP(__WAKEUP__)"
+.br
+.RI "Ensure that UART wake-up method is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_REQUEST_PARAMETER\fP(__PARAM__)"
+.br
+.RI "Ensure that UART request parameter is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_INIT\fP(__INIT__)"
+.br
+.RI "Ensure that UART advanced features initialization is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_TXINV\fP(__TXINV__)"
+.br
+.RI "Ensure that UART frame TX inversion setting is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_RXINV\fP(__RXINV__)"
+.br
+.RI "Ensure that UART frame RX inversion setting is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_DATAINV\fP(__DATAINV__)"
+.br
+.RI "Ensure that UART frame data inversion setting is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_SWAP\fP(__SWAP__)"
+.br
+.RI "Ensure that UART frame RX/TX pins swap setting is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_OVERRUN\fP(__OVERRUN__)"
+.br
+.RI "Ensure that UART frame overrun setting is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_AUTOBAUDRATE\fP(__AUTOBAUDRATE__)"
+.br
+.RI "Ensure that UART auto Baud rate state is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_DMAONRXERROR\fP(__DMA__)"
+.br
+.RI "Ensure that UART DMA enabling or disabling on error setting is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_MSBFIRST\fP(__MSBFIRST__)"
+.br
+.RI "Ensure that UART frame MSB first setting is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADVFEATURE_STOPMODE\fP(__STOPMODE__)"
+.br
+.RI "Ensure that UART stop mode state is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_MUTE_MODE\fP(__MUTE__)"
+.br
+.RI "Ensure that UART mute mode state is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_WAKEUP_SELECTION\fP(__WAKE__)"
+.br
+.RI "Ensure that UART wake-up selection is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_DE_POLARITY\fP(__POLARITY__)"
+.br
+.RI "Ensure that UART driver enable polarity is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_PRESCALER\fP(__CLOCKPRESCALER__)"
+.br
+.RI "Ensure that UART Prescaler is valid\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_LPUART_STOPBITS(__STOPBITS__)"
+\fBValue:\fP.PP
+.nf
+                                          (((__STOPBITS__) == UART_STOPBITS_1) || \\
+                                          ((__STOPBITS__) == UART_STOPBITS_2))
+.fi
+
+.PP
+Ensure that LPUART frame number of stop bits is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__STOPBITS__\fP LPUART frame number of stop bits\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBSTOPBITS\fP is valid) or RESET (\fBSTOPBITS\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_ADVFEATURE_AUTOBAUDRATE(__AUTOBAUDRATE__)"
+\fBValue:\fP.PP
+.nf
+                                                            (((__AUTOBAUDRATE__) == \\
+                                                            UART_ADVFEATURE_AUTOBAUDRATE_DISABLE) || \\
+                                                           ((__AUTOBAUDRATE__) == UART_ADVFEATURE_AUTOBAUDRATE_ENABLE))
+.fi
+
+.PP
+Ensure that UART auto Baud rate state is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__AUTOBAUDRATE__\fP UART auto Baud rate state\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBAUTOBAUDRATE\fP is valid) or RESET (\fBAUTOBAUDRATE\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_ADVFEATURE_AUTOBAUDRATEMODE(__MODE__)"
+\fBValue:\fP.PP
+.nf
+                                                        (((__MODE__) == UART_ADVFEATURE_AUTOBAUDRATE_ONSTARTBIT)    || \\
+                                                        ((__MODE__) == UART_ADVFEATURE_AUTOBAUDRATE_ONFALLINGEDGE) || \\
+                                                        ((__MODE__) == UART_ADVFEATURE_AUTOBAUDRATE_ON0X7FFRAME)   || \\
+                                                        ((__MODE__) == UART_ADVFEATURE_AUTOBAUDRATE_ON0X55FRAME))
+.fi
+
+.PP
+Ensure that UART auto Baud rate detection mode is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__MODE__\fP UART auto Baud rate detection mode\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBMODE\fP is valid) or RESET (\fBMODE\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_ADVFEATURE_DATAINV(__DATAINV__)"
+\fBValue:\fP.PP
+.nf
+                                                 (((__DATAINV__) == UART_ADVFEATURE_DATAINV_DISABLE) || \\
+                                                 ((__DATAINV__) == UART_ADVFEATURE_DATAINV_ENABLE))
+.fi
+
+.PP
+Ensure that UART frame data inversion setting is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__DATAINV__\fP UART frame data inversion setting\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBDATAINV\fP is valid) or RESET (\fBDATAINV\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_ADVFEATURE_DMAONRXERROR(__DMA__)"
+\fBValue:\fP.PP
+.nf
+                                                   (((__DMA__) == UART_ADVFEATURE_DMA_ENABLEONRXERROR) || \\
+                                                   ((__DMA__) == UART_ADVFEATURE_DMA_DISABLEONRXERROR))
+.fi
+
+.PP
+Ensure that UART DMA enabling or disabling on error setting is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__DMA__\fP UART DMA enabling or disabling on error setting\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBDMA\fP is valid) or RESET (\fBDMA\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_ADVFEATURE_INIT(__INIT__)"
+\fBValue:\fP.PP
+.nf
+                                                            ((__INIT__) <= (UART_ADVFEATURE_NO_INIT                | \\
+                                                            UART_ADVFEATURE_TXINVERT_INIT          | \\
+                                                            UART_ADVFEATURE_RXINVERT_INIT          | \\
+                                                            UART_ADVFEATURE_DATAINVERT_INIT        | \\
+                                                            UART_ADVFEATURE_SWAP_INIT              | \\
+                                                            UART_ADVFEATURE_RXOVERRUNDISABLE_INIT  | \\
+                                                            UART_ADVFEATURE_DMADISABLEONERROR_INIT | \\
+                                                            UART_ADVFEATURE_AUTOBAUDRATE_INIT      | \\
+                                                            UART_ADVFEATURE_MSBFIRST_INIT))
+.fi
+
+.PP
+Ensure that UART advanced features initialization is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__INIT__\fP UART advanced features initialization\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBINIT\fP is valid) or RESET (\fBINIT\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_ADVFEATURE_MSBFIRST(__MSBFIRST__)"
+\fBValue:\fP.PP
+.nf
+                                                   (((__MSBFIRST__) == UART_ADVFEATURE_MSBFIRST_DISABLE) || \\
+                                                   ((__MSBFIRST__) == UART_ADVFEATURE_MSBFIRST_ENABLE))
+.fi
+
+.PP
+Ensure that UART frame MSB first setting is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__MSBFIRST__\fP UART frame MSB first setting\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBMSBFIRST\fP is valid) or RESET (\fBMSBFIRST\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_ADVFEATURE_RXINV(__RXINV__)"
+\fBValue:\fP.PP
+.nf
+                                             (((__RXINV__) == UART_ADVFEATURE_RXINV_DISABLE) || \\
+                                             ((__RXINV__) == UART_ADVFEATURE_RXINV_ENABLE))
+.fi
+
+.PP
+Ensure that UART frame RX inversion setting is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__RXINV__\fP UART frame RX inversion setting\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBRXINV\fP is valid) or RESET (\fBRXINV\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_ADVFEATURE_STOPMODE(__STOPMODE__)"
+\fBValue:\fP.PP
+.nf
+                                                   (((__STOPMODE__) == UART_ADVFEATURE_STOPMODE_DISABLE) || \\
+                                                   ((__STOPMODE__) == UART_ADVFEATURE_STOPMODE_ENABLE))
+.fi
+
+.PP
+Ensure that UART stop mode state is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__STOPMODE__\fP UART stop mode state\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBSTOPMODE\fP is valid) or RESET (\fBSTOPMODE\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_ADVFEATURE_SWAP(__SWAP__)"
+\fBValue:\fP.PP
+.nf
+                                           (((__SWAP__) == UART_ADVFEATURE_SWAP_DISABLE) || \\
+                                           ((__SWAP__) == UART_ADVFEATURE_SWAP_ENABLE))
+.fi
+
+.PP
+Ensure that UART frame RX/TX pins swap setting is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__SWAP__\fP UART frame RX/TX pins swap setting\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBSWAP\fP is valid) or RESET (\fBSWAP\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_ADVFEATURE_TXINV(__TXINV__)"
+\fBValue:\fP.PP
+.nf
+                                             (((__TXINV__) == UART_ADVFEATURE_TXINV_DISABLE) || \\
+                                             ((__TXINV__) == UART_ADVFEATURE_TXINV_ENABLE))
+.fi
+
+.PP
+Ensure that UART frame TX inversion setting is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__TXINV__\fP UART frame TX inversion setting\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBTXINV\fP is valid) or RESET (\fBTXINV\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_ASSERTIONTIME(__TIME__)   ((__TIME__) <= 0x1FU)"
+
+.PP
+Check UART assertion time\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__TIME__\fP 5-bit value assertion time\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fITest\fP result (TRUE or FALSE)\&. 
+.RE
+.PP
+
+.SS "#define IS_UART_BAUDRATE(__BAUDRATE__)   ((__BAUDRATE__) < 8000001U)"
+
+.PP
+Check UART Baud rate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__BAUDRATE__\fP Baudrate specified by the user\&. The maximum Baud Rate is derived from the maximum clock on G0 (i\&.e\&. 64 MHz) divided by the smallest oversampling used on the USART (i\&.e\&. 8) 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBBAUDRATE\fP is valid) or RESET (\fBBAUDRATE\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_DE_POLARITY(__POLARITY__)"
+\fBValue:\fP.PP
+.nf
+                                              (((__POLARITY__) == UART_DE_POLARITY_HIGH) || \\
+                                              ((__POLARITY__) == UART_DE_POLARITY_LOW))
+.fi
+
+.PP
+Ensure that UART driver enable polarity is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__POLARITY__\fP UART driver enable polarity\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBPOLARITY\fP is valid) or RESET (\fBPOLARITY\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_DEASSERTIONTIME(__TIME__)   ((__TIME__) <= 0x1FU)"
+
+.PP
+Check UART deassertion time\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__TIME__\fP 5-bit value deassertion time\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fITest\fP result (TRUE or FALSE)\&. 
+.RE
+.PP
+
+.SS "#define IS_UART_DMA_RX(__DMARX__)"
+\fBValue:\fP.PP
+.nf
+                                       (((__DMARX__) == UART_DMA_RX_DISABLE) || \\
+                                       ((__DMARX__) == UART_DMA_RX_ENABLE))
+.fi
+
+.PP
+Ensure that UART DMA RX state is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__DMARX__\fP UART DMA RX state\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBDMARX\fP is valid) or RESET (\fBDMARX\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_DMA_TX(__DMATX__)"
+\fBValue:\fP.PP
+.nf
+                                       (((__DMATX__) == UART_DMA_TX_DISABLE) || \\
+                                       ((__DMATX__) == UART_DMA_TX_ENABLE))
+.fi
+
+.PP
+Ensure that UART DMA TX state is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__DMATX__\fP UART DMA TX state\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBDMATX\fP is valid) or RESET (\fBDMATX\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_HALF_DUPLEX(__HDSEL__)"
+\fBValue:\fP.PP
+.nf
+                                            (((__HDSEL__) == UART_HALF_DUPLEX_DISABLE) || \\
+                                            ((__HDSEL__) == UART_HALF_DUPLEX_ENABLE))
+.fi
+
+.PP
+Ensure that UART half-duplex state is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HDSEL__\fP UART half-duplex state\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBHDSEL\fP is valid) or RESET (\fBHDSEL\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_HARDWARE_FLOW_CONTROL(__CONTROL__)"
+\fBValue:\fP.PP
+.nf
+  (((__CONTROL__) == UART_HWCONTROL_NONE) || \\
+   ((__CONTROL__) == UART_HWCONTROL_RTS)  || \\
+   ((__CONTROL__) == UART_HWCONTROL_CTS)  || \\
+   ((__CONTROL__) == UART_HWCONTROL_RTS_CTS))
+.fi
+
+.PP
+Ensure that UART hardware flow control is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__CONTROL__\fP UART hardware flow control\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBCONTROL\fP is valid) or RESET (\fBCONTROL\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_LIN(__LIN__)"
+\fBValue:\fP.PP
+.nf
+                                     (((__LIN__) == UART_LIN_DISABLE) || \\
+                                     ((__LIN__) == UART_LIN_ENABLE))
+.fi
+
+.PP
+Ensure that UART LIN state is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__LIN__\fP UART LIN state\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBLIN\fP is valid) or RESET (\fBLIN\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_LIN_BREAK_DETECT_LENGTH(__LENGTH__)"
+\fBValue:\fP.PP
+.nf
+                                                     (((__LENGTH__) == UART_LINBREAKDETECTLENGTH_10B) || \\
+                                                     ((__LENGTH__) == UART_LINBREAKDETECTLENGTH_11B))
+.fi
+
+.PP
+Ensure that UART LIN break detection length is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__LENGTH__\fP UART LIN break detection length\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBLENGTH\fP is valid) or RESET (\fBLENGTH\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_MODE(__MODE__)   ((((__MODE__) & (~((uint32_t)(\fBUART_MODE_TX_RX\fP)))) == 0x00U) && ((__MODE__) != 0x00U))"
+
+.PP
+Ensure that UART communication mode is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__MODE__\fP UART communication mode\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBMODE\fP is valid) or RESET (\fBMODE\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_MUTE_MODE(__MUTE__)"
+\fBValue:\fP.PP
+.nf
+                                           (((__MUTE__) == UART_ADVFEATURE_MUTEMODE_DISABLE) || \\
+                                           ((__MUTE__) == UART_ADVFEATURE_MUTEMODE_ENABLE))
+.fi
+
+.PP
+Ensure that UART mute mode state is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__MUTE__\fP UART mute mode state\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBMUTE\fP is valid) or RESET (\fBMUTE\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_ONE_BIT_SAMPLE(__ONEBIT__)"
+\fBValue:\fP.PP
+.nf
+                                            (((__ONEBIT__) == UART_ONE_BIT_SAMPLE_DISABLE) || \\
+                                            ((__ONEBIT__) == UART_ONE_BIT_SAMPLE_ENABLE))
+.fi
+
+.PP
+Ensure that UART frame sampling is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__ONEBIT__\fP UART frame sampling\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBONEBIT\fP is valid) or RESET (\fBONEBIT\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_OVERRUN(__OVERRUN__)"
+\fBValue:\fP.PP
+.nf
+                                          (((__OVERRUN__) == UART_ADVFEATURE_OVERRUN_ENABLE) || \\
+                                          ((__OVERRUN__) == UART_ADVFEATURE_OVERRUN_DISABLE))
+.fi
+
+.PP
+Ensure that UART frame overrun setting is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__OVERRUN__\fP UART frame overrun setting\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBOVERRUN\fP is valid) or RESET (\fBOVERRUN\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_OVERSAMPLING(__SAMPLING__)"
+\fBValue:\fP.PP
+.nf
+                                            (((__SAMPLING__) == UART_OVERSAMPLING_16) || \\
+                                            ((__SAMPLING__) == UART_OVERSAMPLING_8))
+.fi
+
+.PP
+Ensure that UART oversampling is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__SAMPLING__\fP UART oversampling\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBSAMPLING\fP is valid) or RESET (\fBSAMPLING\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_PARITY(__PARITY__)"
+\fBValue:\fP.PP
+.nf
+                                    (((__PARITY__) == UART_PARITY_NONE) || \\
+                                    ((__PARITY__) == UART_PARITY_EVEN) || \\
+                                    ((__PARITY__) == UART_PARITY_ODD))
+.fi
+
+.PP
+Ensure that UART frame parity is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__PARITY__\fP UART frame parity\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBPARITY\fP is valid) or RESET (\fBPARITY\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_PRESCALER(__CLOCKPRESCALER__)"
+\fBValue:\fP.PP
+.nf
+                                               (((__CLOCKPRESCALER__) == UART_PRESCALER_DIV1)   || \\
+                                               ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV2)   || \\
+                                               ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV4)   || \\
+                                               ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV6)   || \\
+                                               ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV8)   || \\
+                                               ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV10)  || \\
+                                               ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV12)  || \\
+                                               ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV16)  || \\
+                                               ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV32)  || \\
+                                               ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV64)  || \\
+                                               ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV128) || \\
+                                               ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV256))
+.fi
+
+.PP
+Ensure that UART Prescaler is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__CLOCKPRESCALER__\fP UART Prescaler value\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBCLOCKPRESCALER\fP is valid) or RESET (\fBCLOCKPRESCALER\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_RECEIVER_TIMEOUT(__TIMEOUT__)"
+\fBValue:\fP.PP
+.nf
+                                                (((__TIMEOUT__) == UART_RECEIVER_TIMEOUT_DISABLE) || \\
+                                                ((__TIMEOUT__) == UART_RECEIVER_TIMEOUT_ENABLE))
+.fi
+
+.PP
+Ensure that UART receiver timeout setting is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__TIMEOUT__\fP UART receiver timeout setting\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBTIMEOUT\fP is valid) or RESET (\fBTIMEOUT\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_RECEIVER_TIMEOUT_VALUE(__TIMEOUTVALUE__)   ((__TIMEOUTVALUE__) <= 0xFFFFFFU)"
+
+.PP
+Check the receiver timeout value\&. 
+.PP
+\fBNote\fP
+.RS 4
+The maximum UART receiver timeout value is 0xFFFFFF\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__TIMEOUTVALUE__\fP receiver timeout value\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fITest\fP result (TRUE or FALSE) 
+.RE
+.PP
+
+.SS "#define IS_UART_REQUEST_PARAMETER(__PARAM__)"
+\fBValue:\fP.PP
+.nf
+                                              (((__PARAM__) == UART_AUTOBAUD_REQUEST)     || \\
+                                              ((__PARAM__) == UART_SENDBREAK_REQUEST)    || \\
+                                              ((__PARAM__) == UART_MUTE_MODE_REQUEST)    || \\
+                                              ((__PARAM__) == UART_RXDATA_FLUSH_REQUEST) || \\
+                                              ((__PARAM__) == UART_TXDATA_FLUSH_REQUEST))
+.fi
+
+.PP
+Ensure that UART request parameter is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__PARAM__\fP UART request parameter\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBPARAM\fP is valid) or RESET (\fBPARAM\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_STATE(__STATE__)"
+\fBValue:\fP.PP
+.nf
+                                  (((__STATE__) == UART_STATE_DISABLE) || \\
+                                  ((__STATE__) == UART_STATE_ENABLE))
+.fi
+
+.PP
+Ensure that UART state is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__STATE__\fP UART state\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBSTATE\fP is valid) or RESET (\fBSTATE\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_STOPBITS(__STOPBITS__)"
+\fBValue:\fP.PP
+.nf
+                                        (((__STOPBITS__) == UART_STOPBITS_0_5) || \\
+                                        ((__STOPBITS__) == UART_STOPBITS_1)   || \\
+                                        ((__STOPBITS__) == UART_STOPBITS_1_5) || \\
+                                        ((__STOPBITS__) == UART_STOPBITS_2))
+.fi
+
+.PP
+Ensure that UART frame number of stop bits is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__STOPBITS__\fP UART frame number of stop bits\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBSTOPBITS\fP is valid) or RESET (\fBSTOPBITS\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_WAKEUP_SELECTION(__WAKE__)"
+\fBValue:\fP.PP
+.nf
+                                            (((__WAKE__) == UART_WAKEUP_ON_ADDRESS)           || \\
+                                            ((__WAKE__) == UART_WAKEUP_ON_STARTBIT)          || \\
+                                            ((__WAKE__) == UART_WAKEUP_ON_READDATA_NONEMPTY))
+.fi
+
+.PP
+Ensure that UART wake-up selection is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__WAKE__\fP UART wake-up selection\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBWAKE\fP is valid) or RESET (\fBWAKE\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_WAKEUPMETHOD(__WAKEUP__)"
+\fBValue:\fP.PP
+.nf
+                                          (((__WAKEUP__) == UART_WAKEUPMETHOD_IDLELINE) || \\
+                                          ((__WAKEUP__) == UART_WAKEUPMETHOD_ADDRESSMARK))
+.fi
+
+.PP
+Ensure that UART wake-up method is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__WAKEUP__\fP UART wake-up method \&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBWAKEUP\fP is valid) or RESET (\fBWAKEUP\fP is invalid) 
+.RE
+.PP
+
+.SS "#define UART_DIV_LPUART(__PCLK__, __BAUD__, __CLOCKPRESCALER__)"
+\fBValue:\fP.PP
+.nf
+  ((uint32_t)((((((uint64_t)(__PCLK__))/(UARTPrescTable[(__CLOCKPRESCALER__)]))*256U)+ \\
+               (uint32_t)((__BAUD__)/2U)) / (__BAUD__))                                \\
+  )
+.fi
+
+.PP
+BRR division operation to set BRR register with LPUART\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__PCLK__\fP LPUART clock\&. 
+.br
+\fI__BAUD__\fP Baud rate set by the user\&. 
+.br
+\fI__CLOCKPRESCALER__\fP UART prescaler value\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fIDivision\fP result 
+.RE
+.PP
+
+.SS "#define UART_DIV_SAMPLING16(__PCLK__, __BAUD__, __CLOCKPRESCALER__)     ((((__PCLK__)/\fBUARTPrescTable\fP[(__CLOCKPRESCALER__)]) + ((__BAUD__)/2U)) / (__BAUD__))"
+
+.PP
+BRR division operation to set BRR register in 16-bit oversampling mode\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__PCLK__\fP UART clock\&. 
+.br
+\fI__BAUD__\fP Baud rate set by the user\&. 
+.br
+\fI__CLOCKPRESCALER__\fP UART prescaler value\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fIDivision\fP result 
+.RE
+.PP
+
+.SS "#define UART_DIV_SAMPLING8(__PCLK__, __BAUD__, __CLOCKPRESCALER__)     (((((__PCLK__)/\fBUARTPrescTable\fP[(__CLOCKPRESCALER__)])*2U) + ((__BAUD__)/2U)) / (__BAUD__))"
+
+.PP
+BRR division operation to set BRR register in 8-bit oversampling mode\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__PCLK__\fP UART clock\&. 
+.br
+\fI__BAUD__\fP Baud rate set by the user\&. 
+.br
+\fI__CLOCKPRESCALER__\fP UART prescaler value\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fIDivision\fP result 
+.RE
+.PP
+
+.SS "#define UART_GET_DIV_FACTOR(__CLOCKPRESCALER__)"
+\fBValue:\fP.PP
+.nf
+  (((__CLOCKPRESCALER__) == UART_PRESCALER_DIV1)   ? 1U :       \\
+   ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV2)   ? 2U :       \\
+   ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV4)   ? 4U :       \\
+   ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV6)   ? 6U :       \\
+   ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV8)   ? 8U :       \\
+   ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV10)  ? 10U :      \\
+   ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV12)  ? 12U :      \\
+   ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV16)  ? 16U :      \\
+   ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV32)  ? 32U :      \\
+   ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV64)  ? 64U :      \\
+   ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV128) ? 128U :     \\
+   ((__CLOCKPRESCALER__) == UART_PRESCALER_DIV256) ? 256U : 1U)
+.fi
+
+.PP
+Get UART clok division factor from clock prescaler value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__CLOCKPRESCALER__\fP UART prescaler value\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fIUART\fP clock division factor 
+.RE
+.PP
+
+.SS "#define UART_INSTANCE_LOWPOWER(__HANDLE__)   (\fBIS_LPUART_INSTANCE\fP((__HANDLE__)\->Instance))"
+
+.PP
+Check whether or not UART instance is Low Power UART\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (instance is LPUART) or RESET (instance isn't LPUART) 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

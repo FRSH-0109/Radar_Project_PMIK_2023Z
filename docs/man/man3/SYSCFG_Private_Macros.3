@@ -1,0 +1,77 @@
+.TH "SYSCFG_Private_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SYSCFG_Private_Macros \- SYSCFG Private Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_SYSCFG_BREAK_CONFIG\fP(__CONFIG__)"
+.br
+.ti -1c
+.RI "#define \fBIS_HAL_SYSCFG_IRDA_ENV_SEL\fP(SEL)"
+.br
+.ti -1c
+.RI "#define \fBIS_HAL_SYSCFG_IRDA_POL_SEL\fP(SEL)"
+.br
+.ti -1c
+.RI "#define \fBIS_SYSCFG_FASTMODEPLUS\fP(__PIN__)"
+.br
+.ti -1c
+.RI "#define \fBIS_HAL_REMAP_PIN\fP(RMP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_HAL_REMAP_PIN(RMP)"
+\fBValue:\fP.PP
+.nf
+                                             (((RMP) == SYSCFG_REMAP_PA11) || \\
+                                             ((RMP) == SYSCFG_REMAP_PA12) || \\
+                                             ((RMP) == (SYSCFG_REMAP_PA11 | SYSCFG_REMAP_PA12)))
+.fi
+
+.SS "#define IS_HAL_SYSCFG_IRDA_ENV_SEL(SEL)"
+\fBValue:\fP.PP
+.nf
+                                           (((SEL) == HAL_SYSCFG_IRDA_ENV_SEL_TIM16)   || \\
+                                           ((SEL) == HAL_SYSCFG_IRDA_ENV_SEL_USART1)  || \\
+                                           ((SEL) == HAL_SYSCFG_IRDA_ENV_SEL_USART2))
+.fi
+
+.SS "#define IS_HAL_SYSCFG_IRDA_POL_SEL(SEL)"
+\fBValue:\fP.PP
+.nf
+                                           (((SEL) == HAL_SYSCFG_IRDA_POLARITY_NOT_INVERTED)   || \\
+                                           ((SEL) == HAL_SYSCFG_IRDA_POLARITY_INVERTED))
+.fi
+
+.SS "#define IS_SYSCFG_BREAK_CONFIG(__CONFIG__)"
+\fBValue:\fP.PP
+.nf
+                                            (((__CONFIG__) == SYSCFG_BREAK_SP)        || \\
+                                            ((__CONFIG__) == SYSCFG_BREAK_ECC)       || \\
+                                            ((__CONFIG__) == SYSCFG_BREAK_LOCKUP))
+.fi
+
+.SS "#define IS_SYSCFG_FASTMODEPLUS(__PIN__)"
+\fBValue:\fP.PP
+.nf
+                                         ((((__PIN__) & SYSCFG_FASTMODEPLUS_PA9)  == SYSCFG_FASTMODEPLUS_PA9)  || \\
+                                         (((__PIN__) & SYSCFG_FASTMODEPLUS_PA10) == SYSCFG_FASTMODEPLUS_PA10) || \\
+                                         (((__PIN__) & SYSCFG_FASTMODEPLUS_PB6)  == SYSCFG_FASTMODEPLUS_PB6)  || \\
+                                         (((__PIN__) & SYSCFG_FASTMODEPLUS_PB7)  == SYSCFG_FASTMODEPLUS_PB7)  || \\
+                                         (((__PIN__) & SYSCFG_FASTMODEPLUS_PB8)  == SYSCFG_FASTMODEPLUS_PB8)  || \\
+                                         (((__PIN__) & SYSCFG_FASTMODEPLUS_PB9)  == SYSCFG_FASTMODEPLUS_PB9))
+.fi
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

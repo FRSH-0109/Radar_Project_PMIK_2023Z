@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___g_p_i_o_ex___get___port___index" kind="group">
+    <compoundname>GPIOEx_Get_Port_Index</compoundname>
+    <title>GPIOEx Get Port Index</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___g_p_i_o_ex___get___port___index_1ga3830db89326a2268d296a6498fd31384" prot="public" static="no">
+        <name>GPIO_GET_INDEX</name>
+        <param><defname>__GPIOx__</defname></param>
+        <initializer>                                      (((__GPIOx__) == (<ref refid="group___peripheral__declaration_1gac485358099728ddae050db37924dd6b7" kindref="member">GPIOA</ref>))? 0uL :\
+                                      ((__GPIOx__) == (<ref refid="group___peripheral__declaration_1ga68b66ac73be4c836db878a42e1fea3cd" kindref="member">GPIOB</ref>))? 1uL :\
+                                      ((__GPIOx__) == (<ref refid="group___peripheral__declaration_1ga2dca03332d620196ba943bc2346eaa08" kindref="member">GPIOC</ref>))? 2uL :\
+                                      ((__GPIOx__) == (<ref refid="group___peripheral__declaration_1ga7580b1a929ea9df59725ba9c18eba6ac" kindref="member">GPIOD</ref>))? 3uL : 5uL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h" line="808" column="10" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h" bodystart="808" bodyend="811"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

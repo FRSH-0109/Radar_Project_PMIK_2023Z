@@ -1,0 +1,785 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_i_l_i9341_8c" kind="file" language="C++">
+    <compoundname>ILI9341.c</compoundname>
+    <includes refid="main_8h" local="yes">main.h</includes>
+    <includes refid="_g_f_x___color_8h" local="yes">GFX_Color.h</includes>
+    <includes refid="_i_l_i9341_8h" local="yes">ILI9341.h</includes>
+    <includes local="yes">stdint.h</includes>
+    <includes local="yes">stdio.h</includes>
+    <includes local="yes">string.h</includes>
+    <includes local="no">math.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="8">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="3">
+        <label>stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>stm32g0xx_hal_cortex.h</label>
+        <link refid="stm32g0xx__hal__cortex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stm32g0xx_hal_dma.h</label>
+        <link refid="stm32g0xx__hal__dma_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stm32g0xx_hal_dma_ex.h</label>
+        <link refid="stm32g0xx__hal__dma__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>stm32g0xx_hal_exti.h</label>
+        <link refid="stm32g0xx__hal__exti_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>stm32g0xx_hal_flash.h</label>
+        <link refid="stm32g0xx__hal__flash_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>stm32g0xx_hal_flash_ex.h</label>
+        <link refid="stm32g0xx__hal__flash__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stm32g0xx_hal_gpio.h</label>
+        <link refid="stm32g0xx__hal__gpio_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stm32g0xx_hal_gpio_ex.h</label>
+        <link refid="stm32g0xx__hal__gpio__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>stm32g0xx_hal_pwr.h</label>
+        <link refid="stm32g0xx__hal__pwr_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>stm32g0xx_hal_pwr_ex.h</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stm32g0xx_hal_rcc.h</label>
+        <link refid="stm32g0xx__hal__rcc_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stm32g0xx_hal_rcc_ex.h</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>stm32g0xx_hal_spi.h</label>
+        <link refid="stm32g0xx__hal__spi_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>stm32g0xx_hal_spi_ex.h</label>
+        <link refid="stm32g0xx__hal__spi__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>stm32g0xx_hal_tim.h</label>
+        <link refid="stm32g0xx__hal__tim_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>stm32g0xx_hal_tim_ex.h</label>
+        <link refid="stm32g0xx__hal__tim__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>stm32g0xx_hal_uart.h</label>
+        <link refid="stm32g0xx__hal__uart_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>stm32g0xx_hal_uart_ex.h</label>
+        <link refid="stm32g0xx__hal__uart__ex_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stm32g0xx_ll_dma.h</label>
+        <link refid="stm32g0xx__ll__dma_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stm32g0xx_ll_dmamux.h</label>
+        <link refid="stm32g0xx__ll__dmamux_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stm32g0xx_ll_rcc.h</label>
+        <link refid="stm32g0xx__ll__rcc_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>GFX_Color.h</label>
+        <link refid="_g_f_x___color_8h"/>
+      </node>
+      <node id="1">
+        <label>RadarApp/DisplayDriver/ILI9341.c</label>
+        <link refid="_i_l_i9341_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>ILI9341.h</label>
+        <link refid="_i_l_i9341_8h"/>
+      </node>
+      <node id="36">
+        <label>math.h</label>
+      </node>
+      <node id="30">
+        <label>stdbool.h</label>
+      </node>
+      <node id="9">
+        <label>stddef.h</label>
+      </node>
+      <node id="33">
+        <label>stdint.h</label>
+      </node>
+      <node id="34">
+        <label>stdio.h</label>
+      </node>
+      <node id="35">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="_i_l_i9341_8c_1ad9126660b8462f31e24ded49e7452453" prot="public" static="no" mutable="no">
+        <type><ref refid="group___s_p_i___exported___types_1gab633e49dd034de2f3a1fe79853d78d18" kindref="member">SPI_HandleTypeDef</ref> *</type>
+        <definition>SPI_HandleTypeDef* Tft_hspi</definition>
+        <argsstring></argsstring>
+        <name>Tft_hspi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.c" line="19" column="19" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_i_l_i9341_8c_1a12a5e81ac4690592cac1fb6c8e9485ba" prot="public" static="yes" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t initcmd[]</definition>
+        <argsstring>[]</argsstring>
+        <name>initcmd</name>
+        <initializer>=
+{ 0xEF, 3, 0x03, 0x80, 0x02, 0xCF, 3, 0x00, 0xC1, 0x30, 0xED, 4, 0x64, 0x03, 0x12, 0x81, 0xE8, 3, 0x85, 0x00, 0x78, 0xCB, 5, 0x39, 0x2C, 0x00, 0x34, 0x02, 0xF7, 1, 0x20, 0xEA, 2, 0x00, 0x00,
+<ref refid="_i_l_i9341_8h_1a2429382736b6d514ab4085a8ea5951d4" kindref="member">ILI9341_PWCTR1</ref>, 1, 0x23,             
+<ref refid="_i_l_i9341_8h_1ae6bf550a370a529b19263c6e05649b07" kindref="member">ILI9341_PWCTR2</ref>, 1, 0x10,             
+<ref refid="_i_l_i9341_8h_1a3ac0bad81e82dca703ea78d9f1ad8cd1" kindref="member">ILI9341_VMCTR1</ref>, 2, 0x3e, 0x28,       
+<ref refid="_i_l_i9341_8h_1ae2d100e90910bf4aedb20fb88b3f582c" kindref="member">ILI9341_VMCTR2</ref>, 1, 0x86,             
+<ref refid="_i_l_i9341_8h_1a3788bc35c2adfe007f3b6a03b85d2071" kindref="member">ILI9341_MADCTL</ref>, 1, 0x48,             
+<ref refid="_i_l_i9341_8h_1aed59201f8eb2291e618d3b3151adc497" kindref="member">ILI9341_VSCRSADD</ref>, 1, 0x00,             
+<ref refid="_i_l_i9341_8h_1ae22acdf8d6ceb5710050b7a1b8bfcefc" kindref="member">ILI9341_PIXFMT</ref>, 1, 0x55,
+<ref refid="_i_l_i9341_8h_1a086515b5e792ce35f8cd0b875bd1f16e" kindref="member">ILI9341_FRMCTR1</ref>, 2, 0x00, 0x18,
+<ref refid="_i_l_i9341_8h_1a808fd63764a8bf4de696d11e897e68de" kindref="member">ILI9341_DFUNCTR</ref>, 3, 0x08, 0x82, 0x27,    
+0xF2, 1, 0x00,                         
+<ref refid="_i_l_i9341_8h_1a37d467e2a578e59844315ee76621fecb" kindref="member">ILI9341_GAMMASET</ref>, 1, 0x01,             
+<ref refid="_i_l_i9341_8h_1a5e137029ba159bd4a942dbe44fbb45bd" kindref="member">ILI9341_GMCTRP1</ref>, 15, 0x0F, 0x31, 0x2B, 0x0C, 0x0E, 0x08,    
+0x4E, 0xF1, 0x37, 0x07, 0x10, 0x03, 0x0E, 0x09, 0x00,
+<ref refid="_i_l_i9341_8h_1aa2c11f3421fe0cfd04de4afc144145ae" kindref="member">ILI9341_GMCTRN1</ref>, 15, 0x00, 0x0E, 0x14, 0x03, 0x11, 0x07,    
+0x31, 0xC1, 0x48, 0x08, 0x0F, 0x0C, 0x31, 0x36, 0x0F,
+<ref refid="_i_l_i9341_8h_1a2183eaeed3b4f2e82f1f1a5aed9cf8e1" kindref="member">ILI9341_SLPOUT</ref>, 0x80,                
+<ref refid="_i_l_i9341_8h_1a278999b9f435340e6a689165c860050a" kindref="member">ILI9341_DISPON</ref>, 0x80,                
+0x00                                   
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.c" line="21" column="22" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="21" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_i_l_i9341_8c_1a0538f2015fef138ace1fd64a3d652cd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_Init</definition>
+        <argsstring>(SPI_HandleTypeDef *hspi)</argsstring>
+        <name>ILI9341_Init</name>
+        <param>
+          <type><ref refid="group___s_p_i___exported___types_1gab633e49dd034de2f3a1fe79853d78d18" kindref="member">SPI_HandleTypeDef</ref> *</type>
+          <declname>hspi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.c" line="43" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="43" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8c_1a6ac0c89f746e798e7430746bf50fe499" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_SetRotation</definition>
+        <argsstring>(uint8_t m)</argsstring>
+        <name>ILI9341_SetRotation</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.c" line="77" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="77" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8c_1a7ae207b9f55148240d0dee03167a25f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_SendToTFT</definition>
+        <argsstring>(uint8_t *Byte, uint32_t Length)</argsstring>
+        <name>ILI9341_SendToTFT</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>Byte</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.c" line="99" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="99" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8c_1a0f241f9cfcb703e2994154ea35251892" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_SendCommand</definition>
+        <argsstring>(uint8_t Command)</argsstring>
+        <name>ILI9341_SendCommand</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>Command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.c" line="120" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="120" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8c_1aa1381a729cb6af2b71c6bed0c37cc906" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_SendCommandAndData</definition>
+        <argsstring>(uint8_t Command, uint8_t *Data, uint16_t Length)</argsstring>
+        <name>ILI9341_SendCommandAndData</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>Command</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>Data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>Length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.c" line="133" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="133" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8c_1a89228cd93ba2f68acf969f8f7eccd78b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_SetAddrWindow</definition>
+        <argsstring>(uint16_t x1, uint16_t y1, uint16_t w, uint16_t h)</argsstring>
+        <name>ILI9341_SetAddrWindow</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.c" line="148" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="148" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8c_1a81ddeb47ba6c0c3353ae31e7e15b4910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_SendData16</definition>
+        <argsstring>(uint16_t Data)</argsstring>
+        <name>ILI9341_SendData16</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.c" line="169" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="169" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8c_1aeee3186252cba83694826a2c2c7014c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_WritePixel</definition>
+        <argsstring>(uint16_t x, uint16_t y, uint16_t color)</argsstring>
+        <name>ILI9341_WritePixel</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.c" line="184" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="184" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8c_1a0fcdb5427fdab7f7eb09abce73b9ea5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_DrawImage</definition>
+        <argsstring>(int x, int y, const uint8_t *img, uint16_t w, uint16_t h)</argsstring>
+        <name>ILI9341_DrawImage</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.c" line="199" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="199" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_l_i9341_8c_1a324ebd8d3bc5309c8c9da80b0c07d10a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ILI9341_WriteScreen</definition>
+        <argsstring>(uint16_t color)</argsstring>
+        <name>ILI9341_WriteScreen</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RadarApp/DisplayDriver/ILI9341.c" line="209" column="6" bodyfile="RadarApp/DisplayDriver/ILI9341.c" bodystart="209" bodyend="244"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>ILI9341.c</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>MIT<sp/>License.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>25.05.2017</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Mateusz<sp/>Salamon</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>www.msalamon.pl</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>mateusz@msalamon.pl</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="main_8h" kindref="compound">main.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_g_f_x___color_8h" kindref="compound">GFX_Color.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_i_l_i9341_8h" kindref="compound">ILI9341.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdint.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdio.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;string.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*<ref refid="_i_l_i9341_8c_1ad9126660b8462f31e24ded49e7452453" kindref="member">Tft_hspi</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>initcmd[]<sp/>=</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{<sp/>0xEF,<sp/>3,<sp/>0x03,<sp/>0x80,<sp/>0x02,<sp/>0xCF,<sp/>3,<sp/>0x00,<sp/>0xC1,<sp/>0x30,<sp/>0xED,<sp/>4,<sp/>0x64,<sp/>0x03,<sp/>0x12,<sp/>0x81,<sp/>0xE8,<sp/>3,<sp/>0x85,<sp/>0x00,<sp/>0x78,<sp/>0xCB,<sp/>5,<sp/>0x39,<sp/>0x2C,<sp/>0x00,<sp/>0x34,<sp/>0x02,<sp/>0xF7,<sp/>1,<sp/>0x20,<sp/>0xEA,<sp/>2,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><ref refid="_i_l_i9341_8h_1a2429382736b6d514ab4085a8ea5951d4" kindref="member">ILI9341_PWCTR1</ref>,<sp/>1,<sp/>0x23,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Power<sp/>control<sp/>VRH[5:0]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="_i_l_i9341_8h_1ae6bf550a370a529b19263c6e05649b07" kindref="member">ILI9341_PWCTR2</ref>,<sp/>1,<sp/>0x10,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Power<sp/>control<sp/>SAP[2:0];BT[3:0]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="_i_l_i9341_8h_1a3ac0bad81e82dca703ea78d9f1ad8cd1" kindref="member">ILI9341_VMCTR1</ref>,<sp/>2,<sp/>0x3e,<sp/>0x28,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>VCM<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="_i_l_i9341_8h_1ae2d100e90910bf4aedb20fb88b3f582c" kindref="member">ILI9341_VMCTR2</ref>,<sp/>1,<sp/>0x86,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>VCM<sp/>control2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="_i_l_i9341_8h_1a3788bc35c2adfe007f3b6a03b85d2071" kindref="member">ILI9341_MADCTL</ref>,<sp/>1,<sp/>0x48,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Memory<sp/>Access<sp/>Control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="_i_l_i9341_8h_1aed59201f8eb2291e618d3b3151adc497" kindref="member">ILI9341_VSCRSADD</ref>,<sp/>1,<sp/>0x00,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Vertical<sp/>scroll<sp/>zero</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><ref refid="_i_l_i9341_8h_1ae22acdf8d6ceb5710050b7a1b8bfcefc" kindref="member">ILI9341_PIXFMT</ref>,<sp/>1,<sp/>0x55,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><ref refid="_i_l_i9341_8h_1a086515b5e792ce35f8cd0b875bd1f16e" kindref="member">ILI9341_FRMCTR1</ref>,<sp/>2,<sp/>0x00,<sp/>0x18,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="_i_l_i9341_8h_1a808fd63764a8bf4de696d11e897e68de" kindref="member">ILI9341_DFUNCTR</ref>,<sp/>3,<sp/>0x08,<sp/>0x82,<sp/>0x27,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Display<sp/>Function<sp/>Control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">0xF2,<sp/>1,<sp/>0x00,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>3Gamma<sp/>Function<sp/>Disable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="_i_l_i9341_8h_1a37d467e2a578e59844315ee76621fecb" kindref="member">ILI9341_GAMMASET</ref>,<sp/>1,<sp/>0x01,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Gamma<sp/>curve<sp/>selected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="_i_l_i9341_8h_1a5e137029ba159bd4a942dbe44fbb45bd" kindref="member">ILI9341_GMCTRP1</ref>,<sp/>15,<sp/>0x0F,<sp/>0x31,<sp/>0x2B,<sp/>0x0C,<sp/>0x0E,<sp/>0x08,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>Gamma</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">0x4E,<sp/>0xF1,<sp/>0x37,<sp/>0x07,<sp/>0x10,<sp/>0x03,<sp/>0x0E,<sp/>0x09,<sp/>0x00,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><ref refid="_i_l_i9341_8h_1aa2c11f3421fe0cfd04de4afc144145ae" kindref="member">ILI9341_GMCTRN1</ref>,<sp/>15,<sp/>0x00,<sp/>0x0E,<sp/>0x14,<sp/>0x03,<sp/>0x11,<sp/>0x07,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>Gamma</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">0x31,<sp/>0xC1,<sp/>0x48,<sp/>0x08,<sp/>0x0F,<sp/>0x0C,<sp/>0x31,<sp/>0x36,<sp/>0x0F,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><ref refid="_i_l_i9341_8h_1a2183eaeed3b4f2e82f1f1a5aed9cf8e1" kindref="member">ILI9341_SLPOUT</ref>,<sp/>0x80,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Exit<sp/>Sleep</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><ref refid="_i_l_i9341_8h_1a278999b9f435340e6a689165c860050a" kindref="member">ILI9341_DISPON</ref>,<sp/>0x80,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Display<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">0x00<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>End<sp/>of<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8c_1a0538f2015fef138ace1fd64a3d652cd1" kindref="member">ILI9341_Init</ref>(<ref refid="struct_____s_p_i___handle_type_def" kindref="compound">SPI_HandleTypeDef</ref><sp/>*hspi)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1ad9126660b8462f31e24ded49e7452453" kindref="member">Tft_hspi</ref><sp/>=<sp/>hspi;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>cmd,<sp/>x,<sp/>numArgs;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*addr<sp/>=<sp/>initcmd;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_p_i___exported___macros_1ga16d2d73c2b16004499ae8d492e71fd4e" kindref="member">__HAL_SPI_ENABLE</ref>(<ref refid="_i_l_i9341_8c_1ad9126660b8462f31e24ded49e7452453" kindref="member">Tft_hspi</ref>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1aa7f68db3741ae30497ab407915db922a" kindref="member">TFT_RESET_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a446e1d1953995eb3631efd6d53b8c09b" kindref="member">TFT_RESET_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a90af2af95004ea61d76950ff3f2f6ec2" kindref="member">GPIO_PIN_RESET</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___h_a_l___exported___functions___group2_1gae63b34eea12780ca2e1100c2402da18e" kindref="member">HAL_Delay</ref>(10);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1aa7f68db3741ae30497ab407915db922a" kindref="member">TFT_RESET_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a446e1d1953995eb3631efd6d53b8c09b" kindref="member">TFT_RESET_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a746c062509db3ad1e47beed7527f9f8a" kindref="member">GPIO_PIN_SET</ref>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___h_a_l___exported___functions___group2_1gae63b34eea12780ca2e1100c2402da18e" kindref="member">HAL_Delay</ref>(10);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1a0f241f9cfcb703e2994154ea35251892" kindref="member">ILI9341_SendCommand</ref>(<ref refid="_i_l_i9341_8h_1a05c1fbaa5809b6e45dd1da9fd0c05fc0" kindref="member">ILI9341_SWRESET</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___h_a_l___exported___functions___group2_1gae63b34eea12780ca2e1100c2402da18e" kindref="member">HAL_Delay</ref>(150);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((cmd<sp/>=<sp/>*(addr++))<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>*(addr++);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numArgs<sp/>=<sp/>x<sp/>&amp;<sp/>0x7F;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1aa1381a729cb6af2b71c6bed0c37cc906" kindref="member">ILI9341_SendCommandAndData</ref>(cmd,<sp/>(uint8_t*)<sp/>addr,<sp/>numArgs);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>addr<sp/>+=<sp/>numArgs;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(x<sp/>&amp;<sp/>0x80)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___h_a_l___exported___functions___group2_1gae63b34eea12780ca2e1100c2402da18e" kindref="member">HAL_Delay</ref>(150);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1a6ac0c89f746e798e7430746bf50fe499" kindref="member">ILI9341_SetRotation</ref>(<ref refid="_i_l_i9341_8h_1af7afbc31379d61268899eef5e9dd4ef5" kindref="member">ILI9341_ROTATION</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8c_1a6ac0c89f746e798e7430746bf50fe499" kindref="member">ILI9341_SetRotation</ref>(uint8_t<sp/>m)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>m<sp/>%=<sp/>4;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>can&apos;t<sp/>be<sp/>higher<sp/>than<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(m)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m<sp/>=<sp/>(<ref refid="_i_l_i9341_8h_1a6d18ed48efb3186877a07d0e81155453" kindref="member">MADCTL_MX</ref><sp/>|<sp/><ref refid="_i_l_i9341_8h_1a659f0d6f0c258a3d91f882a59dfa76f5" kindref="member">MADCTL_BGR</ref>);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m<sp/>=<sp/>(<ref refid="_i_l_i9341_8h_1adc23a239d2b6976d53254ef4fc5d1713" kindref="member">MADCTL_MV</ref><sp/>|<sp/><ref refid="_i_l_i9341_8h_1a659f0d6f0c258a3d91f882a59dfa76f5" kindref="member">MADCTL_BGR</ref>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m<sp/>=<sp/>(<ref refid="_i_l_i9341_8h_1ab30e6bd24448245df1d60a3e1c4ddbdf" kindref="member">MADCTL_MY</ref><sp/>|<sp/><ref refid="_i_l_i9341_8h_1a659f0d6f0c258a3d91f882a59dfa76f5" kindref="member">MADCTL_BGR</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m<sp/>=<sp/>(<ref refid="_i_l_i9341_8h_1a6d18ed48efb3186877a07d0e81155453" kindref="member">MADCTL_MX</ref><sp/>|<sp/><ref refid="_i_l_i9341_8h_1ab30e6bd24448245df1d60a3e1c4ddbdf" kindref="member">MADCTL_MY</ref><sp/>|<sp/><ref refid="_i_l_i9341_8h_1adc23a239d2b6976d53254ef4fc5d1713" kindref="member">MADCTL_MV</ref><sp/>|<sp/><ref refid="_i_l_i9341_8h_1a659f0d6f0c258a3d91f882a59dfa76f5" kindref="member">MADCTL_BGR</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1aa1381a729cb6af2b71c6bed0c37cc906" kindref="member">ILI9341_SendCommandAndData</ref>(<ref refid="_i_l_i9341_8h_1a3788bc35c2adfe007f3b6a03b85d2071" kindref="member">ILI9341_MADCTL</ref>,<sp/>&amp;m,<sp/>1);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8c_1a7ae207b9f55148240d0dee03167a25f9" kindref="member">ILI9341_SendToTFT</ref>(uint8_t<sp/>*Byte,<sp/>uint32_t<sp/>Length)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(Length<sp/>&gt;<sp/>0U)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>until<sp/>TXE<sp/>flag<sp/>is<sp/>set<sp/>to<sp/>send<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="group___s_p_i___exported___macros_1gaa0bbe5fb55f93fd277ddb6acf58cec53" kindref="member">__HAL_SPI_GET_FLAG</ref>(<ref refid="_i_l_i9341_8c_1ad9126660b8462f31e24ded49e7452453" kindref="member">Tft_hspi</ref>,<sp/><ref refid="group___s_p_i___flags__definition_1gaf84a1e6af2739a6be58e1b23d9e6b914" kindref="member">SPI_FLAG_TXE</ref>))</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*((<ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref><sp/>uint8_t*)<sp/>&amp;<ref refid="_i_l_i9341_8c_1ad9126660b8462f31e24ded49e7452453" kindref="member">Tft_hspi</ref>-&gt;<ref refid="struct_____s_p_i___handle_type_def_1aa5c715deaf693cc2dbfa90f40681ee1d" kindref="member">Instance</ref>-&gt;<ref refid="struct_s_p_i___type_def_1a3df0d8dfcd1ec958659ffe21eb64fa94" kindref="member">DR</ref>)<sp/>=<sp/>*Byte;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Byte++;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Length--;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="group___s_p_i___exported___macros_1gaa0bbe5fb55f93fd277ddb6acf58cec53" kindref="member">__HAL_SPI_GET_FLAG</ref>(<ref refid="_i_l_i9341_8c_1ad9126660b8462f31e24ded49e7452453" kindref="member">Tft_hspi</ref>,<sp/><ref refid="group___s_p_i___flags__definition_1gaf19c77ee876a3598d616ac07d136fc46" kindref="member">SPI_FLAG_BSY</ref>)<sp/>!=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//HAL_SPI_Transmit(Tft_hspi,<sp/>Byte,<sp/>Length,<sp/>ILI9341_SPI_TIMEOUT);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8c_1a0f241f9cfcb703e2994154ea35251892" kindref="member">ILI9341_SendCommand</ref>(uint8_t<sp/>Command)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1a74b968acc952c32492c1e30b26ebac1d" kindref="member">TFT_CS_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a120abdffd1d0822954c508647983aeaa" kindref="member">TFT_CS_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a90af2af95004ea61d76950ff3f2f6ec2" kindref="member">GPIO_PIN_RESET</ref>);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CS<sp/>to<sp/>LOW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1a2d19111c29b4bb576f2c35f8a024ed95" kindref="member">TFT_DC_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a75eb10efcc8b47cafcbf6dbd7317dd92" kindref="member">TFT_DC_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a90af2af95004ea61d76950ff3f2f6ec2" kindref="member">GPIO_PIN_RESET</ref>);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DC<sp/>to<sp/>LOW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1a7ae207b9f55148240d0dee03167a25f9" kindref="member">ILI9341_SendToTFT</ref>(&amp;Command,<sp/>1);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Command<sp/>and<sp/>length<sp/>in<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//HAL_GPIO_WritePin(TFT_DC_GPIO_Port,<sp/>TFT_DC_Pin,<sp/>GPIO_PIN_SET);<sp/><sp/><sp/><sp/>//DC<sp/>to<sp/>HIGH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1a74b968acc952c32492c1e30b26ebac1d" kindref="member">TFT_CS_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a120abdffd1d0822954c508647983aeaa" kindref="member">TFT_CS_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a746c062509db3ad1e47beed7527f9f8a" kindref="member">GPIO_PIN_SET</ref>);<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CS<sp/>to<sp/>HIGH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8c_1aa1381a729cb6af2b71c6bed0c37cc906" kindref="member">ILI9341_SendCommandAndData</ref>(uint8_t<sp/>Command,<sp/>uint8_t<sp/>*Data,<sp/>uint16_t<sp/>Length)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1a74b968acc952c32492c1e30b26ebac1d" kindref="member">TFT_CS_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a120abdffd1d0822954c508647983aeaa" kindref="member">TFT_CS_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a90af2af95004ea61d76950ff3f2f6ec2" kindref="member">GPIO_PIN_RESET</ref>);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CS<sp/>to<sp/>LOW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1a2d19111c29b4bb576f2c35f8a024ed95" kindref="member">TFT_DC_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a75eb10efcc8b47cafcbf6dbd7317dd92" kindref="member">TFT_DC_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a90af2af95004ea61d76950ff3f2f6ec2" kindref="member">GPIO_PIN_RESET</ref>);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DC<sp/>to<sp/>LOW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1a7ae207b9f55148240d0dee03167a25f9" kindref="member">ILI9341_SendToTFT</ref>(&amp;Command,<sp/>1);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Command<sp/>and<sp/>length<sp/>in<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1a2d19111c29b4bb576f2c35f8a024ed95" kindref="member">TFT_DC_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a75eb10efcc8b47cafcbf6dbd7317dd92" kindref="member">TFT_DC_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a746c062509db3ad1e47beed7527f9f8a" kindref="member">GPIO_PIN_SET</ref>);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DC<sp/>to<sp/>HIGH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1a7ae207b9f55148240d0dee03167a25f9" kindref="member">ILI9341_SendToTFT</ref>(Data,<sp/>Length);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Command<sp/>and<sp/>length<sp/>in<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1a74b968acc952c32492c1e30b26ebac1d" kindref="member">TFT_CS_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a120abdffd1d0822954c508647983aeaa" kindref="member">TFT_CS_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a746c062509db3ad1e47beed7527f9f8a" kindref="member">GPIO_PIN_SET</ref>);<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CS<sp/>to<sp/>HIGH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8c_1a89228cd93ba2f68acf969f8f7eccd78b" kindref="member">ILI9341_SetAddrWindow</ref>(uint16_t<sp/>x1,<sp/>uint16_t<sp/>y1,<sp/>uint16_t<sp/>w,<sp/>uint16_t<sp/>h)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>x2<sp/>=<sp/>(x1<sp/>+<sp/>w<sp/>-<sp/>1),<sp/>y2<sp/>=<sp/>(y1<sp/>+<sp/>h<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>DataToTransmit[4];</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>DataToTransmit[0]<sp/>=<sp/>x1<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>DataToTransmit[1]<sp/>=<sp/>x1<sp/>&amp;<sp/>0xFF;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>DataToTransmit[2]<sp/>=<sp/>x2<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>DataToTransmit[3]<sp/>=<sp/>x2<sp/>&amp;<sp/>0xFF;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1aa1381a729cb6af2b71c6bed0c37cc906" kindref="member">ILI9341_SendCommandAndData</ref>(<ref refid="_i_l_i9341_8h_1a0735e9a5ee316588f5430559b56074c4" kindref="member">ILI9341_CASET</ref>,<sp/>DataToTransmit,<sp/>4);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>DataToTransmit[0]<sp/>=<sp/>y1<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>DataToTransmit[1]<sp/>=<sp/>y1<sp/>&amp;<sp/>0xFF;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>DataToTransmit[2]<sp/>=<sp/>y2<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>DataToTransmit[3]<sp/>=<sp/>y2<sp/>&amp;<sp/>0xFF;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1aa1381a729cb6af2b71c6bed0c37cc906" kindref="member">ILI9341_SendCommandAndData</ref>(<ref refid="_i_l_i9341_8h_1acc4a8ed569a4c04d4ef11e6a458fc2e0" kindref="member">ILI9341_PASET</ref>,<sp/>DataToTransmit,<sp/>4);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8c_1a81ddeb47ba6c0c3353ae31e7e15b4910" kindref="member">ILI9341_SendData16</ref>(uint16_t<sp/>Data)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1a74b968acc952c32492c1e30b26ebac1d" kindref="member">TFT_CS_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a120abdffd1d0822954c508647983aeaa" kindref="member">TFT_CS_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a90af2af95004ea61d76950ff3f2f6ec2" kindref="member">GPIO_PIN_RESET</ref>);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CS<sp/>to<sp/>LOW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>tmp[2];</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp[0]<sp/>=<sp/>(Data<sp/>&gt;&gt;<sp/>8);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp[1]<sp/>=<sp/>Data<sp/>&amp;<sp/>0xFF;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1a2d19111c29b4bb576f2c35f8a024ed95" kindref="member">TFT_DC_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a75eb10efcc8b47cafcbf6dbd7317dd92" kindref="member">TFT_DC_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a746c062509db3ad1e47beed7527f9f8a" kindref="member">GPIO_PIN_SET</ref>);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DC<sp/>to<sp/>HIGH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1a7ae207b9f55148240d0dee03167a25f9" kindref="member">ILI9341_SendToTFT</ref>(tmp,<sp/>2);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1a74b968acc952c32492c1e30b26ebac1d" kindref="member">TFT_CS_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a120abdffd1d0822954c508647983aeaa" kindref="member">TFT_CS_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a746c062509db3ad1e47beed7527f9f8a" kindref="member">GPIO_PIN_SET</ref>);<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CS<sp/>to<sp/>HIGH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8c_1aeee3186252cba83694826a2c2c7014c5" kindref="member">ILI9341_WritePixel</ref>(uint16_t<sp/>x,<sp/>uint16_t<sp/>y,<sp/>uint16_t<sp/>color)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((x<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>(x<sp/>&lt;<sp/><ref refid="_i_l_i9341_8h_1afc86ae8ef4d7c6b3bfb0f83f9d4dcf63" kindref="member">ILI9341_TFTWIDTH</ref>)<sp/>&amp;&amp;<sp/>(y<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>(y<sp/>&lt;<sp/><ref refid="_i_l_i9341_8h_1a5790338f2cee9bbd8fb015d02c9c52d3" kindref="member">ILI9341_TFTHEIGHT</ref>))</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>DataToTransmit[2];</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1a89228cd93ba2f68acf969f8f7eccd78b" kindref="member">ILI9341_SetAddrWindow</ref>(x,<sp/>y,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DataToTransmit[0]<sp/>=<sp/>color<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DataToTransmit[1]<sp/>=<sp/>color<sp/>&amp;<sp/>0xFF;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1aa1381a729cb6af2b71c6bed0c37cc906" kindref="member">ILI9341_SendCommandAndData</ref>(<ref refid="_i_l_i9341_8h_1a7130c62347e51a4bafb7070ba393ee39" kindref="member">ILI9341_RAMWR</ref>,<sp/>DataToTransmit,<sp/>2);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8c_1a0fcdb5427fdab7f7eb09abce73b9ea5b" kindref="member">ILI9341_DrawImage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*img,<sp/>uint16_t<sp/>w,<sp/>uint16_t<sp/>h)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((x<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>((x<sp/>+<sp/>w)<sp/>&lt;=<sp/><ref refid="_i_l_i9341_8h_1afc86ae8ef4d7c6b3bfb0f83f9d4dcf63" kindref="member">ILI9341_TFTWIDTH</ref>)<sp/>&amp;&amp;<sp/>(y<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>((y<sp/>+<sp/>h)<sp/>&lt;=<sp/><ref refid="_i_l_i9341_8h_1a5790338f2cee9bbd8fb015d02c9c52d3" kindref="member">ILI9341_TFTHEIGHT</ref>))</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1a89228cd93ba2f68acf969f8f7eccd78b" kindref="member">ILI9341_SetAddrWindow</ref>(x,<sp/>y,<sp/>w,<sp/>h);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1aa1381a729cb6af2b71c6bed0c37cc906" kindref="member">ILI9341_SendCommandAndData</ref>(<ref refid="_i_l_i9341_8h_1a7130c62347e51a4bafb7070ba393ee39" kindref="member">ILI9341_RAMWR</ref>,<sp/>(uint8_t*)<sp/>img,<sp/>(w<sp/>*<sp/>h<sp/>*<sp/>2));</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_l_i9341_8c_1a324ebd8d3bc5309c8c9da80b0c07d10a" kindref="member">ILI9341_WriteScreen</ref>(uint16_t<sp/>color)</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>Length<sp/>=<sp/><ref refid="_i_l_i9341_8h_1afc86ae8ef4d7c6b3bfb0f83f9d4dcf63" kindref="member">ILI9341_TFTWIDTH</ref><sp/>*<sp/><ref refid="_i_l_i9341_8h_1a5790338f2cee9bbd8fb015d02c9c52d3" kindref="member">ILI9341_TFTHEIGHT</ref>;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1a89228cd93ba2f68acf969f8f7eccd78b" kindref="member">ILI9341_SetAddrWindow</ref>(0,<sp/>0,<sp/><ref refid="_i_l_i9341_8h_1afc86ae8ef4d7c6b3bfb0f83f9d4dcf63" kindref="member">ILI9341_TFTWIDTH</ref>,<sp/><ref refid="_i_l_i9341_8h_1a5790338f2cee9bbd8fb015d02c9c52d3" kindref="member">ILI9341_TFTHEIGHT</ref>);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i_l_i9341_8c_1a0f241f9cfcb703e2994154ea35251892" kindref="member">ILI9341_SendCommand</ref>(<ref refid="_i_l_i9341_8h_1a7130c62347e51a4bafb7070ba393ee39" kindref="member">ILI9341_RAMWR</ref>);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1a74b968acc952c32492c1e30b26ebac1d" kindref="member">TFT_CS_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a120abdffd1d0822954c508647983aeaa" kindref="member">TFT_CS_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a90af2af95004ea61d76950ff3f2f6ec2" kindref="member">GPIO_PIN_RESET</ref>);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CS<sp/>to<sp/>LOW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1a2d19111c29b4bb576f2c35f8a024ed95" kindref="member">TFT_DC_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a75eb10efcc8b47cafcbf6dbd7317dd92" kindref="member">TFT_DC_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a746c062509db3ad1e47beed7527f9f8a" kindref="member">GPIO_PIN_SET</ref>);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DC<sp/>to<sp/>HIGH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(Length<sp/>&gt;<sp/>0U)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>until<sp/>TXE<sp/>flag<sp/>is<sp/>set<sp/>to<sp/>send<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="group___s_p_i___exported___macros_1gaa0bbe5fb55f93fd277ddb6acf58cec53" kindref="member">__HAL_SPI_GET_FLAG</ref>(<ref refid="_i_l_i9341_8c_1ad9126660b8462f31e24ded49e7452453" kindref="member">Tft_hspi</ref>,<sp/><ref refid="group___s_p_i___flags__definition_1gaf84a1e6af2739a6be58e1b23d9e6b914" kindref="member">SPI_FLAG_TXE</ref>))</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*((<ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref><sp/>uint8_t*)<sp/>&amp;<ref refid="_i_l_i9341_8c_1ad9126660b8462f31e24ded49e7452453" kindref="member">Tft_hspi</ref>-&gt;<ref refid="struct_____s_p_i___handle_type_def_1aa5c715deaf693cc2dbfa90f40681ee1d" kindref="member">Instance</ref>-&gt;<ref refid="struct_s_p_i___type_def_1a3df0d8dfcd1ec958659ffe21eb64fa94" kindref="member">DR</ref>)<sp/>=<sp/>color<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="group___s_p_i___exported___macros_1gaa0bbe5fb55f93fd277ddb6acf58cec53" kindref="member">__HAL_SPI_GET_FLAG</ref>(<ref refid="_i_l_i9341_8c_1ad9126660b8462f31e24ded49e7452453" kindref="member">Tft_hspi</ref>,<sp/><ref refid="group___s_p_i___flags__definition_1gaf84a1e6af2739a6be58e1b23d9e6b914" kindref="member">SPI_FLAG_TXE</ref>)<sp/>!=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792" kindref="member">SET</ref>)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*((<ref refid="core__armv81mml_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref><sp/>uint8_t*)<sp/>&amp;<ref refid="_i_l_i9341_8c_1ad9126660b8462f31e24ded49e7452453" kindref="member">Tft_hspi</ref>-&gt;<ref refid="struct_____s_p_i___handle_type_def_1aa5c715deaf693cc2dbfa90f40681ee1d" kindref="member">Instance</ref>-&gt;<ref refid="struct_s_p_i___type_def_1a3df0d8dfcd1ec958659ffe21eb64fa94" kindref="member">DR</ref>)<sp/>=<sp/>color<sp/>&amp;<sp/>0xFF;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Length--;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="group___s_p_i___exported___macros_1gaa0bbe5fb55f93fd277ddb6acf58cec53" kindref="member">__HAL_SPI_GET_FLAG</ref>(<ref refid="_i_l_i9341_8c_1ad9126660b8462f31e24ded49e7452453" kindref="member">Tft_hspi</ref>,<sp/><ref refid="group___s_p_i___flags__definition_1gaf19c77ee876a3598d616ac07d136fc46" kindref="member">SPI_FLAG_BSY</ref>)<sp/>!=<sp/><ref refid="group___exported__types_1gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05" kindref="member">RESET</ref>)</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___g_p_i_o___exported___functions___group2_1gaf4b97bdf533a02f51ef696d43b6da5c4" kindref="member">HAL_GPIO_WritePin</ref>(<ref refid="main_8h_1a74b968acc952c32492c1e30b26ebac1d" kindref="member">TFT_CS_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a120abdffd1d0822954c508647983aeaa" kindref="member">TFT_CS_Pin</ref>,<sp/><ref refid="group___g_p_i_o___exported___types_1gga5b3ef0486b179415581eb342e0ea6b43a746c062509db3ad1e47beed7527f9f8a" kindref="member">GPIO_PIN_SET</ref>);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CS<sp/>to<sp/>LOW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="RadarApp/DisplayDriver/ILI9341.c"/>
+  </compounddef>
+</doxygen>

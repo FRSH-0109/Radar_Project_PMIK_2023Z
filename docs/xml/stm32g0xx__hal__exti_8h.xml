@@ -1,0 +1,627 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="stm32g0xx__hal__exti_8h" kind="file" language="C++">
+    <compoundname>stm32g0xx_hal_exti.h</compoundname>
+    <includes refid="stm32g0xx__hal__def_8h" local="yes">stm32g0xx_hal_def.h</includes>
+    <includedby refid="stm32g0xx__hal__conf_8h" local="yes">Core/Inc/stm32g0xx_hal_conf.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="4">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="2">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h</label>
+        <link refid="stm32g0xx__hal__exti_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>Core/Inc/dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Core/Inc/gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Core/Inc/main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Core/Inc/spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Core/Inc/stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Core/Inc/tim.h</label>
+        <link refid="tim_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Core/Inc/usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Core/Src/dma.c</label>
+        <link refid="dma_8c"/>
+      </node>
+      <node id="9">
+        <label>Core/Src/gpio.c</label>
+        <link refid="gpio_8c"/>
+      </node>
+      <node id="7">
+        <label>Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="11">
+        <label>Core/Src/spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="17">
+        <label>Core/Src/stm32g0xx_hal_msp.c</label>
+        <link refid="stm32g0xx__hal__msp_8c"/>
+      </node>
+      <node id="18">
+        <label>Core/Src/stm32g0xx_it.c</label>
+        <link refid="stm32g0xx__it_8c"/>
+      </node>
+      <node id="13">
+        <label>Core/Src/tim.c</label>
+        <link refid="tim_8c"/>
+      </node>
+      <node id="15">
+        <label>Core/Src/usart.c</label>
+        <link refid="usart_8c"/>
+      </node>
+      <node id="3">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h</label>
+        <link refid="stm32g0xx__hal__exti_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c</label>
+        <link refid="stm32g0xx__hal_8c"/>
+      </node>
+      <node id="24">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c</label>
+        <link refid="stm32g0xx__hal__cortex_8c"/>
+      </node>
+      <node id="25">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c</label>
+        <link refid="stm32g0xx__hal__dma_8c"/>
+      </node>
+      <node id="26">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c</label>
+        <link refid="stm32g0xx__hal__dma__ex_8c"/>
+      </node>
+      <node id="27">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c</label>
+        <link refid="stm32g0xx__hal__exti_8c"/>
+      </node>
+      <node id="28">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c</label>
+        <link refid="stm32g0xx__hal__flash_8c"/>
+      </node>
+      <node id="29">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c</label>
+        <link refid="stm32g0xx__hal__flash__ex_8c"/>
+      </node>
+      <node id="30">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c</label>
+        <link refid="stm32g0xx__hal__gpio_8c"/>
+      </node>
+      <node id="31">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c</label>
+        <link refid="stm32g0xx__hal__pwr_8c"/>
+      </node>
+      <node id="32">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8c"/>
+      </node>
+      <node id="33">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c</label>
+        <link refid="stm32g0xx__hal__rcc_8c"/>
+      </node>
+      <node id="34">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8c"/>
+      </node>
+      <node id="35">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c</label>
+        <link refid="stm32g0xx__hal__spi_8c"/>
+      </node>
+      <node id="36">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c</label>
+        <link refid="stm32g0xx__hal__spi__ex_8c"/>
+      </node>
+      <node id="37">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c</label>
+        <link refid="stm32g0xx__hal__tim_8c"/>
+      </node>
+      <node id="38">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c</label>
+        <link refid="stm32g0xx__hal__tim__ex_8c"/>
+      </node>
+      <node id="39">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c</label>
+        <link refid="stm32g0xx__hal__uart_8c"/>
+      </node>
+      <node id="40">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c</label>
+        <link refid="stm32g0xx__hal__uart__ex_8c"/>
+      </node>
+      <node id="19">
+        <label>RadarApp/DisplayDriver/GFX_Color.c</label>
+        <link refid="_g_f_x___color_8c"/>
+      </node>
+      <node id="20">
+        <label>RadarApp/DisplayDriver/ILI9341.c</label>
+        <link refid="_i_l_i9341_8c"/>
+      </node>
+      <node id="22">
+        <label>RadarApp/RadarDriver/radar.c</label>
+        <link refid="radar_8c"/>
+      </node>
+      <node id="21">
+        <label>RadarApp/RadarDriver/radar.h</label>
+        <link refid="radar_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>RadarApp/usart_custom/usart_custom.c</label>
+        <link refid="usart__custom_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_e_x_t_i___handle_type_def" prot="public">EXTI_HandleTypeDef</innerclass>
+    <innerclass refid="struct_e_x_t_i___config_type_def" prot="public">EXTI_ConfigTypeDef</innerclass>
+    <sectiondef kind="define">
+      <member refid="group___e_x_t_i___line_1gac1a9cd58d76e9f497abecc832e3294c8" kind="define"><name>EXTI_LINE_0</name></member>
+      <member refid="group___e_x_t_i___line_1gaf64b8deca0cf44b4c58d2b4d0fcd2177" kind="define"><name>EXTI_LINE_1</name></member>
+      <member refid="group___e_x_t_i___line_1gaec48b88f5279b95962682300c0650840" kind="define"><name>EXTI_LINE_2</name></member>
+      <member refid="group___e_x_t_i___line_1ga7e223d61dcb2b538040824c0b491d68c" kind="define"><name>EXTI_LINE_3</name></member>
+      <member refid="group___e_x_t_i___line_1gaf8e1e94adf29806583e68170c1dad7dd" kind="define"><name>EXTI_LINE_4</name></member>
+      <member refid="group___e_x_t_i___line_1gab7859f0b07e671f71be61d7d301eb909" kind="define"><name>EXTI_LINE_5</name></member>
+      <member refid="group___e_x_t_i___line_1gaebcb8302f9aae1d54c7aada7ade230c0" kind="define"><name>EXTI_LINE_6</name></member>
+      <member refid="group___e_x_t_i___line_1ga32a33e800bf0f754d0337ab30abde810" kind="define"><name>EXTI_LINE_7</name></member>
+      <member refid="group___e_x_t_i___line_1ga0bb9322e3cfbe3a256f9e479ba3e5664" kind="define"><name>EXTI_LINE_8</name></member>
+      <member refid="group___e_x_t_i___line_1ga714a1411d5dc8bcf6b6efe69396fbccf" kind="define"><name>EXTI_LINE_9</name></member>
+      <member refid="group___e_x_t_i___line_1gac94dbc4ff94b573f4dd796d60dcd250c" kind="define"><name>EXTI_LINE_10</name></member>
+      <member refid="group___e_x_t_i___line_1ga301648b2965852f535209429f71e251b" kind="define"><name>EXTI_LINE_11</name></member>
+      <member refid="group___e_x_t_i___line_1ga4ff15c98aec7cd3fd0f0c5bd5cfaa501" kind="define"><name>EXTI_LINE_12</name></member>
+      <member refid="group___e_x_t_i___line_1ga8e144f1beae1e5d259f5d4aed6a3efe0" kind="define"><name>EXTI_LINE_13</name></member>
+      <member refid="group___e_x_t_i___line_1ga60b812a0a6fe00af8db8763b8202a463" kind="define"><name>EXTI_LINE_14</name></member>
+      <member refid="group___e_x_t_i___line_1ga9e711303de4e32d120d2551dc5c64dd7" kind="define"><name>EXTI_LINE_15</name></member>
+      <member refid="group___e_x_t_i___line_1ga92cf76ca2f7a5638944ccd94e842ebb1" kind="define"><name>EXTI_LINE_16</name></member>
+      <member refid="group___e_x_t_i___line_1ga9d09e51fda52def20bd23a0c42da3014" kind="define"><name>EXTI_LINE_17</name></member>
+      <member refid="group___e_x_t_i___line_1ga8f420801658edbe81973c670ed97913e" kind="define"><name>EXTI_LINE_18</name></member>
+      <member refid="group___e_x_t_i___line_1gaa69d86266839e0980ad222192760c760" kind="define"><name>EXTI_LINE_19</name></member>
+      <member refid="group___e_x_t_i___line_1ga1d35577fb74cdbf58431570bd763f615" kind="define"><name>EXTI_LINE_20</name></member>
+      <member refid="group___e_x_t_i___line_1gaae9d458581e656ab574d6d56b9844587" kind="define"><name>EXTI_LINE_21</name></member>
+      <member refid="group___e_x_t_i___line_1gacf5c5aed8ca5e9a3a3128d314cbe1f7f" kind="define"><name>EXTI_LINE_22</name></member>
+      <member refid="group___e_x_t_i___line_1ga7795a473c5c93e2eb5c1bcfc0b48deef" kind="define"><name>EXTI_LINE_23</name></member>
+      <member refid="group___e_x_t_i___line_1ga5944e77813fffbcc70a6425af917ea8d" kind="define"><name>EXTI_LINE_24</name></member>
+      <member refid="group___e_x_t_i___line_1gaf97766a975b78a6111ca49c7021bc9d9" kind="define"><name>EXTI_LINE_25</name></member>
+      <member refid="group___e_x_t_i___line_1ga3b3766b3e71dee91dc3e2738c5780ed8" kind="define"><name>EXTI_LINE_26</name></member>
+      <member refid="group___e_x_t_i___line_1ga46161d35da1ef91f13519e2baacc9942" kind="define"><name>EXTI_LINE_27</name></member>
+      <member refid="group___e_x_t_i___line_1ga2acfe92f9aa20f2f79e82d61b7d78fbe" kind="define"><name>EXTI_LINE_28</name></member>
+      <member refid="group___e_x_t_i___line_1ga162f320011d63c463bfe9cdb0885e08c" kind="define"><name>EXTI_LINE_29</name></member>
+      <member refid="group___e_x_t_i___line_1ga639f644e7061c0d27b2fc41dfc9060af" kind="define"><name>EXTI_LINE_30</name></member>
+      <member refid="group___e_x_t_i___line_1gab91907c719ed07ca44ba5c79ebbf51b8" kind="define"><name>EXTI_LINE_31</name></member>
+      <member refid="group___e_x_t_i___line_1ga230e3b56ac5691f79bcfb8f5ff1dfa6f" kind="define"><name>EXTI_LINE_32</name></member>
+      <member refid="group___e_x_t_i___line_1ga85099acd51591dfc5e57f348e857caa1" kind="define"><name>EXTI_LINE_33</name></member>
+      <member refid="group___e_x_t_i___line_1ga1e1304f9c5c227be7505df945390f061" kind="define"><name>EXTI_LINE_34</name></member>
+      <member refid="group___e_x_t_i___line_1gae56b98ffe7015346acc105cd530e0a7d" kind="define"><name>EXTI_LINE_35</name></member>
+      <member refid="group___e_x_t_i___mode_1ga9b50ed09da5b1dd0619d8792f142b049" kind="define"><name>EXTI_MODE_NONE</name></member>
+      <member refid="group___e_x_t_i___mode_1gae1e032ec592296be21f416a79a44f4f5" kind="define"><name>EXTI_MODE_INTERRUPT</name></member>
+      <member refid="group___e_x_t_i___mode_1ga672fef88f86b5d8a421194e3dac0f2e1" kind="define"><name>EXTI_MODE_EVENT</name></member>
+      <member refid="group___e_x_t_i___trigger_1gab0a4e8ed945992cb0cf071efe85748c8" kind="define"><name>EXTI_TRIGGER_NONE</name></member>
+      <member refid="group___e_x_t_i___trigger_1ga648bd5d6c2bebd85b5ea85f8af9a2ccc" kind="define"><name>EXTI_TRIGGER_RISING</name></member>
+      <member refid="group___e_x_t_i___trigger_1ga7461c33165994159edf79a095c227937" kind="define"><name>EXTI_TRIGGER_FALLING</name></member>
+      <member refid="group___e_x_t_i___trigger_1ga481cea6a2aafe107e5657b65887c81d5" kind="define"><name>EXTI_TRIGGER_RISING_FALLING</name></member>
+      <member refid="group___e_x_t_i___g_p_i_o_sel_1ga562f178c10011ea8de3721d400176558" kind="define"><name>EXTI_GPIOA</name></member>
+      <member refid="group___e_x_t_i___g_p_i_o_sel_1ga226a2e7987e1e808eff168985d378641" kind="define"><name>EXTI_GPIOB</name></member>
+      <member refid="group___e_x_t_i___g_p_i_o_sel_1gaa74b8f490a793f237c6a55f56ba6e644" kind="define"><name>EXTI_GPIOC</name></member>
+      <member refid="group___e_x_t_i___g_p_i_o_sel_1ga753afc3084ff070ea6d640b771ed0245" kind="define"><name>EXTI_GPIOD</name></member>
+      <member refid="group___e_x_t_i___g_p_i_o_sel_1gaf99708cbb5df0a53594cb7a39464d97e" kind="define"><name>EXTI_GPIOF</name></member>
+      <member refid="group___e_x_t_i___private___constants_1ga508bbe670f4f32775988b55e6914b6ec" kind="define"><name>EXTI_PROPERTY_SHIFT</name></member>
+      <member refid="group___e_x_t_i___private___constants_1ga6a646555edd627e1e7b43aa4e87b4aa7" kind="define"><name>EXTI_DIRECT</name></member>
+      <member refid="group___e_x_t_i___private___constants_1ga6f245ca02e17c1798fe43a66ea5b7fa4" kind="define"><name>EXTI_CONFIG</name></member>
+      <member refid="group___e_x_t_i___private___constants_1gacfa322960fc87db022536119cabb4d2a" kind="define"><name>EXTI_GPIO</name></member>
+      <member refid="group___e_x_t_i___private___constants_1gac15c8e004a79171f659e6cba49e8a57a" kind="define"><name>EXTI_RESERVED</name></member>
+      <member refid="group___e_x_t_i___private___constants_1ga6aa8e044ea8987b6839f419123734e4b" kind="define"><name>EXTI_PROPERTY_MASK</name></member>
+      <member refid="group___e_x_t_i___private___constants_1ga187f8b65fedba7cc4a5662552dd0eb40" kind="define"><name>EXTI_REG_SHIFT</name></member>
+      <member refid="group___e_x_t_i___private___constants_1ga091fa19d9bb51b0b09be614b0857265e" kind="define"><name>EXTI_REG1</name></member>
+      <member refid="group___e_x_t_i___private___constants_1gae6c7c1bc326dac76cae7eee9d499ed68" kind="define"><name>EXTI_REG2</name></member>
+      <member refid="group___e_x_t_i___private___constants_1ga1aa525d078e0b4ba049f08d9f06f4012" kind="define"><name>EXTI_REG_MASK</name></member>
+      <member refid="group___e_x_t_i___private___constants_1ga755405defae45017e19a17fd0279869c" kind="define"><name>EXTI_PIN_MASK</name></member>
+      <member refid="group___e_x_t_i___private___constants_1ga657f081646b552ee10bdfc7af94b5cdf" kind="define"><name>EXTI_MODE_MASK</name></member>
+      <member refid="group___e_x_t_i___private___constants_1ga3e14df666414849fd5a3907a96a2a892" kind="define"><name>EXTI_TRIGGER_MASK</name></member>
+      <member refid="group___e_x_t_i___private___constants_1ga577c4d3186ba6dd303761b23510595ef" kind="define"><name>EXTI_LINE_NB</name></member>
+      <member refid="group___e_x_t_i___private___macros_1gad1612a68c70ca4cdd0cbd3554e359af5" kind="define"><name>IS_EXTI_LINE</name></member>
+      <member refid="group___e_x_t_i___private___macros_1gaab993ef47b7b2bce5fae22b053d426f2" kind="define"><name>IS_EXTI_MODE</name></member>
+      <member refid="group___e_x_t_i___private___macros_1gaba684e88699639398fb59c361c13c113" kind="define"><name>IS_EXTI_TRIGGER</name></member>
+      <member refid="group___e_x_t_i___private___macros_1ga8fc9a0110e16df06c61b51d46e50eb3f" kind="define"><name>IS_EXTI_PENDING_EDGE</name></member>
+      <member refid="group___e_x_t_i___private___macros_1ga1ec20cce9b1da8e1bd3de992511ccc1e" kind="define"><name>IS_EXTI_CONFIG_LINE</name></member>
+      <member refid="group___e_x_t_i___private___macros_1ga839c895e37f0e74052194d91ad68a3ae" kind="define"><name>IS_EXTI_GPIO_PORT</name></member>
+      <member refid="group___e_x_t_i___private___macros_1ga82f191b2ea96948f302dc6c2108ea534" kind="define"><name>IS_EXTI_GPIO_PIN</name></member>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <member refid="group___e_x_t_i___exported___types_1ga0ff36e8796a6ad3f2fc211e534c54c0e" kind="enum"><name>EXTI_CallbackIDTypeDef</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group___e_x_t_i___exported___functions___group1_1ga21c31dc6d13f1e32b4352e00ab6ad2b3" kind="function"><name>HAL_EXTI_SetConfigLine</name></member>
+      <member refid="group___e_x_t_i___exported___functions___group1_1gabc6617165a2712df438f38509c8205dd" kind="function"><name>HAL_EXTI_GetConfigLine</name></member>
+      <member refid="group___e_x_t_i___exported___functions___group1_1gae8ed1defdcf965a62618af09c45c7866" kind="function"><name>HAL_EXTI_ClearConfigLine</name></member>
+      <member refid="group___e_x_t_i___exported___functions___group1_1gacb6ee7e9f2429c3c3a1c99d4fe2d26d7" kind="function"><name>HAL_EXTI_RegisterCallback</name></member>
+      <member refid="group___e_x_t_i___exported___functions___group1_1gaa5856ee92dc1265db144af025673ee46" kind="function"><name>HAL_EXTI_GetHandle</name></member>
+      <member refid="group___e_x_t_i___exported___functions___group2_1ga241422a810a8e2aeb0cd8467145d33bb" kind="function"><name>HAL_EXTI_IRQHandler</name></member>
+      <member refid="group___e_x_t_i___exported___functions___group2_1ga96319c70ad567d85105e4608f8b0887e" kind="function"><name>HAL_EXTI_GetPending</name></member>
+      <member refid="group___e_x_t_i___exported___functions___group2_1gaa99dea85ad2aea36f0abbe022a82664d" kind="function"><name>HAL_EXTI_ClearPending</name></member>
+      <member refid="group___e_x_t_i___exported___functions___group2_1ga6deebffde84bc80fa9ff1b7faa38615a" kind="function"><name>HAL_EXTI_GenerateSWI</name></member>
+    </sectiondef>
+    <briefdescription>
+<para>Header file of EXTI HAL module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team </para>
+</simplesect>
+<simplesect kind="attention"><para></para>
+</simplesect>
+Copyright (c) 2018 STMicroelectronics. All rights reserved.</para>
+<para>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>STM32G0xx_HAL_EXTI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32G0xx_HAL_EXTI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32g0xx__hal__def_8h" kindref="compound">stm32g0xx_hal_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>types<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="group___e_x_t_i___exported___types_1ga0ff36e8796a6ad3f2fc211e534c54c0e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46" refid="group___e_x_t_i___exported___types_1gga0ff36e8796a6ad3f2fc211e534c54c0ea9e0259c6eb4e5da890544489f133294b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___e_x_t_i___exported___types_1gga0ff36e8796a6ad3f2fc211e534c54c0ea9e0259c6eb4e5da890544489f133294b" kindref="member">HAL_EXTI_COMMON_CB_ID</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00U,</highlight></codeline>
+<codeline lineno="47" refid="group___e_x_t_i___exported___types_1gga0ff36e8796a6ad3f2fc211e534c54c0ea993a9cd5ef1967d498d127c413e40939" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___e_x_t_i___exported___types_1gga0ff36e8796a6ad3f2fc211e534c54c0ea993a9cd5ef1967d498d127c413e40939" kindref="member">HAL_EXTI_RISING_CB_ID</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01U,</highlight></codeline>
+<codeline lineno="48" refid="group___e_x_t_i___exported___types_1gga0ff36e8796a6ad3f2fc211e534c54c0ea63a3d2d4561a471c3a5123e0df528841" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="group___e_x_t_i___exported___types_1gga0ff36e8796a6ad3f2fc211e534c54c0ea63a3d2d4561a471c3a5123e0df528841" kindref="member">HAL_EXTI_FALLING_CB_ID</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x02U,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}<sp/><ref refid="group___e_x_t_i___exported___types_1ga0ff36e8796a6ad3f2fc211e534c54c0e" kindref="member">EXTI_CallbackIDTypeDef</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="struct_e_x_t_i___handle_type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57" refid="struct_e_x_t_i___handle_type_def_1a9c7a78e876a7dfb279a16029f915463f" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_e_x_t_i___handle_type_def_1a9c7a78e876a7dfb279a16029f915463f" kindref="member">Line</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="struct_e_x_t_i___handle_type_def_1a943f1d50fa859cca38b8a08cf0d79abe" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/>(*<sp/>RisingCallback)(void);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="struct_e_x_t_i___handle_type_def_1aa678442d363ac48e544f72e1be8f82a9" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/>(*<sp/>FallingCallback)(void);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}<sp/><ref refid="struct_e_x_t_i___handle_type_def" kindref="compound">EXTI_HandleTypeDef</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="struct_e_x_t_i___config_type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67" refid="struct_e_x_t_i___config_type_def_1a9c7a78e876a7dfb279a16029f915463f" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_e_x_t_i___config_type_def_1a9c7a78e876a7dfb279a16029f915463f" kindref="member">Line</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69" refid="struct_e_x_t_i___config_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_e_x_t_i___config_type_def_1a0ffc93ec511ed9cf1663f6939bd3e839" kindref="member">Mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71" refid="struct_e_x_t_i___config_type_def_1a73dd50a4d440463bf9e1cb02b72ac706" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_e_x_t_i___config_type_def_1a73dd50a4d440463bf9e1cb02b72ac706" kindref="member">Trigger</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="struct_e_x_t_i___config_type_def_1ac9316e39886afa2fee1ff41a6e34c379" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_e_x_t_i___config_type_def_1ac9316e39886afa2fee1ff41a6e34c379" kindref="member">GPIOSel</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}<sp/><ref refid="struct_e_x_t_i___config_type_def" kindref="compound">EXTI_ConfigTypeDef</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>constants<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="90" refid="group___e_x_t_i___line_1gac1a9cd58d76e9f497abecc832e3294c8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_GPIO<sp/><sp/><sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x00u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="group___e_x_t_i___line_1gaf64b8deca0cf44b4c58d2b4d0fcd2177" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_GPIO<sp/><sp/><sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x01u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="group___e_x_t_i___line_1gaec48b88f5279b95962682300c0650840" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_GPIO<sp/><sp/><sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x02u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="group___e_x_t_i___line_1ga7e223d61dcb2b538040824c0b491d68c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_GPIO<sp/><sp/><sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x03u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="group___e_x_t_i___line_1gaf8e1e94adf29806583e68170c1dad7dd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_GPIO<sp/><sp/><sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x04u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="group___e_x_t_i___line_1gab7859f0b07e671f71be61d7d301eb909" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_GPIO<sp/><sp/><sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x05u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="group___e_x_t_i___line_1gaebcb8302f9aae1d54c7aada7ade230c0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_GPIO<sp/><sp/><sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x06u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="group___e_x_t_i___line_1ga32a33e800bf0f754d0337ab30abde810" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_GPIO<sp/><sp/><sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x07u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="group___e_x_t_i___line_1ga0bb9322e3cfbe3a256f9e479ba3e5664" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_GPIO<sp/><sp/><sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x08u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="group___e_x_t_i___line_1ga714a1411d5dc8bcf6b6efe69396fbccf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_GPIO<sp/><sp/><sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x09u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="group___e_x_t_i___line_1gac94dbc4ff94b573f4dd796d60dcd250c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_GPIO<sp/><sp/><sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x0Au)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="group___e_x_t_i___line_1ga301648b2965852f535209429f71e251b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_11<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_GPIO<sp/><sp/><sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x0Bu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="group___e_x_t_i___line_1ga4ff15c98aec7cd3fd0f0c5bd5cfaa501" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_12<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_GPIO<sp/><sp/><sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x0Cu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="group___e_x_t_i___line_1ga8e144f1beae1e5d259f5d4aed6a3efe0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_13<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_GPIO<sp/><sp/><sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x0Du)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="group___e_x_t_i___line_1ga60b812a0a6fe00af8db8763b8202a463" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_14<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_GPIO<sp/><sp/><sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x0Eu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="group___e_x_t_i___line_1ga9e711303de4e32d120d2551dc5c64dd7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_15<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_GPIO<sp/><sp/><sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x0Fu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="group___e_x_t_i___line_1ga92cf76ca2f7a5638944ccd94e842ebb1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_CONFIG<sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x10u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(COMP1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_17<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_CONFIG<sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x11u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="group___e_x_t_i___line_1ga9d09e51fda52def20bd23a0c42da3014" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_17<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_RESERVED<sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x11u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>COMP1<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(COMP2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_18<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_CONFIG<sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x12u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="group___e_x_t_i___line_1ga8f420801658edbe81973c670ed97913e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_18<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_RESERVED<sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x12u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>COMP2<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="group___e_x_t_i___line_1gaa69d86266839e0980ad222192760c760" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_19<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x13u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(COMP3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_20<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_CONFIG<sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x14u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="group___e_x_t_i___line_1ga1d35577fb74cdbf58431570bd763f615" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_20<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_RESERVED<sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x14u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>COMP3<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="group___e_x_t_i___line_1gaae9d458581e656ab574d6d56b9844587" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_21<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x15u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(RCC_CCIPR_I2C2SEL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_22<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x16u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="group___e_x_t_i___line_1gacf5c5aed8ca5e9a3a3128d314cbe1f7f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_22<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_RESERVED<sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x16u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>RCC_CCIPR_I2C2SEL<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="group___e_x_t_i___line_1ga7795a473c5c93e2eb5c1bcfc0b48deef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_23<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x17u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(RCC_CCIPR_USART3SEL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_24<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x18u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="group___e_x_t_i___line_1ga5944e77813fffbcc70a6425af917ea8d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_24<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_RESERVED<sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x18u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>RCC_CCIPR_USART3SEL<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="group___e_x_t_i___line_1gaf97766a975b78a6111ca49c7021bc9d9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_25<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x19u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(RCC_CCIPR_USART2SEL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_26<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x1Au)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="group___e_x_t_i___line_1ga3b3766b3e71dee91dc3e2738c5780ed8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_26<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_RESERVED<sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x1Au)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>RCC_CCIPR_USART2SEL<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CEC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_27<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x1Bu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="group___e_x_t_i___line_1ga46161d35da1ef91f13519e2baacc9942" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_27<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_RESERVED<sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x1Bu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CEC<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LPUART1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_28<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x1Cu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="group___e_x_t_i___line_1ga2acfe92f9aa20f2f79e82d61b7d78fbe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_28<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_RESERVED<sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x1Cu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LPUART1<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LPTIM1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_29<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x1Du)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="group___e_x_t_i___line_1ga162f320011d63c463bfe9cdb0885e08c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_29<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_RESERVED<sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x1Du)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LPTIM1<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LPTIM2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_30<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x1Eu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="group___e_x_t_i___line_1ga639f644e7061c0d27b2fc41dfc9060af" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_30<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_RESERVED<sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x1Eu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LPTIM2<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="group___e_x_t_i___line_1gab91907c719ed07ca44ba5c79ebbf51b8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_31<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/><sp/><sp/>|<sp/>EXTI_REG1<sp/>|<sp/>0x1Fu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(UCPD1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/><sp/><sp/>|<sp/>EXTI_REG2<sp/>|<sp/>0x00u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="group___e_x_t_i___line_1ga230e3b56ac5691f79bcfb8f5ff1dfa6f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_RESERVED<sp/>|<sp/>EXTI_REG2<sp/>|<sp/>0x00u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>UCPD1<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(UCPD2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_33<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/><sp/><sp/>|<sp/>EXTI_REG2<sp/>|<sp/>0x01u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="group___e_x_t_i___line_1ga85099acd51591dfc5e57f348e857caa1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_33<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_RESERVED<sp/>|<sp/>EXTI_REG2<sp/>|<sp/>0x01u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>UCPD2<sp/>*/</highlight><highlight class="preprocessor"><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(STM32G0C1xx)<sp/>||<sp/>defined(STM32G0B1xx)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_34<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_CONFIG<sp/><sp/><sp/>|<sp/>EXTI_REG2<sp/>|<sp/>0x02u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="group___e_x_t_i___line_1ga1e1304f9c5c227be7505df945390f061" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_34<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_RESERVED<sp/>|<sp/>EXTI_REG2<sp/>|<sp/>0x02u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STM32G0C1xx<sp/>||<sp/>STM32G0B1xx<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LPUART2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_35<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/><sp/><sp/>|<sp/>EXTI_REG2<sp/>|<sp/>0x03u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="group___e_x_t_i___line_1gae56b98ffe7015346acc105cd530e0a7d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_35<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_RESERVED<sp/>|<sp/>EXTI_REG2<sp/>|<sp/>0x03u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LPUART2<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(STM32G0C1xx)<sp/>||<sp/>defined(STM32G0B1xx)<sp/>||<sp/>defined(STM32G0B0xx)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_36<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/>|<sp/>EXTI_REG2<sp/>|<sp/>0x04u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STM32G0C1xx<sp/>||<sp/>STM32G0B1xx<sp/>||<sp/>STM32G0B0xx<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="192" refid="group___e_x_t_i___mode_1ga9b50ed09da5b1dd0619d8792f142b049" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_MODE_NONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="group___e_x_t_i___mode_1gae1e032ec592296be21f416a79a44f4f5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_MODE_INTERRUPT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000001u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="group___e_x_t_i___mode_1ga672fef88f86b5d8a421194e3dac0f2e1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_MODE_EVENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000002u</highlight></codeline>
+<codeline lineno="202" refid="group___e_x_t_i___trigger_1gab0a4e8ed945992cb0cf071efe85748c8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_TRIGGER_NONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="group___e_x_t_i___trigger_1ga648bd5d6c2bebd85b5ea85f8af9a2ccc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_TRIGGER_RISING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000001u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="group___e_x_t_i___trigger_1ga7461c33165994159edf79a095c227937" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_TRIGGER_FALLING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000002u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="group___e_x_t_i___trigger_1ga481cea6a2aafe107e5657b65887c81d5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_TRIGGER_RISING_FALLING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_TRIGGER_RISING<sp/>|<sp/>EXTI_TRIGGER_FALLING)</highlight></codeline>
+<codeline lineno="214" refid="group___e_x_t_i___g_p_i_o_sel_1ga562f178c10011ea8de3721d400176558" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_GPIOA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="group___e_x_t_i___g_p_i_o_sel_1ga226a2e7987e1e808eff168985d378641" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_GPIOB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000001u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="group___e_x_t_i___g_p_i_o_sel_1gaa74b8f490a793f237c6a55f56ba6e644" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_GPIOC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000002u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="group___e_x_t_i___g_p_i_o_sel_1ga753afc3084ff070ea6d640b771ed0245" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_GPIOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000003u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(GPIOE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_GPIOE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000004u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GPIOE<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="group___e_x_t_i___g_p_i_o_sel_1gaf99708cbb5df0a53594cb7a39464d97e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_GPIOF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000005u</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>macro<sp/>------------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>constants<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="246" refid="group___e_x_t_i___private___constants_1ga508bbe670f4f32775988b55e6914b6ec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_PROPERTY_SHIFT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>24u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="group___e_x_t_i___private___constants_1ga6a646555edd627e1e7b43aa4e87b4aa7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_DIRECT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01uL<sp/>&lt;&lt;<sp/>EXTI_PROPERTY_SHIFT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="group___e_x_t_i___private___constants_1ga6f245ca02e17c1798fe43a66ea5b7fa4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_CONFIG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x02uL<sp/>&lt;&lt;<sp/>EXTI_PROPERTY_SHIFT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="group___e_x_t_i___private___constants_1gacfa322960fc87db022536119cabb4d2a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_GPIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((0x04uL<sp/>&lt;&lt;<sp/>EXTI_PROPERTY_SHIFT)<sp/>|<sp/>EXTI_CONFIG)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="group___e_x_t_i___private___constants_1gac15c8e004a79171f659e6cba49e8a57a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_RESERVED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x08uL<sp/>&lt;&lt;<sp/>EXTI_PROPERTY_SHIFT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251" refid="group___e_x_t_i___private___constants_1ga6aa8e044ea8987b6839f419123734e4b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_PROPERTY_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_DIRECT<sp/>|<sp/>EXTI_CONFIG<sp/>|<sp/>EXTI_GPIO)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="group___e_x_t_i___private___constants_1ga187f8b65fedba7cc4a5662552dd0eb40" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_REG_SHIFT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>16u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="group___e_x_t_i___private___constants_1ga091fa19d9bb51b0b09be614b0857265e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_REG1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00uL<sp/>&lt;&lt;<sp/>EXTI_REG_SHIFT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="group___e_x_t_i___private___constants_1gae6c7c1bc326dac76cae7eee9d499ed68" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_REG2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01uL<sp/>&lt;&lt;<sp/>EXTI_REG_SHIFT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="group___e_x_t_i___private___constants_1ga1aa525d078e0b4ba049f08d9f06f4012" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_REG_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_REG1<sp/>|<sp/>EXTI_REG2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260" refid="group___e_x_t_i___private___constants_1ga755405defae45017e19a17fd0279869c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_PIN_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000001Fu</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="group___e_x_t_i___private___constants_1ga657f081646b552ee10bdfc7af94b5cdf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_MODE_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_MODE_EVENT<sp/>|<sp/>EXTI_MODE_INTERRUPT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="group___e_x_t_i___private___constants_1ga3e14df666414849fd5a3907a96a2a892" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_TRIGGER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EXTI_TRIGGER_RISING<sp/>|<sp/>EXTI_TRIGGER_FALLING)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(STM32G0C1xx)<sp/>||<sp/>defined(STM32G0B1xx)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_NB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>37uL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(STM32G0B0xx)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_NB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>37uL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(STM32G081xx)<sp/>||<sp/>defined(STM32G071xx)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_NB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>34uL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(STM32G070xx)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_NB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>34uL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(STM32G041xx)<sp/>||<sp/>defined(STM32G031xx)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_NB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>32uL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="group___e_x_t_i___private___constants_1ga577c4d3186ba6dd303761b23510595ef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_LINE_NB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>32uL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STM32G0C1xx<sp/>||<sp/>STM32G0B1xx<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>macros<sp/>------------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="297" refid="group___e_x_t_i___private___macros_1gad1612a68c70ca4cdd0cbd3554e359af5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_EXTI_LINE(__EXTI_LINE__)<sp/><sp/><sp/><sp/><sp/>((((__EXTI_LINE__)<sp/>&amp;<sp/>~(EXTI_PROPERTY_MASK<sp/>|<sp/>EXTI_REG_MASK<sp/>|<sp/>EXTI_PIN_MASK))<sp/>==<sp/>0x00u)<sp/>&amp;&amp;<sp/>\</highlight></codeline>
+<codeline lineno="298"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((((__EXTI_LINE__)<sp/>&amp;<sp/>EXTI_PROPERTY_MASK)<sp/>==<sp/>EXTI_DIRECT)<sp/><sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="299"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__EXTI_LINE__)<sp/>&amp;<sp/>EXTI_PROPERTY_MASK)<sp/>==<sp/>EXTI_CONFIG)<sp/><sp/><sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="300"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__EXTI_LINE__)<sp/>&amp;<sp/>EXTI_PROPERTY_MASK)<sp/>==<sp/>EXTI_GPIO))<sp/><sp/><sp/><sp/>&amp;&amp;<sp/>\</highlight></codeline>
+<codeline lineno="301"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__EXTI_LINE__)<sp/>&amp;<sp/>(EXTI_REG_MASK<sp/>|<sp/>EXTI_PIN_MASK))<sp/><sp/><sp/><sp/><sp/><sp/>&lt;<sp/>\</highlight></codeline>
+<codeline lineno="302"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((EXTI_LINE_NB<sp/>/<sp/>32u)<sp/>&lt;&lt;<sp/>EXTI_REG_SHIFT)<sp/>|<sp/>(EXTI_LINE_NB<sp/>%<sp/>32u))))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304" refid="group___e_x_t_i___private___macros_1gaab993ef47b7b2bce5fae22b053d426f2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_EXTI_MODE(__MODE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((((__MODE__)<sp/>&amp;<sp/>EXTI_MODE_MASK)<sp/>!=<sp/>0x00u)<sp/>&amp;&amp;<sp/>\</highlight></codeline>
+<codeline lineno="305"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__MODE__)<sp/>&amp;<sp/>~EXTI_MODE_MASK)<sp/>==<sp/>0x00u))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307" refid="group___e_x_t_i___private___macros_1gaba684e88699639398fb59c361c13c113" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_EXTI_TRIGGER(__EXTI_LINE__)<sp/><sp/>(((__EXTI_LINE__)<sp/>&amp;<sp/>~EXTI_TRIGGER_MASK)<sp/>==<sp/>0x00u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309" refid="group___e_x_t_i___private___macros_1ga8fc9a0110e16df06c61b51d46e50eb3f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_EXTI_PENDING_EDGE(__EXTI_LINE__)<sp/><sp/>(((__EXTI_LINE__)<sp/>==<sp/>EXTI_TRIGGER_RISING)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="310"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__EXTI_LINE__)<sp/>==<sp/>EXTI_TRIGGER_FALLING))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312" refid="group___e_x_t_i___private___macros_1ga1ec20cce9b1da8e1bd3de992511ccc1e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_EXTI_CONFIG_LINE(__EXTI_LINE__)<sp/><sp/><sp/>(((__EXTI_LINE__)<sp/>&amp;<sp/>EXTI_CONFIG)<sp/>!=<sp/>0x00u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(GPIOE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_EXTI_GPIO_PORT(__PORT__)<sp/><sp/><sp/><sp/><sp/>(((__PORT__)<sp/>==<sp/>EXTI_GPIOA)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="316"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PORT__)<sp/>==<sp/>EXTI_GPIOB)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="317"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PORT__)<sp/>==<sp/>EXTI_GPIOC)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="318"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PORT__)<sp/>==<sp/>EXTI_GPIOD)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="319"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PORT__)<sp/>==<sp/>EXTI_GPIOE)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="320"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PORT__)<sp/>==<sp/>EXTI_GPIOF))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322" refid="group___e_x_t_i___private___macros_1ga839c895e37f0e74052194d91ad68a3ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_EXTI_GPIO_PORT(__PORT__)<sp/><sp/><sp/><sp/><sp/>(((__PORT__)<sp/>==<sp/>EXTI_GPIOA)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="323"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PORT__)<sp/>==<sp/>EXTI_GPIOB)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="324"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PORT__)<sp/>==<sp/>EXTI_GPIOC)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="325"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PORT__)<sp/>==<sp/>EXTI_GPIOD)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="326"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PORT__)<sp/>==<sp/>EXTI_GPIOF))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GPIOE<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329" refid="group___e_x_t_i___private___macros_1ga82f191b2ea96948f302dc6c2108ea534" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_EXTI_GPIO_PIN(__PIN__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__PIN__)<sp/>&lt;<sp/>16u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>functions<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Configuration<sp/>functions<sp/>****************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347" refid="group___e_x_t_i___exported___functions___group1_1ga21c31dc6d13f1e32b4352e00ab6ad2b3" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___e_x_t_i___exported___functions___group1_1ga21c31dc6d13f1e32b4352e00ab6ad2b3" kindref="member">HAL_EXTI_SetConfigLine</ref>(<ref refid="struct_e_x_t_i___handle_type_def" kindref="compound">EXTI_HandleTypeDef</ref><sp/>*hexti,<sp/><ref refid="struct_e_x_t_i___config_type_def" kindref="compound">EXTI_ConfigTypeDef</ref><sp/>*pExtiConfig);</highlight></codeline>
+<codeline lineno="348" refid="group___e_x_t_i___exported___functions___group1_1gabc6617165a2712df438f38509c8205dd" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___e_x_t_i___exported___functions___group1_1gabc6617165a2712df438f38509c8205dd" kindref="member">HAL_EXTI_GetConfigLine</ref>(<ref refid="struct_e_x_t_i___handle_type_def" kindref="compound">EXTI_HandleTypeDef</ref><sp/>*hexti,<sp/><ref refid="struct_e_x_t_i___config_type_def" kindref="compound">EXTI_ConfigTypeDef</ref><sp/>*pExtiConfig);</highlight></codeline>
+<codeline lineno="349" refid="group___e_x_t_i___exported___functions___group1_1gae8ed1defdcf965a62618af09c45c7866" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___e_x_t_i___exported___functions___group1_1gae8ed1defdcf965a62618af09c45c7866" kindref="member">HAL_EXTI_ClearConfigLine</ref>(<ref refid="struct_e_x_t_i___handle_type_def" kindref="compound">EXTI_HandleTypeDef</ref><sp/>*hexti);</highlight></codeline>
+<codeline lineno="350" refid="group___e_x_t_i___exported___functions___group1_1gacb6ee7e9f2429c3c3a1c99d4fe2d26d7" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___e_x_t_i___exported___functions___group1_1gacb6ee7e9f2429c3c3a1c99d4fe2d26d7" kindref="member">HAL_EXTI_RegisterCallback</ref>(<ref refid="struct_e_x_t_i___handle_type_def" kindref="compound">EXTI_HandleTypeDef</ref><sp/>*hexti,<sp/><ref refid="group___e_x_t_i___exported___types_1ga0ff36e8796a6ad3f2fc211e534c54c0e" kindref="member">EXTI_CallbackIDTypeDef</ref><sp/>CallbackID,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*pPendingCbfn)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="351" refid="group___e_x_t_i___exported___functions___group1_1gaa5856ee92dc1265db144af025673ee46" refkind="member"><highlight class="normal"><ref refid="stm32g0xx__hal__def_8h_1a63c0679d1cb8b8c684fbb0632743478f" kindref="member">HAL_StatusTypeDef</ref><sp/><ref refid="group___e_x_t_i___exported___functions___group1_1gaa5856ee92dc1265db144af025673ee46" kindref="member">HAL_EXTI_GetHandle</ref>(<ref refid="struct_e_x_t_i___handle_type_def" kindref="compound">EXTI_HandleTypeDef</ref><sp/>*hexti,<sp/>uint32_t<sp/>ExtiLine);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>IO<sp/>operation<sp/>functions<sp/>*****************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="361" refid="group___e_x_t_i___exported___functions___group2_1ga241422a810a8e2aeb0cd8467145d33bb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_x_t_i___exported___functions___group2_1ga241422a810a8e2aeb0cd8467145d33bb" kindref="member">HAL_EXTI_IRQHandler</ref>(<ref refid="struct_e_x_t_i___handle_type_def" kindref="compound">EXTI_HandleTypeDef</ref><sp/>*hexti);</highlight></codeline>
+<codeline lineno="362" refid="group___e_x_t_i___exported___functions___group2_1ga96319c70ad567d85105e4608f8b0887e" refkind="member"><highlight class="normal">uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_x_t_i___exported___functions___group2_1ga96319c70ad567d85105e4608f8b0887e" kindref="member">HAL_EXTI_GetPending</ref>(<ref refid="struct_e_x_t_i___handle_type_def" kindref="compound">EXTI_HandleTypeDef</ref><sp/>*hexti,<sp/>uint32_t<sp/>Edge);</highlight></codeline>
+<codeline lineno="363" refid="group___e_x_t_i___exported___functions___group2_1gaa99dea85ad2aea36f0abbe022a82664d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_x_t_i___exported___functions___group2_1gaa99dea85ad2aea36f0abbe022a82664d" kindref="member">HAL_EXTI_ClearPending</ref>(<ref refid="struct_e_x_t_i___handle_type_def" kindref="compound">EXTI_HandleTypeDef</ref><sp/>*hexti,<sp/>uint32_t<sp/>Edge);</highlight></codeline>
+<codeline lineno="364" refid="group___e_x_t_i___exported___functions___group2_1ga6deebffde84bc80fa9ff1b7faa38615a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_x_t_i___exported___functions___group2_1ga6deebffde84bc80fa9ff1b7faa38615a" kindref="member">HAL_EXTI_GenerateSWI</ref>(<ref refid="struct_e_x_t_i___handle_type_def" kindref="compound">EXTI_HandleTypeDef</ref><sp/>*hexti);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STM32G0xx_HAL_EXTI_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h"/>
+  </compounddef>
+</doxygen>

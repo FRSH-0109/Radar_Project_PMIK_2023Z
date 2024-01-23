@@ -1,0 +1,84 @@
+.TH "EXTI_TypeDef" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EXTI_TypeDef \- Asynch Interrupt/Event Controller (EXTI)  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stm32g030xx\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRTSR1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBFTSR1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBSWIER1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRPR1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBFPR1\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED1\fP [3]"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED2\fP [5]"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED3\fP [11]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBEXTICR\fP [4]"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED4\fP [4]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBIMR1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBEMR1\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Asynch Interrupt/Event Controller (EXTI) 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fB__IO\fP uint32_t EXTI_TypeDef::EMR1"
+EXTI Event Mask Register 1, Address offset: 0x84 
+.SS "\fB__IO\fP uint32_t EXTI_TypeDef::EXTICR[4]"
+EXTI External Interrupt Configuration Register, 0x60 -- 0x6C 
+.SS "\fB__IO\fP uint32_t EXTI_TypeDef::FPR1"
+EXTI Falling Pending Register 1, Address offset: 0x10 
+.SS "\fB__IO\fP uint32_t EXTI_TypeDef::FTSR1"
+EXTI Falling Trigger Selection Register 1, Address offset: 0x04 
+.SS "\fB__IO\fP uint32_t EXTI_TypeDef::IMR1"
+EXTI Interrupt Mask Register 1, Address offset: 0x80 
+.SS "uint32_t EXTI_TypeDef::RESERVED1[3]"
+Reserved 1, 0x14 -- 0x1C 
+.SS "uint32_t EXTI_TypeDef::RESERVED2[5]"
+Reserved 2, 0x20 -- 0x30 
+.SS "uint32_t EXTI_TypeDef::RESERVED3[11]"
+Reserved 3, 0x34 -- 0x5C 
+.SS "uint32_t EXTI_TypeDef::RESERVED4[4]"
+Reserved 4, 0x70 -- 0x7C 
+.SS "\fB__IO\fP uint32_t EXTI_TypeDef::RPR1"
+EXTI Rising Pending Register 1, Address offset: 0x0C 
+.SS "\fB__IO\fP uint32_t EXTI_TypeDef::RTSR1"
+EXTI Rising Trigger Selection Register 1, Address offset: 0x00 
+.SS "\fB__IO\fP uint32_t EXTI_TypeDef::SWIER1"
+EXTI Software Interrupt event Register 1, Address offset: 0x08 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

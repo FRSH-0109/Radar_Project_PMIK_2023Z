@@ -1,0 +1,60 @@
+.TH "UART_State_Definition" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_State_Definition \- UART State Code Definition
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHAL_UART_STATE_RESET\fP   0x00000000U"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_STATE_READY\fP   0x00000020U"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_STATE_BUSY\fP   0x00000024U"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_STATE_BUSY_TX\fP   0x00000021U"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_STATE_BUSY_RX\fP   0x00000022U"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_STATE_BUSY_TX_RX\fP   0x00000023U"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_STATE_TIMEOUT\fP   0x000000A0U"
+.br
+.ti -1c
+.RI "#define \fBHAL_UART_STATE_ERROR\fP   0x000000E0U"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define HAL_UART_STATE_BUSY   0x00000024U"
+an internal process is ongoing Value is allowed for gState only 
+.SS "#define HAL_UART_STATE_BUSY_RX   0x00000022U"
+Data Reception process is ongoing Value is allowed for RxState only 
+.SS "#define HAL_UART_STATE_BUSY_TX   0x00000021U"
+Data Transmission process is ongoing Value is allowed for gState only 
+.SS "#define HAL_UART_STATE_BUSY_TX_RX   0x00000023U"
+Data Transmission and Reception process is ongoing Not to be used for neither gState nor RxState\&.Value is result of combination (Or) between gState and RxState values 
+.SS "#define HAL_UART_STATE_ERROR   0x000000E0U"
+Error Value is allowed for gState only 
+.SS "#define HAL_UART_STATE_READY   0x00000020U"
+Peripheral Initialized and ready for use Value is allowed for gState and RxState 
+.SS "#define HAL_UART_STATE_RESET   0x00000000U"
+Peripheral is not initialized Value is allowed for gState and RxState 
+.SS "#define HAL_UART_STATE_TIMEOUT   0x000000A0U"
+Timeout state Value is allowed for gState only 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

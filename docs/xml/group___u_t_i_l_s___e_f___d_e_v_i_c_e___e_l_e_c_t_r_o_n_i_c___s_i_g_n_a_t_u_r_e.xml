@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group___u_t_i_l_s___e_f___d_e_v_i_c_e___e_l_e_c_t_r_o_n_i_c___s_i_g_n_a_t_u_r_e" kind="group">
+    <compoundname>UTILS_EF_DEVICE_ELECTRONIC_SIGNATURE</compoundname>
+    <title>DEVICE ELECTRONIC SIGNATURE</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_t_i_l_s___e_f___d_e_v_i_c_e___e_l_e_c_t_r_o_n_i_c___s_i_g_n_a_t_u_r_e_1ga3a0b557447143f41b93a7fa45270b5b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t LL_GetUID_Word0</definition>
+        <argsstring>(void)</argsstring>
+        <name>LL_GetUID_Word0</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Word0 of the unique device identifier (UID based on 96 bits) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>UID[31:0]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X and Y coordinates on the wafer expressed in BCD format </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" line="205" column="26" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" bodystart="205" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_t_i_l_s___e_f___d_e_v_i_c_e___e_l_e_c_t_r_o_n_i_c___s_i_g_n_a_t_u_r_e_1ga67007778e77a6fafc8a1fc440dc208b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t LL_GetUID_Word1</definition>
+        <argsstring>(void)</argsstring>
+        <name>LL_GetUID_Word1</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Word1 of the unique device identifier (UID based on 96 bits) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>UID[63:32]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wafer number (UID[39:32]) &amp; LOT_NUM[23:0] (UID[63:40]) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" line="214" column="26" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" bodystart="214" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_t_i_l_s___e_f___d_e_v_i_c_e___e_l_e_c_t_r_o_n_i_c___s_i_g_n_a_t_u_r_e_1gaa15df2bc902d392f67ee9873943d4904" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t LL_GetUID_Word2</definition>
+        <argsstring>(void)</argsstring>
+        <name>LL_GetUID_Word2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Word2 of the unique device identifier (UID based on 96 bits) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>UID[95:64]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lot number (ASCII encoded) - LOT_NUM[55:24] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" line="223" column="26" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" bodystart="223" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_t_i_l_s___e_f___d_e_v_i_c_e___e_l_e_c_t_r_o_n_i_c___s_i_g_n_a_t_u_r_e_1ga0e8379766a1799f3c5fedadaa2b0c47e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t LL_GetFlashSize</definition>
+        <argsstring>(void)</argsstring>
+        <name>LL_GetFlashSize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Flash memory size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This bitfield indicates the size of the device Flash memory expressed in Kbytes. As an example, 0x040 corresponds to 64 Kbytes. </para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>FLASH_SIZE[15:0]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flash memory size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" line="234" column="26" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" bodystart="234" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_t_i_l_s___e_f___d_e_v_i_c_e___e_l_e_c_t_r_o_n_i_c___s_i_g_n_a_t_u_r_e_1gadac3ab6581c114d1ce31034f80b49249" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t LL_GetPackageType</definition>
+        <argsstring>(void)</argsstring>
+        <name>LL_GetPackageType</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Package type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>PKG[3:0]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Package type - This parameter can be a value of <ref refid="group___u_t_i_l_s___e_c___p_a_c_k_a_g_e_t_y_p_e" kindref="compound">PACKAGE TYPE</ref>  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" line="271" column="26" bodyfile="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h" bodystart="271" bodyend="278"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

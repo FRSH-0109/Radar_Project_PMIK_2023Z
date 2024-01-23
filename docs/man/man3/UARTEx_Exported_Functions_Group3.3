@@ -1,0 +1,80 @@
+.TH "UARTEx_Exported_Functions_Group3" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UARTEx_Exported_Functions_Group3 \- UARTEx_Exported_Functions_Group3
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_StopModeWakeUpSourceConfig\fP (\fBUART_HandleTypeDef\fP *huart, \fBUART_WakeUpTypeDef\fP WakeUpSelection)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_EnableStopMode\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_DisableStopMode\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_MultiProcessorEx_AddressLength_Set\fP (\fBUART_HandleTypeDef\fP *huart, uint32_t AddressLength)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_EnableFifoMode\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_DisableFifoMode\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_SetTxFifoThreshold\fP (\fBUART_HandleTypeDef\fP *huart, uint32_t Threshold)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_SetRxFifoThreshold\fP (\fBUART_HandleTypeDef\fP *huart, uint32_t Threshold)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_ReceiveToIdle\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t *pData, uint16_t Size, uint16_t *RxLen, uint32_t Timeout)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_ReceiveToIdle_IT\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_StatusTypeDef\fP \fBHAL_UARTEx_ReceiveToIdle_DMA\fP (\fBUART_HandleTypeDef\fP *huart, uint8_t *pData, uint16_t Size)"
+.br
+.ti -1c
+.RI "\fBHAL_UART_RxEventTypeTypeDef\fP \fBHAL_UARTEx_GetRxEventType\fP (\fBUART_HandleTypeDef\fP *huart)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBHAL_StatusTypeDef\fP HAL_MultiProcessorEx_AddressLength_Set (\fBUART_HandleTypeDef\fP * huart, uint32_t AddressLength)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UARTEx_DisableFifoMode (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UARTEx_DisableStopMode (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UARTEx_EnableFifoMode (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UARTEx_EnableStopMode (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_UART_RxEventTypeTypeDef\fP HAL_UARTEx_GetRxEventType (\fBUART_HandleTypeDef\fP * huart)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UARTEx_ReceiveToIdle (\fBUART_HandleTypeDef\fP * huart, uint8_t * pData, uint16_t Size, uint16_t * RxLen, uint32_t Timeout)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UARTEx_ReceiveToIdle_DMA (\fBUART_HandleTypeDef\fP * huart, uint8_t * pData, uint16_t Size)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UARTEx_ReceiveToIdle_IT (\fBUART_HandleTypeDef\fP * huart, uint8_t * pData, uint16_t Size)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UARTEx_SetRxFifoThreshold (\fBUART_HandleTypeDef\fP * huart, uint32_t Threshold)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UARTEx_SetTxFifoThreshold (\fBUART_HandleTypeDef\fP * huart, uint32_t Threshold)"
+
+.SS "\fBHAL_StatusTypeDef\fP HAL_UARTEx_StopModeWakeUpSourceConfig (\fBUART_HandleTypeDef\fP * huart, \fBUART_WakeUpTypeDef\fP WakeUpSelection)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

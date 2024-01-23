@@ -1,0 +1,74 @@
+.TH "SPI_Error_Code" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_Error_Code \- SPI Error Code
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHAL_SPI_ERROR_NONE\fP   (0x00000000U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_SPI_ERROR_MODF\fP   (0x00000001U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_SPI_ERROR_CRC\fP   (0x00000002U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_SPI_ERROR_OVR\fP   (0x00000004U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_SPI_ERROR_FRE\fP   (0x00000008U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_SPI_ERROR_DMA\fP   (0x00000010U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_SPI_ERROR_FLAG\fP   (0x00000020U)"
+.br
+.ti -1c
+.RI "#define \fBHAL_SPI_ERROR_ABORT\fP   (0x00000040U)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define HAL_SPI_ERROR_ABORT   (0x00000040U)"
+Error during SPI Abort procedure 
+.br
+ 
+.SS "#define HAL_SPI_ERROR_CRC   (0x00000002U)"
+CRC error 
+.br
+ 
+.SS "#define HAL_SPI_ERROR_DMA   (0x00000010U)"
+DMA transfer error 
+.br
+ 
+.SS "#define HAL_SPI_ERROR_FLAG   (0x00000020U)"
+Error on RXNE/TXE/BSY/FTLVL/FRLVL Flag 
+.SS "#define HAL_SPI_ERROR_FRE   (0x00000008U)"
+FRE error 
+.br
+ 
+.SS "#define HAL_SPI_ERROR_MODF   (0x00000001U)"
+MODF error 
+.br
+ 
+.SS "#define HAL_SPI_ERROR_NONE   (0x00000000U)"
+No error 
+.br
+ 
+.SS "#define HAL_SPI_ERROR_OVR   (0x00000004U)"
+OVR error 
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

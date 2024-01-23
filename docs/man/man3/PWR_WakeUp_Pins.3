@@ -1,0 +1,80 @@
+.TH "PWR_WakeUp_Pins" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PWR_WakeUp_Pins \- PWR WakeUp pins
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN1\fP   \fBPWR_CR3_EWUP1\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN2\fP   \fBPWR_CR3_EWUP2\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN4\fP   \fBPWR_CR3_EWUP4\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN6\fP   \fBPWR_CR3_EWUP6\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN1_HIGH\fP   \fBPWR_CR3_EWUP1\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN2_HIGH\fP   \fBPWR_CR3_EWUP2\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN4_HIGH\fP   \fBPWR_CR3_EWUP4\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN6_HIGH\fP   \fBPWR_CR3_EWUP6\fP"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN1_LOW\fP   ((\fBPWR_CR4_WP1\fP << \fBPWR_WUP_POLARITY_SHIFT\fP) | \fBPWR_CR3_EWUP1\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN2_LOW\fP   ((\fBPWR_CR4_WP2\fP << \fBPWR_WUP_POLARITY_SHIFT\fP) | \fBPWR_CR3_EWUP2\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN4_LOW\fP   ((\fBPWR_CR4_WP4\fP << \fBPWR_WUP_POLARITY_SHIFT\fP) | \fBPWR_CR3_EWUP4\fP)"
+.br
+.ti -1c
+.RI "#define \fBPWR_WAKEUP_PIN6_LOW\fP   ((\fBPWR_CR4_WP6\fP << \fBPWR_WUP_POLARITY_SHIFT\fP) | \fBPWR_CR3_EWUP6\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define PWR_WAKEUP_PIN1   \fBPWR_CR3_EWUP1\fP"
+Wakeup pin 1 (with high level detection) 
+.SS "#define PWR_WAKEUP_PIN1_HIGH   \fBPWR_CR3_EWUP1\fP"
+Wakeup pin 1 (with high level detection) 
+.SS "#define PWR_WAKEUP_PIN1_LOW   ((\fBPWR_CR4_WP1\fP << \fBPWR_WUP_POLARITY_SHIFT\fP) | \fBPWR_CR3_EWUP1\fP)"
+Wakeup pin 1 (with low level detection) 
+.SS "#define PWR_WAKEUP_PIN2   \fBPWR_CR3_EWUP2\fP"
+Wakeup pin 2 (with high level detection) 
+.SS "#define PWR_WAKEUP_PIN2_HIGH   \fBPWR_CR3_EWUP2\fP"
+Wakeup pin 2 (with high level detection) 
+.SS "#define PWR_WAKEUP_PIN2_LOW   ((\fBPWR_CR4_WP2\fP << \fBPWR_WUP_POLARITY_SHIFT\fP) | \fBPWR_CR3_EWUP2\fP)"
+Wakeup pin 2 (with low level detection) 
+.SS "#define PWR_WAKEUP_PIN4   \fBPWR_CR3_EWUP4\fP"
+Wakeup pin 4 (with high level detection) 
+.SS "#define PWR_WAKEUP_PIN4_HIGH   \fBPWR_CR3_EWUP4\fP"
+Wakeup pin 4 (with high level detection) 
+.SS "#define PWR_WAKEUP_PIN4_LOW   ((\fBPWR_CR4_WP4\fP << \fBPWR_WUP_POLARITY_SHIFT\fP) | \fBPWR_CR3_EWUP4\fP)"
+Wakeup pin 4 (with low level detection) 
+.SS "#define PWR_WAKEUP_PIN6   \fBPWR_CR3_EWUP6\fP"
+Wakeup pin 6 (with high level detection) 
+.SS "#define PWR_WAKEUP_PIN6_HIGH   \fBPWR_CR3_EWUP6\fP"
+Wakeup pin 6 (with high level detection) 
+.SS "#define PWR_WAKEUP_PIN6_LOW   ((\fBPWR_CR4_WP6\fP << \fBPWR_WUP_POLARITY_SHIFT\fP) | \fBPWR_CR3_EWUP6\fP)"
+Wakeup pin 6 (with low level detection) 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

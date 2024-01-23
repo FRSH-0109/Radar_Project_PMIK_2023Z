@@ -1,0 +1,35 @@
+.TH "SPI_FIFO_reception_threshold" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_FIFO_reception_threshold \- SPI FIFO Reception Threshold
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSPI_RXFIFO_THRESHOLD\fP   \fBSPI_CR2_FRXTH\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_RXFIFO_THRESHOLD_QF\fP   \fBSPI_CR2_FRXTH\fP"
+.br
+.ti -1c
+.RI "#define \fBSPI_RXFIFO_THRESHOLD_HF\fP   (0x00000000U)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This parameter can be one of the following values: SPI_RXFIFO_THRESHOLD or SPI_RXFIFO_THRESHOLD_QF : RXNE event is generated if the FIFO level is greater or equal to 1/4(8-bits)\&. SPI_RXFIFO_THRESHOLD_HF: RXNE event is generated if the FIFO level is greater or equal to 1/2(16 bits)\&. 
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define SPI_RXFIFO_THRESHOLD   \fBSPI_CR2_FRXTH\fP"
+
+.SS "#define SPI_RXFIFO_THRESHOLD_HF   (0x00000000U)"
+
+.SS "#define SPI_RXFIFO_THRESHOLD_QF   \fBSPI_CR2_FRXTH\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

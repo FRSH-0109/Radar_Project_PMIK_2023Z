@@ -1,0 +1,78 @@
+.TH "Exported_types" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Exported_types \- Exported_types
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBIS_FUNCTIONAL_STATE\fP(STATE)   (((STATE) == \fBDISABLE\fP) || ((STATE) == \fBENABLE\fP))"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef enum \fBFlagStatus\fP \fBITStatus\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBFlagStatus\fP { \fBRESET\fP = 0, \fBSET\fP = !RESET }"
+.br
+.ti -1c
+.RI "enum \fBFunctionalState\fP { \fBDISABLE\fP = 0, \fBENABLE\fP = !DISABLE }"
+.br
+.ti -1c
+.RI "enum \fBErrorStatus\fP { \fBSUCCESS\fP = 0, \fBERROR\fP = !SUCCESS }"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_FUNCTIONAL_STATE(STATE)   (((STATE) == \fBDISABLE\fP) || ((STATE) == \fBENABLE\fP))"
+
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef  enum \fBFlagStatus\fP \fBITStatus\fP"
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBErrorStatus\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fISUCCESS \fP\fP
+.TP
+\fB\fIERROR \fP\fP
+.SS "enum \fBFlagStatus\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRESET \fP\fP
+.TP
+\fB\fISET \fP\fP
+.SS "enum \fBFunctionalState\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIDISABLE \fP\fP
+.TP
+\fB\fIENABLE \fP\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

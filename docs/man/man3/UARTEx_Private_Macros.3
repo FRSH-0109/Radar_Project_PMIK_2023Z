@@ -1,0 +1,154 @@
+.TH "UARTEx_Private_Macros" 3 "Version 1.0.0" "Radar" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UARTEx_Private_Macros \- UARTEx Private Macros
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_MASK_COMPUTATION\fP(__HANDLE__)"
+.br
+.RI "Report the UART mask to apply to retrieve the received data according to the word length and to the parity bits activation\&. "
+.ti -1c
+.RI "#define \fBIS_UART_WORD_LENGTH\fP(__LENGTH__)"
+.br
+.RI "Ensure that UART frame length is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_ADDRESSLENGTH_DETECT\fP(__ADDRESS__)"
+.br
+.RI "Ensure that UART wake-up address length is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_TXFIFO_THRESHOLD\fP(__THRESHOLD__)"
+.br
+.RI "Ensure that UART TXFIFO threshold level is valid\&. "
+.ti -1c
+.RI "#define \fBIS_UART_RXFIFO_THRESHOLD\fP(__THRESHOLD__)"
+.br
+.RI "Ensure that UART RXFIFO threshold level is valid\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define IS_UART_ADDRESSLENGTH_DETECT(__ADDRESS__)"
+\fBValue:\fP.PP
+.nf
+                                                   (((__ADDRESS__) == UART_ADDRESS_DETECT_4B) || \\
+                                                   ((__ADDRESS__) == UART_ADDRESS_DETECT_7B))
+.fi
+
+.PP
+Ensure that UART wake-up address length is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__ADDRESS__\fP UART wake-up address length\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBADDRESS\fP is valid) or RESET (\fBADDRESS\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_RXFIFO_THRESHOLD(__THRESHOLD__)"
+\fBValue:\fP.PP
+.nf
+                                                 (((__THRESHOLD__) == UART_RXFIFO_THRESHOLD_1_8) || \\
+                                                 ((__THRESHOLD__) == UART_RXFIFO_THRESHOLD_1_4) || \\
+                                                 ((__THRESHOLD__) == UART_RXFIFO_THRESHOLD_1_2) || \\
+                                                 ((__THRESHOLD__) == UART_RXFIFO_THRESHOLD_3_4) || \\
+                                                 ((__THRESHOLD__) == UART_RXFIFO_THRESHOLD_7_8) || \\
+                                                 ((__THRESHOLD__) == UART_RXFIFO_THRESHOLD_8_8))
+.fi
+
+.PP
+Ensure that UART RXFIFO threshold level is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__THRESHOLD__\fP UART RXFIFO threshold level\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBTHRESHOLD\fP is valid) or RESET (\fBTHRESHOLD\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_TXFIFO_THRESHOLD(__THRESHOLD__)"
+\fBValue:\fP.PP
+.nf
+                                                 (((__THRESHOLD__) == UART_TXFIFO_THRESHOLD_1_8) || \\
+                                                 ((__THRESHOLD__) == UART_TXFIFO_THRESHOLD_1_4) || \\
+                                                 ((__THRESHOLD__) == UART_TXFIFO_THRESHOLD_1_2) || \\
+                                                 ((__THRESHOLD__) == UART_TXFIFO_THRESHOLD_3_4) || \\
+                                                 ((__THRESHOLD__) == UART_TXFIFO_THRESHOLD_7_8) || \\
+                                                 ((__THRESHOLD__) == UART_TXFIFO_THRESHOLD_8_8))
+.fi
+
+.PP
+Ensure that UART TXFIFO threshold level is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__THRESHOLD__\fP UART TXFIFO threshold level\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBTHRESHOLD\fP is valid) or RESET (\fBTHRESHOLD\fP is invalid) 
+.RE
+.PP
+
+.SS "#define IS_UART_WORD_LENGTH(__LENGTH__)"
+\fBValue:\fP.PP
+.nf
+                                         (((__LENGTH__) == UART_WORDLENGTH_7B) || \\
+                                         ((__LENGTH__) == UART_WORDLENGTH_8B) || \\
+                                         ((__LENGTH__) == UART_WORDLENGTH_9B))
+.fi
+
+.PP
+Ensure that UART frame length is valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI__LENGTH__\fP UART frame length\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fISET\fP (\fBLENGTH\fP is valid) or RESET (\fBLENGTH\fP is invalid) 
+.RE
+.PP
+
+.SS "#define UART_MASK_COMPUTATION(__HANDLE__)"
+
+.PP
+Report the UART mask to apply to retrieve the received data according to the word length and to the parity bits activation\&. 
+.PP
+\fBNote\fP
+.RS 4
+If PCE = 1, the parity bit is not included in the data extracted by the reception API()\&. This masking operation is not carried out in the case of DMA transfers\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI__HANDLE__\fP specifies the UART Handle\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fINone,the\fP mask to apply to UART RDR register is stored in (\fBHANDLE\fP)->Mask field\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Radar from the source code\&.

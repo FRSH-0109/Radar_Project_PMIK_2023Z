@@ -1,0 +1,497 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="stm32g0xx__hal__pwr_8h" kind="file" language="C++">
+    <compoundname>stm32g0xx_hal_pwr.h</compoundname>
+    <includes refid="stm32g0xx__hal__def_8h" local="yes">stm32g0xx_hal_def.h</includes>
+    <includes refid="stm32g0xx__hal__pwr__ex_8h" local="yes">stm32g0xx_hal_pwr_ex.h</includes>
+    <includedby refid="stm32g0xx__hal__conf_8h" local="yes">Core/Inc/stm32g0xx_hal_conf.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>stm32g0xx.h</label>
+        <link refid="stm32g0xx_8h"/>
+      </node>
+      <node id="4">
+        <label>Legacy/stm32_hal_legacy.h</label>
+        <link refid="stm32__hal__legacy_8h"/>
+      </node>
+      <node id="2">
+        <label>stm32g0xx_hal_def.h</label>
+        <link refid="stm32g0xx__hal__def_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h</label>
+        <link refid="stm32g0xx__hal__pwr_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32g0xx_hal_pwr_ex.h</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>Core/Inc/dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Core/Inc/gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Core/Inc/main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Core/Inc/spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Core/Inc/stm32g0xx_hal_conf.h</label>
+        <link refid="stm32g0xx__hal__conf_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Core/Inc/tim.h</label>
+        <link refid="tim_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Core/Inc/usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Core/Src/dma.c</label>
+        <link refid="dma_8c"/>
+      </node>
+      <node id="9">
+        <label>Core/Src/gpio.c</label>
+        <link refid="gpio_8c"/>
+      </node>
+      <node id="7">
+        <label>Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="11">
+        <label>Core/Src/spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="17">
+        <label>Core/Src/stm32g0xx_hal_msp.c</label>
+        <link refid="stm32g0xx__hal__msp_8c"/>
+      </node>
+      <node id="18">
+        <label>Core/Src/stm32g0xx_it.c</label>
+        <link refid="stm32g0xx__it_8c"/>
+      </node>
+      <node id="13">
+        <label>Core/Src/tim.c</label>
+        <link refid="tim_8c"/>
+      </node>
+      <node id="15">
+        <label>Core/Src/usart.c</label>
+        <link refid="usart_8c"/>
+      </node>
+      <node id="3">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h</label>
+        <link refid="stm32g0xx__hal_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h</label>
+        <link refid="stm32g0xx__hal__pwr_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c</label>
+        <link refid="stm32g0xx__hal_8c"/>
+      </node>
+      <node id="24">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c</label>
+        <link refid="stm32g0xx__hal__cortex_8c"/>
+      </node>
+      <node id="25">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c</label>
+        <link refid="stm32g0xx__hal__dma_8c"/>
+      </node>
+      <node id="26">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c</label>
+        <link refid="stm32g0xx__hal__dma__ex_8c"/>
+      </node>
+      <node id="27">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c</label>
+        <link refid="stm32g0xx__hal__exti_8c"/>
+      </node>
+      <node id="28">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c</label>
+        <link refid="stm32g0xx__hal__flash_8c"/>
+      </node>
+      <node id="29">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c</label>
+        <link refid="stm32g0xx__hal__flash__ex_8c"/>
+      </node>
+      <node id="30">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c</label>
+        <link refid="stm32g0xx__hal__gpio_8c"/>
+      </node>
+      <node id="31">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c</label>
+        <link refid="stm32g0xx__hal__pwr_8c"/>
+      </node>
+      <node id="32">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c</label>
+        <link refid="stm32g0xx__hal__pwr__ex_8c"/>
+      </node>
+      <node id="33">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c</label>
+        <link refid="stm32g0xx__hal__rcc_8c"/>
+      </node>
+      <node id="34">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c</label>
+        <link refid="stm32g0xx__hal__rcc__ex_8c"/>
+      </node>
+      <node id="35">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c</label>
+        <link refid="stm32g0xx__hal__spi_8c"/>
+      </node>
+      <node id="36">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c</label>
+        <link refid="stm32g0xx__hal__spi__ex_8c"/>
+      </node>
+      <node id="37">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c</label>
+        <link refid="stm32g0xx__hal__tim_8c"/>
+      </node>
+      <node id="38">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c</label>
+        <link refid="stm32g0xx__hal__tim__ex_8c"/>
+      </node>
+      <node id="39">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c</label>
+        <link refid="stm32g0xx__hal__uart_8c"/>
+      </node>
+      <node id="40">
+        <label>Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c</label>
+        <link refid="stm32g0xx__hal__uart__ex_8c"/>
+      </node>
+      <node id="19">
+        <label>RadarApp/DisplayDriver/GFX_Color.c</label>
+        <link refid="_g_f_x___color_8c"/>
+      </node>
+      <node id="20">
+        <label>RadarApp/DisplayDriver/ILI9341.c</label>
+        <link refid="_i_l_i9341_8c"/>
+      </node>
+      <node id="22">
+        <label>RadarApp/RadarDriver/radar.c</label>
+        <link refid="radar_8c"/>
+      </node>
+      <node id="21">
+        <label>RadarApp/RadarDriver/radar.h</label>
+        <link refid="radar_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>RadarApp/usart_custom/usart_custom.c</label>
+        <link refid="usart__custom_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <member refid="group___p_w_r___wake_up___pins_1ga0da8e7cbe0826e93b777ae4419a1cd05" kind="define"><name>PWR_WAKEUP_PIN1</name></member>
+      <member refid="group___p_w_r___wake_up___pins_1ga0c718de5967a8d2cec63d0b5fe0b2ada" kind="define"><name>PWR_WAKEUP_PIN2</name></member>
+      <member refid="group___p_w_r___wake_up___pins_1ga043f15e42e900b9609b0558f68ba4bb9" kind="define"><name>PWR_WAKEUP_PIN4</name></member>
+      <member refid="group___p_w_r___wake_up___pins_1gabe5bf6bf78f3beecf4eb7180e7e31671" kind="define"><name>PWR_WAKEUP_PIN6</name></member>
+      <member refid="group___p_w_r___wake_up___pins_1gaeb626f09f1270e2a23729dac3fd269d1" kind="define"><name>PWR_WAKEUP_PIN1_HIGH</name></member>
+      <member refid="group___p_w_r___wake_up___pins_1ga1216218e63be4edd833ba66170266903" kind="define"><name>PWR_WAKEUP_PIN2_HIGH</name></member>
+      <member refid="group___p_w_r___wake_up___pins_1gaa53d4e6305c7d8aa72c851c8d2749fa9" kind="define"><name>PWR_WAKEUP_PIN4_HIGH</name></member>
+      <member refid="group___p_w_r___wake_up___pins_1ga1c391eb7544741b9d981d0d38bfcf52e" kind="define"><name>PWR_WAKEUP_PIN6_HIGH</name></member>
+      <member refid="group___p_w_r___wake_up___pins_1ga71106c9ef5fe0ce824983011cf5812db" kind="define"><name>PWR_WAKEUP_PIN1_LOW</name></member>
+      <member refid="group___p_w_r___wake_up___pins_1ga2fa3e2360a56cd447dd49de0b075313f" kind="define"><name>PWR_WAKEUP_PIN2_LOW</name></member>
+      <member refid="group___p_w_r___wake_up___pins_1ga5345ca56a0983765d0d6a97c5a53d910" kind="define"><name>PWR_WAKEUP_PIN4_LOW</name></member>
+      <member refid="group___p_w_r___wake_up___pins_1ga46e1b210a3805f27c4ae46a4cdc22f82" kind="define"><name>PWR_WAKEUP_PIN6_LOW</name></member>
+      <member refid="group___p_w_r___low___power___mode___selection_1gae163dddadea03ea51d61e4d86c6efe86" kind="define"><name>PWR_LOWPOWERMODE_STOP0</name></member>
+      <member refid="group___p_w_r___low___power___mode___selection_1ga6e436b19d68a17f664de329633049aa9" kind="define"><name>PWR_LOWPOWERMODE_STOP1</name></member>
+      <member refid="group___p_w_r___low___power___mode___selection_1ga2174d41ab7c2a94ce6d059aa739e388b" kind="define"><name>PWR_LOWPOWERMODE_STANDBY</name></member>
+      <member refid="group___p_w_r___regulator__state__in___s_l_e_e_p___s_t_o_p__mode_1ga1d5b4e1482184286e28c16162f530039" kind="define"><name>PWR_MAINREGULATOR_ON</name></member>
+      <member refid="group___p_w_r___regulator__state__in___s_l_e_e_p___s_t_o_p__mode_1gab9922a15f8414818d736d5e7fcace963" kind="define"><name>PWR_LOWPOWERREGULATOR_ON</name></member>
+      <member refid="group___p_w_r___s_l_e_e_p__mode__entry_1ga4f0f99a3526c57efb3501b016639fa45" kind="define"><name>PWR_SLEEPENTRY_WFI</name></member>
+      <member refid="group___p_w_r___s_l_e_e_p__mode__entry_1ga2ef4bd42ad37dcfcd0813676087d559e" kind="define"><name>PWR_SLEEPENTRY_WFE</name></member>
+      <member refid="group___p_w_r___s_t_o_p__mode__entry_1ga3bdb1a9c9b421b73ab148d45eb90fa9b" kind="define"><name>PWR_STOPENTRY_WFI</name></member>
+      <member refid="group___p_w_r___s_t_o_p__mode__entry_1ga2e1ee5c9577cc322474a826fa97de798" kind="define"><name>PWR_STOPENTRY_WFE</name></member>
+      <member refid="group___p_w_r___flag_1gaa3527e755c08ac2b2d95edd7adc4ee70" kind="define"><name>PWR_FLAG_WUF1</name></member>
+      <member refid="group___p_w_r___flag_1ga6be7514eb20788bbd92e78eed13c551c" kind="define"><name>PWR_FLAG_WUF2</name></member>
+      <member refid="group___p_w_r___flag_1gad406114253e536be4850a82229988d9c" kind="define"><name>PWR_FLAG_WUF4</name></member>
+      <member refid="group___p_w_r___flag_1ga09f26e2a5727b4d1a57129108a5b68bb" kind="define"><name>PWR_FLAG_WUF6</name></member>
+      <member refid="group___p_w_r___flag_1ga2281815d6abca4ef74b06c46f27e31d2" kind="define"><name>PWR_FLAG_WUF</name></member>
+      <member refid="group___p_w_r___flag_1ga9e55f0b5dec2346d5c8dee3ab3c0c2df" kind="define"><name>PWR_FLAG_SB</name></member>
+      <member refid="group___p_w_r___flag_1ga6be01d28369a777d1d372baa9ed5b488" kind="define"><name>PWR_FLAG_WUFI</name></member>
+      <member refid="group___p_w_r___flag_1ga03c7da76614e39540680e3bb693c0b6d" kind="define"><name>PWR_FLAG_FLASH_READY</name></member>
+      <member refid="group___p_w_r___flag_1ga83a0e30086ec21630b8a175ae48a2672" kind="define"><name>PWR_FLAG_REGLPS</name></member>
+      <member refid="group___p_w_r___flag_1ga8ed9097fdb76809257ecc0e398a2904f" kind="define"><name>PWR_FLAG_REGLPF</name></member>
+      <member refid="group___p_w_r___exported___macros_1ga2977135bbea35b786805eea640d1c884" kind="define"><name>__HAL_PWR_GET_FLAG</name></member>
+      <member refid="group___p_w_r___exported___macros_1ga96f24bf4b16c9f944cd829100bf746e5" kind="define"><name>__HAL_PWR_CLEAR_FLAG</name></member>
+      <member refid="group___p_w_r___w_u_p___polarity_1ga21257e8b8c5dd0d90f68aa5ac31c818b" kind="define"><name>PWR_WUP_POLARITY_SHIFT</name></member>
+      <member refid="group___p_w_r___private___macros_1gac6fcc59d6ff95b8feda1b228517f9c3f" kind="define"><name>IS_PWR_WAKEUP_PIN</name></member>
+      <member refid="group___p_w_r___private___macros_1ga03c105070272141c0bab5f2b74469072" kind="define"><name>IS_PWR_REGULATOR</name></member>
+      <member refid="group___p_w_r___private___macros_1ga9b36a9c213a77d36340788b2e7e277ff" kind="define"><name>IS_PWR_SLEEP_ENTRY</name></member>
+      <member refid="group___p_w_r___private___macros_1ga4a94eb1f400dec6e486fbc229cbea8a0" kind="define"><name>IS_PWR_STOP_ENTRY</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group___p_w_r___exported___functions___group1_1ga7edb99b94a46448c34f0301b0a077ff5" kind="function"><name>HAL_PWR_DeInit</name></member>
+      <member refid="group___p_w_r___exported___functions___group2_1ga3d07cef39bf294db4aed7e06e5dbf9af" kind="function"><name>HAL_PWR_EnableBkUpAccess</name></member>
+      <member refid="group___p_w_r___exported___functions___group2_1ga1513de5f2e4b72e094fb04bab786fec8" kind="function"><name>HAL_PWR_DisableBkUpAccess</name></member>
+      <member refid="group___p_w_r___exported___functions___group2_1gab821ac9058a5feb78491bff15d9ae591" kind="function"><name>HAL_PWR_EnableWakeUpPin</name></member>
+      <member refid="group___p_w_r___exported___functions___group2_1gab12ca816929e23e36f5ed8f4ccdb1472" kind="function"><name>HAL_PWR_DisableWakeUpPin</name></member>
+      <member refid="group___p_w_r___exported___functions___group2_1ga5c84f4e046525c22d233c8a3443fab5f" kind="function"><name>HAL_PWR_EnterSLEEPMode</name></member>
+      <member refid="group___p_w_r___exported___functions___group2_1gacfca5f1062274423e08317c0a5a225fa" kind="function"><name>HAL_PWR_EnterSTOPMode</name></member>
+      <member refid="group___p_w_r___exported___functions___group2_1ga40736f74c169077fcd08f34470559aa2" kind="function"><name>HAL_PWR_EnterSTANDBYMode</name></member>
+      <member refid="group___p_w_r___exported___functions___group2_1ga85d0154c96068b286072a64fca4c7e6a" kind="function"><name>HAL_PWR_EnableSleepOnExit</name></member>
+      <member refid="group___p_w_r___exported___functions___group2_1ga1da299e8186a3e08a694865bd41c3bb0" kind="function"><name>HAL_PWR_DisableSleepOnExit</name></member>
+      <member refid="group___p_w_r___exported___functions___group2_1ga6f33b1c8c8cc85129c68ac302a281033" kind="function"><name>HAL_PWR_EnableSEVOnPend</name></member>
+      <member refid="group___p_w_r___exported___functions___group2_1ga7811014def9b864dd490a63ada4bab68" kind="function"><name>HAL_PWR_DisableSEVOnPend</name></member>
+    </sectiondef>
+    <briefdescription>
+<para>Header file of PWR HAL module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MCD Application Team </para>
+</simplesect>
+<simplesect kind="attention"><para></para>
+</simplesect>
+Copyright (c) 2018 STMicroelectronics. All rights reserved.</para>
+<para>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>STM32G0xx_HAL_PWR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32G0xx_HAL_PWR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32g0xx__hal__def_8h" kindref="compound">stm32g0xx_hal_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>types<sp/>------------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>constants<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="56" refid="group___p_w_r___wake_up___pins_1ga0da8e7cbe0826e93b777ae4419a1cd05" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_CR3_EWUP1<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="group___p_w_r___wake_up___pins_1ga0c718de5967a8d2cec63d0b5fe0b2ada" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_CR3_EWUP2<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_CR3_EWUP3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_CR3_EWUP3<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_CR3_EWUP3<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="group___p_w_r___wake_up___pins_1ga043f15e42e900b9609b0558f68ba4bb9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_CR3_EWUP4<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_CR3_EWUP5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_CR3_EWUP5<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_CR3_EWUP5<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="group___p_w_r___wake_up___pins_1gabe5bf6bf78f3beecf4eb7180e7e31671" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_CR3_EWUP6<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="group___p_w_r___wake_up___pins_1gaeb626f09f1270e2a23729dac3fd269d1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN1_HIGH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_CR3_EWUP1<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="group___p_w_r___wake_up___pins_1ga1216218e63be4edd833ba66170266903" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN2_HIGH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_CR3_EWUP2<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_CR3_EWUP3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN3_HIGH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_CR3_EWUP3<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_CR3_EWUP3<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="group___p_w_r___wake_up___pins_1gaa53d4e6305c7d8aa72c851c8d2749fa9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN4_HIGH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_CR3_EWUP4<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_CR3_EWUP5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN5_HIGH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_CR3_EWUP5<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_CR3_EWUP5*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="group___p_w_r___wake_up___pins_1ga1c391eb7544741b9d981d0d38bfcf52e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN6_HIGH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_CR3_EWUP6<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="group___p_w_r___wake_up___pins_1ga71106c9ef5fe0ce824983011cf5812db" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN1_LOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PWR_CR4_WP1<sp/>&lt;&lt;<sp/>PWR_WUP_POLARITY_SHIFT)<sp/>|<sp/>PWR_CR3_EWUP1)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="group___p_w_r___wake_up___pins_1ga2fa3e2360a56cd447dd49de0b075313f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN2_LOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PWR_CR4_WP2<sp/>&lt;&lt;<sp/>PWR_WUP_POLARITY_SHIFT)<sp/>|<sp/>PWR_CR3_EWUP2)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_CR3_EWUP3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN3_LOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PWR_CR4_WP3<sp/>&lt;&lt;<sp/>PWR_WUP_POLARITY_SHIFT)<sp/>|<sp/>PWR_CR3_EWUP3)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_CR3_EWUP3<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="group___p_w_r___wake_up___pins_1ga5345ca56a0983765d0d6a97c5a53d910" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN4_LOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PWR_CR4_WP4<sp/>&lt;&lt;<sp/>PWR_WUP_POLARITY_SHIFT)<sp/>|<sp/>PWR_CR3_EWUP4)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_CR3_EWUP5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN5_LOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PWR_CR4_WP5<sp/>&lt;&lt;<sp/>PWR_WUP_POLARITY_SHIFT)<sp/>|<sp/>PWR_CR3_EWUP5)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_CR3_EWUP5<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="group___p_w_r___wake_up___pins_1ga46e1b210a3805f27c4ae46a4cdc22f82" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WAKEUP_PIN6_LOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PWR_CR4_WP6<sp/>&lt;&lt;<sp/>PWR_WUP_POLARITY_SHIFT)<sp/>|<sp/>PWR_CR3_EWUP6)<sp/></highlight></codeline>
+<codeline lineno="93" refid="group___p_w_r___low___power___mode___selection_1gae163dddadea03ea51d61e4d86c6efe86" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_LOWPOWERMODE_STOP0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000u)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="group___p_w_r___low___power___mode___selection_1ga6e436b19d68a17f664de329633049aa9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_LOWPOWERMODE_STOP1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PWR_CR1_LPMS_0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="group___p_w_r___low___power___mode___selection_1ga2174d41ab7c2a94ce6d059aa739e388b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_LOWPOWERMODE_STANDBY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PWR_CR1_LPMS_0<sp/>|<sp/>PWR_CR1_LPMS_1)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_SHDW_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_LOWPOWERMODE_SHUTDOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PWR_CR1_LPMS_2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_SHDW_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="106" refid="group___p_w_r___regulator__state__in___s_l_e_e_p___s_t_o_p__mode_1ga1d5b4e1482184286e28c16162f530039" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_MAINREGULATOR_ON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000u)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="group___p_w_r___regulator__state__in___s_l_e_e_p___s_t_o_p__mode_1gab9922a15f8414818d736d5e7fcace963" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_LOWPOWERREGULATOR_ON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_CR1_LPR<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115" refid="group___p_w_r___s_l_e_e_p__mode__entry_1ga4f0f99a3526c57efb3501b016639fa45" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_SLEEPENTRY_WFI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x01u)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="group___p_w_r___s_l_e_e_p__mode__entry_1ga2ef4bd42ad37dcfcd0813676087d559e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_SLEEPENTRY_WFE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x02u)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124" refid="group___p_w_r___s_t_o_p__mode__entry_1ga3bdb1a9c9b421b73ab148d45eb90fa9b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_STOPENTRY_WFI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x01u)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="group___p_w_r___s_t_o_p__mode__entry_1ga2e1ee5c9577cc322474a826fa97de798" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_STOPENTRY_WFE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x02u)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140" refid="group___p_w_r___flag_1gaa3527e755c08ac2b2d95edd7adc4ee70" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_FLAG_WUF1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00010000u<sp/>|<sp/>PWR_SR1_WUF1)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="group___p_w_r___flag_1ga6be7514eb20788bbd92e78eed13c551c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_FLAG_WUF2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00010000u<sp/>|<sp/>PWR_SR1_WUF2)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_CR3_EWUP3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_FLAG_WUF3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00010000u<sp/>|<sp/>PWR_SR1_WUF3)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_CR3_EWUP3<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="group___p_w_r___flag_1gad406114253e536be4850a82229988d9c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_FLAG_WUF4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00010000u<sp/>|<sp/>PWR_SR1_WUF4)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_CR3_EWUP5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_FLAG_WUF5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00010000u<sp/>|<sp/>PWR_SR1_WUF5)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_CR3_EWUP5<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="group___p_w_r___flag_1ga09f26e2a5727b4d1a57129108a5b68bb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_FLAG_WUF6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00010000u<sp/>|<sp/>PWR_SR1_WUF6)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="group___p_w_r___flag_1ga2281815d6abca4ef74b06c46f27e31d2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_FLAG_WUF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00010000u<sp/>|<sp/>PWR_SR1_WUF)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="group___p_w_r___flag_1ga9e55f0b5dec2346d5c8dee3ab3c0c2df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_FLAG_SB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00010000u<sp/>|<sp/>PWR_SR1_SBF)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="group___p_w_r___flag_1ga6be01d28369a777d1d372baa9ed5b488" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_FLAG_WUFI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00010000u<sp/>|<sp/>PWR_SR1_WUFI)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="group___p_w_r___flag_1ga03c7da76614e39540680e3bb693c0b6d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_FLAG_FLASH_READY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00020000u<sp/>|<sp/>PWR_SR2_FLASH_RDY)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="group___p_w_r___flag_1ga83a0e30086ec21630b8a175ae48a2672" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_FLAG_REGLPS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00020000u<sp/>|<sp/>PWR_SR2_REGLPS)<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="group___p_w_r___flag_1ga8ed9097fdb76809257ecc0e398a2904f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_FLAG_REGLPF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00020000u<sp/>|<sp/>PWR_SR2_REGLPF)<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_PVD_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_FLAG_PVDO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00020000u<sp/>|<sp/>PWR_SR2_PVDO)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_PVD_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PWR_PVM_SUPPORT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_FLAG_PVMO_USB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00020000u<sp/>|<sp/>PWR_SR2_PVMO_USB)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PWR_PVM_SUPPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>macros<sp/>-----------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="207" refid="group___p_w_r___exported___macros_1ga2977135bbea35b786805eea640d1c884" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_PWR_GET_FLAG(__FLAG__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((__FLAG__)<sp/>&amp;<sp/>0x00010000u)<sp/>?\</highlight></codeline>
+<codeline lineno="208"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PWR-&gt;SR1<sp/>&amp;<sp/>((__FLAG__)<sp/>&amp;<sp/>~0x00030000u))<sp/>==<sp/>((__FLAG__)<sp/>&amp;<sp/>~0x00030000u))<sp/>:\</highlight></codeline>
+<codeline lineno="209"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PWR-&gt;SR2<sp/>&amp;<sp/>((__FLAG__)<sp/>&amp;<sp/>~0x00030000u))<sp/>==<sp/>((__FLAG__)<sp/>&amp;<sp/>~0x00030000u)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="group___p_w_r___exported___macros_1ga96f24bf4b16c9f944cd829100bf746e5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__HAL_PWR_CLEAR_FLAG(__FLAG__)<sp/><sp/><sp/><sp/><sp/><sp/>(PWR-&gt;SCR<sp/>=<sp/>(__FLAG__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>constants-------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="241" refid="group___p_w_r___w_u_p___polarity_1ga21257e8b8c5dd0d90f68aa5ac31c818b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_WUP_POLARITY_SHIFT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x08u<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>macros<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="251" refid="group___p_w_r___private___macros_1gac6fcc59d6ff95b8feda1b228517f9c3f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_PWR_WAKEUP_PIN(PIN)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((((PIN)<sp/>&amp;<sp/>((PWR_CR4_WP<sp/>&lt;&lt;<sp/>8U)<sp/>|<sp/>(PWR_CR3_EWUP)))<sp/>!=<sp/>0x00000000u)<sp/>&amp;&amp;<sp/>\</highlight></codeline>
+<codeline lineno="252"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((PIN)<sp/>&amp;<sp/>~((PWR_CR4_WP<sp/>&lt;&lt;<sp/>8U)<sp/>|<sp/>(PWR_CR3_EWUP)))<sp/>==<sp/>0x00000000u))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="group___p_w_r___private___macros_1ga03c105070272141c0bab5f2b74469072" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_PWR_REGULATOR(REGULATOR)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((REGULATOR)<sp/>==<sp/>PWR_MAINREGULATOR_ON)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="255"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((REGULATOR)<sp/>==<sp/>PWR_LOWPOWERREGULATOR_ON))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="group___p_w_r___private___macros_1ga9b36a9c213a77d36340788b2e7e277ff" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_PWR_SLEEP_ENTRY(ENTRY)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((ENTRY)<sp/>==<sp/>PWR_SLEEPENTRY_WFI)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="258"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((ENTRY)<sp/>==<sp/>PWR_SLEEPENTRY_WFE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260" refid="group___p_w_r___private___macros_1ga4a94eb1f400dec6e486fbc229cbea8a0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_PWR_STOP_ENTRY(ENTRY)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((ENTRY)<sp/>==<sp/>PWR_STOPENTRY_WFI)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="261"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((ENTRY)<sp/>==<sp/>PWR_STOPENTRY_WFE))</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Include<sp/>PWR<sp/>HAL<sp/>Extended<sp/>module<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32g0xx__hal__pwr__ex_8h" kindref="compound">stm32g0xx_hal_pwr_ex.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>functions<sp/>--------------------------------------------------------*/</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialization<sp/>and<sp/>de-initialization<sp/>functions<sp/>*******************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279" refid="group___p_w_r___exported___functions___group1_1ga7edb99b94a46448c34f0301b0a077ff5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_r___exported___functions___group1_1ga7edb99b94a46448c34f0301b0a077ff5" kindref="member">HAL_PWR_DeInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Peripheral<sp/>Control<sp/>functions<sp/><sp/>************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288" refid="group___p_w_r___exported___functions___group2_1ga3d07cef39bf294db4aed7e06e5dbf9af" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_r___exported___functions___group2_1ga3d07cef39bf294db4aed7e06e5dbf9af" kindref="member">HAL_PWR_EnableBkUpAccess</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="289" refid="group___p_w_r___exported___functions___group2_1ga1513de5f2e4b72e094fb04bab786fec8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_r___exported___functions___group2_1ga1513de5f2e4b72e094fb04bab786fec8" kindref="member">HAL_PWR_DisableBkUpAccess</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>WakeUp<sp/>pins<sp/>configuration<sp/>functions<sp/>****************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="group___p_w_r___exported___functions___group2_1gab821ac9058a5feb78491bff15d9ae591" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_r___exported___functions___group2_1gab821ac9058a5feb78491bff15d9ae591" kindref="member">HAL_PWR_EnableWakeUpPin</ref>(uint32_t<sp/>WakeUpPinPolarity);</highlight></codeline>
+<codeline lineno="293" refid="group___p_w_r___exported___functions___group2_1gab12ca816929e23e36f5ed8f4ccdb1472" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_r___exported___functions___group2_1gab12ca816929e23e36f5ed8f4ccdb1472" kindref="member">HAL_PWR_DisableWakeUpPin</ref>(uint32_t<sp/>WakeUpPinx);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Low<sp/>Power<sp/>modes<sp/>configuration<sp/>functions<sp/>************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296" refid="group___p_w_r___exported___functions___group2_1ga5c84f4e046525c22d233c8a3443fab5f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_r___exported___functions___group2_1ga5c84f4e046525c22d233c8a3443fab5f" kindref="member">HAL_PWR_EnterSLEEPMode</ref>(uint32_t<sp/>Regulator,<sp/>uint8_t<sp/>SLEEPEntry);</highlight></codeline>
+<codeline lineno="297" refid="group___p_w_r___exported___functions___group2_1gacfca5f1062274423e08317c0a5a225fa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_r___exported___functions___group2_1gacfca5f1062274423e08317c0a5a225fa" kindref="member">HAL_PWR_EnterSTOPMode</ref>(uint32_t<sp/>Regulator,<sp/>uint8_t<sp/>STOPEntry);</highlight></codeline>
+<codeline lineno="298" refid="group___p_w_r___exported___functions___group2_1ga40736f74c169077fcd08f34470559aa2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_r___exported___functions___group2_1ga40736f74c169077fcd08f34470559aa2" kindref="member">HAL_PWR_EnterSTANDBYMode</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="299" refid="group___p_w_r___exported___functions___group2_1ga85d0154c96068b286072a64fca4c7e6a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_r___exported___functions___group2_1ga85d0154c96068b286072a64fca4c7e6a" kindref="member">HAL_PWR_EnableSleepOnExit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="300" refid="group___p_w_r___exported___functions___group2_1ga1da299e8186a3e08a694865bd41c3bb0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_r___exported___functions___group2_1ga1da299e8186a3e08a694865bd41c3bb0" kindref="member">HAL_PWR_DisableSleepOnExit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="301" refid="group___p_w_r___exported___functions___group2_1ga6f33b1c8c8cc85129c68ac302a281033" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_r___exported___functions___group2_1ga6f33b1c8c8cc85129c68ac302a281033" kindref="member">HAL_PWR_EnableSEVOnPend</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="302" refid="group___p_w_r___exported___functions___group2_1ga7811014def9b864dd490a63ada4bab68" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_r___exported___functions___group2_1ga7811014def9b864dd490a63ada4bab68" kindref="member">HAL_PWR_DisableSEVOnPend</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STM32G0xx_HAL_PWR_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h"/>
+  </compounddef>
+</doxygen>
