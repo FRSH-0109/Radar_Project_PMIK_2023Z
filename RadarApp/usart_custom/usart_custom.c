@@ -24,6 +24,7 @@ extern DMA_HandleTypeDef hdma_usart1_rx;
 extern DMA_HandleTypeDef hdma_usart1_tx;
 extern UART_Queue uartQueuePC;
 extern radarStruct radar;
+extern drawHelperStruct drawHelper;
 
 //Initialization of custom uart struct instance
 //@param  huartCustom - instance of custom uart struct
@@ -99,6 +100,22 @@ CommandType CommandDecode(uint8_t *data, uint16_t dataLen)
 	{
 		return COMMAND_TYPE_STOP;
 	}
+	else if(CommandSearchForString(data, dataLen, COMMAND_GET_RADAR_POS_MIN))
+	{
+		return COMMAND_TYPE_GET_POS_MIN;
+	}
+	else if(CommandSearchForString(data, dataLen, COMMAND_GET_RADAR_POS_MAX))
+	{
+		return COMMAND_TYPE_GET_POS_MAX;
+	}
+	else if(CommandSearchForString(data, dataLen, COMMAND_SET_RADAR_POS_MIN))
+	{
+		return COMMAND_TYPE_SET_POS_MIN;
+	}
+	else if(CommandSearchForString(data, dataLen, COMMAND_SET_RADAR_POS_MAX))
+	{
+		return COMMAND_TYPE_SET_POS_MAX;
+	}
 	else if(CommandSearchForString(data, dataLen, COMMAND_GET_RADAR_POSITION))
 	{
 		return COMMAND_TYPE_GET_POS;
@@ -115,6 +132,35 @@ CommandType CommandDecode(uint8_t *data, uint16_t dataLen)
 	{
 		return COMMAND_TYPE_SET_STEP;
 	}
+	else if(CommandSearchForString(data, dataLen, COMMAND_SET_RADAR_SENSOR_PERIOD))
+	{
+		return COMMAND_TYPE_SET_SENSOR_PERIOD;
+	}
+	else if(CommandSearchForString(data, dataLen, COMMAND_GET_RADAR_SENSOR_PERIOD))
+	{
+		return COMMAND_TYPE_GET_SENSOR_PERIOD;
+	}
+	else if(CommandSearchForString(data, dataLen, COMMAND_GET_RADAR_SENSOR_MEASURE))
+	{
+		return COMMAND_TYPE_GET_SENSOR_MEASURE;
+	}
+	else if(CommandSearchForString(data, dataLen, COMMAND_GET_RADAR_DRAW_SCALE))
+	{
+		return COMMAND_TYPE_GET_DRAW_SCALE;
+	}
+	else if(CommandSearchForString(data, dataLen, COMMAND_SET_RADAR_DRAW_SCALE))
+	{
+		return COMMAND_TYPE_SET_DRAW_SCALE;
+	}
+	else if(CommandSearchForString(data, dataLen, COMMAND_GET_RADAR_DRAW_RULES))
+	{
+		return COMMAND_TYPE_GET_DRAW_RULES;
+	}
+	else if(CommandSearchForString(data, dataLen, COMMAND_SET_RADAR_DRAW_RULES))
+	{
+		return COMMAND_TYPE_SET_DRAW_RULES;
+	}
+
 
 	return COMMAND_TYPE_IDLE;
 }
@@ -162,12 +208,55 @@ static void uartTransmitStep(volatile UART_Queue *uartQueue)
 	uartQueueAdd(uartQueue, data, dataLen);
 }
 
-static void uartTransmitStepMs(volatile UART_Queue *uartQueue)
+static void uartTransmitPositionMinMax(volatile UART_Queue *uartQueue, bool isMin)
 {
 	uint8_t data[MAX_UART_TX_DATA_LEN] = {0};
 	uint8_t dataLen = 0;
 
-	dataLen = sprintf((char* )data, "Step: %.2f\r\n", radar.positionUpdateStep);
+	if(isMin)
+	{
+		dataLen = sprintf((char* )data, "Position Min: %.2f\r\n", radar.positionMin);
+	}
+	else
+	{
+		dataLen = sprintf((char* )data, "Position Max: %.2f\r\n", radar.positionMax);
+	}
+	uartQueueAdd(uartQueue, data, dataLen);
+}
+
+static void uartTransmitSensorMeasure(volatile UART_Queue *uartQueue)
+{
+	uint8_t data[MAX_UART_TX_DATA_LEN] = {0};
+	uint8_t dataLen = 0;
+
+	dataLen = sprintf((char* )data, "Measure: %.2f\r\n", radarGetMeasure(&radar));
+	uartQueueAdd(uartQueue, data, dataLen);
+}
+
+static void uartTransmitSensorPeriod(volatile UART_Queue *uartQueue)
+{
+	uint8_t data[MAX_UART_TX_DATA_LEN] = {0};
+	uint8_t dataLen = 0;
+
+	dataLen = sprintf((char* )data, "Measure Period: %d ms\r\n", radar.measurePeriodMs);
+	uartQueueAdd(uartQueue, data, dataLen);
+}
+
+static void uartTransmitDrawScale(volatile UART_Queue *uartQueue)
+{
+	uint8_t data[MAX_UART_TX_DATA_LEN] = {0};
+	uint8_t dataLen = 0;
+
+	dataLen = sprintf((char* )data, "Draw Scale: %.2f\r\n", drawHelper.drawScale);
+	uartQueueAdd(uartQueue, data, dataLen);
+}
+
+static void uartTransmitDrawRules(volatile UART_Queue *uartQueue)
+{
+	uint8_t data[MAX_UART_TX_DATA_LEN] = {0};
+	uint8_t dataLen = 0;
+
+	dataLen = sprintf((char* )data, "Draw rules number: %d\r\n", drawHelper.measureScalesNumber);
 	uartQueueAdd(uartQueue, data, dataLen);
 }
 
@@ -218,9 +307,88 @@ inline void uartQueueReceive(volatile UART_Queue *uartQueue)
 					uartTransmitResponse(uartQueue, RESPONSE_ERROR);
 				}
 				break;
+			case COMMAND_TYPE_GET_POS_MIN:
+				uartTransmitPositionMinMax(uartQueue, true);
+			break;
+
+			case COMMAND_TYPE_GET_POS_MAX:
+				uartTransmitPositionMinMax(uartQueue, false);
+			break;
+
+			case COMMAND_TYPE_SET_POS_MIN:
+				if(radarParseSetPositionMinMax(&radar, (uint8_t*)uartQueue->dataRx[uartQueue->tailIndex], true))
+				{
+					uartTransmitResponse(uartQueue, RESPONSE_OK);
+				}
+				else
+				{
+					uartTransmitResponse(uartQueue, RESPONSE_ERROR);
+				}
+			break;
+
+			case COMMAND_TYPE_SET_POS_MAX:
+				if(radarParseSetPositionMinMax(&radar, (uint8_t*)uartQueue->dataRx[uartQueue->tailIndex], false))
+				{
+					uartTransmitResponse(uartQueue, RESPONSE_OK);
+				}
+				else
+				{
+					uartTransmitResponse(uartQueue, RESPONSE_ERROR);
+				}
+			break;
+
+			case COMMAND_TYPE_GET_SENSOR_MEASURE:
+				uartTransmitSensorMeasure(uartQueue);
+			break;
+
+			case COMMAND_TYPE_SET_SENSOR_PERIOD:
+				if(radarParseSetMeasurePeriod(&radar, (uint8_t*)uartQueue->dataRx[uartQueue->tailIndex]))
+				{
+					uartTransmitResponse(uartQueue, RESPONSE_OK);
+				}
+				else
+				{
+					uartTransmitResponse(uartQueue, RESPONSE_ERROR);
+				}
+			break;
+
+			case COMMAND_TYPE_GET_SENSOR_PERIOD:
+				uartTransmitSensorPeriod(uartQueue);
+			break;
+
+			case COMMAND_TYPE_GET_DRAW_SCALE:
+				uartTransmitDrawScale(uartQueue);
+			break;
+
+			case COMMAND_TYPE_GET_DRAW_RULES:
+				uartTransmitDrawRules(uartQueue);
+			break;
+
+			case COMMAND_TYPE_SET_DRAW_SCALE:
+				if(radarParseSetDrawScale(&radar, (uint8_t*)uartQueue->dataRx[uartQueue->tailIndex]))
+				{
+					uartTransmitResponse(uartQueue, RESPONSE_OK);
+				}
+				else
+				{
+					uartTransmitResponse(uartQueue, RESPONSE_ERROR);
+				}
+			break;
+
+			case COMMAND_TYPE_SET_DRAW_RULES:
+				if(radarParseSetDrawRules(&radar, (uint8_t*)uartQueue->dataRx[uartQueue->tailIndex]))
+				{
+					uartTransmitResponse(uartQueue, RESPONSE_OK);
+				}
+				else
+				{
+					uartTransmitResponse(uartQueue, RESPONSE_ERROR);
+				}
+			break;
 
 			default:
-				break;
+				uartTransmitResponse(uartQueue, RESPONSE_UNKNOW_CMD);
+			break;
 		}
 
 		uartQueue->dataRx[uartQueue->tailIndex][0] = 0;
@@ -274,7 +442,7 @@ inline void uartQueueTransmit(volatile UART_Queue *uartQueue, UART_Custom_Handle
 				{
 					uartQueue->dataTxLength[uartQueue->transmitIndex] = huartCustom->dataTxMaxLen;
 				}
-				HAL_UART_StateTypeDef result = HAL_UART_Transmit_DMA(huartCustom->huart,(uint8_t *) uartQueue->dataTx[uartQueue->transmitIndex], uartQueue->dataTxLength[uartQueue->transmitIndex]);
+				HAL_UART_Transmit_DMA(huartCustom->huart,(uint8_t *) uartQueue->dataTx[uartQueue->transmitIndex], uartQueue->dataTxLength[uartQueue->transmitIndex]);
 				__HAL_DMA_DISABLE_IT(&hdma_usart1_tx, DMA_IT_HT);
 
 				uartQueue->dataTx[uartQueue->transmitIndex][0] = 0;

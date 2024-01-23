@@ -1,5 +1,7 @@
 #include "radar.h"
 
+extern drawHelperStruct drawHelper;
+
 void radarInit(radarStruct* radar, servoDriverStruct* servo, TIM_HandleTypeDef* servo_tim, distanceSensorStruct* sensor, TIM_HandleTypeDef* sensor_tim)
 {
 	//TODO: assert arguments
@@ -104,6 +106,24 @@ bool radarSetPositionUpdateStep(radarStruct* radar, float step)
 	return false;
 }
 
+bool radarSetPositionMinMax(radarStruct* radar, float pos, bool isMin)
+{
+	if(pos >= 0.0 && pos <= 180.0)
+	{
+		if(isMin)
+		{
+			radar->positionMin = pos;
+		}
+		else
+		{
+			radar->positionMax = pos;
+		}
+		return true;
+	}
+
+	return false;
+}
+
 bool radarSetPosition(radarStruct* radar, float pos)
 {
 	if(servoDriverSetDegrees(radar->servo, pos))
@@ -138,6 +158,7 @@ bool radarSetMeasureFreq(radarStruct* radar, uint16_t periodMs)
 	if(periodMs > 10 && periodMs < UINT16_MAX)
 	{
 		radar->measurePeriodMs = periodMs;
+		__HAL_TIM_SET_COUNTER(radar->sensorTim, 0);
 		__HAL_TIM_SET_AUTORELOAD(radar->sensorTim, periodMs);
 		return true;
 	}
@@ -205,4 +226,101 @@ bool radarParseSetStep(radarStruct* radar, uint8_t* data)
 	}
 
 	return radarSetPositionUpdateStep(radar, newStep);
+}
+
+bool radarParseSetPositionMinMax(radarStruct* radar, uint8_t* data, bool isMin)
+{
+	float newPos = 0;
+	char* dataNew = NULL;
+	if(isMin)
+	{
+		dataNew = strnstr((char*) data, COMMAND_SET_RADAR_POS_MIN, strlen((char*)data));
+	}
+	else
+	{
+		dataNew = strnstr((char*) data, COMMAND_SET_RADAR_POS_MAX, strlen((char*)data));
+	}
+
+	if(dataNew == NULL)
+	{
+		return false;
+	}
+
+	if(isMin)
+	{
+		dataNew += strlen((char*) COMMAND_SET_RADAR_POS_MIN);
+	}
+	else
+	{
+		dataNew += strlen((char*) COMMAND_SET_RADAR_POS_MAX);
+	}
+
+	if (sscanf(dataNew, "%f", &newPos) != 1)
+	{
+		return false;
+	}
+
+	return radarSetPositionMinMax(radar, newPos, isMin);
+}
+
+bool radarParseSetMeasurePeriod(radarStruct* radar, uint8_t* data)
+{
+	int newPeriod = 0;
+	char* dataNew = strnstr((char*) data, COMMAND_SET_RADAR_SENSOR_PERIOD, strlen((char*)data));
+
+	if(dataNew == NULL)
+	{
+		return false;
+	}
+
+	dataNew += strlen((char*) COMMAND_SET_RADAR_SENSOR_PERIOD);
+
+	if (sscanf(dataNew, "%d", &newPeriod) != 1)
+	{
+		return false;
+	}
+
+	return radarSetMeasureFreq(radar, newPeriod);
+}
+
+bool radarParseSetDrawScale(radarStruct* radar, uint8_t* data)
+{
+	float newScale = 0;
+	char* dataNew = strnstr((char*) data, COMMAND_SET_RADAR_DRAW_SCALE, strlen((char*)data));
+
+	if(dataNew == NULL)
+	{
+		return false;
+	}
+
+	dataNew += strlen((char*) COMMAND_SET_RADAR_DRAW_SCALE);
+
+	if (sscanf(dataNew, "%f", &newScale) != 1)
+	{
+		return false;
+	}
+
+	drawClear();
+	return drawSetupUpdate(newScale, drawHelper.measureScalesNumber);
+}
+
+bool radarParseSetDrawRules(radarStruct* radar, uint8_t* data)
+{
+	float newRulesNum = 0;
+	char* dataNew = strnstr((char*) data, COMMAND_SET_RADAR_DRAW_RULES, strlen((char*)data));
+
+	if(dataNew == NULL)
+	{
+		return false;
+	}
+
+	dataNew += strlen((char*) COMMAND_SET_RADAR_DRAW_RULES);
+
+	if (sscanf(dataNew, "%f", &newRulesNum) != 1)
+	{
+		return false;
+	}
+
+	drawClear();
+	return drawSetupUpdate(drawHelper.measureScalesNumber, newRulesNum);
 }

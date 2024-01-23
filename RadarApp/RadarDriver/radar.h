@@ -10,7 +10,6 @@
 #include "usart_custom.h"
 
 typedef struct {
-
 	servoDriverStruct* servo;
 	float position;					// in degrees
 	TIM_HandleTypeDef* servoTim;
@@ -23,7 +22,6 @@ typedef struct {
 	distanceSensorStruct* sensor;
 	TIM_HandleTypeDef* sensorTim;
 	uint16_t measurePeriodMs;
-
 }radarStruct;
 
 void radarInit(radarStruct* radar, servoDriverStruct* servo, TIM_HandleTypeDef* servo_tim, distanceSensorStruct* sensor, TIM_HandleTypeDef* sensor_tim);
@@ -57,5 +55,9 @@ double radarGetMeasure(radarStruct* radar);
 //DATA PARSING//
 bool radarParseSetPosition(radarStruct* radar, uint8_t* data);
 bool radarParseSetStep(radarStruct* radar, uint8_t* data);
+bool radarParseSetPositionMinMax(radarStruct* radar, uint8_t* data, bool isMin);
+bool radarParseSetMeasurePeriod(radarStruct* radar, uint8_t* data);
+bool radarParseSetDrawScale(radarStruct* radar, uint8_t* data);
+bool radarParseSetDrawRules(radarStruct* radar, uint8_t* data);
 
 #endif

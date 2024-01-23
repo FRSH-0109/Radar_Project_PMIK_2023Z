@@ -40,7 +40,7 @@
 
 #define USING_IMAGE 1
 #if USING_IMAGE == 1
-#define USING_IMAGE_ROTATE 0
+#define USING_IMAGE_ROTATE 1
 #endif
 
 // Trygonometric graphic functions

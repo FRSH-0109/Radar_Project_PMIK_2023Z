@@ -31,12 +31,22 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdbool.h>
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
+#define DEGREES_TO_RADIANS M_PI / 180.0;
+#define DRAW_SCALE_DEFAULT 2
+#define MEASURE_SCALES_NUMBER_DEFAULT 3
 
+typedef struct {
+	double drawScale;
+	uint8_t measureScalesNumber;
+	uint16_t* measureScaleY;
+	uint16_t* measureScaleCm;
+	int16_t xp, yp;
+}drawHelperStruct;
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -53,7 +63,11 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+void drawClear();
+void drawSetup();
+bool drawSetupUpdate(double drawScale, uint8_t measureScalesNumber);
+void drawMeasure();
+void drawMeasureScale();
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/

@@ -14,7 +14,7 @@
   * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
-  */
+  *///TODO:
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -58,6 +58,7 @@ servoDriverStruct servoPA6;
 distanceSensorStruct distanceSensorPA2;
 
 radarStruct radar;
+drawHelperStruct drawHelper;
 
 UART_Custom_HandleTypeDef huartPC;
 UART_Queue uartQueuePC;
@@ -74,7 +75,6 @@ static void MX_NVIC_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
 /* USER CODE END 0 */
 
 /**
@@ -90,7 +90,8 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+
+	HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -118,6 +119,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   ILI9341_Init(&hspi1);
   ILI9341_WriteScreen(ILI9341_BLACK);
+  GFX_SetFont(font_8x5);
 
   servoDriverInit(&servoPA6, 0, 180, 700, 2650);
   distanceSensorInit(&distanceSensorPA2, 58.0f);
@@ -129,13 +131,12 @@ int main(void)
   radarInit(&radar, &servoPA6, &htim3, &distanceSensorPA2, &htim14);
   radarMeasureStart(&radar);
   radarServoStart(&radar);
+
+  drawSetup();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
-  double drawScale = 2;
-  double degreesToRadians = M_PI / 180.0;
 
   while (1)
   {
@@ -146,18 +147,9 @@ int main(void)
 	 uartQueueReceive(&uartQueuePC);
 	 uartQueueTransmit(&uartQueuePC, &huartPC);
 
-	 double dist = radarGetMeasure(&radar);
-	 double radians = radarGetPosition(&radar) * degreesToRadians;
-	 int16_t yk = round(sin(radians) * dist * drawScale);
-	 int16_t xk = round(cos(radians) * dist * drawScale);
-	 int16_t xp = 0, yp = 0;
+	 drawMeasure();
+	 drawMeasureScale();
 
-	 GFX_DrawLine(xp + ILI9341_TFTWIDTH / 2, yp + 10, xk + ILI9341_TFTWIDTH / 2, yk + 10, ILI9341_GREEN);
-
-	 if(radians >= 3.13 || radians <= 0.1)
-	 {
-		 ILI9341_WriteScreen(ILI9341_BLACK);
-	 }
   }
   /* USER CODE END 3 */
 }
@@ -219,6 +211,104 @@ static void MX_NVIC_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+void drawClear()
+{
+	ILI9341_WriteScreen(ILI9341_BLACK);
+}
+
+void drawSetup()
+{
+	drawHelper.drawScale = DRAW_SCALE_DEFAULT;
+	drawHelper.measureScalesNumber = MEASURE_SCALES_NUMBER_DEFAULT;
+
+	if(drawHelper.measureScaleY == NULL)
+	{
+		drawHelper.measureScaleY = malloc(drawHelper.measureScalesNumber * sizeof(uint16_t));
+	}
+
+	if(drawHelper.measureScaleCm == NULL)
+	{
+		drawHelper.measureScaleCm = malloc(drawHelper.measureScalesNumber * sizeof(uint16_t));
+	}
+
+	drawHelper.xp = ILI9341_TFTWIDTH / 2, drawHelper.yp = ILI9341_TFTHEIGHT - 10;
+	for(uint8_t i = 0; i < drawHelper.measureScalesNumber; ++i)
+	{
+		drawHelper.measureScaleY[i] = (ILI9341_TFTHEIGHT * (i + 1)) / (drawHelper.measureScalesNumber + 1);
+		drawHelper.measureScaleCm[i] = drawHelper.measureScaleY[i] / drawHelper.drawScale;
+	}
+}
+
+bool drawSetupUpdate(double drawScale, uint8_t measureScalesNumber)
+{
+	if(drawScale < 0)
+	{
+		return false;
+	}
+
+	if(measureScalesNumber > 10)
+	{
+		return false;
+	}
+	drawHelper.drawScale = drawScale;
+	drawHelper.measureScalesNumber = measureScalesNumber;
+
+	if(drawHelper.measureScaleY != NULL)
+	{
+		drawHelper.measureScaleY = realloc(drawHelper.measureScaleY, drawHelper.measureScalesNumber * sizeof(uint16_t));
+	}
+	else
+	{
+		drawHelper.measureScaleY = malloc(drawHelper.measureScalesNumber * sizeof(uint16_t));
+	}
+
+	if(drawHelper.measureScaleCm != NULL)
+	{
+		drawHelper.measureScaleCm = realloc(drawHelper.measureScaleCm, drawHelper.measureScalesNumber * sizeof(uint16_t));
+	}
+	else
+	{
+		drawHelper.measureScaleCm = malloc(drawHelper.measureScalesNumber * sizeof(uint16_t));
+	}
+
+	for(uint8_t i = 0; i < drawHelper.measureScalesNumber; ++i)
+	{
+		drawHelper.measureScaleY[i] = (ILI9341_TFTHEIGHT * (i + 1)) / (drawHelper.measureScalesNumber + 1);
+		drawHelper.measureScaleCm[i] = drawHelper.measureScaleY[i] / drawHelper.drawScale;
+	}
+
+	return true;
+}
+
+void drawMeasure()
+{
+	double posErrorTreshold = 0.5;
+	double dist = radarGetMeasure(&radar);
+	double pos = radarGetPosition(&radar);
+	double radians = pos * DEGREES_TO_RADIANS;
+	int16_t yk = round(sin(radians) * dist * drawHelper.drawScale);
+	int16_t xk = round(cos(radians) * dist * drawHelper.drawScale);
+
+	GFX_DrawLine(drawHelper.xp, drawHelper.yp, xk + ILI9341_TFTWIDTH / 2, drawHelper.yp - yk, ILI9341_GREEN);
+
+	if((pos + posErrorTreshold) >= radarGetPositionMax(&radar) || (pos - posErrorTreshold) <= radarGetPositionMin(&radar) )
+	{
+		drawClear();
+	}
+}
+
+void drawMeasureScale()
+{
+	for(uint8_t i = 0; i < drawHelper.measureScalesNumber; ++i)
+	{
+		GFX_DrawCircleHelper(drawHelper.xp, drawHelper.yp,  drawHelper.measureScaleY[i], 0x01, ILI9341_RED);
+		GFX_DrawCircleHelper(drawHelper.xp, drawHelper.yp,  drawHelper.measureScaleY[i], 0x02, ILI9341_RED);
+		char* value[10] = {0};
+		uint8_t len = sprintf((char *__restrict)value, "%dcm", drawHelper.measureScaleCm[i]);
+		GFX_DrawString(drawHelper.xp - len, drawHelper.yp - drawHelper.measureScaleY[i], (char *__restrict)value, ILI9341_RED);
+	}
+}
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
