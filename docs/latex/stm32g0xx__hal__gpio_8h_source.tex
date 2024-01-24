@@ -1,6 +1,6 @@
 \doxysection{stm32g0xx\+\_\+hal\+\_\+gpio.\+h}
-\hypertarget{stm32g0xx__hal__gpio_8h_source}{}\label{stm32g0xx__hal__gpio_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_gpio.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_gpio.h}}
-\mbox{\hyperlink{stm32g0xx__hal__gpio_8h}{Go to the documentation of this file.}}
+\label{stm32g0xx__hal__gpio_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_gpio.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_gpio.h}}
+\textbf{ Go to the documentation of this file.}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
 \DoxyCodeLine{00019\ \textcolor{comment}{/*\ Define\ to\ prevent\ recursive\ inclusion\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
@@ -12,24 +12,24 @@
 \DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00026\ }
 \DoxyCodeLine{00027\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
-\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32g0xx__hal__def_8h}{stm32g0xx\_hal\_def.h}}"{}}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}stm32g0xx\_hal\_def.h"{}}}
 \DoxyCodeLine{00029\ }
 \DoxyCodeLine{00039\ \textcolor{comment}{/*\ Exported\ types\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00040\ }
 \DoxyCodeLine{00047\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
 \DoxyCodeLine{00048\ \{}
-\DoxyCodeLine{00049\ \ \ uint32\_t\ \mbox{\hyperlink{struct_g_p_i_o___init_type_def_a871d0ab74071724e96b7cc9ae2a7532b}{Pin}};\ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00052\ \ \ uint32\_t\ \mbox{\hyperlink{struct_g_p_i_o___init_type_def_a0ffc93ec511ed9cf1663f6939bd3e839}{Mode}};\ \ \ \ \ \ \ }
-\DoxyCodeLine{00055\ \ \ uint32\_t\ \mbox{\hyperlink{struct_g_p_i_o___init_type_def_a6cdde08eb507b710f8179a4326548e26}{Pull}};\ \ \ \ \ \ \ }
-\DoxyCodeLine{00058\ \ \ uint32\_t\ \mbox{\hyperlink{struct_g_p_i_o___init_type_def_ad04b2041f59d32492ec36a891418f3fd}{Speed}};\ \ \ \ \ \ }
-\DoxyCodeLine{00061\ \ \ uint32\_t\ \mbox{\hyperlink{struct_g_p_i_o___init_type_def_a9a352764836bb14ec56a94f77697b52d}{Alternate}};\ \ }
-\DoxyCodeLine{00063\ \}\ \mbox{\hyperlink{struct_g_p_i_o___init_type_def}{GPIO\_InitTypeDef}};}
+\DoxyCodeLine{00049\ \ \ uint32\_t\ Pin;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ uint32\_t\ Mode;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00055\ \ \ uint32\_t\ Pull;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00058\ \ \ uint32\_t\ Speed;\ \ \ \ \ \ }
+\DoxyCodeLine{00061\ \ \ uint32\_t\ Alternate;\ \ }
+\DoxyCodeLine{00063\ \}\ GPIO\_InitTypeDef;}
 \DoxyCodeLine{00064\ }
 \DoxyCodeLine{00068\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
 \DoxyCodeLine{00069\ \{}
-\DoxyCodeLine{00070\ \ \ \mbox{\hyperlink{group___g_p_i_o___exported___types_gga5b3ef0486b179415581eb342e0ea6b43a90af2af95004ea61d76950ff3f2f6ec2}{GPIO\_PIN\_RESET}}\ =\ 0U,}
-\DoxyCodeLine{00071\ \ \ \mbox{\hyperlink{group___g_p_i_o___exported___types_gga5b3ef0486b179415581eb342e0ea6b43a746c062509db3ad1e47beed7527f9f8a}{GPIO\_PIN\_SET}}}
-\DoxyCodeLine{00072\ \}\ \mbox{\hyperlink{group___g_p_i_o___exported___types_ga5b3ef0486b179415581eb342e0ea6b43}{GPIO\_PinState}};}
+\DoxyCodeLine{00070\ \ \ GPIO\_PIN\_RESET\ =\ 0U,}
+\DoxyCodeLine{00071\ \ \ GPIO\_PIN\_SET}
+\DoxyCodeLine{00072\ \}\ GPIO\_PinState;}
 \DoxyCodeLine{00077\ \textcolor{comment}{/*\ Exported\ constants\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00084\ \textcolor{preprocessor}{\#define\ GPIO\_PIN\_0\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((uint16\_t)0x0001)\ \ }\textcolor{comment}{/*\ Pin\ 0\ selected\ \ \ \ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{00085\ \textcolor{preprocessor}{\#define\ GPIO\_PIN\_1\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((uint16\_t)0x0002)\ \ }\textcolor{comment}{/*\ Pin\ 1\ selected\ \ \ \ */}\textcolor{preprocessor}{}}
@@ -140,21 +140,21 @@
 \DoxyCodeLine{00299\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\_\_PULL\_\_)\ ==\ GPIO\_PULLUP)\ \ \ ||\ \(\backslash\)}}
 \DoxyCodeLine{00300\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\_\_PULL\_\_)\ ==\ GPIO\_PULLDOWN))}}
 \DoxyCodeLine{00305\ \textcolor{comment}{/*\ Include\ GPIO\ HAL\ Extended\ module\ */}}
-\DoxyCodeLine{00306\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32g0xx__hal__gpio__ex_8h}{stm32g0xx\_hal\_gpio\_ex.h}}"{}}}
+\DoxyCodeLine{00306\ \textcolor{preprocessor}{\#include\ "{}stm32g0xx\_hal\_gpio\_ex.h"{}}}
 \DoxyCodeLine{00307\ }
 \DoxyCodeLine{00308\ \textcolor{comment}{/*\ Exported\ functions\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00319\ \textcolor{comment}{/*\ Initialization\ and\ de-\/initialization\ functions\ *****************************/}}
-\DoxyCodeLine{00320\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___g_p_i_o___exported___functions___group1_ga41bda93b6dd639e4905fdb1454eff98e}{HAL\_GPIO\_Init}}(\mbox{\hyperlink{struct_g_p_i_o___type_def}{GPIO\_TypeDef}}\ \ *GPIOx,\ \mbox{\hyperlink{struct_g_p_i_o___init_type_def}{GPIO\_InitTypeDef}}\ *GPIO\_Init);}
-\DoxyCodeLine{00321\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___g_p_i_o___exported___functions___group1_gafe9c756b5aa18961032a3f8aa572959b}{HAL\_GPIO\_DeInit}}(\mbox{\hyperlink{struct_g_p_i_o___type_def}{GPIO\_TypeDef}}\ \ *GPIOx,\ uint32\_t\ GPIO\_Pin);}
+\DoxyCodeLine{00320\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_GPIO\_Init(GPIO\_TypeDef\ \ *GPIOx,\ GPIO\_InitTypeDef\ *GPIO\_Init);}
+\DoxyCodeLine{00321\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_GPIO\_DeInit(GPIO\_TypeDef\ \ *GPIOx,\ uint32\_t\ GPIO\_Pin);}
 \DoxyCodeLine{00322\ }
 \DoxyCodeLine{00332\ \textcolor{comment}{/*\ IO\ operation\ functions\ *****************************************************/}}
-\DoxyCodeLine{00333\ \mbox{\hyperlink{group___g_p_i_o___exported___types_ga5b3ef0486b179415581eb342e0ea6b43}{GPIO\_PinState}}\ \ \ \ \ \mbox{\hyperlink{group___g_p_i_o___exported___functions___group2_gaf2b819ea6551319ddd5670db318d2e4e}{HAL\_GPIO\_ReadPin}}(\mbox{\hyperlink{struct_g_p_i_o___type_def}{GPIO\_TypeDef}}\ *GPIOx,\ uint16\_t\ GPIO\_Pin);}
-\DoxyCodeLine{00334\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___g_p_i_o___exported___functions___group2_gaf4b97bdf533a02f51ef696d43b6da5c4}{HAL\_GPIO\_WritePin}}(\mbox{\hyperlink{struct_g_p_i_o___type_def}{GPIO\_TypeDef}}\ *GPIOx,\ uint16\_t\ GPIO\_Pin,\ \mbox{\hyperlink{group___g_p_i_o___exported___types_ga5b3ef0486b179415581eb342e0ea6b43}{GPIO\_PinState}}\ PinState);}
-\DoxyCodeLine{00335\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___g_p_i_o___exported___functions___group2_gaf5e0c89f752de5cdedcc30db068133f6}{HAL\_GPIO\_TogglePin}}(\mbox{\hyperlink{struct_g_p_i_o___type_def}{GPIO\_TypeDef}}\ *GPIOx,\ uint16\_t\ GPIO\_Pin);}
-\DoxyCodeLine{00336\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___g_p_i_o___exported___functions___group2_gad03c868b4a4fb25883c1bb86d0c7e9ca}{HAL\_GPIO\_LockPin}}(\mbox{\hyperlink{struct_g_p_i_o___type_def}{GPIO\_TypeDef}}\ *GPIOx,\ uint16\_t\ GPIO\_Pin);}
-\DoxyCodeLine{00337\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___g_p_i_o___exported___functions___group2_gaa5de1ec4ebdd47e3e2b786224adaa9d0}{HAL\_GPIO\_EXTI\_IRQHandler}}(uint16\_t\ GPIO\_Pin);}
-\DoxyCodeLine{00338\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___g_p_i_o___exported___functions___group2_ga537318eafe9182b60dc22ef54966c6a1}{HAL\_GPIO\_EXTI\_Rising\_Callback}}(uint16\_t\ GPIO\_Pin);}
-\DoxyCodeLine{00339\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___g_p_i_o___exported___functions___group2_ga0b334860563f4a109443e0a604af2300}{HAL\_GPIO\_EXTI\_Falling\_Callback}}(uint16\_t\ GPIO\_Pin);}
+\DoxyCodeLine{00333\ GPIO\_PinState\ \ \ \ \ HAL\_GPIO\_ReadPin(GPIO\_TypeDef\ *GPIOx,\ uint16\_t\ GPIO\_Pin);}
+\DoxyCodeLine{00334\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_GPIO\_WritePin(GPIO\_TypeDef\ *GPIOx,\ uint16\_t\ GPIO\_Pin,\ GPIO\_PinState\ PinState);}
+\DoxyCodeLine{00335\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_GPIO\_TogglePin(GPIO\_TypeDef\ *GPIOx,\ uint16\_t\ GPIO\_Pin);}
+\DoxyCodeLine{00336\ HAL\_StatusTypeDef\ HAL\_GPIO\_LockPin(GPIO\_TypeDef\ *GPIOx,\ uint16\_t\ GPIO\_Pin);}
+\DoxyCodeLine{00337\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_GPIO\_EXTI\_IRQHandler(uint16\_t\ GPIO\_Pin);}
+\DoxyCodeLine{00338\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_GPIO\_EXTI\_Rising\_Callback(uint16\_t\ GPIO\_Pin);}
+\DoxyCodeLine{00339\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_GPIO\_EXTI\_Falling\_Callback(uint16\_t\ GPIO\_Pin);}
 \DoxyCodeLine{00340\ }
 \DoxyCodeLine{00357\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
 \DoxyCodeLine{00358\ \}}

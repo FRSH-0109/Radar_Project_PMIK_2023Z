@@ -1,6 +1,6 @@
 \doxysection{stm32g0xx\+\_\+hal\+\_\+dma.\+h}
-\hypertarget{stm32g0xx__hal__dma_8h_source}{}\label{stm32g0xx__hal__dma_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_dma.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_dma.h}}
-\mbox{\hyperlink{stm32g0xx__hal__dma_8h}{Go to the documentation of this file.}}
+\label{stm32g0xx__hal__dma_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_dma.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_dma.h}}
+\textbf{ Go to the documentation of this file.}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
 \DoxyCodeLine{00019\ \textcolor{comment}{/*\ Define\ to\ prevent\ recursive\ inclusion\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
@@ -12,68 +12,68 @@
 \DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00026\ }
 \DoxyCodeLine{00027\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
-\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32g0xx__hal__def_8h}{stm32g0xx\_hal\_def.h}}"{}}}
-\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32g0xx__ll__dma_8h}{stm32g0xx\_ll\_dma.h}}"{}}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}stm32g0xx\_hal\_def.h"{}}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}stm32g0xx\_ll\_dma.h"{}}}
 \DoxyCodeLine{00030\ }
 \DoxyCodeLine{00039\ \textcolor{comment}{/*\ Exported\ types\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00047\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
 \DoxyCodeLine{00048\ \{}
-\DoxyCodeLine{00049\ \ \ uint32\_t\ \mbox{\hyperlink{struct_d_m_a___init_type_def_a59f46df02cf1237d6888518fe2100209}{Request}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00052\ \ \ uint32\_t\ \mbox{\hyperlink{struct_d_m_a___init_type_def_ab94410c1333b512e271b1c135fe50916}{Direction}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00056\ \ \ uint32\_t\ \mbox{\hyperlink{struct_d_m_a___init_type_def_a4925ca3ceb52340daddc92817dc304d9}{PeriphInc}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00059\ \ \ uint32\_t\ \mbox{\hyperlink{struct_d_m_a___init_type_def_a831756fbcd64feb1e570a9bf743b5b8d}{MemInc}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00062\ \ \ uint32\_t\ \mbox{\hyperlink{struct_d_m_a___init_type_def_aca5b89241171c093fd0fc6dacf72683c}{PeriphDataAlignment}};\ \ \ }
-\DoxyCodeLine{00065\ \ \ uint32\_t\ \mbox{\hyperlink{struct_d_m_a___init_type_def_afe3adac32f5411b1a744c030f398aa5e}{MemDataAlignment}};\ \ \ \ \ \ }
-\DoxyCodeLine{00068\ \ \ uint32\_t\ \mbox{\hyperlink{struct_d_m_a___init_type_def_a0ffc93ec511ed9cf1663f6939bd3e839}{Mode}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00073\ \ \ uint32\_t\ \mbox{\hyperlink{struct_d_m_a___init_type_def_a72acf77c0b19359eb70764505ae4bd70}{Priority}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00075\ \}\ \mbox{\hyperlink{struct_d_m_a___init_type_def}{DMA\_InitTypeDef}};}
+\DoxyCodeLine{00049\ \ \ uint32\_t\ Request;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ uint32\_t\ Direction;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00056\ \ \ uint32\_t\ PeriphInc;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00059\ \ \ uint32\_t\ MemInc;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00062\ \ \ uint32\_t\ PeriphDataAlignment;\ \ \ }
+\DoxyCodeLine{00065\ \ \ uint32\_t\ MemDataAlignment;\ \ \ \ \ \ }
+\DoxyCodeLine{00068\ \ \ uint32\_t\ Mode;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00073\ \ \ uint32\_t\ Priority;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00075\ \}\ DMA\_InitTypeDef;}
 \DoxyCodeLine{00076\ }
 \DoxyCodeLine{00080\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
 \DoxyCodeLine{00081\ \{}
-\DoxyCodeLine{00082\ \ \ \mbox{\hyperlink{group___d_m_a___exported___types_gga9c012af359987a240826f29073bbe463a9e7be73da32b8c837cde0318e0d5eed2}{HAL\_DMA\_STATE\_RESET}}\ \ \ \ \ \ \ \ \ \ \ \ \ =\ 0x00U,\ \ }
-\DoxyCodeLine{00083\ \ \ \mbox{\hyperlink{group___d_m_a___exported___types_gga9c012af359987a240826f29073bbe463ad497944e6e72bc3ca904694b1098105a}{HAL\_DMA\_STATE\_READY}}\ \ \ \ \ \ \ \ \ \ \ \ \ =\ 0x01U,\ \ }
-\DoxyCodeLine{00084\ \ \ \mbox{\hyperlink{group___d_m_a___exported___types_gga9c012af359987a240826f29073bbe463af7a0a2ca8de4e5be9e85b6a9073476ef}{HAL\_DMA\_STATE\_BUSY}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 0x02U,\ \ }
-\DoxyCodeLine{00085\ \ \ \mbox{\hyperlink{group___d_m_a___exported___types_gga9c012af359987a240826f29073bbe463acf3a5443bf4dc71018512a255e2076eb}{HAL\_DMA\_STATE\_TIMEOUT}}\ \ \ \ \ \ \ \ \ \ \ =\ 0x03U,\ \ }
-\DoxyCodeLine{00086\ \}\ \mbox{\hyperlink{group___d_m_a___exported___types_ga9c012af359987a240826f29073bbe463}{HAL\_DMA\_StateTypeDef}};}
+\DoxyCodeLine{00082\ \ \ HAL\_DMA\_STATE\_RESET\ \ \ \ \ \ \ \ \ \ \ \ \ =\ 0x00U,\ \ }
+\DoxyCodeLine{00083\ \ \ HAL\_DMA\_STATE\_READY\ \ \ \ \ \ \ \ \ \ \ \ \ =\ 0x01U,\ \ }
+\DoxyCodeLine{00084\ \ \ HAL\_DMA\_STATE\_BUSY\ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 0x02U,\ \ }
+\DoxyCodeLine{00085\ \ \ HAL\_DMA\_STATE\_TIMEOUT\ \ \ \ \ \ \ \ \ \ \ =\ 0x03U,\ \ }
+\DoxyCodeLine{00086\ \}\ HAL\_DMA\_StateTypeDef;}
 \DoxyCodeLine{00087\ }
 \DoxyCodeLine{00091\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
 \DoxyCodeLine{00092\ \{}
-\DoxyCodeLine{00093\ \ \ \mbox{\hyperlink{group___d_m_a___exported___types_ggaee3245eea8fa938edeb35a6c9596fd86a5314147c8ba21548763bf89446b78468}{HAL\_DMA\_FULL\_TRANSFER}}\ \ \ \ \ \ \ \ \ \ \ =\ 0x00U,\ \ }
-\DoxyCodeLine{00094\ \ \ \mbox{\hyperlink{group___d_m_a___exported___types_ggaee3245eea8fa938edeb35a6c9596fd86ad0ba8bc74a2ae6dcdc3e316e8be0d5d8}{HAL\_DMA\_HALF\_TRANSFER}}\ \ \ \ \ \ \ \ \ \ \ =\ 0x01U\ \ \ }
-\DoxyCodeLine{00095\ \}\ \mbox{\hyperlink{group___d_m_a___exported___types_gaee3245eea8fa938edeb35a6c9596fd86}{HAL\_DMA\_LevelCompleteTypeDef}};}
+\DoxyCodeLine{00093\ \ \ HAL\_DMA\_FULL\_TRANSFER\ \ \ \ \ \ \ \ \ \ \ =\ 0x00U,\ \ }
+\DoxyCodeLine{00094\ \ \ HAL\_DMA\_HALF\_TRANSFER\ \ \ \ \ \ \ \ \ \ \ =\ 0x01U\ \ \ }
+\DoxyCodeLine{00095\ \}\ HAL\_DMA\_LevelCompleteTypeDef;}
 \DoxyCodeLine{00096\ }
 \DoxyCodeLine{00100\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
 \DoxyCodeLine{00101\ \{}
-\DoxyCodeLine{00102\ \ \ \mbox{\hyperlink{group___d_m_a___exported___types_ggafbe8b2bd9ce2128de6cdc08ccde7e8ada7d4463d9db2e6d15282128b44ae08e12}{HAL\_DMA\_XFER\_CPLT\_CB\_ID}}\ \ \ \ \ \ \ \ \ \ =\ 0x00U,\ \ }
-\DoxyCodeLine{00103\ \ \ \mbox{\hyperlink{group___d_m_a___exported___types_ggafbe8b2bd9ce2128de6cdc08ccde7e8ada4b1606f39a4eec41d958bc878719f046}{HAL\_DMA\_XFER\_HALFCPLT\_CB\_ID}}\ \ \ \ \ \ =\ 0x01U,\ \ }
-\DoxyCodeLine{00104\ \ \ \mbox{\hyperlink{group___d_m_a___exported___types_ggafbe8b2bd9ce2128de6cdc08ccde7e8ada3e76bc89154e0b50333cc551bf0337a6}{HAL\_DMA\_XFER\_ERROR\_CB\_ID}}\ \ \ \ \ \ \ \ \ =\ 0x02U,\ \ }
-\DoxyCodeLine{00105\ \ \ \mbox{\hyperlink{group___d_m_a___exported___types_ggafbe8b2bd9ce2128de6cdc08ccde7e8ada3059a9412e0624699e9123ba2bccdf3e}{HAL\_DMA\_XFER\_ABORT\_CB\_ID}}\ \ \ \ \ \ \ \ \ =\ 0x03U,\ \ }
-\DoxyCodeLine{00106\ \ \ \mbox{\hyperlink{group___d_m_a___exported___types_ggafbe8b2bd9ce2128de6cdc08ccde7e8adac9935fd906719942d6b09cfd55e837f0}{HAL\_DMA\_XFER\_ALL\_CB\_ID}}\ \ \ \ \ \ \ \ \ \ \ =\ 0x04U\ \ \ }
-\DoxyCodeLine{00108\ \}\ \mbox{\hyperlink{group___d_m_a___exported___types_gafbe8b2bd9ce2128de6cdc08ccde7e8ad}{HAL\_DMA\_CallbackIDTypeDef}};}
+\DoxyCodeLine{00102\ \ \ HAL\_DMA\_XFER\_CPLT\_CB\_ID\ \ \ \ \ \ \ \ \ \ =\ 0x00U,\ \ }
+\DoxyCodeLine{00103\ \ \ HAL\_DMA\_XFER\_HALFCPLT\_CB\_ID\ \ \ \ \ \ =\ 0x01U,\ \ }
+\DoxyCodeLine{00104\ \ \ HAL\_DMA\_XFER\_ERROR\_CB\_ID\ \ \ \ \ \ \ \ \ =\ 0x02U,\ \ }
+\DoxyCodeLine{00105\ \ \ HAL\_DMA\_XFER\_ABORT\_CB\_ID\ \ \ \ \ \ \ \ \ =\ 0x03U,\ \ }
+\DoxyCodeLine{00106\ \ \ HAL\_DMA\_XFER\_ALL\_CB\_ID\ \ \ \ \ \ \ \ \ \ \ =\ 0x04U\ \ \ }
+\DoxyCodeLine{00108\ \}\ HAL\_DMA\_CallbackIDTypeDef;}
 \DoxyCodeLine{00109\ }
-\DoxyCodeLine{00113\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{\_\_DMA\_HandleTypeDef}}}
+\DoxyCodeLine{00113\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\_\_DMA\_HandleTypeDef}
 \DoxyCodeLine{00114\ \{}
-\DoxyCodeLine{00115\ \ \ \mbox{\hyperlink{struct_d_m_a___channel___type_def}{DMA\_Channel\_TypeDef}}\ \ \ \ \ \ \ \ \ \ \ \ \ *\mbox{\hyperlink{struct_____d_m_a___handle_type_def_adc5940b5bbf1fc712118cd40ff3ea69b}{Instance}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00117\ \ \ \mbox{\hyperlink{struct_d_m_a___init_type_def}{DMA\_InitTypeDef}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_____d_m_a___handle_type_def_a4352c7144ad5e1e4ab54a87d3be6eb62}{Init}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00119\ \ \ \mbox{\hyperlink{stm32g0xx__hal__def_8h_ab367482e943333a1299294eadaad284b}{HAL\_LockTypeDef}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_____d_m_a___handle_type_def_ad4cf225029dbefe8d3fe660c33b8bb6b}{Lock}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00121\ \ \ \mbox{\hyperlink{core__armv81mml_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}}\ \mbox{\hyperlink{group___d_m_a___exported___types_ga9c012af359987a240826f29073bbe463}{HAL\_DMA\_StateTypeDef}}\ \ \ \ \ \ \ \mbox{\hyperlink{struct_____d_m_a___handle_type_def_a2263083d2bfa96222f3d7b8339c6faf8}{State}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00123\ \ \ \textcolor{keywordtype}{void}\ \ \ *\mbox{\hyperlink{struct_____d_m_a___handle_type_def_a6ee5f2130887847bbc051932ea43b73d}{Parent}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00125\ \ \ void\ (*\ \mbox{\hyperlink{struct_____d_m_a___handle_type_def_a3d7716d1d7a5717f09525efd19334864}{XferCpltCallback}})(\textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{\_\_DMA\_HandleTypeDef}}\ *hdma);\ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00127\ \ \ void\ (*\ \mbox{\hyperlink{struct_____d_m_a___handle_type_def_aea6af14bab20d3f9a82f08df1abea01a}{XferHalfCpltCallback}})(\textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{\_\_DMA\_HandleTypeDef}}\ *hdma);\ \ \ \ }
-\DoxyCodeLine{00129\ \ \ void\ (*\ \mbox{\hyperlink{struct_____d_m_a___handle_type_def_a695c6fe664a7baf827e461652ebdb9e0}{XferErrorCallback}})(\textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{\_\_DMA\_HandleTypeDef}}\ *hdma);\ \ \ \ \ \ \ }
-\DoxyCodeLine{00131\ \ \ void\ (*\ \mbox{\hyperlink{struct_____d_m_a___handle_type_def_a6253dc8680e566bbc244228374dd647d}{XferAbortCallback}})(\textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{\_\_DMA\_HandleTypeDef}}\ *hdma);\ \ \ \ \ \ \ }
-\DoxyCodeLine{00133\ \ \ \mbox{\hyperlink{core__armv81mml_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}}\ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_____d_m_a___handle_type_def_a123c5063e6a3b1901b2fbe5f88c53a7e}{ErrorCode}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00115\ \ \ DMA\_Channel\_TypeDef\ \ \ \ \ \ \ \ \ \ \ \ \ *Instance;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00117\ \ \ DMA\_InitTypeDef\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Init;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00119\ \ \ HAL\_LockTypeDef\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Lock;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00121\ \ \ \_\_IO\ HAL\_DMA\_StateTypeDef\ \ \ \ \ \ \ State;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00123\ \ \ \textcolor{keywordtype}{void}\ \ \ *Parent;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00125\ \ \ void\ (*\ XferCpltCallback)(\textcolor{keyword}{struct\ }\_\_DMA\_HandleTypeDef\ *hdma);\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00127\ \ \ void\ (*\ XferHalfCpltCallback)(\textcolor{keyword}{struct\ }\_\_DMA\_HandleTypeDef\ *hdma);\ \ \ \ }
+\DoxyCodeLine{00129\ \ \ void\ (*\ XferErrorCallback)(\textcolor{keyword}{struct\ }\_\_DMA\_HandleTypeDef\ *hdma);\ \ \ \ \ \ \ }
+\DoxyCodeLine{00131\ \ \ void\ (*\ XferAbortCallback)(\textcolor{keyword}{struct\ }\_\_DMA\_HandleTypeDef\ *hdma);\ \ \ \ \ \ \ }
+\DoxyCodeLine{00133\ \ \ \_\_IO\ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ErrorCode;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00135\ \textcolor{preprocessor}{\#if\ defined(DMA2)}}
-\DoxyCodeLine{00136\ \ \ \mbox{\hyperlink{struct_d_m_a___type_def}{DMA\_TypeDef}}\ \ \ \ \ \ \ \ \ \ \ \ *DmaBaseAddress;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00136\ \ \ DMA\_TypeDef\ \ \ \ \ \ \ \ \ \ \ \ *DmaBaseAddress;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00138\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DMA2\ */}\textcolor{preprocessor}{}}
-\DoxyCodeLine{00139\ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_____d_m_a___handle_type_def_ae2d85e64eb57a8bccd3f70e74db09c31}{ChannelIndex}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00141\ \ \ \mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ \ \ \ \ \ \ \ \ \ \ *\mbox{\hyperlink{struct_____d_m_a___handle_type_def_a63aa7a453f14433a93bfc300db7e8eeb}{DMAmuxChannel}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00143\ \ \ \mbox{\hyperlink{struct_d_m_a_m_u_x___channel_status___type_def}{DMAMUX\_ChannelStatus\_TypeDef}}\ \ \ \ \ *\mbox{\hyperlink{struct_____d_m_a___handle_type_def_a382fc8a5a3c3eb587b7c75ece3448c93}{DMAmuxChannelStatus}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00145\ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_____d_m_a___handle_type_def_aa96798fa1c9d4cb63d4f80835de42984}{DMAmuxChannelStatusMask}};\ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00147\ \ \ \mbox{\hyperlink{struct_d_m_a_m_u_x___request_gen___type_def}{DMAMUX\_RequestGen\_TypeDef}}\ \ \ \ \ \ \ \ *\mbox{\hyperlink{struct_____d_m_a___handle_type_def_a7a9b5a2cdc6c1f7adbba53d8e4d86b83}{DMAmuxRequestGen}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00149\ \ \ \mbox{\hyperlink{struct_d_m_a_m_u_x___request_gen_status___type_def}{DMAMUX\_RequestGenStatus\_TypeDef}}\ \ *\mbox{\hyperlink{struct_____d_m_a___handle_type_def_ad3f4a59882ebacecb280c8569c9e9010}{DMAmuxRequestGenStatus}};\ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00151\ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_____d_m_a___handle_type_def_a38f76cde279730ad689ac03a85fffc02}{DMAmuxRequestGenStatusMask}};\ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00152\ \}\ \mbox{\hyperlink{group___d_m_a___exported___types_ga41b754a906b86bce54dc79938970138b}{DMA\_HandleTypeDef}};}
+\DoxyCodeLine{00139\ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ChannelIndex;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00141\ \ \ DMAMUX\_Channel\_TypeDef\ \ \ \ \ \ \ \ \ \ \ *DMAmuxChannel;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00143\ \ \ DMAMUX\_ChannelStatus\_TypeDef\ \ \ \ \ *DMAmuxChannelStatus;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00145\ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DMAmuxChannelStatusMask;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00147\ \ \ DMAMUX\_RequestGen\_TypeDef\ \ \ \ \ \ \ \ *DMAmuxRequestGen;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00149\ \ \ DMAMUX\_RequestGenStatus\_TypeDef\ \ *DMAmuxRequestGenStatus;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00151\ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DMAmuxRequestGenStatusMask;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00152\ \}\ DMA\_HandleTypeDef;}
 \DoxyCodeLine{00157\ \textcolor{comment}{/*\ Exported\ constants\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00158\ }
 \DoxyCodeLine{00166\ \textcolor{preprocessor}{\#define\ HAL\_DMA\_ERROR\_NONE\ \ \ \ \ \ \ \ \ \ \ 0x00000000U\ \ \ \ \ \ \ }}
@@ -426,28 +426,28 @@
 \DoxyCodeLine{00691\ \textcolor{preprocessor}{\#define\ \_\_HAL\_DMA\_GET\_COUNTER(\_\_HANDLE\_\_)\ ((\_\_HANDLE\_\_)-\/>Instance-\/>CNDTR)}}
 \DoxyCodeLine{00692\ }
 \DoxyCodeLine{00697\ \textcolor{comment}{/*\ Include\ DMA\ HAL\ Extension\ module\ */}}
-\DoxyCodeLine{00698\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32g0xx__hal__dma__ex_8h}{stm32g0xx\_hal\_dma\_ex.h}}"{}}}
+\DoxyCodeLine{00698\ \textcolor{preprocessor}{\#include\ "{}stm32g0xx\_hal\_dma\_ex.h"{}}}
 \DoxyCodeLine{00699\ }
 \DoxyCodeLine{00700\ \textcolor{comment}{/*\ Exported\ functions\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00701\ }
 \DoxyCodeLine{00709\ \textcolor{comment}{/*\ Initialization\ and\ de-\/initialization\ functions\ *****************************/}}
-\DoxyCodeLine{00710\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___d_m_a___exported___functions___group1_ga0fbcb690074233a03f2fa366dc22ff01}{HAL\_DMA\_Init}}(\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{DMA\_HandleTypeDef}}\ *hdma);}
-\DoxyCodeLine{00711\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___d_m_a___exported___functions___group1_ga7bb8587d642da11252a97f5c41c389ef}{HAL\_DMA\_DeInit}}(\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{DMA\_HandleTypeDef}}\ *hdma);}
+\DoxyCodeLine{00710\ HAL\_StatusTypeDef\ HAL\_DMA\_Init(DMA\_HandleTypeDef\ *hdma);}
+\DoxyCodeLine{00711\ HAL\_StatusTypeDef\ HAL\_DMA\_DeInit(DMA\_HandleTypeDef\ *hdma);}
 \DoxyCodeLine{00719\ \textcolor{comment}{/*\ IO\ operation\ functions\ *****************************************************/}}
-\DoxyCodeLine{00720\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___d_m_a___exported___functions___group2_ga96fbd9c285135f558fd9283a57406330}{HAL\_DMA\_Start}}(\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{DMA\_HandleTypeDef}}\ *hdma,\ uint32\_t\ SrcAddress,\ uint32\_t\ DstAddress,\ uint32\_t\ DataLength);}
-\DoxyCodeLine{00721\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___d_m_a___exported___functions___group2_ga7eddc0931ac8a3d77b23d6d5e68407c7}{HAL\_DMA\_Start\_IT}}(\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{DMA\_HandleTypeDef}}\ *hdma,\ uint32\_t\ SrcAddress,\ uint32\_t\ DstAddress,}
+\DoxyCodeLine{00720\ HAL\_StatusTypeDef\ HAL\_DMA\_Start(DMA\_HandleTypeDef\ *hdma,\ uint32\_t\ SrcAddress,\ uint32\_t\ DstAddress,\ uint32\_t\ DataLength);}
+\DoxyCodeLine{00721\ HAL\_StatusTypeDef\ HAL\_DMA\_Start\_IT(DMA\_HandleTypeDef\ *hdma,\ uint32\_t\ SrcAddress,\ uint32\_t\ DstAddress,}
 \DoxyCodeLine{00722\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ DataLength);}
-\DoxyCodeLine{00723\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___d_m_a___exported___functions___group2_ga001f9fb04328a7460f9ff16908ff987c}{HAL\_DMA\_Abort}}(\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{DMA\_HandleTypeDef}}\ *hdma);}
-\DoxyCodeLine{00724\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___d_m_a___exported___functions___group2_ga6677d7e614747341a58ffd7a048fd390}{HAL\_DMA\_Abort\_IT}}(\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{DMA\_HandleTypeDef}}\ *hdma);}
-\DoxyCodeLine{00725\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___d_m_a___exported___functions___group2_ga976a30472df973e3ad983f21289c9b5d}{HAL\_DMA\_PollForTransfer}}(\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{DMA\_HandleTypeDef}}\ *hdma,\ \mbox{\hyperlink{group___d_m_a___exported___types_gaee3245eea8fa938edeb35a6c9596fd86}{HAL\_DMA\_LevelCompleteTypeDef}}\ CompleteLevel,}
+\DoxyCodeLine{00723\ HAL\_StatusTypeDef\ HAL\_DMA\_Abort(DMA\_HandleTypeDef\ *hdma);}
+\DoxyCodeLine{00724\ HAL\_StatusTypeDef\ HAL\_DMA\_Abort\_IT(DMA\_HandleTypeDef\ *hdma);}
+\DoxyCodeLine{00725\ HAL\_StatusTypeDef\ HAL\_DMA\_PollForTransfer(DMA\_HandleTypeDef\ *hdma,\ HAL\_DMA\_LevelCompleteTypeDef\ CompleteLevel,}
 \DoxyCodeLine{00726\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ Timeout);}
-\DoxyCodeLine{00727\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_m_a___exported___functions___group2_ga8c8564d06f6d39b702af1c5cbb7dd54a}{HAL\_DMA\_IRQHandler}}(\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{DMA\_HandleTypeDef}}\ *hdma);}
-\DoxyCodeLine{00728\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___d_m_a___exported___functions___group2_gaabec77de08a59c94f2c6265ce7ae8261}{HAL\_DMA\_RegisterCallback}}(\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{DMA\_HandleTypeDef}}\ *hdma,\ \mbox{\hyperlink{group___d_m_a___exported___types_gafbe8b2bd9ce2128de6cdc08ccde7e8ad}{HAL\_DMA\_CallbackIDTypeDef}}\ CallbackID,\ \textcolor{keywordtype}{void}\ (*\ pCallback)(\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{DMA\_HandleTypeDef}}\ *\_hdma));}
-\DoxyCodeLine{00729\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___d_m_a___exported___functions___group2_ga87842d3780f0e54c7fb29a003e6b5ac4}{HAL\_DMA\_UnRegisterCallback}}(\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{DMA\_HandleTypeDef}}\ *hdma,\ \mbox{\hyperlink{group___d_m_a___exported___types_gafbe8b2bd9ce2128de6cdc08ccde7e8ad}{HAL\_DMA\_CallbackIDTypeDef}}\ CallbackID);}
+\DoxyCodeLine{00727\ \textcolor{keywordtype}{void}\ HAL\_DMA\_IRQHandler(DMA\_HandleTypeDef\ *hdma);}
+\DoxyCodeLine{00728\ HAL\_StatusTypeDef\ HAL\_DMA\_RegisterCallback(DMA\_HandleTypeDef\ *hdma,\ HAL\_DMA\_CallbackIDTypeDef\ CallbackID,\ \textcolor{keywordtype}{void}\ (*\ pCallback)(DMA\_HandleTypeDef\ *\_hdma));}
+\DoxyCodeLine{00729\ HAL\_StatusTypeDef\ HAL\_DMA\_UnRegisterCallback(DMA\_HandleTypeDef\ *hdma,\ HAL\_DMA\_CallbackIDTypeDef\ CallbackID);}
 \DoxyCodeLine{00730\ }
 \DoxyCodeLine{00738\ \textcolor{comment}{/*\ Peripheral\ State\ and\ Error\ functions\ ***************************************/}}
-\DoxyCodeLine{00739\ \mbox{\hyperlink{group___d_m_a___exported___types_ga9c012af359987a240826f29073bbe463}{HAL\_DMA\_StateTypeDef}}\ \mbox{\hyperlink{group___d_m_a___exported___functions___group3_gaef09509c41da57dc118c8ffb9533ce3f}{HAL\_DMA\_GetState}}(\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{DMA\_HandleTypeDef}}\ *hdma);}
-\DoxyCodeLine{00740\ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___d_m_a___exported___functions___group3_gabc0735694a0dd08e352b796d7fa7634f}{HAL\_DMA\_GetError}}(\mbox{\hyperlink{struct_____d_m_a___handle_type_def}{DMA\_HandleTypeDef}}\ *hdma);}
+\DoxyCodeLine{00739\ HAL\_DMA\_StateTypeDef\ HAL\_DMA\_GetState(DMA\_HandleTypeDef\ *hdma);}
+\DoxyCodeLine{00740\ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_DMA\_GetError(DMA\_HandleTypeDef\ *hdma);}
 \DoxyCodeLine{00749\ \textcolor{comment}{/*\ Private\ macros\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00754\ \textcolor{preprocessor}{\#define\ IS\_DMA\_DIRECTION(DIRECTION)\ \ \ \ \ \ \ \ \ \ \ \ \ (((DIRECTION)\ ==\ DMA\_PERIPH\_TO\_MEMORY\ )\ ||\ \(\backslash\)}}
 \DoxyCodeLine{00755\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((DIRECTION)\ ==\ DMA\_MEMORY\_TO\_PERIPH)\ \ ||\ \(\backslash\)}}

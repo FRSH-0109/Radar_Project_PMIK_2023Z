@@ -1,6 +1,6 @@
 \doxysection{stm32g0xx\+\_\+hal\+\_\+rcc.\+h}
-\hypertarget{stm32g0xx__hal__rcc_8h_source}{}\label{stm32g0xx__hal__rcc_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_rcc.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_rcc.h}}
-\mbox{\hyperlink{stm32g0xx__hal__rcc_8h}{Go to the documentation of this file.}}
+\label{stm32g0xx__hal__rcc_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_rcc.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_rcc.h}}
+\textbf{ Go to the documentation of this file.}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
 \DoxyCodeLine{00018\ \textcolor{comment}{/*\ Define\ to\ prevent\ recursive\ inclusion\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
@@ -12,8 +12,8 @@
 \DoxyCodeLine{00024\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00025\ }
 \DoxyCodeLine{00026\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
-\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32g0xx__hal__def_8h}{stm32g0xx\_hal\_def.h}}"{}}}
-\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32g0xx__ll__rcc_8h}{stm32g0xx\_ll\_rcc.h}}"{}}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ "{}stm32g0xx\_hal\_def.h"{}}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}stm32g0xx\_ll\_rcc.h"{}}}
 \DoxyCodeLine{00029\ }
 \DoxyCodeLine{00038\ \textcolor{comment}{/*\ Private\ constants\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00042\ \textcolor{comment}{/*\ Defines\ used\ for\ Flags\ */}}
@@ -212,41 +212,41 @@
 \DoxyCodeLine{00247\ \textcolor{comment}{/*\ Exported\ types\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00255\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
 \DoxyCodeLine{00256\ \{}
-\DoxyCodeLine{00257\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___p_l_l_init_type_def_ab3bb33f461bb409576e1c899c962e0b0}{PLLState}};\ \ \ }
-\DoxyCodeLine{00260\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___p_l_l_init_type_def_a418ecda4a355c6a161e4893a7bc1897f}{PLLSource}};\ \ }
-\DoxyCodeLine{00263\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___p_l_l_init_type_def_adb1ffaed93a1680042e24b5442b90af4}{PLLM}};\ \ \ \ \ \ \ }
-\DoxyCodeLine{00266\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___p_l_l_init_type_def_a2e8a73f7961f8d6570193c68daba88a6}{PLLN}};\ \ \ \ \ \ \ }
-\DoxyCodeLine{00269\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___p_l_l_init_type_def_ae2047a6040de6fcd43e0033a7b09a226}{PLLP}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00257\ \ \ uint32\_t\ PLLState;\ \ \ }
+\DoxyCodeLine{00260\ \ \ uint32\_t\ PLLSource;\ \ }
+\DoxyCodeLine{00263\ \ \ uint32\_t\ PLLM;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00266\ \ \ uint32\_t\ PLLN;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00269\ \ \ uint32\_t\ PLLP;\ \ \ \ \ \ \ }
 \DoxyCodeLine{00273\ \textcolor{preprocessor}{\#if\ defined(RCC\_PLLQ\_SUPPORT)}}
 \DoxyCodeLine{00274\ \ \ uint32\_t\ PLLQ;\ \ \ \ \ \ \ }
 \DoxyCodeLine{00277\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ RCC\_PLLQ\_SUPPORT\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{00278\ }
-\DoxyCodeLine{00279\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___p_l_l_init_type_def_a5777f8788531e0fc3f35b0e5d1c7a445}{PLLR}};\ \ \ \ \ \ \ }
-\DoxyCodeLine{00283\ \}\ \mbox{\hyperlink{struct_r_c_c___p_l_l_init_type_def}{RCC\_PLLInitTypeDef}};}
+\DoxyCodeLine{00279\ \ \ uint32\_t\ PLLR;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00283\ \}\ RCC\_PLLInitTypeDef;}
 \DoxyCodeLine{00284\ }
 \DoxyCodeLine{00288\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
 \DoxyCodeLine{00289\ \{}
-\DoxyCodeLine{00290\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___osc_init_type_def_a23b9d1da2a92936c618d2416406275a3}{OscillatorType}};\ \ \ \ \ \ \ }
-\DoxyCodeLine{00293\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___osc_init_type_def_ad499b1bbeeb8096235b534a9bfa53c9d}{HSEState}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00296\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___osc_init_type_def_abb72dd5bfb99667e36d99b6887f80a0a}{LSEState}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00299\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___osc_init_type_def_a49183e0be5cf522de0fa1968df0bf0d7}{HSIState}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00302\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___osc_init_type_def_a621a40ae95fb6f4f35c5a25b59dfc5f5}{HSIDiv}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00305\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___osc_init_type_def_ad28b977e258a3ee788cd6c2d72430c30}{HSICalibrationValue}};\ \ }
-\DoxyCodeLine{00308\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___osc_init_type_def_a9acc15f6278f950ef02d5d6f819f68e8}{LSIState}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00290\ \ \ uint32\_t\ OscillatorType;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00293\ \ \ uint32\_t\ HSEState;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00296\ \ \ uint32\_t\ LSEState;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00299\ \ \ uint32\_t\ HSIState;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00302\ \ \ uint32\_t\ HSIDiv;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00305\ \ \ uint32\_t\ HSICalibrationValue;\ \ }
+\DoxyCodeLine{00308\ \ \ uint32\_t\ LSIState;\ \ \ \ \ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00311\ \textcolor{preprocessor}{\#if\ defined(RCC\_HSI48\_SUPPORT)}}
 \DoxyCodeLine{00312\ \ \ uint32\_t\ HSI48State;\ \ \ \ \ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00315\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ RCC\_HSI48\_SUPPORT\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{00316\ }
-\DoxyCodeLine{00317\ \ \ \mbox{\hyperlink{struct_r_c_c___p_l_l_init_type_def}{RCC\_PLLInitTypeDef}}\ \mbox{\hyperlink{struct_r_c_c___osc_init_type_def_a7ec4025786fa81e2a4bfc42832c0eddf}{PLL}};\ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00319\ \}\ \mbox{\hyperlink{struct_r_c_c___osc_init_type_def}{RCC\_OscInitTypeDef}};}
+\DoxyCodeLine{00317\ \ \ RCC\_PLLInitTypeDef\ PLL;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00319\ \}\ RCC\_OscInitTypeDef;}
 \DoxyCodeLine{00320\ }
 \DoxyCodeLine{00324\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
 \DoxyCodeLine{00325\ \{}
-\DoxyCodeLine{00326\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___clk_init_type_def_afe92b105bff8e698233c286bb3018384}{ClockType}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00329\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___clk_init_type_def_a02b70c23b593a55814d887f483ea0871}{SYSCLKSource}};\ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00332\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___clk_init_type_def_a082c91ea9f270509aca7ae6ec42c2a54}{AHBCLKDivider}};\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00335\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_c_c___clk_init_type_def_a994aca51c40decfc340e045da1a6ca19}{APB1CLKDivider}};\ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00339\ \}\ \mbox{\hyperlink{struct_r_c_c___clk_init_type_def}{RCC\_ClkInitTypeDef}};}
+\DoxyCodeLine{00326\ \ \ uint32\_t\ ClockType;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00329\ \ \ uint32\_t\ SYSCLKSource;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00332\ \ \ uint32\_t\ AHBCLKDivider;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00335\ \ \ uint32\_t\ APB1CLKDivider;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00339\ \}\ RCC\_ClkInitTypeDef;}
 \DoxyCodeLine{00340\ }
 \DoxyCodeLine{00345\ \textcolor{comment}{/*\ Exported\ constants\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00353\ \textcolor{preprocessor}{\#define\ RCC\_DBP\_TIMEOUT\_VALUE\ \ \ \ \ \ \ \ \ \ 2U\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{/*\ 2\ ms\ (minimum\ Tick\ +\ 1)\ \ */}\textcolor{preprocessor}{}}
@@ -2015,30 +2015,30 @@
 \DoxyCodeLine{03061\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ RCC\_HSI48\_SUPPORT\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{03062\ }
 \DoxyCodeLine{03071\ \textcolor{comment}{/*\ Include\ RCC\ HAL\ Extended\ module\ */}}
-\DoxyCodeLine{03072\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32g0xx__hal__rcc__ex_8h}{stm32g0xx\_hal\_rcc\_ex.h}}"{}}}
+\DoxyCodeLine{03072\ \textcolor{preprocessor}{\#include\ "{}stm32g0xx\_hal\_rcc\_ex.h"{}}}
 \DoxyCodeLine{03073\ }
 \DoxyCodeLine{03074\ \textcolor{comment}{/*\ Exported\ functions\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{03084\ \textcolor{comment}{/*\ Initialization\ and\ de-\/initialization\ functions\ \ ******************************/}}
-\DoxyCodeLine{03085\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___r_c_c___exported___functions___group1_ga064f7d9878ecdc1d4852cba2b9e6a52e}{HAL\_RCC\_DeInit}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{03086\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___r_c_c___exported___functions___group1_ga9c504088722e03830df6caad932ad06b}{HAL\_RCC\_OscConfig}}(\mbox{\hyperlink{struct_r_c_c___osc_init_type_def}{RCC\_OscInitTypeDef}}\ *RCC\_OscInitStruct);}
-\DoxyCodeLine{03087\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___r_c_c___exported___functions___group1_gad0a4b5c7459219fafc15f3f867563ef3}{HAL\_RCC\_ClockConfig}}(\mbox{\hyperlink{struct_r_c_c___clk_init_type_def}{RCC\_ClkInitTypeDef}}\ *RCC\_ClkInitStruct,\ uint32\_t\ FLatency);}
+\DoxyCodeLine{03085\ HAL\_StatusTypeDef\ HAL\_RCC\_DeInit(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{03086\ HAL\_StatusTypeDef\ HAL\_RCC\_OscConfig(RCC\_OscInitTypeDef\ *RCC\_OscInitStruct);}
+\DoxyCodeLine{03087\ HAL\_StatusTypeDef\ HAL\_RCC\_ClockConfig(RCC\_ClkInitTypeDef\ *RCC\_ClkInitStruct,\ uint32\_t\ FLatency);}
 \DoxyCodeLine{03088\ }
 \DoxyCodeLine{03097\ \textcolor{comment}{/*\ Peripheral\ Control\ functions\ \ ************************************************/}}
-\DoxyCodeLine{03098\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___r_c_c___exported___functions___group2_ga9de46b9c4ecdb1a5e34136b051a6132c}{HAL\_RCC\_MCOConfig}}(uint32\_t\ RCC\_MCOx,\ uint32\_t\ RCC\_MCOSource,\ uint32\_t\ RCC\_MCODiv);}
-\DoxyCodeLine{03099\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___r_c_c___exported___functions___group2_gaa0f440ce71c18e95b12b2044cc044bea}{HAL\_RCC\_EnableCSS}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{03100\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___r_c_c___exported___functions___group2_gafe14ba91cb8921dd4801cd2540dd531b}{HAL\_RCC\_EnableLSECSS}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{03101\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___r_c_c___exported___functions___group2_ga77435ffa1ac91ae8e9b1920688a68038}{HAL\_RCC\_DisableLSECSS}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{03102\ uint32\_t\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___r_c_c___exported___functions___group2_ga887cafe88b21a059061b077a1e3fa7d8}{HAL\_RCC\_GetSysClockFreq}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{03103\ uint32\_t\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___r_c_c___exported___functions___group2_ga38d6c5c7a5d8758849912c9aa0a2156d}{HAL\_RCC\_GetHCLKFreq}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{03104\ uint32\_t\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___r_c_c___exported___functions___group2_gab3042d8ac5703ac696cabf0ee461c599}{HAL\_RCC\_GetPCLK1Freq}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{03105\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___r_c_c___exported___functions___group2_gae2f9413fc447c2d7d6af3a8669c77b36}{HAL\_RCC\_GetOscConfig}}(\mbox{\hyperlink{struct_r_c_c___osc_init_type_def}{RCC\_OscInitTypeDef}}\ *RCC\_OscInitStruct);}
-\DoxyCodeLine{03106\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___r_c_c___exported___functions___group2_gabc95375dfca279d88b9ded9d063d2323}{HAL\_RCC\_GetClockConfig}}(\mbox{\hyperlink{struct_r_c_c___clk_init_type_def}{RCC\_ClkInitTypeDef}}\ *RCC\_ClkInitStruct,\ uint32\_t\ *pFLatency);}
-\DoxyCodeLine{03107\ uint32\_t\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___r_c_c___exported___functions___group2_ga77803b82af5414509017b2c57e8bc1a2}{HAL\_RCC\_GetResetSource}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{03098\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_RCC\_MCOConfig(uint32\_t\ RCC\_MCOx,\ uint32\_t\ RCC\_MCOSource,\ uint32\_t\ RCC\_MCODiv);}
+\DoxyCodeLine{03099\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_RCC\_EnableCSS(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{03100\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_RCC\_EnableLSECSS(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{03101\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_RCC\_DisableLSECSS(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{03102\ uint32\_t\ \ \ \ \ \ \ \ \ \ HAL\_RCC\_GetSysClockFreq(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{03103\ uint32\_t\ \ \ \ \ \ \ \ \ \ HAL\_RCC\_GetHCLKFreq(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{03104\ uint32\_t\ \ \ \ \ \ \ \ \ \ HAL\_RCC\_GetPCLK1Freq(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{03105\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_RCC\_GetOscConfig(RCC\_OscInitTypeDef\ *RCC\_OscInitStruct);}
+\DoxyCodeLine{03106\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_RCC\_GetClockConfig(RCC\_ClkInitTypeDef\ *RCC\_ClkInitStruct,\ uint32\_t\ *pFLatency);}
+\DoxyCodeLine{03107\ uint32\_t\ \ \ \ \ \ \ \ \ \ HAL\_RCC\_GetResetSource(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{03108\ \textcolor{comment}{/*\ LSE\ \&\ HSE\ CSS\ NMI\ IRQ\ handler\ */}}
-\DoxyCodeLine{03109\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___r_c_c___exported___functions___group2_ga0c124cf403362750513cae7fb6e6b195}{HAL\_RCC\_NMI\_IRQHandler}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{03109\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_RCC\_NMI\_IRQHandler(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{03110\ \textcolor{comment}{/*\ User\ Callbacks\ in\ non\ blocking\ mode\ (IT\ mode)\ */}}
-\DoxyCodeLine{03111\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___r_c_c___exported___functions___group2_gaa05b9157de5a48617bd06eb6aafa68aa}{HAL\_RCC\_CSSCallback}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{03112\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___r_c_c___exported___functions___group2_ga229639f8ae637843fd9b41676b5b284d}{HAL\_RCC\_LSECSSCallback}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{03111\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_RCC\_CSSCallback(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{03112\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_RCC\_LSECSSCallback(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{03113\ }
 \DoxyCodeLine{03130\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
 \DoxyCodeLine{03131\ \}}

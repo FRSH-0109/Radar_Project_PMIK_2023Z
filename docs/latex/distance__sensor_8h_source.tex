@@ -1,6 +1,6 @@
 \doxysection{distance\+\_\+sensor.\+h}
-\hypertarget{distance__sensor_8h_source}{}\label{distance__sensor_8h_source}\index{RadarApp/DistanceSensorDriver/distance\_sensor.h@{RadarApp/DistanceSensorDriver/distance\_sensor.h}}
-\mbox{\hyperlink{distance__sensor_8h}{Go to the documentation of this file.}}
+\label{distance__sensor_8h_source}\index{RadarApp/DistanceSensorDriver/distance\_sensor.h@{RadarApp/DistanceSensorDriver/distance\_sensor.h}}
+\textbf{ Go to the documentation of this file.}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
 \DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ DISTANCE\_DRIVER\_H}}
@@ -11,24 +11,28 @@
 \DoxyCodeLine{00016\ }
 \DoxyCodeLine{00020\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
 \DoxyCodeLine{00021\ \{}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structdistance_sensor_struct_a2d7e5dd7a479c4c7aef6e6133a1441c5}{factor}};\ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00024\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{structdistance_sensor_struct_a633f87461ad14b25bca192cdf65d1604}{ticks}};\ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structdistance_sensor_struct_a0e5f10c80469543c7999d506055e4557}{distnace}};\ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structdistance_sensor_struct_a98d184d41dde3a0f043defb9ce57fb4a}{readyToMeasure}};\ \ }
-\DoxyCodeLine{00028\ \}\mbox{\hyperlink{structdistance_sensor_struct}{distanceSensorStruct}};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{double}\ factor;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ uint16\_t\ ticks;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{double}\ distnace;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ readyToMeasure;\ \ }
+\DoxyCodeLine{00028\ \}distanceSensorStruct;}
 \DoxyCodeLine{00029\ }
-\DoxyCodeLine{00030\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distance__sensor_8h_aea4bc35ea8c7e00d2399a54ba0eb870e}{distanceSensorInit}}(\mbox{\hyperlink{structdistance_sensor_struct}{distanceSensorStruct}}*\ sensor,\ \textcolor{keywordtype}{double}\ ticksToDistanceFactor);}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distance__sensor_8h_a6b42437e0654d88f5b7a68caa22a733c}{distanceSensorTrigOn}}(\mbox{\hyperlink{structdistance_sensor_struct}{distanceSensorStruct}}\ *sensor);}
-\DoxyCodeLine{00033\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distance__sensor_8h_a9b87431c23c2a12baa879f62f43bda05}{distanceSensorDelay}}(\mbox{\hyperlink{structdistance_sensor_struct}{distanceSensorStruct}}\ *sensor,\ uint32\_t\ delay);}
-\DoxyCodeLine{00034\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distance__sensor_8h_a902cb6ceee556ebfc81c8d1181d87cc9}{distanceSensorTrigOff}}(\mbox{\hyperlink{structdistance_sensor_struct}{distanceSensorStruct}}\ *sensor);}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distance__sensor_8h_a964e472531fcf3cede5de7d5b346e71b}{distanceSensorSendTrig}}(\mbox{\hyperlink{structdistance_sensor_struct}{distanceSensorStruct}}*\ sensor);}
-\DoxyCodeLine{00037\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distance__sensor_8h_a964997505302c61de0ece0f151663c4c}{distanceSensorGetEcho}}(\mbox{\hyperlink{structdistance_sensor_struct}{distanceSensorStruct}}*\ sensor,\ uint16\_t\ ticks);}
-\DoxyCodeLine{00038\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{distance__sensor_8h_a37c464e811677e7c95d8331281304d33}{distanceSensorGetReadyToMeasure}}(\mbox{\hyperlink{structdistance_sensor_struct}{distanceSensorStruct}}*\ sensor);}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00040\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distance__sensor_8h_af86e9e0dc722a2351b4e909023a53480}{distanceSensorGetDistance}}(\mbox{\hyperlink{structdistance_sensor_struct}{distanceSensorStruct}}*\ sensor);}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{void}\ distanceSensorInit(distanceSensorStruct*\ sensor,\ \textcolor{keywordtype}{double}\ ticksToDistanceFactor);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{void}\ distanceSensorTrigOn(distanceSensorStruct\ *sensor);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00051\ \textcolor{keywordtype}{void}\ distanceSensorDelay(distanceSensorStruct\ *sensor,\ uint32\_t\ delay);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \textcolor{keywordtype}{void}\ distanceSensorTrigOff(distanceSensorStruct\ *sensor);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00066\ \textcolor{keywordtype}{void}\ distanceSensorSendTrig(distanceSensorStruct*\ sensor);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00074\ \textcolor{keywordtype}{void}\ distanceSensorGetEcho(distanceSensorStruct*\ sensor,\ uint16\_t\ ticks);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00082\ \textcolor{keywordtype}{bool}\ distanceSensorGetReadyToMeasure(distanceSensorStruct*\ sensor);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00090\ \textcolor{keywordtype}{double}\ distanceSensorGetDistance(distanceSensorStruct*\ sensor);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

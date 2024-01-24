@@ -1,3 +1,14 @@
+/**
+ * @file radar_driver.h
+ * @author Kami Kośnik, Kacper Radzikowski
+ * @date 20 Nov 2023
+ * @brief File used to collapse ale used by radar stuff,
+ * sensors, servo's etc in one place.
+ *
+ * @see https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z
+ */
+
+
 #include "radar.h"
 
 extern drawHelperStruct drawHelper;

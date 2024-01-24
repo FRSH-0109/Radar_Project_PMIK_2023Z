@@ -1,6 +1,6 @@
 \doxysection{main.\+h}
-\hypertarget{main_8h_source}{}\label{main_8h_source}\index{Core/Inc/main.h@{Core/Inc/main.h}}
-\mbox{\hyperlink{main_8h}{Go to the documentation of this file.}}
+\label{main_8h_source}\index{Core/Inc/main.h@{Core/Inc/main.h}}
+\textbf{ Go to the documentation of this file.}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{/*\ USER\ CODE\ BEGIN\ Header\ */}}
 \DoxyCodeLine{00019\ \textcolor{comment}{/*\ USER\ CODE\ END\ Header\ */}}
@@ -14,7 +14,7 @@
 \DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00028\ }
 \DoxyCodeLine{00029\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
-\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32g0xx__hal_8h}{stm32g0xx\_hal.h}}"{}}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ "{}stm32g0xx\_hal.h"{}}}
 \DoxyCodeLine{00031\ }
 \DoxyCodeLine{00032\ \textcolor{comment}{/*\ Private\ includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00033\ \textcolor{comment}{/*\ USER\ CODE\ BEGIN\ Includes\ */}}
@@ -28,12 +28,12 @@
 \DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ MEASURE\_SCALES\_NUMBER\_DEFAULT\ 3}}
 \DoxyCodeLine{00042\ }
 \DoxyCodeLine{00043\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structdraw_helper_struct_aeb3238cbef436c3e4bac1fa66d733e99}{drawScale}};}
-\DoxyCodeLine{00045\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{structdraw_helper_struct_ab0b5ae05a58dca99008939a192b6594f}{measureScalesNumber}};}
-\DoxyCodeLine{00046\ \ \ \ \ uint16\_t*\ \mbox{\hyperlink{structdraw_helper_struct_a772a9fb57529d22b98649db8344199d1}{measureScaleY}};}
-\DoxyCodeLine{00047\ \ \ \ \ uint16\_t*\ \mbox{\hyperlink{structdraw_helper_struct_a8c9f16a7e18d06854e12f89c5fb5c031}{measureScaleCm}};}
-\DoxyCodeLine{00048\ \ \ \ \ int16\_t\ \mbox{\hyperlink{structdraw_helper_struct_affa6ef93faeb748b815a0edc0390aa14}{xp}},\ yp;}
-\DoxyCodeLine{00049\ \}\mbox{\hyperlink{structdraw_helper_struct}{drawHelperStruct}};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{double}\ drawScale;}
+\DoxyCodeLine{00045\ \ \ \ \ uint8\_t\ measureScalesNumber;}
+\DoxyCodeLine{00046\ \ \ \ \ uint16\_t*\ measureScaleY;}
+\DoxyCodeLine{00047\ \ \ \ \ uint16\_t*\ measureScaleCm;}
+\DoxyCodeLine{00048\ \ \ \ \ int16\_t\ xp,\ yp;}
+\DoxyCodeLine{00049\ \}drawHelperStruct;}
 \DoxyCodeLine{00050\ \textcolor{comment}{/*\ USER\ CODE\ END\ ET\ */}}
 \DoxyCodeLine{00051\ }
 \DoxyCodeLine{00052\ \textcolor{comment}{/*\ Exported\ constants\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
@@ -47,14 +47,14 @@
 \DoxyCodeLine{00060\ \textcolor{comment}{/*\ USER\ CODE\ END\ EM\ */}}
 \DoxyCodeLine{00061\ }
 \DoxyCodeLine{00062\ \textcolor{comment}{/*\ Exported\ functions\ prototypes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
-\DoxyCodeLine{00063\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00063\ \textcolor{keywordtype}{void}\ Error\_Handler(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00064\ }
 \DoxyCodeLine{00065\ \textcolor{comment}{/*\ USER\ CODE\ BEGIN\ EFP\ */}}
-\DoxyCodeLine{00066\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8h_a753dcda9075115cc1c781e4332085f84}{drawClear}}();}
-\DoxyCodeLine{00067\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8h_aedda947c024e77ba1f14c739913870bd}{drawSetup}}();}
-\DoxyCodeLine{00068\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{main_8h_ab3557cb07835dec370fd8b7855343aae}{drawSetupUpdate}}(\textcolor{keywordtype}{double}\ drawScale,\ uint8\_t\ measureScalesNumber);}
-\DoxyCodeLine{00069\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8h_ab5b93ed998b46e745b6713b6d7a27e32}{drawMeasure}}();}
-\DoxyCodeLine{00070\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8h_af9f0ac13160d4a1b3eb13b6a0fa76502}{drawMeasureScale}}();}
+\DoxyCodeLine{00066\ \textcolor{keywordtype}{void}\ drawClear();}
+\DoxyCodeLine{00067\ \textcolor{keywordtype}{void}\ drawSetup();}
+\DoxyCodeLine{00068\ \textcolor{keywordtype}{bool}\ drawSetupUpdate(\textcolor{keywordtype}{double}\ drawScale,\ uint8\_t\ measureScalesNumber);}
+\DoxyCodeLine{00069\ \textcolor{keywordtype}{void}\ drawMeasure();}
+\DoxyCodeLine{00070\ \textcolor{keywordtype}{void}\ drawMeasureScale();}
 \DoxyCodeLine{00071\ \textcolor{comment}{/*\ USER\ CODE\ END\ EFP\ */}}
 \DoxyCodeLine{00072\ }
 \DoxyCodeLine{00073\ \textcolor{comment}{/*\ Private\ defines\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}

@@ -1,6 +1,6 @@
 \doxysection{stm32g0xx\+\_\+hal\+\_\+exti.\+h}
-\hypertarget{stm32g0xx__hal__exti_8h_source}{}\label{stm32g0xx__hal__exti_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_exti.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_exti.h}}
-\mbox{\hyperlink{stm32g0xx__hal__exti_8h}{Go to the documentation of this file.}}
+\label{stm32g0xx__hal__exti_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_exti.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_exti.h}}
+\textbf{ Go to the documentation of this file.}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
 \DoxyCodeLine{00019\ \textcolor{comment}{/*\ Define\ to\ prevent\ recursive\ inclusion\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
@@ -12,32 +12,32 @@
 \DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00026\ }
 \DoxyCodeLine{00027\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
-\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32g0xx__hal__def_8h}{stm32g0xx\_hal\_def.h}}"{}}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}stm32g0xx\_hal\_def.h"{}}}
 \DoxyCodeLine{00029\ }
 \DoxyCodeLine{00039\ \textcolor{comment}{/*\ Exported\ types\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00040\ }
 \DoxyCodeLine{00044\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
 \DoxyCodeLine{00045\ \{}
-\DoxyCodeLine{00046\ \ \ \mbox{\hyperlink{group___e_x_t_i___exported___types_gga0ff36e8796a6ad3f2fc211e534c54c0ea9e0259c6eb4e5da890544489f133294b}{HAL\_EXTI\_COMMON\_CB\_ID}}\ \ \ \ \ \ \ \ \ \ =\ 0x00U,}
-\DoxyCodeLine{00047\ \ \ \mbox{\hyperlink{group___e_x_t_i___exported___types_gga0ff36e8796a6ad3f2fc211e534c54c0ea993a9cd5ef1967d498d127c413e40939}{HAL\_EXTI\_RISING\_CB\_ID}}\ \ \ \ \ \ \ \ \ \ =\ 0x01U,}
-\DoxyCodeLine{00048\ \ \ \mbox{\hyperlink{group___e_x_t_i___exported___types_gga0ff36e8796a6ad3f2fc211e534c54c0ea63a3d2d4561a471c3a5123e0df528841}{HAL\_EXTI\_FALLING\_CB\_ID}}\ \ \ \ \ \ \ \ \ =\ 0x02U,}
-\DoxyCodeLine{00049\ \}\ \mbox{\hyperlink{group___e_x_t_i___exported___types_ga0ff36e8796a6ad3f2fc211e534c54c0e}{EXTI\_CallbackIDTypeDef}};}
+\DoxyCodeLine{00046\ \ \ HAL\_EXTI\_COMMON\_CB\_ID\ \ \ \ \ \ \ \ \ \ =\ 0x00U,}
+\DoxyCodeLine{00047\ \ \ HAL\_EXTI\_RISING\_CB\_ID\ \ \ \ \ \ \ \ \ \ =\ 0x01U,}
+\DoxyCodeLine{00048\ \ \ HAL\_EXTI\_FALLING\_CB\_ID\ \ \ \ \ \ \ \ \ =\ 0x02U,}
+\DoxyCodeLine{00049\ \}\ EXTI\_CallbackIDTypeDef;}
 \DoxyCodeLine{00050\ }
 \DoxyCodeLine{00051\ }
 \DoxyCodeLine{00055\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
 \DoxyCodeLine{00056\ \{}
-\DoxyCodeLine{00057\ \ \ uint32\_t\ \mbox{\hyperlink{struct_e_x_t_i___handle_type_def_a9c7a78e876a7dfb279a16029f915463f}{Line}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00057\ \ \ uint32\_t\ Line;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00058\ \ \ void\ (*\ RisingCallback)(void);\ \ \ \ }
 \DoxyCodeLine{00059\ \ \ void\ (*\ FallingCallback)(void);\ \ \ }
-\DoxyCodeLine{00060\ \}\ \mbox{\hyperlink{struct_e_x_t_i___handle_type_def}{EXTI\_HandleTypeDef}};}
+\DoxyCodeLine{00060\ \}\ EXTI\_HandleTypeDef;}
 \DoxyCodeLine{00061\ }
 \DoxyCodeLine{00065\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
 \DoxyCodeLine{00066\ \{}
-\DoxyCodeLine{00067\ \ \ uint32\_t\ \mbox{\hyperlink{struct_e_x_t_i___config_type_def_a9c7a78e876a7dfb279a16029f915463f}{Line}};\ \ \ \ \ \ }
-\DoxyCodeLine{00069\ \ \ uint32\_t\ \mbox{\hyperlink{struct_e_x_t_i___config_type_def_a0ffc93ec511ed9cf1663f6939bd3e839}{Mode}};\ \ \ \ \ \ }
-\DoxyCodeLine{00071\ \ \ uint32\_t\ \mbox{\hyperlink{struct_e_x_t_i___config_type_def_a73dd50a4d440463bf9e1cb02b72ac706}{Trigger}};\ \ \ }
-\DoxyCodeLine{00073\ \ \ uint32\_t\ \mbox{\hyperlink{struct_e_x_t_i___config_type_def_ac9316e39886afa2fee1ff41a6e34c379}{GPIOSel}};\ \ \ }
-\DoxyCodeLine{00076\ \}\ \mbox{\hyperlink{struct_e_x_t_i___config_type_def}{EXTI\_ConfigTypeDef}};}
+\DoxyCodeLine{00067\ \ \ uint32\_t\ Line;\ \ \ \ \ \ }
+\DoxyCodeLine{00069\ \ \ uint32\_t\ Mode;\ \ \ \ \ \ }
+\DoxyCodeLine{00071\ \ \ uint32\_t\ Trigger;\ \ \ }
+\DoxyCodeLine{00073\ \ \ uint32\_t\ GPIOSel;\ \ \ }
+\DoxyCodeLine{00076\ \}\ EXTI\_ConfigTypeDef;}
 \DoxyCodeLine{00077\ }
 \DoxyCodeLine{00082\ \textcolor{comment}{/*\ Exported\ constants\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00090\ \textcolor{preprocessor}{\#define\ EXTI\_LINE\_0\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (EXTI\_GPIO\ \ \ \ \ |\ EXTI\_REG1\ |\ 0x00u)}}
@@ -220,16 +220,16 @@
 \DoxyCodeLine{00330\ }
 \DoxyCodeLine{00336\ \textcolor{comment}{/*\ Exported\ functions\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00346\ \textcolor{comment}{/*\ Configuration\ functions\ ****************************************************/}}
-\DoxyCodeLine{00347\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___e_x_t_i___exported___functions___group1_ga21c31dc6d13f1e32b4352e00ab6ad2b3}{HAL\_EXTI\_SetConfigLine}}(\mbox{\hyperlink{struct_e_x_t_i___handle_type_def}{EXTI\_HandleTypeDef}}\ *hexti,\ \mbox{\hyperlink{struct_e_x_t_i___config_type_def}{EXTI\_ConfigTypeDef}}\ *pExtiConfig);}
-\DoxyCodeLine{00348\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___e_x_t_i___exported___functions___group1_gabc6617165a2712df438f38509c8205dd}{HAL\_EXTI\_GetConfigLine}}(\mbox{\hyperlink{struct_e_x_t_i___handle_type_def}{EXTI\_HandleTypeDef}}\ *hexti,\ \mbox{\hyperlink{struct_e_x_t_i___config_type_def}{EXTI\_ConfigTypeDef}}\ *pExtiConfig);}
-\DoxyCodeLine{00349\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___e_x_t_i___exported___functions___group1_gae8ed1defdcf965a62618af09c45c7866}{HAL\_EXTI\_ClearConfigLine}}(\mbox{\hyperlink{struct_e_x_t_i___handle_type_def}{EXTI\_HandleTypeDef}}\ *hexti);}
-\DoxyCodeLine{00350\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___e_x_t_i___exported___functions___group1_gacb6ee7e9f2429c3c3a1c99d4fe2d26d7}{HAL\_EXTI\_RegisterCallback}}(\mbox{\hyperlink{struct_e_x_t_i___handle_type_def}{EXTI\_HandleTypeDef}}\ *hexti,\ \mbox{\hyperlink{group___e_x_t_i___exported___types_ga0ff36e8796a6ad3f2fc211e534c54c0e}{EXTI\_CallbackIDTypeDef}}\ CallbackID,\ \textcolor{keywordtype}{void}\ (*pPendingCbfn)(\textcolor{keywordtype}{void}));}
-\DoxyCodeLine{00351\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___e_x_t_i___exported___functions___group1_gaa5856ee92dc1265db144af025673ee46}{HAL\_EXTI\_GetHandle}}(\mbox{\hyperlink{struct_e_x_t_i___handle_type_def}{EXTI\_HandleTypeDef}}\ *hexti,\ uint32\_t\ ExtiLine);}
+\DoxyCodeLine{00347\ HAL\_StatusTypeDef\ HAL\_EXTI\_SetConfigLine(EXTI\_HandleTypeDef\ *hexti,\ EXTI\_ConfigTypeDef\ *pExtiConfig);}
+\DoxyCodeLine{00348\ HAL\_StatusTypeDef\ HAL\_EXTI\_GetConfigLine(EXTI\_HandleTypeDef\ *hexti,\ EXTI\_ConfigTypeDef\ *pExtiConfig);}
+\DoxyCodeLine{00349\ HAL\_StatusTypeDef\ HAL\_EXTI\_ClearConfigLine(EXTI\_HandleTypeDef\ *hexti);}
+\DoxyCodeLine{00350\ HAL\_StatusTypeDef\ HAL\_EXTI\_RegisterCallback(EXTI\_HandleTypeDef\ *hexti,\ EXTI\_CallbackIDTypeDef\ CallbackID,\ \textcolor{keywordtype}{void}\ (*pPendingCbfn)(\textcolor{keywordtype}{void}));}
+\DoxyCodeLine{00351\ HAL\_StatusTypeDef\ HAL\_EXTI\_GetHandle(EXTI\_HandleTypeDef\ *hexti,\ uint32\_t\ ExtiLine);}
 \DoxyCodeLine{00360\ \textcolor{comment}{/*\ IO\ operation\ functions\ *****************************************************/}}
-\DoxyCodeLine{00361\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___e_x_t_i___exported___functions___group2_ga241422a810a8e2aeb0cd8467145d33bb}{HAL\_EXTI\_IRQHandler}}(\mbox{\hyperlink{struct_e_x_t_i___handle_type_def}{EXTI\_HandleTypeDef}}\ *hexti);}
-\DoxyCodeLine{00362\ uint32\_t\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___e_x_t_i___exported___functions___group2_ga96319c70ad567d85105e4608f8b0887e}{HAL\_EXTI\_GetPending}}(\mbox{\hyperlink{struct_e_x_t_i___handle_type_def}{EXTI\_HandleTypeDef}}\ *hexti,\ uint32\_t\ Edge);}
-\DoxyCodeLine{00363\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___e_x_t_i___exported___functions___group2_gaa99dea85ad2aea36f0abbe022a82664d}{HAL\_EXTI\_ClearPending}}(\mbox{\hyperlink{struct_e_x_t_i___handle_type_def}{EXTI\_HandleTypeDef}}\ *hexti,\ uint32\_t\ Edge);}
-\DoxyCodeLine{00364\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___e_x_t_i___exported___functions___group2_ga6deebffde84bc80fa9ff1b7faa38615a}{HAL\_EXTI\_GenerateSWI}}(\mbox{\hyperlink{struct_e_x_t_i___handle_type_def}{EXTI\_HandleTypeDef}}\ *hexti);}
+\DoxyCodeLine{00361\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_EXTI\_IRQHandler(EXTI\_HandleTypeDef\ *hexti);}
+\DoxyCodeLine{00362\ uint32\_t\ \ \ \ \ \ \ \ \ \ HAL\_EXTI\_GetPending(EXTI\_HandleTypeDef\ *hexti,\ uint32\_t\ Edge);}
+\DoxyCodeLine{00363\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_EXTI\_ClearPending(EXTI\_HandleTypeDef\ *hexti,\ uint32\_t\ Edge);}
+\DoxyCodeLine{00364\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_EXTI\_GenerateSWI(EXTI\_HandleTypeDef\ *hexti);}
 \DoxyCodeLine{00365\ }
 \DoxyCodeLine{00382\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
 \DoxyCodeLine{00383\ \}}

@@ -1,5 +1,5 @@
 \doxysection{RCC\+\_\+\+PLLInit\+Type\+Def Struct Reference}
-\hypertarget{struct_r_c_c___p_l_l_init_type_def}{}\label{struct_r_c_c___p_l_l_init_type_def}\index{RCC\_PLLInitTypeDef@{RCC\_PLLInitTypeDef}}
+\label{struct_r_c_c___p_l_l_init_type_def}\index{RCC\_PLLInitTypeDef@{RCC\_PLLInitTypeDef}}
 
 
 RCC PLL configuration structure definition.  
@@ -12,17 +12,17 @@ RCC PLL configuration structure definition.
 \doxysubsubsection*{Data Fields}
 \begin{DoxyCompactItemize}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{struct_r_c_c___p_l_l_init_type_def_ab3bb33f461bb409576e1c899c962e0b0}{PLLState}}
+uint32\+\_\+t \textbf{ PLLState}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{struct_r_c_c___p_l_l_init_type_def_a418ecda4a355c6a161e4893a7bc1897f}{PLLSource}}
+uint32\+\_\+t \textbf{ PLLSource}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{struct_r_c_c___p_l_l_init_type_def_adb1ffaed93a1680042e24b5442b90af4}{PLLM}}
+uint32\+\_\+t \textbf{ PLLM}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{struct_r_c_c___p_l_l_init_type_def_a2e8a73f7961f8d6570193c68daba88a6}{PLLN}}
+uint32\+\_\+t \textbf{ PLLN}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{struct_r_c_c___p_l_l_init_type_def_ae2047a6040de6fcd43e0033a7b09a226}{PLLP}}
+uint32\+\_\+t \textbf{ PLLP}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{struct_r_c_c___p_l_l_init_type_def_a5777f8788531e0fc3f35b0e5d1c7a445}{PLLR}}
+uint32\+\_\+t \textbf{ PLLR}
 \end{DoxyCompactItemize}
 
 
@@ -30,50 +30,50 @@ uint32\+\_\+t \mbox{\hyperlink{struct_r_c_c___p_l_l_init_type_def_a5777f8788531e
 RCC PLL configuration structure definition. 
 
 \doxysubsection{Field Documentation}
-\Hypertarget{struct_r_c_c___p_l_l_init_type_def_adb1ffaed93a1680042e24b5442b90af4}\label{struct_r_c_c___p_l_l_init_type_def_adb1ffaed93a1680042e24b5442b90af4} 
+\label{struct_r_c_c___p_l_l_init_type_def_adb1ffaed93a1680042e24b5442b90af4} 
 \index{RCC\_PLLInitTypeDef@{RCC\_PLLInitTypeDef}!PLLM@{PLLM}}
 \index{PLLM@{PLLM}!RCC\_PLLInitTypeDef@{RCC\_PLLInitTypeDef}}
-\doxysubsubsection{\texorpdfstring{PLLM}{PLLM}}
+\doxysubsubsection{PLLM}
 {\footnotesize\ttfamily uint32\+\_\+t PLLM}
 
-PLLM\+: Division factor for PLL VCO input clock. This parameter must be a value of \doxylink{group___r_c_c___p_l_l_m___clock___divider}{PLLM Clock Divider} ~\newline
- \Hypertarget{struct_r_c_c___p_l_l_init_type_def_a2e8a73f7961f8d6570193c68daba88a6}\label{struct_r_c_c___p_l_l_init_type_def_a2e8a73f7961f8d6570193c68daba88a6} 
+PLLM\+: Division factor for PLL VCO input clock. This parameter must be a value of \doxyref{PLLM Clock Divider}{p.}{group___r_c_c___p_l_l_m___clock___divider} ~\newline
+ \label{struct_r_c_c___p_l_l_init_type_def_a2e8a73f7961f8d6570193c68daba88a6} 
 \index{RCC\_PLLInitTypeDef@{RCC\_PLLInitTypeDef}!PLLN@{PLLN}}
 \index{PLLN@{PLLN}!RCC\_PLLInitTypeDef@{RCC\_PLLInitTypeDef}}
-\doxysubsubsection{\texorpdfstring{PLLN}{PLLN}}
+\doxysubsubsection{PLLN}
 {\footnotesize\ttfamily uint32\+\_\+t PLLN}
 
 PLLN\+: Multiplication factor for PLL VCO output clock. This parameter must be a number between Min\+\_\+\+Data = 8 and Max\+\_\+\+Data = 86 ~\newline
- \Hypertarget{struct_r_c_c___p_l_l_init_type_def_ae2047a6040de6fcd43e0033a7b09a226}\label{struct_r_c_c___p_l_l_init_type_def_ae2047a6040de6fcd43e0033a7b09a226} 
+ \label{struct_r_c_c___p_l_l_init_type_def_ae2047a6040de6fcd43e0033a7b09a226} 
 \index{RCC\_PLLInitTypeDef@{RCC\_PLLInitTypeDef}!PLLP@{PLLP}}
 \index{PLLP@{PLLP}!RCC\_PLLInitTypeDef@{RCC\_PLLInitTypeDef}}
-\doxysubsubsection{\texorpdfstring{PLLP}{PLLP}}
+\doxysubsubsection{PLLP}
 {\footnotesize\ttfamily uint32\+\_\+t PLLP}
 
-PLLP\+: PLL Division factor. User have to set the PLLQ parameter correctly to not exceed max frequency 64MHZ. This parameter must be a value of \doxylink{group___r_c_c___p_l_l_p___clock___divider}{PLLP Clock Divider} ~\newline
- \Hypertarget{struct_r_c_c___p_l_l_init_type_def_a5777f8788531e0fc3f35b0e5d1c7a445}\label{struct_r_c_c___p_l_l_init_type_def_a5777f8788531e0fc3f35b0e5d1c7a445} 
+PLLP\+: PLL Division factor. User have to set the PLLQ parameter correctly to not exceed max frequency 64MHZ. This parameter must be a value of \doxyref{PLLP Clock Divider}{p.}{group___r_c_c___p_l_l_p___clock___divider} ~\newline
+ \label{struct_r_c_c___p_l_l_init_type_def_a5777f8788531e0fc3f35b0e5d1c7a445} 
 \index{RCC\_PLLInitTypeDef@{RCC\_PLLInitTypeDef}!PLLR@{PLLR}}
 \index{PLLR@{PLLR}!RCC\_PLLInitTypeDef@{RCC\_PLLInitTypeDef}}
-\doxysubsubsection{\texorpdfstring{PLLR}{PLLR}}
+\doxysubsubsection{PLLR}
 {\footnotesize\ttfamily uint32\+\_\+t PLLR}
 
-PLLR\+: PLL Division for the main system clock. User have to set the PLLR parameter correctly to not exceed max frequency 64MHZ. This parameter must be a value of \doxylink{group___r_c_c___p_l_l_r___clock___divider}{PLLR Clock Divider} ~\newline
- \Hypertarget{struct_r_c_c___p_l_l_init_type_def_a418ecda4a355c6a161e4893a7bc1897f}\label{struct_r_c_c___p_l_l_init_type_def_a418ecda4a355c6a161e4893a7bc1897f} 
+PLLR\+: PLL Division for the main system clock. User have to set the PLLR parameter correctly to not exceed max frequency 64MHZ. This parameter must be a value of \doxyref{PLLR Clock Divider}{p.}{group___r_c_c___p_l_l_r___clock___divider} ~\newline
+ \label{struct_r_c_c___p_l_l_init_type_def_a418ecda4a355c6a161e4893a7bc1897f} 
 \index{RCC\_PLLInitTypeDef@{RCC\_PLLInitTypeDef}!PLLSource@{PLLSource}}
 \index{PLLSource@{PLLSource}!RCC\_PLLInitTypeDef@{RCC\_PLLInitTypeDef}}
-\doxysubsubsection{\texorpdfstring{PLLSource}{PLLSource}}
+\doxysubsubsection{PLLSource}
 {\footnotesize\ttfamily uint32\+\_\+t PLLSource}
 
-RCC\+\_\+\+PLLSource\+: PLL entry clock source. This parameter must be a value of \doxylink{group___r_c_c___p_l_l___clock___source}{PLL Clock Source} ~\newline
- \Hypertarget{struct_r_c_c___p_l_l_init_type_def_ab3bb33f461bb409576e1c899c962e0b0}\label{struct_r_c_c___p_l_l_init_type_def_ab3bb33f461bb409576e1c899c962e0b0} 
+RCC\+\_\+\+PLLSource\+: PLL entry clock source. This parameter must be a value of \doxyref{PLL Clock Source}{p.}{group___r_c_c___p_l_l___clock___source} ~\newline
+ \label{struct_r_c_c___p_l_l_init_type_def_ab3bb33f461bb409576e1c899c962e0b0} 
 \index{RCC\_PLLInitTypeDef@{RCC\_PLLInitTypeDef}!PLLState@{PLLState}}
 \index{PLLState@{PLLState}!RCC\_PLLInitTypeDef@{RCC\_PLLInitTypeDef}}
-\doxysubsubsection{\texorpdfstring{PLLState}{PLLState}}
+\doxysubsubsection{PLLState}
 {\footnotesize\ttfamily uint32\+\_\+t PLLState}
 
-The new state of the PLL. This parameter can be a value of \doxylink{group___r_c_c___p_l_l___config}{PLL Config} ~\newline
+The new state of the PLL. This parameter can be a value of \doxyref{PLL Config}{p.}{group___r_c_c___p_l_l___config} ~\newline
  
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Drivers/\+STM32\+G0xx\+\_\+\+HAL\+\_\+\+Driver/\+Inc/\mbox{\hyperlink{stm32g0xx__hal__rcc_8h}{stm32g0xx\+\_\+hal\+\_\+rcc.\+h}}\end{DoxyCompactItemize}
+Drivers/\+STM32\+G0xx\+\_\+\+HAL\+\_\+\+Driver/\+Inc/\textbf{ stm32g0xx\+\_\+hal\+\_\+rcc.\+h}\end{DoxyCompactItemize}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Radar: Core/Src/main.c File Reference</title>
+<title>Ultrasonc Radar: Core/Src/main.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Radar<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Ultrasonc Radar
    </div>
   </td>
  </tr>
@@ -202,6 +202,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function used to implement custom time delay of 1-2ms</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> instance of sensor to be initialized </td></tr>
+    <tr><td class="paramname">delay</td><td>time in ms to wait </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -220,6 +228,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function used to turn off trigger signal to the sensor</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> instance of sensor to be initialized </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -238,6 +253,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function used to turn on trigger signal to the sensor</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> instance of sensor to be initialized </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -386,6 +408,17 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>&lt; Init of display</p>
+<p>&lt; Init of servo and sensor</p>
+<p>&lt; Custom uart init</p>
+<p>&lt; Radar init</p>
+<p>&lt; Radar measure start</p>
+<p>&lt; Radar servo movement start</p>
+<p>&lt; DrawHelper struct init</p>
+<p>&lt; Receiving data in uart queue</p>
+<p>&lt; Transmitting data from uart queue</p>
+<p>&lt; Drawing radar's measure</p>
+<p>&lt; Drawing measure's scale</p>
 
 </div>
 </div>
@@ -505,6 +538,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Sensor conncted to PA2 pin structure </p>
 
 </div>
 </div>
@@ -519,6 +553,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Draw helper structure </p>
 
 </div>
 </div>
@@ -577,6 +612,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Cusomt uart connected to PC structure </p>
 
 </div>
 </div>
@@ -591,6 +627,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Radar structure </p>
 
 </div>
 </div>
@@ -605,6 +642,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Servo conncted to PA6 pin structure </p>
 
 </div>
 </div>
@@ -619,6 +657,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Uart connected to PC Queue </p>
 
 </div>
 </div>

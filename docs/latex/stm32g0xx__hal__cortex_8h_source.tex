@@ -1,6 +1,6 @@
 \doxysection{stm32g0xx\+\_\+hal\+\_\+cortex.\+h}
-\hypertarget{stm32g0xx__hal__cortex_8h_source}{}\label{stm32g0xx__hal__cortex_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_cortex.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_cortex.h}}
-\mbox{\hyperlink{stm32g0xx__hal__cortex_8h}{Go to the documentation of this file.}}
+\label{stm32g0xx__hal__cortex_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_cortex.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_cortex.h}}
+\textbf{ Go to the documentation of this file.}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
 \DoxyCodeLine{00019\ \textcolor{comment}{/*\ Define\ to\ prevent\ recursive\ inclusion\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
@@ -12,7 +12,7 @@
 \DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00026\ }
 \DoxyCodeLine{00027\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
-\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32g0xx__hal__def_8h}{stm32g0xx\_hal\_def.h}}"{}}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}stm32g0xx\_hal\_def.h"{}}}
 \DoxyCodeLine{00029\ }
 \DoxyCodeLine{00039\ \textcolor{comment}{/*\ Exported\ types\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00044\ \textcolor{preprocessor}{\#if\ (\_\_MPU\_PRESENT\ ==\ 1)}}
@@ -99,19 +99,19 @@
 \DoxyCodeLine{00231\ \textcolor{comment}{/*\ Exported\ macros\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00240\ \textcolor{comment}{/*\ Exported\ functions\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00249\ \textcolor{comment}{/*\ Initialization\ and\ Configuration\ functions\ *****************************/}}
-\DoxyCodeLine{00250\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_o_r_t_e_x___exported___functions___group1_ga8581a82025a4780efd00876a66e3e91b}{HAL\_NVIC\_SetPriority}}(\mbox{\hyperlink{group___peripheral__interrupt__number__definition_ga7e1129cd8a196f4284d41db3e82ad5c8}{IRQn\_Type}}\ IRQn,\ uint32\_t\ PreemptPriority,\ uint32\_t\ SubPriority);}
-\DoxyCodeLine{00251\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_o_r_t_e_x___exported___functions___group1_gaaad4492c1b25e006d69948a15790352a}{HAL\_NVIC\_EnableIRQ}}(\mbox{\hyperlink{group___peripheral__interrupt__number__definition_ga7e1129cd8a196f4284d41db3e82ad5c8}{IRQn\_Type}}\ IRQn);}
-\DoxyCodeLine{00252\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_o_r_t_e_x___exported___functions___group1_ga50ca6290e068821cb84aa168f3e13967}{HAL\_NVIC\_DisableIRQ}}(\mbox{\hyperlink{group___peripheral__interrupt__number__definition_ga7e1129cd8a196f4284d41db3e82ad5c8}{IRQn\_Type}}\ IRQn);}
-\DoxyCodeLine{00253\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_o_r_t_e_x___exported___functions___group1_gac83d89028fabdf5d4c38ecf4fbfbefdc}{HAL\_NVIC\_SystemReset}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00254\ uint32\_t\ \mbox{\hyperlink{group___c_o_r_t_e_x___exported___functions___group1_gac3a3f0d53c315523a8e6e7bcac1940cf}{HAL\_SYSTICK\_Config}}(uint32\_t\ TicksNumb);}
+\DoxyCodeLine{00250\ \textcolor{keywordtype}{void}\ HAL\_NVIC\_SetPriority(IRQn\_Type\ IRQn,\ uint32\_t\ PreemptPriority,\ uint32\_t\ SubPriority);}
+\DoxyCodeLine{00251\ \textcolor{keywordtype}{void}\ HAL\_NVIC\_EnableIRQ(IRQn\_Type\ IRQn);}
+\DoxyCodeLine{00252\ \textcolor{keywordtype}{void}\ HAL\_NVIC\_DisableIRQ(IRQn\_Type\ IRQn);}
+\DoxyCodeLine{00253\ \textcolor{keywordtype}{void}\ HAL\_NVIC\_SystemReset(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00254\ uint32\_t\ HAL\_SYSTICK\_Config(uint32\_t\ TicksNumb);}
 \DoxyCodeLine{00263\ \textcolor{comment}{/*\ Peripheral\ Control\ functions\ *************************************************/}}
-\DoxyCodeLine{00264\ uint32\_t\ \mbox{\hyperlink{group___c_o_r_t_e_x___exported___functions___group2_ga37e7e4bf3e1eebe549cb5853c5360a70}{HAL\_NVIC\_GetPriority}}(\mbox{\hyperlink{group___peripheral__interrupt__number__definition_ga7e1129cd8a196f4284d41db3e82ad5c8}{IRQn\_Type}}\ IRQn);}
-\DoxyCodeLine{00265\ uint32\_t\ \mbox{\hyperlink{group___c_o_r_t_e_x___exported___functions___group2_ga3bd5802a96f0dcbc00ac3b89b134da3b}{HAL\_NVIC\_GetPendingIRQ}}(\mbox{\hyperlink{group___peripheral__interrupt__number__definition_ga7e1129cd8a196f4284d41db3e82ad5c8}{IRQn\_Type}}\ IRQn);}
-\DoxyCodeLine{00266\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_o_r_t_e_x___exported___functions___group2_gaecf50f6c6d0e1fa5f8bd8c1b45309f18}{HAL\_NVIC\_SetPendingIRQ}}(\mbox{\hyperlink{group___peripheral__interrupt__number__definition_ga7e1129cd8a196f4284d41db3e82ad5c8}{IRQn\_Type}}\ IRQn);}
-\DoxyCodeLine{00267\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_o_r_t_e_x___exported___functions___group2_ga0c7d007acf1339ca1bb46f3c6e018ff5}{HAL\_NVIC\_ClearPendingIRQ}}(\mbox{\hyperlink{group___peripheral__interrupt__number__definition_ga7e1129cd8a196f4284d41db3e82ad5c8}{IRQn\_Type}}\ IRQn);}
-\DoxyCodeLine{00268\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_o_r_t_e_x___exported___functions___group2_ga3284dc8428996f5b6aa6b3b99e643788}{HAL\_SYSTICK\_CLKSourceConfig}}(uint32\_t\ CLKSource);}
-\DoxyCodeLine{00269\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_o_r_t_e_x___exported___functions___group2_ga5b66b62383261c1e0acef98d344aa4c1}{HAL\_SYSTICK\_IRQHandler}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00270\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_o_r_t_e_x___exported___functions___group2_ga5033855e81ba2071231b60599a3ce9a1}{HAL\_SYSTICK\_Callback}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00264\ uint32\_t\ HAL\_NVIC\_GetPriority(IRQn\_Type\ IRQn);}
+\DoxyCodeLine{00265\ uint32\_t\ HAL\_NVIC\_GetPendingIRQ(IRQn\_Type\ IRQn);}
+\DoxyCodeLine{00266\ \textcolor{keywordtype}{void}\ HAL\_NVIC\_SetPendingIRQ(IRQn\_Type\ IRQn);}
+\DoxyCodeLine{00267\ \textcolor{keywordtype}{void}\ HAL\_NVIC\_ClearPendingIRQ(IRQn\_Type\ IRQn);}
+\DoxyCodeLine{00268\ \textcolor{keywordtype}{void}\ HAL\_SYSTICK\_CLKSourceConfig(uint32\_t\ CLKSource);}
+\DoxyCodeLine{00269\ \textcolor{keywordtype}{void}\ HAL\_SYSTICK\_IRQHandler(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00270\ \textcolor{keywordtype}{void}\ HAL\_SYSTICK\_Callback(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00271\ }
 \DoxyCodeLine{00272\ \textcolor{preprocessor}{\#if\ (\_\_MPU\_PRESENT\ ==\ 1U)}}
 \DoxyCodeLine{00273\ \textcolor{keywordtype}{void}\ HAL\_MPU\_Enable(uint32\_t\ MPU\_Control);}

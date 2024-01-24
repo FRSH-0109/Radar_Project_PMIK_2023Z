@@ -1,5 +1,5 @@
 \doxysection{Radar\+App/\+Servo\+Driver/servo\+\_\+driver.c File Reference}
-\hypertarget{servo__driver_8c}{}\label{servo__driver_8c}\index{RadarApp/ServoDriver/servo\_driver.c@{RadarApp/ServoDriver/servo\_driver.c}}
+\label{servo__driver_8c}\index{RadarApp/ServoDriver/servo\_driver.c@{RadarApp/ServoDriver/servo\_driver.c}}
 
 
 File containing code of servomechanism driver controlled by PWM, which was created for Radar embedded project.  
@@ -9,17 +9,17 @@ File containing code of servomechanism driver controlled by PWM, which was creat
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{servo__driver_8c_a20a27d2eaa060a951a5807b5bb48919e}{servo\+Driver\+Init}} (\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo\+Driver, float d\+Min, float d\+Max, uint16\+\_\+t p\+Min, uint16\+\_\+t p\+Max)
+void \textbf{ servo\+Driver\+Init} (\textbf{ servo\+Driver\+Struct} $\ast$servo\+Driver, float d\+Min, float d\+Max, uint16\+\_\+t p\+Min, uint16\+\_\+t p\+Max)
 \item 
-void \mbox{\hyperlink{servo__driver_8c_a1acdc2cc47d587de4954d1e7602f4898}{servo\+Driver\+Start}} (\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo\+Driver)
+void \textbf{ servo\+Driver\+Start} (\textbf{ servo\+Driver\+Struct} $\ast$servo\+Driver)
 \item 
-void \mbox{\hyperlink{servo__driver_8c_a632cccd31e765ad946feea85d0a13d8d}{servo\+Driver\+Stop}} (\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo\+Driver)
+void \textbf{ servo\+Driver\+Stop} (\textbf{ servo\+Driver\+Struct} $\ast$servo\+Driver)
 \item 
-bool \mbox{\hyperlink{servo__driver_8c_a5728d01171e0105187a4e732e23a1fd9}{servo\+Driver\+Set\+Degrees}} (\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo\+Driver, float degrees)
+bool \textbf{ servo\+Driver\+Set\+Degrees} (\textbf{ servo\+Driver\+Struct} $\ast$servo\+Driver, float degrees)
 \item 
-uint16\+\_\+t \mbox{\hyperlink{servo__driver_8c_a5ae45f5c916eb47431e59f94d645bbc7}{servo\+Driver\+Degrees\+To\+Pulse\+Width}} (\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo\+Driver, float degrees)
+uint16\+\_\+t \textbf{ servo\+Driver\+Degrees\+To\+Pulse\+Width} (\textbf{ servo\+Driver\+Struct} $\ast$servo\+Driver, float degrees)
 \item 
-\mbox{\hyperlink{servo__driver_8c_af9aace1b44b73111e15aa39f06f43456}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}} ((weak))
+\textbf{ \+\_\+\+\_\+attribute\+\_\+\+\_\+} ((weak))
 \end{DoxyCompactItemize}
 
 
@@ -33,28 +33,28 @@ Kami Kośnik, Kacper Radzikowski
 20 Nov 2023 
 \end{DoxyDate}
 \begin{DoxySeeAlso}{See also}
-\href{https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z}{\texttt{ https\+://github.\+com/\+FRSH-\/0109/\+Radar\+\_\+\+Project\+\_\+\+PMIK\+\_\+2023Z}} 
+{\texttt{ https\+://github.\+com/\+FRSH-\/0109/\+Radar\+\_\+\+Project\+\_\+\+PMIK\+\_\+2023Z}} 
 \end{DoxySeeAlso}
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{servo__driver_8c_af9aace1b44b73111e15aa39f06f43456}\label{servo__driver_8c_af9aace1b44b73111e15aa39f06f43456} 
+\label{servo__driver_8c_af9aace1b44b73111e15aa39f06f43456} 
 \index{servo\_driver.c@{servo\_driver.c}!\_\_attribute\_\_@{\_\_attribute\_\_}}
 \index{\_\_attribute\_\_@{\_\_attribute\_\_}!servo\_driver.c@{servo\_driver.c}}
-\doxysubsubsection{\texorpdfstring{\_\_attribute\_\_()}{\_\_attribute\_\_()}}
+\doxysubsubsection{\_\_attribute\_\_()}
 {\footnotesize\ttfamily \+\_\+\+\_\+attribute\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{(weak)}]{ }\end{DoxyParamCaption})}
 
-\Hypertarget{servo__driver_8c_a5ae45f5c916eb47431e59f94d645bbc7}\label{servo__driver_8c_a5ae45f5c916eb47431e59f94d645bbc7} 
+\label{servo__driver_8c_a5ae45f5c916eb47431e59f94d645bbc7} 
 \index{servo\_driver.c@{servo\_driver.c}!servoDriverDegreesToPulseWidth@{servoDriverDegreesToPulseWidth}}
 \index{servoDriverDegreesToPulseWidth@{servoDriverDegreesToPulseWidth}!servo\_driver.c@{servo\_driver.c}}
-\doxysubsubsection{\texorpdfstring{servoDriverDegreesToPulseWidth()}{servoDriverDegreesToPulseWidth()}}
-{\footnotesize\ttfamily uint16\+\_\+t servo\+Driver\+Degrees\+To\+Pulse\+Width (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo\+Driver,  }\item[{float}]{degrees }\end{DoxyParamCaption})}
+\doxysubsubsection{servoDriverDegreesToPulseWidth()}
+{\footnotesize\ttfamily uint16\+\_\+t servo\+Driver\+Degrees\+To\+Pulse\+Width (\begin{DoxyParamCaption}\item[{\textbf{ servo\+Driver\+Struct} $\ast$}]{servo\+Driver,  }\item[{float}]{degrees }\end{DoxyParamCaption})}
 
 Function for converting degrees value into pulse width
 
 
 \begin{DoxyParams}{Parameters}
-{\em servo\+Driver} & pointer to \doxylink{structservo_driver_struct}{servo\+Driver\+Struct} struct \\
+{\em servo\+Driver} & pointer to \doxyref{servo\+Driver\+Struct}{p.}{structservo_driver_struct} struct \\
 \hline
 {\em degrees} & value of degrees to convert \\
 \hline
@@ -62,17 +62,17 @@ Function for converting degrees value into pulse width
 \begin{DoxyReturn}{Returns}
 uint16\+\_\+t value of corresponding pulse width 
 \end{DoxyReturn}
-\Hypertarget{servo__driver_8c_a20a27d2eaa060a951a5807b5bb48919e}\label{servo__driver_8c_a20a27d2eaa060a951a5807b5bb48919e} 
+\label{servo__driver_8c_a20a27d2eaa060a951a5807b5bb48919e} 
 \index{servo\_driver.c@{servo\_driver.c}!servoDriverInit@{servoDriverInit}}
 \index{servoDriverInit@{servoDriverInit}!servo\_driver.c@{servo\_driver.c}}
-\doxysubsubsection{\texorpdfstring{servoDriverInit()}{servoDriverInit()}}
-{\footnotesize\ttfamily void servo\+Driver\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo\+Driver,  }\item[{float}]{d\+Min,  }\item[{float}]{d\+Max,  }\item[{uint16\+\_\+t}]{p\+Min,  }\item[{uint16\+\_\+t}]{p\+Max }\end{DoxyParamCaption})}
+\doxysubsubsection{servoDriverInit()}
+{\footnotesize\ttfamily void servo\+Driver\+Init (\begin{DoxyParamCaption}\item[{\textbf{ servo\+Driver\+Struct} $\ast$}]{servo\+Driver,  }\item[{float}]{d\+Min,  }\item[{float}]{d\+Max,  }\item[{uint16\+\_\+t}]{p\+Min,  }\item[{uint16\+\_\+t}]{p\+Max }\end{DoxyParamCaption})}
 
 Function for initialization of servo structure instance
 
 
 \begin{DoxyParams}{Parameters}
-{\em servo\+Driver} & pointer to \doxylink{structservo_driver_struct}{servo\+Driver\+Struct} struct \\
+{\em servo\+Driver} & pointer to \doxyref{servo\+Driver\+Struct}{p.}{structservo_driver_struct} struct \\
 \hline
 {\em d\+Min} & value of minimal degrees movement for servo \\
 \hline
@@ -83,17 +83,17 @@ Function for initialization of servo structure instance
 {\em p\+Max} & value of maximal pulse width corresponding to minimal degrees value \\
 \hline
 \end{DoxyParams}
-\Hypertarget{servo__driver_8c_a5728d01171e0105187a4e732e23a1fd9}\label{servo__driver_8c_a5728d01171e0105187a4e732e23a1fd9} 
+\label{servo__driver_8c_a5728d01171e0105187a4e732e23a1fd9} 
 \index{servo\_driver.c@{servo\_driver.c}!servoDriverSetDegrees@{servoDriverSetDegrees}}
 \index{servoDriverSetDegrees@{servoDriverSetDegrees}!servo\_driver.c@{servo\_driver.c}}
-\doxysubsubsection{\texorpdfstring{servoDriverSetDegrees()}{servoDriverSetDegrees()}}
-{\footnotesize\ttfamily bool servo\+Driver\+Set\+Degrees (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo\+Driver,  }\item[{float}]{degrees }\end{DoxyParamCaption})}
+\doxysubsubsection{servoDriverSetDegrees()}
+{\footnotesize\ttfamily bool servo\+Driver\+Set\+Degrees (\begin{DoxyParamCaption}\item[{\textbf{ servo\+Driver\+Struct} $\ast$}]{servo\+Driver,  }\item[{float}]{degrees }\end{DoxyParamCaption})}
 
 Function for setting servo position in degrees
 
 
 \begin{DoxyParams}{Parameters}
-{\em servo\+Driver} & pointer to \doxylink{structservo_driver_struct}{servo\+Driver\+Struct} struct \\
+{\em servo\+Driver} & pointer to \doxyref{servo\+Driver\+Struct}{p.}{structservo_driver_struct} struct \\
 \hline
 {\em degrees} & value of degrees to set \\
 \hline
@@ -101,29 +101,29 @@ Function for setting servo position in degrees
 \begin{DoxyReturn}{Returns}
 bool is action was successful 
 \end{DoxyReturn}
-\Hypertarget{servo__driver_8c_a1acdc2cc47d587de4954d1e7602f4898}\label{servo__driver_8c_a1acdc2cc47d587de4954d1e7602f4898} 
+\label{servo__driver_8c_a1acdc2cc47d587de4954d1e7602f4898} 
 \index{servo\_driver.c@{servo\_driver.c}!servoDriverStart@{servoDriverStart}}
 \index{servoDriverStart@{servoDriverStart}!servo\_driver.c@{servo\_driver.c}}
-\doxysubsubsection{\texorpdfstring{servoDriverStart()}{servoDriverStart()}}
-{\footnotesize\ttfamily void servo\+Driver\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo\+Driver }\end{DoxyParamCaption})}
+\doxysubsubsection{servoDriverStart()}
+{\footnotesize\ttfamily void servo\+Driver\+Start (\begin{DoxyParamCaption}\item[{\textbf{ servo\+Driver\+Struct} $\ast$}]{servo\+Driver }\end{DoxyParamCaption})}
 
 Function for starting servo movement
 
 
 \begin{DoxyParams}{Parameters}
-{\em servo\+Driver} & pointer to \doxylink{structservo_driver_struct}{servo\+Driver\+Struct} struct \\
+{\em servo\+Driver} & pointer to \doxyref{servo\+Driver\+Struct}{p.}{structservo_driver_struct} struct \\
 \hline
 \end{DoxyParams}
-\Hypertarget{servo__driver_8c_a632cccd31e765ad946feea85d0a13d8d}\label{servo__driver_8c_a632cccd31e765ad946feea85d0a13d8d} 
+\label{servo__driver_8c_a632cccd31e765ad946feea85d0a13d8d} 
 \index{servo\_driver.c@{servo\_driver.c}!servoDriverStop@{servoDriverStop}}
 \index{servoDriverStop@{servoDriverStop}!servo\_driver.c@{servo\_driver.c}}
-\doxysubsubsection{\texorpdfstring{servoDriverStop()}{servoDriverStop()}}
-{\footnotesize\ttfamily void servo\+Driver\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo\+Driver }\end{DoxyParamCaption})}
+\doxysubsubsection{servoDriverStop()}
+{\footnotesize\ttfamily void servo\+Driver\+Stop (\begin{DoxyParamCaption}\item[{\textbf{ servo\+Driver\+Struct} $\ast$}]{servo\+Driver }\end{DoxyParamCaption})}
 
 Function for stopping servo movement
 
 
 \begin{DoxyParams}{Parameters}
-{\em servo\+Driver} & pointer to \doxylink{structservo_driver_struct}{servo\+Driver\+Struct} struct \\
+{\em servo\+Driver} & pointer to \doxyref{servo\+Driver\+Struct}{p.}{structservo_driver_struct} struct \\
 \hline
 \end{DoxyParams}

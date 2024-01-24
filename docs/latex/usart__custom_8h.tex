@@ -1,5 +1,5 @@
 \doxysection{Radar\+App/usart\+\_\+custom/usart\+\_\+custom.h File Reference}
-\hypertarget{usart__custom_8h}{}\label{usart__custom_8h}\index{RadarApp/usart\_custom/usart\_custom.h@{RadarApp/usart\_custom/usart\_custom.h}}
+\label{usart__custom_8h}\index{RadarApp/usart\_custom/usart\_custom.h@{RadarApp/usart\_custom/usart\_custom.h}}
 
 
 Header file for custom uart handling, consists of all used variables, enums or functions that are connected directly with uart communication.  
@@ -11,115 +11,115 @@ Header file for custom uart handling, consists of all used variables, enums or f
 \doxysubsubsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}}
+struct \textbf{ UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}
 \item 
-struct \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}}
+struct \textbf{ UART\+\_\+\+Queue}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_adf0178118c42a9224dd770222fc81497}{MAX\+\_\+\+UART\+\_\+\+RX\+\_\+\+DATA\+\_\+\+LEN}}~100
+\#define \textbf{ MAX\+\_\+\+UART\+\_\+\+RX\+\_\+\+DATA\+\_\+\+LEN}~100
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_ad33fa5c178f516badf8b705c646ba9f9}{MAX\+\_\+\+UART\+\_\+\+TX\+\_\+\+DATA\+\_\+\+LEN}}~30
+\#define \textbf{ MAX\+\_\+\+UART\+\_\+\+TX\+\_\+\+DATA\+\_\+\+LEN}~30
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_a1ed0601fc12697a226bb7717c7ab573e}{UART\+\_\+\+QUEUE\+\_\+\+LEN}}~3
+\#define \textbf{ UART\+\_\+\+QUEUE\+\_\+\+LEN}~3
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_ad3ab3c92bd02a106c0182be9c79dac55}{UART\+\_\+\+TX\+\_\+\+TRANSMISSION\+\_\+\+CMPLT\+\_\+\+TIMEOUT}}~3
+\#define \textbf{ UART\+\_\+\+TX\+\_\+\+TRANSMISSION\+\_\+\+CMPLT\+\_\+\+TIMEOUT}~3
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_a6547da940a1c63d92d200f92f5509884}{COMMAND\+\_\+\+START}}~"{}START"{}
+\#define \textbf{ COMMAND\+\_\+\+START}~"{}START"{}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_a6b66389416f72046f80d9c2c1a77d63f}{COMMAND\+\_\+\+STOP}}~"{}STOP"{}
+\#define \textbf{ COMMAND\+\_\+\+STOP}~"{}STOP"{}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_a32ec74d8416e440eada5dc39f7bbb70e}{COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+POSITION}}~"{}RADARGETPOS"{}
+\#define \textbf{ COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+POSITION}~"{}RADARGETPOS"{}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_a2947acf776dfe702ef6160098dd5befb}{COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+POSITION}}~"{}RADARSETPOS"{}
+\#define \textbf{ COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+POSITION}~"{}RADARSETPOS"{}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_a07f8ec7fbb604c801d0d8bdd5768e8eb}{COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+STEP}}~"{}RADARGETSTEP"{}
+\#define \textbf{ COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+STEP}~"{}RADARGETSTEP"{}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_a1f77428b61c541203cab70145eb29521}{COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+STEP}}~"{}RADARSETSTEP"{}
+\#define \textbf{ COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+STEP}~"{}RADARSETSTEP"{}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_a928e45f29cb44f16b29fecd2d902d8df}{COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+POS\+\_\+\+MIN}}~"{}RADARGETPOSMIN"{}
+\#define \textbf{ COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+POS\+\_\+\+MIN}~"{}RADARGETPOSMIN"{}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_a589d75ff318022a4c91c872b7d080643}{COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+POS\+\_\+\+MAX}}~"{}RADARGETPOSMAX"{}
+\#define \textbf{ COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+POS\+\_\+\+MAX}~"{}RADARGETPOSMAX"{}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_ae124f9df385262c264482a5720ca4c29}{COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+POS\+\_\+\+MIN}}~"{}RADARSETPOSMIN"{}
+\#define \textbf{ COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+POS\+\_\+\+MIN}~"{}RADARSETPOSMIN"{}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_ae0abe32ca9558776605bb52edb877ce2}{COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+POS\+\_\+\+MAX}}~"{}RADARSETPOSMAX"{}
+\#define \textbf{ COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+POS\+\_\+\+MAX}~"{}RADARSETPOSMAX"{}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_a87e889c83c8bb5fe95eef467e97324ae}{COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+SENSOR\+\_\+\+PERIOD}}~"{}RADARSETSENSORPERIOD"{}
+\#define \textbf{ COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+SENSOR\+\_\+\+PERIOD}~"{}RADARSETSENSORPERIOD"{}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_ad2e5fdeff329cb9461a501a30a427479}{COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+SENSOR\+\_\+\+PERIOD}}~"{}RADARGETSENSORPERIOD"{}
+\#define \textbf{ COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+SENSOR\+\_\+\+PERIOD}~"{}RADARGETSENSORPERIOD"{}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_a20001dd5b0549da64d44fb993776e591}{COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+SENSOR\+\_\+\+MEASURE}}~"{}RADARGETSENSORMEASURE"{}
+\#define \textbf{ COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+SENSOR\+\_\+\+MEASURE}~"{}RADARGETSENSORMEASURE"{}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_a17ad9cab657264453606c4336af72ef5}{COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+DRAW\+\_\+\+SCALE}}~"{}RADARGETDRAWSCALE"{}
+\#define \textbf{ COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+DRAW\+\_\+\+SCALE}~"{}RADARGETDRAWSCALE"{}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_a1f725e00de2969785293adb422d7ac35}{COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+DRAW\+\_\+\+SCALE}}~"{}RADARSETDRAWSCALE"{}
+\#define \textbf{ COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+DRAW\+\_\+\+SCALE}~"{}RADARSETDRAWSCALE"{}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_a674552e14bdfbf1353a65d826222b1da}{COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+DRAW\+\_\+\+RULES}}~"{}RADARGETDRAWRULES"{}
+\#define \textbf{ COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+DRAW\+\_\+\+RULES}~"{}RADARGETDRAWRULES"{}
 \item 
-\#define \mbox{\hyperlink{usart__custom_8h_a3486962082cdaf2c29d61c7099b75541}{COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+DRAW\+\_\+\+RULES}}~"{}RADARSETDRAWRULES"{}
+\#define \textbf{ COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+DRAW\+\_\+\+RULES}~"{}RADARSETDRAWRULES"{}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-typedef struct \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \mbox{\hyperlink{usart__custom_8h_a13354363ebe3491f72b95bcd1c109b2c}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}}
+typedef struct \textbf{ UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} \textbf{ UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}
 \item 
-typedef struct \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \mbox{\hyperlink{usart__custom_8h_afe5519ba8c8fbd534e3c858649e83470}{UART\+\_\+\+Queue}}
+typedef struct \textbf{ UART\+\_\+\+Queue} \textbf{ UART\+\_\+\+Queue}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352}{Command\+Type}} \{ \newline
-\mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a7272b7f468cc8202d75d96a8043f9e87}{COMMAND\+\_\+\+TYPE\+\_\+\+IDLE}}
-, \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ad067bb0a784084623648fd149c3768c4}{COMMAND\+\_\+\+TYPE\+\_\+\+START}}
-, \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ae442cf6a5aa8d6270bd646e928af19b0}{COMMAND\+\_\+\+TYPE\+\_\+\+STOP}}
-, \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a6759dda3a89ea617c6535fd492790e7d}{COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+POS}}
+enum \textbf{ Command\+Type} \{ \newline
+\textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+IDLE}
+, \textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+START}
+, \textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+STOP}
+, \textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+POS}
 , \newline
-\mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a21276fbc1ae96774c5eb8367ca6f1d11}{COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+POS}}
-, \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ae5984587ad3258688d05ffae48475902}{COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+STEP}}
-, \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a3d94d1bcc54db15c881c3e520d3d9732}{COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+STEP}}
-, \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352aad50a044ab6e6a8996b8fa8205cfd55b}{COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+POS\+\_\+\+MIN}}
+\textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+POS}
+, \textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+STEP}
+, \textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+STEP}
+, \textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+POS\+\_\+\+MIN}
 , \newline
-\mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a3fee678b3bd7e7f389e89110002d183c}{COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+POS\+\_\+\+MAX}}
-, \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a476ef9ec942339853c7ed9d676d0e3e5}{COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+POS\+\_\+\+MIN}}
-, \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a7521841ceae5759a2e4d08da783d077e}{COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+POS\+\_\+\+MAX}}
-, \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ad12f98e1b0e69ac0ccf8c5633ffa2a54}{COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+SENSOR\+\_\+\+PERIOD}}
+\textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+POS\+\_\+\+MAX}
+, \textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+POS\+\_\+\+MIN}
+, \textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+POS\+\_\+\+MAX}
+, \textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+SENSOR\+\_\+\+PERIOD}
 , \newline
-\mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352acdcd32b093e7a31e121d9a65d8546385}{COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+SENSOR\+\_\+\+PERIOD}}
-, \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352aa314a1e1244d7b6f89a45ca0ef88ebcf}{COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+SENSOR\+\_\+\+MEASURE}}
-, \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a5c968c059a75367c9bcb1f4f82ffb71e}{COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+DRAW\+\_\+\+SCALE}}
-, \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ab54684c7e7eb692bda06a46888116eaa}{COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+DRAW\+\_\+\+SCALE}}
+\textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+SENSOR\+\_\+\+PERIOD}
+, \textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+SENSOR\+\_\+\+MEASURE}
+, \textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+DRAW\+\_\+\+SCALE}
+, \textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+DRAW\+\_\+\+SCALE}
 , \newline
-\mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a858946b754a6edb87080905ce69e578d}{COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+DRAW\+\_\+\+RULES}}
-, \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352aa492f0fce57cb811434e7080dd8e9279}{COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+DRAW\+\_\+\+RULES}}
+\textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+DRAW\+\_\+\+RULES}
+, \textbf{ COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+DRAW\+\_\+\+RULES}
  \}
 \item 
-enum \mbox{\hyperlink{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7}{Response\+Type}} \{ \mbox{\hyperlink{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7ad9a009eaad7d808678adbea41b8b1faa}{RESPONSE\+\_\+\+OK}}
-, \mbox{\hyperlink{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7acebd78e00b6e0841ba1526eb58c32a43}{RESPONSE\+\_\+\+UNKNOW\+\_\+\+CMD}}
-, \mbox{\hyperlink{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7ada8db732ee34297d85ba9014b3e3f166}{RESPONSE\+\_\+\+ERROR}}
+enum \textbf{ Response\+Type} \{ \textbf{ RESPONSE\+\_\+\+OK}
+, \textbf{ RESPONSE\+\_\+\+UNKNOW\+\_\+\+CMD}
+, \textbf{ RESPONSE\+\_\+\+ERROR}
  \}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352}{Command\+Type}} \mbox{\hyperlink{usart__custom_8h_a4dd5805db71c5e3e11920b812bddaa71}{Command\+Decode}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}data, uint16\+\_\+t data\+Len)
+\textbf{ Command\+Type} \textbf{ Command\+Decode} (uint8\+\_\+t $\ast$data, uint16\+\_\+t data\+Len)
 \item 
-void \mbox{\hyperlink{usart__custom_8h_affe2663ea2814b2c9ab3695c28961355}{uart\+Queue\+Init}} (volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}uart\+Queue)
+void \textbf{ uart\+Queue\+Init} (volatile \textbf{ UART\+\_\+\+Queue} $\ast$uart\+Queue)
 \item 
-void \mbox{\hyperlink{usart__custom_8h_ab0cdd1e74b215a0e58dca5e866c11de8}{uart\+Queue\+Add}} (volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}uart\+Queue, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data\+Tx\+Source, uint16\+\_\+t msg\+Len)
+void \textbf{ uart\+Queue\+Add} (volatile \textbf{ UART\+\_\+\+Queue} $\ast$uart\+Queue, uint8\+\_\+t $\ast$data\+Tx\+Source, uint16\+\_\+t msg\+Len)
 \item 
-void \mbox{\hyperlink{usart__custom_8h_a971ac04f29008014c47a53f31a0eca02}{uart\+Queue\+Clear}} (volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}uart\+Queue)
+void \textbf{ uart\+Queue\+Clear} (volatile \textbf{ UART\+\_\+\+Queue} $\ast$uart\+Queue)
 \item 
-void \mbox{\hyperlink{usart__custom_8h_a434833c4433f588d5fda684a54dcb0ff}{uart\+Queue\+Transmit}} (volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}uart\+Queue, \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}huart\+Custom)
+void \textbf{ uart\+Queue\+Transmit} (volatile \textbf{ UART\+\_\+\+Queue} $\ast$uart\+Queue, \textbf{ UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} $\ast$huart\+Custom)
 \item 
-void \mbox{\hyperlink{usart__custom_8h_abbc250ac23ac518f14aa24e1f9a11ead}{uart\+Queue\+Receive}} (volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}uart\+Queue)
+void \textbf{ uart\+Queue\+Receive} (volatile \textbf{ UART\+\_\+\+Queue} $\ast$uart\+Queue)
 \item 
-void \mbox{\hyperlink{usart__custom_8h_ae07c419a1a1df7134ddbfedd9bdf7c91}{uart\+Custom\+Init}} (\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}huart\+Custom, \mbox{\hyperlink{group___u_a_r_t___exported___types_ga5de4a49eb132735325e706f406c69d6e}{UART\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}huart, uint16\+\_\+t rx\+Data\+Len, uint16\+\_\+t tx\+Data\+Len)
+void \textbf{ uart\+Custom\+Init} (\textbf{ UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} $\ast$huart\+Custom, \textbf{ UART\+\_\+\+Handle\+Type\+Def} $\ast$huart, uint16\+\_\+t rx\+Data\+Len, uint16\+\_\+t tx\+Data\+Len)
 \item 
-\mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\+\_\+\+Status\+Type\+Def}} \mbox{\hyperlink{usart__custom_8h_a123702bc9950b2a0ce9a34e889842f74}{uart\+Custom\+Receive\+DMA}} (\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}huart\+Custom)
+\textbf{ HAL\+\_\+\+Status\+Type\+Def} \textbf{ uart\+Custom\+Receive\+DMA} (\textbf{ UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} $\ast$huart\+Custom)
 \item 
-\mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\+\_\+\+Status\+Type\+Def}} \mbox{\hyperlink{usart__custom_8h_a74ea4ae09ad7d11a8ed037ed585f4c24}{uart\+Custom\+Transmit\+DMA}} (\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}huart\+Custom, uint16\+\_\+t msg\+Len)
+\textbf{ HAL\+\_\+\+Status\+Type\+Def} \textbf{ uart\+Custom\+Transmit\+DMA} (\textbf{ UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} $\ast$huart\+Custom, uint16\+\_\+t msg\+Len)
 \end{DoxyCompactItemize}
 
 
@@ -130,251 +130,251 @@ Header file for custom uart handling, consists of all used variables, enums or f
 Kamil Kosnik, Kacper Radzikowski 
 \end{DoxyAuthor}
 \begin{DoxySeeAlso}{See also}
-\href{https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z}{\texttt{ https\+://github.\+com/\+FRSH-\/0109/\+Radar\+\_\+\+Project\+\_\+\+PMIK\+\_\+2023Z}} 
+{\texttt{ https\+://github.\+com/\+FRSH-\/0109/\+Radar\+\_\+\+Project\+\_\+\+PMIK\+\_\+2023Z}} 
 \end{DoxySeeAlso}
 
 
 \doxysubsection{Macro Definition Documentation}
-\Hypertarget{usart__custom_8h_a674552e14bdfbf1353a65d826222b1da}\label{usart__custom_8h_a674552e14bdfbf1353a65d826222b1da} 
+\label{usart__custom_8h_a674552e14bdfbf1353a65d826222b1da} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_GET\_RADAR\_DRAW\_RULES@{COMMAND\_GET\_RADAR\_DRAW\_RULES}}
 \index{COMMAND\_GET\_RADAR\_DRAW\_RULES@{COMMAND\_GET\_RADAR\_DRAW\_RULES}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_GET\_RADAR\_DRAW\_RULES}{COMMAND\_GET\_RADAR\_DRAW\_RULES}}
+\doxysubsubsection{COMMAND\_GET\_RADAR\_DRAW\_RULES}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+DRAW\+\_\+\+RULES~"{}RADARGETDRAWRULES"{}}
 
-String for Radar drawing rules (in centimeters) getter command \Hypertarget{usart__custom_8h_a17ad9cab657264453606c4336af72ef5}\label{usart__custom_8h_a17ad9cab657264453606c4336af72ef5} 
+String for Radar drawing rules (in centimeters) getter command \label{usart__custom_8h_a17ad9cab657264453606c4336af72ef5} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_GET\_RADAR\_DRAW\_SCALE@{COMMAND\_GET\_RADAR\_DRAW\_SCALE}}
 \index{COMMAND\_GET\_RADAR\_DRAW\_SCALE@{COMMAND\_GET\_RADAR\_DRAW\_SCALE}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_GET\_RADAR\_DRAW\_SCALE}{COMMAND\_GET\_RADAR\_DRAW\_SCALE}}
+\doxysubsubsection{COMMAND\_GET\_RADAR\_DRAW\_SCALE}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+DRAW\+\_\+\+SCALE~"{}RADARGETDRAWSCALE"{}}
 
-String for Radar drawing scale getter command \Hypertarget{usart__custom_8h_a589d75ff318022a4c91c872b7d080643}\label{usart__custom_8h_a589d75ff318022a4c91c872b7d080643} 
+String for Radar drawing scale getter command \label{usart__custom_8h_a589d75ff318022a4c91c872b7d080643} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_GET\_RADAR\_POS\_MAX@{COMMAND\_GET\_RADAR\_POS\_MAX}}
 \index{COMMAND\_GET\_RADAR\_POS\_MAX@{COMMAND\_GET\_RADAR\_POS\_MAX}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_GET\_RADAR\_POS\_MAX}{COMMAND\_GET\_RADAR\_POS\_MAX}}
+\doxysubsubsection{COMMAND\_GET\_RADAR\_POS\_MAX}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+POS\+\_\+\+MAX~"{}RADARGETPOSMAX"{}}
 
-String for Radar max position getter command \Hypertarget{usart__custom_8h_a928e45f29cb44f16b29fecd2d902d8df}\label{usart__custom_8h_a928e45f29cb44f16b29fecd2d902d8df} 
+String for Radar max position getter command \label{usart__custom_8h_a928e45f29cb44f16b29fecd2d902d8df} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_GET\_RADAR\_POS\_MIN@{COMMAND\_GET\_RADAR\_POS\_MIN}}
 \index{COMMAND\_GET\_RADAR\_POS\_MIN@{COMMAND\_GET\_RADAR\_POS\_MIN}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_GET\_RADAR\_POS\_MIN}{COMMAND\_GET\_RADAR\_POS\_MIN}}
+\doxysubsubsection{COMMAND\_GET\_RADAR\_POS\_MIN}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+POS\+\_\+\+MIN~"{}RADARGETPOSMIN"{}}
 
-String for Radar min position getter command \Hypertarget{usart__custom_8h_a32ec74d8416e440eada5dc39f7bbb70e}\label{usart__custom_8h_a32ec74d8416e440eada5dc39f7bbb70e} 
+String for Radar min position getter command \label{usart__custom_8h_a32ec74d8416e440eada5dc39f7bbb70e} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_GET\_RADAR\_POSITION@{COMMAND\_GET\_RADAR\_POSITION}}
 \index{COMMAND\_GET\_RADAR\_POSITION@{COMMAND\_GET\_RADAR\_POSITION}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_GET\_RADAR\_POSITION}{COMMAND\_GET\_RADAR\_POSITION}}
+\doxysubsubsection{COMMAND\_GET\_RADAR\_POSITION}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+POSITION~"{}RADARGETPOS"{}}
 
-String for Radar position getter command \Hypertarget{usart__custom_8h_a20001dd5b0549da64d44fb993776e591}\label{usart__custom_8h_a20001dd5b0549da64d44fb993776e591} 
+String for Radar position getter command \label{usart__custom_8h_a20001dd5b0549da64d44fb993776e591} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_GET\_RADAR\_SENSOR\_MEASURE@{COMMAND\_GET\_RADAR\_SENSOR\_MEASURE}}
 \index{COMMAND\_GET\_RADAR\_SENSOR\_MEASURE@{COMMAND\_GET\_RADAR\_SENSOR\_MEASURE}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_GET\_RADAR\_SENSOR\_MEASURE}{COMMAND\_GET\_RADAR\_SENSOR\_MEASURE}}
+\doxysubsubsection{COMMAND\_GET\_RADAR\_SENSOR\_MEASURE}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+SENSOR\+\_\+\+MEASURE~"{}RADARGETSENSORMEASURE"{}}
 
-String for Radar sensor measure getter command \Hypertarget{usart__custom_8h_ad2e5fdeff329cb9461a501a30a427479}\label{usart__custom_8h_ad2e5fdeff329cb9461a501a30a427479} 
+String for Radar sensor measure getter command \label{usart__custom_8h_ad2e5fdeff329cb9461a501a30a427479} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_GET\_RADAR\_SENSOR\_PERIOD@{COMMAND\_GET\_RADAR\_SENSOR\_PERIOD}}
 \index{COMMAND\_GET\_RADAR\_SENSOR\_PERIOD@{COMMAND\_GET\_RADAR\_SENSOR\_PERIOD}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_GET\_RADAR\_SENSOR\_PERIOD}{COMMAND\_GET\_RADAR\_SENSOR\_PERIOD}}
+\doxysubsubsection{COMMAND\_GET\_RADAR\_SENSOR\_PERIOD}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+SENSOR\+\_\+\+PERIOD~"{}RADARGETSENSORPERIOD"{}}
 
-String for Radar sensor measure period getter command, in ms \Hypertarget{usart__custom_8h_a07f8ec7fbb604c801d0d8bdd5768e8eb}\label{usart__custom_8h_a07f8ec7fbb604c801d0d8bdd5768e8eb} 
+String for Radar sensor measure period getter command, in ms \label{usart__custom_8h_a07f8ec7fbb604c801d0d8bdd5768e8eb} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_GET\_RADAR\_STEP@{COMMAND\_GET\_RADAR\_STEP}}
 \index{COMMAND\_GET\_RADAR\_STEP@{COMMAND\_GET\_RADAR\_STEP}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_GET\_RADAR\_STEP}{COMMAND\_GET\_RADAR\_STEP}}
+\doxysubsubsection{COMMAND\_GET\_RADAR\_STEP}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+GET\+\_\+\+RADAR\+\_\+\+STEP~"{}RADARGETSTEP"{}}
 
-String for Radar servo single step getter command \Hypertarget{usart__custom_8h_a3486962082cdaf2c29d61c7099b75541}\label{usart__custom_8h_a3486962082cdaf2c29d61c7099b75541} 
+String for Radar servo single step getter command \label{usart__custom_8h_a3486962082cdaf2c29d61c7099b75541} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_SET\_RADAR\_DRAW\_RULES@{COMMAND\_SET\_RADAR\_DRAW\_RULES}}
 \index{COMMAND\_SET\_RADAR\_DRAW\_RULES@{COMMAND\_SET\_RADAR\_DRAW\_RULES}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_SET\_RADAR\_DRAW\_RULES}{COMMAND\_SET\_RADAR\_DRAW\_RULES}}
+\doxysubsubsection{COMMAND\_SET\_RADAR\_DRAW\_RULES}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+DRAW\+\_\+\+RULES~"{}RADARSETDRAWRULES"{}}
 
-String for Radar drawing rules (in centimeters) setter command \Hypertarget{usart__custom_8h_a1f725e00de2969785293adb422d7ac35}\label{usart__custom_8h_a1f725e00de2969785293adb422d7ac35} 
+String for Radar drawing rules (in centimeters) setter command \label{usart__custom_8h_a1f725e00de2969785293adb422d7ac35} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_SET\_RADAR\_DRAW\_SCALE@{COMMAND\_SET\_RADAR\_DRAW\_SCALE}}
 \index{COMMAND\_SET\_RADAR\_DRAW\_SCALE@{COMMAND\_SET\_RADAR\_DRAW\_SCALE}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_SET\_RADAR\_DRAW\_SCALE}{COMMAND\_SET\_RADAR\_DRAW\_SCALE}}
+\doxysubsubsection{COMMAND\_SET\_RADAR\_DRAW\_SCALE}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+DRAW\+\_\+\+SCALE~"{}RADARSETDRAWSCALE"{}}
 
-String for Radar drawing scale setter command \Hypertarget{usart__custom_8h_ae0abe32ca9558776605bb52edb877ce2}\label{usart__custom_8h_ae0abe32ca9558776605bb52edb877ce2} 
+String for Radar drawing scale setter command \label{usart__custom_8h_ae0abe32ca9558776605bb52edb877ce2} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_SET\_RADAR\_POS\_MAX@{COMMAND\_SET\_RADAR\_POS\_MAX}}
 \index{COMMAND\_SET\_RADAR\_POS\_MAX@{COMMAND\_SET\_RADAR\_POS\_MAX}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_SET\_RADAR\_POS\_MAX}{COMMAND\_SET\_RADAR\_POS\_MAX}}
+\doxysubsubsection{COMMAND\_SET\_RADAR\_POS\_MAX}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+POS\+\_\+\+MAX~"{}RADARSETPOSMAX"{}}
 
-String for Radar min position setter command \Hypertarget{usart__custom_8h_ae124f9df385262c264482a5720ca4c29}\label{usart__custom_8h_ae124f9df385262c264482a5720ca4c29} 
+String for Radar min position setter command \label{usart__custom_8h_ae124f9df385262c264482a5720ca4c29} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_SET\_RADAR\_POS\_MIN@{COMMAND\_SET\_RADAR\_POS\_MIN}}
 \index{COMMAND\_SET\_RADAR\_POS\_MIN@{COMMAND\_SET\_RADAR\_POS\_MIN}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_SET\_RADAR\_POS\_MIN}{COMMAND\_SET\_RADAR\_POS\_MIN}}
+\doxysubsubsection{COMMAND\_SET\_RADAR\_POS\_MIN}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+POS\+\_\+\+MIN~"{}RADARSETPOSMIN"{}}
 
-String for Radar min position setter command \Hypertarget{usart__custom_8h_a2947acf776dfe702ef6160098dd5befb}\label{usart__custom_8h_a2947acf776dfe702ef6160098dd5befb} 
+String for Radar min position setter command \label{usart__custom_8h_a2947acf776dfe702ef6160098dd5befb} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_SET\_RADAR\_POSITION@{COMMAND\_SET\_RADAR\_POSITION}}
 \index{COMMAND\_SET\_RADAR\_POSITION@{COMMAND\_SET\_RADAR\_POSITION}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_SET\_RADAR\_POSITION}{COMMAND\_SET\_RADAR\_POSITION}}
+\doxysubsubsection{COMMAND\_SET\_RADAR\_POSITION}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+POSITION~"{}RADARSETPOS"{}}
 
-String for Radar position setter command \Hypertarget{usart__custom_8h_a87e889c83c8bb5fe95eef467e97324ae}\label{usart__custom_8h_a87e889c83c8bb5fe95eef467e97324ae} 
+String for Radar position setter command \label{usart__custom_8h_a87e889c83c8bb5fe95eef467e97324ae} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_SET\_RADAR\_SENSOR\_PERIOD@{COMMAND\_SET\_RADAR\_SENSOR\_PERIOD}}
 \index{COMMAND\_SET\_RADAR\_SENSOR\_PERIOD@{COMMAND\_SET\_RADAR\_SENSOR\_PERIOD}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_SET\_RADAR\_SENSOR\_PERIOD}{COMMAND\_SET\_RADAR\_SENSOR\_PERIOD}}
+\doxysubsubsection{COMMAND\_SET\_RADAR\_SENSOR\_PERIOD}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+SENSOR\+\_\+\+PERIOD~"{}RADARSETSENSORPERIOD"{}}
 
-String for Radar sensor measure period setter command, in ms \Hypertarget{usart__custom_8h_a1f77428b61c541203cab70145eb29521}\label{usart__custom_8h_a1f77428b61c541203cab70145eb29521} 
+String for Radar sensor measure period setter command, in ms \label{usart__custom_8h_a1f77428b61c541203cab70145eb29521} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_SET\_RADAR\_STEP@{COMMAND\_SET\_RADAR\_STEP}}
 \index{COMMAND\_SET\_RADAR\_STEP@{COMMAND\_SET\_RADAR\_STEP}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_SET\_RADAR\_STEP}{COMMAND\_SET\_RADAR\_STEP}}
+\doxysubsubsection{COMMAND\_SET\_RADAR\_STEP}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+SET\+\_\+\+RADAR\+\_\+\+STEP~"{}RADARSETSTEP"{}}
 
-String for Radar servo single step setter command \Hypertarget{usart__custom_8h_a6547da940a1c63d92d200f92f5509884}\label{usart__custom_8h_a6547da940a1c63d92d200f92f5509884} 
+String for Radar servo single step setter command \label{usart__custom_8h_a6547da940a1c63d92d200f92f5509884} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_START@{COMMAND\_START}}
 \index{COMMAND\_START@{COMMAND\_START}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_START}{COMMAND\_START}}
+\doxysubsubsection{COMMAND\_START}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+START~"{}START"{}}
 
-String for Radar START command \Hypertarget{usart__custom_8h_a6b66389416f72046f80d9c2c1a77d63f}\label{usart__custom_8h_a6b66389416f72046f80d9c2c1a77d63f} 
+String for Radar START command \label{usart__custom_8h_a6b66389416f72046f80d9c2c1a77d63f} 
 \index{usart\_custom.h@{usart\_custom.h}!COMMAND\_STOP@{COMMAND\_STOP}}
 \index{COMMAND\_STOP@{COMMAND\_STOP}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{COMMAND\_STOP}{COMMAND\_STOP}}
+\doxysubsubsection{COMMAND\_STOP}
 {\footnotesize\ttfamily \#define COMMAND\+\_\+\+STOP~"{}STOP"{}}
 
-String for Radar STOP command \Hypertarget{usart__custom_8h_adf0178118c42a9224dd770222fc81497}\label{usart__custom_8h_adf0178118c42a9224dd770222fc81497} 
+String for Radar STOP command \label{usart__custom_8h_adf0178118c42a9224dd770222fc81497} 
 \index{usart\_custom.h@{usart\_custom.h}!MAX\_UART\_RX\_DATA\_LEN@{MAX\_UART\_RX\_DATA\_LEN}}
 \index{MAX\_UART\_RX\_DATA\_LEN@{MAX\_UART\_RX\_DATA\_LEN}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{MAX\_UART\_RX\_DATA\_LEN}{MAX\_UART\_RX\_DATA\_LEN}}
+\doxysubsubsection{MAX\_UART\_RX\_DATA\_LEN}
 {\footnotesize\ttfamily \#define MAX\+\_\+\+UART\+\_\+\+RX\+\_\+\+DATA\+\_\+\+LEN~100}
 
-Defines maximum length of single received uart message \Hypertarget{usart__custom_8h_ad33fa5c178f516badf8b705c646ba9f9}\label{usart__custom_8h_ad33fa5c178f516badf8b705c646ba9f9} 
+Defines maximum length of single received uart message \label{usart__custom_8h_ad33fa5c178f516badf8b705c646ba9f9} 
 \index{usart\_custom.h@{usart\_custom.h}!MAX\_UART\_TX\_DATA\_LEN@{MAX\_UART\_TX\_DATA\_LEN}}
 \index{MAX\_UART\_TX\_DATA\_LEN@{MAX\_UART\_TX\_DATA\_LEN}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{MAX\_UART\_TX\_DATA\_LEN}{MAX\_UART\_TX\_DATA\_LEN}}
+\doxysubsubsection{MAX\_UART\_TX\_DATA\_LEN}
 {\footnotesize\ttfamily \#define MAX\+\_\+\+UART\+\_\+\+TX\+\_\+\+DATA\+\_\+\+LEN~30}
 
-Defines maximum length of single transmitted uart message \Hypertarget{usart__custom_8h_a1ed0601fc12697a226bb7717c7ab573e}\label{usart__custom_8h_a1ed0601fc12697a226bb7717c7ab573e} 
+Defines maximum length of single transmitted uart message \label{usart__custom_8h_a1ed0601fc12697a226bb7717c7ab573e} 
 \index{usart\_custom.h@{usart\_custom.h}!UART\_QUEUE\_LEN@{UART\_QUEUE\_LEN}}
 \index{UART\_QUEUE\_LEN@{UART\_QUEUE\_LEN}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{UART\_QUEUE\_LEN}{UART\_QUEUE\_LEN}}
+\doxysubsubsection{UART\_QUEUE\_LEN}
 {\footnotesize\ttfamily \#define UART\+\_\+\+QUEUE\+\_\+\+LEN~3}
 
-Defines maximum length of uart queue (both tx and rx) \Hypertarget{usart__custom_8h_ad3ab3c92bd02a106c0182be9c79dac55}\label{usart__custom_8h_ad3ab3c92bd02a106c0182be9c79dac55} 
+Defines maximum length of uart queue (both tx and rx) \label{usart__custom_8h_ad3ab3c92bd02a106c0182be9c79dac55} 
 \index{usart\_custom.h@{usart\_custom.h}!UART\_TX\_TRANSMISSION\_CMPLT\_TIMEOUT@{UART\_TX\_TRANSMISSION\_CMPLT\_TIMEOUT}}
 \index{UART\_TX\_TRANSMISSION\_CMPLT\_TIMEOUT@{UART\_TX\_TRANSMISSION\_CMPLT\_TIMEOUT}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{UART\_TX\_TRANSMISSION\_CMPLT\_TIMEOUT}{UART\_TX\_TRANSMISSION\_CMPLT\_TIMEOUT}}
+\doxysubsubsection{UART\_TX\_TRANSMISSION\_CMPLT\_TIMEOUT}
 {\footnotesize\ttfamily \#define UART\+\_\+\+TX\+\_\+\+TRANSMISSION\+\_\+\+CMPLT\+\_\+\+TIMEOUT~3}
 
 Defines timeout after next tx message is allowed to be sent 
 
 \doxysubsection{Typedef Documentation}
-\Hypertarget{usart__custom_8h_a13354363ebe3491f72b95bcd1c109b2c}\label{usart__custom_8h_a13354363ebe3491f72b95bcd1c109b2c} 
+\label{usart__custom_8h_a13354363ebe3491f72b95bcd1c109b2c} 
 \index{usart\_custom.h@{usart\_custom.h}!UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}}
 \index{UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{UART\_Custom\_HandleTypeDef}{UART\_Custom\_HandleTypeDef}}
-{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}}}
+\doxysubsubsection{UART\_Custom\_HandleTypeDef}
+{\footnotesize\ttfamily typedef struct \textbf{ UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} \textbf{ UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}}
 
-Structure for custom uart handle \Hypertarget{usart__custom_8h_afe5519ba8c8fbd534e3c858649e83470}\label{usart__custom_8h_afe5519ba8c8fbd534e3c858649e83470} 
+Structure for custom uart handle \label{usart__custom_8h_afe5519ba8c8fbd534e3c858649e83470} 
 \index{usart\_custom.h@{usart\_custom.h}!UART\_Queue@{UART\_Queue}}
 \index{UART\_Queue@{UART\_Queue}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{UART\_Queue}{UART\_Queue}}
-{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}}}
+\doxysubsubsection{UART\_Queue}
+{\footnotesize\ttfamily typedef struct \textbf{ UART\+\_\+\+Queue} \textbf{ UART\+\_\+\+Queue}}
 
 Structure for uart queue 
 
 \doxysubsection{Enumeration Type Documentation}
-\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352} 
+\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352} 
 \index{usart\_custom.h@{usart\_custom.h}!CommandType@{CommandType}}
 \index{CommandType@{CommandType}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{CommandType}{CommandType}}
-{\footnotesize\ttfamily enum \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352}{Command\+Type}}}
+\doxysubsubsection{CommandType}
+{\footnotesize\ttfamily enum \textbf{ Command\+Type}}
 
 Enumerate for received commands \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_IDLE@{COMMAND\_TYPE\_IDLE}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_IDLE@{COMMAND\_TYPE\_IDLE}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a7272b7f468cc8202d75d96a8043f9e87}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a7272b7f468cc8202d75d96a8043f9e87} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_IDLE@{COMMAND\_TYPE\_IDLE}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_IDLE@{COMMAND\_TYPE\_IDLE}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a7272b7f468cc8202d75d96a8043f9e87} 
 COMMAND\+\_\+\+TYPE\+\_\+\+IDLE&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_START@{COMMAND\_TYPE\_START}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_START@{COMMAND\_TYPE\_START}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ad067bb0a784084623648fd149c3768c4}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ad067bb0a784084623648fd149c3768c4} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_START@{COMMAND\_TYPE\_START}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_START@{COMMAND\_TYPE\_START}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ad067bb0a784084623648fd149c3768c4} 
 COMMAND\+\_\+\+TYPE\+\_\+\+START&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_STOP@{COMMAND\_TYPE\_STOP}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_STOP@{COMMAND\_TYPE\_STOP}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ae442cf6a5aa8d6270bd646e928af19b0}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ae442cf6a5aa8d6270bd646e928af19b0} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_STOP@{COMMAND\_TYPE\_STOP}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_STOP@{COMMAND\_TYPE\_STOP}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ae442cf6a5aa8d6270bd646e928af19b0} 
 COMMAND\+\_\+\+TYPE\+\_\+\+STOP&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_SET\_POS@{COMMAND\_TYPE\_SET\_POS}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_SET\_POS@{COMMAND\_TYPE\_SET\_POS}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a6759dda3a89ea617c6535fd492790e7d}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a6759dda3a89ea617c6535fd492790e7d} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_SET\_POS@{COMMAND\_TYPE\_SET\_POS}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_SET\_POS@{COMMAND\_TYPE\_SET\_POS}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a6759dda3a89ea617c6535fd492790e7d} 
 COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+POS&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_GET\_POS@{COMMAND\_TYPE\_GET\_POS}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_GET\_POS@{COMMAND\_TYPE\_GET\_POS}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a21276fbc1ae96774c5eb8367ca6f1d11}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a21276fbc1ae96774c5eb8367ca6f1d11} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_GET\_POS@{COMMAND\_TYPE\_GET\_POS}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_GET\_POS@{COMMAND\_TYPE\_GET\_POS}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a21276fbc1ae96774c5eb8367ca6f1d11} 
 COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+POS&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_SET\_STEP@{COMMAND\_TYPE\_SET\_STEP}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_SET\_STEP@{COMMAND\_TYPE\_SET\_STEP}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ae5984587ad3258688d05ffae48475902}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ae5984587ad3258688d05ffae48475902} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_SET\_STEP@{COMMAND\_TYPE\_SET\_STEP}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_SET\_STEP@{COMMAND\_TYPE\_SET\_STEP}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ae5984587ad3258688d05ffae48475902} 
 COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+STEP&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_GET\_STEP@{COMMAND\_TYPE\_GET\_STEP}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_GET\_STEP@{COMMAND\_TYPE\_GET\_STEP}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a3d94d1bcc54db15c881c3e520d3d9732}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a3d94d1bcc54db15c881c3e520d3d9732} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_GET\_STEP@{COMMAND\_TYPE\_GET\_STEP}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_GET\_STEP@{COMMAND\_TYPE\_GET\_STEP}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a3d94d1bcc54db15c881c3e520d3d9732} 
 COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+STEP&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_GET\_POS\_MIN@{COMMAND\_TYPE\_GET\_POS\_MIN}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_GET\_POS\_MIN@{COMMAND\_TYPE\_GET\_POS\_MIN}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352aad50a044ab6e6a8996b8fa8205cfd55b}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352aad50a044ab6e6a8996b8fa8205cfd55b} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_GET\_POS\_MIN@{COMMAND\_TYPE\_GET\_POS\_MIN}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_GET\_POS\_MIN@{COMMAND\_TYPE\_GET\_POS\_MIN}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352aad50a044ab6e6a8996b8fa8205cfd55b} 
 COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+POS\+\_\+\+MIN&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_GET\_POS\_MAX@{COMMAND\_TYPE\_GET\_POS\_MAX}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_GET\_POS\_MAX@{COMMAND\_TYPE\_GET\_POS\_MAX}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a3fee678b3bd7e7f389e89110002d183c}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a3fee678b3bd7e7f389e89110002d183c} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_GET\_POS\_MAX@{COMMAND\_TYPE\_GET\_POS\_MAX}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_GET\_POS\_MAX@{COMMAND\_TYPE\_GET\_POS\_MAX}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a3fee678b3bd7e7f389e89110002d183c} 
 COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+POS\+\_\+\+MAX&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_SET\_POS\_MIN@{COMMAND\_TYPE\_SET\_POS\_MIN}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_SET\_POS\_MIN@{COMMAND\_TYPE\_SET\_POS\_MIN}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a476ef9ec942339853c7ed9d676d0e3e5}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a476ef9ec942339853c7ed9d676d0e3e5} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_SET\_POS\_MIN@{COMMAND\_TYPE\_SET\_POS\_MIN}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_SET\_POS\_MIN@{COMMAND\_TYPE\_SET\_POS\_MIN}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a476ef9ec942339853c7ed9d676d0e3e5} 
 COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+POS\+\_\+\+MIN&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_SET\_POS\_MAX@{COMMAND\_TYPE\_SET\_POS\_MAX}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_SET\_POS\_MAX@{COMMAND\_TYPE\_SET\_POS\_MAX}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a7521841ceae5759a2e4d08da783d077e}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a7521841ceae5759a2e4d08da783d077e} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_SET\_POS\_MAX@{COMMAND\_TYPE\_SET\_POS\_MAX}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_SET\_POS\_MAX@{COMMAND\_TYPE\_SET\_POS\_MAX}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a7521841ceae5759a2e4d08da783d077e} 
 COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+POS\+\_\+\+MAX&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_GET\_SENSOR\_PERIOD@{COMMAND\_TYPE\_GET\_SENSOR\_PERIOD}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_GET\_SENSOR\_PERIOD@{COMMAND\_TYPE\_GET\_SENSOR\_PERIOD}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ad12f98e1b0e69ac0ccf8c5633ffa2a54}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ad12f98e1b0e69ac0ccf8c5633ffa2a54} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_GET\_SENSOR\_PERIOD@{COMMAND\_TYPE\_GET\_SENSOR\_PERIOD}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_GET\_SENSOR\_PERIOD@{COMMAND\_TYPE\_GET\_SENSOR\_PERIOD}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ad12f98e1b0e69ac0ccf8c5633ffa2a54} 
 COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+SENSOR\+\_\+\+PERIOD&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_SET\_SENSOR\_PERIOD@{COMMAND\_TYPE\_SET\_SENSOR\_PERIOD}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_SET\_SENSOR\_PERIOD@{COMMAND\_TYPE\_SET\_SENSOR\_PERIOD}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352acdcd32b093e7a31e121d9a65d8546385}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352acdcd32b093e7a31e121d9a65d8546385} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_SET\_SENSOR\_PERIOD@{COMMAND\_TYPE\_SET\_SENSOR\_PERIOD}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_SET\_SENSOR\_PERIOD@{COMMAND\_TYPE\_SET\_SENSOR\_PERIOD}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352acdcd32b093e7a31e121d9a65d8546385} 
 COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+SENSOR\+\_\+\+PERIOD&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_GET\_SENSOR\_MEASURE@{COMMAND\_TYPE\_GET\_SENSOR\_MEASURE}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_GET\_SENSOR\_MEASURE@{COMMAND\_TYPE\_GET\_SENSOR\_MEASURE}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352aa314a1e1244d7b6f89a45ca0ef88ebcf}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352aa314a1e1244d7b6f89a45ca0ef88ebcf} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_GET\_SENSOR\_MEASURE@{COMMAND\_TYPE\_GET\_SENSOR\_MEASURE}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_GET\_SENSOR\_MEASURE@{COMMAND\_TYPE\_GET\_SENSOR\_MEASURE}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352aa314a1e1244d7b6f89a45ca0ef88ebcf} 
 COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+SENSOR\+\_\+\+MEASURE&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_GET\_DRAW\_SCALE@{COMMAND\_TYPE\_GET\_DRAW\_SCALE}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_GET\_DRAW\_SCALE@{COMMAND\_TYPE\_GET\_DRAW\_SCALE}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a5c968c059a75367c9bcb1f4f82ffb71e}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a5c968c059a75367c9bcb1f4f82ffb71e} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_GET\_DRAW\_SCALE@{COMMAND\_TYPE\_GET\_DRAW\_SCALE}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_GET\_DRAW\_SCALE@{COMMAND\_TYPE\_GET\_DRAW\_SCALE}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a5c968c059a75367c9bcb1f4f82ffb71e} 
 COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+DRAW\+\_\+\+SCALE&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_SET\_DRAW\_SCALE@{COMMAND\_TYPE\_SET\_DRAW\_SCALE}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_SET\_DRAW\_SCALE@{COMMAND\_TYPE\_SET\_DRAW\_SCALE}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ab54684c7e7eb692bda06a46888116eaa}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ab54684c7e7eb692bda06a46888116eaa} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_SET\_DRAW\_SCALE@{COMMAND\_TYPE\_SET\_DRAW\_SCALE}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_SET\_DRAW\_SCALE@{COMMAND\_TYPE\_SET\_DRAW\_SCALE}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352ab54684c7e7eb692bda06a46888116eaa} 
 COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+DRAW\+\_\+\+SCALE&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_GET\_DRAW\_RULES@{COMMAND\_TYPE\_GET\_DRAW\_RULES}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_GET\_DRAW\_RULES@{COMMAND\_TYPE\_GET\_DRAW\_RULES}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a858946b754a6edb87080905ce69e578d}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a858946b754a6edb87080905ce69e578d} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_GET\_DRAW\_RULES@{COMMAND\_TYPE\_GET\_DRAW\_RULES}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_GET\_DRAW\_RULES@{COMMAND\_TYPE\_GET\_DRAW\_RULES}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352a858946b754a6edb87080905ce69e578d} 
 COMMAND\+\_\+\+TYPE\+\_\+\+GET\+\_\+\+DRAW\+\_\+\+RULES&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_SET\_DRAW\_RULES@{COMMAND\_TYPE\_SET\_DRAW\_RULES}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_SET\_DRAW\_RULES@{COMMAND\_TYPE\_SET\_DRAW\_RULES}}}\Hypertarget{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352aa492f0fce57cb811434e7080dd8e9279}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352aa492f0fce57cb811434e7080dd8e9279} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMAND\_TYPE\_SET\_DRAW\_RULES@{COMMAND\_TYPE\_SET\_DRAW\_RULES}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!COMMAND\_TYPE\_SET\_DRAW\_RULES@{COMMAND\_TYPE\_SET\_DRAW\_RULES}}}\label{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352aa492f0fce57cb811434e7080dd8e9279} 
 COMMAND\+\_\+\+TYPE\+\_\+\+SET\+\_\+\+DRAW\+\_\+\+RULES&\\
 \hline
 
 \end{DoxyEnumFields}
-\Hypertarget{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7}\label{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7} 
+\label{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7} 
 \index{usart\_custom.h@{usart\_custom.h}!ResponseType@{ResponseType}}
 \index{ResponseType@{ResponseType}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{ResponseType}{ResponseType}}
-{\footnotesize\ttfamily enum \mbox{\hyperlink{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7}{Response\+Type}}}
+\doxysubsubsection{ResponseType}
+{\footnotesize\ttfamily enum \textbf{ Response\+Type}}
 
 Enumerate for responses on received commands \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{RESPONSE\_OK@{RESPONSE\_OK}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!RESPONSE\_OK@{RESPONSE\_OK}}}\Hypertarget{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7ad9a009eaad7d808678adbea41b8b1faa}\label{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7ad9a009eaad7d808678adbea41b8b1faa} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESPONSE\_OK@{RESPONSE\_OK}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!RESPONSE\_OK@{RESPONSE\_OK}}}\label{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7ad9a009eaad7d808678adbea41b8b1faa} 
 RESPONSE\+\_\+\+OK&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{RESPONSE\_UNKNOW\_CMD@{RESPONSE\_UNKNOW\_CMD}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!RESPONSE\_UNKNOW\_CMD@{RESPONSE\_UNKNOW\_CMD}}}\Hypertarget{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7acebd78e00b6e0841ba1526eb58c32a43}\label{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7acebd78e00b6e0841ba1526eb58c32a43} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESPONSE\_UNKNOW\_CMD@{RESPONSE\_UNKNOW\_CMD}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!RESPONSE\_UNKNOW\_CMD@{RESPONSE\_UNKNOW\_CMD}}}\label{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7acebd78e00b6e0841ba1526eb58c32a43} 
 RESPONSE\+\_\+\+UNKNOW\+\_\+\+CMD&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{RESPONSE\_ERROR@{RESPONSE\_ERROR}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!RESPONSE\_ERROR@{RESPONSE\_ERROR}}}\Hypertarget{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7ada8db732ee34297d85ba9014b3e3f166}\label{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7ada8db732ee34297d85ba9014b3e3f166} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESPONSE\_ERROR@{RESPONSE\_ERROR}!usart\_custom.h@{usart\_custom.h}}\index{usart\_custom.h@{usart\_custom.h}!RESPONSE\_ERROR@{RESPONSE\_ERROR}}}\label{usart__custom_8h_af5055605e320b3f9ea9fa330b57604e7ada8db732ee34297d85ba9014b3e3f166} 
 RESPONSE\+\_\+\+ERROR&\\
 \hline
 
@@ -382,11 +382,11 @@ RESPONSE\+\_\+\+ERROR&\\
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{usart__custom_8h_a4dd5805db71c5e3e11920b812bddaa71}\label{usart__custom_8h_a4dd5805db71c5e3e11920b812bddaa71} 
+\label{usart__custom_8h_a4dd5805db71c5e3e11920b812bddaa71} 
 \index{usart\_custom.h@{usart\_custom.h}!CommandDecode@{CommandDecode}}
 \index{CommandDecode@{CommandDecode}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{CommandDecode()}{CommandDecode()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{usart__custom_8h_a21e038f5b8958e203d28bc4f18472352}{Command\+Type}} Command\+Decode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data,  }\item[{uint16\+\_\+t}]{data\+Len }\end{DoxyParamCaption})}
+\doxysubsubsection{CommandDecode()}
+{\footnotesize\ttfamily \textbf{ Command\+Type} Command\+Decode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{data,  }\item[{uint16\+\_\+t}]{data\+Len }\end{DoxyParamCaption})}
 
 Function for checking if any of uart commands is received
 
@@ -400,115 +400,115 @@ Function for checking if any of uart commands is received
 \begin{DoxyReturn}{Returns}
 Command\+Type which was(or not) decoded 
 \end{DoxyReturn}
-\Hypertarget{usart__custom_8h_ae07c419a1a1df7134ddbfedd9bdf7c91}\label{usart__custom_8h_ae07c419a1a1df7134ddbfedd9bdf7c91} 
+\label{usart__custom_8h_ae07c419a1a1df7134ddbfedd9bdf7c91} 
 \index{usart\_custom.h@{usart\_custom.h}!uartCustomInit@{uartCustomInit}}
 \index{uartCustomInit@{uartCustomInit}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{uartCustomInit()}{uartCustomInit()}}
-{\footnotesize\ttfamily void uart\+Custom\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{huart\+Custom,  }\item[{\mbox{\hyperlink{group___u_a_r_t___exported___types_ga5de4a49eb132735325e706f406c69d6e}{UART\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{huart,  }\item[{uint16\+\_\+t}]{rx\+Data\+Len,  }\item[{uint16\+\_\+t}]{tx\+Data\+Len }\end{DoxyParamCaption})}
+\doxysubsubsection{uartCustomInit()}
+{\footnotesize\ttfamily void uart\+Custom\+Init (\begin{DoxyParamCaption}\item[{\textbf{ UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} $\ast$}]{huart\+Custom,  }\item[{\textbf{ UART\+\_\+\+Handle\+Type\+Def} $\ast$}]{huart,  }\item[{uint16\+\_\+t}]{rx\+Data\+Len,  }\item[{uint16\+\_\+t}]{tx\+Data\+Len }\end{DoxyParamCaption})}
 
 Function for receiving next waiting data in queue
 
 
 \begin{DoxyParams}{Parameters}
-{\em huart\+Custom} & pointer to \doxylink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} struct instance param huart pointer to UART\+\_\+\+Handle\+Type\+Def struct instance param rx\+Data\+Len value for maximum rx data length param tx\+Data\+Len value for maximum tx data length \\
+{\em huart\+Custom} & pointer to \doxyref{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}{p.}{struct_u_a_r_t___custom___handle_type_def} struct instance param huart pointer to UART\+\_\+\+Handle\+Type\+Def struct instance param rx\+Data\+Len value for maximum rx data length param tx\+Data\+Len value for maximum tx data length \\
 \hline
 \end{DoxyParams}
-\Hypertarget{usart__custom_8h_a123702bc9950b2a0ce9a34e889842f74}\label{usart__custom_8h_a123702bc9950b2a0ce9a34e889842f74} 
+\label{usart__custom_8h_a123702bc9950b2a0ce9a34e889842f74} 
 \index{usart\_custom.h@{usart\_custom.h}!uartCustomReceiveDMA@{uartCustomReceiveDMA}}
 \index{uartCustomReceiveDMA@{uartCustomReceiveDMA}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{uartCustomReceiveDMA()}{uartCustomReceiveDMA()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\+\_\+\+Status\+Type\+Def}} uart\+Custom\+Receive\+DMA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{huart\+Custom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsubsection{uartCustomReceiveDMA()}
+{\footnotesize\ttfamily \textbf{ HAL\+\_\+\+Status\+Type\+Def} uart\+Custom\+Receive\+DMA (\begin{DoxyParamCaption}\item[{\textbf{ UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} $\ast$}]{huart\+Custom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Function for calling receiving process via uart with DMA
 
 
 \begin{DoxyParams}{Parameters}
-{\em huart\+Custom} & pointer to \doxylink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} struct instance \\
+{\em huart\+Custom} & pointer to \doxyref{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}{p.}{struct_u_a_r_t___custom___handle_type_def} struct instance \\
 \hline
 \end{DoxyParams}
-\Hypertarget{usart__custom_8h_a74ea4ae09ad7d11a8ed037ed585f4c24}\label{usart__custom_8h_a74ea4ae09ad7d11a8ed037ed585f4c24} 
+\label{usart__custom_8h_a74ea4ae09ad7d11a8ed037ed585f4c24} 
 \index{usart\_custom.h@{usart\_custom.h}!uartCustomTransmitDMA@{uartCustomTransmitDMA}}
 \index{uartCustomTransmitDMA@{uartCustomTransmitDMA}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{uartCustomTransmitDMA()}{uartCustomTransmitDMA()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\+\_\+\+Status\+Type\+Def}} uart\+Custom\+Transmit\+DMA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{huart\+Custom,  }\item[{uint16\+\_\+t}]{msg\+Len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsubsection{uartCustomTransmitDMA()}
+{\footnotesize\ttfamily \textbf{ HAL\+\_\+\+Status\+Type\+Def} uart\+Custom\+Transmit\+DMA (\begin{DoxyParamCaption}\item[{\textbf{ UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} $\ast$}]{huart\+Custom,  }\item[{uint16\+\_\+t}]{msg\+Len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Function for calling DMA transmit via uart
 
 
 \begin{DoxyParams}{Parameters}
-{\em huart\+Custom} & pointer to \doxylink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} struct instance \\
+{\em huart\+Custom} & pointer to \doxyref{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}{p.}{struct_u_a_r_t___custom___handle_type_def} struct instance \\
 \hline
 {\em msg\+Len} & value for maximum tx data length \\
 \hline
 \end{DoxyParams}
-\Hypertarget{usart__custom_8h_ab0cdd1e74b215a0e58dca5e866c11de8}\label{usart__custom_8h_ab0cdd1e74b215a0e58dca5e866c11de8} 
+\label{usart__custom_8h_ab0cdd1e74b215a0e58dca5e866c11de8} 
 \index{usart\_custom.h@{usart\_custom.h}!uartQueueAdd@{uartQueueAdd}}
 \index{uartQueueAdd@{uartQueueAdd}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{uartQueueAdd()}{uartQueueAdd()}}
-{\footnotesize\ttfamily void uart\+Queue\+Add (\begin{DoxyParamCaption}\item[{volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}}]{uart\+Queue,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data\+Tx\+Source,  }\item[{uint16\+\_\+t}]{msg\+Len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsubsection{uartQueueAdd()}
+{\footnotesize\ttfamily void uart\+Queue\+Add (\begin{DoxyParamCaption}\item[{volatile \textbf{ UART\+\_\+\+Queue} $\ast$}]{uart\+Queue,  }\item[{uint8\+\_\+t $\ast$}]{data\+Tx\+Source,  }\item[{uint16\+\_\+t}]{msg\+Len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Function for adding next data to be send via uart queue
 
 
 \begin{DoxyParams}{Parameters}
-{\em uart\+Queue} & pointer to \doxylink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue} struct instance \\
+{\em uart\+Queue} & pointer to \doxyref{UART\+\_\+\+Queue}{p.}{struct_u_a_r_t___queue} struct instance \\
 \hline
 {\em data\+Tx\+Source} & pointer to data array to be added to queue \\
 \hline
 {\em msg\+Len} & value for added data buffer length \\
 \hline
 \end{DoxyParams}
-\Hypertarget{usart__custom_8h_a971ac04f29008014c47a53f31a0eca02}\label{usart__custom_8h_a971ac04f29008014c47a53f31a0eca02} 
+\label{usart__custom_8h_a971ac04f29008014c47a53f31a0eca02} 
 \index{usart\_custom.h@{usart\_custom.h}!uartQueueClear@{uartQueueClear}}
 \index{uartQueueClear@{uartQueueClear}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{uartQueueClear()}{uartQueueClear()}}
-{\footnotesize\ttfamily void uart\+Queue\+Clear (\begin{DoxyParamCaption}\item[{volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}}]{uart\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsubsection{uartQueueClear()}
+{\footnotesize\ttfamily void uart\+Queue\+Clear (\begin{DoxyParamCaption}\item[{volatile \textbf{ UART\+\_\+\+Queue} $\ast$}]{uart\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Function for clearing whole uart structure
 
 
 \begin{DoxyParams}{Parameters}
-{\em uart\+Queue} & pointer to \doxylink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue} struct instance \\
+{\em uart\+Queue} & pointer to \doxyref{UART\+\_\+\+Queue}{p.}{struct_u_a_r_t___queue} struct instance \\
 \hline
 \end{DoxyParams}
-\Hypertarget{usart__custom_8h_affe2663ea2814b2c9ab3695c28961355}\label{usart__custom_8h_affe2663ea2814b2c9ab3695c28961355} 
+\label{usart__custom_8h_affe2663ea2814b2c9ab3695c28961355} 
 \index{usart\_custom.h@{usart\_custom.h}!uartQueueInit@{uartQueueInit}}
 \index{uartQueueInit@{uartQueueInit}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{uartQueueInit()}{uartQueueInit()}}
-{\footnotesize\ttfamily void uart\+Queue\+Init (\begin{DoxyParamCaption}\item[{volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}}]{uart\+Queue }\end{DoxyParamCaption})}
+\doxysubsubsection{uartQueueInit()}
+{\footnotesize\ttfamily void uart\+Queue\+Init (\begin{DoxyParamCaption}\item[{volatile \textbf{ UART\+\_\+\+Queue} $\ast$}]{uart\+Queue }\end{DoxyParamCaption})}
 
 Function for init uart queue structure
 
 
 \begin{DoxyParams}{Parameters}
-{\em uart\+Queue} & pointer to \doxylink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue} struct instance \\
+{\em uart\+Queue} & pointer to \doxyref{UART\+\_\+\+Queue}{p.}{struct_u_a_r_t___queue} struct instance \\
 \hline
 \end{DoxyParams}
-\Hypertarget{usart__custom_8h_abbc250ac23ac518f14aa24e1f9a11ead}\label{usart__custom_8h_abbc250ac23ac518f14aa24e1f9a11ead} 
+\label{usart__custom_8h_abbc250ac23ac518f14aa24e1f9a11ead} 
 \index{usart\_custom.h@{usart\_custom.h}!uartQueueReceive@{uartQueueReceive}}
 \index{uartQueueReceive@{uartQueueReceive}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{uartQueueReceive()}{uartQueueReceive()}}
-{\footnotesize\ttfamily void uart\+Queue\+Receive (\begin{DoxyParamCaption}\item[{volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}}]{uart\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsubsection{uartQueueReceive()}
+{\footnotesize\ttfamily void uart\+Queue\+Receive (\begin{DoxyParamCaption}\item[{volatile \textbf{ UART\+\_\+\+Queue} $\ast$}]{uart\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Function for receiving next waiting data in queue
 
 
 \begin{DoxyParams}{Parameters}
-{\em uart\+Queue} & pointer to \doxylink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue} struct instance \\
+{\em uart\+Queue} & pointer to \doxyref{UART\+\_\+\+Queue}{p.}{struct_u_a_r_t___queue} struct instance \\
 \hline
 \end{DoxyParams}
-\Hypertarget{usart__custom_8h_a434833c4433f588d5fda684a54dcb0ff}\label{usart__custom_8h_a434833c4433f588d5fda684a54dcb0ff} 
+\label{usart__custom_8h_a434833c4433f588d5fda684a54dcb0ff} 
 \index{usart\_custom.h@{usart\_custom.h}!uartQueueTransmit@{uartQueueTransmit}}
 \index{uartQueueTransmit@{uartQueueTransmit}!usart\_custom.h@{usart\_custom.h}}
-\doxysubsubsection{\texorpdfstring{uartQueueTransmit()}{uartQueueTransmit()}}
-{\footnotesize\ttfamily void uart\+Queue\+Transmit (\begin{DoxyParamCaption}\item[{volatile \mbox{\hyperlink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue}} \texorpdfstring{$\ast$}{*}}]{uart\+Queue,  }\item[{\mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{huart\+Custom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsubsection{uartQueueTransmit()}
+{\footnotesize\ttfamily void uart\+Queue\+Transmit (\begin{DoxyParamCaption}\item[{volatile \textbf{ UART\+\_\+\+Queue} $\ast$}]{uart\+Queue,  }\item[{\textbf{ UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} $\ast$}]{huart\+Custom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Function for transmitting next data in queue
 
 
 \begin{DoxyParams}{Parameters}
-{\em uart\+Queue} & pointer to \doxylink{struct_u_a_r_t___queue}{UART\+\_\+\+Queue} struct instance \\
+{\em uart\+Queue} & pointer to \doxyref{UART\+\_\+\+Queue}{p.}{struct_u_a_r_t___queue} struct instance \\
 \hline
-{\em huart\+Custom} & pointer to \doxylink{struct_u_a_r_t___custom___handle_type_def}{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def} struct instance \\
+{\em huart\+Custom} & pointer to \doxyref{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def}{p.}{struct_u_a_r_t___custom___handle_type_def} struct instance \\
 \hline
 \end{DoxyParams}

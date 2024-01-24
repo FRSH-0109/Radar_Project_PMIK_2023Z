@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Radar: radarStruct Struct Reference</title>
+<title>Ultrasonc Radar: radarStruct Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Radar<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Ultrasonc Radar
    </div>
   </td>
  </tr>
@@ -122,7 +122,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a1fb6c4ca380736554edf1b5778d03bb6" id="r_a1fb6c4ca380736554edf1b5778d03bb6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structradar_struct.html#a1fb6c4ca380736554edf1b5778d03bb6">measurePeriodMs</a></td></tr>
 <tr class="separator:a1fb6c4ca380736554edf1b5778d03bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Field Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Structure of radar, containing servo and sensor variables needed to control and measure process </p>
+</div><h2 class="groupheader">Field Documentation</h2>
 <a id="a64137967141ad97b940c16a035615d09" name="a64137967141ad97b940c16a035615d09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a64137967141ad97b940c16a035615d09">&#9670;&#160;</a></span>direction</h2>
 
@@ -134,6 +136,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Direction of servo's movement indicator (1 or -1) </p>
 
 </div>
 </div>
@@ -148,6 +151,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Period in ms, of how often measurement should be triggered </p>
 
 </div>
 </div>
@@ -162,6 +166,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Actual position of servo in degrees </p>
 
 </div>
 </div>
@@ -176,6 +181,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Maximal position of servo's movement in degrees </p>
 
 </div>
 </div>
@@ -190,6 +196,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Minimal position of servo's movement in degrees </p>
 
 </div>
 </div>
@@ -204,6 +211,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Period in ms, of updating servo's position </p>
 
 </div>
 </div>
@@ -218,6 +226,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Value in degrees, of how much position should be updated </p>
 
 </div>
 </div>
@@ -232,6 +241,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Pointer to sensors structure </p>
 
 </div>
 </div>
@@ -246,6 +256,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>POinter to timer structure used to control sensor's measurements </p>
 
 </div>
 </div>
@@ -260,6 +271,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Pointer to servo's structure </p>
 
 </div>
 </div>
@@ -274,6 +286,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Pointer to timer structure used to control servo's movement </p>
 
 </div>
 </div>

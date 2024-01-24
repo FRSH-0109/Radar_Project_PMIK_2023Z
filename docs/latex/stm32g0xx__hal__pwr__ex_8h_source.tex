@@ -1,6 +1,6 @@
 \doxysection{stm32g0xx\+\_\+hal\+\_\+pwr\+\_\+ex.\+h}
-\hypertarget{stm32g0xx__hal__pwr__ex_8h_source}{}\label{stm32g0xx__hal__pwr__ex_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_pwr\_ex.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_pwr\_ex.h}}
-\mbox{\hyperlink{stm32g0xx__hal__pwr__ex_8h}{Go to the documentation of this file.}}
+\label{stm32g0xx__hal__pwr__ex_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_pwr\_ex.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_pwr\_ex.h}}
+\textbf{ Go to the documentation of this file.}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
 \DoxyCodeLine{00019\ \textcolor{comment}{/*\ Define\ to\ prevent\ recursive\ inclusion\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
@@ -12,7 +12,7 @@
 \DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00026\ }
 \DoxyCodeLine{00027\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
-\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32g0xx__hal__def_8h}{stm32g0xx\_hal\_def.h}}"{}}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}stm32g0xx\_hal\_def.h"{}}}
 \DoxyCodeLine{00029\ }
 \DoxyCodeLine{00039\ \textcolor{comment}{/*\ Exported\ types\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00044\ \textcolor{preprocessor}{\#if\ defined(PWR\_PVM\_SUPPORT)}}
@@ -250,31 +250,31 @@
 \DoxyCodeLine{00548\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ PWR\_PVM\_SUPPORT\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{00553\ \textcolor{comment}{/*\ Exported\ functions\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00562\ \textcolor{comment}{/*\ Peripheral\ Control\ functions\ \ **********************************************/}}
-\DoxyCodeLine{00563\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___p_w_r_ex___exported___functions___group1_gabc3f2197ca4d8879dabb76d5cc4bc442}{HAL\_PWREx\_EnableBatteryCharging}}(uint32\_t\ ResistorSelection);}
-\DoxyCodeLine{00564\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___p_w_r_ex___exported___functions___group1_ga808f86f6f56f380c9863dee7ddf5bff5}{HAL\_PWREx\_DisableBatteryCharging}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00563\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_EnableBatteryCharging(uint32\_t\ ResistorSelection);}
+\DoxyCodeLine{00564\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_DisableBatteryCharging(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00565\ \textcolor{preprocessor}{\#if\ defined(PWR\_CR3\_ENB\_ULP)}}
 \DoxyCodeLine{00566\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_EnablePORMonitorSampling(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00567\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_DisablePORMonitorSampling(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00568\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ PWR\_CR3\_ENB\_ULP\ */}\textcolor{preprocessor}{}}
-\DoxyCodeLine{00569\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___p_w_r_ex___exported___functions___group1_ga3cfe7616c39b0c8524bdad2290e508b0}{HAL\_PWREx\_EnableInternalWakeUpLine}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00570\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___p_w_r_ex___exported___functions___group1_ga32380a9c44681d7a53212adf35cdc16f}{HAL\_PWREx\_DisableInternalWakeUpLine}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00571\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___p_w_r_ex___exported___functions___group1_ga1c66e7444ac70938c6e7a107212c62f5}{HAL\_PWREx\_EnableGPIOPullUp}}(uint32\_t\ GPIO,\ uint32\_t\ GPIONumber);}
-\DoxyCodeLine{00572\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___p_w_r_ex___exported___functions___group1_gad3e402154b79e7f56c4f526d3c9d12d3}{HAL\_PWREx\_DisableGPIOPullUp}}(uint32\_t\ GPIO,\ uint32\_t\ GPIONumber);}
-\DoxyCodeLine{00573\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___p_w_r_ex___exported___functions___group1_gaacf48e452bfd1b111fcb9dd4be19774e}{HAL\_PWREx\_EnableGPIOPullDown}}(uint32\_t\ GPIO,\ uint32\_t\ GPIONumber);}
-\DoxyCodeLine{00574\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___p_w_r_ex___exported___functions___group1_ga3313d923ce8e87302a066fc5a31bf3dc}{HAL\_PWREx\_DisableGPIOPullDown}}(uint32\_t\ GPIO,\ uint32\_t\ GPIONumber);}
-\DoxyCodeLine{00575\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___p_w_r_ex___exported___functions___group1_gac3b0e88b0d5af66f04a4fe79295f8a47}{HAL\_PWREx\_EnablePullUpPullDownConfig}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00576\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___p_w_r_ex___exported___functions___group1_gaac0bbd32fc0ef037024720692f190f64}{HAL\_PWREx\_DisablePullUpPullDownConfig}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00569\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_EnableInternalWakeUpLine(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00570\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_DisableInternalWakeUpLine(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00571\ HAL\_StatusTypeDef\ HAL\_PWREx\_EnableGPIOPullUp(uint32\_t\ GPIO,\ uint32\_t\ GPIONumber);}
+\DoxyCodeLine{00572\ HAL\_StatusTypeDef\ HAL\_PWREx\_DisableGPIOPullUp(uint32\_t\ GPIO,\ uint32\_t\ GPIONumber);}
+\DoxyCodeLine{00573\ HAL\_StatusTypeDef\ HAL\_PWREx\_EnableGPIOPullDown(uint32\_t\ GPIO,\ uint32\_t\ GPIONumber);}
+\DoxyCodeLine{00574\ HAL\_StatusTypeDef\ HAL\_PWREx\_DisableGPIOPullDown(uint32\_t\ GPIO,\ uint32\_t\ GPIONumber);}
+\DoxyCodeLine{00575\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_EnablePullUpPullDownConfig(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00576\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_DisablePullUpPullDownConfig(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00577\ \textcolor{preprocessor}{\#if\ defined(PWR\_CR3\_RRS)}}
 \DoxyCodeLine{00578\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_EnableSRAMRetention(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00579\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_DisableSRAMRetention(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00580\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ PWR\_CR3\_RRS\ */}\textcolor{preprocessor}{}}
-\DoxyCodeLine{00581\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___p_w_r_ex___exported___functions___group1_ga3712f4a4b5b492864fbb206763426428}{HAL\_PWREx\_EnableFlashPowerDown}}(uint32\_t\ PowerMode);}
-\DoxyCodeLine{00582\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___p_w_r_ex___exported___functions___group1_ga283979e2c9117c27dfacc38161ac100b}{HAL\_PWREx\_DisableFlashPowerDown}}(uint32\_t\ PowerMode);}
-\DoxyCodeLine{00583\ uint32\_t\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___p_w_r_ex___exported___functions___group1_ga2978c7160c8d166f1bf2bf39e4bf33f7}{HAL\_PWREx\_GetVoltageRange}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00584\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___p_w_r_ex___exported___functions___group1_ga1a1e616641c2dc696681ace585d9afb5}{HAL\_PWREx\_ControlVoltageScaling}}(uint32\_t\ VoltageScaling);}
+\DoxyCodeLine{00581\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_EnableFlashPowerDown(uint32\_t\ PowerMode);}
+\DoxyCodeLine{00582\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_DisableFlashPowerDown(uint32\_t\ PowerMode);}
+\DoxyCodeLine{00583\ uint32\_t\ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_GetVoltageRange(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00584\ HAL\_StatusTypeDef\ HAL\_PWREx\_ControlVoltageScaling(uint32\_t\ VoltageScaling);}
 \DoxyCodeLine{00585\ \textcolor{preprocessor}{\#if\ defined(PWR\_PVD\_SUPPORT)}}
 \DoxyCodeLine{00586\ \textcolor{comment}{/*\ Power\ voltage\ detection\ configuration\ functions\ ****************************/}}
-\DoxyCodeLine{00587\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ HAL\_PWREx\_ConfigPVD(PWR\_PVDTypeDef\ *sConfigPVD);}
+\DoxyCodeLine{00587\ HAL\_StatusTypeDef\ HAL\_PWREx\_ConfigPVD(PWR\_PVDTypeDef\ *sConfigPVD);}
 \DoxyCodeLine{00588\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_EnablePVD(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00589\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_DisablePVD(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00590\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ PWR\_PVD\_SUPPORT\ */}\textcolor{preprocessor}{}}
@@ -286,12 +286,12 @@
 \DoxyCodeLine{00596\ \textcolor{keywordtype}{void}\ HAL\_PWREx\_DisableVddUSB(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00597\ \textcolor{keywordtype}{void}\ HAL\_PWREx\_EnablePVMUSB(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00598\ \textcolor{keywordtype}{void}\ HAL\_PWREx\_DisablePVMUSB(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00599\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ HAL\_PWREx\_ConfigPVM(PWR\_PVMTypeDef\ *sConfigPVM);}
+\DoxyCodeLine{00599\ HAL\_StatusTypeDef\ HAL\_PWREx\_ConfigPVM(PWR\_PVMTypeDef\ *sConfigPVM);}
 \DoxyCodeLine{00600\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ PWR\_PVM\_SUPPORT\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{00601\ }
 \DoxyCodeLine{00602\ \textcolor{comment}{/*\ Low\ Power\ modes\ configuration\ functions\ ************************************/}}
-\DoxyCodeLine{00603\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___p_w_r_ex___exported___functions___group1_ga03d018969b6940092bb32a3869b8c84e}{HAL\_PWREx\_EnableLowPowerRunMode}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00604\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___p_w_r_ex___exported___functions___group1_ga848ac532d5c69ae9357a8ebcd8bb82f1}{HAL\_PWREx\_DisableLowPowerRunMode}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00603\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_EnableLowPowerRunMode(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00604\ HAL\_StatusTypeDef\ HAL\_PWREx\_DisableLowPowerRunMode(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00605\ \textcolor{preprocessor}{\#if\ defined(PWR\_SHDW\_SUPPORT)}}
 \DoxyCodeLine{00606\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ HAL\_PWREx\_EnterSHUTDOWNMode(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00607\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ PWR\_SHDW\_SUPPORT\ */}\textcolor{preprocessor}{}}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Radar: RadarApp/DistanceSensorDriver/distance_sensor.h File Reference</title>
+<title>Ultrasonc Radar: RadarApp/DistanceSensorDriver/distance_sensor.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Radar<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Ultrasonc Radar
    </div>
   </td>
  </tr>
@@ -158,6 +158,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function used to implement custom time delay of 1-2ms</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> instance of sensor to be initialized </td></tr>
+    <tr><td class="paramname">delay</td><td>time in ms to wait </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -176,6 +184,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function used to get distance from sensor's structure</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> instance of sensor to be initialized </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double value of distance contained in sensor's struct </dd></dl>
 
 </div>
 </div>
@@ -204,6 +220,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function used to receive echo signal from sensor</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> instance of sensor to be initialized </td></tr>
+    <tr><td class="paramname">ticks</td><td>value of how many ticks length echo signal was </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -222,6 +246,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function used to get state of readyToMeasure flag</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> instance of sensor to be initialized </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool value corresponding to readyToMeasureFlag </dd></dl>
 
 </div>
 </div>
@@ -250,6 +282,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function used to once init sensor structure</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> instance of sensor to be initialized </td></tr>
+    <tr><td class="paramname">ticksToDistanceFactor</td><td>used to set factor param in sensor's structure </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -268,6 +308,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function used to send trigger signal to the sensor</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> instance of sensor to be initialized </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -286,6 +333,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function used to turn off trigger signal to the sensor</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> instance of sensor to be initialized </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -304,6 +358,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function used to turn on trigger signal to the sensor</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> instance of sensor to be initialized </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

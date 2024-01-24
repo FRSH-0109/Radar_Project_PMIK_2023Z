@@ -1,5 +1,5 @@
 \doxysection{UART\+\_\+\+Queue Struct Reference}
-\hypertarget{struct_u_a_r_t___queue}{}\label{struct_u_a_r_t___queue}\index{UART\_Queue@{UART\_Queue}}
+\label{struct_u_a_r_t___queue}\index{UART\_Queue@{UART\_Queue}}
 
 
 {\ttfamily \#include $<$usart\+\_\+custom.\+h$>$}
@@ -7,21 +7,21 @@
 \doxysubsubsection*{Data Fields}
 \begin{DoxyCompactItemize}
 \item 
-volatile uint8\+\_\+t \mbox{\hyperlink{struct_u_a_r_t___queue_aabf0dabd48dff725071bf5ec713f42e9}{data\+Rx}} \mbox{[}\mbox{\hyperlink{usart__custom_8h_a1ed0601fc12697a226bb7717c7ab573e}{UART\+\_\+\+QUEUE\+\_\+\+LEN}}\mbox{]}\mbox{[}\mbox{\hyperlink{usart__custom_8h_adf0178118c42a9224dd770222fc81497}{MAX\+\_\+\+UART\+\_\+\+RX\+\_\+\+DATA\+\_\+\+LEN}}\mbox{]}
+volatile uint8\+\_\+t \textbf{ data\+Rx} [\textbf{ UART\+\_\+\+QUEUE\+\_\+\+LEN}][\textbf{ MAX\+\_\+\+UART\+\_\+\+RX\+\_\+\+DATA\+\_\+\+LEN}]
 \item 
-volatile uint16\+\_\+t \mbox{\hyperlink{struct_u_a_r_t___queue_ad5bd92c0c4e4441b3843d3718af24cdd}{data\+Rx\+Length}} \mbox{[}\mbox{\hyperlink{usart__custom_8h_a1ed0601fc12697a226bb7717c7ab573e}{UART\+\_\+\+QUEUE\+\_\+\+LEN}}\mbox{]}
+volatile uint16\+\_\+t \textbf{ data\+Rx\+Length} [\textbf{ UART\+\_\+\+QUEUE\+\_\+\+LEN}]
 \item 
-volatile uint8\+\_\+t \mbox{\hyperlink{struct_u_a_r_t___queue_ac87fbf2375e4a60a0ea19b9c572fc02b}{head\+Ixndex}}
+volatile uint8\+\_\+t \textbf{ head\+Ixndex}
 \item 
-volatile uint8\+\_\+t \mbox{\hyperlink{struct_u_a_r_t___queue_a3b4e9fc9e72aaeaa7086915ef71e9e18}{tail\+Index}}
+volatile uint8\+\_\+t \textbf{ tail\+Index}
 \item 
-uint8\+\_\+t \mbox{\hyperlink{struct_u_a_r_t___queue_a3efa81db0281c5e6ec8803214fe30378}{data\+Tx}} \mbox{[}\mbox{\hyperlink{usart__custom_8h_a1ed0601fc12697a226bb7717c7ab573e}{UART\+\_\+\+QUEUE\+\_\+\+LEN}}\mbox{]}\mbox{[}\mbox{\hyperlink{usart__custom_8h_ad33fa5c178f516badf8b705c646ba9f9}{MAX\+\_\+\+UART\+\_\+\+TX\+\_\+\+DATA\+\_\+\+LEN}}\mbox{]}
+uint8\+\_\+t \textbf{ data\+Tx} [\textbf{ UART\+\_\+\+QUEUE\+\_\+\+LEN}][\textbf{ MAX\+\_\+\+UART\+\_\+\+TX\+\_\+\+DATA\+\_\+\+LEN}]
 \item 
-uint16\+\_\+t \mbox{\hyperlink{struct_u_a_r_t___queue_a7be530387eca02e13ed41567d8c328af}{data\+Tx\+Length}} \mbox{[}\mbox{\hyperlink{usart__custom_8h_a1ed0601fc12697a226bb7717c7ab573e}{UART\+\_\+\+QUEUE\+\_\+\+LEN}}\mbox{]}
+uint16\+\_\+t \textbf{ data\+Tx\+Length} [\textbf{ UART\+\_\+\+QUEUE\+\_\+\+LEN}]
 \item 
-volatile uint8\+\_\+t \mbox{\hyperlink{struct_u_a_r_t___queue_a614486ec92e3549168b31c4350e47910}{data\+Index}}
+volatile uint8\+\_\+t \textbf{ data\+Index}
 \item 
-volatile uint8\+\_\+t \mbox{\hyperlink{struct_u_a_r_t___queue_a21c6464b9d460c444aae6a9b093c02b9}{transmit\+Index}}
+volatile uint8\+\_\+t \textbf{ transmit\+Index}
 \end{DoxyCompactItemize}
 
 
@@ -29,56 +29,56 @@ volatile uint8\+\_\+t \mbox{\hyperlink{struct_u_a_r_t___queue_a21c6464b9d460c444
 Structure for uart queue 
 
 \doxysubsection{Field Documentation}
-\Hypertarget{struct_u_a_r_t___queue_a614486ec92e3549168b31c4350e47910}\label{struct_u_a_r_t___queue_a614486ec92e3549168b31c4350e47910} 
+\label{struct_u_a_r_t___queue_a614486ec92e3549168b31c4350e47910} 
 \index{UART\_Queue@{UART\_Queue}!dataIndex@{dataIndex}}
 \index{dataIndex@{dataIndex}!UART\_Queue@{UART\_Queue}}
-\doxysubsubsection{\texorpdfstring{dataIndex}{dataIndex}}
+\doxysubsubsection{dataIndex}
 {\footnotesize\ttfamily volatile uint8\+\_\+t data\+Index}
 
-Index of queue position to write next data frame \Hypertarget{struct_u_a_r_t___queue_aabf0dabd48dff725071bf5ec713f42e9}\label{struct_u_a_r_t___queue_aabf0dabd48dff725071bf5ec713f42e9} 
+Index of queue position to write next data frame \label{struct_u_a_r_t___queue_aabf0dabd48dff725071bf5ec713f42e9} 
 \index{UART\_Queue@{UART\_Queue}!dataRx@{dataRx}}
 \index{dataRx@{dataRx}!UART\_Queue@{UART\_Queue}}
-\doxysubsubsection{\texorpdfstring{dataRx}{dataRx}}
-{\footnotesize\ttfamily volatile uint8\+\_\+t data\+Rx\mbox{[}\mbox{\hyperlink{usart__custom_8h_a1ed0601fc12697a226bb7717c7ab573e}{UART\+\_\+\+QUEUE\+\_\+\+LEN}}\mbox{]}\mbox{[}\mbox{\hyperlink{usart__custom_8h_adf0178118c42a9224dd770222fc81497}{MAX\+\_\+\+UART\+\_\+\+RX\+\_\+\+DATA\+\_\+\+LEN}}\mbox{]}}
+\doxysubsubsection{dataRx}
+{\footnotesize\ttfamily volatile uint8\+\_\+t data\+Rx[\textbf{ UART\+\_\+\+QUEUE\+\_\+\+LEN}][\textbf{ MAX\+\_\+\+UART\+\_\+\+RX\+\_\+\+DATA\+\_\+\+LEN}]}
 
-Array of data buffers of rx uart data queue \Hypertarget{struct_u_a_r_t___queue_ad5bd92c0c4e4441b3843d3718af24cdd}\label{struct_u_a_r_t___queue_ad5bd92c0c4e4441b3843d3718af24cdd} 
+Array of data buffers of rx uart data queue \label{struct_u_a_r_t___queue_ad5bd92c0c4e4441b3843d3718af24cdd} 
 \index{UART\_Queue@{UART\_Queue}!dataRxLength@{dataRxLength}}
 \index{dataRxLength@{dataRxLength}!UART\_Queue@{UART\_Queue}}
-\doxysubsubsection{\texorpdfstring{dataRxLength}{dataRxLength}}
-{\footnotesize\ttfamily volatile uint16\+\_\+t data\+Rx\+Length\mbox{[}\mbox{\hyperlink{usart__custom_8h_a1ed0601fc12697a226bb7717c7ab573e}{UART\+\_\+\+QUEUE\+\_\+\+LEN}}\mbox{]}}
+\doxysubsubsection{dataRxLength}
+{\footnotesize\ttfamily volatile uint16\+\_\+t data\+Rx\+Length[\textbf{ UART\+\_\+\+QUEUE\+\_\+\+LEN}]}
 
-Array of data lengths of rx uart data frames \Hypertarget{struct_u_a_r_t___queue_a3efa81db0281c5e6ec8803214fe30378}\label{struct_u_a_r_t___queue_a3efa81db0281c5e6ec8803214fe30378} 
+Array of data lengths of rx uart data frames \label{struct_u_a_r_t___queue_a3efa81db0281c5e6ec8803214fe30378} 
 \index{UART\_Queue@{UART\_Queue}!dataTx@{dataTx}}
 \index{dataTx@{dataTx}!UART\_Queue@{UART\_Queue}}
-\doxysubsubsection{\texorpdfstring{dataTx}{dataTx}}
-{\footnotesize\ttfamily uint8\+\_\+t data\+Tx\mbox{[}\mbox{\hyperlink{usart__custom_8h_a1ed0601fc12697a226bb7717c7ab573e}{UART\+\_\+\+QUEUE\+\_\+\+LEN}}\mbox{]}\mbox{[}\mbox{\hyperlink{usart__custom_8h_ad33fa5c178f516badf8b705c646ba9f9}{MAX\+\_\+\+UART\+\_\+\+TX\+\_\+\+DATA\+\_\+\+LEN}}\mbox{]}}
+\doxysubsubsection{dataTx}
+{\footnotesize\ttfamily uint8\+\_\+t data\+Tx[\textbf{ UART\+\_\+\+QUEUE\+\_\+\+LEN}][\textbf{ MAX\+\_\+\+UART\+\_\+\+TX\+\_\+\+DATA\+\_\+\+LEN}]}
 
-Array of data buffers of tx uart data queue \Hypertarget{struct_u_a_r_t___queue_a7be530387eca02e13ed41567d8c328af}\label{struct_u_a_r_t___queue_a7be530387eca02e13ed41567d8c328af} 
+Array of data buffers of tx uart data queue \label{struct_u_a_r_t___queue_a7be530387eca02e13ed41567d8c328af} 
 \index{UART\_Queue@{UART\_Queue}!dataTxLength@{dataTxLength}}
 \index{dataTxLength@{dataTxLength}!UART\_Queue@{UART\_Queue}}
-\doxysubsubsection{\texorpdfstring{dataTxLength}{dataTxLength}}
-{\footnotesize\ttfamily uint16\+\_\+t data\+Tx\+Length\mbox{[}\mbox{\hyperlink{usart__custom_8h_a1ed0601fc12697a226bb7717c7ab573e}{UART\+\_\+\+QUEUE\+\_\+\+LEN}}\mbox{]}}
+\doxysubsubsection{dataTxLength}
+{\footnotesize\ttfamily uint16\+\_\+t data\+Tx\+Length[\textbf{ UART\+\_\+\+QUEUE\+\_\+\+LEN}]}
 
-Array of data lengths of tx uart data frames \Hypertarget{struct_u_a_r_t___queue_ac87fbf2375e4a60a0ea19b9c572fc02b}\label{struct_u_a_r_t___queue_ac87fbf2375e4a60a0ea19b9c572fc02b} 
+Array of data lengths of tx uart data frames \label{struct_u_a_r_t___queue_ac87fbf2375e4a60a0ea19b9c572fc02b} 
 \index{UART\_Queue@{UART\_Queue}!headIxndex@{headIxndex}}
 \index{headIxndex@{headIxndex}!UART\_Queue@{UART\_Queue}}
-\doxysubsubsection{\texorpdfstring{headIxndex}{headIxndex}}
+\doxysubsubsection{headIxndex}
 {\footnotesize\ttfamily volatile uint8\+\_\+t head\+Ixndex}
 
-Index of queue position to write next data frame \Hypertarget{struct_u_a_r_t___queue_a3b4e9fc9e72aaeaa7086915ef71e9e18}\label{struct_u_a_r_t___queue_a3b4e9fc9e72aaeaa7086915ef71e9e18} 
+Index of queue position to write next data frame \label{struct_u_a_r_t___queue_a3b4e9fc9e72aaeaa7086915ef71e9e18} 
 \index{UART\_Queue@{UART\_Queue}!tailIndex@{tailIndex}}
 \index{tailIndex@{tailIndex}!UART\_Queue@{UART\_Queue}}
-\doxysubsubsection{\texorpdfstring{tailIndex}{tailIndex}}
+\doxysubsubsection{tailIndex}
 {\footnotesize\ttfamily volatile uint8\+\_\+t tail\+Index}
 
-Index of queue position to read next data frame \Hypertarget{struct_u_a_r_t___queue_a21c6464b9d460c444aae6a9b093c02b9}\label{struct_u_a_r_t___queue_a21c6464b9d460c444aae6a9b093c02b9} 
+Index of queue position to read next data frame \label{struct_u_a_r_t___queue_a21c6464b9d460c444aae6a9b093c02b9} 
 \index{UART\_Queue@{UART\_Queue}!transmitIndex@{transmitIndex}}
 \index{transmitIndex@{transmitIndex}!UART\_Queue@{UART\_Queue}}
-\doxysubsubsection{\texorpdfstring{transmitIndex}{transmitIndex}}
+\doxysubsubsection{transmitIndex}
 {\footnotesize\ttfamily volatile uint8\+\_\+t transmit\+Index}
 
 Index of queue position to transmit next data frame 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Radar\+App/usart\+\_\+custom/\mbox{\hyperlink{usart__custom_8h}{usart\+\_\+custom.\+h}}\end{DoxyCompactItemize}
+Radar\+App/usart\+\_\+custom/\textbf{ usart\+\_\+custom.\+h}\end{DoxyCompactItemize}

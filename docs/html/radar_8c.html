@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Radar: RadarApp/RadarDriver/radar.c File Reference</title>
+<title>Ultrasonc Radar: RadarApp/RadarDriver/radar.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Radar<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Ultrasonc Radar
    </div>
   </td>
  </tr>
@@ -189,6 +189,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for getting recent measurement of radar's sensor</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double value of measurements </dd></dl>
 
 </div>
 </div>
@@ -207,6 +215,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for getting position of radar's servo movement</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>float position value </dd></dl>
 
 </div>
 </div>
@@ -225,6 +241,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for getter maximal position of radar</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>float value of maximal position </dd></dl>
 
 </div>
 </div>
@@ -243,6 +267,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for getter minimal position of radar</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>float value of minimal position </dd></dl>
 
 </div>
 </div>
@@ -289,6 +321,17 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for initialization of radar structure instance</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+    <tr><td class="paramname">servo</td><td>pointer to <a class="el" href="structservo_driver_struct.html">servoDriverStruct</a> struct </td></tr>
+    <tr><td class="paramname">servo_tim</td><td>pointer to <a class="el" href="struct_t_i_m___handle_type_def.html" title="TIM Time Base Handle Structure definition.">TIM_HandleTypeDef</a> struct </td></tr>
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> struct </td></tr>
+    <tr><td class="paramname">sensor_tim</td><td>pointer to sensor_tim struct </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -307,6 +350,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for starting sensors measurements</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -325,6 +375,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for stopping sensors measurements</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -353,6 +410,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for parsing data array into draw rules variable</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+    <tr><td class="paramname">data</td><td>pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool value if operation was successful </dd></dl>
 
 </div>
 </div>
@@ -381,6 +447,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for parsing data array into draw scale variable</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+    <tr><td class="paramname">data</td><td>pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool value if operation was successful </dd></dl>
 
 </div>
 </div>
@@ -409,6 +484,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for parsing data array into measurement period variable</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+    <tr><td class="paramname">data</td><td>pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool value if operation was successful </dd></dl>
 
 </div>
 </div>
@@ -437,6 +521,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for parsing data array into position variable</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+    <tr><td class="paramname">data</td><td>pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool value if operation was successful </dd></dl>
 
 </div>
 </div>
@@ -471,6 +564,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for parsing data array into posiiton min/max variable</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+    <tr><td class="paramname">data</td><td>pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool value if operation was successful </dd></dl>
 
 </div>
 </div>
@@ -499,6 +601,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for parsing data array into servo's step variable</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+    <tr><td class="paramname">data</td><td>pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool value if operation was successful </dd></dl>
 
 </div>
 </div>
@@ -517,6 +628,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for starting servo movement </p>
 
 </div>
 </div>
@@ -535,6 +647,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for stopping servo movement </p>
 
 </div>
 </div>
@@ -553,6 +666,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for handling servo position update</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -581,6 +701,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for setting measure frequency of radar's sensor</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+    <tr><td class="paramname">peridoMs</td><td>new period value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool value inidicating if operation was successful </dd></dl>
 
 </div>
 </div>
@@ -609,6 +738,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for setting position of radar's servo movement</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+    <tr><td class="paramname">pos</td><td>new position to be set </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool value inidicating if operation was successful </dd></dl>
 
 </div>
 </div>
@@ -637,6 +775,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for setting maximal position of radar</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+    <tr><td class="paramname">pos</td><td>value of position to set </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool value inidicating if operation was successful </dd></dl>
 
 </div>
 </div>
@@ -665,6 +812,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for setting minimal position of radar</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+    <tr><td class="paramname">pos</td><td>value of position to set </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool value inidicating if operation was successful </dd></dl>
 
 </div>
 </div>
@@ -727,6 +883,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for setting update period of radar's servo movement</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+    <tr><td class="paramname">periodMs</td><td>new value of period </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool value inidicating if operation was successful </dd></dl>
 
 </div>
 </div>
@@ -755,6 +920,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function for setting update step of radar's servo movement</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+    <tr><td class="paramname">step</td><td>to be set in structure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool value inidicating if operation was successful </dd></dl>
 
 </div>
 </div>
@@ -781,6 +955,13 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Function for sending trigger signal to radar's signal</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radar</td><td>pointer to <a class="el" href="structradar_struct.html">radarStruct</a> struct </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -804,6 +985,7 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Draw helper structure </p>
 
 </div>
 </div>

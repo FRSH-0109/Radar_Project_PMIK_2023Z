@@ -6,6 +6,20 @@
  *
  * @author Kamil Kośnik, Kacper Radzikowski
  * @see https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z
+ *
+ * \mainpage Ultrasonic Radar Project Documentation
+ *
+ * Project consists of few independent modules as servomechanism,
+ * ultrasonic distance sensor, LCD display and more. Main goal of
+ * the project was to achieve distance measurement on 180 degrees surface.
+ * Everything is displayed in real time on the TFT LCD screen.
+ * Device is able to communicate via uart iterface, which can be used to control
+ * and parameterize whole device.
+ *
+ * \subsection Authors
+ * Kamil Kośnik
+ * Kacper Radzikowski
+ *
  */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
@@ -46,14 +60,14 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-servoDriverStruct servoPA6;
-distanceSensorStruct distanceSensorPA2;
+servoDriverStruct servoPA6;					/**< Servo conncted to PA6 pin structure*/
+distanceSensorStruct distanceSensorPA2;		/**< Sensor conncted to PA2 pin structure*/
 
-radarStruct radar;
-drawHelperStruct drawHelper;
+radarStruct radar;							/**< Radar structure*/
+drawHelperStruct drawHelper;				/**< Draw helper structure*/
 
-UART_Custom_HandleTypeDef huartPC;
-UART_Queue uartQueuePC;
+UART_Custom_HandleTypeDef huartPC;			/**< Cusomt uart connected to PC structure*/
+UART_Queue uartQueuePC;						/**< Uart connected to PC Queue*/
 extern DMA_HandleTypeDef hdma_usart1_rx;
 extern DMA_HandleTypeDef hdma_usart1_tx;
 /* USER CODE END PV */
@@ -109,22 +123,23 @@ int main(void)
   /* Initialize interrupts */
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
-  ILI9341_Init(&hspi1);
+
+  ILI9341_Init(&hspi1);					/**< Init of display*/
   ILI9341_WriteScreen(ILI9341_BLACK);
   GFX_SetFont(font_8x5);
 
-  servoDriverInit(&servoPA6, 0, 180, 700, 2650);
+  servoDriverInit(&servoPA6, 0, 180, 700, 2650);	/**< Init of servo and sensor*/
   distanceSensorInit(&distanceSensorPA2, 58.0f);
 
-  uartCustomInit(&huartPC, &huart1, MAX_UART_RX_DATA_LEN, MAX_UART_TX_DATA_LEN);
+  uartCustomInit(&huartPC, &huart1, MAX_UART_RX_DATA_LEN, MAX_UART_TX_DATA_LEN);	/**< Custom uart init*/
   uartCustomReceiveDMA(&huartPC);
   __HAL_DMA_DISABLE_IT(&hdma_usart1_rx, DMA_IT_HT);
 
-  radarInit(&radar, &servoPA6, &htim3, &distanceSensorPA2, &htim14);
-  radarMeasureStart(&radar);
-  radarServoStart(&radar);
+  radarInit(&radar, &servoPA6, &htim3, &distanceSensorPA2, &htim14);	/**< Radar init*/
+  radarMeasureStart(&radar);											/**< Radar measure start*/
+  radarServoStart(&radar);												/**< Radar servo movement start*/
 
-  drawSetup();
+  drawSetup();															/**< DrawHelper struct init*/
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -136,11 +151,11 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-	 uartQueueReceive(&uartQueuePC);
-	 uartQueueTransmit(&uartQueuePC, &huartPC);
+	 uartQueueReceive(&uartQueuePC);			/**< Receiving data in uart queue*/
+	 uartQueueTransmit(&uartQueuePC, &huartPC); /**< Transmitting data from uart queue*/
 
-	 drawMeasure();
-	 drawMeasureScale();
+	 drawMeasure();								/**< Drawing radar's measure*/
+	 drawMeasureScale();						/**< Drawing measure's scale*/
 
   }
   /* USER CODE END 3 */

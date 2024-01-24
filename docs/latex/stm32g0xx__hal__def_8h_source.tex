@@ -1,6 +1,6 @@
 \doxysection{stm32g0xx\+\_\+hal\+\_\+def.\+h}
-\hypertarget{stm32g0xx__hal__def_8h_source}{}\label{stm32g0xx__hal__def_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_def.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_def.h}}
-\mbox{\hyperlink{stm32g0xx__hal__def_8h}{Go to the documentation of this file.}}
+\label{stm32g0xx__hal__def_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_def.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_def.h}}
+\textbf{ Go to the documentation of this file.}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
 \DoxyCodeLine{00020\ \textcolor{comment}{/*\ Define\ to\ prevent\ recursive\ inclusion\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
@@ -12,25 +12,25 @@
 \DoxyCodeLine{00026\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00027\ }
 \DoxyCodeLine{00028\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
-\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32g0xx_8h}{stm32g0xx.h}}"{}}}
-\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32__hal__legacy_8h}{Legacy/stm32\_hal\_legacy.h}}"{}}\ \ \ \textcolor{comment}{/*\ Aliases\ file\ for\ old\ names\ compatibility\ */}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}stm32g0xx.h"{}}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ "{}Legacy/stm32\_hal\_legacy.h"{}}\ \ \ \textcolor{comment}{/*\ Aliases\ file\ for\ old\ names\ compatibility\ */}}
 \DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ <stddef.h>}}
 \DoxyCodeLine{00032\ }
 \DoxyCodeLine{00033\ \textcolor{comment}{/*\ Exported\ types\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00034\ }
 \DoxyCodeLine{00038\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
 \DoxyCodeLine{00039\ \{}
-\DoxyCodeLine{00040\ \ \ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478fa6eb724a07061d89a4a2052744e5a3632}{HAL\_OK}}\ \ \ \ \ \ \ =\ 0x00U,}
-\DoxyCodeLine{00041\ \ \ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478fa5a04e395e501e4e400172c610478c4a4}{HAL\_ERROR}}\ \ \ \ =\ 0x01U,}
-\DoxyCodeLine{00042\ \ \ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478fa8532fa3641ae7c14cb1b0554e2d9cbc7}{HAL\_BUSY}}\ \ \ \ \ =\ 0x02U,}
-\DoxyCodeLine{00043\ \ \ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478fa00c89549bc881c35e8e4cd9e718337e5}{HAL\_TIMEOUT}}\ \ =\ 0x03U}
-\DoxyCodeLine{00044\ \}\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}};}
+\DoxyCodeLine{00040\ \ \ HAL\_OK\ \ \ \ \ \ \ =\ 0x00U,}
+\DoxyCodeLine{00041\ \ \ HAL\_ERROR\ \ \ \ =\ 0x01U,}
+\DoxyCodeLine{00042\ \ \ HAL\_BUSY\ \ \ \ \ =\ 0x02U,}
+\DoxyCodeLine{00043\ \ \ HAL\_TIMEOUT\ \ =\ 0x03U}
+\DoxyCodeLine{00044\ \}\ HAL\_StatusTypeDef;}
 \DoxyCodeLine{00045\ }
 \DoxyCodeLine{00049\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
 \DoxyCodeLine{00050\ \{}
-\DoxyCodeLine{00051\ \ \ \mbox{\hyperlink{stm32g0xx__hal__def_8h_ab367482e943333a1299294eadaad284ba9bd487430440139444e6e7ff226005c0}{HAL\_UNLOCKED}}\ =\ 0x00U,}
-\DoxyCodeLine{00052\ \ \ \mbox{\hyperlink{stm32g0xx__hal__def_8h_ab367482e943333a1299294eadaad284ba656ad5f6dad97210cf3ccf107c033e4d}{HAL\_LOCKED}}\ \ \ =\ 0x01U}
-\DoxyCodeLine{00053\ \}\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_ab367482e943333a1299294eadaad284b}{HAL\_LockTypeDef}};}
+\DoxyCodeLine{00051\ \ \ HAL\_UNLOCKED\ =\ 0x00U,}
+\DoxyCodeLine{00052\ \ \ HAL\_LOCKED\ \ \ =\ 0x01U}
+\DoxyCodeLine{00053\ \}\ HAL\_LockTypeDef;}
 \DoxyCodeLine{00054\ }
 \DoxyCodeLine{00055\ \textcolor{comment}{/*\ Exported\ macros\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00056\ }

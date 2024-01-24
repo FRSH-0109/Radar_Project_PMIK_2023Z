@@ -24,7 +24,8 @@
 */
 var NAVTREE =
 [
-  [ "Radar", "index.html", [
+  [ "Ultrasonc Radar", "index.html", [
+    [ "Ultrasonic Radar Project Documentation", "index.html", null ],
     [ "MISRA-C:2004 Compliance Exceptions", "_c_m_s_i_s__m_i_s_r_a__exceptions.html", null ],
     [ "Radar Project PMIK 2023Z", "md__r_e_a_d_m_e.html", null ],
     [ "Deprecated List", "deprecated.html", null ],
@@ -160,10 +161,10 @@ var NAVTREEINDEX =
 "group___t_i_m_ex___exported___functions___group1.html#ga61f3c18eb8fe53b65b55ec855072631d",
 "group___u_a_r_t___flags.html#gad39c017d415a7774c82eb07413a9dbe4",
 "group___u_t_i_l_s___e_f___s_y_s_t_e_m.html#ga193d6a097a8ca12fe380a21890fa0f04",
-"stm32g0xx__hal__conf_8h.html#a1bdc791c35b20c7188b3d74fd6c30ebf",
-"struct_a_d_c___type_def.html#a5a306d53debbd9976b95c1c90aff9b2a",
-"struct_r_t_c___type_def.html#a2ce7c3842792c506635bb87a21588b58",
-"struct_w_w_d_g___type_def.html"
+"stm32g0xx__hal__conf_8h.html#a167269406e73327b95c3bb7b9cfe6d89",
+"struct_a_d_c___type_def.html#a4c9b972a304c0e08ca27cbe57627c496",
+"struct_r_t_c___type_def.html#a2372c05a6c5508e0a9adada793f68b4f",
+"struct_u_s_a_r_t___type_def.html#afdfa307571967afb1d97943e982b6586"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

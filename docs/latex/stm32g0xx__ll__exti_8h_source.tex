@@ -1,6 +1,6 @@
 \doxysection{stm32g0xx\+\_\+ll\+\_\+exti.\+h}
-\hypertarget{stm32g0xx__ll__exti_8h_source}{}\label{stm32g0xx__ll__exti_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_ll\_exti.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_ll\_exti.h}}
-\mbox{\hyperlink{stm32g0xx__ll__exti_8h}{Go to the documentation of this file.}}
+\label{stm32g0xx__ll__exti_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_ll\_exti.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_ll\_exti.h}}
+\textbf{ Go to the documentation of this file.}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
 \DoxyCodeLine{00019\ \textcolor{comment}{/*\ Define\ to\ prevent\ recursive\ inclusion\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
@@ -12,7 +12,7 @@
 \DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00026\ }
 \DoxyCodeLine{00027\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
-\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32g0xx_8h}{stm32g0xx.h}}"{}}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}stm32g0xx.h"{}}}
 \DoxyCodeLine{00029\ }
 \DoxyCodeLine{00034\ \textcolor{preprocessor}{\#if\ defined\ (EXTI)}}
 \DoxyCodeLine{00035\ }
@@ -32,7 +32,7 @@
 \DoxyCodeLine{00064\ \textcolor{preprocessor}{\#if\ defined(STM32G081xx)\ ||\ defined(STM32G071xx)\ ||\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)\ ||\ defined(STM32G0B0xx)}}
 \DoxyCodeLine{00065\ \ \ uint32\_t\ Line\_32\_63;\ \ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00067\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G081xx\ ||\ STM32G071xx\ ||\ STM32G0C1xx\ ||\ STM32G0B1xx\ ||\ STM32G0B0xx\ */}\textcolor{preprocessor}{}}
-\DoxyCodeLine{00068\ \ \ \mbox{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{FunctionalState}}\ LineCommand;\ \ }
+\DoxyCodeLine{00068\ \ \ FunctionalState\ LineCommand;\ \ }
 \DoxyCodeLine{00071\ \ \ uint8\_t\ Mode;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00074\ \ \ uint8\_t\ Trigger;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00076\ \}\ LL\_EXTI\_InitTypeDef;}
@@ -168,243 +168,243 @@
 \DoxyCodeLine{00268\ }
 \DoxyCodeLine{00274\ \textcolor{preprocessor}{\#define\ LL\_EXTI\_ReadReg(\_\_REG\_\_)\ READ\_REG(EXTI-\/>\_\_REG\_\_)}}
 \DoxyCodeLine{00286\ \textcolor{comment}{/*\ Exported\ functions\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
-\DoxyCodeLine{00334\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_EnableIT\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00334\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_EnableIT\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00335\ \{}
-\DoxyCodeLine{00336\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>IMR1,\ ExtiLine);}
+\DoxyCodeLine{00336\ \ \ SET\_BIT(EXTI-\/>IMR1,\ ExtiLine);}
 \DoxyCodeLine{00337\ \}}
 \DoxyCodeLine{00338\ }
 \DoxyCodeLine{00339\ \textcolor{preprocessor}{\#if\ defined(STM32G081xx)\ ||\ defined(STM32G071xx)\ ||\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)\ ||\ defined(STM32G0B0xx)}}
-\DoxyCodeLine{00356\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_EnableIT\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00356\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_EnableIT\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00357\ \{}
-\DoxyCodeLine{00358\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>IMR2,\ ExtiLine);}
+\DoxyCodeLine{00358\ \ \ SET\_BIT(EXTI-\/>IMR2,\ ExtiLine);}
 \DoxyCodeLine{00359\ \}}
 \DoxyCodeLine{00360\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G081xx\ ||\ STM32G071xx\ ||\ STM32G0C1xx\ ||\ STM32G0B1xx\ ||\ STM32G0B0xx\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{00361\ }
-\DoxyCodeLine{00402\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_DisableIT\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00402\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_DisableIT\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00403\ \{}
-\DoxyCodeLine{00404\ \ \ \mbox{\hyperlink{group___exported__macros_ga133aae6fc0d41bffab39ab223a7001de}{CLEAR\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>IMR1,\ ExtiLine);}
+\DoxyCodeLine{00404\ \ \ CLEAR\_BIT(EXTI-\/>IMR1,\ ExtiLine);}
 \DoxyCodeLine{00405\ \}}
 \DoxyCodeLine{00406\ }
 \DoxyCodeLine{00407\ \textcolor{preprocessor}{\#if\ defined(STM32G081xx)\ ||\ defined(STM32G071xx)\ ||\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)\ ||\ defined(STM32G0B0xx)}}
-\DoxyCodeLine{00424\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_DisableIT\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00424\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_DisableIT\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00425\ \{}
-\DoxyCodeLine{00426\ \ \ \mbox{\hyperlink{group___exported__macros_ga133aae6fc0d41bffab39ab223a7001de}{CLEAR\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>IMR2,\ ExtiLine);}
+\DoxyCodeLine{00426\ \ \ CLEAR\_BIT(EXTI-\/>IMR2,\ ExtiLine);}
 \DoxyCodeLine{00427\ \}}
 \DoxyCodeLine{00428\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G081xx\ ||\ STM32G071xx\ ||\ STM32G0C1xx\ ||\ STM32G0B1xx\ ||\ STM32G0B0xx\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{00429\ }
-\DoxyCodeLine{00470\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_IsEnabledIT\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00470\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_IsEnabledIT\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00471\ \{}
-\DoxyCodeLine{00472\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>IMR1,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{00472\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(EXTI-\/>IMR1,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{00473\ \}}
 \DoxyCodeLine{00474\ }
 \DoxyCodeLine{00475\ \textcolor{preprocessor}{\#if\ defined(STM32G081xx)\ ||\ defined(STM32G071xx)\ ||\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)\ ||\ defined(STM32G0B0xx)}}
-\DoxyCodeLine{00491\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_IsEnabledIT\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00491\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_IsEnabledIT\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00492\ \{}
-\DoxyCodeLine{00493\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>IMR2,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{00493\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(EXTI-\/>IMR2,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{00494\ \}}
 \DoxyCodeLine{00495\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G081xx\ ||\ STM32G071xx\ ||\ STM32G0C1xx\ ||\ STM32G0B1xx\ ||\ STM32G0B0xx\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{00496\ }
-\DoxyCodeLine{00542\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_EnableEvent\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00542\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_EnableEvent\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00543\ \{}
-\DoxyCodeLine{00544\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>EMR1,\ ExtiLine);}
+\DoxyCodeLine{00544\ \ \ SET\_BIT(EXTI-\/>EMR1,\ ExtiLine);}
 \DoxyCodeLine{00545\ }
 \DoxyCodeLine{00546\ \}}
 \DoxyCodeLine{00547\ }
 \DoxyCodeLine{00548\ \textcolor{preprocessor}{\#if\ defined(STM32G081xx)\ ||\ defined(STM32G071xx)\ ||\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)\ ||\ defined(STM32G0B0xx)}}
-\DoxyCodeLine{00562\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_EnableEvent\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00562\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_EnableEvent\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00563\ \{}
-\DoxyCodeLine{00564\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>EMR2,\ ExtiLine);}
+\DoxyCodeLine{00564\ \ \ SET\_BIT(EXTI-\/>EMR2,\ ExtiLine);}
 \DoxyCodeLine{00565\ \}}
 \DoxyCodeLine{00566\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G081xx\ ||\ STM32G071xx\ ||\ STM32G0C1xx\ ||\ STM32G0B1xx\ ||\ STM32G0B0xx\ */}\textcolor{preprocessor}{}}
-\DoxyCodeLine{00604\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_DisableEvent\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00604\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_DisableEvent\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00605\ \{}
-\DoxyCodeLine{00606\ \ \ \mbox{\hyperlink{group___exported__macros_ga133aae6fc0d41bffab39ab223a7001de}{CLEAR\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>EMR1,\ ExtiLine);}
+\DoxyCodeLine{00606\ \ \ CLEAR\_BIT(EXTI-\/>EMR1,\ ExtiLine);}
 \DoxyCodeLine{00607\ \}}
 \DoxyCodeLine{00608\ }
 \DoxyCodeLine{00609\ \textcolor{preprocessor}{\#if\ defined(STM32G081xx)\ ||\ defined(STM32G071xx)\ ||\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)\ ||\ defined(STM32G0B0xx)}}
-\DoxyCodeLine{00623\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_DisableEvent\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00623\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_DisableEvent\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00624\ \{}
-\DoxyCodeLine{00625\ \ \ \mbox{\hyperlink{group___exported__macros_ga133aae6fc0d41bffab39ab223a7001de}{CLEAR\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>EMR2,\ ExtiLine);}
+\DoxyCodeLine{00625\ \ \ CLEAR\_BIT(EXTI-\/>EMR2,\ ExtiLine);}
 \DoxyCodeLine{00626\ \}}
 \DoxyCodeLine{00627\ \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00665\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_IsEnabledEvent\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00665\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_IsEnabledEvent\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00666\ \{}
-\DoxyCodeLine{00667\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>EMR1,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{00667\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(EXTI-\/>EMR1,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{00668\ \}}
 \DoxyCodeLine{00669\ }
 \DoxyCodeLine{00670\ \textcolor{preprocessor}{\#if\ defined(STM32G081xx)\ ||\ defined(STM32G071xx)\ ||\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)\ ||\ defined(STM32G0B0xx)}}
-\DoxyCodeLine{00684\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_IsEnabledEvent\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00684\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_IsEnabledEvent\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00685\ \{}
-\DoxyCodeLine{00686\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>EMR2,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{00686\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(EXTI-\/>EMR2,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{00687\ \}}
 \DoxyCodeLine{00688\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G081xx\ ||\ STM32G071xx\ ||\ STM32G0C1xx\ ||\ STM32G0B1xx\ ||\ STM32G0B0xx\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{00689\ }
-\DoxyCodeLine{00732\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_EnableRisingTrig\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00732\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_EnableRisingTrig\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00733\ \{}
-\DoxyCodeLine{00734\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>RTSR1,\ ExtiLine);}
+\DoxyCodeLine{00734\ \ \ SET\_BIT(EXTI-\/>RTSR1,\ ExtiLine);}
 \DoxyCodeLine{00735\ }
 \DoxyCodeLine{00736\ \}}
 \DoxyCodeLine{00737\ \textcolor{preprocessor}{\#if\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)}}
-\DoxyCodeLine{00753\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_EnableRisingTrig\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00753\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_EnableRisingTrig\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00754\ \{}
-\DoxyCodeLine{00755\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>RTSR2,\ ExtiLine);}
+\DoxyCodeLine{00755\ \ \ SET\_BIT(EXTI-\/>RTSR2,\ ExtiLine);}
 \DoxyCodeLine{00756\ }
 \DoxyCodeLine{00757\ \}}
 \DoxyCodeLine{00758\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G0C1xx\ ||\ STM32G0B1xx\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{00759\ }
-\DoxyCodeLine{00794\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_DisableRisingTrig\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00794\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_DisableRisingTrig\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00795\ \{}
-\DoxyCodeLine{00796\ \ \ \mbox{\hyperlink{group___exported__macros_ga133aae6fc0d41bffab39ab223a7001de}{CLEAR\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>RTSR1,\ ExtiLine);}
+\DoxyCodeLine{00796\ \ \ CLEAR\_BIT(EXTI-\/>RTSR1,\ ExtiLine);}
 \DoxyCodeLine{00797\ }
 \DoxyCodeLine{00798\ \}}
 \DoxyCodeLine{00799\ }
 \DoxyCodeLine{00800\ \textcolor{preprocessor}{\#if\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)}}
-\DoxyCodeLine{00816\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_DisableRisingTrig\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00816\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_DisableRisingTrig\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00817\ \{}
-\DoxyCodeLine{00818\ \ \ \mbox{\hyperlink{group___exported__macros_ga133aae6fc0d41bffab39ab223a7001de}{CLEAR\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>RTSR2,\ ExtiLine);}
+\DoxyCodeLine{00818\ \ \ CLEAR\_BIT(EXTI-\/>RTSR2,\ ExtiLine);}
 \DoxyCodeLine{00819\ }
 \DoxyCodeLine{00820\ \}}
 \DoxyCodeLine{00821\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G0C1xx\ ||\ STM32G0B1xx\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{00822\ }
-\DoxyCodeLine{00849\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_IsEnabledRisingTrig\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00849\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_IsEnabledRisingTrig\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00850\ \{}
-\DoxyCodeLine{00851\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>RTSR1,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{00851\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(EXTI-\/>RTSR1,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{00852\ \}}
 \DoxyCodeLine{00853\ }
 \DoxyCodeLine{00854\ \textcolor{preprocessor}{\#if\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)}}
-\DoxyCodeLine{00863\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_IsEnabledRisingTrig\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00863\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_IsEnabledRisingTrig\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00864\ \{}
-\DoxyCodeLine{00865\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>RTSR2,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{00865\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(EXTI-\/>RTSR2,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{00866\ \}}
 \DoxyCodeLine{00867\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G0C1xx\ ||\ STM32G0B1xx\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{00868\ }
-\DoxyCodeLine{00911\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_EnableFallingTrig\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00911\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_EnableFallingTrig\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00912\ \{}
-\DoxyCodeLine{00913\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>FTSR1,\ ExtiLine);}
+\DoxyCodeLine{00913\ \ \ SET\_BIT(EXTI-\/>FTSR1,\ ExtiLine);}
 \DoxyCodeLine{00914\ \}}
 \DoxyCodeLine{00915\ }
 \DoxyCodeLine{00916\ \textcolor{preprocessor}{\#if\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)}}
-\DoxyCodeLine{00932\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_EnableFallingTrig\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00932\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_EnableFallingTrig\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00933\ \{}
-\DoxyCodeLine{00934\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>FTSR2,\ ExtiLine);}
+\DoxyCodeLine{00934\ \ \ SET\_BIT(EXTI-\/>FTSR2,\ ExtiLine);}
 \DoxyCodeLine{00935\ \}}
 \DoxyCodeLine{00936\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G0C1xx\ ||\ STM32G0B1xx\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{00937\ }
-\DoxyCodeLine{00971\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_DisableFallingTrig\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00971\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_DisableFallingTrig\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00972\ \{}
-\DoxyCodeLine{00973\ \ \ \mbox{\hyperlink{group___exported__macros_ga133aae6fc0d41bffab39ab223a7001de}{CLEAR\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>FTSR1,\ ExtiLine);}
+\DoxyCodeLine{00973\ \ \ CLEAR\_BIT(EXTI-\/>FTSR1,\ ExtiLine);}
 \DoxyCodeLine{00974\ \}}
 \DoxyCodeLine{00975\ }
 \DoxyCodeLine{00976\ \textcolor{preprocessor}{\#if\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)}}
-\DoxyCodeLine{00991\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_DisableFallingTrig\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{00991\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_DisableFallingTrig\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{00992\ \{}
-\DoxyCodeLine{00993\ \ \ \mbox{\hyperlink{group___exported__macros_ga133aae6fc0d41bffab39ab223a7001de}{CLEAR\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>FTSR2,\ ExtiLine);}
+\DoxyCodeLine{00993\ \ \ CLEAR\_BIT(EXTI-\/>FTSR2,\ ExtiLine);}
 \DoxyCodeLine{00994\ \}}
 \DoxyCodeLine{00995\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G0C1xx\ ||\ STM32G0B1xx\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{00996\ }
-\DoxyCodeLine{01024\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_IsEnabledFallingTrig\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{01024\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_IsEnabledFallingTrig\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{01025\ \{}
-\DoxyCodeLine{01026\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>FTSR1,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01026\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(EXTI-\/>FTSR1,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01027\ \}}
 \DoxyCodeLine{01028\ }
 \DoxyCodeLine{01029\ \textcolor{preprocessor}{\#if\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)}}
-\DoxyCodeLine{01038\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_IsEnabledFallingTrig\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{01038\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_IsEnabledFallingTrig\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{01039\ \{}
-\DoxyCodeLine{01040\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>FTSR2,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01040\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(EXTI-\/>FTSR2,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01041\ \}}
 \DoxyCodeLine{01042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G0C1xx\ ||\ STM32G0B1xx\ */}\textcolor{preprocessor}{}}
-\DoxyCodeLine{01083\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_GenerateSWI\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{01083\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_GenerateSWI\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{01084\ \{}
-\DoxyCodeLine{01085\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>SWIER1,\ ExtiLine);}
+\DoxyCodeLine{01085\ \ \ SET\_BIT(EXTI-\/>SWIER1,\ ExtiLine);}
 \DoxyCodeLine{01086\ \}}
 \DoxyCodeLine{01087\ }
 \DoxyCodeLine{01088\ \textcolor{preprocessor}{\#if\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)}}
-\DoxyCodeLine{01102\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_GenerateSWI\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{01102\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_GenerateSWI\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{01103\ \{}
-\DoxyCodeLine{01104\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>SWIER2,\ ExtiLine);}
+\DoxyCodeLine{01104\ \ \ SET\_BIT(EXTI-\/>SWIER2,\ ExtiLine);}
 \DoxyCodeLine{01105\ \}}
 \DoxyCodeLine{01106\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G0C1xx\ ||\ STM32G0B1xx\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01107\ }
-\DoxyCodeLine{01145\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_IsActiveFallingFlag\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{01145\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_IsActiveFallingFlag\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{01146\ \{}
-\DoxyCodeLine{01147\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>FPR1,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01147\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(EXTI-\/>FPR1,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01148\ \}}
 \DoxyCodeLine{01149\ }
 \DoxyCodeLine{01150\ \textcolor{preprocessor}{\#if\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)}}
-\DoxyCodeLine{01161\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_IsActiveFallingFlag\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{01161\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_IsActiveFallingFlag\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{01162\ \{}
-\DoxyCodeLine{01163\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>FPR2,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01163\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(EXTI-\/>FPR2,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01164\ \}}
 \DoxyCodeLine{01165\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G0C1xx\ ||\ STM32G0B1xx\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01166\ }
-\DoxyCodeLine{01196\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_ReadFallingFlag\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{01196\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_ReadFallingFlag\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{01197\ \{}
-\DoxyCodeLine{01198\ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>FPR1,\ ExtiLine));}
+\DoxyCodeLine{01198\ \ \ \textcolor{keywordflow}{return}\ (READ\_BIT(EXTI-\/>FPR1,\ ExtiLine));}
 \DoxyCodeLine{01199\ \}}
 \DoxyCodeLine{01200\ }
 \DoxyCodeLine{01201\ \textcolor{preprocessor}{\#if\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)}}
-\DoxyCodeLine{01212\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_ReadFallingFlag\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{01212\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_ReadFallingFlag\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{01213\ \{}
-\DoxyCodeLine{01214\ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>FPR2,\ ExtiLine));}
+\DoxyCodeLine{01214\ \ \ \textcolor{keywordflow}{return}\ (READ\_BIT(EXTI-\/>FPR2,\ ExtiLine));}
 \DoxyCodeLine{01215\ \}}
 \DoxyCodeLine{01216\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G0C1xx\ ||\ STM32G0B1xx\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01217\ }
-\DoxyCodeLine{01247\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_ClearFallingFlag\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{01247\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_ClearFallingFlag\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{01248\ \{}
-\DoxyCodeLine{01249\ \ \ \mbox{\hyperlink{group___exported__macros_ga32f78bffcaf6d13023dcd7f05e0c4d57}{WRITE\_REG}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>FPR1,\ ExtiLine);}
+\DoxyCodeLine{01249\ \ \ WRITE\_REG(EXTI-\/>FPR1,\ ExtiLine);}
 \DoxyCodeLine{01250\ \}}
 \DoxyCodeLine{01251\ }
 \DoxyCodeLine{01252\ \textcolor{preprocessor}{\#if\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)}}
-\DoxyCodeLine{01263\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_ClearFallingFlag\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{01263\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_ClearFallingFlag\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{01264\ \{}
-\DoxyCodeLine{01265\ \ \ \mbox{\hyperlink{group___exported__macros_ga32f78bffcaf6d13023dcd7f05e0c4d57}{WRITE\_REG}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>FPR2,\ ExtiLine);}
+\DoxyCodeLine{01265\ \ \ WRITE\_REG(EXTI-\/>FPR2,\ ExtiLine);}
 \DoxyCodeLine{01266\ \}}
 \DoxyCodeLine{01267\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G0C1xx\ ||\ STM32G0B1xx\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01268\ }
-\DoxyCodeLine{01298\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_IsActiveRisingFlag\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{01298\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_IsActiveRisingFlag\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{01299\ \{}
-\DoxyCodeLine{01300\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>RPR1,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01300\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(EXTI-\/>RPR1,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01301\ \}}
 \DoxyCodeLine{01302\ }
 \DoxyCodeLine{01303\ \textcolor{preprocessor}{\#if\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)}}
-\DoxyCodeLine{01314\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_IsActiveRisingFlag\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{01314\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_IsActiveRisingFlag\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{01315\ \{}
-\DoxyCodeLine{01316\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>RPR2,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01316\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(EXTI-\/>RPR2,\ ExtiLine)\ ==\ (ExtiLine))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01317\ \}}
 \DoxyCodeLine{01318\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G0C1xx\ ||\ STM32G0B1xx\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01319\ }
-\DoxyCodeLine{01349\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_ReadRisingFlag\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{01349\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_ReadRisingFlag\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{01350\ \{}
-\DoxyCodeLine{01351\ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>RPR1,\ ExtiLine));}
+\DoxyCodeLine{01351\ \ \ \textcolor{keywordflow}{return}\ (READ\_BIT(EXTI-\/>RPR1,\ ExtiLine));}
 \DoxyCodeLine{01352\ \}}
 \DoxyCodeLine{01353\ }
 \DoxyCodeLine{01354\ \textcolor{preprocessor}{\#if\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)}}
-\DoxyCodeLine{01365\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_ReadRisingFlag\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{01365\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_ReadRisingFlag\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{01366\ \{}
-\DoxyCodeLine{01367\ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>RPR2,\ ExtiLine));}
+\DoxyCodeLine{01367\ \ \ \textcolor{keywordflow}{return}\ (READ\_BIT(EXTI-\/>RPR2,\ ExtiLine));}
 \DoxyCodeLine{01368\ \}}
 \DoxyCodeLine{01369\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G0C1xx\ ||\ STM32G0B1xx\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01370\ }
-\DoxyCodeLine{01400\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_ClearRisingFlag\_0\_31(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{01400\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_ClearRisingFlag\_0\_31(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{01401\ \{}
-\DoxyCodeLine{01402\ \ \ \mbox{\hyperlink{group___exported__macros_ga32f78bffcaf6d13023dcd7f05e0c4d57}{WRITE\_REG}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>RPR1,\ ExtiLine);}
+\DoxyCodeLine{01402\ \ \ WRITE\_REG(EXTI-\/>RPR1,\ ExtiLine);}
 \DoxyCodeLine{01403\ \}}
 \DoxyCodeLine{01404\ }
 \DoxyCodeLine{01405\ \textcolor{preprocessor}{\#if\ defined(STM32G0C1xx)\ ||\ defined(STM32G0B1xx)}}
-\DoxyCodeLine{01416\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_ClearRisingFlag\_32\_63(uint32\_t\ ExtiLine)}
+\DoxyCodeLine{01416\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_ClearRisingFlag\_32\_63(uint32\_t\ ExtiLine)}
 \DoxyCodeLine{01417\ \{}
-\DoxyCodeLine{01418\ \ \ \mbox{\hyperlink{group___exported__macros_ga32f78bffcaf6d13023dcd7f05e0c4d57}{WRITE\_REG}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>RPR2,\ ExtiLine);}
+\DoxyCodeLine{01418\ \ \ WRITE\_REG(EXTI-\/>RPR2,\ ExtiLine);}
 \DoxyCodeLine{01419\ \}}
 \DoxyCodeLine{01420\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32G0C1xx\ ||\ STM32G0B1xx\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01421\ }
-\DoxyCodeLine{01470\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_EXTI\_SetEXTISource(uint32\_t\ Port,\ uint32\_t\ Line)}
+\DoxyCodeLine{01470\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_EXTI\_SetEXTISource(uint32\_t\ Port,\ uint32\_t\ Line)}
 \DoxyCodeLine{01471\ \{}
-\DoxyCodeLine{01472\ \ \ \mbox{\hyperlink{group___exported__macros_ga6553c99f510c3bab8cc0a91602053247}{MODIFY\_REG}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>EXTICR[Line\ \&\ 0x03u],\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga7dc00bcbac5315cdbb1b71f519accae4}{EXTI\_EXTICR1\_EXTI0}}\ <<\ (Line\ >>\ LL\_EXTI\_REGISTER\_PINPOS\_SHFT),\ Port\ <<\ (Line\ >>\ LL\_EXTI\_REGISTER\_PINPOS\_SHFT));}
+\DoxyCodeLine{01472\ \ \ MODIFY\_REG(EXTI-\/>EXTICR[Line\ \&\ 0x03u],\ EXTI\_EXTICR1\_EXTI0\ <<\ (Line\ >>\ LL\_EXTI\_REGISTER\_PINPOS\_SHFT),\ Port\ <<\ (Line\ >>\ LL\_EXTI\_REGISTER\_PINPOS\_SHFT));}
 \DoxyCodeLine{01473\ \}}
 \DoxyCodeLine{01474\ }
-\DoxyCodeLine{01515\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_EXTI\_GetEXTISource(uint32\_t\ Line)}
+\DoxyCodeLine{01515\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_EXTI\_GetEXTISource(uint32\_t\ Line)}
 \DoxyCodeLine{01516\ \{}
-\DoxyCodeLine{01517\ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga9189e770cd9b63dadd36683eb9843cac}{EXTI}}-\/>EXTICR[Line\ \&\ 0x03u],\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_ga7dc00bcbac5315cdbb1b71f519accae4}{EXTI\_EXTICR1\_EXTI0}}\ <<\ (Line\ >>\ LL\_EXTI\_REGISTER\_PINPOS\_SHFT)))\ >>\ (Line\ >>\ LL\_EXTI\_REGISTER\_PINPOS\_SHFT));}
+\DoxyCodeLine{01517\ \ \ \textcolor{keywordflow}{return}\ (READ\_BIT(EXTI-\/>EXTICR[Line\ \&\ 0x03u],\ (EXTI\_EXTICR1\_EXTI0\ <<\ (Line\ >>\ LL\_EXTI\_REGISTER\_PINPOS\_SHFT)))\ >>\ (Line\ >>\ LL\_EXTI\_REGISTER\_PINPOS\_SHFT));}
 \DoxyCodeLine{01518\ \}}
 \DoxyCodeLine{01523\ \textcolor{preprocessor}{\#if\ defined(USE\_FULL\_LL\_DRIVER)}}
 \DoxyCodeLine{01528\ uint32\_t\ LL\_EXTI\_Init(LL\_EXTI\_InitTypeDef\ *EXTI\_InitStruct);}

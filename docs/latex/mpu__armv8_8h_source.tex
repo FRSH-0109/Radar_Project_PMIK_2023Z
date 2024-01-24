@@ -1,6 +1,6 @@
 \doxysection{mpu\+\_\+armv8.\+h}
-\hypertarget{mpu__armv8_8h_source}{}\label{mpu__armv8_8h_source}\index{Drivers/CMSIS/Include/mpu\_armv8.h@{Drivers/CMSIS/Include/mpu\_armv8.h}}
-\mbox{\hyperlink{mpu__armv8_8h}{Go to the documentation of this file.}}
+\label{mpu__armv8_8h_source}\index{Drivers/CMSIS/Include/mpu\_armv8.h@{Drivers/CMSIS/Include/mpu\_armv8.h}}
+\textbf{ Go to the documentation of this file.}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{/******************************************************************************}}
 \DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ \ \ \ \ mpu\_armv8.h}}
@@ -83,42 +83,42 @@
 \DoxyCodeLine{00118\ }
 \DoxyCodeLine{00122\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
 \DoxyCodeLine{00123\ \ \ uint32\_t\ RBAR;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00124\ \ \ uint32\_t\ \mbox{\hyperlink{struct_a_r_m___m_p_u___region__t_ae9f3dcae5bc76cea6379c01975cc335b}{RLAR}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00125\ \}\ \mbox{\hyperlink{struct_a_r_m___m_p_u___region__t}{ARM\_MPU\_Region\_t}};}
+\DoxyCodeLine{00124\ \ \ uint32\_t\ RLAR;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00125\ \}\ ARM\_MPU\_Region\_t;}
 \DoxyCodeLine{00126\ \ \ \ \ }
-\DoxyCodeLine{00130\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{mpu__armv8_8h_a5a3f40314553baccdeea551f86d9a997}{ARM\_MPU\_Enable}}(uint32\_t\ MPU\_Control)}
+\DoxyCodeLine{00130\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_Enable(uint32\_t\ MPU\_Control)}
 \DoxyCodeLine{00131\ \{}
 \DoxyCodeLine{00132\ \ \ MPU-\/>CTRL\ =\ MPU\_Control\ |\ MPU\_CTRL\_ENABLE\_Msk;}
 \DoxyCodeLine{00133\ \textcolor{preprocessor}{\#ifdef\ SCB\_SHCSR\_MEMFAULTENA\_Msk}}
-\DoxyCodeLine{00134\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaaaf6477c2bde2f00f99e3c2fd1060b01}{SCB}}-\/>SHCSR\ |=\ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaf084424fa1f69bea36a1c44899d83d17}{SCB\_SHCSR\_MEMFAULTENA\_Msk}};}
+\DoxyCodeLine{00134\ \ \ SCB-\/>SHCSR\ |=\ SCB\_SHCSR\_MEMFAULTENA\_Msk;}
 \DoxyCodeLine{00135\ \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00136\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga067d257a2b34565410acefb5afef2203}{\_\_DSB}}();}
-\DoxyCodeLine{00137\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gaad233022e850a009fc6f7602be1182f6}{\_\_ISB}}();}
+\DoxyCodeLine{00136\ \ \ \_\_DSB();}
+\DoxyCodeLine{00137\ \ \ \_\_ISB();}
 \DoxyCodeLine{00138\ \}}
 \DoxyCodeLine{00139\ }
-\DoxyCodeLine{00142\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{mpu__armv8_8h_a61814eba4652a0fdfb76bbe222086327}{ARM\_MPU\_Disable}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00142\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_Disable(\textcolor{keywordtype}{void})}
 \DoxyCodeLine{00143\ \{}
-\DoxyCodeLine{00144\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga671101179b5943990785f36f8c1e2269}{\_\_DMB}}();}
+\DoxyCodeLine{00144\ \ \ \_\_DMB();}
 \DoxyCodeLine{00145\ \textcolor{preprocessor}{\#ifdef\ SCB\_SHCSR\_MEMFAULTENA\_Msk}}
-\DoxyCodeLine{00146\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaaaf6477c2bde2f00f99e3c2fd1060b01}{SCB}}-\/>SHCSR\ \&=\ \string~SCB\_SHCSR\_MEMFAULTENA\_Msk;}
+\DoxyCodeLine{00146\ \ \ SCB-\/>SHCSR\ \&=\ \string~SCB\_SHCSR\_MEMFAULTENA\_Msk;}
 \DoxyCodeLine{00147\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00148\ \ \ MPU-\/>CTRL\ \ \&=\ \string~MPU\_CTRL\_ENABLE\_Msk;}
 \DoxyCodeLine{00149\ \}}
 \DoxyCodeLine{00150\ }
 \DoxyCodeLine{00151\ \textcolor{preprocessor}{\#ifdef\ MPU\_NS}}
-\DoxyCodeLine{00155\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ ARM\_MPU\_Enable\_NS(uint32\_t\ MPU\_Control)}
+\DoxyCodeLine{00155\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_Enable\_NS(uint32\_t\ MPU\_Control)}
 \DoxyCodeLine{00156\ \{}
 \DoxyCodeLine{00157\ \ \ MPU\_NS-\/>CTRL\ =\ MPU\_Control\ |\ MPU\_CTRL\_ENABLE\_Msk;}
 \DoxyCodeLine{00158\ \textcolor{preprocessor}{\#ifdef\ SCB\_SHCSR\_MEMFAULTENA\_Msk}}
-\DoxyCodeLine{00159\ \ \ SCB\_NS-\/>SHCSR\ |=\ \mbox{\hyperlink{group___c_m_s_i_s___c_o_r_e_gaf084424fa1f69bea36a1c44899d83d17}{SCB\_SHCSR\_MEMFAULTENA\_Msk}};}
+\DoxyCodeLine{00159\ \ \ SCB\_NS-\/>SHCSR\ |=\ SCB\_SHCSR\_MEMFAULTENA\_Msk;}
 \DoxyCodeLine{00160\ \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00161\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga067d257a2b34565410acefb5afef2203}{\_\_DSB}}();}
-\DoxyCodeLine{00162\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_gaad233022e850a009fc6f7602be1182f6}{\_\_ISB}}();}
+\DoxyCodeLine{00161\ \ \ \_\_DSB();}
+\DoxyCodeLine{00162\ \ \ \_\_ISB();}
 \DoxyCodeLine{00163\ \}}
 \DoxyCodeLine{00164\ }
-\DoxyCodeLine{00167\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ ARM\_MPU\_Disable\_NS(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00167\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_Disable\_NS(\textcolor{keywordtype}{void})}
 \DoxyCodeLine{00168\ \{}
-\DoxyCodeLine{00169\ \ \ \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga671101179b5943990785f36f8c1e2269}{\_\_DMB}}();}
+\DoxyCodeLine{00169\ \ \ \_\_DMB();}
 \DoxyCodeLine{00170\ \textcolor{preprocessor}{\#ifdef\ SCB\_SHCSR\_MEMFAULTENA\_Msk}}
 \DoxyCodeLine{00171\ \ \ SCB\_NS-\/>SHCSR\ \&=\ \string~SCB\_SHCSR\_MEMFAULTENA\_Msk;}
 \DoxyCodeLine{00172\ \textcolor{preprocessor}{\#endif}}
@@ -126,7 +126,7 @@
 \DoxyCodeLine{00174\ \}}
 \DoxyCodeLine{00175\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00176\ }
-\DoxyCodeLine{00182\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{mpu__armv8_8h_a1799413f08a157d636a1491371c15ce2}{ARM\_MPU\_SetMemAttrEx}}(MPU\_Type*\ mpu,\ uint8\_t\ idx,\ uint8\_t\ attr)}
+\DoxyCodeLine{00182\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_SetMemAttrEx(MPU\_Type*\ mpu,\ uint8\_t\ idx,\ uint8\_t\ attr)}
 \DoxyCodeLine{00183\ \{}
 \DoxyCodeLine{00184\ \ \ \textcolor{keyword}{const}\ uint8\_t\ reg\ =\ idx\ /\ 4U;}
 \DoxyCodeLine{00185\ \ \ \textcolor{keyword}{const}\ uint32\_t\ pos\ =\ ((idx\ \%\ 4U)\ *\ 8U);}
@@ -139,56 +139,56 @@
 \DoxyCodeLine{00192\ \ \ mpu-\/>MAIR[reg]\ =\ ((mpu-\/>MAIR[reg]\ \&\ \string~mask)\ |\ ((attr\ <<\ pos)\ \&\ mask));}
 \DoxyCodeLine{00193\ \}}
 \DoxyCodeLine{00194\ }
-\DoxyCodeLine{00199\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{mpu__armv8_8h_ab5b3c0a53d19c09a5550f1d9071ae65c}{ARM\_MPU\_SetMemAttr}}(uint8\_t\ idx,\ uint8\_t\ attr)}
+\DoxyCodeLine{00199\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_SetMemAttr(uint8\_t\ idx,\ uint8\_t\ attr)}
 \DoxyCodeLine{00200\ \{}
-\DoxyCodeLine{00201\ \ \ \mbox{\hyperlink{mpu__armv8_8h_a1799413f08a157d636a1491371c15ce2}{ARM\_MPU\_SetMemAttrEx}}(MPU,\ idx,\ attr);}
+\DoxyCodeLine{00201\ \ \ ARM\_MPU\_SetMemAttrEx(MPU,\ idx,\ attr);}
 \DoxyCodeLine{00202\ \}}
 \DoxyCodeLine{00203\ }
 \DoxyCodeLine{00204\ \textcolor{preprocessor}{\#ifdef\ MPU\_NS}}
-\DoxyCodeLine{00209\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ ARM\_MPU\_SetMemAttr\_NS(uint8\_t\ idx,\ uint8\_t\ attr)}
+\DoxyCodeLine{00209\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_SetMemAttr\_NS(uint8\_t\ idx,\ uint8\_t\ attr)}
 \DoxyCodeLine{00210\ \{}
-\DoxyCodeLine{00211\ \ \ \mbox{\hyperlink{mpu__armv8_8h_a1799413f08a157d636a1491371c15ce2}{ARM\_MPU\_SetMemAttrEx}}(MPU\_NS,\ idx,\ attr);}
+\DoxyCodeLine{00211\ \ \ ARM\_MPU\_SetMemAttrEx(MPU\_NS,\ idx,\ attr);}
 \DoxyCodeLine{00212\ \}}
 \DoxyCodeLine{00213\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00214\ }
-\DoxyCodeLine{00219\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{mpu__armv8_8h_a01fa1151c9ec0ba5de76f908c0999316}{ARM\_MPU\_ClrRegionEx}}(MPU\_Type*\ mpu,\ uint32\_t\ rnr)}
+\DoxyCodeLine{00219\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_ClrRegionEx(MPU\_Type*\ mpu,\ uint32\_t\ rnr)}
 \DoxyCodeLine{00220\ \{}
 \DoxyCodeLine{00221\ \ \ mpu-\/>RNR\ =\ rnr;}
 \DoxyCodeLine{00222\ \ \ mpu-\/>RLAR\ =\ 0U;}
 \DoxyCodeLine{00223\ \}}
 \DoxyCodeLine{00224\ }
-\DoxyCodeLine{00228\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{mpu__armv8_8h_a9dcb0afddf4ac351f33f3c7a5169c62c}{ARM\_MPU\_ClrRegion}}(uint32\_t\ rnr)}
+\DoxyCodeLine{00228\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_ClrRegion(uint32\_t\ rnr)}
 \DoxyCodeLine{00229\ \{}
-\DoxyCodeLine{00230\ \ \ \mbox{\hyperlink{mpu__armv8_8h_a01fa1151c9ec0ba5de76f908c0999316}{ARM\_MPU\_ClrRegionEx}}(MPU,\ rnr);}
+\DoxyCodeLine{00230\ \ \ ARM\_MPU\_ClrRegionEx(MPU,\ rnr);}
 \DoxyCodeLine{00231\ \}}
 \DoxyCodeLine{00232\ }
 \DoxyCodeLine{00233\ \textcolor{preprocessor}{\#ifdef\ MPU\_NS}}
-\DoxyCodeLine{00237\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ ARM\_MPU\_ClrRegion\_NS(uint32\_t\ rnr)}
+\DoxyCodeLine{00237\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_ClrRegion\_NS(uint32\_t\ rnr)}
 \DoxyCodeLine{00238\ \{\ \ }
-\DoxyCodeLine{00239\ \ \ \mbox{\hyperlink{mpu__armv8_8h_a01fa1151c9ec0ba5de76f908c0999316}{ARM\_MPU\_ClrRegionEx}}(MPU\_NS,\ rnr);}
+\DoxyCodeLine{00239\ \ \ ARM\_MPU\_ClrRegionEx(MPU\_NS,\ rnr);}
 \DoxyCodeLine{00240\ \}}
 \DoxyCodeLine{00241\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00242\ }
-\DoxyCodeLine{00249\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{mpu__armv8_8h_a3d50ba8546252bea959e45c8fdf16993}{ARM\_MPU\_SetRegionEx}}(MPU\_Type*\ mpu,\ uint32\_t\ rnr,\ uint32\_t\ rbar,\ uint32\_t\ rlar)}
+\DoxyCodeLine{00249\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_SetRegionEx(MPU\_Type*\ mpu,\ uint32\_t\ rnr,\ uint32\_t\ rbar,\ uint32\_t\ rlar)}
 \DoxyCodeLine{00250\ \{}
 \DoxyCodeLine{00251\ \ \ mpu-\/>RNR\ =\ rnr;}
 \DoxyCodeLine{00252\ \ \ mpu-\/>RBAR\ =\ rbar;}
 \DoxyCodeLine{00253\ \ \ mpu-\/>RLAR\ =\ rlar;}
 \DoxyCodeLine{00254\ \}}
 \DoxyCodeLine{00255\ }
-\DoxyCodeLine{00261\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{mpu__armv8_8h_a6d7f220015c070c0e469948c1775ee3d}{ARM\_MPU\_SetRegion}}(uint32\_t\ rnr,\ uint32\_t\ rbar,\ uint32\_t\ rlar)}
+\DoxyCodeLine{00261\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_SetRegion(uint32\_t\ rnr,\ uint32\_t\ rbar,\ uint32\_t\ rlar)}
 \DoxyCodeLine{00262\ \{}
-\DoxyCodeLine{00263\ \ \ \mbox{\hyperlink{mpu__armv8_8h_a3d50ba8546252bea959e45c8fdf16993}{ARM\_MPU\_SetRegionEx}}(MPU,\ rnr,\ rbar,\ rlar);}
+\DoxyCodeLine{00263\ \ \ ARM\_MPU\_SetRegionEx(MPU,\ rnr,\ rbar,\ rlar);}
 \DoxyCodeLine{00264\ \}}
 \DoxyCodeLine{00265\ }
 \DoxyCodeLine{00266\ \textcolor{preprocessor}{\#ifdef\ MPU\_NS}}
-\DoxyCodeLine{00272\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ ARM\_MPU\_SetRegion\_NS(uint32\_t\ rnr,\ uint32\_t\ rbar,\ uint32\_t\ rlar)}
+\DoxyCodeLine{00272\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_SetRegion\_NS(uint32\_t\ rnr,\ uint32\_t\ rbar,\ uint32\_t\ rlar)}
 \DoxyCodeLine{00273\ \{}
-\DoxyCodeLine{00274\ \ \ \mbox{\hyperlink{mpu__armv8_8h_a3d50ba8546252bea959e45c8fdf16993}{ARM\_MPU\_SetRegionEx}}(MPU\_NS,\ rnr,\ rbar,\ rlar);\ \ }
+\DoxyCodeLine{00274\ \ \ ARM\_MPU\_SetRegionEx(MPU\_NS,\ rnr,\ rbar,\ rlar);\ \ }
 \DoxyCodeLine{00275\ \}}
 \DoxyCodeLine{00276\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00277\ }
-\DoxyCodeLine{00283\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{mpu__armv8_8h_ac1a949403bf84eecaf407003fb553ae7}{ARM\_MPU\_OrderedMemcpy}}(\textcolor{keyword}{volatile}\ uint32\_t*\ dst,\ \textcolor{keyword}{const}\ uint32\_t*\ \mbox{\hyperlink{cmsis__armcc_8h_a378ac21329d33f561f90265eef89f564}{\_\_RESTRICT}}\ src,\ uint32\_t\ len)}
+\DoxyCodeLine{00283\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_OrderedMemcpy(\textcolor{keyword}{volatile}\ uint32\_t*\ dst,\ \textcolor{keyword}{const}\ uint32\_t*\ \_\_RESTRICT\ src,\ uint32\_t\ len)}
 \DoxyCodeLine{00284\ \{}
 \DoxyCodeLine{00285\ \ \ uint32\_t\ i;}
 \DoxyCodeLine{00286\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0U;\ i\ <\ len;\ ++i)\ }
@@ -197,12 +197,12 @@
 \DoxyCodeLine{00289\ \ \ \}}
 \DoxyCodeLine{00290\ \}}
 \DoxyCodeLine{00291\ }
-\DoxyCodeLine{00298\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{mpu__armv8_8h_ab6094419f2abd678f1f3b121cd115049}{ARM\_MPU\_LoadEx}}(MPU\_Type*\ mpu,\ uint32\_t\ rnr,\ \mbox{\hyperlink{struct_a_r_m___m_p_u___region__t}{ARM\_MPU\_Region\_t}}\ \textcolor{keyword}{const}*\ table,\ uint32\_t\ cnt)\ }
+\DoxyCodeLine{00298\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_LoadEx(MPU\_Type*\ mpu,\ uint32\_t\ rnr,\ ARM\_MPU\_Region\_t\ \textcolor{keyword}{const}*\ table,\ uint32\_t\ cnt)\ }
 \DoxyCodeLine{00299\ \{}
-\DoxyCodeLine{00300\ \ \ \textcolor{keyword}{const}\ uint32\_t\ rowWordSize\ =\ \textcolor{keyword}{sizeof}(\mbox{\hyperlink{struct_a_r_m___m_p_u___region__t}{ARM\_MPU\_Region\_t}})/4U;}
+\DoxyCodeLine{00300\ \ \ \textcolor{keyword}{const}\ uint32\_t\ rowWordSize\ =\ \textcolor{keyword}{sizeof}(ARM\_MPU\_Region\_t)/4U;}
 \DoxyCodeLine{00301\ \ \ \textcolor{keywordflow}{if}\ (cnt\ ==\ 1U)\ \{}
 \DoxyCodeLine{00302\ \ \ \ \ mpu-\/>RNR\ =\ rnr;}
-\DoxyCodeLine{00303\ \ \ \ \ \mbox{\hyperlink{mpu__armv8_8h_ac1a949403bf84eecaf407003fb553ae7}{ARM\_MPU\_OrderedMemcpy}}(\&(mpu-\/>RBAR),\ \&(table-\/>\mbox{\hyperlink{struct_a_r_m___m_p_u___region__t_a0b30f076910cb037e031563046dd5e10}{RBAR}}),\ rowWordSize);}
+\DoxyCodeLine{00303\ \ \ \ \ ARM\_MPU\_OrderedMemcpy(\&(mpu-\/>RBAR),\ \&(table-\/>RBAR),\ rowWordSize);}
 \DoxyCodeLine{00304\ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
 \DoxyCodeLine{00305\ \ \ \ \ uint32\_t\ rnrBase\ \ \ =\ rnr\ \&\ \string~(MPU\_TYPE\_RALIASES-\/1U);}
 \DoxyCodeLine{00306\ \ \ \ \ uint32\_t\ rnrOffset\ =\ rnr\ \%\ MPU\_TYPE\_RALIASES;}
@@ -210,7 +210,7 @@
 \DoxyCodeLine{00308\ \ \ \ \ mpu-\/>RNR\ =\ rnrBase;}
 \DoxyCodeLine{00309\ \ \ \ \ \textcolor{keywordflow}{while}\ ((rnrOffset\ +\ cnt)\ >\ MPU\_TYPE\_RALIASES)\ \{}
 \DoxyCodeLine{00310\ \ \ \ \ \ \ uint32\_t\ c\ =\ MPU\_TYPE\_RALIASES\ -\/\ rnrOffset;}
-\DoxyCodeLine{00311\ \ \ \ \ \ \ \mbox{\hyperlink{mpu__armv8_8h_ac1a949403bf84eecaf407003fb553ae7}{ARM\_MPU\_OrderedMemcpy}}(\&(mpu-\/>RBAR)+(rnrOffset*2U),\ \&(table-\/>\mbox{\hyperlink{struct_a_r_m___m_p_u___region__t_a0b30f076910cb037e031563046dd5e10}{RBAR}}),\ c*rowWordSize);}
+\DoxyCodeLine{00311\ \ \ \ \ \ \ ARM\_MPU\_OrderedMemcpy(\&(mpu-\/>RBAR)+(rnrOffset*2U),\ \&(table-\/>RBAR),\ c*rowWordSize);}
 \DoxyCodeLine{00312\ \ \ \ \ \ \ table\ +=\ c;}
 \DoxyCodeLine{00313\ \ \ \ \ \ \ cnt\ -\/=\ c;}
 \DoxyCodeLine{00314\ \ \ \ \ \ \ rnrOffset\ =\ 0U;}
@@ -218,19 +218,19 @@
 \DoxyCodeLine{00316\ \ \ \ \ \ \ mpu-\/>RNR\ =\ rnrBase;}
 \DoxyCodeLine{00317\ \ \ \ \ \}}
 \DoxyCodeLine{00318\ \ \ \ \ }
-\DoxyCodeLine{00319\ \ \ \ \ \mbox{\hyperlink{mpu__armv8_8h_ac1a949403bf84eecaf407003fb553ae7}{ARM\_MPU\_OrderedMemcpy}}(\&(mpu-\/>RBAR)+(rnrOffset*2U),\ \&(table-\/>\mbox{\hyperlink{struct_a_r_m___m_p_u___region__t_a0b30f076910cb037e031563046dd5e10}{RBAR}}),\ cnt*rowWordSize);}
+\DoxyCodeLine{00319\ \ \ \ \ ARM\_MPU\_OrderedMemcpy(\&(mpu-\/>RBAR)+(rnrOffset*2U),\ \&(table-\/>RBAR),\ cnt*rowWordSize);}
 \DoxyCodeLine{00320\ \ \ \}}
 \DoxyCodeLine{00321\ \}}
 \DoxyCodeLine{00322\ }
-\DoxyCodeLine{00328\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{mpu__armv8_8h_aca76614e3091c7324aa9d60e634621bf}{ARM\_MPU\_Load}}(uint32\_t\ rnr,\ \mbox{\hyperlink{struct_a_r_m___m_p_u___region__t}{ARM\_MPU\_Region\_t}}\ \textcolor{keyword}{const}*\ table,\ uint32\_t\ cnt)\ }
+\DoxyCodeLine{00328\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_Load(uint32\_t\ rnr,\ ARM\_MPU\_Region\_t\ \textcolor{keyword}{const}*\ table,\ uint32\_t\ cnt)\ }
 \DoxyCodeLine{00329\ \{}
-\DoxyCodeLine{00330\ \ \ \mbox{\hyperlink{mpu__armv8_8h_ab6094419f2abd678f1f3b121cd115049}{ARM\_MPU\_LoadEx}}(MPU,\ rnr,\ table,\ cnt);}
+\DoxyCodeLine{00330\ \ \ ARM\_MPU\_LoadEx(MPU,\ rnr,\ table,\ cnt);}
 \DoxyCodeLine{00331\ \}}
 \DoxyCodeLine{00332\ }
 \DoxyCodeLine{00333\ \textcolor{preprocessor}{\#ifdef\ MPU\_NS}}
-\DoxyCodeLine{00339\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ ARM\_MPU\_Load\_NS(uint32\_t\ rnr,\ \mbox{\hyperlink{struct_a_r_m___m_p_u___region__t}{ARM\_MPU\_Region\_t}}\ \textcolor{keyword}{const}*\ table,\ uint32\_t\ cnt)\ }
+\DoxyCodeLine{00339\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ ARM\_MPU\_Load\_NS(uint32\_t\ rnr,\ ARM\_MPU\_Region\_t\ \textcolor{keyword}{const}*\ table,\ uint32\_t\ cnt)\ }
 \DoxyCodeLine{00340\ \{}
-\DoxyCodeLine{00341\ \ \ \mbox{\hyperlink{mpu__armv8_8h_ab6094419f2abd678f1f3b121cd115049}{ARM\_MPU\_LoadEx}}(MPU\_NS,\ rnr,\ table,\ cnt);}
+\DoxyCodeLine{00341\ \ \ ARM\_MPU\_LoadEx(MPU\_NS,\ rnr,\ table,\ cnt);}
 \DoxyCodeLine{00342\ \}}
 \DoxyCodeLine{00343\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00344\ }

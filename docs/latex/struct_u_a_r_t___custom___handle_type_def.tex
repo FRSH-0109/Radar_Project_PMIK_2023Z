@@ -1,5 +1,5 @@
 \doxysection{UART\+\_\+\+Custom\+\_\+\+Handle\+Type\+Def Struct Reference}
-\hypertarget{struct_u_a_r_t___custom___handle_type_def}{}\label{struct_u_a_r_t___custom___handle_type_def}\index{UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}}
+\label{struct_u_a_r_t___custom___handle_type_def}\index{UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}}
 
 
 {\ttfamily \#include $<$usart\+\_\+custom.\+h$>$}
@@ -7,19 +7,19 @@
 \doxysubsubsection*{Data Fields}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{group___u_a_r_t___exported___types_ga5de4a49eb132735325e706f406c69d6e}{UART\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def_a1ed7dab212fde0a3a4600d33399c67b6}{huart}}
+\textbf{ UART\+\_\+\+Handle\+Type\+Def} $\ast$ \textbf{ huart}
 \item 
-uint16\+\_\+t \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def_a962988d59051dfab0ce7da4c9d66f7b2}{data\+Rx\+Max\+Len}}
+uint16\+\_\+t \textbf{ data\+Rx\+Max\+Len}
 \item 
-uint16\+\_\+t \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def_aa1a20fe601cf7e4b3f0134222621c0ad}{data\+Tx\+Max\+Len}}
+uint16\+\_\+t \textbf{ data\+Tx\+Max\+Len}
 \item 
-volatile uint8\+\_\+t \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def_aeea8c98a5a0f7d7f8d5719f46a45f2d2}{data\+Rx}} \mbox{[}\mbox{\hyperlink{usart__custom_8h_adf0178118c42a9224dd770222fc81497}{MAX\+\_\+\+UART\+\_\+\+RX\+\_\+\+DATA\+\_\+\+LEN}}\mbox{]}
+volatile uint8\+\_\+t \textbf{ data\+Rx} [\textbf{ MAX\+\_\+\+UART\+\_\+\+RX\+\_\+\+DATA\+\_\+\+LEN}]
 \item 
-uint8\+\_\+t \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def_ab9bc9891f04881264d1131c2a5ffe711}{data\+Tx}} \mbox{[}\mbox{\hyperlink{usart__custom_8h_ad33fa5c178f516badf8b705c646ba9f9}{MAX\+\_\+\+UART\+\_\+\+TX\+\_\+\+DATA\+\_\+\+LEN}}\mbox{]}
+uint8\+\_\+t \textbf{ data\+Tx} [\textbf{ MAX\+\_\+\+UART\+\_\+\+TX\+\_\+\+DATA\+\_\+\+LEN}]
 \item 
-volatile bool \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def_a9011455a25b27b0d2bc3cbd56eafb3ad}{tx\+Transmission\+Cmplt}}
+volatile bool \textbf{ tx\+Transmission\+Cmplt}
 \item 
-volatile uint32\+\_\+t \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_def_aa2fa02d67a76264094f28e5349d128bd}{tx\+Transmission\+Cmplt\+Time}}
+volatile uint32\+\_\+t \textbf{ tx\+Transmission\+Cmplt\+Time}
 \end{DoxyCompactItemize}
 
 
@@ -27,50 +27,50 @@ volatile uint32\+\_\+t \mbox{\hyperlink{struct_u_a_r_t___custom___handle_type_de
 Structure for custom uart handle 
 
 \doxysubsection{Field Documentation}
-\Hypertarget{struct_u_a_r_t___custom___handle_type_def_aeea8c98a5a0f7d7f8d5719f46a45f2d2}\label{struct_u_a_r_t___custom___handle_type_def_aeea8c98a5a0f7d7f8d5719f46a45f2d2} 
+\label{struct_u_a_r_t___custom___handle_type_def_aeea8c98a5a0f7d7f8d5719f46a45f2d2} 
 \index{UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}!dataRx@{dataRx}}
 \index{dataRx@{dataRx}!UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}}
-\doxysubsubsection{\texorpdfstring{dataRx}{dataRx}}
-{\footnotesize\ttfamily volatile uint8\+\_\+t data\+Rx\mbox{[}\mbox{\hyperlink{usart__custom_8h_adf0178118c42a9224dd770222fc81497}{MAX\+\_\+\+UART\+\_\+\+RX\+\_\+\+DATA\+\_\+\+LEN}}\mbox{]}}
+\doxysubsubsection{dataRx}
+{\footnotesize\ttfamily volatile uint8\+\_\+t data\+Rx[\textbf{ MAX\+\_\+\+UART\+\_\+\+RX\+\_\+\+DATA\+\_\+\+LEN}]}
 
-Array of rx uart data used store recent received data before passing to queue \Hypertarget{struct_u_a_r_t___custom___handle_type_def_a962988d59051dfab0ce7da4c9d66f7b2}\label{struct_u_a_r_t___custom___handle_type_def_a962988d59051dfab0ce7da4c9d66f7b2} 
+Array of rx uart data used store recent received data before passing to queue \label{struct_u_a_r_t___custom___handle_type_def_a962988d59051dfab0ce7da4c9d66f7b2} 
 \index{UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}!dataRxMaxLen@{dataRxMaxLen}}
 \index{dataRxMaxLen@{dataRxMaxLen}!UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}}
-\doxysubsubsection{\texorpdfstring{dataRxMaxLen}{dataRxMaxLen}}
+\doxysubsubsection{dataRxMaxLen}
 {\footnotesize\ttfamily uint16\+\_\+t data\+Rx\+Max\+Len}
 
-Maximum rx uart buffer length \Hypertarget{struct_u_a_r_t___custom___handle_type_def_ab9bc9891f04881264d1131c2a5ffe711}\label{struct_u_a_r_t___custom___handle_type_def_ab9bc9891f04881264d1131c2a5ffe711} 
+Maximum rx uart buffer length \label{struct_u_a_r_t___custom___handle_type_def_ab9bc9891f04881264d1131c2a5ffe711} 
 \index{UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}!dataTx@{dataTx}}
 \index{dataTx@{dataTx}!UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}}
-\doxysubsubsection{\texorpdfstring{dataTx}{dataTx}}
-{\footnotesize\ttfamily uint8\+\_\+t data\+Tx\mbox{[}\mbox{\hyperlink{usart__custom_8h_ad33fa5c178f516badf8b705c646ba9f9}{MAX\+\_\+\+UART\+\_\+\+TX\+\_\+\+DATA\+\_\+\+LEN}}\mbox{]}}
+\doxysubsubsection{dataTx}
+{\footnotesize\ttfamily uint8\+\_\+t data\+Tx[\textbf{ MAX\+\_\+\+UART\+\_\+\+TX\+\_\+\+DATA\+\_\+\+LEN}]}
 
-Array of tx uart data used to store data before passing to queue \Hypertarget{struct_u_a_r_t___custom___handle_type_def_aa1a20fe601cf7e4b3f0134222621c0ad}\label{struct_u_a_r_t___custom___handle_type_def_aa1a20fe601cf7e4b3f0134222621c0ad} 
+Array of tx uart data used to store data before passing to queue \label{struct_u_a_r_t___custom___handle_type_def_aa1a20fe601cf7e4b3f0134222621c0ad} 
 \index{UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}!dataTxMaxLen@{dataTxMaxLen}}
 \index{dataTxMaxLen@{dataTxMaxLen}!UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}}
-\doxysubsubsection{\texorpdfstring{dataTxMaxLen}{dataTxMaxLen}}
+\doxysubsubsection{dataTxMaxLen}
 {\footnotesize\ttfamily uint16\+\_\+t data\+Tx\+Max\+Len}
 
-Maximum tx uart buffer length \Hypertarget{struct_u_a_r_t___custom___handle_type_def_a1ed7dab212fde0a3a4600d33399c67b6}\label{struct_u_a_r_t___custom___handle_type_def_a1ed7dab212fde0a3a4600d33399c67b6} 
+Maximum tx uart buffer length \label{struct_u_a_r_t___custom___handle_type_def_a1ed7dab212fde0a3a4600d33399c67b6} 
 \index{UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}!huart@{huart}}
 \index{huart@{huart}!UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}}
-\doxysubsubsection{\texorpdfstring{huart}{huart}}
-{\footnotesize\ttfamily \mbox{\hyperlink{group___u_a_r_t___exported___types_ga5de4a49eb132735325e706f406c69d6e}{UART\+\_\+\+Handle\+Type\+Def}}\texorpdfstring{$\ast$}{*} huart}
+\doxysubsubsection{huart}
+{\footnotesize\ttfamily \textbf{ UART\+\_\+\+Handle\+Type\+Def}$\ast$ huart}
 
-Pointer to HAL uart handle \Hypertarget{struct_u_a_r_t___custom___handle_type_def_a9011455a25b27b0d2bc3cbd56eafb3ad}\label{struct_u_a_r_t___custom___handle_type_def_a9011455a25b27b0d2bc3cbd56eafb3ad} 
+Pointer to HAL uart handle \label{struct_u_a_r_t___custom___handle_type_def_a9011455a25b27b0d2bc3cbd56eafb3ad} 
 \index{UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}!txTransmissionCmplt@{txTransmissionCmplt}}
 \index{txTransmissionCmplt@{txTransmissionCmplt}!UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}}
-\doxysubsubsection{\texorpdfstring{txTransmissionCmplt}{txTransmissionCmplt}}
+\doxysubsubsection{txTransmissionCmplt}
 {\footnotesize\ttfamily volatile bool tx\+Transmission\+Cmplt}
 
-Flag for indicate if data was already send \Hypertarget{struct_u_a_r_t___custom___handle_type_def_aa2fa02d67a76264094f28e5349d128bd}\label{struct_u_a_r_t___custom___handle_type_def_aa2fa02d67a76264094f28e5349d128bd} 
+Flag for indicate if data was already send \label{struct_u_a_r_t___custom___handle_type_def_aa2fa02d67a76264094f28e5349d128bd} 
 \index{UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}!txTransmissionCmpltTime@{txTransmissionCmpltTime}}
 \index{txTransmissionCmpltTime@{txTransmissionCmpltTime}!UART\_Custom\_HandleTypeDef@{UART\_Custom\_HandleTypeDef}}
-\doxysubsubsection{\texorpdfstring{txTransmissionCmpltTime}{txTransmissionCmpltTime}}
+\doxysubsubsection{txTransmissionCmpltTime}
 {\footnotesize\ttfamily volatile uint32\+\_\+t tx\+Transmission\+Cmplt\+Time}
 
 Value for measuring time out of last send data frame 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Radar\+App/usart\+\_\+custom/\mbox{\hyperlink{usart__custom_8h}{usart\+\_\+custom.\+h}}\end{DoxyCompactItemize}
+Radar\+App/usart\+\_\+custom/\textbf{ usart\+\_\+custom.\+h}\end{DoxyCompactItemize}

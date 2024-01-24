@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Radar: RadarApp/DistanceSensorDriver/distance_sensor.c File Reference</title>
+<title>Ultrasonc Radar: RadarApp/DistanceSensorDriver/distance_sensor.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Radar<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Ultrasonc Radar
    </div>
   </td>
  </tr>
@@ -94,6 +94,9 @@ $(document).ready(function(){initNavTree('distance__sensor_8c.html',''); initRes
   <div class="headertitle"><div class="title">distance_sensor.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>File containing code of ultrasonic distance sensor, implementation, modifications and making measurement.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="distance__sensor_8h_source.html">distance_sensor.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -111,7 +114,12 @@ Functions</h2></td></tr>
 <tr class="memitem:af86e9e0dc722a2351b4e909023a53480" id="r_af86e9e0dc722a2351b4e909023a53480"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="distance__sensor_8c.html#af86e9e0dc722a2351b4e909023a53480">distanceSensorGetDistance</a> (<a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> *sensor)</td></tr>
 <tr class="separator:af86e9e0dc722a2351b4e909023a53480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>File containing code of ultrasonic distance sensor, implementation, modifications and making measurement. </p>
+<dl class="section author"><dt>Author</dt><dd>Kami Kośnik, Kacper Radzikowski </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>20 Nov 2023 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z">https://github.com/FRSH-0109/Radar_Project_PMIK_2023Z</a> </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="af9aace1b44b73111e15aa39f06f43456" name="af9aace1b44b73111e15aa39f06f43456"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9aace1b44b73111e15aa39f06f43456">&#9670;&#160;</a></span>__attribute__()</h2>
 
@@ -145,6 +153,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function used to get distance from sensor's structure</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> instance of sensor to be initialized </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double value of distance contained in sensor's struct </dd></dl>
 
 </div>
 </div>
@@ -173,6 +189,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function used to receive echo signal from sensor</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> instance of sensor to be initialized </td></tr>
+    <tr><td class="paramname">ticks</td><td>value of how many ticks length echo signal was </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -191,6 +215,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function used to get state of readyToMeasure flag</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> instance of sensor to be initialized </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool value corresponding to readyToMeasureFlag </dd></dl>
 
 </div>
 </div>
@@ -219,6 +251,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function used to once init sensor structure</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> instance of sensor to be initialized </td></tr>
+    <tr><td class="paramname">ticksToDistanceFactor</td><td>used to set factor param in sensor's structure </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -237,6 +277,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Function used to send trigger signal to the sensor</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>pointer to <a class="el" href="structdistance_sensor_struct.html">distanceSensorStruct</a> instance of sensor to be initialized </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

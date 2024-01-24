@@ -1,5 +1,5 @@
 \doxysection{Drivers/\+STM32\+G0xx\+\_\+\+HAL\+\_\+\+Driver/\+Inc/stm32g0xx\+\_\+hal\+\_\+flash\+\_\+ex.h File Reference}
-\hypertarget{stm32g0xx__hal__flash__ex_8h}{}\label{stm32g0xx__hal__flash__ex_8h}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_flash\_ex.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_flash\_ex.h}}
+\label{stm32g0xx__hal__flash__ex_8h}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_flash\_ex.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal\_flash\_ex.h}}
 
 
 Header file of FLASH HAL Extended module.  
@@ -9,36 +9,36 @@ Header file of FLASH HAL Extended module.
 \doxysubsubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___empty___check_ga4009670d557381dd548e31da68ac8ebf}{FLASH\+\_\+\+PROG\+\_\+\+NOT\+\_\+\+EMPTY}}~0x00000000u
+\#define \textbf{ FLASH\+\_\+\+PROG\+\_\+\+NOT\+\_\+\+EMPTY}~0x00000000u
 \item 
-\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___empty___check_gac8b9cdc4d10feccc7e4ad5c5e3d5fe32}{FLASH\+\_\+\+PROG\+\_\+\+EMPTY}}~\mbox{\hyperlink{group___peripheral___registers___bits___definition_ga0861a1fd81c8dcb1a71559e45aa230ad}{FLASH\+\_\+\+ACR\+\_\+\+PROGEMPTY}}
+\#define \textbf{ FLASH\+\_\+\+PROG\+\_\+\+EMPTY}~\textbf{ FLASH\+\_\+\+ACR\+\_\+\+PROGEMPTY}
 \item 
-\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___private___constants_ga756941e1f5b0ccf307d0dc8bcfddd6d8}{FLASH\+\_\+\+PCROP\+\_\+\+GRANULARITY\+\_\+\+OFFSET}}~9u
+\#define \textbf{ FLASH\+\_\+\+PCROP\+\_\+\+GRANULARITY\+\_\+\+OFFSET}~9u
 \item 
-\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___private___constants_gaa53468c1b0bd3625d13db05b3da9cb88}{FLASH\+\_\+\+PCROP\+\_\+\+GRANULARITY}}~(1UL $<$$<$ \mbox{\hyperlink{group___f_l_a_s_h_ex___private___constants_ga756941e1f5b0ccf307d0dc8bcfddd6d8}{FLASH\+\_\+\+PCROP\+\_\+\+GRANULARITY\+\_\+\+OFFSET}})
+\#define \textbf{ FLASH\+\_\+\+PCROP\+\_\+\+GRANULARITY}~(1UL $<$$<$ \textbf{ FLASH\+\_\+\+PCROP\+\_\+\+GRANULARITY\+\_\+\+OFFSET})
 \item 
-\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___private___macros_ga07fc54c971c43f2217c3a07cc8247759}{IS\+\_\+\+FLASH\+\_\+\+EMPTY\+\_\+\+CHECK}}(\+\_\+\+\_\+\+VALUE\+\_\+\+\_\+)~(((\+\_\+\+\_\+\+VALUE\+\_\+\+\_\+) == \mbox{\hyperlink{group___f_l_a_s_h_ex___empty___check_gac8b9cdc4d10feccc7e4ad5c5e3d5fe32}{FLASH\+\_\+\+PROG\+\_\+\+EMPTY}}) \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} ((\+\_\+\+\_\+\+VALUE\+\_\+\+\_\+) == \mbox{\hyperlink{group___f_l_a_s_h_ex___empty___check_ga4009670d557381dd548e31da68ac8ebf}{FLASH\+\_\+\+PROG\+\_\+\+NOT\+\_\+\+EMPTY}}))
+\#define \textbf{ IS\+\_\+\+FLASH\+\_\+\+EMPTY\+\_\+\+CHECK}(\+\_\+\+\_\+\+VALUE\+\_\+\+\_\+)~(((\+\_\+\+\_\+\+VALUE\+\_\+\+\_\+) == \textbf{ FLASH\+\_\+\+PROG\+\_\+\+EMPTY}) $\vert$$\vert$ ((\+\_\+\+\_\+\+VALUE\+\_\+\+\_\+) == \textbf{ FLASH\+\_\+\+PROG\+\_\+\+NOT\+\_\+\+EMPTY}))
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\+\_\+\+Status\+Type\+Def}} \mbox{\hyperlink{group___f_l_a_s_h_ex___exported___functions___group1_ga9c4e0c7b4f528b7cccae6ad610eb5953}{HAL\+\_\+\+FLASHEx\+\_\+\+Erase}} (\mbox{\hyperlink{struct_f_l_a_s_h___erase_init_type_def}{FLASH\+\_\+\+Erase\+Init\+Type\+Def}} \texorpdfstring{$\ast$}{*}p\+Erase\+Init, uint32\+\_\+t \texorpdfstring{$\ast$}{*}Page\+Error)
+\textbf{ HAL\+\_\+\+Status\+Type\+Def} \textbf{ HAL\+\_\+\+FLASHEx\+\_\+\+Erase} (\textbf{ FLASH\+\_\+\+Erase\+Init\+Type\+Def} $\ast$p\+Erase\+Init, uint32\+\_\+t $\ast$Page\+Error)
 \item 
-\mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\+\_\+\+Status\+Type\+Def}} \mbox{\hyperlink{group___f_l_a_s_h_ex___exported___functions___group1_gaf58c6764859e4febc21abe462dfb2615}{HAL\+\_\+\+FLASHEx\+\_\+\+Erase\+\_\+\+IT}} (\mbox{\hyperlink{struct_f_l_a_s_h___erase_init_type_def}{FLASH\+\_\+\+Erase\+Init\+Type\+Def}} \texorpdfstring{$\ast$}{*}p\+Erase\+Init)
+\textbf{ HAL\+\_\+\+Status\+Type\+Def} \textbf{ HAL\+\_\+\+FLASHEx\+\_\+\+Erase\+\_\+\+IT} (\textbf{ FLASH\+\_\+\+Erase\+Init\+Type\+Def} $\ast$p\+Erase\+Init)
 \item 
-void \mbox{\hyperlink{group___f_l_a_s_h_ex___exported___functions___group1_ga93f96d794f4dbe97347cbc804e1bb880}{HAL\+\_\+\+FLASHEx\+\_\+\+Enable\+Debugger}} (void)
+void \textbf{ HAL\+\_\+\+FLASHEx\+\_\+\+Enable\+Debugger} (void)
 \item 
-void \mbox{\hyperlink{group___f_l_a_s_h_ex___exported___functions___group1_ga42d8fc9973278f3d58b012ecd1c50430}{HAL\+\_\+\+FLASHEx\+\_\+\+Disable\+Debugger}} (void)
+void \textbf{ HAL\+\_\+\+FLASHEx\+\_\+\+Disable\+Debugger} (void)
 \item 
-uint32\+\_\+t \mbox{\hyperlink{group___f_l_a_s_h_ex___exported___functions___group1_ga479621962d2c3c479a41077bd6ca9252}{HAL\+\_\+\+FLASHEx\+\_\+\+Flash\+Empty\+Check}} (void)
+uint32\+\_\+t \textbf{ HAL\+\_\+\+FLASHEx\+\_\+\+Flash\+Empty\+Check} (void)
 \item 
-void \mbox{\hyperlink{group___f_l_a_s_h_ex___exported___functions___group1_ga69d8c505290f866fd8d818b674a41764}{HAL\+\_\+\+FLASHEx\+\_\+\+Force\+Flash\+Empty}} (uint32\+\_\+t Flash\+Empty)
+void \textbf{ HAL\+\_\+\+FLASHEx\+\_\+\+Force\+Flash\+Empty} (uint32\+\_\+t Flash\+Empty)
 \item 
-\mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\+\_\+\+Status\+Type\+Def}} \mbox{\hyperlink{group___f_l_a_s_h_ex___exported___functions___group1_ga001dd4a8defa9eb24a17c4df5953a41d}{HAL\+\_\+\+FLASHEx\+\_\+\+OBProgram}} (\mbox{\hyperlink{struct_f_l_a_s_h___o_b_program_init_type_def}{FLASH\+\_\+\+OBProgram\+Init\+Type\+Def}} \texorpdfstring{$\ast$}{*}p\+OBInit)
+\textbf{ HAL\+\_\+\+Status\+Type\+Def} \textbf{ HAL\+\_\+\+FLASHEx\+\_\+\+OBProgram} (\textbf{ FLASH\+\_\+\+OBProgram\+Init\+Type\+Def} $\ast$p\+OBInit)
 \item 
-void \mbox{\hyperlink{group___f_l_a_s_h_ex___exported___functions___group1_ga6d45d5442b8147533b1100ec40fe75d7}{HAL\+\_\+\+FLASHEx\+\_\+\+OBGet\+Config}} (\mbox{\hyperlink{struct_f_l_a_s_h___o_b_program_init_type_def}{FLASH\+\_\+\+OBProgram\+Init\+Type\+Def}} \texorpdfstring{$\ast$}{*}p\+OBInit)
+void \textbf{ HAL\+\_\+\+FLASHEx\+\_\+\+OBGet\+Config} (\textbf{ FLASH\+\_\+\+OBProgram\+Init\+Type\+Def} $\ast$p\+OBInit)
 \item 
-void \mbox{\hyperlink{group___f_l_a_s_h_ex___private___macros_ga982dd20191ab5fda149d01fa46869133}{FLASH\+\_\+\+Page\+Erase}} (uint32\+\_\+t Banks, uint32\+\_\+t Page)
+void \textbf{ FLASH\+\_\+\+Page\+Erase} (uint32\+\_\+t Banks, uint32\+\_\+t Page)
 \end{DoxyCompactItemize}
 
 

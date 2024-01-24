@@ -1,6 +1,6 @@
 \doxysection{stm32g0xx\+\_\+hal.\+h}
-\hypertarget{stm32g0xx__hal_8h_source}{}\label{stm32g0xx__hal_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal.h}}
-\mbox{\hyperlink{stm32g0xx__hal_8h}{Go to the documentation of this file.}}
+\label{stm32g0xx__hal_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_hal.h}}
+\textbf{ Go to the documentation of this file.}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
 \DoxyCodeLine{00020\ \textcolor{comment}{/*\ Define\ to\ prevent\ recursive\ inclusion\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
@@ -12,16 +12,16 @@
 \DoxyCodeLine{00026\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00027\ }
 \DoxyCodeLine{00028\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
-\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32g0xx__hal__conf_8h}{stm32g0xx\_hal\_conf.h}}"{}}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}stm32g0xx\_hal\_conf.h"{}}}
 \DoxyCodeLine{00030\ }
 \DoxyCodeLine{00039\ \textcolor{comment}{/*\ Exported\ types\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00043\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
 \DoxyCodeLine{00044\ \{}
-\DoxyCodeLine{00045\ \ \ \mbox{\hyperlink{group___h_a_l___t_i_c_k___f_r_e_q_ggab36ec81674817249c46734772ff3b73aabf4d022d85adb437a57c1f45d6345092}{HAL\_TICK\_FREQ\_10HZ}}\ \ \ \ \ \ \ \ \ =\ 100U,}
-\DoxyCodeLine{00046\ \ \ \mbox{\hyperlink{group___h_a_l___t_i_c_k___f_r_e_q_ggab36ec81674817249c46734772ff3b73aacb1ef3a0e9632aafe0fd162e2cd88408}{HAL\_TICK\_FREQ\_100HZ}}\ \ \ \ \ \ \ \ =\ 10U,}
-\DoxyCodeLine{00047\ \ \ \mbox{\hyperlink{group___h_a_l___t_i_c_k___f_r_e_q_ggab36ec81674817249c46734772ff3b73aabef41c8ee13ca1d48eb49dac912f9689}{HAL\_TICK\_FREQ\_1KHZ}}\ \ \ \ \ \ \ \ \ =\ 1U,}
-\DoxyCodeLine{00048\ \ \ \mbox{\hyperlink{group___h_a_l___t_i_c_k___f_r_e_q_ggab36ec81674817249c46734772ff3b73aa94e043d780eb1c36291338f6d6314e42}{HAL\_TICK\_FREQ\_DEFAULT}}\ \ \ \ \ \ =\ \mbox{\hyperlink{group___h_a_l___t_i_c_k___f_r_e_q_ggab36ec81674817249c46734772ff3b73aabef41c8ee13ca1d48eb49dac912f9689}{HAL\_TICK\_FREQ\_1KHZ}}}
-\DoxyCodeLine{00049\ \}\ \mbox{\hyperlink{group___h_a_l___t_i_c_k___f_r_e_q_gab36ec81674817249c46734772ff3b73a}{HAL\_TickFreqTypeDef}};}
+\DoxyCodeLine{00045\ \ \ HAL\_TICK\_FREQ\_10HZ\ \ \ \ \ \ \ \ \ =\ 100U,}
+\DoxyCodeLine{00046\ \ \ HAL\_TICK\_FREQ\_100HZ\ \ \ \ \ \ \ \ =\ 10U,}
+\DoxyCodeLine{00047\ \ \ HAL\_TICK\_FREQ\_1KHZ\ \ \ \ \ \ \ \ \ =\ 1U,}
+\DoxyCodeLine{00048\ \ \ HAL\_TICK\_FREQ\_DEFAULT\ \ \ \ \ \ =\ HAL\_TICK\_FREQ\_1KHZ}
+\DoxyCodeLine{00049\ \}\ HAL\_TickFreqTypeDef;}
 \DoxyCodeLine{00054\ \textcolor{comment}{/*\ Exported\ constants\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00066\ \textcolor{preprocessor}{\#define\ SYSCFG\_BOOT\_MAINFLASH\ \ \ \ \ \ \ \ \ \ 0x00000000U\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
 \DoxyCodeLine{00067\ \textcolor{preprocessor}{\#define\ SYSCFG\_BOOT\_SYSTEMFLASH\ \ \ \ \ \ \ \ SYSCFG\_CFGR1\_MEM\_MODE\_0\ \ \ \ \ \ \ \ \ \ }}
@@ -481,52 +481,52 @@
 \DoxyCodeLine{00721\ \textcolor{comment}{/*\ Exported\ functions\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
 \DoxyCodeLine{00722\ }
 \DoxyCodeLine{00731\ \textcolor{comment}{/*\ Initialization\ and\ Configuration\ functions\ \ ******************************/}}
-\DoxyCodeLine{00732\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group1_gaecac54d350c3730e6831eb404e557dc4}{HAL\_Init}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00733\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group1_ga95911129a26afb05232caaaefa31956f}{HAL\_DeInit}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00734\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group1_gae4fb8e66865c87d0ebab74a726a6891f}{HAL\_MspInit}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00735\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group1_gadd10d026ef02d00e32e80c9eab9db830}{HAL\_MspDeInit}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00736\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group1_ga879cdb21ef051eb81ec51c18147397d5}{HAL\_InitTick}}(uint32\_t\ TickPriority);}
+\DoxyCodeLine{00732\ HAL\_StatusTypeDef\ HAL\_Init(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00733\ HAL\_StatusTypeDef\ HAL\_DeInit(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00734\ \textcolor{keywordtype}{void}\ HAL\_MspInit(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00735\ \textcolor{keywordtype}{void}\ HAL\_MspDeInit(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00736\ HAL\_StatusTypeDef\ HAL\_InitTick(uint32\_t\ TickPriority);}
 \DoxyCodeLine{00737\ }
 \DoxyCodeLine{00746\ \textcolor{comment}{/*\ Peripheral\ Control\ functions\ \ ************************************************/}}
-\DoxyCodeLine{00747\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group2_gaa8361d44d76b7f6256834f828165837a}{HAL\_IncTick}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00748\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group2_gae63b34eea12780ca2e1100c2402da18e}{HAL\_Delay}}(uint32\_t\ Delay);}
-\DoxyCodeLine{00749\ uint32\_t\ \mbox{\hyperlink{group___h_a_l___exported___functions___group2_gaf2c4f03d53e997a54e1fd5e80daa55c4}{HAL\_GetTick}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00750\ uint32\_t\ \mbox{\hyperlink{group___h_a_l___exported___functions___group2_gacdcc8b5d33b9f97fe1b0abd6a86a3d4b}{HAL\_GetTickPrio}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00751\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group2_ga47f2dd240b2aed823a76b11496f37690}{HAL\_SetTickFreq}}(\mbox{\hyperlink{group___h_a_l___t_i_c_k___f_r_e_q_gab36ec81674817249c46734772ff3b73a}{HAL\_TickFreqTypeDef}}\ Freq);}
-\DoxyCodeLine{00752\ \mbox{\hyperlink{group___h_a_l___t_i_c_k___f_r_e_q_gab36ec81674817249c46734772ff3b73a}{HAL\_TickFreqTypeDef}}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group2_ga803cdbcc0883bcf5f5c98c50024c97e6}{HAL\_GetTickFreq}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00753\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group2_gaaf651af2afe688a991c657f64f8fa5f9}{HAL\_SuspendTick}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00754\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group2_ga24e0ee9dae1ec0f9d19200f5575ff790}{HAL\_ResumeTick}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00755\ uint32\_t\ \mbox{\hyperlink{group___h_a_l___exported___functions___group2_gafb139b375512ad2a234e4619b129b966}{HAL\_GetHalVersion}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00756\ uint32\_t\ \mbox{\hyperlink{group___h_a_l___exported___functions___group2_gae051ef9e932404b21f5877c7186406b8}{HAL\_GetREVID}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00757\ uint32\_t\ \mbox{\hyperlink{group___h_a_l___exported___functions___group2_gaff785f069ed650de77ff82ac407f7c84}{HAL\_GetDEVID}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00758\ uint32\_t\ \mbox{\hyperlink{group___h_a_l___exported___functions___group2_gaf982aa0a575eef3758c0840a24077506}{HAL\_GetUIDw0}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00759\ uint32\_t\ \mbox{\hyperlink{group___h_a_l___exported___functions___group2_ga52720dd92ed2bd4314a2a129855d766c}{HAL\_GetUIDw1}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00760\ uint32\_t\ \mbox{\hyperlink{group___h_a_l___exported___functions___group2_ga5785ae5ec8d4c5a7dadb1359f0778700}{HAL\_GetUIDw2}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00747\ \textcolor{keywordtype}{void}\ HAL\_IncTick(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00748\ \textcolor{keywordtype}{void}\ HAL\_Delay(uint32\_t\ Delay);}
+\DoxyCodeLine{00749\ uint32\_t\ HAL\_GetTick(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00750\ uint32\_t\ HAL\_GetTickPrio(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00751\ HAL\_StatusTypeDef\ HAL\_SetTickFreq(HAL\_TickFreqTypeDef\ Freq);}
+\DoxyCodeLine{00752\ HAL\_TickFreqTypeDef\ HAL\_GetTickFreq(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00753\ \textcolor{keywordtype}{void}\ HAL\_SuspendTick(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00754\ \textcolor{keywordtype}{void}\ HAL\_ResumeTick(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00755\ uint32\_t\ HAL\_GetHalVersion(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00756\ uint32\_t\ HAL\_GetREVID(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00757\ uint32\_t\ HAL\_GetDEVID(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00758\ uint32\_t\ HAL\_GetUIDw0(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00759\ uint32\_t\ HAL\_GetUIDw1(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00760\ uint32\_t\ HAL\_GetUIDw2(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00761\ }
 \DoxyCodeLine{00770\ \textcolor{comment}{/*\ DBGMCU\ Peripheral\ Control\ functions\ \ *****************************************/}}
-\DoxyCodeLine{00771\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group3_gadf25043b17de4bef38a95a75fd03e5c4}{HAL\_DBGMCU\_EnableDBGStopMode}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00772\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group3_ga2c93dcee35e5983d74f1000de7c042d5}{HAL\_DBGMCU\_DisableDBGStopMode}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00773\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group3_ga28a1323b2eeb0a408c1cfdbfa0db5ead}{HAL\_DBGMCU\_EnableDBGStandbyMode}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00774\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group3_ga7faa58d8508ea3123b9f247a70379779}{HAL\_DBGMCU\_DisableDBGStandbyMode}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00771\ \textcolor{keywordtype}{void}\ HAL\_DBGMCU\_EnableDBGStopMode(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00772\ \textcolor{keywordtype}{void}\ HAL\_DBGMCU\_DisableDBGStopMode(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00773\ \textcolor{keywordtype}{void}\ HAL\_DBGMCU\_EnableDBGStandbyMode(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00774\ \textcolor{keywordtype}{void}\ HAL\_DBGMCU\_DisableDBGStandbyMode(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00775\ }
 \DoxyCodeLine{00780\ \textcolor{comment}{/*\ Exported\ variables\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
-\DoxyCodeLine{00784\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{core__armv81mml_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}}\ uint32\_t\ \mbox{\hyperlink{group___h_a_l___exported___variables_ga9d411ea525781e633bf7ea7ef2f90728}{uwTick}};}
-\DoxyCodeLine{00785\ \textcolor{keyword}{extern}\ uint32\_t\ \mbox{\hyperlink{group___h_a_l___exported___variables_ga3000c5e83924ed2debb1849c738d4be2}{uwTickPrio}};}
-\DoxyCodeLine{00786\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{group___h_a_l___t_i_c_k___f_r_e_q_gab36ec81674817249c46734772ff3b73a}{HAL\_TickFreqTypeDef}}\ \mbox{\hyperlink{group___h_a_l___exported___variables_ga84a0c55c4d0bff06a085b4fcfd6531cd}{uwTickFreq}};}
+\DoxyCodeLine{00784\ \textcolor{keyword}{extern}\ \_\_IO\ uint32\_t\ uwTick;}
+\DoxyCodeLine{00785\ \textcolor{keyword}{extern}\ uint32\_t\ uwTickPrio;}
+\DoxyCodeLine{00786\ \textcolor{keyword}{extern}\ HAL\_TickFreqTypeDef\ uwTickFreq;}
 \DoxyCodeLine{00795\ \textcolor{comment}{/*\ SYSCFG\ Control\ functions\ \ ****************************************************/}}
 \DoxyCodeLine{00796\ }
 \DoxyCodeLine{00797\ \textcolor{preprocessor}{\#if\ defined(VREFBUF)}}
 \DoxyCodeLine{00798\ \textcolor{keywordtype}{void}\ HAL\_SYSCFG\_VREFBUF\_VoltageScalingConfig(uint32\_t\ VoltageScaling);}
 \DoxyCodeLine{00799\ \textcolor{keywordtype}{void}\ HAL\_SYSCFG\_VREFBUF\_HighImpedanceConfig(uint32\_t\ Mode);}
 \DoxyCodeLine{00800\ \textcolor{keywordtype}{void}\ HAL\_SYSCFG\_VREFBUF\_TrimmingConfig(uint32\_t\ TrimmingValue);}
-\DoxyCodeLine{00801\ \mbox{\hyperlink{stm32g0xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\_StatusTypeDef}}\ HAL\_SYSCFG\_EnableVREFBUF(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00801\ HAL\_StatusTypeDef\ HAL\_SYSCFG\_EnableVREFBUF(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00802\ \textcolor{keywordtype}{void}\ HAL\_SYSCFG\_DisableVREFBUF(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00803\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ VREFBUF\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{00804\ }
-\DoxyCodeLine{00805\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group4_gac22593c32829479d739cf1e17e3eee9b}{HAL\_SYSCFG\_EnableIOAnalogSwitchBooster}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00806\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group4_ga82d49eb550bc6c4357b570acfd6aed1c}{HAL\_SYSCFG\_DisableIOAnalogSwitchBooster}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00807\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group4_ga61eb26beb64bd0190695c517a174c21a}{HAL\_SYSCFG\_EnableRemap}}(uint32\_t\ PinRemap);}
-\DoxyCodeLine{00808\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___h_a_l___exported___functions___group4_ga6f0fffed80bb557983ad90894625d1ec}{HAL\_SYSCFG\_DisableRemap}}(uint32\_t\ PinRemap);}
+\DoxyCodeLine{00805\ \textcolor{keywordtype}{void}\ HAL\_SYSCFG\_EnableIOAnalogSwitchBooster(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00806\ \textcolor{keywordtype}{void}\ HAL\_SYSCFG\_DisableIOAnalogSwitchBooster(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00807\ \textcolor{keywordtype}{void}\ HAL\_SYSCFG\_EnableRemap(uint32\_t\ PinRemap);}
+\DoxyCodeLine{00808\ \textcolor{keywordtype}{void}\ HAL\_SYSCFG\_DisableRemap(uint32\_t\ PinRemap);}
 \DoxyCodeLine{00809\ \textcolor{preprocessor}{\#if\ defined(SYSCFG\_CDEN\_SUPPORT)}}
 \DoxyCodeLine{00810\ \textcolor{keywordtype}{void}\ HAL\_SYSCFG\_EnableClampingDiode(uint32\_t\ PinConfig);}
 \DoxyCodeLine{00811\ \textcolor{keywordtype}{void}\ HAL\_SYSCFG\_DisableClampingDiode(uint32\_t\ PinConfig);}

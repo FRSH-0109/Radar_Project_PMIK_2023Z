@@ -1,6 +1,6 @@
 \doxysection{stm32g0xx\+\_\+ll\+\_\+dmamux.\+h}
-\hypertarget{stm32g0xx__ll__dmamux_8h_source}{}\label{stm32g0xx__ll__dmamux_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_ll\_dmamux.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_ll\_dmamux.h}}
-\mbox{\hyperlink{stm32g0xx__ll__dmamux_8h}{Go to the documentation of this file.}}
+\label{stm32g0xx__ll__dmamux_8h_source}\index{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_ll\_dmamux.h@{Drivers/STM32G0xx\_HAL\_Driver/Inc/stm32g0xx\_ll\_dmamux.h}}
+\textbf{ Go to the documentation of this file.}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
 \DoxyCodeLine{00019\ \textcolor{comment}{/*\ Define\ to\ prevent\ recursive\ inclusion\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
@@ -12,7 +12,7 @@
 \DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00026\ }
 \DoxyCodeLine{00027\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
-\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stm32g0xx_8h}{stm32g0xx.h}}"{}}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}stm32g0xx.h"{}}}
 \DoxyCodeLine{00029\ }
 \DoxyCodeLine{00034\ \textcolor{preprocessor}{\#if\ defined\ (DMAMUX1)}}
 \DoxyCodeLine{00035\ }
@@ -292,410 +292,410 @@
 \DoxyCodeLine{00414\ }
 \DoxyCodeLine{00421\ \textcolor{preprocessor}{\#define\ LL\_DMAMUX\_ReadReg(\_\_INSTANCE\_\_,\ \_\_REG\_\_)\ READ\_REG(\_\_INSTANCE\_\_-\/>\_\_REG\_\_)}}
 \DoxyCodeLine{00430\ \textcolor{comment}{/*\ Exported\ functions\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
-\DoxyCodeLine{00524\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_SetRequestID(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel,\ uint32\_t\ Request)}
+\DoxyCodeLine{00524\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_SetRequestID(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel,\ uint32\_t\ Request)}
 \DoxyCodeLine{00525\ \{}
 \DoxyCodeLine{00526\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{00527\ \ \ \mbox{\hyperlink{group___exported__macros_ga6553c99f510c3bab8cc0a91602053247}{MODIFY\_REG}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga429e04913f0ea2ec973e5e82c0264766}{DMAMUX\_CxCR\_DMAREQ\_ID}},\ Request);}
+\DoxyCodeLine{00527\ \ \ MODIFY\_REG((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_DMAREQ\_ID,\ Request);}
 \DoxyCodeLine{00528\ \}}
 \DoxyCodeLine{00529\ }
-\DoxyCodeLine{00615\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_GetRequestID(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel)}
+\DoxyCodeLine{00615\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_GetRequestID(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel)}
 \DoxyCodeLine{00616\ \{}
 \DoxyCodeLine{00617\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{00618\ \ \ \textcolor{keywordflow}{return}\ (uint32\_t)(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga429e04913f0ea2ec973e5e82c0264766}{DMAMUX\_CxCR\_DMAREQ\_ID}}));}
+\DoxyCodeLine{00618\ \ \ \textcolor{keywordflow}{return}\ (uint32\_t)(READ\_BIT((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_DMAREQ\_ID));}
 \DoxyCodeLine{00619\ \}}
 \DoxyCodeLine{00620\ }
-\DoxyCodeLine{00645\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_SetSyncRequestNb(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel,\ uint32\_t\ RequestNb)}
+\DoxyCodeLine{00645\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_SetSyncRequestNb(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel,\ uint32\_t\ RequestNb)}
 \DoxyCodeLine{00646\ \{}
 \DoxyCodeLine{00647\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{00648\ \ \ \mbox{\hyperlink{group___exported__macros_ga6553c99f510c3bab8cc0a91602053247}{MODIFY\_REG}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gafb24fe594a98ab3c48ab93f1ab8a26ab}{DMAMUX\_CxCR\_NBREQ}},\ ((RequestNb\ -\/\ 1U)\ <<\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga8cb7f89e2c1a386244906df90ac15e2b}{DMAMUX\_CxCR\_NBREQ\_Pos}}));}
+\DoxyCodeLine{00648\ \ \ MODIFY\_REG((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_NBREQ,\ ((RequestNb\ -\/\ 1U)\ <<\ DMAMUX\_CxCR\_NBREQ\_Pos));}
 \DoxyCodeLine{00649\ \}}
 \DoxyCodeLine{00650\ }
-\DoxyCodeLine{00674\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_GetSyncRequestNb(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel)}
+\DoxyCodeLine{00674\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_GetSyncRequestNb(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel)}
 \DoxyCodeLine{00675\ \{}
 \DoxyCodeLine{00676\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{00677\ \ \ \textcolor{keywordflow}{return}\ (uint32\_t)(((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gafb24fe594a98ab3c48ab93f1ab8a26ab}{DMAMUX\_CxCR\_NBREQ}}))\ >>\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga8cb7f89e2c1a386244906df90ac15e2b}{DMAMUX\_CxCR\_NBREQ\_Pos}})\ +\ 1U);}
+\DoxyCodeLine{00677\ \ \ \textcolor{keywordflow}{return}\ (uint32\_t)(((READ\_BIT((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_NBREQ))\ >>\ DMAMUX\_CxCR\_NBREQ\_Pos)\ +\ 1U);}
 \DoxyCodeLine{00678\ \}}
 \DoxyCodeLine{00679\ }
-\DoxyCodeLine{00708\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_SetSyncPolarity(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel,\ uint32\_t\ Polarity)}
+\DoxyCodeLine{00708\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_SetSyncPolarity(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel,\ uint32\_t\ Polarity)}
 \DoxyCodeLine{00709\ \{}
 \DoxyCodeLine{00710\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{00711\ \ \ \mbox{\hyperlink{group___exported__macros_ga6553c99f510c3bab8cc0a91602053247}{MODIFY\_REG}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gaff4d57f6e7b5585e040d495f45b0f9eb}{DMAMUX\_CxCR\_SPOL}},\ Polarity);}
+\DoxyCodeLine{00711\ \ \ MODIFY\_REG((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_SPOL,\ Polarity);}
 \DoxyCodeLine{00712\ \}}
 \DoxyCodeLine{00713\ }
-\DoxyCodeLine{00741\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_GetSyncPolarity(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel)}
+\DoxyCodeLine{00741\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_GetSyncPolarity(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel)}
 \DoxyCodeLine{00742\ \{}
 \DoxyCodeLine{00743\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{00744\ \ \ \textcolor{keywordflow}{return}\ (uint32\_t)(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gaff4d57f6e7b5585e040d495f45b0f9eb}{DMAMUX\_CxCR\_SPOL}}));}
+\DoxyCodeLine{00744\ \ \ \textcolor{keywordflow}{return}\ (uint32\_t)(READ\_BIT((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_SPOL));}
 \DoxyCodeLine{00745\ \}}
 \DoxyCodeLine{00746\ }
-\DoxyCodeLine{00770\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_EnableEventGeneration(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel)}
+\DoxyCodeLine{00770\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_EnableEventGeneration(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel)}
 \DoxyCodeLine{00771\ \{}
 \DoxyCodeLine{00772\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{00773\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gacc99ef1ca19c4c307bf9b432150a59fc}{DMAMUX\_CxCR\_EGE}});}
+\DoxyCodeLine{00773\ \ \ SET\_BIT((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_EGE);}
 \DoxyCodeLine{00774\ \}}
 \DoxyCodeLine{00775\ }
-\DoxyCodeLine{00799\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_DisableEventGeneration(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel)}
+\DoxyCodeLine{00799\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_DisableEventGeneration(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel)}
 \DoxyCodeLine{00800\ \{}
 \DoxyCodeLine{00801\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{00802\ \ \ \mbox{\hyperlink{group___exported__macros_ga133aae6fc0d41bffab39ab223a7001de}{CLEAR\_BIT}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gacc99ef1ca19c4c307bf9b432150a59fc}{DMAMUX\_CxCR\_EGE}});}
+\DoxyCodeLine{00802\ \ \ CLEAR\_BIT((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_EGE);}
 \DoxyCodeLine{00803\ \}}
 \DoxyCodeLine{00804\ }
-\DoxyCodeLine{00828\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsEnabledEventGeneration(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel)}
+\DoxyCodeLine{00828\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsEnabledEventGeneration(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel)}
 \DoxyCodeLine{00829\ \{}
 \DoxyCodeLine{00830\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{00831\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gacc99ef1ca19c4c307bf9b432150a59fc}{DMAMUX\_CxCR\_EGE}})\ ==\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_gacc99ef1ca19c4c307bf9b432150a59fc}{DMAMUX\_CxCR\_EGE}}))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{00831\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_EGE)\ ==\ (DMAMUX\_CxCR\_EGE))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{00832\ \}}
 \DoxyCodeLine{00833\ }
-\DoxyCodeLine{00857\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_EnableSync(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel)}
+\DoxyCodeLine{00857\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_EnableSync(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel)}
 \DoxyCodeLine{00858\ \{}
 \DoxyCodeLine{00859\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{00860\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gaeedb99c6edfa679f95441003a4fa184d}{DMAMUX\_CxCR\_SE}});}
+\DoxyCodeLine{00860\ \ \ SET\_BIT((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_SE);}
 \DoxyCodeLine{00861\ \}}
 \DoxyCodeLine{00862\ }
-\DoxyCodeLine{00886\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_DisableSync(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel)}
+\DoxyCodeLine{00886\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_DisableSync(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel)}
 \DoxyCodeLine{00887\ \{}
 \DoxyCodeLine{00888\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{00889\ \ \ \mbox{\hyperlink{group___exported__macros_ga133aae6fc0d41bffab39ab223a7001de}{CLEAR\_BIT}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gaeedb99c6edfa679f95441003a4fa184d}{DMAMUX\_CxCR\_SE}});}
+\DoxyCodeLine{00889\ \ \ CLEAR\_BIT((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_SE);}
 \DoxyCodeLine{00890\ \}}
 \DoxyCodeLine{00891\ }
-\DoxyCodeLine{00915\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsEnabledSync(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel)}
+\DoxyCodeLine{00915\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsEnabledSync(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel)}
 \DoxyCodeLine{00916\ \{}
 \DoxyCodeLine{00917\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{00918\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gaeedb99c6edfa679f95441003a4fa184d}{DMAMUX\_CxCR\_SE}})\ ==\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_gaeedb99c6edfa679f95441003a4fa184d}{DMAMUX\_CxCR\_SE}}))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{00918\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_SE)\ ==\ (DMAMUX\_CxCR\_SE))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{00919\ \}}
 \DoxyCodeLine{00920\ }
-\DoxyCodeLine{00968\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_SetSyncID(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel,\ uint32\_t\ SyncID)}
+\DoxyCodeLine{00968\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_SetSyncID(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel,\ uint32\_t\ SyncID)}
 \DoxyCodeLine{00969\ \{}
 \DoxyCodeLine{00970\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{00971\ \ \ \mbox{\hyperlink{group___exported__macros_ga6553c99f510c3bab8cc0a91602053247}{MODIFY\_REG}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga03842cdf2e83bfd10cb18ccb9950294c}{DMAMUX\_CxCR\_SYNC\_ID}},\ SyncID);}
+\DoxyCodeLine{00971\ \ \ MODIFY\_REG((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_SYNC\_ID,\ SyncID);}
 \DoxyCodeLine{00972\ \}}
 \DoxyCodeLine{00973\ }
-\DoxyCodeLine{01020\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_GetSyncID(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel)}
+\DoxyCodeLine{01020\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_GetSyncID(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel)}
 \DoxyCodeLine{01021\ \{}
 \DoxyCodeLine{01022\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01023\ \ \ \textcolor{keywordflow}{return}\ (uint32\_t)(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga03842cdf2e83bfd10cb18ccb9950294c}{DMAMUX\_CxCR\_SYNC\_ID}}));}
+\DoxyCodeLine{01023\ \ \ \textcolor{keywordflow}{return}\ (uint32\_t)(READ\_BIT((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_SYNC\_ID));}
 \DoxyCodeLine{01024\ \}}
 \DoxyCodeLine{01025\ }
-\DoxyCodeLine{01037\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_EnableRequestGen(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
+\DoxyCodeLine{01037\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_EnableRequestGen(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
 \DoxyCodeLine{01038\ \{}
 \DoxyCodeLine{01039\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01040\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(((\mbox{\hyperlink{struct_d_m_a_m_u_x___request_gen___type_def}{DMAMUX\_RequestGen\_TypeDef}}\ *)((uint32\_t)((uint32\_t)\mbox{\hyperlink{group___peripheral__declaration_ga7f2de783aee1e5411ae43f2e59dc49d6}{DMAMUX1\_RequestGenerator0}}\ +\ (DMAMUX\_RGCR\_SIZE\ *}
-\DoxyCodeLine{01041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (RequestGenChannel)))))-\/>RGCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga5ff9c72476bf78b81d0adc19400d23c6}{DMAMUX\_RGxCR\_GE}});}
+\DoxyCodeLine{01040\ \ \ SET\_BIT(((DMAMUX\_RequestGen\_TypeDef\ *)((uint32\_t)((uint32\_t)DMAMUX1\_RequestGenerator0\ +\ (DMAMUX\_RGCR\_SIZE\ *}
+\DoxyCodeLine{01041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (RequestGenChannel)))))-\/>RGCR,\ DMAMUX\_RGxCR\_GE);}
 \DoxyCodeLine{01042\ \}}
 \DoxyCodeLine{01043\ }
-\DoxyCodeLine{01055\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_DisableRequestGen(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
+\DoxyCodeLine{01055\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_DisableRequestGen(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
 \DoxyCodeLine{01056\ \{}
 \DoxyCodeLine{01057\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01058\ \ \ \mbox{\hyperlink{group___exported__macros_ga133aae6fc0d41bffab39ab223a7001de}{CLEAR\_BIT}}(((\mbox{\hyperlink{struct_d_m_a_m_u_x___request_gen___type_def}{DMAMUX\_RequestGen\_TypeDef}}\ *)((uint32\_t)((uint32\_t)\mbox{\hyperlink{group___peripheral__declaration_ga7f2de783aee1e5411ae43f2e59dc49d6}{DMAMUX1\_RequestGenerator0}}\ +\ (DMAMUX\_RGCR\_SIZE\ *}
-\DoxyCodeLine{01059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (RequestGenChannel)))))-\/>RGCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga5ff9c72476bf78b81d0adc19400d23c6}{DMAMUX\_RGxCR\_GE}});}
+\DoxyCodeLine{01058\ \ \ CLEAR\_BIT(((DMAMUX\_RequestGen\_TypeDef\ *)((uint32\_t)((uint32\_t)DMAMUX1\_RequestGenerator0\ +\ (DMAMUX\_RGCR\_SIZE\ *}
+\DoxyCodeLine{01059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (RequestGenChannel)))))-\/>RGCR,\ DMAMUX\_RGxCR\_GE);}
 \DoxyCodeLine{01060\ \}}
 \DoxyCodeLine{01061\ }
-\DoxyCodeLine{01073\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsEnabledRequestGen(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
+\DoxyCodeLine{01073\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsEnabledRequestGen(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
 \DoxyCodeLine{01074\ \{}
 \DoxyCodeLine{01075\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01076\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(((\mbox{\hyperlink{struct_d_m_a_m_u_x___request_gen___type_def}{DMAMUX\_RequestGen\_TypeDef}}\ *)((uint32\_t)((uint32\_t)\mbox{\hyperlink{group___peripheral__declaration_ga7f2de783aee1e5411ae43f2e59dc49d6}{DMAMUX1\_RequestGenerator0}}\ +\ (DMAMUX\_RGCR\_SIZE\ *}
-\DoxyCodeLine{01077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (RequestGenChannel)))))-\/>RGCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga5ff9c72476bf78b81d0adc19400d23c6}{DMAMUX\_RGxCR\_GE}})\ ==\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_ga5ff9c72476bf78b81d0adc19400d23c6}{DMAMUX\_RGxCR\_GE}}))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01076\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(((DMAMUX\_RequestGen\_TypeDef\ *)((uint32\_t)((uint32\_t)DMAMUX1\_RequestGenerator0\ +\ (DMAMUX\_RGCR\_SIZE\ *}
+\DoxyCodeLine{01077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (RequestGenChannel)))))-\/>RGCR,\ DMAMUX\_RGxCR\_GE)\ ==\ (DMAMUX\_RGxCR\_GE))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01078\ \}}
 \DoxyCodeLine{01079\ }
-\DoxyCodeLine{01096\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_SetRequestGenPolarity(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ RequestGenChannel,}
+\DoxyCodeLine{01096\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_SetRequestGenPolarity(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ RequestGenChannel,}
 \DoxyCodeLine{01097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ Polarity)}
 \DoxyCodeLine{01098\ \{}
 \DoxyCodeLine{01099\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01100\ \ \ \mbox{\hyperlink{group___exported__macros_ga6553c99f510c3bab8cc0a91602053247}{MODIFY\_REG}}(((\mbox{\hyperlink{struct_d_m_a_m_u_x___request_gen___type_def}{DMAMUX\_RequestGen\_TypeDef}}\ *)((uint32\_t)((uint32\_t)\mbox{\hyperlink{group___peripheral__declaration_ga7f2de783aee1e5411ae43f2e59dc49d6}{DMAMUX1\_RequestGenerator0}}\ +\ (DMAMUX\_RGCR\_SIZE\ *}
-\DoxyCodeLine{01101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (RequestGenChannel)))))-\/>RGCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gad386b0f74797327dd7af2fa02fe9244e}{DMAMUX\_RGxCR\_GPOL}},\ Polarity);}
+\DoxyCodeLine{01100\ \ \ MODIFY\_REG(((DMAMUX\_RequestGen\_TypeDef\ *)((uint32\_t)((uint32\_t)DMAMUX1\_RequestGenerator0\ +\ (DMAMUX\_RGCR\_SIZE\ *}
+\DoxyCodeLine{01101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (RequestGenChannel)))))-\/>RGCR,\ DMAMUX\_RGxCR\_GPOL,\ Polarity);}
 \DoxyCodeLine{01102\ \}}
 \DoxyCodeLine{01103\ }
-\DoxyCodeLine{01119\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_GetRequestGenPolarity(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
+\DoxyCodeLine{01119\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_GetRequestGenPolarity(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
 \DoxyCodeLine{01120\ \{}
 \DoxyCodeLine{01121\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01122\ \ \ \textcolor{keywordflow}{return}\ (uint32\_t)(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(((\mbox{\hyperlink{struct_d_m_a_m_u_x___request_gen___type_def}{DMAMUX\_RequestGen\_TypeDef}}\ *)((uint32\_t)((uint32\_t)\mbox{\hyperlink{group___peripheral__declaration_ga7f2de783aee1e5411ae43f2e59dc49d6}{DMAMUX1\_RequestGenerator0}}\ +}
-\DoxyCodeLine{01123\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (DMAMUX\_RGCR\_SIZE\ *\ (RequestGenChannel)))))-\/>RGCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gad386b0f74797327dd7af2fa02fe9244e}{DMAMUX\_RGxCR\_GPOL}}));}
+\DoxyCodeLine{01122\ \ \ \textcolor{keywordflow}{return}\ (uint32\_t)(READ\_BIT(((DMAMUX\_RequestGen\_TypeDef\ *)((uint32\_t)((uint32\_t)DMAMUX1\_RequestGenerator0\ +}
+\DoxyCodeLine{01123\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (DMAMUX\_RGCR\_SIZE\ *\ (RequestGenChannel)))))-\/>RGCR,\ DMAMUX\_RGxCR\_GPOL));}
 \DoxyCodeLine{01124\ \}}
 \DoxyCodeLine{01125\ }
-\DoxyCodeLine{01139\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_SetGenRequestNb(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ RequestGenChannel,}
+\DoxyCodeLine{01139\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_SetGenRequestNb(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ RequestGenChannel,}
 \DoxyCodeLine{01140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ RequestNb)}
 \DoxyCodeLine{01141\ \{}
 \DoxyCodeLine{01142\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01143\ \ \ \mbox{\hyperlink{group___exported__macros_ga6553c99f510c3bab8cc0a91602053247}{MODIFY\_REG}}(((\mbox{\hyperlink{struct_d_m_a_m_u_x___request_gen___type_def}{DMAMUX\_RequestGen\_TypeDef}}\ *)((uint32\_t)((uint32\_t)\mbox{\hyperlink{group___peripheral__declaration_ga7f2de783aee1e5411ae43f2e59dc49d6}{DMAMUX1\_RequestGenerator0}}\ +\ (DMAMUX\_RGCR\_SIZE\ *}
-\DoxyCodeLine{01144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (RequestGenChannel)))))-\/>RGCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gae2d8df4b352776aac7f8f87d7df10d2b}{DMAMUX\_RGxCR\_GNBREQ}},\ (RequestNb\ -\/\ 1U)\ <<\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga70f95f62dde3f931d583d743ad65360e}{DMAMUX\_RGxCR\_GNBREQ\_Pos}});}
+\DoxyCodeLine{01143\ \ \ MODIFY\_REG(((DMAMUX\_RequestGen\_TypeDef\ *)((uint32\_t)((uint32\_t)DMAMUX1\_RequestGenerator0\ +\ (DMAMUX\_RGCR\_SIZE\ *}
+\DoxyCodeLine{01144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (RequestGenChannel)))))-\/>RGCR,\ DMAMUX\_RGxCR\_GNBREQ,\ (RequestNb\ -\/\ 1U)\ <<\ DMAMUX\_RGxCR\_GNBREQ\_Pos);}
 \DoxyCodeLine{01145\ \}}
 \DoxyCodeLine{01146\ }
-\DoxyCodeLine{01158\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_GetGenRequestNb(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
+\DoxyCodeLine{01158\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_GetGenRequestNb(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
 \DoxyCodeLine{01159\ \{}
 \DoxyCodeLine{01160\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01161\ \ \ \textcolor{keywordflow}{return}\ (uint32\_t)((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(((\mbox{\hyperlink{struct_d_m_a_m_u_x___request_gen___type_def}{DMAMUX\_RequestGen\_TypeDef}}\ *)((uint32\_t)((uint32\_t)\mbox{\hyperlink{group___peripheral__declaration_ga7f2de783aee1e5411ae43f2e59dc49d6}{DMAMUX1\_RequestGenerator0}}\ +}
-\DoxyCodeLine{01162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (DMAMUX\_RGCR\_SIZE\ *\ (RequestGenChannel)))))-\/>RGCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gae2d8df4b352776aac7f8f87d7df10d2b}{DMAMUX\_RGxCR\_GNBREQ}})\ >>\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga70f95f62dde3f931d583d743ad65360e}{DMAMUX\_RGxCR\_GNBREQ\_Pos}})\ +\ 1U);}
+\DoxyCodeLine{01161\ \ \ \textcolor{keywordflow}{return}\ (uint32\_t)((READ\_BIT(((DMAMUX\_RequestGen\_TypeDef\ *)((uint32\_t)((uint32\_t)DMAMUX1\_RequestGenerator0\ +}
+\DoxyCodeLine{01162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (DMAMUX\_RGCR\_SIZE\ *\ (RequestGenChannel)))))-\/>RGCR,\ DMAMUX\_RGxCR\_GNBREQ)\ >>\ DMAMUX\_RGxCR\_GNBREQ\_Pos)\ +\ 1U);}
 \DoxyCodeLine{01163\ \}}
 \DoxyCodeLine{01164\ }
-\DoxyCodeLine{01200\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_SetRequestSignalID(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ RequestGenChannel,}
+\DoxyCodeLine{01200\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_SetRequestSignalID(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ RequestGenChannel,}
 \DoxyCodeLine{01201\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ RequestSignalID)}
 \DoxyCodeLine{01202\ \{}
 \DoxyCodeLine{01203\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01204\ \ \ \mbox{\hyperlink{group___exported__macros_ga6553c99f510c3bab8cc0a91602053247}{MODIFY\_REG}}(((\mbox{\hyperlink{struct_d_m_a_m_u_x___request_gen___type_def}{DMAMUX\_RequestGen\_TypeDef}}\ *)((uint32\_t)((uint32\_t)\mbox{\hyperlink{group___peripheral__declaration_ga7f2de783aee1e5411ae43f2e59dc49d6}{DMAMUX1\_RequestGenerator0}}\ +\ (DMAMUX\_RGCR\_SIZE\ *}
-\DoxyCodeLine{01205\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (RequestGenChannel)))))-\/>RGCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gae252cb4694b6419a79b635fefc75cec7}{DMAMUX\_RGxCR\_SIG\_ID}},\ RequestSignalID);}
+\DoxyCodeLine{01204\ \ \ MODIFY\_REG(((DMAMUX\_RequestGen\_TypeDef\ *)((uint32\_t)((uint32\_t)DMAMUX1\_RequestGenerator0\ +\ (DMAMUX\_RGCR\_SIZE\ *}
+\DoxyCodeLine{01205\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (RequestGenChannel)))))-\/>RGCR,\ DMAMUX\_RGxCR\_SIG\_ID,\ RequestSignalID);}
 \DoxyCodeLine{01206\ \}}
 \DoxyCodeLine{01207\ }
-\DoxyCodeLine{01242\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_GetRequestSignalID(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
+\DoxyCodeLine{01242\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_GetRequestSignalID(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
 \DoxyCodeLine{01243\ \{}
 \DoxyCodeLine{01244\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01245\ \ \ \textcolor{keywordflow}{return}\ (uint32\_t)(\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(((\mbox{\hyperlink{struct_d_m_a_m_u_x___request_gen___type_def}{DMAMUX\_RequestGen\_TypeDef}}\ *)((uint32\_t)((uint32\_t)\mbox{\hyperlink{group___peripheral__declaration_ga7f2de783aee1e5411ae43f2e59dc49d6}{DMAMUX1\_RequestGenerator0}}\ +}
-\DoxyCodeLine{01246\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (DMAMUX\_RGCR\_SIZE\ *\ (RequestGenChannel)))))-\/>RGCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gae252cb4694b6419a79b635fefc75cec7}{DMAMUX\_RGxCR\_SIG\_ID}}));}
+\DoxyCodeLine{01245\ \ \ \textcolor{keywordflow}{return}\ (uint32\_t)(READ\_BIT(((DMAMUX\_RequestGen\_TypeDef\ *)((uint32\_t)((uint32\_t)DMAMUX1\_RequestGenerator0\ +}
+\DoxyCodeLine{01246\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (DMAMUX\_RGCR\_SIZE\ *\ (RequestGenChannel)))))-\/>RGCR,\ DMAMUX\_RGxCR\_SIG\_ID));}
 \DoxyCodeLine{01247\ \}}
 \DoxyCodeLine{01248\ }
-\DoxyCodeLine{01263\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO0(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01263\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO0(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01264\ \{}
 \DoxyCodeLine{01265\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01266\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CSR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga0670ce82c5515dbd0fa7ffb30c5e310f}{DMAMUX\_CSR\_SOF0}})\ ==\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_ga0670ce82c5515dbd0fa7ffb30c5e310f}{DMAMUX\_CSR\_SOF0}}))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01266\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(DMAMUX1\_ChannelStatus-\/>CSR,\ DMAMUX\_CSR\_SOF0)\ ==\ (DMAMUX\_CSR\_SOF0))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01267\ \}}
 \DoxyCodeLine{01268\ }
-\DoxyCodeLine{01275\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO1(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01275\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO1(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01276\ \{}
 \DoxyCodeLine{01277\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01278\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CSR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga07f62e6a76515c51c49b69c065493474}{DMAMUX\_CSR\_SOF1}})\ ==\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_ga07f62e6a76515c51c49b69c065493474}{DMAMUX\_CSR\_SOF1}}))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01278\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(DMAMUX1\_ChannelStatus-\/>CSR,\ DMAMUX\_CSR\_SOF1)\ ==\ (DMAMUX\_CSR\_SOF1))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01279\ \}}
 \DoxyCodeLine{01280\ }
-\DoxyCodeLine{01287\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO2(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01287\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO2(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01288\ \{}
 \DoxyCodeLine{01289\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01290\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CSR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga897d89e7184b94eb0afbca21cb8750db}{DMAMUX\_CSR\_SOF2}})\ ==\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_ga897d89e7184b94eb0afbca21cb8750db}{DMAMUX\_CSR\_SOF2}}))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01290\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(DMAMUX1\_ChannelStatus-\/>CSR,\ DMAMUX\_CSR\_SOF2)\ ==\ (DMAMUX\_CSR\_SOF2))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01291\ \}}
 \DoxyCodeLine{01292\ }
-\DoxyCodeLine{01299\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO3(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01299\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO3(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01300\ \{}
 \DoxyCodeLine{01301\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01302\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CSR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga7b0ed04270f1d02833c7dc9a7b0c312f}{DMAMUX\_CSR\_SOF3}})\ ==\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_ga7b0ed04270f1d02833c7dc9a7b0c312f}{DMAMUX\_CSR\_SOF3}}))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01302\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(DMAMUX1\_ChannelStatus-\/>CSR,\ DMAMUX\_CSR\_SOF3)\ ==\ (DMAMUX\_CSR\_SOF3))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01303\ \}}
 \DoxyCodeLine{01304\ }
-\DoxyCodeLine{01311\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO4(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01311\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO4(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01312\ \{}
 \DoxyCodeLine{01313\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01314\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CSR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga66e851a768425793ea5420c35b4829b0}{DMAMUX\_CSR\_SOF4}})\ ==\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_ga66e851a768425793ea5420c35b4829b0}{DMAMUX\_CSR\_SOF4}}))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01314\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(DMAMUX1\_ChannelStatus-\/>CSR,\ DMAMUX\_CSR\_SOF4)\ ==\ (DMAMUX\_CSR\_SOF4))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01315\ \}}
 \DoxyCodeLine{01316\ }
 \DoxyCodeLine{01317\ \textcolor{preprocessor}{\#if\ defined(DMAMUX1\_Channel5)}}
-\DoxyCodeLine{01324\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO5(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01324\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO5(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01325\ \{}
 \DoxyCodeLine{01326\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01327\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CSR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gafeee06709196b4ba722e7ce237b27ef1}{DMAMUX\_CSR\_SOF5}})\ ==\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_gafeee06709196b4ba722e7ce237b27ef1}{DMAMUX\_CSR\_SOF5}}))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01327\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(DMAMUX1\_ChannelStatus-\/>CSR,\ DMAMUX\_CSR\_SOF5)\ ==\ (DMAMUX\_CSR\_SOF5))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01328\ \}}
 \DoxyCodeLine{01329\ }
 \DoxyCodeLine{01330\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DMAMUX1\_Channel5\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01331\ \textcolor{preprocessor}{\#if\ defined(DMAMUX1\_Channel6)}}
-\DoxyCodeLine{01338\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO6(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01338\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO6(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01339\ \{}
 \DoxyCodeLine{01340\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01341\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CSR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gaf916a041d2e0a1d335dd88c59a3164f4}{DMAMUX\_CSR\_SOF6}})\ ==\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_gaf916a041d2e0a1d335dd88c59a3164f4}{DMAMUX\_CSR\_SOF6}}))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01341\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(DMAMUX1\_ChannelStatus-\/>CSR,\ DMAMUX\_CSR\_SOF6)\ ==\ (DMAMUX\_CSR\_SOF6))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01342\ \}}
 \DoxyCodeLine{01343\ }
 \DoxyCodeLine{01344\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DMAMUX1\_Channel6\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01345\ \textcolor{preprocessor}{\#if\ defined(DMAMUX1\_Channel7)}}
-\DoxyCodeLine{01352\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO7(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01352\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO7(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01353\ \{}
 \DoxyCodeLine{01354\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01355\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CSR,\ DMAMUX\_CSR\_SOF7)\ ==\ (DMAMUX\_CSR\_SOF7))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01355\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(DMAMUX1\_ChannelStatus-\/>CSR,\ DMAMUX\_CSR\_SOF7)\ ==\ (DMAMUX\_CSR\_SOF7))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01356\ \}}
 \DoxyCodeLine{01357\ }
 \DoxyCodeLine{01358\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DMAMUX1\_Channel7\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01359\ \textcolor{preprocessor}{\#if\ defined(DMAMUX1\_Channel8)}}
-\DoxyCodeLine{01366\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO8(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01366\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO8(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01367\ \{}
 \DoxyCodeLine{01368\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01369\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CSR,\ DMAMUX\_CSR\_SOF8)\ ==\ (DMAMUX\_CSR\_SOF8))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01369\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(DMAMUX1\_ChannelStatus-\/>CSR,\ DMAMUX\_CSR\_SOF8)\ ==\ (DMAMUX\_CSR\_SOF8))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01370\ \}}
 \DoxyCodeLine{01371\ }
 \DoxyCodeLine{01372\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DMAMUX1\_Channel8\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01373\ \textcolor{preprocessor}{\#if\ defined(DMAMUX1\_Channel9)}}
-\DoxyCodeLine{01380\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO9(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01380\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO9(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01381\ \{}
 \DoxyCodeLine{01382\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01383\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CSR,\ DMAMUX\_CSR\_SOF9)\ ==\ (DMAMUX\_CSR\_SOF9))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01383\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(DMAMUX1\_ChannelStatus-\/>CSR,\ DMAMUX\_CSR\_SOF9)\ ==\ (DMAMUX\_CSR\_SOF9))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01384\ \}}
 \DoxyCodeLine{01385\ }
 \DoxyCodeLine{01386\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DMAMUX1\_Channel9\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01387\ \textcolor{preprocessor}{\#if\ defined(DMAMUX1\_Channel10)}}
-\DoxyCodeLine{01394\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO10(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01394\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO10(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01395\ \{}
 \DoxyCodeLine{01396\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01397\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CSR,\ DMAMUX\_CSR\_SOF10)\ ==\ (DMAMUX\_CSR\_SOF10))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01397\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(DMAMUX1\_ChannelStatus-\/>CSR,\ DMAMUX\_CSR\_SOF10)\ ==\ (DMAMUX\_CSR\_SOF10))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01398\ \}}
 \DoxyCodeLine{01399\ }
 \DoxyCodeLine{01400\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DMAMUX1\_Channel10\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01401\ \textcolor{preprocessor}{\#if\ defined(DMAMUX1\_Channel11)}}
-\DoxyCodeLine{01408\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO11(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01408\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_SO11(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01409\ \{}
 \DoxyCodeLine{01410\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01411\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CSR,\ DMAMUX\_CSR\_SOF11)\ ==\ (DMAMUX\_CSR\_SOF11))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01411\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(DMAMUX1\_ChannelStatus-\/>CSR,\ DMAMUX\_CSR\_SOF11)\ ==\ (DMAMUX\_CSR\_SOF11))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01412\ \}}
 \DoxyCodeLine{01413\ }
 \DoxyCodeLine{01414\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DMAMUX1\_Channel11\ */}\textcolor{preprocessor}{}}
-\DoxyCodeLine{01421\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_RGO0(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01421\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_RGO0(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01422\ \{}
 \DoxyCodeLine{01423\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01424\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga6c9a2e5335db4ae71ef7c2536fcf97b3}{DMAMUX1\_RequestGenStatus}}-\/>RGSR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gac7b3f4937e86d1fb056c2967506e1111}{DMAMUX\_RGSR\_OF0}})\ ==\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_gac7b3f4937e86d1fb056c2967506e1111}{DMAMUX\_RGSR\_OF0}}))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01424\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(DMAMUX1\_RequestGenStatus-\/>RGSR,\ DMAMUX\_RGSR\_OF0)\ ==\ (DMAMUX\_RGSR\_OF0))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01425\ \}}
 \DoxyCodeLine{01426\ }
-\DoxyCodeLine{01433\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_RGO1(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01433\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_RGO1(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01434\ \{}
 \DoxyCodeLine{01435\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01436\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga6c9a2e5335db4ae71ef7c2536fcf97b3}{DMAMUX1\_RequestGenStatus}}-\/>RGSR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gab0542871f3fbe583003090bab8268818}{DMAMUX\_RGSR\_OF1}})\ ==\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_gab0542871f3fbe583003090bab8268818}{DMAMUX\_RGSR\_OF1}}))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01436\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(DMAMUX1\_RequestGenStatus-\/>RGSR,\ DMAMUX\_RGSR\_OF1)\ ==\ (DMAMUX\_RGSR\_OF1))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01437\ \}}
 \DoxyCodeLine{01438\ }
-\DoxyCodeLine{01445\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_RGO2(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01445\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_RGO2(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01446\ \{}
 \DoxyCodeLine{01447\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01448\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga6c9a2e5335db4ae71ef7c2536fcf97b3}{DMAMUX1\_RequestGenStatus}}-\/>RGSR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gab8edd203deac52aadb99a89719a574e6}{DMAMUX\_RGSR\_OF2}})\ ==\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_gab8edd203deac52aadb99a89719a574e6}{DMAMUX\_RGSR\_OF2}}))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01448\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(DMAMUX1\_RequestGenStatus-\/>RGSR,\ DMAMUX\_RGSR\_OF2)\ ==\ (DMAMUX\_RGSR\_OF2))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01449\ \}}
 \DoxyCodeLine{01450\ }
-\DoxyCodeLine{01457\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_RGO3(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01457\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsActiveFlag\_RGO3(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01458\ \{}
 \DoxyCodeLine{01459\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01460\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga6c9a2e5335db4ae71ef7c2536fcf97b3}{DMAMUX1\_RequestGenStatus}}-\/>RGSR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga1a380f3cd5a179e1a66f972bc45d712a}{DMAMUX\_RGSR\_OF3}})\ ==\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_ga1a380f3cd5a179e1a66f972bc45d712a}{DMAMUX\_RGSR\_OF3}}))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01460\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT(DMAMUX1\_RequestGenStatus-\/>RGSR,\ DMAMUX\_RGSR\_OF3)\ ==\ (DMAMUX\_RGSR\_OF3))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01461\ \}}
 \DoxyCodeLine{01462\ }
-\DoxyCodeLine{01469\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO0(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01469\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO0(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01470\ \{}
 \DoxyCodeLine{01471\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01472\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CFR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gaeef7c29bdda17ad3b1bed01644b1ab33}{DMAMUX\_CFR\_CSOF0}});}
+\DoxyCodeLine{01472\ \ \ SET\_BIT(DMAMUX1\_ChannelStatus-\/>CFR,\ DMAMUX\_CFR\_CSOF0);}
 \DoxyCodeLine{01473\ \}}
 \DoxyCodeLine{01474\ }
-\DoxyCodeLine{01481\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO1(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01481\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO1(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01482\ \{}
 \DoxyCodeLine{01483\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01484\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CFR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gaef484190cb68042bf4e9e8a50644f754}{DMAMUX\_CFR\_CSOF1}});}
+\DoxyCodeLine{01484\ \ \ SET\_BIT(DMAMUX1\_ChannelStatus-\/>CFR,\ DMAMUX\_CFR\_CSOF1);}
 \DoxyCodeLine{01485\ \}}
 \DoxyCodeLine{01486\ }
-\DoxyCodeLine{01493\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO2(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01493\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO2(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01494\ \{}
 \DoxyCodeLine{01495\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01496\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CFR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga83b3e64ad19bc75863f33f52a03fd75a}{DMAMUX\_CFR\_CSOF2}});}
+\DoxyCodeLine{01496\ \ \ SET\_BIT(DMAMUX1\_ChannelStatus-\/>CFR,\ DMAMUX\_CFR\_CSOF2);}
 \DoxyCodeLine{01497\ \}}
 \DoxyCodeLine{01498\ }
-\DoxyCodeLine{01505\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO3(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01505\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO3(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01506\ \{}
 \DoxyCodeLine{01507\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01508\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CFR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga68b9cdd5ab4cf0a2fb0887b5db4e0a58}{DMAMUX\_CFR\_CSOF3}});}
+\DoxyCodeLine{01508\ \ \ SET\_BIT(DMAMUX1\_ChannelStatus-\/>CFR,\ DMAMUX\_CFR\_CSOF3);}
 \DoxyCodeLine{01509\ \}}
 \DoxyCodeLine{01510\ }
-\DoxyCodeLine{01517\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO4(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01517\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO4(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01518\ \{}
 \DoxyCodeLine{01519\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01520\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CFR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga026bccb90d1300c53d8700e25942d144}{DMAMUX\_CFR\_CSOF4}});}
+\DoxyCodeLine{01520\ \ \ SET\_BIT(DMAMUX1\_ChannelStatus-\/>CFR,\ DMAMUX\_CFR\_CSOF4);}
 \DoxyCodeLine{01521\ \}}
 \DoxyCodeLine{01522\ }
 \DoxyCodeLine{01523\ \textcolor{preprocessor}{\#if\ defined(DMAMUX1\_Channel5)}}
-\DoxyCodeLine{01530\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO5(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01530\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO5(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01531\ \{}
 \DoxyCodeLine{01532\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01533\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CFR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gae176fa2b8832da594c6a130d5892c779}{DMAMUX\_CFR\_CSOF5}});}
+\DoxyCodeLine{01533\ \ \ SET\_BIT(DMAMUX1\_ChannelStatus-\/>CFR,\ DMAMUX\_CFR\_CSOF5);}
 \DoxyCodeLine{01534\ \}}
 \DoxyCodeLine{01535\ }
 \DoxyCodeLine{01536\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DMAMUX1\_Channel5\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01537\ \textcolor{preprocessor}{\#if\ defined(DMAMUX1\_Channel6)}}
-\DoxyCodeLine{01544\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO6(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01544\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO6(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01545\ \{}
 \DoxyCodeLine{01546\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01547\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CFR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga695c26af87b7d7d2d727742d6f726f99}{DMAMUX\_CFR\_CSOF6}});}
+\DoxyCodeLine{01547\ \ \ SET\_BIT(DMAMUX1\_ChannelStatus-\/>CFR,\ DMAMUX\_CFR\_CSOF6);}
 \DoxyCodeLine{01548\ \}}
 \DoxyCodeLine{01549\ }
 \DoxyCodeLine{01550\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DMAMUX1\_Channel6\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01551\ \textcolor{preprocessor}{\#if\ defined(DMAMUX1\_Channel7)}}
-\DoxyCodeLine{01558\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO7(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01558\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO7(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01559\ \{}
 \DoxyCodeLine{01560\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01561\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CFR,\ DMAMUX\_CFR\_CSOF7);}
+\DoxyCodeLine{01561\ \ \ SET\_BIT(DMAMUX1\_ChannelStatus-\/>CFR,\ DMAMUX\_CFR\_CSOF7);}
 \DoxyCodeLine{01562\ \}}
 \DoxyCodeLine{01563\ }
 \DoxyCodeLine{01564\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DMAMUX1\_Channel7\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01565\ \textcolor{preprocessor}{\#if\ defined(DMAMUX1\_Channel8)}}
-\DoxyCodeLine{01572\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO8(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01572\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO8(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01573\ \{}
 \DoxyCodeLine{01574\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01575\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CFR,\ DMAMUX\_CFR\_CSOF8);}
+\DoxyCodeLine{01575\ \ \ SET\_BIT(DMAMUX1\_ChannelStatus-\/>CFR,\ DMAMUX\_CFR\_CSOF8);}
 \DoxyCodeLine{01576\ \}}
 \DoxyCodeLine{01577\ }
 \DoxyCodeLine{01578\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DMAMUX1\_Channel8\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01579\ \textcolor{preprocessor}{\#if\ defined(DMAMUX1\_Channel9)}}
-\DoxyCodeLine{01586\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO9(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01586\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO9(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01587\ \{}
 \DoxyCodeLine{01588\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01589\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CFR,\ DMAMUX\_CFR\_CSOF9);}
+\DoxyCodeLine{01589\ \ \ SET\_BIT(DMAMUX1\_ChannelStatus-\/>CFR,\ DMAMUX\_CFR\_CSOF9);}
 \DoxyCodeLine{01590\ \}}
 \DoxyCodeLine{01591\ }
 \DoxyCodeLine{01592\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DMAMUX1\_Channel9\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01593\ \textcolor{preprocessor}{\#if\ defined(DMAMUX1\_Channel10)}}
-\DoxyCodeLine{01600\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO10(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01600\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO10(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01601\ \{}
 \DoxyCodeLine{01602\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01603\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CFR,\ DMAMUX\_CFR\_CSOF10);}
+\DoxyCodeLine{01603\ \ \ SET\_BIT(DMAMUX1\_ChannelStatus-\/>CFR,\ DMAMUX\_CFR\_CSOF10);}
 \DoxyCodeLine{01604\ \}}
 \DoxyCodeLine{01605\ }
 \DoxyCodeLine{01606\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DMAMUX1\_Channel10\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{01607\ \textcolor{preprocessor}{\#if\ defined(DMAMUX1\_Channel11)}}
-\DoxyCodeLine{01614\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO11(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01614\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_SO11(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01615\ \{}
 \DoxyCodeLine{01616\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01617\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_gaa3bf9725a03595373c83946d3666174a}{DMAMUX1\_ChannelStatus}}-\/>CFR,\ DMAMUX\_CFR\_CSOF11);}
+\DoxyCodeLine{01617\ \ \ SET\_BIT(DMAMUX1\_ChannelStatus-\/>CFR,\ DMAMUX\_CFR\_CSOF11);}
 \DoxyCodeLine{01618\ \}}
 \DoxyCodeLine{01619\ }
 \DoxyCodeLine{01620\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DMAMUX1\_Channel11\ */}\textcolor{preprocessor}{}}
-\DoxyCodeLine{01627\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_RGO0(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01627\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_RGO0(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01628\ \{}
 \DoxyCodeLine{01629\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01630\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga6c9a2e5335db4ae71ef7c2536fcf97b3}{DMAMUX1\_RequestGenStatus}}-\/>RGCFR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gae3d433cf4d3caaaf83e777a62555b15f}{DMAMUX\_RGCFR\_COF0}});}
+\DoxyCodeLine{01630\ \ \ SET\_BIT(DMAMUX1\_RequestGenStatus-\/>RGCFR,\ DMAMUX\_RGCFR\_COF0);}
 \DoxyCodeLine{01631\ \}}
 \DoxyCodeLine{01632\ }
-\DoxyCodeLine{01639\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_RGO1(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01639\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_RGO1(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01640\ \{}
 \DoxyCodeLine{01641\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01642\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga6c9a2e5335db4ae71ef7c2536fcf97b3}{DMAMUX1\_RequestGenStatus}}-\/>RGCFR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga0848b4198324d163f3fe65c47c37493c}{DMAMUX\_RGCFR\_COF1}});}
+\DoxyCodeLine{01642\ \ \ SET\_BIT(DMAMUX1\_RequestGenStatus-\/>RGCFR,\ DMAMUX\_RGCFR\_COF1);}
 \DoxyCodeLine{01643\ \}}
 \DoxyCodeLine{01644\ }
-\DoxyCodeLine{01651\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_RGO2(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01651\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_RGO2(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01652\ \{}
 \DoxyCodeLine{01653\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01654\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga6c9a2e5335db4ae71ef7c2536fcf97b3}{DMAMUX1\_RequestGenStatus}}-\/>RGCFR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga21bff5e11e62fb6e2fd401aa645acda0}{DMAMUX\_RGCFR\_COF2}});}
+\DoxyCodeLine{01654\ \ \ SET\_BIT(DMAMUX1\_RequestGenStatus-\/>RGCFR,\ DMAMUX\_RGCFR\_COF2);}
 \DoxyCodeLine{01655\ \}}
 \DoxyCodeLine{01656\ }
-\DoxyCodeLine{01663\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_RGO3(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx)}
+\DoxyCodeLine{01663\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_ClearFlag\_RGO3(DMAMUX\_Channel\_TypeDef\ *DMAMUXx)}
 \DoxyCodeLine{01664\ \{}
 \DoxyCodeLine{01665\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01666\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}(\mbox{\hyperlink{group___peripheral__declaration_ga6c9a2e5335db4ae71ef7c2536fcf97b3}{DMAMUX1\_RequestGenStatus}}-\/>RGCFR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gafc921ca625490acde916416c413ac115}{DMAMUX\_RGCFR\_COF3}});}
+\DoxyCodeLine{01666\ \ \ SET\_BIT(DMAMUX1\_RequestGenStatus-\/>RGCFR,\ DMAMUX\_RGCFR\_COF3);}
 \DoxyCodeLine{01667\ \}}
 \DoxyCodeLine{01668\ }
-\DoxyCodeLine{01700\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_EnableIT\_SO(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel)}
+\DoxyCodeLine{01700\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_EnableIT\_SO(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel)}
 \DoxyCodeLine{01701\ \{}
 \DoxyCodeLine{01702\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01703\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga15775843ac0ed584bf9a1cfffd8f38b8}{DMAMUX\_CxCR\_SOIE}});}
+\DoxyCodeLine{01703\ \ \ SET\_BIT((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_SOIE);}
 \DoxyCodeLine{01704\ \}}
 \DoxyCodeLine{01705\ }
-\DoxyCodeLine{01729\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_DisableIT\_SO(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel)}
+\DoxyCodeLine{01729\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_DisableIT\_SO(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel)}
 \DoxyCodeLine{01730\ \{}
 \DoxyCodeLine{01731\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01732\ \ \ \mbox{\hyperlink{group___exported__macros_ga133aae6fc0d41bffab39ab223a7001de}{CLEAR\_BIT}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga15775843ac0ed584bf9a1cfffd8f38b8}{DMAMUX\_CxCR\_SOIE}});}
+\DoxyCodeLine{01732\ \ \ CLEAR\_BIT((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_SOIE);}
 \DoxyCodeLine{01733\ \}}
 \DoxyCodeLine{01734\ }
-\DoxyCodeLine{01758\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsEnabledIT\_SO(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ Channel)}
+\DoxyCodeLine{01758\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsEnabledIT\_SO(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ Channel)}
 \DoxyCodeLine{01759\ \{}
 \DoxyCodeLine{01760\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01761\ \ \ \textcolor{keywordflow}{return}\ (((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}((\mbox{\hyperlink{group___peripheral__declaration_ga7672f776007b4a365bd34f2432142ab4}{DMAMUX1\_Channel0}}\ +\ Channel)-\/>CCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga15775843ac0ed584bf9a1cfffd8f38b8}{DMAMUX\_CxCR\_SOIE}}))\ ==\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_ga15775843ac0ed584bf9a1cfffd8f38b8}{DMAMUX\_CxCR\_SOIE}}))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01761\ \ \ \textcolor{keywordflow}{return}\ (((READ\_BIT((DMAMUX1\_Channel0\ +\ Channel)-\/>CCR,\ DMAMUX\_CxCR\_SOIE))\ ==\ (DMAMUX\_CxCR\_SOIE))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01762\ \}}
 \DoxyCodeLine{01763\ }
-\DoxyCodeLine{01775\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_EnableIT\_RGO(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
+\DoxyCodeLine{01775\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_EnableIT\_RGO(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
 \DoxyCodeLine{01776\ \{}
 \DoxyCodeLine{01777\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01778\ \ \ \mbox{\hyperlink{group___exported__macros_ga26474f43799fbade9cf300e21dd3a91a}{SET\_BIT}}((\mbox{\hyperlink{group___peripheral__declaration_ga7f2de783aee1e5411ae43f2e59dc49d6}{DMAMUX1\_RequestGenerator0}}\ +\ RequestGenChannel)-\/>RGCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga6fde828ebf2591bf66b85b962d55f7c1}{DMAMUX\_RGxCR\_OIE}});}
+\DoxyCodeLine{01778\ \ \ SET\_BIT((DMAMUX1\_RequestGenerator0\ +\ RequestGenChannel)-\/>RGCR,\ DMAMUX\_RGxCR\_OIE);}
 \DoxyCodeLine{01779\ \}}
 \DoxyCodeLine{01780\ }
-\DoxyCodeLine{01792\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_DisableIT\_RGO(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
+\DoxyCodeLine{01792\ \_\_STATIC\_INLINE\ \textcolor{keywordtype}{void}\ LL\_DMAMUX\_DisableIT\_RGO(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
 \DoxyCodeLine{01793\ \{}
 \DoxyCodeLine{01794\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01795\ \ \ \mbox{\hyperlink{group___exported__macros_ga133aae6fc0d41bffab39ab223a7001de}{CLEAR\_BIT}}((\mbox{\hyperlink{group___peripheral__declaration_ga7f2de783aee1e5411ae43f2e59dc49d6}{DMAMUX1\_RequestGenerator0}}\ +\ RequestGenChannel)-\/>RGCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga6fde828ebf2591bf66b85b962d55f7c1}{DMAMUX\_RGxCR\_OIE}});}
+\DoxyCodeLine{01795\ \ \ CLEAR\_BIT((DMAMUX1\_RequestGenerator0\ +\ RequestGenChannel)-\/>RGCR,\ DMAMUX\_RGxCR\_OIE);}
 \DoxyCodeLine{01796\ \}}
 \DoxyCodeLine{01797\ }
-\DoxyCodeLine{01809\ \mbox{\hyperlink{cmsis__armcc_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\_\_STATIC\_INLINE}}\ uint32\_t\ LL\_DMAMUX\_IsEnabledIT\_RGO(\mbox{\hyperlink{struct_d_m_a_m_u_x___channel___type_def}{DMAMUX\_Channel\_TypeDef}}\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
+\DoxyCodeLine{01809\ \_\_STATIC\_INLINE\ uint32\_t\ LL\_DMAMUX\_IsEnabledIT\_RGO(DMAMUX\_Channel\_TypeDef\ *DMAMUXx,\ uint32\_t\ RequestGenChannel)}
 \DoxyCodeLine{01810\ \{}
 \DoxyCodeLine{01811\ \ \ (void)(DMAMUXx);}
-\DoxyCodeLine{01812\ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{group___exported__macros_ga822bb1bb9710d5f2fa6396b84e583c33}{READ\_BIT}}((\mbox{\hyperlink{group___peripheral__declaration_ga7f2de783aee1e5411ae43f2e59dc49d6}{DMAMUX1\_RequestGenerator0}}\ +\ RequestGenChannel)-\/>RGCR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga6fde828ebf2591bf66b85b962d55f7c1}{DMAMUX\_RGxCR\_OIE}})\ ==\ (\mbox{\hyperlink{group___peripheral___registers___bits___definition_ga6fde828ebf2591bf66b85b962d55f7c1}{DMAMUX\_RGxCR\_OIE}}))\ ?\ 1UL\ :\ 0UL);}
+\DoxyCodeLine{01812\ \ \ \textcolor{keywordflow}{return}\ ((READ\_BIT((DMAMUX1\_RequestGenerator0\ +\ RequestGenChannel)-\/>RGCR,\ DMAMUX\_RGxCR\_OIE)\ ==\ (DMAMUX\_RGxCR\_OIE))\ ?\ 1UL\ :\ 0UL);}
 \DoxyCodeLine{01813\ \}}
 \DoxyCodeLine{01814\ }
 \DoxyCodeLine{01827\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DMAMUX1\ */}\textcolor{preprocessor}{}}

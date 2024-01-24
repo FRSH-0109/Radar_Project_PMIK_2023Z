@@ -1,223 +1,451 @@
 \doxysection{Radar\+App/\+Radar\+Driver/radar.c File Reference}
-\hypertarget{radar_8c}{}\label{radar_8c}\index{RadarApp/RadarDriver/radar.c@{RadarApp/RadarDriver/radar.c}}
+\label{radar_8c}\index{RadarApp/RadarDriver/radar.c@{RadarApp/RadarDriver/radar.c}}
 {\ttfamily \#include "{}radar.\+h"{}}\newline
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{radar_8c_a312279113d5a54b8d98e248b4e02eb89}{radar\+Init}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, \mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}servo, \mbox{\hyperlink{struct_t_i_m___handle_type_def}{TIM\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}servo\+\_\+tim, \mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}sensor, \mbox{\hyperlink{struct_t_i_m___handle_type_def}{TIM\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}sensor\+\_\+tim)
+void \textbf{ radar\+Init} (\textbf{ radar\+Struct} $\ast$\textbf{ radar}, \textbf{ servo\+Driver\+Struct} $\ast$servo, \textbf{ TIM\+\_\+\+Handle\+Type\+Def} $\ast$servo\+\_\+tim, \textbf{ distance\+Sensor\+Struct} $\ast$sensor, \textbf{ TIM\+\_\+\+Handle\+Type\+Def} $\ast$sensor\+\_\+tim)
 \item 
-void \mbox{\hyperlink{radar_8c_a909f36a45ee821d7528d2f4aee5a1e82}{radar\+Servo\+Update}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+void \textbf{ radar\+Servo\+Update} (\textbf{ radar\+Struct} $\ast$\textbf{ radar})
 \item 
-bool \mbox{\hyperlink{radar_8c_a4ba239034505324ee3dee22dfd0254e1}{radar\+Set\+Position\+Min}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, float pos)
+bool \textbf{ radar\+Set\+Position\+Min} (\textbf{ radar\+Struct} $\ast$\textbf{ radar}, float pos)
 \item 
-float \mbox{\hyperlink{radar_8c_afa0e1f30efba3b6c3ea56a5d0b7b4008}{radar\+Get\+Position\+Min}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+float \textbf{ radar\+Get\+Position\+Min} (\textbf{ radar\+Struct} $\ast$\textbf{ radar})
 \item 
-bool \mbox{\hyperlink{radar_8c_affc98cfe5b10eb360e5e2aff374b0eaa}{radar\+Set\+Position\+Max}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, float pos)
+bool \textbf{ radar\+Set\+Position\+Max} (\textbf{ radar\+Struct} $\ast$\textbf{ radar}, float pos)
 \item 
-float \mbox{\hyperlink{radar_8c_a5c23a940c59e3e96d1d3011f5bfdfd64}{radar\+Get\+Position\+Max}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+float \textbf{ radar\+Get\+Position\+Max} (\textbf{ radar\+Struct} $\ast$\textbf{ radar})
 \item 
-void \mbox{\hyperlink{radar_8c_a19fed3b3d140e2c18a4122ad7e783ac6}{radar\+Servo\+Start}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+void \textbf{ radar\+Servo\+Start} (\textbf{ radar\+Struct} $\ast$\textbf{ radar})
 \item 
-void \mbox{\hyperlink{radar_8c_a22df522cbce2d07e06b2c92be3f0349b}{radar\+Servo\+Stop}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+void \textbf{ radar\+Servo\+Stop} (\textbf{ radar\+Struct} $\ast$\textbf{ radar})
 \item 
-bool \mbox{\hyperlink{radar_8c_aa4b19eb1148531f570f708bb4ee262cc}{radar\+Set\+Position\+Update\+Period}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, uint16\+\_\+t period\+Ms)
+bool \textbf{ radar\+Set\+Position\+Update\+Period} (\textbf{ radar\+Struct} $\ast$\textbf{ radar}, uint16\+\_\+t period\+Ms)
 \item 
-bool \mbox{\hyperlink{radar_8c_a3eaae4e20f433f2c438c8f94caaaae99}{radar\+Set\+Position\+Update\+Step}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, float step)
+bool \textbf{ radar\+Set\+Position\+Update\+Step} (\textbf{ radar\+Struct} $\ast$\textbf{ radar}, float step)
 \item 
-bool \mbox{\hyperlink{radar_8c_a416d6211a13ea0a7ceac573ace2288ca}{radar\+Set\+Position\+Min\+Max}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, float pos, bool is\+Min)
+bool \textbf{ radar\+Set\+Position\+Min\+Max} (\textbf{ radar\+Struct} $\ast$\textbf{ radar}, float pos, bool is\+Min)
 \item 
-bool \mbox{\hyperlink{radar_8c_ac1d20aa713a5266f7bcee82d90b96abb}{radar\+Set\+Position}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, float pos)
+bool \textbf{ radar\+Set\+Position} (\textbf{ radar\+Struct} $\ast$\textbf{ radar}, float pos)
 \item 
-float \mbox{\hyperlink{radar_8c_adf43ab91ae524d0b9a07b3976d4cf028}{radar\+Get\+Position}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+float \textbf{ radar\+Get\+Position} (\textbf{ radar\+Struct} $\ast$\textbf{ radar})
 \item 
-void \mbox{\hyperlink{radar_8c_abfc9c42283fc76d21b3e56cc39c8f385}{radar\+Measure\+Start}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+void \textbf{ radar\+Measure\+Start} (\textbf{ radar\+Struct} $\ast$\textbf{ radar})
 \item 
-void \mbox{\hyperlink{radar_8c_ad5258fad0b27b8d14b803775e6f1457c}{radar\+Measure\+Stop}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+void \textbf{ radar\+Measure\+Stop} (\textbf{ radar\+Struct} $\ast$\textbf{ radar})
 \item 
-bool \mbox{\hyperlink{radar_8c_aed51c9df6791df40aa7f91d19cd4cb06}{radar\+Set\+Measure\+Freq}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, uint16\+\_\+t period\+Ms)
+bool \textbf{ radar\+Set\+Measure\+Freq} (\textbf{ radar\+Struct} $\ast$\textbf{ radar}, uint16\+\_\+t period\+Ms)
 \item 
-void \mbox{\hyperlink{radar_8c_a190f69a9906f7f4c05b19e814bf1b2ce}{radar\+Trigger\+Measure}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+void \textbf{ radar\+Trigger\+Measure} (\textbf{ radar\+Struct} $\ast$\textbf{ radar})
 \item 
-double \mbox{\hyperlink{radar_8c_a8d37f58cbd2c9affac492868fdc72b5e}{radar\+Get\+Measure}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+double \textbf{ radar\+Get\+Measure} (\textbf{ radar\+Struct} $\ast$\textbf{ radar})
 \item 
-void \mbox{\hyperlink{radar_8c_a8c826e34d0dddb8e825ad56e6d9e64ef}{radar\+Draw\+Measure}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}})
+void \textbf{ radar\+Draw\+Measure} (\textbf{ radar\+Struct} $\ast$\textbf{ radar})
 \item 
-bool \mbox{\hyperlink{radar_8c_ade099662844a751716ebda7bd3c1de78}{radar\+Parse\+Set\+Position}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data)
+bool \textbf{ radar\+Parse\+Set\+Position} (\textbf{ radar\+Struct} $\ast$\textbf{ radar}, uint8\+\_\+t $\ast$data)
 \item 
-bool \mbox{\hyperlink{radar_8c_a93217053e1875c7eac9c60f4bb30a149}{radar\+Parse\+Set\+Step}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data)
+bool \textbf{ radar\+Parse\+Set\+Step} (\textbf{ radar\+Struct} $\ast$\textbf{ radar}, uint8\+\_\+t $\ast$data)
 \item 
-bool \mbox{\hyperlink{radar_8c_ac2d8eafddd3e2e5ceec639b9009c40fc}{radar\+Parse\+Set\+Position\+Min\+Max}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data, bool is\+Min)
+bool \textbf{ radar\+Parse\+Set\+Position\+Min\+Max} (\textbf{ radar\+Struct} $\ast$\textbf{ radar}, uint8\+\_\+t $\ast$data, bool is\+Min)
 \item 
-bool \mbox{\hyperlink{radar_8c_a7c584e4dccab771e02d9520ec9cc89bb}{radar\+Parse\+Set\+Measure\+Period}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data)
+bool \textbf{ radar\+Parse\+Set\+Measure\+Period} (\textbf{ radar\+Struct} $\ast$\textbf{ radar}, uint8\+\_\+t $\ast$data)
 \item 
-bool \mbox{\hyperlink{radar_8c_a446ac04525db3179676463097f06d3ac}{radar\+Parse\+Set\+Draw\+Scale}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data)
+bool \textbf{ radar\+Parse\+Set\+Draw\+Scale} (\textbf{ radar\+Struct} $\ast$\textbf{ radar}, uint8\+\_\+t $\ast$data)
 \item 
-bool \mbox{\hyperlink{radar_8c_af268b360cfbc8508e87589e75178eff4}{radar\+Parse\+Set\+Draw\+Rules}} (\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a9f3a2a5f24724aadbb21c4a8e74b5a09}{radar}}, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data)
+bool \textbf{ radar\+Parse\+Set\+Draw\+Rules} (\textbf{ radar\+Struct} $\ast$\textbf{ radar}, uint8\+\_\+t $\ast$data)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structdraw_helper_struct}{draw\+Helper\+Struct}} \mbox{\hyperlink{radar_8c_adf53ce83636ba14bf6b66c48aae16e49}{draw\+Helper}}
+\textbf{ draw\+Helper\+Struct} \textbf{ draw\+Helper}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{radar_8c_a8c826e34d0dddb8e825ad56e6d9e64ef}\label{radar_8c_a8c826e34d0dddb8e825ad56e6d9e64ef} 
+\label{radar_8c_a8c826e34d0dddb8e825ad56e6d9e64ef} 
 \index{radar.c@{radar.c}!radarDrawMeasure@{radarDrawMeasure}}
 \index{radarDrawMeasure@{radarDrawMeasure}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarDrawMeasure()}{radarDrawMeasure()}}
-{\footnotesize\ttfamily void radar\+Draw\+Measure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+\doxysubsubsection{radarDrawMeasure()}
+{\footnotesize\ttfamily void radar\+Draw\+Measure (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_a8d37f58cbd2c9affac492868fdc72b5e}\label{radar_8c_a8d37f58cbd2c9affac492868fdc72b5e} 
+\label{radar_8c_a8d37f58cbd2c9affac492868fdc72b5e} 
 \index{radar.c@{radar.c}!radarGetMeasure@{radarGetMeasure}}
 \index{radarGetMeasure@{radarGetMeasure}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarGetMeasure()}{radarGetMeasure()}}
-{\footnotesize\ttfamily double radar\+Get\+Measure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+\doxysubsubsection{radarGetMeasure()}
+{\footnotesize\ttfamily double radar\+Get\+Measure (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_adf43ab91ae524d0b9a07b3976d4cf028}\label{radar_8c_adf43ab91ae524d0b9a07b3976d4cf028} 
+Function for getting recent measurement of radar\textquotesingle{}s sensor
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double value of measurements 
+\end{DoxyReturn}
+\label{radar_8c_adf43ab91ae524d0b9a07b3976d4cf028} 
 \index{radar.c@{radar.c}!radarGetPosition@{radarGetPosition}}
 \index{radarGetPosition@{radarGetPosition}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarGetPosition()}{radarGetPosition()}}
-{\footnotesize\ttfamily float radar\+Get\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+\doxysubsubsection{radarGetPosition()}
+{\footnotesize\ttfamily float radar\+Get\+Position (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_a5c23a940c59e3e96d1d3011f5bfdfd64}\label{radar_8c_a5c23a940c59e3e96d1d3011f5bfdfd64} 
+Function for getting position of radar\textquotesingle{}s servo movement
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float position value 
+\end{DoxyReturn}
+\label{radar_8c_a5c23a940c59e3e96d1d3011f5bfdfd64} 
 \index{radar.c@{radar.c}!radarGetPositionMax@{radarGetPositionMax}}
 \index{radarGetPositionMax@{radarGetPositionMax}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarGetPositionMax()}{radarGetPositionMax()}}
-{\footnotesize\ttfamily float radar\+Get\+Position\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+\doxysubsubsection{radarGetPositionMax()}
+{\footnotesize\ttfamily float radar\+Get\+Position\+Max (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_afa0e1f30efba3b6c3ea56a5d0b7b4008}\label{radar_8c_afa0e1f30efba3b6c3ea56a5d0b7b4008} 
+Function for getter maximal position of radar
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float value of maximal position 
+\end{DoxyReturn}
+\label{radar_8c_afa0e1f30efba3b6c3ea56a5d0b7b4008} 
 \index{radar.c@{radar.c}!radarGetPositionMin@{radarGetPositionMin}}
 \index{radarGetPositionMin@{radarGetPositionMin}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarGetPositionMin()}{radarGetPositionMin()}}
-{\footnotesize\ttfamily float radar\+Get\+Position\+Min (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+\doxysubsubsection{radarGetPositionMin()}
+{\footnotesize\ttfamily float radar\+Get\+Position\+Min (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_a312279113d5a54b8d98e248b4e02eb89}\label{radar_8c_a312279113d5a54b8d98e248b4e02eb89} 
+Function for getter minimal position of radar
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float value of minimal position 
+\end{DoxyReturn}
+\label{radar_8c_a312279113d5a54b8d98e248b4e02eb89} 
 \index{radar.c@{radar.c}!radarInit@{radarInit}}
 \index{radarInit@{radarInit}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarInit()}{radarInit()}}
-{\footnotesize\ttfamily void radar\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{\mbox{\hyperlink{structservo_driver_struct}{servo\+Driver\+Struct}} \texorpdfstring{$\ast$}{*}}]{servo,  }\item[{\mbox{\hyperlink{struct_t_i_m___handle_type_def}{TIM\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{servo\+\_\+tim,  }\item[{\mbox{\hyperlink{structdistance_sensor_struct}{distance\+Sensor\+Struct}} \texorpdfstring{$\ast$}{*}}]{sensor,  }\item[{\mbox{\hyperlink{struct_t_i_m___handle_type_def}{TIM\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{sensor\+\_\+tim }\end{DoxyParamCaption})}
+\doxysubsubsection{radarInit()}
+{\footnotesize\ttfamily void radar\+Init (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar,  }\item[{\textbf{ servo\+Driver\+Struct} $\ast$}]{servo,  }\item[{\textbf{ TIM\+\_\+\+Handle\+Type\+Def} $\ast$}]{servo\+\_\+tim,  }\item[{\textbf{ distance\+Sensor\+Struct} $\ast$}]{sensor,  }\item[{\textbf{ TIM\+\_\+\+Handle\+Type\+Def} $\ast$}]{sensor\+\_\+tim }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_abfc9c42283fc76d21b3e56cc39c8f385}\label{radar_8c_abfc9c42283fc76d21b3e56cc39c8f385} 
+Function for initialization of radar structure instance
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+{\em servo} & pointer to \doxyref{servo\+Driver\+Struct}{p.}{structservo_driver_struct} struct \\
+\hline
+{\em servo\+\_\+tim} & pointer to \doxyref{TIM\+\_\+\+Handle\+Type\+Def}{p.}{struct_t_i_m___handle_type_def} struct \\
+\hline
+{\em sensor} & pointer to \doxyref{distance\+Sensor\+Struct}{p.}{structdistance_sensor_struct} struct \\
+\hline
+{\em sensor\+\_\+tim} & pointer to sensor\+\_\+tim struct \\
+\hline
+\end{DoxyParams}
+\label{radar_8c_abfc9c42283fc76d21b3e56cc39c8f385} 
 \index{radar.c@{radar.c}!radarMeasureStart@{radarMeasureStart}}
 \index{radarMeasureStart@{radarMeasureStart}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarMeasureStart()}{radarMeasureStart()}}
-{\footnotesize\ttfamily void radar\+Measure\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+\doxysubsubsection{radarMeasureStart()}
+{\footnotesize\ttfamily void radar\+Measure\+Start (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_ad5258fad0b27b8d14b803775e6f1457c}\label{radar_8c_ad5258fad0b27b8d14b803775e6f1457c} 
+Function for starting sensors measurements
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+\end{DoxyParams}
+\label{radar_8c_ad5258fad0b27b8d14b803775e6f1457c} 
 \index{radar.c@{radar.c}!radarMeasureStop@{radarMeasureStop}}
 \index{radarMeasureStop@{radarMeasureStop}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarMeasureStop()}{radarMeasureStop()}}
-{\footnotesize\ttfamily void radar\+Measure\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+\doxysubsubsection{radarMeasureStop()}
+{\footnotesize\ttfamily void radar\+Measure\+Stop (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_af268b360cfbc8508e87589e75178eff4}\label{radar_8c_af268b360cfbc8508e87589e75178eff4} 
+Function for stopping sensors measurements
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+\end{DoxyParams}
+\label{radar_8c_af268b360cfbc8508e87589e75178eff4} 
 \index{radar.c@{radar.c}!radarParseSetDrawRules@{radarParseSetDrawRules}}
 \index{radarParseSetDrawRules@{radarParseSetDrawRules}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarParseSetDrawRules()}{radarParseSetDrawRules()}}
-{\footnotesize\ttfamily bool radar\+Parse\+Set\+Draw\+Rules (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data }\end{DoxyParamCaption})}
+\doxysubsubsection{radarParseSetDrawRules()}
+{\footnotesize\ttfamily bool radar\+Parse\+Set\+Draw\+Rules (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar,  }\item[{uint8\+\_\+t $\ast$}]{data }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_a446ac04525db3179676463097f06d3ac}\label{radar_8c_a446ac04525db3179676463097f06d3ac} 
+Function for parsing data array into draw rules variable
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+{\em data} & pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool value if operation was successful 
+\end{DoxyReturn}
+\label{radar_8c_a446ac04525db3179676463097f06d3ac} 
 \index{radar.c@{radar.c}!radarParseSetDrawScale@{radarParseSetDrawScale}}
 \index{radarParseSetDrawScale@{radarParseSetDrawScale}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarParseSetDrawScale()}{radarParseSetDrawScale()}}
-{\footnotesize\ttfamily bool radar\+Parse\+Set\+Draw\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data }\end{DoxyParamCaption})}
+\doxysubsubsection{radarParseSetDrawScale()}
+{\footnotesize\ttfamily bool radar\+Parse\+Set\+Draw\+Scale (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar,  }\item[{uint8\+\_\+t $\ast$}]{data }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_a7c584e4dccab771e02d9520ec9cc89bb}\label{radar_8c_a7c584e4dccab771e02d9520ec9cc89bb} 
+Function for parsing data array into draw scale variable
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+{\em data} & pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool value if operation was successful 
+\end{DoxyReturn}
+\label{radar_8c_a7c584e4dccab771e02d9520ec9cc89bb} 
 \index{radar.c@{radar.c}!radarParseSetMeasurePeriod@{radarParseSetMeasurePeriod}}
 \index{radarParseSetMeasurePeriod@{radarParseSetMeasurePeriod}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarParseSetMeasurePeriod()}{radarParseSetMeasurePeriod()}}
-{\footnotesize\ttfamily bool radar\+Parse\+Set\+Measure\+Period (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data }\end{DoxyParamCaption})}
+\doxysubsubsection{radarParseSetMeasurePeriod()}
+{\footnotesize\ttfamily bool radar\+Parse\+Set\+Measure\+Period (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar,  }\item[{uint8\+\_\+t $\ast$}]{data }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_ade099662844a751716ebda7bd3c1de78}\label{radar_8c_ade099662844a751716ebda7bd3c1de78} 
+Function for parsing data array into measurement period variable
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+{\em data} & pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool value if operation was successful 
+\end{DoxyReturn}
+\label{radar_8c_ade099662844a751716ebda7bd3c1de78} 
 \index{radar.c@{radar.c}!radarParseSetPosition@{radarParseSetPosition}}
 \index{radarParseSetPosition@{radarParseSetPosition}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarParseSetPosition()}{radarParseSetPosition()}}
-{\footnotesize\ttfamily bool radar\+Parse\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data }\end{DoxyParamCaption})}
+\doxysubsubsection{radarParseSetPosition()}
+{\footnotesize\ttfamily bool radar\+Parse\+Set\+Position (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar,  }\item[{uint8\+\_\+t $\ast$}]{data }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_ac2d8eafddd3e2e5ceec639b9009c40fc}\label{radar_8c_ac2d8eafddd3e2e5ceec639b9009c40fc} 
+Function for parsing data array into position variable
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+{\em data} & pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool value if operation was successful 
+\end{DoxyReturn}
+\label{radar_8c_ac2d8eafddd3e2e5ceec639b9009c40fc} 
 \index{radar.c@{radar.c}!radarParseSetPositionMinMax@{radarParseSetPositionMinMax}}
 \index{radarParseSetPositionMinMax@{radarParseSetPositionMinMax}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarParseSetPositionMinMax()}{radarParseSetPositionMinMax()}}
-{\footnotesize\ttfamily bool radar\+Parse\+Set\+Position\+Min\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data,  }\item[{bool}]{is\+Min }\end{DoxyParamCaption})}
+\doxysubsubsection{radarParseSetPositionMinMax()}
+{\footnotesize\ttfamily bool radar\+Parse\+Set\+Position\+Min\+Max (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar,  }\item[{uint8\+\_\+t $\ast$}]{data,  }\item[{bool}]{is\+Min }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_a93217053e1875c7eac9c60f4bb30a149}\label{radar_8c_a93217053e1875c7eac9c60f4bb30a149} 
+Function for parsing data array into posiiton min/max variable
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+{\em data} & pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool value if operation was successful 
+\end{DoxyReturn}
+\label{radar_8c_a93217053e1875c7eac9c60f4bb30a149} 
 \index{radar.c@{radar.c}!radarParseSetStep@{radarParseSetStep}}
 \index{radarParseSetStep@{radarParseSetStep}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarParseSetStep()}{radarParseSetStep()}}
-{\footnotesize\ttfamily bool radar\+Parse\+Set\+Step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data }\end{DoxyParamCaption})}
+\doxysubsubsection{radarParseSetStep()}
+{\footnotesize\ttfamily bool radar\+Parse\+Set\+Step (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar,  }\item[{uint8\+\_\+t $\ast$}]{data }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_a19fed3b3d140e2c18a4122ad7e783ac6}\label{radar_8c_a19fed3b3d140e2c18a4122ad7e783ac6} 
+Function for parsing data array into servo\textquotesingle{}s step variable
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+{\em data} & pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool value if operation was successful 
+\end{DoxyReturn}
+\label{radar_8c_a19fed3b3d140e2c18a4122ad7e783ac6} 
 \index{radar.c@{radar.c}!radarServoStart@{radarServoStart}}
 \index{radarServoStart@{radarServoStart}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarServoStart()}{radarServoStart()}}
-{\footnotesize\ttfamily void radar\+Servo\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+\doxysubsubsection{radarServoStart()}
+{\footnotesize\ttfamily void radar\+Servo\+Start (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_a22df522cbce2d07e06b2c92be3f0349b}\label{radar_8c_a22df522cbce2d07e06b2c92be3f0349b} 
+Function for starting servo movement \label{radar_8c_a22df522cbce2d07e06b2c92be3f0349b} 
 \index{radar.c@{radar.c}!radarServoStop@{radarServoStop}}
 \index{radarServoStop@{radarServoStop}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarServoStop()}{radarServoStop()}}
-{\footnotesize\ttfamily void radar\+Servo\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+\doxysubsubsection{radarServoStop()}
+{\footnotesize\ttfamily void radar\+Servo\+Stop (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_a909f36a45ee821d7528d2f4aee5a1e82}\label{radar_8c_a909f36a45ee821d7528d2f4aee5a1e82} 
+Function for stopping servo movement \label{radar_8c_a909f36a45ee821d7528d2f4aee5a1e82} 
 \index{radar.c@{radar.c}!radarServoUpdate@{radarServoUpdate}}
 \index{radarServoUpdate@{radarServoUpdate}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarServoUpdate()}{radarServoUpdate()}}
-{\footnotesize\ttfamily void radar\+Servo\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})}
+\doxysubsubsection{radarServoUpdate()}
+{\footnotesize\ttfamily void radar\+Servo\+Update (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_aed51c9df6791df40aa7f91d19cd4cb06}\label{radar_8c_aed51c9df6791df40aa7f91d19cd4cb06} 
+Function for handling servo position update
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+\end{DoxyParams}
+\label{radar_8c_aed51c9df6791df40aa7f91d19cd4cb06} 
 \index{radar.c@{radar.c}!radarSetMeasureFreq@{radarSetMeasureFreq}}
 \index{radarSetMeasureFreq@{radarSetMeasureFreq}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarSetMeasureFreq()}{radarSetMeasureFreq()}}
-{\footnotesize\ttfamily bool radar\+Set\+Measure\+Freq (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{uint16\+\_\+t}]{period\+Ms }\end{DoxyParamCaption})}
+\doxysubsubsection{radarSetMeasureFreq()}
+{\footnotesize\ttfamily bool radar\+Set\+Measure\+Freq (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar,  }\item[{uint16\+\_\+t}]{period\+Ms }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_ac1d20aa713a5266f7bcee82d90b96abb}\label{radar_8c_ac1d20aa713a5266f7bcee82d90b96abb} 
+Function for setting measure frequency of radar\textquotesingle{}s sensor
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+{\em perido\+Ms} & new period value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool value inidicating if operation was successful 
+\end{DoxyReturn}
+\label{radar_8c_ac1d20aa713a5266f7bcee82d90b96abb} 
 \index{radar.c@{radar.c}!radarSetPosition@{radarSetPosition}}
 \index{radarSetPosition@{radarSetPosition}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarSetPosition()}{radarSetPosition()}}
-{\footnotesize\ttfamily bool radar\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{float}]{pos }\end{DoxyParamCaption})}
+\doxysubsubsection{radarSetPosition()}
+{\footnotesize\ttfamily bool radar\+Set\+Position (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar,  }\item[{float}]{pos }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_affc98cfe5b10eb360e5e2aff374b0eaa}\label{radar_8c_affc98cfe5b10eb360e5e2aff374b0eaa} 
+Function for setting position of radar\textquotesingle{}s servo movement
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+{\em pos} & new position to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool value inidicating if operation was successful 
+\end{DoxyReturn}
+\label{radar_8c_affc98cfe5b10eb360e5e2aff374b0eaa} 
 \index{radar.c@{radar.c}!radarSetPositionMax@{radarSetPositionMax}}
 \index{radarSetPositionMax@{radarSetPositionMax}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarSetPositionMax()}{radarSetPositionMax()}}
-{\footnotesize\ttfamily bool radar\+Set\+Position\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{float}]{pos }\end{DoxyParamCaption})}
+\doxysubsubsection{radarSetPositionMax()}
+{\footnotesize\ttfamily bool radar\+Set\+Position\+Max (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar,  }\item[{float}]{pos }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_a4ba239034505324ee3dee22dfd0254e1}\label{radar_8c_a4ba239034505324ee3dee22dfd0254e1} 
+Function for setting maximal position of radar
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+{\em pos} & value of position to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool value inidicating if operation was successful 
+\end{DoxyReturn}
+\label{radar_8c_a4ba239034505324ee3dee22dfd0254e1} 
 \index{radar.c@{radar.c}!radarSetPositionMin@{radarSetPositionMin}}
 \index{radarSetPositionMin@{radarSetPositionMin}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarSetPositionMin()}{radarSetPositionMin()}}
-{\footnotesize\ttfamily bool radar\+Set\+Position\+Min (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{float}]{pos }\end{DoxyParamCaption})}
+\doxysubsubsection{radarSetPositionMin()}
+{\footnotesize\ttfamily bool radar\+Set\+Position\+Min (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar,  }\item[{float}]{pos }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_a416d6211a13ea0a7ceac573ace2288ca}\label{radar_8c_a416d6211a13ea0a7ceac573ace2288ca} 
+Function for setting minimal position of radar
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+{\em pos} & value of position to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool value inidicating if operation was successful 
+\end{DoxyReturn}
+\label{radar_8c_a416d6211a13ea0a7ceac573ace2288ca} 
 \index{radar.c@{radar.c}!radarSetPositionMinMax@{radarSetPositionMinMax}}
 \index{radarSetPositionMinMax@{radarSetPositionMinMax}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarSetPositionMinMax()}{radarSetPositionMinMax()}}
-{\footnotesize\ttfamily bool radar\+Set\+Position\+Min\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{float}]{pos,  }\item[{bool}]{is\+Min }\end{DoxyParamCaption})}
+\doxysubsubsection{radarSetPositionMinMax()}
+{\footnotesize\ttfamily bool radar\+Set\+Position\+Min\+Max (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar,  }\item[{float}]{pos,  }\item[{bool}]{is\+Min }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_aa4b19eb1148531f570f708bb4ee262cc}\label{radar_8c_aa4b19eb1148531f570f708bb4ee262cc} 
+\label{radar_8c_aa4b19eb1148531f570f708bb4ee262cc} 
 \index{radar.c@{radar.c}!radarSetPositionUpdatePeriod@{radarSetPositionUpdatePeriod}}
 \index{radarSetPositionUpdatePeriod@{radarSetPositionUpdatePeriod}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarSetPositionUpdatePeriod()}{radarSetPositionUpdatePeriod()}}
-{\footnotesize\ttfamily bool radar\+Set\+Position\+Update\+Period (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{uint16\+\_\+t}]{period\+Ms }\end{DoxyParamCaption})}
+\doxysubsubsection{radarSetPositionUpdatePeriod()}
+{\footnotesize\ttfamily bool radar\+Set\+Position\+Update\+Period (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar,  }\item[{uint16\+\_\+t}]{period\+Ms }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_a3eaae4e20f433f2c438c8f94caaaae99}\label{radar_8c_a3eaae4e20f433f2c438c8f94caaaae99} 
+Function for setting update period of radar\textquotesingle{}s servo movement
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+{\em period\+Ms} & new value of period \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool value inidicating if operation was successful 
+\end{DoxyReturn}
+\label{radar_8c_a3eaae4e20f433f2c438c8f94caaaae99} 
 \index{radar.c@{radar.c}!radarSetPositionUpdateStep@{radarSetPositionUpdateStep}}
 \index{radarSetPositionUpdateStep@{radarSetPositionUpdateStep}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarSetPositionUpdateStep()}{radarSetPositionUpdateStep()}}
-{\footnotesize\ttfamily bool radar\+Set\+Position\+Update\+Step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar,  }\item[{float}]{step }\end{DoxyParamCaption})}
+\doxysubsubsection{radarSetPositionUpdateStep()}
+{\footnotesize\ttfamily bool radar\+Set\+Position\+Update\+Step (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar,  }\item[{float}]{step }\end{DoxyParamCaption})}
 
-\Hypertarget{radar_8c_a190f69a9906f7f4c05b19e814bf1b2ce}\label{radar_8c_a190f69a9906f7f4c05b19e814bf1b2ce} 
+Function for setting update step of radar\textquotesingle{}s servo movement
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+{\em step} & to be set in structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool value inidicating if operation was successful 
+\end{DoxyReturn}
+\label{radar_8c_a190f69a9906f7f4c05b19e814bf1b2ce} 
 \index{radar.c@{radar.c}!radarTriggerMeasure@{radarTriggerMeasure}}
 \index{radarTriggerMeasure@{radarTriggerMeasure}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{radarTriggerMeasure()}{radarTriggerMeasure()}}
-{\footnotesize\ttfamily void radar\+Trigger\+Measure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structradar_struct}{radar\+Struct}} \texorpdfstring{$\ast$}{*}}]{radar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsubsection{radarTriggerMeasure()}
+{\footnotesize\ttfamily void radar\+Trigger\+Measure (\begin{DoxyParamCaption}\item[{\textbf{ radar\+Struct} $\ast$}]{radar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+Function for sending trigger signal to radar\textquotesingle{}s signal
+
+
+\begin{DoxyParams}{Parameters}
+{\em radar} & pointer to \doxyref{radar\+Struct}{p.}{structradar_struct} struct \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Variable Documentation}
-\Hypertarget{radar_8c_adf53ce83636ba14bf6b66c48aae16e49}\label{radar_8c_adf53ce83636ba14bf6b66c48aae16e49} 
+\label{radar_8c_adf53ce83636ba14bf6b66c48aae16e49} 
 \index{radar.c@{radar.c}!drawHelper@{drawHelper}}
 \index{drawHelper@{drawHelper}!radar.c@{radar.c}}
-\doxysubsubsection{\texorpdfstring{drawHelper}{drawHelper}}
-{\footnotesize\ttfamily \mbox{\hyperlink{structdraw_helper_struct}{draw\+Helper\+Struct}} draw\+Helper\hspace{0.3cm}{\ttfamily [extern]}}
+\doxysubsubsection{drawHelper}
+{\footnotesize\ttfamily \textbf{ draw\+Helper\+Struct} draw\+Helper\hspace{0.3cm}{\ttfamily [extern]}}
 
+Draw helper structure 
